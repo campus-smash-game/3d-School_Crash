@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T21:29:15.039Z",
+  "buildingId": "way/167598052",
+  "status": "implemented-partial-photo-reference",
+  "scope": "21동 북서쪽 전면과 주현관, 보도, 계단과 안내판을 보완했다.",
+  "references": [
+    {
+      "url": "https://kko.to/s5nITNk51P",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy21-review68/68-front-step4.png",
+          "sha256": "eb8162017d1efe6c1bb716893c19776a40b5c115d8c8d2dafab12e6611a5306a"
+        },
+        {
+          "file": "artifacts/pharmacy21-review68/68-front-upper.png",
+          "sha256": "4b18618d219cb243383f1888f0c921263e5ce6f4578e4227f9867d577d7063cc"
+        },
+        {
+          "file": "artifacts/pharmacy21-review68/68-entry.png",
+          "sha256": "9941cf022cb9c0637ea3450ae29a2b313a78ad4e962d829936ee87797f815adc"
+        },
+        {
+          "file": "artifacts/pharmacy21-review68/68-entry-frontal.png",
+          "sha256": "cf0950206c890f5d53d27c0ce379d152b55d6573aea82f7246517480dc36b341"
+        }
+      ],
+      "observed": [
+        "회색 석재 하부와 좁은 세로 창, 위층의 긴 유리 띠",
+        "벽돌과 흰 돌출 창 상자, 유리 계단실의 대각 흰 띠",
+        "College of Pharmacy 문구와 검은 가로 루버 차양",
+        "낮은 현관 계단과 점자블록, 파란 21동 안내판",
+        "밝은 보도블록과 짙은 블록, 경계석과 긴 배수 격자"
+      ],
+      "location": {
+        "lat": 37.45772098673885,
+        "lon": 126.95199563042914,
+        "gamePoint": [
+          318.13016044264003,
+          -962.6189122312405
+        ],
+        "source": "공유 URL의 좌표를 카카오 지도 공개 좌표 API와 프로젝트 좌표식으로 변환했다."
+      }
+    },
+    {
+      "url": "https://now.snu.ac.kr/category/3/284",
+      "publishedAt": "2023-12-04",
+      "eventAt": "2023-10-19",
+      "observed": [
+        "개관식 장소는 21동 현관이다.",
+        "넓은 석재 기둥과 차양 아래 짙은 루버가 보인다."
+      ],
+      "file": "artifacts/pharmacy21-review68/research-opening2023-0.png"
+    },
+    {
+      "url": "https://snupharm.snu.ac.kr/2000년-현재/",
+      "observed": [
+        "공식 연혁에서 2023년 8월 21동 리모델링 준공을 확인했다."
+      ]
+    }
+  ],
+  "excludedEvidence": {
+    "url": "https://airtech.lgeb2b.kr/installation/view/25/866?page=1",
+    "reason": "21동 제목의 대표 항공사진이 공식 고사장 안내의 20동 사진과 같아 21동 모델의 근거에서 제외했다."
+  },
+  "implemented": [
+    "북서면의 석재, 유리, 벽돌과 흰 창 상자",
+    "현관의 차양, 문틀과 짧은 현관 바닥",
+    "세 단 계단과 점자블록, 안내판과 석재 표지 형태",
+    "보도 무늬, 경계석과 배수 격자",
+    "기존 20동과 21동 사이 연결문 개구부 유지"
+  ],
+  "estimates": [
+    "4개 층 구획과 높이 14m는 외관 비례를 참고한 게임 근사다.",
+    "현관 중심 좌표와 폭, 바닥 표고와 각 단의 높이는 게임 지형에 맞췄다.",
+    "창 개수와 돌출 반복, 줄눈과 짙은 블록의 정확한 배열은 근사다.",
+    "지도 원본과 DEM은 보존하고 보도와 현관 주변 게임 지형만 국소 보정한다.",
+    "게임에 표시하는 북서쪽 전면을 지도 윤곽보다 도로 쪽으로 4.8m 옮겨 보도와 도로의 간격을 근사했다. 측량으로 확인한 이동량은 아니다."
+  ],
+  "unresolved": [
+    "남동쪽 후면과 남서쪽 끝벽의 현재 창과 출입구",
+    "옥상 구조와 설비",
+    "143동 방향 별도 연결교의 현재 접속부와 교각 위치",
+    "전체 실내와 실제 출입 가능 상태"
+  ],
+  "performance": "보도블록과 줄눈, 차양 루버, 창틀은 병합 기하에 포함하며 장식마다 별도 물리 객체를 만들지 않는다.",
+  "sourceImagesUsedAsTextures": false
+}

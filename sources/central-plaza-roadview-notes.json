@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05",
+  "scope": "학생회관 63동과 행정관 60동 사이의 보행 연결과 주변시설",
+  "status": "roadview-observed-partial",
+  "implementationChangedByThisReview": false,
+  "browserMethod": "전용 Chrome 연구 탭 395413504에서 cua_repl로 검색, 이동, 회전과 화면 캡처를 수행했다. 기존 사용자 탭과 게임 탭은 조작하지 않았다.",
+  "captureMethod": "각 파일은 직접 본 브라우저 화면의 UI 포함 스크린샷이다. 지도 서비스의 원본 파노라마 파일이나 생성 이미지가 아니다.",
+  "coordinateConvention": "기존 게임 데이터 D=(동, 위, 북). 화면에 표시된 방위와 지도 배치를 참고했으나 새 시설의 실측 좌표는 확보하지 않았다.",
+  "buildings": [
+    {
+      "number": "63",
+      "id": "way/167607356",
+      "name": "학생회관"
+    },
+    {
+      "number": "60",
+      "id": "way/167609409",
+      "name": "행정관"
+    }
+  ],
+  "observations": [
+    {
+      "id": "kakao-student-court-2011",
+      "provider": "Kakao Roadview",
+      "captureMonth": "2011-04",
+      "dateEvidence": "라이브 화면 왼쪽 위의 2011년 04월 표시를 직접 확인했다.",
+      "temporalScope": "과거 관찰이다. 2026년 외관이나 시설의 존치를 확정하지 않는다.",
+      "panoId": "1017104789",
+      "shareUrl": "https://kko.to/lNmulSDLZt",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1017104789&pan=76.0&tilt=-9.0&zoom=1&urlLevel=3&urlX=488960&urlY=1099990",
+      "screenshot": "../references/roadview-audit/2011-04/63-courtyard-north-step-ui.png",
+      "directlyViewed": true,
+      "observed": [
+        "학생회관 안쪽 광장에 넓은 외부 계단이 있다. 계단 양옆은 높은 불투명 벽이며 아래에는 별도 지상 출입과 통행 공간이 보인다.",
+        "계단 옆으로 지상 통로가 계속된다. 계단을 올라야만 북쪽 광장에 접근하는 구조는 아니다.",
+        "광장에 화단, 벤치, 두 개의 구형 등이 달린 가로등과 덩굴 시렁이 보인다."
+      ],
+      "uncertain": [
+        "계단의 실제 폭, 단수, 층고와 2026년 존치 여부는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "kakao-student-to-plaza-2011",
+      "provider": "Kakao Roadview",
+      "captureMonth": "2011-04",
+      "shareUrl": "https://kko.to/EJWquxlLm4",
+      "panoId": null,
+      "panoIdStatus": "공유 주소는 UI에서 읽었으나 이 주소를 별도로 열어 식별자를 확인하지 않았다.",
+      "screenshots": [
+        "../references/roadview-audit/2011-04/63-west-side-north-link-ui.png",
+        "../references/roadview-audit/2011-04/63-north-alley-toward-plaza-ui.png",
+        "../references/roadview-audit/2011-04/63-to-60-plaza-ramp-bollards-ui.png"
+      ],
+      "directlyViewed": true,
+      "sequence": "앞의 계단 시점에서 북쪽 화살표를 따라 연속 이동했다. 중간에 나침반 버튼으로 북쪽을 바라봤다. 공유 주소는 마지막 광장 진입부에 해당하며 중간 두 캡처의 식별자는 미확인이다.",
+      "observed": [
+        "건물 사이 지상 통로가 행정관 앞 광장 방향으로 열린다.",
+        "광장 진입부에는 낮은 계단과 경사로가 나란히 있고 금속 난간과 노란 볼라드가 보인다.",
+        "광장 가장자리의 수목과 화단 앞에 벤치가 연속으로 놓여 있다."
+      ],
+      "uncertain": [
+        "연속 이동은 학생회관 옆에서 광장 가장자리까지 확인했다. 행정관 문까지의 전체 보행은 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "kakao-student-north-piloti-2011",
+      "provider": "Kakao Roadview",
+      "captureMonth": "2011-04",
+      "shareUrl": "https://kko.to/xz6-e0EI5j",
+      "panoId": "1017104793",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1017104793&pan=67.0&tilt=-7.0&zoom=0&urlLevel=3&urlX=488995&urlY=1100077",
+      "screenshot": "../references/roadview-audit/2011-04/63-north-piloti-toward-60-ui.png",
+      "directlyViewed": true,
+      "observed": [
+        "학생회관 쪽 열린 하부에 원형 기둥과 부조가 있는 벽이 보인다.",
+        "짧은 경사로와 금속 난간이 열린 하부 바닥을 앞 보행로에 잇는다.",
+        "행정관 건물이 앞 광장 너머로 보인다."
+      ],
+      "uncertain": [
+        "부조, 난간과 하부 공간의 현재 존치 여부는 이 과거 영상만으로 확정하지 않는다."
+      ]
+    },
+    {
+      "id": "naver-administration-west-junction-2025",
+      "provider": "Naver Streetview",
+      "captureMonth": "2025-09",
+      "dateEvidence": "라이브 UI에 2025년 09월(최신)이 표시됐다. 해당 지점에서 제공하는 최신 영상이라는 뜻이며 2026년 현장 관찰은 아니다.",
+      "panoId": "NYSrsJIQuCQ8ogVSuOR7aA",
+      "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%96%89%EC%A0%95%EA%B4%80?c=15.98,0,0,0,adh&p=NYSrsJIQuCQ8ogVSuOR7aA,97,10,80,Float",
+      "screenshots": [
+        "../references/roadview-audit/2025-09/60-west-approach-gate-naver-ui.png",
+        "../references/roadview-audit/2025-09/60-west-campus-map-board-naver-ui.png",
+        "../references/roadview-audit/2025-09/60-west-junction-south-naver-ui.png"
+      ],
+      "directlyViewed": true,
+      "sequence": "같은 파노라마에서 행정관과 도서관 방향, 안내판 방향, 남쪽 갈림길 방향으로 회전했다. URL은 첫 방향을 기록하며 뒤 두 캡처의 정밀 회전값은 따로 확정하지 않았다.",
+      "observed": [
+        "행정관 앞에는 밝고 어두운 블록을 섞은 넓은 보행 포장이 있다. 차량 통로는 노란 선과 차단기로 구분된다.",
+        "차단기 옆 보행 경로는 열려 있다. 검은 세로형 가로등, 캠퍼스 안내판과 지붕이 있는 게시판이 보인다.",
+        "남쪽 갈림길에 노란 점자블록, 흰 횡단 표시와 노란 줄무늬 구간, 연석, 낮은 식재와 큰 수목이 보인다."
+      ],
+      "uncertain": [
+        "노란 줄무늬 구간의 구조 높이와 정식 시설 명칭은 확인하지 않았다.",
+        "차단기의 실제 작동과 보행 통행 규칙은 정지 영상으로 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "naver-student-information-court-2025",
+      "provider": "Naver Streetview",
+      "captureMonth": "2025-09",
+      "panoId": "8JWKc-rpjNS64cpqPGQVUA",
+      "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%96%89%EC%A0%95%EA%B4%80?c=15.98,0,0,0,adh&p=8JWKc-rpjNS64cpqPGQVUA,-128,10,80,Float",
+      "screenshots": [
+        "../references/roadview-audit/2025-09/63-102-north-service-court-naver-ui.png",
+        "../references/roadview-audit/2025-09/63-north-stone-steps-from-102-court-naver-ui.png",
+        "../references/roadview-audit/2025-09/63-northwest-stone-steps-naver-ui.png"
+      ],
+      "directlyViewed": true,
+      "sequence": "앞의 갈림길에서 남서쪽 서비스 도로를 클릭해 다음 구역으로 이동한 뒤 시점을 왼쪽으로 회전했다. 이동 중 중간 식별자가 잠깐 표시됐으므로 최종 안정된 화면의 식별자를 기록했다.",
+      "lastCaptureUrl": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%96%89%EC%A0%95%EA%B4%80?c=15.98,0,0,0,adh&p=8JWKc-rpjNS64cpqPGQVUA,142,10,80,Float",
+      "observed": [
+        "오른쪽 건물의 102 정보화본부 표지를 직접 읽었다. 건물 앞 서비스 마당에는 주차 구획과 원형 화단이 있다.",
+        "맞은편 긴 몸체 앞 잔디 경사면에 좁은 돌계단과 검은 금속 난간이 있다. 계단 아래는 마당 가장자리 포장에, 위는 수목 사이 보행 공간에 닿는다.",
+        "긴 몸체에는 밝은 수평 띠와 수직 구획, 갈색 벽, 반복 창이 보인다. 하층은 수목에 일부 가려져 있다."
+      ],
+      "inferred": [
+        "2025년 돌계단 뒤 긴 몸체는 확대 지도와 주변 25동의 상대 배치에 따라 24동으로 정정한다. 정확한 계단 좌표는 미확정이다."
+      ],
+      "uncertain": [
+        "계단 위를 클릭해도 다른 파노라마로 이동하지 않았다. 상단부터 광장까지의 전체 보행 연결은 최신 영상으로 연속 확인하지 못했다.",
+        "계단의 정확한 좌표, 폭, 단수와 경사는 측정하지 않았다."
+      ],
+      "correction": {
+        "reviewedAt": "2026-11-05T10:42:08.284Z",
+        "evidence": "sources/student-north-approach-roadview-notes.json",
+        "buildingId": "way/238937635",
+        "buildingNumber": "24",
+        "statement": "같은 파노라마의 확대 소지도에서 102동 맞은편 긴 몸체가 24동으로 표시되고 63동은 동쪽에 따로 보인다. 뒤쪽 25동과의 배치도 맞으므로 돌계단을 24동 서측 북쪽 구간으로 재식별한다. 건물 번호 표지를 직접 읽은 결과는 아니다.",
+        "coordinatesVerified": false,
+        "coordinateLimit": "계단 상하단의 정확한 지도 좌표는 미확정이며 게임 배치 후보와 사진 실측을 구분한다.",
+        "filenamesPreserved": true,
+        "previousInference": [
+          "기존 지도에서 학생회관과 102동의 상대 위치, 이동 방향을 대조하면 맞은편 긴 몸체와 돌계단은 학생회관 북서쪽에 대응한다. 이 화면에서 63 번호 표지를 직접 읽은 것은 아니다."
+        ]
+      }
+    }
+  ],
+  "currentCodeComparison": [
+    {
+      "topic": "학생회관 남서쪽 큰 계단",
+      "code": "src/studentCenterLandmark.ts",
+      "current": "남서쪽 24단 외부 계단과 아래 출입구, 접근판을 별도로 생성하며 historicalPhoto=true와 currentExteriorStairVerified=false를 기록한다.",
+      "comparison": "2011-04 실제 로드뷰에서 큰 계단과 그 옆 지상 통로를 확인했다. 과거 사진 근사라는 현행 한계는 유지해야 한다.",
+      "action": "최신 영상 없이 24단, 폭 8.5m나 현재 존치를 실측 확인으로 바꾸지 않는다."
+    },
+    {
+      "topic": "102동 맞은편 24동 서측 돌계단",
+      "code": "src/studentCenterLandmark.ts; src/fullCampus.ts",
+      "current": "학생회관 전용 모듈에는 남서 계단과 하부 출입 연결이 있고, 별도 북서 돌계단을 생성하는 구간은 없다. fullCampus의 일반 지도 경로는 주로 지형을 따르는 리본 표면으로 표시한다.",
+      "comparison": "2025-09 영상의 돌계단과 난간은 24동 서측 북쪽 구간으로 재식별했다. 기존 학생회관 북서쪽 추정을 구현 근거로 사용하지 않는다.",
+      "action": "새 근거 메모에서 24동 서측의 게임 배치 후보와 실제 사진의 형태 관찰을 분리한다. 상단 이후 연결과 정확한 폭, 단수, 높이는 미확인으로 유지한다.",
+      "correction": {
+        "reviewedAt": "2026-11-05T10:42:08.284Z",
+        "evidence": "sources/student-north-approach-roadview-notes.json",
+        "buildingId": "way/238937635",
+        "buildingNumber": "24",
+        "statement": "같은 파노라마의 확대 소지도에서 102동 맞은편 긴 몸체가 24동으로 표시되고 63동은 동쪽에 따로 보인다. 뒤쪽 25동과의 배치도 맞으므로 돌계단을 24동 서측 북쪽 구간으로 재식별한다. 건물 번호 표지를 직접 읽은 결과는 아니다.",
+        "coordinatesVerified": false,
+        "coordinateLimit": "계단 상하단의 정확한 지도 좌표는 미확정이며 게임 배치 후보와 사진 실측을 구분한다.",
+        "filenamesPreserved": true,
+        "previousTopic": "학생회관 북서쪽 돌계단",
+        "previousAction": "주변 보행로 작업 전에 102동과 학생회관의 외곽을 기준으로 위치를 맞추고, 실제 지형 높이와 보행 통과를 검사할 후보이다. 이번에는 구현하지 않았다."
+      }
+    },
+    {
+      "topic": "행정관 앞 광장 주변시설",
+      "code": "src/administrationLandmark.ts; src/fullCampus.ts",
+      "current": "행정관 모듈은 중앙 현관의 바닥, 경사로와 양측 계단, 남서쪽 열린 통로 바닥을 생성한다. 이번에 본 광장 갈림길의 차단기, 안내판과 게시판을 별도로 배치하는 코드는 확인하지 못했다.",
+      "comparison": "2025-09 영상은 차량 통로와 보행 포장, 안내판과 게시판, 점자블록과 식재 경계의 분리를 보여 준다.",
+      "action": "보행 연결을 먼저 맞춘 뒤 주변시설을 추가할 후보이다. 건물 현관과 광장 차량 차단기를 같은 출입구로 합치지 않는다."
+    },
+    {
+      "topic": "행정관 열린 통로",
+      "code": "src/administrationLandmark.ts",
+      "current": "local x=-23~-11에 폭 12m의 통로를 두고 지형을 따르는 바닥을 생성한다. 지도 footway way/167984630/69와 대조할 수 있다.",
+      "comparison": "이번 최신 시점은 행정관 앞과 서쪽 연결 구역을 보여 주지만 통로 내부를 통과해 관찰하지는 않았다.",
+      "action": "현재 통로의 폭과 종단 높이가 실제와 맞는다는 검증으로 사용하지 않는다."
+    }
+  ],
+  "dimensions": {
+    "measuredFromRoadview": false,
+    "newExactCoordinates": false,
+    "note": "사진의 상대 배치만 관찰했다. 코드의 계단 폭, 단수, 통로 폭과 높이는 게임 치수이며 현장 실측값이 아니다."
+  },
+  "limits": [
+    "두 서비스의 촬영월을 섞지 않는다. 2011-04 카카오 자료와 2025-09 네이버 자료는 서로 다른 시기의 관찰이다.",
+    "학생회관과 행정관 사이 전체 보행망, 모든 계단, 건물 내부와 반대편 입면을 확인한 것은 아니다.",
+    "카카오 urlX와 urlY는 서비스 좌표다. 측량 좌표로 해석하지 않는다.",
+    "이 메모는 실사와 코드의 읽기 전용 대조다. 게임의 브라우저 렌더링, 물리 보행이나 휴대전화 성능 검사를 수행한 결과가 아니다."
+  ],
+  "sourceHashes": {
+    "src/studentCenterLandmark.ts": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+    "src/administrationLandmark.ts": "615b389ecdf118fb4b06cb361e1d319a85eeb0053bc5a57be0948f522f4b7e81",
+    "src/fullCampus.ts": "73fdc961bb0dac3aa167acc000bb98f182098a8ad0567ea610b568a86d1f219a",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c"
+  },
+  "captureHashes": {
+    "../references/roadview-audit/2011-04/63-courtyard-north-step-ui.png": "1d477affd87b98e4639c9707ae581ba0bce3a3d7487bc88fb1a0dc72217a8985",
+    "../references/roadview-audit/2011-04/63-west-side-north-link-ui.png": "4b52c982c9d3a175b23f62c12a33cbcb0e48c5f17c31000b43494e5948ed4502",
+    "../references/roadview-audit/2011-04/63-north-alley-toward-plaza-ui.png": "96cb7763cf509081d073bd061528294dcb974c4d92631eaa13f94ff6c1c8c47b",
+    "../references/roadview-audit/2011-04/63-to-60-plaza-ramp-bollards-ui.png": "15a30b73983cb35c851d824d26a21edff9f338c48cec06df8c19997439d10073",
+    "../references/roadview-audit/2011-04/63-north-piloti-toward-60-ui.png": "23f47f2459160350670058cf435acbc0e4742d4628ff2df6a618d4a068d5ad77",
+    "../references/roadview-audit/2025-09/60-west-approach-gate-naver-ui.png": "bcacb12b8b7268b4910c824c278c369317f58fc323d58eb98d7df4478b2a3d05",
+    "../references/roadview-audit/2025-09/60-west-campus-map-board-naver-ui.png": "d09d2e71a6657708c12ae24f320d84127cc8e442f4a3823cc32d423dbcf11085",
+    "../references/roadview-audit/2025-09/60-west-junction-south-naver-ui.png": "03dcf72049222eef2ac3c14f9ea52108da8f341418d11e56cff7966666ae3c0f",
+    "../references/roadview-audit/2025-09/63-102-north-service-court-naver-ui.png": "b47ca7f66b5594b904004b52957e6c78bbc53bba7dee1eaf220c242ad7b7ea93",
+    "../references/roadview-audit/2025-09/63-north-stone-steps-from-102-court-naver-ui.png": "9a497e9c25cc75699f7207d0e635017751dd73f04823bb077aa0144cd14d786a",
+    "../references/roadview-audit/2025-09/63-northwest-stone-steps-naver-ui.png": "16aca53139b3a5d4b44e836cfa989b6c162163fd0c8fbfe0ce970b98e9703ddc"
+  },
+  "locationCorrection": {
+    "reviewedAt": "2026-11-05T10:42:08.284Z",
+    "evidence": "sources/student-north-approach-roadview-notes.json",
+    "buildingId": "way/238937635",
+    "buildingNumber": "24",
+    "statement": "같은 파노라마의 확대 소지도에서 102동 맞은편 긴 몸체가 24동으로 표시되고 63동은 동쪽에 따로 보인다. 뒤쪽 25동과의 배치도 맞으므로 돌계단을 24동 서측 북쪽 구간으로 재식별한다. 건물 번호 표지를 직접 읽은 결과는 아니다.",
+    "coordinatesVerified": false,
+    "coordinateLimit": "계단 상하단의 정확한 지도 좌표는 미확정이며 게임 배치 후보와 사진 실측을 구분한다.",
+    "filenamesPreserved": true
+  }
+}

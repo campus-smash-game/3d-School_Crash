@@ -1,0 +1,317 @@
+{
+  "status": "integrated-partial",
+  "landmark": "teaching-center",
+  "buildingId": "way/193893591",
+  "buildingNumber": "61",
+  "modelFile": "src/teachingCenterLandmark.ts",
+  "api": "createTeachingCenterLandmark(scene, building, profile, heightAt)",
+  "reviewedAt": "2026-11-05T04:03:15.556Z",
+  "scope": "61동의 흰 패널 몸체, 청록색 돌출 유리면, 하부 기둥층과 루버, 후퇴한 현관, 열린 테라스와 차양을 절차 기하로 구현했다. 사진 관찰과 공식 시설 안내, 추정 치수 및 게임 지형 접속을 구분한다.",
+  "officialFacts": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=77",
+      "apiUrl": "https://map.snu.ac.kr/api/building/77.action?convinType=N",
+      "local": "artifacts/teaching-center-review/building-decoded.json",
+      "fact": "공식 지도 77번 시설은 61동 기초교육원으로 등록돼 있다. 편의시설 목록은 지상 2층 학부대학 행정실과 지상 3층 로비 AED를 안내한다. 이를 전체 층수의 확정 근거로 사용하지 않는다."
+    },
+    {
+      "url": "https://cls.snu.ac.kr/notice/document/78262/?mod=document&uid=79725",
+      "publishedAt": "2025-02-28",
+      "fact": "학부대학 종합행정실 안내는 교무팀, 교육팀, 기획팀과 서무팀의 위치를 61동 201호로 명시한다."
+    },
+    {
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=152784&md=v",
+      "publishedAt": "2025-03-04",
+      "fact": "서울대는 2025년 3월 7일 학부대학 출범식을 예고했다. 현재 사용 명칭을 판단하는 자료이며 외관 공사나 건물 높이의 근거는 아니다."
+    }
+  ],
+  "photoSources": [
+    {
+      "file": "../references/buildings/photos/077-61.jpg",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000075.jpg",
+      "observation": "흰색 세로 패널, 후퇴한 유리 현관과 넓은 계단, 열린 테라스의 차양, 오른쪽 청록 유리 몸체와 아래 기둥층을 직접 확인했다.",
+      "directlyViewed": true,
+      "sha256": "0dafdaafc0ff2710386675e5fe15a590cbf6cccfc94b84c5a9e280b59084f2ff",
+      "photoDate": "unknown"
+    },
+    {
+      "file": "artifacts/teaching-center-review/vision-photo-0.jpeg",
+      "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/23rd_vision_change.pdf",
+      "page": 11,
+      "observation": "PDF 11쪽의 넓은 전경에서 긴 유리 몸체 아래 열린 기둥층, 그 아래 낮은 루버면, 분홍색 둥근 옥탑과 옥상 설비를 직접 확인했다. 문서 게시 경로의 연도를 사진 촬영 연도로 보지 않는다.",
+      "directlyViewed": true,
+      "sha256": "4e80bab4a6905d2cc99c10e632d8a2741d49fbbb174bf8b41dc12e5497517ffa",
+      "photoDate": "unknown"
+    },
+    {
+      "file": "artifacts/main-library-review/sky11_10820-html5-2.jpg",
+      "url": "https://lib.snu.ac.kr/vr/indexdata/sky11_10820/html5/2.jpg",
+      "observation": "화면 왼쪽 아래에서 분홍 옥탑과 긴 유리 몸체를 대조했다. 건물 일부가 화면 밖에 있어 정확한 각 면의 지도 대응을 확정하는 근거로 쓰지 않는다.",
+      "directlyViewed": true,
+      "sha256": "991f0022ba744e6e089f943fe19f4cd53e57aee6fe87916b4d8aa5d559221c08",
+      "photoDate": "unknown"
+    },
+    {
+      "file": "artifacts/main-library-review/sky4_9016-html5-1.jpg",
+      "url": "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/1.jpg",
+      "observation": "인접 도서관과 비교해 61동 후보의 지붕을 대조했다. 해상도와 가림 때문에 상세 치수는 읽지 않았다.",
+      "directlyViewed": true,
+      "sha256": "939ccac77386c47d504a2db921e721624afb051ba7cfc2911057a6d76980d2b8",
+      "photoDate": "unknown"
+    }
+  ],
+  "identity": {
+    "originalId": "way/193893591",
+    "originalPointCount": 13,
+    "officialMapSequence": 77,
+    "originalFootprintPreserved": true,
+    "terrainElevationTagUsed": false,
+    "baseMethod": "원본 외곽의 중복 닫힘점을 제외한 꼭짓점 평균 XZ에서 실제 heightAt을 읽는다.",
+    "baseHeightAt": 46.049587778501866
+  },
+  "orientation": {
+    "status": "estimated",
+    "origin": [
+      459.1,
+      -700.82
+    ],
+    "axis": [
+      0.847737951893134,
+      -0.5304152759112752
+    ],
+    "front": "-u, 서북측 긴 변",
+    "evidence": "근경의 왼쪽 높은 흰 몸체와 오른쪽 긴 유리 몸체를 H 반사 뒤 +v와 -v에 대응시켰다. 두 공식 항공에서 분홍 옥탑과 남쪽 유리 몸체의 관계가 이 해석에 모순되지는 않는다. 촬영 좌표와 상세 평면도가 없어 정확한 면 대응은 추정이다."
+  },
+  "dimensions": {
+    "levels": 4,
+    "levelsEstimated": true,
+    "officialUsedFloors": [
+      2,
+      3
+    ],
+    "mainRoof": 14,
+    "glassRoof": 10.2,
+    "roofTowerTop": 15.2,
+    "heightEstimated": true,
+    "entryStair": {
+      "steps": 8,
+      "tread": 0.625,
+      "rise": 0.17830254159338843,
+      "estimated": true
+    },
+    "galleryFloor": 1.9,
+    "galleryCeiling": 4.9,
+    "terraceFloor": 4.3,
+    "canopyUnderside": 9.8,
+    "unit": "metres relative to the current heightAt datum"
+  },
+  "implementation": {
+    "renderMeshes": 3,
+    "parts": 504,
+    "triangles": 20970,
+    "triangleCriterion": "cross.lengthSq() > 1e-12",
+    "mainFeatures": [
+      "원본 오목 외곽을 삼각 분할하고 높이가 다른 지붕의 경계를 얇은 세로 벽으로 닫았다.",
+      "현관 문과 짧은 로비, 여덟 단 계단 및 지형 연결판을 분리했다.",
+      "낮은 루버면, 그 위의 열린 기둥층, 후퇴한 유리와 돌출 상부 유리를 각각 만들었다.",
+      "테라스 바닥과 뒤 유리, 차양판, 노출 리브, 기둥과 난간을 독립 부품으로 만들었다.",
+      "분홍 옥탑은 16개 곡면 근사 조각으로 만들고 지붕 설비를 단순화했다.",
+      "숫자 61은 사진을 배포하지 않고 기하 획으로 만들어 H 반사 뒤 읽히도록 배치했다."
+    ],
+    "collision": "벽과 유리 구획은 얇은 OBB, 잘린 지붕판과 경사진 접속판은 convex proxy를 사용한다. 열린 기둥층이나 차양 전체를 한 상자 충돌체로 만들지 않는다.",
+    "textures": "공식 사진을 모델 텍스처로 복제하거나 배포하지 않는다."
+  },
+  "verification": {
+    "own": {
+      "command": "node scripts/verify-teaching-center.mjs",
+      "artifact": "artifacts/teaching-center-test/results.json",
+      "passed": 13,
+      "failed": 0,
+      "scope": "실제 모델, Three.js 수학 투영, Rapier와 현재 DEM을 검사했다. 자체 폴더에서 모듈을 컴파일한다.",
+      "metrics": {
+        "parts": 504,
+        "triangles": 20970,
+        "renderMeshes": 3
+      },
+      "checks": [
+        {
+          "name": "original footprint and current terrain are preserved with estimated floors separate from official uses",
+          "status": "PASS"
+        },
+        {
+          "name": "actual roof geometry keeps the concave footprint and closes changes in roof height",
+          "status": "PASS"
+        },
+        {
+          "name": "actual glass triangles stay above processed DEM",
+          "status": "PASS"
+        },
+        {
+          "name": "recessed entrance and eight broad stairs support actual DEM ascent and descent at 6m/s",
+          "status": "PASS"
+        },
+        {
+          "name": "front door destruction opens the short lobby and reset closes it",
+          "status": "PASS"
+        },
+        {
+          "name": "lower gallery is open above a distinct louver basement and below projecting glazing",
+          "status": "PASS"
+        },
+        {
+          "name": "open terrace remains empty beneath ribbed canopy with separate supports",
+          "status": "PASS"
+        },
+        {
+          "name": "front glass frames are exposed and collision stays within 8cm of actual glass",
+          "status": "PASS"
+        },
+        {
+          "name": "loaded and unloaded surface rays match across component types",
+          "status": "PASS"
+        },
+        {
+          "name": "partial destruction remains visible at 279 281 and 900m and resets four times",
+          "status": "PASS"
+        },
+        {
+          "name": "whole destruction and restoration preserve every vertex",
+          "status": "PASS"
+        },
+        {
+          "name": "one H reflection preserves logical shots and readable number 61 in an actual camera",
+          "status": "PASS"
+        },
+        {
+          "name": "callback elevation and reversed winding preserve placement",
+          "status": "PASS"
+        }
+      ],
+      "glass": {
+        "samples": 36960,
+        "minClearance": 0.1631375460786586
+      },
+      "windowCollision": {
+        "externalRays": 18,
+        "maxSurfaceDifference": 0.05660297540504622,
+        "scope": "전면 유리와 창틀의 18개 외부 광선 표본이다. 모든 면의 최대 오차를 뜻하지 않는다."
+      },
+      "loadedUnloaded": {
+        "rays": 493,
+        "maxDistanceDifference": 0.00021244287491128944
+      },
+      "walk": "계단 중앙과 폭 양끝 안쪽 0.7m에서 6m/s로 상승과 하강했다. 현관 문 파괴 뒤 짧은 로비 끝 local u≈8m까지 진입하고 reset 후 문이 다시 막는 것을 확인했다.",
+      "farDamage": {
+        "distances": [
+          279,
+          281,
+          900
+        ],
+        "resetCycles": 4
+      },
+      "roof": {
+        "insideSamples": 408,
+        "emptySamples": 429,
+        "verticalStepRays": 4
+      },
+      "hReflection": "실제 PerspectiveCamera 투영에서 6의 화면 x가 1보다 작다. 표지 획의 노출과 반사 전후 유리 광선, 논리 충돌체의 일치를 확인했다.",
+      "sourceStillMatches": true
+    },
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "status": "passed"
+    },
+    "independent": {
+      "status": "passed",
+      "artifact": "artifacts/central65-61-independent-review/61/results.json",
+      "passed": 10,
+      "failed": 0,
+      "sourceStillMatches": true,
+      "glass": {
+        "samples": 17600,
+        "minClearance": 0.17062203816284693
+      },
+      "surfaceRays": {
+        "count": 79,
+        "maxRenderCollisionDifference": 0.09905476570125804,
+        "maxLoadedUnloadedDifference": 0.00003759105961820275,
+        "skipped": {
+          "small": 24,
+          "endFace": 70,
+          "occluded": 79
+        }
+      },
+      "scope": "공식 사진과 최종 CPU 도식을 직접 대조했다. 실제 유리 입면, 하부 통로, 테라스, 계단 왕복과 문 파괴 후 로비, 숫자 획과 H, 원거리 파괴/복원을 독립 검사했다. 별도의 fullCampus 검사에서 실제 빠른 이동의 접지와 우회 접근, 부분파괴와 복원도 확인했다.",
+      "combinedArtifact": "artifacts/central65-61-independent-review/results.json",
+      "combinedSha256": "3543190483c1ceed57ddb39b18060a4d7ce8c4a3084b50b69da4910f96fcb734",
+      "combinedPassed": 20,
+      "combinedFailed": 0,
+      "basicPassed": 8,
+      "fullCampusPassed": 2,
+      "supplementalArtifact": "artifacts/central65-61-independent-review/supplemental-results.json",
+      "arrival": "실제 도착점은 현관 반대편이며 안전하게 접지한다. 건물을 가로지르는 최초 직선은 벽에 막혔다. 남쪽 way/456540201/321 및 way/455468343/221과 서측 way/424949438/168의 실제 지도 좌표를 따라 우회한 뒤 계단 앞까지 왕복했다. 지도 경로와 계단 사이 마지막 연결은 게임 보행 표본이며 현장 보행 동선의 실측은 아니다.",
+      "nameSprite": "실제 Three.js 셰이더의 행렬과 UV 계산을 화면 비율 두 가지에서 수치로 검사했다. Canvas 글자 그리기는 대역이므로 실제 글꼴 픽셀과 GPU 렌더링은 미확인이다.",
+      "preservedFailures": [
+        "artifacts/central65-61-independent-review/61/initial-endface-origin-results.json",
+        "artifacts/central65-61-independent-review/initial-direct-route-supplemental-results.json"
+      ]
+    },
+    "cpuPreview": {
+      "status": "directly-reviewed",
+      "file": "artifacts/teaching-center-review/final-candidate/teaching-center.png",
+      "method": "artifacts/teaching-center-review/final-candidate/preview-method.json",
+      "provenance": "artifacts/teaching-center-review/final-candidate/provenance.json",
+      "modelSha256": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f",
+      "compiledSha256": "86c9754d56ffcf42e657f0ea290927ec77952ae1875b90b7f1ca17116b618c9f",
+      "sourceStillMatches": true,
+      "renderMeshes": 3,
+      "triangles": 20970,
+      "comparison": "공식 근경과 넓은 전경에 대조해 높은 흰 패널, 돌출 유리 몸체, 열린 테라스, 분홍 옥탑과 숫자 61을 확인했다. 높이와 상세 치수, 면 대응의 추정 한계는 유지한다.",
+      "limit": "Current source geometry with one H reflection, CPU orthographic projection and actual terrain. No WebGL, physical-phone, browser or GPU verification."
+    },
+    "mobile": {
+      "status": "not-validated",
+      "limit": "실제 휴대전화 FPS, GPU, 터치와 브라우저 작동을 확인하지 않았다."
+    },
+    "fullSuite": {
+      "status": "passed",
+      "command": "npm test",
+      "scripts": 42,
+      "passed": 424,
+      "failed": 0,
+      "exitCode": 0,
+      "artifact": "artifacts/release-18-verification.log",
+      "sha256": "bd402c83f78f4488232c1584af9372ee4b4a79e3fa25d9a0456b2813b7e9d836",
+      "completedAt": "2026-11-05T03:59:37.127Z",
+      "completion": "artifacts/central65-61-review/suite-completion.json",
+      "scope": "현재 전체 소스의 Node, TypeScript, 기하와 물리 회귀 검사다. 실제 브라우저나 휴대전화 검사가 아니다."
+    }
+  },
+  "limitations": [
+    "전체 4층, 본체 14m, 유리 몸체 10.2m와 옥탑 15.2m는 공식 확정값이 아니다. 공식 안내의 2층과 3층 사용 사실과 구분한다.",
+    "사진 촬영 시점과 세부 창 치수는 확인하지 못했다. 현재 외관 개보수의 완료 여부도 공식 자료로 확정하지 않았다.",
+    "사진 밖 측면과 후면의 창 반복은 단순 근사이며 실측 입면 복원이 아니다.",
+    "출입구 계단과 연결판 높이는 현재 게임 DEM을 따라 정했다. 실제 현장 계단의 단수나 단높이를 복원한 것이 아니다.",
+    "실내는 진입을 확인할 수 있는 짧은 로비만 만들었다. 강의실, 전체 층별 동선과 내부 계단은 재현하지 않았다.",
+    "기둥층의 공간을 보존했지만 주변 전체 보행로에서 그 데크까지의 실제 진입 동선은 복원하거나 검증하지 않았다.",
+    "독립 검사에서 실제 입면의 유리와 충돌 프록시 사이 최대 차이는 약 9.91cm였다. 자체 전면 표본의 5.66cm와 검사 범위를 구분한다."
+  ],
+  "sourceHashes": {
+    "src/teachingCenterLandmark.ts": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f",
+    "scripts/verify-teaching-center.mjs": "a169bb340bfe99141579326358892ffdac7b96c2f36eff9660003acaa6e83b35",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+    "src/terrain.ts": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "artifacts/teaching-center-test/results.json": "7d311289f701493d78cb40aee52c969887120b68e766922e02d985613ca7ba98",
+    "artifacts/teaching-center-review/final-candidate/teaching-center.png": "c8c38ceb8b164bdfa4646690b29ebdffa6dd377fa90b077db83a7fcab92c039c",
+    "artifacts/teaching-center-review/final-candidate/preview-method.json": "58fe7d5f204008b8e7208c0c3fe8c08ffc39dad02d6d1de297d19a4debf5f4c3",
+    "artifacts/teaching-center-review/final-candidate/provenance.json": "aeacff0cb1932b87175293d6d1bc8163bd64b0acd1c9180ed7ce11590c96b463",
+    "artifacts/central65-61-independent-review/61/results.json": "6c3a545a8f373c1353fa42bc1a07c2ca71277b5086bf3f0f46128065afcdf780",
+    "artifacts/release-18-verification.log": "bd402c83f78f4488232c1584af9372ee4b4a79e3fa25d9a0456b2813b7e9d836",
+    "artifacts/central65-61-review/suite-completion.json": "d0850589ee1b277167ad3907fd9dc34a157b5aab9d056a72d870a3e0e212308f",
+    "artifacts/central65-61-independent-review/results.json": "3543190483c1ceed57ddb39b18060a4d7ce8c4a3084b50b69da4910f96fcb734",
+    "artifacts/central65-61-independent-review/supplemental-results.json": "9d66c1911e44299f16c39a4301c08931779121ffbf2859a25f128423c6ca954e"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-partial-photo-reference",
+  "buildingIds": [
+    "way/167983080",
+    "way/167983609"
+  ],
+  "buildingNumbers": [
+    "2",
+    "3"
+  ],
+  "scope": "2동과 3동 사이의 외부 계단, 유리 연결교와 2동 동쪽 출입구 주변을 보완했다.",
+  "references": [
+    {
+      "kind": "official-newsletter-photo",
+      "url": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+      "title": "인문대 소식 제62호, 2026년 1호",
+      "published": "2026-04-20",
+      "printedPage": 27,
+      "pdfPage": 14,
+      "localPhoto": "artifacts/humanities23-review/47-newsletter-007.png",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "2동 번호가 붙은 벽돌 끝벽과 흰 골조",
+        "두 발코니와 아래쪽 출입문",
+        "녹색 유리 창이 있는 흰 연결교와 상부 난간",
+        "연결교 아래 열린 통로와 바깥 계단",
+        "벽 게시판, 벤치, 자전거 거치대와 공유 이동수단",
+        "회색 보도블록, 갈색 띠 무늬와 노란 점자블록"
+      ],
+      "limits": [
+        "사진 촬영일과 실측 치수는 미확인이다.",
+        "사진 속 한 층의 유리 연결교를 구현했다. 다른 층 연결과 실내 평면은 확인하지 못했다.",
+        "게시물 문구와 현재 공유 이동수단 업체를 확인하지 못해 복사하지 않았다."
+      ],
+      "sha256": "4fd6df2ec24b2fab77832a24d9b5290c5f9152973aee118425fdde4a7ec99ac8"
+    },
+    {
+      "kind": "official-map-photo",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000002.jpg",
+      "localPhoto": "../references/buildings/photos/002-2.jpg",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "2동의 흰 수평 띠와 벽돌 면",
+        "반대편 연결부 아래 계단"
+      ],
+      "limits": [
+        "이번 보완은 동쪽 끝벽과 연결부에 한정하며 건물 전체 입면 검수를 뜻하지 않는다."
+      ],
+      "sha256": "84855adcbff1bcad94bcb579d91545ed5620beb51100a51c945c48d680519347"
+    },
+    {
+      "kind": "historical-official-article",
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=79798&md=v",
+      "title": "관악캠퍼스의 비밀, 관악은 호그와트?",
+      "published": "2008-04-04",
+      "review": "2동과 3동의 층별 연결을 설명하는 과거 기사다. 현재 층별 통행 상태로 단정하지 않았으며 이 기사만으로 추가 연결교를 만들지 않았다."
+    },
+    {
+      "kind": "official-entrance-notice",
+      "url": "https://humanities.snu.ac.kr/community/notice?bbsidx=3628&md=v",
+      "published": "2025-11-14",
+      "review": "2동 1층 자하연 방향 입구가 있다는 안내를 확인했다. 이번 동쪽 출입문과 같은 입구로 간주하지 않았다. 해당 북쪽 입구의 정확한 문 위치와 실내 연결은 후속 검토 대상이다."
+    }
+  ],
+  "mapReview": {
+    "provider": "Kakao Map",
+    "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%EC%9D%B8%EB%AC%B8%EA%B4%802",
+    "satelliteSetting": "최근사진",
+    "captureDate": null,
+    "directBrowserUIObserved": true,
+    "roadviewCoverageImage": "artifacts/humanities23-review/47-kakao-coverage-detail.png",
+    "review": "확대 위성 지도에서 2동 동쪽 포장 광장과 연결부 배치를 대조했다. 로드뷰 촬영선 표시에서 이 내부 공간의 촬영선을 확인하지 못했다. 로드뷰 장면을 직접 관측한 기록으로 집계하지 않는다."
+  },
+  "mappedTopology": {
+    "source": "sources/campus.osm",
+    "stairWay": "456540177",
+    "stairTag": {
+      "highway": "steps",
+      "incline": "up"
+    },
+    "stairRoad": "way/456540177/311",
+    "bridgeWay": "167983607",
+    "bridgeTag": {
+      "bridge": "viaduct",
+      "highway": "footway",
+      "layer": "5"
+    },
+    "bridgeRoad": "way/167983607/58",
+    "limits": "layer=5는 층수나 높이 5m로 해석하지 않았다. 원본 선의 끝점과 건물 외곽 사이의 짧은 연결 구간은 근사했다."
+  },
+  "implementation": {
+    "source": "src/humanities23Connection.ts",
+    "site": "src/humanities23Site.ts",
+    "dimensionsEstimated": true,
+    "bridgeHeightEstimated": true,
+    "entryPositionEstimated": true,
+    "stairCountEstimated": true,
+    "courtBoundaryEstimated": true,
+    "rawTerrainChanged": false,
+    "rawRoadsChanged": false,
+    "photoTexturesCopied": false,
+    "wholeBuildingReconstructed": false,
+    "upperBridgeAccessFromGroundImplemented": false,
+    "limits": [
+      "상부 연결교는 건물 안쪽의 짧은 공간까지만 이어진다. 지상 입구에서 연결교로 올라가는 실내 동선은 구현하지 않았다.",
+      "2동 동쪽 출입문 안쪽은 짧은 공간이며 건물 전체 실내가 아니다.",
+      "포장 무늬와 점자블록 위치, 난간 치수는 사진을 참고한 근사다.",
+      "공유 자전거와 킥보드, 장애인 주차 표시 등 사진 속 모든 시설을 구현한 것은 아니다.",
+      "원본 DEM의 낮은 기울기에 맞춰 계단을 만들었다. 실제 단수와 높이를 재현했다고 보증하지 않는다."
+    ],
+    "geometry": {
+      "meshes": 2,
+      "triangles": 10708,
+      "colliders": 340,
+      "textures": 0
+    }
+  },
+  "validation": {
+    "file": "artifacts/humanities23-access-test/results.json",
+    "realPhoneFrameRateMeasured": false,
+    "groups": [
+      {
+        "name": "2/3 source scope, batch budget and preservation of unrelated buildings and terrain",
+        "status": "PASS"
+      },
+      {
+        "name": "mapped outdoor stair and underbridge passage work both ways at desktop and mobile speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "eastern entrance and upper bridge portals remain physically open",
+        "status": "PASS"
+      },
+      {
+        "name": "stair and bridge floor agree with physics and support distant damage and reset",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherBuildingParts": 37414,
+    "roadPreservation": {
+      "campus-road-surface": {
+        "unchangedTriangles": 28654,
+        "declaredBounds": {
+          "minX": 426.052664487691,
+          "maxX": 460,
+          "minZ": -690,
+          "maxZ": -656.063928309342
+        },
+        "originalBoundaryTriangles": 8
+      },
+      "campus-pedestrian-surface": {
+        "unchangedTriangles": 21054,
+        "declaredBounds": {
+          "minX": 426.052664487691,
+          "maxX": 460,
+          "minZ": -690,
+          "maxZ": -656.063928309342
+        },
+        "originalBoundaryTriangles": 36
+      }
+    }
+  }
+}

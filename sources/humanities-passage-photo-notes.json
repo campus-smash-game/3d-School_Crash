@@ -1,0 +1,767 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T08:13:26.762Z",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/167984624",
+  "scope": "1동 지도 통과길의 입구와 포장 마감을 보완했다. 다른 인문대 건물과 중정 전체를 완성한 것은 아니다.",
+  "priorRecord": "sources/humanities-passage-model-notes.json",
+  "source": {
+    "url": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+    "title": "인문대 소식 제62호, 2026년 1호",
+    "published": "2026-04-20",
+    "captureDate": null,
+    "pdfPage": 13,
+    "printedPage": 25,
+    "article": "시간과 기억이 머무는 서울대 인문대",
+    "photoCredit": "이동훈",
+    "localPdf": "artifacts/humanities-construction-review/43-humanities-newsletter-63.pdf",
+    "sha256": "8280195a525fee0481c6dfe33269239761112c89187bbb131cec158807b7071f",
+    "render": "artifacts/humanities-construction-review/43-newsletter-page-13.png",
+    "directlyViewedBy": "root",
+    "retrieval": "공개 첨부를 일반 HTTP 요청으로 내려받았다. 웹 도구의 첨부 열기는 404였지만 저장된 PDF의 표지, 발행 정보와 실제 사진을 직접 확인했다."
+  },
+  "observed": [
+    "흰색에 가까운 콘크리트 입구와 세로 기둥",
+    "입구 양옆의 초록색 창과 낮은 돌 마감",
+    "입구 위층 창의 세로 창살",
+    "통로의 갈색 직사각형 포장과 입구의 짧은 노란 유도블록",
+    "입구 오른쪽 파란 안내판과 작은 붉은 표지",
+    "입구 오른쪽 목재 게시판과 어두운 경사 지붕"
+  ],
+  "implementation": {
+    "sourceRoad": "way/1429747754/540",
+    "sourceWay": "1429747754",
+    "sourceNodeIds": [
+      "1793018816",
+      "1793018821"
+    ],
+    "buildingId": "way/167984624",
+    "rawTags": {
+      "covered": "yes",
+      "highway": "pedestrian",
+      "tunnel": "building_passage"
+    },
+    "origin": [
+      343.78,
+      -690.7
+    ],
+    "end": [
+      353.58,
+      -662.89
+    ],
+    "axis": {
+      "x": 0.3323588452407461,
+      "z": 0.9431530087903223
+    },
+    "across": {
+      "x": -0.9431530087903223,
+      "z": 0.3323588452407461
+    },
+    "width": 5,
+    "length": 29.486201857818237,
+    "ceilingY": 35.55862731933594,
+    "genericBase": 32.35862731933594,
+    "openings": [
+      {
+        "buildingId": "way/167984624",
+        "edgeIndex": 0,
+        "a": [
+          346.7895813066856,
+          -689.9824151725919
+        ],
+        "b": [
+          341.9303477180397,
+          -688.1259903194887
+        ],
+        "bottom": 31.908627319335938,
+        "top": 35.55862731933594,
+        "center": [
+          344.35996451236264,
+          -689.0542027460402
+        ],
+        "station": 1.7449949675405156
+      },
+      {
+        "buildingId": "way/167984624",
+        "edgeIndex": 3,
+        "a": [
+          353.7701828023979,
+          -670.1731776628204
+        ],
+        "b": [
+          348.9112207793686,
+          -668.3159821730032
+        ],
+        "bottom": 31.908627319335938,
+        "top": 35.55862731933594,
+        "center": [
+          351.34070179088326,
+          -669.2445799179118
+        ],
+        "station": 22.74861012170946
+      }
+    ],
+    "portals": [
+      {
+        "edgeIndex": 0,
+        "center": [
+          344.35996451236264,
+          32.751708525901705,
+          -689.0542027460402
+        ],
+        "outward": [
+          -0.3323588452407461,
+          0,
+          -0.9431530087903223
+        ],
+        "width": 5,
+        "floorY": 32.751708525901705,
+        "ceilingY": 35.55862731933594,
+        "clearHeight": 2.8069187934342352,
+        "frameComponent": "passage-portal-jamb",
+        "noDoorObserved": true
+      },
+      {
+        "edgeIndex": 3,
+        "center": [
+          351.34070179088326,
+          32.63980070077099,
+          -669.2445799179118
+        ],
+        "outward": [
+          0.3323588452407461,
+          0,
+          0.9431530087903223
+        ],
+        "width": 5,
+        "floorY": 32.63980070077099,
+        "ceilingY": 35.55862731933594,
+        "clearHeight": 2.9188266185649496,
+        "frameComponent": "passage-portal-jamb",
+        "noDoorObserved": true
+      }
+    ],
+    "routeWorld": [
+      [
+        343.78,
+        32.970808792236944,
+        -690.7
+      ],
+      [
+        344.35996451236264,
+        32.751708525901705,
+        -689.0542027460402
+      ],
+      [
+        346.43887076192595,
+        32.36362854003906,
+        -683.1547759296775
+      ],
+      [
+        348.76538267861116,
+        32.36362854003906,
+        -676.5527048681452
+      ],
+      [
+        351.34070179088326,
+        32.63980070077099,
+        -669.2445799179118
+      ],
+      [
+        353.58,
+        32.30514888862156,
+        -662.89
+      ]
+    ],
+    "surfaceComponents": [
+      "passage-floor"
+    ],
+    "wallComponents": [
+      "passage-sidewall"
+    ],
+    "ceilingComponent": "passage-ceiling",
+    "frameComponent": "passage-portal-jamb",
+    "pavementMasks": [
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            342.03211734188795,
+            -688.1380726609744
+          ],
+          [
+            345.04875687944025,
+            -691.1470987924673
+          ],
+          [
+            341.4221174780242,
+            -689.8691028868982
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            345.04875687944025,
+            -691.1470987924673
+          ],
+          [
+            342.03211734188795,
+            -688.1380726609744
+          ],
+          [
+            342.74641036708306,
+            -686.111083984375
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            345.04875687944025,
+            -691.1470987924673
+          ],
+          [
+            342.74641036708306,
+            -686.111083984375
+          ],
+          [
+            348.04777711606147,
+            -686.111083984375
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            345.04875687944025,
+            -691.1470987924673
+          ],
+          [
+            348.04777711606147,
+            -686.111083984375
+          ],
+          [
+            346.13788252197577,
+            -691.5308971131019
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            347.23375536955575,
+            -673.3770978089906
+          ],
+          [
+            351.1563330031424,
+            -677.2897636558322
+          ],
+          [
+            348.04777711606147,
+            -686.111083984375
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            347.23375536955575,
+            -673.3770978089906
+          ],
+          [
+            348.04777711606147,
+            -686.111083984375
+          ],
+          [
+            342.74641036708306,
+            -686.111083984375
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            351.1563330031424,
+            -677.2897636558322
+          ],
+          [
+            347.23375536955575,
+            -673.3770978089906
+          ],
+          [
+            349.7764260566956,
+            -666.16162109375
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            351.1563330031424,
+            -677.2897636558322
+          ],
+          [
+            349.7764260566956,
+            -666.16162109375
+          ],
+          [
+            355.07779280567405,
+            -666.16162109375
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            351.2221174780242,
+            -662.0591028868981
+          ],
+          [
+            355.9378825219758,
+            -663.7208971131018
+          ],
+          [
+            355.07779280567405,
+            -666.16162109375
+          ]
+        ]
+      },
+      {
+        "component": "passage-floor",
+        "polygon": [
+          [
+            351.2221174780242,
+            -662.0591028868981
+          ],
+          [
+            355.07779280567405,
+            -666.16162109375
+          ],
+          [
+            349.7764260566956,
+            -666.16162109375
+          ]
+        ]
+      }
+    ],
+    "floorTriangles": [
+      [
+        [
+          342.03211734188795,
+          32.630907505198245,
+          -688.1380726609744
+        ],
+        [
+          345.04875687944025,
+          33.02767804459346,
+          -691.1470987924673
+        ],
+        [
+          341.4221174780242,
+          32.865121864865635,
+          -689.8691028868982
+        ]
+      ],
+      [
+        [
+          345.04875687944025,
+          33.02767804459346,
+          -691.1470987924673
+        ],
+        [
+          342.03211734188795,
+          32.630907505198245,
+          -688.1380726609744
+        ],
+        [
+          342.74641036708306,
+          32.36362854003906,
+          -686.111083984375
+        ]
+      ],
+      [
+        [
+          345.04875687944025,
+          33.02767804459346,
+          -691.1470987924673
+        ],
+        [
+          342.74641036708306,
+          32.36362854003906,
+          -686.111083984375
+        ],
+        [
+          348.04777711606147,
+          32.36362854003906,
+          -686.111083984375
+        ]
+      ],
+      [
+        [
+          345.04875687944025,
+          33.02767804459346,
+          -691.1470987924673
+        ],
+        [
+          348.04777711606147,
+          32.36362854003906,
+          -686.111083984375
+        ],
+        [
+          346.13788252197577,
+          33.07828573626598,
+          -691.5308971131019
+        ]
+      ],
+      [
+        [
+          347.23375536955575,
+          32.36362854003906,
+          -673.3770978089906
+        ],
+        [
+          351.1563330031424,
+          32.36362854003906,
+          -677.2897636558322
+        ],
+        [
+          348.04777711606147,
+          32.36362854003906,
+          -686.111083984375
+        ]
+      ],
+      [
+        [
+          347.23375536955575,
+          32.36362854003906,
+          -673.3770978089906
+        ],
+        [
+          348.04777711606147,
+          32.36362854003906,
+          -686.111083984375
+        ],
+        [
+          342.74641036708306,
+          32.36362854003906,
+          -686.111083984375
+        ]
+      ],
+      [
+        [
+          351.1563330031424,
+          32.36362854003906,
+          -677.2897636558322
+        ],
+        [
+          347.23375536955575,
+          32.36362854003906,
+          -673.3770978089906
+        ],
+        [
+          349.7764260566956,
+          32.69090110030834,
+          -666.16162109375
+        ]
+      ],
+      [
+        [
+          351.1563330031424,
+          32.36362854003906,
+          -677.2897636558322
+        ],
+        [
+          349.7764260566956,
+          32.69090110030834,
+          -666.16162109375
+        ],
+        [
+          355.07779280567405,
+          32.86836798430081,
+          -666.16162109375
+        ]
+      ],
+      [
+        [
+          351.2221174780242,
+          32.09590981698299,
+          -662.0591028868981
+        ],
+        [
+          355.9378825219758,
+          32.51438796026012,
+          -663.7208971131018
+        ],
+        [
+          355.07779280567405,
+          32.86836798430081,
+          -666.16162109375
+        ]
+      ],
+      [
+        [
+          351.2221174780242,
+          32.09590981698299,
+          -662.0591028868981
+        ],
+        [
+          355.07779280567405,
+          32.86836798430081,
+          -666.16162109375
+        ],
+        [
+          349.7764260566956,
+          32.69090110030834,
+          -666.16162109375
+        ]
+      ]
+    ],
+    "floorClearance": 0.035,
+    "floorThickness": 0.12,
+    "actualTerrainTriangles": true,
+    "sourceTerrainTriangleCount": 5,
+    "originalFootprintAndHeightUnchanged": true,
+    "firstStoreyBandBottom": 35.578627319335936,
+    "firstStoreyBandPreserved": true,
+    "directPassagePhotoObserved": true,
+    "photoSource": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+    "photoIssue": 62,
+    "photoPrintedPage": 25,
+    "photoPublished": "2026-04-20",
+    "photoCaptureDate": null,
+    "observedEntryFeatures": [
+      "cream concrete portal and pilasters",
+      "green ground-floor windows",
+      "upper window grille",
+      "brown rectangular paving",
+      "short yellow tactile guide",
+      "blue directory",
+      "roofed wooden noticeboard"
+    ],
+    "photoFaceMappingEstimated": true,
+    "photoDetailFace": 0,
+    "dimensionsEstimated": true,
+    "widthFromProcessedDefault": true,
+    "innerFinishEstimated": true,
+    "wholeFacadeReconstructed": false,
+    "floorDecoration": {
+      "separateColliders": 0,
+      "separateMeshes": 0,
+      "maximumSurfaceLift": 0.009,
+      "owner": "passage-floor",
+      "dimensionsEstimated": true
+    },
+    "geometry": {
+      "parts": 129,
+      "triangles": 3790,
+      "meshes": 1,
+      "textures": 0
+    },
+    "maskedPolylineOverlay": {
+      "beforeTriangles": 20394,
+      "afterTriangles": 20394,
+      "touchedTriangles": 16,
+      "maskCount": 10,
+      "bounds": {
+        "minX": 341.4221174780242,
+        "maxX": 355.9378825219758,
+        "minZ": -691.5308971131019,
+        "maxZ": -662.0591028868981
+      },
+      "roadAndTerrainChanged": false,
+      "terrainChanged": false,
+      "destroyedPavingRevealsTerrain": true
+    },
+    "endpointOverlay": {
+      "rectangles": [
+        {
+          "s0": -2,
+          "s1": 0,
+          "n0": -4.5,
+          "n1": 4.5
+        },
+        {
+          "s0": 29.486201857818237,
+          "s1": 31.486201857818237,
+          "n0": -4.5,
+          "n1": 4.5
+        }
+      ],
+      "distanceFromEachEnd": 2,
+      "innerClearance": 0.035,
+      "originalOuterBoundaryPreserved": true,
+      "beforeTriangles": 18308,
+      "afterTriangles": 18426,
+      "touchedTriangles": 12,
+      "maximumHeightChange": 0.18521823187218445,
+      "terrainAndRoadUnchanged": true,
+      "collisionUnchanged": true,
+      "existingPedestrianDisplayOnly": true
+    },
+    "detailPartCountIsNotColliderCount": true,
+    "smallDetails": "바닥 무늬, 창살, 블라인드와 게시물은 본체 부품에 묶고 별도 충돌체를 만들지 않았다.",
+    "destruction": "본체 파괴 시 부속 무늬도 사라지고 원거리 및 초기화에서도 상태를 유지한다."
+  },
+  "inference": [
+    "지도 /540의 남쪽 면을 사진의 입구에 대응시켰다. 건물과 통과구 식별은 자료에 근거하지만 촬영 위치를 측량한 것은 아니다.",
+    "폭 5m, 내공, 창과 게시판 치수 및 위치는 기존 지도와 게임 지형에 맞춘 근사다.",
+    "입구 포장과 창틀의 색은 사진을 참고했다. 포장 규격, 줄눈 간격과 통로 안쪽 끝까지의 마감 연속성은 추정이다."
+  ],
+  "limits": [
+    "사진 발행일과 촬영일을 구분한다. 2026년 11월 현장 상태를 확인하지 않았다.",
+    "안내판과 게시물의 작은 문구는 판독하지 못해 복제하지 않았다.",
+    "사진 밖의 입면과 실내, 1~2동 연결부 및 아방궁 쉼터는 이번 변경에 포함하지 않았다.",
+    "모바일 크기와 터치 메뉴는 Chrome 에뮬레이션으로 확인했다. 실제 휴대폰 프레임 속도는 측정하지 않았다."
+  ],
+  "checks": {
+    "groups": [
+      {
+        "name": "release42 terrain, roads, unrelated buildings and roof remain preserved",
+        "status": "PASS"
+      },
+      {
+        "name": "desktop and mobile speed walks clear the passage and its original branches",
+        "status": "PASS"
+      },
+      {
+        "name": "actual floor, portals and ceiling agree with rendered surfaces",
+        "status": "PASS"
+      },
+      {
+        "name": "side walls and overhead facade remain solid beside the restored opening",
+        "status": "PASS"
+      },
+      {
+        "name": "photo details share their owners damage and restore multicolour paving",
+        "status": "PASS"
+      },
+      {
+        "name": "one H preserves loaded and distant wall damage and reset restores the passage",
+        "status": "PASS"
+      }
+    ],
+    "walkSpeeds": [
+      6,
+      8
+    ],
+    "walks": 12,
+    "maximumFloorRenderDifferenceMeters": 0.006998597109742377,
+    "minimumHeadroomMeters": 2.802913284301758,
+    "allTerrainAndRoadGeometryUnchanged": true,
+    "otherBuildingPartsUnchanged": 37055,
+    "checksums": {
+      "artifacts/humanities-passage-access-test/results.json": "76dc907b9729ee10f46ddab179a7fff1d270fb6c76439a42397bebd939e68fa8"
+    },
+    "otherPassed": [
+      "verify-campus-provenance",
+      "verify-distant",
+      "verify-campus"
+    ],
+    "physicalPhoneTested": false
+  },
+  "browser": {
+    "desktopViewport": [
+      1440,
+      960
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobileTouch": true,
+    "mainStartStop": "자연대",
+    "pauseMenuVerified": true,
+    "observedErrors": [
+      "검토 페이지 favicon.ico 404"
+    ],
+    "mainWarnings": [
+      "Rapier initialization deprecation"
+    ],
+    "mainPageErrors": 0,
+    "captures": [
+      {
+        "path": "artifacts/humanities-review/output/playwright/43-south-final.png",
+        "sha256": "759a278c75621689ad4fc810b5a8ee2321dc800bfa415aefb8b10bc8eb96fdfb",
+        "directlyViewedBy": "root"
+      },
+      {
+        "path": "artifacts/humanities-review/output/playwright/43-inside.png",
+        "sha256": "d24214fff1f5344da4287fce5356b1e4fba4dc6f22526ec2cd7e53674f889564",
+        "directlyViewedBy": "root"
+      },
+      {
+        "path": "artifacts/humanities-review/output/playwright/43-mobile-entry.png",
+        "sha256": "f9ca45d67d48de3f421cfc92a07b35be2d4650ba45c9aba35ad3d49473a11a69",
+        "directlyViewedBy": "root"
+      },
+      {
+        "path": "artifacts/humanities-review/output/playwright/43-mobile-pause.png",
+        "sha256": "7bc5cc9081ce3fe8e3a266f462f28545bbd83383b31d16705fa5aa89a7808733",
+        "directlyViewedBy": "root"
+      }
+    ]
+  },
+  "sourceHashes": {
+    "src/humanitiesPassage.ts": "afc1592f2022290b394daeb29a31d3062374146251b356815d81238fbcfaba1a",
+    "src/fullCampus.ts": "adf9e354b5b1379d1126dd9aa0e1d1c7a89395a7cd5825cf798e33500148afab",
+    "scripts/verify-humanities-passage-access.mjs": "1cf8d3bbf2cca873a06f783b79f1f54345a5f0bf832fb9abc4a5db6e74716340"
+  },
+  "unchangedDataHashes": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "public/data/campus-transit.json": "b76619a0cf01338994b98e9bab997a4ae6d90875b2b57a6d23bb085317c4f5b4",
+    "public/data/shuttle-stops.json": "8233cbe722f90665ea9fcc4b864f25557404aa6b23d7ceb1d1cceb0861ed6356",
+    "src/main.ts": "9d3795d4175030d2ba0436c5dc7eab828fdeeb186b340b6a636288c1913f26ba",
+    "src/controls.ts": "493c27adaeef90fe96aec523d94d522d4d663e66e265ce7429f99d2d3f2296aa",
+    "src/traffic.ts": "e091ac5639378c639fa69fa8374680b355d396ce6224ae4c685d1f279c6b0ec3",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f"
+  },
+  "nextEvidence": [
+    {
+      "printedPage": 27,
+      "pdfPage": 14,
+      "render": "artifacts/humanities-construction-review/43-newsletter-page-14.png",
+      "directlyViewed": true,
+      "observation": "2동 번호가 보이는 끝벽, 유리 출입구, 위층 연결부와 하부 통과 공간 및 회색 포장의 붉은 띠",
+      "implemented": false,
+      "remaining": "사진 설명과 건물 번호의 관계를 지도에 맞춰 확인해야 한다."
+    },
+    {
+      "printedPage": 29,
+      "pdfPage": 15,
+      "render": "artifacts/humanities-construction-review/43-newsletter-page-15.png",
+      "directlyViewed": true,
+      "observation": "1동과 2동 사이 아방궁의 불규칙한 돌 포장, 낮은 조명과 목재 쉼터",
+      "implemented": false,
+      "remaining": "공식 지도와 원본 보행선에 시설의 상대 위치를 맞춰야 한다."
+    },
+    {
+      "printedPage": 29,
+      "pdfPage": 15,
+      "render": "artifacts/humanities-construction-review/43-newsletter-page-15.png",
+      "directlyViewed": true,
+      "observation": "기숙사삼거리에서 14동으로 내려가는 도토리길의 갈색 계단과 목재 난간",
+      "implemented": false,
+      "remaining": "계단 양끝, 원본 계단선 및 지형 단차를 대조해야 한다."
+    },
+    {
+      "notice": "https://humanities.snu.ac.kr/community/notice?bbsidx=3823&md=v",
+      "observation": "7동 1단계 공사 배치도와 7~9동 도로 차량 통제 계획",
+      "implemented": false,
+      "remaining": "도면 정합과 차량 경로를 먼저 확인해야 한다. 11월 실제 공사 진척과 가설물은 미확인이다."
+    }
+  ],
+  "followup14": {
+    "record": "sources/humanities14-stair-photo-notes.json",
+    "scope": "44판에서 도토리길을 별도 보완했다. 기존 nextEvidence는 43판 당시의 남은 범위를 보존한다."
+  }
+}

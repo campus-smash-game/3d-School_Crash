@@ -1,0 +1,194 @@
+{
+  "scope": "공식 기관이 공개한 외관 사진을 직접 확인했다. 색과 창 비율은 모델링 근사값이다. 사진을 게임 텍스처로 사용하지 않으며 지정한 OSM 윤곽에만 참고 프로필을 적용한다.",
+  "entries": [
+    {
+      "osmId": "way/347806723",
+      "buildingNumber": "75",
+      "name": "융합관",
+      "sourceUrl": "https://www.snua.or.kr/magazine?md=v&seqidx=11884",
+      "imageUrl": "https://www.snua.or.kr/webdata/newspaper/image/561/99bzafezfabzea1z3ddzd1bzc34z5d3z8d7zb6eza8.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/supplemental/75-new.jpg",
+      "publicationDate": "2024-12",
+      "photoCaptureDate": null,
+      "visuallyInspected": true,
+      "identityVerified": true,
+      "identityEvidence": "총동창회 입주 기사에 75동 융합관 전경으로 명시된 사진이며 건물에 75 표시가 보인다. 서울대 공식 준공 기사는 기존 대학신문 건물의 재건축임을 확인한다.",
+      "observations": [
+        "상부는 밝은 회색 외장과 가늘고 깊은 세로 창틀이 반복되며 큰 파란 유리 면이 섞여 있다.",
+        "하부에는 연한 적갈색 벽돌 부분과 긴 가로창이 있고 정면 큰 유리 상자가 돌출된다.",
+        "기사에서 지상 6층과 지하 2층을 확인했다. 사진 오른쪽은 기사 도표가 가려 세부 외관을 확인할 수 없다."
+      ],
+      "documentedLevels": 6,
+      "documentedBasementLevels": 2,
+      "limitations": ["기존 OSM 윤곽이 재건축 이후의 외곽선과 정확히 같은지는 확인하지 않았다.", "단일 외관 프로필은 상부 밝은 외장과 하부 벽돌을 층별로 정확히 나누지 못한다."],
+      "profile": {
+        "wallColor": "#c7ccc7", "roofColor": "#a1a7a3", "glassColor": "#568fba", "frameColor": "#b9c4c5", "accentColor": "#b68d74",
+        "windowStyle": "punched", "windowWidthRatio": 0.56, "windowHeightRatio": 0.82, "bayWidth": 2.6,
+        "horizontalBands": false, "verticalFins": true, "roofStyle": "flat", "confidence": "reference",
+        "sourceUrls": ["https://www.snua.or.kr/magazine?md=v&seqidx=11884", "https://now.snu.ac.kr/category/3/326"]
+      }
+    },
+    {
+      "osmId": "way/1537839925",
+      "buildingNumber": "16",
+      "name": "한국경제혁신센터 증축부",
+      "sourceUrl": "https://econ.snu.ac.kr/about/newsletter?mode=download&seqidx=51",
+      "imageUrl": null,
+      "sourcePage": 1,
+      "localDocumentPath": "D:/codex/3d-School_Crash/references/buildings/supplemental/econ-2026-52.pdf",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/supplemental/econ-cover-01.png",
+      "publicationDate": "2026-04",
+      "photoCaptureDate": null,
+      "visuallyInspected": true,
+      "identityVerified": true,
+      "identityEvidence": "경제학부 2026년 4월 소식지 1쪽의 한국경제혁신센터 1단계 완료 기사와 실제 항공사진을 확인했다. 사진 앞의 101동 아시아연구소, 뒤의 사회과학관과의 배치가 OSM 증축부 위치와 대응한다. 기사에는 2025년 12월 신축 건물 입주가 명시돼 있다.",
+      "observations": [
+        "긴 상부 건물에 밝은 베이지색 격자와 짙은 세로 유리창이 반복된다.",
+        "층 경계의 가는 가로 띠와 강한 세로 기둥이 함께 보이며 하부에는 긴 유리 면이 있다.",
+        "상부 지붕에 검은 태양광 패널이 줄지어 놓였고, 한쪽 끝에는 어두운 세로 날개가 이어진다.",
+        "주변 기존 건물 일부는 공사 가림막으로 덮여 있다. 가림막 색은 건물의 최종 외장으로 사용하지 않는다."
+      ],
+      "limitations": ["이 프로필은 새 증축부에만 적용하며 같은 번호를 쓰는 기존 사회과학관 전체에 적용하지 않는다.", "사진의 바깥쪽 긴 면만 확인했고 정확한 높이와 전체 층수는 측정하지 않았다."],
+      "profile": {
+        "wallColor": "#c7c2b6", "roofColor": "#555d5b", "glassColor": "#3d4f52", "frameColor": "#aaa99e", "accentColor": "#686d65",
+        "windowStyle": "punched", "windowWidthRatio": 0.67, "windowHeightRatio": 0.8, "bayWidth": 2.8,
+        "horizontalBands": true, "verticalFins": true, "roofStyle": "equipment", "confidence": "reference",
+        "sourceUrls": ["https://econ.snu.ac.kr/about/newsletter?mode=download&seqidx=51", "https://econbk21.snu.ac.kr/%EC%B0%BE%EC%95%84%EC%98%A4%EC%8B%9C%EB%8A%94%EA%B8%B82/"]
+      }
+    },
+    {
+      "osmId": "way/1542788687",
+      "buildingNumber": "223",
+      "name": "우석경제관",
+      "sourceUrl": "https://www.snukdt.com/abs/notice/notice.php?code=notice&idx=219&page=1&ptype=view",
+      "imageUrl": "https://www.snukdt.com/admin/data/webedit/2511/20251113180224_mvgdtzfy.png",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/supplemental/223-front.png",
+      "publicationDate": "2025-11",
+      "photoCaptureDate": null,
+      "visuallyInspected": true,
+      "identityVerified": true,
+      "identityEvidence": "서울대 빅데이터 핀테크 AI 고급 전문가 과정 사무국의 방문 안내가 우석경제관 223동 외관과 계단을 명시하며 해당 사진을 제공한다. 공식 지도 좌표와 건물명도 OSM과 일치한다.",
+      "observations": [
+        "차가운 회색 정사각 외장 패널과 깊은 개별 창이 반복된다.",
+        "오른쪽 건물은 큰 사각 테두리 안에 유리벽을 두고 중앙 유리 연결 부분과 바깥 계단으로 이어진다.",
+        "왼쪽 상층은 개별 창 위주이며 낮은 층과 오른쪽 부분은 유리 비중이 크다. 지붕 위에는 난간과 뒤로 물러난 작은 상부가 보인다."
+      ],
+      "limitations": ["해질 무렵 사진이므로 외장 색의 수치는 조명에 영향을 받은 근사값이다.", "하나의 반복 입면으로는 오른쪽 대형 유리 부분과 왼쪽 개별 창을 정확히 분리하지 못한다."],
+      "profile": {
+        "wallColor": "#969da5", "roofColor": "#777e83", "glassColor": "#647a80", "frameColor": "#626d76", "accentColor": "#c3c8c4",
+        "windowStyle": "punched", "windowWidthRatio": 0.57, "windowHeightRatio": 0.68, "bayWidth": 3.5,
+        "horizontalBands": false, "verticalFins": false, "roofStyle": "parapet", "confidence": "reference",
+        "sourceUrls": ["https://www.snukdt.com/abs/notice/notice.php?code=notice&idx=219&page=1&ptype=view", "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=254"]
+      }
+    },
+    {
+      "osmId": "way/456356713",
+      "buildingNumber": "71-1",
+      "name": "체육문화교육연구동",
+      "sourceUrl": "https://snu.ac.kr/snunow/snu_story?bbsidx=123072&md=v",
+      "imageUrl": "https://snu.ac.kr/webdata/boards/konews/img_20160429_004.jpg",
+      "additionalImageUrls": ["https://snu.ac.kr/webdata/boards/konews/img_20160429_005.jpg"],
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/supplemental/71-1-front.jpg",
+      "additionalLocalImagePaths": ["D:/codex/3d-School_Crash/references/buildings/supplemental/71-1-side.jpg"],
+      "publicationDate": "2016-04-14",
+      "photoCaptureDate": null,
+      "visuallyInspected": true,
+      "identityVerified": true,
+      "identityEvidence": "서울대 공간 탐방 기사가 동 번호 71-1과 체육문화교육연구동 명칭을 명시하며 여러 방향 사진을 제공한다. 정면 사진의 71-1 표시와 OSM 명칭이 일치한다.",
+      "observations": [
+        "도로 쪽 긴 건물은 밝은 석재 판처럼 보이는 외장과 높이가 다른 세로 창으로 구성된다.",
+        "최상층은 짙은 회색 외장과 가는 세로 창이 반복되며 모서리에는 넓은 유리가 있다.",
+        "체육관으로 보이는 큰 뒷부분은 회갈색 세로 판과 유리 하부로 구성되고 창이 드물다.",
+        "공식 기사에서 지상 5층과 지하 1층을 확인했다."
+      ],
+      "documentedLevels": 5,
+      "documentedBasementLevels": 1,
+      "limitations": ["2016년 준공 당시 사진이며 이후 외장 변경 여부는 확인하지 않았다.", "공통 프로필은 도로 쪽 밝은 건물을 기준으로 하며 창이 적은 체육관 부분까지 정확히 구분하지 못한다."],
+      "profile": {
+        "wallColor": "#c6c8c2", "roofColor": "#747d79", "glassColor": "#5d7779", "frameColor": "#575e61", "accentColor": "#777b74",
+        "windowStyle": "punched", "windowWidthRatio": 0.42, "windowHeightRatio": 0.82, "bayWidth": 2.8,
+        "horizontalBands": false, "verticalFins": true, "roofStyle": "flat", "confidence": "reference",
+        "sourceUrls": ["https://snu.ac.kr/snunow/snu_story?bbsidx=123072&md=v"]
+      }
+    },
+    {
+      "osmId": "way/905718842",
+      "buildingNumber": "69",
+      "name": "실험동물자원관리원",
+      "sourceUrl": "https://ilar.snu.ac.kr/03_research-facility/facility-1/",
+      "imageUrl": "https://ilar.snu.ac.kr/wp-content/uploads/sites/64/2021/05/%EC%8B%A4%ED%97%98%EB%8F%99%EB%AC%BC%EC%9E%90%EC%9B%90%EA%B4%80%EB%A6%AC%EC%9B%90_%EC%88%98%EC%A0%952%EC%B0%A8-1.png",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/supplemental/69-facility.png",
+      "publicationDate": null,
+      "photoCaptureDate": null,
+      "visuallyInspected": true,
+      "identityVerified": true,
+      "identityEvidence": "관리원 공식 시설 안내가 위치를 69동으로 명시하고 사진에도 69 표시가 보인다. 공식 연혁은 2019년 8월 재건축 준공을 기록한다.",
+      "observations": [
+        "붉은 갈색 벽돌 외장에 가는 밝은 가로 띠가 층마다 이어진다.",
+        "상부의 넓은 면과 오른쪽 세로 부분은 은회색 가로 날개로 덮여 있다.",
+        "낮은 층에는 밝은 불투명 판과 짙은 창이 섞여 있고 중간 층은 일반 강의동보다 창이 적다."
+      ],
+      "limitations": ["작은 정면 사진으로 확인했으며 옆면과 지붕 설비의 구체적인 형태는 보이지 않는다.", "가로 날개와 불투명 판은 창 유리와 다르므로 전체를 투명한 유리벽으로 표현하면 부정확하다."],
+      "profile": {
+        "wallColor": "#a96751", "roofColor": "#8c9390", "glassColor": "#354c48", "frameColor": "#c4cac1", "accentColor": "#bbc2ba",
+        "windowStyle": "punched", "windowWidthRatio": 0.5, "windowHeightRatio": 0.22, "bayWidth": 3.5,
+        "horizontalBands": true, "verticalFins": false, "roofStyle": "flat", "confidence": "reference",
+        "sourceUrls": ["https://ilar.snu.ac.kr/03_research-facility/facility-1/", "https://ilar.snu.ac.kr/01_intro/history/"]
+      }
+    },
+    {
+      "osmId": "way/1485386282",
+      "buildingNumber": "43-2",
+      "name": "데이터사이언스대학원 및 공과대학 강의동 2",
+      "sourceUrl": "https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf",
+      "imageUrl": null,
+      "sourcePage": 18,
+      "localDocumentPath": "D:/codex/3d-School_Crash/references/buildings/supplemental/gsds-2026.pdf",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/supplemental/gsds-exterior-18.png",
+      "publicationDate": "2025-09-12",
+      "photoCaptureDate": null,
+      "visuallyInspected": true,
+      "identityVerified": true,
+      "identityEvidence": "공식 2026학년도 입시설명회 자료 18쪽 사진에 43-2 번호가 보이고 14쪽 배치도도 별도 건물로 표시한다. 공식 캠퍼스 지도 점과 OSM 명칭이 이 윤곽에 대응한다.",
+      "observations": [
+        "길고 낮은 본체는 밝은 회색 큰 외장 판과 한 줄의 짙은 가로창으로 구성된다.",
+        "회색 상부 아래에는 돌출된 유리 출입구와 갈색 세로 판처럼 보이는 하부가 있다.",
+        "상부는 넓은 창 없는 면과 낮은 지붕 난간이 이어진다."
+      ],
+      "limitations": ["사진 한 장에서 보이는 길쭉한 면만 확인했다. 뒤쪽과 경사 지형 쪽의 노출 층수는 확인하지 않았다."],
+      "profile": {
+        "wallColor": "#afb4b6", "roofColor": "#b1b7b6", "glassColor": "#536c76", "frameColor": "#535d64", "accentColor": "#a08a69",
+        "windowStyle": "ribbon", "windowWidthRatio": 0.93, "windowHeightRatio": 0.32, "bayWidth": 2.6,
+        "horizontalBands": false, "verticalFins": false, "roofStyle": "parapet", "confidence": "reference",
+        "sourceUrls": ["https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf", "https://gsds.snu.ac.kr/about/location/"]
+      }
+    },
+    {
+      "osmId": "way/386890918",
+      "buildingNumber": "43",
+      "name": "데이터사이언스대학원 및 공과대학 강의동 1",
+      "sourceUrl": "https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/1abc4a06-b880-4b6a-ac9a-2736e9fcf502.jpg",
+      "sourcePage": 14,
+      "localDocumentPath": "D:/codex/3d-School_Crash/references/buildings/supplemental/gsds-2026.pdf",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/supplemental/gsds-map-14.png",
+      "publicationDate": "2025-09-12",
+      "photoCaptureDate": null,
+      "visuallyInspected": true,
+      "identityVerified": true,
+      "identityEvidence": "OSM의 폐기물보관소라는 이름 때문에 보류했으나 공식 입시설명회 14쪽의 43동 사진, 별도 배치도와 공식 캠퍼스 지도 좌표를 함께 대조했다. 배치도는 이 본체와 남서쪽의 43-2를 분리해 표시하며 OSM 윤곽 배치와 대응한다. OSM 이름 오류로 판단한다.",
+      "observations": [
+        "상층은 짙은 회색 벽돌처럼 보이는 외장에 가늘고 높은 세로 창이 반복된다.",
+        "유리와 밝은 불투명 판을 번갈아 배치한 모서리 부분이 있으며 하부에는 밝은 큰 외장 판이 있다.",
+        "최상부 모서리에 43 표시가 보이고 지붕은 평평하다."
+      ],
+      "limitations": ["공식 지도와 배치도로 건물을 식별했지만 OSM 원본 이름은 변경하지 않았다.", "하부의 밝은 판과 상부 어두운 벽돌을 단일 반복 프로필로 정확히 구분하지 못한다."],
+      "profile": {
+        "wallColor": "#666b67", "roofColor": "#6d7471", "glassColor": "#829b91", "frameColor": "#525d58", "accentColor": "#bdc6bf",
+        "windowStyle": "punched", "windowWidthRatio": 0.28, "windowHeightRatio": 0.9, "bayWidth": 2.8,
+        "horizontalBands": false, "verticalFins": false, "roofStyle": "flat", "confidence": "reference",
+        "sourceUrls": ["https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf", "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=53"]
+      }
+    }
+  ]
+}

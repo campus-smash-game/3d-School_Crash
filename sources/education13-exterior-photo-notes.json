@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T17:40:27.332Z",
+  "buildingId": "way/251646340",
+  "buildingNumber": "13",
+  "status": "implemented-partial-photo-reference",
+  "scope": "13동 외벽, 네 현관의 짧은 전실, 12동 방향 계단과 남서쪽 아래 두 계단 구간을 보완했다.",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000014.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=14",
+      "captureDate": null,
+      "localPhoto": "../references/buildings/photos/014-13.jpg",
+      "sha256": "004b0a37794e7292c9c9fc9c6aff70daa572e64bb282018f8459ee7974c1afe8",
+      "directlyViewedBy": "root",
+      "observed": [
+        "어두운 벽돌과 흰 골조, 상부의 작은 창과 하부의 넓은 창",
+        "흰 돌출 부재와 깊은 처마, 틈이 있는 콘크리트 옥상 난간",
+        "13 College of Education 표기와 끝면의 세로 녹색 유리 공간",
+        "외부 계단, 경사진 녹지와 쌍등 조명"
+      ],
+      "limits": "사진의 긴 면을 남동쪽에 대응한 방향과 치수는 추정이다. 출입구 위치는 이 사진만으로 확정하지 않았다."
+    },
+    {
+      "url": "https://edu.snu.ac.kr/wp-content/uploads/sites/17/2020/12/img_classPhysics-.png",
+      "page": "https://edu.snu.ac.kr/학부-대학원/학과소개/물리교육과/",
+      "captureDate": null,
+      "uploadPathMonth": "2020-12",
+      "localPhoto": "artifacts/education13-review62/edu-physics-building13.png",
+      "sha256": "e95e20cb0a201fff7f4fc975f781e4e2f5ceb4027153f56d6263d94a6fd641bd",
+      "directlyViewedBy": "root",
+      "observed": "동 번호와 영문 표기, 작은 창 두 개씩의 배열, 벽돌과 흰 골조 및 옥상 난간을 확인했다.",
+      "limits": "출입구와 연결통로는 사진 밖이다. 업로드 경로의 연월을 촬영일로 취급하지 않는다."
+    },
+    {
+      "url": "https://kko.to/SrylOCyHsj",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/education13-review62/62-roadview-start.png",
+          "sha256": "97c5f2d5bb0319212729d218e07e81b9a2fa90d7bed3faa4b0b4fa19a097d9c1"
+        }
+      ],
+      "observed": "북서쪽 도로 면의 흰 층별 띠, 넓은 하부 창과 창살, 회색 석재 무늬 하부, 수목과 주차 차량."
+    },
+    {
+      "url": "https://kko.to/d91fDli4J9",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/education13-review62/62-roadview-sw.png",
+          "sha256": "feef405dc78b7ffc3e76b3568ccaf582ab1410f9d30dcf2360c59ce6f83eadbf"
+        },
+        {
+          "file": "artifacts/education13-review62/62-roadview-sw2.png",
+          "sha256": "c473517bc5afdcb412db1f40fbcab5d323f9c534f5ce792e891a1cd8d818d066"
+        },
+        {
+          "file": "artifacts/education13-review62/62-roadview-sw3.png",
+          "sha256": "c3b95b609dd123f0342e2123afa3b48534e79327fc4246f223b6c24bdbdec3ec"
+        },
+        {
+          "file": "artifacts/education13-review62/62-roadview-sw4.png",
+          "sha256": "5e8149096546137da81c5a8c74d3c89645ff3bc87edd916788b4c7a3d328b61d"
+        }
+      ],
+      "observed": "첫 촬영점에서 남서쪽으로 이동했다. 북서쪽 면의 남서 구간에서 흰 돌출 핀과 가로 차양, 창살과 석재 하부를 확인했다.",
+      "limits": "공유 URL은 마지막 촬영점이다. 중간 세 점의 URL은 별도로 저장하지 않았다. 수목에 가린 문 형식과 위치는 확정하지 못했다."
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR94ZkRHP2VKnINb9ra1pZj3AmeD3TexbrKway6icdN5glvGpSjhuNrzslk9WzWh35_snK2vd1D0umr/pubhtml/sheet?headers=false&gid=534084252",
+      "surveyDate": "2024-12-02",
+      "rows": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "observed": "1층 정문, 129호 후문과 계단이 있는 111호 후문, 반대편 2층 정문과 20동 연결문을 기록했다.",
+      "limits": "위도와 경도를 지도 외벽에 투영한 위치는 게임용 근사다. 129호 후문은 모서리에 가까워 문이 놓인 정확한 면도 미확인이다. 문틀과 차양, 단수 및 전실 깊이는 추정이다."
+    }
+  ],
+  "implementation": {
+    "module": "src/education13Exterior.ts",
+    "terrain": "src/education13Site.ts",
+    "dimensionsEstimated": true,
+    "levels": 4,
+    "levelsEstimated": true,
+    "wholeInteriorImplemented": false,
+    "connection20Implemented": false,
+    "rawDEMModified": false,
+    "rawMapModified": false,
+    "photographsUsedAsTextures": false,
+    "doorState": "통행을 위해 열린 문으로 표현했다. 현장의 현재 개방 상태를 뜻하지 않는다.",
+    "mappedStairs": [
+      "way/248012354/94",
+      "way/456540231/334"
+    ],
+    "pendingStair": "13동 기존 계단 보완 당시에는 제외했으며 후속 연결교 모델에서 way/300587511/123을 구현했다.",
+    "geometry": {
+      "meshes": 3,
+      "textures": 1,
+      "triangles": 76918,
+      "colliders": 410
+    },
+    "floor": 58.49999999894671,
+    "roof": 72.49999999894672,
+    "entries": [
+      {
+        "id": "main1",
+        "name": "1층 정문",
+        "edge": 7,
+        "s": 23.381471,
+        "level": 0,
+        "stairs": false,
+        "floor": 58.49999999894671,
+        "outer": 57.04889267053636,
+        "top": 58.49999999894671,
+        "route": [
+          [
+            499.1524407558545,
+            57.04889267053636,
+            -772.6527206429429
+          ],
+          [
+            500.75482179597253,
+            58.49999999894671,
+            -776.3177411070427
+          ],
+          [
+            501.8364289980522,
+            58.49999999894671,
+            -778.79162992031
+          ],
+          [
+            503.3987505121673,
+            58.49999999894671,
+            -782.3650248728073
+          ]
+        ],
+        "positionEstimated": true,
+        "appearanceEstimated": true
+      },
+      {
+        "id": "rear129",
+        "name": "129호 옆 후문",
+        "edge": 7,
+        "s": 2.849426,
+        "level": 0,
+        "stairs": false,
+        "floor": 58.49999999894671,
+        "outer": 57.56804009069986,
+        "top": 58.49999999894671,
+        "route": [
+          [
+            517.965032029559,
+            57.56804009069986,
+            -764.4276807372303
+          ],
+          [
+            519.567413069677,
+            58.49999999894671,
+            -768.0927012013301
+          ],
+          [
+            520.6490202717566,
+            58.49999999894671,
+            -770.5665900145974
+          ],
+          [
+            522.2113417858718,
+            58.49999999894671,
+            -774.1399849670947
+          ]
+        ],
+        "positionEstimated": true,
+        "appearanceEstimated": true
+      },
+      {
+        "id": "rear111",
+        "name": "111호 옆 후문",
+        "edge": 6,
+        "s": 52.433716,
+        "level": 0,
+        "stairs": true,
+        "floor": 58.49999999894671,
+        "outer": 58.05472895002157,
+        "top": 59.486027636516404,
+        "route": [
+          [
+            442.4342928602803,
+            58.05472895002157,
+            -797.4548154846341
+          ],
+          [
+            444.036955240091,
+            59.486027636516404,
+            -801.1197129315402
+          ],
+          [
+            445.1187523464633,
+            58.49999999894671,
+            -803.5935187082019
+          ],
+          [
+            446.6813481667787,
+            58.49999999894671,
+            -807.1667937189354
+          ]
+        ],
+        "positionEstimated": true,
+        "appearanceEstimated": true
+      },
+      {
+        "id": "main2",
+        "name": "2층 정문",
+        "edge": 2,
+        "s": 11.017291,
+        "level": 1,
+        "stairs": false,
+        "floor": 61.99999999894671,
+        "outer": 65.25179533169702,
+        "top": 61.99999999894671,
+        "route": [
+          [
+            480.9212605147985,
+            65.25179533169702,
+            -816.8797912550854
+          ],
+          [
+            479.2762588296411,
+            61.99999999894671,
+            -813.2337016434838
+          ],
+          [
+            478.1658826921598,
+            61.99999999894671,
+            -810.7725911556527
+          ],
+          [
+            476.5620060491313,
+            61.99999999894671,
+            -807.217653784341
+          ]
+        ],
+        "positionEstimated": true,
+        "appearanceEstimated": true
+      }
+    ],
+    "mappedStairSegments": [
+      {
+        "id": "way/248012354/94",
+        "segment": 0,
+        "lo": 51.733174889451895,
+        "hi": 56.67980684460211,
+        "width": 2.2,
+        "length": 12.707135790570586
+      },
+      {
+        "id": "way/456540231/334",
+        "segment": 0,
+        "lo": 52.75743053016072,
+        "hi": 54.65170496044629,
+        "width": 2.2,
+        "length": 13.09030939282941
+      },
+      {
+        "id": "way/456540231/334",
+        "segment": 1,
+        "lo": 54.65170496044629,
+        "hi": 57.43833988801704,
+        "width": 2.2,
+        "length": 13.264708817007724
+      }
+    ]
+  },
+  "limitations": [
+    "전체 실내, 실측 높이와 단수, 미확인 끝면의 정확한 외관은 구현하지 않았다.",
+    "2026년 6월 13동 창호 교체 공고가 있다. 실제 착공과 준공 여부를 확인하지 못해 최신 창호라고 단정하지 않는다."
+  ],
+  "constructionReference": {
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01595577&bidPbancOrd=000&fileSeq=2&fileType=&prcmBsneSeCd=07",
+    "announcementDate": "2026-06-22",
+    "researchRecord": "artifacts/education13-review62/research-result.json"
+  },
+  "followUp": {
+    "review": "sources/education1320-connection-photo-notes.json",
+    "description": "20동 연결교와 긴 남서쪽 계단을 후속 보완했다. 연결교 접속부에서 계단실 덩어리를 나눠 문을 확보했다."
+  }
+}

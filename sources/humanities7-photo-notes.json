@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/238937021",
+  "buildingNumber": "7",
+  "scope": "7동 남쪽 입구와 동쪽 외관, 5동과 8동 사이 계단, 안마당과 북쪽 보행로를 보완했다.",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000007.jpg",
+      "localPhoto": "../references/buildings/photos/007-7.jpg",
+      "kind": "official-map-photo",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "짙은 벽돌과 흰 골조",
+        "7동 번호와 중앙의 열린 수직 홈",
+        "직사각형 틈이 있는 흰 난간",
+        "낮은 현관과 붉은 바닥, 짧은 접근 계단",
+        "도로 쪽 외부 계단과 콘크리트 난간",
+        "노란 볼라드",
+        "창살과 실외기",
+        "자전거 거치대와 가로수의 초록색 보호재"
+      ],
+      "orientation": "왼쪽에 붙은 두산인문관과 지도 외곽을 대조해 남쪽 끝벽과 동쪽 긴 면으로 판단했다.",
+      "limits": [
+        "사진 촬영일과 실측 치수는 미확인이다.",
+        "벽돌과 창의 간격, 난간 단면과 시설 수량은 근사다.",
+        "입구 쪽 사진에서 세 층이 보이지만 2024년 공식 공모 자료에는 건물 전체가 지상 4층으로 나온다. 층별 지표면 관계를 확인하지 못해 현재 외형은 사진에서 보이는 범위만 유지했다."
+      ],
+      "sha256": "a6bd2ec0ce00159eed4ed379e065a0b0c499507531b3c761cc6499ee93b00957"
+    },
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000005.jpg",
+      "localPhoto": "../references/buildings/photos/005-5.jpg",
+      "kind": "official-map-photo",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": "5동 입구 오른쪽의 높은 계단과 검은 금속 난간을 확인했다.",
+      "limits": "계단 상단의 전체 안마당은 사진에 나오지 않는다. 상단 높이와 연결 포장은 지도 및 게임 지형에 맞춘 근사다.",
+      "sha256": "4924afc1cab6fd5cb7434d98b72630dce25f9f70989056bd078bfd91d5030b93"
+    },
+    {
+      "url": "https://humanities.snu.ac.kr/community/notice?bbsidx=3823&md=v",
+      "kind": "official-construction-notice",
+      "published": "2026-04-14",
+      "readAt": "2026-11-06",
+      "verified": "학교 공지에서 5, 6, 7동의 내진보강과 수직 증축을 안내한다. 첨부 공사계획의 7동 1단계 기간은 2026-04-25부터 2027-06-30까지다.",
+      "localEvidence": "artifacts/humanities-construction-review/43-next-evidence.json",
+      "limits": "이번 모델은 공식 지도에 남아 있는 공사 전 사진을 따른다. 2026년 11월 실제 공사 진척, 가설 울타리와 도로 통제 상태를 현장 사진으로 확인한 것은 아니다. 증축 완성 모습을 현재 외관으로 적용하지 않았다."
+    },
+    {
+      "url": "https://designcampus.snu.ac.kr/competition/snu567/",
+      "kind": "official-competition-brief",
+      "readAt": "2026-11-06",
+      "observed": "공사 전 5, 6, 7동은 지상 4층이며 한 층을 증축한다는 내용을 확인했다.",
+      "limits": "7동의 남쪽 입구 높이와 전체 층별 단면은 이 자료만으로 확인할 수 없다. 기존 지붕 위에 임의로 한 층을 추가하지 않았다.",
+      "filmEvidence": "artifacts/humanities6-review/52-film-42s-loaded.png"
+    }
+  ],
+  "mapReview": {
+    "url": "https://map.kakao.com/?q=서울대학교%20두산인문관",
+    "capture": "artifacts/humanities8-review/50-kakao-inner-coverage.png",
+    "directlyViewedBy": "root",
+    "observed": "5, 6, 7, 8동이 둘러싼 안마당과 수목, 남쪽 계단을 대조했다. 내부에 파란 로드뷰 촬영선은 표시되지 않았다.",
+    "satelliteCaptureDate": null,
+    "courtyardPhotosConfirmed": false
+  },
+  "implementation": {
+    "module": "src/humanities7Landmark.ts",
+    "rawMapAndElevationModified": false,
+    "buildingFootprint": "원본 7동 외곽을 유지했다. 일직선 남쪽 변의 중간 꼭짓점만 생성 기하에서 합쳤다.",
+    "courtGround": "원본 표고 위에 안마당 바닥과 지면까지 채운 받침을 만들었다. 5동 옆 계단과 북쪽 보행로의 단차를 이어 주기 위한 근사다.",
+    "courtyardLayout": "위성 지도에 보이는 가운데 녹지와 양옆 통로를 참고했다. 세부 포장, 수목 위치와 화단 경계는 추정이다.",
+    "stairs": "양 끝의 바닥과 계단참을 연결했다. 폭, 단수와 높이는 실측이 아니다.",
+    "mobileGeometry": "줄눈, 창틀과 가지는 병합 기하로 표시한다. 장식마다 독립 물리 객체를 만들지 않는다.",
+    "wholeInteriorImplemented": false,
+    "connectionTo8Implemented": false,
+    "doorsOpenedForGameplay": true,
+    "photoUsedAsTexture": false,
+    "geometry": {
+      "meshes": 2,
+      "signMeshes": 1,
+      "textures": 1,
+      "triangles": 43487,
+      "colliders": 496
+    },
+    "documentedAboveGroundLevels": 4,
+    "modeledVisibleLevels": 3,
+    "floorArrangementVerified": false
+  },
+  "remaining": [
+    "공식 지상 4층과 입구 사진의 세 층을 연결하는 단면 확인 및 외형 보완",
+    "251동 연결부의 층별 내부 구조",
+    "실제 공사 진척과 현재 통제 동선",
+    "7동과 8동의 층별 실내 연결",
+    "안마당 세부 시설의 근접 사진",
+    "실제 휴대전화 성능 측정"
+  ],
+  "validation": {
+    "groups": [
+      {
+        "name": "building 7 scope, bounded geometry and preservation of terrain, roads and other buildings",
+        "status": "PASS"
+      },
+      {
+        "name": "mapped southern and western approaches remain walkable at desktop and mobile speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "front steps and open entrance allow return trips without jumping",
+        "status": "PASS"
+      },
+      {
+        "name": "paving, steps and entrance floors match collision surfaces",
+        "status": "PASS"
+      },
+      {
+        "name": "facade and signs preserve distant damage, reset and world reflection",
+        "status": "PASS"
+      }
+    ],
+    "file": "artifacts/humanities7-access-test/results.json",
+    "unchangedOtherParts": 39234,
+    "floorSamples": 152,
+    "boundaryFloorSamplesCoveredByAdjacentWall": 10,
+    "maximumWalkingPenetration": 0,
+    "rawInputsExact": true,
+    "terrainExact": true,
+    "realPhoneFrameRateMeasured": false
+  }
+}

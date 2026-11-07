@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05",
+  "scope": "102동 맞은편 돌계단의 건물 식별과 지도 위치 재검토",
+  "status": "roadview-observed-location-approximate",
+  "implementationChangedByThisReview": false,
+  "method": "전용 Chrome 연구 탭 395413554에서 cua_repl로 같은 네이버 파노라마를 다시 열고, 시점 회전과 확대 소지도 및 전체 지도 전환을 직접 확인했다. 다른 연구 탭이나 게임 탭은 조작하지 않았다.",
+  "provider": "Naver Streetview",
+  "panoId": "8JWKc-rpjNS64cpqPGQVUA",
+  "captureMonth": "2025-09",
+  "dateEvidence": "거리뷰 UI의 2025년 09월(최신) 표시를 직접 읽었다. 해당 지점의 제공 최신 영상이며 2026년 현장 촬영이라는 뜻은 아니다.",
+  "urls": {
+    "stairs": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%96%89%EC%A0%95%EA%B4%80?c=18.00,0,0,0,adh&p=8JWKc-rpjNS64cpqPGQVUA,142,10,80,Float",
+    "northRoad": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%96%89%EC%A0%95%EA%B4%80?c=18.00,0,0,0,adh&p=8JWKc-rpjNS64cpqPGQVUA,30.94,10,80,Float",
+    "mapOverview": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%96%89%EC%A0%95%EA%B4%80?c=18.00,0,0,0,adh&p=8JWKc-rpjNS64cpqPGQVUA,30.94,10,80,Float&isMini=true"
+  },
+  "identification": {
+    "buildingId": "way/238937635",
+    "buildingNumber": "24",
+    "name": "자연과학관6",
+    "confidence": "지도와 사진의 상대 배치에 근거한 식별",
+    "evidence": [
+      "같은 파노라마의 확대 지도에서 정보화본부 102동과 자연과학관6 24동을 읽었다. 학생회관 63동은 그보다 동쪽의 별도 외곽으로 표시된다.",
+      "관측 지점은 102동 북동쪽 모서리 옆 도로에 표시되고, 계단을 바라보는 방향은 그 지점의 남동쪽이다.",
+      "계단 뒤 긴 몸체와 사진 오른쪽 뒤 25동의 위치 관계가 원본 지도상 24동과 25동의 배치에 맞는다."
+    ],
+    "notConfirmed": "계단 앞의 긴 몸체에서 24 번호 표지를 직접 읽은 것은 아니다. 사진과 같은 화면의 지도 표기 및 주변 건물 관계를 대조한 결과다.",
+    "history": {
+      "previousRecord": "sources/central-plaza-roadview-notes.json",
+      "previousObservationId": "naver-student-information-court-2025",
+      "previousInference": "학생회관 북서쪽 몸체와 돌계단으로 추정했다.",
+      "correction": "그 건물 식별은 이번 24동 후보로 정정한다. 기존 캡처 이름의 63은 위치 확인 결과가 아니며, 옛 메모와 파일명은 조사 이력으로 보존한다.",
+      "previousRecordHashBeforeCorrection": "3123233988fe6a02bc55fdc7357849b6dd540fca6a27ca84076d97dd48ea7947"
+    }
+  },
+  "observed": [
+    "잔디 경사면을 곧게 오르는 좁은 석재 계단이 있다. 디딤면과 측면 경계는 불규칙한 돌로 구성돼 있다.",
+    "오르는 방향 오른쪽에 검은 가로 난간과 세로 기둥이 보인다. 왼쪽 가장자리에는 낮게 다듬은 관목이 이어진다.",
+    "아래쪽은 작은 불규칙 석재 포장을 거쳐 블록 보도와 주차 마당 가장자리에 닿는다.",
+    "상단은 큰 수목에 가려져 있다. 상단 이후의 보행 방향이나 건물 출입구까지 이어지는 길은 이 시점에서 확인하지 못했다.",
+    "같은 위치에서 북쪽으로 회전하면 노란 중앙선, 차단기, 노란색과 흰색 줄무늬 구간, 보도와 식재, 벤치가 보인다. 이 시설의 좌표를 이번 계단 끝점으로 사용하지 않는다."
+  ],
+  "mapMatching": {
+    "coordinateConvention": "D=(동, 위, 북), 단위 m. 원본 게임 지도 좌표이며 측량 성과가 아니다.",
+    "westBuildingEdge": [
+      [
+        108.53,
+        -806.71
+      ],
+      [
+        138.84,
+        -729.45
+      ]
+    ],
+    "adjacentRoad": {
+      "id": "way/167595747/10",
+      "points": [
+        [
+          96.6,
+          -777.48
+        ],
+        [
+          123.38,
+          -719.65
+        ],
+        [
+          131.52,
+          -700.96
+        ]
+      ],
+      "note": "24동 서측 긴 면과 대체로 평행한 서비스 도로다. 관측 지점은 이 도로의 북쪽 구간과 대응하지만 정확한 파노라마 위경도는 확보하지 않았다."
+    },
+    "locationRange": "24동 서측 긴 면의 북쪽 약 20m 구간으로 좁힌다. 정확한 상단과 하단 위치는 미확정이다.",
+    "excluded": [
+      "63동 동쪽 steps way/167984628/68은 이 돌계단과 다른 위치다.",
+      "24동 남쪽 끝의 지도 계단 후보를 이 북쪽 계단으로 합치지 않는다.",
+      "102동 맞은편 계단을 통과하면 곧바로 63동이나 행정관 광장에 연결된다고 주장하지 않는다."
+    ]
+  },
+  "implementationCandidate": {
+    "status": "game-placement-candidate-not-surveyed",
+    "lowerXZ": [
+      123,
+      -740
+    ],
+    "upperXZ": [
+      129,
+      -746
+    ],
+    "basis": "scene의 배치 후보에 controls가 기존 전체 장면의 지형 높이, 벽 여유와 보행을 검사했다. 사진 끝점을 지도에 정확히 투영한 좌표가 아니다.",
+    "reportedTerrainHeights": [
+      26.6761,
+      27.5821
+    ],
+    "reportedLength": 8.485,
+    "reportedRise": 0.906,
+    "reportedUpperBuildingClearance": 3.116,
+    "geometryEvidence": "artifacts/student-north-review/site-review.json",
+    "reportedWalkingScope": "기존 장면의 후보 구간을 6m/s로 왕복할 수 있음을 controls가 확인했다. 새 계단 모델의 검사는 아직 아니다.",
+    "dimensionalLimit": "사진에서 보이는 여러 석재단의 총높이와 기존 DEM의 약 0.906m 높이차가 일치하는지는 미확인이다. 사진의 단수와 실제 높이를 확정하지 않고, 게임에서는 실제 지형에 맞춘 근사로 구분해야 한다.",
+    "recommendedScope": "좁은 돌계단, 아래 포장과 오른쪽 난간의 상대 형태만 적용하고, 수목에 가린 상단 너머의 새 보행 연결은 만들지 않는다. 원본 24동과 63동 외곽 및 기존 63동 남서 계단은 유지한다."
+  },
+  "screenshots": [
+    {
+      "path": "../references/roadview-audit/2025-09/student-north-recheck/102-court-stairs-enlarged-map-ui.png",
+      "sha256": "5a5123354bdcafdb8e83e5889ae1937b770db05163699854e81d002104e594e9",
+      "directlyViewed": true,
+      "description": "돌계단 정면과 확대 소지도, 촬영월 UI."
+    },
+    {
+      "path": "../references/roadview-audit/2025-09/student-north-recheck/102-24-court-map-overview-ui.png",
+      "sha256": "a17b499d1d279dbeb4b7fe82a41cbb7299d9bcc506746de0c191be5be378b29b",
+      "directlyViewed": true,
+      "description": "돌계단과 102동 및 24동 표기가 함께 보이는 지도."
+    },
+    {
+      "path": "../references/roadview-audit/2025-09/student-north-recheck/24-north-corner-and-stair-ui.png",
+      "sha256": "dad35761501cb31a372ec32f0ea0bb3eaa117097da95681101c5a6f0636cbd82",
+      "directlyViewed": true,
+      "description": "회전 후 북쪽 도로, 차단기와 보도를 보여 준다. 저장 당시 파일명과 달리 돌계단 정면이 아니므로 계단 형상의 근거로 사용하지 않는다.",
+      "pan": 30.94
+    },
+    {
+      "path": "../references/roadview-audit/2025-09/student-north-recheck/102-24-full-map-location-ui.png",
+      "sha256": "dc0d27196a27026ee39663ed1750237226c6f2463f5966dbe6e7bf6a590fdc0b",
+      "directlyViewed": true,
+      "description": "전체 지도와 작은 거리뷰를 함께 표시했다. 102동, 24동, 63동의 구분과 파노라마 지점 위치를 확인하는 자료다."
+    }
+  ],
+  "limits": [
+    "이 검토는 실제 거리뷰와 지도 화면을 관찰한 결과다. 게임의 GPU 렌더링이나 휴대전화 성능을 검사한 결과가 아니다.",
+    "지도 화면의 파노라마 표시는 위치 범위를 좁히는 근거다. 원본 지도와 네이버 건물 외곽이 완전히 같다는 가정으로 정밀 좌표를 계산하지 않았다.",
+    "정확한 폭, 단수, 난간 높이, 수목 수와 계단 상단의 목적지는 미확인이다."
+  ],
+  "sourceHashes": {
+    "sources/central-plaza-roadview-notes.json": "35ee157326df5059e84923cdcd11d72d43163d16f6c3db96303ec8adaa851061",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "artifacts/student-north-review/site-review.json": "ba4a06aa77364244152a4cc1488772cd8cac22b525baf6f67b4df9a78c553602"
+  }
+}

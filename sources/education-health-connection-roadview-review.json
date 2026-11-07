@@ -1,0 +1,341 @@
+{
+  "status": "direct-roadview-partial",
+  "reviewedAt": "2026-11-05T13:07:42.046069+00:00",
+  "observer": "controls의 최초 관측에 이어 reference 에이전트가 자신의 Chrome 연구 탭에서 기존 동서 시점과 인접 화살표를 직접 조작했다. 각 사진과 촬영월, 실제 공유 UI의 주소를 확인했다.",
+  "scope": "220동과 221동의 상대 배치 및 상층 테라스, 서측 주차장 진입로를 부분 관측했다. 동측에서 가까이 보이는 140-2동은 별도로 식별했다. L자 통로 양 끝과 220동 필로티의 전체 통과 경로는 확인하지 못했으며 실행 모델은 변경하지 않았다.",
+  "buildingIds": [
+    "way/297046999",
+    "way/297047243"
+  ],
+  "observations": [
+    {
+      "id": "education-health-west-2025-07",
+      "sourceUrl": "https://kko.to/ihnej2uCnB",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1198671874&pan=172.5&tilt=-23.3&zoom=1&urlLevel=3&urlX=489947&urlY=1101600&q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90+%EB%B3%B4%EA%B1%B4%EB%8C%80%ED%95%99%EC%9B%90+221%EB%8F%99&mode=place",
+      "panoid": "1198671874",
+      "photographedAt": "2025-07",
+      "dateEvidence": "로드뷰 좌측 상단의 2025년 07월 표시를 직접 확인했다.",
+      "view": {
+        "pan": 172.5,
+        "tilt": -23.3,
+        "zoom": 1,
+        "urlX": 489947,
+        "urlY": 1101600
+      },
+      "screenshot": "../references/roadview-audit/2025-07-education-health/221-west-to-220-glass-upper-ui.jpg",
+      "buildingIdentity": "221동 검색 결과의 서쪽 촬영점이다. 왼쪽 벽돌 몸체는 221동이며, 오른쪽 긴 유리 몸체는 공식 178-220 사진의 격자 입면, 오른쪽 흰 끝벽, 옥상 차양과 대응한다.",
+      "observed": [
+        "왼쪽 벽돌 몸체와 오른쪽 긴 격자 유리 몸체가 서로 꺾인 배치를 이룬다.",
+        "유리 몸체 아래에 열린 부분이 일부 보이지만 수목이 기둥과 지상 통과면 대부분을 가린다.",
+        "두 몸체 앞에는 콘크리트 벽 사이로 내려가는 지하주차장 램프가 있고 2.3 m 제한 표지가 보인다.",
+        "긴 유리 입면 위로 얇은 옥상 차양이 보인다. 차양 아래 통로의 바닥과 출입문은 식별하지 못했다."
+      ],
+      "inference": "관측점의 미니지도와 남쪽을 향한 시선, 공식 178 사진과의 대응은 현재 모델의 220 북서 가로 날개 유리면 후보를 지지한다. 사진에서 외곽의 모든 접속 모서리를 확인한 것은 아니므로 정확한 지도 변과 치수는 추정으로 남긴다.",
+      "unconfirmed": [
+        "220 7층과 221 6층 통로의 양 끝 문",
+        "L자 꺾임의 정확한 위치와 폭",
+        "하부 통과면 전체의 바닥 높이와 접근 동선"
+      ],
+      "currentnessLimit": "2025년 7월 사진은 221동 증축 공사 완료 시점으로 기록된 2025년 12월보다 이르다. 이 사진으로 증축 후 지상층 외관을 확정하지 않는다."
+    },
+    {
+      "id": "education-health-east-2026-08",
+      "sourceUrl": "https://kko.to/LwtHxRe3Ao",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213023854&pan=247.8&tilt=-29.6&zoom=0&urlLevel=3&urlX=490105&urlY=1101513&q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90+%EB%B3%B4%EA%B1%B4%EB%8C%80%ED%95%99%EC%9B%90+221%EB%8F%99",
+      "panoid": "1213023854",
+      "photographedAt": "2026-08",
+      "dateEvidence": "로드뷰 좌측 상단의 2026년 08월 표시를 직접 확인했다.",
+      "view": {
+        "pan": 247.8,
+        "tilt": -29.6,
+        "zoom": 0,
+        "urlX": 490105,
+        "urlY": 1101513
+      },
+      "screenshot": "../references/roadview-audit/2026-08-education-health/221-east-road-connection-occluded-ui.jpg",
+      "buildingIdentity": "221동 검색 결과 주변의 동측 도로 시점이다. 가까운 청록 유리 몸체는 연속 관측에서 140-2동으로 식별했으며, 가려진 220/221 접속면의 정확한 경계는 미확인이다.",
+      "observed": [
+        "차도 옆 주차 차량, 연석, 큰 수목과 그 뒤 벽돌 및 유리 입면 일부가 보인다."
+      ],
+      "unconfirmed": [
+        "상층 L자 통로와 양 끝 접속면",
+        "221동 증축 하부의 전체 외곽",
+        "220동 하부를 가로지르는 보행 경로"
+      ],
+      "use": "동쪽 도로에서는 연결 끝을 확인하지 못했다는 가림 범위의 증거다. 미관측 면을 완성한 근거로 사용하지 않는다.",
+      "correction": {
+        "reviewedAt": "2026-11-05T13:07:42.046069+00:00",
+        "previousBuildingIdentity": "미니지도에서 221동 동쪽 도로의 촬영점을 확인하고 서남쪽을 보았다. 가까운 221동 입면 일부는 보이지만 남쪽 연결 끝은 수목과 역광에 가린다.",
+        "evidenceObservationId": "east-south-two-140-2-2026-08",
+        "currentInterpretation": "같은 동측 도로에서 남쪽 화살표로 두 번 이동하자 앞서 보이던 청록 유리 몸체의 흰 벽에 140-2 Entrance가 선명하게 보였다. 가까운 유리 몸체와 그 아래 통과구를 221동 입면이나 220동 필로티로 귀속하지 않는다. 원래 시점의 수목 뒤 모든 몸체를 140-2동이라고 확정한 것은 아니다."
+      }
+    },
+    {
+      "id": "east-south-two-140-2-2026-08",
+      "observer": "reference",
+      "sourceUrl": "https://kko.to/SP1Mh10FEn",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213023847&pan=247.0&tilt=6.5&zoom=0&urlLevel=3&urlX=490105&urlY=1101462&q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90+%EB%B3%B4%EA%B1%B4%EB%8C%80%ED%95%99%EC%9B%90+221%EB%8F%99",
+      "panoid": "1213023847",
+      "photographedAt": "2026-08",
+      "dateEvidence": "사진 좌측 상단의 2026년 08월 표시를 직접 확인했다.",
+      "view": {
+        "pan": 247,
+        "tilt": 6.5,
+        "zoom": 0,
+        "urlX": 490105,
+        "urlY": 1101462
+      },
+      "navigation": "기존 pano1213023854에서 아래쪽으로 시선을 돌린 뒤 남쪽 도로 화살표로 두 번 이동했다.",
+      "screenshot": "../references/roadview-audit/2026-08-education-health/east-road-south-two-140-2-identity-ui.jpg",
+      "buildingIdentity": "흰 벽의 140-2 Entrance 문구를 직접 읽어 가까운 청록 유리 몸체를 140-2동으로 식별했다.",
+      "observed": [
+        "청록 유리 돌출 몸체와 흰 벽, 140-2 Entrance 표지가 보인다.",
+        "아래 차량 진입구와 차단기, 횡단보도, 주황 유도봉, 주차 차량이 보인다."
+      ],
+      "use": "기존 동측 관측의 건물 식별을 정정하는 근거다. 220동 필로티나 221동 현관의 형태 근거로 사용하지 않는다.",
+      "countAs220Or221Observation": false,
+      "unconfirmed": [
+        "수목 뒤 220/221 상층 접속면",
+        "220동 필로티의 전체 통과 방향"
+      ],
+      "screenshotSha256": "825ab73829ace001818d1792141f62a3e2444a670bec1575e5249b527ac05b44",
+      "directlyViewed": true,
+      "shareUrlBasis": "카카오 로드뷰의 실제 공유 메뉴에서 현재페이지 URL을 읽고 같은 연구 탭에서 열어 panoid와 시선 값을 확인했다."
+    },
+    {
+      "id": "west-one-northeast-upper-junction-2025-07",
+      "observer": "reference",
+      "sourceUrl": "https://kko.to/qNsbqo46vA",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1198671872&pan=172.0&tilt=-14.6&zoom=0&urlLevel=3&urlX=489960&urlY=1101622&q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90+%EB%B3%B4%EA%B1%B4%EB%8C%80%ED%95%99%EC%9B%90+221%EB%8F%99",
+      "panoid": "1198671872",
+      "photographedAt": "2025-07",
+      "dateEvidence": "사진 좌측 상단의 2025년 07월 표시를 직접 확인했다.",
+      "view": {
+        "pan": 172,
+        "tilt": -14.6,
+        "zoom": 0,
+        "urlX": 489960,
+        "urlY": 1101622
+      },
+      "navigation": "기존 서측 pano1198671874에서 북동 화살표로 한 번 이동하고 상층으로 시선을 돌렸다.",
+      "screenshot": "../references/roadview-audit/2025-07-education-health/west-one-northeast-upper-junction-ui.jpg",
+      "observed": [
+        "221동의 회색 유리 코어 오른쪽 상단에 기둥과 난간이 있는 열린 지붕 테라스가 보인다.",
+        "오른쪽에는 220동의 긴 격자 유리 몸체가 있으며, 그 아래 열린 부분 일부는 보이지만 지면과 기둥 대부분은 수목에 가린다.",
+        "앞쪽 차량 진입로는 콘크리트 옹벽 사이로 지하주차장에 내려간다. 이를 지상 필로티 보행로와 같은 경로로 보지 않는다."
+      ],
+      "unconfirmed": [
+        "상층 데크의 바닥과 L자 꺾임",
+        "220동 7층 및 221동 6층의 양 끝 문",
+        "220 하부를 관통하는 보행로의 연속 바닥"
+      ],
+      "currentnessLimit": "2025년 12월로 기록된 증축 완료 이전 사진이다. 아래층의 공사 가림이나 가려진 부분을 준공 후 개방 공간으로 해석하지 않는다.",
+      "screenshotSha256": "d83b69a94edbd3e025d798ab5ecd595923e68c08536bdf12f1d393d4e2182635",
+      "directlyViewed": true,
+      "shareUrlBasis": "카카오 로드뷰의 실제 공유 메뉴에서 현재페이지 URL을 읽고 같은 연구 탭에서 열어 panoid와 시선 값을 확인했다."
+    },
+    {
+      "id": "west-two-northeast-number-upper-2025-07",
+      "observer": "reference",
+      "sourceUrl": "https://kko.to/yQLxwiboEs",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1198671870&pan=172.0&tilt=-14.0&zoom=0&urlLevel=3&urlX=489970&urlY=1101645&q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90+%EB%B3%B4%EA%B1%B4%EB%8C%80%ED%95%99%EC%9B%90+221%EB%8F%99",
+      "panoid": "1198671870",
+      "photographedAt": "2025-07",
+      "dateEvidence": "사진 좌측 상단의 2025년 07월 표시를 직접 확인했다.",
+      "view": {
+        "pan": 172,
+        "tilt": -14,
+        "zoom": 0,
+        "urlX": 489970,
+        "urlY": 1101645
+      },
+      "navigation": "pano1198671872에서 북동 화살표로 한 번 더 이동했다.",
+      "screenshot": "../references/roadview-audit/2025-07-education-health/west-two-northeast-220-221-number-upper-ui.jpg",
+      "buildingIdentity": "왼쪽 벽돌 건물의 221 보건대학원 표지와 오른쪽 흰 끝벽의 220 번호를 한 화면에서 직접 확인했다.",
+      "observed": [
+        "221동 긴 벽돌 입면, 회색 코어 옆 열린 상층 차양, 220동 긴 유리 입면과 흰 끝벽의 상대 배치가 함께 보인다.",
+        "221동 하부에는 회색 외피와 흰 가림면이 보인다. 준공 후 하부 유리 입면의 온전한 관측은 아니다.",
+        "주차장 램프와 그 양옆 식재, 왼쪽 건물 쪽 포장 보행 공간 일부가 보인다."
+      ],
+      "inference": "공식 178-220 사진과 같은 두 건물의 상대 배치를 지지한다. 미니지도의 촬영점과 남쪽 시선으로 방향을 대조했지만 정확한 건축 모서리 좌표를 측량하지 않았다.",
+      "unconfirmed": [
+        "L자 상층 바닥의 꺾이는 위치",
+        "가려진 접속문과 통로 폭",
+        "필로티 전체의 동서 통과 경로"
+      ],
+      "currentnessLimit": "2025년 7월 사진이며 2025년 12월 증축 완료 이후 상태로 일반화하지 않는다.",
+      "screenshotSha256": "d2914457a5577fc9a203991a16b45267cd905970cd44dcd3d45714555b7b3d8c",
+      "directlyViewed": true,
+      "shareUrlBasis": "카카오 로드뷰의 실제 공유 메뉴에서 현재페이지 URL을 읽고 같은 연구 탭에서 열어 panoid와 시선 값을 확인했다."
+    }
+  ],
+  "unassignedObservations": [
+    {
+      "id": "southwest-220-222-approach",
+      "sourceUrl": "https://kko.to/Zi7nJGPRQO",
+      "photographedAt": "2026-08",
+      "screenshot": "../references/roadview-audit/2026-08-education-health/southwest-220-222-approach-unresolved-ui.jpg",
+      "observed": "220동 검색으로 연 남서쪽 도로에서 흰 몸체와 벽돌 몸체, 난간이 있는 경사로, 식재와 주차 차량을 보았다.",
+      "identity": "검색 결과가 가리키는 건물과 화면 왼쪽 몸체가 같다고 단정할 수 없다. 222동과 220동의 경계 부근이다.",
+      "countAsBuildingObservation": false,
+      "correction": {
+        "reviewedAt": "2026-11-05T13:07:47.639Z",
+        "observer": "controls",
+        "evidenceFile": "artifacts/education-health-review/controls-222-identification.json",
+        "evidenceSha256": "2ab4c92ce1c0b54da48cf3b84c2287f44d5ad25e05816f769df159dbd9551cce",
+        "identifiedBuildingNumber": "222",
+        "identifiedBuildingId": "way/386890828",
+        "basis": "controls가 같은 통과구의 건물 정보 창과 두 로드뷰를 직접 보고, 원본 OSM의 building_passage 보행로와 대조해 생활과학대학 222동 남쪽 짧은 날개로 식별했다. reference는 이 후속 기록을 읽었으며 controls의 UI 조작을 자신이 했다고 기록하지 않는다.",
+        "previousUnassignedTextPreserved": true,
+        "countAs220Or221Observation": false,
+        "coordinateLimit": "교점 좌표와 통과 방향은 원본 지도 계산이며 실측이 아니다. width=2.5는 가공 기본값이라 실제 통과구 폭으로 쓰지 않는다."
+      }
+    },
+    {
+      "id": "southwest-220-222-underpass",
+      "sourceUrl": "https://kko.to/fmZ6Q7AEkn",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022760&pan=51.0&tilt=-5.0&zoom=1&urlLevel=3&urlX=489695&urlY=1101287&q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90+220%EB%8F%99&mode=place",
+      "panoid": "1213022760",
+      "photographedAt": "2026-08",
+      "view": {
+        "pan": 51,
+        "tilt": -5,
+        "zoom": 1,
+        "urlX": 489695,
+        "urlY": 1101287
+      },
+      "screenshot": "../references/roadview-audit/2026-08-education-health/southwest-220-222-underpass-unresolved-ui.jpg",
+      "observed": "흰 몸체 아래에 낮은 통과 공간이 있으며 붉은 포장이 안쪽으로 이어지고 반대편의 밝은 바닥이 보인다. 통과구 오른쪽에 반사경, 경사로 난간, 식재가 있다.",
+      "identity": "처음에는 220 남서 하부로 기록했으나 미니지도와 원본 외곽을 다시 대조하니 인접 222동 동쪽 날개일 가능성이 남는다. 큰 유리 몸체 아래의 220 필로티와 동일한 공간으로 취급하지 않는다.",
+      "countAsBuildingObservation": false,
+      "correction": {
+        "reviewedAt": "2026-11-05T13:07:47.639Z",
+        "observer": "controls",
+        "evidenceFile": "artifacts/education-health-review/controls-222-identification.json",
+        "evidenceSha256": "2ab4c92ce1c0b54da48cf3b84c2287f44d5ad25e05816f769df159dbd9551cce",
+        "identifiedBuildingNumber": "222",
+        "identifiedBuildingId": "way/386890828",
+        "basis": "controls가 같은 통과구의 건물 정보 창과 두 로드뷰를 직접 보고, 원본 OSM의 building_passage 보행로와 대조해 생활과학대학 222동 남쪽 짧은 날개로 식별했다. reference는 이 후속 기록을 읽었으며 controls의 UI 조작을 자신이 했다고 기록하지 않는다.",
+        "previousUnassignedTextPreserved": true,
+        "countAs220Or221Observation": false,
+        "coordinateLimit": "교점 좌표와 통과 방향은 원본 지도 계산이며 실측이 아니다. width=2.5는 가공 기본값이라 실제 통과구 폭으로 쓰지 않는다."
+      }
+    }
+  ],
+  "modelComparison": {
+    "model": "src/educationHealthLandmark.ts",
+    "notes": "sources/education-health-model-notes.json",
+    "existingGeometry": "상층 통로는 이미 구현돼 있다. 공유 좌표에서 (12,18), (12,-6), (21,-6)을 잇는 폭 4 m의 L자 바닥이며, 221 지형 기준고에 21 m를 더한 높이를 사용한다. 이 수치는 현재 모델의 근사값이다.",
+    "logicalCoordinates": {
+      "origin": [
+        530.39,
+        -177.03
+      ],
+      "u": [
+        0.8763074853936069,
+        -0.48175220917307
+      ],
+      "v": [
+        0.48175220917307,
+        0.8763074853936069
+      ],
+      "bridgeGapCentre": [
+        540.039,
+        -184.388
+      ],
+      "deckTurn": [
+        545.902,
+        -192.405
+      ]
+    },
+    "conclusion": "이번 로드뷰는 긴 유리 몸체의 배치를 보강하지만 기존 L자 바닥의 폭, 꺾임, 양 끝 출입문을 실사와 일치한다고 판정할 근거는 부족하다. 신규 구조를 추가하거나 기존 구조를 다시 만들지 않았다.",
+    "knownPrimaryReference": {
+      "url": "https://health.snu.ac.kr/일반공지/?mod=document&uid=4103",
+      "local": "artifacts/education-health-review/bridge-railing-2024.pdf",
+      "role": "2024년 공식 안내는 220 지상 7층과 221 지상 6층의 외부 연결 통로가 있음을 뒷받침한다. 이번 거리뷰로 양 끝을 새로 확인한 것은 아니다."
+    }
+  },
+  "nextVerification": [
+    "221동 남서쪽 옥상 데크를 볼 수 있는 다른 촬영 시점에서 공식 난간 설치 사진의 두 끝과 L자 꺾임을 대조한다.",
+    "220 북서 유리 몸체 아래를 실제로 가로지르는 사진이나 보행 촬영점으로 바닥과 통과 방향을 확인한다.",
+    "남서쪽 통과구는 controls의 후속 관측과 원본 building_passage로 222동에 대응했다. 220/221과 별개로 실제 폭, 천장, 바닥 및 양 끝 접속을 검토한다."
+  ],
+  "limitations": [
+    "최초 관측은 controls, 추가 연속 관측은 reference 에이전트가 직접 수행했다. 루트가 모든 새 화면을 직접 봤다는 뜻은 아니다.",
+    "촬영일은 로드뷰 UI에서 읽은 월이며 관측일과 구분한다.",
+    "사진에서 가린 부분, 실제 치수, 내부 보행 가능 여부는 미확인이다.",
+    "코드 검사 통과나 기존 모델의 게임 내 보행 가능 여부를 실제 구조 확인으로 해석하지 않는다.",
+    "urlX와 urlY는 카카오 서비스 좌표이며 현장 측량 좌표나 게임 좌표로 직접 환산하지 않았다."
+  ],
+  "sourceSnapshot": {
+    "src/educationHealthLandmark.ts": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+    "sources/education-health-model-notes.json": "73df079ed66e37e7e9f6351dcd3e6e4894e6bac8095542b7a2de97292f1abb05",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "../references/buildings/photos/178-220.jpg": "c10f2853bcd2ffe1c0a2f33bfac78bb50e99eb17a6e9dee5de2233dbbafebb79"
+  },
+  "screenshotHashes": {
+    "../references/roadview-audit/2025-07-education-health/221-west-to-220-glass-upper-ui.jpg": "6319e196f8f8cb9f208bdab45fa223dda9106b973552704290671ac7960439e0",
+    "../references/roadview-audit/2026-08-education-health/221-east-road-connection-occluded-ui.jpg": "6f0fe027fb961714c2479159af5ba058f4bb0ec49a8bca4d6dfae8dc42277ab7",
+    "../references/roadview-audit/2026-08-education-health/southwest-220-222-approach-unresolved-ui.jpg": "1f3931093fdb24c4aea9fdab662a646cb4abae46174bcb7cccee534b063ef675",
+    "../references/roadview-audit/2026-08-education-health/southwest-220-222-underpass-unresolved-ui.jpg": "1233743f0f375f183311ab730e48d82227361d1157db6089f743b9d5c59bac91",
+    "../references/roadview-audit/2026-08-education-health/east-road-south-two-140-2-identity-ui.jpg": "825ab73829ace001818d1792141f62a3e2444a670bec1575e5249b527ac05b44",
+    "../references/roadview-audit/2025-07-education-health/west-one-northeast-upper-junction-ui.jpg": "d83b69a94edbd3e025d798ab5ecd595923e68c08536bdf12f1d393d4e2182635",
+    "../references/roadview-audit/2025-07-education-health/west-two-northeast-220-221-number-upper-ui.jpg": "d2914457a5577fc9a203991a16b45267cd905970cd44dcd3d45714555b7b3d8c"
+  },
+  "history": [
+    {
+      "reviewedAt": "2026-11-05T11:48:15.010Z",
+      "observer": "controls 에이전트가 새 Chrome 연구 탭에서 카카오맵 공개 UI를 직접 조작하고 사진과 촬영일을 확인했다.",
+      "scope": "220동과 221동의 상층 연결 끝 및 하부 통과 공간을 조사했다. 건물 전체나 L자 통로 양 끝을 모두 확인한 기록은 아니다. 실행 모델은 변경하지 않았다.",
+      "sourceSnapshot": {
+        "src/educationHealthLandmark.ts": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+        "sources/education-health-model-notes.json": "73df079ed66e37e7e9f6351dcd3e6e4894e6bac8095542b7a2de97292f1abb05",
+        "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+        "../references/buildings/photos/178-220.jpg": "c10f2853bcd2ffe1c0a2f33bfac78bb50e99eb17a6e9dee5de2233dbbafebb79"
+      },
+      "reason": "기존 관측을 보존하고 reference 에이전트의 연속 로드뷰 관측과 건물 식별 정정을 추가했다."
+    }
+  ],
+  "supplementalPhotoComparison": {
+    "observer": "reference",
+    "directlyViewed": true,
+    "files": [
+      {
+        "file": "../references/buildings/photos/178-220.jpg",
+        "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178",
+        "captureDate": null,
+        "observed": "220 번호, 긴 격자 유리 몸체, 그 아래 큰 개방부와 원형 기둥, 얇은 옥상 차양을 직접 봤다. 촬영월은 미확인이다.",
+        "sha256": "c10f2853bcd2ffe1c0a2f33bfac78bb50e99eb17a6e9dee5de2233dbbafebb79"
+      },
+      {
+        "file": "artifacts/education-health-review/bridge-page-2.png",
+        "sourceUrl": "https://health.snu.ac.kr/일반공지/?mod=document&uid=4103",
+        "documentDate": "2024-12-12",
+        "observed": "220동 7층과 221동 6층 연결통로라는 제목, 긴 갈색 바닥, 양쪽 금속 난간, 원형 기둥, 지붕을 직접 봤다. 로드뷰에서 가린 바닥과 양끝 문을 새로 관측한 근거는 아니다.",
+        "sha256": "5070d49e5a936aa4b736576ddbec151c6d7d5a2b495886938c3235ea69a433f7"
+      },
+      {
+        "file": "artifacts/education-health-review/health-image-02.jpg",
+        "sourceUrl": "https://kiramonthly.com/2623",
+        "publicationDate": "2026-05-31",
+        "captureDate": null,
+        "observed": "221 번호와 기존 벽돌 상부 아래에 채워진 유리 하층, 흰 수직 루버, 갈색 출입 전면과 포장 마당을 직접 봤다. 건축사협회 설계 사례의 준공 사진이며 2025년 7월 로드뷰의 공사 중 가림과 구분한다.",
+        "sha256": "1e88cc41206fb1be6e7c4a0b2d1d99c444d9c1ef71482c951e473e52390797d9"
+      }
+    ],
+    "modelDecision": "현재 L자 통로의 존재와 층별 연결은 공식 공지 근거로 유지할 수 있으나, 이번 거리뷰만으로 현 모델의 꺾임 좌표, 폭 4 m, 양 끝 문이 실사와 정확히 일치한다고 확정할 수 없다. 221동 하부는 증축 후 설계 사례를 우선하며, 동측 140-2동 통과구나 남서측 인접 건물의 통과구를 220 필로티로 옮기지 않는다."
+  },
+  "runtimeChangedByThisReview": false,
+  "wholeCampusRoadviewComparisonComplete": false,
+  "modelComparisonSnapshotMeaning": "modelComparison과 sourceSnapshot은 로드뷰 조사 당시의 이전 모델을 보존한 기록이다. 이후 구현은 implementationAfterReview를 참조한다.",
+  "implementationAfterReview": {
+    "file": "sources/education-health-model-notes.json",
+    "note": "로드뷰 대조 후 공식 도면과 준공 사진을 보완해 층 바닥, 출입문과 주변 포장을 수정했다. 가려진 부분을 새 거리뷰 관측으로 세지 않는다."
+  },
+  "portableEvidenceCopies": {
+    "artifacts/education-health-review/controls-222-identification.json": {
+      "file": "sources/living-science-south-passage-roadview-review.json",
+      "sha256": "2ab4c92ce1c0b54da48cf3b84c2287f44d5ad25e05816f769df159dbd9551cce"
+    }
+  }
+}

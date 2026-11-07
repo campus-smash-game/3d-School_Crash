@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T15:15:33.260Z",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/167983080",
+  "buildingNumber": "2",
+  "scope": "2동 남쪽의 긴 외벽과 동쪽 끝벽을 보완한다. 기존 250동 계단, 3동 연결교와 동쪽 출입구, 발코니, 게시판 및 광장 포장은 유지한다.",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000002.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=2",
+      "localPhoto": "../references/buildings/photos/002-2.jpg",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "짙은 벽돌과 흰 수평 띠 및 기둥",
+        "최상층의 작은 창과 아래층의 큰 창",
+        "맨 아래 창의 세로 창살",
+        "돌로 마감한 외벽 하부",
+        "깊은 처마와 아래쪽 지지대",
+        "옥상 난간의 긴 틈"
+      ],
+      "limits": "사진에 보이는 긴 외벽을 지도상의 남쪽 면에 대응했다. 건물 전체 창 개수, 치수, 촬영일과 정확한 재료는 확인하지 못했다.",
+      "sha256": "84855adcbff1bcad94bcb579d91545ed5620beb51100a51c945c48d680519347"
+    },
+    {
+      "url": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+      "title": "인문대 소식 제62호, 2026년 1호",
+      "published": "2026-04-20",
+      "captureDate": null,
+      "pdfPage": 14,
+      "printedPage": 27,
+      "photoCredit": "이동훈",
+      "localPhoto": "artifacts/humanities23-review/47-newsletter-007.png",
+      "directlyViewedBy": "root",
+      "observed": [
+        "2동 번호가 붙은 창 없는 벽돌 끝벽",
+        "중앙의 두 발코니와 아래 출입문",
+        "흰 연결교와 녹색 유리",
+        "열린 아래 통로와 계단",
+        "벽 게시판과 자전거 거치대, 벤치, 포장 무늬"
+      ],
+      "limits": "기존 연결부와 시설의 위치를 대조했다. 새 번호와 벽돌 줄눈의 크기는 근사다. 발행일을 촬영일로 간주하지 않는다.",
+      "sha256": "4fd6df2ec24b2fab77832a24d9b5290c5f9152973aee118425fdde4a7ec99ac8"
+    },
+    {
+      "url": "https://humanities.snu.ac.kr/community/notice?bbsidx=3628&md=v",
+      "published": "2025-11-14",
+      "directlyReadBy": "root",
+      "observed": "면접 공지에 2동 1층 자하연 방향 입구가 안내돼 있다.",
+      "limits": "특정 행사 안내다. 현재 상시 개방 상태와 문 외형은 미확인이다. 56판에서 열리지 않았던 첨부 PDF를 57판에 다시 확인했으며, 방향과 구현 근거는 humanities2-entry-notes.json에 기록했다."
+    }
+  ],
+  "roadviewReview": {
+    "priorRecord": "sources/humanities-passage-roadview-review.json",
+    "captures": [
+      "artifacts/humanities-review/output/playwright/35-1-2-coverage-ui.png",
+      "artifacts/humanities-review/output/playwright/35-naver-1-near-lines-ui.png"
+    ],
+    "directlyViewedBy": "root",
+    "observed": "이전 카카오맵과 네이버지도 캡처에서 1동과 2동 내부 보행로에 촬영선이 보이지 않았다. 캡처를 다시 확인하고 공식 사진으로 외벽을 대조했다.",
+    "newLiveRoadviewVisit": false,
+    "limits": "다른 시기의 사진이나 다른 지도 서비스의 촬영 자료까지 없다고 판단하지 않는다."
+  },
+  "implementation": {
+    "module": "src/humanities2Landmark.ts",
+    "heightMeters": 14,
+    "levels": 4,
+    "heightEstimated": true,
+    "levelsEstimated": true,
+    "dimensionsEstimated": true,
+    "photoFaceMappingEstimated": true,
+    "rawMapAndElevationModified": false,
+    "wholeInteriorImplemented": false,
+    "photoTexturesCopied": false,
+    "existing250And23Preserved": true,
+    "details": [
+      "층별 창 크기와 창틀",
+      "남쪽 아래층 창살과 돌 마감",
+      "벽돌 줄눈",
+      "흰 기둥과 층별 띠",
+      "처마와 지지대, 옥상 난간",
+      "동쪽 2동 번호"
+    ],
+    "estimatedDetails": [
+      "배수관의 치수와 위치",
+      "벽돌과 창의 색 및 줄눈 간격",
+      "사진 밖 외벽의 일반 마감"
+    ],
+    "geometryPolicy": "작은 줄눈과 창틀은 병합 메시로 표시하고 소속 벽이 부서질 때 함께 사라진다. 개별 줄눈에 충돌체를 만들지 않는다.",
+    "limits": [
+      "북쪽 긴 면과 서쪽 후면의 근접 외관은 미확인이다.",
+      "동쪽 입구와 250동 연결부의 높이 차이를 기존 지형에 맞춰 유지했다. 실제 층별 단면을 실측한 결과는 아니다.",
+      "지상에서 상부 연결교로 올라가는 전체 실내 동선은 구현하지 않았다."
+    ],
+    "geometry": {
+      "meshes": 2,
+      "textures": 0,
+      "triangles": 38014,
+      "colliders": 252
+    },
+    "jahayeonEntranceImplemented": true,
+    "westEntrancePhotoConfirmed": false
+  },
+  "remaining": [
+    "서쪽 출입구 근접 사진과 정확한 문 위치 및 계단 형태",
+    "북쪽 및 서쪽 외벽의 근접 사진",
+    "층별 실내 연결과 실측 치수",
+    "실제 휴대전화 성능 측정"
+  ],
+  "validation": {
+    "file": "artifacts/humanities2-exterior-test/results.json",
+    "groups": [
+      {
+        "name": "building 2 replacement preserves terrain, other buildings and completed connections",
+        "status": "PASS"
+      },
+      {
+        "name": "roof surfaces match their colliders",
+        "status": "PASS"
+      },
+      {
+        "name": "west entrance remains walkable at desktop and mobile speeds in both directions",
+        "status": "PASS"
+      },
+      {
+        "name": "entrance surfaces and recessed balcony openings match physics",
+        "status": "PASS"
+      },
+      {
+        "name": "photo facade details retain destruction at distance and restore together",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherParts": 41383,
+    "roofSamples": 11,
+    "rawInputsExact": true,
+    "terrainExact": true,
+    "realPhoneFrameRateMeasured": false,
+    "entryReview": {
+      "file": "artifacts/humanities2-exterior-test/results.json",
+      "groups": [
+        {
+          "name": "building 2 replacement preserves terrain, other buildings and completed connections",
+          "status": "PASS"
+        },
+        {
+          "name": "roof surfaces match their colliders",
+          "status": "PASS"
+        },
+        {
+          "name": "west entrance remains walkable at desktop and mobile speeds in both directions",
+          "status": "PASS"
+        },
+        {
+          "name": "entrance surfaces and recessed balcony openings match physics",
+          "status": "PASS"
+        },
+        {
+          "name": "photo facade details retain destruction at distance and restore together",
+          "status": "PASS"
+        }
+      ],
+      "walkSpeeds": [
+        6,
+        8
+      ],
+      "walkLateralOffsets": [
+        -0.65,
+        0,
+        0.65
+      ],
+      "bothDirections": true,
+      "unchangedOtherParts": 41383,
+      "surfaceSamples": 14,
+      "balconySlotSamples": 2,
+      "realPhoneFrameRateMeasured": false
+    }
+  },
+  "laterEntryAndBalconyReview": {
+    "notes": "sources/humanities2-entry-notes.json",
+    "summary": "자하연 쪽 입구 방향을 북쪽으로 가정한 식별자를 바로잡고 서쪽에 근사 입구를 추가했다. 공식 1동 사진에 함께 보이는 2동 남쪽 발코니도 보완했다."
+  }
+}

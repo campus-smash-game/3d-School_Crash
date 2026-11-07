@@ -1,0 +1,30 @@
+{
+  "scope": "OSM에 없는 303동의 사진 관찰 기록. 외곽 위치와 치수는 별도 근사 자료다.",
+  "entries": [{
+    "buildingId": "supplemental/snu-303",
+    "buildingNumber": "303",
+    "name": "해동첨단공학관",
+    "sourceUrl": "https://haec.snu.ac.kr/about",
+    "visuallyInspected": true,
+    "identityVerified": true,
+    "appearanceUsable": true,
+    "identityEvidence": "공식 시설 소개의 303동 명칭과 준공 사진, Rawwrks의 2024년 촬영을 대조했다. 공식 약도로 주변 건물과의 상대 위치를 확인했으나 실측 외곽은 확보하지 못했다.",
+    "documentedLevels": 7,
+    "observations": [
+      "회색 패널을 두른 남쪽 몸체에는 큰 창 다섯 줄이 보이고, 북쪽 몸체에는 큰 창 세 줄과 낮은 창 띠가 보인다.",
+      "가운데 유리면은 접혀 있으며 내부에 목재 기둥과 대각선 부재, 좁은 회랑과 위층까지 열린 공간이 보인다.",
+      "서쪽에는 열린 주차 필로티가 있고 동쪽 2층 현관 앞에는 넓은 데크가 있다."
+    ],
+    "limitations": [
+      "7층은 공식 규모다. 28m 높이와 부분별 높이, 창 치수는 사진에 따른 추정이다.",
+      "약도 정합의 별도 검증점 오차는 약 8~19m다. 보조 외곽의 소수 자릿수는 실측 정확도를 뜻하지 않는다.",
+      "301동 방향의 연결 데크는 사진에 보이지만 게임의 기존 지형과 높이가 맞지 않아 연결 다리는 보류했다."
+    ],
+    "profile": {
+      "wallColor": "#c8cbca", "roofColor": "#969e9c", "glassColor": "#719197", "frameColor": "#3d484b", "accentColor": "#9b7950",
+      "surface": "panel", "windowStyle": "punched", "windowWidthRatio": 0.32, "windowHeightRatio": 0.7, "bayWidth": 2.8,
+      "horizontalBands": false, "verticalFins": false, "roofStyle": "parapet", "confidence": "reference",
+      "sourceUrls": ["https://haec.snu.ac.kr/about", "https://rawwrks.kr/works/commissioned/haec"]
+    }
+  }]
+}

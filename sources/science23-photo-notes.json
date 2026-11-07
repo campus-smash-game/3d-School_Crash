@@ -1,0 +1,244 @@
+{
+  "reviewDate": "2026-11-07",
+  "buildingId": "way/161957771",
+  "buildingNumber": "23",
+  "phase": 73,
+  "scope": "23동 자연과학관5 외관과 253동 화학관연결동의 공개 자료 조사",
+  "summary": [
+    "23동 공식 사진에서 남쪽 긴 면의 서쪽 부분에 열린 하부 통로, 동쪽 부분에 넓은 외부 계단이 보인다. 남남서쪽 면이라는 대응은 지도 윤곽과 배경 관정관의 위치를 대조한 추정이다.",
+    "자연과학대학 학생회 공개 배리어프리 지도는 23동 서쪽 짧은 면에 경사로와 자동문이 있는 출입구, 남쪽 긴 면에 계단 출입구를 표시한다. 사진의 열린 하부 통로와 서쪽 출입문은 같은 대상으로 단정하지 않았다.",
+    "공식 지도는 253동을 22동과 23동의 연결통로로 등록한다. 별도 공식 사진과 현재 층별 접속 높이는 확인하지 못했다.",
+    "2008년 공식 고시에 화학관연결동-1 증축과 연결동-2 신축이 나오지만 어느 항목이 현재 253동인지 확인되지 않았다. 이번 모델에 253동의 층수와 열린 하부를 새로 확정할 근거는 부족하다."
+  ],
+  "evidence": [
+    {
+      "id": "official-23-photo",
+      "kind": "서울대학교 공식 건물 사진",
+      "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=27",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000027.jpg",
+      "originalLocalFile": "D:/codex/3d-School_Crash/references/buildings/photos/027-23.jpg",
+      "localFile": "research-official23.jpg",
+      "directlyViewed": true,
+      "captureDate": null,
+      "publicationDate": null,
+      "identity": "상단 처마에 23 숫자가 보이며 공식 inst_seq=27 사진과 일치한다.",
+      "observed": [
+        "갈색 벽돌을 흰 기둥과 수평 보가 나눈다. 위쪽 작은 창 두 줄과 그 아래 큰 창 한 줄이 보이며 창틀은 어두운 청색이다.",
+        "큰 창 주변에는 흰 돌출 틀이 있다. 최하부는 회색 석재이며 여러 창에 세로 창살을 설치했다.",
+        "사진 왼쪽 하부에 직사각형 관통 공간이 있다. 반대쪽의 빛과 돌담이 보이며 앞에는 낮은 계단이 있다.",
+        "건물 앞을 따라 금속 난간을 두른 경사로가 길게 이어지고 안내판, 관목과 수목이 보인다.",
+        "사진 오른쪽에는 넓은 외부 계단이 있다. 어두운 디딤판의 앞선은 밝고, 흰 난간벽에는 직사각형 테두리 무늬가 반복된다.",
+        "계단은 큰 창이 있는 높이까지 올라간다. 상단 출입문 자체와 계단 전체 끝점은 화면 밖이거나 가려져 있다.",
+        "앞마당에는 작은 포장블록과 벤치가 있다. 사진 왼쪽 끝에는 건물 단부의 겹친 수평 슬래브 일부가 보인다."
+      ],
+      "orientationInference": {
+        "face": "남남서쪽 긴 면",
+        "outwardAzimuthDegreesApprox": 204.5,
+        "basis": "OSM 23동 남쪽 긴 변의 방향과 사진 오른쪽 뒤 관정관의 위치를 대조했다. 방위각은 원본 지도 변의 바깥 법선을 계산한 값이며 촬영 카메라 방향을 실측한 값이 아니다.",
+        "placement": "관통 공간은 이 긴 면의 서쪽 부분, 넓은 계단은 동쪽 부분에 대응할 가능성이 높다."
+      },
+      "limits": [
+        "촬영일, 전체 층수, 지하층 구분, 창과 기둥의 실측 치수는 확인하지 못했다.",
+        "계단의 정확한 단수와 높이, 관통 공간의 폭과 내부 동선, 출입문 중심은 사진만으로 확정하지 않았다.",
+        "관통 공간을 253동의 열린 하부로 해석하지 않았다. 사진은 23동 본체의 하부를 보여 준다."
+      ]
+    },
+    {
+      "id": "student-barrierfree-map",
+      "kind": "자연과학대학 학생회 공개 안내도",
+      "pageUrl": "https://snucns.oopy.io/1c785298-0ebf-805e-a4d5-e908db466f81",
+      "imageUrl": "https://cdn.lazyrockets.com/notion-image/v1/342b32b1963333a29df2fcbae7e728c8da0f107f965508540b729a9b221890e1.png",
+      "localFile": "research-student-bbf-map.png",
+      "directlyViewed": true,
+      "captureDate": null,
+      "publicationDate": null,
+      "observed": [
+        "23동 서쪽 짧은 면의 초록 표식은 범례상 경사로와 자동문 설치 출입구다.",
+        "23동 남쪽 긴 면의 빨간 표식은 계단 출입구다.",
+        "22동 북쪽 끝에도 빨간 출입구 표식이 있다. 22동과 23동 사이 일부 공간은 휠체어 이동 불가능 구역 색으로 표시했다."
+      ],
+      "limits": [
+        "그림은 동선을 단순화한 안내도이며 문 중심 좌표, 층고, 계단 모양을 측정할 도면이 아니다.",
+        "지도 안에 제작일이나 조사일이 없다. 같은 페이지의 다른 이미지 파일 날짜를 이 지도 날짜로 사용하지 않았다.",
+        "22동과 23동 사이 색칠된 공간 전체를 253동으로 단정하거나 현재 모든 경로가 통행 불가능하다고 일반화하지 않았다."
+      ]
+    },
+    {
+      "id": "official-253-registration",
+      "kind": "서울대학교 공식 지도 상세 정보의 로컬 보존본",
+      "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=184",
+      "localSource": "D:/codex/3d-School_Crash/references/buildings/details/184.json",
+      "observed": {
+        "inst_seq": 184,
+        "bd_no": "11C2530",
+        "vil_dong_nm": "253",
+        "englishName": "Connected Passage (22-23)",
+        "markerLatLon": [
+          37.45839,
+          126.95118
+        ],
+        "markerGameXZApprox": [
+          246.06,
+          -888.14
+        ],
+        "photo": null
+      },
+      "limits": "마커는 위치 안내용이다. 건물 윤곽, 문 좌표, 층수나 높이를 뜻하지 않는다. 이번 웹 열람은 오류가 나 기존 공식 자료 보존본을 읽었다."
+    },
+    {
+      "id": "osm-23-doors",
+      "kind": "원본 지도 출입구 태그",
+      "localSource": "D:/codex/3d-School_Crash/campus-gate/sources/campus.osm",
+      "extractedFile": "research-23-entrance-nodes.json",
+      "mapEditTimestamp": "2016-12-19T17:16:56Z",
+      "doors": [
+        {
+          "node": "4562088379",
+          "gameXZApprox": [
+            210.79,
+            -856.17
+          ],
+          "face": "서쪽 짧은 면",
+          "wheelchair": "yes"
+        },
+        {
+          "node": "4562088380",
+          "gameXZApprox": [
+            238.23,
+            -880.63
+          ],
+          "face": "남쪽 긴 면",
+          "wheelchair": "no"
+        },
+        {
+          "node": "4562088381",
+          "gameXZApprox": [
+            256.61,
+            -883.38
+          ],
+          "face": "동쪽 짧은 면",
+          "wheelchair": "yes"
+        }
+      ],
+      "limits": "날짜는 지도 편집 시각이며 촬영일이나 현장 조사일이 아니다. 문 폭, 바닥 높이와 층 번호는 없다. way/161957771의 level=5를 building:levels=5로 해석하지 않았다."
+    },
+    {
+      "id": "seoul-gazette-2008",
+      "kind": "서울시보의 건축협의 및 실시계획 변경 고시",
+      "url": "https://event.seoul.go.kr/seoulsibo/fileDownload.do?fileName=%EC%A0%9C2813%ED%98%B8.pdf",
+      "localFile": "research-seoul-gazette2813.pdf",
+      "renderedFiles": [
+        "research-gazette-page138.png",
+        "research-gazette-page139.png"
+      ],
+      "directlyViewed": true,
+      "publicationDate": "2008-01-10",
+      "issue": "제2813호",
+      "pages": [
+        138,
+        139
+      ],
+      "notice": "관악구고시 제2007-55호",
+      "plannedCompletionDate": "2008-10-31",
+      "table": [
+        {
+          "name": "화학관(23동)",
+          "footprintBeforeSqm": 918.72,
+          "footprintAfterSqm": 918.72,
+          "grossFloorAreaBeforeSqm": 4164.6,
+          "grossFloorAreaAfterSqm": 4440.88,
+          "change": "증축"
+        },
+        {
+          "name": "화학관연결동-1",
+          "footprintBeforeSqm": 66,
+          "footprintAfterSqm": 172.47,
+          "grossFloorAreaBeforeSqm": 132,
+          "grossFloorAreaAfterSqm": 344.94,
+          "change": "증축"
+        },
+        {
+          "name": "화학관연결동-2",
+          "footprintBeforeSqm": null,
+          "footprintAfterSqm": 91.44,
+          "grossFloorAreaBeforeSqm": null,
+          "grossFloorAreaAfterSqm": 91.44,
+          "change": "신축"
+        }
+      ],
+      "limits": [
+        "계획 변경 고시이며 실제 준공일이나 현재 상태를 증명하지 않는다.",
+        "연결동-1과 연결동-2 중 현재 253동에 해당하는 항목을 확인하지 못했다.",
+        "면적 비율만으로 층수를 확정하지 않았다. 지하층, 면적 산입 범위와 구조를 설명하는 도면이 필요하다.",
+        "본문은 위치도와 계획평면도를 별첨이라고 쓰지만 이번에 직접 본 두 쪽에는 도면이 없다."
+      ]
+    },
+    {
+      "id": "aerial-and-satellite",
+      "kind": "인접 신축 건물 자료의 항공사진과 배치 설명용 위성사진",
+      "directlyViewed": true,
+      "sources": [
+        {
+          "pageUrl": "https://vmspace.com/project/project_view.html?base_seq=Mzc4Mw%3D%3D",
+          "imageUrl": "https://vmspace.com/ActiveFile/spacem.org/board_img/96468436569b782d901e03.jpg",
+          "localFile": "research-space2025-aerial.jpg",
+          "credit": "김태윤",
+          "dateNote": "2025년 8월 준공한 56-1동을 포함한 완공 사진이다. 정확한 촬영일과 게시일은 이 조사에서 확인하지 않았다."
+        },
+        {
+          "pageUrl": "https://designcampus.snu.ac.kr/competition/snu56/",
+          "documentUrl": "https://designcampus.snu.ac.kr/wp-content/uploads/2022/07/1.-물리천문학부56동-증축-설계공모-지침서-220707-01.hwp",
+          "localFile": "research-guideline2022-satellite.png",
+          "dateNote": "2022-07-07 설계공모 지침서 안의 그림이다. 위성사진 촬영일은 확인하지 못했다."
+        }
+      ],
+      "observed": "23동과 22동 끝 사이에 두 본체보다 낮은 녹색 지붕의 직사각형 구조물이 보인다. 2022년 그림은 22동과 23동 이름을 표시해 두 건물의 상대 위치를 파악할 수 있다.",
+      "limits": "이 구조물을 253동 후보로 대응할 수 있으나 지붕만으로 정확한 경계, 법정 층수, 열린 하부, 계단이나 출입문 위치는 확인할 수 없다."
+    }
+  ],
+  "unviewedCandidate": {
+    "pageUrl": "https://m.blog.naver.com/kmu2333/221474617815",
+    "publicationDate": "2019-03-23",
+    "authorStatedVisitDate": "2018-11-22",
+    "imageCaption": "자연과학관5",
+    "imageUrl": "https://mblogthumb-phinf.pstatic.net/MjAxOTAxMTVfMjQz/MDAxNTQ3NDgyOTc5NDU5.AW6bgWDeGYAMrb8FaS1qj1Mct1hNyFKZZ4FfVgg4kbcg.KO6v2buwVVKY6GR7lsm_m_Cb9B3lWTDbmTw-xm4Sw5cg.JPEG.kmu2333/seouluniv_(523).JPG?type=w800",
+    "status": "기존 공개 HTML에서 캡션과 이미지 주소를 찾았지만 이미지 호스트 접속 실패로 직접 보지 못했다. 외형 판단 근거에서 제외했다."
+  },
+  "implementationGuidance": {
+    "supported": [
+      "23동 남쪽 면의 창 크기 차이, 흰 돌출 틀과 회색 석재 하부",
+      "23동 남쪽 면 서쪽 부분의 열린 관통 공간과 앞의 낮은 계단",
+      "23동 남쪽 면 동쪽 부분의 넓은 계단과 흰 난간벽",
+      "본체 앞의 금속 난간 경사로와 작은 블록 포장"
+    ],
+    "requiresApproximation": [
+      "통로와 계단의 치수, 바닥 높이와 문 중심",
+      "사진 밖에서 이어지는 통로와 계단 상단"
+    ],
+    "defer": "253동의 상세 구조와 층별 연결은 직접 사진이나 도면을 확보한 뒤 구현한다. 23동 하부 관통 공간을 253동의 구조로 옮겨 적용하지 않는다."
+  },
+  "roadview": {
+    "url": "https://kko.to/WNxUfoQRIY",
+    "captureMonth": "2011-03",
+    "directlyViewed": true,
+    "view": "동쪽 짧은 면의 벽돌, 흰 수평 띠, 중앙 파란 창과 열린 옥상 난간",
+    "limits": "오래된 사진이다. 현재의 출입구 세부와 북쪽 외관을 확인한 자료로 쓰지 않았다."
+  },
+  "implemented": [
+    "남쪽 벽돌과 흰 구조 띠, 파란 창틀과 통풍구, 낮은 층 석재와 창살",
+    "서쪽 하부 통로와 앞계단, 남쪽 두 단 계단과 흰 난간벽",
+    "OSM의 세 출입구 좌표에 맞춘 진입 공간과 경사로",
+    "앞마당 포장 줄눈, 벤치, 낮은 식재대와 금속 난간"
+  ],
+  "estimated": [
+    "실제 치수, 층고, 각 출입구의 층 배정, 계단 단수와 길이",
+    "하부 통로의 내부 진행 방향과 안쪽 문, 북쪽 연결 경사로",
+    "북쪽 창과 서쪽 끝 외관 중 가려진 세부",
+    "벤치와 식재대의 개수와 세부 위치"
+  ],
+  "notImplemented": [
+    "253동 연결동은 현재 외형과 접속 높이 미확인으로 이번 변경에서 제외",
+    "건물 전체 내부와 현재 영업 중인 가게 간판"
+  ],
+  "dataPolicy": "원본 OSM, DEM, 건물과 도로 좌표는 보존한다. 렌더링과 보행용 국소 지형만 보정한다."
+}

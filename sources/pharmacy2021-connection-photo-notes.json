@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T19:35:05.830Z",
+  "buildingId": "way/435329614",
+  "neighborIds": [
+    "way/167598095",
+    "way/167598052"
+  ],
+  "scope": "20동과 21동 사이 연결부의 외관, 아래쪽 통과 공간, 낮은 유리 연결통로와 뒤쪽 계단을 보완했다.",
+  "status": "implemented-partial-photo-reference",
+  "references": [
+    {
+      "url": "https://kko.to/6GQzzNC7rO",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy21-review65/65-connector-centered.png",
+          "sha256": "93bead3f3bca85efa2ffeda54f7539c28f92896cba894f3d0a38dfe06048a6bc"
+        },
+        {
+          "file": "artifacts/pharmacy21-review65/65-connector-upper.png",
+          "sha256": "c16fe1f517e26dd8686391442c437f471e02df9f70bfc8946e3626e1c18fbede"
+        },
+        {
+          "file": "artifacts/pharmacy21-review65/65-connector-front.png",
+          "sha256": "7fc18e1b9d0203ff6af8b08dbc26597682062eea2db8ca78b81810c16b5bdf45"
+        }
+      ],
+      "observed": [
+        "두 층의 곡선 유리 발코니와 분홍색 판 외장, 오른쪽 넓은 창",
+        "후퇴한 낮은 유리 연결통로와 열린 하부, 흰 원형 기둥",
+        "하부 뒤쪽 계단과 앞쪽 보도, 자전거 거치대 및 배수로"
+      ],
+      "limits": "바닥 높이, 곡률, 문 좌표와 실제 출입 상태는 확인하지 못했다."
+    },
+    {
+      "url": "https://kko.to/VPgWKMI4ox",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy21-review65/65-connector-rear.png",
+          "sha256": "6be48f06a57fc08972d778a255c8bc2c869ab6acae34fa102bc48b5e59838c20"
+        }
+      ],
+      "observed": [
+        "뒤쪽의 넓은 유리 외벽과 금속 프레임, 노란빛 환기구",
+        "낮은 난간과 식재, 앞쪽의 별도 고가 연결교 기둥"
+      ],
+      "limits": "도로 위의 143동 방향 연결교는 이번 연결부 모델에 포함하지 않았다."
+    },
+    {
+      "url": "https://kko.to/83yvgUQ6c2",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy21-review65/65-rear-stair-side.png",
+          "sha256": "b59f77f2fd351ddc9f1427c859b7dbeb8903e1a7c5a6e52e807a25320f626f8b"
+        }
+      ],
+      "observed": [
+        "유리 외벽 아래로 내려가는 계단과 금속 난간",
+        "도로에서 계단으로 이어지는 포장길, 양쪽 식재와 단차"
+      ],
+      "limits": "계단의 전체 단수와 중간 참 길이는 측정하지 않았다."
+    },
+    {
+      "url": "https://snupharm.snu.ac.kr/약학박물관/",
+      "documentUrl": "https://snupharm.snu.ac.kr/wp-content/uploads/sites/229/2024/08/서울대학교-약학대학-약학역사관-리플릿2024.pdf",
+      "page": 2,
+      "pdfCreatedAt": "2019-10-11",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy21-review65/research-leaflet-2.png",
+          "sha256": "678d7d440826b81bb7e2e78c66cf84ad8a4c7968c59dfa4c60b7e468324bdd04"
+        }
+      ],
+      "observed": [
+        "21동 3층과 4층 연결통로의 전시홀 안내"
+      ],
+      "limits": "문 위치, 축척과 방위는 제시되지 않는다. 전시실 전체와 내부 계단을 재현하는 근거로 사용하지 않았다."
+    }
+  ],
+  "mapEvidence": {
+    "file": "sources/campus.osm",
+    "rawWayVersion": 3,
+    "rawWayTimestamp": "2020-09-16T09:57:00Z",
+    "rawHeightPresent": false,
+    "rawBuildingLevelsPresent": false,
+    "rawInputsModified": false
+  },
+  "implementation": {
+    "modules": [
+      "src/pharmacy2021Site.ts",
+      "src/pharmacy2021Connection.ts"
+    ],
+    "lowerFloorSource": "기존 20동 현관의 게임 높이 62m를 따른다.",
+    "estimatedGround": 58.5,
+    "estimatedLowerFloor": 62,
+    "estimatedPinkFloor": 65.5,
+    "estimatedRoof": 72.5,
+    "estimatedStairWidth": 2.6,
+    "upperBalconyLevels": 2,
+    "rawPolygonPreserved": true,
+    "renderedCurvatureEstimated": true,
+    "fullInterior": false,
+    "approach": {
+      "northwestRoadStation": -15.5,
+      "southeastRoadStation": 22,
+      "stairFlights": 2,
+      "upperSlopedApproach": true,
+      "terrainBlendWidth": 0.5,
+      "dimensionsEstimated": true
+    },
+    "geometry": {
+      "meshes": 2,
+      "textures": 0,
+      "triangles": 8652,
+      "colliders": 231
+    }
+  },
+  "limitations": [
+    "층고, 난간 곡률, 계단 단수와 참, 통로 깊이와 문 치수는 사진과 게임 지형에 맞춘 근사다.",
+    "양쪽 건물은 짧은 현관까지만 연결한다. 위층 전시실과 전체 실내는 재현하지 않았다.",
+    "실제 문 개방 상태와 주차 차량 배치는 재현하지 않았다.",
+    "143동 방향 별도 연결교와 20동 뒤쪽 출입구는 별도 보완 대상이다.",
+    "사진을 게임 텍스처로 사용하지 않았다."
+  ],
+  "followupObservations": [
+    {
+      "subject": "도서관 방향 계단",
+      "url": "https://kko.to/IAoLNaYoLi",
+      "capture": {
+        "file": "artifacts/pharmacy21-review65/65-nw-stairs-loaded.png",
+        "sha256": "9946d6e5108ec8bf00d2a09487e070cfd5e22cd8040b455934a04dd0e0cc6c71"
+      },
+      "status": "후속 보완 완료",
+      "finding": "이번 시점에는 아래로 내려가는 계단이 보인다. 기존 libraryLandmark의 상승 계단은 약 [341.21,-886.84]에서 [327.53,-872.39]로 배치됐고 sourceSteps에 way/167597860/23을 참조한다. 기존 참고 사진의 촬영점과 실제 계단 위치를 다시 대조해야 한다. 이번에는 기존 도서관 모델을 수정하지 않았다.",
+      "resolvedBy": "sources/library-stair-alignment-photo-notes.json"
+    },
+    {
+      "subject": "20동 뒤쪽 현관",
+      "url": "https://kko.to/kKm0Vyqa_e",
+      "capture": {
+        "file": "artifacts/pharmacy21-review65/65-se-sw1.png",
+        "sha256": "512e7717fbc367b3039644435d20a6dff0fab7b4325f50ff0fd8b98e72f440a1"
+      },
+      "status": "별도 보완 대상",
+      "finding": "낮은 긴 차양, 유리문, 금속 난간과 포장 접근로가 보인다. 원본 보행로 /178과의 대응은 추가 확인이 필요하다."
+    }
+  ],
+  "validation": {
+    "test": "scripts/verify-pharmacy2021-access.mjs",
+    "groups": 10,
+    "passed": 10,
+    "sourceHashesMatched": true,
+    "walkSpeeds": [
+      6,
+      8
+    ],
+    "bothDirections": true,
+    "rawInputsPreserved": true,
+    "unrelatedParts": 42963,
+    "actualPhoneMeasured": false
+  },
+  "laterMovementAdjustment": {
+    "evidenceFile": "sources/library-stair-alignment-photo-notes.json",
+    "geometryChanged": false,
+    "description": "좁은 발판에서 자동 오르기 후 필요한 전방 여유 거리 판정을 조정했다. 계단 치수와 형상은 유지했다."
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "status": "frozen-targeted-checks-passed-release-suite-pending",
+  "scope": "서울대학교 관악캠퍼스 안 시내버스와 순환 셔틀의 방향별 주행 경로",
+  "snapshotDate": "2026-11-05",
+  "sources": [
+    {
+      "url": "https://bus.go.kr/app/",
+      "role": "서울특별시 현재 노선 안내의 공개 JSON 응답",
+      "retrieved": "2026-11-05",
+      "detail": "selectRouteInfo, selectRoutePath, selectBusposInfo의 노선과 정류장 필드를 읽었다. 실시간 차량 위치는 게임의 초기 차량 위치나 운행으로 복제하지 않았다."
+    },
+    {
+      "url": "https://www.snu.ac.kr/about/gwanak/transportation/public",
+      "role": "서울대학교 교내 대중교통 설명과 2025년 그림을 보조 대조",
+      "detail": "5516 경영대 방향의 상공대 경유 여부가 본문과 그림에서 달랐다. 2026-11-05 서울시 현재 정류장 순서와 경로를 우선했다."
+    },
+    {
+      "url": "https://asia.snu.ac.kr/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/document/456/?mod=document&pageid=16&uid=296",
+      "role": "관악02가 2025-09-01부터 관악02-1과 관악02-2로 분리된 안내"
+    },
+    {
+      "url": "https://cee.snu.kr/bbs/board.php?bo_table=sub6_1&page=1&wr_id=4539",
+      "role": "2026년 차고지 이전에 따른 5511과 5516 경로 변경의 시점 대조"
+    },
+    {
+      "url": "https://law.snu.ac.kr/bbs/board.php?bo_table=normal_board&wr_id=7463",
+      "role": "2026-09-01~12-21 순환 셔틀 정류장 순서와 운행 안내"
+    },
+    {
+      "url": "https://map.snu.ac.kr/api/bus/suttle/61.action",
+      "role": "순환 셔틀 15개 정류장 코드와 공식 지도 위치",
+      "detail": "EUC-KR 응답을 읽었다. 시간 간격은 최신 PDF와 차이가 있어 게임 시간표의 확정 근거로 쓰지 않았다."
+    },
+    {
+      "url": "https://www.openstreetmap.org/copyright",
+      "role": "차도 정점, 공유 노드, 일방통행과 차선 수",
+      "local": "sources/campus.osm",
+      "license": "OpenStreetMap contributors, ODbL"
+    }
+  ],
+  "contract": {
+    "file": "public/data/campus-transit.json",
+    "compiler": "node scripts/compile-campus-transit.mjs",
+    "inputSnapshot": "sources/transit-official-routes.json",
+    "routeCount": 9,
+    "cityDirectionVariants": 8,
+    "shuttleRoutes": 1,
+    "shuttleVehicles": 2,
+    "vehicles": 10,
+    "routeSegmentReference": "원본 roadId, points의 segmentIndex, direction을 사용하며 같은 노드에 닿는 구간만 잇는다.",
+    "coordinates": "D 좌표의 x는 동쪽, z는 북쪽이다. 렌더 반사는 기존 공통 코드가 한 번 적용한다.",
+    "runtimePathfinding": false,
+    "rawCampusChanged": false,
+    "rawOsmChanged": false,
+    "rawDemChanged": false
+  },
+  "routeFacts": [
+    {
+      "route": "5511-out",
+      "direction": "중앙대학교 방면",
+      "summary": "정문에서 서쪽 도로로 내려가 302동과 301동을 지난 뒤 에너지자원신기술연구소 연결도로를 거쳐 서쪽 도로로 정문에 돌아온다."
+    },
+    {
+      "route": "5511-in",
+      "direction": "대학동고시촌입구 방면",
+      "summary": "경영대에서 동쪽 순환도로를 따라 내려가 에너지자원신기술연구소를 지난다. 서쪽 상공대 순환으로 302동과 301동을 경유하고 에너지자원신기술연구소에 다시 정차한 뒤 정문으로 돌아온다."
+    },
+    {
+      "route": "5513-out",
+      "direction": "벽산블루밍아파트 방면",
+      "summary": "302동에서 301동과 동쪽 순환도로를 따라 경영대를 지나 정문으로 나간다."
+    },
+    {
+      "route": "5513-in",
+      "direction": "서울대학교 방면",
+      "summary": "정문에서 서쪽 도로를 따라 302동까지 운행한다. 캠퍼스 밖 구간과 정류장 사이의 미운행 이동은 재현하지 않는다."
+    },
+    {
+      "route": "5516-out",
+      "direction": "노량진역 방면",
+      "summary": "경영대에서 동쪽 순환도로로 내려가 에너지자원신기술연구소를 거쳐 서쪽 도로로 정문에 돌아온다. 이 방향은 현재 공식 응답에서 301동과 302동을 경유하지 않는다."
+    },
+    {
+      "route": "5516-in",
+      "direction": "대학동고시촌입구 방면",
+      "summary": "정문에서 서쪽 도로, 302동, 301동, 동쪽 순환도로, 경영대 순서로 캠퍼스를 돈다."
+    },
+    {
+      "route": "관악02-1-campus",
+      "direction": "서울대신공학관 경유 후 낙성대역 복귀",
+      "summary": "후문 생활관 구간에서 노천강당과 동쪽 순환도로를 지나 상공대를 경유한다. 돌아갈 때도 노천강당에 들러 후문으로 나간다."
+    },
+    {
+      "route": "관악02-2-campus",
+      "direction": "행정관 경유 후 낙성대역 복귀",
+      "summary": "후문 생활관 구간에서 경영대와 법대를 지나 행정관에 들렀다가 반대 방향으로 후문에 돌아온다."
+    },
+    {
+      "route": "snu-campus-circular",
+      "direction": "공식 반시계 순환",
+      "summary": "최신 PDF의 15개 고유 정류장을 순서대로 운행하고 정문을 마지막에 한 번 더 정차한다."
+    }
+  ],
+  "compilation": {
+    "method": "공식 GPS를 약 14m 간격으로 표본화하고, 가까운 방향별 OSM 구간과 진행 순서를 함께 비교했다. 후보 사이 이동은 공유 노드로 이어지는 합법 방향의 차도만 사용한다. 마지막에 실제 인접 노드, 일방통행, 즉시 역방향 전환 여부를 다시 검사했다.",
+    "matchingTolerance": "공식 GPS와 도로 중심선은 서로 다른 시점과 해상도의 자료다. 수치가 가까워도 실제 차선 중심을 실측한 결과로 해석하지 않는다.",
+    "narrowSegments": "폭 5.5m로 기록된 구간 중 공식 경로와 대조한 구간에만 allowNarrow:true를 넣었다. 원본 폭은 바꾸지 않았다. 일반 무작위 버스의 허용 폭과는 별개다.",
+    "stopProjection": "정류장 원좌표를 실제 진행 차로로 투영하고 교차점 회전 곡선의 앞뒤 구간을 피했다. 원좌표와 게임 정차점의 거리는 compiler-review.json에 기록한다.",
+    "stopDwellSeconds": {
+      "city": 6,
+      "shuttle": 8
+    },
+    "dwellStatus": "게임용 정차 시간이며 실제 배차표가 아니다.",
+    "routeStats": [
+      {
+        "id": "5511-out",
+        "lengthM": 4926.2060963089325,
+        "officialGpsMaxDistanceM": 16.53245032603643,
+        "officialGpsMeanDistanceM": 6.044368104065923,
+        "stopCount": 16,
+        "stopProjectionMaxDistanceM": 10.018454182426165
+      },
+      {
+        "id": "5511-in",
+        "lengthM": 5982.113240570491,
+        "officialGpsMaxDistanceM": 14.165499094678777,
+        "officialGpsMeanDistanceM": 5.855794246428189,
+        "stopCount": 18,
+        "stopProjectionMaxDistanceM": 19.971848069004615
+      },
+      {
+        "id": "5513-out",
+        "lengthM": 2906.7619074563886,
+        "officialGpsMaxDistanceM": 9.659979559163608,
+        "officialGpsMeanDistanceM": 2.787205711132703,
+        "stopCount": 8,
+        "stopProjectionMaxDistanceM": 12.757625384072787
+      },
+      {
+        "id": "5513-in",
+        "lengthM": 2669.27527295148,
+        "officialGpsMaxDistanceM": 16.532450326036383,
+        "officialGpsMeanDistanceM": 8.39991568604651,
+        "stopCount": 8,
+        "stopProjectionMaxDistanceM": 8.016078714678326
+      },
+      {
+        "id": "5516-out",
+        "lengthM": 4095.227934324501,
+        "officialGpsMaxDistanceM": 14.16549909467889,
+        "officialGpsMeanDistanceM": 6.596438160968868,
+        "stopCount": 13,
+        "stopProjectionMaxDistanceM": 19.971848069004615
+      },
+      {
+        "id": "5516-in",
+        "lengthM": 5498.398616070228,
+        "officialGpsMaxDistanceM": 16.53245032603645,
+        "officialGpsMeanDistanceM": 5.510668112642837,
+        "stopCount": 15,
+        "stopProjectionMaxDistanceM": 12.757625384072787
+      },
+      {
+        "id": "관악02-1-campus",
+        "lengthM": 6719.110018748374,
+        "officialGpsMaxDistanceM": 15.343589382685932,
+        "officialGpsMeanDistanceM": 5.271740704218879,
+        "stopCount": 22,
+        "stopProjectionMaxDistanceM": 10.018454182426165
+      },
+      {
+        "id": "관악02-2-campus",
+        "lengthM": 5586.201653243094,
+        "officialGpsMaxDistanceM": 14.117169992339159,
+        "officialGpsMeanDistanceM": 5.938288323262042,
+        "stopCount": 17,
+        "stopProjectionMaxDistanceM": 19.971848069004615
+      },
+      {
+        "id": "snu-campus-circular",
+        "lengthM": 5416.6784942241275,
+        "officialGpsMaxDistanceM": 16.53245032603645,
+        "officialGpsMeanDistanceM": 5.510668112642837,
+        "stopCount": 16,
+        "stopProjectionMaxDistanceM": 38.48358516084328
+      }
+    ]
+  },
+  "supplementalRoads": [
+    {
+      "id": "transit/osm/173556799/0",
+      "sourceWay": "way/173556799",
+      "sourceUrl": "https://www.openstreetmap.org/way/173556799",
+      "nodeCount": 9,
+      "width": 6,
+      "widthEstimated": true,
+      "oneway": false,
+      "sourceTags": {
+        "highway": "residential",
+        "name": "낙성대로15길",
+        "name:en": "Nakseongdae-ro 15-gil",
+        "name:ko": "낙성대로15길",
+        "name:ko-Latn": "Nakseongdaero15gil"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/389629977/0",
+      "sourceWay": "way/389629977",
+      "sourceUrl": "https://www.openstreetmap.org/way/389629977",
+      "nodeCount": 17,
+      "width": 6.4,
+      "widthEstimated": true,
+      "oneway": false,
+      "sourceTags": {
+        "highway": "service",
+        "incline": "down",
+        "lanes": "2",
+        "lit": "yes",
+        "sidewalk": "left",
+        "sidewalk:left:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/429687396/0",
+      "sourceWay": "way/429687396",
+      "sourceUrl": "https://www.openstreetmap.org/way/429687396",
+      "nodeCount": 12,
+      "width": 12.8,
+      "widthEstimated": true,
+      "oneway": false,
+      "sourceTags": {
+        "highway": "service",
+        "lanes": "4",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/468665859/2",
+      "sourceWay": "way/468665859",
+      "sourceUrl": "https://www.openstreetmap.org/way/468665859",
+      "nodeCount": 7,
+      "width": 12.8,
+      "widthEstimated": true,
+      "oneway": false,
+      "sourceTags": {
+        "highway": "service",
+        "lanes": "4",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/481787204/4",
+      "sourceWay": "way/481787204",
+      "sourceUrl": "https://www.openstreetmap.org/way/481787204",
+      "nodeCount": 15,
+      "width": 12.8,
+      "widthEstimated": true,
+      "oneway": true,
+      "sourceTags": {
+        "highway": "service",
+        "lanes": "4",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/875251692/4",
+      "sourceWay": "way/875251692",
+      "sourceUrl": "https://www.openstreetmap.org/way/875251692",
+      "nodeCount": 7,
+      "width": 12.8,
+      "widthEstimated": true,
+      "oneway": false,
+      "sourceTags": {
+        "highway": "service",
+        "lanes": "4",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/1544574893/0",
+      "sourceWay": "way/1544574893",
+      "sourceUrl": "https://www.openstreetmap.org/way/1544574893",
+      "nodeCount": 15,
+      "width": 6,
+      "widthEstimated": true,
+      "oneway": true,
+      "sourceTags": {
+        "highway": "residential",
+        "name": "낙성대로",
+        "name:en": "Nakseongdae-ro",
+        "name:ko": "낙성대로",
+        "oneway": "yes"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/1544574894/15",
+      "sourceWay": "way/1544574894",
+      "sourceUrl": "https://www.openstreetmap.org/way/1544574894",
+      "nodeCount": 5,
+      "width": 6,
+      "widthEstimated": true,
+      "oneway": true,
+      "sourceTags": {
+        "highway": "residential",
+        "name": "낙성대로",
+        "name:en": "Nakseongdae-ro",
+        "name:ko": "낙성대로",
+        "oneway": "yes"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    },
+    {
+      "id": "transit/osm/1544574907/0",
+      "sourceWay": "way/1544574907",
+      "sourceUrl": "https://www.openstreetmap.org/way/1544574907",
+      "nodeCount": 16,
+      "width": 6,
+      "widthEstimated": true,
+      "oneway": true,
+      "sourceTags": {
+        "highway": "residential",
+        "name": "낙성대로",
+        "name:en": "Nakseongdae-ro",
+        "name:ko": "낙성대로",
+        "oneway": "yes"
+      },
+      "reason": "원문에는 있으나 기존 캠퍼스 경계의 정점 필터에서 빠진 차도 구간을 복원했다."
+    }
+  ],
+  "reviewedExceptions": [
+    {
+      "id": "nocheon-gps-spur",
+      "status": "source-conflict-game-routing-choice",
+      "officialStop": "21915",
+      "selectedWay": "way/252233240",
+      "explanation": "서울시 현재 정류장은 원형 차도 옆에 있지만 경로 선형은 북서쪽 골목 약55m를 들어갔다가 같은 길로 되돌아온다. 현재 정류장과 OSM 일방통행 원형 차도를 우선하고 이 골목 왕복은 보류했다. 임의 지름길이나 즉시180도 반전은 만들지 않았다.",
+      "roadview": {
+        "url": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1212805160&pan=348.0&tilt=-10.0&zoom=0&urlLevel=3&urlX=490040&urlY=1099882",
+        "captureDate": "2026-07",
+        "files": [
+          "../references/bus-route-review/nocheon-northwest-2026-07.jpg",
+          "../references/bus-route-review/nocheon-roundabout-south-2026-07.jpg",
+          "../references/bus-route-review/nocheon-roundabout-west-2026-07.jpg"
+        ],
+        "observed": "총괄이 공개 로드뷰에서 저장한 세 사진을 직접 읽었다. 도로, 보도, 풍산마당 앞 원형 공간이 보인다. 버스가 실제로 어느 경로로 회차하는 장면은 없으므로 현재 회차 운행을 확정하지 않는다."
+      }
+    },
+    {
+      "id": "shuttle-main-gate-turnaround",
+      "status": "unverified-offscreen-transition",
+      "explanation": "공식 그림은 정문 출발과 도착을 표시하지만 둘 사이 회차 동선은 표시하지 않는다. 기존 일방통행 차도에 짧은 폐회로도 없어 boundary 방식으로 정문 도착 정차 뒤 화면 밖 대기와 재출발을 사용한다. 이는 게임 연출이며 현행 셔틀 회차 방식의 재현이 아니다."
+    },
+    {
+      "id": "snu-801",
+      "status": "official-marker-displaced",
+      "explanation": "제2파워플랜트의 공식 지도 표식이 현재 OSM 건물 안에 있다. 정류장 순서를 유지하고 인접 남향 주도로로 투영한 게임 정차점을 사용한다. 원좌표와 차이는 약38.48m이며 정확한 정류장 좌표라고 주장하지 않는다."
+    }
+  ],
+  "validation": {
+    "compiler": {
+      "status": "passed",
+      "checks": [
+        "모든 인접 구간의 원본 공유 노드 일치",
+        "일방통행 역주행 없음",
+        "즉시 역방향 전환 없음",
+        "정류장 순서와 회전 구간 밖 정차점",
+        "원문 OSM 및 원본 campus/DEM 불변"
+      ],
+      "artifact": "artifacts/bus-route-review/compiler-review.json",
+      "reproducibility": {
+        "status": "passed",
+        "runs": 2,
+        "byteIdentical": true,
+        "artifact": "artifacts/bus-route-review/reproducibility.json"
+      }
+    },
+    "runtime": {
+      "status": "passed",
+      "artifact": "artifacts/transit-test/results.json",
+      "artifactSha256": "4238510ca260681e73d52b78239cc4b4cf9919520a9837de0e05a76123e58cf7",
+      "passed": 8,
+      "failed": 0,
+      "sourceStillMatches": true,
+      "scope": "실제 DEM에서 9개 경로의 전체 정차 순서와 300초 혼합 교통, 정차 대기, 좁은 차도 교행, 파괴와 재출발 동작을 검사했다. 휴대전화 FPS나 실제 배차표를 검증한 결과는 아니다."
+    },
+    "independent": {
+      "status": "passed",
+      "artifact": "artifacts/shuttle-reference/route-independent-audit.json",
+      "artifactSha256": "fc1952249dbb0657d2eab79b69c66a2a2df71e3f9871c634f2f065f9c709869b",
+      "sampledVehiclePoses": 8764,
+      "maxJoinGap": 0,
+      "onewayViolations": 0,
+      "staticContacts": 0,
+      "supplementalRoads": 9,
+      "scope": "원본 OSM 노드와 보충 차도, 공유 노드 접속, 실제 차량 자세와 건물 접촉, 정류장 순서 및 시작점 여유를 독립 확인했다."
+    },
+    "visual": {
+      "method": "공식 경로와 원본 도로를 같은 D 좌표로 겹친 PNG를 직접 대조했다. 브라우저의 실제 렌더나 휴대전화 성능 검증은 이 기록에 포함하지 않는다.",
+      "artifacts": "artifacts/bus-route-review/matched-*.png"
+    },
+    "releaseSuite": {
+      "status": "pending",
+      "owner": "root",
+      "scope": "최종 통합 검사와 빌드는 패키징 단계에서 총괄이 실행한다."
+    }
+  },
+  "limits": [
+    "차도 폭과 차선 오프셋, 정차 위치, 속도와 배차 간격에는 게임 근사가 있다.",
+    "캠퍼스 밖 노선 전체나 실제 차량의 실시간 위치를 재현하지 않는다.",
+    "보충 도로는 원본 지형 위에 표시되므로 지형 경사와 기존 건물 접속판에 대한 차량 접촉 검사가 별도로 필요하다.",
+    "공식 정류장 위치와 노선 선형의 모순을 실제 운행 관측으로 해결했다고 표현하지 않는다.",
+    "기존 DEM의 노천강당 접근로에는 약23.77도 경사가 남는다. 새 노선에서 건물 접촉은 없었지만 실제 도로 경사를 측량해 복원한 결과는 아니다.",
+    "폭5.5m 승인 구간에서는 버스 몸체의 직선 여유가약0.26m이고 거울은 명목 도로 경계 밖으로약0.045m 나갈 수 있다. 좁은 구간은 맞은편 버스가 진입하기 전에 대기하게 하며 원본 폭을 넓혀 숨기지 않았다."
+  ],
+  "sourceHashes": {
+    "scripts/compile-campus-transit.mjs": "03a250e09e97fbd815944a927b7ded833816a07e483e3ddb4b3fb5b95a385d44",
+    "sources/transit-official-routes.json": "c56ccc6cf37e565c4f9b63b1580323029b17fe4df941cd1033b168daa204d15a",
+    "public/data/campus-transit.json": "b76619a0cf01338994b98e9bab997a4ae6d90875b2b57a6d23bb085317c4f5b4",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "public/data/shuttle-stops.json": "8233cbe722f90665ea9fcc4b864f25557404aa6b23d7ceb1d1cceb0861ed6356"
+  }
+}

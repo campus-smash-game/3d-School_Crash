@@ -1,0 +1,526 @@
+{
+  "buildingId": "way/167607356",
+  "buildingNumber": "63",
+  "name": "학생회관",
+  "status": "custom-model-applied-partial",
+  "research": "artifacts/student-center-orientation/review.json",
+  "sourceEvidence": [
+    {
+      "id": "map-photo-080",
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=80",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000078.jpg",
+      "localFile": "../references/buildings/photos/080-63.jpg",
+      "directlyViewed": true,
+      "captureDate": null,
+      "observations": [
+        "사진 왼쪽에는 창행이 더 많은 몸체와 은행 간판이 있고, 오른쪽에는 큰 처마, 돌출 창 몸체, 계단과 주황색 루버가 있다.",
+        "오른쪽 몸체의 가장 위 긴 창행에 합창단과 SNU CHOIR 표기가 보인다. 세부 방위의 보조 표지로 사용했다."
+      ]
+    },
+    {
+      "id": "floorplans-2025",
+      "url": "https://my.snu.ac.kr/ctt/bb/bulletin?a=fd&b=1&fs=1&p=24404",
+      "alternateOfficialUrl": "https://gsep.snu.ac.kr/media/43/board/2025/12/12/1._공사_범위_및_출입_동선.pdf",
+      "localFile": "artifacts/student-center-orientation/plans-public2025.pdf",
+      "sha256": "271edf69b0862b3e5e915bdd467b0f77486aa450b9f65415bdbe9500023a7c3e",
+      "documentTitle": "서울대학교 학생회관(63동) 식당라인 환경개선 건축공사",
+      "drawingDate": "2025-11",
+      "publicFileDate": "2025-12-11",
+      "directlyViewedPages": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "sheet": "A 202",
+          "title": "지상1층 평면도 (변경 후)",
+          "image": "artifacts/student-center-orientation/floor-01.png",
+          "finding": "도면 위쪽 왼쪽 몸체에 은행과 서점, 아래쪽 오른쪽 몸체에 학생식당과 공차가 있다. 두 몸체 사이에 계단, 출입구와 연결부가 있다."
+        },
+        {
+          "page": 3,
+          "sheet": "A 204",
+          "title": "지상2층 평면도 (변경 후)",
+          "image": "artifacts/student-center-orientation/floor-03.png",
+          "finding": "상부 몸체의 기념품샵과 인쇄소, 아래쪽 식당 몸체 위 라운지 및 층이 엇갈리는 연결부를 구분한다."
+        },
+        {
+          "page": 5,
+          "sheet": "A 206",
+          "title": "지상3층 평면도 (변경 후)",
+          "image": "artifacts/student-center-orientation/floor-05.png",
+          "finding": "아래쪽 몸체에 소연습실, 대연습실과 라운지 상부의 열린 내부 영역이 표시된다. 외부 관통 중정으로 해석하지 않는다."
+        },
+        {
+          "page": 7,
+          "sheet": "A 208",
+          "title": "지상4층 평면도 (변경 후)",
+          "image": "artifacts/student-center-orientation/floor-07.png",
+          "finding": "407호(동아리실7)는 도면 아래쪽 몸체의 왼쪽 외벽 끝부분에 있다. 사진의 합창단 창과 대응하는 근거다."
+        },
+        {
+          "page": 9,
+          "sheet": "A 210",
+          "title": "지상5층 평면도 (변경 후)",
+          "image": "artifacts/student-center-orientation/floor-09.png",
+          "finding": "위쪽 좁은 가로 몸체에 방과 복도가 있고, 아래쪽 식당 몸체에는 같은 층의 실내 방 배치가 없다. 계단 코어에 Z5FL +0 / Z4FL +1,815 표기가 보인다."
+        },
+        {
+          "page": 11,
+          "sheet": "A 212",
+          "title": "지상6층 평면도 (변경 후)",
+          "image": "artifacts/student-center-orientation/floor-11.png",
+          "finding": "5층과 같은 위쪽 좁은 몸체에 방과 복도가 있다. 아래쪽 식당 몸체의 윤곽만 그려져 있다. 전체 외곽을 6층으로 채우는 근거가 아니다."
+        }
+      ],
+      "dimensions": {
+        "xAxisTotalMeters": 86.1,
+        "yAxisTotalMeters": 57.25,
+        "regularGridMeters": 6.8,
+        "scope": "도면 기둥 축의 치수다. OSM 외벽 외곽의 실측 치수로 대체하지 않는다."
+      },
+      "limit": "공사 범위 및 출입 동선을 안내하는 2025년 변경 후 평면도다. 준공 실측 도면이나 모든 외벽의 입면도는 아니다. 직접 확인한 페이지에서 북쪽 방향표를 찾지 못했다."
+    },
+    {
+      "id": "wifi-2024",
+      "url": "https://ist.snu.ac.kr/wp-content/uploads/sites/186/2024/02/%EB%AC%B4%EC%84%A0%ED%98%84%ED%99%A9_202402.pdf",
+      "localFile": "artifacts/central-candidates-review/wifi-page-18.png",
+      "pdfPage": 18,
+      "directlyViewed": true,
+      "finding": "63동 4F의 407호 앞 복도(서울대합창단)와 6F의 606호 앞 복도(야생동아리실)를 직접 읽었다."
+    },
+    {
+      "id": "commons-2026",
+      "url": "https://www.snu.ac.kr/about/president/news?bbsidx=170021&md=v",
+      "imageUrl": "https://new.snu.ac.kr/80th-anniversary/assets/infra-01-dzb5cGOp.jpg",
+      "localFile": "artifacts/central-candidates-review/student-community-2026.jpg",
+      "directlyViewed": true,
+      "finding": "오른쪽 위 사진의 연두색 출입구 테두리와 내부 LED를 확인했다. 기사 본문은 교보문고 방향 1층 출입구라고 설명한다.",
+      "limit": "주황색 루버 입구와 같은 위치라는 근거는 없다. 평면도와 대조해도 정확한 출입구 좌표는 아직 확정하지 못했다."
+    },
+    {
+      "id": "steps-2026",
+      "url": "https://health4u.snu.ac.kr/noti/notice/_/11752/view.do",
+      "textDirectlyRead": true,
+      "finding": "보건진료소의 외부 계단 공사 기간은 2026-06-25~2026-08-31로 안내됐고 정문 유리문 대신 내부 후문 이용을 요청했다.",
+      "limit": "공사 후 계단의 상세 형상과 현재 상태는 확인하지 못했다."
+    },
+    {
+      "id": "library-official-vr",
+      "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+      "localFile": "artifacts/student-center-review/library-vr.xml",
+      "directlyViewedImageUrls": [
+        "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/1.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/2.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/3.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/5.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky11_10820/html5/2.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky11_10820/html5/3.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky11_10820/html5/5.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/1.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg"
+      ],
+      "finding": "학생회관과 행정관, 도서관의 상대 배치 및 분리된 지붕 덩어리를 확인했다. 학생회관 일부는 면 사진 가장자리에 잘리거나 수목과 지붕에 가려진다.",
+      "limit": "주황 루버의 정확한 좌표와 지붕 높이를 항공사진만으로 확정하지 않았다. 카카오맵이나 네이버지도 거리뷰가 아닌 서울대학교 도서관의 공식 공개 VR 원본이다."
+    }
+  ],
+  "orientation": {
+    "status": "southwest-view-strongly-supported-not-surveyed",
+    "previousCandidate": {
+      "observerD": [
+        240,
+        -780
+      ],
+      "innerCornerIndex": 5,
+      "innerCornerD": [
+        201.22,
+        -794.75
+      ],
+      "rightPhotoBodyCandidateEdge": 5,
+      "leftPhotoBodyCandidateEdge": 4,
+      "orangeCornerCandidateIndex": 6,
+      "reason": "북동쪽 오목한 외부 공간에서 남서쪽으로 보면 북쪽 날개(5→6)가 화면 오른쪽, 남쪽 날개(4→5)가 왼쪽으로 놓여 공식 사진의 두 몸체 관계와 맞는다.",
+      "status": "plausible-not-verified",
+      "limits": "정확한 촬영 좌표, 주황 루버의 지도 꼭짓점과 계단 끝점을 독립 자료로 확정하지 못했다. 이 후보를 곧바로 모델의 확정 배치로 사용하지 않는다."
+    },
+    "correction": "기존 북동쪽 오목면 후보를 현재 권고에서 제외한다. 사진은 남서쪽에서 북동쪽을 보는 구도가 도면의 실 배치 및 사진 표기와 더 잘 맞는다.",
+    "basis": [
+      "도면은 위쪽 왼쪽 은행/서점 몸체와 아래쪽 오른쪽 식당 몸체가 어긋나 연결되는 윤곽이다. OSM을 주축에 투영하면 북쪽 몸체와 남쪽 몸체의 어긋난 배치가 같은 방향으로 대응한다.",
+      "공식 사진의 오른쪽 몸체 최상부 창에 합창단 표기가 있고, 공식 무선 목록은 합창단을 407호로 안내한다. 2025년 4층 도면의 407호는 식당 몸체 왼쪽 외벽에 있다.",
+      "위의 정합을 따르면 도면의 식당 몸체 왼쪽 외벽은 지도 남쪽 몸체의 서남쪽 오목면이며, 오른쪽 사진 몸체와 대응한다."
+    ],
+    "axis": {
+      "originD": [
+        170.48,
+        -811.69
+      ],
+      "uD": [
+        0.92523,
+        -0.3794
+      ],
+      "vD": [
+        0.3794,
+        0.92523
+      ],
+      "coordinates": [
+        {
+          "index": 0,
+          "u": 0,
+          "v": 0
+        },
+        {
+          "index": 1,
+          "u": 29.970405899999975,
+          "v": 0.0008969000001073368
+        },
+        {
+          "index": 2,
+          "u": 59.3038701,
+          "v": 0.0000029999999995311555
+        },
+        {
+          "index": 3,
+          "u": 59.30186119999996,
+          "v": 12.050175500000083
+        },
+        {
+          "index": 4,
+          "u": 59.660580599999975,
+          "v": 26.409882000000064
+        },
+        {
+          "index": 5,
+          "u": 22.014534199999986,
+          "v": 27.336152200000054
+        },
+        {
+          "index": 6,
+          "u": 22.835994099999972,
+          "v": 60.99427510000009
+        },
+        {
+          "index": 7,
+          "u": -3.171508499999991,
+          "v": 61.634872900000026
+        },
+        {
+          "index": 8,
+          "u": -24.830713300000042,
+          "v": 62.372475900000104
+        },
+        {
+          "index": 9,
+          "u": -30.22391869999999,
+          "v": 55.54589180000002
+        },
+        {
+          "index": 10,
+          "u": -30.203828999999995,
+          "v": 21.206088400000045
+        },
+        {
+          "index": 11,
+          "u": -19.470670099999978,
+          "v": 21.46783950000001
+        },
+        {
+          "index": 12,
+          "u": 0.0004794999999688798,
+          "v": 21.216434900000102
+        },
+        {
+          "index": 13,
+          "u": -0.0011338000000273851,
+          "v": 13.023257500000064
+        }
+      ],
+      "planImageRelationship": "도면 오른쪽은 +u(동남동), 위쪽은 +v(북북동)로 대응하는 형상 정합 추론이다. 도면의 북쪽 방향표 또는 측량 좌표로 확정한 변환은 아니다.",
+      "osmProjectedExtentMeters": {
+        "u": 89.88449929999996,
+        "v": 62.372475900000104
+      },
+      "dimensionComparison": "OSM 전체 투영 범위와 도면 기둥 축 전체 치수 86.1×57.25m는 서로 다르다. 도면의 축선과 OSM 외벽선을 같은 선으로 맞추거나 원본 외곽을 변형하지 않는다. 두 날개의 방향과 상부 후퇴를 판단하는 근거로만 사용한다."
+    },
+    "recommendedMapCorrespondence": {
+      "leftPhotoHighBodyEdges": [
+        10,
+        11
+      ],
+      "innerCornerIndex": 12,
+      "rightPhotoLowBodyEdges": [
+        12,
+        13
+      ],
+      "orangeLouverCornerCandidateIndex": 0,
+      "orangeLouverCandidateD": [
+        170.48,
+        -811.69
+      ],
+      "interpretation": "왼쪽은 북쪽 날개의 남서 면(10→11→12), 오른쪽은 남쪽 날개의 서북 면(12→13→0)이다. 바깥쪽 주황 루버는 꼭짓점 0 부근 후보이며 꼭짓점 6 배치는 현재 근거와 맞지 않는다."
+    },
+    "confidence": {
+      "wingIdentity": "strong-cross-source-inference",
+      "photoViewDirection": "strong-cross-source-inference",
+      "orangeExactPosition": "approximate",
+      "floorplanGeoreferencing": "shape-matched-not-surveyed"
+    },
+    "limits": [
+      "OSM 외곽은 도면의 계단, 돌출부와 층별 후퇴를 모두 반영하지 않는다. 일부 변 길이와 치수가 맞지 않는다.",
+      "주황 루버의 정확한 폭, 모서리 감싸기 범위, 계단 끝점과 촬영 위치는 미확인이다.",
+      "사진 촬영일과 2026년 공사 이후의 외관 일치는 미확인이다."
+    ]
+  },
+  "floorInterpretation": {
+    "confirmed": "2025년 도면은 1~6층을 명시한다. 도면 위쪽 좁은 몸체에 5~6층 방이 있고 식당 몸체는 4층까지 실 배치가 보인다.",
+    "geographicInterpretation": "형상 정합상 북쪽 몸체의 후퇴한 상부는 6층, 남쪽 식당 몸체는 4층으로 구분하는 안을 지지한다.",
+    "unconfirmed": "2025년 도면에 지상 1~6층이 명시된 사실은 확인했다. 다만 최신 건축물대장의 층수 분류, 절대 지붕 높이와 외벽의 층별 기준고도는 확인하지 못했다. 도면의 Z4FL/Z5FL 1.815m 표기는 몸체 사이 층 기준이 엇갈림을 보여 준다. 전체 단면이 없어 현재 모델은 그 단차를 복원하지 않았으며 층고를 추정했다.",
+    "uniformSixFloorEnvelopeSupported": false
+  },
+  "modelContract": {
+    "status": "implemented-with-dimension-estimates",
+    "module": "src/studentCenterLandmark.ts",
+    "moduleSha256": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+    "export": "createStudentCenterLandmark",
+    "landmark": "student-center",
+    "sourceOutlinePreserved": true,
+    "sourceOutlineVertices": 14,
+    "sourceHeightMeters": 14,
+    "sourceLevels": 4,
+    "sourceDataEstimated": true,
+    "rawCampusDataUnchanged": true,
+    "terrainSourceUnchanged": true,
+    "geometry": {
+      "renderMeshes": 3,
+      "breakableParts": 513,
+      "nondegenerateTriangles": 24552,
+      "proceduralMaterials": true,
+      "photoTextureUsed": false
+    },
+    "basis": {
+      "datum": "원본 14개 꼭짓점의 평균 중심에서 heightAt을 호출한다. 이 기준고도는 세계 좌표 상수로 고정하지 않는다.",
+      "currentBaseMeters": 28.443744659423828,
+      "coordinates": "D=(동쪽, 위쪽, 북쪽)에서 구성하며 렌더링의 H 반사는 부모에서 한 번 적용한다.",
+      "heightCallbackPreserved": true,
+      "outlineOrderingReversalVerified": true
+    },
+    "levels": {
+      "northMaximum": 6,
+      "south": 4,
+      "uniformSixFloorEnvelope": false,
+      "evidence": "2025년 1~6층 평면도의 실 배치와 사진 표기를 대조한 날개 구분이다. 정확한 층고는 미확인이다."
+    },
+    "heightsMeters": {
+      "northMainRoof": 21.4,
+      "southMainRoof": 14.4,
+      "southEaveMaximum": 14.8,
+      "northRoofRoomAdditional": 3.1,
+      "maximumIncludingRoofRoom": 24.5,
+      "estimated": true
+    },
+    "floorDatumsMeters": [
+      0.2,
+      3.7,
+      7.2,
+      10.7,
+      14.4
+    ],
+    "northUpperDatumsMeters": [
+      14.4,
+      17.9,
+      21.4
+    ],
+    "upperSetback": {
+      "localZMinimum": 13.1,
+      "localZNorthMaximumApprox": 35,
+      "estimated": true,
+      "frame": "원본 외곽 평균 중심을 원점으로 한 모듈 local z다. 앞의 조사 도면 좌표는 원본 꼭짓점 0을 원점으로 삼으므로 숫자를 직접 혼용하지 않는다."
+    },
+    "planLevelOffsetNotation": 1.815,
+    "planLevelStaggerReproduced": false,
+    "exterior": {
+      "photographedFront": "southwest",
+      "southLargeProjectingWindowBodies": 3,
+      "allProjectingWindowBodies": 8,
+      "orangeLouver": "원본 꼭짓점 0 부근의 남서 모서리이며, 지상 출입문과 높은 계단 출입문을 구분했다.",
+      "openUndercroft": {
+        "depthMeters": 4.2,
+        "widthMeters": 8.5,
+        "floorMeters": 3.7,
+        "ceilingMeters": 7.2,
+        "estimated": true
+      },
+      "currentLedEntrancePositionVerified": false,
+      "currentExteriorStairVerified": false
+    },
+    "approach": {
+      "stairSteps": 24,
+      "stairWidthMeters": 8.5,
+      "firstStepConnectionLengthMeters": 2.4,
+      "firstStepConnectionParts": 12,
+      "terrainChanged": false,
+      "interpretation": "현재 DEM의 좌우 높이 차이에 맞춰 첫 단 앞 연결판을 추가했다. 사진에 없는 현장 실측 계단 상세를 복원한 것으로 표현하지 않는다."
+    },
+    "damageAndDistance": "부분 파괴 때 해당 기하 범위를 접고 남은 부품을 원거리에 유지한다. 초기화 때 원래 좌표 버퍼와 충돌을 복원한다.",
+    "collisionApproximation": {
+      "windowProxyAheadOfGlassMaximumMeters": 0.2130053926253317,
+      "source": "artifacts/student-independent-review/summary.json의 실제 유리 면과 충돌 상자 대조",
+      "meaning": "창 프레임 전체를 포함하는 상자 프록시가 실제 유리 면보다 최대 약 0.213m 앞선다. 로드/미로드 광선 일치 검사는 동일 프록시의 두 판정 경로를 비교하며 유리 면과의 완전한 일치를 뜻하지 않는다."
+    }
+  },
+  "verification": {
+    "status": "passed-node-regression",
+    "artifact": "artifacts/student-center-test/results.json",
+    "script": "scripts/verify-student-center.mjs",
+    "passed": 11,
+    "failed": 0,
+    "moduleSha256": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+    "scope": "실제 모듈의 기하, 현재 DEM, Rapier 물리와 CPU 광선을 사용한 Node 검사다. 브라우저의 WebGL 렌더링이나 실제 휴대전화 성능을 검사한 결과가 아니다.",
+    "resultNames": [
+      "mapped outline and distinct north and south levels remain explicit estimates",
+      "triangulated roof preserves both concave notches and north-only upper floors",
+      "glass avoids terrain and projecting bays expose actual cheeks and undersides",
+      "open undercroft has separated stairs floor columns and a recessed door",
+      "stair capsule ascends the actual terrain approach and enters only after door destruction",
+      "ground-level orange entrance is separate from the upper stair entrance",
+      "six metre per second capsules traverse the centre and both stair edges in both directions",
+      "loaded and unloaded external rays agree for windows stairs and concave outline slabs",
+      "partial and complete damage persist at distance and reset restores exact buffers",
+      "one H reflection preserves logical physics and puts the south wing on the photo right",
+      "callback elevation and reversed winding keep the same campus placement"
+    ],
+    "metrics": {
+      "glass": {
+        "samples": 6690,
+        "minimumTerrainClearanceMeters": 0.17095086342912325
+      },
+      "roof": {
+        "insideSamples": 425,
+        "outsideSamples": 799,
+        "northHighSamples": 130,
+        "southLowSamples": 295,
+        "convexParts": 65
+      },
+      "externalRays": {
+        "count": 457,
+        "componentKinds": 19,
+        "maximumLoadedUnloadedDistanceDifferenceMeters": 0.00059859752648872,
+        "startsInsideCollidersExcluded": true
+      },
+      "walking": {
+        "speedMetersPerSecond": 6,
+        "lateralOffsetsMeters": [
+          -3.6,
+          0,
+          3.6
+        ],
+        "ascending": true,
+        "descending": true,
+        "closedDoorBlocks": true,
+        "destroyedDoorAllowsEntry": true,
+        "scope": "중앙과 양옆 세 경로의 캡슐 이동을 검사했다. 모든 접근 방향이나 실기기 조작을 검사한 것은 아니다."
+      },
+      "damage": {
+        "partialAndComplete": true,
+        "distantPersistence": true,
+        "restoredParts": 513,
+        "restoredTriangles": 24552
+      },
+      "reflection": {
+        "appliedOnce": true,
+        "southWingAppearsPhotoRight": true,
+        "logicalPhysicsUnchanged": true,
+        "rayDistanceDifferenceMeters": 0
+      },
+      "callback": {
+        "testOffsetMeters": 50,
+        "reversedWindingPreservesPlacement": true
+      }
+    },
+    "sourceSnapshot": {
+      "src/studentCenterLandmark.ts": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+      "scripts/verify-student-center.mjs": "5bff00efdd04adc32a78ffc52eb9d4c5f1a0eb79d959ab1d1e3cea154a1d4271",
+      "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5",
+      "public/data/campus.json": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+      "artifacts/student-center-test/results.json": "9f946511949b9450d1eb27a3e3d296d0b39a9b376bf9421ae222f80fd2d7abce",
+      "artifacts/geometry-previews/preview-method.json": "aaf686958b18c47886df96a299e1e9d8b376f84d275ba4cd7599fd1130d346a5",
+      "artifacts/geometry-previews/student-center.png": "5be3e6bdacf5f140945a195898c43347131e712033dd694834f06f0475c8e231"
+    },
+    "cpuPreview": {
+      "file": "artifacts/geometry-previews/student-center.png",
+      "method": "artifacts/geometry-previews/preview-method.json",
+      "directlyViewed": true,
+      "renderMeshes": 3,
+      "triangles": 24552,
+      "referenceImage": "../references/buildings/photos/080-63.jpg",
+      "referenceDirectlyViewed": true,
+      "observations": [
+        "남쪽 몸체의 큰 돌출 창 3개, 하부의 열린 공간, 계단과 주황색 루버가 사진의 큰 구성에 대응한다.",
+        "북쪽 몸체만 뒤로 물린 상층을 가지며 남쪽 몸체를 6층으로 균일하게 늘리지 않았다.",
+        "사진은 지상 원근 시점이고 미리보기는 직교 투영이므로 같은 픽셀 비율로 치수를 검증하지 않았다. 계단, 창틀 두께와 세부 창 배열은 근사로 남는다."
+      ],
+      "limits": "실제 지형 삼각형을 포함한 CPU 기하 투영이다. 텍스처, PBR 조명, 그림자와 투명 유리의 실제 WebGL 결과는 포함하지 않는다."
+    },
+    "independentControlsReview": {
+      "status": "verified-with-documented-proxy-approximation",
+      "artifact": "artifacts/student-independent-review/summary.json",
+      "artifactSha256": "68122738d5bcc45b14ea1fa97aa1f59402c3ffd508443c852690f9ee217ef421",
+      "sourceSha256": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+      "sourceFilesMatched": 31,
+      "stairPathsPassed": 6,
+      "undercroftPathsPassed": 3,
+      "glassSamples": 9366,
+      "glassBelowTerrain": 0,
+      "integrityChecksPassed": 4,
+      "scope": "실제 DEM과 Simulation/Rapier를 쓴 독립 수치 검사다. 브라우저나 휴대전화 검사는 아니다."
+    },
+    "browserAndDeviceVerified": false,
+    "wholeSuite": {
+      "command": "npm test",
+      "artifact": "artifacts/release-verification.log",
+      "artifactSha256": "93e0cc893a9b9890274f3b9b36a8464c1dc37fcc044de3f2d50ba1131551af95",
+      "executedAt": "2026-11-04T23:05:13.260Z",
+      "scripts": 30,
+      "passedChecks": 272,
+      "failedChecks": 0,
+      "exitCode": 0
+    }
+  },
+  "remainingLimits": [
+    "도면의 북쪽 방향표와 현장 측량 좌표를 확보하지 못했으므로 지도 대응은 여러 근거를 대조한 추론이다.",
+    "2026년 LED 입구의 정확한 위치와 외부 테라스 두 곳의 상세 형상은 미확인이다.",
+    "보건진료소 외부 계단의 2026년 공사 후 형상은 미확인이다.",
+    "후면 외벽의 창 배열, 설비와 실제 풍화 상태는 확인한 사진 범위 밖이다.",
+    "브라우저 화면, GPU 렌더링과 실제 휴대전화 성능은 검사하지 않았다.",
+    "도면의 1.815m 층 기준 차이는 표기만 기록했으며 현재 모델에서 전체 층간 단차를 복원하지 않았다.",
+    "몸체 높이, 층고, 상부 후퇴선과 옥상실 치수는 사진 및 도면 비례 추정이다.",
+    "창 충돌 프록시는 프레임을 함께 감싸므로 실제 유리 면보다 최대 약 0.213m 앞설 수 있다.",
+    "첫 단 앞 2.4m 연결판과 일부 하부 바닥은 현재 DEM에서의 이동을 위한 근사이며 현장 실측 형상이 아니다."
+  ],
+  "history": [
+    {
+      "recordedAt": "2026-11-04T23:03:49.984Z",
+      "previousStatus": "source-reviewed-implementation-pending",
+      "previousModelContract": {
+        "status": "pending",
+        "sourceOutlinePreserved": true,
+        "sourceHeightMeters": 14,
+        "sourceLevels": 4,
+        "sourceDataEstimated": true,
+        "effectiveHeightMeters": null,
+        "effectiveLevelsByWing": null,
+        "limit": "최종 높이와 부품 구성은 구현 및 검증 뒤 기록한다. 원본의 4층/14m 추정값이나 도면의 6층 표기를 전체 외곽의 확정 높이로 사용하지 않는다."
+      },
+      "previousVerification": {
+        "status": "pending",
+        "browserAndDeviceVerified": false
+      },
+      "reason": "동결된 첫 전용 모델과 실제 회귀 결과를 기록했다. 기존 출처와 방위 판단은 보존했다."
+    }
+  ]
+}

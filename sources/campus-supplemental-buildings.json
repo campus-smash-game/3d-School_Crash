@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "campus-local-east-north-meters",
+  "origin": {
+    "lat": 37.4663683,
+    "lon": 126.948395075
+  },
+  "buildings": [
+    {
+      "id": "supplemental/snu-303",
+      "name": "해동첨단공학관",
+      "ref": "303",
+      "kind": "university",
+      "points": [
+        [
+          295.067,
+          -1761.048
+        ],
+        [
+          300.661,
+          -1773.812
+        ],
+        [
+          291.614,
+          -1779.924
+        ],
+        [
+          296.097,
+          -1788.022
+        ],
+        [
+          294.511,
+          -1805.704
+        ],
+        [
+          301.28,
+          -1805.523
+        ],
+        [
+          303.484,
+          -1819.552
+        ],
+        [
+          276.399,
+          -1822.625
+        ],
+        [
+          259.442,
+          -1832.471
+        ],
+        [
+          252.733,
+          -1816.215
+        ],
+        [
+          262.904,
+          -1811.247
+        ],
+        [
+          257.691,
+          -1801.965
+        ],
+        [
+          257.756,
+          -1784.353
+        ],
+        [
+          249.858,
+          -1784.565
+        ],
+        [
+          249.919,
+          -1768.127
+        ],
+        [
+          272.482,
+          -1767.523
+        ],
+        [
+          295.067,
+          -1761.048
+        ]
+      ],
+      "holes": [],
+      "height": 28,
+      "levels": 7,
+      "heightEstimated": true,
+      "levelsEstimated": false,
+      "footprintEstimated": true,
+      "terrainPad": false,
+      "sources": [
+        {
+          "url": "https://haec.snu.ac.kr/about",
+          "title": "해동첨단공학관 공식 소개와 준공 사진"
+        },
+        {
+          "url": "https://eng.snu.ac.kr/about/support-facilities/haedong-advanced-engineering-center",
+          "title": "공과대학 시설 소개, 7층 규모와 연혁"
+        },
+        {
+          "url": "https://rawwrks.kr/works/commissioned/haec",
+          "title": "Rawwrks, 2024 준공 촬영"
+        },
+        {
+          "url": "https://snuc.snu.ac.kr/wp-content/uploads/sites/305/2026/01/%E2%98%852026%ED%95%99%EB%85%84%EB%8F%84-1%ED%95%99%EA%B8%B0-%EA%B8%B0%EC%B4%88%EA%B5%90%EC%96%91-%EC%88%98%EA%B0%95%ED%8E%B8%EB%9E%8C%EB%B0%B0%ED%8F%AC3_20260119.pdf",
+          "title": "2026학년도 수강편람의 캠퍼스 약도"
+        }
+      ],
+      "provenance": {
+        "method": "공식 약도의 건물 기호를 주변 네 건물에 정합한 뒤 도로와 겹치지 않도록 서쪽 1m, 북쪽 0.5m 이동했다.",
+        "placementEstimated": true,
+        "dimensionsEstimated": true,
+        "measurementPrecision": "약도의 별도 검증점 오차는 약 8~19m다. 저장된 소수 자릿수는 실측 정밀도를 뜻하지 않는다.",
+        "referenceReview": "artifacts/engineering303-independent-review/review.json",
+        "siteFit": "artifacts/engineering303-independent-review/selected-site.json",
+        "osmStatus": "원본 OSM에는 이 건물이 없다. 과거 주차장 외곽을 건물로 바꾸지 않았다.",
+        "interiorScope": "준공 사진에서 확인되는 아트리움 구조만 근사한다. 각 실의 배치는 재현하지 않는다.",
+        "terrainAdjustment": "원시 DEM은 보존하고 게임용 지형만 국소적으로 낮춘다. 기존 도로 폭에 양쪽 3m를 더한 영역은 보호한다. 절개 고도와 경계는 실제 토목 설계나 측량값이 아니다.",
+        "roadClearanceAdjustment": {
+          "editedIndices": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "shiftXZ": [
+            -1.5,
+            5.8
+          ],
+          "maxVertexDisplacement": 5.990826320300064,
+          "reason": "약도 정합의 위치 오차를 고려해 남측 부분을 보정했다. 기존 도로 높이를 유지하면서 하층 외벽이 땅에 묻히는 것을 줄이기 위한 게임용 근사다. 실측 외곽을 뜻하지 않는다.",
+          "review": "artifacts/engineering303-independent-review/south-wing-adjustments.json"
+        }
+      },
+      "terrainCut": {
+        "level": 122.278,
+        "apron": 1,
+        "blend": 5,
+        "protectedCorridors": [
+          {
+            "id": "way/167667799/47",
+            "points": [
+              [
+                316.5,
+                -1825.11
+              ],
+              [
+                281.46,
+                -1836.26
+              ],
+              [
+                229.8,
+                -1856.64
+              ],
+              [
+                215.82,
+                -1866.36
+              ],
+              [
+                207.05,
+                -1879.16
+              ],
+              [
+                188.32,
+                -1918.28
+              ],
+              [
+                167.94,
+                -1945.06
+              ],
+              [
+                143.7,
+                -1966.37
+              ],
+              [
+                105.68,
+                -1988.54
+              ],
+              [
+                80.08,
+                -2000.55
+              ]
+            ],
+            "width": 11.5
+          },
+          {
+            "id": "way/481787202/411",
+            "points": [
+              [
+                319.64,
+                -1944.08
+              ],
+              [
+                319.21,
+                -1925.07
+              ],
+              [
+                318.13,
+                -1903
+              ],
+              [
+                317.28,
+                -1872.78
+              ],
+              [
+                316.5,
+                -1825.11
+              ],
+              [
+                315.76,
+                -1789.99
+              ],
+              [
+                317.24,
+                -1772.64
+              ],
+              [
+                317.83,
+                -1768.96
+              ],
+              [
+                324.77,
+                -1754.5
+              ],
+              [
+                336.86,
+                -1732.7
+              ],
+              [
+                345.15,
+                -1714.68
+              ],
+              [
+                346.31,
+                -1711.34
+              ],
+              [
+                349.59,
+                -1704.36
+              ]
+            ],
+            "width": 18.8
+          },
+          {
+            "id": "way/777510058/486",
+            "points": [
+              [
+                299.33,
+                -1738.9
+              ],
+              [
+                296.79,
+                -1759.47
+              ]
+            ],
+            "width": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "supplemental/snu-56-1",
+      "name": "김철수물리관",
+      "ref": "56-1",
+      "kind": "university",
+      "points": [
+        [
+          260.285,
+          -918.349
+        ],
+        [
+          290.648,
+          -932.502
+        ],
+        [
+          298.464,
+          -915.734
+        ],
+        [
+          268.101,
+          -901.581
+        ],
+        [
+          260.285,
+          -918.349
+        ]
+      ],
+      "holes": [],
+      "height": 14.32,
+      "levels": 4,
+      "basementFloors": 1,
+      "heightEstimated": false,
+      "levelsEstimated": false,
+      "footprintEstimated": true,
+      "terrainPad": false,
+      "sources": [
+        {
+          "url": "https://vmspace.com/project/project_view.html?base_seq=Mzc4Mw%3D%3D",
+          "title": "건축가 제공 준공 사진, 배치도, 층별 평면도와 단면도"
+        },
+        {
+          "url": "https://www.snu.ac.kr/about/president/news?bbsidx=159915&md=v",
+          "title": "김철수물리관 준공식"
+        },
+        {
+          "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=259",
+          "title": "서울대학교 공식 지도 56-1동"
+        }
+      ],
+      "provenance": {
+        "placementEstimated": true,
+        "dimensionsEstimated": true,
+        "method": "56동 끝벽과 공개 배치도의 이격, 축척을 대조한 근사 외곽이다. 공식 지도점은 중심 좌표로 간주하지 않았다.",
+        "measurementPrecision": "약 18.5m × 33.5m의 외접 범위다. 저장된 소수 자릿수는 측량 정밀도를 뜻하지 않는다.",
+        "osmStatus": "원본 OSM에 없는 신축동을 별도 보완했다. 기존 건물, 도로와 원시 DEM을 보존한다.",
+        "interiorScope": "사진에 보이는 외관과 입구, 연결교 접속부만 구현한다. 전체 실 배치와 내부 계단은 재현하지 않는다."
+      }
+    }
+  ]
+}

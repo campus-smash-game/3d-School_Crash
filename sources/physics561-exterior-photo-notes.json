@@ -1,0 +1,79 @@
+{
+  "reviewedAt": "2026-11-06T22:36:51.297Z",
+  "buildingId": "supplemental/snu-56-1",
+  "name": "56-1동 김철수물리관",
+  "sources": [
+    {
+      "url": "https://vmspace.com/project/project_view.html?base_seq=Mzc4Mw%3D%3D",
+      "provider": "설계자 제공 자료를 실은 SPACE",
+      "directlyViewed": [
+        "서쪽 전경",
+        "동쪽 현관",
+        "배치도",
+        "지하 1층, 2층, 3층 평면도",
+        "단면도"
+      ],
+      "documented": {
+        "completion": "2025-08",
+        "aboveGroundFloors": 4,
+        "basementFloors": 1,
+        "publishedHeightM": 14.32,
+        "buildingAreaM2": 593.32
+      },
+      "limits": [
+        "14.32m는 지상 높이이며, 낮은 쪽에서 드러나는 지하층 높이를 포함한 전체 외관 높이와 구분한다.",
+        "도면의 56동 연결다리는 신축동 2층과 3층에 표시된다. 기존 56동의 층 번호로 해석하지 않는다."
+      ]
+    },
+    {
+      "url": "https://www.snu.ac.kr/about/president/news?bbsidx=159915&md=v",
+      "provider": "서울대학교",
+      "role": "공식 준공과 위치 확인"
+    },
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=259",
+      "provider": "서울대학교 공식 지도",
+      "role": "건물명, 번호, 준공 외관 사진"
+    },
+    {
+      "url": "https://kko.to/snZx-v-50X",
+      "provider": "카카오맵 로드뷰",
+      "imageryMonth": "2026-07",
+      "role": "주변 건물과 현 위치 대조",
+      "limits": [
+        "나무에 가려 세부 현관 구조는 이 화면만으로 확인하지 못했다."
+      ]
+    }
+  ],
+  "implemented": [
+    "계단식 테라스, 흰 외장 띠, 유리면과 난간",
+    "낮은 쪽 현관과 높은 쪽 현관",
+    "양옆 보행 계단과 중간참",
+    "동쪽 지그재그 경사로와 현관 계단",
+    "56동에 접속하는 두 연결교와 아래 통로",
+    "밝은 포장, 어두운 작은 포장 조각, 점자블록",
+    "건물 번호판, 명판, 태양광 패널"
+  ],
+  "estimates": {
+    "footprint": "기존 56동 끝벽을 기준으로 약 3m 이격하고, 공개 배치도의 축척에서 읽은 약 18.5m × 33.5m 범위로 배치했다.",
+    "marker": "공식 지도점은 건물 중심으로 확정하지 않았다. 도면과 주변 건물 관계를 함께 사용했다.",
+    "levels": "게임 바닥 높이, 계단 치수와 현관 경사로 폭은 공개 단면과 기존 게임 지형에 맞춘 근사다.",
+    "interior": "짧은 현관과 연결교 접속부만 만들었다. 전체 실내, 실내 계단과 지상에서 연결교로 올라가는 동선은 미구현이다."
+  },
+  "preserved": [
+    "원본 OSM의 205개 건물 행",
+    "기존 보완 건물 303동",
+    "715개 지도 도로",
+    "원시 DEM"
+  ],
+  "oldMapHandling": {
+    "hiddenRenderedRoad": "way/248013972/100",
+    "reason": "신축동을 가로지르는 과거 계단선의 렌더링을 중지하고 사진에 보이는 양옆 계단으로 보완했다. 원본 도로 행은 보존했다."
+  },
+  "deferred": [
+    "22동과 56동 사이 기존 연결교의 추가 사진 대조",
+    "22동과 56동 자체의 세부 외관",
+    "관정관과 신축동 사이 녹지와 작은 시설의 추가 확인"
+  ],
+  "researchFile": "artifacts/science2256-review70/research-result.json"
+}

@@ -1,0 +1,930 @@
+{
+  "status": "integrated-partial",
+  "scopeUpdate": {
+    "status": "partially-superseded",
+    "recordUpdatedAt": "2026-11-05T09:25:43Z",
+    "historicalScope": "이 문서의 원래 reviewedAt, 구현 설명, 검증 결과와 sourceHashes는 당시 303동 단독 모델의 기록으로 보존한다.",
+    "supersededClaims": [
+      "modelContract.bridge의 미구현 판정과 당시 기준고 차이를 현재 301/303 연결 상태로 사용하지 않는다."
+    ],
+    "currentScope": "301/303 다리와 계단, 303 하부 출입 연결은 별도 공용 연결부에서 구현했다. 이후 도로 주변 시설과 동측 입면의 변경은 아래 후속 기록을 따른다.",
+    "currentReferences": [
+      "sources/engineering301303-connection-notes.json",
+      "sources/engineering-road-facilities-notes.json",
+      "sources/engineering303-east-roadview-review.json"
+    ],
+    "runtimeReferences": [
+      "src/engineering301303Connection.ts",
+      "src/engineering301303Site.ts",
+      "src/engineeringRoadFacilities.ts",
+      "src/fullCampus.ts"
+    ],
+    "remaining": "303 북동쪽 수목 뒤 검은 연결 구조의 전체 평면과 양 끝, 상대 건물은 미확인이다. 기존 301 연결부에 포함하지 않았으며 건물 전체 거리뷰 대조도 완료하지 않았다.",
+    "newObservationAdded": false
+  },
+  "landmark": "engineering-303",
+  "buildingId": "supplemental/snu-303",
+  "modelFile": "src/engineering303Landmark.ts",
+  "api": "createEngineering303Landmark(scene, building, profile, heightAt, layout?)",
+  "reviewedAt": "2026-11-05T03:24:11.583Z",
+  "scope": "해동첨단공학관의 두 날개, 접힌 중앙 유리와 빈 아트리움, 서측 필로티, 동측 2층 현관과 자체 데크를 구현했다. 공식 사실, 사진 관찰, 근사 배치와 현재 게임 지형 보정을 구분한다.",
+  "officialFacts": [
+    {
+      "url": "https://haec.snu.ac.kr/about",
+      "fact": "해동첨단공학관 303동이라는 주소와 2024년 4월 25일 준공 기록을 기존 공개 원문 조사에서 확인했다."
+    },
+    {
+      "url": "https://www.snua.or.kr/magazine?md=v&seqidx=11606",
+      "fact": "준공 보도는 지상 7층, 전면 데크 광장과 301 연결 다리를 설명한다. 기사 사진의 행사 현수막은 303동 2층 포럼 공간을 표시한다."
+    },
+    {
+      "url": "https://haec.snu.ac.kr/node/1",
+      "fact": "공식 공간 안내는 1층 필로티 주차장과 별도 야외 주차장을 설명한다."
+    },
+    {
+      "url": "https://haec.snu.ac.kr/node/2",
+      "fact": "공식 공간 안내는 메인 출입구에서 2층 중앙 홀을 거쳐 엘리베이터로 가는 동선을 설명한다."
+    }
+  ],
+  "photoSources": [
+    {
+      "file": "artifacts/engineering301-review/haec-current-1.png",
+      "url": "https://haec.snu.ac.kr/sites/default/files/0P0A0836.png",
+      "observation": "동측 야간 외관과 접힌 중앙 유리",
+      "directlyViewed": true,
+      "sha256": "d5f3444f21cbb7635158e671982f93a4f6a5d34a018ad820497ee24b2e49626a"
+    },
+    {
+      "file": "artifacts/engineering301-review/haec-current-3.jpg",
+      "url": "https://haec.snu.ac.kr/sites/default/files/0P0A0810r.jpg",
+      "observation": "아트리움 안의 큰 빈 공간과 목재 부재",
+      "directlyViewed": true,
+      "sha256": "3204a5bb8d5b4877cf0fcbdb0935358757fe04bf471878058cc855d1a04d7bee"
+    },
+    {
+      "file": "artifacts/engineering301-review/haec-current-4.png",
+      "url": "https://haec.snu.ac.kr/sites/default/files/0P0A0847_1.png",
+      "observation": "서측 필로티, 북쪽 중간 테라스와 위쪽 열린 층",
+      "directlyViewed": true,
+      "sha256": "64643f6c6daf205166f9cadcb81bc2b61137b0f6d2cfead0c934b70d2aebb149"
+    },
+    {
+      "file": "artifacts/engineering301-review/haec-current-5.jpg",
+      "url": "https://haec.snu.ac.kr/sites/default/files/inline-images/0P0A0759r.jpg",
+      "observation": "동측 전면의 창행과 두 날개의 높이 차이",
+      "directlyViewed": true,
+      "sha256": "f6e8368908e31280b44182a805e0bb9cb9ab7c0fb3dc0db2219b86900ad8e5ee"
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/01.jpg",
+      "url": "https://framerusercontent.com/images/X6JeK3O8vDd2hpnop1zskhzoE.jpg?scale-down-to=2048",
+      "bytes": 889632,
+      "sha256": "4c588e8b33af93e39e773f37c15f3605c6d9434e07f71c9d027e61053fdff4b3",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/02.jpg",
+      "url": "https://framerusercontent.com/images/3ghLpldn1DZAW9UQFkzfnTC36rk.jpg?scale-down-to=2048",
+      "bytes": 520270,
+      "sha256": "5b19de203f30e155c616b1336658210c3593c43a5641b561507ba658b43de2b3",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/03.jpg",
+      "url": "https://framerusercontent.com/images/kQsDa1W6LnpYIXNx0tLPGe1D3aY.jpg?scale-down-to=2048",
+      "bytes": 443459,
+      "sha256": "790f2e90b136e6913e4b1b766702b23e8716e3277872627b64a8f05baa21e618",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/04.jpg",
+      "url": "https://framerusercontent.com/images/jZGCiSeRsXZfkZY8uvIGjggCgA.jpg?scale-down-to=2048",
+      "bytes": 613591,
+      "sha256": "a660d9283810b4a069fce9194d622f7e6fded2ca5fc8743dc74bb55d359c3c89",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/05.jpg",
+      "url": "https://framerusercontent.com/images/wV2IThRjLgLN8UBxvK43Lc0dU.jpg?scale-down-to=2048",
+      "bytes": 791257,
+      "sha256": "58b4882cd0026596a97806ee69734bb81893472a49306ed548b9b62d5d2ab0c4",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/06.jpg",
+      "url": "https://framerusercontent.com/images/VAGdmSMmkGVVVFPKPk8fTY0xFQ.jpg?scale-down-to=2048",
+      "bytes": 826197,
+      "sha256": "ec157806a648b64d42b12d5a96c2c823af84fc084548de66462644a6567d0723",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/07.jpg",
+      "url": "https://framerusercontent.com/images/egFo3mafkOIcTxn09HwyjXprsY.jpg?scale-down-to=2048",
+      "bytes": 598858,
+      "sha256": "2f578fa57721cf6d3f3907e602955f29254844f8703c8e19e0ca127de8c41889",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/08.jpg",
+      "url": "https://framerusercontent.com/images/wEtq0P5FE9XJbBn9Gy0oJZtHH8.jpg?scale-down-to=2048",
+      "bytes": 494342,
+      "sha256": "9ee86bdd46402c8b57be3bb8af4df69867b16e603858dde21432b0d4d4e49cca",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/09.jpg",
+      "url": "https://framerusercontent.com/images/RMSGvHrxTnxlxUEe2qTIJrszlo.jpg?scale-down-to=2048",
+      "bytes": 635772,
+      "sha256": "57bdbd6aabe5546a3731afbd6b7e059c6df81b3fff0fecacf3c35b86f16dfb0a",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/10.jpg",
+      "url": "https://framerusercontent.com/images/gmLt4f9kHqzigpb7zt5p57ToZfg.jpg?scale-down-to=2048",
+      "bytes": 591226,
+      "sha256": "087346904a929b3356f699cf23f1f07d8b95863f27f8ef1283f7f7d64cecd6a7",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    },
+    {
+      "file": "artifacts/engineering303-review/rawwrks/11.jpg",
+      "url": "https://framerusercontent.com/images/Cxo2CBGSOWkOYVt1IRfvl1hCCaU.jpg?scale-down-to=2048",
+      "bytes": 650548,
+      "sha256": "2cf5589dd82b80c9e6fe3106e0385904fdfa85c9093ae06bfc02bd649c2c1c35",
+      "sourceUrl": "https://rawwrks.kr/works/commissioned/haec",
+      "directlyViewed": true
+    }
+  ],
+  "sourcePolicy": "공개 사진은 형태를 직접 관찰하는 데만 사용했다. 게임 텍스처나 배포 이미지로 복제하지 않았다. 브라우저 자동화와 차단된 사이트의 우회는 사용하지 않았다.",
+  "coordinates": {
+    "dataFrame": "D=(E,U,N)",
+    "renderTransform": "상위 world에서 H=(x,y,-z)를 한 번 적용한다. 모델과 물리 좌표는 반사하지 않는다.",
+    "localOrigin": {
+      "x": 276.17699991457005,
+      "y": 122.18405469014036,
+      "z": -1794.8209367246661
+    },
+    "axis": {
+      "x": 1,
+      "z": 0
+    },
+    "frontFacing": {
+      "x": 1,
+      "z": 0
+    },
+    "placementEstimated": true,
+    "footprintEstimated": true,
+    "source": "sources/campus-supplemental-buildings.json",
+    "pointCount": 16,
+    "closedPointCount": 17,
+    "originalOSM": "기존 OSM에 없는 별도 건물이다. supplemental/snu-303으로 추가하며 다른 건물이나 옛 주차장 외곽을 바꾸지 않았다.",
+    "fit": "공식 2026 안내도와 주변 건물의 정합 후보 중 도로 간섭이 적은 모서리 기준을 사용했다. 검증점 오차 약 8~19 m가 있어 이 외곽은 측량 도형이 아니다.",
+    "initialShift": {
+      "x": -1,
+      "z": 0.5
+    },
+    "southWingAdjustment": {
+      "editedIndices": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "shiftXZ": [
+        -1.5,
+        5.8
+      ],
+      "maxVertexDisplacement": 5.990826320300064,
+      "reason": "약도 정합의 위치 오차를 고려해 남측 부분을 보정했다. 기존 도로 높이를 유지하면서 하층 외벽이 땅에 묻히는 것을 줄이기 위한 게임용 근사다. 실측 외곽을 뜻하지 않는다.",
+      "review": "artifacts/engineering303-independent-review/south-wing-adjustments.json"
+    }
+  },
+  "modelContract": {
+    "officialWholeBuildingAboveGroundLevels": 7,
+    "officialBasementLevels": null,
+    "estimatedDimensions": true,
+    "datum": {
+      "sample": {
+        "x": 276.17699991457005,
+        "z": -1794.8209367246661
+      },
+      "base": 122.18405469014036,
+      "kind": "game-terrain-center",
+      "surveyed": false,
+      "description": "보정된 게임 지형의 공급 외곽 면적 중심에서 heightAt을 읽는다. 실제 1층 건축 기준고가 아니다."
+    },
+    "south": {
+      "height": 28,
+      "largeWindowRows": 5,
+      "wallRows": [
+        7.2,
+        11,
+        14.8,
+        18.6,
+        22.4,
+        26.2
+      ],
+      "roofSlab": 27.7,
+      "parapetTop": 28
+    },
+    "north": {
+      "height": 24,
+      "largeWindowRows": 3,
+      "shortWindowRows": 1,
+      "wallRows": [
+        7.2,
+        10.8,
+        14.6,
+        18.4,
+        22.2
+      ],
+      "roofSlab": 23.7,
+      "parapetTop": 24
+    },
+    "visibleRowsInterpretation": "사진에서 보이는 창행이다. 이를 날개별 법적 층수나 동일 층고로 확정하지 않았다.",
+    "atrium": {
+      "minX": -26.318999914570043,
+      "maxX": 26.082590029118016,
+      "minZ": -16.93739327533388,
+      "maxZ": 11.631806724666124,
+      "floor": 3.8,
+      "roofMin": 22.2,
+      "roofMax": 27,
+      "estimated": true
+    },
+    "interior": "한 장의 2층 바닥, 폭 약 1.9 m의 가장자리 회랑과 두 횡단 통로, 사진에서 관찰한 목재색 기둥과 대각 부재, 파형 보만 근사했다. 사무실과 가구 배치는 만들지 않았고 상층 전체를 슬래브로 채우지 않았다.",
+    "centralFloor": "접힌 동측 유리 하부와 근사 원외곽 사이에는 연속 현관 바닥을 두었다. 근사 외곽과 사진상 돌출부를 함께 맞춘 게임용 구획이다.",
+    "northTerrace": {
+      "poly": [
+        {
+          "x": -3.694999914570019,
+          "z": 27.297936724666215
+        },
+        {
+          "x": -26.257999914570036,
+          "z": 26.693936724666173
+        },
+        {
+          "x": -26.313894179687452,
+          "z": 11.631806724666124
+        },
+        {
+          "x": 17.244554764363023,
+          "z": 11.631806724666124
+        },
+        {
+          "x": 15.43700008542993,
+          "z": 14.896936724666148
+        },
+        {
+          "x": 24.484000085429955,
+          "z": 21.008936724666228
+        },
+        {
+          "x": 18.89000008542996,
+          "z": 33.772936724666124
+        }
+      ],
+      "y": 3.8,
+      "estimated": true,
+      "source": "서측 공식 사진의 중간 테라스 판을 북쪽 몸체 안쪽으로 이어 두 층을 나눴다. 안쪽 깊이와 높이는 게임용 근사다."
+    },
+    "entry": {
+      "x": 24.282590029118015,
+      "z": 1.9182787246661235,
+      "width": 4.8,
+      "floor": 3.8,
+      "height": 3.1,
+      "officialLevel": 2,
+      "estimated": true
+    },
+    "deck": {
+      "x0": 23.882590029118017,
+      "x1": 31.082590029118016,
+      "z0": -17.93739327533388,
+      "z1": 14.631806724666124,
+      "y": 3.8,
+      "bridge": false,
+      "estimated": true,
+      "stairNotch": {
+        "x0": 28.452590029118014,
+        "x1": 31.082590029118016,
+        "z0": 0.7182787246661235,
+        "z1": 14.631806724666124
+      }
+    },
+    "stairs": [
+      {
+        "kind": "east-deck-approach",
+        "x": 29.732590029118015,
+        "z0": 0.7182787246661235,
+        "z1": 13.831806724666123,
+        "width": 2.2,
+        "count": 24,
+        "stepDepth": 0.5463969999999999,
+        "tops": [
+          [
+            -0.6612405718522308,
+            -0.506821510721756,
+            -0.3110568965980397,
+            -0.1152922824743235,
+            0.0804723316493926,
+            0.27623694577310876,
+            0.472001559896825,
+            0.6677661740205412,
+            0.8635307881442573,
+            1.0592954022679737,
+            1.2550600163916894,
+            1.450824630515406,
+            1.646589244639122,
+            1.8423538587628379,
+            2.0381184728865547,
+            2.2338830870102706,
+            2.4296477011339865,
+            2.6254123152577025,
+            2.8211769293814193,
+            3.016941543505135,
+            3.212706157628851,
+            3.408470771752567,
+            3.604235385876284,
+            3.8
+          ],
+          [
+            -0.5955160082536094,
+            -0.4439545368448136,
+            -0.2510475124427767,
+            -0.058140488040739624,
+            0.13476653636129732,
+            0.3276735607633342,
+            0.5205805851653713,
+            0.7134876095674083,
+            0.9063946339694452,
+            1.0993016583714823,
+            1.292208682773519,
+            1.4851157071755563,
+            1.678022731577593,
+            1.8709297559796298,
+            2.063836780381667,
+            2.256743804783704,
+            2.449650829185741,
+            2.642557853587778,
+            2.835464877989815,
+            3.0283719023918523,
+            3.2212789267938886,
+            3.4141859511959254,
+            3.607092975597963,
+            3.8
+          ],
+          [
+            -0.5297904454054799,
+            -0.3810858859972926,
+            -0.19103652754287026,
+            -0.000987169088447759,
+            0.18906218936597458,
+            0.3791115478203969,
+            0.5691609062748193,
+            0.7592102647292418,
+            0.9492596231836641,
+            1.1393089816380866,
+            1.3293583400925086,
+            1.5194076985469314,
+            1.7094570570013536,
+            1.8995064154557757,
+            2.0895557739101984,
+            2.2796051323646207,
+            2.469654490819043,
+            2.6597038492734653,
+            2.8497532077278884,
+            3.0398025661823107,
+            3.2298519246367325,
+            3.419901283091155,
+            3.6099506415455775,
+            3.8
+          ],
+          [
+            -0.4640637837233453,
+            -0.3182169052578595,
+            -0.13102522774613862,
+            0.05616644976558227,
+            0.24335812727730316,
+            0.43054980478902394,
+            0.617741482300745,
+            0.8049331598124658,
+            0.9921248373241867,
+            1.1793165148359077,
+            1.3665081923476283,
+            1.5536998698593494,
+            1.7408915473710702,
+            1.9280832248827906,
+            2.115274902394512,
+            2.3024665799062327,
+            2.4896582574179535,
+            2.6768499349296744,
+            2.8640416124413957,
+            3.0512332899531165,
+            3.238424967464837,
+            3.4256166449765577,
+            3.612808322488279,
+            3.8
+          ]
+        ],
+        "estimated": true
+      }
+    ],
+    "access": {
+      "pending": false,
+      "route": [
+        {
+          "x": 29.732590029118015,
+          "z": 15.331806724666123
+        },
+        {
+          "x": 29.732590029118015,
+          "z": 0.21827872466612352
+        },
+        {
+          "x": 25.382590029118017,
+          "z": 0.21827872466612352
+        },
+        {
+          "x": 25.382590029118017,
+          "z": 1.9182787246661235
+        },
+        {
+          "x": 19.282590029118015,
+          "z": 1.9182787246661235
+        }
+      ],
+      "speed": 6,
+      "estimated": true,
+      "source": "확인된 동측 2층 현관에 연결하는 게임용 계단이며 실제 계단 치수를 복원한 것이 아니다."
+    },
+    "bridge": {
+      "implemented": false,
+      "reason": "303과 301의 연결 다리 자체는 공식 보도와 사진에서 확인된다. 현재 301 패드와 303 지형의 약 28 m 고도 차이 및 정확한 끝점은 해결하지 못해 이번에는 303 자체 데크만 구현했다. 차도를 막는 지지벽이나 끝이 열린 가상 다리는 만들지 않았다."
+    },
+    "pilotiColumns": {
+      "nominalSpacing": 7.5,
+      "minimumCornerSpacing": 3,
+      "estimated": true,
+      "positions": [
+        [
+          268.73220396137674,
+          122.18405469014036,
+          -1768.0235234225315
+        ],
+        [
+          261.2112039613767,
+          122.18405469014036,
+          -1768.2248567558647
+        ],
+        [
+          253.6902039613767,
+          122.18405469014036,
+          -1768.4261900891981
+        ],
+        [
+          250.30502367957294,
+          122.18405469014036,
+          -1771.8940168552742
+        ],
+        [
+          250.27707654701425,
+          122.18405469014036,
+          -1779.4250818552741
+        ],
+        [
+          292.1678233261626,
+          122.18405469014036,
+          -1781.75029726002
+        ],
+        [
+          291.41307027022884,
+          122.18405469014036,
+          -1762.5116765075602
+        ],
+        [
+          283.8847369368955,
+          122.18405469014036,
+          -1764.6700098408935
+        ],
+        [
+          276.35640360356217,
+          122.18405469014036,
+          -1766.8283431742268
+        ]
+      ],
+      "description": "사진에서 서측 하부 기둥 사이가 넓게 열린 관계를 반영했다. 창 간격과 기둥 간격을 분리했으며 기둥 수, 단면과 안쪽 바닥 깊이는 측량값이 아니다."
+    }
+  },
+  "terrain": {
+    "rawDEM": "public/data/terrain.json은 보존했다.",
+    "terrainPad": false,
+    "terrainCut": {
+      "level": 122.278,
+      "apron": 1,
+      "blend": 5,
+      "protectedCorridors": [
+        {
+          "id": "way/167667799/47",
+          "points": [
+            [
+              316.5,
+              -1825.11
+            ],
+            [
+              281.46,
+              -1836.26
+            ],
+            [
+              229.8,
+              -1856.64
+            ],
+            [
+              215.82,
+              -1866.36
+            ],
+            [
+              207.05,
+              -1879.16
+            ],
+            [
+              188.32,
+              -1918.28
+            ],
+            [
+              167.94,
+              -1945.06
+            ],
+            [
+              143.7,
+              -1966.37
+            ],
+            [
+              105.68,
+              -1988.54
+            ],
+            [
+              80.08,
+              -2000.55
+            ]
+          ],
+          "width": 11.5
+        },
+        {
+          "id": "way/481787202/411",
+          "points": [
+            [
+              319.64,
+              -1944.08
+            ],
+            [
+              319.21,
+              -1925.07
+            ],
+            [
+              318.13,
+              -1903
+            ],
+            [
+              317.28,
+              -1872.78
+            ],
+            [
+              316.5,
+              -1825.11
+            ],
+            [
+              315.76,
+              -1789.99
+            ],
+            [
+              317.24,
+              -1772.64
+            ],
+            [
+              317.83,
+              -1768.96
+            ],
+            [
+              324.77,
+              -1754.5
+            ],
+            [
+              336.86,
+              -1732.7
+            ],
+            [
+              345.15,
+              -1714.68
+            ],
+            [
+              346.31,
+              -1711.34
+            ],
+            [
+              349.59,
+              -1704.36
+            ]
+          ],
+          "width": 18.8
+        },
+        {
+          "id": "way/777510058/486",
+          "points": [
+            [
+              299.33,
+              -1738.9
+            ],
+            [
+              296.79,
+              -1759.47
+            ]
+          ],
+          "width": 8
+        }
+      ]
+    },
+    "cutMeaning": "게임 지형만 국소적으로 낮췄다. 목표 절개 고도 122.278 m, 외곽 밖 1 m와 5 m 혼합 경계, 2 m 세분은 실제 토목 설계나 측량값이 아니다. 도로 폭에 양쪽 3 m를 더한 영역은 보호한다.",
+    "remainingFit": "기존 후보의 남동 하부 유리 9.4639 m 매몰은 층고 상승으로 숨기지 않았다. 보조 외곽의 남측 7개 꼭짓점을 서쪽 1.5 m, 북쪽 5.8 m로 옮겨 최대 5.99083 m 조정했고, 선택한 모델과 지형의 실제 유리를 다시 검사했다.",
+    "actualTerrainContract": "heightAt은 실제 지형 삼각형보다 약 0.03 m 높은 게임 보행 계약을 사용한다. 유리 여유 검사는 meshHeightAt으로 계산한다."
+  },
+  "renderAndPhysics": {
+    "renderMeshes": 3,
+    "parts": 2168,
+    "triangles": 60408,
+    "materials": "불투명 외벽, 부재와 유리를 정점색 병합 메시 3개로 그린다. 사진 텍스처는 사용하지 않았다.",
+    "glazingRendering": "유리는 낮은 거칠기의 불투명 정점색 표면으로 근사한다. 실제 유리 투과, 반사와 실내 조명을 재현한 결과가 아니다.",
+    "closedFacadeApproximation": "일반 창의 OBB는 노출 벽과 후퇴 유리 중간에 두어 표면 차이를 나눴다. 실제 유리 광선에서 최대 약 0.155 m 차이가 있어 정밀한 개별 창틀 충돌이 아니다.",
+    "damage": "해당 부품의 병합 정점을 접어 숨긴다. 원거리에서도 손상을 유지하고 전체 초기화 때 원래 정점 배열을 복원한다."
+  },
+  "validation": {
+    "own": {
+      "command": "node scripts/verify-engineering303.mjs",
+      "status": "passed",
+      "passed": 11,
+      "failed": 0,
+      "result": "artifacts/engineering303-test/results.json",
+      "geometry": {
+        "name": "the supplied estimated footprint produces separate high and low wings with three merged surfaces",
+        "status": "passed",
+        "parts": 2168,
+        "triangles": 60408,
+        "renderMeshes": 3,
+        "southRoof": 28,
+        "northRoof": 24
+      },
+      "glazing": {
+        "name": "all actual glazing and doors remain above rendered terrain",
+        "status": "passed",
+        "samples": 33544,
+        "minimum": 0.0822810644749552
+      },
+      "rays": {
+        "name": "exposed glazing and folded panels agree for loaded and unloaded external rays",
+        "status": "passed",
+        "rays": 205,
+        "occluded": 2,
+        "endFaces": 364,
+        "maxSurface": 0.1546247065068591,
+        "maxLoad": 0.00023976564411343215
+      },
+      "movement": {
+        "speed": 6,
+        "paths": 6,
+        "description": "실제 북쪽 지면에서 중앙과 ±0.65 m 계단 경로를 출발해 닫힌 문 앞에 멈춘다. 문을 파괴한 뒤 아트리움 내부로 들어가 실제 바닥에서 출발해 밖으로 돌아온다."
+      },
+      "other": [
+        "세로 빈 공간 6곳",
+        "필로티 빈 틈 11곳",
+        "북쪽 중간 바닥 실제 표면 36곳",
+        "부분 손상과 원거리 유지",
+        "전체 파괴와 초기화 3회",
+        "단일 H 반사",
+        "공급 heightAt +50 m 이동과 원자료 불변"
+      ],
+      "terraceSampling": "실제 바닥 표면을 검사하되 기둥 또는 다른 외피의 0.2 m 경계 안에서 출발하는 표본은 분리했다. 외벽 유리의 충돌 오차는 별도 외부 광선 검사에서 측정했다."
+    },
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "status": "passed"
+    },
+    "independent": {
+      "status": "passed",
+      "basePassed": 9,
+      "baseFailed": 0,
+      "result": "artifacts/engineering303-independent-review/results.json",
+      "sourceStillMatches": {
+        "src/scene.ts": true,
+        "src/physics.ts": true,
+        "src/controls.ts": true,
+        "src/terrain.ts": true,
+        "src/traffic.ts": true,
+        "src/cannon.ts": true,
+        "src/minimap.ts": true,
+        "src/fullCampus.ts": true,
+        "src/main.ts": true,
+        "src/buildingAppearance.ts": true,
+        "src/landmarkBuildings.ts": true,
+        "src/observedAppearances.ts": true,
+        "src/libraryLandmark.ts": true,
+        "src/sportsLandmark.ts": true,
+        "src/distantBuildings.ts": true,
+        "src/gyujanggakLandmark.ts": true,
+        "src/pavilionLandmark.ts": true,
+        "src/engineerHouseLandmark.ts": true,
+        "src/samsungResearchLandmark.ts": true,
+        "src/engineering302Landmark.ts": true,
+        "src/familyDormLandmark.ts": true,
+        "src/researchParkLandmark.ts": true,
+        "src/globalEngineeringLandmark.ts": true,
+        "src/admissionsLandmark.ts": true,
+        "src/neutinamuLandmark.ts": true,
+        "src/baekhakLandmark.ts": true,
+        "src/coordinates.ts": true,
+        "src/mainLibraryLandmark.ts": true,
+        "src/campusConstruction.ts": true,
+        "src/administrationLandmark.ts": true,
+        "src/studentCenterLandmark.ts": true,
+        "src/museumLandmark.ts": true,
+        "src/livingScienceLandmark.ts": true,
+        "src/gymLandmark.ts": true,
+        "src/agricultureLandmark.ts": true,
+        "src/engineering301Landmark.ts": true,
+        "src/educationHealthLandmark.ts": true,
+        "src/science500Landmark.ts": true,
+        "src/engineering303Landmark.ts": true,
+        "public/data/campus.json": true,
+        "public/data/terrain.json": true,
+        "node_modules/three/src/renderers/shaders/ShaderLib/sprite.glsl.js": true,
+        "scripts/preview-geometry.mjs": true
+      },
+      "glass": {
+        "name": "all actual glass triangle samples clear current rendered terrain",
+        "status": "PASS",
+        "samples": 47920,
+        "minimum": 0.07880201240836016,
+        "worst": {
+          "triangle": 293,
+          "point": [
+            255.61990051269532,
+            122.34405517578125,
+            -1823.1883605957032
+          ],
+          "ground": 122.26525316337289
+        }
+      },
+      "roadClearance": {
+        "name": "every rendered triangle edge clears nearby mapped road corridors",
+        "status": "PASS",
+        "records": [
+          {
+            "id": "way/167667799/47",
+            "width": 5.5,
+            "drivable": true,
+            "motorVehicle": null,
+            "minimum": 6.386209701298938,
+            "worst": {
+              "mesh": "engineering303-frames",
+              "triangle": 7384,
+              "edge": [
+                [
+                  303.4942626953125,
+                  133.1590576171875,
+                  -1819.6424560546875
+                ],
+                [
+                  303.49627685546875,
+                  133.18905639648438,
+                  -1819.6602783203125
+                ]
+              ],
+              "roadSegment": 0
+            }
+          },
+          {
+            "id": "way/481787202/411",
+            "width": 12.8,
+            "drivable": true,
+            "motorVehicle": null,
+            "minimum": 2.17834810598608,
+            "worst": {
+              "mesh": "engineering303-frames",
+              "triangle": 38180,
+              "edge": [
+                [
+                  307.2295837402344,
+                  127.0040512084961,
+                  -1795.20263671875
+                ],
+                [
+                  307.2895812988281,
+                  127.06405639648438,
+                  -1795.20263671875
+                ]
+              ],
+              "roadSegment": 4
+            }
+          }
+        ],
+        "method": "All actual render triangle edges versus each mapped road centerline segment, subtracting estimated road half width. This checks the supplied model, not real surveyed clearance."
+      },
+      "rays": {
+        "rays": 35,
+        "maxSurface": 0.1545761108397864,
+        "maxLoad": 0.00010485649113434192,
+        "selection": "Actual exposed triangle normals and render-only occlusion; no loaded hit/miss used to discard a sample.",
+        "skipped": {
+          "hidden": 0,
+          "endFaces": 73,
+          "small": 4
+        }
+      },
+      "other": "실제 아트리움 빈 공간 12곳, 목재 가새 표면 4곳, 필로티 기둥과 틈, 잠긴 문과 파괴 후 계단 왕복, 원거리 파괴와 복원, H를 확인했다.",
+      "fullCampusPassed": 4,
+      "passed": 13,
+      "failed": 0,
+      "supplementalResult": "artifacts/engineering303-independent-review/supplemental-results.json",
+      "fullCampus": "실제 도착점의 초기, 30프레임과 120프레임에 캡슐 관통이 없고 도로를 따라 약 6 m 왕복했다. 도착점에서 계단 시작까지 약 17.87 m의 직접 지형 경로도 6 m/s 입력으로 왕복해 접지 유지와 관통 0개를 확인했다. 계단 전체에서 현관까지의 실제 지면 접근과 문 파괴 후 진입은 기본 검사에 포함된다.",
+      "summary": "artifacts/engineering303-independent-review/summary.json",
+      "summarySha256": "e77820b8680d392f84ed0de36c87ccf9b3df19b5e9faab0a6c853b872758812b",
+      "photoReview": "artifacts/engineering303-independent-review/final-review.json",
+      "groundConnection": {
+        "distance": 17.87,
+        "speed": 6,
+        "outFrames": 183,
+        "backFrames": 206,
+        "finalError": 0.1,
+        "teleportBetweenEndpoints": false
+      },
+      "scope": "실제 기하, 현재 게임 지형, Rapier와 수치 투영 검사다. 실측 정확도, 브라우저나 휴대전화 GPU 검증이 아니다."
+    },
+    "fullSuite": {
+      "status": "passed",
+      "command": "npm test",
+      "scripts": 40,
+      "passed": 398,
+      "failed": 0,
+      "exitCode": 0,
+      "artifact": "artifacts/release-17-verification.log",
+      "sha256": "416a65397fbbccee16289eb666f6cf6b6824f7302a68797a5e9449c46aa16bfd",
+      "scope": "현재 전체 소스의 Node, TypeScript와 기하/물리 회귀 검사다. 실제 브라우저나 휴대전화 검사가 아니다.",
+      "completedAt": "2026-11-05T03:32:57.981Z"
+    },
+    "cpuPreview": {
+      "status": "directly-reviewed",
+      "file": "artifacts/engineering303-review/final-candidate/engineering303.png",
+      "method": "artifacts/engineering303-review/final-candidate/preview-method.json",
+      "provenance": "artifacts/engineering303-review/final-candidate/provenance.json",
+      "sourceStillMatches": true,
+      "modelSha256": "1bf0d6c1d8409ae9bc0c8d8150ee24bc99010c13cbed4aab7f6f8d0f4db51114",
+      "compiledSha256": "80dcbef0c18ec2b582ed01cf9434fc7a338ba4fc4ac620c2d1af3fa010e7245c",
+      "triangles": 60408,
+      "renderMeshes": 3,
+      "comparison": "공식 동서 사진과 대조해 두 날개 높이, 창행, 접힌 중앙부, 중간 판과 간격을 넓힌 필로티 기둥을 확인했다. 정면은 전경 지형에 일부 가려 전체 입면의 일치를 판단하지 않았다.",
+      "limit": "실제 기하와 지형을 CPU로 정사영한 그림이다. WebGL, 재질의 광학적 성질, 그림자, 실제 브라우저나 휴대전화 성능을 검증한 화면이 아니다."
+    },
+    "mobile": {
+      "status": "not-validated",
+      "limit": "실제 휴대전화 FPS, GPU, 터치와 브라우저 작동을 검증하지 않았다. 병합 메시 수만으로 모바일 성능을 보장하지 않는다."
+    }
+  },
+  "limitations": [
+    "보조 외곽, 날개별 수평 치수, 창 모듈, 높이와 층 배분은 근사다. 공식 지상 7층과 구별한다.",
+    "지하층 존재와 수는 확인하지 못했으므로 만들지 않았다.",
+    "301 연결 다리와 북쪽 검은 트러스 통로는 구현하지 않았다.",
+    "옥상 태양광형 판과 세부 설비, 외부 조경 및 포장 패턴, 서측 외부 계단은 단순화하거나 생략했다.",
+    "내부 회랑과 목재 부재는 사진에서 관찰한 구성을 근사하며 모든 층의 실제 동선을 복원한 것이 아니다.",
+    "현재 게임 지형 보정과 동측 접근 계단은 실제 절성토나 계단 치수의 복원이 아니다."
+  ],
+  "sourceHashes": {
+    "src/engineering303Landmark.ts": "1bf0d6c1d8409ae9bc0c8d8150ee24bc99010c13cbed4aab7f6f8d0f4db51114",
+    "scripts/verify-engineering303.mjs": "9af048c5d387ab7990cc8ce401039f685f1a8bc9119c8fb80e9b712c56a7dedb",
+    "sources/campus-supplemental-buildings.json": "d8caf0c818ad5cfcbd6714a8098d84df7a0cb29d6d9445ede1337b0ec77f4b1a",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "src/terrain.ts": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263",
+    "artifacts/engineering303-model-plan.json": "c2167eb4f7c42f893da392064144b2f1de16ac1f69dec0ed10a28b0aa6a90018",
+    "artifacts/engineering303-test/results.json": "ee7ffe70e2417dde0e3e211720d56de31b13073d1f34b433b3ccf7dca3a2158b",
+    "artifacts/engineering303-independent-review/results.json": "7ea311f2d12b0534f477a1fa3ec08378445048d1925fdbe20703f58b62ce3f72",
+    "artifacts/engineering303-independent-review/supplemental-results.json": "38324634aad19785862efddd24a33fd4210390d3ae486c72bfd87bed198a5bcf",
+    "artifacts/engineering303-review/final-candidate/provenance.json": "6c0ee0f48eeacd989254a5399181b96f5ca4e24faa77432e759fe26f1143e412",
+    "artifacts/engineering303-review/final-candidate/engineering303.png": "51b37e8976019cb754219df1d57b530257dfb3c418823708b4bd6096ba2f8529",
+    "artifacts/engineering303-review/final-candidate/preview-method.json": "12f4be9ca9b9b379a7c5e03513a78185672a6ca4e820dc79ee7e06c424218361",
+    "artifacts/release-17-verification.log": "416a65397fbbccee16289eb666f6cf6b6824f7302a68797a5e9449c46aa16bfd",
+    "artifacts/engineering303-independent-review/summary.json": "e77820b8680d392f84ed0de36c87ccf9b3df19b5e9faab0a6c853b872758812b",
+    "artifacts/engineering303-independent-review/final-review.json": "a586c4b8fa7e16ce7402b00917ef493e6865363a0680f109fa8b113f8ffc8aa9"
+  }
+}

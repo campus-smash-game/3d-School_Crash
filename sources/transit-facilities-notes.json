@@ -1,0 +1,882 @@
+{
+  "status": "implemented-targeted-checks-passed",
+  "sourceDate": "2026-11-04T18:29:18.996Z",
+  "coordinates": "D=(east,up,north); render parent applies H=(x,y,-z) once.",
+  "sources": [
+    {
+      "path": "sources/campus.osm",
+      "provider": "OpenStreetMap",
+      "license": "ODbL 1.0"
+    },
+    {
+      "path": "sources/transit-official-routes.json",
+      "provider": "서울특별시 버스정보시스템"
+    },
+    {
+      "path": "public/data/campus-transit.json",
+      "role": "현재 운행 구간과 정차점"
+    },
+    {
+      "path": "public/data/shuttle-stops.json",
+      "role": "공식 셔틀 표식과 게임 시작점"
+    }
+  ],
+  "inventory": {
+    "campusStops": 37,
+    "shelterYes": 9,
+    "shelterNo": 2,
+    "shelterUnknown": 26,
+    "streetLampNodes": 0,
+    "explicitSignalPoles": [
+      {
+        "sourceId": "node/1843514228",
+        "latitude": 37.475679,
+        "longitude": 126.9526328,
+        "inGameArea": false
+      },
+      {
+        "sourceId": "node/14241365523",
+        "latitude": 37.4734819,
+        "longitude": 126.9530472,
+        "inGameArea": false
+      }
+    ],
+    "signalCrossing": {
+      "nodeIds": [
+        "13231900614",
+        "14241354281"
+      ],
+      "wayId": "1442039156",
+      "scope": "정문 북동쪽 횡단보도에 신호가 있다는 태그이며 기둥의 정확한 위치와 개수는 미확인"
+    }
+  },
+  "osmStopEvidence": [
+    {
+      "sourceId": "node/357899046",
+      "point": [
+        734.52,
+        -618.71
+      ],
+      "name": "관악사삼거리",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "관악사삼거리",
+        "name:en": "Gwanaksa Dormitory",
+        "name:ko": "관악사삼거리",
+        "name:ko-Latn": "Gwanaksasamgeori",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "관악 02"
+      }
+    },
+    {
+      "sourceId": "node/357899118",
+      "point": [
+        334.61,
+        -1425.3
+      ],
+      "name": "에너지자원신기술연구소",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "에너지자원신기술연구소",
+        "name:en": "Energy Resources Research Institute",
+        "name:ko-Latn": "Eneojijawonyeonguso",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5512;5512;5516",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "sourceId": "node/357899175",
+      "point": [
+        93.29,
+        -555.59
+      ],
+      "name": "문화관입구",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "문화관입구",
+        "name:en": "Munhwagwan Entrance",
+        "name:ko": "문화관입구",
+        "name:ko-Latn": "Munhwagwanipgu",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5512"
+      }
+    },
+    {
+      "sourceId": "node/357899177",
+      "point": [
+        53.5,
+        -692.19
+      ],
+      "name": "자연대.행정관입구",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "자연대.행정관입구",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5512;5516",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/357899217",
+      "point": [
+        565.03,
+        -304.83
+      ],
+      "name": "국제대학원",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "국제대학원",
+        "name:en": "International",
+        "name:ko": "국제대학원",
+        "name:ko-Latn": "Gukjedaehakwon",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5512"
+      }
+    },
+    {
+      "sourceId": "node/357899219",
+      "point": [
+        731.08,
+        -646.7
+      ],
+      "name": "관악사삼거리",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "관악사삼거리",
+        "name:en": "Gwanaksa Dormitory",
+        "name:ko": "관악사삼거리",
+        "name:ko-Latn": "Gwanaksasamgeori",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5511, 관악 02"
+      }
+    },
+    {
+      "sourceId": "node/357899239",
+      "point": [
+        238.78,
+        -54.11
+      ],
+      "name": "경영대.행정대학원",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "경영대.행정대학원",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5513;5516"
+      }
+    },
+    {
+      "sourceId": "node/357899254",
+      "point": [
+        453.82,
+        -1405.76
+      ],
+      "name": "유전공학연구소.반도체공동연구소",
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "유전공학연구소.반도체공동연구소",
+        "name:ko": "유전공학연구소.반도체공동연구소",
+        "name:ko-Hani": "遺傳工學研究所.半導體共同研究所",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5512;5516",
+        "shelter": "no",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "sourceId": "node/357899388",
+      "point": [
+        -7.61,
+        -85.45
+      ],
+      "name": "서울대정문",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "서울대정문",
+        "name:en": "Seoul Nat'l Univ. Main Gate",
+        "name:ko": "서울대정문",
+        "name:ko-Hani": "서울大正門",
+        "name:ko-Latn": "Seouldaejeongmun",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5513;5516;5511;5518"
+      }
+    },
+    {
+      "sourceId": "node/357899691",
+      "point": [
+        63.53,
+        -349.75
+      ],
+      "name": "법대.사회대입구",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "법대.사회대입구",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5516;5512;5518"
+      }
+    },
+    {
+      "sourceId": "node/357899811",
+      "point": [
+        -53.35,
+        45.04
+      ],
+      "name": "서울대학교",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "서울대학교",
+        "name:en": "Seoul National University",
+        "name:ja": "ソウル大学校",
+        "name:ko": "서울대학교",
+        "name:ko-Latn": "Seouldaehakgyo",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "sourceId": "node/357899889",
+      "point": [
+        88.08,
+        -1033.74
+      ],
+      "name": "농생대",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "농생대",
+        "name:en": "College of Agriculture and Life Science",
+        "name:ko": "농생대",
+        "name:ko-Latn": "Nongsaengdae",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5516;5512",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/357899893",
+      "point": [
+        130.04,
+        -1224.66
+      ],
+      "name": "공대입구",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "공대입구",
+        "name:en": "College of Engineering",
+        "name:ko": "공대입구",
+        "name:ko-Latn": "Gongdaeipgu",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5516;5512",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/357899901",
+      "point": [
+        542.57,
+        -1245.72
+      ],
+      "name": "공동기기원",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "공동기기원",
+        "name:en": "Gongdonggigiwon",
+        "name:ko": "공동기기원",
+        "name:ko-Latn": "Gongdonggigiwon",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5516;5512"
+      }
+    },
+    {
+      "sourceId": "node/357899927",
+      "point": [
+        186.9,
+        -589.74
+      ],
+      "name": "행정관",
+      "tags": {
+        "bus": "yes",
+        "name": "행정관",
+        "name:en": "Administration Building",
+        "name:ja": "行政館",
+        "name:ko": "행정관",
+        "name:zh": "行政楼",
+        "operator": "SNU Shuttle",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/357899936",
+      "point": [
+        65.78,
+        -1015.32
+      ],
+      "name": "농생대",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "농생대",
+        "name:en": "College of Agriculture and Life Science",
+        "name:ko": "농생대",
+        "name:ko-Latn": "Nongsaengdae",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5516;5511;5513",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/357899939",
+      "point": [
+        43.52,
+        -674.97
+      ],
+      "name": "자연대.행정관입구",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "자연대.행정관입구",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5516",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/357900068",
+      "point": [
+        155.9,
+        -619.16
+      ],
+      "name": "행정관",
+      "tags": {
+        "bus": "yes",
+        "name": "행정관",
+        "name:en": "Administration Building",
+        "name:ja": "行政館",
+        "name:ko": "행정관",
+        "name:zh": "行政楼",
+        "operator": "SNU Shuttle",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/357900538",
+      "point": [
+        30.59,
+        -113.61
+      ],
+      "name": "서울대정문",
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "서울대정문",
+        "name:en": "Seoul Nat'l Univ. Main Gate",
+        "name:ko": "서울대정문",
+        "name:ko-Hani": "서울大正門",
+        "name:ko-Latn": "Seouldaejeongmun",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5518;5516;5512",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/357964484",
+      "point": [
+        65.63,
+        67.83
+      ],
+      "name": "서울대학교",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "서울대학교",
+        "name:en": "Seoul National University",
+        "name:ja": "ソウル大学校",
+        "name:ko": "서울대학교",
+        "name:ko-Latn": "Seouldaehakgyo",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/3866425104",
+      "point": [
+        615.45,
+        -847.12
+      ],
+      "name": "노천강당",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "노천강당",
+        "name:en": "Amphitheatre",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/4746859837",
+      "point": [
+        858.55,
+        -286.55
+      ],
+      "name": "학부생활관",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "학부생활관",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/4746859840",
+      "point": [
+        869.45,
+        233.39
+      ],
+      "name": "호암교수회관",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "호암교수회관",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/4746859858",
+      "point": [
+        794.63,
+        -444.76
+      ],
+      "name": "대학원생활관",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "대학원생활관",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/5297289076",
+      "point": [
+        108.98,
+        149.75
+      ],
+      "name": "서울대학교",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "서울대학교",
+        "name:en": "Seoul Nat'l University",
+        "name:ko": "서울대학교",
+        "name:ko-Latn": "Seouldaehakgyo",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/11560054587",
+      "point": [
+        122.58,
+        -2123.86
+      ],
+      "name": "건설환경종합연구소앞",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "건설환경종합연구소앞",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/11560054589",
+      "point": [
+        328.38,
+        -2006.3
+      ],
+      "name": "제2공학관",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "제2공학관",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/11560054590",
+      "point": [
+        327.33,
+        -1963.48
+      ],
+      "name": "제2공학관",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "제2공학관",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/11560054593",
+      "point": [
+        334.63,
+        -32.74
+      ],
+      "name": "경영대.행정대학원",
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "경영대.행정대학원",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5513;5516",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "sourceId": "node/11560054594",
+      "point": [
+        552.74,
+        -26.69
+      ],
+      "name": "수의대입구.보건대학원앞",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "수의대입구.보건대학원앞",
+        "name:ko": "수의대입구.보건대학원앞",
+        "name:ko-Hani": "獸醫大入口.保健大學院앞",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5513;5516"
+      }
+    },
+    {
+      "sourceId": "node/11560054595",
+      "point": [
+        556.86,
+        -49.03
+      ],
+      "name": "수의대입구.보건대학원앞",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "수의대입구.보건대학원앞",
+        "name:ko": "수의대입구.보건대학원앞",
+        "name:ko-Hani": "獸醫大入口.保健大學院앞",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "route_ref": "5513;5516"
+      }
+    },
+    {
+      "sourceId": "node/11560054598",
+      "point": [
+        875.73,
+        156.22
+      ],
+      "name": "서울대호암교수회관",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "서울대호암교수회관",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/13392140060",
+      "point": [
+        929.04,
+        215.7
+      ],
+      "name": "호암교수회관(23A)",
+      "tags": {
+        "name": "호암교수회관(23A)",
+        "operator": "서울대학교",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/13392140061",
+      "point": [
+        308.6,
+        -1821.67
+      ],
+      "name": "301동 공학관(10B)",
+      "tags": {
+        "name": "301동 공학관(10B)",
+        "operator": "서울대학교",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/13392140066",
+      "point": [
+        310.95,
+        -1958.12
+      ],
+      "name": "302동 공학관(9B)",
+      "tags": {
+        "name": "302동 공학관(9B)",
+        "operator": "서울대학교",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/13392140067",
+      "point": [
+        12.91,
+        -53.21
+      ],
+      "name": "정문(1A)",
+      "tags": {
+        "name": "정문(1A)",
+        "operator": "서울대학교",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "sourceId": "node/13617795547",
+      "point": [
+        166.16,
+        -534
+      ],
+      "name": "행정관",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "행정관",
+        "network": "서울특별시 시내버스",
+        "network:ko": "서울특별시 시내버스",
+        "network:wikidata": "Q3724007",
+        "public_transport": "platform",
+        "ref": "21917"
+      }
+    }
+  ],
+  "placementPolicy": {
+    "sourcePosition": "공식 표식과 OSM 원좌표를 보존한다.",
+    "vehiclePosition": "현재 운행 계획의 방향별 구간과 정차 거리로 계산한다.",
+    "facilityPosition": "진행 방향 오른쪽의 도로 경계 밖에 놓는 근사 후보이며 실제 보도와 충돌 검사를 거쳐 정한다.",
+    "playerPosition": "기존 15개 시작점은 시설 위치로 사용하지 않는다.",
+    "deduplication": "정류장 ID만으로 반대 차로를 합치지 않는다. 같은 방향의 가까운 시설 후보만 묶고 모든 원래 ID를 보존한다.",
+    "shelter": "yes/no/unknown을 구분하며 unknown을 있다고 가정하지 않는다.",
+    "signals": "교차로라는 이유만으로 신호등을 만들지 않는다.",
+    "lighting": "가로등 좌표 태그가 없으므로 직접 관찰한 위치만 별도 기록한다."
+  },
+  "implementation": {
+    "module": "src/transitFacilities.ts",
+    "compiler": "scripts/compile-transit-facilities.mjs",
+    "data": "public/data/transit-facilities.json",
+    "status": "구현과 자체 검사를 마쳤으며 실행 소스, 생성기, 데이터와 검사 파일을 동결했다.",
+    "photoEvidence": "sources/gate-transit-roadview-notes.json",
+    "counts": {
+      "directedStopCalls": 133,
+      "physicalStopSigns": 47,
+      "shelters": 8,
+      "observedArchedShelter": 1,
+      "estimatedCommonShelters": 7,
+      "signalMasts": 1,
+      "vehicleSignalHeads": 2,
+      "pedestrianSignalBoxes": 1,
+      "streetLamps": 6,
+      "crosswalks": 1,
+      "breakableParts": 547,
+      "regionalMergedMeshes": 28,
+      "triangles": 12853
+    },
+    "batching": "240 m 구역별 메시로 병합하고 원래 경계를 유지해 화면 밖 구역을 생략한다. 가로등별 동적 광원은 생성하지 않는다.",
+    "placement": "현재 운행 계획의 방향별 실제 정차 위치를 기준으로 도로 경계 밖에 시설을 놓는다. 정문의 출발과 귀착 표지는 같은 정류장 ID여도 반대편 시설로 구분한다. 기존 15개 보행 시작점은 바꾸지 않았다.",
+    "observedGateShelter": "2026년 8월 로드뷰에서 확인한 남행 차로 서측 쉼터를 둥근 금속 프레임, 어두운 덮개, 열린 양 끝과 내부 벤치로 구현했다. 덮개를 투명 유리로 확정하지 않았다. OSM 표식의 도로 쪽 위치와 사진의 서측 위치가 달라 같은 종방향 구간의 서측 보도에 근사 배치했다.",
+    "commonShelters": "나머지 7곳은 OSM shelter=yes로 존재만 확인했다. 개별 사진에서 외형을 확인하지 못했으므로 공통 형태와 치수를 추정했다. shelter=no 또는 미확인 표식에 쉼터를 임의로 추가하지 않았다.",
+    "signalsAndLamps": "사진에서 확인한 북측 캔틸레버 기둥 1개와 가로 3등 헤드 2개, 하부 보행 신호 박스를 구현했다. 반대편 차량 신호 기둥은 추가하지 않았다. 정문 남쪽 관측 구간에만 사진 유형을 따른 T형 가로등 6개를 근사 배치했다. 신호 색상은 정적 표현이며 실제 신호 주기나 차량 제어와 연동되지 않는다.",
+    "crosswalk": "OSM 횡단 경로와 사진을 대조한 흰 줄을 실제 fullCampus 도로 삼각형의 위쪽 노출면에 맞춰 생성한다. 도로면 위 0.035 m 표시이며 별도 물리 판은 없다.",
+    "physics": "쉼터의 지붕, 기둥, 벽과 벤치를 실제 부재별 볼록체로 나눠 열린 통로를 보존한다. 렌즈와 조명 확산판은 소유 부품에 묶되 원래 정점 색을 별도로 보존한다.",
+    "destruction": "부품 파괴 시 해당 렌더 정점과 충돌 대상을 함께 숨긴다. 멀리 이동해도 파괴 상태를 유지하고 초기화하면 원래 기하와 색상을 복원한다.",
+    "limitations": [
+      "시설 치수, 보도 측 이동량과 가로등 간격은 게임용 근사이며 실측값이 아니다.",
+      "원자료의 신호 노드 2개는 게임 영역 밖이어서 생성하지 않았다. 정문 신호는 횡단보도 태그와 직접 확인한 사진을 근거로 삼았다.",
+      "구역별 병합과 물리 표본 검사는 모바일 프레임률을 보장하지 않는다."
+    ]
+  },
+  "validation": {
+    "status": "passed",
+    "command": "node scripts/verify-transit-facilities.mjs",
+    "artifact": "artifacts/transit-facilities-test/results.json",
+    "artifactSha256": "f7b906a4e8287732d6f442d01144502f459b4462b8d24b59265ee6b36a8fb476",
+    "passed": 10,
+    "failed": 0,
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "status": "passed"
+    },
+    "metrics": {
+      "existingStartCapsules": 15,
+      "startContacts": 0,
+      "actualTrafficRoutes": 9,
+      "actualBusPoses": 22048,
+      "busFacilityContacts": 0,
+      "shelterWalkingRoundTrips": 8,
+      "walkingSpeedMetresPerSecond": 6,
+      "crosswalkRoadSamples": 938,
+      "crosswalkClearanceMetres": [
+        0.03499936488054711,
+        0.03500069994034671
+      ],
+      "surfaceRays": 94,
+      "maxSurfaceRayErrorMetres": 0.00020187673614469048,
+      "distanceChecksMetres": [
+        279,
+        281,
+        900
+      ]
+    },
+    "colorAndProjection": "첫 갱신, 타격 색상, 파괴와 초기화에서 렌즈 및 확산판의 고유 색을 확인했다. H 반사 후 관찰 카메라에서 빨강이 왼쪽, 초록이 오른쪽이며 정류장 표지 47개의 글자 방향도 확인했다.",
+    "browserReview": {
+      "reviewer": "root",
+      "status": "passed",
+      "scope": "최종 실제 WebGL 화면에서 초록 오른쪽 렌즈와 횡단보도 흰 줄을 확인했고 브라우저 오류는 0개였다.",
+      "evidence": "sources/gate-transit-roadview-notes.json"
+    },
+    "scope": "자체 검사는 실제 지형, fullCampus 도로 생성 코드, 현재 Traffic 자세와 새 시설의 Rapier 충돌을 사용했다. 다른 건물의 전체 충돌을 포함한 캠퍼스 전역 검사는 아니며 휴대전화 성능 검사도 아니다.",
+    "release": "전체 릴리스 검사와 빌드, 배포는 root가 별도로 기록한다.",
+    "sourceHashes": {
+      "src/transitFacilities.ts": "0397a5a7f812ec72c8804155a905f96614f1ef64fe14202476d55fc670883614",
+      "scripts/compile-transit-facilities.mjs": "d004fe3613942cd048171cc5f78d49088c8b352d917502cf2a7536f23cda02bb",
+      "scripts/verify-transit-facilities.mjs": "87a0f822bcafad44fa41e9241b08f96457c9adccb645485f2641beede3fa1f1a",
+      "public/data/transit-facilities.json": "ab9b030046d0c4028422bdb0ff1db81ab6b844e67a43de1f1ddec4b1cb72efca",
+      "sources/gate-transit-roadview-notes.json": "ad6e0b47d89d1390f1d713d05d304b5207749a8ed57c1642094443ee224cce46"
+    }
+  }
+}

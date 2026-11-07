@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "title": "10동 앞 외부 계단과 아래 출입문",
+  "reference": "sources/education10-stair-roadview-review.json",
+  "referenceSha256": "b29f37bdbc9214b48742b2a40e3eb186e58aa5fe29ddb53512dc58fda704b715",
+  "buildingIds": [
+    "way/180954536",
+    "way/238937145"
+  ],
+  "changes": [
+    "외부 계단을 세 구간과 두 중간참으로 바꾸고 금속 지지보와 난간을 추가했다.",
+    "10동 끝벽의 기존 상부 개구부와 별도로 아래 출입문을 열었다.",
+    "유리 양문, 손잡이와 문틀, 짧은 내부 참을 추가했다.",
+    "문 앞 회색 포장을 주변 지형에 이어 붙이고 원통기둥의 짙은 하부 띠를 추가했다.",
+    "일반 외벽 생성기가 한 면에 여러 개구부를 유지하도록 수정했다."
+  ],
+  "dimensions": {
+    "estimated": true,
+    "totalSteps": 36,
+    "flights": 3,
+    "landings": 2,
+    "tread": 0.35,
+    "flightWidth": 1.1,
+    "groundFloorY": 56.85,
+    "upperFloorY": 63.05,
+    "doorWidth": 2,
+    "doorHeight": 2.6
+  },
+  "limits": [
+    "단수와 치수는 게임용 근사다.",
+    "짧은 내부 참과 막음벽은 이동 끝을 정하는 게임용 구조이며 실내 복원이 아니다.",
+    "아래쪽의 별도 지하층 접속은 미확인으로 남긴다.",
+    "10동 다른 입면과 출입구, 주변 전체 통로는 추가 보완이 필요하다."
+  ],
+  "validation": {
+    "status": "validated-for-publication",
+    "accessHarness": "scripts/verify-education101-access.mjs",
+    "normalSpeed": 6,
+    "mobileSpeed": 8,
+    "sourceDataModified": false,
+    "terrainModified": false,
+    "trafficRoutesModified": false,
+    "actualPhoneTest": false,
+    "desktopCapture": "artifacts/education10-link-review/42-stairs-front.png",
+    "mobileCapture": "artifacts/education10-link-review/42-stairs-mobile.png",
+    "accessGroups": [
+      {
+        "name": "release37 raw inputs, terrain outside the declared correction, unrelated buildings and transit remain unchanged",
+        "status": "PASS"
+      },
+      {
+        "name": "10 upper connection clears its actual wall and canopy in both directions",
+        "status": "PASS"
+      },
+      {
+        "name": "10 canopy glass has matching damage, distant display and reset",
+        "status": "PASS"
+      },
+      {
+        "name": "three stair flights retain headroom and both 10 openings remain open at distance",
+        "status": "PASS"
+      },
+      {
+        "name": "raw road portal and separate entrance support continuous real capsule movement",
+        "status": "PASS"
+      },
+      {
+        "name": "actual adjacent taxi curves clear the portal without worsening old outside collisions",
+        "status": "PASS"
+      },
+      {
+        "name": "portal floors, clearance and retained walls match real render and collision",
+        "status": "PASS"
+      },
+      {
+        "name": "one H, distant openings, partial damage and reset retain physical access",
+        "status": "PASS"
+      }
+    ],
+    "mobileSpeedTestPassed": true,
+    "minimumStairHeadroom": 3.7499959468841553,
+    "otherChecks": [
+      "verify-campus-provenance",
+      "verify-distant",
+      "verify-campus"
+    ],
+    "sourceInputsUnchangedAfterTest": true
+  },
+  "wholeBuildingCompleted": false,
+  "laterExteriorReview": {
+    "notes": "sources/education10-exterior-photo-notes.json",
+    "scope": "동쪽 계단과 출입구를 유지하면서 10동의 외벽 및 중정 현관을 보완했다."
+  }
+}

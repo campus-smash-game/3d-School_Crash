@@ -1,0 +1,30 @@
+{
+  "reviewDate": "2026-11-05",
+  "captureMonth": "2026-08",
+  "method": "카카오맵 로드뷰를 브라우저에서 직접 열어 관찰했다. 사진을 게임 텍스처로 사용하지 않는다.",
+  "observations": [
+    {
+      "place": "정문 안쪽 서측 쉼터",
+      "url": "https://kko.to/tOy1LfH3gq",
+      "panoId": "1213022908",
+      "view": {"pan": 160.4, "tilt": -4, "zoom": 0, "urlX": 488552, "urlY": 1101852},
+      "capture": "../references/transit-facilities/2026-08/gate-shuttle-shelter-ui.jpg",
+      "observed": ["긴 회색 금속 틀", "둥글게 이어지는 지붕과 측면", "반복되는 가는 리브", "열린 끝면과 내부 벤치", "양쪽 보도의 검은 T형 가로등"],
+      "limits": ["어두운 패널의 정확한 재질과 투과율은 확인하지 못했다.", "길이, 폭, 부재 수와 배치 좌표는 사진과 도로에 맞춘 근사다."]
+    },
+    {
+      "place": "정문 북동쪽 관악로 신호 횡단보도",
+      "url": "https://kko.to/05e4YtiJW5",
+      "panoId": "1213022858",
+      "view": {"pan": 253, "tilt": 0, "zoom": 0, "urlX": 488820, "urlY": 1102245},
+      "capture": "../references/transit-facilities/2026-08/gate-northeast-signals-west-ui.jpg",
+      "observed": ["넓은 흰색 횡단보도", "북측의 짙은 회색 신호기 기둥", "차도 위로 뻗은 긴 가로대와 가로형 신호기 두 개", "기둥 아래쪽 보행 신호기"],
+      "osmCrossingNodes": ["13231900614", "14241354281"],
+      "additionalViews": [
+        {"pan": 73, "capture": "../references/transit-facilities/2026-08/gate-northeast-road-east-ui.jpg", "observed": "동쪽 도로와 북측 평지붕 버스 쉼터가 보인다."},
+        {"pan": 163, "capture": "../references/transit-facilities/2026-08/gate-northeast-crosswalk-south-ui.jpg", "observed": "횡단보도 남측 끝의 기둥은 버스와 수목에 가려 세부를 확인하지 못했다."}
+      ],
+      "limits": ["신호 주기와 교통 제어는 확인하지 않았다.", "사진에서 확인하지 못한 차량 신호기 수를 추정해 늘리지 않는다.", "보행 신호기의 세부 위치와 치수는 근사다."]
+    }
+  ]
+}

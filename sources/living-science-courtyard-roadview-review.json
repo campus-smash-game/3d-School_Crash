@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T16:10:11.064Z",
+  "buildingId": "way/386890828",
+  "buildingNumber": "222",
+  "area": "생활과학대학 동측 안마당과 남쪽 통과구 북쪽 출구",
+  "status": "partial",
+  "wholeAreaComparisonComplete": false,
+  "scope": {
+    "newRoadviewObservation": true,
+    "officialPhotoComparison": true,
+    "interiorCourtyardRoadviewObserved": false,
+    "runtimeModifiedByThisReview": false,
+    "rawMapModified": false,
+    "earlierResearchPreserved": true
+  },
+  "conclusion": "2026년 8월 카카오 로드뷰의 인접 두 도로 시점에서 남쪽 통과구와 북쪽 출구 너머 일부를 다시 확인했다. 안마당 내부의 촬영선은 표시되지 않았고 현관과 유도선은 가려졌다. 안마당 세부는 2024년 공식 게시 사진과 위치도로 보완하며 두 관측 범위를 구분한다.",
+  "browserMethod": {
+    "tool": "설치된 Playwright CLI",
+    "session": "school32rv",
+    "profile": "D:/codex/.tmp/3d-School_Crash/pwcli-profile32rv",
+    "usedExistingUserTabs": false,
+    "cuaRetried": false,
+    "sessionClosed": true,
+    "actions": "공유 주소를 새 연구 탭에서 열고 화면 회전, 확대, 지도 로드뷰 모드, 북서 도로 화살표 이동을 사용했다. 공유 UI가 생성한 URL을 새 연구 탭에서 다시 열어 파노라마 식별자를 확인했다."
+  },
+  "observations": [
+    {
+      "id": "south-road-2760",
+      "provider": "Kakao",
+      "panoId": "1213022760",
+      "captureMonth": "2026-08",
+      "captureMonthBasis": "좌상단 촬영일 UI 직접 확인",
+      "sourceUrl": "https://kko.to/fmZ6Q7AEkn",
+      "resolvedInitialUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022760&pan=51.0&tilt=-5.0&zoom=1&urlLevel=3&urlX=489695&urlY=1101287",
+      "inspectionShareUrl": "https://kko.to/Q6UD4gAt9N",
+      "inspectionResolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022760&pan=13.0&tilt=-5.0&zoom=2&urlLevel=3&urlX=489695&urlY=1101287",
+      "directlyObserved": [
+        "회색 및 벽돌 외벽 아래 남쪽 통과구가 열려 있다.",
+        "남쪽 입구 바닥에 붉은 벽돌 포장 띠가 있고, 입구 앞 회색 바닥과 이어진다.",
+        "입구 옆 금속 난간, 볼록거울과 수목이 보인다.",
+        "어두운 통로 너머 북쪽 끝에 밝은 포장 공간과 낮은 벽돌 경계 일부가 보인다."
+      ],
+      "notObserved": [
+        "안쪽 현관 문과 생활과학대학 간판",
+        "안마당 점자 유도선의 분기",
+        "화단 전체 윤곽",
+        "북쪽 출구 바닥의 정확한 문턱과 기울기"
+      ],
+      "captures": [
+        {
+          "path": "artifacts/education-health-review/output/playwright/32-initial-passage-south-ui.png",
+          "sha256": "44072933f09b6e9311a050a051b5ccf26baaa831ac6582edef86d9d188ce79e9",
+          "directlyViewed": true,
+          "scope": "최초 공유 시점과 촬영일"
+        },
+        {
+          "path": "artifacts/education-health-review/output/playwright/32-passage-look-in-ui.png",
+          "sha256": "9e1851f87b0dafc4143b05c76dfd67f3a2e5a6f792609d5776528a764cc0c672",
+          "directlyViewed": true,
+          "scope": "통과구로 회전한 시점"
+        },
+        {
+          "path": "artifacts/education-health-review/output/playwright/32-passage-axis-ui.png",
+          "sha256": "07879f53fa6cea645ed9083e33a39206d2a5b80a944c340bf17be52f7546c4b9",
+          "directlyViewed": true,
+          "scope": "통과구 남쪽에서 안쪽을 본 화면"
+        },
+        {
+          "path": "artifacts/education-health-review/output/playwright/32-passage-north-end-distant-ui.png",
+          "sha256": "c9e4030e11250e1087f8d8320e054b3cacfe4cd71e038df3895a883c862129e4",
+          "directlyViewed": true,
+          "scope": "통로 너머 북쪽 출구 일부를 확대해 본 화면"
+        }
+      ]
+    },
+    {
+      "id": "adjacent-road-2762",
+      "provider": "Kakao",
+      "panoId": "1213022762",
+      "captureMonth": "2026-08",
+      "captureMonthBasis": "좌상단 촬영일 UI 직접 확인",
+      "sourceUrl": "https://kko.to/Zi7nJGPRQO",
+      "resolvedInitialUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022762&pan=51.0&tilt=-5.0&zoom=1&urlLevel=3&urlX=489712&urlY=1101270",
+      "inspectionRotation": "같은 위치에서 서쪽으로 회전했다. 회전 중 방위값은 별도 공유 URL로 저장하지 않았다.",
+      "directlyObserved": [
+        "222 남쪽 통과구와 그 옆 회색 면을 비스듬히 확인했다.",
+        "남쪽 입구의 붉은 포장, 난간, 볼록거울이 첫 시점과 대응한다.",
+        "동쪽 수목과 옹벽이 안마당 방향을 가린다."
+      ],
+      "captures": [
+        {
+          "path": "artifacts/education-health-review/output/playwright/32-second-passage-oblique-loaded-ui.png",
+          "sha256": "8eb11229d3ace47886aad64dd143dda3b7fdbb13fc1da7082e0596d7d4b01707",
+          "directlyViewed": true,
+          "scope": "두 번째 도로 위치에서 회전한 화면"
+        }
+      ],
+      "excludedCapture": {
+        "path": "artifacts/education-health-review/output/playwright/32-second-roadview-oblique-ui.png",
+        "reason": "영상이 아직 로딩되지 않은 검은 화면이므로 관측 근거에서 제외했다."
+      }
+    },
+    {
+      "id": "actual-arrow-movement",
+      "fromPano": "1213022762",
+      "action": "화면의 북서 도로 화살표를 실제 클릭했다.",
+      "toPano": "1213022760",
+      "arrivalShareUrl": "https://kko.to/F5a4MjhGts",
+      "arrivalResolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022760&pan=7.0&tilt=-5.0&zoom=1&urlLevel=3&urlX=489695&urlY=1101287",
+      "panoIdBasis": "이동 후 공유 UI의 현재페이지 URL을 새 탭에서 다시 열어 확인했다.",
+      "captureMonth": "2026-08",
+      "capture": {
+        "path": "artifacts/education-health-review/output/playwright/32-northwest-arrow-arrived-ui.png",
+        "sha256": "6ea6bb02d319e05ad30112c226962d2f2a3f335ece5c1407f571fd8364feb6ab",
+        "directlyViewed": true,
+        "scope": "화살표 이동이 끝난 뒤 선명한 도착 화면"
+      },
+      "limit": "실제 이동은 남쪽 차도의 두 촬영점 사이였다. 통과구 안이나 안마당을 이동한 것이 아니다.",
+      "excludedCapture": {
+        "path": "artifacts/education-health-review/output/playwright/32-northwest-arrow-adjacent-ui.png",
+        "reason": "이동 중 흐린 화면이므로 세부 형상 근거에서 제외했다."
+      }
+    },
+    {
+      "id": "map-roadview-coverage",
+      "provider": "Kakao",
+      "directlyObserved": [
+        "222 동쪽 안마당과 남쪽 통과구 내부에는 이번 지도 화면에서 파란 로드뷰 촬영선이 표시되지 않았다.",
+        "파란 촬영선은 남쪽 차도와 북서쪽 외부 도로에 표시됐다.",
+        "안마당 쪽을 선택하자 파란색 라인을 선택하라는 UI 안내가 남았고 내부 로드뷰가 열리지 않았다."
+      ],
+      "captures": [
+        {
+          "path": "artifacts/education-health-review/output/playwright/32-courtyard-roadview-coverage-ui.png",
+          "sha256": "37c116d30785555cd384e1e19f9cdfe6cf015939acf950617768cb3202cd79fc",
+          "directlyViewed": true,
+          "scope": "로드뷰 촬영선 표시 지도"
+        },
+        {
+          "path": "artifacts/education-health-review/output/playwright/32-courtyard-point-selection-ui.png",
+          "sha256": "848a80f2c5219619f305e06d9a6305b2a681c2ab95745d1656e269f911df1296",
+          "directlyViewed": true,
+          "scope": "안마당 점 선택 뒤 지도와 안내"
+        }
+      ],
+      "limit": "이번에 본 카카오 지도 UI의 제공 범위다. 모든 시기와 모든 서비스에 안마당 영상이 없다고 단정하지 않는다."
+    }
+  ],
+  "officialPhoto": {
+    "sourcePage": "https://health.snu.ac.kr/?kboard_content_redirect=3872",
+    "title": "2024년 생활과학대학 홈커밍데이 행사 개최 안내",
+    "publicationDate": "2024-09-20",
+    "eventDate": "2024-09-28",
+    "photoCaptureDate": null,
+    "photoPath": "artifacts/education-health-review/courtyard32/homecoming-image2.png",
+    "photoSha256": "e74481efd4f9f31693efdb9e985f35e2df8e343e6e6a1639b518cc3fe51e777e",
+    "locationMapPath": "artifacts/education-health-review/courtyard32/homecoming-image1.png",
+    "attachmentPath": "artifacts/education-health-review/courtyard32/homecoming-location-2024.pptx",
+    "directlyViewedAgain": true,
+    "confirmed": [
+      "사진 왼쪽 회색 입면에 생활과학대학 문구와 유리 현관이 있다.",
+      "넓은 안마당은 붉고 갈색인 직사각 벽돌로 포장돼 있다.",
+      "노란 유도선이 직각으로 꺾이고 현관으로 분기한다.",
+      "현관 오른쪽의 높은 직사각 화단과 그 앞의 낮고 굽은 벽돌 경계가 구별된다. 밝은 상단 마감과 식재가 보인다.",
+      "안내대와 짧은 기둥등이 보이며 오른쪽에는 파라솔과 탁자 및 의자가 있다."
+    ],
+    "dimensions": "포장 블록 크기, 유도선 폭, 화단 높이와 곡률, 문 폭과 전체 경사는 실측하지 않았다.",
+    "readableText": [
+      "생활과학대학"
+    ],
+    "unreadableText": "작은 안내대 문구와 게시물은 판독하지 않았다. 배경 건물의 작은 번호도 이번 위치 판단의 확정 근거로 쓰지 않는다.",
+    "movableItems": "파라솔과 의자, 탁자는 사진의 관측물이다. 상설 배치와 현재 존치는 확정하지 않는다.",
+    "sourceSeparation": "이 사진의 안마당 세부를 2026년 로드뷰에서 직접 확인한 것으로 기록하지 않는다."
+  },
+  "mapAnchors": {
+    "coordinateConvention": "프로젝트 D 좌표의 +x는 동쪽, +z는 북쪽이다. 좌표는 지도 변환값이며 측량값이 아니다.",
+    "northPassageExit": {
+      "point": [
+        448.1380051,
+        -235.064153
+      ],
+      "basis": "원본 /524 보행로와 222 안쪽 외벽의 교점",
+      "nextNode": [
+        449.8,
+        -231.55
+      ],
+      "tags": {
+        "wayId": "1185265108",
+        "tunnel": "building_passage",
+        "layer": "-1",
+        "timestamp": "2023-06-27T11:09:42Z"
+      }
+    },
+    "courtyardPath": {
+      "id": "way/456922935/338",
+      "targetPart": "북쪽 출구에서 /339 분기까지",
+      "points": [
+        [
+          449.8,
+          -231.55
+        ],
+        [
+          438.3,
+          -224.06
+        ],
+        [
+          441.28,
+          -218.75
+        ]
+      ]
+    },
+    "entrance": {
+      "nodeId": "4531517992",
+      "buildingVertexIndex": 4,
+      "point": [
+        437.34,
+        -215.85
+      ],
+      "lat": 37.4644293,
+      "lon": 126.9533448,
+      "tags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "timestamp": "2016-12-01T07:25:42Z",
+      "pathId": "way/456922938/339",
+      "pathPoints": [
+        [
+          437.34,
+          -215.85
+        ],
+        [
+          441.28,
+          -218.75
+        ]
+      ],
+      "tagReadDirectly": true,
+      "basis": "사진의 현관 입면 후보에 원본 출입구 노드와 보행로 끝점이 겹친다.",
+      "limit": "오래된 접근성 태그가 현행 경사나 문턱 규격을 보증하지 않는다. 사진 속 문 중심의 정확한 좌표는 여전히 근사다."
+    },
+    "panoramaCoordinates": "공유 URL의 urlX/urlY는 카카오 서비스 좌표다. 이번 기록에서 실측 카메라 좌표나 시설 좌표로 변환하지 않았다."
+  },
+  "existingModelDiagnostic": {
+    "reportedBy": [
+      "root",
+      "controls"
+    ],
+    "finding": "기존 현관이 원본 p4보다 약 6.5m 남쪽에 있고 /339 접점의 외벽이 막혀 있다는 별도 코드 및 물리 진단을 전달받았다.",
+    "status": "이 기록의 사진 관측과 구분한 협업 진단이다. 모델 수정과 최종 검증은 담당자의 결과를 따른다.",
+    "thisReviewDidNotEditModel": true
+  },
+  "implementationBoundary": {
+    "target": "/524 북쪽 출구→/338→/339와 현관 앞 안마당",
+    "evidenceForImplementation": "현관은 원본 p4 출입구 노드와 사진의 회색 입면을 함께 사용하고, 포장과 유도선 및 화단의 상대 배치는 공식 사진을 참고한다.",
+    "stillUnconfirmed": [
+      "북쪽 출구와 안마당 사이 바닥의 정확한 높이 변화",
+      "사진에 가린 화단 전체 외곽",
+      "/209 전체 계단",
+      "220 서측 높은 보행로 북쪽 끝까지의 연속 연결"
+    ],
+    "outsideScope": [
+      "/209 또는 220 전체 연결을 사진 확인 완료로 처리하기",
+      "미판독 안내 문구와 가게 간판 만들기",
+      "이 관측만으로 보행 폭이나 접근성 규격을 보증하기"
+    ]
+  },
+  "priorResearch": {
+    "path": "artifacts/education-health-review/32-courtyard-reference-research.json",
+    "sha256": "59bf8926a18a275ee849994c4cdc9831e48ac99dcf3dfa21746eb3c37b2bdeed",
+    "preserved": true
+  },
+  "inputHashes": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "sources/living-science-south-passage-roadview-review.json": "050f34305bf6e7d4c3d4c33ab0297c40e1fcd4318ba93fea4802f2f26c25be00",
+    "artifacts/education-health-review/courtyard32/homecoming-image1.png": "2f12bb655d887e139e46a2f89435a79d767ac885ef67986f23a654eda0dcdd6f",
+    "artifacts/education-health-review/courtyard32/homecoming-image2.png": "e74481efd4f9f31693efdb9e985f35e2df8e343e6e6a1639b518cc3fe51e777e",
+    "artifacts/education-health-review/courtyard32/homecoming-location-2024.pptx": "9ccae82493cadabc6795a0f79055b7d45512575b452cfa3dd016fa76c1aef981"
+  },
+  "verification": {
+    "jsonParsed": true,
+    "captureImagesDirectlyViewed": true,
+    "browserSessionClosed": true,
+    "runtimeTestsRun": false,
+    "wholeConnectionVerified": false
+  }
+}

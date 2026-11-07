@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env*
+artifacts/
+.playwright-cli/
+
+# Local verification outputs and hosting identity
+output/
+.openai/

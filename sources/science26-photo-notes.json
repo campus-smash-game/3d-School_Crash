@@ -1,0 +1,257 @@
+{
+  "phase": 74,
+  "reviewDate": "2026-11-07",
+  "scope": "26동 재건축 전후 외관과 출입 공간, 25동 인접 면의 공개 자료 조사",
+  "decision": [
+    "031-26.jpg의 낮은 건물, 왕복계단, 낡은 흰 마감과 무지개 벽화는 재건축 전 모습이다. 현재 모델에 적용하지 않는다.",
+    "26동은 2019-02-19 개관한 기초과학실험교육동이다. 학교 공식 기사에 지상 5층과 지하 1층을 명시한다.",
+    "재건축 후 공식 사진과 2019년 행사 안내 사진을 확보했다. 가로 띠창, 회색 외장 패널, 수직 핀, 흰색 돌출 동과 하부 기둥 공간, 낮은 현관으로 내려가는 넓은 계단을 확인했다.",
+    "총괄이 확보한 현재 카카오 스카이뷰에서 26동이 25동과 평행한 긴 건물로 확장된 모습을 직접 확인했다. 설계도와 실측 좌표는 확보하지 못했으므로 새 윤곽은 별도 근사로 다뤄야 한다."
+  ],
+  "sources": [
+    {
+      "id": "cns-opening-2019",
+      "kind": "서울대학교 자연과학대학 공식 개관 기사",
+      "url": "https://science.snu.ac.kr/newsroom/view/2/11/459",
+      "localFile": "research-cns2019.html",
+      "publicationDate": "2019-03-26",
+      "eventDate": "2019-02-19",
+      "confirmed": {
+        "constructionStartYearAsArticleStates": 2014,
+        "aboveGroundFloors": 5,
+        "basementFloors": 1,
+        "buildingAreaSqm": 1404.84,
+        "floorUse": {
+          "1": "수리과학부와 통계학과 정보실습실",
+          "2": "지구환경과학부 실험실과 기초교육원 강사실",
+          "3": "물리천문학부 실험실과 튜터링실",
+          "4": "생명과학부 실험실과 튜터링실",
+          "5": "화학부 실험실과 튜터링실",
+          "B1": "대형강의실과 중형강의실"
+        }
+      },
+      "limits": "기사의 연면적은 6,509,10으로 인쇄돼 있어 소수점을 임의로 보정하지 않았다. 개관일과 실제 공사 준공일은 구분한다. 전체 높이와 층고는 명시하지 않는다."
+    },
+    {
+      "id": "math-opening-photo-2019",
+      "kind": "서울대학교 수리과학부 공식 탐방 기사 사진",
+      "pageUrl": "https://www.math.snu.ac.kr/bbs/board.php?bo_table=Math_News&wr_id=1508",
+      "imageUrl": "https://www.math.snu.ac.kr/board/files/attach/images/62/191/799/833c1e90f2b5425f261fd6bd341ccc50.jpg",
+      "localFile": "research-math2019-26.jpg",
+      "publicationDate": "2019-06-11",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observed": [
+        "사진 왼쪽의 긴 동은 회색 수평 패널과 연속 창으로 층을 나누며, 하부에는 큰 유리면이 있다.",
+        "오른쪽 흰색 동은 좁고 긴 창, 짙은 수직 핀과 상부 격자 차양이 특징이다. 맨 오른쪽에는 대부분 창이 없는 흰 벽이 보인다.",
+        "두 덩어리 사이에는 뒤로 물러난 공간과 층별 수평 바닥이 보인다.",
+        "오른쪽 동 아래에는 둥근 기둥과 열린 공간이 보인다. 기둥 뒤에는 건물 반대쪽 빛이 보인다."
+      ],
+      "limits": [
+        "촬영 시각, 카메라 좌표와 방위를 명시하지 않는다. 현재 스카이뷰와 대조한 방향 추정은 별도로 기록했다.",
+        "낮은 해상도 때문에 출입문 위치와 열린 공간 내부 계단을 확정하지 않았다.",
+        "2019년 재건축 후 모습이며 2026년의 모든 마감과 시설이 같다고 단정하지 않는다."
+      ],
+      "orientationInference": {
+        "face": "긴 띠창 면은 서쪽 계열, 흰색 돌출 동은 남쪽 단부로 추정",
+        "camera": "건물 남서쪽에서 북동쪽을 보는 촬영으로 추정",
+        "basis": "현재 스카이뷰에서 새 26동은 25동 동쪽에 평행하게 놓인다. 전경 사진 왼쪽 뒤 옛 흰 격자 건물을 25동 쪽으로 대응하면 띠창 동과 남쪽 돌출 동의 관계가 스카이뷰와 부합한다.",
+        "confidence": "방위는 직접 표기된 사실이 아니라 지도와 배경을 대조한 추정이다. 촬영점의 좌표는 미확인이다."
+      }
+    },
+    {
+      "id": "nrf-location-guide-2019",
+      "kind": "한국연구재단 행사 안내 PDF의 건물 전경과 입구 사진",
+      "url": "https://sit.yonsei.ac.kr/sit/community/notice.do?articleNo=74301&attachNo=72954&mode=download",
+      "localFile": "research-2019-location-guide.pdf",
+      "renderedPage": "research-2019-location-guide-p2.png",
+      "photoFiles": [
+        "research-guide-2019-front.png",
+        "research-guide-2019-entrance.png"
+      ],
+      "photoExtraction": "PDF 2쪽의 2016×504 분할 이미지 세 장씩을 원래 순서대로 연결했다. 각 완성 사진은 2016×1512이며 보이지 않는 부분을 생성하지 않았다.",
+      "documentDate": "2019-09",
+      "eventDate": "2019-09-20",
+      "captureDate": null,
+      "directlyViewed": true,
+      "identity": "PDF가 두 사진을 서울대 26동 건물 전경과 입구로 표기한다. 전경 상단의 26 숫자와 현관 현수막의 26동 B102호 문구도 읽힌다.",
+      "observed": [
+        "전경에는 회색 사각 패널, 검은 수평 띠, 연속 창과 그 위 얇은 돌출 차양이 보인다. 일부 창은 바깥쪽으로 열린다.",
+        "전경 하부는 어두운 유리면이 두 높이 구간에 걸쳐 이어진다. 왼쪽 별도 벽에는 세로로 긴 창이 있다.",
+        "입구 사진의 넓은 계단은 촬영점에서 아래쪽 유리 출입문으로 내려간다. 바닥은 갈색 줄무늬이며 계단 앞선에 밝은 황록색 띠가 있다.",
+        "아래 마당은 크기가 다른 회색, 짙은 회색과 흰색 사각 포장으로 구성된다. 검은 낮은 조명 기둥과 계단 옆 식재 상자가 있다.",
+        "낮은 현관 위쪽에는 곡선으로 이어지는 회색 패널 벽과 세로 금속 난간이 있다. 난간 뒤 보행면에는 노란 점자블록이 보인다.",
+        "사진 오른쪽 위에는 별도로 올라가는 밝은 계단 일부가 보인다. 도착층과 전체 동선은 화면 밖이다."
+      ],
+      "inference": "현수막의 B102호 표기와 공식 지하층 강의실 안내를 함께 보면 낮은 현관이 지하 강의실 동선과 관련될 가능성이 높다. 현수막만으로 촬영 지점의 층을 확정하지 않는다.",
+      "limits": [
+        "현수막에는 8월 14일 수요일과 베를린 장벽 붕괴 30주년 문구가 보인다. 2019년 행사와 부합하지만 사진의 정확한 촬영일은 확인하지 못했다.",
+        "계단 단수, 곡률, 바닥 높이, 문 폭과 방위는 미확인이다.",
+        "문서 속 약도는 작은 26동 윤곽을 쓰고 있다. 2019년 문서에 실렸다는 이유만으로 그 바탕 지도가 신축 외곽을 반영했다고 보지 않는다."
+      ]
+    },
+    {
+      "id": "old-official-26",
+      "kind": "서울대학교 공식 지도에 남아 있는 구건물 사진",
+      "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=31",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000031.jpg",
+      "localFile": "research-old-official26.jpg",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observed": "2개 높이 구간의 외관, 외부 왕복계단과 중간참, 흰 난간벽, 낡은 흰 마감, 짙은 벽돌, 무지개 벽화와 자연대대형강의동 I 안내판이 보인다.",
+      "status": "재건축 후 공식 사진과 구조가 다르다. 현재 모델의 외관과 계단 배치 근거에서 제외한다. 촬영 방위도 이번 현재 건물 조사에서는 확정하지 않았다."
+    },
+    {
+      "id": "building25-comparison",
+      "kind": "25동 공식 사진 비교",
+      "sources": [
+        {
+          "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=29",
+          "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000029.jpg",
+          "localFile": "research-official25.jpg",
+          "captureDate": null
+        },
+        {
+          "pageUrl": "https://science.snu.ac.kr/newsroom/view/2/11/790",
+          "imageUrl": "https://science.snu.ac.kr/webdata/newsroom/images/20220710/b21z104ze7bz1bfz61dzcabz257z566z5ccze51z65.png",
+          "localFile": "research-cns2022-25.png",
+          "publicationDate": "2022-07-09",
+          "captureDate": null
+        }
+      ],
+      "directlyViewed": true,
+      "observed": [
+        "두 사진 모두 25 숫자, 갈색 벽돌과 흰 구조선, 짧은 단부의 작은 돌출 발코니와 금속 난간을 확인할 수 있다.",
+        "2022년 기사 사진은 유리 출입문 위의 25동 글씨, 바로 옆 목재 게시판, 인접 건물로 가는 유리 연결통로와 그 아래 기둥 사이 열린 통로를 보여 준다."
+      ],
+      "documentedConnections": "2022년 공식 기사는 25동이 24동과 27동에 연결된다고 설명한다. 26동 접속은 이 기사에 명시하지 않는다.",
+      "limits": "2022년 사진 속 인접 건물을 26동으로 오인하지 않는다. 촬영 방위와 연결 대상은 사진만으로 확정하지 않았다. 기사에는 25동 4층 사용 공간이 있지만 전체 층수나 지하층 구분은 없다."
+    },
+    {
+      "id": "osm-footprint-check",
+      "localSource": "D:/codex/3d-School_Crash/campus-gate/sources/campus.osm",
+      "savedFile": "research-osm26-geometry.json",
+      "way": "179742151",
+      "footprintAreaSqmApprox": 553.77,
+      "calculation": "원본 위경도를 위도 37.46도의 평면 근사로 바꾼 뒤 다각형 면적을 계산했다. 실측 면적이 아니다.",
+      "cornerCoordinateEditDate": "2014-10-09",
+      "wayEditDate": "2026-03-15",
+      "pathTo25": "way/455015958",
+      "pathEditDate": "2016-11-22",
+      "pathTags": {
+        "highway": "pedestrian"
+      },
+      "limits": [
+        "새 건물 공식 건축면적 1404.84㎡와 크게 다르다. 건축면적과 지도 투영면적의 산정 차이를 고려해도 기존 윤곽을 현행이라고 확정할 근거가 없다.",
+        "way의 최근 편집일과 좌표의 갱신 시각은 다르다. 최근 편집일만으로 재건축 반영 여부를 판단하지 않는다.",
+        "25동 연결선 끝점에 entrance 태그가 없고 bridge나 층 태그도 없다. 신축 후 문이나 연결교로 해석하지 않는다.",
+        "새 윤곽을 확정할 도면은 확보하지 못했다. 면적 비율을 이용한 임의 확대는 사진 기반 재현이 아니다."
+      ]
+    },
+    {
+      "id": "parent-kakao-skyview",
+      "kind": "총괄이 현재 카카오맵에서 확보한 스카이뷰 화면",
+      "sourceFile": "D:/codex/3d-School_Crash/campus-gate/output/playwright/74-sky26-close.png",
+      "localFile": "research-skyview-parent.png",
+      "directlyViewed": true,
+      "captureDate": null,
+      "imageryDate": null,
+      "observed": [
+        "25동 동쪽, 23동 서쪽에 놓인 새 26동의 긴 외곽이 보인다. 장축은 25동과 거의 평행하다.",
+        "옛 OSM 직사각형보다 북쪽으로 더 길게 뻗은 범위가 보인다."
+      ],
+      "limits": "스크린샷에는 항공 촬영일이 표시되지 않는다. 지도 화면을 직접 제어하지 않고 총괄이 제공한 이미지를 읽었다. 화면 속 지붕 투영과 지상 외벽, 필로티 및 지하층 외곽은 구분해야 한다."
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "url": "https://thinktr.com/portfolio/%EC%84%9C%EC%9A%B8%EB%8C%80-%EA%B8%B0%EC%B4%88%EA%B3%BC%ED%95%99%EC%8B%A4%ED%97%98%EA%B5%90%EC%9C%A1%EB%8F%99-%EA%B3%84%ED%9A%8D%EC%95%88/",
+      "localFile": "research-unbuilt-proposal.jpg",
+      "directlyViewed": true,
+      "reason": "생각나무파트너스와 정재희의 계획안 모형이다. 준공 사진과 외형이 다르고 실제 채택 여부가 명시되지 않아 현재 외곽이나 설계자 확정 근거에서 제외했다. 파일명의 unbuilt는 자료 분류용이며 실제 미채택을 별도로 증명한 것은 아니다."
+    },
+    {
+      "url": "https://kbo.bioedu.kr/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/?mod=document&uid=3065",
+      "reason": "검색에 나타난 2024년 행사 출입구 사진은 본문상 500동 행사 장소다. 26동 사진 근거에서 제외했다."
+    }
+  ],
+  "remainingUncertainty": [
+    "새 26동의 정확한 외곽 좌표와 층별 후퇴 범위. 긴 띠창 면의 서쪽 대응은 추정이며 출입구 사진의 촬영점은 미확인이다.",
+    "25동과 26동 사이 통로의 현재 폭, 문 위치와 연결 높이",
+    "낮은 현관으로 내려가는 계단의 위치, 실제 바닥 높이와 단수",
+    "2019년 사진 이후 외장과 시설의 변경 여부"
+  ],
+  "workBoundary": "지정한 artifacts 폴더에 research-* 참고 파일과 이 결과만 저장했다. 생산 코드, sources, public, Git, 배포와 총괄 브라우저는 변경하지 않았다.",
+  "buildingId": "way/179742151",
+  "implementation": {
+    "reconstructionYear": 2019,
+    "aboveGroundFloors": 5,
+    "basementFloors": 1,
+    "footprintSource": "74-sky26-centered.png과 74-sky26-detail.png의 지붕 외곽을 25동과 23동에 대조한 근사. 지붕 시차와 지상층 돌출부의 차이는 실측하지 못했다.",
+    "frameAnchor": [
+      [
+        164.11,
+        -813.1
+      ],
+      [
+        131.88,
+        -894.17
+      ]
+    ],
+    "footprintLocal": [
+      [
+        4,
+        20
+      ],
+      [
+        46,
+        20
+      ],
+      [
+        46,
+        25
+      ],
+      [
+        50,
+        25
+      ],
+      [
+        50,
+        18
+      ],
+      [
+        65,
+        18
+      ],
+      [
+        65,
+        40
+      ],
+      [
+        4,
+        40
+      ]
+    ],
+    "estimated": [
+      "새 외곽의 좌표, 층고, 창 폭과 간격",
+      "띠창의 서쪽 대응, 흰 돌출 동의 남쪽 대응",
+      "지하 현관과 계단의 위치, 단수, 폭과 바닥 높이",
+      "곡선 벽의 반지름, 기둥과 조명, 식재의 배치",
+      "확인하지 못한 동쪽 외관과 옥상 일부"
+    ],
+    "preserved": [
+      "원본 OSM 파일과 campus.json의 기존 26동 윤곽",
+      "원본 DEM와 버스 노선"
+    ],
+    "omitted": [
+      "재건축 전 왕복계단과 무지개 벽화",
+      "2019년 행사 현수막",
+      "미확인 실내와 25동 연결교"
+    ],
+    "notes": [
+      "25동 외관은 이번 변경에 포함하지 않는다.",
+      "건축면적 1404.84㎡는 공식 기사의 수치이며 게임 외곽의 면적과 동일하다고 주장하지 않는다.",
+      "보도 무늬와 계단 앞선은 사진을 참고한 병합 기하다."
+    ]
+  }
+}

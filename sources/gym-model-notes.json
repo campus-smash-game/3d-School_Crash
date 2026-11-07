@@ -1,0 +1,362 @@
+{
+  "buildingId": "way/386891006",
+  "buildingNumber": "71",
+  "name": "종합체육관",
+  "status": "integrated-partial",
+  "sources": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=90",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000087.jpg",
+      "localFile": "../references/buildings/photos/090-71.jpg",
+      "directlyViewed": true,
+      "observation": "높은 아이보리색 무창 몸체, 얇은 청록색 차양, 노출된 삼각 트러스, 후퇴한 유리 현관과 오른쪽 지지 벽의 긴 구멍, 더 낮은 창 있는 옆 날개를 확인했다.",
+      "captureDateUnknown": true
+    },
+    {
+      "url": "https://my.snu.ac.kr/ctt/bb/bulletin?a=fd&b=1&fs=1&p=24162",
+      "localFile": "artifacts/next-campus-review/gym-floor-plan.pdf",
+      "renderedFile": "artifacts/next-campus-review/gym-floor-01.png",
+      "directlyViewed": true,
+      "planDate": "2017-02-20",
+      "distributionDate": "2025-11-03",
+      "observation": "지상 1층과 층 면적 5,363㎡, 큰 경기장과 부속실, 아래 돌출 계단을 확인했다. 치수선은 가로 108000, 본체 세로 75000, 돌출 계단 9000+3700+6300으로 읽었다. 통상적인 mm 해석이면 전체 약 108×94m이며 단위 표시는 별도 확인하지 못했다.",
+      "limit": "큰 X 표시의 의미와 정확한 지도 변 대응은 미확정이다. 외부 중정이나 관통 구멍으로 만들지 않았다."
+    },
+    {
+      "url": "https://health.snu.ac.kr/일반공지/?mod=document&uid=5074",
+      "localFile": "artifacts/gym-review/exterior-event-2025.pptx",
+      "imageFile": "artifacts/gym-review/event-pptx/ppt/media/image1.PNG",
+      "directlyViewed": true,
+      "observation": "공식 행사 배치도에서 북쪽 큰 지붕과 남쪽 U형 부속부의 상대 관계를 확인했다. 지도 그림으로 지붕의 실제 개방 여부를 확정하지 않는다."
+    },
+    {
+      "url": "https://snu.ac.kr/snunow/snu_story?bbsidx=123072&md=v",
+      "localFiles": [
+        "../references/buildings/supplemental/71-1-front.jpg",
+        "../references/buildings/supplemental/71-1-side.jpg"
+      ],
+      "directlyViewed": true,
+      "observation": "71-1동의 금속 수직 외장과 상단의 긴 유리 띠를 090 사진 오른쪽 뒤 몸체와 대조했다. 별도 71-1동을 본 모델에 합치지 않았다."
+    },
+    {
+      "url": "https://student.snu.ac.kr/소식·알림/공지사항/?mod=document&pageid=9&uid=367",
+      "publishedAt": "2026-09-14",
+      "observation": "3층 복도의 실내 러닝트랙 사용을 확인하는 공식 안내다. 법적 최고 지상층을 확인한 건축 개요는 아니다."
+    },
+    {
+      "url": "https://www.openstreetmap.org/way/386891006",
+      "observation": "원본 13개 꼭짓점과 4층 태그를 보존했다. 현 모델의 4층 분류는 독립된 건축 개요를 찾지 못했으므로 추정으로 표시하고 네 행 창이나 네 개 균일 바닥으로 환산하지 않았다."
+    }
+  ],
+  "observedAndEstimated": {
+    "observed": [
+      "높은 무창 체육관과 낮은 창 날개의 대비",
+      "차양 아래 삼각 입체 트러스",
+      "후퇴한 유리문과 넓은 지지 벽의 관통 구멍",
+      "71-1동과의 분리"
+    ],
+    "estimated": [
+      "높은 몸체 14m, 낮은 날개 8m와 모든 부재 치수",
+      "북쪽/남쪽의 분할선과 서쪽 현관의 정확한 지도 변",
+      "사진에 보이지 않는 뒤쪽의 창 배열과 내부 바닥 연결",
+      "광장의 폭과 현재 DEM에 맞춘 접근 경사"
+    ],
+    "unresolved": [
+      "도면 사선 모서리와 OSM 9→10의 정확한 대응",
+      "큰 X 공간의 실제 개방 여부",
+      "최고층의 법적 지상/지하 분류",
+      "사진 촬영일과 현재 외벽의 전체 일치"
+    ]
+  },
+  "alignment": {
+    "chosenCanopyEdge": [
+      8,
+      9
+    ],
+    "alternativeCanopyEdge": [
+      4,
+      5
+    ],
+    "status": "근거를 대조해 선택한 추정 후보이며 실측 정합이 아니다.",
+    "rationale": "사진과 공식 행사 지도에서 높은 북쪽 본체, 낮은 남쪽 날개와 서쪽 현관의 상대 관계가 일관된다. 정확한 변별 대응이 부족한 상태에서 원본을 보존한 외형 개선안이다.",
+    "osmMinimumOrientedBoundsM": [
+      100.21239349241185,
+      100.31162110099194
+    ],
+    "drawingOverallBoundsM": [
+      108,
+      94
+    ],
+    "adjacent71_1GapM": 33.48249509689939,
+    "priorReadingCorrection": "이전 검토의 본체 세로 75500은 75000으로 정정했다. 전체 비교에서 누락했던 아래 돌출 계단 19000도 포함했다.",
+    "noSourceCoordinateEdits": true
+  },
+  "modelContract": {
+    "api": "createGymLandmark(scene, building, profile, heightAt)",
+    "landmark": "gym",
+    "coordinateConvention": "원본 D=(east,up,north)로 생성하고 상위 world가 H=(x,y,-z)를 한 번 적용한다.",
+    "datum": "원본 13점 평균 위치의 heightAt을 기준고도로 삼는다. 측량 고도는 아니다.",
+    "localOrigin": "원본 중 x가 가장 작은 꼭짓점",
+    "localAxis": "긴 동북동 방향 외곽 변과 직교하는 북북서 축",
+    "highRoofM": 14,
+    "lowRoofM": 8,
+    "bodySplitLocalZ": -50.6,
+    "profileLevels": 4,
+    "levelsEstimated": true,
+    "heightEstimated": true,
+    "confirmedUseFloor": 3,
+    "canopy": {
+      "minX": -8.5,
+      "maxX": 2.6,
+      "minZ": -44,
+      "maxZ": -15,
+      "top": 6.3,
+      "bottom": 5
+    },
+    "entrance": {
+      "x": 2.4,
+      "z": -28,
+      "width": 5.4,
+      "floor": 0.22,
+      "height": 4.05
+    },
+    "supportOpening": {
+      "x0": -7.15,
+      "x1": -1,
+      "bottom": 1.55,
+      "top": 3.85,
+      "z": -44,
+      "thickness": 0.52
+    },
+    "truss": {
+      "parallelRows": 4,
+      "baysPerRow": 10,
+      "pitch": 2.9,
+      "lower": 5.08,
+      "upper": 5.99,
+      "diagonalWidth": 0.105,
+      "diagonalParts": 80
+    },
+    "courtyardModeled": false,
+    "renderMeshes": 3,
+    "parts": 711,
+    "triangles": 14842,
+    "collision": "대각 트러스는 부재별 볼록 충돌체를 쓴다. 지지 벽은 구멍을 감싸는 네 부품으로 나누며 전체 차양을 큰 상자로 막지 않는다. 원본 지붕은 삼각 슬래브별 볼록 충돌체로 만든다.",
+    "textures": "원본 사진을 텍스처로 복제하지 않았다. 벽의 작은 세로 타일 줄눈은 절차적 DataTexture다.",
+    "distance": "가까이 있을 때와 멀리 있을 때 같은 병합 메시의 남은 삼각형을 표시한다. 파괴한 부품을 원거리에서 복원하지 않는다.",
+    "closedFacadeCollisionRefinement": {
+      "affectedComponent": "low-wing-window-bay",
+      "affectedParts": 59,
+      "renderArraysUnchanged": true,
+      "otherProxyTransformsUnchanged": 652,
+      "previousMaximumGlassLeadM": 0.30902281999579917,
+      "maximumGlassLeadM": 0.15252921581273193,
+      "maximumVisibleWallRecessionM": 0.15252324342726453,
+      "glassRaySamples": 130,
+      "wallRaySamples": 418,
+      "approximatePreviousThicknessM": 0.458,
+      "approximateNewThicknessM": 0.3015,
+      "approximateInwardCentreMoveM": 0.07825,
+      "method": "외벽 앞면과 후퇴 유리의 중간에 OBB 앞면을 두고 기존 뒤쪽 면을 유지한다. 단일 앞면을 쓰는 조건에서 두 표면의 최대 오차를 균형 있게 줄이는 근사다."
+    }
+  },
+  "terrain": {
+    "rawDEMChanged": false,
+    "terrainRuntimeChanged": false,
+    "datumRaised": false,
+    "plaza": "현재 지면에 연결하는 게임용 광장과 실내 접근면이다. 4m 간격으로 나누며 외부 끝은 기존 heightAt에 연결한다. 현장의 절성토나 광장 측량을 재현한 것은 아니다.",
+    "heightAtContract": "실제 지형 삼각형보다 0.03m 높은 기존 heightAt 계약을 유지한다."
+  },
+  "validation": {
+    "ownCommand": "node scripts/verify-gym.mjs",
+    "typecheckCommand": "npx tsc --noEmit",
+    "ownChecksPassed": 12,
+    "sourceSha256": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e",
+    "testSha256": "166ccc8004f2f5942f49a0788765a90041524f9f9dfab0d1346a6d9d0c2eea07",
+    "rawCampusSha256": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+    "rawTerrainSha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "resultArtifact": "artifacts/gym-test/results.json",
+    "keyResults": [
+      {
+        "name": "mapped outline and source classifications remain distinct from estimated gym massing",
+        "renderMeshes": 3,
+        "parts": 711,
+        "triangles": 14842,
+        "highRoofEstimate": 14,
+        "lowRoofEstimate": 8
+      },
+      {
+        "name": "two roof heights retain the entire source polygon without an invented courtyard",
+        "roofParts": 99,
+        "insideSamples": 905,
+        "outsideSamples": 815,
+        "highSamples": 580,
+        "lowSamples": 325
+      },
+      {
+        "name": "low-wing and recessed entrance glass clear the actual terrain and face outward",
+        "glassSamples": 2982,
+        "minimumTerrainClearance": 0.1754826948372319,
+        "frontGlassTriangles": 12,
+        "exposedFrontGlass": 10
+      },
+      {
+        "name": "photographed canopy support opening remains empty in render and collision geometry",
+        "emptyRays": 9,
+        "solidBorderRays": 4
+      },
+      {
+        "name": "individual diagonal convex colliders leave triangular canopy gaps open",
+        "convexDiagonals": 80,
+        "emptyRays": 10,
+        "beamRays": 10,
+        "maximumColliderSurfaceDifference": 0.000007147172189414519
+      },
+      {
+        "name": "real terrain capsule reaches the closed recessed entrance and enters after destruction",
+        "speed": 6
+      },
+      {
+        "name": "loaded and unloaded exterior rays agree for solid walls, convex beams, roof and door",
+        "externalRays": 288,
+        "componentKinds": 15,
+        "seamTiesExcluded": 0,
+        "startsInsideExcluded": true,
+        "maximumDistanceDifference": 0.0005876123905181885
+      },
+      {
+        "name": "closed window proxies keep a bounded distance from exposed glass",
+        "exposedGlassRays": 130,
+        "maximumProxyLead": 0.15252921581273193,
+        "meaning": "Closed window proxies balance the visible wall and recessed glass planes."
+      },
+      {
+        "name": "balanced closed facade colliders bound visible wall recession without changing apertures",
+        "adjustedFacadeParts": 59,
+        "visibleWallRays": 418,
+        "maximumWallRecession": 0.15252324342726453,
+        "doorSupportAndTrussesExcluded": true
+      },
+      {
+        "name": "partial truss destruction persists at distance and reset restores every triangle",
+        "removedTriangles": 12,
+        "restoredParts": 711,
+        "restoredTriangles": 14842
+      },
+      {
+        "name": "one H reflection preserves logical shots and puts the low southern wing on photographic right",
+        "southernWingRightDisplacement": 60.00000000000002,
+        "reflectedDistanceDifference": 0
+      },
+      {
+        "name": "datum callback and reversed ring keep the chosen orientation without changing source data",
+        "callbackElevationOffset": 50,
+        "reversedRingSameOrientation": true
+      }
+    ],
+    "independent": {
+      "artifact": "artifacts/gym-independent-review/results.json",
+      "modelSourceHash": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e",
+      "checksPassed": 11,
+      "reviewer": "reference agent",
+      "scope": "실제 DEM과 Simulation/Rapier, 실제 렌더 삼각형을 별도로 대조하고 전체 캠퍼스의 이동점과 파괴 상태 유지도 확인했다. 실기기 또는 GPU 검사가 아니다.",
+      "approachPaths": [
+        {
+          "direction": "toward-door",
+          "localZ": -28,
+          "reached": true,
+          "airFrames": 0,
+          "progress": 22.794957497342367
+        },
+        {
+          "direction": "toward-ground",
+          "localZ": -28,
+          "reached": true,
+          "airFrames": 0,
+          "progress": 22.70345438496199
+        },
+        {
+          "direction": "toward-door",
+          "localZ": -41.8,
+          "reached": true,
+          "airFrames": 0,
+          "progress": 22.795215869383703
+        },
+        {
+          "direction": "toward-ground",
+          "localZ": -41.8,
+          "reached": true,
+          "airFrames": 0,
+          "progress": 22.703593062245307
+        },
+        {
+          "direction": "toward-door",
+          "localZ": -17.2,
+          "reached": true,
+          "airFrames": 0,
+          "progress": 22.726395466338026
+        },
+        {
+          "direction": "toward-ground",
+          "localZ": -17.2,
+          "reached": true,
+          "airFrames": 0,
+          "progress": 22.796176510149934
+        }
+      ],
+      "glassSamples": 2130,
+      "minimumTerrainClearance": 0.1754826948372319,
+      "resetCycles": 4,
+      "destructionDistancesM": [
+        279,
+        281,
+        900
+      ],
+      "initialLoadedTargetsInIsolatedModel": 500,
+      "initialBodiesIncludingTerrain": 501,
+      "loadMeasurementLimit": "71동 단독 장면의 시작 위치에서 측정한 수치다. 실제 캠퍼스 전체나 모바일 프레임률 측정이 아니다.",
+      "previousSourceSha256": "4050405376b9905c0f3b847972e14f7a1f3085ba6c8d1b5f4a7551123c41fe1a",
+      "currentSourceRecheck": "passed",
+      "artifacts": [
+        "artifacts/gym-independent-review/results.json",
+        "artifacts/gym-independent-review/supplemental-results.json"
+      ],
+      "glassCollision": {
+        "exposedTriangleRays": 130,
+        "occludedRenderSamplesExcluded": 8,
+        "physicsMissExcluded": false,
+        "maximumGlassLeadM": 0.15252921581273193,
+        "maximumLoadedUnloadedDifferenceM": 0.000027076
+      },
+      "fullCampus": {
+        "checksPassed": 2,
+        "fastTravelPoint": {
+          "x": 267.39,
+          "z": 122.655
+        },
+        "forwardDistanceM": 5.99982,
+        "returnDistanceM": 5.83383,
+        "penetrationSamples": 0,
+        "destroyedCanopyStaysAbsent": true
+      },
+      "currentInputHashesMatch": true
+    },
+    "cpuPreview": {
+      "file": "artifacts/geometry-previews/gym.png",
+      "directlyViewed": true,
+      "description": "높고 낮은 두 몸체, 서쪽 차양과 노출 트러스, 낮은 창 날개의 상대 구성을 확인했다. 측면은 전경 지형에 많이 가려져 외벽 전체의 사진 일치를 판정하지 않았다.",
+      "terrainIncluded": true,
+      "renderingLimit": "정점과 삼각형으로 만든 CPU 정사영이다. 실제 WebGL, 조명, PBR, 텍스처나 휴대전화 성능 검사가 아니다.",
+      "sourceGeometryUnchangedAfterProxyRefinement": true,
+      "proof": "artifacts/gym-proxy-review/comparison.json의 position/normal/color/uv 배열 해시가 보정 전후 동일하다."
+    },
+    "proxyRefinementArtifact": "artifacts/gym-proxy-review/comparison.json"
+  },
+  "limitations": [
+    "높이, 내부 경기장 배치, 뒤쪽 창과 계단은 정확한 실측 복원이 아니다.",
+    "현관 뒤에는 게임에서 이동할 수 있는 빈 내부를 두었으며 공식 1층의 모든 방과 관람석은 재현하지 않았다.",
+    "차양 네 번째 트러스 줄은 상부 외벽 뒤의 정착부로 일부 가려진다. 빈 공간 광선은 실제 외벽 앞에 한정해 검사한다.",
+    "일반 직육면체 프록시에는 각 축 바깥으로 0.004m 여유가 있다. 낮은 날개의 닫힌 창 구획 59개는 별도로 앞면을 조정했다. 노출 유리 130개 광선에서 최대 0.152529m 앞서고, 외벽 418개 광선에서 최대 0.152523m 뒤에 놓인다. 외벽과 유리를 한 부품으로 묶은 근사이며 실제 후퇴 기하는 보존했다. 문, 빈 지지 벽과 대각 트러스의 충돌체는 변경하지 않았다.",
+    "CPU와 PC Node의 기하/물리 검사 수치를 모바일 FPS나 실제 브라우저 검증으로 해석하지 않았다."
+  ]
+}

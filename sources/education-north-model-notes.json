@@ -1,0 +1,1165 @@
+{
+  "schemaVersion": 1,
+  "status": "integrated-partial",
+  "reviewedAt": "2026-11-05T18:06:39.389Z",
+  "buildingId": "way/297046999",
+  "scope": "220동 북쪽의 원본 출입점 두 곳과 짧은 진입 공간, /347 계단에서 /338 북단까지 이어지는 외부길, PM972와973 주변 시설을 보완했다. 북쪽 연결 전체나 건물 전체를 실측 복원한 것은 아니다.",
+  "roadviewReview": "sources/education-north-roadview-review.json",
+  "observationOrder": [
+    "현재 2025년 7월 로드뷰에서 주차장 하강로와 건물 배치를 먼저 확인했다. 2010년 비교 화면은 구조 보조로만 사용했다.",
+    "로드뷰로 가려진 구역은 2025년 공식 PM 안내 사진과 지도 시설 표지, 원본 출입구 노드 및 계단선으로 대조했다.",
+    "구현 전 두 현관의 벽 막힘을 재현하고 출입구, 계단과 주변 시설을 수정했다."
+  ],
+  "implementation": {
+    "record": "artifacts/education-health-review/scene-33-implementation.json",
+    "sha256": "c2bbb84031561b368542f9aa4dd9acc7a4f61765066a2d7b6e9268b873ff5257",
+    "models": [
+      {
+        "id": "way/297046999",
+        "parts": 2320,
+        "triangles": 79318,
+        "renderMeshes": 3,
+        "textures": 1
+      },
+      {
+        "id": "way/297047243",
+        "parts": 602,
+        "triangles": 30692,
+        "renderMeshes": 3,
+        "textures": 1
+      }
+    ],
+    "changes": {
+      "landmarkAddedRenderMeshes": 0,
+      "addedTextures": 0,
+      "northHelperParts": 347,
+      "facadeSegmentationNetAddedParts": 38,
+      "total220NetAddedParts": 385,
+      "treeIncludedInReportedCounts": true,
+      "treeTrunks": 1,
+      "treeCrownParts": 3,
+      "existing221GeometryUnchanged": true,
+      "rawTerrainAndMapUnchanged": true,
+      "parkingRampImplemented": false,
+      "partialDestructionRetainsTerrain": true
+    },
+    "doors": [
+      {
+        "sourceNode": "4531518011",
+        "center": {
+          "x": 463.42,
+          "y": 38.97254547461408,
+          "z": -182.95
+        },
+        "width": 2.8,
+        "height": 2.65,
+        "lobbyDepth": 3,
+        "fullInteriorConnectionConfirmed": false,
+        "dimensionsEstimated": true
+      },
+      {
+        "sourceNode": "4514838231",
+        "center": {
+          "x": 517.52,
+          "y": 39.7431571277732,
+          "z": -195.77
+        },
+        "width": 2.8,
+        "height": 2.65,
+        "lobbyDepth": 3,
+        "fullInteriorConnectionConfirmed": false,
+        "dimensionsEstimated": true
+      }
+    ],
+    "stairs": {
+      "sourceRoad": "way/456922959/347",
+      "width": 3,
+      "stepCount": 66,
+      "landingCount": 5,
+      "dimensionsEstimated": true,
+      "wholeStairPhotographed": false
+    },
+    "facilities": [
+      {
+        "facilityId": "pm-972",
+        "officialPosition": [
+          455.556171752,
+          -179.035956
+        ],
+        "modelCentre": {
+          "x": 453.5,
+          "y": 36.50207545795308,
+          "z": -181.7
+        },
+        "signComponent": "education-pm-972-sign",
+        "sourcePhoto": 7,
+        "placementEstimated": true,
+        "officialMarkerUsedAsExactOutdoorCentre": false,
+        "smallTextReproduced": false,
+        "planter": true
+      },
+      {
+        "facilityId": "pm-973",
+        "officialPosition": [
+          498.673829944,
+          -206.420676
+        ],
+        "modelCentre": {
+          "x": 491.65,
+          "y": 39.94961090596121,
+          "z": -215
+        },
+        "signComponent": "education-pm-973-sign",
+        "sourcePhoto": 8,
+        "placementEstimated": true,
+        "officialMarkerUsedAsExactOutdoorCentre": false,
+        "smallTextReproduced": false,
+        "planter": false
+      }
+    ]
+  },
+  "verification": {
+    "checks": [
+      {
+        "file": "artifacts/education-health-test/results.json",
+        "sha256": "10cbdf98abd38b76b773f888976bb393d9b2ec8aa3ac1f3f37ba7535a4cc94ec",
+        "passed": 19,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-north-access-test/results.json",
+        "sha256": "746a0255c17a70f854d8fb33a36c971c95f6da89dabd63bc5c27146543f16493",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-health-access-test/results.json",
+        "sha256": "6985432381a8a14a78cdb2d135e0fb3f07c6cd3d9c0c65ac126f312593d2b237",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-passage-test/results.json",
+        "sha256": "dd64ea8d1e3f8ac9f684c3cd7162c22210ab97b073e701e02a37c2ba5aa1e9ea",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-courtyard-test/results.json",
+        "sha256": "9efb53a4ef5c1e599640310bca985ee32b6b0d7fdcf2fc1cb49ffb9e244e0dd8",
+        "passed": 3,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "e8444dc34f57a86f4322eaa0f7f53b241a78dcc82386fe30a523dafbf7424a0e",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "792471ac381fd0f7454cf7b757a8319578ec38463c05f20544ed50fc4697ade7",
+        "passed": 5,
+        "failed": 0
+      }
+    ],
+    "totalPassed": 58,
+    "independentScope": "실제 전체 장면에서 원본 220 p1/p22 출입점, 외부 북측 보행로와 /347 계단을 검사한다. 사진에서 확인하지 못한 치수나 현장 표지 좌표를 정답으로 취급하지 않는다. Node의 Three.js와 Rapier 검사이며 브라우저 화면 또는 실제 기기 검증은 아니다.",
+    "independentFloorCheck": {
+      "name": "walkable floors match rendering and leave the existing nearby road and terrain anchors unchanged",
+      "status": "PASS",
+      "samples": 522,
+      "precisionCheckedSamples": 507,
+      "maximumFloorDifference": 0.0003903508186340332,
+      "minimumHeadroom": null,
+      "terrainChecks": [
+        {
+          "point": [
+            424.76,
+            -172.23
+          ],
+          "y": 26.012195014424623,
+          "actual": 26.012195014424623
+        },
+        {
+          "point": [
+            458.06,
+            -188.79
+          ],
+          "y": 37.669855196045816,
+          "actual": 37.669855196045816
+        },
+        {
+          "point": [
+            470.51,
+            -166.52
+          ],
+          "y": 33.07390879631043,
+          "actual": 33.07390879631043
+        },
+        {
+          "point": [
+            504.36,
+            -184.03
+          ],
+          "y": 38.45976203845688,
+          "actual": 38.45976203845688
+        },
+        {
+          "point": [
+            518.71,
+            -175.51
+          ],
+          "y": 36.310878031974845,
+          "actual": 36.310878031974845
+        },
+        {
+          "point": [
+            566.52,
+            -87.88
+          ],
+          "y": 34.47007471229199,
+          "actual": 34.47007471229199
+        }
+      ],
+      "existingPathOverlays": [
+        {
+          "routeIndex": 2,
+          "segment": 1,
+          "offset": -0.3,
+          "point": [
+            458.4941101074219,
+            38.38951200246811,
+            -187.22019958496094
+          ],
+          "physical": null,
+          "render": "campus-pedestrian-surface",
+          "difference": 0.150000358790642,
+          "groundClearance": -9.321303906517642e-8,
+          "headroom": null,
+          "existingPathOverlay": true,
+          "stairBoundary": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 21,
+          "offset": -0.3,
+          "point": [
+            458.4941101074219,
+            38.389512062072754,
+            -187.22019958496094
+          ],
+          "physical": null,
+          "render": "campus-pedestrian-surface",
+          "difference": 0.15000029918599722,
+          "groundClearance": -3.360839428978579e-8,
+          "headroom": null,
+          "existingPathOverlay": true,
+          "stairBoundary": false
+        }
+      ],
+      "boundaryChecks": [
+        {
+          "routeIndex": 3,
+          "segment": 1,
+          "offset": -0.3,
+          "originalPoint": [
+            423.102783203125,
+            25.75831890106201,
+            -171.07083129882812
+          ],
+          "originalVerticalRayDifference": 0.11780872524689201,
+          "distanceToActualTopBoundary": 0.000004107338540866643,
+          "boundaryPoint": [
+            423.10278688081763,
+            25.7583178810747,
+            -171.07083312770942
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                423.0311584472656,
+                25.62741059064865,
+                -171.03521728515625
+              ],
+              "renderedY": 25.627410652253968,
+              "difference": 6.160531640375666e-8,
+              "owner": null,
+              "render": "campus-terrain"
+            },
+            {
+              "sign": 1,
+              "position": [
+                423.1744079589844,
+                25.795943439006805,
+                -171.10646057128906
+              ],
+              "renderedY": 25.79594394680434,
+              "difference": 5.077975337997032e-7,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-terrain-join",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1685328483581543,
+            "physical": 0.0799955427646637,
+            "rendered": 0.07999450322257542,
+            "difference": 0.0000010395420882713946,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-terrain-join",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 2,
+          "offset": -0.3,
+          "originalPoint": [
+            426.1731872558594,
+            27.154358506202698,
+            -172.5977325439453
+          ],
+          "originalVerticalRayDifference": 0.1852632761001587,
+          "distanceToActualTopBoundary": 0.0000041090683016152825,
+          "boundaryPoint": [
+            426.1731909351008,
+            27.154356002807617,
+            -172.59773437359684
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                426.1015625,
+                26.969094276428223,
+                -172.56211853027344
+              ],
+              "renderedY": 26.96909523010254,
+              "difference": 9.5367431640625e-7,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                426.24481201171875,
+                27.154359459877014,
+                -172.63336181640625
+              ],
+              "renderedY": 27.154356002807617,
+              "difference": 0.0000034570693969726562,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1852651834487915,
+            "physical": 0.07998261600732803,
+            "rendered": 0.07999450322257542,
+            "difference": 0.000011887215247391447,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 3,
+          "offset": -0.3,
+          "originalPoint": [
+            428.3058776855469,
+            28.080662310123444,
+            -173.65830993652344
+          ],
+          "originalVerticalRayDifference": 0.18526321649551392,
+          "distanceToActualTopBoundary": 0.000004109068238062558,
+          "boundaryPoint": [
+            428.30588136478826,
+            28.080659866333008,
+            -173.65831176617493
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                428.2342529296875,
+                27.89539909362793,
+                -173.62269592285156
+              ],
+              "renderedY": 27.89539909362793,
+              "difference": 0,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                428.37750244140625,
+                28.080663323402405,
+                -173.69393920898438
+              ],
+              "renderedY": 28.080659866333008,
+              "difference": 0.0000034570693969726562,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1852642297744751,
+            "physical": 0.07998400181531906,
+            "rendered": 0.07999450322257542,
+            "difference": 0.000010501407256363615,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 5,
+          "offset": 0.3,
+          "originalPoint": [
+            430.3351135253906,
+            28.633824110031128,
+            -175.33753967285156
+          ],
+          "originalVerticalRayDifference": 0.18264269828796387,
+          "distanceToActualTopBoundary": 0.014425829876972687,
+          "boundaryPoint": [
+            430.3480302906386,
+            28.636444091796875,
+            -175.34396320328028
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                430.2763977050781,
+                28.451181411743164,
+                -175.30833435058594
+              ],
+              "renderedY": 28.451181411743164,
+              "difference": 0,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-landing",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                430.4196472167969,
+                28.636446356773376,
+                -175.3795928955078
+              ],
+              "renderedY": 28.636444091796875,
+              "difference": 0.0000022649765014648438,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1852649450302124,
+            "physical": 0.07999841123819351,
+            "rendered": 0.08000401579780236,
+            "difference": 0.000005604559608851645,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 6,
+          "offset": 0,
+          "originalPoint": [
+            433.04083251953125,
+            29.748008906841278,
+            -176.34803771972656
+          ],
+          "originalVerticalRayDifference": 0.18526095151901245,
+          "distanceToActualTopBoundary": 0.000013665049059683105,
+          "boundaryPoint": [
+            433.04084475509984,
+            29.748008728027344,
+            -176.34804380449665
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                432.9692077636719,
+                29.562747955322266,
+                -176.3124237060547
+              ],
+              "renderedY": 29.562747955322266,
+              "difference": 0,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                433.11248779296875,
+                29.748011469841003,
+                -176.3836669921875
+              ],
+              "renderedY": 29.748008728027344,
+              "difference": 0.0000027418136596679688,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1852635145187378,
+            "physical": 0.08000423014163971,
+            "rendered": 0.08000405964722601,
+            "difference": 1.7049441369820784e-7,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 6,
+          "offset": 0.3,
+          "originalPoint": [
+            432.9072570800781,
+            29.748009085655212,
+            -176.6166534423828
+          ],
+          "originalVerticalRayDifference": 0.18526113033294678,
+          "distanceToActualTopBoundary": 0.000006824970623869575,
+          "boundaryPoint": [
+            432.9072631910987,
+            29.748008728027344,
+            -176.61665648140428
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                432.83563232421875,
+                29.562749445438385,
+                -176.58103942871094
+              ],
+              "renderedY": 29.562747955322266,
+              "difference": 0.0000014901161193847656,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                432.9788818359375,
+                29.748008966445923,
+                -176.65228271484375
+              ],
+              "renderedY": 29.748008728027344,
+              "difference": 2.384185791015625e-7,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.18525952100753784,
+            "physical": 0.07999866455793381,
+            "rendered": 0.07999722088284311,
+            "difference": 0.0000014436750906954288,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 9,
+          "offset": 0.3,
+          "originalPoint": [
+            437.7757873535156,
+            31.415358662605286,
+            -179.0377655029297
+          ],
+          "originalVerticalRayDifference": 0.18526184558868408,
+          "distanceToActualTopBoundary": 0.000009543393226706488,
+          "boundaryPoint": [
+            437.7757958985791,
+            31.41535758972168,
+            -179.03776975242906
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                437.70416259765625,
+                31.230099856853485,
+                -179.0021514892578
+              ],
+              "renderedY": 31.2300968170166,
+              "difference": 0.000003039836883544922,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                437.847412109375,
+                31.415359497070312,
+                -179.07339477539062
+              ],
+              "renderedY": 31.41535758972168,
+              "difference": 0.0000019073486328125,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1852596402168274,
+            "physical": 0.07999610155820847,
+            "rendered": 0.07999993865187538,
+            "difference": 0.000003837093666914093,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 12,
+          "offset": -0.3,
+          "originalPoint": [
+            445.044189453125,
+            34.0090126991272,
+            -181.9822235107422
+          ],
+          "originalVerticalRayDifference": 0.18526315689086914,
+          "distanceToActualTopBoundary": 0.00000817529424948629,
+          "boundaryPoint": [
+            445.0441967732388,
+            34.009010314941406,
+            -181.9822271509853
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                444.9725646972656,
+                33.82375091314316,
+                -181.9466094970703
+              ],
+              "renderedY": 33.82374954223633,
+              "difference": 0.0000013709068298339844,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                445.1158142089844,
+                34.009013652801514,
+                -182.01785278320312
+              ],
+              "renderedY": 34.009010314941406,
+              "difference": 0.000003337860107421875,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1852627396583557,
+            "physical": 0.07998470216989517,
+            "rendered": 0.07999857979684152,
+            "difference": 0.000013877626946351418,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 12,
+          "offset": 0,
+          "originalPoint": [
+            444.9106140136719,
+            34.009011805057526,
+            -182.25083923339844
+          ],
+          "originalVerticalRayDifference": 0.1852622628211975,
+          "distanceToActualTopBoundary": 0.000003390946721714161,
+          "boundaryPoint": [
+            444.91061704990705,
+            34.009010314941406,
+            -182.25084074329766
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                444.8389892578125,
+                33.82375067472458,
+                -182.21522521972656
+              ],
+              "renderedY": 33.82374954223633,
+              "difference": 0.0000011324882507324219,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                444.98223876953125,
+                34.009008944034576,
+                -182.28646850585938
+              ],
+              "renderedY": 34.009010314941406,
+              "difference": 0.0000013709068298339844,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.18525826930999756,
+            "physical": 0.07997827976942062,
+            "rendered": 0.07999379417595794,
+            "difference": 0.000015514406537311953,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 15,
+          "offset": 0,
+          "originalPoint": [
+            449.7791442871094,
+            35.676359832286835,
+            -184.67196655273438
+          ],
+          "originalVerticalRayDifference": 0.18526333570480347,
+          "distanceToActualTopBoundary": 0.00001026821356591966,
+          "boundaryPoint": [
+            449.77915348117006,
+            35.67635726928711,
+            -184.67197112498306
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                449.70751953125,
+                35.49110108613968,
+                -184.6363525390625
+              ],
+              "renderedY": 35.49109649658203,
+              "difference": 0.000004589557647705078,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                449.8507995605469,
+                35.676362216472626,
+                -184.7075958251953
+              ],
+              "renderedY": 35.67635726928711,
+              "difference": 0.000004947185516357422,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.18526113033294678,
+            "physical": 0.08000006526708603,
+            "rendered": 0.08000066240115146,
+            "difference": 5.971340654303825e-7,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 15,
+          "offset": 0.3,
+          "originalPoint": [
+            449.64556884765625,
+            35.676363825798035,
+            -184.94058227539062
+          ],
+          "originalVerticalRayDifference": 0.18526732921600342,
+          "distanceToActualTopBoundary": 0.000002750579054531378,
+          "boundaryPoint": [
+            449.64557131049855,
+            35.67635726928711,
+            -184.94058350017343
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                449.5739440917969,
+                35.49109882116318,
+                -184.90496826171875
+              ],
+              "renderedY": 35.49109649658203,
+              "difference": 0.0000023245811462402344,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                449.7171936035156,
+                35.67635941505432,
+                -184.97621154785156
+              ],
+              "renderedY": 35.67635726928711,
+              "difference": 0.0000021457672119140625,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1852605938911438,
+            "physical": 0.0799894705414772,
+            "rendered": 0.07999314419068616,
+            "difference": 0.0000036736492089600725,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 18,
+          "offset": -0.3,
+          "originalPoint": [
+            454.7812805175781,
+            37.37074726819992,
+            -186.82444763183594
+          ],
+          "originalVerticalRayDifference": 0.18077915906906128,
+          "distanceToActualTopBoundary": 0.000008179182232728889,
+          "boundaryPoint": [
+            454.7812878411732,
+            37.37074661254883,
+            -186.8244512738103
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                454.70965576171875,
+                37.18997138738632,
+                -186.78883361816406
+              ],
+              "renderedY": 37.18996810913086,
+              "difference": 0.0000032782554626464844,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                454.8529052734375,
+                37.37075048685074,
+                -186.86007690429688
+              ],
+              "renderedY": 37.37074661254883,
+              "difference": 0.000003874301910400391,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1807790994644165,
+            "physical": 0.07999733835458755,
+            "rendered": 0.07999857979684152,
+            "difference": 0.0000012414422539686054,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        },
+        {
+          "routeIndex": 3,
+          "segment": 19,
+          "offset": 0.3,
+          "originalPoint": [
+            456.64678955078125,
+            38.2746496796608,
+            -188.42227172851562
+          ],
+          "originalVerticalRayDifference": 0.18078142404556274,
+          "distanceToActualTopBoundary": 0.000002749782646166098,
+          "boundaryPoint": [
+            456.64679201291045,
+            38.2746467590332,
+            -188.4222729529438
+          ],
+          "adjacentInteriorOffset": 0.08,
+          "adjacentInteriors": [
+            {
+              "sign": -1,
+              "position": [
+                456.5751647949219,
+                38.09387129545212,
+                -188.38665771484375
+              ],
+              "renderedY": 38.093868255615234,
+              "difference": 0.000003039836883544922,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            },
+            {
+              "sign": 1,
+              "position": [
+                456.7184143066406,
+                38.27464872598648,
+                -188.45790100097656
+              ],
+              "renderedY": 38.2746467590332,
+              "difference": 0.0000019669532775878906,
+              "owner": {
+                "buildingId": "way/297046999",
+                "component": "education-north-stair-tread",
+                "facilityId": null
+              },
+              "render": "education-220-brick-walls"
+            }
+          ],
+          "riser": {
+            "height": 0.1807774305343628,
+            "physical": 0.07998839765787125,
+            "rendered": 0.07999314419068616,
+            "difference": 0.000004746532814917104,
+            "owner": {
+              "buildingId": "way/297046999",
+              "component": "education-north-stair-tread",
+              "facilityId": null
+            }
+          },
+          "boundaryVerticalRayPrecisionChecked": false
+        }
+      ],
+      "boundaryScope": "실제 단 경계에서 2cm 이내인 광선 불일치는 양쪽 8cm 내부와 수직 단면을 각각 2.5cm 기준으로 확인한다. 경계의 수직 광선 정밀도는 통과로 집계하지 않는다. 일부 1cm 옆에서도 Rapier가 윗단을 선택했으며 이를 Float32 반올림만으로 설명하지 않는다.",
+      "scope": "실제 걸은 중심선과 좌우 0.3m의 새 바닥 내부를 2.5cm 기준으로 대조한다. 새 바닥 부품이 없는 원지면 구간의 기존 보행 표시는 따로 기록한다. 표지와 복합 시설 외피도 바닥 정밀도 수치에 포함하지 않는다."
+    },
+    "browser": {
+      "file": "artifacts/education-health-review/33-browser-review.json",
+      "sha256": "d20e951d2979e08bb95a64f7ed2ded9e33edb258979d691158a808afa1627e43",
+      "desktopViews": 7,
+      "mobileViews": 4,
+      "mainMobileActions": [
+        "교내 정류장 선택 후 터치로 시작",
+        "이동 패드와 시점 영역의 두 터치를 동시에 이동",
+        "점프와 발사 버튼 터치 후 발사광 확인",
+        "일시정지에서 교내 정류장 15개 확인",
+        "계속 둘러보기로 재개한 뒤 조작 버튼과 폭발 효과 확인"
+      ]
+    },
+    "physicalPhoneTested": false
+  },
+  "preservation": {
+    "baselineCommit": "cad2f7aa6ef2678d973544c5cf72aaf969d1797a",
+    "unchanged": [
+      "public/data/campus.json",
+      "public/data/terrain.json",
+      "sources/campus.osm",
+      "src/terrain.ts",
+      "src/physics.ts",
+      "src/traffic.ts",
+      "src/controls.ts",
+      "src/main.ts",
+      "src/healthCourtyard.ts",
+      "src/livingScienceLandmark.ts"
+    ],
+    "changedExistingInputs": [
+      "src/fullCampus.ts",
+      "src/educationHealthLandmark.ts",
+      "scripts/verify-campus.mjs",
+      "scripts/verify-all.mjs",
+      "scripts/verify-library.mjs",
+      "scripts/verify-education-health.mjs"
+    ],
+    "rawMapAndDEMModified": false
+  },
+  "limits": [
+    "문 폭2.8m, 높이2.65m와 내부3m는 게임용 근사다. 두 현관이 건물 내부에서 서로 연결된다고 주장하지 않는다.",
+    "/347의 폭3m, 디딤판66개, 계단참5개와 상단꺾임은 원본 계단선 및 현재 지형에 맞춘 근사다. 사진에 전체 계단이 보이지 않는다.",
+    "PM973 공식 표식은 원본 건물 안쪽이다. 실제 모델 중심은 p4 서측 바깥으로 옮겼으며 정확한 외벽 면 대응과 시설 위치는 미확정이다.",
+    "PM972의 곡선 화단, 기둥등과 수목은 사진의 상대 구성을 따른다. 수종, 수관 형상과 개체수는 근사다.",
+    "보행 표시 제거는 새 실제 포장 범위 안의 기존 표시만 대상으로 한다. 바닥 파괴 뒤에는 기존 지형이 남는다.",
+    "주차장 경사로 /659와 /209 계단은 이번 구현에 포함하지 않았다.",
+    "2025년 공식 사진의 촬영일은 미상이며 현재 시설 존치를 확인한 자료가 아니다.",
+    "정확한 입구 형태와 치수, 계단 단수 및 경사, PM 시설의 방향과 위치, 수종은 게임용 근사다.",
+    "PM973 공식 표지점은 건물 외곽 안에 있어 실제 야외 구획 중심으로 사용하지 않았다.",
+    "작은 표지 문구, 벽 포스터와 상점 간판은 판독하지 못해 임의로 만들지 않았다.",
+    "디딤판 내부의 표면 정밀도와 단 경계 광선의 판정은 구분한다. 경계에서 서로 다른 단을 고르는 현상은 독립 검사에 따로 기록했다.",
+    "모바일 검사는 PC Chrome의 세로 화면과 터치 에뮬레이션이다. 실제 휴대전화 성능은 측정하지 않았다."
+  ],
+  "sourceHashes": {
+    "src/educationHealthLandmark.ts": "4ad5ecd20db2e107e8d0098c78797c1f1b98b12d5b00bcd7a05e739b96089bfe",
+    "src/educationNorthApproach.ts": "70cc3acd9ec64a93b53cead881490ff3771eb6825c2ffcab9e67a6fbba26bf45",
+    "src/fullCampus.ts": "47c20788fa45fb8f7f39b928f093c4e91e1735aaec47064d914ba296579188cd",
+    "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+    "src/terrain.ts": "56fe9df3a86829079132ac4ab91c337344a1f0adc50bfa924b08ea0c6ff82809",
+    "src/livingScienceCourtyardSite.ts": "6898402ad56811c8718016e4640907f9dadf3b37e88674a748078de9a3732eb9",
+    "scripts/verify-education-health.mjs": "de6bd97362f2f370ac20d2d8ee82e3c93de78770c252370e6c39876a66eb2fad",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "sources/education-north-roadview-review.json": "3c1d844f8e34986aca36cfd40fd496966e034e966419d46a8d9f19ba1329722d",
+    "scripts/verify-education-north-access.mjs": "48f105ca41c496596bfca76603fcb6945a0a9e97745f3e937bdd4b1b57445549",
+    "scripts/verify-campus.mjs": "91933bf935d3d0d6987ff69d87cd1dcac48c2b02faacb12e9f644392c3a1640c",
+    "scripts/verify-library.mjs": "f8f68cedd68c8f8d4766abaf7c8998f69828aa22de20e3572575975d197f9422",
+    "scripts/verify-all.mjs": "d574fe3a535b857e94dd6fbf2c2cef00fec428d5a3a584972cd268589fe319b1"
+  },
+  "next": "로드뷰에서 확인한 /659 주차장 하강로의 포털 위치와 국소 지형 처리를 먼저 검토하고, /209 및 남은 연결부와 건물 외관을 이어서 대조한다."
+}

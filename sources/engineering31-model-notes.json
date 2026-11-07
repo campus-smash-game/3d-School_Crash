@@ -1,0 +1,415 @@
+{
+  "status": "integrated-partial",
+  "scopeUpdate": {
+    "status": "partially-superseded",
+    "recordUpdatedAt": "2026-11-05T09:25:43Z",
+    "historicalScope": "이 문서의 원래 사진 해석, reviewedAt, 구현 설명, 검증 결과와 sourceHashes는 당시 31동 단독 모델의 기록으로 보존한다.",
+    "supersededClaims": [
+      "흰 연결 몸체 전체가 미구현이라는 설명은 현재 상태가 아니다.",
+      "공식 사진 038의 반원 지붕과 오른쪽 벽돌 몸체를 모두 동쪽 30동 연결로 대응한 해석은 후속 거리뷰 기록에서 수정됐다."
+    ],
+    "currentScope": "2024년 2월 거리뷰에서 확인한 31 동쪽 탑과 30 서면 사이 흰 연결 몸체는 별도 모듈로 구현했다. 정확한 폭, 층고와 내부 보행면은 게임용 근사다.",
+    "currentReferences": [
+      "../references/roadview-audit/engineering31-30-orientation-review.json"
+    ],
+    "runtimeReferences": [
+      "src/engineering3130Connection.ts",
+      "src/engineering31Landmark.ts",
+      "src/fullCampus.ts"
+    ],
+    "remaining": "서쪽 녹색 반원 지붕은 별도 31/32 방향 후보이며 2025년 공사 이후 존치 여부와 정확한 소속은 미확인이다. 2024년 사진을 2026년 현장 확인으로 해석하지 않는다.",
+    "newObservationAdded": false
+  },
+  "landmark": "engineering-31",
+  "buildingId": "way/389628348",
+  "buildingNumber": "31",
+  "modelFile": "src/engineering31Landmark.ts",
+  "api": "createEngineering31Landmark(scene, building, profile, heightAt)",
+  "reviewedAt": "2026-11-05T04:49:01.006Z",
+  "scope": "원본 31동 안에 서쪽 긴 몸체와 동쪽 흰 탑, 높이가 다른 녹색 지붕, 창띠와 흰 수평 띠, 곡면 벽과 숫자 31을 구현했다. 지도 사진의 30동 쪽 연결부와 미래 신축 형태는 포함하지 않았다.",
+  "officialFacts": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=38",
+      "file": "artifacts/engineering31-review/facility.html",
+      "fact": "공식 시설 색인 38은 31동 공학관2다. 원본 way/389628348과 대응한다."
+    },
+    {
+      "url": "https://nursing.snu.ac.kr/about/fund/gwanak",
+      "file": "artifacts/engineering31-review/nursing-current.html",
+      "fact": "31, 31-1, 32동 부지를 통합 재건축하는 계획이다. 공사기간은 2025.9~2030.9이며, 1단계는 2027.7, 2단계는 2030.9 준공을 예정한다. 간호대 신축의 지하 1층과 지상 6층은 미래 계획이며 기존 31의 층수가 아니다."
+    },
+    {
+      "url": "https://eng.snu.ac.kr/research/research-achievements?bbsidx=6158&md=v",
+      "file": "artifacts/engineering31-review/ceremony2025.html",
+      "publishedAt": "2025-10-22",
+      "fact": "서울대는 2025년 10월 14일 32동 부지에서 통합 재건축 기공식을 열었다. 새 3개 동과 연면적 30,487㎡는 신축 계획이다."
+    },
+    {
+      "url": "https://gsep.snu.ac.kr/%21/download/?ct=76&filename=%EA%B0%80%EC%84%A4%ED%9C%80%EC%8A%A4+%EC%84%A4%EC%B9%98%EA%B3%84%ED%9A%8D%EB%8F%84.pdf&oi=20879&path=%2Fmedia%2F43%2Fboard%2F2025%2F05%2F09%2F%EA%B0%80%EC%84%A4%ED%9C%80%EC%8A%A4_%EC%84%A4%EC%B9%98%EA%B3%84%ED%9A%8D%EB%8F%84.pdf",
+      "file": "artifacts/engineering31-review/fence-plan2025.pdf",
+      "render": "artifacts/engineering31-review/fence-plan2025-0.png",
+      "directlyViewed": true,
+      "fact": "1단계 32동 철거와 32-1 필로티 보행을 안내한다. 도면의 기존 문맥과 미래 배치를 구분하며, 그림 위쪽을 지리 북쪽으로 읽지 않는다. 31의 현장 철거 완료나 현재 외관 생존을 직접 확인한 자료로 보지 않는다."
+    },
+    {
+      "url": "https://www.j-kosham.or.kr/upload/pdf/KOSHAM-2018-18-7-387.pdf",
+      "file": "artifacts/engineering31-review/indoor-map2018.pdf",
+      "render": "artifacts/engineering31-review/indoor-map2018-6.png",
+      "doi": "10.9798/KOSHAM.2018.18.7.387",
+      "directlyViewed": true,
+      "fact": "2018년 서울대 연구진의 논문에 31동 2층과 4층 대피 안내도가 실려 있다. 긴 복도와 양 끝 계단을 확인했다. 분석한 네 층을 건물 전체 층수로 일반화하지 않으며, 방위표가 없어 세부 면 배치의 확정 근거로 쓰지 않는다."
+    }
+  ],
+  "photoSources": [
+    {
+      "file": "../references/buildings/photos/038-31.jpg",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000038.jpg",
+      "observation": "흰 탑의 네 창행, 오른쪽 곡면이 있는 벽, 숫자 31과 낮은 흰 연결 몸체, 긴 창띠, 반원형 지붕을 직접 봤다. 오른쪽 벽돌 몸체는 별도 30동으로 대응한다.",
+      "directlyViewed": true,
+      "photoDate": "unknown",
+      "sha256": "66d562d53b1391a2525e1273d7d3fee3ee2d644cdd83938ed6c98884ed0c6b69"
+    },
+    {
+      "file": "../references/exteriors/supplemental-east/sky12-2.jpg",
+      "url": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/2.jpg",
+      "observation": "31의 동쪽 흰 탑과 서쪽 긴 몸체, 녹색 지붕과 옥상 설비열을 주변 27, 28, 30, 129동의 위치와 대조했다.",
+      "directlyViewed": true,
+      "photoDate": "unknown",
+      "sha256": "43275edef59a41d5e84a61777a52f96ae0f9c7cfdbf6727ac25519526157899f"
+    },
+    {
+      "file": "../references/exteriors/supplemental-east/sky12-5.jpg",
+      "url": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+      "observation": "바닥 큐브 면과 정면 큐브 면의 경계를 이어 주변 몸체와 공사 구덩이의 관계를 확인했다. 구덩이를 현재 32동 공사라고 오인하지 않는다.",
+      "directlyViewed": true,
+      "photoDate": "unknown",
+      "sha256": "ce2e30f937c94fd345e7601c60ef9de3b657fdfd0b35646302453cd6a1b12c72"
+    },
+    {
+      "file": "artifacts/main-library-review/sky4_9016-html5-2.jpg",
+      "url": "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/2.jpg",
+      "observation": "다른 항공 각도에서 31 후보의 탑, 긴 몸체와 낮은 연결부를 대조했다. 실제 치수는 이 사진에서 측정하지 않았다.",
+      "directlyViewed": true,
+      "photoDate": "unknown",
+      "sha256": "4c6ff921f0a02a05cf14acc047460038d54cecfadcbba8deaec52f96d97a4f75"
+    }
+  ],
+  "identity": {
+    "originalId": "way/389628348",
+    "originalPointCount": 11,
+    "officialMapSequence": 38,
+    "originalFootprintPreserved": true,
+    "terrainElevationTagUsed": false,
+    "baseMethod": "중복 닫힘점을 제외한 원본 꼭짓점 평균 XZ에서 현재 heightAt을 읽는다.",
+    "baseHeightAt": 37.30922317504883
+  },
+  "orientation": {
+    "status": "inferred",
+    "origin": [
+      100.33,
+      -1023.2
+    ],
+    "axis": [
+      0.9933257072840812,
+      0.11534313698083508
+    ],
+    "northAxis": [
+      -0.11534313698083508,
+      0.9933257072840812
+    ],
+    "photoFacing": "동쪽 흰 탑의 남쪽 면",
+    "evidence": "공식 근경, 공식 항공과 27, 28, 30, 129의 원본 위치를 함께 대조했다. 남쪽에서 북쪽을 보면 31 동쪽 탑이 화면 왼쪽, 30동과 그 연결부는 오른쪽에 놓여 사진과 맞는다. 공식 촬영 좌표나 정밀 배치도가 없으므로 면 대응은 추론이다.",
+    "excludedConnection": "31 동쪽 끝은 D x 약173m, 30 서쪽은 약210m다. 사진의 낮은 흰 연결 몸체와 반원 지붕 대부분이 그 사이에 있어 이번 31 원본 윤곽에 넣지 않았다. 별도 30동을 31의 날개로 복제하지 않았다.",
+    "discardedInference": "항공사진 중앙 구덩이를 현재 32동이라고 처음 가정했으나 주변 129와 27의 배치에 맞지 않아 폐기했다. 최종 대응은 항공사진 촬영 시점의 28 부지로 해석하며 정확한 공사 날짜는 미확인이다."
+  },
+  "dimensions": {
+    "levels": 5,
+    "levelsEstimated": false,
+    "levelsSource": "OpenStreetMap building:levels",
+    "officialTotalLevelsConfirmed": false,
+    "mainRoof": 14,
+    "towerRoof": 17.5,
+    "highestParapet": 17.82,
+    "heightEstimated": true,
+    "wingPartitionEstimated": true,
+    "entryStair": {
+      "steps": 6,
+      "tread": 0.6666666666666666,
+      "rise": 0.13987724306696167,
+      "estimated": true
+    },
+    "unit": "metres relative to current heightAt datum"
+  },
+  "implementation": {
+    "parts": 525,
+    "triangles": 33480,
+    "renderMeshes": 3,
+    "triangleCriterion": "cross.lengthSq() > 1e-12",
+    "mainFeatures": [
+      "원본 11점의 오목 외곽을 그대로 삼각 분할해 두 모서리 빈 공간을 보존했다.",
+      "서쪽 긴 몸체의 벽돌 구획, 흰 수평 띠, 얇은 창과 창틀을 한 층의 짧은 구획에 묶었다.",
+      "동쪽 흰 탑과 본체의 높이 차이를 만들고 경계의 세로 벽을 닫았다.",
+      "탑의 움푹한 곡면을 24개 얇은 convex 부품으로 나눠 빈 공간 전체를 상자 충돌체로 채우지 않았다.",
+      "북쪽 도로 접근을 위한 여섯 단 계단, 지형 연결판, 후퇴한 문과 짧은 로비를 만들었다. 이 위치와 치수는 게임용 근사다.",
+      "숫자 31은 H 반사 뒤 읽히는 절차 기하 획이다. 지붕 설비도 사진 텍스처 없이 근사했다."
+    ],
+    "collision": "벽과 유리 구획은 얇은 OBB, 잘린 지붕판, 곡면 조각과 경사판은 convex proxy를 쓴다.",
+    "textures": "공식 사진을 게임 텍스처로 복제하거나 배포하지 않는다.",
+    "proxyRevision": {
+      "modelGeometryUnchanged": true,
+      "partsUnchanged": 525,
+      "proof": "artifacts/engineering31-review/proxy-balance-geometry-comparison.json",
+      "description": "벽돌 창 구획의 OBB 앞면만 유리와 돌출 흰 띠의 중간으로 옮겼다. 이전 소스 해시를 검증한 모듈과 같은 높이 콜백에서 렌더 정점 및 색 배열의 완전 일치를 확인했다."
+    }
+  },
+  "verification": {
+    "own": {
+      "command": "node scripts/verify-engineering31.mjs",
+      "artifact": "artifacts/engineering31-test/results.json",
+      "passed": 13,
+      "failed": 0,
+      "sourceStillMatches": true,
+      "metrics": {
+        "parts": 525,
+        "triangles": 33480,
+        "renderMeshes": 3
+      },
+      "checks": [
+        {
+          "name": "original 11 point footprint DEM and neighboring building 30 remain unchanged",
+          "status": "PASS"
+        },
+        {
+          "name": "actual roof panels preserve both original notches and a lower main body",
+          "status": "PASS"
+        },
+        {
+          "name": "actual glass triangles clear the processed terrain",
+          "status": "PASS"
+        },
+        {
+          "name": "actual DEM supports 6m per second entrance ascent and descent across the stair width",
+          "status": "PASS"
+        },
+        {
+          "name": "door destruction opens a real recessed lobby and reset closes it",
+          "status": "PASS"
+        },
+        {
+          "name": "tower step wall closes the upper height change without filling the lower lobby",
+          "status": "PASS"
+        },
+        {
+          "name": "curved white cheek has matching thin convex surfaces and no convex box in its recess",
+          "status": "PASS"
+        },
+        {
+          "name": "window collision stays within 8cm of actual exterior surfaces",
+          "status": "PASS"
+        },
+        {
+          "name": "loaded and unloaded surface rays match across component types",
+          "status": "PASS"
+        },
+        {
+          "name": "partial destruction survives 279 281 and 900m views and four resets",
+          "status": "PASS"
+        },
+        {
+          "name": "whole destruction and restoration preserve all rendered vertices",
+          "status": "PASS"
+        },
+        {
+          "name": "one H reflection preserves logical shots and camera-readable number 31",
+          "status": "PASS"
+        },
+        {
+          "name": "elevation callback and reversed winding preserve placement",
+          "status": "PASS"
+        }
+      ],
+      "glass": {
+        "samples": 48132,
+        "minClearance": 0.15627085866269397
+      },
+      "surfaceRays": {
+        "count": 191,
+        "maxRenderCollisionDifference": 0.03698850892920991,
+        "exposedGlassTriangleSamples": 955,
+        "occludedSamples": 191,
+        "maxGlassRenderLoadedDifference": 0.06169412136073349,
+        "maxGlassRenderUnloadedDifference": 0.061613571914002296,
+        "scope": "창 중앙의 외부 광선과 실제 유리 삼각형의 세 내부점을 별도로 검사했다. 창틀 등 다른 표면이 먼저 보이는 표본은 노출 유리 비교에서 제외했다. 임의 광선 전체의 최대 오차를 뜻하지 않는다."
+      },
+      "loadedUnloaded": {
+        "rays": 488,
+        "maxDistanceDifference": 0.00012339353561685584
+      },
+      "curve": {
+        "parts": 24,
+        "rays": 19,
+        "maxDifference": 0.004104794265989753,
+        "excludedStarts": 5,
+        "exclusionReason": "아주 얇은 모서리 조각의 표본은 이웃 직각 벽 프록시 안에서 시작하므로 외부 광선 비교에서 제외했다. 곡면 앞 빈 공간은 별도 로드/미로드 광선으로 검사했다."
+      },
+      "walk": {
+        "speed": 6,
+        "offsets": [
+          -2.15,
+          0,
+          2.15
+        ],
+        "scope": "현재 DEM에서 계단 중앙과 양끝 안쪽을 왕복했다. 문을 부순 뒤 짧은 로비에 들어가고 reset 후 다시 막히는 것을 확인했다."
+      },
+      "farDamage": {
+        "distances": [
+          279,
+          281,
+          900
+        ],
+        "resetCycles": 4
+      },
+      "H": "실제 Three.js PerspectiveCamera 투영에서 3이 1보다 왼쪽에 놓인다. 획의 노출과 반사 전후 표면 광선, 논리 물리 충돌을 대조했다."
+    },
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "status": "passed"
+    },
+    "independent": {
+      "status": "passed",
+      "artifact": "artifacts/engineering35-31-independent-review/31/results.json",
+      "supplementalArtifact": "artifacts/engineering35-31-independent-review/supplemental-results.json",
+      "combinedArtifact": "artifacts/engineering35-31-independent-review/results.json",
+      "combinedSha256": "fba7dadacdf68d9b111b5387ea8570c2612ce5209f1129bd792b529cbe4da87d",
+      "combinedPassed": 19,
+      "combinedFailed": 0,
+      "basicPassed": 7,
+      "fullCampusPassed": 2,
+      "passed": 9,
+      "failed": 0,
+      "sourceStillMatches": true,
+      "glass": {
+        "samples": 22920,
+        "minClearance": 0.15627085866269397
+      },
+      "surfaceRays": {
+        "count": 34,
+        "maxRenderCollisionDifference": 0.061597979068697684,
+        "maxLoadedUnloadedDifference": 0.00006503829480519752,
+        "skipped": {
+          "small": 65,
+          "endFace": 110,
+          "occluded": 0,
+          "insideRenderedSolid": 0
+        },
+        "scope": "실제 렌더 기하와 노출 조건으로 표본을 골랐으며 물리 충돌 누락은 제외하지 않았다."
+      },
+      "arrival": {
+        "location": {
+          "id": "way/389628348",
+          "name": "31 공과대학",
+          "x": 149.19478196767818,
+          "z": -1006.4073499175544
+        },
+        "speed": 6,
+        "scope": "실제 fullCampus 빠른 이동점에서 안전하게 접지하고 북쪽 계단 접근점까지 약 21.5m를 왕복했다. 그 뒤 문과 로비 동선은 기본 독립 검사에서 확인했다. 현장 동선 실측은 아니다."
+      },
+      "scope": "현재 DEM과 실제 Rapier를 사용해 유리, 곡면 앞 빈 공간, 현관의 중앙 및 양끝 왕복, 문 파괴와 진입, 원거리 파괴, 3회 복원, H 뒤 숫자 획을 검사했다. 실제 브라우저나 휴대전화 검사가 아니다.",
+      "nameSprite": "이름 Sprite의 설치된 Three.js 셰이더와 행렬을 두 화면 비율에서 수치로 검사했다. Canvas 글자 그리기는 대역이며 글꼴 픽셀과 GPU는 미확인이다.",
+      "preservedFailures": [
+        "artifacts/engineering35-31-independent-review/31/draft-01-results.json",
+        "artifacts/engineering35-31-independent-review/31/surface-diagnosis.json"
+      ]
+    },
+    "fullSuite": {
+      "status": "passed",
+      "command": "node scripts/verify-all.mjs",
+      "npmTestTarget": "node scripts/verify-all.mjs",
+      "scripts": 45,
+      "passed": 458,
+      "failed": 0,
+      "exitCode": 0,
+      "artifact": "artifacts/release-19-verification.log",
+      "sha256": "0760fd32bf4fe800473d81a6bb113d4593f4204fba00b3e5a142fd2141d59478",
+      "completedAt": "2026-11-05T04:48:28.721Z",
+      "completion": "artifacts/engineering35-31-review/suite-completion.json",
+      "scope": "현재 소스의 Node, Three.js 기하, Rapier와 TypeScript 회귀 검사다. 실제 브라우저나 휴대전화 검사가 아니다."
+    },
+    "cpuPreview": {
+      "status": "directly-reviewed",
+      "file": "artifacts/engineering35-31-review/final-candidate/engineering31.png",
+      "method": "artifacts/engineering35-31-review/final-candidate/preview-method.json",
+      "provenance": "artifacts/engineering35-31-review/final-candidate/provenance.json",
+      "sourceStillMatches": true,
+      "inputHashes": 46,
+      "modelSha256": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12",
+      "triangles": 33480,
+      "scope": "현재 모델과 실제 지형을 CPU 정투영으로 그린 도식을 공식 사진 및 항공과 직접 대조했다. 실제 WebGL, GPU와 휴대전화 검사가 아니다."
+    },
+    "mobile": {
+      "status": "not-validated",
+      "limit": "실제 브라우저, GPU, 휴대전화 FPS와 터치 조작은 확인하지 않았다."
+    },
+    "campusIntegration": {
+      "status": "passed-reported-by-root",
+      "command": "node scripts/verify-campus.mjs",
+      "passed": 13,
+      "targets": 28659,
+      "locations": 206,
+      "newLabels": 17,
+      "scope": "최종 공용 회귀 13개가 전체 검사에 포함됐다. 도착점, 전용 모델 이름표, 원거리 표시와 일반 건물 배치를 확인했다."
+    },
+    "cpuPerformance": {
+      "artifact": "artifacts/mobile-cpu-review/release-19-with-engineering35-31.json",
+      "provenance": "artifacts/mobile-cpu-review/release-19-with-engineering35-31-provenance.json",
+      "comparison": "artifacts/mobile-cpu-review/compare-18-19.json",
+      "scope": "Windows 데스크톱 Node에서 실제 지형과 Rapier를 측정한 결과다. WebGL, GPU, DOM, 차량, 포탄 효과와 실제 휴대전화 FPS는 포함하지 않는다."
+    }
+  },
+  "limitations": [
+    "OSM의 전체 5층을 유지했지만 사진만으로 공식 전체 층수를 재확인하지 못했다. 본체 14m, 탑 17.5m와 날개별 높이 구분은 추정이다.",
+    "공식 사진의 낮은 연결부와 반원 지붕은 대부분 원본31 밖이라 미구현이다. 이 특징까지 포함한 전체 복원 완료로 표현하지 않는다.",
+    "현재 재건축 현장의 철거 범위를 직접 보지 못했다. 32 공사와 31의 사진 시기 외형을 분리했으며 향후 단계에서 31도 달라질 수 있다.",
+    "근경에 보이지 않는 면의 창 반복과 옥상 기계 치수는 단순 근사다. 현장 실측 입면 복원이 아니다.",
+    "북쪽 현관과 계단은 원본 도로 및 현재 DEM에 맞춘 게임 접근 경로다. 실제 출입구 위치나 현장 계단 단수를 확정한 것이 아니다.",
+    "실내는 문 뒤 짧은 로비만 구현했다. 층별 방과 실내 계단 전체는 재현하지 않았다."
+  ],
+  "sourceHashes": {
+    "src/engineering31Landmark.ts": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12",
+    "scripts/verify-engineering31.mjs": "1299108851ed85b99b00565b7b20416caceed6ac858d40ec567ed5ae3e29a1e6",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+    "src/terrain.ts": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "artifacts/engineering31-test/results.json": "73e25dbb20fc99d9dfb47102bc738cbf384bb2999f44db3e3273dedd7c14e8e8",
+    "artifacts/engineering31-review/review.json": "19aeb39382c9a97a4f56c4f17ac6d2df08ccf7f5f6c3019380edecf986932c67",
+    "artifacts/geometry-previews/engineering31.png": "05cf65981404517c109b974591272be3045d8e4ec1fab2b77d14305fc9a2f6bd",
+    "artifacts/engineering35-31-review/final-candidate/engineering31.png": "05cf65981404517c109b974591272be3045d8e4ec1fab2b77d14305fc9a2f6bd",
+    "artifacts/engineering35-31-review/final-candidate/preview-method.json": "4a29607a16f4ab2f9bfed1e6f9cf0983f1b837cc3ab9567f3616eac79f366abe",
+    "artifacts/engineering35-31-review/final-candidate/provenance.json": "fbc534d4a2c548ca86346821d24d4fb16ddd503769b792fd6f6e96e670286aa2",
+    "artifacts/engineering31-review/proxy-balance-geometry-comparison.json": "4e0175d5294ba2cfa25e9517bdcfcdaf32103d955d9a11dba9f08fe3f75fd4e4",
+    "artifacts/engineering35-31-independent-review/results.json": "fba7dadacdf68d9b111b5387ea8570c2612ce5209f1129bd792b529cbe4da87d",
+    "artifacts/engineering35-31-independent-review/31/results.json": "47f58b0938fc0f5436c13edc644b4da0f0429708faa748e5c3f8ccf64354c4c9",
+    "artifacts/engineering35-31-independent-review/supplemental-results.json": "8b8bc88071e5c887a7b67373086a35143b7c7eb2c0ae7a1149873fdb405b0753",
+    "artifacts/engineering35-31-review/suite-completion.json": "9106784283c1cde7712361baf891a9e93af853108e022eacd6f7fad9c9c41b4f",
+    "artifacts/release-19-verification.log": "0760fd32bf4fe800473d81a6bb113d4593f4204fba00b3e5a142fd2141d59478",
+    "artifacts/mobile-cpu-review/release-19-with-engineering35-31.json": "fc2834ec3dffad0609e1f3e4808e06639ca5e40d36ff7efd827402e420be7185",
+    "artifacts/mobile-cpu-review/release-19-with-engineering35-31-provenance.json": "3f015a1da9fc44188664fe26af2661b22926b958953e6f941dfd47cbeefa87f1",
+    "artifacts/mobile-cpu-review/compare-18-19.json": "6bf0b0145c5e535fe5b0cb0b2edd004efd243f6565c544860f7d2dd0cc7d1a31"
+  },
+  "revisionHistory": [
+    {
+      "file": "artifacts/engineering31-review/pre-balance-model-notes.json",
+      "sha256": "c9cfa77d3cf61792d5a7516ae35fb75dbc79d8ebb75ec37628fd35cb827581df",
+      "previousModelSha256": "86208bdecffb9f8d3131677fb2bc6f2a7b9afee57e5188e3b6729b581930bd28",
+      "reason": "독립 검사가 창틀 중앙을 피한 실제 유리 표본에서 약 0.1115m의 전면 proxy 여유를 발견했다. 창 구획의 전면 충돌면을 유리와 돌출 흰 띠 사이로 옮기고 실제 유리 삼각형 검사로 누락을 보완했다."
+    }
+  ],
+  "currentRevision80": {
+    "source": "engineering30-photo-notes.json",
+    "change": "2026년 8월 북쪽 현관 사진과 2024년 2월 남쪽 중정 사진을 대조해 연결부 상부 창을 세 줄로 바꾸고 현관, 짧은 경사로, 큰 계단과 포장 마당을 추가했다. 아래층 바닥을 평탄하게 맞췄으며 31동 동쪽 탑의 높이도 연결부와 함께 조정했다.",
+    "roof": "항공사진과 2025년 식당 전경의 밝은 격자 덮개를 추가했다. 옛 서쪽 녹색 반원 지붕은 별개이며 재현하지 않았다.",
+    "limitations": "바닥 높이, 하부 관통 동선과 탑 높이는 게임용 근사다. 앞선 기록의 평지붕 및 두 줄 창 해석은 이번 사진 대조로 수정했다."
+  }
+}

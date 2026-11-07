@@ -1,0 +1,320 @@
+{
+  "status": "superseded-stair-alignment",
+  "buildingId": "way/329398175",
+  "buildingNumber": "62-1",
+  "name": "관정관 남동측 배면과 외부 계단",
+  "coordinateSystem": "D=(동쪽,위쪽,북쪽). 기존 공통 H 반사를 한 번 적용한다.",
+  "sources": [
+    {
+      "file": "../references/roadview-audit/2026-07-central/library-pascucci-front-ui.jpg",
+      "url": "https://kko.to/KD6aVfZMaS",
+      "panoid": "1212805284",
+      "pan": 315,
+      "tilt": -15,
+      "zoom": 1,
+      "urlX": 489552,
+      "urlY": 1099830,
+      "observation": "금색 상부 아래의 짙은 유리띠, 열린 테라스와 유리난간, 왼쪽 외부 계단, 앞쪽 주차면과 낮은 석축을 확인했다.",
+      "imageSha256": "7672a87354932071975dda01c3e7e9f734e361fbbf5bb3f491c8be5220a7f2b1",
+      "captureMonth": "2026-07",
+      "directlyViewed": true
+    },
+    {
+      "file": "../references/roadview-audit/2026-07-central/library-southeast-stairs-ui.jpg",
+      "url": "https://kko.to/31Rtajq3u8",
+      "panoid": "1212805282",
+      "pan": 315,
+      "tilt": -15,
+      "zoom": 1,
+      "urlX": 489535,
+      "urlY": 1099810,
+      "observation": "직선 계단과 유리난간 테라스, 왼쪽 카페 유리문 및 그 오른쪽 개방부를 확인했다. 계단은 약 18~20단으로 보이지만 정확한 단수와 치수는 측정하지 않았다.",
+      "imageSha256": "2501ce18dfe112e48d7a62796145bd8bf3beb3c1198e5dffeb3a697b6e6236c1",
+      "captureMonth": "2026-07",
+      "directlyViewed": true
+    },
+    {
+      "file": "../references/roadview-audit/2026-07-central/library-stair-lower-landing-ui.jpg",
+      "url": "https://kko.to/qAyahwe_1x",
+      "panoid": "1212805280",
+      "pan": 315,
+      "tilt": -15,
+      "zoom": 1,
+      "urlX": 489517,
+      "urlY": 1099795,
+      "observation": "주차면 쪽 낮은 3~4단, 넓은 포장참, 직선 계단, 유리난간 테라스가 이어진다. 상단에는 백색 접이식 격자로 보이는 구조가 있어 상시 개방으로 처리하지 않았다.",
+      "imageSha256": "5adfe94a985dda99cdde32e7bf957273da575664f83113b5f74594d02832949b",
+      "captureMonth": "2026-07",
+      "directlyViewed": true
+    }
+  ],
+  "confirmed": [
+    "상층 아래 짙은 유리띠와 그 아래의 큰 개방부를 구분했다.",
+    "유리난간 테라스와 직선 계단, 하부의 낮은 계단 및 포장참을 관찰했다.",
+    "상단 백색 격자는 닫힌 파괴 가능 부재로 구현했다. 영구 개방 상태는 확인하지 않았다."
+  ],
+  "mapAlignment": {
+    "sourceSteps": "way/167597860/23",
+    "points": [
+      [
+        343.17,
+        -889.08
+      ],
+      [
+        334.53,
+        -879.72
+      ],
+      [
+        324.3,
+        -872.75
+      ]
+    ],
+    "sourceRoad": "way/457001557/376",
+    "roadWidth": 5.5,
+    "widthEstimated": true,
+    "basis": "기존 지도 계단과 남동측 관측 방향을 맞춘 게임 배치다. 촬영 지점에서 계단 모서리를 측량한 결과는 아니다."
+  },
+  "layout": {
+    "localOrigin": {
+      "x": 349.7984527899485,
+      "y": 38.17753219604492,
+      "z": -821.4313323764842
+    },
+    "axis": {
+      "x": 0.726226362557497,
+      "z": 0.6874556497160431
+    },
+    "site": {
+      "sourceDate": "2026-07",
+      "dimensionsEstimated": true,
+      "surveyed": false,
+      "photographedFace": "southeast",
+      "localCoordinates": "x follows the existing library axis; negative z faces southeast",
+      "terrace": {
+        "minX": -60.5,
+        "maxX": 60.5,
+        "frontZ": -21,
+        "backZ": -2,
+        "floor": 24.984681483349963
+      },
+      "openBay": {
+        "minX": -54.2,
+        "maxX": 48,
+        "frontZ": -15,
+        "backZ": -2,
+        "floor": 24.984681483349963,
+        "ceiling": 28.3
+      },
+      "stairs": {
+        "x": -51.2,
+        "width": 6,
+        "lowerStartZ": -40.5,
+        "lowerEndZ": -38.9,
+        "lowerSteps": 4,
+        "firstFloor": 21.244681483349964,
+        "landingFloor": 21.924681483349964,
+        "mainStartZ": -30.6,
+        "mainEndZ": -22.5,
+        "mainSteps": 18,
+        "top": 24.984681483349963
+      },
+      "approach": {
+        "x": -51.2,
+        "startZ": -41.6,
+        "endZ": -40.5,
+        "width": 6,
+        "sourceRoad": "way/457001557/376",
+        "sourceSteps": "way/167597860/23"
+      },
+      "gate": {
+        "x": -51.2,
+        "z": -21.7,
+        "width": 6,
+        "height": 1.18,
+        "floor": 24.984681483349963,
+        "initiallyClosed": true,
+        "permanentAccessVerified": false
+      },
+      "cafeDoor": {
+        "x": -57.25,
+        "z": -14.85,
+        "floor": 24.984681483349963,
+        "width": 3.3,
+        "height": 2.65
+      },
+      "mainLibraryConnectionVerified": false,
+      "sourceUrls": [
+        "https://kko.to/KD6aVfZMaS",
+        "https://kko.to/31Rtajq3u8",
+        "https://kko.to/qAyahwe_1x"
+      ],
+      "retainingPlinth": {
+        "frontZ": -21,
+        "thickness": 0.44,
+        "maximumExposure": 9.381380921682332,
+        "gameTerrainMismatch": true
+      }
+    }
+  },
+  "heightInterpretation": {
+    "baseY": 38.17753219604492,
+    "terraceWorldY": 63.16221367939488,
+    "upperUndersideY": 68.42753219604492,
+    "openHeight": 3.315318516650038,
+    "lowSteps": 4,
+    "mainSteps": 18,
+    "lowStepRise": 0.17,
+    "mainStepRise": 0.17,
+    "stairWidth": 6,
+    "allSiteDimensionsEstimated": true,
+    "surveyed": false,
+    "note": "기존 DEM은 도로에서 배면으로 낮아져 실제 사진의 계단 방향과 맞지 않는다. 원시 지형이나 상부 몸체 높이를 바꾸지 않고 현재 도로에 접속하는 상대 보행층을 선택했다."
+  },
+  "retained": {
+    "mainLibraryUnchanged": true,
+    "upperDimensions": [
+      165,
+      30,
+      42.75
+    ],
+    "sharedDatumUnchanged": true,
+    "rawFootprintUnchanged": true,
+    "rawDemUnchanged": true,
+    "terrainRuntimeUnchanged": true,
+    "transitUnchanged": true
+  },
+  "implementation": {
+    "module": "src/libraryLandmark.ts",
+    "renderMeshes": 3,
+    "parts": 837,
+    "triangles": 24156,
+    "plinth": "남동쪽 앞면에 두께 0.44m 기단만 추가했다. 테라스 아래 전체를 채우지 않았다.",
+    "maximumPlinthExposure": 9.381380921682332,
+    "transparentBalustrade": true,
+    "gateInitiallyClosed": true,
+    "photoTexturesUsed": false
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "retained upper envelope and bounded merged southeast geometry",
+        "status": "passed"
+      },
+      {
+        "name": "actual terrace void remains open through its depth",
+        "status": "passed"
+      },
+      {
+        "name": "site glass is above the supplied terrain and has thin exposed collision",
+        "status": "passed"
+      },
+      {
+        "name": "closed lattice blocks walking and destruction opens three six-metre-per-second return paths",
+        "status": "passed"
+      },
+      {
+        "name": "mapped road connects to the ground approach without a hidden initial teleport",
+        "status": "passed"
+      },
+      {
+        "name": "southeast structures stay outside the mapped vehicle road width",
+        "status": "passed"
+      },
+      {
+        "name": "cafe doorway opens only after its own glass is destroyed",
+        "status": "passed"
+      },
+      {
+        "name": "partial terrace damage stays absent at distance and reset restores all arrays",
+        "status": "passed"
+      },
+      {
+        "name": "single H reflection preserves southeast glass and logical shots",
+        "status": "passed"
+      }
+    ],
+    "ownResult": "artifacts/library-southeast-test/results.json",
+    "existingLibraryPassed": 6,
+    "existingMainLibraryPassed": 8,
+    "typecheckPassed": true,
+    "roadClearance": {
+      "name": "southeast structures stay outside the mapped vehicle road width",
+      "status": "passed",
+      "vertices": 21252,
+      "roadId": "way/457001557/376",
+      "widthEstimated": true,
+      "minimumClearance": 0.21855070605804627
+    },
+    "glass": {
+      "name": "site glass is above the supplied terrain and has thin exposed collision",
+      "status": "passed",
+      "samples": 2772,
+      "minimum": 7.504557397204529,
+      "rays": 77,
+      "maxDifference": 0.0000839005959655803,
+      "maxUnloadedDifference": 0.0000839005959655803
+    },
+    "walk": "실제 도로 정점 출발 왕복과 계단 중앙 및 양끝 안쪽 2.25m의 왕복을 6m/s로 검사했다. 닫힌 격자문에서 멈추고 해당 부재 파괴 후 테라스로 진입했다.",
+    "independentStatus": "scoped-full-campus-walk-passed",
+    "fullReleaseStatus": "build-and-scoped-regressions-passed",
+    "scope": "신규 9개 검사는 관정관 단독 모델과 실제 캠퍼스 지형을 사용한다. 전체 본관 접속, 실제 교통 차량의 통과 여유, 카페 실내 보행을 검증한 결과가 아니다. 카페 문은 1.2m 광선으로 파괴 전후만 확인했다.",
+    "independentReview": {
+      "reviewer": "controls",
+      "kind": "read-only-code-and-photo-review",
+      "sourceSha256": "665031181f1314a982fec200b1c74dc9d039ff0e854b3519a4a22ddb4db2a5a6",
+      "finding": "새 계단, 난간과 격자문의 개별 볼록 충돌, H 반사와 파괴 및 복원 연결에서 명백한 결함을 찾지 못했다. 추가 실행 검사가 통과했다는 의미는 아니다."
+    },
+    "fullCampus": {
+      "status": "scoped-full-campus-walk-passed",
+      "record": "artifacts/library-full-campus-review/results.json",
+      "passed": 4,
+      "failed": 0,
+      "sourceSha256": "665031181f1314a982fec200b1c74dc9d039ff0e854b3519a4a22ddb4db2a5a6",
+      "scope": "전체 캠퍼스와 보충 도로를 포함한 실제 지형에서 도로, 계단, 테라스 앞쪽과 중앙을 연속 왕복했다. 본관 문까지의 전체 연결과 카페 내부 보행을 검증한 것은 아니다."
+    },
+    "release": {
+      "status": "build-and-scoped-regressions-passed",
+      "checks": {
+        "campus": 13,
+        "transit": 8,
+        "shuttleStarts": 15,
+        "terrain": 8
+      },
+      "build": "Sites build-site.mjs, TypeScript와 Vite 빌드 통과",
+      "warnings": [
+        "기존 번들 크기 경고와 Rapier 초기화 방식 경고가 남아 있다."
+      ]
+    }
+  },
+  "visualReview": {
+    "firstBrowserImage": "artifacts/library-browser/candidate-stairs.jpg",
+    "directlyViewed": true,
+    "observedIssue": "초안의 테라스 아래에서 본관 여러 층이 보이고 접속판이 차도 쪽으로 뻗었다.",
+    "response": "남동측 앞면 기단을 추가하고 접속판 시작을 로컬 z=-41.6으로 줄였다. 이후 실제 새 구조 정점은 지도상 차도 폭 경계에서 최소 0.21855m 떨어진다.",
+    "finalBrowserStatus": "reviewed",
+    "notMobileGpuValidation": true,
+    "finalDesktopImage": "artifacts/library-browser/stairs-with-plinth.jpg",
+    "mobileViewportImage": "artifacts/library-browser/stairs-390x844.jpg",
+    "scope": "현재 전체 캠퍼스 모듈을 렌더링하는 로컬 검토 화면에서 계단, 기단과 난간을 확인했다. 390×844 크기의 렌더링도 확인했으며 실제 휴대전화 성능이나 전체 게임의 터치 보행 검사로 확대하지 않는다."
+  },
+  "unresolved": [
+    "본관 연결통로의 현재 끝점과 보행층은 미확인이다. 2011년 4월 준공 전 영상만으로 현 통로 위치를 수정하지 않았다.",
+    "최대 9.381m 기단 노출은 실제 사진의 낮은 석축과 차이가 있다. 현재 DEM과 보행층 근사의 한계로 남는다.",
+    "배면 전체 실내와 카페 내부, 반대편 출입구 및 지지부 재료 전체를 이번 작업에서 고증하지 않았다."
+  ],
+  "sourceHashes": {
+    "src/libraryLandmark.ts": "665031181f1314a982fec200b1c74dc9d039ff0e854b3519a4a22ddb4db2a5a6",
+    "scripts/verify-library-southeast-site.mjs": "109f8d11e0a693437fe4bc01ffcac299d5a4e683a9dd80b82ff94df1c24e2486",
+    "scripts/verify-library.mjs": "09cb4b5015cde9778bc7ddd0a90334c36545658f0adc4e85595bc9c5ba11e57e",
+    "src/mainLibraryLandmark.ts": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "artifacts/library-southeast-test/results.json": "580ae2b11a57036a2760fae70aa3c6c61063f11397b10d899a17d752d3cb89cf",
+    "artifacts/library-test/results.json": "fa32058f83cd49a32616bd73ee8aec08ad153124a914c4eab72711bddc7c6125",
+    "artifacts/main-library-test/results.json": "7b359ba6bba7100904884183069cbb720f14dc56b56ae53849c443f9fd03c6bc"
+  },
+  "supersededBy": "sources/library-stair-alignment-photo-notes.json",
+  "supersededReason": "이 기록의 상승 계단과 지도 계단 대응은 후속 촬영 좌표 대조에서 잘못된 것으로 확인됐다. 기존 layout과 validation은 당시 모델의 기록이며 현재 배치를 설명하지 않는다."
+}

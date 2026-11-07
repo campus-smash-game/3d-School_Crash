@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/167984624",
+  "buildingNumber": "1",
+  "scope": "1동의 정면 외벽, 열린 발코니, 창과 창살, 석재 하부 및 남쪽 진입 포장을 보완한다. 기존 통과길과 250동 연결 출입구는 보존한다.",
+  "references": [
+    {
+      "url": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+      "title": "인문대 소식 제62호, 2026년 1호",
+      "published": "2026-04-20",
+      "captureDate": null,
+      "pdfPage": 13,
+      "printedPage": 25,
+      "article": "시간과 기억이 머무는 서울대 인문대",
+      "photoCredit": "이동훈",
+      "localPdf": "artifacts/humanities-construction-review/43-humanities-newsletter-63.pdf",
+      "render": "artifacts/humanities-construction-review/43-newsletter-page-13.png",
+      "directlyViewedBy": "root",
+      "observed": [
+        "갈색 벽돌과 흰 기둥, 층별 띠",
+        "위층의 작은 창 묶음과 아래층의 큰 창",
+        "통과구 위층의 세로 창살",
+        "입구 왼쪽 위의 열린 발코니와 흰 난간",
+        "녹색 창과 석재 하부",
+        "입구 주변의 낮은 관목"
+      ],
+      "limits": "발행일과 촬영일을 구분한다. 정면 전체의 창 개수, 층고, 발코니 깊이와 실내 연결은 사진만으로 확인하지 못했다. 정면의 일부 특징을 같은 면의 나머지 구간으로 연장한 부분은 근사다.",
+      "sha256": "8280195a525fee0481c6dfe33269239761112c89187bbb131cec158807b7071f",
+      "renderSha256": "c200b588b0e27e73401f31fe0aaefe62a1d7d318f87b303521f37aea016913f3"
+    },
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000001.jpg",
+      "localPhoto": "../references/buildings/photos/001-1.jpg",
+      "kind": "official-map-photo",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "1동 동쪽 끝의 벽돌과 흰 골조",
+        "흰색 건물 번호 1",
+        "옥상 테두리와 난간",
+        "1동, 2동 및 250동 연결부의 상대 위치"
+      ],
+      "limits": "사진 오른쪽의 2동 외관을 1동 전체에 복제하지 않았다. 끝벽 번호의 위치와 크기는 근사다. 기존 250동 모델은 별도 근거와 검사를 따른다.",
+      "sha256": "a309686c941f30c0232e5ac3ee1bfcf2b38cdbcb4596ef35096acef3f87e7a2e"
+    }
+  ],
+  "roadviewReview": {
+    "priorRecord": "sources/humanities-passage-roadview-review.json",
+    "captures": [
+      "artifacts/humanities-review/output/playwright/35-1-2-coverage-ui.png",
+      "artifacts/humanities-review/output/playwright/35-naver-1-near-lines-ui.png"
+    ],
+    "directlyViewedBy": "root",
+    "observed": "이전에 확인한 카카오맵과 네이버지도의 촬영선은 1동 주변 내부 보행로를 지나지 않았다. 해당 캡처를 다시 대조하고 공식 사진으로 보완했다.",
+    "newLiveRoadviewVisit": false,
+    "limits": "모든 시기와 지도 서비스에 사진이 없다는 뜻은 아니다."
+  },
+  "implementation": {
+    "module": "src/humanities1Landmark.ts",
+    "rawMapAndElevationModified": false,
+    "levels": 4,
+    "levelsEstimated": true,
+    "heightMeters": 14,
+    "heightEstimated": true,
+    "photoFaceMappingEstimated": true,
+    "dimensionsEstimated": true,
+    "approachRoad": "way/167982833/52",
+    "approach": "원본 지도의 남쪽 보행로를 따라 통과길까지 포장을 연결했다. 기존 2.5m 보행 표시의 가장자리가 남지 않도록 폭을 2.6m로 잡았다. 폭과 포장 규격 및 색은 근사다.",
+    "preservation": "기존 통과길의 입구, 창살, 게시판과 바닥, 250동 계단 및 연결 개구부는 유지한다.",
+    "decoration": "벽돌 줄눈, 창틀, 창살과 식재는 병합 메시로 그린다. 장식은 소속 벽이나 화단이 부서질 때 함께 사라진다.",
+    "photosUsedAsTextures": false,
+    "wholeInteriorImplemented": false,
+    "balconyInteriorAccessImplemented": false,
+    "unobservedFaces": [
+      "북쪽 긴 면",
+      "서쪽 끝의 두 면"
+    ],
+    "geometry": {
+      "meshes": 2,
+      "textures": 0,
+      "triangles": 36884,
+      "colliders": 334
+    }
+  },
+  "remaining": [
+    "후면과 서쪽 끝의 근접 사진",
+    "층별 지표면 관계와 실측 치수",
+    "발코니와 건물 내부의 연결",
+    "1동 전체 실내",
+    "실제 휴대전화 성능 측정"
+  ],
+  "validation": {
+    "file": "artifacts/humanities1-exterior-test/results.json",
+    "groups": [
+      {
+        "name": "building 1 replacement preserves terrain, other buildings and completed connections",
+        "status": "PASS"
+      },
+      {
+        "name": "southern road approach and the covered passage allow return trips",
+        "status": "PASS"
+      },
+      {
+        "name": "approach, balcony and roof surfaces match their colliders",
+        "status": "PASS"
+      },
+      {
+        "name": "photo facade details retain destruction at distance and restore together",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherParts": 41082,
+    "floorSamples": 12,
+    "walks": 4,
+    "maximumWalkingPenetration": 0,
+    "rawInputsExact": true,
+    "terrainExact": true,
+    "realPhoneFrameRateMeasured": false
+  }
+}

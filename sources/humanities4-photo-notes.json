@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/167666702",
+  "buildingNumber": "4",
+  "scope": "신양인문학술정보관 전면, 출입구와 앞마당을 보완하고 남쪽과 서쪽 지도 보행로에 연결했다.",
+  "references": [
+    {
+      "kind": "official-map-photo",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000004.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=4",
+      "localPhoto": "../references/buildings/photos/004-4.jpg",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "회색과 청록색의 작은 유리 패널과 가는 금속 격자",
+        "돌출된 흰 지붕 테두리, 상부의 후퇴한 창과 옥상 난간",
+        "안쪽으로 들어간 1층 유리 면과 둥근 기둥",
+        "흰 곡선 프레임과 아래쪽 벤치",
+        "전면 오른쪽 유리 출입문과 우리은행 세로 간판",
+        "자전거 거치대, 낮은 앞 계단과 회색 보도블록",
+        "돌이 놓인 자갈 화단, 낮은 화단 가장자리, 나무와 벤치"
+      ],
+      "limits": [
+        "사진 촬영일, 현재 영업 상태와 실측 치수는 확인하지 못했다.",
+        "흰 곡선 프레임 위에 불투명 지붕을 확인하지 못해 추가하지 않았다.",
+        "앞마당 나무의 수종과 정확한 가지 형태는 확인하지 못했다."
+      ],
+      "sha256": "ff8ab698fc08e759abcd93159e9d8a03949348430f431d94b95df354bc404c90"
+    },
+    {
+      "kind": "official-historical-article",
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=120297&md=v",
+      "title": "서울대 신양, 그것이 알고 싶다",
+      "published": "2014-05-09",
+      "review": "인문대 4동의 1층 은행과 카페, 3동 연결을 설명한다. 연결 층과 문 위치를 확인할 수 없어 이 기사만으로 실내 연결을 만들지 않았다. 공대 신양의 층별 설명을 인문대 4동에 적용하지 않았다."
+    },
+    {
+      "kind": "official-event-notice",
+      "url": "https://humanities.snu.ac.kr/community/department?bbsidx=810&md=v",
+      "title": "정종수인문학도서실 개실식",
+      "published": "2018-02-27",
+      "review": "신양인문학술정보관 4층 404-1호에서 열린 행사 안내를 확인했다. 건물 전체 높이와 각 층 높이는 이 자료로 확정하지 않았다."
+    }
+  ],
+  "mapReview": {
+    "provider": "Kakao Map",
+    "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%EC%9D%B8%EB%AC%B8%EA%B4%802",
+    "reviewImage": "artifacts/humanities23-review/47-kakao-coverage-detail.png",
+    "review": "앞선 2동과 3동 검토에서 확보한 위성 지도 화면을 다시 대조했다. 화면에 4동과 앞마당, 3동의 인접 배치가 보인다. 이 내부 구역의 로드뷰 장면을 직접 확인한 기록으로 집계하지 않는다.",
+    "satelliteCaptureDate": null
+  },
+  "mappedTopology": {
+    "source": "sources/campus.osm",
+    "footprintWay": "167666702",
+    "approachRoads": [
+      "way/167982831/50",
+      "way/167983083/57"
+    ],
+    "limits": "원본의 level=5는 건물의 층수나 높이로 해석하지 않았다. 보행로 폭과 출입구 연결 치수는 근사했다."
+  },
+  "implementation": {
+    "source": "src/humanities4Landmark.ts",
+    "dimensionsEstimated": true,
+    "heightEstimated": true,
+    "stairCountEstimated": true,
+    "courtBoundaryEstimated": true,
+    "rawTerrainChanged": false,
+    "rawRoadsChanged": false,
+    "photoTexturesCopied": false,
+    "rearAppearanceUnobserved": true,
+    "wholeBuildingReconstructed": false,
+    "wholeInteriorImplemented": false,
+    "connectionTo3Implemented": false,
+    "doorsOpenedForGameplay": true,
+    "limits": [
+      "전면 사진을 보지 못한 후면까지 동일하게 적용하지 않았다. 후면은 지도 외곽에 맞춘 단순한 벽과 창이다.",
+      "출입문을 열린 상태로 표현했으며 안쪽은 짧은 출입 공간까지만 만들었다.",
+      "계단의 단수, 유리 패널별 배색, 시설물 간격과 포장 경계는 사진을 참고한 근사다.",
+      "3동 연결의 층별 평면과 문 위치는 후속 검토 대상이다."
+    ],
+    "geometry": {
+      "meshes": 2,
+      "signMeshes": 2,
+      "textures": 2,
+      "triangles": 15166,
+      "colliders": 437
+    }
+  },
+  "validation": {
+    "file": "artifacts/humanities4-access-test/results.json",
+    "realPhoneFrameRateMeasured": false,
+    "groups": [
+      {
+        "name": "building 4 scope, bounded geometry and preservation of terrain, roads and other buildings",
+        "status": "PASS"
+      },
+      {
+        "name": "mapped southern and western approaches remain walkable at desktop and mobile speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "front steps and open entrance allow return trips without jumping",
+        "status": "PASS"
+      },
+      {
+        "name": "paving, steps and entrance floors match collision surfaces",
+        "status": "PASS"
+      },
+      {
+        "name": "facade and signs preserve distant damage, reset and world reflection",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherBuildingParts": 38293,
+    "roadPreservation": {
+      "campus-road-surface": {
+        "unchangedTriangles": 28669,
+        "declaredBounds": {
+          "minX": 394.66223647936204,
+          "maxX": 438.8866889422769,
+          "minZ": -659.7825124558018,
+          "maxZ": -608.5489022615932
+        },
+        "originalBoundaryTriangles": 0
+      },
+      "campus-pedestrian-surface": {
+        "unchangedTriangles": 21029,
+        "declaredBounds": {
+          "minX": 394.66223647936204,
+          "maxX": 438.8866889422769,
+          "minZ": -659.7825124558018,
+          "maxZ": -608.5489022615932
+        },
+        "originalBoundaryTriangles": 53
+      }
+    },
+    "floorSamples": 168,
+    "occludedFloorSamples": [
+      {
+        "component": "front-court-paving",
+        "coveredBy": "low-planter-edge",
+        "exposedFloor": false
+      }
+    ]
+  }
+}

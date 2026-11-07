@@ -1,0 +1,869 @@
+{
+  "status": "integrated-partial",
+  "landmark": "science-500",
+  "modelFile": "src/science500Landmark.ts",
+  "api": "createScience500Landmark(scene, building, profile, heightAt)",
+  "reviewedAt": "2026-11-05T02:35:05.601Z",
+  "scope": "500동 단지를 구성하는 네 몸체와 낮은 연결부를 다섯 원본 지도 외곽으로 나누어 구현했다. 공식 사진과 학교 설명, 지도 대응으로 확인한 내용과 게임용 치수 추정을 구분한다.",
+  "officialFacts": [
+    {
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=75745&md=v",
+      "local": "artifacts/science500-review/story-75745.html",
+      "fact": "학교 기사는 네 건물이 연결된 구조, 2007년 준공, 지상 6층과 지하 2층, 연면적 54,002㎡를 명시한다.",
+      "limit": "단지 전체의 분류다. 각각의 원본 외곽에 같은 연면적, 층고와 지상 높이를 적용하는 근거가 아니다."
+    },
+    {
+      "url": "https://science.snu.ac.kr/newsroom/view/2/11/790",
+      "local": "artifacts/science500-review/science-buildings-2022.html",
+      "published": "2022-07-09",
+      "fact": "자연과학대학 기사는 501동부터 504동까지 합쳐 500동이라고 부른다고 설명한다.",
+      "limit": "개별 번호와 원본 외곽의 일대일 대응은 확정하지 않았다. 원본의 502 표기도 공식 배치도와 교차 확인하지 못했다."
+    }
+  ],
+  "photoSources": [
+    {
+      "file": "../references/buildings/photos/199-500.jpg",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=199",
+      "sha256": "72c0fcf9d6e5ce9829d6ee45e54cbe1723b3cadcfb947bdcb2c25e5fbf023bcc",
+      "directlyViewed": true,
+      "observation": "공식 지도 대표 사진. 북쪽 몸체의 붉은 벽돌, 큰 유리면, 둥근 발코니와 높은 SCIENCE 끝벽을 직접 대조했다.",
+      "captureDate": "unknown"
+    },
+    {
+      "file": "artifacts/science500-review/sky4-face3.jpg",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/3.jpg",
+      "sha256": "2533888342ef412770e3a03f5380d2a745c0fdcd2531f77838050d1f0d65a67a",
+      "directlyViewed": true,
+      "observation": "핵심 항공 근거. 세 서쪽 날개, 긴 낮은 연결부, 북쪽 별도 몸체의 곡선 발코니와 높은 문자 벽이 한 화면에 보인다.",
+      "captureDate": "unknown"
+    },
+    {
+      "file": "artifacts/science500-review/sky12-face0.jpg",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+      "sha256": "f16c6d6ffabd7f04260bd65f4cf834fd606b4592371471a93c1ea7c0f71d5be4",
+      "directlyViewed": true,
+      "observation": "남쪽 관측점에서 북쪽 몸체와 도로를 대조했다. 긴 유리 연결부가 북쪽 몸체의 남단에 붙는 관계를 확인한다.",
+      "captureDate": "unknown"
+    },
+    {
+      "file": "artifacts/science500-review/sky12-face3.jpg",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+      "sha256": "a32ff78ab86e17d41fdf6aebac48297beed426007a2e702211e06b72f753b79f",
+      "directlyViewed": true,
+      "observation": "세 서쪽 날개의 병렬 배치와 지붕을 보조 대조했다. SCIENCE 끝벽은 이 면에 온전히 나오지 않는다.",
+      "captureDate": "unknown"
+    },
+    {
+      "file": "artifacts/science500-review/sky12-face5.jpg",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+      "sha256": "ce2e30f937c94fd345e7601c60ef9de3b657fdfd0b35646302453cd6a1b12c72",
+      "directlyViewed": true,
+      "observation": "하향 항공 면에서 도로 옆의 좁고 긴 연결부와 서쪽 날개가 붙는 관계를 보조 대조했다.",
+      "captureDate": "unknown"
+    },
+    {
+      "file": "artifacts/science500-review/science-2022.png",
+      "sourceUrl": "https://science.snu.ac.kr/webdata/newsroom/images/20220710/382zd30z82bz0b9zab3z182z367za21z22dze89zd4.png",
+      "sha256": "a5dde1e676bd097b0cf3f4c85e16077f832dcd168ef38e465a0c2f016f129c3b",
+      "directlyViewed": true,
+      "observation": "낮은 유리 연결부의 원형 기둥, 차양, 반복되는 세로 부재를 대조했다. 앞의 낮은 독립 SCIENCE 표지는 높은 문자 벽과 다르다.",
+      "captureDate": "unknown"
+    },
+    {
+      "file": "artifacts/science500-review/exterior-2009.jpg",
+      "sourceUrl": "https://www.snu.ac.kr/webdata/old_upload/kor/with_notice/20091008_3.jpg",
+      "sha256": "13f4f9b3f34594bab99aa6778464657f84237dd5cb43b1d0d9387b722e470f82",
+      "directlyViewed": true,
+      "observation": "작은 전경에서 연결 단지의 배치를 보조 대조했다. 230×137 해상도이므로 개별 변과 번호의 판독 근거로 쓰지 않았다.",
+      "captureDate": "unknown"
+    }
+  ],
+  "directModelingReview": {
+    "directlyViewed": [
+      "../references/buildings/photos/199-500.jpg",
+      "artifacts/science500-review/science-2022.png",
+      "artifacts/science500-review/sky4-face3.jpg"
+    ],
+    "confirmedRelationship": "sky4에서 세 서쪽 날개, 동쪽의 긴 낮은 연결부, 북쪽 SCIENCE 몸체가 한 화면에 보인다. 대표 사진 199의 큰 유리면과 곡선 발코니를 가운데 서쪽 날개에 복제하지 않았다.",
+    "north": "북쪽 몸체의 동측 긴 면은 남쪽 벽돌 구간과 북쪽 큰 유리 구간으로 나뉜다. 후퇴한 곡선 발코니와 높은 밝은 SCIENCE 벽, 상부의 열린 사각 틀을 별도 부재로 만들었다. 벽돌 구간 맨 위층은 밝은 회백색의 후퇴 창 띠로 구분했다.",
+    "connector": "science-2022 사진의 낮은 유리 두 레벨, 원형 기둥, 돌출 차양과 상부 세로 부재를 긴 연결부에 반영했다. 창 분할 수를 공식 층수로 해석하지 않았다.",
+    "westWings": "세 날개의 동쪽 끝면은 중앙 유리와 양옆 벽돌로 나누었다. 중앙 유리 폭 약 10.6 m와 개별 창의 수/폭은 항공 사진 비례를 원본에 맞춘 근사다.",
+    "dates": "공식 지도와 VR 사진의 촬영일은 미확인이다. 2022 기사의 게시 날짜를 사진 촬영 날짜로 확정하지 않았다."
+  },
+  "mapAndCoordinates": {
+    "dataFrame": "D=(E,U,N)",
+    "renderFrame": "부모 world의 H=(x,y,-z)를 한 번 적용한다. 모듈에서 원본 좌표를 반사하지 않는다.",
+    "origin": {
+      "x": -6.24,
+      "z": -717.48
+    },
+    "axisU": {
+      "x": 0.9832379394768545,
+      "z": 0.1823270824450655
+    },
+    "axisV": {
+      "x": -0.1823270824450655,
+      "z": 0.9832379394768545
+    },
+    "rawDataUnchanged": true,
+    "bodies": [
+      {
+        "osmId": "way/179742155",
+        "variant": "west-wing",
+        "uniqueVertices": 5,
+        "originalOutlinePreserved": true,
+        "originalHoles": 0
+      },
+      {
+        "osmId": "way/179742150",
+        "variant": "west-wing",
+        "uniqueVertices": 4,
+        "originalOutlinePreserved": true,
+        "originalHoles": 0
+      },
+      {
+        "osmId": "way/179742153",
+        "variant": "west-wing",
+        "uniqueVertices": 5,
+        "originalOutlinePreserved": true,
+        "originalHoles": 0
+      },
+      {
+        "osmId": "way/329398248",
+        "variant": "low-connector",
+        "uniqueVertices": 14,
+        "originalOutlinePreserved": true,
+        "originalHoles": 0
+      },
+      {
+        "osmId": "way/297047750",
+        "variant": "north-science-body",
+        "uniqueVertices": 13,
+        "originalOutlinePreserved": true,
+        "originalHoles": 0
+      }
+    ],
+    "scope": "다섯 원본 외곽을 각각 유지했다. 곡선 발코니 판의 작은 돌출과 출입 접속판은 별도의 추정 부재다. 연결부를 독립된 다섯 번째 동 번호로 부르지 않는다."
+  },
+  "heights": {
+    "officialComplexLevels": 6,
+    "officialComplexBasements": 2,
+    "perBodyLevelsEstimated": true,
+    "allMeterHeightsEstimated": true,
+    "unit": "m",
+    "bodies": [
+      {
+        "osmId": "way/179742155",
+        "baseSample": {
+          "x": 0.855,
+          "z": -795.625,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        },
+        "gameBaseY": 20.33268474723122,
+        "heightAboveModelBase": 23.4,
+        "modeledLevels": 6,
+        "levelsEstimated": true,
+        "heightEstimated": true,
+        "modelLevelY": [
+          0,
+          3.7,
+          7.4,
+          11.1,
+          14.8,
+          18.5,
+          22.2
+        ]
+      },
+      {
+        "osmId": "way/179742150",
+        "baseSample": {
+          "x": -5.48,
+          "z": -748.89,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        },
+        "gameBaseY": 19.82234500694274,
+        "heightAboveModelBase": 23.4,
+        "modeledLevels": 6,
+        "levelsEstimated": true,
+        "heightEstimated": true,
+        "modelLevelY": [
+          0,
+          3.7,
+          7.4,
+          11.1,
+          14.8,
+          18.5,
+          22.2
+        ]
+      },
+      {
+        "osmId": "way/179742153",
+        "baseSample": {
+          "x": 7.48,
+          "z": -845.725,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        },
+        "gameBaseY": 22.391916899572408,
+        "heightAboveModelBase": 23.4,
+        "modeledLevels": 6,
+        "levelsEstimated": true,
+        "heightEstimated": true,
+        "modelLevelY": [
+          0,
+          3.7,
+          7.4,
+          11.1,
+          14.8,
+          18.5,
+          22.2
+        ]
+      },
+      {
+        "osmId": "way/329398248",
+        "baseSample": {
+          "x": 20.865,
+          "z": -815.045,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        },
+        "gameBaseY": 23.196116462758223,
+        "heightAboveModelBase": 9,
+        "modeledLevels": 2,
+        "levelsEstimated": true,
+        "heightEstimated": true,
+        "modelLevelY": null
+      },
+      {
+        "osmId": "way/297047750",
+        "baseSample": {
+          "x": 22.645,
+          "z": -705.705,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        },
+        "gameBaseY": 14.798067585229868,
+        "heightAboveModelBase": 24,
+        "modeledLevels": 6,
+        "levelsEstimated": true,
+        "heightEstimated": true,
+        "modelLevelY": [
+          0,
+          6.5,
+          10,
+          13.5,
+          17,
+          20.5,
+          23.6
+        ]
+      }
+    ],
+    "highestParts": "서쪽 23.4 m는 낮은 지붕 설비까지, 북쪽 24 m는 SCIENCE 상부 틀까지의 최고 높이다. 일반 서쪽 지붕판은 22.2 m, 북쪽 주 지붕은 23.6 m이며 북단 열린 테라스는 20.5 m다.",
+    "connector": "연결부의 9 m는 구간별 도로 쪽 지면 대비 최고 지붕 높이다. 동측 각 원본 변 양끝의 heightAt을 보간하므로 전 구간이 단일 절대고도에 놓이지 않는다.",
+    "datumLimit": "선택한 정면/접합면의 지도 중점에서 heightAt을 읽는다. 꼭짓점 평균 중심, 실제 건축 기준고와 다른 게임 지형 기준이다. callback을 50 m 올리면 전체 모델도 동일하게 이동하는지 검사했다."
+  },
+  "photoToMap": {
+    "northBody": "way/297047750",
+    "mainEastFacade": [
+      6,
+      7
+    ],
+    "glassRegion": "p6→p7의 북쪽 부분과 p7→p8 꺾임",
+    "balconyCandidate": [
+      8,
+      9
+    ],
+    "scienceEnd": "p8→p9의 북쪽 끝에 가까운 높은 벽",
+    "connector": "way/329398248의 동측 p9→p10→p11→p12→p13",
+    "confirmed": "항공 사진의 형태와 도로 관계로 북쪽 몸체와 연결부의 식별을 뒷받침한다.",
+    "estimated": "벽돌/유리 분할의 정확한 경계, 발코니 곡률, SCIENCE 벽의 폭과 두께 및 단일 변 대응은 사진 기반 근사다. 501~504 번호별 좌표는 미확정이다."
+  },
+  "northBalcony": {
+    "sections": [
+      {
+        "edge": 8,
+        "length": 12.483308922512796,
+        "inset": 3,
+        "bulge": 1.4,
+        "floor": 10,
+        "segments": 12,
+        "estimated": true
+      },
+      {
+        "edge": 8,
+        "length": 12.483308922512796,
+        "inset": 3,
+        "bulge": 1.4,
+        "floor": 13.5,
+        "segments": 12,
+        "estimated": true
+      },
+      {
+        "edge": 8,
+        "length": 12.483308922512796,
+        "inset": 3,
+        "bulge": 1.4,
+        "floor": 17,
+        "segments": 12,
+        "estimated": true
+      },
+      {
+        "edge": 8,
+        "length": 12.483308922512796,
+        "inset": 3,
+        "bulge": 1.4,
+        "floor": 20.5,
+        "segments": 12,
+        "estimated": true
+      }
+    ],
+    "openFrame": {
+      "edge": 8,
+      "from": [
+        19.308545092545664,
+        14.798067585229868,
+        -682.0959805532473
+      ],
+      "to": [
+        22.12009342686905,
+        14.798067585229868,
+        -670.8590662533608
+      ],
+      "bottom": 20.7,
+      "top": 23.64,
+      "estimated": true
+    },
+    "form": "후퇴한 유리와 곡선 바닥판, 가로대, 세로대, 기둥을 분리했다. 발코니 전체를 큰 사각 프록시로 감싸지 않았다.",
+    "upperVoid": "최고 발코니 위의 후퇴 유리와 뒤쪽 상층 외벽/지붕을 구분해 사각 틀 안에서 뒤로 하늘이 통한다. 실제 난간 부재가 있는 높이와 빈 공간의 높이를 나누어 광선으로 검사했다.",
+    "scienceLetters": "SCIENCE는 기하 선분으로 만들고 높은 끝벽의 파괴 부품에 포함했다. 첫 발코니 판과 겹치던 맨 위 S를 포함한 문자를 약 1 m 내려 현재 후보에서 다시 검사했다. 글꼴, 크기와 위치는 근사다."
+  },
+  "gameTerrainAndAccess": {
+    "rawDemPreserved": true,
+    "terrainCodeChanged": false,
+    "physicsCodeChanged": false,
+    "problem": "연결부 동측 지면의 남북 차이는 약 10.44 m다. 북서 몸체의 접합면은 원본 평균 중심보다 최대 약 9.54 m 높다. 이 수치를 실제 층고로 해석하지 않았다.",
+    "response": "각 몸체의 정면 기준고를 선택하고 연결부의 지붕/유리를 구간별로 낮췄다. 전체 DEM을 평탄화하거나 건물을 일괄 이동하지 않았다. 내부 정밀 방 배치 대신 원본 지형을 보행 바닥으로 두고 문 전후에 필요한 접속판과 계단을 추가했다.",
+    "entrances": [
+      {
+        "osmId": "way/179742155",
+        "name": "west-wing-connection",
+        "worldThresholdY": 21.960896480997324,
+        "center": [
+          1.3300000803905228,
+          21.960896480997324,
+          -794.9100008222772
+        ],
+        "outward": [
+          0.9780652184481435,
+          0,
+          0.20829891761986064
+        ],
+        "width": 3.6,
+        "outsideSteps": 3,
+        "outsideTread": 1.0999999999999999,
+        "insideGroundConnectionDistance": 13.850000000000001,
+        "insideSteps": 21,
+        "insideTread": 0.45000000000000007,
+        "estimated": true
+      },
+      {
+        "osmId": "way/179742150",
+        "name": "west-wing-connection",
+        "worldThresholdY": 21.27299239786072,
+        "center": [
+          -5.479999991929089,
+          21.27299239786072,
+          -748.8900003335623
+        ],
+        "outward": [
+          0.9888748040581744,
+          0,
+          0.14875023535620877
+        ],
+        "width": 3.6,
+        "outsideSteps": 5,
+        "outsideTread": 0.6599999999999999,
+        "insideGroundConnectionDistance": 23.75,
+        "insideSteps": 43,
+        "insideTread": 0.45,
+        "estimated": true
+      },
+      {
+        "osmId": "way/179742153",
+        "name": "west-wing-connection",
+        "worldThresholdY": 23.6168021754849,
+        "center": [
+          8.520000156745592,
+          23.6168021754849,
+          -852.0900014295071
+        ],
+        "outward": [
+          0.9870072751713316,
+          0,
+          0.16067560293486816
+        ],
+        "width": 3.6,
+        "outsideSteps": 1,
+        "outsideTread": 3.3,
+        "insideGroundConnectionDistance": 8.4,
+        "insideSteps": 3,
+        "insideTread": 1.3333333333333333,
+        "estimated": true
+      },
+      {
+        "osmId": "way/329398248",
+        "name": "connector-entry-9",
+        "worldThresholdY": 23.901349019496667,
+        "center": [
+          20.865000287844808,
+          23.901349019496667,
+          -815.0450010361031
+        ],
+        "outward": [
+          0.9832379403567701,
+          0,
+          0.18232707769993092
+        ],
+        "width": 3.8,
+        "outsideSteps": 2,
+        "outsideTread": 1.65,
+        "insideGroundConnectionDistance": 10.250000000000002,
+        "insideSteps": 13,
+        "insideTread": 0.4500000000000001,
+        "estimated": true
+      },
+      {
+        "osmId": "way/329398248",
+        "name": "connector-entry-10",
+        "worldThresholdY": 23.035955206660745,
+        "center": [
+          9.065000162533288,
+          23.035955206660745,
+          -752.1700003683947
+        ],
+        "outward": [
+          0.9816022087704279,
+          0,
+          0.19093746189953806
+        ],
+        "width": 3.8,
+        "outsideSteps": 4,
+        "outsideTread": 0.825,
+        "insideGroundConnectionDistance": 8.4,
+        "insideSteps": 1,
+        "insideTread": 4,
+        "estimated": true
+      },
+      {
+        "osmId": "way/297047750",
+        "name": "north-main-entrance",
+        "worldThresholdY": 15.907087048489254,
+        "center": [
+          21.28665040844118,
+          15.907087048489254,
+          -711.0674055710562
+        ],
+        "outward": [
+          0.969382873698192,
+          0,
+          -0.24555417895090995
+        ],
+        "width": 3.8,
+        "outsideSteps": 4,
+        "outsideTread": 0.825,
+        "insideGroundConnectionDistance": 8.4,
+        "insideSteps": 7,
+        "insideTread": 0.5714285714285714,
+        "estimated": true
+      },
+      {
+        "osmId": "way/297047750",
+        "name": "north-gallery-connection",
+        "worldThresholdY": 20.551030323789657,
+        "center": [
+          2.520000093027873,
+          20.551030323789657,
+          -719.0250000164074
+        ],
+        "outward": [
+          -0.1736891355500497,
+          0,
+          -0.9848005355459026
+        ],
+        "width": 3.6,
+        "outsideSteps": 4,
+        "outsideTread": 0.825,
+        "insideGroundConnectionDistance": 17.45,
+        "insideSteps": 29,
+        "insideTread": 0.45,
+        "estimated": true
+      }
+    ],
+    "majorLimit": "북서 몸체의 내부 접속은 43단이고 마지막 지면 접속까지 약 23.75 m다. 현 DEM을 유지하며 이동을 연결한 게임용 구조이며 실제 내부 계단, 지하 2층의 층고나 준공 도면을 복원한 결과가 아니다.",
+    "walking": "출입 경로는 첫 외부 접속판 이전의 실제 지형에서 시작한다. 문 중앙과 양쪽 경로에서 닫힌 문 정지, 파괴 후 내부 접속 끝을 지난 실제 지형까지 진입, 반환을 검사했다. 연결부를 거쳐 세 서쪽 몸체로 가는 경로도 왕복했다.",
+    "offsetContract": "heightAt은 렌더 및 물리 지형보다 0.03 m 높은 기존 계약을 유지했다. 유리 여유는 실제 meshHeightAt으로, 보행은 Rapier 지형으로 확인했다."
+  },
+  "renderAndDamage": {
+    "renderMeshes": 14,
+    "parts": 2455,
+    "triangles": 89352,
+    "perBuilding": [
+      {
+        "id": "way/179742155",
+        "variant": "west-wing",
+        "parts": 388,
+        "triangles": 21194,
+        "renderMeshes": 3,
+        "base": 20.33268474723122,
+        "baseSample": {
+          "x": 0.855,
+          "z": -795.625,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        }
+      },
+      {
+        "id": "way/179742150",
+        "variant": "west-wing",
+        "parts": 399,
+        "triangles": 20812,
+        "renderMeshes": 3,
+        "base": 19.82234500694274,
+        "baseSample": {
+          "x": -5.48,
+          "z": -748.89,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        }
+      },
+      {
+        "id": "way/179742153",
+        "variant": "west-wing",
+        "parts": 341,
+        "triangles": 18848,
+        "renderMeshes": 3,
+        "base": 22.391916899572408,
+        "baseSample": {
+          "x": 7.48,
+          "z": -845.725,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        }
+      },
+      {
+        "id": "way/329398248",
+        "variant": "low-connector",
+        "parts": 668,
+        "triangles": 9132,
+        "renderMeshes": 2,
+        "base": 23.196116462758223,
+        "baseSample": {
+          "x": 20.865,
+          "z": -815.045,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        }
+      },
+      {
+        "id": "way/297047750",
+        "variant": "north-science-body",
+        "parts": 659,
+        "triangles": 19366,
+        "renderMeshes": 3,
+        "base": 14.798067585229868,
+        "baseSample": {
+          "x": 22.645,
+          "z": -705.705,
+          "reason": "사진 정면 또는 연결면의 지도 중점"
+        }
+      }
+    ],
+    "materials": "몸체당 벽돌, 단색 부재, 유리의 병합 메시를 사용한다. 벽돌 표면이 없는 연결부는 실제 메시 2개이며 나머지는 3개다. 사진을 게임 텍스처로 복제하지 않고 색과 기하, 절차적 벽돌 무늬만 사용했다.",
+    "collision": "폐쇄 입면은 작은 층별 구획의 얇은 OBB로 근사한다. 곡선 발코니는 구간별 convex 판, 난간은 개별 얇은 부재로 나눈다. 비평면 연결부 지붕은 실제 렌더 삼각형마다 별도의 prism을 사용한다.",
+    "roofEvidenceCaution": "독립 초안의 첫 지붕 실패는 낮은 spandrel 윗면을 지붕으로 고른 하네스 문제였다. 이를 실제 convex 오류의 확정 증거로 기록하지 않는다. 삼각형별 분할 뒤에는 가장 높은 실제 렌더 표면만 선택해 최종 충돌 오차를 측정했다.",
+    "destruction": "각 프록시가 파괴되면 해당 렌더 구획만 사라진다. 먼 거리에서 온전한 외피를 다시 표시하지 않으며 부분/전체 파괴 뒤 초기화는 원래 정점을 복원한다.",
+    "performanceScope": "메시/부품/삼각형 수는 소스와 CPU 기하를 센 값이다. 실제 휴대전화의 GPU 처리량이나 FPS를 검증한 수치가 아니다."
+  },
+  "verification": {
+    "own": {
+      "script": "node scripts/verify-science500.mjs",
+      "result": "artifacts/science500-test/results.json",
+      "passed": 12,
+      "failed": 0,
+      "coverage": [
+        "five original footprints produce separate destruction shells and bounded merged surfaces",
+        "every actual glass triangle remains above the original terrain",
+        "actual exterior glass rays agree between loaded and unloaded targets",
+        "the highest actual connector roof triangles agree with their separate prisms",
+        "all modeled entrances connect actual terrain and stop at intact doors",
+        "mapped west wings remain reachable through the actual low connector after both doors break",
+        "curved balcony slabs preserve the open volume in front of their recessed glass",
+        "the upper north frame and low connector column bays are not solid boxes",
+        "SCIENCE geometric strokes attach to the north end wall and retain order after H",
+        "partial destruction stays absent beyond all distance thresholds and exact reset restores the complex",
+        "complete destruction removes all five bodies and reset restores every original vertex",
+        "one render reflection and a uniformly raised height callback preserve logical geometry"
+      ],
+      "groundGlass": [
+        {
+          "id": "way/179742155",
+          "samples": 5978,
+          "minimum": 0.1899917619860929
+        },
+        {
+          "id": "way/179742150",
+          "samples": 5796,
+          "minimum": 0.18927464369382463
+        },
+        {
+          "id": "way/179742153",
+          "samples": 5432,
+          "minimum": 0.18999644006778738
+        },
+        {
+          "id": "way/329398248",
+          "samples": 1596,
+          "minimum": 0.18997514995227505
+        },
+        {
+          "id": "way/297047750",
+          "samples": 4270,
+          "minimum": 0.18997819133688765
+        }
+      ],
+      "exteriorGlass": [
+        {
+          "id": "way/179742155",
+          "count": 116,
+          "occluded": 5,
+          "maxSurface": 0.10507209300999643,
+          "maxLoad": 0.00004874330805382243
+        },
+        {
+          "id": "way/179742150",
+          "count": 115,
+          "occluded": 3,
+          "maxSurface": 0.10504646301276677,
+          "maxLoad": 0.000055871065905543915
+        },
+        {
+          "id": "way/179742153",
+          "count": 106,
+          "occluded": 4,
+          "maxSurface": 0.10506029129029049,
+          "maxLoad": 0.00004063554669242464
+        },
+        {
+          "id": "way/329398248",
+          "count": 16,
+          "occluded": 15,
+          "maxSurface": 0.04601521491998928,
+          "maxLoad": 0.00001901060673548116
+        },
+        {
+          "id": "way/297047750",
+          "count": 70,
+          "occluded": 16,
+          "maxSurface": 0.1050600528718646,
+          "maxLoad": 0.0000494940115969289
+        }
+      ],
+      "roof": {
+        "name": "the highest actual connector roof triangles agree with their separate prisms",
+        "status": "passed",
+        "samples": 37,
+        "maxError": 0.00006620883941654832,
+        "maxLoadedUnloaded": 0.00006621017001862128,
+        "selection": "Only the highest actual rendered surface at each sample; lower spandrels are excluded."
+      },
+      "typecheck": "npx tsc --noEmit 통과"
+    },
+    "independent": {
+      "status": "최종 후보 검사 완료",
+      "summary": "artifacts/science500-independent-review/summary.json",
+      "summarySha256": "f498d99beacff7ef84fca0eb664a59f6da10ea46bc07040f02c26351d5430e73",
+      "basicResults": "artifacts/science500-independent-review/results.json",
+      "fullCampusResults": "artifacts/science500-independent-review/supplemental-results.json",
+      "passed": 27,
+      "failed": 0,
+      "basic": 20,
+      "fullCampus": 7,
+      "inputFilesChecked": 41,
+      "inputHashesMatch": true,
+      "modelSha256": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+      "measurements": {
+        "glassSamples": 49440,
+        "minimumGlassTerrainClearance": 0.18927464369382463,
+        "exposedGlassRays": 101,
+        "maxGlassRenderPhysicsError": 0.10508152246472974,
+        "maxGlassLoadedUnloadedError": 0.00005776628399917216,
+        "upperFrameSkyRays": 15,
+        "upperFrameRayDistance": 35,
+        "balconySlabRays": 20,
+        "balconyStandingSpaceRays": 20,
+        "railGapRays": 20,
+        "topRenderedRoofAndDetailRays": 40,
+        "maxTopRenderedRoofAndDetailPhysicsError": 0.004001915454864502,
+        "deepInteriorRoundTrips": 21,
+        "deepInteriorOffsets": [
+          -0.65,
+          0,
+          0.65
+        ],
+        "deepInteriorSpeed": 6,
+        "deepEndpointBeyondMetadataRampEnd": 0.65,
+        "maxDeepEndpointTerrainRayError": 1.3141927723836488e-7,
+        "connectorToWestWingRoundTrips": 3
+      },
+      "scope": "실제 원본 지형과 렌더 삼각형, Simulation/Rapier를 사용했다. 7개 출입구의 중앙과 양쪽에서 내부 접속 끝을 지난 원본 지형까지 들어갔다 돌아오는 21경로, 연결부 외부에서 두 문을 지나 세 서쪽 날개 지면까지 왕복하는 3경로를 포함한다. 모든 실내와 가능한 모든 이동 경로의 검사는 아니다."
+    },
+    "fullSuite": {
+      "command": "npm test",
+      "scripts": 37,
+      "passed": 359,
+      "failed": 0,
+      "exitCode": 0,
+      "log": "artifacts/release-16-verification.log",
+      "sha256": "109102be680d5ea312450afda34a57b5dd8770032057a59df4bd583f6993344c",
+      "scope": "최종 모델과 공통 통합 소스의 자동 회귀 검사다. 실제 브라우저 화면이나 휴대전화 성능 검사가 아니다."
+    },
+    "earlyFindings": [
+      {
+        "file": "artifacts/science500-test/draft-01-results.json",
+        "type": "harness-sample",
+        "issue": "문 유리 상자의 내부 끝면에서 이웃 프록시 안쪽으로 광선을 시작했다. 가장 가까운 원본 외벽의 법선과 실제 유리 법선을 대조해 외부 입면과 끝면을 구분했다. 외부 광선의 물리 miss는 계속 실패로 처리한다."
+      },
+      {
+        "file": "artifacts/science500-test/draft-02-entry-results.json",
+        "type": "runtime-fixed",
+        "issue": "북쪽 접합 문의 높이가 모델 층 경계를 넘어 위층 유리가 문 개구부를 막았다. 개구부와 겹치는 모든 층 구획을 열도록 수정했다."
+      },
+      {
+        "file": "artifacts/science500-test/draft-03-route-results.json",
+        "type": "route-and-runtime-fixed",
+        "issue": "비껴 접근한 로비 안쪽 판의 단차에서 반환이 막혔다. 문 전후의 접속 끝을 경유하는 경로와 내부 지형 접속을 함께 검사했다."
+      },
+      {
+        "file": "artifacts/science500-test/draft-04-interior-return-results.json",
+        "type": "runtime-fixed",
+        "issue": "짧은 내부 계단과 경사 지형에서 옆으로 밀려 로비 아래에 남는 문제가 있었다. 목표 경로를 보정하고 내부 계단의 길이를 늘려 최소 약 0.45 m 디딤을 확보했다."
+      }
+    ],
+    "desktopCpu": {
+      "result": "artifacts/mobile-cpu-review/release-16-with-science500.json",
+      "resultSha256": "a5815a1e296b402441aa8708ef2fd17a3cf93e2b125a2f4ea9c0f88c66ae0c40",
+      "comparison": "artifacts/mobile-cpu-review/compare-15-16.json",
+      "provenance": "artifacts/mobile-cpu-review/release-16-with-science500-provenance.json",
+      "cacheMatchesCurrentSource": true,
+      "compiledModules": 32,
+      "positions": 14,
+      "targets": {
+        "before": 19353,
+        "after": 21689
+      },
+      "warmupFrames": 120,
+      "measuredFrames": 600,
+      "initializationMs": {
+        "terrain": 221.1925,
+        "gate": 12.820299999999975,
+        "campus": 2498.1497,
+        "simulation": 387.59140000000025
+      },
+      "science500Positions": [
+        {
+          "id": "way/179742155",
+          "name": "500동 서쪽 가운데 건물",
+          "loadedTargets": 1437,
+          "p95Ms": {
+            "physics": 0.9308000000000902,
+            "campusUpdate": 1.6345999999994092,
+            "buildingAim": 1.3384000000005472
+          }
+        },
+        {
+          "id": "way/179742150",
+          "name": "500동 북서쪽 건물",
+          "loadedTargets": 1964,
+          "p95Ms": {
+            "physics": 0.778600000001461,
+            "campusUpdate": 1.0600999999987835,
+            "buildingAim": 0.8315999999995256
+          }
+        },
+        {
+          "id": "way/179742153",
+          "name": "500동 남서쪽 건물",
+          "loadedTargets": 1311,
+          "p95Ms": {
+            "physics": 0.6080000000001746,
+            "campusUpdate": 1.1419999999998254,
+            "buildingAim": 0.9292000000004919
+          }
+        },
+        {
+          "id": "way/329398248",
+          "name": "500동 연결통로",
+          "loadedTargets": 1751,
+          "p95Ms": {
+            "physics": 0.7150000000001455,
+            "campusUpdate": 1.0874999999996362,
+            "buildingAim": 0.8405999999995402
+          }
+        },
+        {
+          "id": "way/297047750",
+          "name": "500동 북쪽 건물",
+          "loadedTargets": 1497,
+          "p95Ms": {
+            "physics": 0.7052999999996246,
+            "campusUpdate": 1.0843999999997322,
+            "buildingAim": 0.9017999999996391
+          }
+        }
+      ],
+      "scope": "Windows 데스크톱의 Node에서 정지한 플레이어로 한 번 측정했다. 전체 표적은 이전 19,353개에서 21,689개로 늘었고, 500동 주변의 활성 표적은 1,311~1,964개다. 세부 형상과 충돌 부품이 늘어 단순 모델보다 부하가 증가했다. WebGL, GPU 업로드/렌더링, DOM, 차량, 대포와 효과는 제외했으며 동시 실행한 다른 프로세스의 영향도 있을 수 있다. 물리/장면 갱신/조준의 p95 시간은 휴대전화 FPS 또는 성능 보장으로 해석하지 않는다."
+    },
+    "frozenAt": "2026-11-05T02:35:05.601Z",
+    "frozenFiles": [
+      "src/science500Landmark.ts",
+      "scripts/verify-science500.mjs",
+      "sources/science500-model-notes.json"
+    ]
+  },
+  "visualReview": {
+    "status": "최종 후보 4장 직접 대조 완료",
+    "directory": "artifacts/science500-review/final-candidate-03/",
+    "provenance": "artifacts/science500-review/final-candidate-03/provenance.json",
+    "provenanceSha256": "21338426f5dfacef176c8df126e38b576598feaccce430f03a88d690199b678d",
+    "sourceStillMatches": true,
+    "modelSha256": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+    "compiledSha256": "78dd2370ef05de6163927582d557b1a51831ce4a66347b345c51c7771a16c05a",
+    "directlyViewed": [
+      "artifacts/science500-review/final-candidate-03/science500-north.png",
+      "artifacts/science500-review/final-candidate-03/science500-west.png",
+      "artifacts/science500-review/final-candidate-03/science500-connector.png",
+      "artifacts/science500-review/final-candidate-03/science500-complex.png"
+    ],
+    "sourcePhotos": [
+      "../references/buildings/photos/199-500.jpg",
+      "artifacts/science500-review/science-2022.png",
+      "artifacts/science500-review/sky4-face3.jpg"
+    ],
+    "observations": [
+      "북쪽 몸체의 큰 유리와 곡선 발코니, 높은 SCIENCE 벽, 하늘이 통하는 상부 틀 및 회백색 후퇴 창 띠를 구분했다.",
+      "세 서쪽 날개의 동쪽 끝면은 중앙 유리와 양옆 벽돌로 나뉜다. 네 높은 몸체와 동쪽의 긴 낮은 연결부가 공식 항공 사진의 상대 배치와 대응한다.",
+      "앞 지형이 정사영 입면의 하층 일부를 가린다. 실제 유리의 지형 침범과 구분하며, 공식 사진과 같은 촬영점에서도 같은 양으로 가리는지는 확인하지 못했다."
+    ],
+    "independentPhotoComparison": "artifacts/science500-independent-review/visual-review.json",
+    "method": "실제 Three.js 정점으로 만든 CPU 정사영이다. WebGL/PBR/조명/텍스처 및 모바일 화면 검증이 아니다."
+  },
+  "limitations": [
+    "외곽별 501~504 번호, 정확한 촬영점과 사진 촬영일을 확정하지 않았다.",
+    "후면 창 반복, 실내 복도와 층별 방 배치, 옥상 정원과 후퇴한 옥상실, 태양광 설비 및 지하 구조는 정밀 복원하지 않았다.",
+    "낮은 독립 SCIENCE 표지는 정확한 좌표 근거가 없어 별도로 놓지 않았다. 높은 끝벽의 문자와 혼동하지 않는다.",
+    "발코니 곡률과 돌출량, 차양 폭, 기둥 간격, 층별 높이와 내부 지형 접속은 추정이다.",
+    "원본 지형과 사진 속 현장 지형의 일치 여부는 미확인이다. 문과 통로를 걸을 수 있다는 결과가 실제 건물 접근 경로와 동일함을 뜻하지 않는다.",
+    "브라우저와 거리뷰를 사용하지 않았으며 실제 휴대전화 성능을 검증하지 않았다.",
+    "닫힌 일반 창 구획의 충돌면은 실제 유리와 최대 약 0.1051 m 차이가 난다. 유리, 프레임과 외벽을 작은 구획으로 묶은 근사이며 표면이 완전히 일치하지 않는다."
+  ],
+  "sourceHashes": {
+    "src/science500Landmark.ts": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+    "scripts/verify-science500.mjs": "bd1fa91cb5b4fc4e20e4d195ac71accef420b7e7a59c8ed1cfccb82b3807cd63",
+    "public/data/campus.json": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5"
+  }
+}

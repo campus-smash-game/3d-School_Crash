@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "title": "10동과 10-1동 연결교의 북쪽 거리뷰",
+  "observations": [
+    {
+      "id": "41-101-north-first",
+      "file": "output/playwright/41-101-north-first.png",
+      "observed": "10-1동 북쪽 차도 통과구의 낮은 연결교, 사범대학 간판, 원통기둥과 회색 포장",
+      "sha256": "c777dd13851dac10cdacd3ec249a5e5ad8e89dfc860d7a9303cd1d7f46a391a5",
+      "serviceId": "kakao-roadview",
+      "evidenceKind": "roadview-ui",
+      "month": "2025-07",
+      "panoId": "1198671992",
+      "shareUrl": "https://kko.to/cnm-2mtd_j",
+      "directObservationReviewer": "root",
+      "localImageDirectlyViewedBy": [
+        "root"
+      ],
+      "rootLiveViewConfirmed": true,
+      "buildingIds": [
+        "way/180954536",
+        "way/238937145"
+      ],
+      "countsAsBuildingRoadviewObservation": true,
+      "scopeLimit": "동일 촬영점에서 화면을 회전했다. 회전 후 주소의 pan 값이 갱신되지 않아 정확한 방위각으로 사용하지 않는다. 치수와 현재 현장 상태는 미확인이다."
+    },
+    {
+      "id": "41-101-link-stair-right",
+      "file": "output/playwright/41-101-link-stair-right.png",
+      "observed": "10 번호가 붙은 벽돌 끝벽, 흰 골조와 연결교 유리 차양, 외부 금속 계단",
+      "sha256": "61bdd56ebc8eafdfeaec896256c787bd37aef126368aee6baef590aa99f6f3ae",
+      "serviceId": "kakao-roadview",
+      "evidenceKind": "roadview-ui",
+      "month": "2025-07",
+      "panoId": "1198671992",
+      "shareUrl": "https://kko.to/cnm-2mtd_j",
+      "directObservationReviewer": "root",
+      "localImageDirectlyViewedBy": [
+        "root"
+      ],
+      "rootLiveViewConfirmed": true,
+      "buildingIds": [
+        "way/180954536",
+        "way/238937145"
+      ],
+      "countsAsBuildingRoadviewObservation": true,
+      "scopeLimit": "동일 촬영점에서 화면을 회전했다. 회전 후 주소의 pan 값이 갱신되지 않아 정확한 방위각으로 사용하지 않는다. 치수와 현재 현장 상태는 미확인이다."
+    },
+    {
+      "id": "41-10-lower-stair-detail",
+      "file": "output/playwright/41-10-lower-stair-detail.png",
+      "observed": "연녹색 곡면 유리 차양의 격자, 10동 끝벽, 아래층 계단과 난간, 도로변 회색 포장",
+      "sha256": "724d22be9c47663177a30fb197514a7e4f75689889615fbab93b01553011f27f",
+      "serviceId": "kakao-roadview",
+      "evidenceKind": "roadview-ui",
+      "month": "2025-07",
+      "panoId": "1198671992",
+      "shareUrl": "https://kko.to/cnm-2mtd_j",
+      "directObservationReviewer": "root",
+      "localImageDirectlyViewedBy": [
+        "root"
+      ],
+      "rootLiveViewConfirmed": true,
+      "buildingIds": [
+        "way/180954536",
+        "way/238937145"
+      ],
+      "countsAsBuildingRoadviewObservation": true,
+      "scopeLimit": "동일 촬영점에서 화면을 회전했다. 회전 후 주소의 pan 값이 갱신되지 않아 정확한 방위각으로 사용하지 않는다. 치수와 현재 현장 상태는 미확인이다."
+    }
+  ],
+  "identification": {
+    "basis": "같은 화면에서 10 번호, 벽돌 끝벽, 유리 차양과 10-1동 연결교가 이어지는 관계를 확인했다.",
+    "otherReference": "sources/humanities-court-accessibility-reference.json",
+    "surveySupports": "2024년 조사표의 10-1동 2층 208호 앞 10동 연결통로 기록",
+    "surveyLimit": "조사표는 연결 관계를 보완하며 사진과 정확한 좌표를 제공하는 자료로 사용하지 않았다."
+  },
+  "observed": [
+    "10동 끝벽의 벽돌 면과 흰 수직 골조",
+    "10 번호 표기",
+    "연결교의 연녹색 곡면 유리 차양과 금속 격자",
+    "연결교 옆 외부 계단과 아래층으로 이어지는 금속 계단",
+    "회색 사각 보도블록과 낙차를 막는 금속 난간"
+  ],
+  "limits": [
+    "건물 전체 외관과 실내는 확인하지 않았다.",
+    "문 형태와 정확한 위치, 차양 곡률, 높이와 폭은 실측하지 않았다.",
+    "아래층 계단의 정확한 단수와 바닥 접속 위치는 미확정이다.",
+    "촬영 시점은 2025년 7월이며 2026년 현재 상태를 확인한 것은 아니다.",
+    "임시 교통콘과 확인되지 않은 안내 문구는 상설 시설로 모델링하지 않는다."
+  ],
+  "wholeBuildingCompared": false
+}

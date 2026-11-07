@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T18:22:47.153Z",
+  "authoritativeHeadAtStart": "bd7941e43dbd6aa8da74bdedc1c6db5a409b3354",
+  "title": "220동 북쪽 주차장 진입로와 높은 필로티의 구분",
+  "scope": {
+    "runtimeChanged": false,
+    "rawDataChanged": false,
+    "previousSourcesPreserved": true,
+    "liveBrowserOperatedByReferenceThisReview": false,
+    "rootLiveRoadviewObservations": true,
+    "storedImagesDirectlyViewedByReference": true,
+    "implementationVerified": false
+  },
+  "mainFinding": "거리뷰의 낮은 차량 포털은 높은 220동 필로티 앞의 별도 진입 구조다. 원본 /659 남쪽 구간과 지하주차장 표식이 위치 후보를 지지하지만, p22 보행 현관이나 높은 필로티의 천장과 동일한 개구부로 볼 근거는 없다.",
+  "roadview": [
+    {
+      "id": "current-reopened",
+      "capture": "artifacts/education-health-review/output/playwright/34-root-ramp-current.png",
+      "shareUrl": "https://kko.to/z0O26Vrvfs",
+      "panoId": "1198671874",
+      "pan": 219.6,
+      "tilt": 12.7,
+      "zoom": 1,
+      "urlX": 489947,
+      "urlY": 1101600,
+      "uiMonth": "2025-07",
+      "liveObserver": "root",
+      "storedImageDirectlyViewedByReference": true,
+      "observed": [
+        "낮아지는 차도와 노란 중심선",
+        "양측 콘크리트 벽 및 낮은 직사각 포털",
+        "횡방향 배수 격자",
+        "오른쪽 금속 난간과 적색등이 달린 파란 표지",
+        "포털 뒤의 높은 유리 몸체와 기둥층 일부"
+      ],
+      "limitation": "수목이 기둥 하부와 주변 공간을 가린다. 포털 안 바닥과 전체 주차장, 절대 높이는 보이지 않는다. 작은 파란 표지 문구는 전사하지 않는다."
+    },
+    {
+      "id": "upper-northeast-adjacent",
+      "capture": "artifacts/education-health-review/output/playwright/34-root-ramp-upper-loaded.png",
+      "shareUrl": "https://kko.to/AKC5VX-Hdp",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1198671872&pan=219.0&tilt=12.0&zoom=1&urlLevel=3&urlX=489960&urlY=1101622",
+      "panoId": "1198671872",
+      "pan": 219,
+      "tilt": 12,
+      "zoom": 1,
+      "urlX": 489960,
+      "urlY": 1101622,
+      "uiMonth": "2025-07",
+      "liveObserver": "root",
+      "navigationReportedByRoot": "1198671874의 보이는 북동쪽 화살표를 눌러 인접한 북쪽 촬영 위치로 이동한 뒤 공유 URL로 다시 열었다.",
+      "storedImageDirectlyViewedByReference": true,
+      "observed": [
+        "이전 시점과 같은 낮은 포털 및 하강 차로",
+        "왼쪽 원형 차량 높이 제한 표지의 2.3m 문구",
+        "오른쪽 난간과 테니스장 쪽 수목",
+        "노란 중앙선 위 민트색 이동식 안내판"
+      ],
+      "signInterpretation": {
+        "text": "2.3m",
+        "meaning": "표시된 차량 높이 제한",
+        "actualPortalClearanceMeasured": false
+      },
+      "movableObject": "민트색 안내판은 이동식 물체로 보인다. 상설 차단시설이나 고정 주행 장애물로 재현할 근거로 쓰지 않는다.",
+      "limitation": "두 촬영 위치는 같은 2025년 7월 자료다. 램프 내부로 이동한 관측이 아니며 출입 운영과 현재 존치를 2026년 현장 확인으로 표현하지 않는다."
+    },
+    {
+      "id": "historical-structure",
+      "capture": "artifacts/education-health-review/output/playwright/33-root-ramp-2010-comparison.png",
+      "uiMonth": "2010-12",
+      "liveObserver": "root",
+      "storedImageDirectlyViewedByReference": true,
+      "panoId": null,
+      "observed": [
+        "낮은 콘크리트 보 아래의 차량 개구부",
+        "그 뒤로 높게 열린 220동 기둥층",
+        "220 표기 유리 몸체와 오른쪽 57-1 표기 건물",
+        "양측 벽과 노란 중심선, 출차주의 표지"
+      ],
+      "use": "수목에 가린 구조와 주변 건물의 상대 배치를 구분하는 보조 자료다. 당시 마감, 식재, 표지와 필로티의 전체 개방 상태를 현재 모습으로 옮기지 않는다."
+    },
+    {
+      "id": "upper-portal-detail",
+      "capture": "artifacts/education-health-review/output/playwright/34-root-ramp-portal-detail-loaded.png",
+      "panoId": "1198671872",
+      "uiMonth": "2025-07",
+      "liveObserver": "root",
+      "storedImageDirectlyViewedByReference": true,
+      "navigation": "root가 같은 촬영 지점에서 화면을 회전하고 확대했다. 다른 촬영 위치로 이동하지 않았다.",
+      "exactPan": null,
+      "exactTilt": null,
+      "exactZoom": null,
+      "orientationLimit": "주소창의 방향값은 갱신 전이므로 상세 이미지의 정확한 방향과 확대값으로 사용하지 않는다.",
+      "observed": [
+        "왼쪽 2.3m 원형 제한 표지",
+        "낮은 포털 보와 어두운 개구부",
+        "오른쪽 금속 난간 및 길 가장자리 배수구",
+        "포털 위쪽의 높은 유리 몸체와 열린 기둥층 일부"
+      ],
+      "unreadable": "포털 위 작은 안내판과 이동식 민트색 안내판의 문구는 전사하지 않는다."
+    }
+  ],
+  "excludedCaptures": [
+    {
+      "file": "artifacts/education-health-review/output/playwright/34-root-ramp-upper.png",
+      "reason": "root가 실패한 클릭 뒤 동일 화면이라고 확인해 새 관측 근거에서 제외했다."
+    },
+    {
+      "file": "artifacts/education-health-review/output/playwright/33-root-north-final-current.png",
+      "reason": "이전 로딩 중 검정 화면이다."
+    }
+  ],
+  "officialDrawing": {
+    "url": "https://cse.snu.ac.kr/api/v1/file/1695914765530_%5B%EB%B6%99%EC%9E%84%5D%20%EA%B4%80%EC%95%85%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EC%A0%84%EA%B8%B0%EC%B0%A8%20%EC%B6%A9%EC%A0%84%EA%B8%B0%20%EC%9D%B4%EC%9A%A9%EC%95%88%EB%82%B4%20%282%29.pdf",
+    "file": "artifacts/engineering301-review/basement-ev-plan-cse.pdf",
+    "pages": [
+      15,
+      50
+    ],
+    "renders": [
+      "artifacts/education-health-review/220-plan-ev-page15.png",
+      "artifacts/education-health-review/220-plan-ev-page50.png"
+    ],
+    "drawingDate": "2017-03-22",
+    "directlyViewedByReference": true,
+    "title": "종합교육연구동 지상 1층 평면도",
+    "drawingId": "1112200FL01",
+    "visible": [
+      "주차 구획이 반복되는 큰 공간",
+      "쪽 왼쪽 가장자리로 이어지는 곡선 차량 램프",
+      "오른쪽 원형 램프와 계단 및 실 경계",
+      "전기차 충전 구역을 덧붙인 안내 표시"
+    ],
+    "interpretation": "220동 주차 공간에 지상 1층으로 분류된 구역이 있음을 확인한다. 거리뷰에서 지면보다 낮아 보인다는 이유로 차량 포털의 층을 B1로 단정할 수 없다.",
+    "limits": [
+      "두 쪽은 같은 평면을 반복한 자료이므로 독립된 두 도면으로 세지 않는다.",
+      "주변도로와 북쪽 외부 /659 전체, 포털의 절대 고도는 이 평면에서 확인하지 못했다.",
+      "도면의 곡선 램프와 거리뷰의 직선 하강 구간이 어디에서 이어지는지 정확히 정합하지 못했다.",
+      "북쪽 방향과 여러 측량 기준점이 없는 잘린 도면을 원본 지도에 바로 등배율로 맞추지 않았다.",
+      "2017년 도면과 이후 충전 안내는 현재 현장의 상세 준공 실측 자료가 아니다."
+    ]
+  },
+  "newOfficialTextSources": [
+    {
+      "url": "https://consumer.snu.ac.kr/오시는길/",
+      "local": "artifacts/education-health-review/34-reference-sources/consumer-location.html",
+      "publisher": "서울대학교 소비자학과",
+      "publicationDate": null,
+      "checkedThisReview": true,
+      "finding": "나들문 14번을 거쳐 220동 주차장에 주차한 다음 생활과학대학 방향의 지하 1층 또는 1층 출구를 이용하도록 안내한다.",
+      "limits": "차량 포털의 층과 높이, 출구별 정확한 좌표를 특정하지 않는다."
+    },
+    {
+      "url": "https://foodnutrition.snu.ac.kr/오시는-길/",
+      "local": "artifacts/education-health-review/34-reference-sources/foodnutrition-location.html",
+      "publisher": "서울대학교 식품영양학과",
+      "publicationDate": null,
+      "checkedThisReview": true,
+      "finding": "220동 주차장과 생활과학대학 방향의 지하 1층 또는 1층 출구를 구분한다.",
+      "limits": "해당 북쪽 차량 개구부가 어느 층으로 직접 이어지는지는 별도 근거가 필요하다."
+    },
+    {
+      "url": "https://www.isdpr.org/introduction/location",
+      "local": "artifacts/education-health-review/34-reference-sources/isdpr-location.html",
+      "publisher": "서울대학교 사회발전연구소",
+      "publicationDate": null,
+      "checkedThisReview": true,
+      "finding": "테니스장을 끼고 우회전해 주차장으로 들어가며, 1층과 지하 2층 주차장에서 5층 연구소로 연결된다고 안내한다.",
+      "limits": "웹페이지 갱신일을 확인하지 못했다. 층 사이 이동 방식과 포털별 접속층을 이 문장만으로 재현하지 않는다."
+    },
+    {
+      "url": "https://biosci.snu.ac.kr/board/scholarship?bbsidx=13877&bm=v&page=76",
+      "local": "artifacts/education-health-review/34-reference-sources/parking-office-2011.html",
+      "publisher": "서울대학교 생명과학부",
+      "publicationDate": "2011-12-09",
+      "historical": true,
+      "finding": "당시 통합주차관제센터를 220동 B101호로 이전한다고 안내했다. 차량은 나들문 14번으로, 보행자는 테니스장 옆길로 접근하도록 설명한다.",
+      "unavailableAttachment": {
+        "url": "https://biosci.snu.ac.kr/board/scholarship?bbsidx=13877&bm=down&fileidx=15630",
+        "result": "404",
+        "directlyViewed": false,
+        "retried": false
+      },
+      "limits": "첨부 안내도는 확보하지 못했다. 본문은 당시 위치 관계의 보조 근거이며 현재 사무실이나 정확한 차량 입구를 확인한 자료가 아니다."
+    }
+  ],
+  "positionAssessment": {
+    "coordinateSystem": "D 좌표는 동쪽 +x, 북쪽 +z이며 단위는 m이다. 원본 지도와 서비스 좌표의 환산값은 현장 측량 좌표가 아니다.",
+    "original659": {
+      "id": "way/1544714433/659",
+      "points": [
+        [
+          518.71,
+          -175.51
+        ],
+        [
+          566.52,
+          -87.88
+        ]
+      ],
+      "northConnection": "way/455018304/206",
+      "southEndNode": "4514838232",
+      "tags": {
+        "highway": "service",
+        "incline": "0%"
+      },
+      "limitation": "incline=0%와 실제 거리뷰의 하강 모습은 일치하지 않는다. 가공 도로 폭 5.5m와 양방향 설정도 실측치가 아니다."
+    },
+    "parkingMarker": {
+      "node": "4514838234",
+      "dataXZ": [
+        516.989999,
+        -174.928248
+      ],
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "parking": "underground"
+      },
+      "distanceFrom659SouthEndM": 1.81572,
+      "meaning": "차도 끝 근처에 별도 지하주차장 표식이 있다. 이 표식이 차량 문턱 중심이나 실제 포털 면이라고 확정하지 않는다."
+    },
+    "previousCameraConversion": {
+      "panoId": "1198671874",
+      "urlX": 489947,
+      "urlY": 1101600,
+      "dataXZ": [
+        543.426437,
+        -132.819692
+      ],
+      "distanceTo659M": 1.25098,
+      "distanceToSouthEndM": 49.313281,
+      "bearingToSouthEndDegrees": 210.069583,
+      "source": "artifacts/education-health-review/scene-33-parking-diagnostic.json",
+      "limitation": "공유 서비스 좌표를 변환한 계산이며 카메라의 측량 위치가 아니다. 새 1198671872 좌표는 이 검토에서 변환하지 않았다."
+    },
+    "p22": {
+      "node": "4514838231",
+      "dataXZ": [
+        517.52,
+        -195.77
+      ],
+      "tags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "connectedFootway": "way/455018303/205",
+      "distanceFrom659SouthEndM": 20.294918083106424,
+      "distinction": "보행 출입점이다. 차량 포털과 동일한 구조라는 근거는 없다."
+    },
+    "straightExtensionCalculation": {
+      "from": [
+        518.71,
+        -175.51
+      ],
+      "direction": [
+        -0.47894337156742567,
+        -0.8778457990055125
+      ],
+      "intersectionWithBuildingEdge22": [
+        509.7387826743664,
+        -191.9531661628378
+      ],
+      "extensionLengthM": 18.73126941139984,
+      "use": "도로 남단에서 원본 220 북쪽 외벽까지의 평면 간격을 설명하는 계산이다.",
+      "notAnEstablishedVehicleRoute": true,
+      "notAnEstablishedPortalPosition": true
+    },
+    "recommendedSearchArea": "원본 /659 남쪽 끝과 근처 지하주차장 표식 주변을 낮은 포털의 우선 후보 구역으로 삼는다. 정확한 벽 면은 최신 거리뷰 대조와 실제 모델 보행 검사를 거쳐 게임 근사로 정해야 한다."
+  },
+  "heightAssessment": {
+    "fieldMeasuredAbsoluteHeight": null,
+    "fieldMeasuredRampDrop": null,
+    "fieldMeasuredWidth": null,
+    "postedLimitM": 2.3,
+    "baselineGameDiagnostic": {
+      "file": "artifacts/education-health-review/scene-33-parking-diagnostic.json",
+      "cameraRoadProjectionMeshY": 35.64324917061583,
+      "rampSampleRange": {
+        "min": 35.64324917061583,
+        "max": 38.29651442127933
+      },
+      "southEndMeshY": 36.310878031974845,
+      "p22MeshY": 39.009828163736536,
+      "higherPilotiCeilingWorldY": 52.98266284657249,
+      "conclusion": "기존 게임 지형은 남단이 북쪽 촬영점 투영 위치보다 약 0.668m 높고 중간에도 솟는다. 사진의 연속 하강로를 현재 지형 위에 얇은 판만 놓아 만들 수 없다.",
+      "limitation": "33차에 계산한 게임 수치다. 실제 시설 고도나 현재 개발 후보의 최종 검사 결과가 아니다."
+    },
+    "designConstraint": "높은 필로티의 천장에 낮은 포털을 연결하지 않는다. 차량 램프의 바닥, 포털 보, 위쪽 보행 공간과 높은 기둥층을 별도 높이로 다룬다.",
+    "heightSelection": "필요한 바닥 고도와 하강량은 실측으로 정할 근거가 부족하다. 외부 도로 접속과 주변 보행로를 보존하는 국소 게임 근사로 명시하고 실제 지형 및 충돌 표면을 함께 확인해야 한다."
+  },
+  "implementationRecommendations": [
+    "북쪽 /206 접속과 원본 /659 선형을 기준으로 하강로를 잡되, 낮은 포털과 짧은 내부 공간을 높은 필로티와 분리한다.",
+    "사진에서 확인한 콘크리트 옹벽, 오른쪽 금속 난간, 노란 중심선, 배수 격자와 높이 제한 표지를 한정해 사용한다.",
+    "포털을 p22 보행문에 강제로 붙이거나 높은 필로티 전체를 낮추지 않는다. 18.731m 직선 연장 계산은 실제 터널을 확인한 결과가 아니다.",
+    "지형 처리가 필요하면 하강 차로와 포털 내부의 국소 범위에서 렌더 및 물리 표면을 함께 다룬다. 원본 지도와 DEM을 실측 오차라고 단정하지 않는다.",
+    "2.3m 제한을 무시해 버스가 이 경사로를 통과하도록 만들지 않는다. 확인하지 않은 주차장 내부 자동 주행 노선도 추가하지 않는다.",
+    "이동식 민트색 안내판과 판독하지 못한 작은 글씨를 상설 시설로 확정하지 않는다."
+  ],
+  "unconfirmed": [
+    "포털 벽 면의 정확한 지도 좌표와 폭",
+    "실제 하강량, 종단 경사와 횡경사",
+    "차량 입구가 직접 닿는 공식 층 이름",
+    "지하주차장 내부 평면과 p22 보행문 사이 동선",
+    "사진의 포털 위 보행 공간 전체 연결",
+    "2025년 7월 이후 시설 변화"
+  ],
+  "researchLimits": {
+    "newIndependentExteriorPhotoFound": false,
+    "newOfficialTextSourcesFound": true,
+    "oldFailedFloor2AttachmentReopened": false,
+    "blogSearch": "검색 결과의 블로그 주차 안내와 외부 충전소 자료는 시설 형상 또는 현재 층수의 근거로 채택하지 않았다.",
+    "hwpAttachmentUnavailable": true
+  },
+  "sourceHashes": {
+    "sources/education-north-roadview-review.json": "3c1d844f8e34986aca36cfd40fd496966e034e966419d46a8d9f19ba1329722d",
+    "artifacts/education-health-review/scene-33-parking-diagnostic.json": "a68bb5bfbc468e881cab70e10a2ea27e63c2cbd45436d81e992e695f05a282f6",
+    "artifacts/education-health-review/controls-33-baseline.json": "f9c8f1381acb04e2a4b28de8e201f16274b5bc34e93a5616a1f59615a28c62d9",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "artifacts/engineering301-review/basement-ev-plan-cse.pdf": "9ba06bb550a797d553075ba26603233bf484397a70396dd08b260805729fe2f0"
+  },
+  "evidenceHashes": {
+    "artifacts/education-health-review/output/playwright/34-root-ramp-current.png": "797c0ba85efc7de08b03dbf9a761ed85c0bbe8bd865442f786d3a71d16f577e6",
+    "artifacts/education-health-review/output/playwright/34-root-ramp-upper-loaded.png": "f6ec88b77f08588a648971c8f6b6675cc2753e34b0660509e48e28bb19371877",
+    "artifacts/education-health-review/output/playwright/33-root-ramp-2010-comparison.png": "a2de4cf5c70caaea7b7d6edb25f1a8b9191e217a2c9e875f01c7e67af4b4e927",
+    "artifacts/education-health-review/220-plan-ev-page15.png": "fb7a440e576d08e7297295eea0ea26c64a907c4ecef5a321543fb823366ddadc",
+    "artifacts/education-health-review/220-plan-ev-page50.png": "fb7a440e576d08e7297295eea0ea26c64a907c4ecef5a321543fb823366ddadc",
+    "artifacts/education-health-review/34-reference-sources/consumer-location.html": "63e1355b2256aa6ff5e66779770180f103b48b235aa26be83b9462f796215328",
+    "artifacts/education-health-review/34-reference-sources/foodnutrition-location.html": "ca9f33692ad41360e4c225f9bc322d3d4b257ea966e3f8d0bc69146b6186e123",
+    "artifacts/education-health-review/34-reference-sources/isdpr-location.html": "c8d2612d02f20ae25c6019c272ebae8e69e562c5274a93a990e6bd8d6e869983",
+    "artifacts/education-health-review/34-reference-sources/parking-office-2011.html": "37bd9a0653d2dcbbd859daa014f2a98f949a2a6a557d05d17ae209066fe63289",
+    "artifacts/education-health-review/output/playwright/34-root-ramp-portal-detail-loaded.png": "c3aafb32ef962da7e9150bdea69a3f895da90f494d4df34e24dc981dfe7951a6"
+  },
+  "newDownloadManifest": "artifacts/education-health-review/34-reference-sources/manifest.json",
+  "implementationPlanning": {
+    "status": "root가 자료를 검토한 뒤 런타임 구현을 승인했다.",
+    "terrainMethodReportedByRoot": "국소 삼각형 절단을 검토 중이다.",
+    "verification": "이 문서의 작성자는 런타임을 수정하거나 새 지형 후보를 검증하지 않았다. 구현 치수와 높이는 게임 근사로 표시해야 한다."
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T22:37:16.658Z",
+  "baselineCommit": "7378c5d7448ac4c0587dc37b0015346af6cf2236",
+  "title": "12동 남측 열린 공간과 111동 카페 앞 계단의 2025년 7월 거리뷰 대조",
+  "scope": {
+    "areaIds": [
+      "education12-south-open-court",
+      "cafe111-front-and-southwest-stair"
+    ],
+    "buildingIds": [
+      "way/238936704",
+      "way/439707885"
+    ],
+    "buildingNumbers": [
+      "12",
+      "111"
+    ],
+    "runtimeChangedByThisReview": false,
+    "rawDataChangedByThisReview": false,
+    "implementationVerifiedByThisReview": false,
+    "wholeBuildingRoadviewCompared": false,
+    "currentTenantConfirmed": false,
+    "building11ConnectionDirectlyObserved": false,
+    "building12WestExternalStairDirectlyObservedInRoadview": false,
+    "note": "11동 번호와 벽돌 입면 일부도 보았으나 연결문이나 전체 외관을 확인한 범위로 넓히지 않는다. 10동은 이번 관측 대상 확정에 포함하지 않는다."
+  },
+  "browser": {
+    "tool": "Playwright CLI",
+    "session": "school39reference",
+    "profile": "D:/codex/.tmp/3d-School_Crash/school39reference-profile",
+    "ownedSessionOnly": true,
+    "closedAtEnd": true,
+    "closeResult": "Browser 'school39reference' closed",
+    "method": "기존 10-1동 공유 링크에서 지도 UI를 열고 10, 11, 12동과 별도 카페의 배치를 먼저 대조했다. 실제 파란 촬영선을 눌러 카페 쪽으로 이동한 뒤 도로 화살표와 회전으로 인접 시점을 확인했다. 공유 메뉴에서 얻은 링크를 다시 열어 파노라마 ID와 방향을 확인했다. 임의 ID로 이동하지 않았으며 채택한 캡처는 직접 열어 보았다."
+  },
+  "panos": [
+    {
+      "id": "1198671965",
+      "shareUrl": "https://kko.to/USbxiAtfgB",
+      "pan": 61.3,
+      "tilt": -4,
+      "zoom": 2,
+      "urlX": 490022,
+      "urlY": 1099940,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareObtainedFromActualUi": true,
+      "shareReopenedThisReview": true,
+      "reloadedImage": "39-cafe-share-reopened-ui.png",
+      "scope": "12동과 카페 사이 접근로, 카페 전면과 남서쪽 계단의 첫 대조. 오른쪽 일부 타일이 흐려 해당 부분의 세부는 채택하지 않았다.",
+      "serviceCoordinatesAreSurveyed": false
+    },
+    {
+      "id": "1198671967",
+      "shareUrl": "https://kko.to/g9y986XO7V",
+      "pan": 359.7,
+      "tilt": -4,
+      "zoom": 2,
+      "urlX": 490035,
+      "urlY": 1099960,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareObtainedFromActualUi": true,
+      "shareReopenedThisReview": true,
+      "reloadedImage": "39-building12-front-reopened-ui.png",
+      "scope": "12동 남측 열린 공간, 후퇴한 유리 입면과 뒤쪽 11동 번호.",
+      "serviceCoordinatesAreSurveyed": false
+    },
+    {
+      "id": "1198671967",
+      "shareUrl": "https://kko.to/7AN52aYoEZ",
+      "pan": 300.8,
+      "tilt": -4,
+      "zoom": 2,
+      "urlX": 490035,
+      "urlY": 1099960,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareObtainedFromActualUi": true,
+      "shareReopenedThisReview": true,
+      "reloadedImage": null,
+      "scope": "같은 지점에서 서쪽으로 회전해 본 12동 열린 하부, 원통기둥, 테라스와 식재.",
+      "serviceCoordinatesAreSurveyed": false
+    },
+    {
+      "id": "1198671971",
+      "shareUrl": "https://kko.to/JUlU50Biny",
+      "pan": 300,
+      "tilt": -4,
+      "zoom": 2,
+      "urlX": 490065,
+      "urlY": 1099997,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareObtainedFromActualUi": true,
+      "shareReopenedThisReview": true,
+      "reloadedImage": null,
+      "scope": "1967에서 북동쪽 화살표로 두 차례 이동한 시점. 12동과 11동 사이 접합부는 수목과 벽에 가려졌다.",
+      "serviceCoordinatesAreSurveyed": false
+    },
+    {
+      "id": "1198671973",
+      "shareUrl": "https://kko.to/fbAF-Wtq5Y",
+      "pan": 247,
+      "tilt": -4,
+      "zoom": 2,
+      "urlX": 490077,
+      "urlY": 1100017,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareObtainedFromActualUi": true,
+      "shareReopenedThisReview": true,
+      "reloadedImage": null,
+      "scope": "1971에서 한 차례 더 북동쪽으로 이동한 뒤 뒤돌아본 11동 벽돌과 12동 유리 몸체 사이. 연결문은 미확인.",
+      "serviceCoordinatesAreSurveyed": false
+    },
+    {
+      "id": "1198671967",
+      "shareUrl": "https://kko.to/99crrAJpQk",
+      "pan": 198.1,
+      "tilt": -4,
+      "zoom": 2,
+      "urlX": 490035,
+      "urlY": 1099960,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareObtainedFromActualUi": true,
+      "shareReopenedThisReview": true,
+      "reloadedImage": "39-south-stair-reopened-loaded-ui.png",
+      "scope": "카페 남서쪽 굽은 돌계단과 상부 차도 옆 보도.",
+      "serviceCoordinatesAreSurveyed": false
+    },
+    {
+      "id": "1198671967",
+      "shareUrl": "https://kko.to/9MfVox4Bcq",
+      "pan": 73.2,
+      "tilt": -4,
+      "zoom": 2,
+      "urlX": 490035,
+      "urlY": 1099960,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareObtainedFromActualUi": true,
+      "shareReopenedThisReview": true,
+      "reloadedImage": "39-cafe-oblique-reopened-ui.png",
+      "scope": "선명하게 재확인한 카페 유리문, 큰 간판, 회색 사각포장과 노란 유도블록.",
+      "serviceCoordinatesAreSurveyed": false
+    }
+  ],
+  "intermediateObservation": {
+    "image": "artifacts/humanities-east-review/output/playwright/39-building12-step2-ui.png",
+    "panoId": null,
+    "sequence": "1967에서 북동쪽 화살표로 한 차례 이동한 중간 시점이다. 공유 링크를 따로 얻지 않아 ID는 기록하지 않았다.",
+    "photographed": "2025-07"
+  },
+  "captures": [
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-map-building-identification-loaded.png",
+      "sha256": "4643101fd42869b52d146aa9d5d480c4788a63828faa0db40babf628a4878341",
+      "referenceDirectImageView": true,
+      "scope": "지도에서 건물 배치를 확인한 화면. 거리뷰 사진이 아니다."
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-map-building-close.png",
+      "sha256": "b392625a21fc081348b449d15a60e75e089aaedde1dfae8a6ee732b6192ac7a4",
+      "referenceDirectImageView": true,
+      "scope": "10, 11, 12동과 별도 파스쿠치 POI의 위치 관계."
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-map-roadview-lines.png",
+      "sha256": "580194e9e4c89db23fbcfb72620e88c9f6e33088eaa22ca8c2d1eb97de96c8ae",
+      "referenceDirectImageView": true,
+      "scope": "표시한 지도 범위에서 도로 촬영선을 확인했다. 10, 11, 12동 내부 마당과 12동 서쪽 계단 쪽에는 촬영선이 표시되지 않았다. 다른 시기나 서비스 전체의 촬영 부재를 뜻하지 않는다."
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-cafe-south-turn1-ui.png",
+      "sha256": "0abc0798f3f0abb7d154c059feafd918f7711add13b2b954092d6e89d63e717a",
+      "referenceDirectImageView": true,
+      "scope": "카페 남서쪽 계단과 상부 도로변 보도의 첫 관측.",
+      "panoId": "1198671965"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-cafe-front-loaded-ui.png",
+      "sha256": "f549f4c3a362c12c720edfc2e366bf2f210028ee595c15411a7dc7e18f4f6c2b",
+      "referenceDirectImageView": true,
+      "scope": "카페와 12동을 함께 본 첫 관측. 오른쪽 타일이 흐린 부분은 세부 근거에서 제외.",
+      "panoId": "1198671965",
+      "partialTileLoading": true
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-cafe-share-reopened-ui.png",
+      "sha256": "edb93f03189d5ade14b1dfc44bed6832c8f2ba706eaa9f510afc29b71b63ec40",
+      "referenceDirectImageView": true,
+      "scope": "첫 공유 링크 재접속. 흐린 타일이 남아 세부 판독 범위를 제한했다.",
+      "panoId": "1198671965",
+      "partialTileLoading": true
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-cafe-step1-ui.png",
+      "sha256": "b412e8a3ab6e597a68051b899b117728c03de653d5fec21bd87c2a0fd8395f2f",
+      "referenceDirectImageView": true,
+      "scope": "북동쪽으로 이동해 본 카페와 회색 보도.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building12-front-ui.png",
+      "sha256": "747729375c0733daf2557ceb666ce25d275135f720fed257d955fd1d5def8299",
+      "referenceDirectImageView": true,
+      "scope": "12동 남측 넓은 열린 하부와 뒤쪽 11동 번호.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building12-front-reopened-ui.png",
+      "sha256": "71dab32eb052ac35f4f746c61bba83c23793afc80dcff788fe22dd46ee6479b7",
+      "referenceDirectImageView": true,
+      "scope": "12동 정면 공유 링크 재접속 확인.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building12-open-west-ui.png",
+      "sha256": "529db86e2a0a9d94f2fa2952bc3767c2e4de30e4a32936e251afaaf4fb45f02c",
+      "referenceDirectImageView": true,
+      "scope": "12동 열린 중간층, 원통기둥, 낮은 유리면과 식재.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building12-poi-ui.png",
+      "sha256": "c2225e275c4966f04500328a074a689c2e66090e205845bab474c32fe4f80be1",
+      "referenceDirectImageView": true,
+      "scope": "지도 정보 아이콘에서 사범대학과 사범교육협력센터 등의 목록을 확인했다. 화면 정보와 외부 실물 간판을 구분한다.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building12-step2-ui.png",
+      "sha256": "a0d9c7ef3bd49d8e94649b6bd4ad249d56fbe531494fe663a27ada0c8b392eba",
+      "referenceDirectImageView": true,
+      "scope": "12동 근접 중간 시점. 파노라마 ID는 따로 확보하지 않았다.",
+      "panoId": null
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building12-step3-ui.png",
+      "sha256": "3b203019af3727985f147eb35ae00496f73a16d39f847b946d3ef871ac0c0e4c",
+      "referenceDirectImageView": true,
+      "scope": "12동과 11동 사이를 보는 연속 시점. 수목이 연결부를 가린다.",
+      "panoId": "1198671971"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building11-side-step4-ui.png",
+      "sha256": "34becf4bbea14b5cc345a3bf7a5add4840fa8524f94b484cc97fa8e55199e85f",
+      "referenceDirectImageView": true,
+      "scope": "11동 벽돌 측면과 인접 통로 일부.",
+      "panoId": "1198671973"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-building11-12-joint-reverse-ui.png",
+      "sha256": "68aac9f1e5ad140e3d2a58a15c325b3b839e9b40d0d097aa9e6770902c90e9ff",
+      "referenceDirectImageView": true,
+      "scope": "뒤돌아본 두 몸체 사이의 낮은 공간과 난간. 연결문의 위치나 층별 연결은 확인하지 못했다.",
+      "panoId": "1198671973"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-south-stair-context-step1-ui.png",
+      "sha256": "47aa2e7b0de4c47983fe304658571607510088d39db29065c49bebc0820d00b4",
+      "referenceDirectImageView": true,
+      "scope": "굽은 돌계단의 하단과 상부 차도 옆 보도.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-south-stair-reopened-loaded-ui.png",
+      "sha256": "21e7b4ff55f4eca4cee9cde551f986f13ed2250a5d81b0e2bc0a3ea1d4b19f99",
+      "referenceDirectImageView": true,
+      "scope": "공유 링크를 다시 연 최종 계단 사진. 영상 로딩이 끝난 뒤 직접 확인했다.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-cafe-oblique-loaded-ui.png",
+      "sha256": "be3e12b99c6f9075bdb5d8a9244466087ffcf69d34d4db58ece99f813a6b7837",
+      "referenceDirectImageView": true,
+      "scope": "선명한 카페 전면과 노란 유도블록.",
+      "panoId": "1198671967"
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-cafe-oblique-reopened-ui.png",
+      "sha256": "c57638b94f873772fcbe96512b0ac46913e11467d5a272848ef137d5372763ce",
+      "referenceDirectImageView": true,
+      "scope": "공유 링크 재접속 후 같은 카페 전면을 직접 확인했다.",
+      "panoId": "1198671967"
+    }
+  ],
+  "excludedOrSupportOnly": [
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-south-stair-final-ui.png",
+      "sha256": "4440f2e0ca555b185554c6ee22227c61b5cc87a58cc19a01ebbccdcfb71fd3c0",
+      "referenceDirectImageView": true,
+      "scope": "재접속 직후 검은 로딩 화면이므로 사진 근거에서 제외했다.",
+      "adopted": false
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-cafe-oblique-final-ui.png",
+      "sha256": "1e03c9e57976c0658df85d76243b3f14d21a831e2b1eb82e4dd86b13b739e02b",
+      "referenceDirectImageView": true,
+      "scope": "재접속 직후 드래그가 적용되지 않아 12동 정면이 남았다. 파일명과 달리 카페 관측 근거로 쓰지 않는다.",
+      "adopted": false
+    },
+    {
+      "path": "artifacts/humanities-east-review/output/playwright/39-map-building-identification.png",
+      "sha256": "fbb3123cfd66fdb34bd3b8cab0a36a023b3e5d214c1d2fbc8e0cfec81bde55a5",
+      "referenceDirectImageView": true,
+      "scope": "지도 전환에 실패한 10-1동 기존 시점이다. 건물 지도 식별 근거에서 제외했다.",
+      "adopted": false
+    }
+  ],
+  "findings": {
+    "building12": {
+      "buildingId": "way/238936704",
+      "identification": "지도 12동 위치, 공식 013-12 사진의 곡면 상층과 열린 중간층, 뒤쪽 11동 번호의 상대 배치를 함께 대조했다.",
+      "directlyObserved": [
+        "곡면 상층 아래 넓은 열린 공간과 원통기둥이 있다.",
+        "도로 쪽에는 대각 기둥이 있고 낮은 유리 입면은 뒤로 들어가 있다.",
+        "회색 사각포장, 난간과 식재 경계, 테이블과 의자가 보인다."
+      ],
+      "candidateAnchor": {
+        "rawEntranceNode": "4564809432",
+        "vertexIndex": 10,
+        "x": 577.58,
+        "z": -783.96,
+        "basis": "원본 입구 노드와 scene의 공유 좌표 방향 계산을 대조한 후보이며 문 중심 실측이 아니다."
+      },
+      "limitations": [
+        "정확한 현관 중심, 층별 절대높이와 내부 평면은 미확인이다.",
+        "11동 연결문과 연결 층의 실제 동선은 수목과 벽에 가렸다.",
+        "공식 사진 왼쪽 외부계단의 위아래 끝을 새 거리뷰에서 확인하지 못했다.",
+        "입구의 작은 문자와 상점 표시는 확실히 판독하지 못했다."
+      ]
+    },
+    "cafe111": {
+      "buildingId": "way/439707885",
+      "identification": "별도 카페의 지도 위치와 원본 111동 외곽, 공식 129-111 사진의 동일 입면을 대조했다. 12동 내부 가게로 합치지 않는다.",
+      "readableSign": "CAFFE PASCUCCI",
+      "photographed": "2025-07",
+      "directlyObserved": [
+        "전면을 길게 가로지르는 큰 외곽선 글자와 낮은 유리문이 보인다.",
+        "상층 유리와 세로 프레임, 갈색 수평 루버, 어두운 얇은 지붕 가장자리가 보인다.",
+        "문 앞은 회색 사각포장이며 노란 유도블록이 직각으로 분기한다.",
+        "회색 볼라드가 보도 바깥에 서 있다."
+      ],
+      "candidateFront": {
+        "edge": 0,
+        "points": [
+          [
+            595.48,
+            -787.47
+          ],
+          [
+            586.86,
+            -800.7
+          ]
+        ],
+        "center": {
+          "point": [
+            591.1700000000001,
+            -794.085
+          ],
+          "meshY": 58.13241687335244,
+          "logicalY": 58.16241611725054
+        }
+      },
+      "limitations": [
+        "2025년 7월 촬영 당시의 표지이며 2026년 현재 영업을 보증하지 않는다.",
+        "메뉴, 광고 포스터와 작은 안내 문구를 전사하지 않는다.",
+        "원뿔과 캐릭터 이동 차단물은 상설 시설로 해석하지 않는다.",
+        "문 폭, 층고, 포장 치수와 개별 볼라드의 정확한 좌표는 미측정이다."
+      ]
+    },
+    "southwestStair": {
+      "directlyObserved": [
+        "낮은 접근로 옆 포장에서 한 줄로 이어지는 굽은 돌계단이 상부 도로변 보도로 오른다.",
+        "계단 양쪽의 낮은 경계석과 왼쪽 수목 화단이 보인다.",
+        "상단에는 은색 볼라드와 금속 난간이 있고 오른쪽 차도에는 황색 경계가 이어진다."
+      ],
+      "mapCandidate": {
+        "roadId": "way/1544364785/575",
+        "kind": "footway",
+        "points": [
+          [
+            574.49,
+            -806.46
+          ],
+          [
+            573.1,
+            -802.91
+          ],
+          [
+            572.98,
+            -800.18
+          ]
+        ],
+        "exactPhotoEndpointsConfirmed": false
+      },
+      "limitations": [
+        "원본 /575 마지막 세 점 전체를 사진 계단으로 확정하지 않는다.",
+        "마지막 짧은 구간과 그 앞 굴곡 중 어느 부분이 실제 계단인지 추가 정합이 필요하다.",
+        "사진만으로 단수, 전체 상승량, 상하단의 절대높이와 폭을 확정하지 않는다."
+      ]
+    },
+    "building11": {
+      "buildingId": "way/146155734",
+      "directlyObserved": [
+        "뒤쪽 몸체의 11 번호와 벽돌 입면 일부를 확인했다."
+      ],
+      "limits": "번호와 일부 측면 관측이며 11동의 출입구, 전체 외관 또는 12동 연결문을 검증한 것이 아니다."
+    }
+  },
+  "officialPhotoSupplement": [
+    {
+      "path": "../references/buildings/photos/013-12.jpg",
+      "sha256": "e9b73cac98d0ecfbbb20ad3c3f76bc362e5a4026edfed1b42a7c504169eaf82a",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=13",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000013.jpg",
+      "referenceDirectImageView": true,
+      "photoCaptureDate": null,
+      "observed": "곡면 상층, 열린 중간 테라스, 낮은 유리 입면, 사진 왼쪽 외부계단과 앞 경사판을 직접 보았다. COLLEGE OF EDUCATION 12 표기도 보인다.",
+      "limitation": "촬영일 미상이다. 새 거리뷰에 가린 외부계단의 구조 보조 자료이며 현재 모든 접점이 같은 상태라고 단정하지 않는다."
+    },
+    {
+      "path": "../references/buildings/photos/129-111.jpg",
+      "sha256": "e93943083b5943a1558d8f125fbb96d8695bb43bfe92ab4b79e09a620877c9e5",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=129",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000126.jpg",
+      "referenceDirectImageView": true,
+      "photoCaptureDate": null,
+      "observed": "유리 상층과 갈색 루버, 낮은 전면, 우측 원통기둥과 열린 공간을 직접 보았다. 출입문 위에는 작은 붉은 간판이 있다.",
+      "limitation": "2025년 거리뷰의 큰 외곽선 간판과 다르다. 최신 관측 간판을 공식 사진의 작은 붉은 간판으로 대체하지 않는다."
+    }
+  ],
+  "otherSourceLimits": {
+    "accessibility": "2024 공개 조사표의 11동과 12동 1층 및 2층 연결문 문구는 controls가 확인한 텍스트 보조 자료다. 위치와 형태 사진이 없으므로 연결교나 문 좌표의 근거로 확정하지 않는다.",
+    "currentShopText": "root가 공식 2026 가이드 검색에서 파스쿠치 111동과 더랩24/7 12동을 구분한 결과를 전달했다. 이 조사자는 그 PDF 본문을 직접 확인하지 않았으며 현재 영업 확인 근거로 사용하지 않는다.",
+    "currentGuideUrlReportedByRoot": "https://vewd.snu.ac.kr/community/notice?act=DOWN&bbsidx=8544&bm=a&fileidx=5567",
+    "webSearch": {
+      "queries": [
+        "서울대학교 사범교육협력센터 12동 외부 계단 사진",
+        "서울대학교 11동 12동 연결 계단",
+        "\"사범교육협력센터\" \"계단\"",
+        "\"서울대\" \"12동\" \"블로그\""
+      ],
+      "adoptedBlogImages": [],
+      "limitation": "정확한 접점을 보여 주는 블로그 사진을 직접 확보하지 못했다. 검색 결과의 안내 문구만으로 미관측 연결 형상을 확정하지 않았다.",
+      "unopenedLead": "https://kosea-artedu.or.kr/homepage/boardMedia/184790"
+    }
+  },
+  "coordinateInterpretation": {
+    "calculationAuthor": "scene",
+    "artifact": "artifacts/humanities-east-review/scene-39-photo-alignment.json",
+    "method": "공유 UI의 서비스 좌표를 기존 WCONGNAMUL 변환식으로 프로젝트 좌표에 계산한 결과를 인용했다.",
+    "panos": [
+      {
+        "id": "1198671965",
+        "urlX": 490022,
+        "urlY": 1099940,
+        "pan": 61.3,
+        "share": "https://kko.to/USbxiAtfgB",
+        "lat": 37.45919257861267,
+        "lon": 126.9548882098969,
+        "D": [
+          573.7064981157549,
+          -798.8013048372324
+        ],
+        "roundTripMetres": 1.439978004998176e-9,
+        "bearingTo12p10": 14.627586578268563,
+        "distanceTo12p10": 15.338459704902112,
+        "bearingToCafeFrontCenter": 74.8868797546998,
+        "distanceToCafeFrontCenter": 18.089152257049935
+      },
+      {
+        "id": "1198671967",
+        "urlX": 490035,
+        "urlY": 1099960,
+        "pan": 359.7,
+        "share": "https://kko.to/g9y986XO7V",
+        "lat": 37.45926468200041,
+        "lon": 126.95494694126793,
+        "D": [
+          578.895758734021,
+          -790.774755714362
+        ],
+        "roundTripMetres": 1.2278919521328637e-9,
+        "bearingTo12p10": 349.0720852055253,
+        "distanceTo12p10": 6.94061355303556,
+        "bearingToCafeFrontCenter": 105.09303708376717,
+        "distanceToCafeFrontCenter": 12.712777662102924
+      }
+    ],
+    "limitation": "계산된 촬영점은 서비스 좌표 해석이며 정확한 카메라 위치, 문 중심, 계단 양끝의 측량 자료가 아니다. pan은 공유 UI의 방향값이며 측량 방위가 아니다."
+  },
+  "rootReview": {
+    "liveRoadviewOperationByRootForTheseCaptures": false,
+    "localImagesViewedReportedByRoot": [
+      "39-cafe-south-turn1-ui.png",
+      "39-cafe-front-loaded-ui.png",
+      "39-cafe-oblique-loaded-ui.png",
+      "../references/buildings/photos/013-12.jpg",
+      "../references/buildings/photos/129-111.jpg"
+    ],
+    "note": "root가 로컬 캡처와 공식 사진을 직접 보았다고 전달한 범위다. 이 연구 세션의 실시간 거리뷰 조작은 reference가 맡았다."
+  },
+  "comparisonWithBaseline": {
+    "evidence": [
+      "artifacts/humanities-east-review/controls-39-research.json",
+      "artifacts/humanities-east-review/scene-39-photo-alignment.json"
+    ],
+    "basis": "scene와 controls의 기존 코드 및 지도 진단을 읽어 대조했으며 이 조사에서 물리 검사를 새로 실행하지 않았다.",
+    "missingCandidates": [
+      "12동 남측 열린 하부와 후퇴한 유리 입면은 일반 외벽 모델과 다르다.",
+      "111동의 관측한 낮은 두 구획 입면과 큰 간판, 전면 포장과 볼라드는 일반 14m/4층 추정 외피와 다르다.",
+      "카페 남서쪽 굽은 계단은 원본 footway만으로 실제 단차 형태를 나타내지 못한다."
+    ],
+    "implementationStatusClaimed": false
+  },
+  "inputHashes": {
+    "sources/building-references.json": "ef6f5ec8c4c7b9e159838a0971d98bb8734db8e784eec6da018b524f73efa6f9",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/humanities-court-accessibility-reference.json": "8f37dbb19195de9f8583fffab6e8406ba5c41e117bcaf16afc81852b7354510e",
+    "artifacts/humanities-east-review/controls-39-research.json": "bbd87354dd8150fb2721be27a68386aa9d2a2ba605fbf927e24c806bb0e28f9a",
+    "artifacts/humanities-east-review/scene-39-photo-alignment.json": "2bde10f18a8ebd99800cd85c3e3d990b8362c32fc18f7a17ecf9a62112780bed"
+  }
+}

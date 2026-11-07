@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "status": "integrated-partial-roadview-approximation",
+  "reviewedAt": "2026-11-05T20:38:58.721Z",
+  "buildingId": "way/167983986",
+  "scope": "76동 서측의 두 구간 계단과 참, 유리 출입구, 낮은 옆길과 식재 경계를 구현했다. 전체 입면과 오른쪽 별도 계단은 아직 완료하지 않았다.",
+  "roadviewReview": "sources/dining76-roadview-review.json",
+  "observationOrder": [
+    "2025년 7월 카카오 거리뷰 세 촬영점과 공식 사진을 먼저 대조했다.",
+    "최근 유리 전면과 옛 사진의 목재 띠 및 상호가 달라 옛 간판은 적용하지 않았다.",
+    "지도 원본의 계단 축과 entrance 태그를 보존하고, 사진 비례에 맞춘 게임용 치수로 연결 구조를 만들었다."
+  ],
+  "implementation": {
+    "layout": {
+      "buildingId": "way/167983986",
+      "sourceRoad": "way/185937116/84",
+      "originalLowerRoad": "way/167597858/21",
+      "originalUpperRoad": "way/185937117/85",
+      "sourceNodeIds": [
+        "1966229954",
+        "1966229960"
+      ],
+      "entranceNodeId": "4564809430",
+      "entry": [
+        636.23,
+        -637.79
+      ],
+      "origin": [
+        626.18,
+        -656.11
+      ],
+      "upper": [
+        634.11,
+        -641.77
+      ],
+      "axis": {
+        "x": 0.48393213699475623,
+        "z": 0.8751055289413322
+      },
+      "across": {
+        "x": -0.8751055289413322,
+        "z": 0.48393213699475623
+      },
+      "length": 16.386595131387175,
+      "lowerRoadPoints": [
+        [
+          607.83,
+          -644.89
+        ],
+        [
+          626.18,
+          -656.11
+        ],
+        [
+          641.47,
+          -665.79
+        ],
+        [
+          649.8,
+          -670.21
+        ]
+      ],
+      "datumAnchor": [
+        626.18,
+        -656.11
+      ],
+      "datumStation": 0,
+      "baselineDatumMeshY": 52.73342426577157,
+      "lowerFloor": 53.00000150244299,
+      "upperFloor": 56.40000150244299,
+      "stairStart": 3.3,
+      "stairEnd": 14.3,
+      "halfWidth": 9,
+      "lowerSteps": 11,
+      "upperSteps": 9,
+      "stepRise": 0.17,
+      "tread": 0.46,
+      "middleStart": 8.36,
+      "middleEnd": 10.16,
+      "terrainBelowFloor": 0.16,
+      "lowerRoadProtectedHalfWidth": 2.8,
+      "core": {
+        "s0": 3.3,
+        "s1": 24.1,
+        "n0": -10.5,
+        "n1": 10.5
+      },
+      "outer": {
+        "s0": 2.8,
+        "s1": 26,
+        "n0": -14.5,
+        "n1": 14.5
+      },
+      "activeFootprintAnchor": [
+        636.23,
+        -637.79
+      ],
+      "dimensionsEstimated": true,
+      "datumOffset": 0.0000015024429913523818,
+      "entrance": {
+        "center": {
+          "x": 636.23,
+          "y": 56.40000150244299,
+          "z": -637.79
+        },
+        "outward": {
+          "x": -0.48393213699475623,
+          "z": -0.8751055289413322
+        },
+        "tangent": {
+          "x": -0.8751055289413322,
+          "z": 0.48393213699475623
+        },
+        "width": 3.6,
+        "height": 2.65,
+        "vestibuleDepth": 3
+      },
+      "openings": [
+        {
+          "buildingId": "way/167983986",
+          "edgeIndex": 0,
+          "a": [
+            636.23,
+            -637.79
+          ],
+          "b": [
+            632.7026706115325,
+            -635.6360030111978
+          ],
+          "bottom": 56.10000150244299,
+          "top": 59.60000150244299
+        },
+        {
+          "buildingId": "way/167983986",
+          "edgeIndex": 1,
+          "a": [
+            639.8801339786309,
+            -640.014637868633
+          ],
+          "b": [
+            636.23,
+            -637.79
+          ],
+          "bottom": 56.10000150244299,
+          "top": 59.60000150244299
+        }
+      ],
+      "correctionBounds": {
+        "minX": 614.845979813936,
+        "maxX": 651.4512657315129,
+        "minZ": -660.6767205053883,
+        "maxZ": -626.3402402611014
+      }
+    },
+    "originalEntrance": [
+      636.23,
+      -637.79
+    ],
+    "geometry": {
+      "parts": 280,
+      "renderMeshes": 4,
+      "triangles": 4243,
+      "materials": 4,
+      "textures": 2
+    },
+    "features": [
+      "밝은 판석 줄눈과 수평 디딤판, 중간 참과 상단 참",
+      "양옆과 중앙 난간, 별도 낮은 길의 볼라드와 노란 횡단 띠",
+      "금속 문틀과 손잡이, 파괴 후 들어갈 수 있는 짧은 현관 내부",
+      "식재 경계석, 수목과 원형 조명, 현재 지도 데이터를 단순화한 안내판",
+      "76동에만 적용한 두 층과 높이 8.8m의 임시 몸체 보정"
+    ],
+    "traffic": {
+      "excludedSegments": [
+        "way/167597858/21:0",
+        "way/185937117/85:0",
+        "way/185937117/85:1",
+        "way/185937117/85:2"
+      ],
+      "basis": "볼라드 접근로와 상단 참을 게임 차량 그래프에서 제외했다. 실제 법적 통행 규정으로 주장하지 않는다.",
+      "busPlanUnchanged": true
+    },
+    "rawDataPreserved": true,
+    "commonPhysicsPreserved": true
+  },
+  "verification": {
+    "checks": [
+      {
+        "file": "artifacts/dining76-access-test/results.json",
+        "sha256": "ea317a7175893a74987f9444660f2b29daa787dbbb36893c5de63005d90afd5c",
+        "passed": 9,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/terrain-verification.json",
+        "sha256": "ece6767f1352654dd3651c08a347b35d5ca5f4b750db562e8ea61c79f3010593",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/family-terrain-test/results.json",
+        "sha256": "27d0a1ac1f6e360f0407c019d2a911ab740891f4f1239951d7b0eb7ddce3d18b",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "2fdf890535b7a3de761f2126329835ed71872d39512016b36d07061c3a457e84",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "a38263c9d034ec0ebaaf068a51d7837360204c15388eb0cb2ca8eddd529b2776",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/humanities-passage-access-test/results.json",
+        "sha256": "ac13bf61c7c1ec3b5058572b240b645194932c8b852e27efd452ac379198a955",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-parking-access-test/results.json",
+        "sha256": "3d6443d981e0d585e2c5434823e6995794f28186d1c9c6b3afbcffcda46c9b33",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-north-access-test/results.json",
+        "sha256": "726be542f1945a884382f54945aca4c529ac785d25ebb3be0ff30c9b7d0bdf21",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/engineering31-30-test/connection-results.json",
+        "sha256": "c98e5a8d54577d753d87b34afd42791a50e7e35658bc3d7d2a075b99f4268f99",
+        "passed": 4,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/engineering301303-connection-test/results.json",
+        "sha256": "37726e5ab6231bcfdb52e3dd33deb3f9d35ff5a3ad6836774d0d2fe2ebc04d60",
+        "passed": 19,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/traffic-verification.json",
+        "sha256": "7e09cb7f29d5197d5993a3ae441c0e2772687aefb1dce58c878e0fbeece9f016",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/transit-test/results.json",
+        "sha256": "0b1400f4fa8a73b742c6795df0a4a128b529eacfc8cf12af5ee179e3945c263b",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/controls-verification.json",
+        "sha256": "8ac4b4f68012891996763f84743163aa306069723b30cbce5371f260a5724b8b",
+        "passed": 31,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/shuttle-starts/results.json",
+        "sha256": "77a9889af9030619c8e51348f8cad4f648463e10cb1537350146f42b372c7b49",
+        "passed": 15,
+        "failed": 0
+      }
+    ],
+    "passed": 143,
+    "failed": 0,
+    "browser": {
+      "file": "artifacts/dining76-review/36-browser-review.json",
+      "sha256": "7953ff508e70e8e144c60ded1980de10222df41a1aa12c55524e8a193b0c57df"
+    },
+    "physicalPhoneTested": false
+  },
+  "limits": [
+    "폭 18m와 11+9단, 단높이 17cm 및 상단 높이는 사진 비례를 맞춘 게임용 근사다. 정확 단수나 실측 치수로 취급하지 않는다.",
+    "문 구획과 실내 3m 공간은 지도 입구와 보이는 유리 전면을 토대로 구성한 근사다.",
+    "현재 영업장명과 간판 문구는 확인하지 못해 추가하지 않았다.",
+    "오른쪽 /87 갈색 계단은 관측했으나 현재 지형과의 높이 관계를 더 대조해야 한다.",
+    "외벽 전체와 후면, 수목의 정확한 종과 개별 위치는 미확인이다.",
+    "206개 건물 행 중 거리뷰 부분 관측은 20개이며 전체 대조 완료 건물은 아직 없다."
+  ],
+  "next": [
+    "오른쪽 /87 별도 계단과 동측 접속 높이를 거리뷰와 대조한다.",
+    "76동의 다른 입면과 현재 입점 시설 사진을 확인한 뒤 외관과 간판을 보완한다.",
+    "남은 캠퍼스 구역도 거리뷰를 먼저 확인하고 연결 구조와 주변 시설을 보완한다."
+  ],
+  "sourceHashes": {
+    "src/dining76Site.ts": "3310688d3d5908b13d4ecf2bc3d235aaf606688b5354f12bb7d6c14c511b2e93",
+    "src/dining76Terrain.ts": "f7923a1b4a81f22822f94c8149f9c88c6418b60ed5c03de8863388be9f360d94",
+    "src/dining76Approach.ts": "c96a16ca71c5bd5bbae0337baf480c1b367aa3f516d35cae6d0581b99c7bd1f2",
+    "src/terrain.ts": "6f773673727ea176f1fd7ec8746a25fefbf74d9dbe3e6fbb502efd2aec4ec283",
+    "src/fullCampus.ts": "e1a840714daaed0356cc39d9a7132205ddd46059999acaad528f9db85734c470",
+    "src/traffic.ts": "eb013f7cf6eb849a094fe2dc5f23c0bde59fe5778dbee113f5b195cb3d5b6880",
+    "scripts/verify-dining76-access.mjs": "469261878a34b07b734a19bdb97e487cda7ae97b0843b2ec100a0692eaadca07",
+    "sources/dining76-roadview-review.json": "8495adf7582154b0373a4825e8959d3194704cdb0c4bb3a4e139ca126ad6afc0"
+  },
+  "unchangedHashes": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "public/data/campus-transit.json": "b76619a0cf01338994b98e9bab997a4ae6d90875b2b57a6d23bb085317c4f5b4",
+    "public/data/transit-facilities.json": "ab9b030046d0c4028422bdb0ff1db81ab6b844e67a43de1f1ddec4b1cb72efca",
+    "public/data/shuttle-stops.json": "8233cbe722f90665ea9fcc4b864f25557404aa6b23d7ceb1d1cceb0861ed6356",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/main.ts": "7ed609031916a2e23e6abf1f01467f26253f93160f458ddf283f25562b98b84a",
+    "src/controls.ts": "493c27adaeef90fe96aec523d94d522d4d663e66e265ce7429f99d2d3f2296aa"
+  },
+  "localResearch": {
+    "file": "artifacts/dining76-review/36-root-research.json",
+    "sha256": "8f71fd5e826466eedee6549e39b03f30981c8c124b60ac39bff14b9ed238064c"
+  },
+  "followupReviews": [
+    {
+      "reviewedAt": "2026-11-05T21:23:10.800Z",
+      "scope": "동측 별도 계단 구현과 안내판 제목 보완",
+      "modelNotes": "sources/dining76-east-model-notes.json",
+      "sha256": "d0438efe0b9ebd20db4a4a38c34d5f49248e15fbce0225505451f35e093d966f",
+      "note": "앞선 서측 구현 및 당시 미완료 기록은 보존했다. 현재 동측 구현 범위와 남은 한계는 후속 파일을 참조한다."
+    }
+  ]
+}

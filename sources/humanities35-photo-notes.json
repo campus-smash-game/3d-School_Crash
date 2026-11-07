@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-partial-photo-reference",
+  "buildingIds": [
+    "way/167983609",
+    "way/167983611"
+  ],
+  "buildingNumbers": [
+    "3",
+    "5"
+  ],
+  "scope": "3동과 5동 사이 구름다리, 아래 보행로와 5동 남쪽 출입구를 보완했다.",
+  "references": [
+    {
+      "kind": "official-map-photo",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000005.jpg",
+      "localPhoto": "../references/buildings/photos/005-5.jpg",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "5동 번호가 있는 짙은 벽돌 끝벽, 흰 수평 띠와 기둥",
+        "긴 벽 쪽으로 연결되는 지붕이 있는 구름다리와 열린 난간",
+        "구름다리 아래 통로와 둥근 지지 기둥",
+        "차양 아래 유리 출입문, 낮은 계단과 왼쪽 경사로",
+        "금속 창틀, 끝벽의 창과 난간, 세로 배수관",
+        "입구 앞 포장과 휴지통"
+      ],
+      "limits": [
+        "사진 촬영일과 실측 치수는 확인하지 못했다.",
+        "오른쪽의 더 높은 외부 계단과 두산인문관 쪽 연결은 이번 보완 범위에 포함하지 않았다.",
+        "사진에서 보이지 않는 후면과 전체 실내 평면은 확인하지 못했다."
+      ],
+      "sha256": "4924afc1cab6fd5cb7434d98b72630dce25f9f70989056bd078bfd91d5030b93"
+    },
+    {
+      "kind": "official-map-photo",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000003.jpg",
+      "localPhoto": "../references/buildings/photos/003-3.jpg",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "review": "3동의 짙은 회색 벽돌과 흰 골조를 다시 대조해 색조를 보완하고 사진에서 보이는 면에 창틀과 1층 그릴을 추가했다. 사진 전체의 외부 시설까지 재현했다는 뜻은 아니다.",
+      "sha256": "8bdb353b1c49235a1f246f3629ca5c744da290f40c7fadc576366eb273e27684"
+    },
+    {
+      "kind": "official-historical-article",
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=79798&md=v",
+      "title": "관악캠퍼스의 비밀, 관악은 호그와트?",
+      "published": "2008-04-04",
+      "review": "3동 4층과 5동 3층 사이에 지붕과 열린 측면을 가진 구름다리가 있었다는 설명을 확인했다. 과거 안내이며 현재의 층별 문 상태나 통제 시간을 확정하는 근거로 사용하지 않았다."
+    }
+  ],
+  "mapReview": {
+    "provider": "Kakao Map",
+    "reviewImage": "artifacts/humanities23-review/47-kakao-coverage-detail.png",
+    "review": "앞서 확보한 위성 화면에서 3동과 5동 사이의 연결교와 남쪽 광장을 다시 대조했다. 내부 로드뷰 장면을 직접 확인한 기록으로 집계하지 않는다.",
+    "satelliteCaptureDate": null
+  },
+  "mappedTopology": {
+    "source": "sources/campus.osm",
+    "bridgeRoad": "way/167983610/59",
+    "bridgeTags": {
+      "highway": "footway",
+      "bridge": "viaduct",
+      "layer": "5"
+    },
+    "groundRoad": "way/456540180/312",
+    "limits": "layer=5를 5층이나 높이 5m로 해석하지 않았다. 지상 보행로와 고가 통로를 구분했으며 원본 선과 건물 외곽 사이의 짧은 연결은 근사했다."
+  },
+  "implementation": {
+    "source": "src/humanities35Connection.ts",
+    "site": "src/humanities35Site.ts",
+    "dimensionsEstimated": true,
+    "bridgeHeightEstimated": true,
+    "entryPositionEstimated": true,
+    "stairCountEstimated": true,
+    "rampGradeEstimated": true,
+    "rawTerrainChanged": false,
+    "rawRoadsChanged": false,
+    "photoTexturesCopied": false,
+    "wholeBuildingReconstructed": false,
+    "upperBridgeAccessFromGroundImplemented": false,
+    "wholeInteriorImplemented": false,
+    "limits": [
+      "구름다리 양끝은 건물 안의 짧은 공간까지만 이어진다. 지상 입구에서 구름다리까지 올라가는 실내 동선은 후속 검토 대상이다.",
+      "5동 출입구는 열린 문과 짧은 실내 공간으로 표현했다. 전체 실내 평면은 구현하지 않았다.",
+      "경사로는 사진을 참고해 지도 건물 외곽 밖에 배치했다. 실제 접근성 규격과 현장 경사를 재현했다고 보증하지 않는다.",
+      "계단 단수, 포장 경계, 기둥과 창틀의 치수는 게임 지형에 맞춘 근사다."
+    ],
+    "geometry": {
+      "meshes": 2,
+      "signMeshes": 1,
+      "triangles": 5845,
+      "colliders": 267,
+      "textures": 1
+    }
+  },
+  "validation": {
+    "file": "artifacts/humanities35-access-test/results.json",
+    "realPhoneFrameRateMeasured": false,
+    "groups": [
+      {
+        "name": "3/5 source scope, batch budget and preservation of other buildings, roads and terrain",
+        "status": "PASS"
+      },
+      {
+        "name": "ground passage, entrance steps and ramp work both ways at desktop and mobile speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "upper bridge portals are open and guardrails stop lateral movement",
+        "status": "PASS"
+      },
+      {
+        "name": "exposed floor surfaces agree with physics and underbridge has clearance",
+        "status": "PASS"
+      },
+      {
+        "name": "distant destruction, sign visibility and reset follow actual parts",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherBuildingParts": 38683,
+    "roadPreservation": {
+      "campus-road-surface": {
+        "unchangedTriangles": 28669,
+        "declaredBounds": {
+          "minX": 450.55505123619224,
+          "maxX": 493.5142152333461,
+          "minZ": -682,
+          "maxZ": -596.0567835285788
+        },
+        "originalBoundaryTriangles": 0
+      },
+      "campus-pedestrian-surface": {
+        "unchangedTriangles": 21007,
+        "declaredBounds": {
+          "minX": 450.55505123619224,
+          "maxX": 493.5142152333461,
+          "minZ": -682,
+          "maxZ": -596.0567835285788
+        },
+        "originalBoundaryTriangles": 58
+      }
+    },
+    "floorSamples": 147
+  },
+  "laterExteriorReview": {
+    "notes": "sources/humanities35-exterior-photo-notes.json",
+    "scope": "3동과 5동 외벽은 후속 모델로 보완했다. 이 기록의 통로, 계단과 경사로 모델은 유지했다."
+  }
+}

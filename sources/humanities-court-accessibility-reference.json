@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-05T21:34:38.088Z",
+  "scope": "9동, 10동, 10-1동, 11동, 12동의 공개 접근성 조사 문서 확인",
+  "report": {
+    "url": "https://snudanbi.snu.ac.kr/wp-content/uploads/sites/12/2025/02/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90-%EA%B4%80%EC%95%85%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%9C%A0%EC%B2%B4%EC%96%B4-%EC%9D%B4%EB%8F%99%EC%A0%91%EA%B7%BC%EC%84%B1-%EC%97%B0%EA%B5%AC-%EA%B2%B0%EA%B3%BC-%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+    "submittedDate": "2024-10-31"
+  },
+  "research": {
+    "path": "artifacts/humanities-court-review/controls-38-accessibility-research.json",
+    "sha256": "d77f7f8edd13896e371d0da3c72016004a20f67bf171ff22f48e165572ceced3"
+  },
+  "buildings": [
+    {
+      "number": "9",
+      "osmId": "way/148286666",
+      "surveyDate": "2024. 10. 16",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRyfNlSWnNabqgTC_-xHw2Z3E36ksHM7fC6aEIwbpIBePzSyjFL3dzpUMExhpBwG8DhEO8vBvvLVp0b/pubhtml",
+      "tab": "Ⅰ. 출입문 조사",
+      "gid": 534084252,
+      "entryCount": 7,
+      "fieldPhotosDirectlyViewed": 0,
+      "highlights": [
+        {
+          "cells": "E7:E9",
+          "text": "2층, 3층, 4층에 10동 연결통로를 기록했다."
+        },
+        {
+          "cells": "E6,N6,E12,N12",
+          "text": "1층 정문과 2층 12동 방향 야외 출구를 자동문으로 기록했다."
+        },
+        {
+          "cells": "E11,K11",
+          "text": "2층, 3층, 4층 발코니 출입구의 단차 항목은 X다. 단차 실측값은 없다."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "osmId": "way/180954536",
+      "surveyDate": "2024. 10. 16",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS0NDK8VuIzvR3Ii9z-l9EtjMI1qDdYUVYRHr7gipn1kKInUTbP25I7FT7OU-GBzocZnKXvBNSdYeBZ/pubhtml",
+      "tab": "Ⅰ. 출입문 조사",
+      "gid": 534084252,
+      "entryCount": 4,
+      "fieldPhotosDirectlyViewed": 0,
+      "highlights": [
+        {
+          "cells": "E6,N6,P6",
+          "text": "2층 205호 앞 자동문과 경사로를 기록했다. 경사로 앞 주차로 진입이 막힐 수 있다는 조사 메모가 있다."
+        },
+        {
+          "cells": "E7,K7,P7",
+          "text": "3층 305호 앞은 외부 접근이 계단이라고 기록했다. 2층 문과 같은 위도와 경도가 기입되어 있으므로 층별 위치를 구분해야 한다."
+        },
+        {
+          "cells": "E8,L8,P8",
+          "text": "1층 107호 앞 문 폭 판정은 X이며 메모는 ‘문 폭 77’이다. 단위가 없으므로 77cm 실측값으로 확정하지 않는다."
+        },
+        {
+          "cells": "E9,N9,P9",
+          "text": "1층 102호 앞은 자동문이다. 107호 앞 지하주차장에서 돌아와야 한다는 메모가 있다."
+        }
+      ]
+    },
+    {
+      "number": "10-1",
+      "osmId": "way/238937145",
+      "surveyDate": "2024. 12. 2",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTZAPdq4WOamI1Yy-m89pYyteMf9aWSRozvlHfwJRQKIUYyz27LudeqVYZL1Edx_Z1q1tBwJiQb2soV/pubhtml",
+      "tab": "Ⅰ. 출입문 조사",
+      "gid": 534084252,
+      "entryCount": 4,
+      "fieldPhotosDirectlyViewed": 0,
+      "highlights": [
+        {
+          "cells": "E6:G7,N6:N7",
+          "text": "1층 10동 맞은편 자동문과 지하 1층 주차장 연결 여닫이문을 서로 다른 위치로 기록했다."
+        },
+        {
+          "cells": "E8,L8,P8",
+          "text": "2층 208호 앞 10동 연결통로에 계단이 있어 휠체어 이동이 어렵다고 기록했다. 이 연결통로는 하부 차도 통과구의 사진 근거가 아니다."
+        },
+        {
+          "cells": "E9,K9:L9",
+          "text": "2층 203호 앞 테라스는 단차와 문 폭 항목이 X다."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "osmId": "way/146155734",
+      "surveyDate": "2024. 11. 13",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2is4tD-wFna-5Fu3_--6EaFe4FIQEtu8IonjipJjcSWfR-eDd33mP3Fg29MzG3-pMFyx-xWnIQNCQ/pubhtml",
+      "tab": "Ⅰ. 출입문 조사",
+      "gid": 534084252,
+      "entryCount": 11,
+      "fieldPhotosDirectlyViewed": 0,
+      "highlights": [
+        {
+          "cells": "E6,N6,E9:E10,N9:N10",
+          "text": "2층 12동 연결 자동문과 1층 12동 연결 문 두 곳을 기록했다."
+        },
+        {
+          "cells": "P9",
+          "text": "1층 11-107 뒷문 앞 연결문에 2cm 이하 턱이 있다고 기록했다."
+        },
+        {
+          "cells": "E8,P8",
+          "text": "1층과 2층 사이의 10-1동 맞은편 출입구는 안팎에 계단이 있다고 기록했다."
+        },
+        {
+          "cells": "A18:A21",
+          "text": "조사 당시 1층 외부 접근은 12동을 거쳐야 하고, 외부에서 직접 들어가려면 2층 자동문을 사용한다고 설명한다. 현재의 모든 출입구를 조사한 결과로 확대하지 않는다."
+        },
+        {
+          "cells": "E7",
+          "text": "원문은 ‘2동 엘리베이터 앞’이다. 오기 가능성을 확정하지 않으며 2층 또는 2동 연결로 임의 수정하지 않는다."
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "osmId": "way/238936704",
+      "surveyDate": "2024. 11. 13",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMekIVPICOP8FMHEYlqM1BodrVKCJX71DPRMS-eWWTgMeE1AUZ1dvfafcANJhJOE8vi-COeZtbKHLr/pubhtml",
+      "tab": "Ⅰ. 출입문 조사",
+      "gid": 534084252,
+      "entryCount": 7,
+      "fieldPhotosDirectlyViewed": 0,
+      "highlights": [
+        {
+          "cells": "E6:E7,N6:N7",
+          "text": "2층 파스쿠치 쪽과 1층 정문을 자동문으로 기록했다. 상호는 당시 위치 표기이며 현재 영업 여부는 확인하지 않았다."
+        },
+        {
+          "cells": "E11:E12,N11:N12",
+          "text": "2층 역사관 쪽 여닫이문과 2층 11동 연결 자동문을 기록했다."
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "공식 보고서 제출일은 2024-10-31이다. 개별 공개 조사표의 2024년 11월과 12월 조사일을 보고서 제출일과 혼동하지 않는다.",
+    "공개 조사표는 공식 보고서에서 연결한 학생 조사 자료다. O/X와 BBF 충족 표기는 조사표의 판정이며 현재 현장이나 법적 접근성 적합성을 보장하지 않는다.",
+    "보고서의 통로 폭, 경사, 문 폭, 턱과 회전공간 수치는 판정 기준이다. 각 문의 실제 측정 치수로 쓰지 않는다.",
+    "출입문 좌표는 지도상 근사점이며 건물 외곽과 몇 m 어긋날 수 있다. 고도와 개구부 치수는 이 자료만으로 확정할 수 없다.",
+    "출입구 기록이나 OSM 태그가 없다는 이유로 실제 출입구가 없다고 판단하지 않는다.",
+    "새 거리뷰를 열거나 건물 외관 관측을 완료한 조사가 아니다. 10-1동 하부 차도 통과구는 별도 거리뷰 근거와 실제 지도 및 교통 검사로 확인한다."
+  ]
+}

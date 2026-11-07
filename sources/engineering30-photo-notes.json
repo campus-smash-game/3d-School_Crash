@@ -1,0 +1,364 @@
+{
+  "phase": 80,
+  "checkedAt": "2026-11-07",
+  "scope": "30동 외관, 30동과 31동 연결 현관 및 북쪽 계단의 사진 조사",
+  "summary": [
+    "2026년 8월 북쪽 사진에는 넓은 계단 위 마당, 30/31 연결 현관, 현관 오른쪽의 짧은 난간 경사로와 그 위 창 세 줄이 보인다.",
+    "현관 왼쪽에는 연결 몸체 아래로 바깥 풍경이 보이는 낮은 개구부가 있다. 하부 전체를 열린 통로로 일반화하지 않으며, 유리 현관과 별도의 하부 개구부를 구분한다.",
+    "2024년 2월 남쪽 중정 사진에서도 연결 몸체의 창 세 줄과 어두운 하부 구간을 확인했다. 내부 바닥과 정확한 관통 동선은 가려져 있다.",
+    "항공사진에는 30동 본체 북단에서 식당 쪽으로 돌출한 작은 지붕이 보인다. 높은 지붕의 항공 투영을 지상 외곽으로 확정하지 않는다.",
+    "30동 서쪽은 붉은 벽돌 수평 띠와 밝은 기둥, 반복 창이다. 동쪽은 깊게 돌출한 흰 세로 부재와 어두운 벽돌, 낮은 석재 하부가 보여 같은 면으로 복제하면 안 된다.",
+    "2011년 4월 남쪽 사진에서 30동 남쪽 계단실과 33동 사이의 열린 하부 보행로, 난간 경사로와 짧은 계단을 확인했다. 현재 상태와 정확한 출입문 중심은 미확인이다."
+  ],
+  "recordsRead": [
+    "sources/engineering31-model-notes.json",
+    "../references/roadview-audit/engineering31-30-orientation-review.json",
+    "src/engineering3130Connection.ts",
+    "sources/campus-accessibility-reference.json",
+    "artifacts/dining76-east-review/37-bbf-index.csv",
+    "artifacts/engineering302-review79/raw-osm.json",
+    "artifacts/engineering302-review79/research-result.json",
+    "public/data/campus.json"
+  ],
+  "identity": {
+    "buildingNumber": "30",
+    "osmWay": "way/389628347",
+    "officialSeq": 35,
+    "officialName": "공학관1",
+    "osmLevels": 5,
+    "officialTotalLevelsConfirmed": false,
+    "levelLimitation": "OSM의 building:levels=5와 사진에서 보이는 창줄 수를 구분했다. 지상층과 지하층을 나눈 공식 층별 안내는 확인하지 못했다."
+  },
+  "northAccess": {
+    "directlyObserved": [
+      "북쪽 도로에서 넓은 직선 계단을 올라 마당에 이른다. 계단과 연결 현관 사이에는 차와 이륜차가 있는 포장 공간이 있다.",
+      "현관 상부에는 <30 ENGINEERING 31> 표기가 있고, 유리문과 문틀이 보인다.",
+      "현관 오른쪽에는 난간이 있는 짧은 경사로가 있다.",
+      "현관 왼쪽, 흰 차 뒤에 낮은 개구부와 반대편 바깥 풍경이 보인다.",
+      "연결 몸체에는 현관과 하부 구간 위로 긴 창 세 줄이 있다."
+    ],
+    "mappedStair": {
+      "id": "way/248013975/103",
+      "rawPoints": [
+        [
+          186.84,
+          -1013.48
+        ],
+        [
+          187.69,
+          -1004.27
+        ]
+      ],
+      "interpretedAscent": {
+        "fromNorthRoad": [
+          187.69,
+          -1004.27
+        ],
+        "toUpperApron": [
+          186.84,
+          -1013.48
+        ]
+      },
+      "basis": "원본 계단선, 북쪽 로드뷰와 항공사진을 총괄의 위치 대응과 대조했다.",
+      "estimated": "계단 폭, 단수, 전체 높이와 마당의 지상 경계는 실측하지 않았다."
+    },
+    "serviceRoad": {
+      "id": "way/457001552/371",
+      "rawPoints": [
+        [
+          142.05,
+          -1004.81
+        ],
+        [
+          165.98,
+          -1010.16
+        ],
+        [
+          175.22,
+          -1010.63
+        ],
+        [
+          186.84,
+          -1013.48
+        ],
+        [
+          192.4,
+          -1017
+        ],
+        [
+          192.63,
+          -1026.94
+        ]
+      ],
+      "observation": "서비스길은 큰 북쪽 계단의 상단 노드를 지나 연결부 쪽으로 이어진다. 마지막 점은 별도 남쪽 계단 /370의 시작점이다.",
+      "inference": "끝 두 점을 큰 북쪽 계단 위의 차량길로 해석하기보다 상단 마당과 남쪽 계단 접근으로 보는 편이 원본 연결 관계와 맞는다. 사진에도 상단 마당에 차가 있다.",
+      "limitation": "실제 차량 진입 허용 범위와 방향은 사진만으로 확정하지 않는다. 게임 계단 몸체에 차량 구간이 겹치는지는 별도 충돌 검사로 판단해야 한다."
+    },
+    "southSteps": {
+      "id": "way/457001550/370",
+      "rawPoints": [
+        [
+          192.63,
+          -1026.94
+        ],
+        [
+          193.27,
+          -1054.86
+        ]
+      ],
+      "limitation": "이 선을 북쪽 큰 계단과 같은 구조로 보지 않는다. 연결부 아래 통과 높이와 실제 계단 구간의 분할은 직접 확인하지 못했다."
+    },
+    "floorRelationship": "북쪽 큰 계단의 상단은 연결 현관 앞 마당이다. 사진에는 그 마당에서 현관으로 들어가는 문과 옆 경사로가 보인다. 현관 바닥의 공식 층 번호, 식당 서쪽 문과의 정확한 고저 차, 낮은 개구부 바닥의 연속성은 미확인이다."
+  },
+  "northProjectionAndRoof": {
+    "image": "research-sky-north30.png",
+    "mapUrl": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&urlLevel=0&urlX=489110&urlY=1099390",
+    "northUp": true,
+    "captureDate": null,
+    "directObservation": [
+      "30동 큰 지붕의 북쪽에 작은 직사각형 지붕이 돌출하고, 그 북쪽에 식당의 굽은 지붕이 있다.",
+      "30동과 31동 사이 연결부 지붕에는 흰 격자가 반복되는 밝은 덮개가 보인다.",
+      "식당 서쪽의 넓은 계단과 차가 있는 상단 마당을 구분할 수 있다."
+    ],
+    "pixelReferences": {
+      "imageSize": [
+        1280,
+        720
+      ],
+      "main30RoofNorthwestCornerApprox": [
+        767,
+        407
+      ],
+      "projectingRoofApproxBounds": [
+        [
+          840,
+          326
+        ],
+        [
+          952,
+          399
+        ]
+      ],
+      "northStairAndApronApproxBounds": [
+        [
+          650,
+          250
+        ],
+        [
+          752,
+          365
+        ]
+      ]
+    },
+    "roofComparison": "79차의 2025년 4월 총동창회 식당 전경 사진에도 뒤쪽 연결부 상부의 연한 황색 곡면 덮개가 보인다. 기존 남쪽 거리뷰의 외벽 상단만으로 연결부 전체를 완전한 평지붕이라고 확정하기 어렵다.",
+    "separateHistoricCanopy": "옛 31동 서쪽 녹색 반원 지붕과 현재 동쪽 연결부의 밝은 덮개는 별도 근거로 다룬다. 옛 녹색 지붕을 현재 동쪽에 복제하지 않는다.",
+    "limitation": "항공사진의 촬영일과 높은 지붕의 투영 오차는 미확인이다. 픽셀 범위는 사진 속 위치 설명이며 지도상의 지상 경계나 실측 치수가 아니다. 지붕 단면과 설치 시점도 확정하지 않았다."
+  },
+  "entrances": [
+    {
+      "side": "남쪽",
+      "osmNode": "4564998562",
+      "latLon": [
+        37.4565241,
+        126.9509161
+      ],
+      "gamePoint": [
+        222.75,
+        -1095.86
+      ],
+      "osmUpdatedAt": "2016-12-21",
+      "tags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "photo": "research-south-access30-old.png",
+      "observation": "30동 남쪽 흰 계단실 옆으로 33동과의 연결부 하부 보행로가 이어진다. 가운데 금속 난간 경사로와 짧은 계단, 붉은 벽돌 포장 및 점자블록이 보인다.",
+      "limitation": "접근 공간은 보이지만 OSM 문짝 중심은 사진에서 확정하지 못했다. 2011년 사진이므로 현재 상태를 보증하지 않는다."
+    },
+    {
+      "side": "서쪽 남단",
+      "osmNode": "4564998563",
+      "latLon": [
+        37.4565738,
+        126.950777
+      ],
+      "gamePoint": [
+        210.46,
+        -1090.32
+      ],
+      "osmUpdatedAt": "2016-12-21",
+      "tags": {
+        "entrance": "yes",
+        "wheelchair": "no"
+      },
+      "observation": "원본 출입구 위치와 태그를 확인했다.",
+      "limitation": "이번 사진에서는 문짝과 실제 계단을 해당 노드에 직접 대응하지 못했다. 임의의 새 문이나 내부 계단을 확정하지 않는다."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "north-202608",
+      "sourceUrl": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1213022588&pan=165&tilt=0&zoom=1&urlLevel=3&urlX=489072&urlY=1099440",
+      "shareUrl": "https://kko.to/JTqexUSORP",
+      "captureDate": "2026-08",
+      "dateReadFromUi": true,
+      "directlyViewed": [
+        "research-northstairs-202608-zoom.png",
+        "research-connector-north-entry-close.png"
+      ],
+      "observation": "북쪽 계단, 마당, 유리 현관, 짧은 경사로, 왼쪽의 낮은 개구부와 위쪽 창 세 줄을 확인했다.",
+      "limitation": "공유 URL은 같은 촬영점의 pan135 화면이다. 저장한 확대 사진은 pan165 방향이다. 내부 바닥과 정확한 높이는 미확인이다."
+    },
+    {
+      "id": "southcourt-202402",
+      "sourceUrl": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ev88w2lLIl87yGs1bK6oFw,28,10,80,Float",
+      "captureDate": "2024-02",
+      "dateReadFromUi": true,
+      "directlyViewed": [
+        "research-naver-court-next.png"
+      ],
+      "observation": "31동 동쪽 흰 탑, 30동 서쪽 입면과 사이의 흰 연결 몸체가 함께 보인다. 연결 몸체의 창은 세 줄이고 그 아래는 어두운 하부 구간이다. 바닥이 낮은 쪽으로 이어지는 계단과 포장이 보인다.",
+      "limitation": "차량, 수목과 원근 때문에 하부 문, 전체 통로 폭과 바닥은 확인하지 못했다. 화면의 최신 표시는 이 촬영점의 2024년 자료에 대한 표시이다."
+    },
+    {
+      "id": "west30-202402",
+      "sourceUrl": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ev88w2lLIl87yGs1bK6oFw,70,5,80,Float",
+      "captureDate": "2024-02",
+      "dateReadFromUi": true,
+      "directlyViewed": [
+        "research-naver-west30-clean.png"
+      ],
+      "observation": "30 숫자가 지붕 처마에 있고, 밝은 세로 기둥과 붉은 벽돌 띠가 반복된다. 위쪽 세 창줄과 아래 낮은 창줄, 회색 하부를 구분할 수 있다. 서쪽 중정에는 차가 있는 낮은 포장과 계단 위 높은 포장이 함께 있다.",
+      "limitation": "지형에 따라 하부가 가려지므로 사진의 창줄 수를 공식 전체 층수로 쓰지 않는다."
+    },
+    {
+      "id": "official30-photo",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=35",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000035.jpg",
+      "localImage": "D:/codex/3d-School_Crash/references/buildings/photos/035-30.jpg",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observation": "밝은 기둥, 주황빛 벽돌 띠, 밝은 창틀과 지붕의 30 숫자가 2024년 서쪽 사진과 대응한다.",
+      "limitation": "사진 아래쪽이 잘려 있고 촬영일은 알 수 없다."
+    },
+    {
+      "id": "east30-201104",
+      "shareUrl": "https://kko.to/Mvdbd80pzd",
+      "sourceUrl": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104870&pan=277.8&tilt=0.0&zoom=0&urlLevel=3&urlX=489187&urlY=1099207",
+      "captureDate": "2011-04",
+      "dateReadFromUi": true,
+      "directlyViewed": [
+        "research-southentry30-old.png",
+        "research-east30-old-start.png",
+        "research-east30-lower.png"
+      ],
+      "observation": "동쪽은 깊은 흰 세로 부재 사이에 어두운 벽돌과 검은 창틀이 반복되고, 가장 낮은 창에는 창살과 석재 하부가 있다. 바깥에는 실외기, 낮은 식재대와 벽돌 보행로가 있다. 북동쪽 흰 계단실 옆에도 후퇴한 현관과 짧은 계단이 보인다.",
+      "limitation": "research-southentry30-old.png는 파일명과 달리 동쪽 긴 입면 사진이다. 2011년 구조를 현재 외관 전체로 단정하지 않는다."
+    },
+    {
+      "id": "south30-201104",
+      "shareUrl": "https://kko.to/MqH2M4AdVd",
+      "sourceUrl": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104872&pan=277.8&tilt=0.0&zoom=0&urlLevel=3&urlX=489195&urlY=1099160",
+      "captureDate": "2011-04",
+      "dateReadFromUi": true,
+      "directlyViewed": [
+        "research-south-access30-old.png",
+        "research-southend30-old.png"
+      ],
+      "observation": "30동 남쪽 흰 계단실, 33동과의 흰 연결부, 그 아래 열린 보행로와 난간 경사로를 확인했다. 상부에는 긴 창 두 줄이 보인다.",
+      "limitation": "문 위치와 현재 상태는 미확인이다. 북쪽 30/31 연결부와 다른 구조이다."
+    },
+    {
+      "id": "sky-north30",
+      "sourceUrl": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&urlLevel=0&urlX=489110&urlY=1099390",
+      "captureDate": null,
+      "directlyViewed": [
+        "research-sky-north30.png"
+      ],
+      "observation": "북쪽 계단실의 돌출 지붕, 식당 지붕, 연결부의 밝은 격자형 덮개, 북쪽 계단과 마당의 배치를 확인했다.",
+      "limitation": "촬영일과 지상 경계가 미확인인 항공사진이다. 축척이 다른 타일이 섞인 상태는 아니며 로딩 뒤 캡처했다."
+    }
+  ],
+  "excludedOrUnresolvedImages": [
+    {
+      "files": [
+        "research-naver-westentry30.png",
+        "research-naver-southeast30-candidate.png"
+      ],
+      "reason": "지도에서 남쪽으로 이동한 뒤 보인 필로티는 33동 주변으로 판단된다. 30동 출입문 근거로 쓰지 않는다. 파일명만 보고 30동에 대응하면 안 된다."
+    },
+    {
+      "files": [
+        "research-naver-connector-south-close.png"
+      ],
+      "reason": "클릭 이동이 북쪽 도로의 2025-09 촬영점으로 건너뛰었다. 연결부 남쪽 근접 사진이 아니다."
+    },
+    {
+      "files": [
+        "research-naver-south30.png",
+        "research-naver-southcourt-step.png"
+      ],
+      "reason": "남쪽 중정의 원경 또는 인접 건물만 보인다. 30동 출입문 중심의 직접 근거로 쓰지 않는다."
+    },
+    {
+      "files": [
+        "research-naver-southcourt-start.png",
+        "research-naver-west30.png"
+      ],
+      "reason": "네이버 안내 창이 일부 화면을 가렸다. 안내 창을 닫은 후의 사진을 우선한다."
+    },
+    {
+      "files": [
+        "research-sky-address.png"
+      ],
+      "reason": "주소 조회가 캠퍼스 전체 주소로 이동해 계단의 정밀 좌표를 제공하지 않았다."
+    }
+  ],
+  "remainingUnknown": [
+    "30동 전체 공식 지상층과 지하층 구분, 실측 높이",
+    "북쪽 계단, 마당, 현관과 식당 문 사이의 정확한 바닥 높이",
+    "북쪽 연결부 아래 개구부의 폭과 완전한 통과 동선",
+    "북쪽 돌출 계단실의 지상 외곽과 지붕 투영 오차",
+    "남쪽 및 서쪽 출입문 중심과 최신 상태",
+    "2025년 이후 공사에 따른 남쪽 중정과 서쪽 옛 차양의 존치 범위"
+  ],
+  "implementation": {
+    "buildingIds": [
+      "way/389628347",
+      "way/389628348",
+      "way/377154957"
+    ],
+    "observed": [
+      "30동 서쪽의 붉은 벽돌 띠와 밝은 기둥, 창 위쪽 좁은 환기창",
+      "동쪽의 어두운 벽돌과 더 깊은 세로 부재",
+      "북쪽 돌출 계단실",
+      "30동과 31동 연결부의 위쪽 창 세 줄",
+      "북쪽 현관 안내 글자, 유리문과 옆 경사로",
+      "큰 북쪽 계단과 상단 포장 마당",
+      "지붕의 밝은 격자 덮개"
+    ],
+    "estimated": [
+      "OSM 5층 표기에 맞춘 창줄과 17.5m 몸체 높이",
+      "돌출 계단실의 지상 윤곽과 창 위치",
+      "북쪽 계단의 폭, 단수 및 계단과 평탄한 상단의 분할",
+      "현관과 식당 서쪽 문 사이 바닥 높이",
+      "하부 개구부의 관통 동선과 30동 및 31동 내부 접속",
+      "남쪽 출입문 폭과 서쪽 문 중심의 현관 평면 투영",
+      "서비스 진입로의 종단 경사와 마당 경계",
+      "연결부의 곡면 덮개 단면",
+      "31동 동쪽 탑의 추정 높이 조정",
+      "차량 회전 공간과 겹치지 않도록 조정한 식당 서쪽 난간 통로의 길이"
+    ],
+    "excluded": [
+      "남쪽 30동과 33동 상부 연결교의 재현",
+      "강의실과 연구실의 실제 실내 배치",
+      "공사 단계와 현장 접근 허용 여부의 확정",
+      "현재 남쪽 현관 상태의 단정",
+      "사진을 게임 텍스처로 포함하는 방식"
+    ],
+    "rawOsmAndDemPreserved": true,
+    "photosUsedAsGameTextures": false,
+    "limitations": "실측 모델이 아니다. 동쪽과 남쪽의 직접 사진은 2011년 자료이며, 현재 상태를 확인한 것으로 표현하지 않는다. 게임 안의 경사로는 실제 휠체어 접근성을 보증하지 않는다.",
+    "traffic": "원본 서비스 도로의 중심선과 차량 종류는 보존했다. 새 마당 진입 구역에서는 차체 전체의 바닥 표본을 이용해 경사와 높이를 맞춘다. 경사로와 포장이 겹치는 부분을 잘라 중복 충돌면을 없앴다."
+  }
+}

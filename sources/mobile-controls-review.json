@@ -1,0 +1,97 @@
+{
+  "reviewedAt": "2026-11-04T22:31:37.415Z",
+  "status": "implemented-and-node-verified",
+  "scope": "기존 동적 썸스틱과 1인칭 시점을 유지하면서 터치 점프의 누름 유지와 터치 후 마우스 복귀만 보완했다.",
+  "sources": [
+    {
+      "url": "https://create.roblox.com/docs/input/mobile",
+      "title": "Roblox Creator Hub: Mobile input",
+      "accessedAt": "2026-11-05",
+      "finding": "현재 공식 문서는 플레이어가 사용하는 입력 방식에 따라 화면 조작 요소를 바꾸고 여러 입력 장치를 함께 지원하도록 안내한다.",
+      "limit": "이 문서는 현재 클라이언트의 터치 점프 내부 알고리즘을 공개하지 않는다."
+    },
+    {
+      "url": "https://create.roblox.com/docs/reference/engine/classes/UserInputService#PreferredInput",
+      "title": "Roblox Creator Hub: UserInputService.PreferredInput",
+      "accessedAt": "2026-11-05",
+      "finding": "PreferredInput은 터치와 키보드/마우스를 구분하며 입력 방식 변화에 대응하는 공식 API다.",
+      "application": "웹게임에서는 기존 PointerEvent.pointerType으로 실제 입력 변화를 처리한다. Roblox API를 사용한 구현은 아니다."
+    },
+    {
+      "url": "https://github.com/Roblox/Core-Scripts/blob/master/PlayerScripts/StarterPlayerScripts_NewStructure/RobloxPlayerScript/ControlScript/TouchJump.lua",
+      "title": "Roblox/Core-Scripts: TouchJump.lua",
+      "accessedAt": "2026-11-05",
+      "repositoryArchivedAt": "2020-06-11",
+      "finding": "공개 소스는 점프 버튼의 새 터치를 누르면 isJumping을 true로 두고, 해당 터치가 끝나거나 메뉴가 열리면 false로 되돌린다.",
+      "limit": "2020년에 보관 처리된 공식 공개 소스다. 현재 Roblox 클라이언트가 같은 코드를 실행한다고 확인한 자료는 아니다."
+    }
+  ],
+  "changes": [
+    {
+      "area": "touch-jump",
+      "before": "터치 점프가 한 번 소비되면 손가락을 누르고 있어도 다음 프레임에 요청이 남지 않았다. 착지 직전에 누르면 공중에서 요청을 소모할 수 있었다.",
+      "after": "점프 버튼을 터치나 펜으로 누르는 동안 consumeJump가 요청을 유지한다. 접지 여부와 점프 실행은 기존 Simulation이 결정한다.",
+      "release": "pointerup은 유지 상태를 해제한다. 한 프레임보다 짧은 탭은 한 번의 대기 요청을 남긴다. pointercancel, 포인터 캡처 상실, 일시정지, 메뉴, blur, 숨김, 화면 크기나 방향 변경, 오류 전환은 유지 상태와 대기 요청을 함께 지운다.",
+      "keyboard": "Space는 기존처럼 새 keydown에서 한 번만 요청한다. 키 반복 이벤트가 추가 점프를 만들지 않는다."
+    },
+    {
+      "area": "mouse-return",
+      "before": "터치 입력이 한 번 활성화되면 실제 마우스로 돌아와도 터치 모드가 남았다.",
+      "after": "조작 화면이나 이동 영역을 실제 마우스로 누르거나 마우스로 시작/재개하면 데스크톱 입력으로 돌아간다. 전환 클릭은 발사하지 않으며, 포인터 잠금을 사용할 수 없으면 기존 드래그 시점을 사용한다.",
+      "touchOwnership": "이동, 시점, 행동 버튼을 누르는 활성 터치가 있으면 마우스 pointerdown을 무시한다. 브라우저가 sourceCapabilities.firesTouchEvents를 제공하고 true로 표시한 마우스 이벤트도 무시한다.",
+      "asynchronousLock": "터치로 바뀐 뒤 포인터 잠금 해제가 늦게 완료되더라도 마우스 movementX/Y가 시점에 더해지거나 터치 pointerdown이 발사가 되지 않는다.",
+      "limit": "활성 터치 보호와 선택적 firesTouchEvents 표시를 검사했다. 모든 브라우저의 네이티브 호환 마우스 이벤트 발생 순서를 검증한 것은 아니다."
+    }
+  ],
+  "verification": {
+    "script": "scripts/verify-controls.mjs",
+    "result": "artifacts/controls-verification.json",
+    "verifiedAt": "2026-11-04T22:29:04.612Z",
+    "passed": 27,
+    "failed": 0,
+    "previousChecksPreserved": 20,
+    "newChecks": 7,
+    "typecheck": "npx tsc --noEmit: exit 0",
+    "environment": "실제 controls.ts를 변환해 Node에서 실행하고 DOM과 이벤트 전달은 최소 대역으로 제공했다. 착지 검사는 실제 physics.ts의 Simulation과 Rapier를 실행한다.",
+    "heldJumpLanding": {
+      "timeStepSeconds": 0.016666666666666666,
+      "pressedWhileAirborneAndDescending": true,
+      "playerCentreHeightAtPressMetres": 1.0534334182739258,
+      "framesFromPressToRebound": 3,
+      "furtherJumpsAfterRelease": 0,
+      "observationFramesAfterRelease": 150,
+      "limit": "평평한 시험 바닥에서 접지와 점프 요청의 연결을 확인했다. 실제 캠퍼스 모든 경사와 계단을 통과한 보행 검사는 아니다."
+    },
+    "covered": [
+      "터치 점프 유지, 짧은 탭, 취소와 포인터 캡처 해제",
+      "이동, 시점, 점프, 발사의 동시 포인터 소유 유지",
+      "일시정지, blur, 숨김, 메뉴, 화면 크기와 방향 변경, 오류 뒤 입력 해제",
+      "키보드 단발과 반복 keydown 무시",
+      "터치에서 마우스로 복귀할 때 전환 클릭 오발 방지",
+      "활성 터치와 터치 유래로 표시된 마우스 이벤트의 간섭 방지",
+      "포인터 잠금과 드래그 대체 조작, 비동기 잠금 해제 중 터치 시점 유지",
+      "기존 로딩, 빠른 이동, HUD와 데스크톱 조작 회귀"
+    ]
+  },
+  "sourceSnapshot": [
+    {
+      "file": "src/controls.ts",
+      "sha256": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d"
+    },
+    {
+      "file": "scripts/verify-controls.mjs",
+      "sha256": "f7db7154ce33064ee23ba19e3d7297e88c7a90bcc46dce76b9dec5dc442187e4"
+    },
+    {
+      "file": "src/physics.ts",
+      "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "role": "검사에서 실행한 기존 물리 구현이며 이번 작업에서 수정하지 않았다."
+    }
+  ],
+  "limitations": [
+    "브라우저 UI 자동화와 대체 경로를 실행하지 않았다.",
+    "실제 휴대폰의 터치 전달, 포인터 캡처와 잠금, 화면 배치, GPU 성능과 FPS는 확인하지 않았다.",
+    "로블록스 조작을 참고한 독립 웹게임이며 로블록스 공식 게임이 아니다.",
+    "공식 문서와 보관된 공식 소스가 설명하는 범위를 구분했다. 최신 Roblox 클라이언트와 같은 조작감이라고 단정하지 않는다."
+  ]
+}

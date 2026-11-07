@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05",
+  "observer": "root",
+  "area": "303동 북동측과 312동 도로 쪽 입면",
+  "buildingIds": [
+    "supplemental/snu-303",
+    "way/777502176"
+  ],
+  "status": "partial-roadview-observation",
+  "wholeBuildingCompared": false,
+  "captureMonth": "2026-08",
+  "method": "Chrome의 카카오맵 로드뷰를 직접 열고 도로 화살표로 북쪽으로 이동했다. 로딩이 끝난 화면의 촬영월과 입면을 확인한 뒤 실제 브라우저 화면을 보존했다.",
+  "observations": [
+    {
+      "id": "main-bridge-north-underside",
+      "image": "../references/north-connections/2026-08/303-bridge-north-underside.jpg",
+      "panoramaId": null,
+      "observed": "기존 301/303 주다리 아래의 X자 골조, 기둥과 303동 하부 출입 공간이 보인다.",
+      "limitation": "공유 링크를 저장하기 전 중간 지점이다. 이 X자 골조를 별도 312동 연결교라고 해석하지 않는다.",
+      "sha256": "288bc668eeea6aa82b99fbbea74027352b30d8033eb0f425e8a5074d709a744e"
+    },
+    {
+      "id": "303-3455-west",
+      "image": "../references/north-connections/2026-08/303-3455-west.jpg",
+      "panoramaId": "1213023455",
+      "shareUrl": "https://kko.to/G38pMcTiOb",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213023455&pan=270&tilt=0&zoom=0&urlLevel=3&urlX=489390&urlY=1097530",
+      "observed": "주다리 하부와 303동 쪽 낮은 출입 공간을 서쪽 시점에서 살폈다.",
+      "limitation": "저장 화면 일부가 저해상도여서 문틀과 세부 형상 산정에 사용하지 않는다. 공유 링크의 원래 방향은 북쪽이며 저장 화면은 같은 관측점에서 서쪽으로 회전했다.",
+      "sha256": "7896591488459bfc23787f8fba4140769e3de272da3a2c5200ef43ed1c4bc987"
+    },
+    {
+      "id": "303-north-next-west",
+      "image": "../references/north-connections/2026-08/303-north-next-west.jpg",
+      "panoramaId": null,
+      "observed": "흰 303동과 주다리 북쪽에 별도의 짙은 건물 몸체와 그 사이 수목 공간이 보인다. 어두운 연결 구조 일부가 수목 뒤에 보인다.",
+      "limitation": "3455 지점에서 북쪽으로 이동한 중간 관측점이다. 개별 파노라마 ID는 저장하지 않았으며 3455의 ID를 이 사진에 부여하지 않는다.",
+      "sha256": "4516dd91bbc2d88713fcfa4a66e7f670dcbfb9da592f4c1091feddc0ab2d1165"
+    },
+    {
+      "id": "303-north-gap",
+      "image": "../references/north-connections/2026-08/303-north-gap-312-wing.jpg",
+      "panoramaId": null,
+      "observed": "흰 303동과 북쪽의 수직 창 배열이 있는 짙은 몸체가 분리되어 보이며 그 사이에 식재가 있다.",
+      "limitation": "파일명의 312 식별은 촬영 이후 설계사 자료와 대조해 보완했다. 이 화면만으로 연결교 양쪽 출입문과 접속층을 확인하지 않았다.",
+      "sha256": "431c3253cf5fd49fa74e6083b376e02b98b30829150b65ce464e54facab9be62"
+    },
+    {
+      "id": "312-3463-west-road",
+      "image": "../references/north-connections/2026-08/312-3463-west-road.jpg",
+      "panoramaId": "1213023463",
+      "shareUrl": "https://kko.to/WM2ggAMfwa",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213023463&pan=270.0&tilt=0.0&zoom=0&urlLevel=3&urlX=489437&urlY=1097617",
+      "observed": "화면에 2026년 08월이 표시된다. 왼쪽에 흰 303동과 주다리가, 오른쪽 수목 뒤에 짙은 몸체와 푸른 상부 유리가 보인다. 도로 가장자리에는 연속 가드레일과 배수 덮개가 있다.",
+      "limitation": "수목이 하부와 연결교를 가려 문 위치와 전체 통로를 이 시점만으로 복원할 수 없다.",
+      "sha256": "85a6725c49e9eefd3e8f1b6c2dc3dce73bc26e14441cc465a973e7c126a52faf"
+    }
+  ],
+  "followupPrimarySources": [
+    {
+      "url": "https://rawwrks.kr/works/commissioned/haec",
+      "imageUrl": "https://framerusercontent.com/images/3ghLpldn1DZAW9UQFkzfnTC36rk.jpg?scale-down-to=2048",
+      "localImage": "artifacts/engineering303-review/rawwrks/02.jpg",
+      "observed": "고가의 넓은 광장 북쪽에서 짧은 꺾인 계단을 내려가 별도의 검은 연결교에 닿는 구성을 직접 확인했다. 주다리 하부 골조와 구분된다.",
+      "captureDate": "미확인"
+    },
+    {
+      "url": "https://lkjap.com/",
+      "localManifest": "../references/north-connections/lkjap-312/manifest.json",
+      "observed": "312동 증축 프로젝트의 지상 6층, 2023년 2월 준공 표기를 확인했다. 설계 CG의 수직 커튼월과 5층 평면의 연결 통로를 준공 사진 및 거리뷰와 대조한다.",
+      "limitation": "설계 CG와 평면은 준공 실측 도면으로 취급하지 않는다. 이미지 목록 마지막 View from the Lake는 다음 프로젝트 자료이므로 312동 근거에서 제외한다."
+    }
+  ],
+  "notVerified": [
+    "도로 쪽을 제외한 312동 전체 입면과 현행 내부 공간",
+    "연결교의 실측 폭, 길이, 접속 높이와 계단 단수",
+    "수목 아래 보행로와 주변 시설 전체",
+    "촬영 이후의 변경 사항"
+  ]
+}

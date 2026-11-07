@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 1,
+  "title": "10-1동 차도 통과구와 남쪽 현관 모델",
+  "buildingId": "way/238937145",
+  "sourceRoad": "way/456540230/333",
+  "sourceEntranceNode": "4564750884",
+  "basis": {
+    "roadview": "sources/humanities-court-roadview-review.json",
+    "accessibility": "sources/humanities-court-accessibility-reference.json",
+    "officialPhoto": {
+      "file": "../references/buildings/photos/011-10-1.jpg",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000011.jpg",
+      "dateUnknown": true,
+      "directlyViewed": true
+    },
+    "observed": [
+      "남쪽과 북쪽 차도 통과구, 상부 큰 몸체와 원통기둥",
+      "남쪽 상부의 가로 창 네 줄",
+      "낮은 가로 연결교와 방향을 바꾸는 외부 금속 계단",
+      "청록 유리 코어 아래 현관, 짧은 석재 계단과 오른쪽 경사판",
+      "사범대학 / COLLEGE OF EDUCATION 및 10-1 교육정보관 Education Information Hall 문구",
+      "현관 앞 사각 회색 포장과 벤치 2개"
+    ],
+    "unobserved": [
+      "건물 전체 외벽과 후면의 정확한 창 배열",
+      "북쪽 상부 창 네 줄 배열",
+      "현관 및 연결교 뒤 건물 전체 실내",
+      "현장 높이와 정확한 폭, 계단 단수",
+      "전광판의 표시 내용과 행사 현수막의 상설 여부"
+    ]
+  },
+  "mapAlignment": {
+    "portalSegment": 3,
+    "portalAxisEndpoints": [
+      [
+        640.1,
+        -694.36
+      ],
+      [
+        649.28,
+        -678.92
+      ]
+    ],
+    "entryNode": [
+      647.74,
+      -706.94
+    ],
+    "entryModelFloor": [
+      647.7864122678487,
+      59.5799994981226,
+      -706.967594858734
+    ],
+    "method": "원본 차도와 건물의 접점을 바탕으로, 두 촬영점에서 본 현관의 방위와 오목한 유리 코어 위치를 대조했다. p4는 유력한 근사 앵커이며 문 중심 실측점은 아니다.",
+    "accessibilityMarkerLimitation": "2024 조사표의 1층 자동문 지도점은 차도 통과구 가까이에 있다. 정밀 문 중심으로 사용하지 않았으며 지하 주차장문 및 2층 연결계단 기록과 구분했다."
+  },
+  "implementation": {
+    "modules": [
+      "src/education101Site.ts",
+      "src/education101Approach.ts",
+      "src/education101EntrySite.ts",
+      "src/education101EntryTerrain.ts",
+      "src/fullCampus.ts",
+      "src/terrain.ts"
+    ],
+    "scope": [
+      "10-1동 일반 외벽의 통과부 하층을 분할하고 오른쪽 벽을 차도 안쪽으로 재구성",
+      "원본 외곽 바깥으로 사진 비례의 상부 매스와 기둥을 추가",
+      "계단과 연결교, 별도 상부문 및 짧은 내부 바닥 연결",
+      "남쪽 현관의 문과 고정 유리, 차양, 3단, 경사판, 넓은 포장",
+      "실제 새 포장 범위의 기존 보행 표시와 mapped-area 표시만 제외"
+    ],
+    "geometry": {
+      "parts": 634,
+      "triangles": 9678,
+      "mergedMeshes": 3,
+      "signMeshes": 2,
+      "textures": 3
+    },
+    "heights": {
+      "portalMainCeiling": 66.8,
+      "localUpperTop": 79.6,
+      "bridgeFloor": 63.05,
+      "entryFloor": 59.58,
+      "entryForecourtNominal": 59.1,
+      "entryStepCount": 3,
+      "entryStepRise": 0.16,
+      "preservedRoadWidth": 5.5
+    },
+    "preserved": [
+      "원본 OSM, 지도 JSON, DEM 파일",
+      "차도 /333의 원본 선형과 실제 차량 바닥 높이",
+      "10동 및 인접 건물의 기존 외벽",
+      "기존 76동 동서 계단과 1동 지도 통로"
+    ],
+    "estimates": [
+      "높이, 폭, 상부 매스의 외곽 확장은 사진 비례를 따른 게임 근사다.",
+      "외부 계단의 36단과 각 구간 폭1.1m는 인접 건물과 차도 사이에서 보행 가능한 형태로 정한 값이다. 실제 단수나 폭으로 주장하지 않는다.",
+      "남쪽의 관측 창 네 줄을 북쪽에 적용한 부분은 미관측 입면의 근사다.",
+      "일반 건물의 기존 14m/4층 기본값과 국소 상부 매스 높이를 구분한다. 전체 건물의 실측 층수를 확정하지 않았다.",
+      "상부 연결교 뒤의 짧은 문과 내부 바닥은 보행 연결을 위한 근사다.",
+      "현관 앞59.10m는 계단 주변의 명목 높이다. 북쪽과 차도 옆 접속부는 보정한 실제 지형을 따라 낮아지며, 차도 단면을 사진의 평탄면으로 새로 바꾸지 않았다."
+    ],
+    "metadata": {
+      "portal": {
+        "sourceSegment": 3,
+        "originalEndpoints": [
+          [
+            640.1,
+            -694.36
+          ],
+          [
+            649.28,
+            -678.92
+          ]
+        ],
+        "routeWorld": [
+          [
+            638.5668405180602,
+            57.928803567984716,
+            -696.9386473203868
+          ],
+          [
+            639.0771038082219,
+            57.863372995020306,
+            -696.0804267103546
+          ],
+          [
+            639.5873670983835,
+            57.79793700858009,
+            -695.2222061003223
+          ],
+          [
+            640.0976303885452,
+            57.721667102400076,
+            -694.3639854902901
+          ],
+          [
+            640.6078936787068,
+            57.599611042655326,
+            -693.5057648802579
+          ],
+          [
+            641.1181569688684,
+            57.47755526240426,
+            -692.6475442702257
+          ],
+          [
+            641.6284202590301,
+            57.35549900593998,
+            -691.7893236601934
+          ],
+          [
+            642.1386835491918,
+            57.23344152479402,
+            -690.9311030501611
+          ],
+          [
+            642.6489468393534,
+            57.111387268794516,
+            -690.072882440129
+          ],
+          [
+            643.159210129515,
+            56.99822407090078,
+            -689.2146618300967
+          ],
+          [
+            643.6694734196767,
+            57.13123522060822,
+            -688.3564412200644
+          ],
+          [
+            644.1797367098384,
+            57.264246370315654,
+            -687.4982206100323
+          ],
+          [
+            644.69,
+            57.39725752002309,
+            -686.64
+          ],
+          [
+            645.2002632901616,
+            57.4899141515469,
+            -685.7817793899677
+          ],
+          [
+            645.7105265803233,
+            57.517754951975064,
+            -684.9235587799355
+          ],
+          [
+            646.220789870485,
+            57.54559575240322,
+            -684.0653381699033
+          ],
+          [
+            646.7310531606466,
+            57.57343655283138,
+            -683.207117559871
+          ],
+          [
+            647.2413164508082,
+            57.60127735325952,
+            -682.3488969498388
+          ],
+          [
+            647.7515797409699,
+            57.62912295381089,
+            -681.4906763398066
+          ],
+          [
+            648.2618430311315,
+            57.6569606298171,
+            -680.6324557297743
+          ],
+          [
+            648.7721063212932,
+            57.68480229262875,
+            -679.7742351197421
+          ],
+          [
+            649.2823696114548,
+            57.712643290003044,
+            -678.9160145097098
+          ],
+          [
+            649.7926329016165,
+            57.74048428737737,
+            -678.0577938996777
+          ],
+          [
+            650.3028961917781,
+            57.76832528475168,
+            -677.1995732896454
+          ],
+          [
+            650.8131594819398,
+            57.754742064614774,
+            -676.3413526796131
+          ]
+        ],
+        "roadFloorPreserved": true,
+        "clearWidth": 5.5,
+        "mainCeilingY": 66.7999994981226,
+        "lowerBridgeBottom": 62.7999994981226
+      },
+      "entry": {
+        "sourceNode": "4564750884",
+        "originalPoint": [
+          647.74,
+          -706.94
+        ],
+        "photoAnchorMethod": "원본 입구 노드와 두 촬영점 방위 및 오목한 현관 배치를 대조한 근사",
+        "door": {
+          "component": "education101-main-door",
+          "center": [
+            647.7864122678487,
+            59.5799994981226,
+            -706.967594858734
+          ],
+          "outward": [
+            -0.859549106795602,
+            0,
+            0.5110531606466033
+          ],
+          "width": 3,
+          "height": 2.7
+        },
+        "routeWorld": [
+          [
+            639.0619888338734,
+            59.073743509165894,
+            -701.780405278171
+          ],
+          [
+            644.1333285639674,
+            59.09999949812261,
+            -704.7956189259859
+          ],
+          [
+            645.59456204552,
+            59.09999949812261,
+            -705.6644092990852
+          ],
+          [
+            646.754953339694,
+            59.5799994981226,
+            -706.354331065958
+          ],
+          [
+            647.7864122678487,
+            59.5799994981226,
+            -706.967594858734
+          ],
+          [
+            650.0212399455173,
+            59.5799994981226,
+            -708.2963330764152
+          ]
+        ],
+        "rampRouteWorld": [
+          [
+            641.814867272392,
+            59.10000076293945,
+            -711.4345199123748
+          ],
+          [
+            643.2761007539445,
+            59.09999949812261,
+            -712.3033102854739
+          ],
+          [
+            643.5827326503326,
+            59.09999949812261,
+            -711.7875808213965
+          ],
+          [
+            645.264771313094,
+            59.5799994981226,
+            -708.9585310443772
+          ],
+          [
+            647.0557955270725,
+            59.5799994981226,
+            -706.5331996721843
+          ],
+          [
+            650.0212399455173,
+            59.5799994981226,
+            -708.2963330764152
+          ]
+        ],
+        "lobbyDepth": 3,
+        "shortSteps": 3,
+        "stepRise": 0.16,
+        "forecourtFloor": 59.09999949812261,
+        "floorY": 59.5799994981226
+      },
+      "externalStairs": {
+        "width": 1.1,
+        "count": 36,
+        "directionChanges": 1,
+        "openUnderside": true,
+        "lowerFloor": 56.66798622888575,
+        "upperFloor": 63.0499994981226
+      },
+      "scope": {
+        "dimensionsEstimated": true,
+        "currentRoadviewDate": "2025-07",
+        "bothPortalEndsObserved": true,
+        "upperWindowRowsObserved": 4,
+        "upperWindowRowsObservationFace": "south",
+        "northUpperWindowsEstimated": true,
+        "wholeBuildingStoreysConfirmed": false,
+        "upperBridgeAndExternalStairObserved": true,
+        "exactUpperInteriorUnobserved": true,
+        "wholeBuildingFacadeReconstructed": false,
+        "temporaryBannersOrBarriersModelled": false,
+        "groundEntranceShortStepsAndRampObserved": true,
+        "unreadDisplayContentOmitted": true
+      }
+    },
+    "ramp": {
+      "s0": -13.2,
+      "s1": -9.908681616148666,
+      "n0": -12.75,
+      "n1": -11.05,
+      "lowerLandingS": [
+        -13.8,
+        -13.2
+      ],
+      "lowerLandingLength": 0.6,
+      "lowerFloor": 59.1,
+      "upperFloor": 59.58,
+      "length": 3.291318383851334,
+      "gradeDegrees": 8.297418876387235,
+      "estimated": true
+    },
+    "finalAdjustments": [
+      "기존 일반벽의 통과부 절개 상단을 천장 두께 위까지 올려 공면 중첩을 없앴다.",
+      "경사판 시작을 남쪽 돌출 몸체 밖으로 옮기고 현관 유리 코어 양옆을 고정 유리와 반환벽으로 닫았다.",
+      "통과부 차도에는 평탄판을 추가하지 않는다. 현관의 국소 지형 보정과 기존 차도 표시 자료를 분리한다.",
+      "경사판 아래에 길이 0.6m의 포장참을 두고, 난간 끝을 돌아 직진으로 진입하도록 연결했다. 경사판의 약 8.3도 경사는 게임용 근사다.",
+      "경사판 상단의 실제 통행 폭을 확보하려고 차양 기둥을 계단 전면 쪽으로 옮기고 차양 깊이를 2.47m로 조정했다. 기둥 위치와 차양 치수는 사진 비례를 따른 근사다.",
+      "연결교 남쪽 난간은 외부 계단의 접속 폭을 비우고, 상부참 끝을 10cm 넓혀 마지막 단의 전체 폭을 받쳤다."
+    ],
+    "canopy": {
+      "width": 6.9,
+      "depth": 2.47,
+      "outerN": -10.68,
+      "postN": [
+        -11.025,
+        -10.775
+      ],
+      "positionAndDimensionsEstimated": true
+    }
+  },
+  "validation": {
+    "status": "동결 후보의 장면 생성과 유한 정점을 확인했다. 실제 전체 장면 및 최종 화면 검증 결과는 별도 verification에 연결한다.",
+    "smoke": "artifacts/humanities-court-review/scene-38-implementation.json",
+    "smokeChecks": {
+      "created": true,
+      "finiteVertices": true,
+      "parts": 634,
+      "partsWithCollisionVertices": 357
+    },
+    "terrain": "artifacts/humanities-court-review/controls-38-terrain-check.json",
+    "fullScene": "artifacts/education101-access-test/results.json",
+    "sourceHashes": {
+      "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "public/data/campus-transit.json": "b76619a0cf01338994b98e9bab997a4ae6d90875b2b57a6d23bb085317c4f5b4",
+      "sources/building-match-review.json": "61b7d5e453fe3595be67a6ad5fd6a7c266e52d56a4887c50063859b22d53ee14",
+      "src/terrain.ts": "c065ea0a7f3929ddf6cef427f8fb6540c11aed461a574a108a122cfdebc76e22",
+      "src/engineering301303Site.ts": "b0c63ab74926e30bd808c042fd969d038346280e165e12ab837bd8ca761f0fc4",
+      "src/livingScienceCourtyardSite.ts": "6898402ad56811c8718016e4640907f9dadf3b37e88674a748078de9a3732eb9",
+      "src/educationParkingSite.ts": "57214d59d8f424a4840c97d888f5ba84a50938ed29e525c62d34039a191832d1",
+      "src/educationParkingTerrain.ts": "e8ac2b2ad6d9f036be417a69cff72e1eb728c22e7e06ce1f0445fbb089cb7c76",
+      "src/dining76Site.ts": "3310688d3d5908b13d4ecf2bc3d235aaf606688b5354f12bb7d6c14c511b2e93",
+      "src/dining76Terrain.ts": "f7923a1b4a81f22822f94c8149f9c88c6418b60ed5c03de8863388be9f360d94",
+      "src/dining76EastSite.ts": "d11594743ec0c4d8b857b5f3d673eeb49c98f5004174fdffb9903e6950cea7af",
+      "src/dining76EastTerrain.ts": "a27b00b47b82964a57c77648996cc17a53716ccea755aff699ce2706b168f49e",
+      "src/education101EntrySite.ts": "4130388572d10931ca81a3bdd872bcca7a422d9f4ea5ce9aad9d319c6eabcb4f",
+      "src/education101EntryTerrain.ts": "829a5c3c1419eb493a09687ff820badfa3bbee6514dcf20e6128ee793afc1dde",
+      "src/fullCampus.ts": "32bb3f957740e6fe4ea70f8ad9671a2da8eeff5cb5ddaddfc987b0ed1f0aebbe",
+      "src/buildingAppearance.ts": "abf672327d79f89d9998b498bbb2cdf7d81e547e71ef27843c11e25cd82a0baf",
+      "src/observedAppearances.ts": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80",
+      "src/landmarkBuildings.ts": "e27b0ed3a780cc0aa5821416d1ded30c94ba9c21cd57753622bc7541711d0f49",
+      "src/libraryLandmark.ts": "665031181f1314a982fec200b1c74dc9d039ff0e854b3519a4a22ddb4db2a5a6",
+      "src/mainLibraryLandmark.ts": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3",
+      "src/administrationLandmark.ts": "3ecf221861db9f84b8a3d84d397c874a3211d386533e3cdb42f973b0728f34ed",
+      "src/studentCenterLandmark.ts": "d84281e6d26c4faacc48532342d13a5d0df2cd3fdb7722fd19447b532d29fc36",
+      "src/museumLandmark.ts": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+      "src/livingScienceLandmark.ts": "d18b2114e105014d1d68a8f4d9d1602eec121d4d16ca70fffeaf97414fc6a6e4",
+      "src/gymLandmark.ts": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e",
+      "src/agricultureLandmark.ts": "34f1250a0b7e8fc32145de1e7ec8be6e376ef238a1ecbd73362dd470b6ace6be",
+      "src/sportsLandmark.ts": "3783c04d6a77679fbd6fd1c05b6d29b4b3ab4c434a82e5972c6017d687473b36",
+      "src/gyujanggakLandmark.ts": "fd34501f10fdf0f00b003993b35a8dfaec60c281aa1b2bc13edb7bb836d93e56",
+      "src/pavilionLandmark.ts": "115acdab76130e7c3e6b3d28a1a89e8213482d47f7cb3ca6a13a13e9780d4d17",
+      "src/engineering302Landmark.ts": "f7793201687e68fd252c89d90c4ae340ea9f12058f410234070036794231ee5c",
+      "src/engineering301Landmark.ts": "3c6e41341d7d1e8ff34359add2e0319aca143f2330b831093fc8d72883f668df",
+      "src/engineering303Landmark.ts": "00817d44acae45ed004d3ad07f4279dd1185b0fd8df6c01fb114c0aa505adad5",
+      "src/engineering312Landmark.ts": "9d21efecc34c674c8d708f7da1a4ba1fa6bdf3d8df3190adf8ca7a383b39eae0",
+      "src/facultyClubLandmark.ts": "e378fc1be9c0fa38cded6ef474888a5bd630f202e95848155522495f2feda38c",
+      "src/teachingCenterLandmark.ts": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f",
+      "src/engineering35Landmark.ts": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d",
+      "src/engineering31Landmark.ts": "3034c02a90548311e73da3a933dbf0cb491917f04280d1b2eb5b9425b8a77860",
+      "src/engineering3130Connection.ts": "0a3e27253b62a118952eece56518748bd32e3ffdeb95bbd9ea3aa3dee2ad9a28",
+      "src/educationHealthLandmark.ts": "d9836095d7db9643899b0d3b4878616af450891c017ec739b3ab9d0685d32a5f",
+      "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+      "src/educationNorthApproach.ts": "70cc3acd9ec64a93b53cead881490ff3771eb6825c2ffcab9e67a6fbba26bf45",
+      "src/educationParkingApproach.ts": "9b5c45a71d6a921afb6650fb034c88d9ed9c2b5b059c7ee17c50af601453f02a",
+      "src/science500Landmark.ts": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+      "src/engineerHouseLandmark.ts": "e97e3adf9b645537472800e333b3930aef98fadfeb32bc252dd62db8ca668528",
+      "src/samsungResearchLandmark.ts": "6be746eac2d9fd875964cbe357063b88af144b4b75a445ef9d0201ddc02edc35",
+      "src/familyDormLandmark.ts": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e",
+      "src/researchParkLandmark.ts": "2787e19b9b63114f6a9c595d9dd56294eb4137b316e333d471579ffa3ea4d839",
+      "src/globalEngineeringLandmark.ts": "1638023cd7d0fd118c7095dbbe423d04da86f8e955e33fc2fd92d90b28938a6f",
+      "src/admissionsLandmark.ts": "c38e5a91db4f437eff5506f0f6e7c12bdcb9e3bb9d36c9290e964c5cef404167",
+      "src/neutinamuLandmark.ts": "c73df7876f7d8e03c56e77dd24a4a33c9101948939cfe76740f248e18817471f",
+      "src/baekhakLandmark.ts": "75a750189d909cbeb5a901ddc99f7412c81acde8336c51538628bcc7da32d2d8",
+      "src/distantBuildings.ts": "20a13782054d4cb80ac8449f8105ee010d7efa9e9b2e0aaae4bf39d2a95293cb",
+      "src/campusConstruction.ts": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22",
+      "src/engineering301303Connection.ts": "db7f5a3296e290a924c8f25ed4b1c682d07388feaf19144c2792a0b7a4b9cbe2",
+      "src/engineering303312Connection.ts": "27f6797e2f75abfa6430c67f11540e0708d55ef6e65a0db5656ccca7dc55071c",
+      "src/engineeringRoadFacilities.ts": "7e63e93d16edd5bb51aafdecc67d987a6282a64b7bfa5d63fd73ed93eb11edc8",
+      "src/observedBuildingOverrides.ts": "7994c60951e1f1a8a7e4db1ee4ae9970b0999f72b708696bdedfc36a0a5651e1",
+      "src/livingScienceSouthSite.ts": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+      "src/humanitiesPassage.ts": "65693256f4557c866024be5cb99258487d241da25a47dc1fe552c60fa0d4a854",
+      "src/dining76Approach.ts": "821cf82592322f15a0e306b9ae715ed67242f191aa14cd7c2e9378852c67af04",
+      "src/dining76EastApproach.ts": "0476d53caa6effdf28f91e6c40433719599b3cff5f5e846e28928b9db57b2a21",
+      "src/education101Site.ts": "da27ef13e6af9142fa2c9aadb0006dc56d353fc633d07a715e60a55eb1def379",
+      "src/education101Approach.ts": "2b349dacc6814edad587e8e5b61328397d166f18e400797092ecdf026f92018a"
+    },
+    "previousCandidateIsCurrentEvidence": false,
+    "walking": {
+      "path": "artifacts/education101-access-test/walk-diagnostic.json",
+      "sha256": "0b8747d96f1d8649b6b94079c410412caa02d7b175774e16e5a909ffaa671de1",
+      "passed": true,
+      "scope": "원본 도로 6방향, 주현관 왕복, 경사판 3선 왕복, 외부 계단과 연결교 및 상부문 왕복. 전체 검사 결과와 구분한다."
+    },
+    "previousCandidateSmokes": [
+      "artifacts/humanities-court-review/scene-38-smoke-f89a77b7.json",
+      "artifacts/humanities-court-review/scene-38-smoke-cc559dc8.json"
+    ]
+  },
+  "verification": {
+    "checkedAt": "2026-11-05T22:14:44.741Z",
+    "checks": [
+      {
+        "file": "artifacts/terrain-verification.json",
+        "sha256": "65561ae3c312114d4d4c83241729fccbf385710e7a07da09036ddd06e9aebfed",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/engineering301303-connection-test/results.json",
+        "sha256": "72f2ac04c80daae3d50aeaaf177bb51806a67524d2ac240ff50a42af12bd153e",
+        "passed": 19,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/family-terrain-test/results.json",
+        "sha256": "5e69700e64d5692ee59dbf8c63b66fb02cef73fb878a97d2daf5935d1418a49e",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-provenance-test/results.json",
+        "sha256": "ca4fce3da9f092428e4842daf1147e5af074f8f8dbf1be6c549a95a5d599a11c",
+        "passed": 14,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-parking-access-test/results.json",
+        "sha256": "3651cb3c2e059c8ceabb5f525037554c7a5519fc8d2f346a4984a47d67a16be0",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education101-access-test/results.json",
+        "sha256": "7e0292c54af15a17bce0f84cb0976f59e1a762962c2ac34574d71866b17a9e7d",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "d4c776e3adc1c3c87d1bd8fb699787681848b180ffa3136b38834e51c1557ff7",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "d8b56102f3d7e1aa39468b668cf86909e02a6ee54bd151b8e9d93367f5c4f462",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/humanities-passage-access-test/results.json",
+        "sha256": "02f7f7b00056af30c0787ddd8270bff418539d4e220cdaf42e3e83e7a73cf49e",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/dining76-access-test/results.json",
+        "sha256": "d275160ca620c5aabe888da531670ee07c2082e9cd8092ec1a35753fbee2935e",
+        "passed": 9,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/dining76-east-access-test/results.json",
+        "sha256": "ef68e36a6c3ae8ae64429ce239f9bc70087adc6312ef9905fca1720081406b87",
+        "passed": 7,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/traffic-verification.json",
+        "sha256": "e0e15870dbb4925ddeece8a5db42d67a30d9f615f68dcb8dc24a3448e2488815",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/transit-test/results.json",
+        "sha256": "f213ece9ec7e964ef20dc14061a5b0463ca934a928939cca205fb2246fa47615",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/controls-verification.json",
+        "sha256": "c2f51eb1331d83775c3eb5771d6323bd5e1646a5c7c771071ffcfa389245ac8c",
+        "passed": 31,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/shuttle-starts/results.json",
+        "sha256": "dc0044ba1a43f2582d55df0081bd45d0899db4902a68fa7d545a0c5cd228e1fd",
+        "passed": 15,
+        "failed": 0
+      }
+    ],
+    "passed": 160,
+    "failed": 0,
+    "browser": {
+      "file": "artifacts/humanities-court-review/38-browser-review.json",
+      "sha256": "adf0d4bc980f3a93c184418314c49cf7102c50163a7b9d91cff6805043817de1"
+    },
+    "physicalPhoneTested": false
+  }
+}

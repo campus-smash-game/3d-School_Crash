@@ -1,0 +1,147 @@
+{
+  "buildingNumber": "38",
+  "buildingId": "way/93549089",
+  "name": "글로벌공학교육센터",
+  "module": "src/globalEngineeringLandmark.ts",
+  "landmark": "global-engineering",
+  "status": "custom-model-applied-partial",
+  "sourceReferences": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=47",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000046.jpg",
+      "localImage": "../references/buildings/photos/047-38.jpg",
+      "visuallyInspected": true,
+      "observations": "원본 사진을 직접 확인했다. 상부는 청색 반사 유리와 밝은 가는 격자 프레임으로 이루어지고, 작은 개폐창과 일부 은색 패널이 섞여 있다. 높은 하부의 흰 원형 기둥 뒤로 유리 벽이 물러나 있으며, 기둥 위의 어두운 밑면이 드러난다."
+    },
+    {
+      "url": "https://eng.snu.ac.kr/about/support-facilities/GECE",
+      "verified": "공식 공과대학의 현재 층별 시설 현황에서 5F, 4F, 3F, 2F, 1F, B1, B2를 확인했다. 이 자료에는 전체 높이와 기둥 간격의 실측 치수가 없다."
+    },
+    {
+      "url": "https://snu38.snu.ac.kr/",
+      "verified": "공식 컨벤션 운영 사이트에서 현재 5층 회의실과 대강당을 안내하는 내용을 확인했다. 공개 도면 안내는 회의시설 평면 배치에 관한 내용으로, 모델의 전체 높이를 확정하는 근거로 사용하지 않았다."
+    },
+    {
+      "url": "https://idanu.com/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90-%EA%B8%80%EB%A1%9C%EB%B2%8C%EA%B3%B5%ED%95%99%EA%B5%90%EC%9C%A1%EC%84%BC%ED%84%B0/",
+      "verified": "설계사 다누 프로젝트 페이지의 지하 2층, 지상 5층 표기를 확인했다. 페이지의 2009년 표기는 프로젝트 연도로 보존하며 준공일로 확정하지 않는다.",
+      "images": [
+        {
+          "url": "https://danu00.mycafe24.com/wp-content/uploads/2025/02/IMG_5277-1024x700.jpg",
+          "localImage": "artifacts/global-engineering-test/references/architect-1.jpg",
+          "visuallyInspected": true,
+          "observations": "도로 건너에서 본 두 외벽, 상부 유리 덩어리, 흰 원형 기둥과 후퇴한 하부 벽을 직접 확인했다. 두 면의 반사색이 서로 다르며, 전면 입구에는 계단이 보인다."
+        },
+        {
+          "url": "https://danu00.mycafe24.com/wp-content/uploads/2025/02/IMG_5265-1024x682.jpg",
+          "localImage": "artifacts/global-engineering-test/references/architect-2.jpg",
+          "visuallyInspected": true,
+          "observations": "기둥 아래 공간에서 원형 기둥, 격자가 있는 어두운 노출 밑면, 안쪽으로 물러난 벽과 난간을 직접 확인했다. 사진 아래의 지하 선큰 공간과 내부 연결은 이번 외관 모델에 구현하지 않았다."
+        }
+      ]
+    }
+  ],
+  "profilePatch": {
+    "height": 23.5,
+    "heightEstimated": true,
+    "levels": 5,
+    "levelsEstimated": false,
+    "landmark": "global-engineering"
+  },
+  "documented": {
+    "aboveGroundStoreys": 5,
+    "basementStoreys": 2,
+    "surveyedHeightMeters": null,
+    "photoCaptureDates": null,
+    "correction": "기존 지도 모델의 지상 4층은 추정값이었다. 공식 층별 시설 현황과 설계사 자료에 따라 5층으로 교정한다."
+  },
+  "estimated": {
+    "totalHeightMeters": 23.5,
+    "raisedUpperMassBaseMeters": 6.2,
+    "upperStoreys": 4,
+    "groundFloorStoreys": 1,
+    "northAndWestRecessMeters": 5.2,
+    "southAndEastRecessMeters": 2.4,
+    "columnRadiusMeters": 0.48,
+    "nominalColumnSpacingMeters": 7.8,
+    "nominalGlazingBayMeters": 2.6,
+    "rationale": "공식 5층 현황과 사진에서 보이는 높은 하부, 상부 유리의 비례를 함께 참고했다. 전체 높이, 하부 높이, 후퇴 폭, 기둥의 반지름과 간격, 창 칸과 프레임의 치수는 실측값이 아니다.",
+    "unseenFaces": "사진에서 확인하지 못한 남쪽과 동쪽 하부는 더 좁은 후퇴 폭으로 근사했다. 뒷면의 세부 창 배치, 내부 선큰 공간과 지하층, 입구 계단과 난간의 정확한 형태는 재현하지 않았다.",
+    "colors": "청색 유리의 색 차이는 공식 사진에서 관찰한 반사를 참고해 절차적으로 배분했다. 실제 유리의 광학 성질과 시간대별 반사를 측정한 값은 아니다."
+  },
+  "placement": {
+    "source": "public/data/campus.json의 way/93549089 윤곽과 주변 도로",
+    "mapEnvelopeMeters": {
+      "length": 72.22268968011377,
+      "depth": 50.24651717679126
+    },
+    "axis": {
+      "x": 0.9921000597071398,
+      "z": 0.1254490794270322
+    },
+    "reviewedOrigin": {
+      "x": 189.74437770980407,
+      "y": 53.19659423828125,
+      "z": -1280.9450786873579
+    },
+    "outline": "상부 외벽은 원래 OSM 다각형의 각 변을 따른다. 지붕과 노출 밑면도 그 윤곽으로 잘라 전체 외접 사각형으로 대체하지 않았다.",
+    "front": "장축을 local x로 삼고 local +z인 북쪽 긴 면과 local -x인 서쪽 짧은 면의 하부를 넓게 후퇴시켰다. 주변 도로와 사진 뒤쪽 건물의 관계를 참고한 방위 추정이다.",
+    "directionEstimated": true,
+    "terrain": "기준 높이는 지도 외곽의 투영 중심에서 heightAt으로 계산한다. 기둥 하단과 하부 벽의 기초는 각 위치의 지형까지 연장한다. 하부 창의 아래 가장자리는 해당 구간 주변의 최고 지면보다 0.16m 이상 높게 두며, 현재 지형의 절대 고도를 코드에 고정하지 않는다.",
+    "terrainLimitation": "하부 창 높이의 국소 보정은 게임 지형에 창이 묻히지 않도록 한 처리다. 실제 외벽의 창턱 고도나 현장 지형을 측량한 결과가 아니다."
+  },
+  "implementation": {
+    "renderMeshes": 2,
+    "breakableParts": 666,
+    "triangles": 41954,
+    "photoTexturesIncluded": false,
+    "geometry": "청색 유리와 불투명 프레임, 기둥, 바닥판을 두 개의 메시로 합친다. 작은 개폐창과 은색 패널, 밑면의 가는 격자는 절차적으로 만든다.",
+    "normalsAndWinding": "입력 윤곽의 방향과 시작점을 정규화한 뒤 바깥 법선을 구한다. 창틀은 그 법선 방향으로 돌출시키고 유리 삼각형의 앞면도 바깥을 향하게 한다.",
+    "collision": "각 부품의 실제 꼭짓점을 충돌체의 국소 좌표로 투영해 위치와 크기를 계산한다. 기둥, 후퇴한 하부 벽과 상부 바닥판을 별도 부품으로 만들어 기둥 사이를 큰 벽 충돌체로 막지 않는다.",
+    "collisionLimits": "원형 기둥의 충돌은 작은 외접 직육면체이므로 둥근 모서리에서 시각적 표면보다 최대 약 0.20m 먼저 닿을 수 있다. 창틀과 유리는 한 외벽 부품에 속한다. 내부 통로나 실내 벽의 정확한 구조는 구현하지 않았다.",
+    "damageAndReset": "파괴한 부품의 충돌체와 합친 메시의 해당 삼각형을 함께 제거한다. 남은 부품은 원거리에서도 유지하며, 초기화하면 원래 꼭짓점 배열, 충돌체와 내구도를 복구한다."
+  },
+  "verification": {
+    "script": "scripts/verify-global-engineering.mjs",
+    "artifact": "artifacts/global-engineering-test/results.json",
+    "passed": 8,
+    "total": 8,
+    "typescript": "npx tsc --noEmit 통과",
+    "checks": [
+      "실제 OSM 윤곽을 유지하며 후퇴한 1층과 상부 4층, 별도 기둥이 있는지 확인했다.",
+      "상부 유리 776개 삼각형의 바깥 법선과 네 면의 돌출 프레임을 확인하고, 렌더 면과 Rapier 사격 거리를 비교했다.",
+      "OSM 윤곽의 순서를 거꾸로 입력해도 모든 렌더 꼭짓점과 충돌체 위치가 같은지 검사했다.",
+      "실제 유리 삼각형의 25,648개 표본을 현재 지형과 비교하고, 기둥 기초가 지면 아래까지 이어지는지 확인했다.",
+      "기둥과 후퇴한 하부 벽 사이 통로의 광선과 높이 여유를 검사했다. 실제 Rapier 캐릭터가 통로를 약 14.93m 걸었고 기둥 자체는 충돌하는지 확인했다.",
+      "외벽 일부를 파괴하면 해당 렌더 기하와 충돌체만 사라지고, 남은 부분은 근거리와 미로드 원거리에서 사격할 수 있는지 확인했다.",
+      "부분 파괴와 전체 파괴를 초기화하면 꼭짓점 배열, 충돌체와 내구도가 복구되고 파편이 제거되는지 검사했다.",
+      "heightAt에 50m를 더하면 창, 기둥과 기초 전체가 같은 높이만큼 이동하고 평면 좌표는 유지되는지 검사했다."
+    ],
+    "maximumFrameRayErrorMeters": 0.012619089826540586,
+    "minimumGlazingClearanceMeters": 0.15999984741210938,
+    "sampledPilotisMinimumHeadroomMeters": 6.3121256464701005,
+    "walkedMeters": 14.928455277366997,
+    "limits": "표본 검사는 실측 정확성, 전체 외관의 완전한 사진 일치, 브라우저 화면, 실제 휴대전화 성능과 터치 조작을 검증한 것이 아니다."
+  },
+  "visualReview": {
+    "sourcePhotosDirectlyViewed": 3,
+    "cpuPreviewPending": false,
+    "artifact": "artifacts/geometry-previews/global-engineering.png",
+    "cpuPreviewDirectlyViewed": true,
+    "result": "최종 CPU 정사영을 직접 보고 공식 지도 사진과 설계사 외관 사진을 대조했다. 상부 4개 층의 청색 유리, 밝은 격자 프레임, 후퇴한 하부와 원형 기둥의 관계를 확인했다. 모델 높이와 후퇴 폭, 보이지 않는 면은 사진 비례에 따른 추정을 유지한다.",
+    "sideOcclusion": {
+      "artifact": "artifacts/global-engineering-test/side-occlusion.json",
+      "method": "미리보기와 같은 세계 좌표의 지형 패치 범위 안에서 동쪽 수평 시선의 전경 지형을 5cm 간격으로 표본 조사했다. 미리보기의 지면 표시 보정 -0.04m도 반영했다.",
+      "foregroundHeightsMeters": [
+        59.14997286157387,
+        59.31445911665144,
+        59.62812040860518,
+        59.906082042250915,
+        59.88620431327964
+      ],
+      "lowerGlazingUpperMeters": 59.276594238281255,
+      "explanation": "측면 수평 정사영에서는 전경 지형이 59.15~59.91m까지 올라 하부 유리 상단 59.2766m를 가린다. 이 높이는 유리 위치의 지면과 다르다. 실제 유리 표본의 최소 지면 간격 0.16m와 모순되지 않으며, 미리보기의 가림만을 근거로 모델을 들어 올리거나 지형을 더 깎지 않았다."
+    },
+    "limitation": "CPU 정사영은 텍스처, WebGL 재질과 반사, 그림자를 검증하지 않는다. 건물과 지형의 현재 기하를 확인한 결과다.",
+    "browserVerified": false
+  }
+}

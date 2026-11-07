@@ -1,0 +1,139 @@
+{
+  "buildingId": "way/193893586",
+  "buildingNumber": "100",
+  "name": "버들골 풍산마당",
+  "module": "src/pavilionLandmark.ts",
+  "landmark": "poongsan-pavilion",
+  "status": "custom-geometry-implemented-browser-unverified",
+  "reviewedAt": "2026-11-04T19:58:37.082Z",
+  "documented": {
+    "aboveGroundFloors": 2,
+    "sourceUrl": "https://snu.ac.kr/snunow/snu_story?bbsidx=122079&md=v",
+    "publicationDate": "2015-08-21",
+    "note": "서울대학교 공식 기사에서 지상 2층을 확인했다. 건축 면적은 다른 소개 자료와 용어 및 수치가 달라 모델 치수로 사용하지 않았다."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=112",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000109.jpg",
+      "localImagePath": "../references/buildings/photos/112-100.jpg",
+      "verified": "공식 건물 사진에서 은색 곡면 지붕, 지면으로 내려오는 가장자리, 큰 유리 입구와 낮은 굽은 벽을 직접 봤다.",
+      "photoCaptureDate": null
+    },
+    {
+      "url": "https://culture.snu.ac.kr/spaces/",
+      "verified": "서울대학교 문화예술원은 풍산마당을 반원형 계단으로 구성한 야외극장이라고 설명하며 100동 주소를 명시한다."
+    },
+    {
+      "url": "https://www.withworks.kr/portfolio-collections/my-portfolio/seoul-national-university-amphitheater",
+      "role": "외장과 철골의 설계 검토, 제작 및 시공 공정에 참여한 업체의 프로젝트 소개",
+      "verified": "곡면 외피의 구조 모델, 패널 공사 사진, 객석과 무대 사진을 직접 확인했다.",
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/35d62c_213228b2a13548b698bc08eaea708b82~mv2.jpg",
+          "local": "../references/exteriors/pavilion/withworks-context.jpg",
+          "type": "구조 모델 이미지",
+          "observed": "반원형 객석 옆에 비정형 외피가 감기며 중앙의 처마가 무대 쪽으로 돌출된다."
+        },
+        {
+          "url": "https://static.wixstatic.com/media/35d62c_462c9a05b0324213ba26d44bb07c6ee5~mv2.jpg",
+          "local": "../references/exteriors/pavilion/withworks-photo1.jpg",
+          "type": "현장 사진",
+          "observed": "콘크리트 객석은 곡선 계단이며 지붕 아래 내부 공간과 분리된다."
+        },
+        {
+          "url": "https://static.wixstatic.com/media/35d62c_18a15d74a8b7456eb903ea632df9d5a8~mv2.jpg",
+          "local": "../references/exteriors/pavilion/withworks-photo2.jpg",
+          "type": "공사 중 사진",
+          "observed": "객석을 향한 무대 앞은 열려 있고, 곡면 지붕 아래 뒤쪽에 짙은 세로 부재가 있다."
+        }
+      ]
+    },
+    {
+      "url": "https://www.designwhos.com/projects/100",
+      "role": "설계자 이름과 설명을 게재한 건축 프로젝트 소개",
+      "verified": "평면도, 단면도와 분해도를 직접 확인했다. 북쪽 표기와 서측 본체, 동측 객석의 관계를 참고했다.",
+      "images": [
+        {
+          "url": "https://cdn.designwhos.com/production/mg/editor/1703/74547b589222da1c6de93baaf3ddc7ae_1489400794_9665.jpg",
+          "local": "../references/exteriors/pavilion/floorplan.jpg",
+          "type": "1층 평면도",
+          "observed": "실내 공간은 외곽 서쪽에 모이고 안쪽 무대와 객석은 원형의 열린 공간을 이룬다."
+        },
+        {
+          "url": "https://cdn.designwhos.com/production/mg/editor/1703/74547b589222da1c6de93baaf3ddc7ae_1489402201_4783.jpg",
+          "local": "../references/exteriors/pavilion/section.jpg",
+          "type": "단면도",
+          "observed": "무대에서 객석이 높아지는 단면과 객석 위의 빈 공간, 낮은 실내부와 경사진 외피를 확인했다."
+        },
+        {
+          "url": "https://cdn.designwhos.com/production/mg/editor/1703/74547b589222da1c6de93baaf3ddc7ae_1489400314_8646.jpg",
+          "local": "../references/exteriors/pavilion/axonometric.jpg",
+          "type": "분해도",
+          "observed": "곡면 외피가 객석 전체를 덮지 않으며 무대 위로 둥근 끝이 돌출된다."
+        }
+      ]
+    }
+  ],
+  "estimated": {
+    "placement": "OSM 윤곽의 가장 긴 변으로 남북 축을 구하고 투영 범위의 중심과 폭을 유지한다. 로컬 +z는 동쪽 객석 방향이다. 이 정렬은 공개 평면도와 지도 윤곽을 함께 참고한 근사 배치다.",
+    "osmEnvelopeMeters": {
+      "along": 45.234797051781015,
+      "across": 55.38042201478606
+    },
+    "heightMeters": 8.65,
+    "measuredRenderedHeightOnFlatTerrainMeters": 8.629249572753906,
+    "heightNote": "8.65m는 사진과 단면 비례에 맞춘 게임용 추정값이다. 실측 높이나 공식 높이로 표시하지 않는다.",
+    "roof": "서쪽의 굽은 외피와 안쪽으로 둥글게 돌출된 처마를 28×6개 구간으로 근사한다. 실제 패널 개수, 폭과 곡률을 복제하지 않는다.",
+    "seating": "동쪽 반원형 객석을 10단, 단당 16구간으로 근사한다. 좌석 단수와 0.4m의 단 높이는 실측값이 아니다.",
+    "stage": "지면 기준 약 0.35m 위의 낮은 타원형 무대와 뒤쪽의 굽은 벽이다. 무대 전면과 객석 위를 막지 않는다.",
+    "terrain": "중심 높이를 heightAt에서 읽고 객석 기초는 각 모서리의 지면에 맞춘다. 고정된 실제 지형 고도를 코드에 넣지 않았다.",
+    "limitations": [
+      "지도 윤곽을 수평 압출하지 않고 공연장 범위의 바깥 치수와 방향을 기준으로 새 곡면을 만든다. 모든 꼭짓점을 측량 윤곽에 일치시킨 모델은 아니다.",
+      "실내 평면, 실제 철골과 패널 접합부, 유리문 개폐, 객석 사이의 작은 통로와 주변 조경은 구현하지 않았다.",
+      "사진의 비대칭 곡면과 낮은 벽을 단순화했다. 형상은 사진에서 구분할 수 있는 큰 요소를 반영한 근사이며 정밀 복원본이 아니다.",
+      "사진은 참고 자료로만 사용하며 게임 텍스처에 포함하지 않는다."
+    ]
+  },
+  "runtime": {
+    "renderedMeshes": 3,
+    "breakableParts": 368,
+    "triangles": 4528,
+    "materials": [
+      "곡면 금속 외피와 프레임",
+      "유리 입면",
+      "무대와 객석"
+    ],
+    "rendering": "기하를 금속, 유리, 콘크리트 메시로 합쳤다. 모델은 원거리에서도 같은 형태를 유지하며 거리에 따라 숨기지 않는다.",
+    "collision": "각 구간의 정점을 감싸는 회전 상자 프록시를 사용한다. 큰 상자 하나로 객석이나 무대 내부를 채우지 않는다.",
+    "destruction": "프록시가 숨겨지면 그 구간의 정점만 한 점으로 모은다. 전체 파괴 시 모델 그룹을 숨기며 초기화 시 원본 정점 배열을 복원한다."
+  },
+  "verification": {
+    "command": "node scripts/verify-pavilion.mjs",
+    "resultPath": "artifacts/pavilion-test/results.json",
+    "passed": 8,
+    "total": 8,
+    "renderCollisionSampleCount": 164,
+    "maxRenderCollisionDifferenceMeters": 0.13862108887449232,
+    "loadedUnloadedSampleCount": 176,
+    "typecheck": "npx tsc --noEmit",
+    "checks": [
+      "지도 범위, 동쪽 객석 방향, 유한한 정점과 메시 수",
+      "열린 객석 위와 무대 앞의 렌더링 및 충돌 공백",
+      "표본 광선으로 렌더링 표면과 회전 충돌체 비교",
+      "같은 표본 광선의 로드 및 미로드 사격 대상과 거리 일치",
+      "부분 파괴 후 해당 구간의 형상과 충돌 제거",
+      "초기화 후 원본 정점과 충돌 복원",
+      "전체 파괴 및 반복 초기화",
+      "실제 지형과 별도 경사 지형 함수의 높이 반영"
+    ],
+    "offlineImages": [
+      "artifacts/pavilion-test/geometry-west.png",
+      "artifacts/pavilion-test/geometry-audience.png"
+    ],
+    "offlineImageScope": "기하 정점을 별도 CPU 투영기로 그린 구조 확인 이미지다. 게임의 WebGL 재질, 그림자와 조명으로 렌더링한 화면이 아니다.",
+    "browserVerified": false,
+    "physicalMobileVerified": false,
+    "surveyVerified": false
+  }
+}

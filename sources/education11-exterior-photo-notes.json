@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T16:30:03.635Z",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/146155734",
+  "buildingNumber": "11",
+  "scope": "11동 동쪽 외벽, 내려가는 현관과 계단, 난간, 안내판과 조명을 보완했다. 12동 연결부와 전체 실내는 미구현이다.",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000012.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=12",
+      "localPhoto": "../references/buildings/photos/012-11.jpg",
+      "sha256": "bae0efec72df65355cb6ad71c0b133f79bb78228d5d2af7d2173bc9836292ef0",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "갈색 벽돌과 흰 수직 골조 및 층별 띠",
+        "상층의 작은 창과 아래층의 넓은 창",
+        "깊은 처마와 옥상 난간, COLLEGE OF EDUCATION 11 문구",
+        "계단실과 흰 경사 차양, 유리 현관",
+        "도로보다 낮은 문, 양쪽 난간과 두 개의 구형 등이 있는 조명"
+      ],
+      "limits": "촬영일과 실측 치수는 미확인이다. 동쪽 면의 방향은 아래 거리뷰에서 재확인했다."
+    },
+    {
+      "url": "https://kko.to/wQwH5_Nx2t",
+      "panoId": "1198671987",
+      "captureMonth": "2025-07",
+      "newLiveVisit": true,
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/education11-review/60-1987-entrance.png",
+          "sha256": "86ad4dee8190c2c40ae691cc60042650d21cf7faeea3f10563b5bb5e3b6d5f46"
+        },
+        {
+          "file": "artifacts/education11-review/60-1987-door.png",
+          "sha256": "af4e651ea82e07d4c152c5aff5364c59c3507ba39fb99459f270de2fee9313c2"
+        }
+      ],
+      "observed": [
+        "공식 사진과 같은 벽돌 건물, 처마와 흰 띠 및 계단실",
+        "유리 현관과 흰 차양, 도로에서 내려가는 계단과 난간",
+        "H10 사범관 2와 H11 사범관 3 안내판",
+        "계단 끝의 노란 띠와 어두운 무늬, 쌍등 조명"
+      ],
+      "limits": "같은 촬영점에서 화면을 회전했다. 주소창의 방위각은 회전 후 갱신되지 않아 수치 방위 근거로 사용하지 않았다. 수목에 가린 면, 정확한 단수와 높이, 현재 문 개방 상태는 미확인이다. 안내판의 학과 목록과 게시물은 복제하지 않았다."
+    },
+    {
+      "url": "https://kko.to/sFPNtZGrhj",
+      "panoId": "1198671985",
+      "captureMonth": "2025-07",
+      "captures": [
+        {
+          "file": "artifacts/education11-review/60-1985-east.png",
+          "sha256": "7ceb8165523222cbe00da5250b58b33624ab77b1acc797bab547e7b21fa2a7b0"
+        },
+        {
+          "file": "artifacts/education11-review/60-1985-west2.png",
+          "sha256": "213fc98995095a9d7641e274d1a8c6c25bb028c3acdd045c9b342d344c78fd2f"
+        }
+      ],
+      "directlyViewedBy": "root",
+      "observed": "11동 동쪽 도로와 맞은편 10-1동을 대조했다. 나무 때문에 건물 전체는 보이지 않는다."
+    },
+    {
+      "url": "https://kko.to/fbAF-Wtq5Y",
+      "panoId": "1198671973",
+      "captureMonth": "2025-07",
+      "capture": {
+        "file": "artifacts/education11-review/60-start-1973.png",
+        "sha256": "795747524cf9139389555e3454fc974d2d6ae199dde8ae1ea42ad096515b37d6"
+      },
+      "directlyViewedBy": "root",
+      "observed": "11동 남쪽 끝과 12동 옆의 낮은 유리 면이 보인다.",
+      "limits": "접합부의 문, 층별 연결과 보행 높이를 확정하지 못했다. 새 연결 통로를 만들지 않았다."
+    },
+    {
+      "record": "sources/humanities-court-accessibility-reference.json",
+      "surveyDate": "2024-11-13",
+      "use": "10-1동 맞은편 출입구 E8과 실내외 계단 기록을 보조 확인했다.",
+      "approximateEntry": [
+        625.4644846689134,
+        -712.8153560002596
+      ],
+      "limits": "조사표 좌표를 정확한 문 중심으로 단정하지 않았다. 11동과 12동 사이 층별 문은 조사표에 기록돼 있지만 새 사진 근거가 부족해 외형을 만들지 않았다."
+    }
+  ],
+  "implementation": {
+    "module": "src/education11Exterior.ts",
+    "geometry": {
+      "meshes": 5,
+      "textures": 3,
+      "triangles": 46026,
+      "colliders": 219
+    },
+    "floor": 56.0916653286814,
+    "roof": 70.0916653286814,
+    "levels": 4,
+    "levelsEstimated": true,
+    "dimensionsEstimated": true,
+    "entryRoute": [
+      [
+        628.5889110416997,
+        -714.7307338340617
+      ],
+      [
+        626.7133431980465,
+        -713.5808445942417
+      ],
+      [
+        626.201824695232,
+        -713.2672384379272
+      ],
+      [
+        624.8377753543932,
+        -712.4309553544217
+      ],
+      [
+        622.2801828403205,
+        -710.862924572849
+      ]
+    ],
+    "entrySteps": 3,
+    "entryDrop": 0.3601903269751858,
+    "entryPositionEstimated": true,
+    "roadAlignment": "지도상의 동쪽 도로가 건물 윤곽에 가깝다. 차도와 원본 윤곽 좌표는 보존하고 게임 외벽을 약 1m 안쪽으로 조정했다. 계단과 현관도 안쪽에 넣어 통행 폭을 확보했다. 실측 위치는 아니다.",
+    "doorState": "통행을 위해 열린 유리문으로 표현했다. 현재 현장의 개방 상태를 재현하지 않는다.",
+    "roofLabel": "COLLEGE OF EDUCATION 11",
+    "wayfindingLabels": [
+      "H10 사범관 2",
+      "H11 사범관 3"
+    ],
+    "wholeInteriorImplemented": false,
+    "connection12Implemented": false,
+    "photographsUsedAsTextures": false,
+    "unchangedOtherParts": 42167
+  },
+  "limitations": [
+    "미확인 북쪽 및 서쪽 면에 새 현관이나 연결교를 추가하지 않았다.",
+    "층고, 창 개수, 계단 수, 안내판과 조명 배치는 근사다.",
+    "사진 속 보안 장비의 세부와 기능은 구현하지 않았다.",
+    "9동 리모델링 이후 외관은 후속 사진 확인이 필요하다."
+  ],
+  "connectionFollowup61": {
+    "source": "sources/education1112-connection-photo-notes.json",
+    "note": "이 기록 이후 확보한 도면과 사진으로 11동과 12동의 저층 연결과 유리 홀을 추가했다. 앞선 연결부 미구현 기록은 당시의 범위를 나타낸다."
+  }
+}

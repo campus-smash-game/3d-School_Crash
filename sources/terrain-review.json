@@ -1,0 +1,1125 @@
+{
+  "date": "2026-11-05",
+  "scope": "수정 전 수치와 사진 검토를 보존하고 실제 footprint 기반 패드 수정 및 수치 검증 결과를 추가했다. 원시 DEM과 건물 높이 자료는 변경하지 않았다. 실측과 WebGL 화면 검증은 수행하지 않았다.",
+  "source": {
+    "file": "public/data/terrain.json",
+    "gridSpacingMetres": {
+      "x": 20,
+      "z": 19.949494949494948
+    },
+    "baseElevation": 67.68640693662643,
+    "nominalSourceResolutionMetres": 30,
+    "sourceUrl": "https://github.com/tilezen/joerd/blob/master/docs/data-sources.md",
+    "sourceCaveat": "Mapzen 문서는 대형 건물이 있는 곳의 높이 변동과 리샘플링 문제를 명시한다. 이 지점의 오차가 건물 영향인지 실제 경사인지는 현재 자료만으로 분리할 수 없다."
+  },
+  "library": {
+    "previewCorrection": "최초 FRONT는 남동쪽 후면이었다. 본관이 놓인 북서쪽으로 카메라를 바꿔 재생성했다. 최초 이미지의 큰 앞 언덕 일부는 이 방향 오류 때문에 보였다.",
+    "axis": [
+      0.726226362557497,
+      0.6874556497160431
+    ],
+    "frontDirection": [
+      -0.6874556497160431,
+      0.726226362557497
+    ],
+    "origin": {
+      "x": 349.7984527899485,
+      "z": -821.4313323764842,
+      "y": 51.840919494628906
+    },
+    "mainLibraryCenter": {
+      "x": 322.941,
+      "z": -791.578,
+      "rawBilinear": 37.24,
+      "rawTriangulated": 37.24,
+      "current": 51.841
+    },
+    "overlappingPads": [
+      {
+        "id": "way/148286730",
+        "name": "중앙도서관",
+        "index": 5,
+        "minX": 269.28,
+        "maxX": 381.42,
+        "minZ": -850.4,
+        "maxZ": -736.83,
+        "y": 38.15482943037971
+      },
+      {
+        "id": "way/329398175",
+        "name": "관정도서관",
+        "index": 72,
+        "minX": 304.6,
+        "maxX": 406.47,
+        "minZ": -876.21,
+        "maxZ": -778.78,
+        "y": 51.84091786458229
+      }
+    ],
+    "transect": [
+      {
+        "offsetNorthWest": -60,
+        "x": 391.046,
+        "z": -865.005,
+        "unflattened": 64.286,
+        "current": 69.673
+      },
+      {
+        "offsetNorthWest": -50,
+        "x": 384.171,
+        "z": -857.743,
+        "unflattened": 62.507,
+        "current": 62.962
+      },
+      {
+        "offsetNorthWest": -40,
+        "x": 377.297,
+        "z": -850.48,
+        "unflattened": 60.679,
+        "current": 56.252
+      },
+      {
+        "offsetNorthWest": -30,
+        "x": 370.422,
+        "z": -843.218,
+        "unflattened": 58.476,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": -20,
+        "x": 363.548,
+        "z": -835.956,
+        "unflattened": 55.704,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": -10,
+        "x": 356.673,
+        "z": -828.694,
+        "unflattened": 52.456,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": 0,
+        "x": 349.798,
+        "z": -821.431,
+        "unflattened": 49.044,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": 10,
+        "x": 342.924,
+        "z": -814.169,
+        "unflattened": 45.864,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": 20,
+        "x": 336.049,
+        "z": -806.907,
+        "unflattened": 42.662,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": 30,
+        "x": 329.175,
+        "z": -799.645,
+        "unflattened": 39.852,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": 40,
+        "x": 322.3,
+        "z": -792.382,
+        "unflattened": 37.115,
+        "current": 51.841
+      },
+      {
+        "offsetNorthWest": 50,
+        "x": 315.426,
+        "z": -785.12,
+        "unflattened": 35.324,
+        "current": 50.473
+      },
+      {
+        "offsetNorthWest": 60,
+        "x": 308.551,
+        "z": -777.858,
+        "unflattened": 34.367,
+        "current": 45.582
+      },
+      {
+        "offsetNorthWest": 70,
+        "x": 301.677,
+        "z": -770.595,
+        "unflattened": 33.41,
+        "current": 40.691
+      },
+      {
+        "offsetNorthWest": 80,
+        "x": 294.802,
+        "z": -763.333,
+        "unflattened": 32.945,
+        "current": 37.03
+      },
+      {
+        "offsetNorthWest": 90,
+        "x": 287.927,
+        "z": -756.071,
+        "unflattened": 32.668,
+        "current": 33.858
+      },
+      {
+        "offsetNorthWest": 100,
+        "x": 281.053,
+        "z": -748.809,
+        "unflattened": 32.391,
+        "current": 30.686
+      },
+      {
+        "offsetNorthWest": 110,
+        "x": 274.178,
+        "z": -741.546,
+        "unflattened": 31.94,
+        "current": 29.442
+      }
+    ],
+    "confirmedIssue": "terrain.ts는 실제 건물 다각형 대신 세계 좌표 AABB 내부를 평탄화한다. 긴 대각선 형태의 관정관 AABB가 본관 중심까지 덮고, 배열에서 뒤에 있는 관정관 패드가 앞의 본관 패드를 덮어쓴다. 본관 중심은 원시 삼각 보간 높이보다 약 15m 높아진다.",
+    "geometryConsequence": "본관 창문은 높아진 중심 바닥에서 시작하고 외벽 하단은 가장 낮은 주변 높이까지 연장된다. 이 때문에 본관 저층부가 창문 없는 높은 기단처럼 보인다. 현재 관정관 밑면과 본관 지붕 간격 2.25m도 이 공통 기준 높이에 의존한다.",
+    "photoEvidence": {
+      "file": "../references/exteriors/library-official.jpg",
+      "observed": "본관 앞과 양옆에 계단과 고도 차가 있으며, 관정관 상부가 본관 뒤에서 걸쳐 있다. 정면 전체를 큰 흙 언덕으로 막은 형태는 아니다.",
+      "limit": "사진만으로 광장 절대 고도나 계단 단차를 산출하지 않았다."
+    },
+    "proposedReviewOnly": {
+      "applied": false,
+      "firstCandidate": "AABB 대신 실제 footprint 내부와 경계까지 거리로 패드 적용을 제한하고, 겹치는 도서관 패드는 순서 의존 없이 설계한다.",
+      "northwestApproachCandidate": {
+        "localAcrossRange": [
+          80,
+          110
+        ],
+        "currentHeights": [
+          37.03,
+          33.858,
+          30.686,
+          29.442
+        ],
+        "rawHeights": [
+          32.945,
+          32.668,
+          32.391,
+          31.94
+        ],
+        "provisionalHeightRange": [
+          32,
+          37
+        ],
+        "note": "북서쪽 접근부 30m 구간의 원시 높이와 현재 높이를 비교한 후보 범위이며 측량값이 아니다. 완전 평탄화보다 사진과 보행로 방향에 맞춘 국소 경사 연결을 먼저 검토한다."
+      },
+      "caution": "패드만 낮추면 관정관과 본관의 상대 배치가 바뀐다. 두 건물 기준층, 광장과 계단을 함께 확인한 뒤 수정해야 하며 넓은 지형 일괄 평탄화는 권하지 않는다.",
+      "status": "수정 전 후보 기록. 넓은 광장 평탄화는 적용하지 않았으며 아래 implementedCorrection에 실제 반영 범위를 기록했다."
+    },
+    "baselineStatus": "아래 AABB 중첩 수치와 문제 설명은 수정 전 기록이다."
+  },
+  "moa": {
+    "base": 7.273,
+    "length": 60.264,
+    "width": 24.225,
+    "sampleCount": 65,
+    "minimumClearanceOutsideSupport": {
+      "localX": 12.113,
+      "localZ": -30.132,
+      "x": 141.949,
+      "z": -12.359,
+      "undersideLowerFace": 9.298,
+      "ground": 10.939,
+      "clearance": -1.64,
+      "insideCentralSupport": false
+    },
+    "maximumClearanceOutsideSupport": {
+      "localX": -12.113,
+      "localZ": 30.132,
+      "x": 91.201,
+      "z": 28.179,
+      "undersideLowerFace": 15.698,
+      "ground": 3.105,
+      "clearance": 12.593,
+      "insideCentralSupport": false
+    },
+    "penetratingSamplesOutsideSupport": [
+      {
+        "localX": 0,
+        "localZ": -30.132,
+        "x": 131.405,
+        "z": -18.32,
+        "undersideLowerFace": 9.298,
+        "ground": 9.777,
+        "clearance": -0.479,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": -30.132,
+        "x": 136.677,
+        "z": -15.339,
+        "undersideLowerFace": 9.298,
+        "ground": 10.499,
+        "clearance": -1.2,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -30.132,
+        "x": 141.949,
+        "z": -12.359,
+        "undersideLowerFace": 9.298,
+        "ground": 10.939,
+        "clearance": -1.64,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": -25.11,
+        "x": 134.205,
+        "z": -10.968,
+        "undersideLowerFace": 9.832,
+        "ground": 10.046,
+        "clearance": -0.214,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -25.11,
+        "x": 139.477,
+        "z": -7.987,
+        "undersideLowerFace": 9.832,
+        "ground": 10.768,
+        "clearance": -0.936,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -20.088,
+        "x": 137.006,
+        "z": -3.615,
+        "undersideLowerFace": 10.365,
+        "ground": 10.417,
+        "clearance": -0.052,
+        "insideCentralSupport": false
+      }
+    ],
+    "samples": [
+      {
+        "localX": -12.113,
+        "localZ": -30.132,
+        "x": 120.861,
+        "z": -24.281,
+        "undersideLowerFace": 9.298,
+        "ground": 8.64,
+        "clearance": 0.659,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": -30.132,
+        "x": 126.133,
+        "z": -21.301,
+        "undersideLowerFace": 9.298,
+        "ground": 9.2,
+        "clearance": 0.098,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": -30.132,
+        "x": 131.405,
+        "z": -18.32,
+        "undersideLowerFace": 9.298,
+        "ground": 9.777,
+        "clearance": -0.479,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": -30.132,
+        "x": 136.677,
+        "z": -15.339,
+        "undersideLowerFace": 9.298,
+        "ground": 10.499,
+        "clearance": -1.2,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -30.132,
+        "x": 141.949,
+        "z": -12.359,
+        "undersideLowerFace": 9.298,
+        "ground": 10.939,
+        "clearance": -1.64,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": -25.11,
+        "x": 118.389,
+        "z": -19.91,
+        "undersideLowerFace": 9.832,
+        "ground": 8.03,
+        "clearance": 1.802,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": -25.11,
+        "x": 123.661,
+        "z": -16.929,
+        "undersideLowerFace": 9.832,
+        "ground": 8.71,
+        "clearance": 1.122,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": -25.11,
+        "x": 128.933,
+        "z": -13.948,
+        "undersideLowerFace": 9.832,
+        "ground": 9.325,
+        "clearance": 0.507,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": -25.11,
+        "x": 134.205,
+        "z": -10.968,
+        "undersideLowerFace": 9.832,
+        "ground": 10.046,
+        "clearance": -0.214,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -25.11,
+        "x": 139.477,
+        "z": -7.987,
+        "undersideLowerFace": 9.832,
+        "ground": 10.768,
+        "clearance": -0.936,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": -20.088,
+        "x": 115.918,
+        "z": -15.538,
+        "undersideLowerFace": 10.365,
+        "ground": 7.355,
+        "clearance": 3.01,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": -20.088,
+        "x": 121.19,
+        "z": -12.557,
+        "undersideLowerFace": 10.365,
+        "ground": 8.22,
+        "clearance": 2.145,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": -20.088,
+        "x": 126.462,
+        "z": -9.577,
+        "undersideLowerFace": 10.365,
+        "ground": 8.872,
+        "clearance": 1.493,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": -20.088,
+        "x": 131.734,
+        "z": -6.596,
+        "undersideLowerFace": 10.365,
+        "ground": 9.624,
+        "clearance": 0.74,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -20.088,
+        "x": 137.006,
+        "z": -3.615,
+        "undersideLowerFace": 10.365,
+        "ground": 10.417,
+        "clearance": -0.052,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": -15.066,
+        "x": 113.446,
+        "z": -11.166,
+        "undersideLowerFace": 10.898,
+        "ground": 6.681,
+        "clearance": 4.218,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": -15.066,
+        "x": 118.718,
+        "z": -8.186,
+        "undersideLowerFace": 10.898,
+        "ground": 7.634,
+        "clearance": 3.264,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": -15.066,
+        "x": 123.99,
+        "z": -5.205,
+        "undersideLowerFace": 10.898,
+        "ground": 8.485,
+        "clearance": 2.413,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": -15.066,
+        "x": 129.262,
+        "z": -2.224,
+        "undersideLowerFace": 10.898,
+        "ground": 9.282,
+        "clearance": 1.616,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -15.066,
+        "x": 134.534,
+        "z": 0.756,
+        "undersideLowerFace": 10.898,
+        "ground": 10.068,
+        "clearance": 0.83,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": -10.044,
+        "x": 110.974,
+        "z": -6.795,
+        "undersideLowerFace": 11.432,
+        "ground": 6.054,
+        "clearance": 5.378,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": -10.044,
+        "x": 116.246,
+        "z": -3.814,
+        "undersideLowerFace": 11.432,
+        "ground": 7.144,
+        "clearance": 4.287,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": -10.044,
+        "x": 121.518,
+        "z": -0.833,
+        "undersideLowerFace": 11.432,
+        "ground": 8.143,
+        "clearance": 3.289,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": -10.044,
+        "x": 126.79,
+        "z": 2.147,
+        "undersideLowerFace": 11.432,
+        "ground": 8.939,
+        "clearance": 2.492,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": -10.044,
+        "x": 132.062,
+        "z": 5.128,
+        "undersideLowerFace": 11.432,
+        "ground": 9.719,
+        "clearance": 1.713,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": -5.022,
+        "x": 108.503,
+        "z": -2.423,
+        "undersideLowerFace": 11.965,
+        "ground": 5.581,
+        "clearance": 6.384,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": -5.022,
+        "x": 113.775,
+        "z": 0.558,
+        "undersideLowerFace": 11.965,
+        "ground": 6.669,
+        "clearance": 5.296,
+        "insideCentralSupport": true
+      },
+      {
+        "localX": 0,
+        "localZ": -5.022,
+        "x": 119.047,
+        "z": 3.538,
+        "undersideLowerFace": 11.965,
+        "ground": 7.749,
+        "clearance": 4.216,
+        "insideCentralSupport": true
+      },
+      {
+        "localX": 6.056,
+        "localZ": -5.022,
+        "x": 124.319,
+        "z": 6.519,
+        "undersideLowerFace": 11.965,
+        "ground": 8.597,
+        "clearance": 3.368,
+        "insideCentralSupport": true
+      },
+      {
+        "localX": 12.113,
+        "localZ": -5.022,
+        "x": 129.591,
+        "z": 9.5,
+        "undersideLowerFace": 11.965,
+        "ground": 9.37,
+        "clearance": 2.595,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": 0,
+        "x": 106.031,
+        "z": 1.949,
+        "undersideLowerFace": 12.498,
+        "ground": 5.107,
+        "clearance": 7.391,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": 0,
+        "x": 111.303,
+        "z": 4.929,
+        "undersideLowerFace": 12.498,
+        "ground": 6.193,
+        "clearance": 6.305,
+        "insideCentralSupport": true
+      },
+      {
+        "localX": 0,
+        "localZ": 0,
+        "x": 116.575,
+        "z": 7.91,
+        "undersideLowerFace": 12.498,
+        "ground": 7.273,
+        "clearance": 5.225,
+        "insideCentralSupport": true
+      },
+      {
+        "localX": 6.056,
+        "localZ": 0,
+        "x": 121.847,
+        "z": 10.891,
+        "undersideLowerFace": 12.498,
+        "ground": 8.252,
+        "clearance": 4.246,
+        "insideCentralSupport": true
+      },
+      {
+        "localX": 12.113,
+        "localZ": 0,
+        "x": 127.119,
+        "z": 13.871,
+        "undersideLowerFace": 12.498,
+        "ground": 9.107,
+        "clearance": 3.392,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": 5.022,
+        "x": 103.559,
+        "z": 6.32,
+        "undersideLowerFace": 13.032,
+        "ground": 4.634,
+        "clearance": 8.397,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": 5.022,
+        "x": 108.831,
+        "z": 9.301,
+        "undersideLowerFace": 13.032,
+        "ground": 5.717,
+        "clearance": 7.314,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": 5.022,
+        "x": 114.103,
+        "z": 12.282,
+        "undersideLowerFace": 13.032,
+        "ground": 6.808,
+        "clearance": 6.224,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": 5.022,
+        "x": 119.375,
+        "z": 15.262,
+        "undersideLowerFace": 13.032,
+        "ground": 8.031,
+        "clearance": 5,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": 5.022,
+        "x": 124.647,
+        "z": 18.243,
+        "undersideLowerFace": 13.032,
+        "ground": 8.971,
+        "clearance": 4.061,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": 10.044,
+        "x": 101.088,
+        "z": 10.692,
+        "undersideLowerFace": 13.565,
+        "ground": 4.161,
+        "clearance": 9.404,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": 10.044,
+        "x": 106.36,
+        "z": 13.673,
+        "undersideLowerFace": 13.565,
+        "ground": 5.338,
+        "clearance": 8.226,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": 10.044,
+        "x": 111.632,
+        "z": 16.653,
+        "undersideLowerFace": 13.565,
+        "ground": 6.605,
+        "clearance": 6.96,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": 10.044,
+        "x": 116.904,
+        "z": 19.634,
+        "undersideLowerFace": 13.565,
+        "ground": 7.796,
+        "clearance": 5.769,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": 10.044,
+        "x": 122.176,
+        "z": 22.615,
+        "undersideLowerFace": 13.565,
+        "ground": 8.835,
+        "clearance": 4.73,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": 15.066,
+        "x": 98.616,
+        "z": 15.064,
+        "undersideLowerFace": 14.098,
+        "ground": 3.845,
+        "clearance": 10.253,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": 15.066,
+        "x": 103.888,
+        "z": 18.044,
+        "undersideLowerFace": 14.098,
+        "ground": 5.135,
+        "clearance": 8.963,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": 15.066,
+        "x": 109.16,
+        "z": 21.025,
+        "undersideLowerFace": 14.098,
+        "ground": 6.401,
+        "clearance": 7.697,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": 15.066,
+        "x": 114.432,
+        "z": 24.006,
+        "undersideLowerFace": 14.098,
+        "ground": 7.56,
+        "clearance": 6.538,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": 15.066,
+        "x": 119.704,
+        "z": 26.986,
+        "undersideLowerFace": 14.098,
+        "ground": 8.687,
+        "clearance": 5.411,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": 20.088,
+        "x": 96.144,
+        "z": 19.435,
+        "undersideLowerFace": 14.632,
+        "ground": 3.598,
+        "clearance": 11.033,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": 20.088,
+        "x": 101.416,
+        "z": 22.416,
+        "undersideLowerFace": 14.632,
+        "ground": 4.932,
+        "clearance": 9.699,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": 20.088,
+        "x": 106.688,
+        "z": 25.397,
+        "undersideLowerFace": 14.632,
+        "ground": 6.198,
+        "clearance": 8.433,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": 20.088,
+        "x": 111.96,
+        "z": 28.377,
+        "undersideLowerFace": 14.632,
+        "ground": 7.325,
+        "clearance": 7.307,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": 20.088,
+        "x": 117.232,
+        "z": 31.358,
+        "undersideLowerFace": 14.632,
+        "ground": 8.452,
+        "clearance": 6.18,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": 25.11,
+        "x": 93.673,
+        "z": 23.807,
+        "undersideLowerFace": 15.165,
+        "ground": 3.352,
+        "clearance": 11.813,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": 25.11,
+        "x": 98.945,
+        "z": 26.788,
+        "undersideLowerFace": 15.165,
+        "ground": 4.711,
+        "clearance": 10.454,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": 25.11,
+        "x": 104.217,
+        "z": 29.768,
+        "undersideLowerFace": 15.165,
+        "ground": 5.963,
+        "clearance": 9.202,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": 25.11,
+        "x": 109.489,
+        "z": 32.749,
+        "undersideLowerFace": 15.165,
+        "ground": 7.051,
+        "clearance": 8.114,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": 25.11,
+        "x": 114.761,
+        "z": 35.73,
+        "undersideLowerFace": 15.165,
+        "ground": 8.008,
+        "clearance": 7.157,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -12.113,
+        "localZ": 30.132,
+        "x": 91.201,
+        "z": 28.179,
+        "undersideLowerFace": 15.698,
+        "ground": 3.105,
+        "clearance": 12.593,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": -6.056,
+        "localZ": 30.132,
+        "x": 96.473,
+        "z": 31.159,
+        "undersideLowerFace": 15.698,
+        "ground": 4.464,
+        "clearance": 11.234,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 0,
+        "localZ": 30.132,
+        "x": 101.745,
+        "z": 34.14,
+        "undersideLowerFace": 15.698,
+        "ground": 5.61,
+        "clearance": 10.088,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 6.056,
+        "localZ": 30.132,
+        "x": 107.017,
+        "z": 37.121,
+        "undersideLowerFace": 15.698,
+        "ground": 6.567,
+        "clearance": 9.131,
+        "insideCentralSupport": false
+      },
+      {
+        "localX": 12.113,
+        "localZ": 30.132,
+        "x": 112.289,
+        "z": 40.101,
+        "undersideLowerFace": 15.698,
+        "ground": 7.548,
+        "clearance": 8.15,
+        "insideCentralSupport": false
+      }
+    ],
+    "method": "실제 경사 밑면 함수에서 하부 두께 0.175m를 뺀 높이와 heightAt을 비교했다. 13×5 표본으로 전면 전체의 정확한 최솟값을 보장하지 않으며 중앙 지지부는 따로 표시했다.",
+    "photoEvidence": "../references/exteriors/moa-oma-0.jpg",
+    "baselineStatus": "아래65개 표본과 지형 침범은 수정 전 기록이다."
+  },
+  "baselineReviewScope": "현재 Three.js 소스의 지형과 배치 수치 검토. 실측과 GPU 화면 검증은 수행하지 않았다. 실행 코드와 지형 데이터는 수정하지 않았다.",
+  "status": "implemented-and-numerically-verified",
+  "implementedCorrection": {
+    "files": [
+      "src/terrain.ts",
+      "src/libraryLandmark.ts",
+      "scripts/verify-terrain.mjs"
+    ],
+    "sourceDataPreserved": true,
+    "terrain": "실제 footprint 내부와 모든 경계선까지의 거리로 패드를 적용한다. holes 안쪽은 건물 내부에서 제외한다. 경계에서12m까지 부드럽게 연결하고 범위 밖 원본 높이를 보존한다. 겹치는 내부 패드는 평균하고 주변 완화 영역은 정렬된 가중 평균으로 합쳐 건물 배열 순서 의존을 없앴다.",
+    "gateAndMuseum": "정문 평탄화를 먼저 적용한 뒤 건물 패드를 만든다. 미술관의 주변 연결 폭만 원본 격자 한 칸인20m로 두어 경계 보간에서 생긴 잔여 침범을 없앴다. 미술관 모델 높이는17.815m로 유지했다.",
+    "library": "지도상 본관 외곽점 평균 중심(322.940769, -791.577692)의 heightAt을 본관과 관정관의 공통 수직 기준으로 사용한다. 좌표와 고도 모두 현장 측량값으로 주장하지 않는다.",
+    "numericResults": {
+      "mainLibraryBaseBefore": 51.841,
+      "library": {
+        "name": "library bridge maintains roof separation and its rear supports remain above terrain",
+        "status": "passed",
+        "mainBase": 38.17753219604492,
+        "mainRoof": 66.17753219604492,
+        "bridgeUnderside": 68.42753219604492,
+        "roofGap": 2.25,
+        "minimumTopClearance": 27.967085649841366,
+        "minimumSupportExposure": 15.467085649841366,
+        "frontApproachMaxGrade": 0.18668834469694673
+      },
+      "museum": {
+        "name": "museum sloped underside clears the actual terrain without changing model height",
+        "status": "passed",
+        "minimumClearance": 0.4619575247235961,
+        "where": [
+          131.39590454101562,
+          9.34343147277832,
+          -18.30391263961792
+        ],
+        "samples": 1092,
+        "undersideTriangles": 12,
+        "base": 7.3174528962373735,
+        "height": 17.814999114871025
+      },
+      "playerApproach": {
+        "name": "player capsule traverses the library northwest approach on the corrected terrain",
+        "status": "passed",
+        "walkedMetres": 7.999341252146468,
+        "clearance": 0.8516563620056914,
+        "start": {
+          "x": 294.79864501953125,
+          "y": 37.21822738647461,
+          "z": -763.333251953125
+        },
+        "finish": {
+          "x": 289.29815673828125,
+          "y": 35.72514724731445,
+          "z": -757.525146484375
+        },
+        "note": "Exterior approach only; the generic main-library model has no interior doorway."
+      },
+      "meshPhysics": {
+        "name": "heightAt matches rendered triangles and Rapier collision height",
+        "status": "passed",
+        "samples": 67,
+        "largestRenderDifference": 0.000013584907605945773,
+        "largestPhysicsDifference": 0.00018310546878552714,
+        "documentedGroundOffset": 0.03
+      },
+      "unchangedVertexCount": 30049
+    },
+    "verification": {
+      "command": "node scripts/verify-terrain.mjs",
+      "passedTests": 7,
+      "additionalChecks": [
+        "npx tsc --noEmit",
+        "node scripts/verify-campus.mjs"
+      ],
+      "artifact": "artifacts/terrain-verification.json"
+    },
+    "limitations": [
+      "DEM의 원래 해상도와 수목 또는 건물 반사 영향은 남아 있다.",
+      "미술관 간격은 실제 밑면 삼각형의1092개 표본으로 확인했다. 모든 점의 연속 최솟값을 계산한 것은 아니다.",
+      "도서관 검사는 외부 접근로와 상부 간격을 대상으로 했다. 일반 본관 모델에는 내부 출입구가 없다.",
+      "지형 메시와 Rapier 충돌면은 기존 규칙대로 heightAt보다0.03m 낮다.",
+      "원본 격자 사이의 선형 보간 때문에 건물 경계 근처까지 완전히 평평함을 보장하지 않는다."
+    ]
+  },
+  "engineerHouseCorrection": {
+    "buildingId": "way/386890466",
+    "status": "implemented-and-numerically-verified",
+    "notes": "sources/engineer-house-model-notes.json",
+    "script": "scripts/verify-engineer-house-site.mjs",
+    "reason": "기존 정사영의 큰 지형 가림에는 수평 시선의 영향이 있었다. 다만 실제 유리와 금속 지붕의 일부가 지형에 묻힌 문제도 별도로 확인했다. 건물 내부만 평탄하게 하고 그 바깥 12m를 경사로 이으면, 약 20m 지형 격자의 경계 보간이 낮은 건물 외곽까지 원래 높은 지형을 끌어온다. 사각형으로 근사한 몸체와 지붕 끝이 실제 OSM 외곽보다 약 1~2m 돌출한 부분에서도 침범이 생겼다.",
+    "sourceDataPreserved": true,
+    "modelElevationPreserved": true,
+    "correction": {
+      "scope": "310동에만 적용한 게임용 DEM 보정이다. 건물 높이와 원시 DEM 자료를 변경하지 않았다.",
+      "plateauWidth": "Math.max(stepX,stepZ)",
+      "plateauWidthMetres": 20,
+      "outerBlendMetres": 12,
+      "baseElevationUnchanged": 143.9508056640625,
+      "changedGridVertices": 24,
+      "maxGridCutMetres": 9.824905395507812,
+      "maxGridFillMetres": 5.1608123779296875,
+      "changedVertexBounds": {
+        "minX": 180,
+        "maxX": 260,
+        "minZ": -2042.6767578125,
+        "maxZ": -1922.9798583984375
+      },
+      "limitation": "절토와 성토 수치는 이번 보정 전후의 게임 지형 높이 차다. 현장 공사의 절성토량이나 측량 결과가 아니다. 공식 사진은 입구와 외벽이 드러난다는 근거이며, 이 평탄 영역의 정확한 폭이나 절대 고도를 입증하지 않는다."
+    },
+    "before": {
+      "frontGlassMinimumClearance": -4.095094598960827,
+      "allGlassMinimumClearance": -4.9737441123163535,
+      "metalRoofMinimumClearance": -0.9558062498544757,
+      "source": "최종 검사에서 310동의 추가 평탄 영역만 비활성화한 비교 지형이다. 앞선 원본 진단 자료는 artifacts/engineer-house-site-before.json에 보존했다."
+    },
+    "after": {
+      "frontGlassSamples": 1080,
+      "frontGlassMinimumClearance": 0.350006103515625,
+      "allGlassSamples": 11700,
+      "allGlassMinimumClearance": 0.350006103515625,
+      "metalRoofSamples": 7200,
+      "metalRoofMinimumClearance": 4.240941700339306,
+      "platformMinimumClearance": 0.09678141510929095,
+      "roadObservers": 20,
+      "eyeHeightMetres": 1.7,
+      "terrainSightlines": 120,
+      "terrainBlockedSightlines": 0,
+      "walkedMetres": 12.79038380242692,
+      "remainingToExteriorPlatformMetres": 0.09345966793823662
+    },
+    "neighborCaveat": "인접 건물의 실제 창 아래 2,000개 표본에서 새 침범이나 침범 악화는 없었다. 기초 바닥은 지면 아래에 남았다. 이웃 건물에 원래 있던 창의 최대 약 0.506m 침범은 그대로이며, 이번 310동 보정에서 해결했다고 보지 않는다.",
+    "roadCaveat": "입구 구간의 경사는 줄었지만 동쪽 연결 도로 일부는 더 가팔라졌다. 영향 구간의 최대 경사 약 0.409는 게임 캐릭터의 45도 등판 제한보다 낮다. 실제 도로 설계 경사를 검증한 값은 아니다.",
+    "verification": {
+      "script": "scripts/verify-engineer-house-site.mjs",
+      "passed": 7,
+      "total": 7,
+      "artifact": "artifacts/engineer-house-site-verification.json",
+      "renderPhysicsSamples": 92,
+      "maxRenderErrorMetres": 0.00002638299019963597,
+      "maxPhysicsErrorMetres": 0.00005340576171875,
+      "existingGroundOffsetMetres": 0.03,
+      "existingModelRegressionPassed": 6,
+      "typescript": "npx tsc --noEmit 통과"
+    },
+    "limits": "도로 시선 검사는 지형 가림만 검사했다. 수목이나 다른 건물의 가림, 실내 진입, 브라우저 화면, 실제 휴대전화 성능 또는 현장 측량을 대신하지 않는다."
+  },
+  "familyDormCorrection": {
+    "reviewedAt": "2026-11-04T21:06:54.213Z",
+    "status": "corrected-within-tested-scope",
+    "reference": "sources/family-terrain-refinement.json",
+    "originalDemPreserved": true,
+    "coarseCellsRefined": 67,
+    "stepMeters": 2,
+    "glassSamples": 134100,
+    "minimumGlassClearanceMeters": 0.11699198061754146,
+    "entrancesTested": 20,
+    "limit": "세분 영역 밖의 높이 계산은 유지한다. 영역 안의 일부 이웃 건물 높이는 변하며 세부 영향은 참조 파일에 기록한다. 실제 지형 측량과 모바일 화면 검증은 수행하지 않았다."
+  }
+}

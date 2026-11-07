@@ -1,0 +1,2289 @@
+{
+  "source": "서울대학교 공식 캠퍼스 지도 건물 사진",
+  "reviewedAt": "2026-11-04T19:17:44.048Z",
+  "scope": "건물 번호 200 이상",
+  "method": "각 건물의 공식 사진을 한 칸당 최대 616×414픽셀로 표시한 사진 모음 9장을 직접 확인했다. 사진은 참고용으로만 사용하며 게임 텍스처에 포함하지 않는다.",
+  "limits": [
+    "색상과 창 비율은 사진을 보고 정한 시각적 근사값이다. 촬영 시점, 실제 높이와 치수는 확인하지 않았다.",
+    "bayWidth는 실측하지 않았으므로 모든 항목에서 기본값 3.4를 유지한다.",
+    "defaultedFields에 적은 값은 해당 사진에서 확인한 사실이 아니라 기존 모델의 기본값이다.",
+    "사진에 보이지 않거나 현재 프로필 형식으로 나타낼 수 없는 지붕은 기본값을 사용하고 limitations에 필요한 차이를 기록했다."
+  ],
+  "count": 61,
+  "visuallyInspectedCount": 53,
+  "defaultProfile": {
+    "wallColor": 13223095,
+    "roofColor": 10397084,
+    "glassColor": 5600378,
+    "frameColor": 12830141,
+    "accentColor": 11776936,
+    "windowStyle": "punched",
+    "windowWidthRatio": 0.58,
+    "windowHeightRatio": 0.5,
+    "bayWidth": 3.4,
+    "horizontalBands": false,
+    "verticalFins": false,
+    "roofStyle": "flat"
+  },
+  "entries": [
+    {
+      "buildingNumber": "200",
+      "name": "농업생명과학대학",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=174",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000171.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/174-200.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "주황빛 벽돌 외벽에 짙은 청록색 직사각형 창이 반복된다.",
+        "층 사이 밝은 수평 띠가 있고, 최상층은 연속 유리창과 밝은 처마로 구분된다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 12417361,
+        "roofColor": 10397084,
+        "glassColor": 3632242,
+        "frameColor": 6648948,
+        "accentColor": 13685189,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.55,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=174",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000171.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "201",
+      "name": "농업생명과학대학환경관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=175",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000172.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/175-201.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회백색 판재 외벽에 청록색 창이 수평으로 나뉘어 있다.",
+        "사진 전면은 낮은 매스이며 뒤쪽 주황색 고층 건물과 외관이 다르다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 14276298,
+        "roofColor": 10397084,
+        "glassColor": 5012600,
+        "frameColor": 11122858,
+        "accentColor": 12171436,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.64,
+        "windowHeightRatio": 0.42,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=175",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000172.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "203",
+      "name": "SPC농생명과학 및 기초과학연구동",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=176",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000173.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/176-203.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "주황색 벽돌 기둥 사이에 넓은 유리 면이 세로로 이어진다.",
+        "측면은 띠 모양 창과 벽돌 층간 띠가 번갈아 나타나며, 입구 쪽 유리창은 밝은 격자로 나뉜다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 12353625,
+        "roofColor": 10397084,
+        "glassColor": 9679282,
+        "frameColor": 12964041,
+        "accentColor": 9280401,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.86,
+        "windowHeightRatio": 0.84,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=176",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000173.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "207",
+      "name": "야외조각실습장1",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=177",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000174.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/177-207.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "측면 대부분이 열린 철골 작업장이고, 청회색 지붕 테두리와 노출된 기둥이 보인다.",
+        "사진에서 경사진 지붕이 확인되지만 현재 지붕 분류에는 경사지붕이 없어 flat 기본값을 유지한다. 일반 창은 확인되지 않는다."
+      ],
+      "defaultedFields": [
+        "glassColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "열린 철골 작업장의 구조를 폐쇄형 기본 건물 매스만으로 재현할 수 없다.",
+        "roofStyle의 flat은 사진에서 확인한 지붕 형태가 아니라 지원되는 기본값이다."
+      ],
+      "profile": {
+        "wallColor": 9607311,
+        "roofColor": 9148053,
+        "glassColor": 5600378,
+        "frameColor": 7175804,
+        "accentColor": 5467512,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0,
+        "windowHeightRatio": 0,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=177",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000174.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "220",
+      "name": "종합교육연구동",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000175.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/178-220.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "정면 대부분이 밝은 청록색 유리 격자로 덮여 있고, 층마다 긴 수평 띠가 보인다.",
+        "오른쪽은 밝은 판재 벽이며, 하부 중앙에 기둥 사이로 통과하는 큰 개방 공간이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13158845,
+        "roofColor": 10397084,
+        "glassColor": 10272701,
+        "frameColor": 9348771,
+        "accentColor": 12958103,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.86,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000175.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "221",
+      "name": "보건대학원",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=179",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000176.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/179-221.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "주황빛 벽돌 몸체에 긴 창 띠가 반복되고 중앙에는 청록색 유리 계단실이 있다.",
+        "최상부에는 깊은 지붕 돌출부와 그 아래 열린 공간이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13276781,
+        "roofColor": 10397084,
+        "glassColor": 5999769,
+        "frameColor": 12306116,
+        "accentColor": 13750725,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.46,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=179",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000176.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "222",
+      "name": "생활과학대학",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=180",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000177.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/180-222.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "주황빛 벽돌 날개와 밝은 회색 판재 날개가 연결된다.",
+        "층별로 길게 이어진 창과 밝은 수평 띠가 반복된다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13088161,
+        "roofColor": 10397084,
+        "glassColor": 8431284,
+        "frameColor": 12898249,
+        "accentColor": 12751736,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.88,
+        "windowHeightRatio": 0.43,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=180",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000177.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "223",
+      "name": "관악 223동[우석경제관]",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=254",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "250",
+      "name": "인문관연결동(1동-2동)",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=181",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "251",
+      "name": "사회관연결동(6동-7동)",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=182",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "252",
+      "name": "교육관연결동(10동-11동)",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=183",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "253",
+      "name": "화학관연결동(22동-23동)",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=184",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "254",
+      "name": "물리관연결동(25동-27동)",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=185",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "255",
+      "name": "예능관연결동(51동-52동)",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=186",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "300",
+      "name": "관악 300동[유회진 학술정보관]",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=256",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "observations": [
+        "공식 색인에 사진이 없어 외관을 확인하지 못했다. 모델에는 기본 외관을 사용한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "301",
+      "name": "제1공학관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=187",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000178.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/187-301.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "청색 반사 유리 면 전체에 촘촘한 짙은 격자가 있다.",
+        "층을 가로지르는 짙은 세로 구간이 곳곳에 보이며, 넓은 벽돌 벽은 보이지 않는다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 8824756,
+        "roofColor": 10397084,
+        "glassColor": 7513796,
+        "frameColor": 3428194,
+        "accentColor": 2901596,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.96,
+        "windowHeightRatio": 0.91,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=187",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000178.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "302",
+      "name": "제2공학관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000179.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/188-302.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "회색 외벽의 넓은 수평 띠와 청색 창 띠가 번갈아 나타난다.",
+        "중앙 유리 구간에 붉은빛 X자 구조가 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "중앙 X자 구조는 색상 프로필만으로 재현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 10790566,
+        "roofColor": 10397084,
+        "glassColor": 8037572,
+        "frameColor": 5005683,
+        "accentColor": 10119284,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000179.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "302-1",
+      "name": "공대위험물저장창고",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=189",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000180.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/189-302-1.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "어두운 갈색 금속 문과 작은 사각 창이 반복되는 낮은 창고다.",
+        "상단 환기 틈과 밝은 금속 기둥, 얕게 기울어진 처마가 보인다."
+      ],
+      "defaultedFields": [
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "경사 처마의 실제 각도는 알 수 없으며 roofStyle은 기본값이다."
+      ],
+      "profile": {
+        "wallColor": 6904924,
+        "roofColor": 11576981,
+        "glassColor": 6778726,
+        "frameColor": 11580320,
+        "accentColor": 10852478,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.3,
+        "windowHeightRatio": 0.18,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=189",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000180.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "310",
+      "name": "엔지니어하우스",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=190",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000181.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/190-310.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 베이지색 기둥과 촘촘한 세로 루버가 보인다.",
+        "낮고 긴 매스 중앙에 넓은 유리 입구가 있고, 경사진 유리 채광부와 지붕이 보인다."
+      ],
+      "defaultedFields": [
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [
+        "중앙 경사 채광창과 지붕은 기본 평지붕 프로필만으로 표현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 12958100,
+        "roofColor": 12234906,
+        "glassColor": 7045508,
+        "frameColor": 12171168,
+        "accentColor": 9277307,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.87,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=190",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000181.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "311",
+      "name": "화학공정신기술연구소",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=191",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000182.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/191-311.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회색 판재 사이로 세로로 긴 청록색 창이 반복된다.",
+        "층 사이 벽체가 두껍고 창 사이 수직 벽체가 앞으로 나온다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 14078918,
+        "roofColor": 10397084,
+        "glassColor": 4357498,
+        "frameColor": 5470839,
+        "accentColor": 11184535,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.56,
+        "windowHeightRatio": 0.78,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=191",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000182.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "312",
+      "name": "정밀기계연구소실험연구동",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=192",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000183.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/192-312.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회색 판재 외벽에 짙은 회색 수평 띠와 세로 기둥이 반복된다.",
+        "가로로 넓은 창은 갈색 또는 회색으로 보이며 일부 하부는 수목과 부속 시설에 가려져 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13224121,
+        "roofColor": 10397084,
+        "glassColor": 7961458,
+        "frameColor": 10132360,
+        "accentColor": 6054494,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.76,
+        "windowHeightRatio": 0.49,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=192",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000183.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "313",
+      "name": "정밀기계공동연구소",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=193",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000184.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/193-313.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회색 판재 옆으로 큰 청색 유리 면이 반복된다.",
+        "짙은 회색 수직 기둥과 층간 수평 띠가 유리 면을 굵게 나눈다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 12961727,
+        "roofColor": 10397084,
+        "glassColor": 5215669,
+        "frameColor": 3689298,
+        "accentColor": 4542802,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.86,
+        "windowHeightRatio": 0.8,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=193",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000184.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "314",
+      "name": "차세대자동차신기술연구소",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=194",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000185.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/194-314.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회백색 판재 외벽에 긴 청록색 유리 띠가 이어진다.",
+        "창 아래의 짙은 수평 띠가 입면을 강조한다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13750469,
+        "roofColor": 10397084,
+        "glassColor": 8827053,
+        "frameColor": 9280915,
+        "accentColor": 5004633,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.96,
+        "windowHeightRatio": 0.52,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=194",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000185.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "316",
+      "name": "대형구조실험동",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=195",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000186.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/195-316.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "회백색 판재 외벽에 긴 창 띠가 층마다 반복된다.",
+        "각 창 띠 아래에는 짙은 회색 돌출 띠가 있고, 하부에 큰 배관이 노출돼 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 12567231,
+        "roofColor": 10397084,
+        "glassColor": 10140601,
+        "frameColor": 11582390,
+        "accentColor": 6911861,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.48,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=195",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000186.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "330",
+      "name": "제2파워플랜트",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=196",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000187.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/196-330.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "회색 콘크리트 벽과 커다란 회색 셔터, 외부 배관이 보인다.",
+        "사진 상단에 작은 청색 창과 일부 곡면 유리 구조가 보이나 건물 전체는 담기지 않았다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "부분 사진이므로 전체 지붕 형태와 보이지 않는 입면은 기본값을 사용한다."
+      ],
+      "profile": {
+        "wallColor": 12171434,
+        "roofColor": 10397084,
+        "glassColor": 3962500,
+        "frameColor": 10857124,
+        "accentColor": 8818570,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.3,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=196",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000187.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "331",
+      "name": "차량정비고",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=197",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000188.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/197-331.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회백색 벽과 어두운 대형 차고 셔터가 보인다.",
+        "위층에는 가로로 긴 청색 창이 있고, 외부 계단에 짙은 난간이 설치돼 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 14146002,
+        "roofColor": 10397084,
+        "glassColor": 7318976,
+        "frameColor": 12700868,
+        "accentColor": 4279370,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.64,
+        "windowHeightRatio": 0.41,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=197",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000188.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "332",
+      "name": "다목적차량보관소",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=198",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000189.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/198-332.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "회백색 금속 패널과 큰 차고 셔터 두 개가 전면에 보인다.",
+        "상부는 굽은 지붕이며 셔터 아래쪽에 작은 사각 창이 있다."
+      ],
+      "defaultedFields": [
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "곡면 지붕은 현재 roofStyle 분류에 없어 flat 기본값을 사용한다."
+      ],
+      "profile": {
+        "wallColor": 12173761,
+        "roofColor": 11122102,
+        "glassColor": 5004640,
+        "frameColor": 13094860,
+        "accentColor": 9411743,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.24,
+        "windowHeightRatio": 0.18,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=198",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000189.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "500",
+      "name": "대학원연구동(2단계)",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=199",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000190.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/199-500.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "주황색 벽돌 구간과 넓은 밝은 청록색 유리 구간이 함께 보인다.",
+        "옆면에는 회색 콘크리트 벽과 층마다 돌출된 발코니가 있고, 하부는 큰 유리창으로 구성된다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 12156514,
+        "roofColor": 10397084,
+        "glassColor": 10732221,
+        "frameColor": 11385261,
+        "accentColor": 11646123,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.83,
+        "windowHeightRatio": 0.76,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=199",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000190.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "506",
+      "name": "자연대 생명과학부 시약보관창고",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=200",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000191.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/200-506.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "노출 콘크리트 벽과 상단의 밝은 환기 루버가 보인다.",
+        "기둥과 난간이 전면 일부를 가리며 오른쪽에 낮고 어두운 사각 개구부가 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "사진이 건물 전체를 담지 않아 창의 반복 개수와 지붕 형태는 확인되지 않았다."
+      ],
+      "profile": {
+        "wallColor": 11184539,
+        "roofColor": 10397084,
+        "glassColor": 5528407,
+        "frameColor": 9279373,
+        "accentColor": 12632750,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.3,
+        "windowHeightRatio": 0.24,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=200",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000191.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "900",
+      "name": "(관악사)대학원 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=201",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000192.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/201-900.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "노란빛이 섞인 밝은 벽돌 외벽에 작은 정사각형 창이 일정하게 놓여 있다.",
+        "창은 청록빛이며 은회색 프레임과 밝은 출입구 차양이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13677452,
+        "roofColor": 10397084,
+        "glassColor": 7841184,
+        "frameColor": 10925738,
+        "accentColor": 13224889,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.44,
+        "windowHeightRatio": 0.49,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=201",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000192.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "902",
+      "name": "(관악사)대학원 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=203",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000194.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/203-902.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 황갈색 벽돌 벽에 정사각형 창이 반복된다.",
+        "오른쪽은 열린 복도 또는 발코니와 밝은 바닥 띠가 겹쳐 있으며, 유리 지붕의 보행 통로가 앞에 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13743503,
+        "roofColor": 10397084,
+        "glassColor": 6134175,
+        "frameColor": 11057581,
+        "accentColor": 13948096,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.45,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=203",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000194.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "903",
+      "name": "(관악사)대학원 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=204",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000195.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/204-903.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "황갈색 벽돌 벽에 작은 사각 창이 규칙적으로 배치된다.",
+        "오른쪽 좁은 수직 유리 구간은 어둡고, 출입구에는 밝은 사각 차양이 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13084804,
+        "roofColor": 10397084,
+        "glassColor": 7907748,
+        "frameColor": 11714995,
+        "accentColor": 13815993,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.44,
+        "windowHeightRatio": 0.48,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=204",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000195.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "904",
+      "name": "(관악사)대학원 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=205",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000196.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/205-904.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 황갈색 벽돌 건물이 중정을 둘러싸고 있으며 작은 사각 창이 여러 줄로 반복된다.",
+        "창 사이 일부에 갈색 패널이 있고 하부에는 기둥과 열린 공간이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13151365,
+        "roofColor": 10397084,
+        "glassColor": 6067871,
+        "frameColor": 10401706,
+        "accentColor": 9069637,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.44,
+        "windowHeightRatio": 0.46,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=205",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000196.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "905",
+      "name": "(관악사)대학원 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=206",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000197.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/206-905.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "황갈색 벽돌 외벽에 작은 사각 창이 반복되고 건물 끝에 흰색 발코니가 세로로 돌출된다.",
+        "일부 창 사이에는 갈색 패널이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13150852,
+        "roofColor": 10397084,
+        "glassColor": 7117989,
+        "frameColor": 11056296,
+        "accentColor": 13750463,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.43,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=206",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000197.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "906",
+      "name": "(관악사)대학원 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=207",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000198.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/207-906.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 황갈색 벽돌 벽과 작은 청록색 창이 반복된다.",
+        "가운데 깊은 틈에는 열린 복도가 여러 층 겹치고, 건물 끝에 흰색 발코니가 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13742220,
+        "roofColor": 10397084,
+        "glassColor": 6069663,
+        "frameColor": 10664366,
+        "accentColor": 14210495,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.44,
+        "windowHeightRatio": 0.47,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=207",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000198.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "915",
+      "name": "관악 915동[외국인학생기숙사]",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=248",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/92e72525-d47f-413b-a3bf-4e8b55c5fa4e.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/248-915.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "야간 사진에서 작은 사각 창이 여러 층에 걸쳐 반복되는 고층 매스가 보인다.",
+        "하부에는 유리 면과 밝게 켜진 출입구가 있으나 야간 조명 때문에 실제 외벽 색을 판단하지 않았다."
+      ],
+      "defaultedFields": [
+        "wallColor",
+        "roofColor",
+        "glassColor",
+        "frameColor",
+        "accentColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "야간 사진이므로 외벽, 유리, 프레임, 강조색은 기본값을 유지했다.",
+        "지붕과 외벽 재료는 사진만으로 확정하지 않았다."
+      ],
+      "profile": {
+        "wallColor": 13223095,
+        "roofColor": 10397084,
+        "glassColor": 5600378,
+        "frameColor": 12830141,
+        "accentColor": 11776936,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.49,
+        "windowHeightRatio": 0.53,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=248",
+          "https://map.snu.ac.kr/api/upload/building/92e72525-d47f-413b-a3bf-4e8b55c5fa4e.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "916",
+      "name": "관악 916동[외국인학생기숙사]",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=249",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/02d2e01f-f57e-4a74-a475-11be6bdc260e.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/249-916.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "야간 사진의 중앙 건물에 사각 창이 여러 줄 반복되고, 옆으로 열린 수평 구간이 보인다.",
+        "저층 유리 구간은 조명이 켜져 있으나 외벽 고유 색상은 확인하기 어렵다."
+      ],
+      "defaultedFields": [
+        "wallColor",
+        "roofColor",
+        "glassColor",
+        "frameColor",
+        "accentColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "야간 사진이므로 외벽, 유리, 프레임, 강조색은 기본값을 유지했다.",
+        "보이지 않는 지붕 형태는 기본값을 사용한다."
+      ],
+      "profile": {
+        "wallColor": 13223095,
+        "roofColor": 10397084,
+        "glassColor": 5600378,
+        "frameColor": 12830141,
+        "accentColor": 11776936,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.49,
+        "windowHeightRatio": 0.53,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=249",
+          "https://map.snu.ac.kr/api/upload/building/02d2e01f-f57e-4a74-a475-11be6bdc260e.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "917",
+      "name": "관악 917동[외국인학생기숙사]",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=250",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/5b81faad-a197-4bf1-85d1-be2b0757e265.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/250-917.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "회갈색 판재 외벽에 청색 사각 창이 어두운 테두리 안에 반복된다.",
+        "일부 밝은 세로 구간이 있고, 최상단에는 낮은 테두리와 난간이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 10261122,
+        "roofColor": 10397084,
+        "glassColor": 4029860,
+        "frameColor": 5264206,
+        "accentColor": 13749697,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.5,
+        "windowHeightRatio": 0.58,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "parapet",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=250",
+          "https://map.snu.ac.kr/api/upload/building/5b81faad-a197-4bf1-85d1-be2b0757e265.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "918",
+      "name": "(관악사)대학원 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=208",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000199.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/208-918.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "옅은 황토색 벽과 붉은 갈색 층간 구간 사이로 창이 가로로 반복된다.",
+        "중앙에는 창이 적은 높은 계단실 매스가 있고 최상단에 난간이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "verticalFins"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 12560785,
+        "roofColor": 10397084,
+        "glassColor": 9215904,
+        "frameColor": 12567476,
+        "accentColor": 9400679,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.66,
+        "windowHeightRatio": 0.62,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "parapet",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=208",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000199.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "919",
+      "name": "(관악사)학부 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=209",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000200.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/209-919.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회백색 판재 외벽에 세로로 긴 창이 일정한 간격으로 반복된다.",
+        "층 사이 얇은 분홍빛 띠와 세로 유리 계단실이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 14541016,
+        "roofColor": 10397084,
+        "glassColor": 9283493,
+        "frameColor": 12832447,
+        "accentColor": 13086883,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.46,
+        "windowHeightRatio": 0.69,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=209",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000200.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "920",
+      "name": "관악사후생관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=210",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000201.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/210-920.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "짙은 붉은 벽돌 외벽에 길쭉한 청록색 창이 보인다.",
+        "중앙 출입구는 큰 유리 면으로 구성되고 붉은색 얇은 차양 테두리가 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 9134672,
+        "roofColor": 10397084,
+        "glassColor": 4094072,
+        "frameColor": 4611416,
+        "accentColor": 11889221,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.4,
+        "windowHeightRatio": 0.75,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=210",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000201.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "921",
+      "name": "(관악사)학부 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=211",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000202.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/211-921.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "짙은 적갈색 벽돌 기둥 사이에 좁고 긴 창 구간이 들어가 있다.",
+        "층 사이의 짧은 흰색 판과 녹색 반투명 출입구 차양이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 7886666,
+        "roofColor": 10397084,
+        "glassColor": 7113858,
+        "frameColor": 12042415,
+        "accentColor": 13684156,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.47,
+        "windowHeightRatio": 0.57,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=211",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000202.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "922",
+      "name": "(관악사)학부 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=212",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000203.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/212-922.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "짙은 적갈색 벽돌 외벽에 깊게 들어간 세로 창 구간이 반복된다.",
+        "창 사이의 짧은 흰색 판과 낮은 처마가 보이며 수목이 일부를 가린다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 7820876,
+        "roofColor": 10397084,
+        "glassColor": 7373950,
+        "frameColor": 12239023,
+        "accentColor": 13683643,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.45,
+        "windowHeightRatio": 0.57,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=212",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000203.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "923",
+      "name": "(관악사)학부 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=213",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000204.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/213-923.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "짙은 적갈색 벽돌 벽과 세로 창 구간이 반복된다.",
+        "밝은 수평 판이 창 사이에 짧게 들어가고 출입구 앞에 흰 계단 난간이 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 8543566,
+        "roofColor": 10397084,
+        "glassColor": 7441796,
+        "frameColor": 12633528,
+        "accentColor": 13947331,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.46,
+        "windowHeightRatio": 0.58,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=213",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000204.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "924",
+      "name": "(관악사)학부 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=214",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000205.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/214-924.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "적갈색 벽돌과 깊게 들어간 세로 창이 반복된다.",
+        "창 사이 흰색 판, 흰 계단 난간과 녹색 반투명 출입구 차양이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 9069136,
+        "roofColor": 10397084,
+        "glassColor": 8230796,
+        "frameColor": 12699575,
+        "accentColor": 14079171,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.46,
+        "windowHeightRatio": 0.58,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=214",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000205.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "925",
+      "name": "(관악사)학부 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=215",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000206.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/215-925.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "붉은 갈색 벽돌 기둥이 세로로 반복되고 창은 기둥 사이에 깊게 들어가 있다.",
+        "창 구간 사이의 짧은 밝은 판과 지붕 가장자리의 밝은 처마가 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 9396299,
+        "roofColor": 10397084,
+        "glassColor": 7310208,
+        "frameColor": 10925222,
+        "accentColor": 13224377,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.45,
+        "windowHeightRatio": 0.58,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=215",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000206.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "926",
+      "name": "(관악사)학부 생활관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=216",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000207.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/216-926.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "짙은 적갈색 벽돌 건물의 긴 옆면에 세로 창 구간이 반복된다.",
+        "건물 끝의 흰색 외부 발코니가 뚜렷하고 지붕 가장자리에 얕은 경사가 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [
+        "사진의 얕은 지붕 경사는 기본 roofStyle로 직접 표현하지 않는다."
+      ],
+      "profile": {
+        "wallColor": 7885120,
+        "roofColor": 10397084,
+        "glassColor": 6718072,
+        "frameColor": 11582122,
+        "accentColor": 13815998,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.44,
+        "windowHeightRatio": 0.58,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=216",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000207.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "931",
+      "name": "가족생활관1",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=217",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000208.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/217-931.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "가장자리의 막힌 벽과 중앙의 원형 창 열이 함께 보인다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "defaultedFields": [
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 9988425,
+        "roofColor": 8999744,
+        "glassColor": 8894129,
+        "frameColor": 13752006,
+        "accentColor": 13027767,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.74,
+        "windowHeightRatio": 0.78,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=217",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000208.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "932",
+      "name": "가족생활관2",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=218",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000209.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/218-932.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "정면 창 사이에 원형 창이 반복되고 하부 출입구는 수목에 일부 가려져 있다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "defaultedFields": [
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 9725514,
+        "roofColor": 8999744,
+        "glassColor": 9287859,
+        "frameColor": 13752006,
+        "accentColor": 13027767,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.74,
+        "windowHeightRatio": 0.78,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=218",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000209.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "933",
+      "name": "가족생활관3",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=219",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000210.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/219-933.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "옆에서 본 발코니의 청록색 유리와 흰색 프레임이 강조된다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "defaultedFields": [
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 9133379,
+        "roofColor": 8999744,
+        "glassColor": 7449254,
+        "frameColor": 13752006,
+        "accentColor": 13027767,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.74,
+        "windowHeightRatio": 0.78,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=219",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000210.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "934",
+      "name": "가족생활관4",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=220",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000211.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/220-934.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "앞쪽 소나무가 일부 창을 가리지만 원형 창과 유리 발코니가 보인다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "defaultedFields": [
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 10382670,
+        "roofColor": 8999744,
+        "glassColor": 8236459,
+        "frameColor": 13752006,
+        "accentColor": 13027767,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.74,
+        "windowHeightRatio": 0.78,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=220",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000211.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "935",
+      "name": "가족생활관5",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=221",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000212.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/221-935.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "큰 측벽 앞을 소나무가 가리고, 옆으로 유리 발코니가 길게 이어진다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "defaultedFields": [
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 9725513,
+        "roofColor": 8999744,
+        "glassColor": 8958122,
+        "frameColor": 13752006,
+        "accentColor": 13027767,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.74,
+        "windowHeightRatio": 0.78,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=221",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000212.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "936",
+      "name": "교직원아파트",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=222",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000213.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/222-936.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "적갈색 벽돌 외벽에 밝은 수평 띠와 직사각형 창이 반복된다.",
+        "돌출된 모서리 발코니는 청록색 유리와 밝은 프레임으로 둘러싸여 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "사진 위쪽이 잘려 지붕 형태와 색상은 기본값을 사용한다."
+      ],
+      "profile": {
+        "wallColor": 9662049,
+        "roofColor": 10397084,
+        "glassColor": 7187374,
+        "frameColor": 13686218,
+        "accentColor": 12762537,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.64,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=222",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000213.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "940",
+      "name": "연구공원지원시설",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=223",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000214.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/223-940.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "청색 반사 유리 커튼월에 짙은 격자가 촘촘히 반복된다.",
+        "중앙은 수직으로 접힌 유리 구간이고 하부에 넓은 경사 유리 지붕이 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [
+        "하부 경사 유리 지붕과 중앙의 접힌 매스는 기본 외관 프로필만으로 재현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 8627120,
+        "roofColor": 10397084,
+        "glassColor": 7184316,
+        "frameColor": 4349552,
+        "accentColor": 3495526,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.96,
+        "windowHeightRatio": 0.91,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=223",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000214.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "941",
+      "name": "백학어린이집",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=224",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000215.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/224-941.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "낮은 주황빛 벽돌 외벽과 밝은 창틀, 노란색 처마 테두리가 보인다.",
+        "우측은 둥글게 휘어진 벽면이며 사진 전면에 별도 노란색 기둥 구조가 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 12685154,
+        "roofColor": 10397084,
+        "glassColor": 8231822,
+        "frameColor": 12895916,
+        "accentColor": 14658103,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.47,
+        "windowHeightRatio": 0.43,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=224",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000215.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "941-1",
+      "name": "느티나무어린이집",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=225",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000216.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/225-941-1.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "노란색 돌출 매스에 모서리가 둥근 불규칙한 창 세 개가 보인다.",
+        "매스 아래에는 노란 기둥과 개방 공간이 있고 옆은 회색 노출 콘크리트다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "windowStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "불규칙한 창과 들어 올린 매스는 일반 사각 창 프로필만으로 표현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 14131271,
+        "roofColor": 10397084,
+        "glassColor": 5602439,
+        "frameColor": 4283746,
+        "accentColor": 15183145,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.58,
+        "windowHeightRatio": 0.55,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=225",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000216.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "942",
+      "name": "LG연구동",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=226",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000217.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/226-942.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "넓은 청록색 반사 유리 구간과 밝은 판재 수직 매스가 번갈아 나타난다.",
+        "유리 면 위에는 어두운 가로 띠가 있고 일부는 열린 발코니와 연결된다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13488581,
+        "roofColor": 10397084,
+        "glassColor": 2387850,
+        "frameColor": 3891045,
+        "accentColor": 13882566,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.85,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=226",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000217.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "943",
+      "name": "SK텔레콤",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=227",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000218.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/227-943.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "청색 반사 유리 면 옆에 밝은 회백색 판재 벽이 솟아 있다.",
+        "유리는 가는 밝은 격자로 나뉘며 전면 수목이 저층을 일부 가린다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13817032,
+        "roofColor": 10397084,
+        "glassColor": 3440037,
+        "frameColor": 10992057,
+        "accentColor": 11844786,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.86,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=227",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000218.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "945",
+      "name": "웅진R&D센터",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=228",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000219.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/228-945.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "짙은 갈색 판재 매스 사이에 가느다란 청색 유리 띠가 세로로 이어진다.",
+        "중앙에는 폭이 넓은 유리 구간이 있고 측면에는 촘촘한 수직 돌출 요소가 보인다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "horizontalBands",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 7362893,
+        "roofColor": 10397084,
+        "glassColor": 4100531,
+        "frameColor": 4678514,
+        "accentColor": 7823186,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.43,
+        "windowHeightRatio": 0.9,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=228",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000219.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "946",
+      "name": "BK국제관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=229",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000220.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/229-946.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회백색 수직 기둥과 층간 띠 사이에 넓은 창과 분홍빛 패널이 반복된다.",
+        "오른쪽에는 창이 적은 밝은 계단실 매스가 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 14013381,
+        "roofColor": 10397084,
+        "glassColor": 9019291,
+        "frameColor": 11846069,
+        "accentColor": 13672844,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.83,
+        "windowHeightRatio": 0.66,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=229",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000220.jpg"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "950",
+      "name": "국제백신연구소",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=230",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000221.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/230-950.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "밝은 회백색 판재 외벽과 청색 유리 면이 함께 보인다.",
+        "옆면은 작은 창이 반복되고 앞쪽에는 유리 면이 큰 돌출 매스와 상부 환기 루버가 있다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [],
+      "profile": {
+        "wallColor": 13488325,
+        "roofColor": 10397084,
+        "glassColor": 7909057,
+        "frameColor": 12043969,
+        "accentColor": 10004642,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.76,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=230",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000221.jpg"
+        ]
+      }
+    }
+  ]
+}

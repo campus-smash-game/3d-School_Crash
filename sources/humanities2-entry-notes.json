@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T15:15:33.260Z",
+  "buildingId": "way/167983080",
+  "buildingNumber": "2",
+  "status": "implemented-with-estimated-west-entry",
+  "scope": "자하연 쪽 입구의 존재와 방향은 공식 안내 및 약도를 참고했다. 서쪽 문 위치, 계단과 난간은 게임 지형에 맞춘 근사다. 남쪽 개방형 발코니는 공식 캠퍼스 사진을 참고했다.",
+  "references": [
+    {
+      "url": "https://humanities.snu.ac.kr/community/notice?bbsidx=3628&md=v",
+      "attachment": "https://humanities.snu.ac.kr/community/notice?bbsidx=3628&fileidx=5839&md=down",
+      "published": "2025-11-14",
+      "pdfPage": 4,
+      "localFile": "artifacts/humanities6-review/52-exam-guide.pdf",
+      "sha256": "88a6bea49a841539147ceef1a3ad54ad71aa93e5521c556c7370bfa95c790674",
+      "localRender": "artifacts/humanities6-review/52-exam-map.png",
+      "directlyViewedBy": "root",
+      "observed": "행사 안내는 1동, 2동, 3동 방문자의 입구를 2동 1층 자하연 방향으로 지정한다. 약도의 화살표는 자하연 옆 2동 서쪽 끝을 가리킨다.",
+      "limits": "입구 존재는 확인했으나 약도는 정확한 문 좌표와 계단 형태를 보여 주지 않는다. 현재 상시 개방 상태와 실내 동선은 미확인이다.",
+      "retrieval": "56판 조회에서 첨부 링크가 404를 반환했다. 57판에서는 같은 공개 PDF를 다시 열었고 기존 저장본의 4쪽 렌더링을 직접 확인했다."
+    },
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000001.jpg",
+      "localPhoto": "../references/buildings/photos/001-1.jpg",
+      "sha256": "a309686c941f30c0232e5ac3ee1bfcf2b38cdbcb4596ef35096acef3f87e7a2e",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "250동 유리 계단탑 오른쪽의 2동 남쪽 면에 안쪽으로 들어간 두 발코니",
+        "흰 난간의 가로 틈과 흰 옆벽"
+      ],
+      "limits": "사진과 지도 면의 대응, 발코니 깊이, 폭과 층별 높이는 근사다. 서쪽 출입문 사진으로 사용하지 않았다."
+    },
+    {
+      "url": "https://walkingwithwind.blogspot.com/2012/04/120401.html",
+      "published": "2012-04-14",
+      "captureDate": null,
+      "localPhotos": [
+        "artifacts/humanities2-entry-review/57-blog-jahayeon.jpg",
+        "artifacts/humanities2-entry-review/57-blog-garden.jpg"
+      ],
+      "directlyViewedBy": "root",
+      "observed": "자하연과 아방궁의 옛 모습을 확인했다. 입구를 특정할 문 사진은 보이지 않았다.",
+      "implementationUse": false,
+      "limits": "구형 정원등과 이동식 시설을 현재 시설로 추가하지 않았다. 새 입구 형태의 근거로 사용하지 않았다."
+    }
+  ],
+  "roadview": {
+    "priorRecord": "sources/humanities-passage-roadview-review.json",
+    "newLiveVisit": false,
+    "entrancePhotoObtained": false
+  },
+  "implementation": {
+    "module": "src/humanities2Landmark.ts",
+    "direction": "west",
+    "edge": 12,
+    "route": [
+      [
+        365.2531005765454,
+        -661.4959551702837
+      ],
+      [
+        366.3166710630374,
+        -662.051668963763
+      ],
+      [
+        370.1277986396337,
+        -664.0429767237307
+      ],
+      [
+        373.40714097298394,
+        -665.7564275869587
+      ]
+    ],
+    "entryExistenceConfirmed": true,
+    "directionFromDiagram": true,
+    "positionEstimated": true,
+    "appearancePhotoConfirmed": false,
+    "dimensionsEstimated": true,
+    "wholeInterior": false,
+    "details": [
+      "지도의 서쪽 보행로와 연결한 입구 바닥 및 계단",
+      "열린 문짝과 문틀, 난간, 짧은 입구 내부",
+      "남쪽 두 개방형 발코니의 바닥, 옆벽과 난간 틈"
+    ],
+    "recessBalcony": {
+      "edge": 4,
+      "spanMeters": [
+        1.1,
+        5.8
+      ],
+      "depthMeters": 1.5,
+      "estimated": true
+    },
+    "geometry": {
+      "meshes": 2,
+      "textures": 0,
+      "triangles": 38014,
+      "colliders": 252
+    },
+    "rawMapAndElevationModified": false,
+    "terrainModified": false,
+    "roadGeometryModified": false,
+    "photoTexturesCopied": false,
+    "limits": [
+      "실제 문 재료와 여닫는 방식, 계단 단수 및 난간 모양은 미확인이다.",
+      "북쪽 긴 외벽과 서쪽 전체 외관, 층별 실내 연결은 여전히 보완 대상이다."
+    ]
+  },
+  "validation": {
+    "file": "artifacts/humanities2-exterior-test/results.json",
+    "groups": [
+      {
+        "name": "building 2 replacement preserves terrain, other buildings and completed connections",
+        "status": "PASS"
+      },
+      {
+        "name": "roof surfaces match their colliders",
+        "status": "PASS"
+      },
+      {
+        "name": "west entrance remains walkable at desktop and mobile speeds in both directions",
+        "status": "PASS"
+      },
+      {
+        "name": "entrance surfaces and recessed balcony openings match physics",
+        "status": "PASS"
+      },
+      {
+        "name": "photo facade details retain destruction at distance and restore together",
+        "status": "PASS"
+      }
+    ],
+    "walkSpeeds": [
+      6,
+      8
+    ],
+    "walkLateralOffsets": [
+      -0.65,
+      0,
+      0.65
+    ],
+    "bothDirections": true,
+    "unchangedOtherParts": 41383,
+    "surfaceSamples": 14,
+    "balconySlotSamples": 2,
+    "realPhoneFrameRateMeasured": false
+  }
+}

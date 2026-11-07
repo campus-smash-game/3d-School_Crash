@@ -1,0 +1,185 @@
+{
+  "buildingId": "way/238935852",
+  "buildingNumber": "103",
+  "name": "규장각한국학연구원",
+  "module": "src/gyujanggakLandmark.ts",
+  "landmark": "gyujanggak",
+  "sourceReferences": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=115",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000112.jpg",
+      "localImage": "../references/buildings/photos/115-103.jpg",
+      "visuallyInspected": true,
+      "observations": "높은 본관의 기와 능선과 박공, 깊은 처마, 처마 아래 띠창, 밝은 기둥과 들어간 하부 벽이 보인다. 낮은 앞쪽 부분에는 전시실 입구와 유리창, 위쪽 테라스가 있다."
+    },
+    {
+      "url": "https://kyu.snu.ac.kr/about/history1/",
+      "imageUrl": "https://kyu.snu.ac.kr/wp-content/themes/kyujanggak/assets/images/history-img2-5.jpg",
+      "localImage": "../references/exteriors/gyujanggak-official.jpg",
+      "visuallyInspected": true,
+      "observations": "공식 연혁의 규장각 전경 사진을 직접 확인했다. 본관의 넓은 팔작형 기와지붕과 길게 이어진 기둥열, 앞쪽의 낮은 유리 부분과 평지붕, 테라스가 보인다."
+    },
+    {
+      "kind": "kakao-roadview",
+      "captureMonth": "2026-08",
+      "url": "https://kko.to/TlQiwbcSuq",
+      "panoramaId": "1213022653",
+      "localImage": "../references/roadview-audit/2026-08/gyujanggak-entrance-junction-followup-ui.jpg",
+      "visuallyInspected": true,
+      "observations": "북동쪽의 낮고 긴 유리 현관, 얕은 차양, 앞마당과 도로 분기, 뒤쪽 높은 기와지붕의 관계를 직접 확인했다. 정확한 문 좌표와 치수는 사진만으로 확정하지 않는다.",
+      "additionalObservationRecord": "sources/gyujanggak-approach-roadview-review.json"
+    },
+    {
+      "kind": "kakao-skyview",
+      "url": "https://map.kakao.com/",
+      "localImage": "../references/roadview-audit/2026-08/gyujanggak-skyview-alignment-ui.jpg",
+      "visuallyInspected": true,
+      "selectedLayer": "최근사진",
+      "captureYear": null,
+      "observations": "높은 기와지붕은 남동쪽, 낮은 평지붕 부분은 북서쪽이다. 큰 지붕의 능선은 게임 좌표의 v축인 북동쪽과 남서쪽 방향으로 읽힌다. 최근사진 선택 상태만 확인했으며 촬영연도를 2026년으로 단정하지 않는다."
+    },
+    {
+      "kind": "official-library-aerial-vr",
+      "url": "https://lib.snu.ac.kr/vr/",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/0.jpg",
+      "localImage": "artifacts/gym-review/sky4_9016-html5-0.jpg",
+      "visuallyInspected": true,
+      "captureMonth": null,
+      "observations": "높은 기와지붕과 뒤쪽 낮은 평지붕의 상대 배치를 보조 대조했다. 현관 문은 가려져 있어 정확한 위치 근거로 삼지 않았다."
+    }
+  ],
+  "documented": {
+    "identity": "sources/building-match-review.json에서 공식 103동과 OSM way/238935852의 대응을 확인했다.",
+    "constructionHistory": "공식 연혁에는 전용 건물을 1989년에 준공하고 1990년에 이전했으며 2004년에 확장 공사를 완공했다고 기록돼 있다."
+  },
+  "placement": {
+    "source": "public/data/campus.json",
+    "method": "원본 13개 꼭짓점을 보존하고, 남동쪽 u=35.2~69.512 m 구간에 높은 본관을 둔다. 본관 능선은 지도 윤곽의 긴 u축과 직교하는 v축을 따른다. 북서쪽 낮은 몸체와 북동쪽 p5~p9의 계단형 전면을 분리한다.",
+    "coordinateConvention": "D=(east,up,north); 화면의 H 반사는 상위 world에 한 번 적용한다.",
+    "localAxis": {
+      "u": [
+        0.6788714061107982,
+        -0.7342571851641273
+      ],
+      "v": [
+        0.7342571851641273,
+        0.6788714061107982
+      ]
+    },
+    "approximateMapEnvelopeMeters": {
+      "length": 69.51,
+      "depth": 58.52
+    },
+    "entrance": {
+      "x": 165.00152580554754,
+      "z": -432.3276677955944,
+      "floorY": 15.761596374511718,
+      "basis": "2026년 8월 로드뷰의 북동쪽 현관을 원본 지도 윤곽에 맞춘 게임 좌표다. 바닥은 gyujanggakDatum의 heightAt(center)+.18이며 측량 고도가 아니다."
+    },
+    "limitation": "방향과 높은 부분 및 낮은 부분의 관계는 여러 사진으로 대조했다. 분할선, 현관 중심, 정확한 외곽과 치수는 여전히 게임 근사이며 실측 배치도에 맞춘 결과가 아니다."
+  },
+  "estimated": {
+    "mainRidgeHeightMeters": 18,
+    "ridgeCapAboveMeters": 0.26,
+    "lowTerraceHeightMeters": 3.42,
+    "lowPavilionHeightMeters": 7.74,
+    "floors": "공식 건축 층수는 이번 자료에서 확인하지 못했다. 기존 지도 자료의 층수도 추정값이다.",
+    "roof": "지붕 경사, 처마 돌출, 박공 폭과 기와 간격은 사진의 비례를 바탕으로 단순화했다.",
+    "columns": "기둥 수와 간격, 기둥 뒤 벽의 후퇴 거리는 사진 비례에 따른 근사다.",
+    "hiddenSurfaces": "현재 관측한 북동쪽 현관과 동쪽 보도를 제외한 후면 세부, 실내, 수목에 가린 계단의 연결층은 미확인이다. 옛 공식 사진과 2026년 8월 로드뷰의 촬영 시점을 구분하며 이후 변경 여부는 확인하지 않았다.",
+    "mainMaximumHeightMeters": 18.26
+  },
+  "implementation": {
+    "renderMeshes": 3,
+    "photoTexturesIncluded": false,
+    "collision": "기와지붕과 처마, 기둥, 후퇴 벽을 개별 부품으로 나누고 실제 꼭짓점에서 볼록 충돌체를 만든다. 현관 앞 기단 아래는 통과 공간으로 비우며 문과 후퇴 유리를 분리한다. 세부 구획의 볼록 근사와 렌더 표면 사이에는 오차가 남는다.",
+    "damage": "부품별 파괴와 초기화 때 충돌체와 합친 메시의 해당 꼭짓점을 함께 갱신한다. 거리 때문에 남은 건물을 숨기지 않는다.",
+    "terrain": "높이는 전달받은 heightAt 함수에서 계산한다. 실제 지형 고도를 고정값으로 저장하지 않는다.",
+    "breakableParts": 629,
+    "triangles": 20581,
+    "entranceClearanceMeters": 3.24,
+    "sourceSha256": "fd34501f10fdf0f00b003993b35a8dfaec60c281aa1b2bc13edb7bb836d93e56",
+    "approachFacilities": "앞마당과 동쪽 보도 시설은 별도 src/gyujanggakApproach.ts가 담당하며 이 단독 건물 검사에 포함되지 않는다."
+  },
+  "verificationScope": "단독 모델의 지도 윤곽, 지붕 투영과 기둥 사이 빈 공간, 유리 지형 여유, 출입 보행, 파괴 및 복원, H 반사를 검사했다. 사진 전체 일치, 실측 정확성, 실제 브라우저 화면과 휴대전화 성능을 이 검사로 확인한 것은 아니다.",
+  "history": [
+    {
+      "status": "superseded-before-2026-08-roadview-alignment",
+      "reason": "이전 모델은 높은 기와지붕을 지도 윤곽의 긴 축에 맞췄다. 2026년 8월 로드뷰와 스카이뷰를 대조한 뒤 높은 남동쪽 몸체의 능선을 그 축과 직교하도록 고쳤다. 아래 설명과 수치는 이전 모델 기록이다.",
+      "previous": {
+        "placement": {
+          "source": "public/data/campus.json",
+          "method": "지도 윤곽의 긴 직선 변을 장축으로 삼고, 계단형 낮은 하부 윤곽은 원래 꼭짓점을 따른다. 높은 본관은 뒤쪽 긴 부분, 낮은 유리 부분은 앞쪽으로 나눈다.",
+          "approximateMapEnvelopeMeters": {
+            "length": 69.51,
+            "depth": 58.52
+          },
+          "limitation": "사진에 보이는 본관과 낮은 부분을 지도 윤곽에 대응한 배치는 추정이다. 건축 배치도로 실측 대조한 결과가 아니다."
+        },
+        "estimated": {
+          "mainRidgeHeightMeters": 18,
+          "ridgeCapAboveMeters": 0.26,
+          "lowTerraceHeightMeters": 3.42,
+          "lowPavilionHeightMeters": 7.74,
+          "floors": "공식 건축 층수는 이번 자료에서 확인하지 못했다. 기존 지도 자료의 층수도 추정값이다.",
+          "roof": "지붕 경사, 처마 돌출, 박공 폭과 기와 간격은 사진의 비례를 바탕으로 단순화했다.",
+          "columns": "기둥 수와 간격, 기둥 뒤 벽의 후퇴 거리는 사진 비례에 따른 근사다.",
+          "hiddenSurfaces": "현재 관측한 북동쪽 현관과 동쪽 보도를 제외한 후면 세부, 실내, 수목에 가린 계단의 연결층은 미확인이다. 옛 공식 사진과 2026년 8월 로드뷰의 촬영 시점을 구분하며 이후 변경 여부는 확인하지 않았다.",
+          "mainMaximumHeightMeters": 18.26
+        },
+        "implementation": {
+          "renderMeshes": 3,
+          "photoTexturesIncluded": false,
+          "collision": "기와지붕과 처마, 기둥, 후퇴 벽을 개별 부품으로 나누고 실제 꼭짓점에서 볼록 충돌체를 만든다. 현관 앞 기단 아래는 통과 공간으로 비우며 문과 후퇴 유리를 분리한다. 세부 구획의 볼록 근사와 렌더 표면 사이에는 오차가 남는다.",
+          "damage": "부품별 파괴와 초기화 때 충돌체와 합친 메시의 해당 꼭짓점을 함께 갱신한다. 거리 때문에 남은 건물을 숨기지 않는다.",
+          "terrain": "높이는 전달받은 heightAt 함수에서 계산한다. 실제 지형 고도를 고정값으로 저장하지 않는다.",
+          "breakableParts": 629,
+          "triangles": 20581,
+          "entranceClearanceMeters": 3.24,
+          "sourceSha256": "fd34501f10fdf0f00b003993b35a8dfaec60c281aa1b2bc13edb7bb836d93e56",
+          "approachFacilities": "앞마당과 동쪽 보도 시설은 별도 src/gyujanggakApproach.ts가 담당하며 이 단독 건물 검사에 포함되지 않는다."
+        },
+        "verificationScope": "자동 검사는 높이가 다른 두 부분, 경사 지붕과 처마 충돌, 기둥 사이의 빈 공간, 부분 파괴, 원거리 사격과 초기화를 확인한다. 사진 전체 일치, 실측 정확성, 브라우저 화면과 실제 휴대전화 조작을 검증한 것은 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "artifact": "artifacts/gyujanggak-test/results.json",
+    "artifactSha256": "37fb5e3c5be1ea9ebd877a0d33295f9bca503fc80f4bacbfc052dfdd37137baf",
+    "script": "scripts/verify-gyujanggak.mjs",
+    "scriptSha256": "fe680ed8580263b2d3c715852a6bbb79fc66fa24a052c9c8c2bc95ca55af47ae",
+    "passed": 10,
+    "failed": 0,
+    "sourceHashes": {
+      "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+      "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "src/observedAppearances.ts": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80",
+      "src/buildingAppearance.ts": "abf672327d79f89d9998b498bbb2cdf7d81e547e71ef27843c11e25cd82a0baf",
+      "src/gyujanggakLandmark.ts": "fd34501f10fdf0f00b003993b35a8dfaec60c281aa1b2bc13edb7bb836d93e56",
+      "src/engineering301303Site.ts": "b0c63ab74926e30bd808c042fd969d038346280e165e12ab837bd8ca761f0fc4",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+    },
+    "sourceStillMatchesAtReview": {
+      "src/terrain.ts": true,
+      "src/physics.ts": true,
+      "src/observedAppearances.ts": true,
+      "src/buildingAppearance.ts": true,
+      "src/gyujanggakLandmark.ts": true,
+      "src/engineering301303Site.ts": true,
+      "public/data/campus.json": true,
+      "public/data/terrain.json": true
+    },
+    "samples": {
+      "roofProjection": 1092,
+      "roofHoles": 0,
+      "glazingTerrain": 2720,
+      "minimumGlazingClearanceMeters": 0.21000003814697266,
+      "frontRays": 10,
+      "maxRenderLoadedDifferenceMeters": 0.055003576959991696,
+      "maxLoadedUnloadedDifferenceMeters": 0.00017310268445591692
+    },
+    "walking": "실제 지형과 단독 모델에서 6m/s로 중앙 및 좌우 경로를 왕복했다. 닫힌 문이 막고 문 파괴 후 진입하며, 파괴 후 원거리 잔존과 초기화, H 반사를 검사했다.",
+    "fullCampusApproach": "별도 전체 장면 및 시설 검사는 진행 중이며 이 문서의 10개 통과에 포함하지 않는다."
+  }
+}

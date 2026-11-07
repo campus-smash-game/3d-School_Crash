@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T20:11:43.758Z",
+  "buildingId": "way/329398175",
+  "scope": "관정관 남동쪽 상승 계단과 남서쪽 하강 통로를 구분하고 주변 벽, 난간, 포장과 시설을 보완했다.",
+  "status": "implemented-partial-photo-reference",
+  "corrects": "sources/central-library-roadview-notes.json",
+  "references": [
+    {
+      "url": "https://kko.to/qAyahwe_1x",
+      "captureMonth": "2026-07",
+      "captures": [
+        {
+          "file": "artifacts/library-access-review66/66-cafe-stair-front.png",
+          "sha256": "7748eeca6166411792dbf074f2a89acfad4e73e9b38a3b10595bbe9d1212f178"
+        }
+      ],
+      "directlyViewedBy": "root",
+      "observed": [
+        "낮은 계단과 넓은 참 뒤의 상승 계단",
+        "유리 난간 테라스와 흰 접이식 격자문",
+        "상승 계단 왼쪽의 큰 석재 벽"
+      ],
+      "limits": "상층 테라스의 정확한 표고와 층수, 문 운영 상태는 미확인이다."
+    },
+    {
+      "url": "https://kko.to/IAoLNaYoLi",
+      "captureMonth": "2026-07",
+      "captures": [
+        {
+          "file": "artifacts/library-access-review66/66-down-stair-front.png",
+          "sha256": "fe0fa6170899aecaa94dc0edb5e639a5b0a7cfce6b08ddf0d3f73c969b22f40b"
+        }
+      ],
+      "directlyViewedBy": "root",
+      "observed": [
+        "도로 옆 점자블록 띠와 원통형 볼라드 두 개",
+        "석재 벽과 식재 사이로 내려가는 계단",
+        "하강 통로 위를 가로지르는 상부 구조"
+      ],
+      "limits": "가려진 구간의 정확한 단수와 참 개수, 전체 높이차는 미확인이다."
+    },
+    {
+      "url": "https://kko.to/lnSAQ8zI8g",
+      "captureMonth": "2026-07",
+      "captures": [
+        {
+          "file": "artifacts/library-access-review66/66-cafe-side.png",
+          "sha256": "c4b2f4a0eb7771118ab2fcbe40da843735844a2365ea65058e2a14ce9a953613"
+        }
+      ],
+      "directlyViewedBy": "root",
+      "observed": [
+        "상승 계단 왼쪽의 석재 외벽과 후퇴한 유리창",
+        "포장 참과 장애인 주차면, 외부 조명"
+      ],
+      "limits": "후퇴한 유리 부분의 용도와 출입 여부는 확정하지 않았다."
+    },
+    {
+      "url": "https://lib.snu.ac.kr/about/floor-guide/central-lib-facility/kwanjeongbuilding/5f/",
+      "captures": [
+        {
+          "file": "artifacts/library-access-review66/research-library-5f.png",
+          "sha256": "8b3f94edf8a73662ed104670cad1754fdb479b8f8f1400e40a4252142ee82c06"
+        },
+        {
+          "file": "artifacts/library-access-review66/research-library-3f.png",
+          "sha256": "5b5d9d1f075aad6739ed8e0ce9aecd1761a32ac8391ba64efff4d7638f1b2e5f"
+        }
+      ],
+      "directlyViewedBy": "root",
+      "observed": [
+        "3층 안내도의 별도 편의시설 동",
+        "5층 안내도의 약학대학 방향과 편의시설 위 통로, 중앙 연결부"
+      ],
+      "limits": "축척과 외부 계단의 실제 높이는 없다. 상승 계단이 5층 옥상 통로에 닿는다는 대응은 추정이다."
+    },
+    {
+      "url": "https://www.aurum.re.kr/Bits/BuildingDoc.aspx?mm=4&num=6114&ss=1",
+      "captures": [
+        {
+          "file": "artifacts/library-access-review66/research-aurum-0.jpg",
+          "sha256": "79c96f1935865161490a156fb5a398620842207c6dfc85c78826308f6b037dba"
+        },
+        {
+          "file": "artifacts/library-access-review66/research-aurum-27.jpg",
+          "sha256": "4d893fe9aad848648c737ddd328c672775c14a03ea7478629c3201a5caa09be9"
+        }
+      ],
+      "directlyViewedBy": "root",
+      "observed": [
+        "약학대학에서 본 배면의 석재 벽, 별도 상승 계단과 낮은 편의시설",
+        "관정관과 편의시설 사이 열린 통로를 보여 주는 평면도"
+      ],
+      "limits": "2015년 수상 건축물 자료이며 개별 촬영일은 미확인이다. 도면의 층 이름과 현재 층별 안내는 다르다."
+    },
+    {
+      "url": "https://lib.snu.ac.kr/vr/index.html",
+      "scene": "pano11920",
+      "captures": [
+        {
+          "file": "artifacts/library-access-review66/research-vr-11920-face0.jpg",
+          "sha256": "fc8f99b91d1d649c819ffeca19f87e5c2eff290527607e2e56f4473aed153cf3"
+        },
+        {
+          "file": "artifacts/library-access-review66/research-vr-11920-face1.jpg",
+          "sha256": "4e28e4dc6c170db694de34df7c35d60ef82958dea8bd609fa06c4b41469c95b2"
+        }
+      ],
+      "directlyViewedBy": "root",
+      "observed": [
+        "관정관 3층 출입구 앞의 계단 참과 유리 난간",
+        "별도 편의시설의 유리 전면과 포장 통로"
+      ],
+      "limits": "촬영일과 이 참의 게임 좌표는 미확인이다. 이번에는 VR에 보이는 전체 상가 통로를 재현하지 않았다."
+    }
+  ],
+  "alignment": {
+    "coordinateReference": "https://apis.map.kakao.com/web/documentation/#Coords",
+    "cameraCoordinates": [
+      {
+        "url": "https://kko.to/IAoLNaYoLi",
+        "x": 489450,
+        "y": 1099720,
+        "lat": 37.45839867241013,
+        "lon": 126.9523026305105,
+        "game": [
+          345.2554157156332,
+          -887.1789433046212
+        ],
+        "libraryLocal": [
+          -48.49783987732386,
+          -44.62451182757896
+        ]
+      },
+      {
+        "url": "https://kko.to/qAyahwe_1x",
+        "x": 489517,
+        "y": 1099795,
+        "lat": 37.45866909792558,
+        "lon": 126.95260537203231,
+        "game": [
+          372.0044023096297,
+          -857.0751749244329
+        ],
+        "libraryLocal": [
+          -8.37701499036292,
+          -41.15110357578302
+        ]
+      },
+      {
+        "url": "https://kko.to/31Rtajq3u8",
+        "x": 489535,
+        "y": 1099810,
+        "lat": 37.45872319126235,
+        "lon": 126.95268671763901,
+        "game": [
+          379.1917630990184,
+          -851.0535046750135
+        ],
+        "libraryLocal": [
+          0.982267125793534,
+          -41.7189996752393
+        ]
+      },
+      {
+        "url": "https://kko.to/KD6aVfZMaS",
+        "x": 489552,
+        "y": 1099830,
+        "lat": 37.458795302978075,
+        "lon": 126.95276353092915,
+        "game": [
+          385.97866717419976,
+          -843.0260284806093
+        ],
+        "libraryLocal": [
+          11.429629648143402,
+          -40.55493038862449
+        ]
+      }
+    ],
+    "cameraSeparationMeters": 40.27089711558247,
+    "cameraIsNotStairSurvey": true,
+    "rejectedPreviousMatch": "way/167597860/23은 상승 계단이 아니라 하강 계단 시점에 대응한다."
+  },
+  "mapEvidence": {
+    "descendingWays": [
+      {
+        "id": "way/167597860/23",
+        "rawTimestamp": "2012-06-16T12:24:43Z"
+      },
+      {
+        "id": "way/1185902269/526",
+        "rawTimestamp": "2023-06-30T07:45:06Z"
+      }
+    ],
+    "rawMapAndDEMPreserved": true,
+    "otherEndRoadview": {
+      "url": "https://kko.to/__UQ-pc-t-",
+      "date": "2011-04",
+      "capture": {
+        "file": "artifacts/library-access-review66/66-down-stair-other-end.png",
+        "sha256": "0f5fab8682c2fb33c3b70ba51140ed960267bd59090c6d3f36fad74dc88f4459"
+      },
+      "usedForCurrentAppearance": false
+    }
+  },
+  "implementation": {
+    "upStairLocalX": -10,
+    "previousLocalX": -51.2,
+    "upStairWidth": 6,
+    "descendingWidths": [
+      3.6,
+      3.6,
+      2.4,
+      2.4
+    ],
+    "southwestSupportWidth": 18.5,
+    "allSiteDimensionsEstimated": true,
+    "upperEnvelopePreserved": true,
+    "wholeInteriorImplemented": false,
+    "unverifiedCafeDoorRemoved": true,
+    "facilities": [
+      "점자블록",
+      "볼라드 두 개",
+      "가로등",
+      "난간",
+      "석재 측벽"
+    ],
+    "photoTexturesUsed": false
+  },
+  "limitations": [
+    "높이차와 계단 단수는 게임 지형에 맞춘 근사다. 측량값이 아니다.",
+    "기존 165m 상부 몸체와 공통 기준고는 유지했다. 남서쪽 지지부 폭과 하부 벽은 통과 동선에 맞춰 조정했다.",
+    "편의시설의 모든 층과 점포 전면, 도서관 본관까지의 전체 연결은 후속 보완 대상이다.",
+    "상승 계단 위 격자문은 사진의 닫힌 상태를 따른다. 실제 상시 통행 가능 여부를 뜻하지 않는다."
+  ],
+  "adjacentRegressionFix": {
+    "buildingId": "way/435329614",
+    "finding": "새 주변 구조물을 포함한 전체 장면 검사에서 20동과 21동 사이 계단 모서리에 걸리는 현상을 확인했다.",
+    "adjustment": "자동 오르기 후 필요한 전방 여유 거리를 0.25m에서 0.10m로 조정했다.",
+    "maximumStepHeight": 0.38,
+    "previousMinimumForwardSpace": 0.25,
+    "minimumForwardSpace": 0.1,
+    "stairGeometryChanged": false,
+    "retained": "계단 치수와 형상, 주변 벽 및 난간은 기존 배치를 유지했다.",
+    "reference": "https://rapier.rs/docs/user_guides/javascript/character_controller/",
+    "verification": "기존 침투 깊이와 도착 검사를 유지하고 각 구간의 장시간 걸림도 검사한다."
+  },
+  "validation": {
+    "test": "scripts/verify-library-access.mjs",
+    "groups": 9,
+    "passed": 9,
+    "relatedChecksPassed": 49,
+    "walkSpeeds": [
+      6,
+      8
+    ],
+    "bothDirections": true,
+    "terrainCoverSamples": 891,
+    "rawInputsPreserved": true,
+    "unrelatedParts": 43274,
+    "sourceHashesMatched": true,
+    "actualPhoneMeasured": false
+  }
+}

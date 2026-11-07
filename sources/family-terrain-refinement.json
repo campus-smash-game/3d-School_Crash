@@ -1,0 +1,303 @@
+{
+  "status": "implemented-numeric-validation-passed",
+  "scope": "가족생활관 931~935동 주변의 지형 격자와 해당 구역 도로 표면을 보정한다. 실제 측량값이나 브라우저 검증 결과를 뜻하지 않는다.",
+  "parameters": {
+    "subdivisions": 10,
+    "fineStep": [
+      2,
+      1.9949494949494948
+    ],
+    "apronMeters": 0.4,
+    "boundaryTaperMeters": 20,
+    "roadSampleStepMeters": 2,
+    "publicHeightOffsetMeters": 0.03,
+    "roadJoinMarginMeters": 12
+  },
+  "baseline": {
+    "terrainDataSha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "oldTerrainSourceSha256": "bf9eb351ccc9bef13b61552bbe8f5eaf9e5d0e8c5cf75353110a8b767fc0f6f7",
+    "vertices": 30049,
+    "triangles": 59400,
+    "refinedCellIds": [
+      23330,
+      23331,
+      23332,
+      23333,
+      23334,
+      23335,
+      23477,
+      23478,
+      23479,
+      23480,
+      23481,
+      23482,
+      23483,
+      23484,
+      23485,
+      23627,
+      23628,
+      23629,
+      23630,
+      23631,
+      23632,
+      23633,
+      23634,
+      23635,
+      23777,
+      23778,
+      23779,
+      23780,
+      23781,
+      23782,
+      23783,
+      23784,
+      23785,
+      23927,
+      23928,
+      23929,
+      23930,
+      23931,
+      23932,
+      23933,
+      23934,
+      23935,
+      23936,
+      23937,
+      24077,
+      24078,
+      24079,
+      24080,
+      24081,
+      24082,
+      24083,
+      24084,
+      24085,
+      24086,
+      24087,
+      24232,
+      24233,
+      24234,
+      24235,
+      24236,
+      24237,
+      24382,
+      24383,
+      24384,
+      24385,
+      24386,
+      24387
+    ],
+    "ignoredVertexIndices": [
+      23637,
+      23638,
+      23639,
+      23640,
+      23641,
+      23785,
+      23786,
+      23787,
+      23788,
+      23789,
+      23790,
+      23791,
+      23792,
+      23936,
+      23937,
+      23938,
+      23939,
+      23940,
+      23941,
+      23942,
+      23943,
+      24087,
+      24088,
+      24089,
+      24090,
+      24091,
+      24092,
+      24093,
+      24094,
+      24238,
+      24239,
+      24240,
+      24241,
+      24242,
+      24243,
+      24244,
+      24245,
+      24246,
+      24247,
+      24394,
+      24395,
+      24396,
+      24397,
+      24398,
+      24545,
+      24546,
+      24547,
+      24548,
+      24549
+    ],
+    "maskedOriginalVerticesSha256": "072d344700282d2f8b858b885e2d4e5d3b68388ff0e0d7d64a0ddd1391d4407a",
+    "outsideApiSampleCount": 29633,
+    "outsideApiSha256": "82c0e5b2d9371527de21f4e210a34896820718aae5400b416df622bc20add4dd"
+  },
+  "method": [
+    "원시 DEM과 건물별 pad 기준 높이는 유지한다.",
+    "가족동 주위에서만 가까운 pad가 우선하도록 거리 제곱의 역수로 가중한다. 가족동 외벽에는 0.4m 폭의 평탄부를 둔다.",
+    "외곽 20m 구간은 기존 삼각형 높이에 smoothstep으로 연결한다. 경계 꼭짓점은 공유하며 이웃 coarse 삼각형도 연결해 틈을 없앤다.",
+    "세분 영역 밖 heightAt은 이전 계산을 그대로 사용한다. 안쪽은 실제 삼각형 높이에 기존 0.03m 보정을 더한다.",
+    "도로는 세분 지형과 바깥 12m 여유 구간에 닿는 기존 도로만 길이와 너비 방향으로 2m 이하로 나눈다. 기본 구간과 맞닿는 횡단선에는 같은 정점을 쓰며 이웃 구간을 fan으로 연결한다."
+  ],
+  "limitations": [
+    "문은 기존 모델에서 벽 프록시로 닫혀 있다. 물리 검사는 닫힌 상태의 접근과 문이 포함된 벽을 파괴한 뒤 통과를 구분한다.",
+    "실제 브라우저, 모바일 기기와 사진 대조 검증은 이번 수치 검사에 포함하지 않는다.",
+    "세분 영역 안의 이웃 중심 높이는 936동 약 +0.146m, 125-2동 약 +0.101m, 126동 약 +0.697m 달라진다. 영역 밖 높이는 기존 계산과 일치한다.",
+    "이 검사는 표본을 사용한 수치 검사다. 실제 지형 측량, 모든 건물의 외관 정확도나 모든 보행 경로를 보증하지 않는다."
+  ],
+  "verification": {
+    "scope": "Node geometry and Rapier tests only. No real browser, mobile device, or photo validation.",
+    "command": "node scripts/verify-family-terrain.mjs",
+    "checks": [
+      {
+        "name": "raw DEM and all exterior coarse vertices and height queries are unchanged",
+        "status": "passed"
+      },
+      {
+        "name": "terrain has shared closed edges and height samples follow the rendered triangles",
+        "status": "passed"
+      },
+      {
+        "name": "Rapier terrain matches the surface and capsules cross local mesh boundaries",
+        "status": "passed"
+      },
+      {
+        "name": "all actual family glass triangles and entrance heads clear the terrain",
+        "status": "passed"
+      },
+      {
+        "name": "local road triangles clear the terrain without refining distant roads",
+        "status": "passed"
+      },
+      {
+        "name": "fine and coarse road ends share actual vertices and transition interiors clear terrain",
+        "status": "passed"
+      },
+      {
+        "name": "the corrected road centre and both edges avoid the former steep boundary ramp",
+        "status": "passed"
+      },
+      {
+        "name": "closed entrance walls block walking and destroyed walls allow the actual capsule through",
+        "status": "passed"
+      }
+    ],
+    "metrics": {
+      "rawDemSha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "outsideHeightQueries": 29633,
+      "oldVertices": 30049,
+      "newVertices": 36890,
+      "oldTriangles": 59400,
+      "newTriangles": 73082,
+      "refinedCells": 67,
+      "meshMaximumErrorMeters": 8.77767661222606e-7,
+      "physicsRays": 2086,
+      "physicsMaximumErrorMeters": 0.0000457763671875,
+      "boundaryCapsuleCrossings": 32,
+      "glassSamples": 134100,
+      "minimumGlassClearanceMeters": 0.11699198061754146,
+      "minimumDoorHeadroomMeters": 1.8669919806175415,
+      "entrancesBlockedWhenClosed": 20,
+      "entrancesPassedAfterDestruction": 20,
+      "roadTrianglesBefore": 17510,
+      "roadTrianglesAfter": 19611,
+      "changedRoads": 10,
+      "unchangedRoads": 705,
+      "roadInteriorSamples": 39582,
+      "minimumRoadClearanceMeters": 0.03929590554618123,
+      "transitionSharedEnds": 4,
+      "transitionSharedVertexHeightDifferenceMeters": 0,
+      "transitionSamples": 1518,
+      "minimumTransitionClearanceMeters": 0.13712231652345253,
+      "allDetailedRoadAndStripeSamples": 51660,
+      "maximumRoadGrade": 0.3332264249922231,
+      "maximumRoadAngleDegrees": 18.42943578905591
+    },
+    "existingRegressions": {
+      "terrain": "7/7",
+      "familyDorm": "8/8",
+      "engineerHouseSite": "7/7",
+      "typecheck": "passed"
+    },
+    "independentReview": {
+      "source": "artifacts/family-independent-review/roads-final.json",
+      "scope": "별도 작성자가 실제 도로 함수에서 정점을 추출해 검사했다.",
+      "transitionTriangleSamples": 2093,
+      "minimumTransitionClearanceMeters": 0.138036,
+      "sharedCrossSectionHeightDifferenceMeters": 0
+    }
+  },
+  "observedProblemsBefore": {
+    "familyGlazing": "20m 격자에서 이웃 건물 바닥 높이가 하층 유리로 보간됐다. 기존 외부 가중 함수는 자신의 외곽선 가까이에서도 이웃 pad의 영향을 받아, 2m 격자만 적용해도 934동 침범이 남았다.",
+    "boundaryRamp": "새 내부 높이를 기존 coarse 경계에 곧바로 연결한 후보는 도로에 약 45도 이상의 경사를 만들었다. 기존 표면에 연결하는 20m 전환 구간으로 완화했다.",
+    "roadJoin": "폭 내부 정점이 없는 기존 도로와 새 세분 도로가 만날 때 약 15.3cm의 높이 틈이 생겼다. 접속 정점을 공유하고 도로 세분을 12m 더 이어 기존 연결 구간의 지형 침범도 해소했다."
+  },
+  "nearbyCentreChanges": [
+    {
+      "id": "way/409030550",
+      "buildingNumber": "935",
+      "name": "935",
+      "heightDeltaMeters": -0.17415363060672107,
+      "family": true
+    },
+    {
+      "id": "way/439707880",
+      "buildingNumber": "936",
+      "name": "직원아파트",
+      "heightDeltaMeters": 0.14574246025686577,
+      "family": false
+    },
+    {
+      "id": "way/439707881",
+      "buildingNumber": "125-2",
+      "name": "게스트하우스",
+      "heightDeltaMeters": 0.10099828897726582,
+      "family": false
+    },
+    {
+      "id": "way/439707884",
+      "buildingNumber": "126",
+      "name": "호암동관",
+      "heightDeltaMeters": 0.6970344047934134,
+      "family": false
+    },
+    {
+      "id": "way/439707892",
+      "buildingNumber": "934",
+      "name": "934",
+      "heightDeltaMeters": 0.12202917662693125,
+      "family": true
+    },
+    {
+      "id": "way/439707893",
+      "buildingNumber": "933",
+      "name": "933",
+      "heightDeltaMeters": -0.12040260219573895,
+      "family": true
+    },
+    {
+      "id": "way/439707894",
+      "buildingNumber": "932",
+      "name": "932",
+      "heightDeltaMeters": -0.02163900455522949,
+      "family": true
+    },
+    {
+      "id": "way/439707895",
+      "buildingNumber": "931",
+      "name": "931",
+      "heightDeltaMeters": 0.12399629799928213,
+      "family": true
+    }
+  ]
+}

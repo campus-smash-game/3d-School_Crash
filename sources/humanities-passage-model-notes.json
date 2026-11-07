@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "status": "integrated-map-based-approximation",
+  "reviewedAt": "2026-11-05T19:40:42.185Z",
+  "buildingId": "way/167984624",
+  "scope": "1동 내부를 가로지르는 원본 /540 보행선에 맞춰 양끝 벽을 열고 바닥, 측벽과 천장을 추가했다. 실제 통과구의 치수와 마감, 건물 전체 외관은 확인하지 못했다.",
+  "roadviewReview": "sources/humanities-passage-roadview-review.json",
+  "observationOrder": [
+    "카카오와 네이버 촬영선, 인접 로드뷰와 공식 1동 및 2동 사진을 먼저 확인했다. 실제 /540 내부와 개구부는 보이지 않았다.",
+    "원본 OSM의 covered=yes와 tunnel=building_passage를 대조했다. 기존 장면에서는 양끝 일반 벽이 길을 막았다.",
+    "건물 윤곽과 지형을 유지한 채 지도 선을 지나는 개구부를 만들었다. 폭과 내공, 안쪽 마감은 게임용 근사값으로 기록했다."
+  ],
+  "implementation": {
+    "sourceRoad": "way/1429747754/540",
+    "sourceWay": "1429747754",
+    "sourceNodeIds": [
+      "1793018816",
+      "1793018821"
+    ],
+    "rawTags": {
+      "covered": "yes",
+      "highway": "pedestrian",
+      "tunnel": "building_passage"
+    },
+    "length": 29.486201857818237,
+    "interiorLength": 21.003615154168962,
+    "width": 5,
+    "widthFromProcessedDefault": true,
+    "ceilingY": 35.55862731933594,
+    "portals": [
+      {
+        "edgeIndex": 0,
+        "center": [
+          344.35996451236264,
+          32.751708525901705,
+          -689.0542027460402
+        ],
+        "outward": [
+          -0.3323588452407461,
+          0,
+          -0.9431530087903223
+        ],
+        "width": 5,
+        "floorY": 32.751708525901705,
+        "ceilingY": 35.55862731933594,
+        "clearHeight": 2.8069187934342352,
+        "frameComponent": "passage-portal-jamb",
+        "noDoorObserved": true
+      },
+      {
+        "edgeIndex": 3,
+        "center": [
+          351.34070179088326,
+          32.63980070077099,
+          -669.2445799179118
+        ],
+        "outward": [
+          0.3323588452407461,
+          0,
+          0.9431530087903223
+        ],
+        "width": 5,
+        "floorY": 32.63980070077099,
+        "ceilingY": 35.55862731933594,
+        "clearHeight": 2.9188266185649496,
+        "frameComponent": "passage-portal-jamb",
+        "noDoorObserved": true
+      }
+    ],
+    "geometry": {
+      "parts": 29,
+      "triangles": 308,
+      "meshes": 1,
+      "textures": 0
+    },
+    "floor": {
+      "actualTerrainTriangles": true,
+      "sourceTerrainTriangleCount": 5,
+      "clearance": 0.035,
+      "thickness": 0.12
+    },
+    "endpointOverlay": {
+      "rectangles": [
+        {
+          "s0": -2,
+          "s1": 0,
+          "n0": -4.5,
+          "n1": 4.5
+        },
+        {
+          "s0": 29.486201857818237,
+          "s1": 31.486201857818237,
+          "n0": -4.5,
+          "n1": 4.5
+        }
+      ],
+      "distanceFromEachEnd": 2,
+      "innerClearance": 0.035,
+      "originalOuterBoundaryPreserved": true,
+      "beforeTriangles": 15857,
+      "afterTriangles": 15975,
+      "touchedTriangles": 12,
+      "maximumHeightChange": 0.18521823187218445,
+      "terrainAndRoadUnchanged": true,
+      "collisionUnchanged": true,
+      "existingPedestrianDisplayOnly": true
+    },
+    "features": [
+      "양쪽 지도 통과구와 안쪽 벽, 천장",
+      "기존 지형 삼각형을 따라 이어지는 바닥",
+      "양끝 2m 구간의 기존 보행 표시 높이 보정",
+      "부분 파괴와 원거리 잔해 표시, 초기화 복원"
+    ],
+    "preserved": [
+      "원본 건물 외곽과 높이, 지붕 및 첫 층 수평 띠",
+      "원본 지형 정점과 인덱스, 주변 차도",
+      "다른 건물 및 기존 시설의 충돌 부품",
+      "버스 노선과 교내 셔틀 시작점, 터치 조작"
+    ]
+  },
+  "verification": {
+    "checks": [
+      {
+        "file": "artifacts/humanities-passage-access-test/results.json",
+        "sha256": "43efcc31001572081fbba7facda280dcc8da0e1aad0e775426c09bde44d6d594",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "c6d7cd7d0bbb475565abaa216452a181b6e5e1ac8fe91bc2b0778b83413c0887",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "045b25f06b61db2833ecef0975cf3a019e1983bd825edd019580ba5b6956c6ae",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/engineering31-30-test/connection-results.json",
+        "sha256": "d3f702ce28ba7786bc7a2e7bd1b20c7a9619cc93b4d7d6c375aa436ac19b14eb",
+        "passed": 4,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-north-access-test/results.json",
+        "sha256": "7ae6988d8c3375320da78605497fdcad75292628cd520e39c40e5b93789a3340",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-parking-access-test/results.json",
+        "sha256": "15db61ffd0c17c0e1893debbd18504999ec3ec3cfbb160d2525c7b7ab715846d",
+        "passed": 5,
+        "failed": 0
+      }
+    ],
+    "passed": 37,
+    "failed": 0,
+    "browser": {
+      "file": "artifacts/humanities-review/35-browser-review.json",
+      "sha256": "19abf25900f5045636a8235256dd315142545b7ba989b76d9fa9e8c815b77fc7"
+    },
+    "physicalPhoneTested": false
+  },
+  "limits": [
+    "카카오와 네이버에서 내부 촬영선을 찾지 못했다. 이를 모든 서비스와 시기의 사진 부재로 확대하지 않는다.",
+    "폭 5m는 가공 지도 기본값이며 실측 폭이 아니다. 내공과 벽 두께, 바닥색은 추정이다.",
+    "실제 문 유무, 보도블록 무늬, 간판 문구와 조명은 확인하지 못해 새로 구현하지 않았다.",
+    "남쪽 양옆은 기존 보행 표시가 없는 지형과 만나 약 3.5cm의 바닥 두께 차가 남는다. 물리 표면과 화면의 차이를 별도 검사했다.",
+    "76동 계단과 10동 일부 입면은 새로 관측했으나 이번 구현에 포함하지 않았다.",
+    "206개 건물 행 중 로드뷰 부분 관측은 20개이며 전체 대조 완료 건물은 아직 없다."
+  ],
+  "next": [
+    "76동 넓은 계단과 중앙 및 양측 난간, 별도 낮은 보행로를 기존 모델과 대조한다.",
+    "1동 통과구와 1~2동 연결부의 실제 사진을 추가로 찾고, 확인한 범위에서 보도와 입구 마감을 보완한다.",
+    "220동 /209 계단은 새 거리뷰에서도 형태를 확인하지 못했다. 위치가 식별되는 사진을 찾아 단수와 연결 관계부터 대조한다."
+  ],
+  "sourceHashes": {
+    "src/fullCampus.ts": "35069b81f4f0a2b5899d0e4105a2b8b93d05c738a318250709c7850af3d65894",
+    "src/humanitiesPassage.ts": "65693256f4557c866024be5cb99258487d241da25a47dc1fe552c60fa0d4a854",
+    "scripts/verify-humanities-passage-access.mjs": "e8da05851baf21bb79e9570ba5fd74361deae59e63d03b0938b34118676ec8dc",
+    "scripts/verify-campus.mjs": "7e19e28a97b38ca7df29983a3b6befcd7570529581c30806ccd9b90f851144f9",
+    "scripts/verify-all.mjs": "05dfc8e65831755e15fa8f3e71b82b0329544c3556ad054007a52ace6be643c6",
+    "sources/humanities-passage-roadview-review.json": "a42ed4d3e7c398c15d3e6685680f3219239c509dca0a8a15b207591787dd5a5f"
+  },
+  "unchangedHashes": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "public/data/campus-transit.json": "b76619a0cf01338994b98e9bab997a4ae6d90875b2b57a6d23bb085317c4f5b4",
+    "public/data/transit-facilities.json": "ab9b030046d0c4028422bdb0ff1db81ab6b844e67a43de1f1ddec4b1cb72efca",
+    "public/data/shuttle-stops.json": "8233cbe722f90665ea9fcc4b864f25557404aa6b23d7ceb1d1cceb0861ed6356",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "src/terrain.ts": "15f6764d6526760b7b73e10ffa6d23a4b2a619e86647dc643e774296600c9359",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+    "src/controls.ts": "493c27adaeef90fe96aec523d94d522d4d663e66e265ce7429f99d2d3f2296aa",
+    "src/main.ts": "7ed609031916a2e23e6abf1f01467f26253f93160f458ddf283f25562b98b84a",
+    "src/buildingAppearance.ts": "abf672327d79f89d9998b498bbb2cdf7d81e547e71ef27843c11e25cd82a0baf",
+    "src/observedAppearances.ts": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80"
+  },
+  "localResearch": [
+    {
+      "file": "artifacts/education-health-review/35-steps-roadview-followup.json",
+      "sha256": "b3c0a53721815964d8035f61f5f326c17890673618c6a4affd254c7f53ace5d2"
+    },
+    {
+      "file": "artifacts/humanities-review/35-root-official-supplement.json",
+      "sha256": "29004cc4553becdfe7eb76d5b16d3586a10d9d4078f145611f05efeec5684fe2"
+    }
+  ],
+  "followup": {
+    "record": "sources/humanities-passage-photo-notes.json",
+    "scope": "43판에서 직접 통과구 사진을 확인해 입구와 포장을 보완했다. 이 파일은 35판 당시의 관측과 구현 기록이다."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T12:49:56.178Z",
+  "buildingId": "way/238935852",
+  "buildingNumber": "103",
+  "status": "implemented-partial-photo-and-roadview-approximation",
+  "wholeBuildingCompared": false,
+  "sources": [
+    "sources/gyujanggak-approach-roadview-review.json",
+    "sources/gyujanggak-model-notes.json"
+  ],
+  "sequence": "2026년 8월 카카오 로드뷰를 먼저 직접 보고 공식 사진과 스카이뷰로 높은 몸체, 낮은 몸체와 현관 방향을 대조한 뒤 수정했다.",
+  "implemented": [
+    "큰 기와지붕의 능선을 v축으로 돌리고 남동쪽 높은 본관과 북서쪽 낮은 전시실을 구분했다.",
+    "북동쪽 현관 앞 기단 벽을 열고 문, 유리 구획과 차양, 문턱에서 앞마당으로 이어지는 접근면을 만들었다.",
+    "현관 앞 블록 포장을 동쪽 보도에 연결하고 경계석, 낮은 석재 벽, 세로 난간, 둥근 가로등, 검정과 노랑 볼라드를 추가했다.",
+    "현관 왼쪽에는 103 규장각한국학연구원 안내판을, 오른쪽에는 게시판을 두고 일부 수목과 바위를 근사했다."
+  ],
+  "approximations": [
+    "현관 중심, 구역 외곽과 세부 치수는 지도에 맞춘 게임용 근사이며 실측값이 아니다.",
+    "블록 크기 0.2×0.4m, 시설 개수와 간격, 수목 수와 수종은 근사다.",
+    "안내판의 작은 목록과 게시물은 읽을 수 없는 단순 무늬로 두었다. 사진을 게임 텍스처로 포함하지 않았다.",
+    "수목에 가린 외부 계단의 양 끝, 후면과 실내 전체는 확인하지 않았다. 촬영 당시의 이동식 차단물을 상설 시설로 추가하지 않았다."
+  ],
+  "surface": {
+    "terrainChanged": false,
+    "rawRoadsChanged": false,
+    "pavingOffsetMeters": 0.035,
+    "roadClearanceMeters": 0.3,
+    "existingWalkTransitionWidthMeters": 0.8,
+    "method": "실제 지형 삼각형을 구역 외곽으로 잘라 포장하고, 기존 보행로 표시의 인접한 가장자리만 낮춰 연결했다. 블록마다 충돌체를 만들지 않는다.",
+    "renderMeshes": 3,
+    "textureBytes": 3145728
+  },
+  "validation": {
+    "buildingChecks": {
+      "script": "scripts/verify-gyujanggak.mjs",
+      "passed": 10
+    },
+    "actualSceneChecks": {
+      "script": "scripts/verify-gyujanggak-access.mjs",
+      "passed": 6,
+      "allInputHashesMatched": true,
+      "scope": "실제 전체 캠퍼스, 현재 주변 시설과 Rapier를 합친 검사. 두 도로 접근, 문 파괴 후 6개 왕복, 차량 946자세, 거리 및 H 반사와 초기화, 포장과 표지 파괴를 확인했다."
+    },
+    "independentSurfaceComparison": {
+      "record": "artifacts/gyujanggak-review/reference-approach-final-summary.json",
+      "sha256": "0e3d77ec62c3aca48f443dd014f52a7bbb2e2d931b8bca4439fa5085ace4fd1b",
+      "boundaryHeightDifferenceMaxMeters": 0.0001032,
+      "connectionSamples": 294,
+      "missingPavingSamples": 0,
+      "roadBoundarySamples": 657,
+      "minimumRoadClearanceMeters": 0.3
+    },
+    "regressions": {
+      "campus": 13,
+      "worldPresentation": 6,
+      "controls": 31
+    },
+    "browser": {
+      "desktop": true,
+      "proof": "artifacts/gyujanggak-review/27-final-entrance.jpg",
+      "sourceAtCapture": "지붕과 포장 연결 수정 후 화면이다. 뒤이어 북서 포장 모서리만 차도 여유에 맞게 잘랐다.",
+      "mobileViewport": {
+        "width": 390,
+        "height": 844,
+        "record": "artifacts/gyujanggak-review/mobile-browser-review.json",
+        "views": [
+          "entrance",
+          "entrance-close",
+          "directory",
+          "sidewalk"
+        ],
+        "verified": true,
+        "method": "데스크톱 Chrome의 실제 WebGL 화면을 모바일 폭으로 검토했다. 실제 휴대전화나 터치 조작 검사는 아니다."
+      },
+      "physicalPhonePerformanceVerified": false
+    }
+  },
+  "hashes": {
+    "src/gyujanggakLandmark.ts": "fd34501f10fdf0f00b003993b35a8dfaec60c281aa1b2bc13edb7bb836d93e56",
+    "src/gyujanggakApproach.ts": "bf5473757789bafd64eccfc2b1cdb731aceac2da08e5c0b0becffa3a6d91e030",
+    "src/main.ts": "7ed609031916a2e23e6abf1f01467f26253f93160f458ddf283f25562b98b84a",
+    "scripts/verify-gyujanggak.mjs": "fe680ed8580263b2d3c715852a6bbb79fc66fa24a052c9c8c2bc95ca55af47ae",
+    "scripts/verify-gyujanggak-access.mjs": "940859821612492a29fe8a46afeb5d56a4ff63fc9dc6c854d4b07c300ee2fd1c"
+  }
+}

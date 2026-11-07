@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T18:57:47.883Z",
+  "buildingId": "way/167598095",
+  "scope": "20동 약학관3의 외관, 북서쪽 현관 두 곳, 중앙 외부 계단과 테라스, 보도와 안내판을 보완했다.",
+  "status": "implemented-partial-photo-reference",
+  "references": [
+    {
+      "url": "https://kko.to/WuQ73l4qYC",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy20-review64/64-nw-upper.png",
+          "sha256": "c5d990d7ff64d39cca391a29b88c3332aa2e4d4999f1856c70036375446bdd2e"
+        },
+        {
+          "file": "artifacts/pharmacy20-review64/64-nw1.png",
+          "sha256": "674ec425ca0d90d27cec3d7a6e9005c4d444f102e30973aef7abcc2dfabcce9c"
+        }
+      ],
+      "observed": [
+        "세로 벽돌 구획과 돌출 유리창, 밝은 금속 덮개",
+        "북동쪽의 낮고 어두운 곡면 외벽과 경사진 상부 덮개"
+      ]
+    },
+    {
+      "url": "https://kko.to/_WtW7CXDro",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy20-review64/64-nw3.png",
+          "sha256": "fba58766cb491c6bdb3267400270249c0fb4d945fef0b7c866ca2b11343cc743"
+        }
+      ],
+      "observed": [
+        "북서쪽 현관과 유리 외벽, 밝은 석재 하부와 좁은 창",
+        "노란 점자블록과 보도"
+      ]
+    },
+    {
+      "url": "https://kko.to/LsLjL5J_QT",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy20-review64/64-nw5.png",
+          "sha256": "84d331900dc31279a26bf0a16ffd02151a115cb803704e11ac46ae9b1861047c"
+        }
+      ],
+      "observed": [
+        "중앙 외부 계단과 금속 난간, 위층 테라스와 차양",
+        "밝은 지지 기둥과 식재"
+      ]
+    },
+    {
+      "url": "https://kko.to/lwLoYKoIpS",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy20-review64/64-main-entry.png",
+          "sha256": "5798e08a1772a389fbcdf2ba615f90596bfa8918ee43d7b87164769bc0e9e923"
+        }
+      ],
+      "observed": [
+        "중앙 지상 현관, College of Pharmacy 문구와 약학관3 안내판"
+      ]
+    },
+    {
+      "url": "https://kko.to/3-k8QDC56g",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy20-review64/64-se-facing20.png",
+          "sha256": "228da459873f6f525351c44f4a5cd8ced60350bc29e5f18d2362155c40a98155"
+        },
+        {
+          "file": "artifacts/pharmacy20-review64/64-se-upper.png",
+          "sha256": "bcb2c832486f6fab1fae61a374bc3409914a6b84f09b4fc7d0b4a74b6d614e8d"
+        }
+      ],
+      "observed": [
+        "남동쪽의 가로 벽돌 띠, 후퇴한 창과 밝은 차양",
+        "낮은 회색 외벽과 창, 옥상 설비"
+      ]
+    },
+    {
+      "url": "https://snupharm.snu.ac.kr/공지사항/?mod=document&uid=8527",
+      "publicationDate": "2025-11-14",
+      "captureDate": null,
+      "pdfPage": 2,
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy20-review64/admission-2.png",
+          "sha256": "245fbae6e26c874e11d5d80f66121a087326aba4a7ab759fa1fe641d9bce45b0"
+        },
+        {
+          "file": "artifacts/pharmacy20-review64/admission-photo-001.jpg",
+          "sha256": "c6f5ffb4fe64f58e51c2ca0673db0b6bf0b96710d4d75198e51fec52495680a7"
+        }
+      ],
+      "observed": [
+        "북서쪽 전체 입면, 현관과 중앙 외부 계단의 상대 배치",
+        "옥상 설비와 난간, 경사진 패널 형태"
+      ],
+      "limits": "사진 촬영일과 옥상 패널의 용도는 확인하지 못했다. PDF 작성일과 게시일을 촬영일로 취급하지 않는다."
+    }
+  ],
+  "mapEvidence": {
+    "file": "sources/campus.osm",
+    "rawInputsModified": false,
+    "rawLevelTag": "5",
+    "rawBuildingLevelsPresent": false,
+    "limits": "level 태그를 건물 전체 층수인 building:levels로 해석하지 않았다."
+  },
+  "implementation": {
+    "modules": [
+      "src/pharmacy20Site.ts",
+      "src/pharmacy20Exterior.ts"
+    ],
+    "floorSource": "기존 13동 연결교의 게임 바닥 높이 62m를 따른다.",
+    "estimatedLevels": 5,
+    "estimatedHeight": 17.5,
+    "estimatedStoreyHeight": 3.5,
+    "northwestUpperInset": 3.2,
+    "northwestGlassInset": 6.5,
+    "rawPolygonPreserved": true,
+    "renderedPolygonEstimated": true,
+    "geometry": {
+      "meshes": 5,
+      "textures": 3
+    },
+    "fullInterior": false
+  },
+  "limitations": [
+    "높이, 층수, 현관 좌표, 계단 단수와 폭, 창 구획과 옥상 설비 위치는 사진과 게임 지형에 맞춘 근사다.",
+    "북서쪽 외벽을 지도 윤곽보다 안쪽에 배치해 도로와 보도, 하부 공간을 구분했다. 원본 좌표와 DEM은 보존했다.",
+    "2021년 신축 이전의 밝은 격자 외벽 사진을 현재 20동 외관의 기준으로 사용하지 않았다.",
+    "남서쪽 20동과 21동 사이 분홍색 구조물은 별도 연결부로 남겼다. 20동 전체에 같은 외관을 적용하지 않았다.",
+    "짧은 현관까지만 구현했으며 전체 실내, 현재 출입 상태와 가게 영업 상태는 재현하지 않았다.",
+    "사진을 게임 텍스처로 사용하지 않았다."
+  ]
+}

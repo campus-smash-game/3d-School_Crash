@@ -1,0 +1,806 @@
+{
+  "reviewedAt": "2026-11-04T19:39:05.335Z",
+  "scope": "동쪽 구역 보충 외관과 302동 공식 층수 검토",
+  "method": "공식 웹페이지와 공개 PDF에 실린 사진, 도서관 공식 항공 VR 큐브 이미지를 내려받아 직접 확인했다. 동 표기, 공식 안내의 건물명, 주변 도로 및 OSM 윤곽을 대조했다.",
+  "limits": [
+    "건물의 색과 창 비율은 사진에 근거한 시각적 근사값이다. 실제 치수나 현재 외관을 확정하지 않는다.",
+    "bayWidth는 실측하지 않아 기본값 3.4를 유지한다. defaultedFields는 사진에서 확인한 값이 아니다.",
+    "사진은 참고용 로컬 자료이며 게임 텍스처나 배포 이미지에 포함하지 않는다.",
+    "identityVerified는 기록한 identityScope와 근거 범위에 한정한다. numberVerified가 false인 항목은 정확한 공식 동 번호를 확인하지 못했다."
+  ],
+  "defaultProfile": {
+    "wallColor": 13223095,
+    "roofColor": 10397084,
+    "glassColor": 5600378,
+    "frameColor": 12830141,
+    "accentColor": 11776936,
+    "windowStyle": "punched",
+    "windowWidthRatio": 0.58,
+    "windowHeightRatio": 0.5,
+    "bayWidth": 3.4,
+    "horizontalBands": false,
+    "verticalFins": false,
+    "roofStyle": "flat"
+  },
+  "entries": [
+    {
+      "osmId": "way/456300256",
+      "buildingNumber": "919B",
+      "complexNumber": "919",
+      "wing": "B",
+      "name": "관악학생생활관 919B동",
+      "identityVerified": true,
+      "numberVerified": true,
+      "appearanceUsable": true,
+      "sourceUrl": "https://snudorm.snu.ac.kr/생활관-정보/학생생활관/학부생활관/919동/",
+      "imageUrl": "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_919_02-1024x591.png",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/dorm919-2.png",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "sourceType": "서울대학교 관악학생생활관 공식 사진",
+      "identityEvidence": [
+        {
+          "url": "https://snudorm.snu.ac.kr/생활관-정보/학생생활관/학부생활관/919동/",
+          "reason": "919동 공식 안내의 외부 사진이며, 사진 속 서로 직각으로 만나는 두 입면의 하단에 B동 표기가 직접 보인다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/456300256",
+          "reason": "OSM 이름이 919B이고 윤곽이 직각으로 꺾인 형태다. 사진의 B동 표기와 꺾인 중정 입면을 이 윤곽에 연결했다."
+        }
+      ],
+      "observations": [
+        "밝은 회백색 판재 외벽 사이에 주황빛 갈색 수평 띠와 큰 직사각형 창이 반복된다. 창 앞에 회색 난간이 보인다.",
+        "중정에서 두 입면이 직각으로 만나며, 하부에는 둥근 기둥과 유리로 둘러싼 출입부가 있다.",
+        "사진에 B동 글자가 보이므로 A동 사진을 대신 적용한 것이 아니다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "roofStyle",
+        "bayWidth",
+        "verticalFins"
+      ],
+      "limitations": [
+        "사진에 보이지 않는 뒤쪽 면과 지붕면은 확인하지 않았다.",
+        "현 프로필은 중정 입면의 주된 색과 창 비율을 근사하며, 난간과 유리 출입부를 별도 모델로 재현하지 않는다."
+      ],
+      "profile": {
+        "wallColor": 14868953,
+        "roofColor": 10397084,
+        "glassColor": 8888746,
+        "frameColor": 12567741,
+        "accentColor": 10907473,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.64,
+        "windowHeightRatio": 0.62,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "surface": "panel",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://snudorm.snu.ac.kr/생활관-정보/학생생활관/학부생활관/919동/",
+          "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_919_02-1024x591.png"
+        ]
+      }
+    },
+    {
+      "osmId": "way/482425584",
+      "buildingNumber": "919C",
+      "complexNumber": "919",
+      "wing": "C",
+      "name": "관악학생생활관 919C동",
+      "identityVerified": true,
+      "numberVerified": true,
+      "appearanceUsable": false,
+      "sourceUrl": "https://lnl.snu.ac.kr/동별-호실/",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "status": "appearance-unresolved",
+      "identityEvidence": [
+        {
+          "url": "https://lnl.snu.ac.kr/동별-호실/",
+          "reason": "공식 LnL 동별 안내는 919C와 919D를 별도로 운영하는 생활관으로 명시한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/482425584",
+          "reason": "OSM 이름이 919C이며, 기존 매칭 검토에서 날개 단위 식별을 확인했다."
+        }
+      ],
+      "observations": [
+        "919동 공식 사진 목록에서는 B동 표기가 보이는 중정 사진을 찾았으나 C동을 직접 지목할 수 있는 외부 사진은 확보하지 못했다.",
+        "공식 LnL 홈페이지의 919D 환영회 단체 사진은 아고리움 920동 앞에서 찍은 사진이다. 행사 제목을 919D동 외관의 근거로 사용하지 않는다."
+      ],
+      "rejectedImages": [
+        {
+          "imageUrl": "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_919_02-1024x591.png",
+          "reason": "B동 표기가 직접 보여 C동에 적용할 수 없다."
+        },
+        {
+          "imageUrl": "https://lnl.snu.ac.kr/wp-content/uploads/sites/155/2025/10/home6.png",
+          "reason": "건물에 AGORIUM과 J920 표기가 보인다. 919D 행사 현수막만으로 919D동 외관이라고 볼 수 없다."
+        }
+      ],
+      "limitations": [
+        "이 동의 외관 프로필은 보류한다. A동이나 B동의 관찰값을 복제하지 않는다."
+      ],
+      "profile": null
+    },
+    {
+      "osmId": "way/482220671",
+      "buildingNumber": "919D",
+      "complexNumber": "919",
+      "wing": "D",
+      "name": "관악학생생활관 919D동",
+      "identityVerified": true,
+      "numberVerified": true,
+      "appearanceUsable": false,
+      "sourceUrl": "https://lnl.snu.ac.kr/동별-호실/",
+      "imageUrl": null,
+      "visuallyInspected": false,
+      "photoCaptureDate": null,
+      "status": "appearance-unresolved",
+      "identityEvidence": [
+        {
+          "url": "https://lnl.snu.ac.kr/동별-호실/",
+          "reason": "공식 LnL 동별 안내는 919C와 919D를 별도로 운영하는 생활관으로 명시한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/482220671",
+          "reason": "OSM 이름이 919D이며, 기존 매칭 검토에서 날개 단위 식별을 확인했다."
+        }
+      ],
+      "observations": [
+        "919동 공식 사진 목록에서는 B동 표기가 보이는 중정 사진을 찾았으나 D동을 직접 지목할 수 있는 외부 사진은 확보하지 못했다.",
+        "공식 LnL 홈페이지의 919D 환영회 단체 사진은 아고리움 920동 앞에서 찍은 사진이다. 행사 제목을 919D동 외관의 근거로 사용하지 않는다."
+      ],
+      "rejectedImages": [
+        {
+          "imageUrl": "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_919_02-1024x591.png",
+          "reason": "B동 표기가 직접 보여 D동에 적용할 수 없다."
+        },
+        {
+          "imageUrl": "https://lnl.snu.ac.kr/wp-content/uploads/sites/155/2025/10/home6.png",
+          "reason": "건물에 AGORIUM과 J920 표기가 보인다. 919D 행사 현수막만으로 919D동 외관이라고 볼 수 없다."
+        }
+      ],
+      "limitations": [
+        "이 동의 외관 프로필은 보류한다. A동이나 B동의 관찰값을 복제하지 않는다."
+      ],
+      "profile": null
+    },
+    {
+      "osmId": "way/482220682",
+      "buildingNumber": "901",
+      "name": "관악학생생활관 901동",
+      "identityVerified": true,
+      "numberVerified": true,
+      "appearanceUsable": true,
+      "sourceUrl": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3082",
+      "imageUrl": "https://kbo.bioedu.kr/content/uploads/2023/12/슬라이드1.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/901-kbo-directions.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": "상단 거리뷰 표기 2014-04, 하단 촬영일 미상",
+      "sourceType": "한국생물올림피아드 공식 행사 안내에 게시된 제3자 거리뷰 캡처",
+      "identityEvidence": [
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3082",
+          "reason": "행사 주최 기관의 공식 안내가 901동을 명시하며, 첨부 사진의 붉은 화살표가 901동 외벽을 직접 가리킨다."
+        },
+        {
+          "url": "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_map02.png",
+          "reason": "공식 생활관 배치도에서 901동은 900동 남쪽, 902동 서쪽의 독립된 탑형 건물이다. OSM 윤곽 및 사진의 주변 배치를 대조했다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/482220682",
+          "reason": "OSM 이름 901과 별도 탑형 윤곽이 공식 배치도의 901동 위치에 대응한다."
+        }
+      ],
+      "observations": [
+        "누런 주황빛 벽돌 외벽에 작고 분리된 청록색 창이 규칙적으로 배열된다.",
+        "탑형 덩어리의 한쪽 입면에 큰 직사각형 후퇴부가 있고, 모서리에는 좁은 세로 유리창이 보인다.",
+        "지면 가까운 부분은 밝은 기둥과 넓은 유리창으로 구성된다.",
+        "공식 901동 페이지가 919동 외부 사진을 재사용하고 있어 해당 사진은 901동의 외관 근거에서 제외했다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "roofStyle",
+        "bayWidth",
+        "horizontalBands",
+        "verticalFins"
+      ],
+      "limitations": [
+        "대학이 직접 촬영한 사진이 아니라 행사 주최 기관이 게시한 거리뷰 캡처다. 원래 거리뷰 서비스의 현재 화면을 직접 조회한 것은 아니다.",
+        "상단 사진은 2014년 4월 표기가 있어 현재 외관과의 일치는 확인하지 못했다.",
+        "건물의 큰 후퇴부와 하부 유리 공간은 일반 외관 프로필만으로 재현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 13150075,
+        "roofColor": 10397084,
+        "glassColor": 7313553,
+        "frameColor": 13160645,
+        "accentColor": 15000787,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.36,
+        "windowHeightRatio": 0.48,
+        "bayWidth": 3.4,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "surface": "brick",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3082",
+          "https://kbo.bioedu.kr/content/uploads/2023/12/슬라이드1.jpg",
+          "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_map02.png"
+        ]
+      }
+    },
+    {
+      "osmId": "way/700872151",
+      "buildingNumber": "944",
+      "name": "삼성전자 서울대연구소",
+      "identityVerified": true,
+      "numberVerified": true,
+      "appearanceUsable": true,
+      "sourceUrl": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf",
+      "imageUrl": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf#page=58",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/samsung-report-image-000.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "sourceType": "서울대학교 공식 보고서의 준공 건물 사진",
+      "sourcePage": {
+        "pdfPage": 58,
+        "printedPage": 112,
+        "imageIndex": 0
+      },
+      "identityEvidence": [
+        {
+          "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf#page=58",
+          "reason": "인쇄 112쪽의 삼성전자 연구소 신축 항목에 건물명과 완성된 외관 사진이 함께 실려 있다. 앞쪽 가족생활관 931동 표기도 사진에서 확인된다."
+        },
+        {
+          "url": "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_map02.png",
+          "reason": "공식 배치도는 가족생활관 뒤쪽 연구공원에 944동을 표시한다. 사진의 가족생활관 뒤 두 매스와 OSM 삼성전자서울대연구소 윤곽의 상대 위치가 일치한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/700872151",
+          "reason": "OSM에 삼성전자서울대연구소로 명명된 이 윤곽을 944동으로 연결한다. 교직원아파트 936동은 제외한다."
+        }
+      ],
+      "observations": [
+        "넓은 청록색 유리 입면에 가는 밝은 세로 프레임이 반복된다.",
+        "주황색 직사각형 테두리가 일부 층의 돌출 창과 큰 유리 구간을 강조한다.",
+        "높이가 다른 두 주된 매스와 유리 연결부가 보이며, 오른쪽 지붕에는 넓게 떠 있는 짙은 패널 차양이 있다.",
+        "보고서 본문은 지상 10층과 2017년 7월 준공을 명시한다. 사진의 정확한 촬영일은 명시하지 않는다."
+      ],
+      "architecturalFacts": {
+        "aboveGroundFloors": 10,
+        "completion": "2017-07",
+        "sourceUrl": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf#page=58"
+      },
+      "defaultedFields": [
+        "bayWidth"
+      ],
+      "limitations": [
+        "공식 자료는 지상 10층을 명시한다. 실제 높이 수치는 확인하지 않았다. 생성기가 계산하는 35m는 10층에 기본 층고 3.5m를 곱한 추정값이며 실측 높이가 아니다.",
+        "지붕의 큰 패널 차양과 두 매스 사이의 높이 차는 일반 외관 프로필로 정확히 재현되지 않는다."
+      ],
+      "profile": {
+        "wallColor": 10201503,
+        "roofColor": 9475989,
+        "glassColor": 4689311,
+        "frameColor": 13090468,
+        "accentColor": 13728576,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.78,
+        "windowHeightRatio": 0.82,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "roofStyle": "equipment",
+        "surface": "panel",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf#page=58",
+          "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_map02.png"
+        ]
+      },
+      "documentedLevels": 10,
+      "documentedLevelsSource": {
+        "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf#page=58",
+        "pdfPage": 58,
+        "printedPage": 112,
+        "verification": "공식 보고서의 건축 규모와 해당 쪽 렌더링에서 지상 10층을 확인했다."
+      }
+    },
+    {
+      "osmId": "way/179742150",
+      "buildingNumber": "502",
+      "complexNumber": "500",
+      "name": "500단지 북쪽 평행 연구동",
+      "identityVerified": true,
+      "identityScope": "500단지 안의 개별 OSM 윤곽",
+      "numberVerified": false,
+      "appearanceUsable": true,
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/sky12-3.jpg",
+      "additionalImageUrls": [
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+        "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000190.jpg"
+      ],
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "sourceType": "서울대학교 중앙도서관 공식 항공 VR",
+      "identityMethod": "촬영 좌표, 주변 도로, 방향 및 연결 형상을 대조한 시각적 추론",
+      "identityEvidence": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/179742150",
+          "reason": "서쪽을 바라보는 3.jpg의 오른쪽 끝에 보이는 평행 연구동. 아래쪽 5.jpg에서는 세 평행동 중 북쪽 동으로 이어진다."
+        }
+      ],
+      "observations": [
+        "북쪽 평행 연구동은 적갈색 외벽과 밝은 수평 구분선, 가로로 반복되는 짙은 창을 가진다.",
+        "지붕에는 연한 회녹색 평면, 낮은 둘레벽과 상부 설비가 보인다."
+      ],
+      "photoRegion": "서쪽을 바라보는 3.jpg의 오른쪽 끝에 보이는 평행 연구동. 아래쪽 5.jpg에서는 세 평행동 중 북쪽 동으로 이어진다.",
+      "defaultedFields": [
+        "bayWidth",
+        "verticalFins"
+      ],
+      "limitations": [
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ],
+      "profile": {
+        "wallColor": 11827289,
+        "roofColor": 10726299,
+        "glassColor": 7443609,
+        "frameColor": 13752017,
+        "accentColor": 12699326,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.7,
+        "windowHeightRatio": 0.48,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "equipment",
+        "surface": "brick",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://lib.snu.ac.kr/vr/index.html",
+          "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+          "https://science.snu.ac.kr/campus-life/facility",
+          "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065"
+        ]
+      }
+    },
+    {
+      "osmId": "way/179742155",
+      "buildingNumber": "500",
+      "complexNumber": "500",
+      "name": "500단지 가운데 평행 연구동",
+      "identityVerified": true,
+      "identityScope": "500단지 안의 개별 OSM 윤곽",
+      "numberVerified": true,
+      "appearanceUsable": true,
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/sky12-3.jpg",
+      "additionalImageUrls": [
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+        "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000190.jpg"
+      ],
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "sourceType": "서울대학교 중앙도서관 공식 항공 VR",
+      "identityMethod": "촬영 좌표, 주변 도로, 방향 및 연결 형상을 대조한 시각적 추론",
+      "identityEvidence": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/179742155",
+          "reason": "3.jpg의 오른쪽에서 두 번째 평행 연구동. 공식 500동 좌표가 포함된 가운데 윤곽이다."
+        }
+      ],
+      "observations": [
+        "가운데 평행 연구동은 붉은 벽돌 면과 밝은 층간 띠, 반복되는 가로 창으로 구성된다.",
+        "길쭉한 지붕 중앙에 낮은 상부 구조물이 있고 가장자리에 낮은 둘레벽이 보인다."
+      ],
+      "photoRegion": "3.jpg의 오른쪽에서 두 번째 평행 연구동. 공식 500동 좌표가 포함된 가운데 윤곽이다.",
+      "defaultedFields": [
+        "bayWidth",
+        "verticalFins"
+      ],
+      "limitations": [
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ],
+      "profile": {
+        "wallColor": 11695960,
+        "roofColor": 10726557,
+        "glassColor": 7377302,
+        "frameColor": 13686222,
+        "accentColor": 13028033,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.7,
+        "windowHeightRatio": 0.49,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "equipment",
+        "surface": "brick",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://lib.snu.ac.kr/vr/index.html",
+          "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+          "https://science.snu.ac.kr/campus-life/facility",
+          "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065"
+        ]
+      }
+    },
+    {
+      "osmId": "way/179742153",
+      "buildingNumber": null,
+      "complexNumber": "500",
+      "name": "500단지 남쪽 평행 연구동",
+      "identityVerified": true,
+      "identityScope": "500단지 안의 개별 OSM 윤곽",
+      "numberVerified": false,
+      "appearanceUsable": true,
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/sky12-3.jpg",
+      "additionalImageUrls": [
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+        "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000190.jpg"
+      ],
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "sourceType": "서울대학교 중앙도서관 공식 항공 VR",
+      "identityMethod": "촬영 좌표, 주변 도로, 방향 및 연결 형상을 대조한 시각적 추론",
+      "identityEvidence": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/179742153",
+          "reason": "3.jpg의 오른쪽에서 세 번째 평행 연구동. 가운데 동과 평행하며 동쪽 긴 연결동에 닿는 남쪽 OSM 직사각형 윤곽이다."
+        }
+      ],
+      "observations": [
+        "남쪽 평행 연구동의 지붕은 가운데에 길쭉한 상부 구조물이 있고 양옆에 밝은 평면이 있다.",
+        "보이는 측면에는 적갈색 벽과 밝은 수평 부재, 짙은 가로 창이 반복된다."
+      ],
+      "photoRegion": "3.jpg의 오른쪽에서 세 번째 평행 연구동. 가운데 동과 평행하며 동쪽 긴 연결동에 닿는 남쪽 OSM 직사각형 윤곽이다.",
+      "defaultedFields": [
+        "bayWidth",
+        "verticalFins"
+      ],
+      "limitations": [
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ],
+      "profile": {
+        "wallColor": 11826774,
+        "roofColor": 10529431,
+        "glassColor": 7181205,
+        "frameColor": 13620428,
+        "accentColor": 12764860,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.68,
+        "windowHeightRatio": 0.48,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "equipment",
+        "surface": "brick",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://lib.snu.ac.kr/vr/index.html",
+          "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+          "https://science.snu.ac.kr/campus-life/facility",
+          "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065"
+        ]
+      }
+    },
+    {
+      "osmId": "way/329398248",
+      "buildingNumber": null,
+      "complexNumber": "500",
+      "name": "500단지 동쪽 연결동",
+      "identityVerified": true,
+      "identityScope": "500단지 안의 개별 OSM 윤곽",
+      "numberVerified": false,
+      "appearanceUsable": true,
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/sky12-5.jpg",
+      "additionalImageUrls": [
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+        "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000190.jpg"
+      ],
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "sourceType": "서울대학교 중앙도서관 공식 항공 VR",
+      "identityMethod": "촬영 좌표, 주변 도로, 방향 및 연결 형상을 대조한 시각적 추론",
+      "identityEvidence": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/329398248",
+          "reason": "5.jpg의 왼쪽 가장자리를 따라 이어지는 길고 낮은 밝은 지붕이다. 평행한 세 연구동의 동쪽 끝을 연결하며, 500동 공식 외부 사진의 낮은 유리 복도와 위치가 대응한다."
+        }
+      ],
+      "observations": [
+        "세 연구동 앞쪽을 잇는 낮고 긴 연결동에는 밝은 회색 지붕과 세로 프레임으로 나뉜 유리 입면이 보인다.",
+        "500동 공식 외부 사진 왼쪽에서도 낮은 유리 연결부가 보여 평행 연구동의 벽돌 입면과 구분할 수 있다."
+      ],
+      "photoRegion": "5.jpg의 왼쪽 가장자리를 따라 이어지는 길고 낮은 밝은 지붕이다. 평행한 세 연구동의 동쪽 끝을 연결하며, 500동 공식 외부 사진의 낮은 유리 복도와 위치가 대응한다.",
+      "defaultedFields": [
+        "bayWidth"
+      ],
+      "limitations": [
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ],
+      "profile": {
+        "wallColor": 12305083,
+        "roofColor": 13028291,
+        "glassColor": 7904668,
+        "frameColor": 13883858,
+        "accentColor": 11976375,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.8,
+        "windowHeightRatio": 0.75,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "roofStyle": "flat",
+        "surface": "panel",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://lib.snu.ac.kr/vr/index.html",
+          "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+          "https://science.snu.ac.kr/campus-life/facility",
+          "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065"
+        ]
+      }
+    },
+    {
+      "osmId": "way/297047750",
+      "buildingNumber": null,
+      "complexNumber": "500",
+      "name": "500단지 북단 세로동",
+      "identityVerified": true,
+      "identityScope": "500단지 안의 개별 OSM 윤곽",
+      "numberVerified": false,
+      "appearanceUsable": true,
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/sky12-0.jpg",
+      "additionalImageUrls": [
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/3.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+        "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000190.jpg"
+      ],
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "sourceType": "서울대학교 중앙도서관 공식 항공 VR",
+      "identityMethod": "촬영 좌표, 주변 도로, 방향 및 연결 형상을 대조한 시각적 추론",
+      "identityEvidence": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/297047750",
+          "reason": "0.jpg 왼쪽 아래에 보이는 남북 방향의 좁고 긴 동이다. 북쪽 도로 곡선 옆에 있으며 세 평행동의 북쪽 끝과 연결된 OSM 세로 윤곽에 대응한다."
+        }
+      ],
+      "observations": [
+        "북단 세로동에는 주황빛 벽돌 면, 밝은 층간 부재와 길게 이어지는 짙은 창이 보인다.",
+        "끝부분과 위쪽 일부는 밝은 프레임의 큰 유리 면으로 구분되고, 평지붕에는 낮은 상부 구조물이 보인다."
+      ],
+      "photoRegion": "0.jpg 왼쪽 아래에 보이는 남북 방향의 좁고 긴 동이다. 북쪽 도로 곡선 옆에 있으며 세 평행동의 북쪽 끝과 연결된 OSM 세로 윤곽에 대응한다.",
+      "defaultedFields": [
+        "bayWidth",
+        "verticalFins"
+      ],
+      "limitations": [
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ],
+      "profile": {
+        "wallColor": 12023896,
+        "roofColor": 10989731,
+        "glassColor": 7575448,
+        "frameColor": 14015186,
+        "accentColor": 13094338,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.73,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "equipment",
+        "surface": "brick",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://lib.snu.ac.kr/vr/index.html",
+          "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/0.jpg",
+          "https://science.snu.ac.kr/campus-life/facility",
+          "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065"
+        ]
+      }
+    },
+    {
+      "osmId": "way/439707874",
+      "buildingNumber": null,
+      "possibleComplexNumber": "950",
+      "name": "국제백신연구소 인근 별도 윤곽",
+      "identityVerified": false,
+      "numberVerified": false,
+      "appearanceUsable": false,
+      "status": "identity-and-appearance-unresolved",
+      "sourceUrl": "https://www.ivi.int/ko/ivi-biorepository-opens-as-a-global-center-for-biological-resources-to-advance-infectious-disease-preparedness/",
+      "imageUrl": "https://www.ivi.int/wp-content/uploads/2025/02/IVI-Biorepository20250221-2-1536x1024.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/ivi-opening.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": "2025-02-21",
+      "identityEvidence": [
+        {
+          "url": "https://www.ivi.int/ko/ivi-biorepository-opens-as-a-global-center-for-biological-resources-to-advance-infectious-disease-preparedness/",
+          "reason": "IVI의 공식 발표는 본부 별관 건물에 생물자원센터가 개소했다고 명시한다. 그러나 이 발표의 실내 사진과 설명만으로 해당 별관을 OSM way/439707874에 연결할 수 없다."
+        }
+      ],
+      "observations": [
+        "공식 개소식 사진은 실내 행사 장면이다. 별관의 외벽, 창, 지붕이나 주변 건물과의 위치 관계는 보이지 않는다.",
+        "공식 생활관 배치도는 국제백신연구소의 건물군을 표시하지만 이 작은 윤곽이 어느 부속동인지 구분하지 않는다."
+      ],
+      "limitations": [
+        "950동 본관 사진과 가까운 924동 사진을 이 윤곽에 적용하지 않는다.",
+        "별관의 존재는 확인했으나 해당 OSM 윤곽과의 연결 및 외관 프로필은 보류한다."
+      ],
+      "profile": null
+    },
+    {
+      "buildingNumber": "302",
+      "name": "제2공학관",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000179.jpg",
+      "localImagePath": "D:/codex/3d-School_Crash/references/buildings/photos/188-302.jpg",
+      "visuallyInspected": true,
+      "photoCaptureDate": null,
+      "observations": [
+        "회색 외벽의 넓은 수평 띠와 청색 창 띠가 번갈아 나타난다.",
+        "중앙 유리 구간에 붉은빛 X자 구조가 보인다.",
+        "공식 개관식 기사는 지상 10층을 명시한다. 현재 OSM에서 가져온 20층과 다르다."
+      ],
+      "defaultedFields": [
+        "roofColor",
+        "bayWidth",
+        "verticalFins",
+        "roofStyle"
+      ],
+      "limitations": [
+        "중앙 X자 구조는 색상 프로필만으로 재현되지 않는다.",
+        "실제 높이 수치는 확인하지 않았다. 현재 데이터의 70m는 OSM 20층에서 계산한 추정값이다. 10층에 기본 층고 3.5m를 곱한 35m도 추정 높이다.",
+        "공식 건축 층수는 건물 전체의 규모다. 사진에서 보이는 낮은 전면부와 높은 양쪽 부분의 층수 차이는 이 단일 프로필로 재현하지 않는다."
+      ],
+      "profile": {
+        "wallColor": 10790566,
+        "roofColor": 10397084,
+        "glassColor": 8037572,
+        "frameColor": 5005683,
+        "accentColor": 10119284,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.4,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "roofStyle": "flat",
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000179.jpg",
+          "https://eng.snu.ac.kr/sites/default/files/%EC%84%9C%EC%9A%B8%EA%B3%B5%EB%8C%80%202002%EB%85%84%204.5.6%EC%9B%94%ED%98%B8.pdf#page=67"
+        ]
+      },
+      "osmId": "way/482207537",
+      "identityVerified": true,
+      "numberVerified": true,
+      "appearanceUsable": true,
+      "documentedLevels": 10,
+      "documentedLevelsSource": {
+        "url": "https://eng.snu.ac.kr/sites/default/files/%EC%84%9C%EC%9A%B8%EA%B3%B5%EB%8C%80%202002%EB%85%84%204.5.6%EC%9B%94%ED%98%B8.pdf#page=67",
+        "pdfPage": 67,
+        "printedPage": 65,
+        "published": "2002-04/2002-06",
+        "verification": "서울공대 2002년 4~6월호 제2공학관 개관식 기사에 지상 10층을 명시한다. PDF 67쪽 렌더링을 직접 확인했다.",
+        "localRenderedPath": "D:/codex/3d-School_Crash/references/exteriors/supplemental-east/engineering-page67.png"
+      },
+      "identityEvidence": [
+        {
+          "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+          "reason": "공식 지도에서 제2공학관을 302동으로 명시한다. 건물 사진 전면에도 302 ENGINEERING 표기가 있다."
+        },
+        {
+          "url": "https://eng.snu.ac.kr/sites/default/files/%EC%84%9C%EC%9A%B8%EA%B3%B5%EB%8C%80%202002%EB%85%84%204.5.6%EC%9B%94%ED%98%B8.pdf#page=67",
+          "reason": "서울대학교 공과대학이 배포한 제2공학관 개관식 기사로, 공식 지도와 건물명이 일치한다."
+        }
+      ]
+    }
+  ]
+}

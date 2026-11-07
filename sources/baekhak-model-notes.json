@@ -1,0 +1,153 @@
+{
+  "buildingId": "way/439707877",
+  "buildingNumber": "941",
+  "name": "백학어린이집",
+  "module": "src/baekhakLandmark.ts",
+  "landmark": "baekhak",
+  "status": "integrated-partial",
+  "sourceReferences": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=224",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000215.jpg",
+      "localImage": "../references/buildings/photos/224-941.jpg",
+      "visuallyInspected": true,
+      "photoDate": null,
+      "observations": "낮고 긴 주황색 벽돌 앞몸체에 작은 하부창과 얇은 노란 처마선이 있다. 뒤로 물러난 상층에는 밝은 창틀과 노란 창 상부 테두리가 이어지고, 오른쪽에는 더 높은 곡면의 짙은 벽돌 상부가 보인다. 오른쪽 입구 위에는 낮은 수평 차양이 있으며, 왼쪽에는 윗부분이 둥근 유리창과 작은 녹색 격자 차양이 보인다.",
+      "neighborExclusion": "사진 전경의 커다란 노란 돌출부와 기울어진 노란 기둥은 동쪽 인접 941-1동이다. 백학 모델에 복사하지 않았다. 백학 자체의 얇은 노란 테두리와 구분했다.",
+      "occlusion": "사진은 뒤쪽 입면과 최하층 전체를 보여 주지 않는다. 이 사진만으로 지상 3층 전체의 외부 높이나 층고를 확정하지 않았다."
+    },
+    {
+      "url": "https://kidshome.snu.ac.kr/시설현황/",
+      "sourceType": "서울대학교 어린이보육지원센터 공식 시설현황",
+      "verified": "백학어린이집은 지상 3층으로 안내한다. 건축면적 1,923㎡, 연면적 3,889㎡를 함께 제시하지만 실측 최고 높이는 명시하지 않는다."
+    },
+    {
+      "url": "https://kidshome.snu.ac.kr/오시는-길/",
+      "verified": "신한은행 건물이 백학어린이집 지상 3층이며, 맞은편 건물은 느티나무어린이집 지상 4층이라고 구분한다."
+    },
+    {
+      "url": "https://kidshome.snu.ac.kr/시설환경/",
+      "localImages": [
+        "../references/exteriors/nursery/out1.jpg",
+        "../references/exteriors/nursery/out2.jpg"
+      ],
+      "visuallyInspected": true,
+      "appliedToFacade": false,
+      "reason": "공식 실외놀이터 사진 두 장을 확인했지만 어느 어린이집의 어느 면인지 확정하지 못했다. 입면이나 놀이터 위치를 복원하는 근거로 쓰지 않았다."
+    },
+    {
+      "source": "public/data/campus.json",
+      "osmId": "way/439707877",
+      "neighborOsmId": "way/439707878",
+      "verified": "백학의 둥근 외곽은 북쪽에 있고 느티나무는 동쪽에 있다. 실제 좌표의 꺾임과 넓어지는 북쪽 평면을 유지했다."
+    }
+  ],
+  "documented": {
+    "aboveGroundFloors": 3,
+    "buildingAreaSquareMeters": 1923,
+    "grossFloorAreaSquareMeters": 3889,
+    "surveyedHeightMeters": null
+  },
+  "placement": {
+    "mapAreaSquareMeters": 1060.62855,
+    "mapEnvelopeMeters": {
+      "eastWest": 28.59,
+      "northSouth": 57.94
+    },
+    "areaLimitation": "OSM 외곽 면적과 공식 시설현황의 건축면적은 일치하지 않는다. 포함 시설과 측정 범위를 확인하지 못했으므로 공식 면적에 맞추려고 지도 윤곽을 임의로 늘리지 않았다.",
+    "frontDirection": "941-1동과 마주 보는 동쪽 마당을 전면으로 추정했다. 지리상 북쪽에 둥근 상부를 두었다. 공식 사진에 방위표시가 없으므로 이 배치는 사진과 인접 건물의 지도 관계에 따른 추정이다.",
+    "coordinateConvention": "논리 좌표는 동쪽 +X, 북쪽 +Z를 유지한다. 생성된 공통 표시 계층에만 Z 반사를 적용하고 카메라는 그 밖에 둔다. 북쪽의 둥근 부분은 지리상 위치를 그대로 유지한다.",
+    "elevationReference": {
+      "x": 882.228,
+      "z": -16.8525,
+      "kind": "mapped-east-entrance",
+      "surveyed": false
+    },
+    "heightDatum": "지도상 동쪽 입구 지점의 heightAt을 기준 높이로 읽는다. 외벽 기초는 해당 벽 끝점의 지면까지 내려 연결한다. 고도를 고정하지 않으며 전역 지형이나 건물 전체 높이를 추가로 올리지 않았다."
+  },
+  "estimated": {
+    "heightMeters": 10.5,
+    "heightEstimated": true,
+    "levels": 3,
+    "levelsEstimated": false,
+    "lowRoofMeters": 6.4,
+    "setbackUpperRoofMeters": 9.2,
+    "roundUpperTopMeters": 10.5,
+    "roundUpper": {
+      "x": 870.5845,
+      "z": -9.4765,
+      "radiusX": 8.40546,
+      "radiusZ": 9.79186
+    },
+    "heightRationale": "이전 검토에서 정한 지상 3층과 추정 높이 10.5m를 유지했다. 각 부분의 높이와 상층 후퇴 깊이, 둥근 상부 반지름은 공식 사진의 비례와 지도 외곽을 함께 보고 정한 근사값이다.",
+    "unseenFaces": "사진에 보이지 않는 서쪽과 남북 측면의 창 수와 위치, 상층 깊이와 둥근 상부 뒷면은 단순화했다. 내부 공간, 최하층 전체, 출입문 상세, 마당 울타리와 조경은 복원하지 않았다.",
+    "massInterpretation": "지상 3층 전체를 같은 직육면체로 만들지 않고 낮은 긴 몸체, 후퇴 상층과 둥근 높은 부분으로 나눴다. 내부 층별 용도와 바닥 높이를 실측 도면으로 확인한 것은 아니다.",
+    "photoCurrency": "공식 사진 촬영일과 이후 외관 변경 여부는 확인하지 못했다."
+  },
+  "implementation": {
+    "renderMeshes": 2,
+    "breakableParts": 345,
+    "nondegenerateTriangles": 4867,
+    "roundedWallSegments": 24,
+    "roundedWallTiers": 2,
+    "archedFrontWindows": 1,
+    "materials": "벽돌 줄눈은 코드로 만든 중성 DataTexture에 벽돌색을 곱해 표현한다. 유리와 금속, 밝은 창틀, 얇은 노란 테두리는 꼭짓점 색으로 구분한다.",
+    "photoTexturesIncluded": false,
+    "collision": "외벽과 창, 둥근 상부 벽은 구획별 충돌체를 쓴다. 낮은 지붕 조각과 둥근 지붕 부채꼴은 얇은 볼록 형상으로 만들어 큰 사각 상자의 빈 모서리 충돌을 줄였다. 곡면 벽의 빈 중심이나 지도 동쪽의 꺾인 외부 공간을 큰 충돌 상자로 막지 않는다.",
+    "collisionApproximation": "둥근 벽은 24개 평면 조각으로 근사하며, 가정한 타원 곡선과 평면 조각 사이의 최대 간격 상한은 약 0.084m다. 실제 렌더링 평면에 붙인 얇은 벽 충돌체의 바깥 여유는 약 0.026m이고, 평면 지붕 충돌은 위아래로 0.025m 두께를 둔다. 창틀 사이의 작은 칸은 창 부품 하나의 충돌로 묶는다. 비볼록한 경계 지붕 조각은 볼록 껍질로 단순화하므로 작은 오목 모서리에는 추가 근사 오차가 있다.",
+    "damage": "파괴한 부품의 충돌체와 병합 메시의 해당 삼각형을 함께 제거한다. 남은 기하는 거리 때문에 사라지지 않으며 초기화하면 원래 정점 배열과 충돌체를 복구한다.",
+    "performanceLimit": "2개 메시와 삼각형 수는 CPU 장면 자료에서 센 값이다. 실제 GPU의 전체 패스 호출 수나 휴대전화 FPS를 측정한 결과가 아니다."
+  },
+  "verification": {
+    "script": "scripts/verify-baekhak.mjs",
+    "resultFile": "artifacts/baekhak-test/results.json",
+    "sourceHashes": "검사 결과에 당시 src 파일의 SHA-256을 저장한다.",
+    "passedChecks": 9,
+    "typeCheck": "npx tsc --noEmit 통과",
+    "glassSamples": 4230,
+    "minimumGlassTerrainClearanceMeters": 0.031100263,
+    "capsuleHeightMeters": 1.7,
+    "closedDoorProgressMeters": 1.684157458,
+    "destroyedDoorProgressMeters": 5.953669971,
+    "destroyedDoorGroundGapMeters": 0.019955304,
+    "externalRaySamples": 327,
+    "externalRayMaximumDifferenceMeters": 0.000055838,
+    "rayScope": "충돌체 밖에서 시작해 첫 표면이 고유한 표본을 비교했다. 충돌체 내부 시작과 가려진 표본, 모서리에서 두 표면의 거리가 0.1mm 이내로 같은 표본 7개는 제외했다. 서로 겹친 모서리에서는 부동소수점 오차에 따라 인접한 두 부품 중 먼저 선택되는 부품이 달라질 수 있다.",
+    "roadEyeHeightSightlines": {
+      "count": 12,
+      "eyeHeightMeters": 1.7,
+      "terrainClear": 8,
+      "terrainOccluded": 4,
+      "interpretation": "실제 도로 위 눈높이에서 입구를 향하는 지형 광선을 검사했다. 가까운 북동쪽 도로의 8개 시선은 열려 있고 동쪽으로 더 멀어진 4개 시선은 앞 지형에 가린다. 유리 자체의 지형 침범과 별개의 시야 문제다. 이 결과만으로 넓은 지형을 평평하게 만들거나 건물을 올리지 않았다.",
+      "scope": "현재 terrain.mesh의 삼각형만 검사했다. 인접 건물, 울타리와 나무의 가림 또는 브라우저 픽셀 가시성은 포함하지 않는다."
+    },
+    "cpuPreview": "artifacts/geometry-previews/baekhak.png",
+    "cpuPreviewInspectedVersion": "공통 좌표 반사를 적용한 4,867삼각형 최종본을 공식 224번 사진과 직접 대조했다. 오른쪽의 둥근 상부와 입구, 왼쪽의 긴 상층 창 부분이 사진의 비대칭 순서와 맞는다. 메시 2개와 파괴 부품 345개는 그대로이며 수평 정사영의 전경 지형 가림은 별도 한계로 남긴다.",
+    "previewLimitation": "수평 정사영의 전경 지형이 하층을 가리므로 실제 도로의 눈높이 시선과 구분했다. 앞뒤가 가려진 사진과 정사영만으로 모든 면의 비례를 확정하지 않았다.",
+    "regressionCoverage": "공식 3층과 추정 높이, 인접 동의 노란 돌출부 제외, 지도 꺾임의 빈 공간, 둥근 벽의 구간 충돌, 아치창과 창틀 노출, 유리 지형 여유, 실제 캡슐의 출입, 로드와 미로드 사격, 부분 및 전체 파괴, 원거리 잔존, 정확한 초기화, 50m 기준 높이 변화와 지도 꼭짓점 순서 반전을 확인했다.",
+    "limits": "공개 사진에 근거한 부분 외관 모델이다. CPU 기하와 Rapier 검사는 측량 정확도, WebGL 렌더링, 실제 브라우저 조작과 모바일 성능 검사를 대체하지 않는다."
+  },
+  "history": [
+    {
+      "event": "before-common-coordinate-reflection",
+      "coordinateConvention": "기존 좌표 관례인 동쪽 +X, 북쪽 +Z를 유지한다. 카메라에서 사진의 좌우를 맞추려고 북쪽 둥근 매스를 남쪽으로 옮기지 않았다.",
+      "cpuPreviewInspectedVersion": "중복된 아치창 하나를 제거한 4,867삼각형 최종본을 직접 확인했다. 낮은 벽돌 몸체, 후퇴 창 띠와 북쪽 둥근 매스가 공식 사진에 대응한다. 최종본의 메시 수는 2개이고 파괴 부품은 345개다."
+    }
+  ],
+  "coordinateReview": {
+    "status": "implemented-cpu-and-physics-verified",
+    "dataFrame": "D=(E,U,N). 지도, 지형, 건물 정점과 물리는 기존 동쪽/위쪽/북쪽 논리 좌표를 유지한다.",
+    "renderFrame": "R=(E,U,-N). 생성된 월드 계층에 scale.z=-1을 한 번 적용하고 카메라는 반사 계층 밖에 둔다.",
+    "scope": "실제 Three.js 수치 투영, Rapier와 명시적 Node 시험 대역으로 확인했다. GPU 픽셀, 실제 브라우저 조작, 휴대전화 성능과 최신 거리뷰 일치는 미확인이다.",
+    "reviewedAt": "2026-11-04T21:44:52Z",
+    "photoComparison": "공식 224번 사진과 새 정면 CPU 이미지 모두 오른쪽에 북쪽의 둥근 상부와 입구가 있고 왼쪽에 긴 상층 창 부분이 있다. 동쪽에서 서쪽을 보는 수치 투영에서도 북쪽 기준점은 화면 오른쪽에 놓인다.",
+    "northReferenceNdcX": 0.07148356401698497,
+    "southReferenceNdcX": -0.07148356401698562,
+    "measurementScope": "위 수치는 건물의 실제 꼭짓점 위치가 아니라 동쪽 관찰자의 북쪽/남쪽 기준점에 대한 독립 좌표 검사다.",
+    "records": [
+      "artifacts/world-presentation-test/results.json",
+      "artifacts/coordinate-integration/childcare-photo-review.json"
+    ],
+    "limits": "사진의 정확한 촬영 위치와 방위각은 미확인이다. 정면 CPU 이미지의 전경 지형 가림은 실제 현장 가림과 일치하는지 확인하지 못했다."
+  }
+}

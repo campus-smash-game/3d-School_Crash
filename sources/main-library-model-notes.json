@@ -1,0 +1,158 @@
+{
+  "buildingId": "way/148286730",
+  "buildingNumber": "62",
+  "name": "중앙도서관 본관",
+  "status": "integrated-partial",
+  "module": "src/mainLibraryLandmark.ts",
+  "landmark": "main-library",
+  "sourceEvidence": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=78",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000076.jpg",
+      "localPhoto": "../references/buildings/photos/078-62.jpg",
+      "directlyViewed": true,
+      "observation": "두꺼운 베이지 회색 콘크리트 수평 띠 사이에 깊은 사각 창이 네 줄로 반복된다. 그 아래 두 레벨은 유리벽이 뒤로 들어가고 긴 사각 기둥이 상부를 받친다. 상부 전체가 층마다 후퇴하는 계단식 외형은 확인되지 않는다."
+    },
+    {
+      "url": "https://www.snu.ac.kr/campuslife/facilities/library",
+      "imageUrl": "https://www.snu.ac.kr/webdata/uploads/kor/image/2024/03/campuslife-facilities-library-intro.jpg",
+      "localPhoto": "../references/exteriors/library-official.jpg",
+      "directlyViewed": true,
+      "observation": "본관 외벽의 꺾임과 같은 높이의 상부, 뒤쪽 관정관의 긴 상부 구조 및 본관 지붕 위의 빈 간격을 확인했다."
+    },
+    {
+      "url": "https://my.snu.ac.kr/ctt/bb/bulletin?a=fd&b=1&fs=1&p=22570",
+      "title": "2025년 중앙도서관 본관 공사 안내 평면도",
+      "documentDate": "2025-05-07",
+      "directlyViewedRenderedPages": [1, 3],
+      "observation": "머리말은 현재 지상 4층과 지상 6층으로 표시하지만, 하단의 원도면 제목은 각각 지상 2층과 지상 4층이다. 현행 층 이름과 과거 도면의 층 분류가 다르다. 평면도에 보이는 사각 코어를 열린 중정으로 해석하지 않았다.",
+      "referenceAgentReview": "참조 담당자는 1~3쪽 전체와 치수선 확대를 직접 확인했다. 치수선의 102500, 87500, 양끝 7500은 보조 비례 근거이며 이 값에 맞춰 OSM 좌표를 바꾸지 않았다. 도면 단위 표시는 별도로 확인하지 못했다."
+    },
+    {
+      "url": "https://econ.snu.ac.kr/announcement/notice?bbsidx=2555&bm=p&print=yes",
+      "documentDate": "2015-03-11",
+      "evidenceScope": "참조 담당자가 확인한 공식 학부 공지",
+      "observation": "본관 층위 변경 예정으로 4층을 2층, 5층을 3층, 6층을 4층으로 표기한 기록이 있다. 현재 이용 층 이름만으로 법적 지상층수를 확정하지 않는다."
+    },
+    {
+      "url": "https://s-space.snu.ac.kr/bitstream/10371/153097/1/14103%20%ED%98%84%ED%99%A9.pdf",
+      "evidenceScope": "참조 담당자가 확인한 2019년 공식 도서관 현황의 검색문",
+      "observation": "지하 2층과 지상 4층으로 나온다. 원문 PDF 직접 열기는 JavaScript 안내로 끝났으므로 본관 층수의 유일한 확정 근거로 삼지 않는다.",
+      "directlyViewedPdf": false
+    },
+    {
+      "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+      "titlesUrl": "https://lib.snu.ac.kr/vr/indexdata/index_messages_ko.xml",
+      "directlyViewedImages": [
+        "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/1.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/sky11_10820/html5/2.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/pano_11923/html5/2.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/pano_11906/html5/1.jpg",
+        "https://lib.snu.ac.kr/vr/indexdata/pano_11922/html5/3.jpg"
+      ],
+      "observations": [
+        "두 항공사진에서 옥상 사각 부분의 흰 벽과 평지붕을 확인했다. 두 곳은 열린 중정이 아니며 본관 지붕을 관통하는 구멍도 아니다.",
+        "옥상에는 목재색 데크, 길쭉한 조경 띠와 작은 부속 설비가 보인다. 흰 구조물의 용도와 정확한 치수는 확인하지 못했다.",
+        "본관 1열 출입구 사진에는 낮은 정면 중앙의 짧은 직사각 차양, 두 지지부와 안쪽 유리문이 보인다.",
+        "본관 및 관정관 앞 사진에는 기둥 사이의 열린 높은 통로와 내부 계단이 보인다. 인문대방향 출입구도 관정관 지지부 옆에 열린 통로가 있다. 도면의 GATE4를 외벽 정문으로 복사하지 않았다."
+      ],
+      "orientationBasis": "공식 항공 파노라마 9016의 좌표 37.460177777778, 126.95078055556과 hotspot의 방위를 사용해 낮은 입구를 북서 정면, 11906을 남서 측면, 11922를 북동 측면으로 대응했다. 정확한 지상 출입구 좌표는 측량하지 않았다."
+    }
+  ],
+  "floorInterpretation": {
+    "currentUsageLabels": "현재 이용 안내의 1~6층을 여섯 레벨로 사용한다.",
+    "historicClassification": "과거 자료의 지하 2층과 지상 4층 분류를 현행 이용 층 이름과 구분한다.",
+    "implementedFacade": "사진에서 확인되는 상부 창 4행과 후퇴한 하부 2레벨로 구성했다. 기존 OSM의 8층 반복은 모델에 적용하지 않는다.",
+    "legalAboveGroundFloorsVerified": false,
+    "sourceDataPreserved": "public/data/campus.json의 원본 8층 값과 모든 외곽 좌표는 변경하지 않았다. 본관 외관 프로필의 6층은 현행 이용 층 이름을 뜻한다."
+  },
+  "geometry": {
+    "coordinateSystem": "모델 좌표는 D=(동쪽,위쪽,북쪽)이다. main의 공통 반사로 R=(동쪽,위쪽,-북쪽)에 표시하며 본관 좌표를 따로 반사하지 않는다.",
+    "footprint": "OSM 외곽 13점을 그대로 사용하고, 각 변의 꺾임을 유지했다. 지붕과 바닥은 윤곽 안에서 작은 삼각기둥으로 나눴다.",
+    "courtyards": "관통 중정은 없다. 초기 도면의 사각 두 곳을 중정 후보로 읽었으나 공식 항공사진과 평면도를 대조해 흰 옥상실로 정정했다.",
+    "heightMeters": {
+      "mainEnvelope": 28,
+      "roofDeckSurface": 27.62,
+      "rooftopRoomsAboveMainEnvelope": 3.2,
+      "maximumWithRooftopRooms": 31.2,
+      "estimated": true,
+      "basis": "28m는 공식 실측값이 아니다. 기존 관정관 공통 기준과 밑면 간격을 보존하는 근사값이다. 옥상실 3.2m와 층고 배분은 사진 비례 추정이다."
+    },
+    "facadeEstimatesMeters": {
+      "lowerTwoLevelsTotal": 8,
+      "upperLevelPitch": 4.65,
+      "lowerGlazingSetback": 2.2,
+      "upperGlazingDepthFromOutline": 0.36,
+      "concreteFrameProjectionFromOutline": 0.26,
+      "nominalWindowPitch": 3.1,
+      "maximumFacadePartWidth": 7.5
+    },
+    "facadeDescription": "상부 창의 양옆과 위아래에 깊은 콘크리트 틀을 두고, 안쪽 유리는 세로로 두 판처럼 보이도록 나눴다. 매 층의 창틀은 해당 층 안에서 끝나며 건물 전체 높이를 잇는 수직 핀으로 만들지 않았다.",
+    "entrances": "북서쪽 낮은 유리문과 짧은 차양을 별도 파괴 부품으로 만들었다. 양측 외피에는 폭 8m의 통로를 남겼으며 전체 건물을 한 상자로 막지 않았다. 통로 위치와 폭, 내부 깊이는 근사값이다. 실제 실내 계단과 자료실 배치는 재현하지 않았다.",
+    "rooftopRooms": "본관 장축 기준 x=-24m, +24m, 앞쪽 z=10m에 16×12×3.2m의 닫힌 옥상실을 배치했다. 위치와 치수는 항공사진 비례 추정이며 정확한 용도는 확인하지 못했다.",
+    "roofGarden": "목재색 낮은 데크와 조경 띠를 기하와 색으로 근사했다. 식재 종류, 수목 수와 개별 설비는 재현하지 않았다.",
+    "photoTexturesUsed": false
+  },
+  "terrainAndBridge": {
+    "mappedDatum": { "x": 322.9407692307692, "z": -791.5776923076924, "kind": "mapped-main-library-centre", "surveyed": false },
+    "baseY": 38.17753219604492,
+    "bridgeUndersideY": 68.42753219604492,
+    "minimumMainGeometryClearanceMeters": 2.2499961853027344,
+    "overlapVertexSamples": 30882,
+    "rooftopRoomsInBridgeFootprint": 0,
+    "placement": "본관과 관정관은 같은 지도상 본관 평균 중심의 heightAt 값을 기준으로 한다. 흰 옥상실은 관정관 평면 범위보다 앞에 있어 31.2m 높이에서도 교량에 닿지 않는다.",
+    "slopeTreatment": "본관 주변 경사면이 하부를 가리는 관계를 유지했다. 지면 아래에 묻히는 하부 유리만 구간별로 줄이고, 위층 창과 지붕의 기준 높이는 옮기지 않았다. 외벽과 기둥의 기초는 지면 아래로 이어진다.",
+    "glassSamples": 28840,
+    "minimumGlassAboveRenderedTerrainMeters": 0.11000523698167086,
+    "entranceGroundConnection": "문턱 앞의 짧은 바닥과 경사면은 DEM과 문턱을 잇는 게임용 보정이다. 경사면이 원래 바닥 앞면보다 낮게 만나 생기던 단차를 없앴다. 실제 경사로의 정확한 위치와 치수를 복원한 것으로 주장하지 않는다.",
+    "terrainSourceModified": false,
+    "heightSamplerConvention": "지형 표면과 충돌면은 기존 계약에 따라 heightAt보다 0.03m 낮다. 검사도 실제 meshHeightAt과 비교했다."
+  },
+  "runtime": {
+    "mergedRenderMeshes": 3,
+    "breakableParts": 650,
+    "nondegenerateTriangles": 34060,
+    "convexRoofParts": 57,
+    "rendering": "콘크리트, 프레임 및 지붕, 유리를 각각 병합한다. 원거리에서도 같은 남은 형상을 유지하고, 거리 상한으로 숨기지 않는다.",
+    "destruction": "분할 충돌 프록시의 visible 상태가 바뀌면 대응하는 정점 구간만 접거나 복원한다. 모든 부품이 파괴되면 외피를 숨긴다.",
+    "reset": "초기화 뒤 정점 배열을 원본과 완전히 동일하게 복원한다. 로드되지 않은 부품도 프록시 광선으로 사격할 수 있다.",
+    "costLimit": "3개 메시는 주 렌더 패스의 구성 수다. 그림자 패스, 전체 장면 비용이나 휴대전화 프레임률을 측정한 값이 아니다. 깊은 창틀 때문에 기존 평면 외관보다 삼각형이 늘었다."
+  },
+  "verification": {
+    "script": "scripts/verify-main-library.mjs",
+    "result": "8/8 통과",
+    "commands": ["node --max-old-space-size=1024 scripts/verify-main-library.mjs", "npx tsc --noEmit"],
+    "numericEvidence": {
+      "roofFootprintInsideSamples": 280,
+      "roofFootprintOutsideSamples": 370,
+      "frontGlassNormalSamples": 208,
+      "minimumOutwardNormalDot": 0.999999170091119,
+      "southwestPassageWalkMeters": 10.000133904365097,
+      "northeastPassageWalkMeters": 10.020221052720007,
+      "closedFrontDoorWalkMeters": 5.205867600723053,
+      "destroyedFrontDoorWalkMeters": 7.610593725776494,
+      "loadedUnloadedExternalRays": 590,
+      "maximumRayDistanceDifferenceMeters": 0.00024427175522134803,
+      "coincidentSeamSamplesExcluded": 2,
+      "elevationCallbackOffsetTestMeters": 50
+    },
+    "rayScope": "광선은 충돌체 밖에서 시작한다. 가려진 표적과 내부 시작점은 제외했고, 0.1mm 이내로 겹친 이음부 2개는 표적 동일성 비교에서 제외했다. 볼록 지붕의 광선은 경계선이 아닌 실제 면의 안쪽에서 조사했다.",
+    "damageChecks": "부분 파괴 후 충돌 구멍과 원거리 잔존, 전체 파괴 후 숨김, 초기화 후 전체 정점 배열 복원을 확인했다.",
+    "artifact": "artifacts/main-library-test/results.json",
+    "sourceReproducibility": "검사 스크립트가 실행 당시 src 파일의 SHA256을 결과 파일에 기록한다. 원본 기하와 물리 코드는 위 스크립트로 다시 생성해 검사할 수 있다."
+  },
+  "visualReview": {
+    "method": "실제 Three.js 기하와 인스턴스 변환을 CPU에서 정사영한 이미지다. WebGL 화면 캡처가 아니다.",
+    "files": ["artifacts/geometry-previews/main-library.png", "artifacts/geometry-previews/gwanjeong.png", "artifacts/geometry-previews/main-library-distant.png"],
+    "directlyViewed": true,
+    "observed": "상부 4행과 하부 2레벨, 하부 유리벽의 후퇴, 짧은 정면 차양, 옥상실 2개와 막힌 지붕을 공식 사진과 대조했다. 본관과 관정관을 함께 생성한 그림에서도 뒤쪽 지붕과 교량 밑면의 간격을 확인했다.",
+    "limit": "시점과 전경 지형 때문에 측면의 하부 일부가 가려진다. 실제 접근 가능 여부는 양측 통로의 캡슐 보행 검사와 별도로 확인했다. CPU 미리보기에는 실제 PBR 조명, 텍스처, 그림자와 휴대전화 화면이 없다."
+  },
+  "remainingLimits": [
+    "현장 실측 높이, 정확한 창 수, 창틀 깊이와 재료 반사율은 확인하지 못했다.",
+    "양측 높은 통로의 상세 층고와 내부 계단은 단순화했다. 11906 사진은 지붕선이 화면 위로 잘려 있어 보이는 창 3행만으로 해당 구역의 전체 층수나 지붕 높이를 확정할 수 없다. 11922에서는 관정 지지부 옆 연결부의 지붕선이 앞쪽 큰 몸체보다 낮아 보이지만, 이 구간을 원본 OSM 외곽의 특정 변과 정확히 대응시킬 도면 또는 항공 근거는 확보하지 못했다. 국소 높이 차이의 범위가 미확정이므로 특정 변 전체를 낮추는 수정은 보류했다.",
+    "사진의 콘크리트 오염과 풍화 자국, 실제 안내문과 난간의 세부 형상은 재현하지 않았다.",
+    "가려진 면과 실내 전체는 추정이며 사진 촬영 시점과 현재 현장 상태가 같은지는 확인하지 못했다.",
+    "실제 브라우저 화면, WebGL 성능과 휴대전화 조작을 검증하지 않았다."
+  ]
+}

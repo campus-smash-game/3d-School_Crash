@@ -1,0 +1,370 @@
+{
+  "name": "가족생활관 931~935동",
+  "module": "src/familyDormLandmark.ts",
+  "landmark": "family-dorm",
+  "status": "custom-model-applied-partial",
+  "sourceReferences": [
+    {
+      "url": "https://snu.ac.kr/campuslife/facilities/dorm",
+      "verified": "서울대학교 공식 생활관 소개를 확인했다."
+    },
+    {
+      "url": "https://snudorm.snu.ac.kr/en/gwanak-residence-hall/family-residence-halls/introduction-of-family-residence-halls/introduction/",
+      "verified": "공식 소개의 가족생활관 931~935동은 모두 지상 5층이며, 다섯 동을 합쳐 200가구다. 동별 200가구라는 뜻은 아니다."
+    }
+  ],
+  "photoReferences": [
+    {
+      "buildingNumber": "931",
+      "buildingId": "way/439707895",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=217",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000208.jpg",
+      "localImage": "../references/buildings/photos/217-931.jpg",
+      "visuallyInspected": true,
+      "observations": "붉은 벽돌, 흰 발코니 테두리와 청록 유리, 가는 세로 난간을 확인했다. 계단부에는 층간 원형창 네 줄과 하부 출입구가 보인다. 짧은 끝벽에는 창이 없고 지붕은 얕은 붉은 경사 지붕이다."
+    },
+    {
+      "buildingNumber": "932",
+      "buildingId": "way/439707894",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=218",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000209.jpg",
+      "localImage": "../references/buildings/photos/218-932.jpg",
+      "visuallyInspected": true,
+      "observations": "흰 테두리의 청록색 발코니와 좁은 벽돌 계단부가 반복된다. 원형창 안에 짧은 직사각형 창틀이 겹쳐 보이며, 작은 박공과 흰 처마가 있다."
+    },
+    {
+      "buildingNumber": "933",
+      "buildingId": "way/439707893",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=219",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000210.jpg",
+      "localImage": "../references/buildings/photos/219-933.jpg",
+      "visuallyInspected": true,
+      "observations": "붉은 벽돌 끝벽, 흰 발코니 테두리, 세로 난간과 계단부의 원형창 네 줄을 확인했다. 작은 계단부 박공이 본 지붕 앞에 있다."
+    },
+    {
+      "buildingNumber": "934",
+      "buildingId": "way/439707892",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=220",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000211.jpg",
+      "localImage": "../references/buildings/photos/220-934.jpg",
+      "visuallyInspected": true,
+      "observations": "창 없는 짧은 벽돌 끝벽과 발코니가 있는 긴 면을 확인했다. 얕은 붉은 지붕, 흰 처마와 계단부의 작은 박공을 공통 모델에 반영했다. 사진만으로 정면 방위는 확정하지 않았다."
+    },
+    {
+      "buildingNumber": "935",
+      "buildingId": "way/409030550",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=221",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000212.jpg",
+      "localImage": "../references/buildings/photos/221-935.jpg",
+      "visuallyInspected": true,
+      "observations": "서로 어긋난 몸체, 붉은 벽돌, 청록 유리 발코니와 층별 세로 난간을 확인했다. 지도에 있는 두 몸체의 엇갈린 윤곽을 유지했다."
+    }
+  ],
+  "documented": {
+    "storeysEach": 5,
+    "buildings": 5,
+    "householdsTotal": 200,
+    "surveyedHeightMeters": null,
+    "photoCaptureDates": null
+  },
+  "estimated": {
+    "heightMeters": 17.5,
+    "bodyHeightMeters": 15.5,
+    "mainRoofRiseMeters": 2,
+    "floorHeightMeters": 3.1,
+    "stairBaysEach": 4,
+    "circularWindowRowsEachStairBay": 4,
+    "circularWindowRowsRationale": "931~933동 사진에서 층간 계단참의 원형창 네 줄과 하부 출입구를 확인했다. 이 구성을 공통 모델의 네 계단부에 적용했다. 다섯 동 모든 계단부의 창 수를 실측한 값은 아니다.",
+    "heightRationale": "전체 높이와 층고는 공식 5층 현황 및 사진 비례에 따른 게임용 추정이다. 기존 지도 자료의 931~934동 7층과 935동 4층 추정은 유지하지 않았다.",
+    "details": "계단부 네 개의 배분, 발코니 칸 수와 폭, 원형창 지름, 난간 간격, 지붕 경사각과 처마 깊이는 사진 비례에 따른 근사다.",
+    "unseenRear": "후면을 직접 보여 주는 사진을 확보하지 못했다. 뒤쪽은 단순 창으로 근사했으며 정면과 같은 발코니를 반복하지 않았다.",
+    "photoRecency": "공식 지도 사진의 촬영일과 현재 외관의 일치 여부는 확인하지 못했다."
+  },
+  "placement": {
+    "source": "public/data/campus.json의 실제 OSM 건물 윤곽",
+    "method": "가장 긴 변을 장축으로 삼고 x 성분이 양수가 되도록 방향을 맞춘다. 이 축에 직교하는 across=(-uz,ux)의 부호로 정면을 정했다.",
+    "frontSigns": {
+      "931": -1,
+      "932": -1,
+      "933": -1,
+      "934": 1,
+      "935": -1
+    },
+    "directionEstimated": true,
+    "directionRationale": "정면 방위는 인근 도로를 참고한 추정이다. 사진의 방위를 측량으로 확정한 것은 아니다.",
+    "outline": "외벽은 원래 지도 다각형의 각 변을 따라 만든다. 935동은 어긋난 두 몸체와 두 오목한 경계를 보존하고 지붕도 두 구간으로 나눴다. 나머지 동은 지도에 없는 꺾임을 추가하지 않았다.",
+    "terrain": "건물 중심의 heightAt을 기준 높이로 쓰고 벽 구간 양 끝의 지형을 따라 기초를 아래로 연장한다. 지형 절대 고도를 모델에 고정하지 않는다."
+  },
+  "implementation": {
+    "renderMeshesEach": 3,
+    "meshGroups": [
+      "brick-walls",
+      "roof-frames-rails",
+      "glazing"
+    ],
+    "photoTexturesIncluded": false,
+    "brickTexture": "벽돌 색과 줄눈은 128×64 DataTexture로 절차 생성하며 다섯 동이 공유한다. 공식 사진을 게임 텍스처로 사용하지 않는다.",
+    "collision": "경사 지붕은 지붕 면의 방향에 맞춘 구간별 충돌체를 사용한다. 발코니 벽은 실제 꼭짓점의 국소 경계로 충돌 범위를 계산한다. 돌출 바닥과 난간은 별도 부품으로 만들어 아래층의 빈 공간을 큰 벽 충돌체로 채우지 않는다.",
+    "collisionLimits": "난간은 가는 직사각형 충돌체이므로 세로 막대 사이의 작은 틈까지 통과할 수는 없다. 원형창과 창틀은 외벽 부품에 속한다. 박공 경계에는 구간별 외접 상자로 인한 작은 오차가 있다.",
+    "damageAndReset": "부품을 파괴하면 그 충돌체와 합친 메시의 해당 꼭짓점을 함께 제거한다. 초기화하면 원래 위치 배열과 충돌체를 복구한다. 남은 부품은 거리 때문에 숨기지 않는다.",
+    "reviewedGeometry": [
+      {
+        "buildingNumber": "931",
+        "parts": 352,
+        "meshes": 3,
+        "triangles": 8128
+      },
+      {
+        "buildingNumber": "932",
+        "parts": 352,
+        "meshes": 3,
+        "triangles": 8304
+      },
+      {
+        "buildingNumber": "933",
+        "parts": 352,
+        "meshes": 3,
+        "triangles": 8140
+      },
+      {
+        "buildingNumber": "934",
+        "parts": 352,
+        "meshes": 3,
+        "triangles": 8256
+      },
+      {
+        "buildingNumber": "935",
+        "parts": 398,
+        "meshes": 3,
+        "triangles": 8590
+      }
+    ]
+  },
+  "verification": {
+    "script": "scripts/verify-family-dorm.mjs",
+    "artifact": "artifacts/family-dorm-test/results.json",
+    "passed": 8,
+    "total": 8,
+    "scope": [
+      "다섯 실제 지도 윤곽에서 5층 구성, 유한한 기하와 지형을 따른 기초를 확인했다.",
+      "짧은 끝벽에 창이 없고 원형창 네 줄과 하부 출입구가 구분되는지 검사했다.",
+      "935동의 두 오목한 부분이 비어 있고 양쪽 몸체에 지붕 충돌체가 있는지 확인했다.",
+      "각 동의 처마 쪽과 용마루 표본에서 실제 렌더 메시와 Rapier의 경사 지붕 사격 높이를 비교했다. 오차 허용값은 0.26m다.",
+      "다섯 동에서 난간을 향한 수평 사격과 발코니 바닥을 향한 상향 사격을 비교했다. 난간만 파괴한 뒤 바닥이 남으며 미로드 원거리에서도 같은 결과인지 검사했다.",
+      "부분 파괴 뒤 해당 벽의 충돌과 렌더 기하가 제거되고, 남은 벽은 원거리에서도 사격할 수 있는지 확인했다.",
+      "부분 파괴와 전체 파괴 후 초기화하면 원래 꼭짓점 배열, 충돌체와 내구도가 복구되고 파편이 제거되는지 검사했다.",
+      "heightAt에 50m를 더하면 다섯 동 전체가 같은 높이만큼 이동하고 지도 평면 좌표는 유지되는지 확인했다."
+    ],
+    "maximumRailingRayErrorMeters": 0.03251745227039882,
+    "maximumSlabRayErrorMeters": 0.012500039729587797,
+    "typescript": "npx tsc --noEmit 통과",
+    "limits": "실측 정확성, 모든 사진과의 완전한 일치, 브라우저 렌더링, 실제 휴대전화 성능과 터치 조작을 검증한 것은 아니다."
+  },
+  "visualReview": {
+    "originalPhotosDirectlyViewed": 5,
+    "initialCpuPreviewsDirectlyViewed": 5,
+    "initialResult": "935동의 어긋난 외곽과 934동의 반대 정면, 창 없는 짧은 끝벽, 발코니와 지붕을 확인했다. 초기 미리보기의 원형창 다섯 줄은 원본 사진과 달라 네 줄과 하부 출입구로 수정했다.",
+    "cpuRendererLimitation": "CPU 정사영은 텍스처를 표시하지 않아 절차 생성 벽돌 벽이 흰색으로 보인다. 게임의 WebGL 화면을 확인한 결과가 아니다.",
+    "finalPreviewPending": false,
+    "finalCpuPreviewsDirectlyViewed": 5,
+    "artifacts": [
+      "artifacts/geometry-previews/family-dorm-931.png",
+      "artifacts/geometry-previews/family-dorm-932.png",
+      "artifacts/geometry-previews/family-dorm-933.png",
+      "artifacts/geometry-previews/family-dorm-934.png",
+      "artifacts/geometry-previews/family-dorm-935.png"
+    ],
+    "finalResult": "최신 CPU 정사영 다섯 장을 직접 확인했다. 원형창 네 줄과 하부 출입구, 5층 발코니, 짧은 끝벽, 934동의 반대 정면과 935동의 어긋난 몸체가 반영됐다. 지형이 일부 하층을 가리는 문제는 별도의 실제 유리 표본 검사에서도 발견했으며, 이 미리보기만으로 지형 배치까지 해결됐다고 판단하지 않는다."
+  },
+  "terrainReview": {
+    "status": "corrected-within-tested-scope",
+    "reviewedAt": "2026-11-04T21:06:54.213Z",
+    "beforeCorrection": {
+      "status": "open",
+      "artifact": "artifacts/family-terrain-audit/results.json",
+      "sourceHashes": {
+        "terrain": "bf9eb351ccc9bef13b61552bbe8f5eaf9e5d0e8c5cf75353110a8b767fc0f6f7",
+        "observedAppearances": "7c707e8bc33ec33dc3f38157ffd1b567c5bbf407cdc31035af3e649c8f5fcec6",
+        "buildingAppearance": "95b2c7d33e6be4afa2f7ca7349581512347e345777b4adc43509d5a7badb1655",
+        "familyDormLandmark": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e"
+      },
+      "method": "별도 검토자가 현재 소스의 실제 유리 삼각형을 삼각형당 45개 표본으로 나눠 terrain.heightAt과 비교했다. 0.02m를 넘는 침범을 기록했다.",
+      "results": [
+        {
+          "buildingNumber": "931",
+          "base": 15.775102365330795,
+          "groups": {
+            "front-balcony": {
+              "samples": 3600,
+              "minimumClearanceMeters": -0.7220820113589461,
+              "maximumIntrusionMeters": 0.7220820113589461
+            },
+            "stair-entry-wall": {
+              "samples": 360,
+              "minimumClearanceMeters": -0.7449919251329433,
+              "maximumIntrusionMeters": 0.7449919251329433
+            },
+            "round-stair-window": {
+              "samples": 17280,
+              "minimumClearanceMeters": 1.8407540279766117,
+              "maximumIntrusionMeters": 0
+            },
+            "estimated-rear-window": {
+              "samples": 5400,
+              "minimumClearanceMeters": 0.5820796760843407,
+              "maximumIntrusionMeters": 0
+            }
+          }
+        },
+        {
+          "buildingNumber": "932",
+          "base": 18.249816342201715,
+          "groups": {
+            "front-balcony": {
+              "samples": 3600,
+              "minimumClearanceMeters": 0.1930112839913498,
+              "maximumIntrusionMeters": 0
+            },
+            "stair-entry-wall": {
+              "samples": 360,
+              "minimumClearanceMeters": 0.04544411624715394,
+              "maximumIntrusionMeters": 0
+            },
+            "round-stair-window": {
+              "samples": 17280,
+              "minimumClearanceMeters": 2.6170922760312223,
+              "maximumIntrusionMeters": 0
+            },
+            "estimated-rear-window": {
+              "samples": 5400,
+              "minimumClearanceMeters": 1.0920690953153738,
+              "maximumIntrusionMeters": 0
+            }
+          }
+        },
+        {
+          "buildingNumber": "933",
+          "base": 18.52206664943695,
+          "groups": {
+            "estimated-rear-window": {
+              "samples": 5400,
+              "minimumClearanceMeters": 0.6634797855043821,
+              "maximumIntrusionMeters": 0
+            },
+            "front-balcony": {
+              "samples": 3600,
+              "minimumClearanceMeters": -0.23192409022542648,
+              "maximumIntrusionMeters": 0.23192409022542648
+            },
+            "stair-entry-wall": {
+              "samples": 360,
+              "minimumClearanceMeters": -0.09303886119636218,
+              "maximumIntrusionMeters": 0.09303886119636218
+            },
+            "round-stair-window": {
+              "samples": 17280,
+              "minimumClearanceMeters": 2.487990977149458,
+              "maximumIntrusionMeters": 0
+            }
+          }
+        },
+        {
+          "buildingNumber": "934",
+          "base": 18.89637986573147,
+          "groups": {
+            "front-balcony": {
+              "samples": 3600,
+              "minimumClearanceMeters": -0.21923069519862182,
+              "maximumIntrusionMeters": 0.21923069519862182
+            },
+            "stair-entry-wall": {
+              "samples": 360,
+              "minimumClearanceMeters": -0.12362325784703287,
+              "maximumIntrusionMeters": 0.12362325784703287
+            },
+            "round-stair-window": {
+              "samples": 17280,
+              "minimumClearanceMeters": 2.4867509341726937,
+              "maximumIntrusionMeters": 0
+            },
+            "estimated-rear-window": {
+              "samples": 5400,
+              "minimumClearanceMeters": -1.329939924096191,
+              "maximumIntrusionMeters": 1.329939924096191
+            }
+          }
+        },
+        {
+          "buildingNumber": "935",
+          "base": 20.754257771842074,
+          "groups": {
+            "front-balcony": {
+              "samples": 4050,
+              "minimumClearanceMeters": -0.7363879359594492,
+              "maximumIntrusionMeters": 0.7363879359594492
+            },
+            "stair-entry-wall": {
+              "samples": 360,
+              "minimumClearanceMeters": -0.6727671028319939,
+              "maximumIntrusionMeters": 0.6727671028319939
+            },
+            "round-stair-window": {
+              "samples": 17280,
+              "minimumClearanceMeters": 1.9347643831209993,
+              "maximumIntrusionMeters": 0
+            },
+            "estimated-rear-window": {
+              "samples": 5850,
+              "minimumClearanceMeters": 1.0262763213236639,
+              "maximumIntrusionMeters": 0
+            }
+          }
+        }
+      ],
+      "finding": "931, 933, 934, 935동의 일부 하층 발코니 또는 출입구 유리가 지면에 묻힌다. 934동 후면 창의 최대 침범은 약 1.33m다. 932동과 다섯 동의 계단 원형창에는 표본 기준 침범이 없다.",
+      "limit": "기초가 지면 아래까지 이어지는지 확인한 모델 검사는 유리와 출입구의 지면 간격을 보장하지 않는다. 실제 측량 결과가 아닌 현재 게임 지형과 모델의 비교다. 이 기록을 저장할 때 지형 침범 보정은 완료되지 않았다."
+    },
+    "reference": "sources/family-terrain-refinement.json",
+    "artifact": "artifacts/family-terrain-test/results.json",
+    "sourceHashes": {
+      "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5",
+      "src/fullCampus.ts": "4dfbf21c80f915dd998c7da541fe8dc4c1aa36fdbb895b3f59b737cb10b41503",
+      "src/familyDormLandmark.ts": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+    },
+    "results": [
+      {
+        "buildingNumber": "931",
+        "samples": 26640,
+        "minimumClearanceMeters": 0.1213900832250161,
+        "minimumDoorHeadroomMeters": 1.8713891295506997
+      },
+      {
+        "buildingNumber": "932",
+        "samples": 26640,
+        "minimumClearanceMeters": 0.12885897740628494,
+        "minimumDoorHeadroomMeters": 1.878858977406285
+      },
+      {
+        "buildingNumber": "933",
+        "samples": 26640,
+        "minimumClearanceMeters": 0.12117237446364015,
+        "minimumDoorHeadroomMeters": 1.8711723744636402
+      },
+      {
+        "buildingNumber": "934",
+        "samples": 26640,
+        "minimumClearanceMeters": 0.13006626955778344,
+        "minimumDoorHeadroomMeters": 1.8800662695577834
+      },
+      {
+        "buildingNumber": "935",
+        "samples": 27540,
+        "minimumClearanceMeters": 0.11699198061754146,
+        "minimumDoorHeadroomMeters": 1.8669919806175415
+      }
+    ],
+    "finding": "실제 유리 표면 134,100개 표본에서 지형 침범이 없었다. 최소 간격은 약 0.117m다. 20개 출입구는 닫힌 벽이 보행을 막고, 해당 벽을 파괴한 뒤 1.7m 캡슐이 통과했다.",
+    "limit": "약 2m 국소 격자와 건물 바닥 보정의 수치 검사다. 실제 측량, 모든 표면의 연속적 증명, 브라우저 화면 또는 휴대전화 검증은 아니다."
+  }
+}

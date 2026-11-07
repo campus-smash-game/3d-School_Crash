@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "stage": 61,
+  "buildings": [
+    "way/146155734",
+    "way/238936704"
+  ],
+  "modules": [
+    "src/education1112Connection.ts",
+    "src/education1112Site.ts"
+  ],
+  "sources": [
+    {
+      "id": "c3",
+      "url": "https://c3globe.com/snu-teacher-training-enrichment-hall-by-void-architects/",
+      "title": "SNU Teacher Training Enrichment Hall / VOID architects",
+      "kind": "건축 전문 매체에 실린 설계자 제공 사진과 도면",
+      "publishedDate": "2023-04-28",
+      "modifiedDate": "2025-09-11",
+      "assetPathMonth": "2025-09",
+      "captureDate": null,
+      "completionYear": 2011,
+      "photographerCredit": "Kim Jae-Yun (courtesy of the architect)",
+      "dateCaution": "게시일, 수정일과 이미지 업로드 경로는 촬영일이 아니다. 사진에 보이는 기존 건물은 최근 리모델링 전 모습일 수 있다."
+    },
+    {
+      "id": "aurum",
+      "url": "https://www.aurum.re.kr/Bits/BuildingDoc.aspx?mm=4&num=1953&ss=1",
+      "title": "서울대학교 사범교육협력센터",
+      "kind": "건축도시정책정보센터의 건축물 자료, 대한건축사협회 제공 사진",
+      "publishedDate": null,
+      "captureDate": null,
+      "use": "사진 설명의 층번호를 C3 사진과 대조했다. 3층 마당, 1층 현관과 2층 홀 표기가 핵심 근거다."
+    },
+    {
+      "id": "kira2012",
+      "url": "https://masilwide.smilecast.co.kr/Image/backissues/V47-523.compressed.pdf",
+      "title": "대한건축사협회 2012년 자료",
+      "publishedYear": 2012,
+      "captureDate": null,
+      "pdfPageOneBased": 34,
+      "printedPage": 37,
+      "observation": "열린 상부 마당의 사진을 확인했다. 연결문의 위치나 높이를 정할 추가 도면은 이 페이지에 없다."
+    },
+    {
+      "id": "accessibility11",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2is4tD-wFna-5Fu3_--6EaFe4FIQEtu8IonjipJjcSWfR-eDd33mP3Fg29MzG3-pMFyx-xWnIQNCQ/pubhtml",
+      "surveyDate": "2024-11-13",
+      "kind": "공개된 11동 출입구 조사",
+      "relevantRows": [
+        {
+          "cell": "E6",
+          "location": "2층 12동 연결",
+          "door": "자동문"
+        },
+        {
+          "cell": "E9",
+          "location": "1층 12동과 연결, 11-107 뒷문 앞 여닫이",
+          "door": "양방향 여닫이",
+          "note": "2cm 이하 문턱 기록"
+        },
+        {
+          "cell": "E10",
+          "location": "1층 12동과 연결, 11-107 앞문 앞 자동문",
+          "door": "자동문"
+        },
+        {
+          "cell": "E12",
+          "location": "11~12동 사이 3층 테라스 가는 문",
+          "door": "한 방향 여닫이",
+          "note": "좁은 문으로 기록"
+        }
+      ],
+      "otherFindings": [
+        "1층은 12동을 통해 출입한다고 기록돼 있다.",
+        "건물 사이 연결문에는 외부 출입구처럼 위도와 경도가 제공되지 않는다."
+      ]
+    },
+    {
+      "id": "accessibility12",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMekIVPICOP8FMHEYlqM1BodrVKCJX71DPRMS-eWWTgMeE1AUZ1dvfafcANJhJOE8vi-COeZtbKHLr/pubhtml",
+      "surveyDate": "2024-11-13",
+      "kind": "공개된 12동 출입구 조사",
+      "relevantRows": [
+        {
+          "cell": "E6",
+          "location": "2층 파스쿠치 쪽",
+          "door": "자동문",
+          "latLon": [
+            37.459368,
+            126.954881
+          ]
+        },
+        {
+          "cell": "E7",
+          "location": "1층 정문",
+          "door": "자동문",
+          "latLon": [
+            37.459757,
+            126.954734
+          ]
+        },
+        {
+          "cell": "E11",
+          "location": "2층 역사관 쪽",
+          "door": "양방향 여닫이",
+          "note": "외부 통로와 발코니 쪽"
+        },
+        {
+          "cell": "E12",
+          "location": "2층 11동 연결통로",
+          "door": "자동문"
+        }
+      ]
+    }
+  ],
+  "observed": [
+    "12동의 중정 쪽 저층 유리 홀은 11동 남서 단부와 중정 쪽 긴 벽 끝부분에 붙는다.",
+    "2024년 출입구 조사에는 11동과 12동의 1층 연결문 두 곳과 2층 연결문이 기록돼 있다.",
+    "대한건축사협회 제공 사진에는 1층 현관, 2층 홀과 3층 마당이라는 설명이 붙어 있다.",
+    "1층 현관과 북카페 내부에는 계단으로 잇는 높이 차이가 있다. 1층 전체를 같은 높이로 보는 것은 실제 구조와 다르다.",
+    "사진의 중정 포장면은 유리 홀 앞까지 이어진다. 현재 지형 데이터 때문에 문 앞에 수 미터 낙차가 생기는 형태는 사진과 맞지 않는다."
+  ],
+  "implemented": [
+    "11동과 12동의 1층 연결문 두 곳과 2층 연결문",
+    "12동 중정 유리 홀과 1층 출입구",
+    "1층 내부의 넓은 계단과 2층 복도로 오르는 계단",
+    "유리 격자, 문틀, 열린 문, 가로 난간과 간단한 실내 가구",
+    "중정 쪽 상층 콘크리트 끝벽과 후퇴한 상부 개구부",
+    "문 앞 포장과 국소 지형 연결"
+  ],
+  "estimates": {
+    "hallBoundary": "도면과 지도 윤곽을 대조한 근사다. 북쪽 유리 경계는 약 5~8m 오차가 있을 수 있다.",
+    "lowerFloor": 56.184,
+    "raisedCafeFloor": 57.144,
+    "upperCorridor": 59.384,
+    "wideSteps": 6,
+    "upperSteps": 14,
+    "dimensionsMeasured": false,
+    "doorCoordinatesMeasured": false
+  },
+  "limitations": [
+    "연결문 중심의 실측 좌표, 문 너비와 절대 표고",
+    "각 층 사이의 정확한 높이와 1층 내부 계단의 실제 높이",
+    "C3 영문 도면의 fourth floor 표기와 현재 3층 마당의 정확한 층번호 대응",
+    "12동과 13동 사이 야외 통로의 현재 시설과 문 배치",
+    "설계자 제공 사진의 정확한 촬영일과 2026년 현재의 문 형식",
+    "연결문 안쪽의 짧은 현관까지 구현했다. 11동과 12동의 전체 실내 및 3층 테라스 연결문은 구현하지 않았다.",
+    "사진 속 북카페의 현재 영업 상태와 가게 이름은 확인하지 않았다.",
+    "원본 지도와 DEM은 보존하며 게임의 문 앞 지형만 보정한다."
+  ],
+  "referenceImagesEmbeddedInGame": false
+}

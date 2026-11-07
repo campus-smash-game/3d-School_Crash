@@ -1,0 +1,79 @@
+{
+  "status": "read-only-evidence-review",
+  "reviewedAt": "2026-11-05",
+  "buildingId": "way/228476658",
+  "buildingNumber": "301",
+  "sources": [
+    {
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-west-bank-basement-access-ui.jpg",
+      "sha256": "f5522249d772381bbf5d88dc4e58e7ef5c8dc4f021e0f08c1e97aa7f2becc8ef",
+      "sourceUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213023449&pan=90.0&tilt=15.0&zoom=0&urlLevel=3&urlX=489380&urlY=1097455",
+      "panoid": "1213023449",
+      "captureMonth": "2026-08",
+      "captureDateDirectlyVisible": true,
+      "directlyViewed": true,
+      "view": "낮은 출입부와 차도, 보도, 석축 및 식재를 중심으로 본 화면.",
+      "orientationNote": "서쪽 도로에서 건물 쪽을 바라본 화면이다."
+    },
+    {
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-west-low-wing-landscape-ui.jpg",
+      "sha256": "440ad955755f737bdec695aa72da8e4e619b91306732efe29ef191a30aaad644",
+      "sourceUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213023449&pan=90.0&tilt=15.0&zoom=0&urlLevel=3&urlX=489380&urlY=1097455",
+      "panoid": "1213023449",
+      "captureMonth": "2026-08",
+      "captureDateDirectlyVisible": true,
+      "directlyViewed": true,
+      "view": "같은 위치에서 위로 회전해 낮은 몸체와 뒤쪽 높은 유리탑의 관계를 본 화면.",
+      "orientationNote": "두 번째 사진은 같은 위치에서 위로 회전했다. URL의 tilt는 첫 화면 기준이며 두 번째 회전값은 기록되지 않았다."
+    }
+  ],
+  "sourceSnapshot": {
+    "src/engineering301Landmark.ts": "3c6e41341d7d1e8ff34359add2e0319aca143f2330b831093fc8d72883f668df",
+    "src/engineeringRoadFacilities.ts": "7e63e93d16edd5bb51aafdecc67d987a6282a64b7bfa5d63fd73ed93eb11edc8"
+  },
+  "findings": [
+    {
+      "feature": "차도 옆 보도와 식재 경계",
+      "observed": "차도와 건물 사이에 연석이 있는 블록 보도가 있고, 그 뒤에 관목과 나무가 빽빽하다. 오른쪽 B1 표기 부근에는 경사진 상단을 가진 거친 회색 석축이 보인다.",
+      "currentCode": "301 전용 모듈에는 이 서측 석축과 관목 경계의 형상이 없다. engineeringRoadFacilities의 돌과 식재는 303동 하부 문 앵커 주위에 놓이므로 이 사진의 301동 경계를 재현한 것으로 볼 수 없다.",
+      "difference": "unmodelled-site-specific-feature",
+      "nextStep": "보도 폭과 출입부를 남긴 채 석축 및 식재 구역을 별도 배치한다. 정확한 세계 좌표, 높이와 식재 종류는 추가 정합이 필요하다."
+    },
+    {
+      "feature": "B1 표기의 서측 하부 출입부",
+      "observed": "오른쪽 석축 옆 밝은 출입부에 왼쪽 화살표와 B1 표기가 보이고 보도에서 이어지는 낮은 접근 공간이 있다.",
+      "currentCode": "entry 및 engineering301-entry-door는 북단 local z=-2의 B1 유리 현관 하나를 정의한다. 이번 사진의 서측 출입부와 같은 문인지 확인되지 않았고, 별도 서측 B1 출입구 및 석축 접속은 정의하지 않는다.",
+      "difference": "unresolved-entrance-mapping",
+      "nextStep": "사진의 B1 표기 위치와 실제 문 위치를 분리해 지도에 대응시킨 뒤 개구부와 바닥을 정한다. 문짝 재료, 내부 동선, 실내 깊이와 계단 단수는 두 사진에서 확정하지 않는다."
+    },
+    {
+      "feature": "갈색 세로 띠와 낮은 유리 공간",
+      "observed": "화면 왼쪽 낮은 공간에 갈색 세로 띠가 긴 가로대로 이어지고, 아래에는 큰 유리면과 돌빛 기둥이 보인다. 중앙 식재 뒤에도 갈색 세로 난간 또는 가림판이 일부 드러난다.",
+      "currentCode": "low-wing-window-bay는 회색 벽띠와 유리를 3개 행으로 반복한다. 별도의 갈색 띠, 낮은 전면 공간과 가림판은 없다.",
+      "difference": "unmodelled-visible-facade-detail",
+      "nextStep": "확인된 낮은 공간을 기존 저층 몸체 전체와 구분해 보완한다. 갈색 부재는 목재처럼 보이지만 실제 재료와 연속 범위는 미확인이다."
+    },
+    {
+      "feature": "낮은 몸체와 높은 유리탑의 관계",
+      "observed": "두 번째 사진에서 낮은 회색 몸체의 가로창 뒤쪽, 화면 오른쪽 위로 높은 유리탑이 솟는다. 전면의 낮은 갈색 띠 공간과 높은 유리탑 사이에는 나무와 관목이 겹쳐 보인다.",
+      "currentCode": "tower와 low는 이미 별도 높이로 나누고 고층 유리면, 저층 창띠와 아트리움 지붕을 만든다. 다만 전면의 낮은 갈색 띠 공간은 이 구분에 별도로 반영되지 않았다.",
+      "difference": "coarse-massing-present-detail-unresolved",
+      "nextStep": "현재 고층과 저층의 큰 구분은 유지하면서 서측 전면 공간을 정합한다. 사진에 지붕 전체와 외벽 전부가 나오지 않아 저층 전체 층수, 높이, 폭을 이 두 장만으로 바꾸지 않는다."
+    },
+    {
+      "feature": "가려진 외벽과 임시 물체",
+      "observed": "나무가 저층 외벽과 유리탑 하부를 많이 가린다. 연등, 주차 차량, 스쿠터, 교통콘도 보인다.",
+      "currentCode": "가려진 면의 현재 창 배열을 이 사진으로 검증할 수 없다.",
+      "difference": "not-verifiable-from-these-images",
+      "nextStep": "가려진 창과 접속부는 미확인으로 남긴다. 연등과 이동 가능한 물체를 고정 건물의 일부로 추가하지 않는다."
+    }
+  ],
+  "limits": [
+    "사진 날짜는 두 화면의 2026년 8월 UI를 직접 확인했다. 이후 현황은 이 기록의 범위가 아니다.",
+    "사진과 현재 소스만 대조했다. 현장 측량, 새 기하 구현, 충돌 검사나 게임 화면 검증을 수행한 기록이 아니다.",
+    "원본 외곽과 사진의 부속 공간 경계는 추가 정합이 필요하다. 외곽 전체를 넓히거나 가려진 면을 임의로 채우는 근거로 사용하지 않는다."
+  ],
+  "filesChanged": [
+    "sources/engineering301-west-roadview-review.json"
+  ]
+}

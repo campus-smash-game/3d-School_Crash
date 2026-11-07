@@ -1,0 +1,399 @@
+{
+  "status": "implemented-targeted-checks-passed",
+  "scope": "행정관 서측 게시판 앞 짧은 차량 통로와 그 옆 보도의 사진 기반 포장, 경계석, 볼라드 및 낮은 식재",
+  "module": "src/administrationPlazaGround.ts",
+  "api": "createAdministrationPlazaGround(scene, heightAt)",
+  "source": {
+    "provider": "Naver Streetview",
+    "captureMonth": "2025-09",
+    "panorama": "NYSrsJIQuCQ8ogVSuOR7aA",
+    "images": [
+      "../references/central-approaches/2025-09/admin-board-notices-paving-ui.jpg",
+      "../references/central-approaches/2025-09/admin-map-board-gates-ui.jpg",
+      "../references/entrance-detail/2025-09/admin-west-paving-ui.jpg",
+      "../references/entrance-detail/2025-09/admin-west-tactile-curb-ui.jpg"
+    ],
+    "directlyViewed": true,
+    "relatedNotes": "sources/administration-plaza-facilities-notes.json",
+    "observed": [
+      "도로에 작은 어두운 블록이 반복되고 밝은 가로 띠와 노란 양측 선이 있다.",
+      "게시판 뒤에는 낮은 녹색 식재와 더 큰 수목이 있다.",
+      "차도 옆 보도에는 밝은 직사각 블록과 작은 어두운 점, 넓은 어두운 가로 띠가 있다.",
+      "보도 초입에는 노란 T자 점자블록, 낮춘 회색 경계석과 비스듬한 윗면의 돌 볼라드 2개가 보인다."
+    ],
+    "limits": "블록 규격, 줄눈 폭, 점자블록과 볼라드의 정확한 지도 좌표는 측량하지 않았다. 사진의 배치 관계와 실제 게임 동선에 맞춰 근사했다."
+  },
+  "implementation": {
+    "roadId": "way/167597965/24",
+    "origin": [
+      187.02,
+      -728.95
+    ],
+    "axisEnd": [
+      196.52,
+      -737.88
+    ],
+    "localBounds": {
+      "s": [
+        0,
+        13
+      ],
+      "n": [
+        -2.6,
+        2.6
+      ]
+    },
+    "roadOffsetMetres": 0.03,
+    "method": "실제 campus-road-surface 메시를 읽고 겹친 도로 중 위에 보이는 삼각형만 남긴 뒤 포장 구획을 잘라 배치한다. 원래 도로 정점과 지형은 수정하지 않는다.",
+    "pattern": "어두운 블록, 밝은 가로 띠와 노란 가장자리를 겹치지 않는 같은 높이의 구획으로 나눴다. 크기와 간격은 사진 비례 근사다.",
+    "physicalPavingCollider": false,
+    "planting": {
+      "count": 5,
+      "localN": -5.3,
+      "localS": [
+        1.2,
+        3.7,
+        6.2,
+        8.7,
+        11.2
+      ],
+      "speciesEstimated": true,
+      "countEstimated": true,
+      "heightEstimated": true,
+      "breakable": true
+    },
+    "geometry": {
+      "renderMeshes": 3,
+      "breakableParts": 35,
+      "triangles": 6012
+    },
+    "preserved": [
+      "기존 도로와 지형",
+      "기존 건물 외곽과 기하",
+      "별도 행정관 안내판, 게시판, 가로등과 차단기 모듈",
+      "기존 교통 노선과 시작점"
+    ],
+    "destruction": "관목 5개, 경계석 28개와 볼라드 2개를 개별로 파괴하고 복원한다. 바닥 포장은 별도 충돌체 없이 기존 지형과 도로 위에 남는다.",
+    "pedestrian": {
+      "localBounds": {
+        "s": [
+          0,
+          13
+        ],
+        "n": [
+          2.9,
+          8
+        ]
+      },
+      "surfaceOffsetMetres": 0.03,
+      "method": "승인된 보도 다각형 내부의 기존 보행로 표시만 잘라내고 실제 지형 삼각형을 따라 연속된 포장면을 만든다. 중앙은 지형보다 0.03m 높으며 가장자리 0.8m에서만 기존 보행 표시 높이에 완만히 연결한다. 차도, 지형과 충돌을 바꾸지 않는다.",
+      "blockSizeMetres": [
+        0.2,
+        0.3
+      ],
+      "blockDimensionsEstimated": true,
+      "jointWidthMetres": 0.008,
+      "jointWidthEstimated": true,
+      "texture": {
+        "type": "procedural DataTexture",
+        "width": 512,
+        "height": 512,
+        "baseBytes": 1048576,
+        "mipmaps": true,
+        "additionalTextures": 1,
+        "additionalDrawCalls": 1,
+        "sourcePhotographyCopied": false
+      },
+      "tactile": {
+        "head": {
+          "s": [
+            0.45,
+            2.55
+          ],
+          "n": [
+            2.9,
+            3.5
+          ]
+        },
+        "stem": {
+          "s": [
+            1.2,
+            1.8
+          ],
+          "n": [
+            3.5,
+            4.7
+          ]
+        },
+        "locationEstimated": true,
+        "relief": "색과 명암으로 표현한 점자 무늬이며 돌기마다 물리 형상을 추가하지 않았다."
+      },
+      "physicalPavingCollider": false,
+      "perimeterTransition": {
+        "widthMetres": 0.8,
+        "maximumVisualHeightAboveTerrainMetres": 0.17996839378949758,
+        "reason": "기존 보행로 표시는 지형보다 약 0.15m 높다. 구역 가장자리에서만 그 높이에 연결하며 내부의 긴 단차는 제거했다.",
+        "notMeasuredSiteLevel": true
+      },
+      "normalizedDisplays": [
+        {
+          "name": "campus-pedestrian-surface",
+          "removedTriangles": 11,
+          "beforeTriangles": 13845,
+          "afterTriangles": 13851
+        }
+      ],
+      "unchangedScope": "차도 메시, terrain 정점과 물리 지형은 보존했다. 보도 다각형 밖의 표시 면도 보존했으며, 이번 입력에서 바뀐 대상은 보행로 메시의 교차 삼각형 11개뿐이다. 지도 영역 메시에는 제거된 면이 없다."
+    },
+    "curbs": {
+      "parts": 28,
+      "type": "14개 구간을 각각 두 삼각기둥으로 나눔",
+      "localN": [
+        2.75,
+        2.95
+      ],
+      "normalRiseMetres": 0.12,
+      "loweredRiseMetres": 0.025,
+      "loweredS": [
+        0.5,
+        2.5
+      ],
+      "slopeTransitionS": [
+        [
+          0,
+          0.5
+        ],
+        [
+          2.5,
+          3.5
+        ]
+      ],
+      "estimated": true,
+      "exactRenderedConvexCollision": true,
+      "breakable": true,
+      "widthMetres": 0.2,
+      "vehicleClearanceAdjustment": "기존 차량 회전 궤적과의 접촉을 없애려고 보도 쪽 끝은 그대로 두고 도로 쪽 끝을 0.1m 줄였다. 원본 도로와 교통 경로는 바꾸지 않았다."
+    },
+    "bollards": {
+      "count": 2,
+      "localS": [
+        0.2,
+        2.8
+      ],
+      "localN": 2.84,
+      "footprintMetres": [
+        0.52,
+        0.42
+      ],
+      "topHeightMetres": [
+        0.51,
+        0.65
+      ],
+      "slopedTop": true,
+      "estimated": true,
+      "breakable": true
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "command": "node scripts/verify-administration-plaza-ground.mjs",
+    "artifact": "artifacts/administration-plaza-ground-test/results.json",
+    "artifactSha256": "753094661a77aae394c0b77db3d7b8f6b0d039cc46e60c5c769bc7e39c8ad9e3",
+    "passed": 10,
+    "failed": 0,
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit 통과",
+    "roadSamples": 9656,
+    "roadClearanceMetres": [
+      0.029989212305892465,
+      0.030002126296093223
+    ],
+    "sidewalkSamples": 11800,
+    "sidewalkCoverageSamples": 1625,
+    "sidewalkClearanceMetres": [
+      0.02999747721242585,
+      0.17996839378949758
+    ],
+    "stoneSurfaceSamples": 30,
+    "maximumStoneSurfaceErrorMetres": 0.00003170967102050781,
+    "curbTransitionSamples": 30,
+    "curbMaximumFiveCentimetreHeightChangeMetres": 0.0227508544921875,
+    "pedestrianRoundTrips": [
+      {
+        "s": 1,
+        "forward": {
+          "end": [
+            190.4279022216797,
+            28.971574783325195,
+            -726.7796630859375
+          ],
+          "remaining": 0.0845942305707641,
+          "frames": 22
+        },
+        "back": {
+          "end": [
+            189.0360107421875,
+            28.94481658935547,
+            -728.2606811523438
+          ],
+          "remaining": 0.08310435891076517,
+          "frames": 21
+        }
+      },
+      {
+        "s": 1.5,
+        "forward": {
+          "end": [
+            190.79351806640625,
+            29.007854461669922,
+            -727.12255859375
+          ],
+          "remaining": 0.0839826883113535,
+          "frames": 22
+        },
+        "back": {
+          "end": [
+            189.3971710205078,
+            28.975305557250977,
+            -728.6082763671875
+          ],
+          "remaining": 0.07716285828612159,
+          "frames": 22
+        }
+      },
+      {
+        "s": 2,
+        "forward": {
+          "end": [
+            191.1560821533203,
+            29.044063568115234,
+            -727.4666137695312
+          ],
+          "remaining": 0.08635091497184165,
+          "frames": 22
+        },
+        "back": {
+          "end": [
+            189.76016235351562,
+            29.0106143951416,
+            -728.9522094726562
+          ],
+          "remaining": 0.07517948023815915,
+          "frames": 22
+        }
+      },
+      {
+        "n": 3.45,
+        "forward": {
+          "end": [
+            199.5369873046875,
+            29.88018226623535,
+            -735.9820556640625
+          ],
+          "remaining": 0.0634557320964855,
+          "frames": 151
+        },
+        "back": {
+          "end": [
+            188.68096923828125,
+            28.82095718383789,
+            -725.7764282226562
+          ],
+          "remaining": 0.03661708553724639,
+          "frames": 149
+        }
+      },
+      {
+        "n": 5.7,
+        "forward": {
+          "end": [
+            201.08213806152344,
+            29.888286590576172,
+            -734.3456420898438
+          ],
+          "remaining": 0.05840796663297724,
+          "frames": 151
+        },
+        "back": {
+          "end": [
+            190.22515869140625,
+            28.798551559448242,
+            -724.1399536132812
+          ],
+          "remaining": 0.04091839871086481,
+          "frames": 149
+        }
+      },
+      {
+        "n": 7.2,
+        "forward": {
+          "end": [
+            202.10731506347656,
+            29.88698387145996,
+            -733.2506103515625
+          ],
+          "remaining": 0.06143378852391291,
+          "frames": 151
+        },
+        "back": {
+          "end": [
+            191.24942016601562,
+            28.78365135192871,
+            -723.0440673828125
+          ],
+          "remaining": 0.03664019579900549,
+          "frames": 149
+        }
+      }
+    ],
+    "speedMetresPerSecond": 6,
+    "scope": "실제 fullCampus, 지형, 보충 도로와 행정관 시설을 포함한 Node/Rapier 검사다. 기존 가로등을 통과하는 경로는 제외하고 낮춘 경계석 3경로와 보도 3경로를 왕복했다. 전체 교통 운행과 휴대전화 성능을 확인한 결과는 아니다.",
+    "fullReleaseChecks": "root가 별도로 수행한다.",
+    "continuity": {
+      "crossSectionSamples": 10400,
+      "maximumHeightChangePer2_5Centimetres": 0.015693439567741052,
+      "untouchedOutsideTriangles": 55013,
+      "outsideSamples": 1440,
+      "boundaryFloat32ProbeRadius": 0.0001
+    },
+    "integratedVehicleCheck": {
+      "status": "passed",
+      "command": "node scripts/verify-administration-plaza.mjs",
+      "artifact": "artifacts/administration-plaza-test/results.json",
+      "artifactSha256": "258fb00b473eb920cfff72fbd28887dab8695da56e3389878ed0fd799586a9c6",
+      "log": "artifacts/entrance-detail-review/administration-plaza-final.log",
+      "logSha256": "f8818fabeddd4c856e5f955c2ad7fea005f3bbfbb809e03938eaf5315697378a",
+      "passed": 4,
+      "failed": 0,
+      "vehiclePoseSamples": 511,
+      "vehicleContacts": 0,
+      "scope": "root가 최종 후보에서 실제 차량 회전 511자세, 보행 왕복, 파괴와 복원 및 H 투영을 확인했다."
+    },
+    "browserReview": {
+      "status": "passed",
+      "image": "artifacts/facilities-browser/25-paving-release.jpg",
+      "imageSha256": "5679fb63c576851c38d0cf14e6ddd0be0dbed75e87ef32910e21bce4bcdb2a4c",
+      "directlyViewedBy": [
+        "root",
+        "scene"
+      ],
+      "observed": "긴 내부 단차와 초록 틈 없이 블록 포장이 이어진다. 직사각 줄눈, 점과 가로 띠, T자 점자블록, 경계석과 경사 윗면 볼라드가 보인다.",
+      "scope": "실제 WebGL의 해당 근거리 시점이며 모든 방향과 모바일 성능을 검증한 것은 아니다."
+    }
+  },
+  "limitations": [
+    "행정관 서측의 사진으로 확인한 짧은 차도와 보도 구간만 보완했다. 다른 캠퍼스 보도에 같은 재질을 적용하지 않았다.",
+    "반복 무늬, 블록과 경계석 치수, 점자블록과 볼라드 배치는 사진 비례와 보행 검사를 따른 게임 근사다.",
+    "보도 중앙은 실제 게임 지형을 따르며 가장자리 0.8m의 표시 높이 접속은 게임용 보정이다. 현장 고도나 경사를 측량한 것은 아니다.",
+    "관목 5개의 형상과 배치는 근사다. 사진의 큰 수목과 주변 옹벽, 펜스 전체를 재현하지 않았다.",
+    "점자블록은 표면 무늬이며 개별 돌기의 물리 형상이나 실제 접근성 규격을 검증하지 않았다.",
+    "정적 보행 검사는 실제 교통 운행 중의 모든 차량 접촉이나 현장 보행 안전을 보장하지 않는다."
+  ],
+  "sourceHashes": {
+    "src/administrationPlazaGround.ts": "869eae6fde4f4e1df3259cda88ecb75bdef0caf541d8615cac564272db6eb810",
+    "scripts/verify-administration-plaza-ground.mjs": "b6fa8c2e135199af34e4f515d5253917caeed8d65a2d078bf688575ec3fd8d35",
+    "src/administrationPlazaFacilities.ts": "6a344e546864a2a64920a5b5d2a7f45052b9d4ba9316d19aad941bf201142f04",
+    "src/fullCampus.ts": "2c54fe79f82b470d17ac2984b35c472e3a1bd2664c89eb3e37d71f9522fca147",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+  }
+}

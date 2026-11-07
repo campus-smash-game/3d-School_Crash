@@ -1,0 +1,2242 @@
+{
+  "buildingNumber": "222",
+  "osmId": "way/386890828",
+  "name": "생활과학대학",
+  "landmark": "living-science",
+  "reviewedAt": "2026-11-05T17:03:41.129Z",
+  "status": "integrated-partial",
+  "sources": [
+    {
+      "id": "official-map-photo",
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=180",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000177.jpg",
+      "localFile": "../references/buildings/photos/180-222.jpg",
+      "directlyViewed": true,
+      "photoCaptureDate": null,
+      "claims": [
+        "오목한 안쪽 입면에서 왼쪽 짧은 날개는 벽돌이고 오른쪽 긴 날개는 회색 패널이다.",
+        "벽돌 날개의 최상층에는 좁고 긴 세로창과 파란 222 표기가 있다.",
+        "짧은 날개의 바깥쪽 끝면은 넓은 회색 무창 패널이며 오목면 가까이에만 창이 보인다.",
+        "긴 회색 날개 끝에는 좁은 벽돌 띠가 있다.",
+        "안쪽 접합부 유리가 벽 면보다 후퇴한다. 아래쪽 출입구는 수목에 가려 정확한 위치를 확인하지 못했다."
+      ]
+    },
+    {
+      "id": "museum-guide-photo",
+      "url": "https://museum.snu.ac.kr/v2/information/guide/",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/01/guide_img.png",
+      "localFile": "artifacts/museum-review/guide.png",
+      "directlyViewed": true,
+      "photoCaptureDate": null,
+      "claims": [
+        "박물관 뒤의 222동 긴 반대 입면에는 벽돌 수평 띠와 옅은 회색 띠, 긴 창이 번갈아 나타난다.",
+        "지붕 위에 판 3개가 기둥으로 떠 있으며 판 아래가 열려 있다.",
+        "대학 이름과 222 표기가 보이므로 다른 동 사진과 혼동하지 않았다."
+      ]
+    },
+    {
+      "id": "whitepaper-2010",
+      "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/24th_vision_change.pdf",
+      "localFile": "artifacts/living-science-review/public-whitepaper-2010.pdf",
+      "renderedPage": "artifacts/living-science-review/whitepaper-2010-page-44.png",
+      "pdfPage": 44,
+      "printedPage": 42,
+      "directlyViewed": true,
+      "claims": [
+        "종합교육연구단지가 2010년 3월 준공되었으며 지상 7층과 지하 2층이라고 설명한다.",
+        "생활과학대학을 포함한 단지 전체 분류이며, 이 페이지의 큰 사진은 221 표기가 보이는 다른 동이다. 사진을 222동 날개별 형태 근거로 쓰지 않는다."
+      ]
+    },
+    {
+      "id": "seventh-floor-event",
+      "url": "https://now.snu.ac.kr/category/3/243",
+      "localFile": "artifacts/living-science-review/award-2023.html",
+      "publicationDate": "2023-04-16",
+      "claims": [
+        "2023년 4월 13일 행사가 생활과학대학 222동 7층 송관용홀에서 열렸다고 명시한다."
+      ]
+    },
+    {
+      "id": "official-room-list",
+      "url": "https://ist.snu.ac.kr/wp-content/uploads/sites/186/2024/02/%EB%AC%B4%EC%84%A0%ED%98%84%ED%99%A9_202402.pdf",
+      "localFile": "artifacts/central-candidates-review/wifi-2024.pdf",
+      "renderedPage": "artifacts/living-science-review/wifi-2024-page-28.png",
+      "pdfPage": 28,
+      "directlyViewed": true,
+      "claims": [
+        "222동 701 목련홀, 722 하이브리드세미나실, 731 송관용홀과 B1/B2 실명이 나온다.",
+        "7층과 두 지하층의 사용을 확인하지만 각 방이나 날개 위치를 알려 주는 평면도는 아니다."
+      ]
+    },
+    {
+      "id": "access-notice",
+      "url": "https://foodnutrition.snu.ac.kr/공지사항/?mod=document&pageid=313&uid=3737",
+      "localFile": "artifacts/living-science-review/access-2024.html",
+      "publicationDate": "2024-03-27",
+      "images": [
+        "artifacts/living-science-review/access-image-1.png",
+        "artifacts/living-science-review/access-image-2.jpg"
+      ],
+      "directlyViewed": true,
+      "claims": [
+        "1층 주출입구와 B1/B2의 여러 외부 출입구를 나열한다. 경사지 건물이라는 판단을 보조하지만 좌표는 확인할 수 없다.",
+        "첨부 이미지 두 개는 카드 단말기와 문 잠금 버튼 설명이다. 입면이나 평면도 근거로 쓰지 않는다."
+      ]
+    },
+    {
+      "id": "south-passage-roadview",
+      "urls": [
+        "https://kko.to/fmZ6Q7AEkn",
+        "https://kko.to/Zi7nJGPRQO"
+      ],
+      "captureMonth": "2026-08",
+      "review": "sources/living-science-south-passage-roadview-review.json",
+      "directlyObservedBy": [
+        "controls",
+        "reference"
+      ],
+      "rootCaptureReview": "기존 저장 화면 8장과 후속 입구 및 외관 화면 2장을 직접 열람했다. 여덟 장은 두 파노라마의 회전과 확대 화면이며 여덟 개 위치가 아니다.",
+      "limitations": [
+        "반대편 출구 바로 앞 시점은 확보하지 못했다.",
+        "사진상 폭과 높이는 측량값이 아니다.",
+        "작은 게시물의 문구와 가게 간판은 확인하지 못했다."
+      ]
+    }
+  ],
+  "confirmed": {
+    "seventhFloorUse": true,
+    "basementOneAndTwoUse": true,
+    "footprintPointCount": 11,
+    "features": [
+      "남쪽 짧은 벽돌 날개와 북쪽 긴 회색 날개의 오목한 접합",
+      "상층의 좁은 세로창과 아래층의 긴 창",
+      "짧은 날개 끝의 넓은 회색 무창 패널",
+      "긴 회색 날개 끝의 좁은 벽돌 띠",
+      "반대편 긴 벽돌 입면",
+      "기둥 위에 떠 있는 옥상 차양 3개",
+      "오목한 접합부의 후퇴 유리와 파란 222 표기"
+    ]
+  },
+  "estimates": {
+    "mainRoofHeight": 24.5,
+    "storeyHeight": 3.5,
+    "canopyTop": 26.78,
+    "canopyUnderside": 26.6,
+    "canopyColumnCount": 12,
+    "entryDepth": 1.24,
+    "entryWidth": 5.6,
+    "entryHeight": 2.8,
+    "wallWindowBayMaximumWidth": 5.8,
+    "datum": "원본 11개 꼭짓점 평균 XZ에서 현재 heightAt을 읽는다. 원시 고도나 특정 높이를 직접 고정하지 않는다.",
+    "wingLevelPlacement": "같은 높이의 두 날개에 7개 층 구획을 배치했다. 날개별 평면도와 실제 층고를 확보하지 못한 근사다.",
+    "facadeDirection": {
+      "status": "사진과 원본 L자 평면을 대조한 추정",
+      "dataAxes": "+x east, +z north, +y up",
+      "origin": [
+        403.52,
+        -231.37
+      ],
+      "localAxis": [
+        40.05,
+        -22.23
+      ],
+      "innerBrickFace": "원본 2→3, 남쪽 짧은 날개의 북동쪽 면",
+      "innerGrayFace": "원본 3→4→5, 북쪽 긴 날개의 동쪽 면",
+      "oppositeLongBrickFace": "원본 7→8→9→10→0, 북쪽 긴 날개의 서쪽 면",
+      "basis": "180-222 사진의 오목한 접합부를 원본 점 3과 대응시켰고, 박물관 안내 사진에서 반대쪽 긴 입면을 확인했다. 방위는 측량 성과가 아니다."
+    }
+  },
+  "implementation": {
+    "status": "frozen",
+    "buildingId": "way/386890828",
+    "sourceHashes": {
+      "src/livingScienceLandmark.ts": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+      "scripts/verify-living-science.mjs": "c17ba38ffe3e13e9e4e0cd5c141c6180293eece8212c0ca2c88c0831f4b27f54",
+      "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+      "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+    },
+    "scope": "222동 남쪽 짧은 날개 아래 /524 통과구와 직접 관측한 남쪽 입면 및 주변 시설을 보완했다. 모든 치수와 정확한 시설 배치는 게임용 근사다.",
+    "sourceEvidence": {
+      "directlyViewed": [
+        {
+          "path": "artifacts/education-health-review/controls-222/underpass-2026-08-ui.jpg",
+          "sha256": "1e53646b42598f8621a09dfc8543fb96200b40fafda4c7e9d1f5b65b36029f97",
+          "directlyViewed": true
+        },
+        {
+          "path": "artifacts/education-health-review/controls-222/underpass-minimap-2026-08-ui.jpg",
+          "sha256": "dec118e73e2301db513bd1100cbd98f204e0712fc86a568fc5c242682ff18d2c",
+          "directlyViewed": true
+        },
+        {
+          "path": "artifacts/education-health-review/controls-222/underpass-minimap-close-ui.jpg",
+          "sha256": "4fde213104c8f64f8eaba8603f1b7502e95be640399ba59d99b87695a041cdfc",
+          "directlyViewed": true
+        },
+        {
+          "path": "artifacts/education-health-review/controls-222/underpass-upper-left-ui.jpg",
+          "sha256": "9ac156d6d5ae2e2c729df5558f0ce80479a3f119cabb3e9549235e237f289b8e",
+          "directlyViewed": true
+        },
+        {
+          "path": "artifacts/education-health-review/controls-222/underpass-building-poi-ui.jpg",
+          "sha256": "01db62bfbcc4c760271a853c987b54e416af03b3d270c7a534f14e9388a521a0",
+          "directlyViewed": true
+        },
+        {
+          "path": "artifacts/education-health-review/controls-222/southwest-approach-1213022762-ui.jpg",
+          "sha256": "dd22e3a109967c83278f66c601ef8845881c3178b38416c3598ab9d2ead40f99",
+          "directlyViewed": true
+        },
+        {
+          "path": "artifacts/education-health-review/controls-222/approach-left-building-ui.jpg",
+          "sha256": "221edac2b4c8db96a3375d7de8921a3049af7509b2e60a11072d08182e8afa70",
+          "directlyViewed": true
+        },
+        {
+          "path": "artifacts/education-health-review/controls-222/underpass-south-wing-pan3489-ui.jpg",
+          "sha256": "fdef02eb662185055675cc65d3504d3c3531dd7bfb37604f783cede814b3184b",
+          "directlyViewed": true
+        }
+      ],
+      "officialPhoto": {
+        "path": "../references/buildings/photos/180-222.jpg",
+        "directlyViewed": true,
+        "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000177.jpg",
+        "scope": "중정 쪽 입면과 기존 L자 구성. 남쪽 통과구 자체는 이 사진에서 확인하지 않았다."
+      },
+      "roadviewNotes": "sources/living-science-south-passage-roadview-review.json",
+      "observed": [
+        "남쪽 통과구와 붉은 바닥, 양끝 회색 접근부 중 남쪽 구간",
+        "남쪽 왼쪽 밝은 벽과 글자를 읽지 못한 사각 포스터",
+        "남쪽 오른쪽 기둥 옆 노란 봉의 볼록거울과 낮은 벽돌 화단",
+        "남쪽 끝 세로 회색 창열과 다른 벽돌 창 구획 앞 은색 난간"
+      ],
+      "notEstablished": [
+        "통과구 폭과 높이의 실측값",
+        "반대편 바닥 재질과 정확한 출구 마감",
+        "포스터 문구 및 이 면의 가게 간판 존재 여부",
+        "공식 지하층 번호와 OSM layer=-1의 대응"
+      ]
+    },
+    "preserved": {
+      "rawElevenPointOutline": true,
+      "rawDEM": true,
+      "terrainSource": true,
+      "physicsSource": true,
+      "mainRoofHeight": 24.5,
+      "documentedAboveGroundUse": 7,
+      "existingInnerRecessedEntrance": true,
+      "LShapeExteriorVoid": true,
+      "raisedRoofCanopies": 3
+    },
+    "geometry": {
+      "parts": 713,
+      "triangles": 25780,
+      "renderMeshes": 3,
+      "mergedMeshes": [
+        "living-science-brick-and-gray-envelope",
+        "living-science-roof-and-frames",
+        "living-science-glazing"
+      ],
+      "localOrigin": {
+        "x": 403.52,
+        "y": 30.406880212131934,
+        "z": -231.37
+      },
+      "axis": {
+        "x": 0.8743425723321923,
+        "z": -0.4853092480135989
+      },
+      "passage": {
+        "roadId": "way/1185265108/524",
+        "width": 4.2,
+        "widthEstimated": true,
+        "sourceWidthDefault": 2.5,
+        "start": [
+          439.05,
+          0,
+          -254.28
+        ],
+        "end": [
+          449.8,
+          0,
+          -231.55
+        ],
+        "direction": [
+          0.42753918890278686,
+          0,
+          0.90399681523352
+        ],
+        "side": [
+          0.90399681523352,
+          0,
+          -0.42753918890278686
+        ],
+        "length": 25.143893890962865,
+        "intersections": [
+          {
+            "edge": 0,
+            "s": 2.7940416431376365
+          },
+          {
+            "edge": 2,
+            "s": 21.25654284359409
+          }
+        ],
+        "floorEnds": [
+          31.74519873356229,
+          32.153278981695664
+        ],
+        "ceilingWorldY": 35.206880212131935,
+        "beamTopWorldY": 35.566880212131935,
+        "mainFloorRange": [
+          3.7940416431376365,
+          20.85654284359409
+        ],
+        "surfaceStations": [
+          2.95,
+          3.7940416431376365,
+          5.594041643137636,
+          7.594041643137636,
+          9.594041643137636,
+          11.594041643137636,
+          13.594041643137636,
+          15.594041643137636,
+          17.594041643137636,
+          19.594041643137636,
+          20.85654284359409,
+          21.95654284359409,
+          25.143893890962865
+        ],
+        "routeWorld": [
+          {
+            "x": 439.05,
+            "y": 32.10145992561296,
+            "z": -254.28
+          },
+          {
+            "x": 440.31124060726324,
+            "y": 31.606441412270254,
+            "z": -251.61320939506112
+          },
+          {
+            "x": 440.6721014867705,
+            "y": 31.74519873356229,
+            "z": -250.85019843774023
+          },
+          {
+            "x": 442.8978527001251,
+            "y": 31.869708543295438,
+            "z": -246.14402866289834
+          },
+          {
+            "x": 445.4630878335418,
+            "y": 32.01320927979559,
+            "z": -240.7200477714972
+          },
+          {
+            "x": 447.96698941066643,
+            "y": 32.153278981695664,
+            "z": -235.42575169260948
+          },
+          {
+            "x": 448.43728251845954,
+            "y": 32.104417541345114,
+            "z": -234.4313551958526
+          },
+          {
+            "x": 449.8,
+            "y": 31.919134530320942,
+            "z": -231.55
+          }
+        ],
+        "openWithoutDestruction": true,
+        "northernApproachMaterialEstimated": true,
+        "underpassSurface": "red-brick-pattern",
+        "posterTextObserved": false,
+        "endpointGeometryEstimated": true
+      },
+      "components": {
+        "mapped-roof-panel": {
+          "parts": 78,
+          "convexParts": 78,
+          "bounds": {
+            "min": [
+              403.4606525918776,
+              54.68688201904297,
+              -253.60000611497935
+            ],
+            "max": [
+              452.51027810483146,
+              54.90687942504883,
+              -180.4076160498841
+            ]
+          }
+        },
+        "ribbon-window": {
+          "parts": 289,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              403.51455257348323,
+              30.9228798828125,
+              -253.6054443748649
+            ],
+            "max": [
+              452.5154439719887,
+              54.910879425048826,
+              -180.42453695733082
+            ]
+          }
+        },
+        "roof-edge-cap": {
+          "parts": 45,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              403.3651516864184,
+              54.90287942504883,
+              -253.7540835895954
+            ],
+            "max": [
+              452.66409935155355,
+              55.070879272460935,
+              -180.2758890323391
+            ]
+          }
+        },
+        "terrain-following-foundation": {
+          "parts": 43,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              403.4618286855374,
+              27.60054750061035,
+              -253.65790442759382
+            ],
+            "max": [
+              452.56790794530355,
+              34.04946356201172,
+              -180.37208504276813
+            ]
+          }
+        },
+        "opaque-wall-bay": {
+          "parts": 23,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              443.45307222699313,
+              32.096608825683596,
+              -253.6054472778953
+            ],
+            "max": [
+              451.07544687273224,
+              54.910879425048826,
+              -188.29227713564848
+            ]
+          }
+        },
+        "upper-narrow-window": {
+          "parts": 5,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              431.6627026514078,
+              51.40287942504883,
+              -237.60692941677027
+            ],
+            "max": [
+              452.5154439719887,
+              54.910879425048826,
+              -225.9545623311955
+            ]
+          }
+        },
+        "passage-gray-approach": {
+          "parts": 36,
+          "convexParts": 36,
+          "bounds": {
+            "min": [
+              438.36495029832616,
+              31.314159393310547,
+              -252.5507570032781
+            ],
+            "max": [
+              451.8792591558201,
+              32.1673698425293,
+              -230.61245096025954
+            ]
+          }
+        },
+        "passage-red-paving": {
+          "parts": 108,
+          "convexParts": 108,
+          "bounds": {
+            "min": [
+              438.6715598706602,
+              31.615198135375977,
+              -251.787754180763
+            ],
+            "max": [
+              449.9370329530534,
+              32.15327835083008,
+              -234.48820227620126
+            ]
+          }
+        },
+        "passage-left-wall": {
+          "parts": 7,
+          "convexParts": 7,
+          "bounds": {
+            "min": [
+              438.1111205009804,
+              30.207077026367188,
+              -250.85637125235394
+            ],
+            "max": [
+              446.2396240271963,
+              35.206878662109375,
+              -234.05515260305836
+            ]
+          }
+        },
+        "passage-overhead-beam": {
+          "parts": 7,
+          "convexParts": 7,
+          "bounds": {
+            "min": [
+              438.1759247306715,
+              35.206878662109375,
+              -252.89036660621016
+            ],
+            "max": [
+              450.06263664706563,
+              35.56687927246094,
+              -233.92798916714474
+            ]
+          }
+        },
+        "passage-low-brick-planter": {
+          "parts": 5,
+          "convexParts": 5,
+          "bounds": {
+            "min": [
+              443.41341403067275,
+              31.828907012939453,
+              -250.1264495489457
+            ],
+            "max": [
+              450.2847325565878,
+              32.63591003417969,
+              -236.39889523077892
+            ]
+          }
+        },
+        "passage-right-column": {
+          "parts": 2,
+          "convexParts": 2,
+          "bounds": {
+            "min": [
+              442.1173010375616,
+              31.56519889831543,
+              -252.85163436405696
+            ],
+            "max": [
+              450.3694181034767,
+              35.206878662109375,
+              -235.9077453642288
+            ]
+          }
+        },
+        "passage-poster-panel": {
+          "parts": 4,
+          "convexParts": 4,
+          "bounds": {
+            "min": [
+              438.97915649534775,
+              32.80911636352539,
+              -249.53562595668518
+            ],
+            "max": [
+              440.1889451185342,
+              33.429115295410156,
+              -246.99842834651224
+            ]
+          }
+        },
+        "passage-exterior-rail-post": {
+          "parts": 5,
+          "convexParts": 5,
+          "bounds": {
+            "min": [
+              442.75634765656923,
+              32.116920471191406,
+              -254.27313232406905
+            ],
+            "max": [
+              444.14039823463395,
+              33.366851806640625,
+              -253.57995205628572
+            ]
+          }
+        },
+        "passage-exterior-rail-bar": {
+          "parts": 2,
+          "convexParts": 2,
+          "bounds": {
+            "min": [
+              442.7767012300726,
+              32.58932876586914,
+              -254.26386876498728
+            ],
+            "max": [
+              444.1200561322353,
+              33.364444732666016,
+              -253.58922314689207
+            ]
+          }
+        },
+        "passage-convex-mirror": {
+          "parts": 1,
+          "convexParts": 1,
+          "bounds": {
+            "min": [
+              442.35209611708717,
+              32.14460754394531,
+              -253.9718103136443
+            ],
+            "max": [
+              442.95426517029705,
+              34.55460739135742,
+              -253.61859506001758
+            ]
+          }
+        },
+        "recessed-entry-door": {
+          "parts": 1,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              431.9700214138412,
+              30.595609375,
+              -223.00519683999977
+            ],
+            "max": [
+              434.41480654614634,
+              33.44360952758789,
+              -218.69111032871234
+            ]
+          }
+        },
+        "entry-recess-side": {
+          "parts": 2,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              431.9457637852966,
+              30.595609375,
+              -223.6142907689981
+            ],
+            "max": [
+              435.4576788448641,
+              33.403608612060545,
+              -218.64739342396857
+            ]
+          }
+        },
+        "entry-recess-lintel": {
+          "parts": 1,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              431.98943443959354,
+              33.39560861206055,
+              -223.53560119380288
+            ],
+            "max": [
+              435.4139950314418,
+              33.910879425048826,
+              -218.7260792889373
+            ]
+          }
+        },
+        "entry-lobby-floor": {
+          "parts": 1,
+          "convexParts": 1,
+          "bounds": {
+            "min": [
+              427.97290043115584,
+              30.41960906982422,
+              -223.74855346202372
+            ],
+            "max": [
+              435.80201558991996,
+              30.599609375,
+              -216.49909601239614
+            ]
+          }
+        },
+        "entry-ground-connection": {
+          "parts": 12,
+          "convexParts": 12,
+          "bounds": {
+            "min": [
+              433.47252844868916,
+              30.37487030029297,
+              -225.64610290756832
+            ],
+            "max": [
+              439.2206783384201,
+              30.599609375,
+              -219.55169677504878
+            ]
+          }
+        },
+        "floating-canopy-panel": {
+          "parts": 18,
+          "convexParts": 18,
+          "bounds": {
+            "min": [
+              406.4338072653638,
+              57.00688171386719,
+              -240.0073317892422
+            ],
+            "max": [
+              448.3786949306843,
+              57.18688201904297,
+              -184.05725552983316
+            ]
+          }
+        },
+        "canopy-support-column": {
+          "parts": 12,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              407.2645666915664,
+              54.90287942504883,
+              -239.17658535333646
+            ],
+            "max": [
+              447.5479495936094,
+              57.010881713867185,
+              -184.88800510076496
+            ]
+          }
+        },
+        "canopy-support-beam": {
+          "parts": 6,
+          "convexParts": 0,
+          "bounds": {
+            "min": [
+              406.9792088538855,
+              56.82288140869141,
+              -239.707022469586
+            ],
+            "max": [
+              447.83328894907817,
+              57.010881713867185,
+              -184.35756798451544
+            ]
+          }
+        }
+      }
+    },
+    "implementation": {
+      "facadeOpening": {
+        "edges": [
+          0,
+          2
+        ],
+        "frontLocalSpan": [
+          39.898049790575065,
+          44.10692368317407
+        ],
+        "rearEdgeSpan": [
+          2.895490847264909,
+          7.104323822200673
+        ],
+        "width": 4.2,
+        "widthEstimated": true,
+        "processedRoadWidth": 2.5,
+        "processedRoadWidthIsDefault": true,
+        "ceilingWorldY": 35.206880212131935,
+        "beamTopWorldY": 35.566880212131935,
+        "opening": "기초와 첫 창 구획을 제거하고 바로 위 창의 하단을 보 윗면으로 높였다. 더 높은 층은 기존 창 구획을 유지했다."
+      },
+      "floor": {
+        "mainWorldY": [
+          31.74519873356229,
+          32.153278981695664
+        ],
+        "grayEndpointOffsetAboveHeightAt": 0.16,
+        "thickness": 0.13,
+        "reason": "원본 보행 표시는 heightAt+.12이므로 회색 접근판 끝을+.16으로 맞춰 겹침을 해소했다. 실제 끝단 높이는 추정이며 중앙 지형을 깎지 않는다.",
+        "maximumTerrainFillIsNotSurvey": true,
+        "northernMaterialEstimated": true
+      },
+      "facadeDetail": {
+        "grayColumn": "남쪽 edge0의 마지막 원래 창 구획만 전층 회색으로 바꿨다.",
+        "silverRails": "남쪽 edge0의 큰 창 앞에 세 개 가로대와 창 간격의 얇은 세로대를 같은 파괴 부품에 묶었다.",
+        "brickPattern": "남쪽 edge0 벽돌 면만 약0.28×0.075m 비율의 반복 줄눈을 표시한다. 다른 미관측 면에는 추가하지 않았다."
+      },
+      "textures": {
+        "count": 1,
+        "kind": "128×128 RGBA DataTexture",
+        "sharedBy": [
+          "brick-and-gray-envelope",
+          "roof-and-frames"
+        ],
+        "paverApproximateBlock": [
+          0.22,
+          0.11
+        ],
+        "wallApproximateBrick": [
+          0.28,
+          0.075
+        ],
+        "perBlockMeshes": false,
+        "perBlockColliders": false
+      },
+      "facilities": {
+        "mirror": {
+          "s": 2,
+          "n": 3.05,
+          "radius": 0.31,
+          "headHeightAboveTerrain": 2.1,
+          "poleWidth": 0.055,
+          "render": "은색 면을 볼록하게 나눈 근사이며 실제 실시간 반사 영상은 아니다."
+        },
+        "rail": {
+          "s": 2.2,
+          "n": [
+            3.1,
+            4.55
+          ],
+          "height": 1,
+          "render": "관측한 은색 난간의 제한된 구간을 근사했다. 고리형 장식은 단순화했다."
+        },
+        "planter": {
+          "side": "오른쪽",
+          "height": 0.52,
+          "width": 0.54
+        },
+        "posters": {
+          "count": 4,
+          "text": false
+        },
+        "individualConvexCollision": true
+      },
+      "limits": [
+        "사진의 폭과 정확한 시설 개수는 실측하지 않았다.",
+        "포장판은 원본 지형의 중앙 굴곡 위를 잇는 얕은 경사 구조라 일부 내부 바닥 밑이 실제 사진과 다를 수 있다.",
+        "노출 천장과 벽만 구현했으며 통과구 옆 실내는 만들지 않았다."
+      ]
+    },
+    "validation": {
+      "own": {
+        "artifact": "artifacts/living-science-test/results.json",
+        "sha256": "580e28b9b1afb495535662698652958c05395042cb0bcad9bcc8470f2ef5f925",
+        "passed": 15,
+        "failed": 0,
+        "passageMetrics": [
+          {
+            "name": "mapped passage is open beneath a real beam with terrain-clear paving and exact convex surfaces",
+            "status": "passed",
+            "floorRays": 245,
+            "minimumTerrainClearance": 0.1512394787089839,
+            "minimumHeadroom": 3.051122012382777,
+            "maxSurfaceError": 0.00009731079866881487,
+            "maxUnloadedError": 0.00009731091869369379,
+            "rawCenterlinePreserved": true
+          },
+          {
+            "name": "the unobstructed passage supports five actual terrain capsule routes in both directions",
+            "status": "passed",
+            "speed": 6,
+            "routes": [
+              {
+                "offset": -1.35,
+                "progress": 27.776676756889284,
+                "returnError": 0.15639212671045422,
+                "minHeightError": 0.019534652513748085,
+                "maxHeightError": 0.02706674714032431,
+                "grounded": true
+              },
+              {
+                "offset": -0.65,
+                "progress": 27.813884594737104,
+                "returnError": 0.1772993247322138,
+                "minHeightError": 0.019491328958785914,
+                "maxHeightError": 0.0317544474779865,
+                "grounded": true
+              },
+              {
+                "offset": 0,
+                "progress": 27.85079530246128,
+                "returnError": 0.19040159375860838,
+                "minHeightError": 0.019775871630322683,
+                "maxHeightError": 0.024806334702354604,
+                "grounded": true
+              },
+              {
+                "offset": 0.65,
+                "progress": 27.882230482527618,
+                "returnError": 0.22104952751491858,
+                "minHeightError": 0.019987808475498525,
+                "maxHeightError": 0.029984469638108635,
+                "grounded": true
+              },
+              {
+                "offset": 1.35,
+                "progress": 27.92807126067516,
+                "returnError": 0.2597768936466968,
+                "minHeightError": 0.020017392385767607,
+                "maxHeightError": 0.027827859881789152,
+                "grounded": true
+              }
+            ],
+            "doorsRequired": false
+          },
+          {
+            "name": "passage floor beam and facilities retain surface detail through destruction distance reset and H",
+            "status": "passed",
+            "components": 9,
+            "mergedMeshes": 3,
+            "sharedProceduralTexture": true,
+            "resetGeometryIdentical": true,
+            "reflectedFloorDifference": 0
+          }
+        ]
+      },
+      "independent": {
+        "status": "passed",
+        "artifact": "artifacts/living-science-passage-test/results.json",
+        "sha256": "8c6e7cb19ab2c25c568176d12759faf40c52b48b7f8b588bff78e15a77d51636",
+        "passed": 4,
+        "failed": 0,
+        "inputHashesMatched": 56,
+        "summary": "원본 /208에서 /524를 지나 /338로 이어지는 중앙과 양옆 6 m/s 왕복, H 후 왕복, 138개 실제 표면 광선, 부분 파괴와 원거리 유지 및 2회 복원을 확인했다. 실제 택시 246자세에서 새 222 시설 접촉은 없었다. 기존 인접 무명 건물의 54개 접촉은 그대로이며 이번 통과구의 신규 결함과 구분한다."
+      },
+      "browser": {
+        "status": "root-reported-current-candidate-checked",
+        "desktopViews": 7,
+        "portraitViews": 3,
+        "scope": "root가 실제 WebGL에서 북쪽과 남쪽 접근판 겹침 해소, 외부 거울과 난간 표시를 확인했다. 이 에이전트는 브라우저를 조작하지 않았다."
+      },
+      "typeCheck": "npx tsc --noEmit passed",
+      "history": {
+        "uvHarnessInitialFailure": "scene-29-uv-harness-first-results.json",
+        "explanation": "반복 UV 좌표가 100개보다 많아야 한다는 임의 개수 조건만 실패했다. 실제 반복 범위와 여러 좌표를 검사하도록 고쳤으며 당시 통로 광선과 보행은 통과했다."
+      }
+    }
+  },
+  "optimization": {
+    "mergedMeshTarget": 3,
+    "detailMethod": "줄눈은 직접 만든 반복 텍스처와 병합 면의 UV로 표현하며 보도블록마다 별도 메시나 물리 몸체를 만들지 않는다.",
+    "physicalMobileFpsMeasured": false
+  },
+  "verification": {
+    "notes": "sources/living-science-courtyard-model-notes.json",
+    "model": {
+      "file": "artifacts/living-science-test/results.json",
+      "sha256": "8864c7f37aab9d0167b562f3dc34a6277bae1e4e4b81f75b07c786e8351b8a18",
+      "passed": 16,
+      "failed": 0
+    },
+    "fullSceneCourtyard": {
+      "file": "artifacts/living-science-courtyard-test/results.json",
+      "sha256": "fe3243178ab7824c5d8f092f92e540c97919f795bd2bb1892950d901b47bdce3",
+      "passed": 3,
+      "failed": 0
+    },
+    "fullScenePassage": {
+      "file": "artifacts/living-science-passage-test/results.json",
+      "sha256": "bad2866989e0e9e4cd193a24e26edbcefb3e89709ae00449fec7ceef9bcf9d9e",
+      "passed": 5,
+      "failed": 0
+    },
+    "terrain": {
+      "file": "artifacts/campus-provenance-test/results.json",
+      "sha256": "254b86b141b008514e8996a42463b80f92c01fff94b6472825dd9279ed226676",
+      "passed": 14,
+      "failed": 0
+    },
+    "browser": {
+      "reviewedAt": "2026-11-05T16:52:14.938Z",
+      "reviewer": "root",
+      "method": "Playwright CLI가 조작하는 Chrome의 최종 WebGL 화면을 PC와 세로 화면에서 저장하고 아홉 장을 직접 열어 확인했다.",
+      "sourceHashes": {
+        "src/livingScienceLandmark.ts": "d18b2114e105014d1d68a8f4d9d1602eec121d4d16ca70fffeaf97414fc6a6e4",
+        "src/livingScienceCourtyardSite.ts": "6898402ad56811c8718016e4640907f9dadf3b37e88674a748078de9a3732eb9",
+        "src/terrain.ts": "56fe9df3a86829079132ac4ab91c337344a1f0adc50bfa924b08ea0c6ff82809",
+        "src/main.ts": "7ed609031916a2e23e6abf1f01467f26253f93160f458ddf283f25562b98b84a",
+        "src/controls.ts": "493c27adaeef90fe96aec523d94d522d4d663e66e265ce7429f99d2d3f2296aa",
+        "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+        "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f"
+      },
+      "previewFile": "artifacts/education-health-review/courtyard32.html",
+      "previewSha256": "8da79b8b92de2d71ca46e706e9b94bcaeb4bda43a2aebd62477ff20e114b894c",
+      "previews": [
+        {
+          "kind": "desktop",
+          "view": "court",
+          "drawCalls": 205,
+          "triangles": 450908,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-court.png",
+          "sha256": "ea6c22f4a6fd9cdedff90398a0bde75139e23a17b935a5b285ce14af038ce853",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "door",
+          "drawCalls": 225,
+          "triangles": 414577,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-door.png",
+          "sha256": "671e693fd231dbc4d1ff11be24caa681a81f24929e0e57fd1ed89a3d7e7c2980",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "pavers",
+          "drawCalls": 221,
+          "triangles": 423736,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-pavers.png",
+          "sha256": "728cb393a698e0204d5682e9b94569710ca4dbdc5d8daffba6f81a6f0bc1a499",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "exit",
+          "drawCalls": 141,
+          "triangles": 528030,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-exit.png",
+          "sha256": "a44bb0047e7f82e6a4ee1cffbc3c873ca8c59529fe56e9ba4d27383bd439eedb",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "north",
+          "drawCalls": 314,
+          "triangles": 878615,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-north.png",
+          "sha256": "cc642ef10aa6a550e6432c81258692be270f7be4d9a0a7c0fd258b86ac692934",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "overview",
+          "drawCalls": 206,
+          "triangles": 442523,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-overview.png",
+          "sha256": "86a5ff281dddd32b5ac241213c96ec6cf6ae758685b2487913fcc512d1e65bab",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "mobile",
+          "view": "court",
+          "drawCalls": 69,
+          "triangles": 351288,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-mobile-court.png",
+          "sha256": "55b2ced12d0a3aa922d37bbcdd6cedbb583b12db13eda04b42a65c1442883464",
+          "width": 390,
+          "height": 844,
+          "directlyViewed": true
+        },
+        {
+          "kind": "mobile",
+          "view": "door",
+          "drawCalls": 169,
+          "triangles": 352592,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-mobile-door.png",
+          "sha256": "f439bd04d6c98bb15b9463670609e179ab995ccb1a2556a7f6abc81422ec4b7f",
+          "width": 390,
+          "height": 844,
+          "directlyViewed": true
+        },
+        {
+          "kind": "mobile",
+          "view": "pavers",
+          "drawCalls": 83,
+          "triangles": 366049,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-mobile-pavers.png",
+          "sha256": "1824a5221f51bc4c61a293a09a48e24c94991d43605bbe30a5af19d1a9e6cf0b",
+          "width": 390,
+          "height": 844,
+          "directlyViewed": true
+        }
+      ],
+      "findings": [
+        "생활과학대학 표기가 반전 없이 보이고 유리문, 문틀과 손잡이가 구분된다.",
+        "벽돌 포장과 화단에 반복 무늬가 보이며 노란 유도선의 선형 돌기가 진행 방향과 나란하다.",
+        "통과구 북쪽에서 현관 앞 포장으로 이어지는 바닥과 화단, 수목, 작은 조명을 확인했다.",
+        "세로 화면의 현관 시점에서 표기와 문틀, 진입 유도선이 구분된다.",
+        "220동 쪽 기존 잔디 사면과 나머지 연결부는 남아 있다. 이번 부분 구현의 한계로 기록했다.",
+        "통과구 연결의 중앙과 좌우 보행은 통과했지만 가장자리 한 곳에는 동일 경계 좌표 기준 약3.224cm 불연속이 남는다. 육안 연속성과 수치상 완전 연속을 혼동하지 않는다."
+      ],
+      "earlyCandidateFindings": [
+        "첫 포장 후보에 무늬 좌표가 빠져 단색으로 보였고 화단 벽도 단색이었다. 두 부분에 반복 무늬를 적용했다.",
+        "직각 유도선의 두 갈래 돌기가 같은 방향을 향하던 것을 각 진행 방향으로 수정했다.",
+        "북동쪽 미리보기 카메라가 220동 벽 안에 놓여 벽만 보였다. 검토 카메라를 외부로 옮겼다.",
+        "통과구 경계 높이와 경사면에서 뜨는 유도선은 독립 물리 검사에서 발견해 수정했다. 경계 양측 비교의 정확한 의미와 수치는 해당 검사에 남겼다.",
+        "모바일 일시정지 직후 찍은 첫 화면은 전환 중이었다. 전환이 끝난 뒤 다시 저장해 검토했다."
+      ],
+      "previewConsole": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "mainMobile": {
+        "url": "http://127.0.0.1:5173/",
+        "configuration": "artifacts/education-health-review/32-mobile-browser.config.json",
+        "configurationSha256": "7927294a90113e85943ea7e1e79a2fa19a898c2aef6c717d0d09edc5b6ba6069",
+        "startStop": "국제대학원",
+        "simultaneousNativeTouchPoints": 2,
+        "touchMoveEvents": 6,
+        "actions": [
+          "정류장 선택 후 터치로 시작",
+          "이동 패드와 시점 영역에 동시 터치",
+          "점프와 발사 버튼 터치",
+          "일시정지 후 교내 정류장 15개 확인",
+          "계속 둘러보기로 재개 후 점프, 발사, 일시정지 버튼 표시 확인"
+        ],
+        "screenshots": [
+          {
+            "view": "start",
+            "file": "artifacts/education-health-review/output/playwright/32-verified-main-mobile-start.png",
+            "sha256": "513d96399ce08621107ecfc4adea1df682a2b6f0061fe11124cd294b2d7a69f5",
+            "width": 390,
+            "height": 844,
+            "directlyViewed": true
+          },
+          {
+            "view": "pause",
+            "file": "artifacts/education-health-review/output/playwright/32-verified-main-mobile-pause.png",
+            "sha256": "c9af1e1588c59203476169e40266e9f3fa935e95afe2a71dbfe9e5041b3c7664",
+            "width": 390,
+            "height": 844,
+            "directlyViewed": true
+          },
+          {
+            "view": "resume",
+            "file": "artifacts/education-health-review/output/playwright/32-verified-main-mobile-resume.png",
+            "sha256": "fd3ae75a3b845b191d1666a96c272e57d0e9ae64f3fb6d0407a409153a743bf4",
+            "width": 390,
+            "height": 844,
+            "directlyViewed": true
+          }
+        ],
+        "visualMotionObserved": true,
+        "distanceOrFrameRateMeasured": false,
+        "runtimeErrors": [],
+        "knownConsole": [
+          "Rapier 초기화 인수에 대한 기존 deprecated 경고",
+          "favicon.ico 요청의 404"
+        ],
+        "consoleFile": ".playwright-cli/console-2026-11-05T16-25-57-616Z.log"
+      },
+      "limits": [
+        "안마당 전용 미리보기는 현재 실제 지형과 건물 생성기를 쓰지만 차량, HUD와 플레이어 물리는 포함하지 않는다. 전체 장면 보행과 파괴 검사는 별도로 실행했다.",
+        "모바일 화면과 터치는 데스크톱 Chrome 에뮬레이션이다. 실제 휴대전화의 프레임률과 발열은 확인하지 않았다.",
+        "시설의 치수와 좌표, 수종과 포장 규격은 사진과 지도에 맞춘 게임용 근사다.",
+        "안내대의 작은 글씨와 가게 상호는 확인하지 못해 넣지 않았다."
+      ],
+      "physicalPhoneTested": false
+    },
+    "physicalPhoneTested": false
+  },
+  "sourceSnapshot": {
+    "src/livingScienceLandmark.ts": "d18b2114e105014d1d68a8f4d9d1602eec121d4d16ca70fffeaf97414fc6a6e4",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "src/terrain.ts": "56fe9df3a86829079132ac4ab91c337344a1f0adc50bfa924b08ea0c6ff82809",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+    "sources/living-science-south-passage-roadview-review.json": "050f34305bf6e7d4c3d4c33ab0297c40e1fcd4318ba93fea4802f2f26c25be00",
+    "scripts/verify-living-science.mjs": "8856029a4f744b15b369a06f77df46231491cf92e11aedba29248c18e570ce3f",
+    "scripts/verify-living-science-passage.mjs": "64352896592a6e92dcdd52ef136bfb6e7a14ead6205eb1ecd5a110d8061b8ad1",
+    "sources/living-science-south-site-notes.json": "171faa7d6108f6703fb4f424c5b7503bf34f7962710ed409c8ab997e1c4e6d7c",
+    "src/livingScienceCourtyardSite.ts": "6898402ad56811c8718016e4640907f9dadf3b37e88674a748078de9a3732eb9",
+    "sources/living-science-courtyard-model-notes.json": "68327bd3076a0f449b3b721d9829e318a17739370a08aca2ba742fbdd8ab6d7a",
+    "sources/living-science-courtyard-roadview-review.json": "438099db10e1145f2f8122349d0457e7db90143788df4c6f1c46a2de3a6fb233",
+    "scripts/verify-living-science-courtyard.mjs": "f56271679adf739b0838ca6b66f5a567dcee15a676050697d2bea2c01ab8f640"
+  },
+  "unknowns": [
+    "북쪽 출구의 실제 재질과 정확한 높이 및 문턱",
+    "통로와 현관 및 주변 시설 치수의 실측값",
+    "220동 쪽 전체 안마당, /209 계단과 /207 북쪽 끝",
+    "실내 전체와 안내대의 작은 문구 및 가게 간판",
+    "인접 way/455025059 윤곽의 정체와 소속",
+    "현재 현장 전체와의 일치 및 실제 휴대전화 성능"
+  ],
+  "history": [
+    {
+      "reviewedAt": "2026-11-04T23:51:43.586Z",
+      "reason": "창과 벽을 묶은 뒤 독립 검사에서 유리보다 충돌이 0.134m 앞서는 오차를 발견해 보정했다.",
+      "verification": {
+        "artifact": "artifacts/living-science-test/results.json",
+        "command": "node scripts/verify-living-science.mjs",
+        "passed": 11,
+        "failed": 0,
+        "tests": [
+          {
+            "name": "original eleven point footprint and DEM remain unchanged with documented seven floor use",
+            "status": "passed",
+            "parts": 532,
+            "triangles": 23012,
+            "meshes": 3,
+            "base": 30.406880212131934,
+            "heightEstimated": 24.5,
+            "documentedFloorUse": 7
+          },
+          {
+            "name": "mapped roof covers the L footprint and leaves its exterior concavity empty",
+            "status": "passed",
+            "coveredSamples": 358,
+            "emptySamples": 362,
+            "concavitySamples": 9,
+            "convexRoofParts": 78
+          },
+          {
+            "name": "all glazing triangle samples clear the actual terrain mesh",
+            "status": "passed",
+            "triangleSamples": 16968,
+            "minimumClearance": 0.23159762455907185
+          },
+          {
+            "name": "brick narrow top windows and gray ribbon windows are exposed with exterior frames",
+            "status": "passed",
+            "mandatoryVisibleWindowTypes": 3,
+            "maximumProxyEnvelopeAllowance": 0.14400205471728744
+          },
+          {
+            "name": "all three raised canopies have open space between independent posts",
+            "status": "passed",
+            "canopies": 3,
+            "openHorizontalPaths": 3,
+            "undersideRays": 3
+          },
+          {
+            "name": "actual terrain supports approach and door destruction opens the recessed entry",
+            "status": "passed",
+            "speed": 6,
+            "paths": [
+              {
+                "offset": -1.6,
+                "closed": [
+                  21.249124600158286,
+                  1.062445807155175,
+                  21.992328618377734
+                ],
+                "open": [
+                  16.99984752670411,
+                  1.0628291842303703,
+                  21.99124274761771
+                ],
+                "returned": [
+                  28.979412667411708,
+                  0.9436237093768547,
+                  21.99633493853184
+                ]
+              },
+              {
+                "offset": 0,
+                "closed": [
+                  21.24878060167405,
+                  1.0625545260272453,
+                  23.599476764945152
+                ],
+                "open": [
+                  16.977962369520124,
+                  1.0623809573016594,
+                  23.600099044232127
+                ],
+                "returned": [
+                  28.967528170362467,
+                  0.9635440584979484,
+                  23.596606263387457
+                ]
+              },
+              {
+                "offset": 1.6,
+                "closed": [
+                  21.248966751803792,
+                  1.0625659701190422,
+                  25.19384782923825
+                ],
+                "open": [
+                  16.97678628685152,
+                  1.0625793215594719,
+                  25.19390596180413
+                ],
+                "returned": [
+                  28.864176802857173,
+                  1.0206081148944328,
+                  25.185845922018526
+                ]
+              }
+            ],
+            "entryFloor": 0.1927297360669894
+          },
+          {
+            "name": "external concavity permits capsule walking without a building-sized hidden collider",
+            "status": "passed",
+            "speed": 6,
+            "requestedDistance": 18,
+            "actualProgress": 17.943186512408737,
+            "grounded": true
+          },
+          {
+            "name": "mandatory wall glass roof canopy and ramp rays agree when loaded and unloaded",
+            "status": "passed",
+            "mandatoryRays": 16,
+            "components": 6,
+            "maximumLoadedUnloadedDifference": 0.000018963685678996534
+          },
+          {
+            "name": "window holes and canopy damage persist across distance thresholds and four resets",
+            "status": "passed",
+            "resetCycles": 4,
+            "distances": [
+              279,
+              281,
+              900
+            ],
+            "initialBodies": 533,
+            "restoredParts": 532,
+            "restoredTriangles": 23012
+          },
+          {
+            "name": "geometric 222 remains exposed and non mirrored after the single world reflection",
+            "status": "passed",
+            "text": "222",
+            "exposedSegments": 15,
+            "cameraAspects": [
+              0.46208530805687204,
+              2.164102564102564
+            ],
+            "attachedToDestructibleWall": true,
+            "logicalQueriesUnaffected": true
+          },
+          {
+            "name": "callback elevation offset and reversed source winding preserve the same model contract",
+            "status": "passed",
+            "elevationOffset": 50,
+            "reversedWindingIdentical": true,
+            "sourceDataUnchanged": true
+          }
+        ],
+        "modelHash": "3dc095f15c38e4598cc4b2d035270dbe99b86ae14b3e14cee259c30994b4f98c",
+        "scope": "실제 Three.js 기하, 현재 DEM, Rapier 및 PerspectiveCamera 수치 투영을 검사했다. WebGL 화면과 휴대폰 실기기 성능은 확인하지 않았다.",
+        "cpuPreview": "artifacts/geometry-previews/living-science.png",
+        "previewState": "초안 CPU 정투영을 직접 대조했다. 마지막 사진 보정 후 재생성은 총괄이 담당한다."
+      },
+      "sourceSnapshot": {
+        "src/livingScienceLandmark.ts": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+        "scripts/verify-living-science.mjs": "7e90ebf1a67aff9b09663ffc26a6bfd1683fbb562c22abf24785df811a8f3afe",
+        "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+        "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5",
+        "src/coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+        "public/data/campus.json": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+        "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+      },
+      "collision": "한 층의 약 5.8m 창 구획을 얇은 OBB 한 개로 처리해 벽과 창을 함께 파괴한다. 유리와 프레임보다 OBB가 앞서는 표본 최대값은 0.144m다. 문과 후퇴 입구 양옆, 차양 판, 기둥은 독립이다. 지붕 삼각형과 경사판에는 실제 정점의 convex 형상을 쓴다."
+    }
+  ],
+  "proxyRefinement": {
+    "historical": "이전 11개 광선의 수치는 historicalBeforeSouthPassage에 보존했다. 현재 결과는 verification을 참조한다."
+  },
+  "historicalBeforeSouthPassage": {
+    "reviewedAt": "2026-11-04T23:55:13.622Z",
+    "implementation": {
+      "api": "createLivingScienceLandmark(scene, building, profile, heightAt) -> { breakables, update }",
+      "mergedMeshes": 3,
+      "breakableParts": 532,
+      "nondegenerateTriangles": 23012,
+      "triangleThreshold": "cross.lengthSq() > 1e-12",
+      "modelCoordinates": "D=(east,up,north). 상위 world의 H=(x,y,-z)를 한 번 적용한다.",
+      "footprint": "원본 11점 외곽을 삼각분할해 지붕을 만든다. 오목부를 사각 지붕이나 충돌 상자로 채우지 않는다.",
+      "collision": "한 층의 약 5.8m 창 구획을 얇은 OBB 한 개로 처리해 벽과 창을 함께 파괴한다. 창 구획의 앞뒤 충돌 면을 유리와 벽의 사이에 배치해, 실제 삼각형 11개를 겨냥한 법선 방향 광선의 최대 오차를 0.0711m로 낮췄다. 문과 후퇴 입구 양옆, 차양 판, 기둥은 독립이다. 지붕 삼각형과 경사판에는 실제 정점의 convex 형상을 쓴다.",
+      "entry": "정확한 출입구 위치를 확정하지 않고 오목한 접합부에 작은 후퇴 입구와 진입 바닥을 근사했다. 일반 강의실 내부는 만들지 않았다.",
+      "terrain": "원시 DEM과 공용 terrain을 변경하지 않았다. 각 외벽 구간의 지형 표본을 읽어 기초와 최저 유리 높이를 정한다.",
+      "distance": "전용 merged geometry를 항상 유지하며 부분 파괴 정점 범위만 접는다. 일반 먼 거리 대체 건물을 표시하지 않는다.",
+      "number": "222는 외벽 구획에 속하는 15개 기하 획이다. 사진 텍스처를 복제하지 않는다.",
+      "photosShippedAsTextures": false
+    },
+    "optimization": {
+      "initialParts": 1738,
+      "groupedPartsBeforePhotoCorrection": 514,
+      "finalParts": 532,
+      "groupingArtifact": "artifacts/living-science-review/grouping-comparison.json",
+      "groupingPreservedAllPositionColorNormalBytes": true,
+      "subsequentPhotoCorrection": "구획 통합 후 회색 끝면의 무창 비중과 회색 긴 면 끝의 벽돌 띠를 별도로 보정했다. 이 단계는 사진 대조에 따른 외형 변경이다.",
+      "physicalMobileFpsMeasured": false
+    },
+    "verification": {
+      "artifact": "artifacts/living-science-test/results.json",
+      "command": "node scripts/verify-living-science.mjs",
+      "passed": 12,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "original eleven point footprint and DEM remain unchanged with documented seven floor use",
+          "status": "passed",
+          "parts": 532,
+          "triangles": 23012,
+          "meshes": 3,
+          "base": 30.406880212131934,
+          "heightEstimated": 24.5,
+          "documentedFloorUse": 7
+        },
+        {
+          "name": "mapped roof covers the L footprint and leaves its exterior concavity empty",
+          "status": "passed",
+          "coveredSamples": 358,
+          "emptySamples": 362,
+          "concavitySamples": 9,
+          "convexRoofParts": 78
+        },
+        {
+          "name": "all glazing triangle samples clear the actual terrain mesh",
+          "status": "passed",
+          "triangleSamples": 16968,
+          "minimumClearance": 0.23159762455907185
+        },
+        {
+          "name": "brick narrow top windows and gray ribbon windows are exposed with exterior frames",
+          "status": "passed",
+          "mandatoryVisibleWindowTypes": 3,
+          "maximumProxyEnvelopeAllowance": 0.06898537733767929
+        },
+        {
+          "name": "all three raised canopies have open space between independent posts",
+          "status": "passed",
+          "canopies": 3,
+          "openHorizontalPaths": 3,
+          "undersideRays": 3
+        },
+        {
+          "name": "balanced bay proxies stay within eight centimetres of exterior and interior surfaces",
+          "status": "passed",
+          "actualTriangleRays": 11,
+          "maximumSurfaceDifference": 0.07100463509557864,
+          "samples": [
+            {
+              "surface": "glass exterior",
+              "edge": 2,
+              "level": 6,
+              "renderDistance": 0.4000000000000177,
+              "loadedDistance": 0.3310149908065796,
+              "error": 0.06898500919343808
+            },
+            {
+              "surface": "glass interior",
+              "edge": 2,
+              "level": 6,
+              "renderDistance": 0.4000000000000426,
+              "loadedDistance": 0.3334963321685791,
+              "error": 0.0665036678314635
+            },
+            {
+              "surface": "wall exterior",
+              "edge": 2,
+              "level": 6,
+              "renderDistance": 0.4000000000000177,
+              "loadedDistance": 0.4260067045688629,
+              "error": 0.02600670456884524
+            },
+            {
+              "surface": "wall interior",
+              "edge": 2,
+              "level": 6,
+              "renderDistance": 0.4000000000000177,
+              "loadedDistance": 0.45850542187690735,
+              "error": 0.058505421876889674
+            },
+            {
+              "surface": "floor band exterior",
+              "edge": 2,
+              "level": 6,
+              "renderDistance": 0.4000000000000177,
+              "loadedDistance": 0.46100541949272156,
+              "error": 0.06100541949270388
+            },
+            {
+              "surface": "number exterior",
+              "edge": 2,
+              "level": 6,
+              "renderDistance": 0.4000000000000177,
+              "loadedDistance": 0.4710046350955963,
+              "error": 0.07100463509557864
+            },
+            {
+              "surface": "glass exterior",
+              "edge": 3,
+              "level": 3,
+              "renderDistance": 0.3999999999999824,
+              "loadedDistance": 0.330984503030777,
+              "error": 0.06901549696920545
+            },
+            {
+              "surface": "glass interior",
+              "edge": 3,
+              "level": 3,
+              "renderDistance": 0.40000000000004593,
+              "loadedDistance": 0.33352068066596985,
+              "error": 0.06647931933407608
+            },
+            {
+              "surface": "wall exterior",
+              "edge": 3,
+              "level": 3,
+              "renderDistance": 0.3999999999999824,
+              "loadedDistance": 0.426005095243454,
+              "error": 0.026005095243471554
+            },
+            {
+              "surface": "wall interior",
+              "edge": 3,
+              "level": 3,
+              "renderDistance": 0.39999999999999625,
+              "loadedDistance": 0.4585038125514984,
+              "error": 0.058503812551502166
+            },
+            {
+              "surface": "floor band exterior",
+              "edge": 3,
+              "level": 3,
+              "renderDistance": 0.39999999999999625,
+              "loadedDistance": 0.46098771691322327,
+              "error": 0.06098771691322702
+            }
+          ]
+        },
+        {
+          "name": "actual terrain supports approach and door destruction opens the recessed entry",
+          "status": "passed",
+          "speed": 6,
+          "paths": [
+            {
+              "offset": -1.6,
+              "closed": [
+                21.24911389705049,
+                1.0625449892840813,
+                21.991467542862157
+              ],
+              "open": [
+                16.99984752670411,
+                1.0628291842303703,
+                21.99124274761771
+              ],
+              "returned": [
+                28.979412667411708,
+                0.9436237093768547,
+                21.99633493853184
+              ]
+            },
+            {
+              "offset": 0,
+              "closed": [
+                21.249117134965452,
+                1.0625793215594719,
+                23.59975081847002
+              ],
+              "open": [
+                16.977962369520124,
+                1.0623809573016594,
+                23.600099044232127
+              ],
+              "returned": [
+                28.967528170362467,
+                0.9635440584979484,
+                23.596606263387457
+              ]
+            },
+            {
+              "offset": 1.6,
+              "closed": [
+                21.248966751803792,
+                1.0625659701190422,
+                25.19384782923825
+              ],
+              "open": [
+                16.97678628685152,
+                1.0625793215594719,
+                25.19390596180413
+              ],
+              "returned": [
+                28.864176802857173,
+                1.0206081148944328,
+                25.185845922018526
+              ]
+            }
+          ],
+          "entryFloor": 0.1927297360669894
+        },
+        {
+          "name": "external concavity permits capsule walking without a building-sized hidden collider",
+          "status": "passed",
+          "speed": 6,
+          "requestedDistance": 18,
+          "actualProgress": 17.943186512408737,
+          "grounded": true
+        },
+        {
+          "name": "mandatory wall glass roof canopy and ramp rays agree when loaded and unloaded",
+          "status": "passed",
+          "mandatoryRays": 16,
+          "components": 6,
+          "maximumLoadedUnloadedDifference": 0.000020497798950747104
+        },
+        {
+          "name": "window holes and canopy damage persist across distance thresholds and four resets",
+          "status": "passed",
+          "resetCycles": 4,
+          "distances": [
+            279,
+            281,
+            900
+          ],
+          "initialBodies": 533,
+          "restoredParts": 532,
+          "restoredTriangles": 23012
+        },
+        {
+          "name": "geometric 222 remains exposed and non mirrored after the single world reflection",
+          "status": "passed",
+          "text": "222",
+          "exposedSegments": 15,
+          "cameraAspects": [
+            0.46208530805687204,
+            2.164102564102564
+          ],
+          "attachedToDestructibleWall": true,
+          "logicalQueriesUnaffected": true
+        },
+        {
+          "name": "callback elevation offset and reversed source winding preserve the same model contract",
+          "status": "passed",
+          "elevationOffset": 50,
+          "reversedWindingIdentical": true,
+          "sourceDataUnchanged": true
+        }
+      ],
+      "modelHash": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+      "scope": "실제 Three.js 기하, 현재 DEM, Rapier 및 PerspectiveCamera 수치 투영을 검사했다. WebGL 화면과 휴대폰 실기기 성능은 확인하지 않았다.",
+      "cpuPreview": "artifacts/living-science-review/final-living-science.png",
+      "previewState": "총괄이 최종 CPU 정투영을 공식 180-222 사진과 직접 대조했다. 왼쪽 벽돌 면과 오른쪽 회색 면, 최상층 창과 무창 끝면, 옥상 차양을 확인했다. 충돌 보정은 렌더 배열을 유지하며 전경 지형에 가린 하층의 시각적 비교에는 한계가 있다.",
+      "typecheck": "npx tsc --noEmit passed",
+      "independent": {
+        "artifact": "artifacts/living-science-independent-review/results.json",
+        "summary": "artifacts/living-science-independent-review/summary.json",
+        "passed": 8,
+        "failed": 0,
+        "sourceHash": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+        "scope": "실제 렌더 삼각형, 지형과 Rapier를 별도로 검사했다. L자 오목부, 두 입면의 7층 유리, 차양 아래 공간, 출입구 왕복, 222 실제 획과 H 방향, 원거리 파괴 유지 및 네 차례 복구를 확인했다. 브라우저와 휴대전화 검사는 아니다."
+      }
+    },
+    "sourceSnapshot": {
+      "src/livingScienceLandmark.ts": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+      "scripts/verify-living-science.mjs": "7e90ebf1a67aff9b09663ffc26a6bfd1683fbb562c22abf24785df811a8f3afe",
+      "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5",
+      "src/coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+      "public/data/campus.json": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+    },
+    "proxyRefinement": {
+      "cause": "외벽 띠와 번호를 모두 감싼 이전 OBB는 유리보다 바깥으로 최대 0.144m 돌출했다.",
+      "originalExteriorDepths": {
+        "glass": -0.065,
+        "frame": -0.014,
+        "wall": 0.03,
+        "floorBand": 0.065,
+        "number": 0.075,
+        "innerWall": -0.19
+      },
+      "finalPhysicalFaces": {
+        "front": 0.004,
+        "back": -0.1315,
+        "thickness": 0.1355
+      },
+      "units": "metres relative to the mapped facade plane, positive outward",
+      "explanation": "기하를 바꾸지 않고 각 창 구획 OBB의 두께와 중심만 조정했다. 벽 일부와 돌출 띠는 OBB보다 바깥에 있고 유리는 안쪽에 있는 근사다. 법선 방향 오차를 균형 있게 줄였으며 모든 입사각에서 같은 거리 오차를 보장하지 않는다.",
+      "comparisonArtifact": "artifacts/living-science-review/proxy-balance-comparison.json",
+      "positionColorNormalBytesUnchanged": true,
+      "partsBefore": 532,
+      "partsAfter": 532,
+      "regression": {
+        "name": "balanced bay proxies stay within eight centimetres of exterior and interior surfaces",
+        "status": "passed",
+        "actualTriangleRays": 11,
+        "maximumSurfaceDifference": 0.07100463509557864,
+        "samples": [
+          {
+            "surface": "glass exterior",
+            "edge": 2,
+            "level": 6,
+            "renderDistance": 0.4000000000000177,
+            "loadedDistance": 0.3310149908065796,
+            "error": 0.06898500919343808
+          },
+          {
+            "surface": "glass interior",
+            "edge": 2,
+            "level": 6,
+            "renderDistance": 0.4000000000000426,
+            "loadedDistance": 0.3334963321685791,
+            "error": 0.0665036678314635
+          },
+          {
+            "surface": "wall exterior",
+            "edge": 2,
+            "level": 6,
+            "renderDistance": 0.4000000000000177,
+            "loadedDistance": 0.4260067045688629,
+            "error": 0.02600670456884524
+          },
+          {
+            "surface": "wall interior",
+            "edge": 2,
+            "level": 6,
+            "renderDistance": 0.4000000000000177,
+            "loadedDistance": 0.45850542187690735,
+            "error": 0.058505421876889674
+          },
+          {
+            "surface": "floor band exterior",
+            "edge": 2,
+            "level": 6,
+            "renderDistance": 0.4000000000000177,
+            "loadedDistance": 0.46100541949272156,
+            "error": 0.06100541949270388
+          },
+          {
+            "surface": "number exterior",
+            "edge": 2,
+            "level": 6,
+            "renderDistance": 0.4000000000000177,
+            "loadedDistance": 0.4710046350955963,
+            "error": 0.07100463509557864
+          },
+          {
+            "surface": "glass exterior",
+            "edge": 3,
+            "level": 3,
+            "renderDistance": 0.3999999999999824,
+            "loadedDistance": 0.330984503030777,
+            "error": 0.06901549696920545
+          },
+          {
+            "surface": "glass interior",
+            "edge": 3,
+            "level": 3,
+            "renderDistance": 0.40000000000004593,
+            "loadedDistance": 0.33352068066596985,
+            "error": 0.06647931933407608
+          },
+          {
+            "surface": "wall exterior",
+            "edge": 3,
+            "level": 3,
+            "renderDistance": 0.3999999999999824,
+            "loadedDistance": 0.426005095243454,
+            "error": 0.026005095243471554
+          },
+          {
+            "surface": "wall interior",
+            "edge": 3,
+            "level": 3,
+            "renderDistance": 0.39999999999999625,
+            "loadedDistance": 0.4585038125514984,
+            "error": 0.058503812551502166
+          },
+          {
+            "surface": "floor band exterior",
+            "edge": 3,
+            "level": 3,
+            "renderDistance": 0.39999999999999625,
+            "loadedDistance": 0.46098771691322327,
+            "error": 0.06098771691322702
+          }
+        ]
+      }
+    },
+    "unknowns": [
+      "공식 222동 층별 평면도와 입면 치수를 확보하지 못했다.",
+      "24.5m 본체 높이와 3.5m 층고는 7층 사용과 사진 비례에 맞춘 추정이다.",
+      "각 날개에 동일한 7개 층 구획을 놓은 것은 구현상의 근사이며 날개별 실제 층고를 확인했다는 뜻이 아니다.",
+      "차양 높이와 기둥 수, 창 세부 간격, 난간과 설비는 실측하지 않았다.",
+      "정확한 출입구 위치와 후퇴 깊이는 수목에 가려져 오목한 접합부에 근사했다.",
+      "가려진 뒷면의 반복 창과 지하 외벽은 직접 확인하지 못했다. 실제 강의실, 복도, 지하실 내부는 재현하지 않았다.",
+      "지도 사진과 박물관 안내 사진의 촬영일은 확인하지 못했다. 최신 외관이라고 단정하지 않는다."
+    ]
+  },
+  "schemaVersion": 2,
+  "scope": "남쪽 로드뷰를 먼저 대조하고 공식 행사 사진과 원본 출입구 노드로 동측 주현관과 안마당 일부를 보완했다. 건물 전체와 220동까지 이어지는 전체 연결은 미확인이다.",
+  "historicalBeforeSouthSite": {
+    "verification": {
+      "model": {
+        "artifact": "artifacts/living-science-test/results.json",
+        "sha256": "b70fe9e0eca8e7ecff7270c54e0556aa293d888301356f1b88ff3043ea7967e1",
+        "passed": 15,
+        "failed": 0,
+        "results": [
+          {
+            "name": "original eleven point footprint and DEM remain unchanged with documented seven floor use",
+            "status": "passed",
+            "parts": 713,
+            "triangles": 25780,
+            "meshes": 3,
+            "base": 30.406880212131934,
+            "heightEstimated": 24.5,
+            "documentedFloorUse": 7
+          },
+          {
+            "name": "mapped roof covers the L footprint and leaves its exterior concavity empty",
+            "status": "passed",
+            "coveredSamples": 358,
+            "emptySamples": 362,
+            "concavitySamples": 9,
+            "convexRoofParts": 78
+          },
+          {
+            "name": "all glazing triangle samples clear the actual terrain mesh",
+            "status": "passed",
+            "triangleSamples": 17192,
+            "minimumClearance": 0.23159762455907185
+          },
+          {
+            "name": "brick narrow top windows and gray ribbon windows are exposed with exterior frames",
+            "status": "passed",
+            "mandatoryVisibleWindowTypes": 3,
+            "maximumProxyEnvelopeAllowance": 0.06898537733767929
+          },
+          {
+            "name": "all three raised canopies have open space between independent posts",
+            "status": "passed",
+            "canopies": 3,
+            "openHorizontalPaths": 3,
+            "undersideRays": 3
+          },
+          {
+            "name": "balanced bay proxies stay within eight centimetres of exterior and interior surfaces",
+            "status": "passed",
+            "actualTriangleRays": 11,
+            "maximumSurfaceDifference": 0.07100463509557864
+          },
+          {
+            "name": "actual terrain supports approach and door destruction opens the recessed entry",
+            "status": "passed",
+            "speed": 6,
+            "entryFloor": 0.1927297360669894
+          },
+          {
+            "name": "external concavity permits capsule walking without a building-sized hidden collider",
+            "status": "passed",
+            "speed": 6,
+            "requestedDistance": 18,
+            "actualProgress": 17.943186512408737,
+            "grounded": true
+          },
+          {
+            "name": "mandatory wall glass roof canopy and ramp rays agree when loaded and unloaded",
+            "status": "passed",
+            "mandatoryRays": 16,
+            "components": 6,
+            "maximumLoadedUnloadedDifference": 0.000020497798950747104
+          },
+          {
+            "name": "window holes and canopy damage persist across distance thresholds and four resets",
+            "status": "passed",
+            "resetCycles": 4,
+            "distances": [
+              279,
+              281,
+              900
+            ],
+            "initialBodies": 714,
+            "restoredParts": 713,
+            "restoredTriangles": 25780
+          },
+          {
+            "name": "geometric 222 remains exposed and non mirrored after the single world reflection",
+            "status": "passed",
+            "text": "222",
+            "exposedSegments": 15,
+            "cameraAspects": [
+              0.46208530805687204,
+              2.164102564102564
+            ],
+            "attachedToDestructibleWall": true,
+            "logicalQueriesUnaffected": true
+          },
+          {
+            "name": "callback elevation offset and reversed source winding preserve the same model contract",
+            "status": "passed",
+            "elevationOffset": 50,
+            "reversedWindingIdentical": true,
+            "sourceDataUnchanged": true
+          },
+          {
+            "name": "mapped passage is open beneath a real beam with terrain-clear paving and exact convex surfaces",
+            "status": "passed",
+            "floorRays": 245,
+            "minimumTerrainClearance": 0.1512394787089839,
+            "minimumHeadroom": 3.051122012382777,
+            "maxSurfaceError": 0.00009731079866881487,
+            "maxUnloadedError": 0.00009731091869369379,
+            "rawCenterlinePreserved": true
+          },
+          {
+            "name": "the unobstructed passage supports five actual terrain capsule routes in both directions",
+            "status": "passed",
+            "speed": 6,
+            "doorsRequired": false
+          },
+          {
+            "name": "passage floor beam and facilities retain surface detail through destruction distance reset and H",
+            "status": "passed",
+            "components": 9,
+            "mergedMeshes": 3,
+            "sharedProceduralTexture": true,
+            "resetGeometryIdentical": true,
+            "reflectedFloorDifference": 0
+          }
+        ]
+      },
+      "fullScenePassage": {
+        "artifact": "artifacts/living-science-passage-test/results.json",
+        "sha256": "01ce22c1d1392b1e25afadcda81d8e772612c9ae8622590bf6975c7d85a38ce4",
+        "passed": 5,
+        "failed": 0,
+        "results": [
+          {
+            "name": "original south road passage and north footway support three continuous return paths",
+            "status": "PASS"
+          },
+          {
+            "name": "real paving and ceiling preserve floor contact headroom and the original footprint",
+            "status": "PASS"
+          },
+          {
+            "name": "new thin surfaces remain consistent through H reflection partial destruction distance and reset",
+            "status": "PASS"
+          },
+          {
+            "name": "observed south sidewalk connects the real footways and preserves thin facilities through reflection damage and reset",
+            "status": "PASS"
+          },
+          {
+            "name": "mapped south road has no taxi collisions after removing the unsupported above-ground volume",
+            "status": "PASS"
+          }
+        ],
+        "allInputsStillMatch": true
+      },
+      "browser": {
+        "reviewedAt": "2026-11-05T14:34:02.513Z",
+        "reviewer": "root",
+        "method": "Playwright CLI와 실제 Chrome WebGL 화면을 저장한 뒤 아홉 장을 직접 열람했다.",
+        "sourceSha256": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+        "previewSha256": "2a6de939217129d93b6f2605a80186497d4424da1bf14d10bd7ea98d1f57c80c",
+        "previews": [
+          {
+            "view": "roadviewwide",
+            "kind": "desktop",
+            "width": 1920,
+            "height": 863,
+            "file": "artifacts/living-science-review/output/playwright/30-final-desktop-roadviewwide.png",
+            "sha256": "461176f0685c32de66b7a88bc297a09c35e3147793f495534b94590176b69bc6",
+            "directlyViewed": true
+          },
+          {
+            "view": "roadviewvent",
+            "kind": "desktop",
+            "width": 1920,
+            "height": 863,
+            "file": "artifacts/living-science-review/output/playwright/30-final-desktop-roadviewvent.png",
+            "sha256": "1c1da52ecc8eb92e1a9ac4d4f508fbf7abe34bff414a8b958b42c7d9ebb8ab40",
+            "directlyViewed": true
+          },
+          {
+            "view": "walkstart",
+            "kind": "desktop",
+            "width": 1920,
+            "height": 863,
+            "file": "artifacts/living-science-review/output/playwright/30-final-desktop-walkstart.png",
+            "sha256": "a6c94ddb5b71d0ee180e7561108b61f8d135219c02733f86674190fb69d3785a",
+            "directlyViewed": true
+          },
+          {
+            "view": "walkmiddle",
+            "kind": "desktop",
+            "width": 1920,
+            "height": 863,
+            "file": "artifacts/living-science-review/output/playwright/30-final-desktop-walkmiddle.png",
+            "sha256": "c1e23921d4bd4f15b15014611a0624ad47d0e99bfe2f5ceaba1258323bed71a4",
+            "directlyViewed": true
+          },
+          {
+            "view": "walkend",
+            "kind": "desktop",
+            "width": 1920,
+            "height": 863,
+            "file": "artifacts/living-science-review/output/playwright/30-final-desktop-walkend.png",
+            "sha256": "5566f0411db449a7582029bb34fa5615c8fda719dcca4ed3801234df20c9556d",
+            "directlyViewed": true
+          },
+          {
+            "view": "plan",
+            "kind": "desktop",
+            "width": 1920,
+            "height": 863,
+            "file": "artifacts/living-science-review/output/playwright/30-final-desktop-plan.png",
+            "sha256": "33d07b79235d9e446cff1d62134cdac0e2b84d8f208da2d460f864eae0d5a39e",
+            "directlyViewed": true
+          },
+          {
+            "view": "roadviewwide",
+            "kind": "mobile",
+            "width": 390,
+            "height": 844,
+            "file": "artifacts/living-science-review/output/playwright/30-final-mobile-roadviewwide.png",
+            "sha256": "7a90b2d825e68e0738b6191839fe995f4cbd20db2428299fd5bab6ab08a3af18",
+            "directlyViewed": true
+          },
+          {
+            "view": "walkmiddle",
+            "kind": "mobile",
+            "width": 390,
+            "height": 844,
+            "file": "artifacts/living-science-review/output/playwright/30-final-mobile-walkmiddle.png",
+            "sha256": "b7b6ad05e3305b6e20995f621f114313c61405093636b96e0c6779885661ee14",
+            "directlyViewed": true
+          },
+          {
+            "view": "walkend",
+            "kind": "mobile",
+            "width": 390,
+            "height": 844,
+            "file": "artifacts/living-science-review/output/playwright/30-final-mobile-walkend.png",
+            "sha256": "04d30fba7e95125795c3914d58493a700ac38d65a88ac99729e06c8e8872a546",
+            "directlyViewed": true
+          }
+        ],
+        "findings": [
+          "추정 4층 몸체가 사라지고 222동과 220동 사이에 낮은 시설이 보인다.",
+          "보도의 밝고 어두운 사각 블록, 둥근 고리 난간, 두 환기 격자와 가로등이 표시된다.",
+          "식재 받침 아래를 채웠고 보도 양 끝 진입부를 열어 두었다."
+        ],
+        "runtimeErrors": [],
+        "knownConsoleHistory": [
+          "최초 이전 미리보기의 favicon.ico는 404였다. 최종 남쪽 시설 페이지에서 오류 로그는 없었다."
+        ],
+        "limits": [
+          "데스크톱 Chrome 창 크기 검사이며 실제 휴대전화 성능과 터치 검사는 아니다.",
+          "미리보기는 실제 지형과 건물 생성기를 사용하지만 차량과 HUD는 포함하지 않는다.",
+          "토양의 노출 끝면은 단순한 녹색 단면이며 실제 옹벽 끝 접합은 미확인이다.",
+          "220동 지상 현관과 높은 보행면 연결은 아직 빠져 있다."
+        ]
+      },
+      "relatedRegressions": {
+        "campus": 13,
+        "controls": 31,
+        "worldPresentation": 6,
+        "library": 6
+      },
+      "limitation": "자동 물리 검사와 데스크톱 Chrome의 세로 화면 검사는 실제 휴대전화의 성능과 터치 검사를 대신하지 않는다.",
+      "browserAsOfRelease29": {
+        "reviewedAt": "2026-11-05T14:01:43.627Z",
+        "reviewer": "root",
+        "method": "Playwright CLI로 로컬 Vite 페이지를 열고 실제 설치된 Chrome의 WebGL 화면을 저장한 뒤 각 파일을 직접 열람했다.",
+        "sourceSha256": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+        "previewSha256": "66eac38f95fcbf6afb98bab0b227011a5a44d91476cf24e2a8545f45c4d9d970",
+        "previews": [
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-candidate-south.png",
+            "view": "남쪽 차도와 통과구",
+            "viewport": {
+              "width": 1920,
+              "height": 863
+            },
+            "sha256": "3bd3f76ccd998a5758c52dcd7966cecce34329ae94681252a043f6db263b1e1f",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-candidate-north.png",
+            "view": "북쪽 통과구",
+            "viewport": {
+              "width": 1920,
+              "height": 863
+            },
+            "sha256": "e7374f4ae44e43cf94367cd67177448d9b8ae8b5e471fbb7c2786af51158ec31",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-candidate-paving.png",
+            "view": "거울과 난간, 진입 포장",
+            "viewport": {
+              "width": 1920,
+              "height": 863
+            },
+            "sha256": "04f1357ab6218b9cd80c13bdd27bf09f300d6db6db498d60db074e989db85225",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-final-desktop-southwide.png",
+            "view": "남쪽 외관",
+            "viewport": {
+              "width": 1920,
+              "height": 863
+            },
+            "sha256": "2080f94378763909261c46d59746b6e5a0c877c3666ca995ecdab99213ea8dea",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-final-desktop-inside.png",
+            "view": "통로 안쪽",
+            "viewport": {
+              "width": 1920,
+              "height": 863
+            },
+            "sha256": "da019ed0bd9d61860a27ba15362387625637ee3c7788e29251ffca2fa7261aee",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-final-desktop-court.png",
+            "view": "기존 안마당 출입구와 통과구",
+            "viewport": {
+              "width": 1920,
+              "height": 863
+            },
+            "sha256": "0f101b0a5355350960a513ea42bb415e76d20f6d75641fd24454e4f34f444bcc",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-final-desktop-overview.png",
+            "view": "주변 배치",
+            "viewport": {
+              "width": 1920,
+              "height": 863
+            },
+            "sha256": "d4dec30a6b24566c8081925c1575f684c92b8f6c9edcc3f990b5028b679b70b6",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-final-mobile-south.png",
+            "view": "남쪽 차도와 통과구",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "sha256": "ddc5a98d983357f74fd58425fbaee37335be23e320aa8522798ccb6d9a9b53eb",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-final-mobile-inside.png",
+            "view": "통로 안쪽",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "sha256": "3c43ba37de843e9f065f36b5e17c70acd1d655a5ed2aa19bba95ebc382f9e756",
+            "directlyViewed": true
+          },
+          {
+            "file": "artifacts/living-science-review/output/playwright/29-final-mobile-north.png",
+            "view": "북쪽 통과구",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "sha256": "c9463e3f174b766a311776e39b2ea0109681642b40b5d56d3adca5f5be5e7af3",
+            "directlyViewed": true
+          }
+        ],
+        "findings": [
+          "남쪽과 북쪽의 벽이 열리고 붉은 통로 포장이 이어진다.",
+          "접근판 위에 겹치던 기존 보행 표면이 최종 화면에서 드러나지 않는다.",
+          "남쪽 외벽 앞의 노란 기둥 볼록거울과 은색 난간이 보인다.",
+          "통로와 남쪽 벽돌 띠의 줄눈, 남쪽 창 앞 난간과 회색 끝 창열이 표시된다."
+        ],
+        "runtimeErrors": [],
+        "knownConsoleHistory": [
+          "초기 미리보기의 favicon.ico 요청에서 404가 있었다. 최종 모델과 뷰 전환 시 JavaScript 또는 WebGL 오류는 보고되지 않았다."
+        ],
+        "limits": [
+          "데스크톱 Chrome 창 크기 검사이며 실제 휴대전화나 터치 조작 검사는 아니다.",
+          "주변 전체 시설과 나무를 다 재현한 상태가 아니다.",
+          "인접 작은 지도 윤곽은 높은 기본 건물로 남아 있다. 정체와 높이를 추가 대조해야 한다.",
+          "사진을 확보하지 못한 북쪽 포장과 세부 치수는 근사다.",
+          "미리보기는 현재 게임의 지형과 건물 생성기를 사용하며 차량과 실제 HUD, 실시간 프레임 속도를 검사하는 페이지가 아니다."
+        ],
+        "draftCaptureCaution": "29-before-south.png는 HMR 편집 중 촬영되었다. 배포 28의 변경 전 기준 화면으로 사용하지 않는다."
+      }
+    },
+    "unknowns": [
+      "북쪽 출구의 실제 포장 재질과 정확한 높이",
+      "통로 폭과 천장, 시설 치수의 실측값",
+      "안쪽 주출입구의 정확한 문 좌표와 나머지 실내",
+      "인접 way/455025059 윤곽의 정체와 높이, 이 모델이 기존 차량 경로와 겹치는 문제",
+      "현재 현장 전체와의 일치 및 실제 휴대전화 성능"
+    ],
+    "sourceSnapshot": {
+      "src/livingScienceLandmark.ts": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+      "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+      "sources/living-science-south-passage-roadview-review.json": "050f34305bf6e7d4c3d4c33ab0297c40e1fcd4318ba93fea4802f2f26c25be00",
+      "scripts/verify-living-science.mjs": "c17ba38ffe3e13e9e4e0cd5c141c6180293eece8212c0ca2c88c0831f4b27f54",
+      "scripts/verify-living-science-passage.mjs": "64352896592a6e92dcdd52ef136bfb6e7a14ead6205eb1ecd5a110d8061b8ad1",
+      "sources/living-science-south-site-notes.json": "e790c2f2ac1617a59459ba22c4f6a3b6fdd36a39e9345dd57c266f1c61908203"
+    }
+  },
+  "southSite": {
+    "notes": "sources/living-science-south-site-notes.json",
+    "facilityId": "facilities/living-science-south-site",
+    "independentOfUnknownFootprint": true
+  },
+  "historicalBeforeCourtyard": {
+    "commit": "5b37353e2386f1943ff3377b2556c7bab405d1e4",
+    "file": "sources/living-science-model-notes.json",
+    "reviewedAt": "2026-11-05T14:34:02.513Z",
+    "sourceSnapshot": {
+      "src/livingScienceLandmark.ts": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+      "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+      "sources/living-science-south-passage-roadview-review.json": "050f34305bf6e7d4c3d4c33ab0297c40e1fcd4318ba93fea4802f2f26c25be00",
+      "scripts/verify-living-science.mjs": "c17ba38ffe3e13e9e4e0cd5c141c6180293eece8212c0ca2c88c0831f4b27f54",
+      "scripts/verify-living-science-passage.mjs": "64352896592a6e92dcdd52ef136bfb6e7a14ead6205eb1ecd5a110d8061b8ad1",
+      "sources/living-science-south-site-notes.json": "171faa7d6108f6703fb4f424c5b7503bf34f7962710ed409c8ab997e1c4e6d7c"
+    }
+  },
+  "implementationScope": "implementation 필드는 29판 남쪽 통과구의 동결 기록이다. 32판의 현관과 안마당, 현재 부품 수 및 지형 보정은 courtyard.notes를 참조한다.",
+  "courtyard": {
+    "notes": "sources/living-science-courtyard-model-notes.json",
+    "roadviewReview": "sources/living-science-courtyard-roadview-review.json",
+    "photoBeforeImplementation": true,
+    "wholeBuildingCompared": false
+  },
+  "sourceSnapshotScope": "이 표는 32판 현재 입력 해시다. 각 과거 구현 및 검사 안의 해시는 해당 시점의 기록으로 보존한다."
+}

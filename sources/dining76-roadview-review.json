@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T20:00:30.469Z",
+  "baselineCommit": "e62bf9f62ea90b303683d6f7f12a6dcbe2eebe90",
+  "title": "76동 서측 계단과 낮은 옆 보행로의 2025년 7월 거리뷰 대조",
+  "scope": {
+    "buildingId": "way/167983986",
+    "buildingNumber": "76",
+    "runtimeChangedByThisReview": false,
+    "rawDataChangedByThisReview": false,
+    "implementationVerifiedByThisReview": false,
+    "wholeBuildingRoadviewCompared": false,
+    "currentTenantConfirmed": false
+  },
+  "browser": {
+    "tool": "Playwright CLI",
+    "session": "school36reference",
+    "profile": "D:/codex/.tmp/3d-School_Crash/pwcli-profile36reference",
+    "ownedSessionOnly": true,
+    "closedAtEnd": true,
+    "method": "기존 공개 링크를 다시 열고 화면 드래그, 줌 버튼과 실제 도로 화살표로 관측했다. 각 공유 메뉴의 현재 페이지 URL을 얻은 뒤 다시 열어 파노라마 ID와 방향값을 확인했다."
+  },
+  "coordinates": {
+    "axes": "D 좌표는 동쪽 +x, 북쪽 +z이며 단위는 m이다.",
+    "origin": {
+      "lat": 37.4663683,
+      "lon": 126.948395075,
+      "source": "https://www.openstreetmap.org/way/419542255"
+    },
+    "methodArtifact": "artifacts/living-science-review/scene-30-map-diagnostic.mjs",
+    "methodSha256": "22ac3f26d0272451637a87dfa95cd83e962e56bf73286d3e6fcab5b17464f510",
+    "limitation": "공유 링크의 WCONG 서비스 좌표를 기존 식으로 변환한 계산값이다. 카메라 측량점과의 차이는 확인하지 않았다. 지도 계단선 역시 계단 모서리와 폭의 실측 경계가 아니다."
+  },
+  "panos": [
+    {
+      "id": "1198671999",
+      "urlX": 490195,
+      "urlY": 1100272,
+      "shareUrl": "https://kko.to/5Ykp5AwRQG",
+      "pan": 326.9,
+      "tilt": -9,
+      "zoom": 2,
+      "capture": "36-1999-stair-flight-detail-ui.png",
+      "sequence": "기존 공개 링크 Zqa4IkeNL4와 kgIw-mHhpK를 다시 열고 같은 위치에서 화면을 돌렸다.",
+      "serviceCoordinateCalculation": {
+        "lat": 37.460389418534824,
+        "lon": 126.9556696580517,
+        "D": [
+          642.752019497064,
+          -665.5690847033181
+        ],
+        "roundTripMetres": 7.345474711691473e-10
+      },
+      "shareCreatedThroughUi": true,
+      "shareReopened": true,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true
+    },
+    {
+      "id": "1198671996",
+      "urlX": 490217,
+      "urlY": 1100255,
+      "shareUrl": "https://kko.to/O7X6b04CvE",
+      "pan": 0,
+      "tilt": 18.6,
+      "zoom": 0,
+      "capture": "36-1996-two-stairs-mapboard-ui.png",
+      "sequence": "1198671999 화면의 남동쪽 도로 화살표를 눌러 이동했다.",
+      "serviceCoordinateCalculation": {
+        "lat": 37.4603281869945,
+        "lon": 126.95576916045837,
+        "D": [
+          651.5436399070763,
+          -672.3853797719266
+        ],
+        "roundTripMetres": 1.4551915228366852e-10
+      },
+      "shareCreatedThroughUi": true,
+      "shareReopened": true,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true
+    },
+    {
+      "id": "1198671994",
+      "urlX": 490230,
+      "urlY": 1100235,
+      "shareUrl": "https://kko.to/FoS0UMSaZN",
+      "pan": 1,
+      "tilt": 21,
+      "zoom": 2,
+      "capture": "36-next-se-ui.png",
+      "sequence": "1198671996 화면의 남동쪽 도로 화살표를 다시 눌러 이동했다.",
+      "serviceCoordinateCalculation": {
+        "lat": 37.46025612802408,
+        "lon": 126.95582797836224,
+        "D": [
+          656.7405462069665,
+          -680.4069843595701
+        ],
+        "roundTripMetres": 6.540272458876782e-10
+      },
+      "shareCreatedThroughUi": true,
+      "shareReopened": true,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-1999-stair-front-reopened-ui.png",
+      "sha256": "cbabcfb9130fae926c41e6a0344021149822a63e960912ad9558a5de942b62cb",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-1999-stair-wide-ui.png",
+      "sha256": "c08ec3769566d0faea3777a3d0c1b57d6e22844f91a17c691fbb7b34d5244870",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-1999-west-approach-ui.png",
+      "sha256": "87fcca833a298ada164498b1aabbb0366483a07668b0756f8f0caee9fe7d5642",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-adjacent-se-ui.png",
+      "sha256": "9308ba4328d0b8acaced56caa1fc8bae01ad915cb9719bf2931c37f692b12805",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-adjacent-se-upper-ui.png",
+      "sha256": "d68d22b1cfde6a9c19e34413e107ead50e09dcb1f9a57d07bbc4b60fb4f3ac37",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-1996-two-stairs-mapboard-ui.png",
+      "sha256": "33ccaa789c36526f3f37b2c6d8a427dfe5ca33d710f09c853dc52a1cfcf64c16",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-1996-stair-alignment-ui.png",
+      "sha256": "5a6bafba7c55b40042f8ff1f44d481003e19b20d763ae166c3043d409f86cedc",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-1996-upper-entrance-obstructed-ui.png",
+      "sha256": "8c9a35f87a8d8663b4127d7374830527dedb1ff1fff68f3f19066be806ca4319",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-next-se-ui.png",
+      "sha256": "2f350f2273fa3d96f5fe3d83de1ff1f9656f0183531d6258307460b7f9489686",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    },
+    {
+      "path": "artifacts/dining76-review/output/playwright/36-1999-stair-flight-detail-ui.png",
+      "sha256": "2395c6f362c6e72e10149b63b00ad7745a4b4ac34d30af6471e098cafefaa975",
+      "referenceDirectImageView": true,
+      "referenceLiveRoadviewView": true,
+      "rootDirectImageView": "이 기록 작성 시 개별 확인 여부를 전달받지 않았다.",
+      "photographed": "2025-07"
+    }
+  ],
+  "observed": [
+    {
+      "feature": "넓은 밝은 석재 계단",
+      "evidence": [
+        "artifacts/dining76-review/output/playwright/36-1999-stair-flight-detail-ui.png"
+      ],
+      "facts": [
+        "아래 계단 구간, 중간의 넓은 참, 위 계단 구간과 유리 전면 앞 상단 참이 구분된다.",
+        "중앙과 양측에 은색 금속 난간이 있고, 계단 양옆에는 수목과 낮은 식재가 있다."
+      ],
+      "inference": "원본 steps way/185937116/84 및 공식 097-76 사진의 계단과 대응하는 후보다. 정확한 폭, 단수와 고도는 측량하지 않았다."
+    },
+    {
+      "feature": "계단 왼쪽 낮은 보행로",
+      "evidence": [
+        "artifacts/dining76-review/output/playwright/36-1999-west-approach-ui.png",
+        "artifacts/dining76-review/output/playwright/36-1999-stair-flight-detail-ui.png"
+      ],
+      "facts": [
+        "계단 왼쪽에 아스팔트 보행로가 별도로 이어진다. 낮은 경계석과 식재 경계, 입구의 가는 금속 볼라드, 뒤쪽 노란 가로 띠가 보인다.",
+        "넓은 계단과 같은 높이의 포장면으로 이어진 모습은 아니다."
+      ],
+      "unconfirmed": [
+        "수목 뒤 보행로의 끝과 건물 내부 연결",
+        "노란 띠의 정확한 재료와 단면",
+        "볼라드의 정확한 개수와 간격"
+      ]
+    },
+    {
+      "feature": "오른쪽 별도 계단과 안내판",
+      "evidence": [
+        "artifacts/dining76-review/output/playwright/36-1996-two-stairs-mapboard-ui.png",
+        "artifacts/dining76-review/output/playwright/36-next-se-ui.png"
+      ],
+      "facts": [
+        "넓은 밝은 계단의 오른쪽에 폭이 더 좁은 갈색 계단이 따로 보인다. 그 앞 도로는 두 방향으로 갈라진다.",
+        "두 계단 사이 수목이 있는 구역의 도로 가장자리에 세로형 캠퍼스 안내도가 서 있다. 낮은 회색 경계석이 식재 구역을 두른다."
+      ],
+      "inference": "오른쪽 계단은 way/185937119/87 후보이며 넓은 /84와 분리해야 한다.",
+      "unconfirmed": [
+        "오른쪽 계단의 상단 목적지와 전체 단수",
+        "안내도의 작은 건물명과 범례 문구",
+        "우측 흰 수평 구조 아래 어두운 개구부의 정확한 용도"
+      ]
+    },
+    {
+      "feature": "계단 상단과 현관 전면",
+      "evidence": [
+        "artifacts/dining76-review/output/playwright/36-1999-stair-flight-detail-ui.png",
+        "artifacts/dining76-review/output/playwright/36-1999-stair-front-reopened-ui.png"
+      ],
+      "facts": [
+        "계단 상단 뒤에 밝은 금속 프레임의 긴 유리 전면이 보인다.",
+        "수목 사이로 황갈색 벽돌과 일부 개별 창이 보인다."
+      ],
+      "unconfirmed": [
+        "문짝의 정확한 위치와 폭",
+        "상호와 안내 문구",
+        "전체 층별 창 수와 가려진 입면",
+        "상단 참에서 각 실내 공간으로 연결되는 동선"
+      ]
+    },
+    {
+      "feature": "가로등과 포장",
+      "evidence": [
+        "artifacts/dining76-review/output/playwright/36-1999-stair-front-reopened-ui.png",
+        "artifacts/dining76-review/output/playwright/36-1999-stair-flight-detail-ui.png",
+        "artifacts/dining76-review/output/playwright/36-1996-two-stairs-mapboard-ui.png"
+      ],
+      "facts": [
+        "나무 사이에 납작한 원반형 등 머리와 가는 기둥이 보인다.",
+        "도로와 낮은 옆길은 아스팔트이며 계단은 밝은 석재로 보인다. 도로에는 흰 주차 구획선과 맨홀이 보인다."
+      ],
+      "unconfirmed": [
+        "등의 정확한 좌표와 전체 수량",
+        "석종과 포장 치수"
+      ],
+      "exclusions": [
+        "주차 차량, 사람, 주황 콘, 쓰레기통과 이동식 차단물은 고정 시설의 수량 근거로 삼지 않는다."
+      ]
+    }
+  ],
+  "stairInterpretation": {
+    "exactStepCountConfirmed": false,
+    "visualReadingOnly": {
+      "adoptedStepCounts": null,
+      "preliminaryMessageToScene": {
+        "lowerFlightRange": [
+          10,
+          12
+        ],
+        "upperFlightRange": [
+          7,
+          9
+        ]
+      },
+      "status": "위 범위는 처음 화면을 읽어 전달한 잠정치다. 재대조에서 참 경계와 난간 그림자를 안정적으로 구분하지 못해 문서의 채택 단수와 구현 근거에서 제외하고 scene에도 정정했다.",
+      "limits": "난간, 나무, 차량과 원근 때문에 디딤판과 챌면의 명암이 겹친다. 과거 공식사진의 단수로 현재 단수를 확정하지 않는다."
+    },
+    "reliableRelation": "두 계단 구간과 중간 참, 상단 참을 구분하고 왼쪽 낮은 길을 별도 높이의 동선으로 유지한다.",
+    "terrainReport": {
+      "by": "scene",
+      "mapPath": "way/185937116/84",
+      "lengthMetresApprox": 16.39,
+      "heightDifferenceMetresApprox": 1.82,
+      "scope": "현재 게임 지형의 계산값으로 전달받았다. 현장 계단 높이로 해석하지 않는다."
+    }
+  },
+  "mapCorrespondence": {
+    "broadStair": {
+      "roadId": "way/185937116/84",
+      "points": [
+        [
+          626.18,
+          -656.11
+        ],
+        [
+          634.11,
+          -641.77
+        ]
+      ],
+      "widthFromProcessedData": 2,
+      "widthEstimated": true,
+      "matching": "도로와 건물 상대 위치, 방향 및 공식 사진을 함께 대조한 후보다. 폭 2m를 넓은 실물 계단 폭으로 채택하지 않는다."
+    },
+    "otherStair": {
+      "roadId": "way/185937119/87",
+      "points": [
+        [
+          655.56,
+          -659.95
+        ],
+        [
+          663.63,
+          -649.29
+        ]
+      ],
+      "matching": "1198671996과 1198671994에서 보이는 오른쪽 갈색 계단의 지도 후보다."
+    },
+    "building": {
+      "id": "way/167983986",
+      "officialNumber": "76",
+      "basis": [
+        "이전 35차의 공식 지도 시설 번호와 원본 외곽 대응",
+        "097-76 사진의 넓은 계단, 중앙 및 양측 난간과 벽돌 몸체",
+        "2025-07 인접 세 시점의 두 계단과 도로 분기 관계"
+      ],
+      "notClaimed": "로드뷰에서 건물 번호나 현재 영업장 이름을 직접 읽었다고 주장하지 않는다."
+    },
+    "priorReview": "sources/humanities-passage-roadview-review.json"
+  },
+  "supplementaryEvidence": [
+    {
+      "type": "official-photograph",
+      "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=97",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000094.jpg",
+      "path": "../references/buildings/photos/097-76.jpg",
+      "sha256": "cb73e787966d3c0dd1e051048be572019949f5c272af1a28af65bbc4b408e385",
+      "referenceDirectImageView": true,
+      "photographed": null,
+      "observations": "넓은 석재 계단, 금속 난간, 벽돌과 유리 전면이 보인다. 사진의 농협하나로마트, 농협유통, 두레미담 문구는 읽히지만 촬영일이 없어 현재 입점 근거로 쓰지 않는다.",
+      "difference": "과거 사진의 목재띠와 큰 상층 검은 유리, 간판을 현재 전체 입면에 복사하지 않는다. 2025-07 영상은 수목에 가려 개보수 범위와 시점까지 확인하지 못했다."
+    },
+    {
+      "type": "architect-existing-state-drawing",
+      "pageUrl": "https://lkjap.com/4-6",
+      "imageUrl": "https://freight.cargo.site/t/original/i/ea8ab9f472f58228ee015eabd93d8f844c79826611a1babe1054417c0fe75821/--1.jpg",
+      "path": "artifacts/dining76-review/output/playwright/36-root-before-renewal-image.png",
+      "sha256": "100f3fb39da630d4262252cb70c46019a3f2b5bdebd47ec25a27bbdb96331733",
+      "referenceDirectImageView": true,
+      "rootDirectImageView": true,
+      "classification": "Before Renewal 표제의 기존 상태 분해 축측도이며 실물 사진이 아니다.",
+      "use": "두 계단 구간과 중간 참, 긴 상단 참, 별도 좌우 계단 관계의 보조 자료로만 쓴다.",
+      "limits": "설계공모 2등안 페이지다. After와 제안안을 준공 모습으로 쓰지 않으며 치수나 현재 실내 구획도 확정하지 않는다."
+    },
+    {
+      "type": "official-notice-parent-report",
+      "pageUrl": "https://www.kia.or.kr/m/news/notice.php?category=9&code=notice&idx=11230&page=54&ptype=view",
+      "published": "2021-07-01",
+      "referenceDirectPageRead": false,
+      "rootDirectPageRead": true,
+      "reportedFacts": {
+        "building": "76",
+        "aboveGroundFloors": 2,
+        "basementFloors": 1,
+        "areaSquareMetres": 1436.37,
+        "completionYear": 1982
+      },
+      "scope": "root가 공식 공고를 직접 읽어 전달한 건물 규모다. 이번 거리뷰의 층수 계수나 현재 간판 확인 결과와 구분한다."
+    }
+  ],
+  "implementationRecommendations": [
+    "넓은 석재 계단을 두 구간과 참으로 나누고, 왼쪽 낮은 아스팔트 보행로를 따로 연결한다.",
+    "오른쪽 별도 계단과 두 계단 사이 식재 구역 및 안내판은 넓은 계단과 합치지 않는다.",
+    "현관의 유리와 밝은 프레임은 확인 범위에서만 표현한다. 문 중심과 폭, 높이는 지도 및 게임 지형에 맞춘 근사로 표시한다.",
+    "난간, 낮은 식재 경계와 원반형 가로등은 사진에서 확인한 상대 위치를 따른다. 수량과 치수, 작은 안내 문구는 만들지 않는다.",
+    "공식 사진의 과거 상호, 2024 안내서의 입점 기록 및 2026 현재 영업 정보를 구분한다. 현재 상호는 이 검토에서 확정하지 않았다."
+  ],
+  "limits": [
+    "세 도로 시점만 직접 관측했으며 계단 위나 건물 내부로 이동하지 않았다.",
+    "수목과 주차 차량에 가린 구역을 관측 완료로 처리하지 않는다.",
+    "2025-07 촬영 영상은 2026 현재 현장의 모든 시설 존치를 보장하지 않는다.",
+    "위치와 치수의 실측 재현, 전체 건물 외관 대조 및 게임 구현 검증을 주장하지 않는다."
+  ],
+  "sourceHashes": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "sources/humanities-passage-roadview-review.json": "a42ed4d3e7c398c15d3e6685680f3219239c509dca0a8a15b207591787dd5a5f",
+    "artifacts/humanities-review/35-reference-map-check.json": "ec95b4d7d1be3fe7c6984e2eb49bcebcfd2024638b0a2429e0fa191e64ce9d4f"
+  }
+}

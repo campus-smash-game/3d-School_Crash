@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05",
+  "request": "보도블록과 가까이 보이는 건물 입구, 가게 간판을 세부적으로 구현한다.",
+  "roadviewFirst": {
+    "administration": {
+      "provider": "Naver Streetview",
+      "panorama": "NYSrsJIQuCQ8ogVSuOR7aA",
+      "captureMonth": "2025-09",
+      "panAngles": [97, 52],
+      "directlyViewed": true,
+      "screenshots": [
+        "../references/entrance-detail/2025-09/admin-west-paving-ui.jpg",
+        "../references/entrance-detail/2025-09/admin-west-tactile-curb-ui.jpg"
+      ],
+      "observation": "밝은 직사각 보도블록에 어두운 작은 블록과 넓은 가로 띠가 섞여 있다. 차도 쪽에는 낮은 회색 경계석, T자 점자블록과 윗면이 비스듬한 돌 볼라드 두 개가 보인다.",
+      "scopeLimit": "이 지점에서 행정관 전면의 방향을 확인했지만 문틀 세부는 거리가 멀어 읽을 수 없었다. 현관 구획은 공식 지도 사진으로 보완했다."
+    },
+    "studentCenter": "sources/student-center-entry-signs-review.json"
+  },
+  "existingEntranceFrames": {
+    "sourceImages": [
+      { "building": "60", "file": "../references/buildings/photos/076-60.jpg", "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=76", "captureDate": null },
+      { "building": "63", "file": "../references/buildings/photos/080-63.jpg", "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=80", "captureDate": null }
+    ],
+    "directlyViewed": true,
+    "changes": "기존 행정관 중앙 유리문과 학생회관 계단 상단 및 주황 루버 아래 문에 상하 프레임과 상부 고정창 구획을 추가했다.",
+    "dimensionsEstimated": true,
+    "coordinatesUnchanged": true,
+    "destruction": "프레임을 기존 유리문과 같은 파괴 부품에 묶어 문을 부순 뒤 문틀 충돌이 남지 않게 했다.",
+    "limits": "사진 촬영일과 현재 리모델링 이후 외관의 일치는 미확인이다. 프레임 개수와 치수는 게임용 근사이며 최신 LED 입구의 위치를 새로 확인했다는 뜻은 아니다."
+  },
+  "pavingEvidence": "sources/administration-plaza-ground-notes.json",
+  "pavingScreenReview": {
+    "screen": "artifacts/facilities-browser/25-paving-release.jpg",
+    "sourceSha256": "869eae6fde4f4e1df3259cda88ecb75bdef0caf541d8615cac564272db6eb810",
+    "finding": "브라우저에서 보도 중앙의 긴 단차와 잔디 틈이 사라지고 줄눈 및 점무늬가 연속되는 모습을 확인했다.",
+    "trafficCheck": "최종 후보에서 실제 차량 회전 궤적 511개를 검사했고 새 시설과의 충돌이 없었다."
+  },
+  "releaseChecks": {
+    "administrationDoor": 10,
+    "studentCenter": 13,
+    "administrationGround": 10,
+    "administrationPlaza": 4,
+    "fullCampus": 13,
+    "worldPresentation": 6,
+    "scope": "각 모델의 기하와 파괴 복원, 실제 게임 지형에서의 지정 보행 경로와 차량 궤적을 확인했다. 브라우저에서는 현관 3곳, 보도, 게임 실행 및 ESC 정류장 메뉴를 대조했다.",
+    "narrowViewport": [390, 844],
+    "physicalPhoneBenchmark": false,
+    "wholeCampusPhotoReconstructionComplete": false
+  },
+  "bankEntryEvidence": "sources/student-center-entry-signs-review.json",
+  "bankImplementation": {
+    "scope": "학생회관 북쪽 몸체의 남서향 하층 전면에 신한은행, NH Bank, NH농협은행 간판과 유리문, 얇은 차양, 출입 바닥을 추가한다.",
+    "placement": "공식 사진의 큰 계단 왼쪽 낮은 검은 전면과 2025년 평면도를 기존 지도 외곽에 맞춘다. 사진에 보이는 배치 관계를 따르되 돌출 깊이와 문 좌표는 근사다.",
+    "walkability": "문을 장식으로 덧붙이는 데 그치지 않고 같은 폭의 기존 하층 벽을 나눈다. 문을 파괴하면 뒤쪽 공간까지 통과할 수 있어야 한다.",
+    "textAndDamage": "세 간판은 직접 그린 한 장의 텍스처를 공유한다. 각 간판은 해당 부품의 파괴와 복원에 따라 함께 사라지고 돌아온다.",
+    "currentness": "은행 명칭의 사진 근거와 2026년 영업점 및 ATM 안내를 구분한다. 현재 현장의 모든 간판 디자인이나 실내 점포 배치를 복원했다는 뜻은 아니다.",
+    "independentReview": "공식 사진과 첫 게임 화면을 별도로 대조해 납작한 간판 글자와 기둥에 가린 전면을 발견했다. 간판 면과 그림의 비율을 맞추고 기존 기둥을 보존한 채 전면을 앞으로 조정했다.",
+    "estimatedDimensionsMetres": { "doorWidth": 3, "frontDepthFromOutline": 0.85, "approachDepthFromOutline": 3.3 },
+    "rendering": { "mergedSolidMeshes": 3, "mergedLabelMeshes": 1, "atlasPixels": [3072, 192], "triangles": 25112 },
+    "verification": {
+      "modelChecksPassed": 13,
+      "fullSceneRoundTripPaths": 3,
+      "initialContacts": 0,
+      "maximumPenetrationMetres": 0,
+      "screen": "artifacts/facilities-browser/25-student-bank-final.jpg",
+      "screenReview": "브라우저에서 세 간판의 글자 방향과 비율, 기둥 가림 해소를 확인했다.",
+      "physicalPhoneBenchmark": false,
+      "sourceSha256": "d84281e6d26c4faacc48532342d13a5d0df2cd3fdb7722fd19447b532d29fc36",
+      "testSha256": "78705d36a02be815f2a4bddf0ef12316310996d96ea73e402ef0fe178758a8c0",
+      "details": "artifacts/entrance-detail-review/bank-final-summary.json"
+    }
+  },
+  "implementationPolicy": "확인한 구역에만 사진 패턴과 문구를 적용한다. 보도블록을 하나씩 물리 객체로 만들지 않고 지면을 따르는 표면과 재질로 표현한다. 경계석과 볼라드는 실제 기하에 맞는 별도 충돌체를 사용한다."
+}

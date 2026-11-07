@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+    <meta name="theme-color" content="#dbe6ef" />
+    <meta name="description" content="서울대학교 관악캠퍼스를 탐험하고 대포로 부수는 3D 웹게임. 컴퓨터와 모바일에서 플레이할 수 있습니다." />
+    <title>CAMPUS BREAK | 서울대학교 관악캠퍼스</title>
+  </head>
+  <body>
+    <canvas id="game" aria-label="서울대학교 관악캠퍼스 3D 게임"></canvas>
+    <div id="ui" data-state="loading">
+      <header class="topbar">
+        <div class="identity">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 30 19 9l15 21M24 9h11v22M15 25v6h15" stroke="currentColor" stroke-width="3.2" stroke-linejoin="miter"/></svg>
+          <div><div class="brand">CAMPUS BREAK<span class="brand-dot"></span></div><div class="place" id="location-name">서울대학교 관악캠퍼스</div></div>
+        </div>
+        <div class="settings">
+          <label class="quality-label"><span class="sr-only">그래픽 품질</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17V10m5 7V6m6 11v-5m5 5V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><select id="quality" aria-label="그래픽 품질" disabled><option value="auto">자동</option><option value="low">낮음</option><option value="high">높음</option></select></label>
+          <button id="sound-button" class="icon-button" type="button" aria-label="소리 끄기" aria-pressed="true" title="소리 켜기 / 끄기" disabled><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m11 5-5 4H3v6h3l5 4V5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path class="sound-waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="sound-muted" d="m15 9 6 6m0-6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+          <button id="reset-button" class="icon-button" type="button" aria-label="처음 상태로 복원" title="처음 상태로 복원" disabled><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2 6M4 4v7h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button id="pause-button" class="icon-button pause-button" type="button" aria-label="일시 정지" title="일시 정지"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+        </div>
+      </header>
+
+      <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-content">
+          <div class="eyebrow"><span class="chapter">01</span> GWANAK CAMPUS <span class="small-rule"></span> FREE PLAY</div>
+          <h1 id="welcome-title">익숙한 풍경을,<br /><span>새롭게.</span></h1>
+          <p id="welcome-description" class="intro">정문부터 공대까지, 마음 가는 대로.<br />캠퍼스를 탐험하고 대포를 발사해 보세요.</p>
+          <button id="start-button" class="start-button" type="button" disabled><span id="start-label">캠퍼스 준비 중</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="travel-panel" id="travel-panel"><label id="travel-label" for="travel-select">시작 정류장</label><select id="travel-select" disabled aria-label="시작할 교내 셔틀 정류장"><option value="">정류장 준비 중</option></select><button id="travel-button" type="button" disabled><span id="travel-button-label">여기서 시작</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="welcome-controls desktop-only"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 이동</span><span><kbd>클릭 / F</kbd> 발사</span><span><kbd>E</kbd> 강화탄</span><span><kbd>M</kbd> 빠른 이동</span></div>
+          <div class="welcome-controls touch-only"><span>왼쪽 화면을 밀어 이동</span><span>오른쪽 화면을 밀어 시점 조작</span><span>오른쪽 아래 큰 버튼으로 점프</span></div>
+          <p id="error-message" class="error-message" role="alert"></p>
+          <button id="reload-button" class="start-button reload-button" type="button">새로고침<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2 6M4 4v7h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+        <div class="scene-caption"><span class="live-dot"></span> 자유 탐험<span class="caption-divider"></span>지도와 공식 사진을 참고한 근사 모델</div>
+      </section>
+
+      <section class="game-hud" aria-label="플레이 정보">
+        <button id="map-button" class="minimap-panel" type="button" aria-label="지도와 빠른 이동 열기"><canvas id="minimap" width="256" height="256" aria-label="캠퍼스 지도"></canvas><span class="map-north" aria-hidden="true">N</span><span class="map-caption"><span id="minimap-location">관악캠퍼스</span><kbd class="desktop-only">M</kbd><svg class="touch-only" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m8 5 7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="score-panel"><span class="score-label">부순 물체</span><div><strong id="destroyed-count">0</strong><span id="total-count"> / 0</span></div><div class="score-line"><i id="score-progress"></i></div></div>
+        <div class="crosshair" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="target-label" id="target-label"></div>
+        <div class="bottom-hud">
+          <div class="tool-card"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m6 15 17-9 4 8-17 7-4-6Zm17-9 3-1 4 8-3 1M9 21l-3 6m9-8 6 8M3 27h23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="24" r="4" fill="var(--glass)" stroke="currentColor" stroke-width="2"/></svg><div><span class="tool-overline">CANNON</span><strong>대포</strong></div><span class="tool-key desktop-only">클릭 / F</span></div>
+          <div class="pulse-status"><span><kbd class="desktop-only">E</kbd> 강화탄 <b id="charge-label">준비</b></span><div class="charge-track"><i id="charge-progress"></i></div></div>
+          <div class="desktop-hint desktop-only"><kbd>Shift</kbd> 달리기 <span></span> <kbd>Space</kbd> 점프 <span></span> <kbd>M</kbd> 빠른 이동 <span></span> <kbd>Esc</kbd> 쉬기</div>
+        </div>
+        <div class="performance"><span class="live-dot"></span><span id="fps-label">60</span> FPS</div>
+      </section>
+
+      <div class="touch-controls" aria-label="터치 조작">
+        <div id="move-zone" class="move-zone" role="group" aria-label="왼쪽 화면을 누른 채 밀어서 이동"></div>
+        <div id="joystick" class="joystick" aria-hidden="true"><div class="joystick-guide"></div><div id="joystick-thumb" class="joystick-thumb"></div></div>
+        <span class="move-label">여기를 밀어 이동</span>
+        <div class="touch-actions">
+          <button id="jump-button" class="touch-action jump-action" type="button" aria-label="점프"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 18V5m-5 5 5-5 5 5M5 20h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>점프</span></button>
+          <button id="pulse-button" class="touch-action pulse-action" type="button" aria-label="강화탄"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m13 3-8 11h6l-1 7 9-12h-6l1-6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>강화탄</span></button>
+          <button id="attack-button" class="touch-action attack-action" type="button" aria-label="발사"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m6 15 17-9 4 8-17 7-4-6Zm17-9 3-1 4 8-3 1M9 21l-3 6m9-8 6 8M3 27h23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="24" r="4" stroke="currentColor" stroke-width="2"/></svg><span>발사</span></button>
+        </div>
+        <div class="look-hint">화면을 밀어 둘러보기</div>
+      </div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <div class="map-attribution"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> / <a href="./credits.html" target="_blank" rel="noopener noreferrer">지형과 자료</a></div>
+    </div>
+    <noscript>이 게임을 실행하려면 브라우저의 JavaScript를 켜 주세요.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

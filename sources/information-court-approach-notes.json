@@ -1,0 +1,112 @@
+{
+  "status": "implemented-targeted-checks-passed",
+  "scope": "102동 서비스 마당 맞은편 24동 서측의 돌계단과 난간, 짧은 지면 접속",
+  "module": "src/informationCourtApproach.ts",
+  "identification": {
+    "previous": "앞선 사진 메모에서는 63동 북서 계단으로 추정했다.",
+    "corrected": "2025년 9월 네이버 거리뷰를 다시 관찰하고 확대 소지도, 102동 표지, 뒤쪽 25동과 원본 건물 배치를 대조해 24동 서측 북쪽 구간으로 정정했다.",
+    "observationNotes": "sources/student-north-approach-roadview-notes.json",
+    "previousReview": "sources/central-plaza-roadview-notes.json",
+    "imageFileNamesPreserved": true
+  },
+  "evidence": {
+    "provider": "Naver Streetview",
+    "captureMonth": "2025-09",
+    "panoId": "8JWKc-rpjNS64cpqPGQVUA",
+    "images": [
+      "../references/roadview-audit/2025-09/63-102-north-service-court-naver-ui.png",
+      "../references/roadview-audit/2025-09/63-north-stone-steps-from-102-court-naver-ui.png",
+      "../references/roadview-audit/2025-09/63-northwest-stone-steps-naver-ui.png"
+    ],
+    "directlyViewed": true,
+    "observed": [
+      "102동 맞은편 잔디 경사면에 석재 계단이 있다.",
+      "올라가는 방향 오른쪽에 검은 기둥과 가로 난간이 있다.",
+      "하단은 석재 포장에 닿고 상단은 나무 사이 보행 공간으로 이어진다."
+    ],
+    "notConfirmed": [
+      "상단에서 다른 광장까지 이어지는 전체 경로",
+      "실제 계단의 정확한 끝점, 높이, 폭과 단수"
+    ]
+  },
+  "implementation": {
+    "api": "createInformationCourtApproach(scene, heightAt)",
+    "facilityId": "facilities/information-court-approach",
+    "coordinates": "D=(east,up,north), H=(x,y,-z) is applied once by the render parent.",
+    "adjacentBuildings": [
+      "way/193893590",
+      "way/238937635"
+    ],
+    "lower": [
+      123,
+      -740
+    ],
+    "upper": [
+      129,
+      -746
+    ],
+    "lengthMetres": 8.485281374238571,
+    "widthMetres": 2.2,
+    "steps": 18,
+    "placementEstimated": true,
+    "dimensionsEstimated": true,
+    "actualStepCountClaimed": false,
+    "groundDifferenceMetres": 0.9060107170781144,
+    "maximumGameRiserMetres": 0.050483389101984244,
+    "material": "회갈색 석재를 단별 세 구획으로 나누고 검은 난간의 기둥과 가로대는 별도 부재로 구현했다.",
+    "groundConnection": "하단과 상단에 짧은 접속판을 두며 각 비평면 사각형은 실제 렌더 삼각형별 볼록 삼각기둥으로 나눈다.",
+    "access": "서비스도로 way/167595747/10에서 하단 포장, 계단, 상단 지면까지 왕복한다. 24동 벽 안으로 들어가는 새 문이나 실내 통로는 만들지 않았다.",
+    "geometry": {
+      "parts": 155,
+      "triangles": 2144,
+      "renderMeshes": 1
+    },
+    "preserved": [
+      "원본 지도 외곽과 DEM",
+      "24동, 63동과 60동의 기존 건물 기하",
+      "기존 중앙광장 계단과 시설",
+      "현재 교통 노선과 정류장 데이터"
+    ],
+    "destruction": "단과 난간을 개별로 파괴할 수 있고 원거리에서 파괴 상태를 유지한다. 초기화하면 원래 정점 배열과 충돌 부품을 복원한다.",
+    "planting": {
+      "count": 4,
+      "side": "올라가는 방향 왼쪽",
+      "scope": "직접 본 2025년 9월 사진의 낮은 관목을 근사했다. 개체 수와 수종, 높이, 정확한 개별 위치는 미확인이다."
+    }
+  },
+  "validation": {
+    "command": "node scripts/verify-information-court-approach.mjs",
+    "artifact": "artifacts/information-court-approach-test/results.json",
+    "artifactSha256": "a570c0a7f2d7aab6acbc0db27abf7fddc0728d5e23e1e2d95ff56a6ff7fe8d37",
+    "passed": 7,
+    "failed": 0,
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "status": "passed"
+    },
+    "scope": "Node에서 실제 fullCampus, 지형, 기존 중앙광장과 교통시설을 함께 생성했다. 이동 중인 차량과 휴대전화 성능은 검사하지 않았다.",
+    "walking": "중앙과 양옆 세 경로를 실제 지면에서 출발해 6m/s로 왕복했고, 서비스도로부터 상단 지면까지의 연속 왕복도 확인했다.",
+    "terrainSamples": 3780,
+    "minimumTerrainClearanceMetres": 0.06921822486478035,
+    "raySamples": 155,
+    "maximumLoadedUnloadedDifferenceMetres": 0.000049756609231510485,
+    "railGaps": "실제 가로대 사이의 네 광선은 비어 있고 가로대 표면은 충돌한다.",
+    "destruction": "279m, 281m와 900m에서 부분 파괴를 유지하며 전체 파괴 뒤 초기화한 정점 배열도 복원된다.",
+    "reflectionCount": 1,
+    "browserReview": "root가 관목 추가 전 실제 게임 화면에서 계단이 24동 벽 바깥에서 끝나는 모습을 확인했다. 관목 추가 후 보행과 파괴 회귀 7개를 다시 실행했다."
+  },
+  "limitations": [
+    "배치는 24동 북쪽 약 20m 범위라는 사진 대응과 기존 지형을 결합한 게임용 근사다. 사진에서 두 끝점의 좌표를 측량하지 않았다.",
+    "현 지형의 높이차가 약 0.91m여서 18개 단의 최대 높이는 약 0.05m다. 사진의 실제 계단 높이를 재현했다고 주장하지 않는다.",
+    "사진에서 상단 너머 연결을 직접 확인하지 못했으므로 건물 벽이나 다른 광장까지 새 구조를 연장하지 않았다.",
+    "검사에서 전역 지형과 기존 건물 기하가 바뀌지 않음을 확인했지만 실제 현장의 모든 보행 경로나 모바일 프레임률을 검증한 것은 아니다."
+  ],
+  "sourceHashes": {
+    "src/informationCourtApproach.ts": "a807a6c8cd3bae037106aa8a04de97f15fd60cd74db7b2d41f9a81c76a1f26f9",
+    "scripts/verify-information-court-approach.mjs": "4660b4e9babf9c6e1905aa758bd4c95ff09b551b82ccbe624c740cb7fceaff36",
+    "sources/student-north-approach-roadview-notes.json": "5245e83e27e8b8cd73fd3dc0f54d9948189b3a040ac99ebbc946bf7d6038a67d",
+    "sources/central-plaza-roadview-notes.json": "35ee157326df5059e84923cdcd11d72d43163d16f6c3db96303ec8adaa851061",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+  }
+}

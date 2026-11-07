@@ -1,0 +1,262 @@
+{
+  "building": {
+    "id": "way/167659979",
+    "number": "65",
+    "name": "교수회관"
+  },
+  "status": "integrated-partial",
+  "sources": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=82",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000080.jpg",
+      "local": "../references/buildings/photos/082-65.jpg",
+      "kind": "공식 지도 외관 사진",
+      "directlyViewed": true,
+      "observations": [
+        "하부 거친 석재와 좁고 긴 세로 유리, 상부 갈색 패널, 깊게 돌출한 검정 띠와 처마가 보인다.",
+        "수목이 가려 창과 현관 전체 위치는 사진 한 장으로 확정할 수 없다."
+      ]
+    },
+    {
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=122079&md=v",
+      "imageUrl": "https://www.snu.ac.kr/webdata/boards/konews/img_20150827_003.jpg",
+      "local": "artifacts/faculty-club-review/official-2015.jpg",
+      "kind": "서울대학교 2015년 재개관 기사와 실제 외관 사진",
+      "directlyViewed": true,
+      "observations": [
+        "2015년 5월 18일 재개관했다는 기사와 1층 및 2층 식당 운영을 확인했다.",
+        "잔디 앞 긴 석재 하부, 갈색 높이 차가 있는 상부, 검정 수평 처마와 왼쪽 유리 접속부를 대조했다."
+      ]
+    },
+    {
+      "url": "https://www.taal-architects.com/_files/ugd/96bb24_ca38045d753f4858885cfd177a6b3565.pdf",
+      "local": "artifacts/faculty-club-review/taal-2015-remodel.pdf",
+      "kind": "TAAL 설계사 공개 외관 개선 연구 보고서",
+      "documentDate": "2015-03-22",
+      "directlyViewedPages": [
+        3,
+        20,
+        22,
+        24,
+        37
+      ],
+      "facts": [
+        "3쪽 사업 개요에 지하 1층, 지상 2층 및 변경 후 높이 12.6m가 적혀 있다.",
+        "20, 22, 24쪽은 남측, 북측, 서측과 동측의 변경 제안 입면이다.",
+        "37쪽은 북측 조감 제안으로 두 유리 레벨의 서쪽 식당과 후퇴 상층, 깊은 처마의 관계를 보여 준다."
+      ],
+      "limits": "변경 제안 입면과 조감도는 준공 사진이 아니다. 지상 2층 사용은 공식 사용 안내 및 재개관 기사와 대조했으나 12.6m와 세부 형상은 준공 실측으로 확인하지 못했다."
+    },
+    {
+      "url": "https://snu.ac.kr/campuslife/facilities/amenities",
+      "kind": "서울대학교 편의시설 안내",
+      "facts": [
+        "교수회관은 65동 1~2층으로 안내된다. 호암교수회관 125동과 구분했다."
+      ]
+    }
+  ],
+  "modelContract": {
+    "api": "createFacultyClubLandmark(scene,building,profile,heightAt)",
+    "landmark": "faculty-club",
+    "sourcePointCount": 15,
+    "rawOutlinePreserved": true,
+    "rawDEMModified": false,
+    "dataCoordinates": "D=(동,위,북), 렌더에서 H=(x,y,-z)를 한 번 적용한다.",
+    "localOrigin": "원본 꼭짓점 0",
+    "localAxis": [
+      0.6762590400188938,
+      -0.7366639062643997
+    ],
+    "localAcross": [
+      0.7366639062643997,
+      0.6762590400188938
+    ],
+    "datum": "북측 현관 후보의 국소 (13,33)에서 heightAt을 읽는다. 측량된 건축 기준고가 아니다.",
+    "aboveGroundLevels": 2,
+    "basementLevelsDocumented": 1,
+    "basementModeled": false,
+    "levelsEstimated": false,
+    "height": 12.6,
+    "heightEstimated": true,
+    "heightInterpretation": "설계 보고서의 변경 후 높이를 모델의 최고 상부 벽과 지붕에 사용했다. 사진 및 현장 실측으로 확정한 준공 높이가 아니다.",
+    "components": [
+      "원본 외곽을 따르는 석재 하부와 긴 세로 창",
+      "높이가 다른 갈색 상부 몸체와 검정 깊은 처마",
+      "서쪽 다각형 식당의 두 유리 레벨, 후퇴한 상층과 얇은 개별 난간",
+      "중앙 높은 유리 접속부",
+      "북측 독립 출입문, 기둥 사이가 빈 차양, 지형에서 이어지는 낮은 접근판"
+    ],
+    "dimensionsEstimated": [
+      "두 층의 바닥 높이와 지붕 분할, 갈색 몸체의 위치 및 세부 폭",
+      "서쪽 식당 상층의 1.2m 후퇴와 지붕 처마 깊이",
+      "북측 현관의 정확한 위치, 너비, 6개 폭 분할과 8단 접근판",
+      "창 높이와 패널 간격, 내부 진입 바닥의 깊이"
+    ],
+    "renderPolicy": "세 개의 병합 메시를 사용한다. 파괴 부품의 정점만 퇴화시키며 가까이와 멀리에서 같은 잔존 형상을 유지한다.",
+    "collisionPolicy": "닫힌 창은 유리와 창틀의 표면 사이로 균형을 맞춘 얇은 상자 프록시를 쓴다. 슬래브는 삼각 분할된 볼록 프리즘이며, 기둥과 난간 부재는 개별 충돌체라 빈 공간을 채우지 않는다. 줄눈은 벽 부품과 함께 파괴되며 별도 충돌체가 없다."
+  },
+  "validation": {
+    "own": {
+      "status": "passed",
+      "script": "scripts/verify-faculty-club.mjs",
+      "artifact": "artifacts/faculty-club-test/results.json",
+      "passed": 13,
+      "failed": 0,
+      "geometry": {
+        "name": "original 15 point outline retains a two storey hall and polygonal restaurant in three merged meshes",
+        "status": "passed",
+        "parts": 1018,
+        "triangles": 24280,
+        "renderMeshes": 3,
+        "highest": 12.599997896008261
+      },
+      "glazing": {
+        "name": "all actual glazing and doors remain above rendered terrain",
+        "status": "passed",
+        "samples": 21924,
+        "minimum": 0.2050027507368526
+      },
+      "rays": {
+        "name": "exposed glazing and rotated facade panels agree for loaded and unloaded external rays",
+        "status": "passed",
+        "rays": 68,
+        "occluded": 7,
+        "endFaces": 146,
+        "maxSurface": 0.05757901668542431,
+        "maxLoad": 0.00005200398419191732
+      },
+      "coverage": [
+        "원본 외곽 및 DEM 불변",
+        "실제 지형의 유리 표본",
+        "외부 입면의 loaded/unloaded 광선",
+        "처마 기둥과 난간 사이 빈 공간",
+        "6m/s 중앙 및 양옆 접근 왕복, 닫힌 문 차단과 파괴 후 진입",
+        "부분 파괴의 원거리 유지, 전체 파괴, 3회 초기화",
+        "H 한 번 적용과 입력 지형 50m 이동 시 정합",
+        "서쪽 식당 판 아래의 빈 공간 및 다각형 처마 모서리 12개 렌더/물리 광선"
+      ]
+    },
+    "independent": {
+      "status": "passed",
+      "basicPassed": 8,
+      "fullCampusPassed": 2,
+      "passed": 10,
+      "failed": 0,
+      "combinedReportPassed": 20,
+      "artifact": "artifacts/central65-61-independent-review/results.json",
+      "basicArtifact": "artifacts/central65-61-independent-review/65/results.json",
+      "supplementalArtifact": "artifacts/central65-61-independent-review/supplemental-results.json",
+      "inputHashesVerified": 44,
+      "metrics": {
+        "parts": 1018,
+        "meshes": 3,
+        "triangles": 24280,
+        "glassSamples": 31320,
+        "minimumGlassTerrainClearance": 0.2050027507368526,
+        "selectedRenderGlassRays": 27,
+        "maximumRenderCollisionDifference": 0.057538819313089684,
+        "maximumLoadedUnloadedDifference": 0.00003661902370621917
+      },
+      "coverage": [
+        "실제 빠른 이동 지점에서 계단 접근점까지의 연속 왕복과 초기/30/120프레임 캡슐 검사",
+        "전체 장면 부분 파괴, 원거리 유지 및 초기화",
+        "이름 Sprite의 H 반사와 UV 투영 수치 대조",
+        "공식 지도 사진 및 TAAL 제안 도면과 최종 CPU 도식의 직접 대조"
+      ],
+      "scope": "교수회관 65동에 해당하는 독립 10개 검사다. 합본 20개에는 61동 검사가 포함되며 65동 자체 검사 13개 및 전체 회귀 424개와 별도로 집계한다."
+    },
+    "cpuPreview": {
+      "status": "directly-viewed",
+      "image": "artifacts/faculty-club-review/final-candidate/faculty-club.png",
+      "method": "artifacts/faculty-club-review/final-candidate/preview-method.json",
+      "scope": "현재 모델과 원본 지형의 CPU 정사영이다. WebGL, 텍스처, PBR 조명 및 실제 휴대전화 화면을 검사하지 않는다.",
+      "observations": [
+        "북측 입면에서 높은 갈색 몸체와 낮은 유리 띠, 후퇴한 두 층 식당 및 검정 처마가 구분된다.",
+        "다각형 처마의 모서리 틈을 사다리꼴 볼록 프리즘으로 보정하고 재생성한 이미지에서 연속됨을 확인했다.",
+        "공통 SIDE는 식당 쪽으로 관찰 방향을 바꾸어 두 유리 레벨과 후퇴, 기둥 아래 공간을 대조했다. 전경 지형의 가림만으로 현장 일치나 매몰 여부를 판정하지 않는다."
+      ],
+      "provenance": "artifacts/faculty-club-review/final-candidate/provenance.json"
+    },
+    "fullSuite": {
+      "status": "passed",
+      "command": "npm test",
+      "scripts": 42,
+      "passed": 424,
+      "failed": 0,
+      "exitCode": 0,
+      "artifact": "artifacts/release-18-verification.log",
+      "completion": "artifacts/central65-61-review/suite-completion.json",
+      "scope": "데스크톱 Node 회귀 검사이며 실제 브라우저나 휴대전화 GPU 검사와 구분한다."
+    },
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "exitCode": 0
+    },
+    "desktopCpu": {
+      "status": "measured",
+      "artifact": "artifacts/mobile-cpu-review/compare-17-18.json",
+      "location": {
+        "id": "way/167659979",
+        "name": "65 교수회관",
+        "point": [
+          520.32,
+          -961.39
+        ],
+        "loadedTargets": {
+          "before": 33,
+          "after": 1019
+        },
+        "p95Ms": {
+          "physics": {
+            "before": 0.10609999999996944,
+            "after": 0.3599999999996726,
+            "difference": 0.25389999999970314
+          },
+          "campusUpdate": {
+            "before": 0.8926999999994223,
+            "after": 0.9223000000001775,
+            "difference": 0.029600000000755244
+          },
+          "buildingAim": {
+            "before": 0.3283000000001266,
+            "after": 0.5937999999996464,
+            "difference": 0.2654999999995198
+          }
+        }
+      },
+      "scope": "Windows 데스크톱 Node에서 한 번 측정한 정지 플레이어의 실제 캠퍼스와 Rapier 비용이다. WebGL, GPU 전송과 렌더링, DOM, 교통, 대포와 효과, 실제 휴대전화 성능은 포함하지 않으며 동시에 실행된 프로세스의 영향을 받을 수 있다. 모바일 FPS로 환산하지 않는다.",
+      "interpretation": "65동 주변 활성 표적이 33개에서 1,019개로 늘어 기존 단순 모델보다 물리와 조준의 CPU 비용이 증가했다."
+    }
+  },
+  "limits": [
+    "준공 실측이나 완전한 준공 도면을 확보한 모델이 아니다. 설계 제안에서 관찰한 서쪽 식당과 후퇴 깊이는 근사로 남긴다.",
+    "기존 원본 지도와 사진의 폭, 돌출부 및 치수가 정확히 일치하지 않는다. 원본 외곽은 바꾸지 않았다.",
+    "동쪽 높은 지형과 만나는 하부 창의 노출은 현재 게임 지형에 맞췄다. 이 노출량이 실제 현장과 같다는 근거는 없다.",
+    "2015년 정면 사진의 중앙 유리 접속부 상단에 보이는 아치형 세부 틀은 직선 부재로 단순화했다. 실내 구조의 정확한 복원으로 보지 않는다.",
+    "실내 방 배치와 지하층, 가구와 식재, 석재의 개별 질감, 작은 설비는 복원하지 않았다.",
+    "공개 사진은 관찰용이며 게임 텍스처나 배포 이미지로 복제하지 않는다.",
+    "검증은 실제 Three.js 기하와 데스크톱 Node의 Rapier 검사다. 브라우저 화면, GPU 성능, 실제 휴대전화 FPS를 확인한 결과가 아니다.",
+    "닫힌 창의 창틀 포함 프록시는 선택한 노출 광선에서 실제 유리보다 최대 약 0.05754m 앞서 맞는다. 모든 표면의 오차를 전수 검사한 값은 아니다."
+  ],
+  "sourceHashes": {
+    "src/facultyClubLandmark.ts": "e378fc1be9c0fa38cded6ef474888a5bd630f202e95848155522495f2feda38c",
+    "scripts/verify-faculty-club.mjs": "c0a895f6479fa043fa297ad60791e56811feda0634ae668e5f255d46d86dd552",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "artifacts/faculty-club-test/results.json": "6486cdd7ba0ebc6df8b3ad228aad5c2ada46a02e25f2a530b1e6f2ed5df6297d",
+    "../references/buildings/photos/082-65.jpg": "4f90f2dce1220ed95266e0aed36051aaaac88c572410a1f646c88260a8399f91",
+    "artifacts/faculty-club-review/official-2015.jpg": "633dcc1fe1803b0a2235bac62e02ab915fd87ee2b2ff2e327fdcd2e9d1add985",
+    "artifacts/faculty-club-review/taal-2015-remodel.pdf": "a455c3897483bbb2c8ad7c4e050e0898829aeb13ce20acfb090b566bb9bf7e08",
+    "artifacts/faculty-club-review/cpu-provisional/faculty-club.png": "54123e4772a47b1f08f8bf2b372ceb977492968346c0f85066499c06a28addda",
+    "artifacts/faculty-club-review/cpu-provisional/preview-method.json": "5119ca2252d1f120af1f5dc745ad75de8f194498d959e545a4a18a8845c3ae82",
+    "artifacts/faculty-club-review/final-candidate/faculty-club.png": "a614ddc7fe5580e5723e83ecfc0c12a31d50024af21c186969240afaf88018cb",
+    "artifacts/faculty-club-review/final-candidate/preview-method.json": "3148860d637fbdf5aee398fea55bf41552d04c5b05dcbf0a9e41e57b10aa0fda",
+    "artifacts/faculty-club-review/final-candidate/provenance.json": "103aab33bdc6988dde5fa969afa6ea7daeb4b3322b0c110c9a06a9b21ae26541",
+    "artifacts/release-18-verification.log": "bd402c83f78f4488232c1584af9372ee4b4a79e3fa25d9a0456b2813b7e9d836",
+    "artifacts/central65-61-review/suite-completion.json": "d0850589ee1b277167ad3907fd9dc34a157b5aab9d056a72d870a3e0e212308f",
+    "artifacts/central65-61-independent-review/results.json": "3543190483c1ceed57ddb39b18060a4d7ce8c4a3084b50b69da4910f96fcb734",
+    "artifacts/central65-61-independent-review/65/results.json": "971e99151f0566e11c75bd1650efc6f12543622e16b9a24ef0d353952b99f146",
+    "artifacts/central65-61-independent-review/supplemental-results.json": "9d66c1911e44299f16c39a4301c08931779121ffbf2859a25f128423c6ca954e",
+    "artifacts/mobile-cpu-review/compare-17-18.json": "20aeee894449b7ccc4df95928530d83fbb0f809b71524270a0bc6eeed3da42e8"
+  }
+}

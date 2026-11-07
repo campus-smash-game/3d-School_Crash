@@ -1,0 +1,776 @@
+{
+  "buildingId": "way/439693757",
+  "buildingNumber": "70",
+  "name": "서울대학교 박물관",
+  "status": "custom-model-applied-partial",
+  "research": "artifacts/museum-review/review.json",
+  "sourceEvidence": [
+    {
+      "url": "https://museum.snu.ac.kr/v2/about/construct/",
+      "localFile": "construct.html",
+      "kind": "박물관 운영자 공식 건축 설명",
+      "access": "공개 HTTP 본문과 사진을 직접 확인했다. 웹 도구의 문서 변환은 실패했지만 공개 원문 HTTP는 200으로 응답했다."
+    },
+    {
+      "url": "https://www.aurum.re.kr/Bits/BuildingDoc.aspx?mm=4&num=168&ss=1",
+      "localFile": "aurum.html",
+      "kind": "건축도시정책정보센터의 건축물 정보와 설계사 원도면",
+      "credit": "BuildingFile168 및 _1~_8의 출처는 해당설계사로 기재되어 있다. 나머지 파일에는 건축문화나 빌딩문화 출처가 붙어 있다."
+    },
+    {
+      "url": "https://museum.snu.ac.kr/v2/information/guide/",
+      "localFile": "guide.html",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/01/guide_img.png",
+      "imageFile": "guide.png",
+      "kind": "박물관 공식 이용 안내의 정면 사진"
+    },
+    {
+      "url": "https://museum.snu.ac.kr/",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2023/12/slider_img1-1900x650.jpg",
+      "imageFile": "exterior.jpg",
+      "kind": "박물관 공식 첫 화면의 외관 사진"
+    },
+    {
+      "url": "https://museum.snu.ac.kr/",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/02/slider_img5-1600x547.jpg",
+      "imageFile": "courtyard.jpg",
+      "kind": "박물관 공식 첫 화면의 중정 사진"
+    },
+    {
+      "url": "https://museum.snu.ac.kr/v2/board/notice/?mod=document&uid=1063",
+      "localFile": "closure.html",
+      "kind": "2026년 내부 시설 개선 공사 휴관 공지",
+      "publishedAt": "2026-05-11",
+      "period": [
+        "2026-05-19",
+        "2026-11-30"
+      ],
+      "interpretation": "내부 시설 개선 공사라고 명시했다. 이 공지만으로 외벽, 중정, 지붕의 변경을 판단할 수 없다."
+    }
+  ],
+  "confirmedFacts": {
+    "sourceUrls": [
+      "https://museum.snu.ac.kr/v2/about/construct/",
+      "https://www.aurum.re.kr/Bits/BuildingDoc.aspx?mm=4&num=168&ss=1"
+    ],
+    "aboveGroundLevels": 2,
+    "basementLevels": 1,
+    "grossFloorAreaM2": 6165,
+    "buildingAreaM2": 3767,
+    "moduleM": 7.2,
+    "architect": "김종성",
+    "massing": "북측 전시실은 1층 높이이고 남측 전시실은 2층 높이다. 두 전시실 사이에 투명한 현관, 로비, 중정과 강당이 있다.",
+    "front": "설계도 나침반과 서측 입면, 공식 정면 사진을 대조하면 주현관은 서쪽에 있다.",
+    "stair": "남측 전시실의 서쪽 끝에 반원통형 계단실이 돌출한다.",
+    "skylights": "북측과 남측 전시실에 각각 두 줄의 긴 사분원호 채광창이 있다. 북측의 두 줄은 운영자 본문에도 명시되어 있으며, 남측의 두 줄은 공식 사진과 도면으로 확인했다.",
+    "material": "운영자 설명은 문경석 외벽과 동판 채광창을 명시한다. 사진에서는 밝은 회색이나 연한 베이지색 석재, 짙은 상부 테두리, 청록색으로 변한 동판이 보인다.",
+    "courtyard": "1층 도면의 21 COURTYARD 표기, 2층 도면, 단면, 공식 중정 사진이 가운데 열린 공간을 뒷받침한다. 현관 바로 뒤쪽이며 강당보다 서쪽에 있다.",
+    "eastAndSouth": "동측과 남측 입면에는 연구실 등의 반복 창과 출입문이 있다. 정면의 무창 전시 벽을 모든 방향에 반복하면 도면과 달라진다."
+  },
+  "directImageObservations": [
+    {
+      "file": "BuildingFile168.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168.jpg?width=900",
+      "observation": "배치도의 북쪽은 화면 왼쪽, 동쪽은 위쪽이다. 서쪽 현관 앞 마당과 주변 체육장, 미술대학, 법학도서관의 관계를 보여 준다."
+    },
+    {
+      "file": "BuildingFile168_1.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_1.jpg?width=900",
+      "observation": "1층 평면도는 중앙 중정과 강당, 북측 전시실, 남측 전시실, 서쪽 반원 계단을 구분한다. 범례 21은 중정, 22는 야외 전시 공간이다."
+    },
+    {
+      "file": "BuildingFile168_2.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_2.jpg?width=900",
+      "observation": "2층 실내는 남측과 동측 부분에 있으며, 북측은 두 줄 채광창이 있는 낮은 지붕으로 그려져 있다. 중정의 빈 부분도 유지된다."
+    },
+    {
+      "file": "BuildingFile168_3.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_3.jpg?width=900",
+      "observation": "서측 입면은 낮은 북측 벽, 가운데 유리 현관, 높은 남측 벽과 반원 계단을 보여 준다. 북측 입면에는 긴 채광창 유리 면이 있다."
+    },
+    {
+      "file": "BuildingFile168_4.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_4.jpg?width=900",
+      "observation": "동측과 남측 입면에는 일반 창과 문이 있다. 앞면과 다른 후면 구성을 확인할 수 있다."
+    },
+    {
+      "file": "BuildingFile168_5.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_5.jpg?width=900",
+      "observation": "횡단면은 낮은 북측 전시실, 중정, 높은 남측 두 층과 그 아래 지하층을 보여 준다. 종단면에도 지붕이 열린 중정이 보인다."
+    },
+    {
+      "file": "BuildingFile168_6.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_6.jpg?width=900",
+      "observation": "분해 축측도에서 낮은 지붕과 높은 지붕의 채광창, 가운데 중정의 열린 부분, 별도 강당 지붕을 구분할 수 있다."
+    },
+    {
+      "file": "BuildingFile168_7.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_7.jpg?width=900",
+      "observation": "1층 축측도에서 중정 주위 복도와 반원 계단의 관계를 확인했다."
+    },
+    {
+      "file": "BuildingFile168_8.jpg",
+      "imageUrl": "http://building2.auric.or.kr/Upload/BuildingImgDwg/Large/BuildingFile168_8.jpg?width=900",
+      "observation": "전시실 내부 투시도와 부분 평면이다. 전체 외관 치수를 정하는 근거로 사용하지 않았다."
+    },
+    {
+      "file": "guide.png",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/01/guide_img.png",
+      "observation": "서쪽의 높은 위치에서 본 정면 사진이다. 양쪽 지붕의 채광창 두 줄씩과 중앙 중정 안 대나무가 보인다. 앞마당의 넓은 계단, 중앙 유리 현관, 오른쪽 높은 곡면 벽을 확인했다."
+    },
+    {
+      "file": "courtyard.jpg",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/02/slider_img5-1600x547.jpg",
+      "observation": "중정의 하늘, 대나무, 석탑, 주변 유리 복도를 확인했다. 식재와 석탑의 정확한 현재 위치를 실측한 자료는 아니다."
+    },
+    {
+      "file": "construct-1.jpg",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/01/construct_img1.jpg",
+      "observation": "서쪽 정면의 현관과 높은 곡면 석재 벽, 석재 줄눈, 짙은 상부 테두리를 확인했다."
+    },
+    {
+      "file": "construct-2.jpg",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/01/construct_img2.jpg",
+      "observation": "중정의 대나무와 석탑, 주변 유리 복도를 확인했다."
+    },
+    {
+      "file": "construct-3.jpg",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/01/construct_img3.jpg",
+      "observation": "중정에 접한 유리 복도와 돌출 지붕을 확인했다."
+    },
+    {
+      "file": "construct-4.jpg",
+      "imageUrl": "https://museum.snu.ac.kr/wp-content/uploads/2020/01/construct_img4.jpg",
+      "observation": "정면 전체의 낮은 왼쪽 부분, 유리 현관, 높은 오른쪽 곡면 벽을 확인했다."
+    }
+  ],
+  "originalMap": {
+    "source": "public/data/campus.json",
+    "id": "way/439693757",
+    "distinctVertices": 19,
+    "holes": [],
+    "heightMeters": 14,
+    "levels": 4,
+    "heightEstimated": true,
+    "levelsEstimated": true,
+    "correction": "원본 4층 추정은 공식 지상 2층과 다르다. 원본 자료를 고치지 않고 전용 모델에서 두 날개의 높이를 구분한다."
+  },
+  "orientation": {
+    "coordinateConvention": "D=(동쪽, 위쪽, 북쪽)에서 구성하며 화면의 Z축 반사는 공통 부모에서 한 번 적용한다.",
+    "frame": {
+      "origin": [
+        303.21,
+        -178.95
+      ],
+      "east": [
+        0.9970403594989296,
+        -0.07687991629967691
+      ],
+      "north": [
+        0.07687991629967691,
+        0.9970403594989296
+      ],
+      "south": [
+        -0.07687991629967691,
+        -0.9970403594989296
+      ],
+      "definition": "원본 꼭짓점 0을 원점으로 하고 0에서 18로 향하는 북측 긴 변을 local east로 놓았다. world x는 동쪽, z는 북쪽이다.",
+      "projected": [
+        {
+          "index": 0,
+          "east": 0,
+          "south": 0
+        },
+        {
+          "index": 1,
+          "east": 0.002178895493152755,
+          "south": 24.35190537211441
+        },
+        {
+          "index": 2,
+          "east": 0.009504579471642405,
+          "south": 30.820486849869358
+        },
+        {
+          "index": 3,
+          "east": -5.292203880334004,
+          "south": 32.563239674347166
+        },
+        {
+          "index": 4,
+          "east": -7.744924427097397,
+          "south": 36.91468333358083
+        },
+        {
+          "index": 5,
+          "east": -8.239841728667532,
+          "south": 39.8614539158635
+        },
+        {
+          "index": 6,
+          "east": -6.558664793801341,
+          "south": 43.97437795037641
+        },
+        {
+          "index": 7,
+          "east": -3.805776776133688,
+          "south": 45.3367683357586
+        },
+        {
+          "index": 8,
+          "east": -3.843330532292682,
+          "south": 53.82477691936629
+        },
+        {
+          "index": 9,
+          "east": 14.808507223567902,
+          "south": 53.91108062179369
+        },
+        {
+          "index": 10,
+          "east": 14.781164988639603,
+          "south": 59.539841800080524
+        },
+        {
+          "index": 11,
+          "east": 60.01909529210313,
+          "south": 59.7224940898942
+        },
+        {
+          "index": 12,
+          "east": 60.052924980067026,
+          "south": 51.8365537178008
+        },
+        {
+          "index": 13,
+          "east": 66.95561540654748,
+          "south": 51.865962494978426
+        },
+        {
+          "index": 14,
+          "east": 66.98533852032868,
+          "south": 38.3336265348972
+        },
+        {
+          "index": 15,
+          "east": 62.961836306359096,
+          "south": 38.312891680624276
+        },
+        {
+          "index": 16,
+          "east": 62.97157190429837,
+          "south": 20.359006161936883
+        },
+        {
+          "index": 17,
+          "east": 79.21972562355562,
+          "south": 20.35985196725578
+        },
+        {
+          "index": 18,
+          "east": 79.2144462834905,
+          "south": 0
+        }
+      ]
+    },
+    "front": "서쪽 현관",
+    "northWing": "낮은 1층 전시실",
+    "southWing": "높은 2층 전시실",
+    "roundStairVertices": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "skylight": "서측 입면에서 북쪽인 왼쪽에 수직 유리 면이 있고 남쪽으로 곡면 동판이 내려간다. 동측 입면에서는 좌우가 반대로 보인다. 양쪽 입면을 대조한 방향 해석이다.",
+    "courtyard": "서쪽 현관 뒤, 동쪽 강당 앞의 중앙 열린 공간이다. 원본 OSM에 holes가 없더라도 공식 도면과 사진에서 확인한 빈 공간을 전용 모델에 반영할 수 있다."
+  },
+  "drawingMapMismatch": {
+    "file": "BuildingFile168_1.jpg",
+    "northLongEdgeMapM": 79.2144462834905,
+    "northLongEdgeDrawingApproxM": 76.5,
+    "stairSpanMapM": 14.516281485889241,
+    "stairSpanDrawingApproxM": [
+      8,
+      9
+    ],
+    "meaning": "방위와 구성은 대응하지만 일부 폭과 깊이가 다르다. 도면을 지도에 균일 배율로 붙인 결과를 현재 건물의 정확한 평면으로 간주하지 않는다."
+  },
+  "modelContract": {
+    "status": "implemented-with-dimension-estimates",
+    "module": "src/museumLandmark.ts",
+    "export": "createMuseumLandmark",
+    "landmark": "museum",
+    "sourceSha256": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+    "sourceOutlinePreserved": true,
+    "sourceOutlineVertices": 19,
+    "sourceHoles": [],
+    "customCourtyardAdded": true,
+    "rawCampusDataUnchanged": true,
+    "rawDemDataUnchanged": true,
+    "terrainSourceUnchanged": true,
+    "levels": {
+      "aboveGround": 2,
+      "belowGround": 1,
+      "northExhibition": 1,
+      "southExhibition": 2,
+      "official": true,
+      "basementInteriorModeled": false
+    },
+    "heightsMeters": {
+      "northExhibitionAndLobby": 5.8,
+      "southExhibition": 10.8,
+      "auditoriumRoof": 6.45,
+      "northSkylightPeak": 8.8,
+      "southSkylightPeak": 13.8,
+      "estimated": true
+    },
+    "datum": {
+      "method": "원본 19개 꼭짓점 평균 중심에서 heightAt을 호출한다. 수평 로컬 원점은 원본 꼭짓점 0이며, 바닥 기준고는 평균 중심에서 얻은 높이다.",
+      "sampleWorld": {
+        "x": 328.31315789473683,
+        "z": -217.93684210526317
+      },
+      "currentWorldBase": 24.4788818359375,
+      "localHorizontalOrigin": {
+        "x": 303.21,
+        "z": -178.95
+      },
+      "localEast": [
+        0.9970418512193806,
+        -0.0768605680243801
+      ],
+      "heightCallbackPreserved": true
+    },
+    "geometry": {
+      "renderMeshes": 3,
+      "breakableParts": 631,
+      "nondegenerateTriangles": 19772,
+      "triangleCriterion": "삼각형 두 변의 외적 lengthSq > 1e-12",
+      "proceduralMaterials": true,
+      "photoTexturesUsed": false
+    },
+    "courtyard": {
+      "localEastRange": [
+        20.14,
+        32.45
+      ],
+      "localSouthRange": [
+        22.99,
+        37.15
+      ],
+      "openToSky": true,
+      "dimensionsEstimated": true,
+      "positionEvidence": "도면의 몸체 경계를 OSM 구역 경계에 따로 맞춘 후보를 채택했다. 전체를 실측 정합한 결과는 아니다.",
+      "glassHeightMeters": 4.4,
+      "doorWidthMeters": 3.2,
+      "doorLocalSouth": 26,
+      "belowRoofBlockedByWholeBuildingHull": false
+    },
+    "skylights": {
+      "count": 4,
+      "shape": "quarter-circle",
+      "localEastRange": [
+        4,
+        54
+      ],
+      "localSouthStarts": [
+        3,
+        10.2,
+        39.8,
+        47
+      ],
+      "radiusMeters": 3,
+      "curvedConvexPanels": 224,
+      "copperThicknessMeters": 0.09,
+      "verticalGlassFacing": "north",
+      "copperCurveDescends": "south",
+      "hollowInside": true,
+      "roofOpenBelow": true,
+      "dimensionsEstimated": true
+    },
+    "entrance": {
+      "facing": "west",
+      "localEast": 0.38,
+      "localSouth": 26,
+      "widthMeters": 5.4,
+      "heightMeters": 4.1,
+      "floorRelativeMeters": 0.18,
+      "photographicPositionApproximate": true
+    },
+    "approach": {
+      "stairSteps": 14,
+      "stairWidthMeters": 21,
+      "stairEastRange": [
+        -34,
+        -22
+      ],
+      "firstStepConnectionLengthMeters": 3,
+      "plazaEastRange": [
+        -22,
+        0.65
+      ],
+      "plazaSouthRange": [
+        15,
+        36
+      ],
+      "plazaHeightRangeMeters": [
+        -1.5,
+        0.18
+      ],
+      "dimensionsEstimated": true,
+      "terrainModified": false,
+      "meaning": "앞마당과 계단은 공식 사진의 큰 형태를 참고하고 현재 게임 DEM에 연결했다. 실제 계단 단수와 경사를 측량한 모델은 아니다."
+    },
+    "auditorium": {
+      "localEastRange": [
+        42,
+        61
+      ],
+      "localSouthRange": [
+        22,
+        37.3
+      ],
+      "heightMeters": 6.45,
+      "shape": "직사각형의 약간 높아진 지붕",
+      "dimensionsEstimated": true,
+      "curvedInteriorAndFrontNotReconstructed": true
+    },
+    "numberLabel": {
+      "text": "70",
+      "segments": 9,
+      "triangleFaces": 18,
+      "partOfCurvedWall": true,
+      "removedWithWall": true,
+      "proceduralGeometry": true
+    },
+    "damage": "부품별 프록시의 상태에 따라 병합 메시의 해당 정점 범위를 제거한다. 원거리에서도 남은 형상을 유지하며 초기화 때 원본 버퍼와 충돌을 복원한다.",
+    "visibleApproximation": "서쪽 곡면 계단실은 원본 OSM 꼭짓점 2~7의 다각형 윤곽을 유지한다. 도면보다 넓은 폭과 다각형 모서리가 남으므로 정확한 반원 반지름을 복원했다고 표현하지 않는다."
+  },
+  "verification": {
+    "status": "passed-node-regressions-with-visual-reference-review",
+    "scope": "실제 모듈의 기하, 현재 DEM, Rapier와 CPU 광선을 검사했다. CPU 미리보기와 공식 사진을 직접 대조했지만 실제 GPU 렌더링과 휴대전화 입력 또는 성능을 검사한 결과는 아니다.",
+    "implementation": {
+      "artifact": "artifacts/museum-test/results.json",
+      "script": "scripts/verify-museum.mjs",
+      "passed": 12,
+      "failed": 0,
+      "moduleSha256": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+      "resultNames": [
+        "official two levels and basement are separate from estimated heights and original footprint",
+        "roof triangulation retains the original outline while excluding courtyard and all skylight openings",
+        "courtyard has open sky in render and physical geometry",
+        "four quarter-circle skylights retain hollow interiors and smooth radial normals",
+        "glass remains above actual terrain and north-facing skylight glazing is exposed",
+        "southwest stair enclosure preserves empty space inside the mapped curved wall",
+        "front stair and long plaza support centre and edge capsule paths in both directions",
+        "destroying the front and courtyard doors opens a capsule route into the courtyard",
+        "number 70 is exposed and reads left to right after one H reflection",
+        "loaded and unloaded external rays agree for walls glass convex roof and copper panels",
+        "partial copper damage and complete destruction persist at distance and reset exactly",
+        "H reflection and callback offset preserve geometry and logical physics"
+      ],
+      "metrics": {
+        "roof": {
+          "convexParts": 140,
+          "coveredSamples": 635,
+          "openSamples": 119,
+          "outsideSamples": 366,
+          "totalSamples": 1120
+        },
+        "courtyardSky": {
+          "sampleCount": 25,
+          "renderAndLoadedAndUnloaded": true
+        },
+        "curvedSkylights": {
+          "convexPanels": 224,
+          "hollowInteriorRays": 4,
+          "emptyCornerRays": 4,
+          "curveSamples": 16,
+          "maximumSampledTessellationErrorMeters": 0.001482890003656534
+        },
+        "glass": {
+          "samples": 3420,
+          "minimumTerrainClearanceMeters": 0.19039606820752297
+        },
+        "number": {
+          "exposedTriangleRays": 18,
+          "reflectedExposedTriangleRays": 18,
+          "leftToRightAfterH": true,
+          "partOfDestructibleWall": true
+        },
+        "externalRays": {
+          "count": 616,
+          "componentKinds": 21,
+          "maximumLoadedUnloadedDistanceDifferenceMeters": 0.00038720369338918204,
+          "seamTiesExcluded": 0,
+          "insideOriginsExcluded": true,
+          "selection": "먼저 loaded 광선이 의도한 타깃을 맞힌 후보만 남겨 미로드 프록시 경로와 비교했다. 모든 외부면을 빠짐없이 검사한 수치가 아니며 실제 렌더 면과의 완전한 일치를 뜻하지 않는다."
+        },
+        "movement": {
+          "speedMetersPerSecond": 6,
+          "centreAndBothEdgesInBothDirections": true,
+          "closedEntranceBlocks": true,
+          "entranceAndCourtyardDoorDestructionAllowsEntry": true
+        },
+        "damageAndReset": {
+          "partialAndCompleteDestruction": true,
+          "distancePersistence": true,
+          "restoredParts": 631,
+          "restoredTriangles": 19772
+        },
+        "placement": {
+          "singleHReflection": true,
+          "callbackOffsetMeters": 50,
+          "reversedOutlinePreservesDatum": true
+        }
+      }
+    },
+    "independent": {
+      "artifact": "artifacts/museum-independent-review/results.json",
+      "script": "artifacts/museum-independent-review/review.mjs",
+      "passedChecks": 8,
+      "failedChecks": 0,
+      "additionalStairObservationRecord": 1,
+      "moduleSha256": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+      "reviewedAt": "2026-11-04T23:23:09.864Z",
+      "sourceStillMatches": true,
+      "independence": "중정과 네 천창, 빈 공간의 요구는 공식 도면과 사진을 기준으로 정했다. 렌더 곡면에서 고른 광선이 물리에서 먼저 맞히는지에 따라 표본을 제거하지 않았다.",
+      "metrics": {
+        "movement": {
+          "stairRoutes": 6,
+          "speedMetersPerSecond": 6,
+          "minimumTravelMeters": 16.41954828687391,
+          "maximumLateralMeters": 0.006471179845286899,
+          "maximumAirFrames": 0,
+          "doorAndCourtyardSequence": true,
+          "scope": "중앙과 양끝의 양방향 계단 경로, 외부에서 로비와 회랑을 거쳐 중정으로 가는 정해진 경로를 검사했다. 전체 내부 통행 검사는 아니다."
+        },
+        "courtyardSky": {
+          "samples": 9,
+          "renderLoadedUnloaded": true
+        },
+        "skylights": {
+          "renderSurfaceRays": 12,
+          "emptySpaceRays": 8,
+          "maximumRenderPhysicsDistanceDifferenceMeters": 0.00019174218176520874,
+          "maximumLoadedUnloadedDistanceDifferenceMeters": 0.00018721638208002434
+        },
+        "glass": {
+          "samples": 3420,
+          "belowTerrain": 0,
+          "minimumClearanceMeters": 0.19039606820752297
+        },
+        "damageReset": {
+          "distancesMeters": [
+            279,
+            281,
+            900
+          ],
+          "resetCycles": 4,
+          "restoredTargets": 631,
+          "restoredTriangles": 19770,
+          "triangleCriterion": "삼각형 두 변의 외적 lengthSq > 1e-10",
+          "countDifference": "구현 검사 및 미리보기의 기준 1e-12보다 작은 삼각형을 더 제외해 2개 적다. 같은 소스의 형상을 세는 기준 차이며 모델 변경이 아니다.",
+          "debrisAfterReset": 0,
+          "initialFixtureRestoredBodies": 415,
+          "initialFixtureRestoredLoadedTargets": 414
+        },
+        "reflection": {
+          "rays": 5,
+          "maximumReflectedDistanceError": 0,
+          "maximumLoadedUnloadedDistanceDifferenceMeters": 0.00013072986511780682,
+          "perspectiveAspectRatios": [
+            0.46208530805687204,
+            2.164102564102564
+          ],
+          "scope": "실제 Three.js PerspectiveCamera 계산을 이용한 CPU 투영이다. 가로/세로 화면의 GPU 픽셀 또는 실제 휴대전화 실행은 아니다."
+        }
+      }
+    },
+    "cpuPreview": {
+      "file": "artifacts/museum-review/final-museum.png",
+      "method": "artifacts/museum-review/final-preview-method.json",
+      "directlyViewed": true,
+      "renderMeshes": 3,
+      "nondegenerateTriangles": 19772,
+      "referenceFiles": [
+        "artifacts/museum-review/guide.png",
+        "artifacts/museum-review/BuildingFile168_1.jpg",
+        "artifacts/museum-review/BuildingFile168_3.jpg",
+        "artifacts/museum-review/BuildingFile168_4.jpg",
+        "artifacts/museum-review/BuildingFile168_5.jpg",
+        "artifacts/museum-review/BuildingFile168_6.jpg"
+      ],
+      "observations": [
+        "서쪽 정면에서 낮은 북측 몸체가 왼쪽, 높은 남측 몸체가 오른쪽이며 가운데 유리 현관이 있다. 공식 서측 입면 및 정면 사진과 같은 관계다.",
+        "조감도에 네 천창과 열린 중정이 보이고, 북측 옆면에서는 두 높이의 채광창 유리 띠와 뒤쪽 창을 확인할 수 있다.",
+        "곡면 벽의 70이 서쪽 정면에서 읽는 순서로 표시된다. 실제 획 앞면의 노출과 H 뒤 노출은 별도 광선 검사로 확인했다.",
+        "OSM의 다각형 곡면이 공식 사진보다 각지고 넓게 보이며, 중정의 대나무와 석탑, 강당의 곡선 앞벽은 생략돼 있다."
+      ],
+      "limits": "CPU 직교 투영이며 불투명 유리 색과 단순 법선 음영을 사용한다. PBR, 그림자, 텍스처와 실제 WebGL 결과를 검증하지 않는다.",
+      "artifactKind": "현재 게임 기하를 CPU로 투영한 검토 산출물이며 공식 원본 사진이 아니다.",
+      "originalGeneratedPath": "artifacts/geometry-previews/museum.png"
+    },
+    "browserAndDeviceVerified": false,
+    "wholeCampusSuite": {
+      "scope": "root가 공통 검사를 별도로 실행했다. 박물관 전용 및 독립 검사의 상세 범위는 위 항목을 따른다.",
+      "artifact": "artifacts/release-verification.log",
+      "passed": 284,
+      "failed": 0,
+      "scripts": 31,
+      "exitCode": 0,
+      "logSha256": "ff04e8d984a64c5d5a44c8b3d462b51867cfaa9f78576d98c145a58003d4a0d4"
+    },
+    "additionalIndependentReview": {
+      "status": "passed",
+      "artifact": "artifacts/museum-independent-review/supplemental-results.json",
+      "script": "artifacts/museum-independent-review/supplemental.mjs",
+      "summaryArtifact": "artifacts/museum-independent-review/summary.json",
+      "reviewedAt": "2026-11-04T23:29:27.389Z",
+      "passedChecks": 3,
+      "failedChecks": 0,
+      "combinedIndependentChecks": 11,
+      "sourceFilesChecked": 34,
+      "allSourceHashesUnchanged": true,
+      "scope": "실제 전체 캠퍼스 모델, DEM, Simulation과 Rapier를 Node에서 검사했다. Canvas 글자 그리기만 대역을 사용했으며 브라우저, GPU와 휴대전화 검사는 아니다.",
+      "metrics": {
+        "fastTravel": {
+          "location": {
+            "id": "way/439693757",
+            "name": "70 서울대학교 박물관",
+            "x": 294.55433918347086,
+            "z": -245.7116561620235
+          },
+          "eyeSpawn": [
+            294.55433918347086,
+            27.345149846674495,
+            -245.7116561620235
+          ],
+          "doorsIntactAndDestroyed": true,
+          "settleFrames": [
+            30,
+            120
+          ],
+          "capsulePenetrations": 0,
+          "outboundMetres": 5.999825301042225,
+          "returnMetres": 5.8953731009683175,
+          "scope": "실제 빠른 이동 좌표에서 남측 도로를 따라 서쪽으로 약 6 m 이동하고 돌아왔다. 이 좌표에서 현관까지 이어지는 전체 경로를 검사한 것은 아니다.",
+          "initialAndSettledFrames": [
+            0,
+            30,
+            120
+          ],
+          "groundedAtFrames": [
+            30,
+            120
+          ]
+        },
+        "numberLabel": {
+          "glyphQuads": 9,
+          "exposedTriangleRays": 18,
+          "maximumExposureErrorMetres": 6.583622536027178e-14,
+          "unmirroredSeven": true,
+          "zeroOpenLoop": true,
+          "aspectRatios": [
+            0.46208530805687204,
+            2.164102564102564
+          ],
+          "scope": "실제 획의 기하, CPU 광선 노출과 PerspectiveCamera 투영 방향을 검사했다. GPU 픽셀의 글꼴 재현도나 가독성 검사는 아니다."
+        },
+        "fullCampusDamage": {
+          "component": "번호가 있는 곡면 벽",
+          "renderShells": 1,
+          "emptyDistantGroups": 1,
+          "beforeTriangles": 19770,
+          "damagedTriangles": 19720,
+          "distancesMeters": [
+            0,
+            279,
+            281,
+            900,
+            0
+          ],
+          "restoredFixtureBodies": 600,
+          "triangleCriterion": "cross.lengthSq()>1e-10",
+          "scope": "해당 벽을 파괴한 뒤 거리 경계를 왕복해도 재생되지 않고 초기화하면 복원됐다. body 수는 이 전체 캠퍼스 검사 배치의 로딩 범위에 따른 값이다."
+        }
+      }
+    }
+  },
+  "remainingLimits": [
+    "도면은 현재 외관의 실측 자료가 아니다. OSM과 일부 폭, 깊이와 곡면 구간이 다르며 도면 축선과 지도 외벽선을 같은 선으로 취급하지 않는다.",
+    "두 날개의 벽 높이, 채광창 곡률과 길이, 중정 크기, 현관과 출입계단 치수는 추정이다.",
+    "2026년 5월 19일부터 11월 30일까지의 휴관 공지는 내부 시설 개선 공사를 안내한다. 외벽이나 지붕 변경을 명시하지 않아 공사 이후 외관은 확인하지 못했다.",
+    "전시실, 강당, 연구실과 지하층의 실내 전체를 복원하는 모델은 아니다. 외부 계단에서 현관, 로비와 중정 회랑을 거쳐 중정으로 가는 일부 경로만 구현하고 검사했다.",
+    "공식 사진의 촬영일과 현재 식재 상태는 확인하지 못했다. 대나무와 석탑을 관찰했지만 정확한 위치와 치수는 실측하지 않았다.",
+    "카카오맵이나 네이버지도 거리뷰, 브라우저 UI, 실제 GPU 화면과 휴대전화 실행은 확인하지 않았다.",
+    "공식 사진과 설계도는 형태 관찰에만 사용한다. 사진을 게임 텍스처로 사용하거나 원도면을 배포 자산에 넣지 않는다.",
+    "중정의 대나무와 석탑, 반원 계단실의 실내 계단 상세, 강당의 곡선 앞벽과 지하 내부는 구현하지 않았다.",
+    "천창 선분 근사의 최대 오차는 선택한 16개 표본에서 약 0.001483m였다. 전체 연속 곡면의 수학적 최대 오차나 실측 오차를 보증하는 값은 아니다.",
+    "구현 검사의 616개 외부 광선은 loaded 판정으로 후보를 먼저 선별했다. 독립 검사는 별도 렌더 곡면과 빈 공간 표본을 사용하며, 두 검사 모두 전체 외벽의 모든 점을 검사한 것은 아니다."
+  ],
+  "sourceSnapshot": {
+    "src/museumLandmark.ts": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+    "scripts/verify-museum.mjs": "3fce1d4cd1440ab14e1915890167e4e5b290a07724efcec8630d3e65bde242aa",
+    "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/buildingAppearance.ts": "5effdaee215304d162dedf49991e9d21c7d8257a9a9b59b7d0597c5a44a01164",
+    "src/landmarkBuildings.ts": "98bf147ccd65cbed4bc83e9942cd7cb7aa662b0c52d3b38046cfe355dec67073",
+    "public/data/campus.json": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "artifacts/museum-review/review.json": "a5f05a2476abbf5070b1ef63e6d6aa1ddcc9144d270d712b2d7fb801626c1732",
+    "artifacts/museum-test/results.json": "e56657a9ba201f996d1cb4150115277b9ef565302ba4349c773421e8d91691d4",
+    "artifacts/museum-independent-review/results.json": "89ade9cc442ef45a741e9939494a7f465431a41fc24a20eebf25b36622744dc5",
+    "artifacts/museum-review/final-preview-method.json": "95d0a33af8f50767397ae5a5714e803fc39571b256acea3cc9352344c9971f5b",
+    "artifacts/museum-review/final-museum.png": "99efc90b32a421fe199f25d6e845f3364813d893709d8e039183ba51c2cf45c4",
+    "artifacts/museum-independent-review/supplemental-results.json": "29fddeafd3cb672b6f0d383a6c09acac1b76656d9a3642373e839e3062f1fa1e",
+    "artifacts/museum-independent-review/summary.json": "ae32a52a7ba78e95582ee7140e2c21e4b72e65fa3198e313f0501e7501e9f936",
+    "artifacts/release-verification.log": "ff04e8d984a64c5d5a44c8b3d462b51867cfaa9f78576d98c145a58003d4a0d4"
+  },
+  "history": [
+    {
+      "status": "reference-reviewed-model-in-progress",
+      "proposedGeometry": {
+        "status": "implementation-in-progress-not-final",
+        "dimensionsEstimated": true,
+        "northWallMeters": 5.8,
+        "centralWallMeters": 5.8,
+        "southWallMeters": 10.8,
+        "skylightPeakMeters": 13.8,
+        "heightEvidence": "입면과 단면의 축척 막대에서 읽은 비례를 참고한 값이다. 숫자로 표기된 준공 높이나 현장 실측값은 아니다.",
+        "courtyard": {
+          "localEastRangeMeters": [
+            20.14,
+            32.45
+          ],
+          "localSouthRangeMeters": [
+            22.99,
+            37.15
+          ],
+          "confidence": "평면도 구역별 대응에 따른 추정",
+          "basis": "1F 그림에서 북측 몸체 경계 x≈258과 남측 몸체 경계 x≈381을 OSM의 S≈20.359/38.313에 대응시키고, 중정 유리 경계 x≈276~373을 보간한 후보다.",
+          "previousCandidate": {
+            "centerEast": 26,
+            "centerSouth": 28,
+            "status": "superseded-initial-rough-candidate"
+          },
+          "limit": "도면과 OSM이 완전히 정합하지 않으므로 이 좌표를 현재 중정의 실측치로 해석하지 않는다."
+        },
+        "auditorium": "도면에서 별도 지붕과 곡선 전면을 확인할 수 있다. 중앙 낮은 지붕보다 조금 높은 선이 보이지만 정확한 높이는 미확인이다.",
+        "rear": "동쪽의 높은 부분은 큰 창 2행, 남쪽에는 반복 창과 문을 구분한다. 서쪽의 무창 석재 전시 벽을 뒤쪽에 그대로 반복하지 않는다."
+      },
+      "verification": {
+        "status": "pending",
+        "implementationTests": null,
+        "independentReview": null,
+        "cpuPreviewDirectlyViewed": false,
+        "browserAndDeviceVerified": false
+      },
+      "meaning": "구현 전 제안과 미완료 검사 상태를 보존한다. 현재 수치는 modelContract와 verification에 있다."
+    }
+  ],
+  "updatedAt": "2026-11-04T23:32:17.442Z"
+}

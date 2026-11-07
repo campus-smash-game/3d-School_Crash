@@ -1,0 +1,88 @@
+{
+  "phase": 67,
+  "reviewedAt": "2026-11-07",
+  "building": "way/329398175",
+  "scope": "관정관 편의시설 앞 보행로와 옥상 연결교",
+  "sources": [
+    {
+      "url": "https://www.aurum.re.kr/Bits/BuildingDoc.aspx?mm=4&num=6114&ss=1",
+      "type": "공공 건축 자료",
+      "viewed": [
+        "배면 입면도",
+        "배치도",
+        "종단면도"
+      ],
+      "observed": "본체와 별도의 편의시설 동, 사이의 보행로, 좁은 중앙 연결교"
+    },
+    {
+      "url": "https://lib.snu.ac.kr/vr/index.html",
+      "type": "서울대학교 중앙도서관 공식 VR",
+      "scene": "pano11920",
+      "title": "관정관 3층 출입구",
+      "captureDate": null,
+      "observed": "평평한 참에서 점포 앞 통로로 이어지는 경로, 아래로 이어지는 계단, 도서관 출입부와 유리 난간"
+    },
+    {
+      "url": "https://snumall.tistory.com/entry/쉼이-있는-서울대-대형-카페-추천-베스트5",
+      "type": "블로그 사진",
+      "publicationDate": "2025-02-22",
+      "captureDate": null,
+      "observed": "회색 석재 포장, 점포 유리 전면, 짧은 금속 경사판과 검은 손잡이, 화분, 파스쿠찌와 파리바게뜨, CU, 休김밥 간판"
+    },
+    {
+      "url": "https://www.pascucci.co.kr/store/storeList.asp?searchValue=%EA%B4%80%EC%A0%95",
+      "type": "파스쿠찌 공식 매장 목록",
+      "observed": "서울대관정도서관점 등록, 관정도서관 부속동 2,3층 표기"
+    },
+    {
+      "url": "https://www.snu.ac.kr/snunow/events?bbsidx=149086&md=v",
+      "type": "서울대학교 2024년 행사 안내",
+      "observed": "파스쿠찌와 롯데관광 맞은편 장소 설명"
+    }
+  ],
+  "correction": "66차의 넓은 테라스가 점포 앞 보행로 위까지 덮는 배치를 수정했다. 편의시설 지붕은 본체 남동쪽으로 분리하고 통로 위에는 중앙 연결교만 남겼다.",
+  "implementation": [
+    "석재 보도와 줄눈",
+    "점포 유리문과 손잡이, 차양, 낮은 진입 경사판",
+    "유리 난간을 두른 편의시설 지붕과 중앙 연결교",
+    "아래쪽 도서관 출입부의 짧은 경사로",
+    "사진에서 읽은 점포 간판과 화분",
+    "서쪽 계단 참에서 이어지는 통로와 동쪽 지도 보행로 접속"
+  ],
+  "estimates": {
+    "coordinateFrame": "기존 관정관 축과 약학관1,3의 지도 배치를 도면과 대조",
+    "roofLocalX": [
+      -47.5,
+      55.5
+    ],
+    "roofLocalN": [
+      -30.5,
+      -21.5
+    ],
+    "courtLocalN": [
+      -21.5,
+      -10
+    ],
+    "bridgeLocalX": [
+      -12,
+      -8
+    ],
+    "courtHeight": "기존 계단 중간 참의 게임 표고를 사용",
+    "shopOrder": "사진에서 확인한 상대 위치를 반영했으나 전체 점포 간 거리와 문 중심은 근사",
+    "storeOperation": "파스쿠찌 공식 등록을 제외한 현재 영업 상태는 미확인",
+    "eastConnection": "지도 선에 맞춘 경사 접속로로 실제 마감과 형식은 미확인"
+  },
+  "preserved": [
+    "원본 campus.json",
+    "원본 terrain.json",
+    "원본 campus.osm",
+    "관정관 상부 165m × 30m 외곽",
+    "다른 건물 형상"
+  ],
+  "limitations": [
+    "전체 실내는 구현하지 않고 문 뒤의 얕은 현관만 추가했다.",
+    "지붕 높이, 통로 폭, 계단 단수와 경사판 치수는 실측값이 아니다.",
+    "참고 사진은 게임에 재배포하지 않고 절차적 기하와 글자 재질로 표현했다.",
+    "실제 휴대폰 성능은 별도 측정이 필요하다."
+  ]
+}

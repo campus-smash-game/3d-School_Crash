@@ -1,0 +1,263 @@
+{
+  "phase": 79,
+  "reviewedAt": "2026-11-07",
+  "scope": "30-2동 공대간이식당 공간의 외관과 양쪽 현관",
+  "summary": [
+    "공식 편의시설 안내는 공간을 30-2동 1층으로 표시한다. 사진의 식당 몸체는 낮은 한 층 규모이며, 현재 게임의 추정 4층 높이를 뒷받침하지 않는다. 건물 전체가 지하라는 근거도 없다.",
+    "2026년 8월 로드뷰에서 북쪽의 꺾인 긴 유리창, 회색 가로 패널, 서쪽 단부의 작은 창과 식재대를 확인했다.",
+    "공식 TOOGOOD 사진과 2024년 블로그의 넓은 유리 현관은 동쪽 문이다. 2011년 로드뷰의 촬영 좌표, 30동 숫자와 E30 표지, 뒤쪽 22동을 대조했다.",
+    "2024년 사진의 주황색 공간 간판과 좁은 난간 통로는 서쪽 문 후보이다. 사진 자체의 위치 표시는 없고 현재 로드뷰에서 직접 대조하지 못했으므로 배치는 추정으로 남긴다.",
+    "30동과 31동 연결 현관으로 오르는 서쪽의 넓은 계단은 식당 동쪽 현관 앞의 짧은 계단과 별개이다."
+  ],
+  "priorRecordsRead": [
+    "sources/engineering31-model-notes.json",
+    "sources/engineering-construction-notes.json",
+    "src/engineering3130Connection.ts",
+    "sources/building-references.json",
+    "public/data/campus.json",
+    "artifacts/engineering302-review79/raw-osm.json"
+  ],
+  "buildingIdentity": {
+    "restaurant": {
+      "osmWay": "way/377154957",
+      "officialSeq": 37,
+      "officialName": "공대간이식당",
+      "officialMarker": [
+        37.45727,
+        126.95079
+      ]
+    },
+    "engineering30": {
+      "osmWay": "way/389628347",
+      "officialSeq": 35,
+      "officialName": "공학관1"
+    },
+    "levelEvidence": {
+      "sourceUrl": "https://www.snu.ac.kr/campuslife/facilities/amenities",
+      "checked": "공간, 30-2동 1층",
+      "publicationDate": null,
+      "limitation": "영업 공간의 층 표기이다. 지하층 유무나 정확한 건물 높이를 명시한 건축 자료는 찾지 못했다. 원본 OSM의 식당에는 building:levels가 없다."
+    }
+  },
+  "entranceCorrespondence": [
+    {
+      "side": "동쪽",
+      "osmNode": "3805308076",
+      "latLon": [
+        37.4572476,
+        126.9508911
+      ],
+      "gamePoint": [
+        220.54,
+        -1015.32
+      ],
+      "osmUpdatedAt": "2020-09-16",
+      "tags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "photos": [
+        "research-roadview-east-door-front-old.png",
+        "research-blog202403-3.jpg",
+        "D:/codex/3d-School_Crash/references/buildings/photos/037-30-2.jpg"
+      ],
+      "directObservation": "금속 차양, 넓은 유리 현관, 현관 앞 타일 바닥과 짧은 계단, 노란 점자블록이 보인다. 30동 숫자 및 E30 공학관1 표지가 현관 왼쪽에 있다. 2011년에는 TOOGOOD 간판이 있었고, 2024년 게시 사진에서는 공간 안내와 분홍색 BR 자판기가 보인다.",
+      "orientationReason": "2011년 촬영점은 게임 좌표 약 [228.28,-1015.62]로 동쪽 문보다 동쪽이며, pan285.1로 서북서 방향의 현관을 본다. 촬영점의 Kakao Coords를 공개 SDK로 변환했다.",
+      "confidence": "방위와 현관 대응은 높음. 간판의 2026년 상태는 미확인.",
+      "limitation": "OSM 휠체어 태그만으로 경사로의 정확한 위치와 기울기를 확정하지 않는다. 사진의 단수와 높이를 실측하지 않았다."
+    },
+    {
+      "side": "서쪽",
+      "osmNode": "4564998560",
+      "latLon": [
+        37.4572612,
+        126.9506316
+      ],
+      "gamePoint": [
+        197.61,
+        -1013.8
+      ],
+      "osmUpdatedAt": "2016-12-21",
+      "tags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "photos": [
+        "research-blog202403-2.jpg"
+      ],
+      "directObservation": "주황색 공간 工簡 간판, 작은 돌출 차양, 유리 양개문, 세로 골이 있는 짙은 회색 벽과 옆의 작은 창을 확인했다. 문 앞에는 밝은 사각 타일 바닥, 양옆 금속 난간과 문턱 앞 점자블록이 있다.",
+      "estimate": "동쪽의 넓은 현관과 다른 문이고 원본 OSM에 서쪽 문이 따로 있으므로 서쪽 문에 대응할 후보이다.",
+      "limitation": "이 사진에는 위치 좌표나 충분한 주변 배경이 없다. 사진 속 통로를 특정 계단의 정확한 높이나 종점에 고정할 직접 근거는 부족하다. 2026년 로드뷰에서는 식재가 이 부분을 가렸다."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "official-restaurant-photo",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=37",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000037.jpg",
+      "localImage": "D:/codex/3d-School_Crash/references/buildings/photos/037-30-2.jpg",
+      "directlyViewed": true,
+      "captureDate": null,
+      "publicationDate": null,
+      "observation": "동쪽 현관의 과거 TOOGOOD 간판, 넓은 유리문, 얇은 금속 차양과 계단을 확인했다. 낮은 식당 몸체 뒤에 30동의 높은 벽이 있다.",
+      "limitation": "현재 간판으로 사용하면 안 된다. 배경의 높은 30동을 식당 층수에 포함하지 않는다."
+    },
+    {
+      "id": "blog-202403",
+      "sourceUrl": "https://snumall.tistory.com/entry/%EC%9D%B4%EC%9A%A9-%EC%A0%95%EB%B3%B4%EC%84%9C%EC%9A%B8%EB%8C%80-%EC%A7%9C%EC%9E%A5-%EC%A7%AC%EB%BD%95-%EB%B0%98%EA%B0%92-%EC%A4%91%EC%8B%9D-%EB%A7%9B%EC%A7%91",
+      "publicationDate": "2024-03-27",
+      "captureDate": null,
+      "imageIndex": "research-image-index.json",
+      "directlyViewed": [
+        "research-blog202403-1.jpg",
+        "research-blog202403-2.jpg",
+        "research-blog202403-3.jpg",
+        "research-blog202403-4.jpg"
+      ],
+      "observations": [
+        "1번: 북쪽 긴 유리창이 서쪽 단부에서 꺾인다. 회색 가로 패널, 작은 창, 낮은 지붕 가장자리와 식재대를 확인했다.",
+        "2번: 주황색 공간 간판이 있는 좁은 별도 출입구이다. 서쪽 문 대응은 추정이다.",
+        "3번: 넓은 동쪽 현관이다. 밝은 문틀, 상부 유리, 깊은 회색 차양, 공간 안내판과 BR 자판기가 보인다.",
+        "4번: 22동과 56동 사이 연결교 아래에서 식당 쪽을 본 보행로이다. 붉고 갈색인 벽돌 포장, 중앙 점자블록, 양옆 경계석, 나무와 왼쪽 외부 계단이 보인다."
+      ],
+      "limitation": "게시일을 촬영일로 쓰지 않는다. 4번의 보행로 전체가 2026년에도 같은 포장이라고 일반화하지 않는다."
+    },
+    {
+      "id": "alumni-202504",
+      "sourceUrl": "https://www.snua.or.kr/magazine?md=v&seqidx=12131",
+      "publicationDate": "2025-04",
+      "issue": 565,
+      "captureDate": null,
+      "directlyViewed": [
+        "research-snua202504-a.jpg",
+        "research-snua202504-b.jpg"
+      ],
+      "imageIndex": "research-image-index.json",
+      "observation": "공간 식당 전경이라는 공식 캡션이 있다. 긴 유리창과 회색 패널, 창에 붙은 공간 글자, 전면의 낮은 식재대, 보행광장의 동심원 형태 회색 포장을 확인했다. 실내 사진은 창이 있는 식사 공간을 보여 주며 지하 식당이라는 해석을 뒷받침하지 않는다.",
+      "limitation": "정확한 촬영일은 없다. 지붕 뒤의 높은 건물과 상부 연결 구조는 식당 본체와 구분한다. 인물은 식별하거나 분석하지 않았다."
+    },
+    {
+      "id": "roadview-202608-northwest",
+      "shareUrl": "https://kko.to/JTqexUSORP",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1213022588&pan=135.0&tilt=0.0&zoom=0&urlLevel=3&urlX=489072&urlY=1099440",
+      "captureDate": "2026-08",
+      "dateEvidence": "화면 왼쪽 위의 2026년 08월 표기를 직접 확인했다.",
+      "panoId": "1213022588",
+      "cameraKakaoCoords": [
+        489072,
+        1099440
+      ],
+      "cameraLatLon": [
+        37.45738883661151,
+        126.95059432759304
+      ],
+      "cameraGamePoint": [
+        194.31685,
+        -999.59386
+      ],
+      "directlyViewed": [
+        "research-roadview-east-step2.png",
+        "research-roadview-west-stairs-202608.png",
+        "research-roadview-east-step3.png",
+        "research-roadview-east-step4.png"
+      ],
+      "observation": "식당의 북쪽과 서쪽 외형, 북쪽 낮은 보행로와 서쪽 넓은 계단의 관계를 확인했다. 식당 북쪽은 밝은 회색 블록에 작은 짙은 사각형이 섞이고 노란 점자블록이 갈라진다. 서쪽 계단은 30/31 연결 현관 앞의 높은 마당으로 올라간다. 식당 유리창 아래에는 연속 식재대가 있다.",
+      "limitation": "step3와 step4는 같은 경로에서 동쪽으로 이동한 다른 촬영점이다. 이 공유 URL은 step2의 촬영점이다. 식당 서쪽 문과 정확한 계단 종점의 접속은 식재에 가려 직접 확인하지 못했다."
+    },
+    {
+      "id": "roadview-201104-east-entrance",
+      "shareUrl": "https://kko.to/Keyy4PHIyq",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104862&pan=285.1&tilt=0.0&zoom=0&urlLevel=3&urlX=489157&urlY=1099400",
+      "captureDate": "2011-04",
+      "dateEvidence": "화면 왼쪽 위의 2011년 04월 표기를 직접 확인했다.",
+      "panoId": "1017104862",
+      "cameraKakaoCoords": [
+        489157,
+        1099400
+      ],
+      "cameraLatLon": [
+        37.45724483466879,
+        126.95097870799681
+      ],
+      "cameraGamePoint": [
+        228.27911,
+        -1015.62416
+      ],
+      "directlyViewed": [
+        "research-roadview-east-door-front-old.png",
+        "research-roadview-east-entrance-next.png"
+      ],
+      "observation": "TOOGOOD 현관은 식당 동쪽 끝에 있다. 30동 숫자와 E30 안내판이 현관 남쪽에 있고, 북쪽 광장 건너에는 22동이 보인다. 현관 전면에는 짧고 넓은 계단과 타일 바닥, 점자블록이 있다.",
+      "limitation": "북쪽의 2026년 촬영점에서 동쪽 화살표를 따라가면 2011년 촬영점으로 자동 전환된다. 날짜가 다른 사진을 최신 연속 촬영으로 취급하지 않는다. 공유 URL을 다시 열 때 화면의 촬영 날짜를 확인해야 한다."
+    },
+    {
+      "id": "official-engineering30",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=35",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000035.jpg",
+      "localImage": "D:/codex/3d-School_Crash/references/buildings/photos/035-30.jpg",
+      "directlyViewed": true,
+      "captureDate": null,
+      "observation": "긴 벽돌 입면, 밝은 수직 기둥과 수평 띠, 반복 창과 깊은 지붕 처마가 보인다. 2011년 동쪽 로드뷰에서도 같은 긴 입면과 북쪽 단부의 30동 숫자를 확인했다.",
+      "limitation": "사진 아래쪽이 잘려 전체 층수를 사진만으로 세지 않았다. 30동 전체 모델을 이번 조사로 수정할 필요는 없다."
+    }
+  ],
+  "constructionComparison": {
+    "priorRecord": "기존 공사 기록의 직접 대상은 주로 31동, 31-1동, 32동이며 2025년 공사 계획과 행사 기사는 실제 현장 진행 정도와 구분한다.",
+    "observedCurrentArea": "2026년 8월 식당 북쪽 보행로와 30/31 연결 현관 앞 계단은 사진에 남아 있고 식당의 회색 몸체도 보인다.",
+    "limitation": "이번 촬영점에서 공사장 전체를 보지 않았다. 30-2 주변 전체가 공사 영향을 받지 않았다고 확정할 수 없다."
+  },
+  "implementationCandidates": [
+    "원본의 꺾인 북쪽 윤곽을 보존하면서 낮은 한 층 몸체, 회색 가로 패널과 긴 유리창을 구현한다.",
+    "동쪽 문에는 넓은 유리 현관, 금속 차양과 짧은 전면 계단을 대응한다. 최신 안내 문구는 공간을 사용하되 TOOGOOD는 과거 사진의 간판으로 남긴다.",
+    "서쪽 문에는 2024년 사진의 주황색 공간 간판과 짧은 난간 통로를 참고할 수 있다. 정확한 통로 길이와 연결 바닥 높이는 근사로 기록한다.",
+    "식당 서쪽의 넓은 계단과 식당 동쪽 문의 전면 계단을 별도 구조로 구분한다.",
+    "북쪽 보행로의 밝은 포장, 짙은 작은 사각형, 점자블록과 식재대를 가까운 거리의 세부로 반영한다."
+  ],
+  "notEstablished": [
+    "공식 건축 높이, 지하층 유무, 전체 연면적",
+    "두 문의 정확한 바닥 높이와 계단 단수",
+    "서쪽 문 사진을 지도 위치에 직접 고정할 독립적인 촬영 좌표",
+    "각 경사로의 실제 기울기와 현재 휠체어 접근 동선 전체",
+    "2026년 동쪽 현관의 간판과 자판기 상태"
+  ],
+  "excludedEvidence": [
+    {
+      "file": "research-blog202601-1.jpg",
+      "reason": "2026-01-19 블로그에서 받은 사진은 음식 사진이어서 외관 모델링 근거로 사용하지 않았다."
+    }
+  ],
+  "implementation": {
+    "buildingId": "way/377154957",
+    "modelAboveGroundFloors": 1,
+    "observed": [
+      "낮은 회색 패널 몸체와 꺾인 긴 유리창",
+      "흰 창틀, 낮은 지붕과 얇은 차양",
+      "동쪽의 넓은 유리 현관과 계단",
+      "2024년 사진의 공간 안내와 분홍색 자판기",
+      "주황색 공간 간판과 난간이 있는 별도 문",
+      "북쪽 식재대와 밝은 사각 포장",
+      "노란 점자블록",
+      "실내 사진의 밝은 상판과 의자"
+    ],
+    "estimated": [
+      "지도 출입문 노드를 현관 평면에 투영한 문 중심과 열린 문 폭",
+      "단층 높이 3.8m와 절대 바닥 높이",
+      "서쪽 문과 주황색 간판 사진의 대응",
+      "동쪽 계단 6단, 계단 폭과 접근 경사",
+      "서쪽 연결 바닥의 길이와 경사",
+      "창 개수, 벽체 두께와 차양 치수",
+      "포장 규격과 식재 수량",
+      "소수 탁자와 의자의 배치 및 실내 통과 바닥"
+    ],
+    "excluded": [
+      "과거 TOOGOOD 간판",
+      "30동 전체 외관과 북쪽 상부 구조의 재설계",
+      "30동과 31동 앞 넓은 계단의 식당 계단 오인",
+      "정확한 주방, 지하층과 전체 실내",
+      "인물과 임시 선거 현수막"
+    ],
+    "rawOsmAndDemPreserved": true,
+    "photosUsedAsGameTextures": false,
+    "limitations": "공식 편의시설 표기는 영업 공간이 1층이라는 근거다. 건축물 전체 층수와 지하 유무를 확정하는 자료는 아니다. 동쪽 현관의 최신 세부는 2024년 사진을 참고했고 2026년 간판 상태는 확인하지 못했다. 게임 경사로는 실측 접근성이나 휠체어 동선을 보증하지 않는다."
+  }
+}

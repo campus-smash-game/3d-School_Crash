@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "stage": 40,
+  "status": "validated-for-publication",
+  "buildings": [
+    {
+      "id": "way/238936704",
+      "number": "12",
+      "name": "사범교육협력센터",
+      "module": "src/education12Landmark.ts"
+    },
+    {
+      "id": "way/439707885",
+      "number": "111",
+      "name": "카페 건물",
+      "module": "src/pascucci111Landmark.ts"
+    }
+  ],
+  "evidence": {
+    "roadview": "sources/humanities-east-roadview-review.json",
+    "rootImageReview": "artifacts/humanities-east-review/39-root-reference-review.json",
+    "roadviewCaptureMonth": "2025-07",
+    "official12Photo": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000013.jpg",
+    "official111Photo": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000126.jpg",
+    "officialPhotoDates": null,
+    "priority": "새 거리뷰로 연결과 주변 시설을 먼저 대조한 뒤 전용 외관을 구현했다. 촬영일 미상의 공식 사진은 새 사진에 보이지 않는 하부 층과 서쪽 계단의 보조 근거로 구분한다."
+  },
+  "observedFeatures": [
+    "12동의 열린 중간층, 원통기둥과 대각기둥, 후퇴한 유리 현관 및 상층 유리 띠",
+    "12동 도로 쪽 낮은 회색 화단 경계와 관목",
+    "12동 공식 사진의 아래 유리층과 서쪽 외부 계단, 계단 아래에서 문 앞으로 이어지는 붉은 포장",
+    "12동 공식 사진의 파란 COLLEGE OF EDUCATION 12 표지",
+    "별도 111동의 두 층 유리 전면, 목재 계열 세로 부재와 수평 루버",
+    "111동의 큰 CAFFE PASCUCCI 외곽선 간판, 유리문, 회색 볼라드와 직각 분기 유도블록",
+    "111동 유리 전면부터 차도 경계까지 이어진 회색 사각 포장과 낮은 분홍빛 경계석",
+    "12동 현관과 기둥 앞에서 차도 가장자리까지 이어진 짙은 회색 판 포장",
+    "낮은 진입로에서 큰 도로 보도로 올라가는 굽은 계단, 낮은 경계석과 상단 금속 볼라드"
+  ],
+  "layout": {
+    "terrainModule": "src/education12Terrain.ts",
+    "siteModule": "src/education12Site.ts",
+    "terraceFloor": 59.384,
+    "lowerFloor": 56.184,
+    "cafeFloor": 59.384,
+    "southernRoadFloor": 59.234,
+    "heightUnits": "프로젝트의 지역 높이 기준 미터",
+    "datumMeasured": false,
+    "rawFootprintsModified": false,
+    "rawDEMModified": false,
+    "rawRoadPointsModified": false,
+    "correctionBounds": {
+      "minX": 528,
+      "maxX": 613,
+      "minZ": -842,
+      "maxZ": -723
+    },
+    "adjustedRoads": [
+      "way/167597855/19",
+      "way/456540230/333",
+      "way/456540222/330",
+      "way/456540224/331",
+      "way/167597859/22",
+      "way/167595750/12",
+      "way/435329621/181"
+    ],
+    "explanation": "기존 건물 패드가 차도를 움푹 낮추고 큰 횡경사를 만든 구역만 보정한다. 낮은 층과 열린 중간층은 별도 보행면이며, 111동은 12동 내부에 넣지 않는다."
+  },
+  "rendering": {
+    "paving": "회색 사각 포장은 반복 무늬로 표시하고, 블록마다 물리 충돌체를 만들지 않는다.",
+    "geometry": "구조 부품과 유리 및 프레임을 병합해 표시하고, 파괴된 부품의 표시 범위만 갱신한다.",
+    "farVisibility": "새 전용 외관은 거리에 따른 일반 건물 전환으로 다시 막히지 않게 유지한다.",
+    "coordinates": "생산 논리 좌표 D에서 만들며 표시 세계의 H 반사는 한 번만 적용한다.",
+    "westPaving": "아래층 붉은 포장은 출입문 높이의 평탄한 면으로 잇고 낮은 바깥 지형과의 차이는 콘크리트 받침으로 처리한다. 정확한 경계와 받침 높이는 게임용 근사다.",
+    "traffic": "이 구역 승용차와 택시는 차체 아래 지형을 여러 점에서 읽어 높이를 보정한다. 북쪽 좁은 길은 기존 기울기를 유지하며 버스의 주행 자세와 모든 노선 데이터는 보존한다."
+  },
+  "limits": [
+    "12동과 111동의 전면 일부를 관측한 결과이며 모든 면의 재현을 완료하지 않았다.",
+    "건물 높이, 문 중심, 계단 위치와 단수는 지도 및 사진에 맞춘 게임용 근사다.",
+    "12동 서쪽 외부 계단의 현재 양끝은 새 로드뷰에서 확인하지 못했다.",
+    "서쪽 계단은 공식 사진의 벽과 나란한 배치와 원본 보행로의 통행을 함께 고려한 근사다. 보행로의 원본 XZ는 유지하되 마당으로 이어지는 높이는 조정한다.",
+    "도로와 접한 하부 바닥과 벽 및 중간층 상판은 통행 폭에 맞춰 국소적으로 자른다. 원본 건물 윤곽과 도로 데이터는 수정하지 않는다.",
+    "아래층의 붉은 포장은 공식 사진에서 보이는 계단과 문 앞의 좁은 연결 범위만 보완한다. 폭과 경계 및 파란 표지의 부착 위치는 게임용 근사다.",
+    "전면 포장의 범위와 경계석 높이는 사진 및 원본 차도에 맞춘 근사다. 보도 폭을 현장 실측값으로 제시하지 않는다.",
+    "11동과 12동의 연결문 및 안쪽 동선은 수목에 가려 확인하지 못했으므로 새 실내 연결교를 만들지 않았다.",
+    "도로변 계단과 원본 footway /575의 대응은 근사이며 원본에 steps 태그가 있었다고 기록하지 않는다.",
+    "계단 상단 노란 유도블록은 관측 근거가 없어 제외했다. 카페 문 앞에서 확인한 노란 분기와 구분한다.",
+    "현재 가게 영업 상태와 촬영 이후 변경은 확인하지 않았다.",
+    "임시 원뿔과 이동식 캐릭터 차단물, 읽지 못한 광고는 상설 시설로 추가하지 않았다."
+  ],
+  "verification": {
+    "checkedAt": "2026-11-06T06:46:29.638Z",
+    "access": {
+      "artifact": "artifacts/education12-access-test/results.json",
+      "passed": 10
+    },
+    "traffic": {
+      "artifact": "artifacts/humanities-east-review/39-traffic-pose40g.json",
+      "passed": 5,
+      "taxiPoses": 1403,
+      "privateCarPoses": 1403,
+      "busPoses": 506,
+      "knownBaselineContactsPreserved": true
+    },
+    "regressions": {
+      "artifact": "artifacts/humanities-east-review/40-regressions.json",
+      "suites": 19,
+      "passed": 19
+    },
+    "desktopScreenshots": [
+      "output/playwright/40-cafe-final.png",
+      "output/playwright/40-stairs-final.png",
+      "output/playwright/40-education12-final.png",
+      "output/playwright/40-west-paving-d.png"
+    ],
+    "realPhoneTested": false,
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "touchEmulation": true,
+      "checks": [
+        "start",
+        "jump",
+        "fire",
+        "pause",
+        "15 campus shuttle stops",
+        "move to law stop"
+      ],
+      "realDevice": false
+    },
+    "originalPaths": {
+      "artifact": "artifacts/humanities-east-review/40-final-walks.log",
+      "routes": 2,
+      "lanesPerRoute": 3,
+      "bothDirections": true
+    }
+  },
+  "connectionFollowup61": {
+    "source": "sources/education1112-connection-photo-notes.json",
+    "note": "이 기록 이후 확보한 도면과 사진으로 11동과 12동의 저층 연결과 유리 홀을 추가했다. 앞선 연결부 미구현 기록은 당시의 범위를 나타낸다."
+  }
+}

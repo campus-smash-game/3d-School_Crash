@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05",
+  "status": "implemented-targeted-checks-passed",
+  "buildingId": "way/777502176",
+  "connectionId": "connection/engineering303-312",
+  "modelFiles": [
+    "src/engineering312Landmark.ts",
+    "src/engineering303312Connection.ts",
+    "src/engineering303Landmark.ts"
+  ],
+  "scope": "312동 전용 외형과 303동 북측 덱에서 내려가 312동 5층으로 들어가는 별도 연결교를 구현했다. 기존 301/303 도로 횡단 다리와 구분한다.",
+  "supersedes": {
+    "file": "sources/engineering303-model-notes.json",
+    "field": "scopeUpdate.remaining",
+    "description": "북동쪽 검은 연결부의 상대 건물을 미확인으로 남긴 과거 기록에 대해 이번 설계사 자료, 준공 사진과 거리뷰 대조 결과를 후속 근거로 추가한다. 과거 검증 기록은 그대로 보존한다."
+  },
+  "evidence": [
+    {
+      "kind": "architect-project-description",
+      "url": "https://lkjap.com/",
+      "localHtml": "../references/north-connections/lkjap-index.html",
+      "facts": [
+        "정밀기계설계공동연구소 실험동 312의 증축 프로젝트다.",
+        "설계사 설명에 지상 6층과 2023년 2월 준공이 명시돼 있다."
+      ],
+      "limitation": "프로젝트 설명의 층수와 준공 시점은 근거로 사용하지만 설계 CG를 준공 실측 사진으로 취급하지 않는다."
+    },
+    {
+      "kind": "architect-design-drawings",
+      "url": "https://lkjap.com/",
+      "manifest": "../references/north-connections/lkjap-312/manifest.json",
+      "images": [
+        {
+          "url": "https://freight.cargo.site/t/original/i/b8a537d6166132523cf2f9d77c15ce82c605d8d89c9204ca5eb89a1a69e5b7e7/1_2.png",
+          "label": "SE Elevation",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/02.png",
+          "sha256": "030344995747f741eae746d73f848c9c6f4af477060529000240f6b10e5bdd5d"
+        },
+        {
+          "url": "https://freight.cargo.site/t/original/i/7b2b25806191edfdea28e210b45d626e39bf7e5d71e173cd22ec286cc6744ad3/2_1.png",
+          "label": "Floating Corridor",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/06.png",
+          "sha256": "2d3a650a0be25f752c1dc5e5878fe891431550f43e4010b58c68d13915a4c689"
+        },
+        {
+          "url": "https://freight.cargo.site/t/original/i/990d278451d44750f4f298829a44962576c092a9a55a6abd141c531cbf93e202/.jpg",
+          "label": "Site Plan",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/08",
+          "sha256": "e5a4d0d461708214596da7de9d6bddc77cdd978437385322bb54e7c59e52134b"
+        },
+        {
+          "url": "https://freight.cargo.site/t/original/i/f955847ba33ab29ad26652f39d0cacb430d8e66e5dde57a4fa41b04cb8e65378/6.jpg",
+          "label": "6F Floor Plan",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/09.jpg",
+          "sha256": "c2f60ca86dbaf0277f885d09c9d3bf8a7bcbfe0a3c677678a3b9c0b1ee24847f"
+        },
+        {
+          "url": "https://freight.cargo.site/t/original/i/0368693cafa32fba9c61bd6f2484bdf04190aac11d97f7580d474f28c2fe03d7/5.jpg",
+          "label": "5F Floor Plan",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/10.jpg",
+          "sha256": "545d5be2fe1c80db15b47632d9188c1df16599d223f76262cc0981ff517ad2d8"
+        },
+        {
+          "url": "https://freight.cargo.site/t/original/i/d620a06fdcfb7ec510a19a6d7b21268d553a8b30760cdacbf8f95ca5a7dd6ee0/4.jpg",
+          "label": "4F Plan",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/11.jpg",
+          "sha256": "db2dc9ab1e2ab7c9a8e04a118a9ad44494be7a87c48d8f700190e67caf76736e"
+        },
+        {
+          "url": "https://freight.cargo.site/t/original/i/ad2ef17d0fb9352b90143e31ab0d079313187ef6750e8576e73fd5d83b362ebe/.jpg",
+          "label": "Elevation",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/12",
+          "sha256": "a6120eca0cc28c760071898bb6f29ac0f10f7d144a7cdc2cab22d4dfa980840c"
+        },
+        {
+          "url": "https://freight.cargo.site/t/original/i/05b8204fb14cb0070f0028d7d889a053593272cecbb2b2949ad2f327228404fb/_SEC.png",
+          "label": "Section",
+          "file": "D:/codex/3d-School_Crash/references/north-connections/lkjap-312/13.png",
+          "sha256": "cd0a282277014d44261d20dea54c02ea888595c32131cfdf27f8bad6e2730acd"
+        }
+      ],
+      "observations": [
+        "5층 평면은 303 쪽 연결교와 문, 계단홀을 나타낸다.",
+        "6층은 후퇴한 몸체와 옥상 테라스이며 연결교 위에는 지붕이 표시돼 있다.",
+        "배치도에서 다리 반대쪽의 큰 본동은 실제 북쪽 313동이다. 도면 위쪽을 북쪽으로 해석하지 않았다.",
+        "단면의 5층과 6층 높이 차는 픽셀 비례로 약 5.2~5.7m, 다리 높이는 약 4.2~4.7m로 읽힌다."
+      ],
+      "limitations": [
+        "5층 평면 축척 막대는 등간격 칸의 숫자가 일관되지 않아 정확한 폭 산정에 사용하지 않았다.",
+        "이미지 14의 View from the Lake는 다음 프로젝트 자료이므로 제외했다."
+      ]
+    },
+    {
+      "kind": "completed-building-photograph",
+      "url": "https://rawwrks.kr/works/commissioned/haec",
+      "imageUrl": "https://framerusercontent.com/images/3ghLpldn1DZAW9UQFkzfnTC36rk.jpg?scale-down-to=2048",
+      "file": "artifacts/engineering303-review/rawwrks/02.jpg",
+      "sha256": "5b19de203f30e155c616b1336658210c3593c43a5641b561507ba658b43de2b3",
+      "observation": "303 전면 덱의 북단에서 꺾인 계단을 내려가 검은 X자 가새가 있는 별도 통로로 이어지는 형상을 확인했다. 도로를 가로지르는 기존 주다리와 다른 구조다.",
+      "captureDate": "정확한 촬영일 미확인. 작가의 2024 프로젝트 페이지에 실린 사진이다."
+    },
+    {
+      "kind": "roadview",
+      "record": "sources/engineering-north-roadview-review.json",
+      "captureMonth": "2026-08",
+      "observation": "303 흰 몸체와 북쪽의 짙은 수직 창 몸체가 분리돼 보인다. 312-3463-west-road.jpg의 촬영월과 미니지도를 직접 대조했다.",
+      "limitation": "수목이 연결교 하부와 문을 가리므로 문턱 고도와 계단 단수를 거리뷰만으로 확정하지 않았다."
+    },
+    {
+      "kind": "official-construction-notice",
+      "url": "https://eng.snu.ac.kr/communication/notice/notice?bbsidx=1811&fileidx=2275&md=down",
+      "file": "../references/north-connections/engineering-deck-construction-2023.pdf",
+      "observation": "2023년 공사계획은 303, 300, 301, 302, 312의 광장 연결을 설명한다. 2쪽 그림을 직접 렌더링해 확인했다.",
+      "limitation": "그림의 공사구역과 임시 보행 경로를 현재 준공 다리의 정확한 평면으로 사용하지 않았다."
+    }
+  ],
+  "modelContract": {
+    "coordinateSystem": "D=(동,상,북), 표시 장면에서 z를 한 번 반사한다.",
+    "originalOutline": {
+      "id": "way/777502176",
+      "uniquePoints": 11,
+      "preserved": true
+    },
+    "rawDataAndTerrainChanged": false,
+    "documentedAboveGroundLevels": 6,
+    "heightEstimated": true,
+    "baseWorldY": 106.71937892984018,
+    "modelHeight": 35.5,
+    "topWorldY": 142.21937892984016,
+    "baseExplanation": "기존 303 덱 높이와 설계 단면의 상대 관계에 맞춘 게임 기준고다. 해발 실측값이 아니며 지형 표본과 같은 값이라고 가정하지 않는다.",
+    "floorsWorldY": [
+      106.71937892984018,
+      114.11937892984018,
+      119.51937892984017,
+      125.01937892984017,
+      130.01937892984017,
+      135.21937892984016
+    ],
+    "floorDistributionEstimated": true,
+    "upperSixthFloor": {
+      "partial": true,
+      "localClip": {
+        "xMinimum": 18.4,
+        "zMaximum": 18.7
+      },
+      "note": "상층 후퇴 방향은 도면과 대응하며 실제 경계 치수는 원본 외곽에 맞춘 근사다."
+    },
+    "facade": "짙은 금속 패널, 세로 부재와 높이가 조금씩 다른 좁은 유리창, 후퇴 상층과 옥상 테라스",
+    "glassTerrainRule": "낮은 창 하단은 실제 heightAt 표본보다 0.2m 이상 높게 두고 필요한 하부는 기초 벽으로 표현한다.",
+    "entrance": {
+      "level": 5,
+      "x": 298.4764,
+      "z": -1737.4647,
+      "floor": 130.01937892984017,
+      "width": 2.8,
+      "height": 3.25,
+      "estimated": true
+    },
+    "connection": {
+      "sourceRoad": "way/777510058/486",
+      "sourceRoadUse": "원본 지도 구름다리의 수평 방향만 참고하며 원본 도로나 steps 표기는 바꾸지 않았다.",
+      "sourceDeckWorldY": 131.81937892984018,
+      "targetFloorWorldY": 130.01937892984017,
+      "approachStairs": 10,
+      "approachDrop": 1.8,
+      "width": 3.2,
+      "coveredLength": 19.7,
+      "coveredHeight": 4.3,
+      "turnLandingLength": 1.8,
+      "glassOpacity": 0.26,
+      "estimated": true
+    },
+    "internalStair": {
+      "fromLevel": 5,
+      "toLevel": 6,
+      "rise": 5.2,
+      "treads": 26,
+      "width": 2.4,
+      "estimated": true
+    },
+    "preserved303": "기존 상부문, 하부문, 덱 높이와 위치, 본체 및 301 연결부를 유지했다. 북쪽 끝 난간에 폭 3.2m 통과 구간만 열었다.",
+    "collision": "통로 바닥은 렌더 삼각형별 볼록기둥으로, 가새와 기둥은 각각의 볼록체로 만든다. 통로 내부나 아래 전체를 상자 충돌로 막지 않는다.",
+    "distant": "312에 기존 계약의 빈 distant-building 메타 Group을 등록하되 실제 별도 원거리 메시를 그리지 않는다. 파괴 후 남은 병합 표면을 계속 표시한다."
+  },
+  "geometry": {
+    "name": "original outline and six storeys use three merged surfaces each",
+    "status": "PASS",
+    "parts": 981,
+    "triangles": 56104,
+    "renderMeshes": 6,
+    "perModel": [
+      {
+        "id": "way/777502176",
+        "parts": 731,
+        "triangles": 53312,
+        "renderMeshes": 3
+      },
+      {
+        "id": "connection/engineering303-312",
+        "parts": 250,
+        "triangles": 2792,
+        "renderMeshes": 3
+      }
+    ]
+  },
+  "validation": {
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "status": "passed"
+    },
+    "own": {
+      "command": "node scripts/verify-engineering312.mjs",
+      "artifact": "artifacts/engineering312-test/results.json",
+      "passed": 10,
+      "failed": 0,
+      "allInputHashesMatch": true,
+      "glazingTerrain": {
+        "name": "all actual 312 glazing samples clear the unchanged terrain",
+        "status": "PASS",
+        "samples": 34776,
+        "minimum": 0.18390923729823783
+      },
+      "surfaceRays": {
+        "name": "exposed glazing and truss faces agree with loaded and unloaded collision",
+        "status": "PASS",
+        "rays": 216,
+        "trussFaceRays": 96,
+        "occluded": 4,
+        "maxSurface": 0.11473131179804347,
+        "maxUnloaded": 0.006372928619447826,
+        "maxFaceUnloaded": 0.001364588737497452,
+        "edgeCases": [
+          {
+            "origin": [
+              293.5791845747499,
+              131.49270629882812,
+              -1754.4415326423111
+            ],
+            "direction": [
+              0.9871590080521879,
+              0,
+              -0.15974070496094736
+            ],
+            "delta": 0.006372928619447826,
+            "distanceToBraceTriangles": 0.001373105004989756,
+            "loaded": "truss-x-brace",
+            "unloaded": "covered-bridge-side-glass"
+          },
+          {
+            "origin": [
+              299.1778555885944,
+              131.49270629882812,
+              -1746.4172272146661
+            ],
+            "direction": [
+              -0.9871605586993218,
+              0,
+              0.15973112204089382
+            ],
+            "delta": 0.005296885967183085,
+            "distanceToBraceTriangles": 0.00031675193054250193,
+            "loaded": "truss-x-brace",
+            "unloaded": "covered-bridge-side-glass"
+          }
+        ]
+      },
+      "walking": "원본 지형에서 303 덱부터 닫힌 312 문까지 접근하고, 문 파괴 후 중앙과 좌우 0.5m의 세 경로를 6m/s로 왕복했다. 312 내부 26단도 왕복했다.",
+      "destruction": "부분 파괴 후 원거리 유지와 6개 병합 메시 복원, 단일 H 반사를 확인했다."
+    },
+    "independent": {
+      "artifact": "artifacts/next-connections/controls-fullscene-303312-results.json",
+      "passed": 4,
+      "failed": 0,
+      "allInputHashesMatch": true,
+      "scope": "실제 fullCampus, 원본 지형, 보충 도로와 main의 지상 시설을 포함한 Node/Rapier 보행 검사다. 글자 캔버스만 대체했으며 사진 일치, 실제 WebGL 화면, 모바일 성능을 검증하지 않는다."
+    },
+    "browser": {
+      "observer": "root",
+      "status": "candidate-reviewed",
+      "images": [
+        "artifacts/next-connections/26-candidate-overview.jpg",
+        "artifacts/next-connections/26-door-candidate.jpg"
+      ],
+      "limitation": "후보 화면을 보고 통로 투명도와 문 앞 겹친 바닥을 조정했다. 이 이미지 파일을 최종 소스와 같은 렌더 입력으로 보존한 결과라고 주장하지 않는다.",
+      "mobile": {
+        "status": "root-observed",
+        "scope": "모바일 폭에서 실제 게임 시작과 ESC 메뉴를 확인했다. 모바일 기기의 FPS 측정은 아니다."
+      }
+    },
+    "fullRelease": {
+      "status": "parent-managed",
+      "note": "최종 공통 회귀와 빌드, 배포는 루트가 별도로 수행한다."
+    },
+    "parentTargetedRegressions": {
+      "status": "passed",
+      "reportedBy": "root",
+      "totalPassed": 67,
+      "groups": {
+        "campus": 13,
+        "engineeringRoadFacilities": 4,
+        "worldPresentation": 6,
+        "engineering303": 11,
+        "engineering301303Connection": 19,
+        "engineering312": 10,
+        "independentFullScene": 4
+      },
+      "scope": "루트가 기존 공통 회귀와 새 검사 결과를 합산해 확인했다. 전체 릴리스 검사 전부를 다시 실행한 수치로 표현하지 않는다."
+    }
+  },
+  "limitations": [
+    "절대고도, 계단 단수와 길이, 연결교 폭 및 312 각 층 높이는 실측값이 아니다.",
+    "312 하부는 현재 게임 지형에 일부 묻히며 창 하단과 기초를 보정했다. 도로와 지형은 바꾸지 않았다.",
+    "312의 방별 실내, 모든 출입구와 뒤쪽 입면, 현행 옥상 설비를 정밀 복원하지 않았다.",
+    "폐쇄 입면의 유리와 세로 부재를 한 파괴 부품으로 묶은 충돌 근사는 실제 노출면과 최대 약 0.115m 차이가 있다.",
+    "가새 모서리의 두 광선은 Rapier와 삼각형 교차 계산이 서로 다른 인접 표면을 선택했다. 최대 거리 차이는 0.006373m이고 Rapier 접점에서 실제 가새 삼각형까지는 최대 0.001374m다. 일반 면 광선의 loaded/unloaded 차이는 0.001365m 이하다.",
+    "검사는 Node/Rapier와 루트의 데스크톱 WebGL 검토 범위다. 모바일 FPS를 측정한 결과가 아니다."
+  ],
+  "sourceHashes": {
+    "src/engineering312Landmark.ts": "9d21efecc34c674c8d708f7da1a4ba1fa6bdf3d8df3190adf8ca7a383b39eae0",
+    "src/engineering303312Connection.ts": "27f6797e2f75abfa6430c67f11540e0708d55ef6e65a0db5656ccca7dc55071c",
+    "src/engineering303Landmark.ts": "00817d44acae45ed004d3ad07f4279dd1185b0fd8df6c01fb114c0aa505adad5",
+    "scripts/verify-engineering312.mjs": "2c07be3a5d10af7091b294efefa202f5f5d9fbeb029c33441fada2e0633b5446",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "sources/engineering-north-roadview-review.json": "d1d85354effb9698adff27d82af7e7d56c8327b2723e817908cf1893d441430b",
+    "artifacts/engineering312-test/results.json": "905343965922532962fe73d53935a9c49ca498f7052e66c8ec0b19dc1f055f26",
+    "artifacts/next-connections/controls-fullscene-303312-results.json": "b8a953d4d284fd8f5a27a8743167397a04062342d2ad58fbc0ed0b8264b3fd2b"
+  }
+}

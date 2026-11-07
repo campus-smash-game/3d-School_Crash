@@ -1,0 +1,604 @@
+{
+  "status": "runtime-and-targeted-regressions-verified",
+  "id": "connection/engineering301-303",
+  "observed": {
+    "source": "카카오맵 로드뷰 화면에 표시된 촬영 시점 2026년 8월과 준공 사진을 대조했다.",
+    "urls": [
+      "https://map.kakao.com/?panoid=1213023453&pan=11.0&zoom=0&map_type=TYPE_MAP&map_attribute=ROADVIEW&urlX=489385.0&urlY=1097507.0",
+      "https://rawwrks.kr/works/commissioned/haec"
+    ],
+    "images": [
+      "../references/roadview-audit/2026-08/301-303-under-bridge-north.png",
+      "../references/roadview-audit/2026-08/301-303-bridge-south-face.png",
+      "../references/roadview-audit/2026-08/301-bridge-east-elevator-stairs.png",
+      "../references/roadview-audit/2026-08/301-bridge-north-side-stairs.png",
+      "../references/roadview-audit/2026-08/303-east-lower-entrance.png",
+      "../references/roadview-audit/2026-08/303-northeast-connection-ui.jpg"
+    ],
+    "features": [
+      "차도 위 상판 하부의 어두운 철골과 X자 보강, 밝은 원형 기둥",
+      "간격을 둔 목재색 세로판과 그 위 투명 난간",
+      "301 쪽 유리 승강기 구조, 계단과 북쪽으로 꺾여 이어지는 덱",
+      "303 하부 입구와 횡단보도 사이에 큰 단차가 없는 보행 공간",
+      "303의 상부 연결 공간과 하부 출입 공간은 별개다."
+    ]
+  },
+  "estimatedLayout": {
+    "coordinates": "D=(동,위,북)에서 생성한 뒤 렌더 부모에 H=(x,y,-z)를 한 번 적용한다.",
+    "anchor": {
+      "x": 315.8214,
+      "z": -1792.902658
+    },
+    "relativeLevels": {
+      "bridgeAboveRoad": 6.1,
+      "north301DoorBelowBridge": 3.2,
+      "atrium301AboveNorthDoor": 5.54,
+      "upper303DoorAboveModelDatum": 3.8,
+      "lower303DoorAboveRoad": 0.12
+    },
+    "dimensions": "상판 폭 8.4 m, 북쪽 가지 폭 4.6 m, 계단 폭 3 m와 기둥 반지름 0.45 m는 사진 비례와 게임 보행을 고려한 추정이다.",
+    "limits": [
+      "301 북문 문턱은 나무와 상판에 가려 직접 측정하지 못했다. 상대 보행면 높이를 실측 고도로 해석하면 안 된다.",
+      "승강기는 외형과 충돌만 구현했으며 승강 기능은 없다.",
+      "303 북동쪽 다른 건물로 이어지는 검은 트러스 통로는 이번 301 연결부에 포함하지 않는다."
+    ],
+    "currentGameLevels": {
+      "road": 125.71937892984019,
+      "bridge": 131.81937892984018,
+      "entry301": 128.6193789298402,
+      "atrium301": 134.1593789298402,
+      "base301": 133.85937892984018,
+      "base303": 128.01937892984017,
+      "lower303": 125.8393789298402
+    },
+    "levelMeaning": "현재 게임 좌표계에서 계산한 값이며 측량 고도나 공식 문턱 높이가 아니다. 사진에서 확인한 도로, 하부 출입구와 상부 연결부의 관계에 맞춰 결정했다."
+  },
+  "terrain": {
+    "rawFilesUnchanged": [
+      "public/data/campus.json",
+      "public/data/terrain.json"
+    ],
+    "description": "301의 기존 일반 평탄화 패드를 제외했다. 북문과 아트리움의 지면은 새 연결 기준고에 맞추되, 실내 보행을 구현하지 않은 남쪽 탑 아래까지 같은 높이로 낮추지 않는다.",
+    "mainRoad": "주도로 남쪽 z=-1944.08부터 연결 기준점까지 약 151 m, 북쪽 z=-1740까지 연속 곡선으로 잇는다. 차도와 보도의 횡단면도 같은 중심선 종단에 맞춘다.",
+    "bounds": "최종 보정 셀은 terrain.mesh.userData.connectionCorrection.regions에 공개한다. 남북 도로 보정의 완충 경계는 z=-1982와 -1694다.",
+    "surface": "연결 구역의 도로와 지도 면은 실제 지형 삼각형을 잘라 투영한다. 원시 DEM을 수정한 것이 아니라 렌더와 물리에 동일하게 쓰는 게임 지형 보정이다.",
+    "limitation": "국소 절개와 도로 종단은 현장 측량을 복원한 결과가 아니다. 보정 범위 밖의 기존 매몰이나 경사까지 이번 연결부에서 해결했다고 주장하지 않는다.",
+    "interior301": {
+      "fullCutNorthOfLocalZ": -83,
+      "restoreOriginalSouthOfLocalZ": -115,
+      "description": "두 경계 사이에서 원지형으로 점차 복원한다. 남쪽 탑 하부의 경사지 노출은 실제 지하층 복원을 뜻하지 않는다."
+    },
+    "pedestrianNetwork": {
+      "description": "원본 도로와 보행로 715개를 모두 조사하고 보정 셀과 만나는 경로를 선택했다. 이전 11개 경로 목록에서 빠졌던 /421과 /429, 북측 가지 도로를 포함하며, 0.5 m보다 짧은 구간도 제외하지 않았다.",
+      "corridorPlateauRadius": 3.8,
+      "corridorBlendOuterRadius": 6.8,
+      "originalRoadsExamined": 715,
+      "selectedRoads": 33,
+      "changedRoads": 27,
+      "selectedSegmentSamples": 19999,
+      "outsideChanged": 0,
+      "newSteepRegressions": 0,
+      "maximumGradeDegrees": 43.8283208459674,
+      "profiles": [
+        {
+          "id": "way/167667799/47",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 219,
+          "maximumGradeDegrees": 42.542167371807,
+          "baselineMaximumGradeDegrees": 19.016671871029217
+        },
+        {
+          "id": "way/356701921/132",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 780,
+          "maximumGradeDegrees": 29.777345779387,
+          "baselineMaximumGradeDegrees": 57.01570896472495
+        },
+        {
+          "id": "way/424912283/158",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 135,
+          "maximumGradeDegrees": 22.363091161117826,
+          "baselineMaximumGradeDegrees": 22.363240106030588
+        },
+        {
+          "id": "way/424912286/161",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 0,
+          "maximumGradeDegrees": 22.227911804158214,
+          "baselineMaximumGradeDegrees": 22.22768774482444
+        },
+        {
+          "id": "way/430289536/175",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 152,
+          "maximumGradeDegrees": 41.866352364627524,
+          "baselineMaximumGradeDegrees": 24.11795174485014
+        },
+        {
+          "id": "way/468665859/406",
+          "kind": "service",
+          "width": 12.8,
+          "changedSamples": 115,
+          "maximumGradeDegrees": 12.938362004527429,
+          "baselineMaximumGradeDegrees": 12.490051750452716
+        },
+        {
+          "id": "way/468665862/407",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 0,
+          "maximumGradeDegrees": 11.766106112538713,
+          "baselineMaximumGradeDegrees": 11.766036584965317
+        },
+        {
+          "id": "way/481787202/411",
+          "kind": "service",
+          "width": 12.8,
+          "changedSamples": 2476,
+          "maximumGradeDegrees": 27.6246869518351,
+          "baselineMaximumGradeDegrees": 44.93770465798753
+        },
+        {
+          "id": "way/481787204/413",
+          "kind": "service",
+          "width": 12.8,
+          "changedSamples": 0,
+          "maximumGradeDegrees": 11.964743069127355,
+          "baselineMaximumGradeDegrees": 11.964559980332755
+        },
+        {
+          "id": "way/481915884/418",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 380,
+          "maximumGradeDegrees": 36.9680987033677,
+          "baselineMaximumGradeDegrees": 17.23374824779725
+        },
+        {
+          "id": "way/481915886/419",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 180,
+          "maximumGradeDegrees": 20.088406283665318,
+          "baselineMaximumGradeDegrees": 4.834654278831619
+        },
+        {
+          "id": "way/481915888/420",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 270,
+          "maximumGradeDegrees": 32.96015346050893,
+          "baselineMaximumGradeDegrees": 5.017667819629455
+        },
+        {
+          "id": "way/481915889/421",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 145,
+          "maximumGradeDegrees": 26.2193873358259,
+          "baselineMaximumGradeDegrees": 25.500545784841965
+        },
+        {
+          "id": "way/481915891/422",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 21,
+          "maximumGradeDegrees": 41.71217663038362,
+          "baselineMaximumGradeDegrees": 33.96178167118804
+        },
+        {
+          "id": "way/481915893/423",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 600,
+          "maximumGradeDegrees": 42.217762713255105,
+          "baselineMaximumGradeDegrees": 21.618084562417128
+        },
+        {
+          "id": "way/481915895/424",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 835,
+          "maximumGradeDegrees": 24.764262351464136,
+          "baselineMaximumGradeDegrees": 35.788098332296386
+        },
+        {
+          "id": "way/481915897/425",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 175,
+          "maximumGradeDegrees": 24.090764195615996,
+          "baselineMaximumGradeDegrees": 26.150911866466906
+        },
+        {
+          "id": "way/481917515/426",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 630,
+          "maximumGradeDegrees": 29.878792226264157,
+          "baselineMaximumGradeDegrees": 25.13805615858982
+        },
+        {
+          "id": "way/481917516/427",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 185,
+          "maximumGradeDegrees": 2.602974426723169,
+          "baselineMaximumGradeDegrees": 15.051763176497998
+        },
+        {
+          "id": "way/481917517/428",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 350,
+          "maximumGradeDegrees": 8.675299117140375,
+          "baselineMaximumGradeDegrees": 3.7898688505677307
+        },
+        {
+          "id": "way/481917518/429",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 65,
+          "maximumGradeDegrees": 27.023933757813978,
+          "baselineMaximumGradeDegrees": 13.523302147350083
+        },
+        {
+          "id": "way/482207539/432",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 130,
+          "maximumGradeDegrees": 18.68840610665827,
+          "baselineMaximumGradeDegrees": 10.42127090797321
+        },
+        {
+          "id": "way/482207540/433",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 75,
+          "maximumGradeDegrees": 19.09260836599474,
+          "baselineMaximumGradeDegrees": 13.862037990700276
+        },
+        {
+          "id": "way/482207541/434",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 0,
+          "maximumGradeDegrees": 9.565992941392446,
+          "baselineMaximumGradeDegrees": 9.5658578974484
+        },
+        {
+          "id": "way/482207542/435",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 80,
+          "maximumGradeDegrees": 43.8283208459674,
+          "baselineMaximumGradeDegrees": 22.015520411180646
+        },
+        {
+          "id": "way/777504045/484",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 3,
+          "maximumGradeDegrees": 18.478022145328264,
+          "baselineMaximumGradeDegrees": 18.477980001960436
+        },
+        {
+          "id": "way/777504046/485",
+          "kind": "service",
+          "width": 5.5,
+          "changedSamples": 75,
+          "maximumGradeDegrees": 39.61654168382639,
+          "baselineMaximumGradeDegrees": 18.531647672626693
+        },
+        {
+          "id": "way/777510058/486",
+          "kind": "steps",
+          "width": 2,
+          "changedSamples": 0,
+          "maximumGradeDegrees": 20.871612619579874,
+          "baselineMaximumGradeDegrees": 20.87149741304283
+        },
+        {
+          "id": "way/777628598/488",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 965,
+          "maximumGradeDegrees": 26.553728775314976,
+          "baselineMaximumGradeDegrees": 47.91327255075972
+        },
+        {
+          "id": "way/777628687/492",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 2170,
+          "maximumGradeDegrees": 43.8110747473991,
+          "baselineMaximumGradeDegrees": 35.787296517277476
+        },
+        {
+          "id": "way/777628878/493",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 0,
+          "maximumGradeDegrees": 11.771210506371533,
+          "baselineMaximumGradeDegrees": 11.771140513802438
+        },
+        {
+          "id": "way/777628879/494",
+          "kind": "footway",
+          "width": 2.5,
+          "changedSamples": 487,
+          "maximumGradeDegrees": 41.81660579670276,
+          "baselineMaximumGradeDegrees": 47.397882291321665
+        },
+        {
+          "id": "way/1513607847/567",
+          "kind": "service",
+          "width": 12.8,
+          "changedSamples": 405,
+          "maximumGradeDegrees": 20.456601380947298,
+          "baselineMaximumGradeDegrees": 9.959396388190253
+        }
+      ],
+      "capsuleScope": "실제 지형과 충돌을 사용해 서측과 북측 접근, 남서쪽 /421과 /429, 남쪽 /419와 /420을 잇는 3개 경로를 검사했다. 각 경로의 중앙과 양옆 0.45 m를 6 m/s로 왕복해 총 18회 이동에 성공했고 접촉 관통은 없었다. 모든 캠퍼스 경로의 전체 보행을 검사한 것은 아니다.",
+      "limits": "간격은 최대 0.5 m이며 양 끝점, 중심선, 중심에서 양옆 0.5 m와 지도상 도로 양 끝을 포함한다. 기존 경사보다 0.25도 넘게 악화되면서 45도를 초과하는 표본이 없는지 검사했다. 보정된 모든 구간이 이전보다 완만해졌다는 뜻은 아니다. 폭 끝의 남은 급경사는 별도 표본 수치이며 현장 측량값이 아니다.",
+      "changeCountMeaning": "자체 검사는 높이 차이 0.0001 m를 초과한 27개 경로를, 독립 검사는 0.001 m를 초과한 26개 경로를 기록했다. 작은 변화 판정 기준이 달라 두 개수를 구분한다."
+    },
+    "exposedWestNotch": {
+      "sourceVertexIndices": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "description": "301의 서쪽 오목부는 원본 건물 밖이지만 낮은 몸체 사이로 보이는 외부 공간이다. 기존 절개에서 빠진 지면이 낮은 지붕보다 약 17.56 m 높이 솟아 브라우저 화면에 녹색 기둥처럼 보였다. 이 약 14×8 m 구역과 3 m 이내 전이부만 낮췄으며 원본 건물 윤곽은 유지했다.",
+      "measurement": "현장 치수나 측량 고도가 아니라 원본 지도와 현재 게임 지형을 대조한 수치다."
+    },
+    "northBranches": "주도로의 평탄한 횡단면을 유지하면서 북쪽 가지 도로의 바깥쪽은 기존 지형으로 점차 복원했다. 남서 보행망은 공유 접점의 높이와 폭을 함께 조정해 개별 경로 경계에 새 절벽이 생기지 않도록 했다."
+  },
+  "implementation": {
+    "factory": "createCampusEngineering301303Connection",
+    "owner": "fullCampus에서 두 건물 생성 뒤 한 번 등록한다.",
+    "renderMeshes": 3,
+    "collision": "상판과 계단참은 실제 렌더 삼각형별 얇은 볼록기둥이다. 세로판, 기둥, 난간과 유리는 빈 공간을 합친 큰 상자로 감싸지 않는다.",
+    "destruction": "부품마다 렌더 정점 구간을 숨기며 거리와 관계없이 파괴 상태를 유지한다. 초기화하면 원래 배열을 복구한다.",
+    "connectionParts": 1018,
+    "combinedBuildingAndConnectionParts": 4331,
+    "combinedRenderMeshes": 9
+  },
+  "validation": {
+    "ownScript": "scripts/verify-engineering301303-connection.mjs",
+    "ownArtifact": "artifacts/engineering301303-connection-test/results.json",
+    "existingBuildingChecks": {
+      "engineering301": {
+        "passed": 12,
+        "failed": 0,
+        "artifact": "artifacts/engineering301-test/results.json"
+      },
+      "engineering303": {
+        "passed": 11,
+        "failed": 0,
+        "artifact": "artifacts/engineering303-test/results.json"
+      },
+      "scope": "동결한 연결부 지형과 최신 303 외관을 사용해 다시 실행했다."
+    },
+    "browser": "총괄이 localhost에서 직접 확인한 네 번째 후보의 남향 화면을 별도로 대조했다. 이전의 도로 벽과 도로 위 녹색 면 관통은 해당 화면에서 해소됐다. 주변 지형 전체의 실측 일치나 실제 휴대전화 성능 검증을 뜻하지 않는다.",
+    "pending": [
+      "총괄의 최종 통합 및 배포 확인"
+    ],
+    "own": {
+      "status": "passed",
+      "passed": 19,
+      "failed": 0,
+      "artifact": "artifacts/engineering301303-connection-test/results.json",
+      "sourceStillMatches": true,
+      "scope": "시험용 생성 기하와 실제 301/303 배치, 지형, 캡슐, 광선, 파괴 및 초기화를 구분해 검사했다."
+    },
+    "roadGrades": {
+      "maximumCenterDegrees": 14.618177720173016,
+      "meanCenterDegrees": 10.563860102713646,
+      "maximumEdgeDegrees": 17.385916830245645,
+      "maximumCrossDegrees": 0.8304020648166404,
+      "meaning": "게임 품질 검사 수치이며 실제 도로 경사를 측량한 값은 아니다."
+    },
+    "roadSurface": {
+      "samples": 11280,
+      "minimumClearance": 0.1699999999998738,
+      "maximumClearance": 0.17000000000010118
+    },
+    "vehicleClearance": {
+      "poses": 312,
+      "roofRays": 471,
+      "minimumRoofClearance": 1.5250988381591242,
+      "scope": "현재 Traffic.pose의 주도로 버스와 보조도로 자동차를 양방향 직선 차선에서 검사했다. 앞으로 추가할 모든 회전 궤적의 통과를 보장하지 않는다."
+    },
+    "glazing": [
+      {
+        "id": "way/228476658",
+        "samples": 20832,
+        "minimum": 0.16058349609375,
+        "worst": [
+          359.3811340332031,
+          128.619384765625,
+          -1770.2261962890625
+        ]
+      },
+      {
+        "id": "supplemental/snu-303",
+        "samples": 34468,
+        "minimum": 0.10057830810546875,
+        "worst": [
+          300.4920959472656,
+          125.8393783569336,
+          -1790.8026123046875
+        ]
+      }
+    ],
+    "access": "303 하부 문, 303 상부 문과 301 북문에서 닫힌 문 앞 정지, 파괴 후 진입과 복귀를 검사했다. 계단 중앙과 양옆을 포함하며, 301 내부 계단을 지나 아트리움까지 이어진다.",
+    "surfaceRays": {
+      "selected": 221,
+      "occluded": 3,
+      "insideStarts": 1,
+      "maximumSurfaceDifference": 0.001686239242528198,
+      "maximumLoadedDifference": 0.001686239242528198
+    },
+    "browserArtifact": "artifacts/roadview-connections/303-fourth-candidate-south.jpg",
+    "independent": {
+      "status": "passed",
+      "receipt": "artifacts/engineering301303-independent-review/final-5f4-verification-receipt.json",
+      "suites": [
+        {
+          "path": "artifacts/campus-provenance-test/results.json",
+          "sha256": "6f1518fe0001cc547b898dea8a6ae314fac7670a039b294360da90850dcd271d",
+          "passed": 11,
+          "failed": 0,
+          "processExitCode": 0
+        },
+        {
+          "path": "artifacts/family-terrain-test/results.json",
+          "sha256": "238fa42cbea4257d3368f2f8a1c25c8c77005b593f13d2284e7cac9cb22e7eff",
+          "passed": 8,
+          "failed": 0,
+          "processExitCode": 0
+        },
+        {
+          "path": "artifacts/engineer-house-site-verification.json",
+          "sha256": "62ae17737bae174df29a0c54634741f9fbbf6d507b3cbd338832368c838f1dfc",
+          "passed": 7,
+          "failed": 0,
+          "processExitCode": 0
+        }
+      ],
+      "roadSelection": {
+        "path": "artifacts/engineering301303-independent-review/road-selection-final.json",
+        "sha256": "04def874456411e02e1331737108b0fac6e49d9ffbf8d69662b40d0afa59275a",
+        "allRoadRows": 715,
+        "samples": 469555,
+        "selectedRows": 33,
+        "changedRows": 26,
+        "outsideSelectionChanges": 0,
+        "flaggedRegressions": 0,
+        "maximumSelectedGrade": 43.8283208459674,
+        "changedThresholdMeters": 0.001,
+        "maximumStepMeters": 0.5,
+        "regressionThreshold": "현재 경사가 44도를 넘고 같은 위치의 기존 경사보다 2도 넘게 증가한 표본",
+        "selectedGrades": [
+          {
+            "id": "way/356701921/132",
+            "maximumGradeDegrees": 29.777345779387,
+            "baselineMaximumGradeDegrees": 57.015712509970406
+          },
+          {
+            "id": "way/481915889/421",
+            "maximumGradeDegrees": 26.2193873358259,
+            "baselineMaximumGradeDegrees": 25.50054578483915
+          },
+          {
+            "id": "way/481917518/429",
+            "maximumGradeDegrees": 27.023933757813978,
+            "baselineMaximumGradeDegrees": 13.523302147334283
+          }
+        ]
+      },
+      "foundation302": {
+        "path": "artifacts/engineering301303-independent-review/foundation-302-final.json",
+        "sha256": "0e58ff36ad81d43d41be276735372bfd0a5bb50f6c93faa7eac66235a9ecd657",
+        "samples": 5849,
+        "positiveGapSamples": 0,
+        "maximumBottomClearanceMeters": -0.17020034809715412,
+        "scope": "남서 /429 접점에서 12 m 이내의 실제 302 기초 하부를 렌더 광선으로 검사했다. 표본에서 지면과 기초 사이 빈틈이 없었다."
+      },
+      "sourceStillMatches": true,
+      "scope": "지정한 검사 세 가지와 전체 지도 도로의 높이 표본 및 302동 기초의 실제 렌더 광선 검토다. 전 도로의 캡슐 왕복이나 브라우저/휴대전화 검증을 뜻하지 않는다.",
+      "neighborArtifact": "artifacts/engineering301303-independent-review/neighbor-glass-review.json",
+      "neighborLimitation": "기존 300, 302, 311동의 유리 매몰 비교는 앞선 지형 후보의 기록이다. 이번 최종 기초 검사는 /429 접점 부근 302동에 한정하며 주변 모든 매몰을 해소했다고 주장하지 않는다.",
+      "renderedRoadSurface": {
+        "name": "correction boundaries stay continuous and current road triangles follow the actual terrain",
+        "status": "passed",
+        "maximumRoundingX": 0.000015257059146733809,
+        "maximumRoundingY": 0.0000076268211159913335,
+        "maximumRoundingZ": 0.00006102510428718233,
+        "regionalQuantizationBound": 0.0006141747888947187,
+        "boundarySamples": 1896,
+        "maximumBoundaryJump": 0.00012805694547068924,
+        "sampledPoints": 81438,
+        "minimumClearance": 0.039685115711932895,
+        "maximumConformingError": 0.00006897830839988628,
+        "maximumUnroundedConformingError": 3.4958147487884617e-13,
+        "maximumQuantizationBound": 0.00007036238108204679,
+        "maximumQuantizationExcess": 0.00003367666364946532,
+        "worstConforming": {
+          "road": "way/777628879/494",
+          "x": 324.5521240234375,
+          "z": -1734.0103759765625,
+          "clearance": 0.1499310216916001,
+          "error": 0.00006897830839988628,
+          "quantizationBound": 0.00006897830829688925,
+          "gradient": {
+            "x": 0.7406387329099827,
+            "z": -1.0674409533133133
+          }
+        },
+        "conformingTriangles": 13190,
+        "changedRoads": 35,
+        "exteriorTriangles": 18713,
+        "roadPresentationMargin": 24,
+        "fallbackSamples": 2280,
+        "maximumFallbackWorsening": 0,
+        "worst": {
+          "road": "way/167667799/47",
+          "x": 233.5803985595703,
+          "z": -1856.134033203125,
+          "clearance": 0.039685115711932895,
+          "conforming": false
+        }
+      }
+    },
+    "westNotch": {
+      "name": "the exposed west notch remains below the low wing roof without changing the mapped outline",
+      "status": "PASS",
+      "samples": 400,
+      "maximum": 135.6112175045138,
+      "roof": 144.6593789298402,
+      "clearanceBelowRoof": 9.048161425326384,
+      "sourceOutlineUnchanged": true
+    },
+    "quickTravel": {
+      "script": "scripts/verify-campus.mjs",
+      "artifact": "artifacts/final-campus-2026-11-05.log",
+      "passed": 13,
+      "description": "303 도착점은 주도로 /411 중심에서 6.120 m 떨어져 폭 12.8 m 안에 있다. 중심선 위로만 제한하던 기존 검사에 이 보행 접근점을 구분했으며, 원본 건물 밖 여부와 벽 여유는 계속 검사한다. 301과 303 모두 실제 전체 장면에서 초기, 30프레임과 120프레임의 관통이 없고 지면에 안착했다.",
+      "status": "passed",
+      "sourceReceipt": "총괄이 최종 terrain 5f4cc11b에서 다시 실행해 13개 통과와 종료 코드 0을 확인했다. 이 로그에는 독립된 입력 해시 영수증이 없으므로 해시 일치 검사를 했다고 쓰지 않는다."
+    }
+  },
+  "sourceHashes": {
+    "src/engineering301303Connection.ts": "db7f5a3296e290a924c8f25ed4b1c682d07388feaf19144c2792a0b7a4b9cbe2",
+    "src/engineering301303Site.ts": "b0c63ab74926e30bd808c042fd969d038346280e165e12ab837bd8ca761f0fc4",
+    "src/engineering301Landmark.ts": "3c6e41341d7d1e8ff34359add2e0319aca143f2330b831093fc8d72883f668df",
+    "src/engineering303Landmark.ts": "7e64ea1ccb0bc925c3bae7f19c02b49c98a1429ef5ca3cbed392743a00c0da78",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+    "src/traffic.ts": "b42ea1cfc75f77bb5e85af20aa3c315bcb0725cba6f13291313df6c23bc8b95d",
+    "src/fullCampus.ts": "73fdc961bb0dac3aa167acc000bb98f182098a8ad0567ea610b568a86d1f219a",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "scripts/verify-engineering301303-connection.mjs": "9fdb7602fc4d68fb37afa6110f5897b4e1bc79abfa0e617495f45982b62adb87",
+    "artifacts/engineering301303-connection-test/results.json": "6390234bf38e5fd4b213d9878e97283840c13a6a006e6e74d4e503b4964697ec",
+    "artifacts/engineering301-test/results.json": "af83408c1815e4997481de93d57d5f7ae52d7b290c9f43aa53c92c84dbdd9fd1",
+    "artifacts/engineering303-test/results.json": "41c74368e3d5c065f2836baf8eaf681fca864ee7189ca9636ea0f7fc084635d7",
+    "artifacts/final-campus-2026-11-05.log": "0ba9eebcfb16251f0d58f3b0bea8430b125a886a9b9e26c336bf58648ef03ac6",
+    "artifacts/engineering301303-independent-review/final-5f4-verification-receipt.json": "eb9d29adcc7a40ac6a804b5d9c186840e25fcba657627d57508729d9a7a67975",
+    "artifacts/campus-provenance-test/results.json": "6f1518fe0001cc547b898dea8a6ae314fac7670a039b294360da90850dcd271d",
+    "artifacts/family-terrain-test/results.json": "238fa42cbea4257d3368f2f8a1c25c8c77005b593f13d2284e7cac9cb22e7eff",
+    "artifacts/engineer-house-site-verification.json": "62ae17737bae174df29a0c54634741f9fbbf6d507b3cbd338832368c838f1dfc",
+    "artifacts/engineering301303-independent-review/road-selection-final.json": "04def874456411e02e1331737108b0fac6e49d9ffbf8d69662b40d0afa59275a",
+    "artifacts/engineering301303-independent-review/foundation-302-final.json": "0e58ff36ad81d43d41be276735372bfd0a5bb50f6c93faa7eac66235a9ecd657"
+  }
+}

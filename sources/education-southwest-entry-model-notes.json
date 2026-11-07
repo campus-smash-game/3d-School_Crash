@@ -1,0 +1,1251 @@
+{
+  "schemaVersion": 1,
+  "status": "integrated-partial",
+  "reviewedAt": "2026-11-05T15:36:52.144Z",
+  "buildingId": "way/297046999",
+  "scope": "220동 서측 현관, 남쪽 접근로와 인접 보행면 및 사진에 드러난 가까운 벽면. 건물 전체 복원이 아니다.",
+  "roadviewReview": "sources/education-southwest-entry-roadview-review.json",
+  "facadeReview": {
+    "file": "artifacts/education-health-review/31-south-end-facade-review.json",
+    "sha256": "38c3c48cce12210d491dc411d211baa5b33a942f3e8c33c0ec7130d17556c77a"
+  },
+  "observationOrder": [
+    "2026년 8월 로드뷰의 현관과 남쪽 진입부를 직접 확인했다.",
+    "원본 entrance 노드와 /210, /337, /207 보행로를 대조했다.",
+    "기존 모델의 막힌 창 구획과 누락된 접근로를 확인한 뒤 실행 모델을 수정했다."
+  ],
+  "observed": [
+    "세로 유리 띠 아래 후퇴한 문과 짧은 밝은 차양",
+    "남쪽 회색 사각 보도에서 올라오는 벽돌 포장과 검은 사각 볼라드 두 개",
+    "금속 난간과 낮은 벽돌 화단",
+    "현관 코어 오른쪽 벽돌 면과 담쟁이, 모서리 너머 작은 세로창"
+  ],
+  "implementation": {
+    "status": "implemented-targeted-checks-complete",
+    "sourceHashes": {
+      "src/educationHealthLandmark.ts": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8",
+      "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+      "scripts/verify-education-health.mjs": "a1b873dbfdab94c13f07b9c36a7c449c2d70118456de6e9824a30772de46af83",
+      "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+      "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+      "src/livingScienceLandmark.ts": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+      "src/livingScienceSouthSite.ts": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+      "sources/education-southwest-entry-roadview-review.json": "e2e89e7406a00a7fdcb632c9d7ffdad4eb273f6facb237d1c3e94dabb14d7fe1"
+    },
+    "sourceStillMatches": {
+      "src/educationHealthLandmark.ts": true,
+      "src/healthCourtyard.ts": true,
+      "scripts/verify-education-health.mjs": true,
+      "src/terrain.ts": true,
+      "src/physics.ts": true,
+      "src/traffic.ts": true,
+      "src/livingScienceLandmark.ts": true,
+      "src/livingScienceSouthSite.ts": true,
+      "public/data/campus.json": true,
+      "public/data/terrain.json": true,
+      "sources/campus.osm": true,
+      "sources/education-southwest-entry-roadview-review.json": true
+    },
+    "preservedInputs": {
+      "src/terrain.ts": {
+        "before": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+        "current": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+        "unchanged": true
+      },
+      "src/livingScienceSouthSite.ts": {
+        "before": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+        "current": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+        "unchanged": true
+      },
+      "public/data/campus.json": {
+        "before": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+        "current": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+        "unchanged": true
+      },
+      "public/data/terrain.json": {
+        "before": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+        "current": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+        "unchanged": true
+      },
+      "sources/campus.osm": {
+        "before": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+        "current": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+        "unchanged": true
+      }
+    },
+    "perBuilding": [
+      {
+        "id": "way/297046999",
+        "name": "종합교육연구동",
+        "parts": 1935,
+        "triangles": 74506,
+        "bufferTriangles": 74530,
+        "renderMeshes": 3,
+        "groundEntry": {
+          "door": {
+            "component": "education-southwest-entry-door",
+            "buildingId": "way/297046999",
+            "center": {
+              "x": 464.436739302886,
+              "y": 38.20224007290224,
+              "z": -272.1448335774814
+            },
+            "outward": {
+              "x": -0.889494190716768,
+              "y": 0,
+              "z": 0.45694647901162533
+            },
+            "tangent": [
+              0.45694647901162533,
+              0,
+              0.889494190716768
+            ],
+            "width": 2.8,
+            "height": 2.7
+          },
+          "floorWorldY": 38.20224007290224,
+          "origin": [
+            464.33,
+            0,
+            -272.09
+          ],
+          "tangent": [
+            0.45694647901162533,
+            0,
+            0.889494190716768
+          ],
+          "outward": [
+            -0.889494190716768,
+            0,
+            0.45694647901162533
+          ],
+          "sourceNode": "4531515085",
+          "sourceWays": [
+            "way/455020727/210",
+            "way/456922931/337",
+            "way/455018305/207"
+          ],
+          "sourceFrontEdges": [
+            6,
+            7
+          ],
+          "coreWidth": 3.4,
+          "canopy": {
+            "width": 4,
+            "depth": 1.65,
+            "topWorldY": 41.25224007290224
+          },
+          "lobbyBounds": {
+            "s": [
+              -1.7,
+              1.7
+            ],
+            "n": [
+              -3,
+              0.75
+            ]
+          },
+          "routeWorld": [
+            {
+              "x": 460.5400000000289,
+              "y": 37.10992344067144,
+              "z": -269.7800000000167
+            },
+            {
+              "x": 462.90680929485313,
+              "y": 38.155838275610826,
+              "z": -271.3588856335814
+            },
+            {
+              "x": 464.86369651443005,
+              "y": 38.20224007290224,
+              "z": -272.36416788740695
+            },
+            {
+              "x": 466.64268489586357,
+              "y": 38.20224007290224,
+              "z": -273.2780608454302
+            }
+          ],
+          "southRouteWorld": [
+            {
+              "x": 456.8318132640105,
+              "y": 37.28106372390272,
+              "z": -277.2319447364039
+            },
+            {
+              "x": 457.7190213963123,
+              "y": 37.360255481920504,
+              "z": -275.4392479606
+            },
+            {
+              "x": 462.2213895763357,
+              "y": 38.16609945147934,
+              "z": -272.69312691965655
+            },
+            {
+              "x": 463.66287935696243,
+              "y": 38.20224007290224,
+              "z": -271.74729014074126
+            },
+            {
+              "x": 466.64268489586357,
+              "y": 38.20224007290224,
+              "z": -273.2780608454302
+            }
+          ],
+          "northWalkRouteWorld": [
+            {
+              "x": 463.9120915486787,
+              "y": 38.16811709577318,
+              "z": -269.4019984140045
+            },
+            {
+              "x": 467.47627408496936,
+              "y": 38.20224007290224,
+              "z": -262.46394372641373
+            },
+            {
+              "x": 472.04573887508565,
+              "y": 38.20224007290224,
+              "z": -253.569001819246
+            },
+            {
+              "x": 473.8735247911321,
+              "y": 38.64356582921238,
+              "z": -250.01102505637894
+            }
+          ],
+          "northWalk": {
+            "s": [
+              2,
+              25
+            ],
+            "n": [
+              0.35,
+              3.15
+            ],
+            "farEndUnconfirmed": true,
+            "transitionStartS": 25,
+            "transitionEndS": 27,
+            "endConnection": "terrain-following-game-approximation"
+          },
+          "bollards": [
+            {
+              "s": -6.511021009264895,
+              "n": 3.51378380302108,
+              "width": 0.12,
+              "height": 0.82,
+              "center": {
+                "x": 458.2293215948238,
+                "y": 37.47026406236286,
+                "z": -276.2759042265773
+              }
+            },
+            {
+              "s": -5.488978990735105,
+              "n": 5.186216196978919,
+              "width": 0.12,
+              "height": 0.82,
+              "center": {
+                "x": 457.2087211978008,
+                "y": 37.090246901478146,
+                "z": -274.6025916946226
+              }
+            }
+          ],
+          "surfaceComponents": [
+            "education-southwest-lobby-floor",
+            "education-southwest-door-landing",
+            "education-southwest-junction-ramp",
+            "education-southwest-south-paving",
+            "education-southwest-north-walk"
+          ],
+          "coordinatesEstimated": true,
+          "dimensionsEstimated": true,
+          "sourceEntranceTag": true,
+          "shortLobbyOnly": true,
+          "fullInteriorReproduced": false,
+          "terrainModified": false,
+          "pavingOutline": [
+            {
+              "s": -1.7,
+              "n": -3
+            },
+            {
+              "s": 1.7,
+              "n": -3
+            },
+            {
+              "s": 1.7,
+              "n": 0.35
+            },
+            {
+              "s": 27,
+              "n": 0.35
+            },
+            {
+              "s": 27,
+              "n": 3.15
+            },
+            {
+              "s": 3.5,
+              "n": 3.15
+            },
+            {
+              "s": 1.5729044251,
+              "n": 4.4267293493
+            },
+            {
+              "s": -0.9270955749,
+              "n": 4.4267293493
+            },
+            {
+              "s": -5.32,
+              "n": 5.46
+            },
+            {
+              "s": -6.68,
+              "n": 3.24
+            },
+            {
+              "s": -2.18,
+              "n": 0.49
+            },
+            {
+              "s": -1.7,
+              "n": 0.35
+            }
+          ],
+          "pavingTriangleCount": 614,
+          "pavingMethod": "continuous-shared-height-triangulation-with-terrain-filled-sides",
+          "observedFacade": {
+            "blindBrickSourceEdge": 7,
+            "ivyApproximate": true,
+            "southVerticalWindowSourceEdge": 8,
+            "southVerticalWindowWidthEstimated": 5.5,
+            "lowerGrayPanelRange": [
+              1.7,
+              10.4
+            ],
+            "blueGlassColor": 5076856
+          },
+          "northEndWorld": {
+            "x": 475.244364228167,
+            "y": 38.70495810586438,
+            "z": -247.34254248422863
+          }
+        },
+        "upperConnection": {
+          "floorWorldY": 60.182662846572484,
+          "canopyWorldY": 63.682662846572484,
+          "doors": [
+            {
+              "component": "education-upper-connection-door",
+              "buildingId": "way/297046999",
+              "center": {
+                "x": 539.2264864770856,
+                "y": 60.182662846572484,
+                "z": -185.86549815548702
+              },
+              "panelCenter": {
+                "x": 539.2264864770856,
+                "y": 61.532662846572485,
+                "z": -185.86549815548702
+              },
+              "floor": {
+                "x": 539.2264864770856,
+                "y": 60.182662846572484,
+                "z": -185.86549815548702
+              },
+              "outward": {
+                "x": 0.497796037995254,
+                "y": 0,
+                "z": 0.8672941280535844
+              },
+              "tangent": [
+                -0.8672941280535844,
+                0,
+                0.497796037995254
+              ],
+              "width": 3.4,
+              "height": 2.7,
+              "estimated": true
+            }
+          ],
+          "routeLocal": [
+            {
+              "x": 15,
+              "z": 16
+            },
+            {
+              "x": 8,
+              "z": 16
+            },
+            {
+              "x": 8,
+              "z": 4
+            },
+            {
+              "x": 12,
+              "z": 0
+            },
+            {
+              "x": 12,
+              "z": -6
+            },
+            {
+              "x": 21,
+              "z": -6
+            }
+          ],
+          "routeWorld": [
+            {
+              "x": 551.2426476276731,
+              "y": 60.182662846572484,
+              "z": -170.23536337129835
+            },
+            {
+              "x": 545.1084952299179,
+              "y": 60.182662846572484,
+              "z": -166.86309790708685
+            },
+            {
+              "x": 539.3274687198411,
+              "y": 60.182662846572484,
+              "z": -177.37878773181012
+            },
+            {
+              "x": 540.9056898247233,
+              "y": 60.182662846572484,
+              "z": -182.81102651007683
+            },
+            {
+              "x": 538.0151765696849,
+              "y": 60.182662846572484,
+              "z": -188.06887142243846
+            },
+            {
+              "x": 545.9019439382273,
+              "y": 60.182662846572484,
+              "z": -192.40464130499612
+            }
+          ],
+          "estimated": true,
+          "surveyed": false,
+          "interiorBounds": {
+            "x0": 10,
+            "x1": 22,
+            "z0": -8,
+            "z1": -4
+          },
+          "doorCenterMeaning": "floor",
+          "layoutSource": "2024 bridge plan and photograph; dimensions and door placement estimated"
+        },
+        "profileLevels": 7
+      },
+      {
+        "id": "way/297047243",
+        "name": "보건대학원",
+        "parts": 602,
+        "triangles": 30692,
+        "bufferTriangles": 30716,
+        "renderMeshes": 3,
+        "groundEntry": null,
+        "upperConnection": {
+          "floorWorldY": 60.182662846572484,
+          "canopyWorldY": 63.682662846572484,
+          "doors": [
+            {
+              "component": "health-upper-connection-door",
+              "buildingId": "way/297047243",
+              "center": {
+                "x": 548.6137251714923,
+                "y": 60.182662846572484,
+                "z": -168.79010674377912
+              },
+              "panelCenter": {
+                "x": 548.6137251714923,
+                "y": 61.532662846572485,
+                "z": -168.79010674377912
+              },
+              "floor": {
+                "x": 548.6137251714923,
+                "y": 60.182662846572484,
+                "z": -168.79010674377912
+              },
+              "outward": {
+                "x": -0.8763074853936069,
+                "y": 0,
+                "z": 0.48175220917307
+              },
+              "tangent": [
+                -0.48175220917307,
+                0,
+                -0.8763074853936069
+              ],
+              "width": 3.4,
+              "height": 2.7,
+              "estimated": true
+            }
+          ],
+          "routeLocal": [
+            {
+              "x": 15,
+              "z": 16
+            },
+            {
+              "x": 8,
+              "z": 16
+            },
+            {
+              "x": 8,
+              "z": 4
+            },
+            {
+              "x": 12,
+              "z": 0
+            },
+            {
+              "x": 12,
+              "z": -6
+            },
+            {
+              "x": 21,
+              "z": -6
+            }
+          ],
+          "routeWorld": [
+            {
+              "x": 551.2426476276731,
+              "y": 60.182662846572484,
+              "z": -170.23536337129835
+            },
+            {
+              "x": 545.1084952299179,
+              "y": 60.182662846572484,
+              "z": -166.86309790708685
+            },
+            {
+              "x": 539.3274687198411,
+              "y": 60.182662846572484,
+              "z": -177.37878773181012
+            },
+            {
+              "x": 540.9056898247233,
+              "y": 60.182662846572484,
+              "z": -182.81102651007683
+            },
+            {
+              "x": 538.0151765696849,
+              "y": 60.182662846572484,
+              "z": -188.06887142243846
+            },
+            {
+              "x": 545.9019439382273,
+              "y": 60.182662846572484,
+              "z": -192.40464130499612
+            }
+          ],
+          "estimated": true,
+          "surveyed": false,
+          "interiorBounds": {
+            "x0": 12,
+            "x1": 20,
+            "z0": 13,
+            "z1": 19
+          },
+          "doorCenterMeaning": "floor",
+          "layoutSource": "2024 bridge plan and photograph; dimensions and door placement estimated"
+        },
+        "profileLevels": 6
+      }
+    ],
+    "groundEntry": {
+      "door": {
+        "component": "education-southwest-entry-door",
+        "buildingId": "way/297046999",
+        "center": {
+          "x": 464.436739302886,
+          "y": 38.20224007290224,
+          "z": -272.1448335774814
+        },
+        "outward": {
+          "x": -0.889494190716768,
+          "y": 0,
+          "z": 0.45694647901162533
+        },
+        "tangent": [
+          0.45694647901162533,
+          0,
+          0.889494190716768
+        ],
+        "width": 2.8,
+        "height": 2.7
+      },
+      "floorWorldY": 38.20224007290224,
+      "origin": [
+        464.33,
+        0,
+        -272.09
+      ],
+      "tangent": [
+        0.45694647901162533,
+        0,
+        0.889494190716768
+      ],
+      "outward": [
+        -0.889494190716768,
+        0,
+        0.45694647901162533
+      ],
+      "sourceNode": "4531515085",
+      "sourceWays": [
+        "way/455020727/210",
+        "way/456922931/337",
+        "way/455018305/207"
+      ],
+      "sourceFrontEdges": [
+        6,
+        7
+      ],
+      "coreWidth": 3.4,
+      "canopy": {
+        "width": 4,
+        "depth": 1.65,
+        "topWorldY": 41.25224007290224
+      },
+      "lobbyBounds": {
+        "s": [
+          -1.7,
+          1.7
+        ],
+        "n": [
+          -3,
+          0.75
+        ]
+      },
+      "routeWorld": [
+        {
+          "x": 460.5400000000289,
+          "y": 37.10992344067144,
+          "z": -269.7800000000167
+        },
+        {
+          "x": 462.90680929485313,
+          "y": 38.155838275610826,
+          "z": -271.3588856335814
+        },
+        {
+          "x": 464.86369651443005,
+          "y": 38.20224007290224,
+          "z": -272.36416788740695
+        },
+        {
+          "x": 466.64268489586357,
+          "y": 38.20224007290224,
+          "z": -273.2780608454302
+        }
+      ],
+      "southRouteWorld": [
+        {
+          "x": 456.8318132640105,
+          "y": 37.28106372390272,
+          "z": -277.2319447364039
+        },
+        {
+          "x": 457.7190213963123,
+          "y": 37.360255481920504,
+          "z": -275.4392479606
+        },
+        {
+          "x": 462.2213895763357,
+          "y": 38.16609945147934,
+          "z": -272.69312691965655
+        },
+        {
+          "x": 463.66287935696243,
+          "y": 38.20224007290224,
+          "z": -271.74729014074126
+        },
+        {
+          "x": 466.64268489586357,
+          "y": 38.20224007290224,
+          "z": -273.2780608454302
+        }
+      ],
+      "northWalkRouteWorld": [
+        {
+          "x": 463.9120915486787,
+          "y": 38.16811709577318,
+          "z": -269.4019984140045
+        },
+        {
+          "x": 467.47627408496936,
+          "y": 38.20224007290224,
+          "z": -262.46394372641373
+        },
+        {
+          "x": 472.04573887508565,
+          "y": 38.20224007290224,
+          "z": -253.569001819246
+        },
+        {
+          "x": 473.8735247911321,
+          "y": 38.64356582921238,
+          "z": -250.01102505637894
+        }
+      ],
+      "northWalk": {
+        "s": [
+          2,
+          25
+        ],
+        "n": [
+          0.35,
+          3.15
+        ],
+        "farEndUnconfirmed": true,
+        "transitionStartS": 25,
+        "transitionEndS": 27,
+        "endConnection": "terrain-following-game-approximation"
+      },
+      "bollards": [
+        {
+          "s": -6.511021009264895,
+          "n": 3.51378380302108,
+          "width": 0.12,
+          "height": 0.82,
+          "center": {
+            "x": 458.2293215948238,
+            "y": 37.47026406236286,
+            "z": -276.2759042265773
+          }
+        },
+        {
+          "s": -5.488978990735105,
+          "n": 5.186216196978919,
+          "width": 0.12,
+          "height": 0.82,
+          "center": {
+            "x": 457.2087211978008,
+            "y": 37.090246901478146,
+            "z": -274.6025916946226
+          }
+        }
+      ],
+      "surfaceComponents": [
+        "education-southwest-lobby-floor",
+        "education-southwest-door-landing",
+        "education-southwest-junction-ramp",
+        "education-southwest-south-paving",
+        "education-southwest-north-walk"
+      ],
+      "coordinatesEstimated": true,
+      "dimensionsEstimated": true,
+      "sourceEntranceTag": true,
+      "shortLobbyOnly": true,
+      "fullInteriorReproduced": false,
+      "terrainModified": false,
+      "pavingOutline": [
+        {
+          "s": -1.7,
+          "n": -3
+        },
+        {
+          "s": 1.7,
+          "n": -3
+        },
+        {
+          "s": 1.7,
+          "n": 0.35
+        },
+        {
+          "s": 27,
+          "n": 0.35
+        },
+        {
+          "s": 27,
+          "n": 3.15
+        },
+        {
+          "s": 3.5,
+          "n": 3.15
+        },
+        {
+          "s": 1.5729044251,
+          "n": 4.4267293493
+        },
+        {
+          "s": -0.9270955749,
+          "n": 4.4267293493
+        },
+        {
+          "s": -5.32,
+          "n": 5.46
+        },
+        {
+          "s": -6.68,
+          "n": 3.24
+        },
+        {
+          "s": -2.18,
+          "n": 0.49
+        },
+        {
+          "s": -1.7,
+          "n": 0.35
+        }
+      ],
+      "pavingTriangleCount": 614,
+      "pavingMethod": "continuous-shared-height-triangulation-with-terrain-filled-sides",
+      "observedFacade": {
+        "blindBrickSourceEdge": 7,
+        "ivyApproximate": true,
+        "southVerticalWindowSourceEdge": 8,
+        "southVerticalWindowWidthEstimated": 5.5,
+        "lowerGrayPanelRange": [
+          1.7,
+          10.4
+        ],
+        "blueGlassColor": 5076856
+      },
+      "northEndWorld": {
+        "x": 475.244364228167,
+        "y": 38.70495810586438,
+        "z": -247.34254248422863
+      }
+    },
+    "evidence": {
+      "roadview": "sources/education-southwest-entry-roadview-review.json",
+      "facadeReview": "artifacts/education-health-review/31-south-end-facade-review.json",
+      "sourceEntranceNode": "4531515085",
+      "sourceEntranceTags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "sourceEntryPath": "way/456922931/337",
+      "observedMonth": "2026-08",
+      "imagesDirectlyReviewed": [
+        "30-southeast-step2-ui.jpg",
+        "30-adjacent-oblique-ui.jpg",
+        "31-south-connection-ui.jpg",
+        "31-entry-sign-close-ui.jpg",
+        "31-entry-lower-wide-ui.jpg",
+        "31-south-corner-ui.jpg"
+      ],
+      "gameImagesDirectlyReviewed": [
+        "artifacts/education-health-review/output/playwright/31-candidate2-roadview.png",
+        "artifacts/education-health-review/output/playwright/31-candidate2-approach.png"
+      ]
+    },
+    "implementation": {
+      "frontOpening": "원본 p7 양쪽 edge6/7에 실제 문과 세로 유리 코어 개구부를 만들었다.",
+      "paving": "남쪽 접근로, /337 분기와 문 앞 바닥을 하나의 다각형으로 나누고 각 삼각형을 실제 지면까지 채웠다. 원본 지형과 보행 표시를 바꾸지 않았다.",
+      "facade": "p7부터 p8까지 코어 오른쪽 구간은 무창 벽돌과 밝은 층띠로 바꿨다. p8에 가까운 남측면 5.5m 구획만 좁은 세로창으로 근사하고 나머지 넓은 창을 유지했다.",
+      "detail": "새 현관에 청회색 유리, 얇은 차양, 문틀과 손잡이, 낮은 벽돌 화단과 관목, 난간 및 검은 볼라드 2개를 넣었다. 판독하지 못한 표지 글자는 넣지 않았다.",
+      "materials": "기존 3개 병합 메시와 벽돌 DataTexture를 유지했다. 포장 블록은 개별 충돌체 없이 재질로 표현하며 바닥 충돌체는 지형까지 채운 삼각기둥이다."
+    },
+    "estimates": [
+      "현관 중심은 원본 entrance 노드와 /337 끝점이다. 사진과 지도 정합이며 실제 측량 좌표로 주장하지 않는다.",
+      "문 2.8m, 코어 3.4m, 차양 4m×1.65m와 바닥 높이는 사진 비례 및 현재 DEM에 맞춘 게임 근사다.",
+      "내부는 문에서 3m 안쪽의 현관 완충 공간만 만들었다. 전체 실내를 재현하지 않았다.",
+      "북쪽 높은 보행면의 전체 끝점은 미확인이다. s25~27 구간은 원지면으로 연결하는 게임용 경사면이며 사진에서 확인한 끝점이 아니다.",
+      "담쟁이와 관목의 수종, 모양 및 개체 수는 근사다.",
+      "p8 남쪽 세로창 구획의 5.5m 폭과 창 크기는 추정이며 남측 전체 44m에 적용하지 않았다."
+    ],
+    "validation": {
+      "own": {
+        "artifact": "artifacts/education-health-test/results.json",
+        "sha256": "717452edd315777596fff6ddca9b31db21052cd1189b2be276f8cf010de19ba8",
+        "passed": 15,
+        "failed": 0,
+        "scope": "Actual source geometry, original DEM and Rapier. No survey, browser, WebGL or physical-phone validation."
+      },
+      "independent": {
+        "artifact": "artifacts/education-health-access-test/results.json",
+        "sha256": "998ac20b1e9d834a41da5a3cdcd2f7df390ce42b354ce36dd4ed997204edbc8a",
+        "results": [
+          {
+            "name": "both interior routes stop at their own closed connection door",
+            "status": "PASS"
+          },
+          {
+            "name": "three continuous interior-to-interior return paths remain clear in the full scene",
+            "status": "PASS"
+          },
+          {
+            "name": "both interior floors and every bridge bend join the sixth-floor walking level",
+            "status": "PASS"
+          },
+          {
+            "name": "door surfaces preserve loaded unloaded H damage and repeated restoration",
+            "status": "PASS"
+          },
+          {
+            "name": "a shifted terrain callback moves both endpoints and walking geometry together",
+            "status": "PASS"
+          },
+          {
+            "name": "the north deck rear walk and six side steps form one ground return route",
+            "status": "PASS"
+          },
+          {
+            "name": "the southwest ground door joins both existing sidewalks and the observed high walk",
+            "status": "PASS"
+          },
+          {
+            "name": "southwest entry floors canopy and cut walls agree through H damage distance and reset",
+            "status": "PASS"
+          }
+        ],
+        "sourceStillMatches": {
+          "src/main.ts": true,
+          "src/terrain.ts": true,
+          "src/engineering301303Site.ts": true,
+          "src/scene.ts": true,
+          "src/fullCampus.ts": true,
+          "src/buildingAppearance.ts": true,
+          "src/observedAppearances.ts": true,
+          "src/landmarkBuildings.ts": true,
+          "src/libraryLandmark.ts": true,
+          "src/mainLibraryLandmark.ts": true,
+          "src/administrationLandmark.ts": true,
+          "src/studentCenterLandmark.ts": true,
+          "src/museumLandmark.ts": true,
+          "src/livingScienceLandmark.ts": true,
+          "src/gymLandmark.ts": true,
+          "src/agricultureLandmark.ts": true,
+          "src/sportsLandmark.ts": true,
+          "src/gyujanggakLandmark.ts": true,
+          "src/pavilionLandmark.ts": true,
+          "src/engineering302Landmark.ts": true,
+          "src/engineering301Landmark.ts": true,
+          "src/engineering303Landmark.ts": true,
+          "src/engineering312Landmark.ts": true,
+          "src/facultyClubLandmark.ts": true,
+          "src/teachingCenterLandmark.ts": true,
+          "src/engineering35Landmark.ts": true,
+          "src/engineering31Landmark.ts": true,
+          "src/engineering3130Connection.ts": true,
+          "src/educationHealthLandmark.ts": true,
+          "src/healthCourtyard.ts": true,
+          "src/science500Landmark.ts": true,
+          "src/engineerHouseLandmark.ts": true,
+          "src/samsungResearchLandmark.ts": true,
+          "src/familyDormLandmark.ts": true,
+          "src/researchParkLandmark.ts": true,
+          "src/globalEngineeringLandmark.ts": true,
+          "src/admissionsLandmark.ts": true,
+          "src/neutinamuLandmark.ts": true,
+          "src/baekhakLandmark.ts": true,
+          "src/distantBuildings.ts": true,
+          "src/campusConstruction.ts": true,
+          "src/engineering301303Connection.ts": true,
+          "src/engineering303312Connection.ts": true,
+          "src/engineeringRoadFacilities.ts": true,
+          "src/observedBuildingOverrides.ts": true,
+          "src/livingScienceSouthSite.ts": true,
+          "src/physics.ts": true,
+          "src/transitFacilities.ts": true,
+          "src/centralPlazaFacilities.ts": true,
+          "src/administrationPlazaFacilities.ts": true,
+          "src/informationCourtApproach.ts": true,
+          "src/administrationPlazaGround.ts": true,
+          "src/gyujanggakApproach.ts": true,
+          "public/data/campus.json": true,
+          "public/data/terrain.json": true,
+          "public/data/campus-transit.json": true,
+          "public/data/transit-facilities.json": true
+        },
+        "hashes": {
+          "src/main.ts": "7ed609031916a2e23e6abf1f01467f26253f93160f458ddf283f25562b98b84a",
+          "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+          "src/engineering301303Site.ts": "b0c63ab74926e30bd808c042fd969d038346280e165e12ab837bd8ca761f0fc4",
+          "src/scene.ts": "7d4eb2c05dd499a0e2c08b0e8051a8db087730921f4bbed2536c53f1c04c8a85",
+          "src/fullCampus.ts": "c34092eadd699f6b057df8d9f8e5a010ee7fed1eaf4b72adf8dbdae7280e0705",
+          "src/buildingAppearance.ts": "abf672327d79f89d9998b498bbb2cdf7d81e547e71ef27843c11e25cd82a0baf",
+          "src/observedAppearances.ts": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80",
+          "src/landmarkBuildings.ts": "e27b0ed3a780cc0aa5821416d1ded30c94ba9c21cd57753622bc7541711d0f49",
+          "src/libraryLandmark.ts": "665031181f1314a982fec200b1c74dc9d039ff0e854b3519a4a22ddb4db2a5a6",
+          "src/mainLibraryLandmark.ts": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3",
+          "src/administrationLandmark.ts": "3ecf221861db9f84b8a3d84d397c874a3211d386533e3cdb42f973b0728f34ed",
+          "src/studentCenterLandmark.ts": "d84281e6d26c4faacc48532342d13a5d0df2cd3fdb7722fd19447b532d29fc36",
+          "src/museumLandmark.ts": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+          "src/livingScienceLandmark.ts": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+          "src/gymLandmark.ts": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e",
+          "src/agricultureLandmark.ts": "34f1250a0b7e8fc32145de1e7ec8be6e376ef238a1ecbd73362dd470b6ace6be",
+          "src/sportsLandmark.ts": "3783c04d6a77679fbd6fd1c05b6d29b4b3ab4c434a82e5972c6017d687473b36",
+          "src/gyujanggakLandmark.ts": "fd34501f10fdf0f00b003993b35a8dfaec60c281aa1b2bc13edb7bb836d93e56",
+          "src/pavilionLandmark.ts": "115acdab76130e7c3e6b3d28a1a89e8213482d47f7cb3ca6a13a13e9780d4d17",
+          "src/engineering302Landmark.ts": "f7793201687e68fd252c89d90c4ae340ea9f12058f410234070036794231ee5c",
+          "src/engineering301Landmark.ts": "3c6e41341d7d1e8ff34359add2e0319aca143f2330b831093fc8d72883f668df",
+          "src/engineering303Landmark.ts": "00817d44acae45ed004d3ad07f4279dd1185b0fd8df6c01fb114c0aa505adad5",
+          "src/engineering312Landmark.ts": "9d21efecc34c674c8d708f7da1a4ba1fa6bdf3d8df3190adf8ca7a383b39eae0",
+          "src/facultyClubLandmark.ts": "e378fc1be9c0fa38cded6ef474888a5bd630f202e95848155522495f2feda38c",
+          "src/teachingCenterLandmark.ts": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f",
+          "src/engineering35Landmark.ts": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d",
+          "src/engineering31Landmark.ts": "3034c02a90548311e73da3a933dbf0cb491917f04280d1b2eb5b9425b8a77860",
+          "src/engineering3130Connection.ts": "0a3e27253b62a118952eece56518748bd32e3ffdeb95bbd9ea3aa3dee2ad9a28",
+          "src/educationHealthLandmark.ts": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8",
+          "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+          "src/science500Landmark.ts": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+          "src/engineerHouseLandmark.ts": "e97e3adf9b645537472800e333b3930aef98fadfeb32bc252dd62db8ca668528",
+          "src/samsungResearchLandmark.ts": "6be746eac2d9fd875964cbe357063b88af144b4b75a445ef9d0201ddc02edc35",
+          "src/familyDormLandmark.ts": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e",
+          "src/researchParkLandmark.ts": "2787e19b9b63114f6a9c595d9dd56294eb4137b316e333d471579ffa3ea4d839",
+          "src/globalEngineeringLandmark.ts": "1638023cd7d0fd118c7095dbbe423d04da86f8e955e33fc2fd92d90b28938a6f",
+          "src/admissionsLandmark.ts": "c38e5a91db4f437eff5506f0f6e7c12bdcb9e3bb9d36c9290e964c5cef404167",
+          "src/neutinamuLandmark.ts": "c73df7876f7d8e03c56e77dd24a4a33c9101948939cfe76740f248e18817471f",
+          "src/baekhakLandmark.ts": "75a750189d909cbeb5a901ddc99f7412c81acde8336c51538628bcc7da32d2d8",
+          "src/distantBuildings.ts": "20a13782054d4cb80ac8449f8105ee010d7efa9e9b2e0aaae4bf39d2a95293cb",
+          "src/campusConstruction.ts": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22",
+          "src/engineering301303Connection.ts": "db7f5a3296e290a924c8f25ed4b1c682d07388feaf19144c2792a0b7a4b9cbe2",
+          "src/engineering303312Connection.ts": "27f6797e2f75abfa6430c67f11540e0708d55ef6e65a0db5656ccca7dc55071c",
+          "src/engineeringRoadFacilities.ts": "7e63e93d16edd5bb51aafdecc67d987a6282a64b7bfa5d63fd73ed93eb11edc8",
+          "src/observedBuildingOverrides.ts": "7994c60951e1f1a8a7e4db1ee4ae9970b0999f72b708696bdedfc36a0a5651e1",
+          "src/livingScienceSouthSite.ts": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+          "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+          "src/transitFacilities.ts": "0397a5a7f812ec72c8804155a905f96614f1ef64fe14202476d55fc670883614",
+          "src/centralPlazaFacilities.ts": "fc6fd971da95e086d12ffd988a21e0fe28267734804cc6d4cc64106f5bb06d4f",
+          "src/administrationPlazaFacilities.ts": "6a344e546864a2a64920a5b5d2a7f45052b9d4ba9316d19aad941bf201142f04",
+          "src/informationCourtApproach.ts": "a807a6c8cd3bae037106aa8a04de97f15fd60cd74db7b2d41f9a81c76a1f26f9",
+          "src/administrationPlazaGround.ts": "869eae6fde4f4e1df3259cda88ecb75bdef0caf541d8615cac564272db6eb810",
+          "src/gyujanggakApproach.ts": "bf5473757789bafd64eccfc2b1cdb731aceac2da08e5c0b0becffa3a6d91e030",
+          "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+          "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+          "public/data/campus-transit.json": "b76619a0cf01338994b98e9bab997a4ae6d90875b2b57a6d23bb085317c4f5b4",
+          "public/data/transit-facilities.json": "ab9b030046d0c4028422bdb0ff1db81ab6b844e67a43de1f1ddec4b1cb72efca"
+        },
+        "modelMatchesCurrent": true
+      },
+      "externalReports": [
+        {
+          "file": "artifacts/education-health-review/controls-31-final-verification.json",
+          "sha256": "727ff328a6a10fe45d048dfe5e0a7f9e23c6f7af504438f2795beac76712e9f5"
+        },
+        {
+          "file": "artifacts/education-health-review/31-browser-review.json",
+          "sha256": "d8fdf0865ee539ee8da9cdbfb4319b8917144596669910b91bcff83d04ca8f70"
+        }
+      ],
+      "fullSceneSummary": {
+        "accessPassed": 8,
+        "adjacentPassagePassed": 5,
+        "branchWidth": 1.3,
+        "branchFloorSamples": 592,
+        "exposedFloorSamples": 605,
+        "northExitAndReturnEndS": 29,
+        "scope": "controls의 최종 기록을 인용했다. 사진에서 확인하지 못한 북쪽 끝을 실제 위치로 확정한 결과는 아니다."
+      },
+      "browserSummary": {
+        "reviewedBy": "root",
+        "desktopViews": 6,
+        "portraitViews": 3,
+        "modelSha256": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8"
+      },
+      "limits": [
+        "자체 검사는 Node 기하와 Rapier를 확인했다. 실제 WebGL 검토와 전체 장면 보행 검사는 담당자의 별도 기록으로 구분한다.",
+        "전역 릴리스 검사와 배포는 root 담당이다."
+      ]
+    }
+  },
+  "verification": {
+    "checks": [
+      {
+        "file": "artifacts/education-health-test/results.json",
+        "sha256": "717452edd315777596fff6ddca9b31db21052cd1189b2be276f8cf010de19ba8",
+        "passed": 15,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-health-access-test/results.json",
+        "sha256": "998ac20b1e9d834a41da5a3cdcd2f7df390ce42b354ce36dd4ed997204edbc8a",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-passage-test/results.json",
+        "sha256": "9ccd6638c25195797b41618c9a22174830dd5d9f0edc4c4e9dd4d6445200c685",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "a143b656d0e0fe29c00df65ce7e7ef562027058d8c42053fd6bcd1ee6bd1a64f",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "4e2ffd877604478d1b39ace870d33e9eaa8f34343505f8cd393083bd47d721e6",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-provenance-test/results.json",
+        "sha256": "c1d834d38082b83ff1157b26dab9320352001383ccfb6f4c0b926b0670eefb02",
+        "passed": 11,
+        "failed": 0
+      }
+    ],
+    "totalPassed": 57,
+    "browser": {
+      "reviewedAt": "2026-11-05T15:32:01.474Z",
+      "reviewer": "root",
+      "method": "Playwright CLI로 실제 Chrome WebGL 화면을 저장하고 최종 아홉 장을 직접 열어 대조했다.",
+      "sourceSha256": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8",
+      "previewSha256": "141371167912dfa57132ae33b7d580ac57e8af9da6d18555c95e41c2897ba7f7",
+      "previews": [
+        {
+          "view": "roadview",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/education-health-review/output/playwright/31-final-desktop-roadview.png",
+          "sha256": "7236f77aa7542e4039bb988318c2c4cc217ea1821e61b8cbc5ad0690f84e049e",
+          "directlyViewed": true
+        },
+        {
+          "view": "door",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/education-health-review/output/playwright/31-final-desktop-door.png",
+          "sha256": "ff31de09c532a3707191c7bef9ccd61031c8b805fb05603303391a227beab047",
+          "directlyViewed": true
+        },
+        {
+          "view": "approach",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/education-health-review/output/playwright/31-final-desktop-approach.png",
+          "sha256": "b099ffddfd15c97dd81c9776d7dcee38fc9d12c8e09484de078ca018fdc1fb33",
+          "directlyViewed": true
+        },
+        {
+          "view": "northwalk",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/education-health-review/output/playwright/31-final-desktop-northwalk.png",
+          "sha256": "07e10f14d82cafcffd5d4963c0fd3184e0a13461e2f708e355369bd7a4e8c335",
+          "directlyViewed": true
+        },
+        {
+          "view": "connection",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/education-health-review/output/playwright/31-final-desktop-connection.png",
+          "sha256": "f7b4e92e244ddcefedc26a27682d69f6de99c25a2a16bf009960678b9b02a37d",
+          "directlyViewed": true
+        },
+        {
+          "view": "overview",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/education-health-review/output/playwright/31-final-desktop-overview.png",
+          "sha256": "d583fe1ad3489e341508b2edc003f988578967f4701a050bf1eb0a18cf3e11f9",
+          "directlyViewed": true
+        },
+        {
+          "view": "roadview",
+          "kind": "mobile",
+          "width": 390,
+          "height": 844,
+          "file": "artifacts/education-health-review/output/playwright/31-final-mobile-roadview.png",
+          "sha256": "9ab88fe814c3d151b6221d4e7317b468d0bad2579fbcfd290173451f5b67ca2c",
+          "directlyViewed": true
+        },
+        {
+          "view": "approach",
+          "kind": "mobile",
+          "width": 390,
+          "height": 844,
+          "file": "artifacts/education-health-review/output/playwright/31-final-mobile-approach.png",
+          "sha256": "41e992630e008c1b45a626d5be66941d6070cfdc3390cf0cf4a4056b131e74bd",
+          "directlyViewed": true
+        },
+        {
+          "view": "connection",
+          "kind": "mobile",
+          "width": 390,
+          "height": 844,
+          "file": "artifacts/education-health-review/output/playwright/31-final-mobile-connection.png",
+          "sha256": "837623575b8008d527c1e1ee0688d61423ec2948d1d376b866c5b81578b97192",
+          "directlyViewed": true
+        }
+      ],
+      "findings": [
+        "현관의 유리문, 짧은 차양과 세로 유리 띠가 구분된다.",
+        "남쪽 볼라드 진입부와 낮은 보도에서 현관 및 북쪽 높은 길로 포장이 이어진다.",
+        "공중에 떠 보이던 접근판과 화단 하부를 지면까지 채웠다.",
+        "현관 오른쪽 벽돌 면, 담쟁이와 모서리 부근의 좁은 세로창을 구분했다.",
+        "겹친 담쟁이 패치의 깊이를 나눠 가까운 화면에서 보이던 줄무늬를 제거했다."
+      ],
+      "earlyCandidateFindings": [
+        {
+          "file": "artifacts/education-health-review/output/playwright/31-before-roadview.png",
+          "issue": "현관 대신 큰 창 반복이 보인다."
+        },
+        {
+          "file": "artifacts/education-health-review/output/playwright/31-candidate-door.png",
+          "issue": "따로 만든 경사판 사이에 틈이 있고 하부가 비어 보인다."
+        },
+        {
+          "file": "artifacts/education-health-review/output/playwright/31-candidate2-approach.png",
+          "issue": "화단 하부와 사각형 담쟁이 형태가 부자연스럽다."
+        }
+      ],
+      "runtimeErrors": [],
+      "finalConsole": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "knownConsoleHistory": [
+        "첫 미리보기에서 favicon.ico가 404였다.",
+        "편집 도중 HMR이 중간 코드를 읽어 paving 미정의 오류를 냈다. 최종 파일을 새로 연 페이지와 이후 최종 화면에서는 재현하지 않았다."
+      ],
+      "limits": [
+        "현재 게임의 실제 지형과 건물 생성기를 사용한 미리보기이며 차량, HUD와 플레이어 물리는 포함하지 않는다.",
+        "세로 화면은 데스크톱 Chrome의 390×844 창 크기 검사다. 실제 휴대전화 GPU 성능과 동시 터치 조작을 검증하지 않았다.",
+        "담쟁이, 관목, 포장 규격과 문 치수는 단순화한 게임 모델이다.",
+        "북쪽 길 끝의 지면 접속은 실제 끝점을 확인한 복원이 아니라 게임용 연결이다."
+      ],
+      "physicalPhoneTested": false
+    },
+    "physicalPhoneTested": false
+  },
+  "limits": [
+    "문 폭과 높이, 차양 깊이, 포장 규격 및 절대 고도는 게임용 근사다.",
+    "파란 표지의 문구와 실제 가게 이름은 판독하지 못했다. 빈 표지에 임의의 글씨를 넣지 않았다.",
+    "입구 층수, 실내 전체와 북쪽 보행로의 실제 마지막 끝점은 미확인이다.",
+    "사진에 보이지 않는 남쪽 긴 벽 전체나 다른 면을 같은 창 구성으로 복원하지 않았다.",
+    "브라우저 창 크기 검사와 실제 휴대전화 성능 검사는 구분한다."
+  ],
+  "sourceHashes": {
+    "src/educationHealthLandmark.ts": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8",
+    "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+    "src/livingScienceLandmark.ts": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+    "src/livingScienceSouthSite.ts": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+    "src/fullCampus.ts": "c34092eadd699f6b057df8d9f8e5a010ee7fed1eaf4b72adf8dbdae7280e0705",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "sources/education-southwest-entry-roadview-review.json": "e2e89e7406a00a7fdcb632c9d7ffdad4eb273f6facb237d1c3e94dabb14d7fe1",
+    "scripts/verify-education-health.mjs": "a1b873dbfdab94c13f07b9c36a7c449c2d70118456de6e9824a30772de46af83",
+    "scripts/verify-education-health-access.mjs": "267d62ceaf0eacd9ad97e4696ca02a4595dd0ee76d34a2aeafe4b65ffe37d2e6",
+    "scripts/verify-living-science-passage.mjs": "64352896592a6e92dcdd52ef136bfb6e7a14ead6205eb1ecd5a110d8061b8ad1"
+  },
+  "next": "222동 안마당과 북쪽 통과구를 공식 행사 사진 및 지도와 대조한다."
+}

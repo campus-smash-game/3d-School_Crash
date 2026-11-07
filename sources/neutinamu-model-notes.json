@@ -1,0 +1,273 @@
+{
+  "buildingNumber": "941-1",
+  "buildingId": "way/439707878",
+  "name": "느티나무어린이집",
+  "status": "custom-model-applied-partial",
+  "reviewedAt": "2026-11-05",
+  "module": "src/neutinamuLandmark.ts",
+  "export": "createNeutinamuLandmark",
+  "landmark": "neutinamu",
+  "sourceScope": "공식 시설현황의 층수, 공식 지도 사진의 보이는 외관과 OSM 윤곽을 결합했다. 실측 도면이나 건물 전체 입면을 복원한 모델은 아니다.",
+  "sources": [
+    {
+      "url": "https://kidshome.snu.ac.kr/%EC%8B%9C%EC%84%A4%ED%98%84%ED%99%A9/",
+      "type": "공식 시설현황",
+      "verified": "느티나무어린이집은 지상 4층과 지하 1층, 인접 백학어린이집은 지상 3층이다. 전체 실측 높이는 확인하지 못했다.",
+      "existingReference": "sources/childcare-reference-notes.json"
+    },
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=225",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000216.jpg",
+      "localImage": "../references/buildings/photos/225-941-1.jpg",
+      "visuallyInspected": true,
+      "observations": "회색 노출 콘크리트 본체와 노란 돌출부가 구분된다. 돌출부 밑은 비어 있고 가느다란 기둥 두 개가 받친다. 전면에는 크기와 높이가 서로 다른 불규칙한 둥근 창 세 개가 있다. 본체의 안쪽 긴 면에는 가는 세로 프레임과 창이 반복되며 뒤쪽에는 더 낮은 노란 부분이 보인다."
+    },
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=224",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000215.jpg",
+      "localImage": "../references/buildings/photos/224-941.jpg",
+      "visuallyInspected": true,
+      "observations": "백학어린이집 사진의 앞쪽에도 같은 노란 돌출부 밑면과 두 기둥이 보인다. 한 기둥은 수직이고 다른 기둥은 비스듬히 기울어 있다. 뒤쪽에는 분홍 띠와 흰 세로 벽이 있는 고층 건물이 보인다. 이 사진은 느티나무 돌출부와 백학어린이집의 인접 관계를 대조하는 데 사용했다."
+    },
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=229",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000220.jpg",
+      "localImage": "../references/buildings/photos/229-946.jpg",
+      "visuallyInspected": true,
+      "observations": "BK국제관의 흰 수직 벽, 분홍 수평 띠와 발코니 구성을 직접 확인했다. 224번과 225번 사진의 고층 배경 건물을 식별하는 보조 근거로 사용했다."
+    }
+  ],
+  "confirmed": {
+    "aboveGroundLevels": 4,
+    "basementLevels": 1,
+    "sourceUrl": "https://kidshome.snu.ac.kr/%EC%8B%9C%EC%84%A4%ED%98%84%ED%99%A9/",
+    "heightSurveyed": false
+  },
+  "profile": {
+    "height": 14,
+    "levels": 4,
+    "heightEstimated": true,
+    "levelsEstimated": false,
+    "landmark": "neutinamu",
+    "confidence": "reference"
+  },
+  "geometry": {
+    "footprint": "현재 지도 좌표의 C형 윤곽을 유지했다. 중복 끝점을 제거한 뒤 시계 방향으로 정렬하고 가장 북쪽 꼭짓점부터 시작해 본체, 북쪽 돌출부와 남쪽 부분을 나눈다. 같은 8개 점의 순서 반전, 시작점 회전과 닫힘 여부에 영향을 받지 않는다.",
+    "placement": "동쪽의 긴 몸체는 지상 4층으로 표현하고 북쪽의 노란 부분 아래를 비웠다. 서쪽 끝에 수직 기둥과 사선 기둥을 각각 하나씩 배치했다. 남쪽의 낮은 부분은 사진 비례로 2층처럼 근사했다. 공식 4층은 전체 건물 현황이며 부분별 층수를 확인한 자료는 없다.",
+    "estimatedMeters": {
+      "nominalBodyWallHeight": 14,
+      "roofTopIncludingSlab": 14.12,
+      "podBottomCenter": 5.5,
+      "podRoofCenter": 10.8,
+      "southRoofCenter": 7.2,
+      "columnRadius": 0.25,
+      "columnLeanOffset": 1.4,
+      "roundedTrimRadius": 0.13,
+      "maximumTrimProjectionBeyondFront": 0.1
+    },
+    "estimatedFeatures": "전체 높이, 층고, 돌출부의 높이와 깊이, 세 창의 윤곽과 크기, 기둥 각도 및 간격은 추정이다. OSM은 전체 평면을 뒷받침하지만 각 높이 덩어리의 경계를 확인해 주지는 않는다.",
+    "unseenFaces": "사진에 보이지 않는 바깥 면과 뒤쪽 창은 OSM 평면과 공식 층수를 기준으로 단순하게 표현했다. 실내, 지하층, 정확한 계단과 울타리는 구현하지 않았다.",
+    "terrain": "윤곽 중심의 heightAt을 기준 높이로 쓴다. 벽 기초와 두 기둥을 각 지면 아래까지 연장하고 아래층 유리는 해당 벽 구간의 지형보다 높게 둔다. 지형 수치를 코드에 고정하지 않는다.",
+    "renderMeshes": 2,
+    "breakableParts": 502,
+    "triangles": 17474,
+    "photoTexturesIncluded": false,
+    "roundedTrim": "앞쪽 아래 테두리와 양끝 세로 모서리에 반지름 0.13m의 얇은 곡면 몰딩을 추가했다. 16각 원기둥 단면을 짧은 14개 구간으로 나눠 기존 두 메시 안에 합쳤다. 사진의 곡률을 실측한 값은 아니며 큰 면과 C형 덩어리는 유지한다."
+  },
+  "directionHypothesis": {
+    "status": "plausible-not-surveyed",
+    "mapCoordinates": "+x는 동쪽, +z는 북쪽이다. 원점과 변환은 기존 캠퍼스 자료를 따른다.",
+    "mappedGeometry": "941-1 윤곽은 동쪽의 긴 몸체와 남북 양쪽 날개로 이루어진 C형이며 서쪽 중정이 열려 있다. 북쪽 날개는 동쪽 몸체에서 서쪽으로 돌출한다.",
+    "photo225": "사진 왼쪽 회색 몸체를 동쪽 본체로, 오른쪽 벽돌 건물을 서쪽 백학으로, 더 뒤의 고층 건물을 남서쪽 BK국제관으로 보면 북쪽에서 남쪽을 바라본다는 가설과 맞는다.",
+    "photo224": "돌출부 아래에서 서쪽 백학을 보면 남서쪽 BK국제관이 사진 왼쪽 배경에 놓인다. 224번 사진도 이 상대 배치와 맞는다.",
+    "approximateNeighbors": {
+      "baekhak": {
+        "x": 868,
+        "z": -23
+      },
+      "bkInternationalHouse": {
+        "x": 865,
+        "z": -134
+      }
+    },
+    "limitation": "사진의 촬영 좌표와 방위각, 초점거리 또는 현장 측량 자료는 없다. 배경 건물 식별과 배치는 시각적 대조에 따른 추정이며, 정확한 방위나 돌출부 치수를 확정하지 않는다."
+  },
+  "coordinateReview": {
+    "status": "implemented-cpu-and-physics-verified",
+    "dataFrame": "D=(E,U,N). 지도, 지형, 건물 정점과 물리는 기존 동쪽/위쪽/북쪽 논리 좌표를 유지한다.",
+    "renderFrame": "R=(E,U,-N). 생성된 월드 계층에 scale.z=-1을 한 번 적용하고 카메라는 반사 계층 밖에 둔다.",
+    "scope": "실제 Three.js 수치 투영, Rapier와 명시적 Node 시험 대역으로 확인했다. GPU 픽셀, 실제 브라우저 조작, 휴대전화 성능과 최신 거리뷰 일치는 미확인이다.",
+    "reviewedAt": "2026-11-04T21:44:52Z",
+    "convention": "건물의 C형 지도 윤곽과 논리 좌표는 유지했고 공통 표시 계층만 반사했다. 모델 자체의 동서 배치는 바꾸지 않았다.",
+    "windowOrder": "북쪽 면을 지리 좌표로 해석할 때 서쪽 끝에는 위쪽의 큰 역삼각형 창, 가운데에는 작은 위쪽 창, 동쪽 본체 가까이에는 아래쪽의 큰 창을 둔다. 이는 225번 사진의 배경 건물 관계로 추정한 방향이며 촬영 방위는 미확인이다.",
+    "currentPhotoComparison": "공식 225번 사진과 새 정면 CPU 이미지에서 회색 본체가 왼쪽에 놓이고 노란 돌출부가 오른쪽으로 뻗는다. 창은 왼쪽의 크고 낮은 창, 가운데의 작고 높은 창, 오른쪽의 크고 높은 역삼각형 창 순서다. 서쪽 끝 두 기둥도 사진처럼 오른쪽에 놓인다.",
+    "cameraCheck": "카메라 (0,0,+1)에서 원점을 볼 때 matrixWorld의 오른쪽 축은 [1,0,0]이며 실제 Three.js 투영과 공통 CPU의 up×forward가 일치한다.",
+    "reference": "artifacts/coordinate-integration/childcare-photo-review.json",
+    "limits": "현재 비교는 추정한 북쪽 관찰 방향에서의 비대칭 순서 확인이다. 실제 촬영 좌표와 방위각, 보이지 않는 입면과 현장 지형은 미확인이다."
+  },
+  "collision": {
+    "contract": "BreakableSpec.collisionVertices에는 body 위치와 회전을 기준으로 한 미터 단위 로컬 좌표를 전달한다. 볼록 프록시 scale은 (1,1,1)이다. Simulation은 월드 반사 전에 논리 변환과 형상을 복제해 로드 충돌과 미로드 사격을 같은 논리 좌표에서 처리한다.",
+    "windows": "곡선 창은 48개 선분으로 근사한다. 세 곡선이 볼록함을 검사하고 유리와 작은 프레임을 한 볼록 부품으로 묶는다. 전면 벽은 곡선 창을 뺀 평면을 삼각분할한 프리즘이므로 창을 부수면 곡선 전체에 실제 구멍이 생긴다.",
+    "roof": "지붕과 밑면은 실제 렌더 삼각형을 두께가 있는 볼록 프리즘으로 만든다. 직육면체 외접 상자가 중정이나 지붕 경계 바깥을 막는 방식은 제거했다.",
+    "measuredError": "곡선 창 표본에서 유리와 돌출 프레임을 한 부품으로 묶은 깊이 차이는 최대 0.08261m였다. 근거리와 미로드 프록시의 사격 거리는 최대 0.00082m 차이였다. 지붕 표본에서 렌더와 미로드 경계는 같았고, Rapier 경계 근처 28개 사격선의 최대 면 분리 거리는 0.01176m였다. 이 경계 표본은 0.02m 이내인지 검사한다.",
+    "damage": "부품별 원래 꼭짓점 범위를 보관해 부분 파괴와 초기화를 처리한다. 먼 거리에서도 남은 삼각형을 유지하며, 전체 파괴 후 렌더와 충돌체를 제거한다.",
+    "trim": "몰딩에도 실제 렌더의 볼록 형상을 사용했다. 672개 방사 사격선에서 렌더와 충돌 거리의 최대 차이는 0.00028m였다. 몰딩의 부분 파괴, 원거리 잔존과 초기화도 검사한다."
+  },
+  "verification": {
+    "command": "node scripts/verify-neutinamu.mjs",
+    "results": "artifacts/neutinamu-test/results.json",
+    "passed": 13,
+    "total": 13,
+    "checks": [
+      {
+        "name": "model preserves the mapped C courtyard and distinct yellow raised northern wing",
+        "status": "passed",
+        "meshes": 2,
+        "breakables": 502,
+        "triangles": 17474,
+        "baseElevation": 22.300169209868997,
+        "estimatedHeight": 14
+      },
+      {
+        "name": "reversed winding and every cyclic start preserve the same component geometry",
+        "status": "passed",
+        "inputVariants": 32,
+        "exactRenderAndProxyArrays": true
+      },
+      {
+        "name": "curved window colliders follow the actual rendered boundary without covering concave gaps",
+        "status": "passed",
+        "rayPairs": 432,
+        "maximumRenderedSurfaceError": 0.08260802731635652,
+        "maximumLoadedUnloadedError": 0.0008113345223565993
+      },
+      {
+        "name": "roof and soffit ray boundaries match rendered prisms within 2 cm",
+        "status": "passed",
+        "rayPairs": 6400,
+        "outsideTriangleMisses": 3984,
+        "maximumRenderedSurfaceError": 0.0007509720636278416,
+        "rapierBoundaryToleranceCases": 28,
+        "maximumBoundarySeparation": 0.011759729403019097
+      },
+      {
+        "name": "closed prism faces point outward and organic glazing faces the photographed front",
+        "status": "passed",
+        "inspectedTriangles": 3640
+      },
+      {
+        "name": "window destruction opens the full curved aperture at loaded and unloaded distances",
+        "status": "passed",
+        "apertureBoundarySamples": 288,
+        "loadedAndUnloaded": true
+      },
+      {
+        "name": "three irregular windows and vertical and inclined support columns are separate parts",
+        "status": "passed",
+        "organicWindows": 3,
+        "supportColumns": 2,
+        "inclinedHorizontalFraction": 0.19592856722847346
+      },
+      {
+        "name": "rounded edge trim uses matching curved render and convex collision surfaces",
+        "status": "passed",
+        "trimParts": 14,
+        "radialRayPairs": 672,
+        "maximumRenderedSurfaceError": 0.0002770651971724103,
+        "damageReset": true
+      },
+      {
+        "name": "actual lower glazing stays clear of terrain and the two column foundations reach ground",
+        "status": "passed",
+        "samples": 12656,
+        "minimumGlazingClearance": 0.22948073716868578
+      },
+      {
+        "name": "the space below the pod is traversable rather than a filled wall box",
+        "status": "passed",
+        "minimumHeadroom": 5.518078514996322,
+        "walkedMeters": 14.925543657594803
+      },
+      {
+        "name": "destroying each irregular window leaves a real hole at near and unloaded distances",
+        "status": "passed",
+        "windows": [
+          {
+            "window": 0,
+            "remainingTriangles": 17306
+          },
+          {
+            "window": 1,
+            "remainingTriangles": 17306
+          },
+          {
+            "window": 2,
+            "remainingTriangles": 17306
+          }
+        ]
+      },
+      {
+        "name": "reset restores exact source arrays and removes every fully destroyed collider",
+        "status": "passed",
+        "exactArraysRestored": true,
+        "noGhostColliders": true
+      },
+      {
+        "name": "all geometry follows a changed terrain datum",
+        "status": "passed",
+        "terrainOffset": 40
+      }
+    ],
+    "typescript": "npx tsc --noEmit 통과",
+    "scope": "현재 실행 코드의 기하, 실제 지형과 Rapier를 검사했다. 브라우저 WebGL 렌더링, 모바일 성능과 실제 휴대전화 조작은 검증하지 않았다."
+  },
+  "visualReview": {
+    "status": "공통 좌표 반사와 곡면 몰딩을 포함한 최종 통합 CPU 이미지 직접 확인",
+    "reference": "../references/buildings/photos/225-941-1.jpg",
+    "image": "artifacts/geometry-previews/neutinamu.png",
+    "originalImageDirectlyViewed": true,
+    "integratedImageDirectlyViewed": true,
+    "method": "실제 모델 삼각형과 지형을 공통 CPU 투영기로 그린 정사영이다. WebGL, PBR, 그림자와 텍스처는 검증하지 않는다.",
+    "observations": "공식 225번 사진과 새 CPU 이미지에서 노란 돌출부, 세 불규칙 창, 두 기둥, 열린 중정과 얇은 곡면 테두리를 대조했다. 회색 본체와 세 창의 좌우 순서가 사진에 대응한다. 큰 밑면의 실제 곡률, 본체 창 배열과 낮은 남쪽 부분의 비례는 여전히 단순화돼 있다.",
+    "terrainLimitation": "측면 CPU 이미지에서는 앞쪽 언덕이 본체 하층 일부를 가린다. 현재 지형 자료에서 생기는 가림이며, 실제 사진의 현장 지형과 일치하는지는 확인하지 못했다. 유리와 지형의 교차 여부를 검사한 결과와 사진상 지형의 정확성은 구분한다.",
+    "finalTriangleCount": 17474,
+    "coordinateTransform": "D=(E,U,N), R=(E,U,-N)"
+  },
+  "remainingWork": [
+    "노란 외곽은 얇은 곡면 몰딩으로 보완했지만 본체와 이어지는 정확한 곡면, 큰 밑면의 곡률과 작은 개폐창틀은 단순화돼 있다.",
+    "돌출부의 정확한 평면, 높이와 촬영 방위는 추가 사진이나 도면으로 더 대조해야 한다.",
+    "보이지 않는 입면과 낮은 남쪽 부분의 층수 및 비례는 추정이다.",
+    "실제 브라우저와 휴대전화에서 화면, 조작과 성능을 확인해야 한다.",
+    "공통 좌표 반사는 수치와 CPU 이미지에서 확인했다. 실제 GPU 화면에서 앞뒷면, 그림자와 글자 가독성은 후속 확인이 필요하다."
+  ],
+  "priorPrototype": "artifacts/neutinamu-prototype/notes.json의 503개 부품과 7개 검사는 이전 독립 시제품 기록이다. 현재 운영 모듈의 검사와 구분한다.",
+  "history": [
+    {
+      "event": "before-common-coordinate-reflection",
+      "coordinateReview": {
+        "convention": "기존 게임의 논리 좌표인 +x 동쪽, +z 북쪽을 유지했다. 전체 캠퍼스 좌표 변환을 이 건물에서 따로 바꾸지 않았다.",
+        "windowOrder": "북쪽 면을 지리 좌표로 해석할 때 서쪽 끝에는 위쪽의 큰 역삼각형 창, 가운데에는 작은 위쪽 창, 동쪽 본체 가까이에는 아래쪽의 큰 창을 둔다. 이는 225번 사진의 배경 건물 관계로 추정한 방향이며 촬영 방위는 미확인이다.",
+        "screenLimitation": "현재 논리 좌표와 Three.js 화면의 좌우 관계 때문에 북쪽을 향한 공통 CPU 미리보기에서 공식 사진과 좌우가 다르게 보인다. 공통 CPU 투영식은 실제 THREE.OrthographicCamera와 일치하므로 이 건물만 반전하지 않았다. 전체 지리 좌표의 손잡이는 별도 검토 대상이다.",
+        "cameraCheck": "카메라 (0,0,+1)에서 원점을 볼 때 matrixWorld의 오른쪽 축은 [1,0,0]이며 실제 Three.js 투영과 공통 CPU의 up×forward가 일치한다."
+      },
+      "visualReview": {
+        "status": "곡면 몰딩을 포함한 최종 통합 CPU 이미지 직접 확인",
+        "reference": "../references/buildings/photos/225-941-1.jpg",
+        "image": "artifacts/geometry-previews/neutinamu.png",
+        "originalImageDirectlyViewed": true,
+        "integratedImageDirectlyViewed": true,
+        "method": "실제 모델 삼각형과 지형을 공통 CPU 투영기로 그린 정사영이다. WebGL, PBR, 그림자와 텍스처는 검증하지 않는다.",
+        "observations": "공식 225번 사진과 최종 CPU 이미지에서 노란 돌출부, 세 불규칙 창, 두 기둥, 열린 중정과 얇은 곡면 테두리를 대조했다. 추가 몰딩은 아래쪽과 세로 모서리에 보이며 큰 덩어리와 기둥 아래 공간은 유지됐다. 본체의 긴 면과 낮은 남쪽 부분은 사진에 없는 면까지 단순화해 표현했다. 현재 화면 좌우 차이는 전체 좌표 관례 문제로 따로 기록했다.",
+        "terrainLimitation": "측면 CPU 이미지에서는 앞쪽 언덕이 본체 하층 일부를 가린다. 현재 지형 자료에서 생기는 가림이며, 실제 사진의 현장 지형과 일치하는지는 확인하지 못했다. 유리와 지형의 교차 여부를 검사한 결과와 사진상 지형의 정확성은 구분한다.",
+        "finalTriangleCount": 17474
+      },
+      "remainingWork": [
+        "노란 외곽은 얇은 곡면 몰딩으로 보완했지만 본체와 이어지는 정확한 곡면, 큰 밑면의 곡률과 작은 개폐창틀은 단순화돼 있다.",
+        "돌출부의 정확한 평면, 높이와 촬영 방위는 추가 사진이나 도면으로 더 대조해야 한다.",
+        "보이지 않는 입면과 낮은 남쪽 부분의 층수 및 비례는 추정이다.",
+        "전체 지리 좌표와 사진 좌우의 관계를 공통 좌표 설계에서 정리해야 한다.",
+        "실제 브라우저와 휴대전화에서 화면, 조작과 성능을 확인해야 한다."
+      ]
+    }
+  ]
+}

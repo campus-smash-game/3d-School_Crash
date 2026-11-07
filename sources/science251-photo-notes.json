@@ -1,0 +1,338 @@
+{
+  "phase": 77,
+  "reviewedAt": "2026-11-07",
+  "scope": "25-1동 외관과 출입구, 주차장 및 필로티, 24동 3층 연결교",
+  "identity": {
+    "buildingNumber": "25-1",
+    "name": "자연대강의및실험연구동",
+    "officialSeq": 30,
+    "osmWay": "way/167656591",
+    "officialMarkerLatLon": [
+      37.45897,
+      126.94941
+    ],
+    "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=30",
+    "apiUrl": "https://map.snu.ac.kr/api/building/30.action?convinType=N&current_lat_val=&current_lon_val="
+  },
+  "evidence": [
+    {
+      "id": "official-map-photo",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000030.jpg",
+      "localImage": "research-official251.jpg",
+      "originalLocalImage": "D:/codex/3d-School_Crash/references/buildings/photos/030-25-1.jpg",
+      "directlyViewed": true,
+      "captureDate": null,
+      "publicationDate": null,
+      "identification": "사진 위쪽의 25-1 번호와 공식 건물 색인의 동번호를 대조했다. 원형 돌출부는 지도 윤곽의 남쪽 돌출부와 대응한다.",
+      "orientationEstimate": "주차장 쪽 남서향 긴 면을 남서쪽에서 바라본 사진으로 판단한다. 오른쪽은 동남쪽 단부이고 왼쪽은 서북쪽 단부다.",
+      "directObservations": [
+        "붉은 벽돌의 굵은 수평 띠와 청록색의 긴 창줄이 반복된다. 창 사이에 밝은 수직 부재가 있고 여러 창 아래에 실외기가 붙어 있다.",
+        "건물 오른쪽 높은 부분에는 위쪽 창 네 줄이 보인다. 왼쪽으로 갈수록 높은 층이 차례로 끝나면서 지붕선이 낮아진다.",
+        "중앙 하부에는 밝은 사각 기둥이 줄지어 서 있고 깊은 열린 공간이 있다. 기둥 뒤쪽에서도 밝은 외부 공간이 보여 관통 공간 후보로 볼 수 있다.",
+        "열린 공간 앞에는 넓고 낮은 계단과 회색 포장이 있다. 정확한 단수와 높이는 사진으로 세지 않았다.",
+        "오른쪽 낮은 돌출부는 둥근 벽돌 벽이다. 위쪽에 긴 창을 나눈 큰 개구부가 있고 아래쪽에는 작은 사각 창이 있다. 둥근 벽 앞에는 낮은 흰 화단벽과 관목이 이어진다.",
+        "기둥 사이와 둥근 벽 옆에 유리문 또는 유리벽이 보인다. 어느 문이 주현관인지 문구를 읽어 확인하지는 못했다.",
+        "앞쪽은 주차장과 보행로다. 주차선, 경계석, 낮은 사각 볼라드, 구형 등기구를 단 가로등, 수목과 화단이 보인다."
+      ],
+      "limits": [
+        "높은 필로티는 주변 창 간격과 비교하면 여러 층 높이지만 정확한 층고와 전체 법정 층수는 확인하지 못했다.",
+        "이 면의 현관은 원본 OSM에 표시된 북동쪽 출입문과 다른 면이다. 원본 문 노드를 남서쪽으로 옮길 근거로 사용하지 않는다.",
+        "사진 촬영일이 없으므로 당시 실외기, 차량, 작은 시설물의 배치를 현재 상태로 단정하지 않는다."
+      ]
+    },
+    {
+      "id": "cns2022-exterior",
+      "pageUrl": "https://science.snu.ac.kr/newsroom/view/2/11/790",
+      "title": "서울대학교 자연대 건물 탐구",
+      "publicationDate": "2022-07-09",
+      "captureDate": null,
+      "imageUrl": "https://science.snu.ac.kr/webdata/newsroom/images/20220710/8ccz8fez036z57bz48dzd80z391zee2z739z031z38.png",
+      "localImage": "research-cns202207-exterior.png",
+      "directlyViewed": true,
+      "observations": "공식 지도 사진과 같은 주차장 쪽 면이다. 서쪽으로 내려가는 지붕 단차, 중앙 필로티와 동쪽 둥근 돌출부가 다시 보인다. 필로티 위 창 네 줄과 주차장 사이 보행 접근로를 확인했다.",
+      "limit": "기사 게시일과 사진 촬영일은 구분한다. 나뭇잎과 차량이 공식 지도 사진과 달라 별도 촬영본으로 보이지만 촬영 연도는 확인하지 못했다."
+    },
+    {
+      "id": "library-vr-northeast-face",
+      "pageUrl": "https://lib.snu.ac.kr/vr/",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/2.jpg",
+      "localImage": "research-vr-sky4-back.jpg",
+      "detailCrop": "research-vr-sky4-back-crop.png",
+      "cropOriginalPixels": [
+        1430,
+        1565,
+        2048,
+        1925
+      ],
+      "cropScale": 2,
+      "scene": "pano9016",
+      "cameraMetadataLatLon": [
+        37.460177777778,
+        126.95078055556
+      ],
+      "captureDate": null,
+      "publicationDate": null,
+      "directlyViewed": true,
+      "identification": "북동쪽 긴 면의 25-1 번호를 직접 읽었다. 가까운 24동 지붕과 뒤쪽 500동 방향, 원본 지도 배치를 대조했다.",
+      "orientationEstimate": "북동쪽 위에서 남서쪽을 내려다본 항공사진이다. 사진 왼쪽은 건물 동남쪽, 오른쪽은 서북쪽에 대응한다.",
+      "directObservations": [
+        "붉은 벽돌 띠와 긴 창줄 사이에 밝은 수직 부재가 반복된다. 남서쪽 사진과 반대로 오른쪽으로 갈수록 지붕이 낮아진다.",
+        "긴 면의 동남쪽 부분에는 밝은 사각 패널 외장으로 된 세로 돌출부와 긴 청색 유리창이 있다. 유리창은 세로로 여러 칸 나뉜다.",
+        "하부에는 높은 밝은 기둥과 어두운 유리 또는 열린 부분이 보인다. 가까운 24동이 아래쪽을 가려 지면 전체는 볼 수 없다.",
+        "옥상에는 사각 코어와 가는 격자형 구조, 높이가 다른 지붕면이 보인다."
+      ],
+      "limits": "구름다리의 25-1동 접속부와 지상 현관 대부분은 24동에 가려 있다. 현재 상태와 촬영일을 확인하지 못했다."
+    },
+    {
+      "id": "library-vr-curved-cover",
+      "pageUrl": "https://lib.snu.ac.kr/vr/",
+      "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky12_10821/html5/5.jpg",
+      "localImage": "research-vr-sky12-down.jpg",
+      "detailCrops": [
+        {
+          "file": "research-vr-sky12-down-crop.png",
+          "originalPixels": [
+            450,
+            500,
+            1160,
+            1070
+          ],
+          "scale": 2
+        },
+        {
+          "file": "research-vr-curved-cover-crop.png",
+          "originalPixels": [
+            950,
+            640,
+            1125,
+            835
+          ],
+          "scale": 4
+        }
+      ],
+      "scene": "pano10821",
+      "cameraMetadataLatLon": [
+        37.458722222222,
+        126.94977777778
+      ],
+      "captureDate": null,
+      "publicationDate": null,
+      "directlyViewed": true,
+      "directObservations": [
+        "회색 덮개는 25-1동의 북동쪽 긴 면에서 나와 24동 남쪽 짧은 면으로 이어진다. 25-1동을 떠나는 쪽은 비교적 곧고 24동 가까이에서 완만하게 휜다.",
+        "윗면에는 가는 가로 줄눈과 양옆의 좁은 테두리가 보인다. 아래쪽에는 얇은 수평선과 지면 쪽으로 내려가는 밝은 지지 부재가 보인다.",
+        "주변은 포장된 마당과 수목이다. 덮개 동쪽 아래에는 나무가 있어 바닥과 계단을 가린다.",
+        "25-1동 주차장 쪽 둥근 돌출부는 녹색 평지붕과 밝은 둥근 가장자리를 갖는다. 본체 지붕은 여러 높이로 나뉘며 긴 격자 구조와 실외기 줄이 있다."
+      ],
+      "mapEstimate": "회색 연결부는 25-1동 북동쪽 면의 동남쪽 부분과 24동 남쪽 단부를 잇는다. 25-1동 원본 출입문 node/4562088371은 이 면에 있지만 지상 문인지 연결교 문인지 층 태그가 없어 확정하지 않는다.",
+      "limits": [
+        "윗면만으로 열린 차양인지 유리로 막힌 통로인지 확정할 수 없다.",
+        "2020년 공지의 구름다리와 같은 연결부일 가능성이 높지만 사진에서 층 표지와 접속문을 직접 읽지는 못했다.",
+        "지붕이 휘는 반경, 길이, 폭, 기둥 수, 보행면 높이와 경사는 실측하지 않았다.",
+        "확대본은 원본을 잘라 확대한 것으로, 새 세부를 복원하거나 생성하지 않았다."
+      ]
+    },
+    {
+      "id": "official2020-bridge-floor",
+      "provider": "서울대학교 지구환경과학부",
+      "url": "https://sees.snu.ac.kr/community/notice?bbsidx=14269&md=v",
+      "publicationDate": "2020-06-27",
+      "bodyNoticeDate": "2020-06-26",
+      "buildingRelatedExcerpt": "24 동 3 층 구름다리 통해 25-1 동으로 이동",
+      "confirmed": "2020년 공지에 24동 3층에서 25-1동으로 가는 구름다리가 명시돼 있다.",
+      "limits": "25-1동 쪽 접속층과 통로 치수는 명시하지 않는다. 후속 이동 장소의 층만으로 중간에 계단을 이용했는지 알 수 없으므로 반대편 접속층을 추정하지 않았다. 건축 판단에 필요한 짧은 문장만 기록하고 개인 이동 시간표와 건강 관련 내용은 저장하지 않았다."
+    },
+    {
+      "id": "official2022-entrance-and-lobby",
+      "provider": "서울대학교 자연과학대학",
+      "url": "https://science.snu.ac.kr/newsroom/view/2/11/764",
+      "title": "자연대 건물 내 휴식 및 학습 공간 소개",
+      "publicationDate": "2022-05-12",
+      "captureDate": null,
+      "images": [
+        {
+          "localImage": "research-cns202205-lobby1.jpg",
+          "imageUrl": "https://science.snu.ac.kr/webdata/newsroom/images/20220512/37bze2fz258z631zcc6zec4z6b3ze58za06ze45z79.jpg"
+        },
+        {
+          "localImage": "research-cns202205-lobby2.jpg",
+          "imageUrl": "https://science.snu.ac.kr/webdata/newsroom/images/20220512/431zaa7zd21z232zc17z7a1zd11z09cz686z590z09.jpg"
+        }
+      ],
+      "directlyViewed": true,
+      "confirmedText": "기사는 24동과 가까운 입구로 들어오는 25-1동 1층 로비와 경비실, 2층으로 올라가는 계단을 설명한다. 2층에는 해동학술정보실이 있다고 적었다.",
+      "directObservations": "1층 사진에서 큰 회색 금속 프레임 유리벽과 유리문, 실외 포장과 낮은 수목, 내부의 높은 원기둥을 확인했다. 사진의 바깥쪽 계단 일부가 보이지만 어느 지도 계단인지 식별하지 못했다.",
+      "limits": "기사의 1층 현관과 24동 3층 구름다리 접속문이 같다는 설명은 없다. 실내 사진으로 보이지 않는 계단과 출입문을 추가할 근거로 삼지 않는다."
+    },
+    {
+      "id": "kakao2014-southwest-piloti",
+      "captureMonthShown": "2014-04",
+      "urls": [
+        "https://kko.to/YIMZgkkuy8",
+        "https://kko.to/rnOxx2RPPS"
+      ],
+      "localImages": [
+        "research-followup-roadview-start.png",
+        "research-followup-piloti.png",
+        "research-followup-piloti-step1.png",
+        "research-followup-piloti-entry.png",
+        "research-followup-main-piloti.png"
+      ],
+      "identification": "카카오맵에서 서울대학교 25-1동을 검색한 뒤 자연대강의및실험연구동의 로드뷰를 열었다. 공식 사진의 붉은 벽돌 띠와 연속 창, 중앙 높은 기둥과 둥근 돌출부를 대조했다.",
+      "orientation": "주차장 쪽 남서향 긴 면이다. 낮은 주차 필로티에서 동남쪽 중앙 현관을 바라본 사진과 정면 사진을 확인했다.",
+      "directlyViewed": true,
+      "observations": [
+        "서쪽 낮은 필로티에는 차량이 주차돼 있고, 뒤쪽은 회색 금속 프레임으로 나눈 유리벽이다.",
+        "중앙의 높은 필로티 뒤에도 큰 유리벽과 유리문이 있다. 기둥 앞의 열린 공간과 건물 내부 유리 로비를 구분해야 한다.",
+        "현관 앞에는 넓은 회색 계단이 있고, 금속 난간을 갖춘 경사로가 유리벽 앞과 기둥 옆을 따라 꺾이며 이어진다.",
+        "경사로 옆은 낮은 밝은 벽으로 구획된다. 바깥 참과 보도에는 사각 볼라드가 있고, 둥근 돌출부 앞에는 화단과 구형 가로등이 있다."
+      ],
+      "limits": [
+        "2014년 사진이다. 현재 문 개방 여부와 접근성, 경사로의 치수는 확인하지 않았다.",
+        "유리벽의 문을 지나 건물 반대편까지 실내로 통과할 수 있는지는 확인하지 못했다.",
+        "실내 통로 전체, 문턱 높이, 계단 단수와 난간 높이는 실측하지 않았다."
+      ]
+    },
+    {
+      "id": "kakao2011-northeast-entrance-distant",
+      "captureMonthShown": "2011-04",
+      "startUrl": "https://kko.to/zLXcf983R7",
+      "localImage": "research-followup-bridge-southlook.png",
+      "directlyViewed": true,
+      "identification": "24동과 25동 사이 기존 연결교 아래 촬영점에서 25-1동 북동쪽 면을 바라봤다. 붉은 외장과 높은 유리벽, 밝은 세로 돌출부를 이전 VR 사진과 대조했다.",
+      "observations": "25-1동 북동쪽 낮은 현관은 여러 칸으로 나눈 큰 유리벽과 지상 유리문, 넓고 얇은 차양을 갖춘 것으로 보인다. 앞에는 포장 마당과 벤치가 있다.",
+      "limits": "먼 거리이며 수목과 전경 구조물이 가린다. 문 중심 좌표와 연결교 접속문, 지상 현관의 정확한 층은 이 장면에서 확정하지 않는다."
+    },
+    {
+      "id": "kakao2011-curved-bridge-side",
+      "captureMonthShown": "2011-04",
+      "shareUrlForCurrentPoint": "https://kko.to/nPw4yqOGAD",
+      "shareUrlLimit": "공유 주소는 같은 위치의 2026년 08월 장면으로 열린다. 2011년 사진 자체의 별도 공유 주소는 확보하지 못했다.",
+      "reproduction": "촬영일을 열고 과거사진 2011.04를 선택한 뒤 과거사진 비교를 연다. 겹침 경계를 오른쪽 끝으로 옮기고 구름다리 방향을 확대하면 저장한 옆면을 확인할 수 있다.",
+      "currentPointPano": "1213022613",
+      "currentPointKakaoCoords": {
+        "urlX": 488820,
+        "urlY": 1099995
+      },
+      "viewAtShare": {
+        "pan": 157,
+        "tilt": -14,
+        "zoom": 6
+      },
+      "localImages": [
+        "research-followup-251-old-northeast.png",
+        "research-followup-curved-bridge-old-zoom3.png"
+      ],
+      "directlyViewed": true,
+      "identification": "24동 서쪽 긴 면과 25-1동 북동쪽 면 사이에 있는 연결부다. 공식 VR에서 본 회색 지붕의 접속 위치, 25-1동의 밝은 세로 돌출부와 곡선 형태가 일치한다.",
+      "orientationEstimate": "연결부 북서쪽의 낮은 마당에서 남동쪽을 바라본 장면으로 판단한다.",
+      "observations": [
+        "회색 지붕과 회색 보행판이 따로 보이며 그 사이에 큰 열린 공간이 있다. 난간 위부터 지붕까지 유리창을 반복해 넣은 밀폐 외벽은 보이지 않는다.",
+        "보행판 가장자리에는 가는 금속 세로 부재와 손잡이로 구성된 난간이 있다.",
+        "지붕 가장자리에는 가는 기둥이 있고, 굽은 단부 가까이에는 지면까지 내려가는 굵은 회청색 지지 기둥이 보인다.",
+        "25-1동 쪽 연결부는 밝은 외장의 세로 돌출부로 들어간다. 안쪽 문과 내부 계단은 외부에서 확인할 수 없다.",
+        "24동 쪽 접속은 보이는 창 네 줄 중 위에서 두 번째 창줄 부근이다. 기존 공식 공지의 24동 3층 구름다리 설명과 대체로 맞지만 창 높이만으로 층 이름을 새로 확정하지 않는다."
+      ],
+      "limits": [
+        "2011년 사진이므로 이후 유리벽 추가 등 구조 변경 여부를 배제할 수 없다.",
+        "금속 난간의 가는 부재 수, 정확한 곡률과 기둥 위치는 원거리 사진으로 실측하지 않았다.",
+        "보행판 하부와 지지 기둥 하단은 나무와 지형에 일부 가린다. 하부 통행 높이는 미확인이다.",
+        "25-1동의 층 표지와 문은 보이지 않아 반대편 접속층은 미확인이다."
+      ]
+    },
+    {
+      "id": "kakao2026-current-obscured",
+      "captureMonthShown": "2026-08",
+      "url": "https://kko.to/nPw4yqOGAD",
+      "localImage": "research-followup-curved-bridge-current-obscured.png",
+      "directlyViewed": true,
+      "observations": "최신 장면에서 같은 연결부 방향은 큰 나무의 잎과 가지로 가려져 있다. 2011년과 달리 회색 지붕 아래의 전체 옆면을 확인할 수 없다.",
+      "limit": "현재 구름다리의 개방 상태를 확인했다고 표현하지 않는다."
+    },
+    {
+      "id": "snu2025-facility-table",
+      "title": "서울대학교 2025년 상반기 시설물 안전점검 용역 (관악 A,B,C,D권역 38개동) 과업내용서",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK00822697&bidPbancOrd=000&fileSeq=2&fileType=",
+      "documentMonth": "2025-04",
+      "pdfPage": 4,
+      "printedPage": 3,
+      "directlyViewed": true,
+      "savedRelevantParts": [
+        "research-followup-safety-table-header.png",
+        "research-followup-safety-251-row.png"
+      ],
+      "observations": "A-9 행은 관악 25-1동[자연대강의및실험연구동]이며 준공연도 2002, 연면적 8,408, 구조 R.C, 경과년수 23으로 기록돼 있다. 원본 표를 렌더링해 머리글과 해당 행을 직접 대조했다.",
+      "limits": "23은 경과년수이며 건물 높이나 층수가 아니다. 표에 층수와 연결교 단면은 없다. 연면적 칸의 숫자는 확인했으나 해당 표 머리글에는 면적 단위가 따로 인쇄돼 있지 않다. 다른 건물 행은 결과 파일에 남기지 않았다."
+    }
+  ],
+  "mapAndAccess": {
+    "extract": "research-osm.json",
+    "entrance": {
+      "node": "4562088371",
+      "latLon": [
+        37.4589539,
+        126.9496755
+      ],
+      "tags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "timestamp": "2016-12-19T17:16:56Z",
+      "sideEstimate": "북동쪽 긴 면의 동남쪽 부분",
+      "limit": "2016년 원본 지도 기록이다. 현재 휠체어 통행 검사를 뜻하지 않으며 층 표기는 없다."
+    },
+    "nearbySteps": [
+      {
+        "way": "460578905",
+        "pointsLatLon": [
+          [
+            37.459093,
+            126.9494774
+          ],
+          [
+            37.4590545,
+            126.9494595
+          ]
+        ],
+        "locationEstimate": "25-1동 북동쪽과 24동 서남쪽 사이 마당의 서쪽 부분",
+        "photoMatch": "실제 계단의 단수와 형태를 사진에서 식별하지 못했다."
+      },
+      {
+        "way": "460578906",
+        "pointsLatLon": [
+          [
+            37.4590444,
+            126.949623
+          ],
+          [
+            37.4590119,
+            126.9497405
+          ]
+        ],
+        "locationEstimate": "24동 남쪽 단부와 회색 연결부 아래쪽에 가까운 마당",
+        "photoMatch": "회색 덮개와 수목 아래에서 어느 구간이 해당 계단인지 식별하지 못했다."
+      }
+    ],
+    "floorWarning": "OSM의 level=5는 building:levels=5가 아니다. 공식 사진의 창줄 수와 이 태그로 전체 법정 층수를 확정하지 않는다.",
+    "accessSurveyIndex": "37-bbf-index.csv에는 25-1동 건물과 좌표 행이 있지만 해당 행의 출입구 조사 세부 칸은 비어 있다.",
+    "officialAmenityLevels": "기존 공식 지도 보관본에는 1층 AED, 3층 학과사무실, 4층 자료검색실 안내가 있다. 이 안내는 전체 층수나 구름다리 접속층을 정하지 않는다."
+  },
+  "implementation": {
+    "main": "북서쪽으로 낮아지는 지붕, 붉은 벽돌 띠와 청록색 창, 북동쪽 밝은 돌출부와 세로 창을 반영했다. 원본 지도 본체 윤곽을 참고하되 둥근 부분은 부드럽게 근사했다.",
+    "floors": "높은 필로티와 위쪽 창 네 줄을 게임용 6개 바닥 구획으로 표현했다. 법정 지상 6층을 확인한 것은 아니다.",
+    "piloti": "서쪽 낮은 주차 공간과 중앙 높은 기둥 앞 공간, 뒤쪽 유리 로비를 구분했다. 유리벽에는 출입문만 열었다.",
+    "ground": "주차장 쪽 넓은 계단과 꺾이는 경사로, 북쪽 지도 계단, 24동 남쪽 계단의 낮은 끝을 돌아가는 보행로를 연결했다.",
+    "northEntrance": "지도 노드 4562088371은 원본에 보존했다. 게임에서는 밝은 돌출 외벽 앞으로 약 1.6m 투영해 현관을 연결했다. 지상 문과 연결교 문은 별도로 뒀다.",
+    "bridge": "공식 공지의 24동 3층과 2011년 거리뷰의 열린 옆면, 지붕, 금속 난간 및 지지 기둥을 반영했다. 곡선은 공식 VR 항공사진을 참고했다. 25-1동 쪽 바닥은 게임의 세 번째 바닥으로 근사했다.",
+    "interior": "지상에서 연결교로 갈 수 있도록 24동 안에 두 번째 바닥과 세 번째 바닥을 잇는 계단을 추가했다. 계단 위치와 형태, 단순 실내 통행 동선은 사진에 없는 게임용 근사다.",
+    "amenities": "기존 지형 위에 주차장 포장과 구획선을 얹고, 보도블록과 볼라드, 화단, 벤치와 구형 가로등을 추가했다. 배치와 수량은 추정이다."
+  },
+  "limits": [
+    "공식 전경과 VR 사진의 촬영일은 미확인이다.",
+    "2011년 연결교 사진과 2014년 필로티 사진을 현재 현장 확인으로 표현하지 않는다. 2026년 8월 거리뷰에서는 나무가 연결교를 가린다.",
+    "25-1동의 전체 지상 및 지하 층수, 연결교 접속층, 층고와 현관 치수는 미확인이다.",
+    "현재 출입 가능 여부와 접근성, 로비를 통한 실제 반대편 통과 가능 여부는 보증하지 않는다.",
+    "전체 실내와 연구실은 재현하지 않았다.",
+    "원본 OSM과 DEM은 보존하고 국소 게임 지형 및 별도 모델을 조정했다. 사진을 게임 텍스처로 포함하지 않았다."
+  ]
+}

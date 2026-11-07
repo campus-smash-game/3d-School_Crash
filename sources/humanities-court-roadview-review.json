@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T21:46:28.391Z",
+  "baselineCommit": "c23ce6b2afd21657a1ad783d8b9a1fbbdbc627ba",
+  "title": "10-1동 차도 통과구와 현관의 2025년 7월 거리뷰 대조",
+  "scope": {
+    "buildingId": "way/238937145",
+    "buildingNumber": "10-1",
+    "areaId": "education101-underpass-and-south-entry",
+    "runtimeChangedByThisReview": false,
+    "rawDataChangedByThisReview": false,
+    "implementationVerifiedByThisReview": false,
+    "wholeBuildingRoadviewCompared": false,
+    "otherBuildingIdsConfirmed": false
+  },
+  "browser": {
+    "tool": "Playwright CLI",
+    "session": "school38reference",
+    "profile": "D:/codex/.tmp/3d-School_Crash/pwcli-profile38reference",
+    "ownedSessionOnly": true,
+    "closedAtEnd": true,
+    "method": "기존 1999 공개 링크에서 지도 UI로 이동해 실제 파란 촬영선을 눌렀다. 이후 북동 화살표로 연속 이동하고 회전과 줌을 사용했다. 각 공유 링크는 실제 공유 메뉴에서 얻어 다시 열었으며 모든 채택 캡처는 직접 열어 보았다. 임의 파노라마 ID로 이동하지 않았다."
+  },
+  "panos": [
+    {
+      "id": "1198671985",
+      "shareUrl": "https://kko.to/sFPNtZGrhj",
+      "urlX": 490162,
+      "urlY": 1100136,
+      "pan": 19,
+      "tilt": -4,
+      "zoom": 3,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareReopenedThisReview": true,
+      "serviceCoordinateCalculation": {
+        "lat": 37.45989921197381,
+        "lon": 126.95552074889599,
+        "D": [
+          629.5950234362526,
+          -720.1388790750698
+        ]
+      }
+    },
+    {
+      "id": "1198671987",
+      "shareUrl": "https://kko.to/wQwH5_Nx2t",
+      "urlX": 490175,
+      "urlY": 1100155,
+      "pan": 19,
+      "tilt": -4,
+      "zoom": 3,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareReopenedThisReview": true,
+      "serviceCoordinateCalculation": {
+        "lat": 37.4599677109914,
+        "lon": 126.95557948355852,
+        "D": [
+          634.7845748769158,
+          -712.5135684372865
+        ]
+      }
+    },
+    {
+      "id": "1198671989",
+      "shareUrl": "https://kko.to/6JrIvNWezk",
+      "urlX": 490190,
+      "urlY": 1100175,
+      "pan": 19,
+      "tilt": -4,
+      "zoom": 3,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareReopenedThisReview": true,
+      "serviceCoordinateCalculation": {
+        "lat": 37.460039817420956,
+        "lon": 126.95564725854963,
+        "D": [
+          640.7728922962253,
+          -704.4866806990981
+        ]
+      }
+    },
+    {
+      "id": "1198671990",
+      "shareUrl": "https://kko.to/b6y-N3zF0P",
+      "urlX": 490205,
+      "urlY": 1100195,
+      "pan": 19,
+      "tilt": -4,
+      "zoom": 3,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareReopenedThisReview": true,
+      "serviceCoordinateCalculation": {
+        "lat": 37.46011192381082,
+        "lon": 126.95571503367086,
+        "D": [
+          646.7612212119204,
+          -696.4597973793027
+        ]
+      }
+    },
+    {
+      "id": "1198671992",
+      "shareUrl": "https://kko.to/cnm-2mtd_j",
+      "urlX": 490217,
+      "urlY": 1100215,
+      "pan": 199,
+      "tilt": -4,
+      "zoom": 2,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareReopenedThisReview": true,
+      "serviceCoordinateCalculation": {
+        "lat": 37.46018402508528,
+        "lon": 126.95576924537038,
+        "D": [
+          651.5511423798458,
+          -688.4334835061929
+        ]
+      }
+    },
+    {
+      "id": "1198671985",
+      "shareUrl": "https://kko.to/tOJeB5QHRn",
+      "urlX": 490162,
+      "urlY": 1100135,
+      "pan": 59,
+      "tilt": -1,
+      "zoom": 4,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareReopenedThisReview": true,
+      "serviceCoordinateCalculation": {
+        "lat": 37.45989560792589,
+        "lon": 126.95552075103069,
+        "D": [
+          629.5952120493018,
+          -720.5400816901783
+        ]
+      }
+    },
+    {
+      "id": "1198671987",
+      "shareUrl": "https://kko.to/lW6g_Yv80A",
+      "urlX": 490175,
+      "urlY": 1100155,
+      "pan": 82,
+      "tilt": -4,
+      "zoom": 3,
+      "photographed": "2025-07",
+      "dateUiDirectlyObserved": true,
+      "shareReopenedThisReview": true,
+      "serviceCoordinateCalculation": {
+        "lat": 37.4599677109914,
+        "lon": 126.95557948355852,
+        "D": [
+          634.7845748769158,
+          -712.5135684372865
+        ]
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "38-east-court-first",
+      "file": "artifacts/humanities-court-review/output/playwright/38-east-court-first-ui.png",
+      "sha256": "be9d851f42c4776e6181958ba7ab5e205be1f0d75aeb16cf2b9545f515081d1c",
+      "panoId": "1198671985",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference",
+        "root"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "남쪽 접근로에서 밝은 패널과 청록 유리의 10-1동, 큰 차도 통과 공간, 그 안의 별도 낮은 연결교 및 오른쪽 현관을 보았다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-underpass-step1",
+      "file": "artifacts/humanities-court-review/output/playwright/38-underpass-step1-ui.png",
+      "sha256": "f9f1e69a3bfed32f791571c70229ecb3294c0d740657625330b90ccc61e3bfd2",
+      "panoId": "1198671987",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference",
+        "root"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "첫 북동 화살표로 이동했다. 왼쪽 외부 금속 계단과 곡면 반투명 차양, 원통기둥, 연결교 및 양옆 보도를 보았다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-underpass-step2",
+      "file": "artifacts/humanities-court-review/output/playwright/38-underpass-step2-ui.png",
+      "sha256": "acac9c6643a7822830f1f853849d17ddb3d3cbd0af2af18cef831c7227b387e7",
+      "panoId": "1198671989",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference",
+        "root"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "다음 북동 화살표로 이동해 통과구 전면 안쪽을 보았다. 왼쪽 두 경사 구간과 계단참을 갖춘 금속 계단, 연결교 하부와 난간, 아스팔트 및 오른쪽 좁은 보도가 보인다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-underpass-step3",
+      "file": "artifacts/humanities-court-review/output/playwright/38-underpass-step3-loaded-ui.png",
+      "sha256": "58308cb06e5c7ac21ce99deb2ebc4f69daa0d338784b28edd091c7646e773ae2",
+      "panoId": "1198671990",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "안쪽 차도를 따라 이동했다. 큰 상부 천장, 원통기둥, 패널 외벽, 양옆 포장과 북쪽 출구가 연속된다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-underpass-step4",
+      "file": "artifacts/humanities-court-review/output/playwright/38-underpass-step4-ui.png",
+      "sha256": "fd3f47a058d3f2136382d0ca2f94ffdf695689ee796d60971d80930e147b0fa7",
+      "panoId": "1198671992",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "다음 북동 화살표로 이동해 북쪽 바깥 도로를 보았다. 수목과 도로, 주차 차량, 앞쪽의 별도 계단이 보인다. 이 계단은 이번 통과구 계단과 구분한다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-north-parking-side",
+      "file": "artifacts/humanities-court-review/output/playwright/38-north-turn1-ui.png",
+      "sha256": "5797f7b9474e54720bdfcce6572fb93ba6a8893623ba3acfe3a7f32b3f376681",
+      "panoId": "1198671992",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "동일 지점에서 오른쪽으로 회전했다. 흰 낮은 벽과 파란 P, 화살표, SLOW 표시를 갖춘 별도 주차 진입부가 보인다. 안쪽 공간 전체와 소속은 확정하지 않는다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-north-facing-south",
+      "file": "artifacts/humanities-court-review/output/playwright/38-north-facing-south-ui.png",
+      "sha256": "74bc5a89baf9b7db78957c99cd79689525ce7ab1a5d002dd7e08dfdcf1f312b1",
+      "panoId": "1198671992",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "같은 지점에서 남서쪽으로 회전해 통과구 반대면을 보았다. 연결교의 사범대학 및 COLLEGE OF EDUCATION 표지를 읽었다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-north-passage-wide",
+      "file": "artifacts/humanities-court-review/output/playwright/38-north-passage-wide-ui.png",
+      "sha256": "32dff5422fdbc99ff211bf5ee77565a866d7f4a779b1da449b94f5423a942508",
+      "panoId": "1198671992",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference",
+        "root"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "줌을 줄여 반대쪽 연결교와 차도, 좁은 회색 보도, 외부 계단 및 원통기둥을 함께 보았다. 연결교 위 검은 표시판 내용은 판독하지 못했다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-south-entry-front",
+      "file": "artifacts/humanities-court-review/output/playwright/38-south-entry-front-ui.png",
+      "sha256": "4c6afe40dc7a0e5e442060df54275c8af09fb371410fa1c86509f4dd0bbe0cf9",
+      "panoId": "1198671985",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "남쪽 최초 지점으로 돌아와 오른쪽 현관을 향해 회전했다. 청록 유리 코어, 얕은 현관 차양, 회색 사각 포장 마당, 금속 난간 경사판과 벤치 두 개가 보인다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-south-entry-sign",
+      "file": "artifacts/humanities-court-review/output/playwright/38-south-entry-sign-ui.png",
+      "sha256": "ca3ddd316288dcd843452da548aacb9b301d38d1400dda2435838b80632566bc",
+      "panoId": "1198671985",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "같은 지점의 회전과 줌 화면이다. 차량이 현관 바닥 일부를 가려 문턱을 확정하지 못했다. 정확한 현관 문구는 다음 가까운 시점에서 확인했다.",
+      "wholeBuildingCompared": false
+    },
+    {
+      "id": "38-entry-near-oblique",
+      "file": "artifacts/humanities-court-review/output/playwright/38-entry-near-oblique-ui.png",
+      "sha256": "a9b3b1f16924d718e3d5ac4d38aa549022032c3606aaa03d6f5d162072439bb0",
+      "panoId": "1198671987",
+      "photographed": "2025-07",
+      "directLiveViewReviewer": "reference",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "rootLiveViewConfirmed": false,
+      "observed": "가까운 지점에서 현관을 향해 회전했다. 10-1 교육정보관 Education Information Hall 문구, 짧은 석재 계단과 상하 노란 유도블록, 오른쪽 난간 경사판을 확인했다. 계단은 약 3단으로 보이나 실측 단수는 아니다.",
+      "wholeBuildingCompared": false
+    }
+  ],
+  "supportCaptures": [
+    {
+      "file": "artifacts/humanities-court-review/output/playwright/38-start1999-ui.png",
+      "sha256": "725b6dc0488479ced13ce6d7917c5c5924bd664662b5040e767b3b43f355934e",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "countsAsNewBuildingRoadviewObservation": false,
+      "scope": "기존 76동 앞 1999 시점의 재접속이다. 새 건물 관측 수에 더하지 않는다."
+    },
+    {
+      "file": "artifacts/humanities-court-review/output/playwright/38-map-initial-ui.png",
+      "sha256": "618a6bd09df2a49d7ed6f4932391d608a5b07170a45eb215d706acab790f50a9",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "countsAsNewBuildingRoadviewObservation": false,
+      "scope": "지도 UI의 촬영선과 주변 건물 위치를 본 보조 화면이다. 실제 건물 관측과 구분한다."
+    },
+    {
+      "file": "artifacts/humanities-court-review/output/playwright/38-neighborhood-coverage-ui.png",
+      "sha256": "1583d3f484a27c6abbc2573a14066a53ab3eae61ae86017efaddf88c08a4dee3",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "countsAsNewBuildingRoadviewObservation": false,
+      "scope": "지도 UI의 촬영선과 주변 건물 위치를 본 보조 화면이다. 실제 건물 관측과 구분한다."
+    },
+    {
+      "file": "artifacts/humanities-court-review/output/playwright/38-north-reverse-ui.png",
+      "sha256": "5f09d080d38cfc4e7c4e84d135ef072348d6d9cd11870fadf42588d015f6e5b3",
+      "localImageDirectlyViewedBy": [
+        "reference"
+      ],
+      "countsAsNewBuildingRoadviewObservation": false,
+      "scope": "회전 중 외벽만 크게 보이는 중간 화면이다."
+    }
+  ],
+  "excludedCaptures": [
+    {
+      "file": "artifacts/humanities-court-review/output/playwright/38-underpass-step3-ui.png",
+      "sha256": "ac9a0fe115d83bd3e2fd6f471fd444b370e34a05cb4b1c7a292371d19a90659f",
+      "reason": "영상 세부가 덜 로드된 초기 캡처다. 같은 지점의 loaded 파일을 근거로 사용한다."
+    }
+  ],
+  "officialPhoto": {
+    "file": "../references/buildings/photos/011-10-1.jpg",
+    "sha256": "8c92c5c4b5226f760994a52bf7b16fc026b52d6c000a2106491b55270772290a",
+    "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=11",
+    "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000011.jpg",
+    "photographed": null,
+    "localImageDirectlyViewedBy": [
+      "reference",
+      "root"
+    ],
+    "observed": "10-1 사범대학 교육정보관 표지, 밝은 패널과 청록 창, 큰 원통기둥 및 차도 통과구, 내부의 낮은 연결교가 새 거리뷰와 대응한다. 공식 사진의 촬영일은 확인하지 못했다."
+  },
+  "mapComparison": {
+    "buildingId": "way/238937145",
+    "roadId": "way/456540230/333",
+    "axisFrom": [
+      640.1,
+      -694.36
+    ],
+    "axisTo": [
+      649.28,
+      -678.92
+    ],
+    "roadTagBasis": "원본 도로는 highway=service이며 tunnel, layer, level 태그는 없다. 건물 p2와 p1은 도로의 연속 정점과 일치한다.",
+    "rawEntrance": {
+      "nodeId": "4564750884",
+      "point": [
+        647.74,
+        -706.94
+      ],
+      "confirmedAsExactDoorCenter": false
+    },
+    "entryBearingComparison": [
+      {
+        "panoId": "1198671985",
+        "shareUrl": "https://kko.to/tOJeB5QHRn",
+        "servicePoint": [
+          629.5952120493018,
+          -720.5400816901783
+        ],
+        "viewPan": 59,
+        "bearingToRawP4": 53.14730284805739,
+        "bearingToAccessibilitySurveyPoint": 23.218453321052948
+      },
+      {
+        "panoId": "1198671987",
+        "shareUrl": "https://kko.to/lW6g_Yv80A",
+        "servicePoint": [
+          634.7845748769158,
+          -712.5135684372865
+        ],
+        "viewPan": 82,
+        "bearingToRawP4": 66.72208546525093,
+        "bearingToAccessibilitySurveyPoint": 19.567271742425305
+      }
+    ],
+    "interpretation": "현관 방향과 원본 p4는 근사 앵커를 정하는 보조 근거다. 접근성 조사 좌표 643.224,-688.770은 통과구 쪽에 가까우므로 사진의 정확한 문 중심으로 확정하지 않는다. 현재 지도 고도를 사진의 현관 단차로 간주하지 않는다."
+  },
+  "coordinateMethod": {
+    "basis": "이전 scene-30-map-diagnostic.mjs의 WCONG/2.5=WTM(EPSG:5181) 및 GRS80 역변환과 기존 campus 투영식을 사용했다.",
+    "definitionSource": "https://devtalk.kakao.com/t/drawing-library/139708",
+    "limitation": "공유 URL 좌표는 서비스 좌표다. 실제 카메라 측량점이나 시설 모서리가 아니다. 같은 1985 시점도 공유 화면에 따라 urlY가 1100136과 1100135로 달라져 정확도를 보증하지 않는다."
+  },
+  "readableText": [
+    {
+      "text": "10-1 교육정보관 Education Information Hall",
+      "evidenceId": "38-entry-near-oblique",
+      "kind": "현관 차양의 건물명"
+    },
+    {
+      "text": "사범대학 / COLLEGE OF EDUCATION",
+      "evidenceId": "38-north-passage-wide",
+      "kind": "연결교 북쪽 면의 표지"
+    },
+    {
+      "text": "10-1 사범대학 교육정보관",
+      "evidence": "officialPhoto",
+      "kind": "공식 전경의 외벽 표지"
+    }
+  ],
+  "confirmedRelativeStructure": [
+    "차도는 큰 상부 건물 아래로 남서쪽과 북동쪽을 연결한다.",
+    "큰 상부 천장 아래에 더 낮은 별도 연결교가 있고 두 구조 사이에 빈 공간이 보인다.",
+    "남쪽에서 보는 왼쪽에 계단참을 낀 외부 금속 계단과 반투명 곡면 차양이 있다.",
+    "오른쪽 현관은 통과 차도와 별개이며 넓은 회색 포장 마당, 짧은 계단 및 오른쪽 경사판과 이어진다.",
+    "양옆 보도, 기둥과 식재 경계가 차도와 구분된다."
+  ],
+  "inferred": [
+    "원본 /333과 p1, p2 주변이 실제 통과구의 지도 대응 후보다. 현재 외곽만으로 지상 벽을 닫으면 사진의 통행 공간을 재현하지 못한다.",
+    "p4는 현관의 유력 지도 앵커이나 문 중심과 경사판의 정확한 좌표는 게임 구현에서 근사해야 한다.",
+    "보이는 짧은 현관 계단은 약 3단으로 읽지만 단 높이와 폭을 측정하지 않았다."
+  ],
+  "unconfirmed": [
+    "큰 통과구의 정확한 폭과 층고, 상부 층별 실내 용도, 외부 계단의 정확한 단수",
+    "연결교 서쪽 상대 건물의 번호와 실내 접속",
+    "현관 좌표와 절대고도, 경사판 전체 경사 및 접근성 규격",
+    "북측 주차 진입부의 안쪽 구조와 소속",
+    "10-1동 동쪽 및 후면 전체 외관과 2026년 현재 현장 상태"
+  ],
+  "notReplicated": [
+    "임시 행사 현수막",
+    "이동식 노란 차단물과 주차 차량",
+    "판독하지 못한 안내문과 검은 표시판의 문구"
+  ],
+  "rootReviewScope": "root는 first, step1, step2, north-passage-wide 및 공식 011 사진을 로컬 파일로 직접 보았다고 전달했다. root가 해당 거리뷰를 실시간 조작했다고 기록하지 않는다.",
+  "sourceHashes": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "sources/profiles-001-060.json": "d4e20c0dc38da5d1f846ff753608213efb7b2ef42d69241001ac1ee84d251c48"
+  }
+}

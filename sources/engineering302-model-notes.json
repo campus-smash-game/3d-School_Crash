@@ -1,0 +1,107 @@
+{
+  "buildingNumber": "302",
+  "osmId": "way/482207537",
+  "name": "제2공학관",
+  "status": "custom-model-implemented-partial-reference",
+  "landmark": "engineering-302",
+  "modelFile": "src/engineering302Landmark.ts",
+  "api": "createEngineering302Landmark(scene, building, profile, heightAt) -> { breakables, update }",
+  "reviewedAt": "2026-11-05",
+  "sources": [
+    {
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000179.jpg",
+      "localImagePath": "../references/buildings/photos/188-302.jpg",
+      "sourceType": "official-campus-map-photograph",
+      "directlyViewed": true,
+      "captureDate": null,
+      "observations": [
+        "은회색 수평 패널 띠와 푸른 유리창이 전면에 반복된다. 상부에는 띠 없이 유리 격자가 이어지는 구간이 있다.",
+        "전면 중앙 부근의 수직 유리 부분은 주변 외벽보다 안쪽에 있다. 위쪽에는 붉은 사각 테두리와 X자 보가 보인다.",
+        "후퇴한 유리면 아래에는 앞쪽으로 내려오는 경사진 유리 차양이 있다.",
+        "사진 양끝에 전면보다 높은 부분이 보인다. 이 사진만으로 양끝 건물의 소속이나 각 부분의 정확한 높이를 확정할 수 없다.",
+        "수목과 경사 지면이 건물 하부 일부를 가린다. 층고, 기초 깊이와 후면은 확인할 수 없다."
+      ]
+    },
+    {
+      "sourceUrl": "https://www.hankookilbo.com/news/article/amp/A2026062019400001534",
+      "imageUrl": "https://newsimg.hankookilbo.com/cms/articlerelease/2026/06/20/a421ad3d-0462-4bd2-998e-d147f73a3367.jpg",
+      "localImagePath": "../references/exteriors/engineering302/college-provided-wide.jpg",
+      "sourceType": "college-provided-photograph-published-by-newspaper",
+      "credit": "기사의 사진 설명은 서울대 공과대학 제공으로 표기한다.",
+      "directlyViewed": true,
+      "articleDate": "2026-06-25",
+      "captureDate": null,
+      "observations": [
+        "301동과 302동이 함께 보이는 사선 항공사진이다. X자 구조가 있는 낮은 전면부와 뒤쪽의 높은 몸체를 구분할 수 있다.",
+        "가까운 큰 고층동과 뒤쪽의 302동은 서로 다른 지도 윤곽에 대응한다. 정면 사진 왼쪽의 큰 고층동을 302동 모델 안에 그대로 복제하지 않았다."
+      ],
+      "inference": "두 건물의 남북 배치와 주변 건물 위치를 지도 윤곽과 대조해 X자 전면을 서쪽으로 배치했다. 촬영 위치의 좌표나 방위각을 확인한 것은 아니다."
+    },
+    {
+      "sourceUrl": "https://eng.snu.ac.kr/sites/default/files/%EC%84%9C%EC%9A%B8%EA%B3%B5%EB%8C%80%202002%EB%85%84%204.5.6%EC%9B%94%ED%98%B8.pdf#page=67",
+      "localPath": "../references/exteriors/supplemental-east/engineering-2002-04-06.pdf",
+      "localRenderedPage": "../references/exteriors/supplemental-east/engineering-page67.png",
+      "sourceType": "official-engineering-college-publication",
+      "pdfPage": 67,
+      "printedPage": 65,
+      "documentedLevels": 10,
+      "documentedHeightMeters": null,
+      "facts": [
+        "서울공대 2002년 4월부터 6월호의 제2공학관 개관식 기사는 지상 10층으로 설명한다.",
+        "공식 기사에 높이 35m는 없다. 모델의 35m는 기존의 층당 3.5m 근사를 유지한 값이다."
+      ]
+    },
+    {
+      "sourceUrl": "https://www.openstreetmap.org/way/482207537",
+      "localPath": "public/data/campus.json",
+      "sourceType": "map-footprint",
+      "use": "약 103m의 남북 긴 축, 약 44m 폭, 북쪽 본체와 남쪽 몸체 사이의 좁은 연결부를 보존했다. 원본의 20층과 70m는 공식 층수 근거에 따른 프로필 값으로 덮어쓴다."
+    }
+  ],
+  "implemented": [
+    "지도 윤곽의 방향과 큰 몸체 배치를 유지했다. 본체 전면의 작은 유리 후퇴부와 차양은 사진을 따라 추가했다.",
+    "높은 부분은 35m, 낮은 전면은 28m, 좁은 연결부는 24.5m로 나눴다. 10층 외의 부분 높이는 모두 근사값이다.",
+    "중앙 유리를 외벽보다 약 4.8m 안쪽에 두고 붉은 대각선 보 2개와 테두리 4개를 독립 부품으로 만들었다.",
+    "회색 수평 띠, 어두운 창 프레임, 푸른 유리와 경사진 유리 차양을 텍스처 없이 기하로 만들었다.",
+    "불투명한 띠와 프레임을 유리 바깥쪽에 놓았다. 외곽 점 순서를 뒤집어도 외향 방향을 유지한다.",
+    "유리, 차양과 X자 보의 충돌체는 표면 방향을 따르는 얇은 OBB다. 중앙 후퇴부나 X자 사이의 빈 공간을 큰 상자로 채우지 않는다.",
+    "3개 병합 메시의 정점 구간을 부품별로 숨기거나 복원한다. 원거리에서도 남은 부분과 파괴된 빈 공간을 유지한다.",
+    "기준 높이와 기초 하단은 전달된 heightAt 함수에서 구한다. 고정 지면 높이를 사용하지 않는다."
+  ],
+  "estimatedParameters": {
+    "overallHeightMeters": 35,
+    "lowerFrontHeightMeters": 28,
+    "connectorHeightMeters": 24.5,
+    "glazingRecessMeters": 4.8,
+    "canopyProjectionBeyondMapMeters": 2.5,
+    "frontageOrientation": "west, inferred from photograph and map",
+    "notMeasured": true
+  },
+  "limitations": [
+    "사진을 참고한 외형 근사다. 실측 모델이나 설계도 복원이라고 주장하지 않는다.",
+    "부분 높이, 뒤쪽 높은 구간의 경계, 북쪽 끝 단차, 유리 후퇴 깊이, 창 모듈 간격과 색은 추정했다. 사진에 없는 후면의 상세를 확인한 것은 아니다.",
+    "사진의 촬영일과 현재 외관의 일치 여부는 미확인이다. 언론 보도일을 사진 촬영일로 취급하지 않는다.",
+    "내부 구조, 정확한 층별 평면, 실내 동선과 모든 옥상 설비는 구현하지 않았다.",
+    "사진 파일은 참고자료에만 보관하며 게임의 공개 배포 자산으로 넣지 않았다.",
+    "브라우저와 실기기 모바일에서 렌더링 성능이나 조작을 검증하지 않았다. 캠퍼스 전체 재현 완료를 의미하지 않는다."
+  ],
+  "verification": {
+    "script": "scripts/verify-engineering302.mjs",
+    "resultArtifact": "artifacts/engineering302-test/results.json",
+    "geometryArtifact": "artifacts/engineering302-test/geometry.json",
+    "cpuPreview": "artifacts/geometry-previews/engineering-302.png",
+    "scope": "실제 TypeScript 소스를 변환해 Three.js 기하와 Rapier 충돌을 검사했다. CPU 기하 미리보기도 직접 확인했다. WebGL 브라우저 렌더가 아니다.",
+    "checks": [
+      "지도 축과 큰 윤곽, 3개 메시, 3단 높이, 공식 10층과 추정 35m",
+      "중앙 후퇴부와 붉은 X자 사이의 빈 공간, 낮은 지붕 위 빈 공간",
+      "유리, 경사 차양과 대각선 보의 보이는 표면과 충돌 거리",
+      "외부 사격선에서 회색 띠와 유리 격자가 먼저 보이는지, 반대 외곽 순서와 후퇴부 양쪽 벽에서도 일치하는지",
+      "로드 및 미로드 상태에서 개별 표적과 사격 거리의 일치",
+      "부분 파괴 후 원거리의 빈 공간과 잔존 부품",
+      "초기화 후 원본 정점, 체력과 충돌체의 복원",
+      "전체 파괴 후 원거리 비표시와 반복 초기화",
+      "가변 지형 함수의 기준 높이, 경사면 기초와 평지 상대 높이"
+    ]
+  }
+}

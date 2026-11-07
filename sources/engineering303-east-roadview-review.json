@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T07:49:45.091Z",
+  "status": "partial-roadview-refinement-implemented",
+  "buildingId": "supplemental/snu-303",
+  "buildingNumber": "303",
+  "scope": "2026년 8월 로드뷰 네 장을 대조해 도로 쪽 남쪽 날개와 가까운 모서리의 상층 입면만 보완했다. 전체 외관의 재현 완료 판정은 아니다.",
+  "evidence": [
+    {
+      "id": "301-303-road-south-ui",
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-303-road-south-ui.jpg",
+      "sha256": "21e00db2717975b12499cedfd7de69a9766f274aa99f418899ae737a9cac2602",
+      "captureMonth": "2026-08",
+      "directlyViewed": true,
+      "uiDateDirectlyRead": true,
+      "panoId": null,
+      "exactCaptureCoordinates": null
+    },
+    {
+      "id": "301-west-road-303-east-facade-ui",
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-west-road-303-east-facade-ui.jpg",
+      "sha256": "740cbdbd5aa04a1c8e12d5d6f08c2c69ef84fb52b5fe24213760e00208a4ac3e",
+      "captureMonth": "2026-08",
+      "directlyViewed": true,
+      "uiDateDirectlyRead": true,
+      "panoId": null,
+      "exactCaptureCoordinates": null
+    },
+    {
+      "id": "301-basement-road-303-east-wall-ui",
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-basement-road-303-east-wall-ui.jpg",
+      "sha256": "852b1adb05397107551121b257e4132f88aa5a9575ab46ed5e4b405e67cf047f",
+      "captureMonth": "2026-08",
+      "directlyViewed": true,
+      "uiDateDirectlyRead": true,
+      "panoId": "1213023449",
+      "exactCaptureCoordinates": null,
+      "shareUrl": "https://kko.to/ul4l7YdOug",
+      "sourceURL": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213023449&pan=180.0&tilt=0.0&zoom=0&urlLevel=3&urlX=489380&urlY=1097455",
+      "panoIdSource": "root의 실제 공유 UI와 이동 주소 확인"
+    },
+    {
+      "id": "303-east-south-wing-atrium-boundary-ui",
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/303-east-south-wing-atrium-boundary-ui.jpg",
+      "sha256": "a7957dbf18c5dd5dcfc958dfbe71dee302c25a9e14a766307b5ccaa36dbd9f7e",
+      "captureMonth": "2026-08",
+      "directlyViewed": true,
+      "uiDateDirectlyRead": true,
+      "panoId": "1213023449",
+      "exactCaptureCoordinates": null,
+      "positionShareUrl": "https://kko.to/ul4l7YdOug"
+    }
+  ],
+  "provenance": {
+    "observer": "root는 실제 라이브 화면을 관찰했고 reference는 원본 캡처 네 장을 직접 열었다.",
+    "navigation": "최초 시점에서 남쪽 화살표를 따라 한 번, 두 번 이동한 순서다. 첫 시점의 파노라마 ID와 후속 시점의 ID를 혼동하지 않는다.",
+    "initialPanoId": "1213023453",
+    "officialAerialSubstitutedForRoadview": false,
+    "laterPanoIds": {
+      "secondImage": null,
+      "thirdImage": "1213023449",
+      "thirdSource": "https://kko.to/ul4l7YdOug",
+      "serviceCoordinatesAreNotSurveyCoordinates": true
+    }
+  },
+  "observations": {
+    "confirmed": [
+      "도로 오른쪽의 303동에는 흰 불투명 패널과 개별 직사각형 창을 쓰는 몸체가 있다. 전체가 연속 유리벽인 입면은 아니다.",
+      "상층의 분리된 창과 낮은 층의 연속 유리를 구분할 수 있다. 위쪽 일부가 화면 밖에 있어 이 세 장만으로 전체 층수를 다시 확정하지 않는다.",
+      "흰 벽에는 수평과 수직 패널 줄눈이 보이며, 창 폭과 작은 상단 분할이 균일하게 보이지 않는다.",
+      "덱 부근에는 적갈색 세로 판과 난간, 하부 흰 환기 루버가 보인다."
+    ],
+    "inferred": [
+      "보이는 주된 흰 몸체는 중앙 아트리움 남쪽 날개의 도로 쪽 면과 모서리로 보인다. 정확한 외곽 변 대응은 파노라마 위치와 추가 시점이 필요하다.",
+      "첫 사진의 흰 면과 중앙 유리 면 경계가 모델의 단순 길이 비율 경계와 다를 가능성이 있다."
+    ]
+  },
+  "minimalProposal": [
+    {
+      "order": 1,
+      "change": "도로 쪽 남쪽 날개와 모서리의 벽색, 패널 줄눈, 개별 창의 폭 조합을 별도로 지정한다.",
+      "basis": "직접 보이는 흰 불투명 면과 창 배열",
+      "constraints": "외곽, 높이, 층수, 기준고와 기존 문 위치를 유지한다. 모든 면에 같은 창 배열을 새로 적용하지 않는다.",
+      "status": "implemented-only-on-selected-upper-facades"
+    },
+    {
+      "order": 2,
+      "change": "흰 몸체와 중앙 유리 면의 경계를 p4/p5 꺾임 부근으로 옮기는 작은 후보를 현재 경계와 비교한다.",
+      "basis": "사진의 흰 몸체가 도로를 따라 이어지는 형태와 현재 비율 분할의 차이 가능성",
+      "constraints": "미확정 가설이다. 추가 위치 대조 전 확정 수정으로 기록하지 않는다. 후보를 만들더라도 현관과 연결 덱의 세계 좌표를 고정하고, 바뀌는 입면 구획에만 한정한다.",
+      "status": "deferred-boundary-hypothesis"
+    },
+    {
+      "order": 3,
+      "change": "하층 유리는 보존하고, 덱 가장자리의 적갈색 세로 판과 하부 환기 벽을 별도 구간으로 대조한다.",
+      "basis": "첫 사진의 덱 가장자리와 세 번째 사진의 낮은 연속 유리",
+      "constraints": "주변시설 범위와 외벽 범위를 구분한다. 사진만으로 판의 정확한 개수, 높이와 범위를 확정하지 않는다.",
+      "status": "deferred-surrounding-facilities"
+    }
+  ],
+  "beforeImplementationChecks": [
+    "같은 도로 방향에서 현재 모델과 사진의 흰 면/유리 면 경계 및 창 배열을 대조한다.",
+    "입면을 바꿀 때 실제 렌더 면과 로드/미로드 충돌, 파괴와 복원이 함께 바뀌는지 확인한다.",
+    "기존 상부 문, 하부 문, 다리 바닥과 계단 접근 좌표가 달라지지 않았는지 확인한다."
+  ],
+  "limits": [
+    "새 자료는 세 도로 위치에서 얻은 네 화면이다. 후면, 옥상과 건물 전체 외관의 대조 완료를 뜻하지 않는다.",
+    "사진 픽셀과 모델 미터를 직접 맞춘 실측값은 없다.",
+    "지형, 건물 외곽, 층수와 교량 구조를 이번 관찰만으로 다시 정하지 않는다.",
+    "중앙 유리의 큰 격자와 색/반사는 이번 흰 입면 수정에 포함하지 않았다."
+  ],
+  "runtimeChanged": true,
+  "sourceHashes": {
+    "src/engineering303Landmark.ts": "7e64ea1ccb0bc925c3bae7f19c02b49c98a1429ef5ca3cbed392743a00c0da78",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c"
+  },
+  "baselineCode": {
+    "file": "src/engineering303Landmark.ts",
+    "sha256": "70936bcfcc4d6092642e1c55479ef3a9f6560a419deba3be41777cb5ced3c130",
+    "notAnAllGlassBuilding": "현재 코드도 남북 날개 상층에는 windowBay로 불투명 벽과 개별 창을 만든다. 흰 몸체가 아예 없다고 판단하지 않는다.",
+    "opaqueColor": {
+      "hex": "#d1d0c8",
+      "line": 67,
+      "note": "따뜻한 회백색 한 가지를 쓴다. 사진은 더 밝고 중성에 가깝게 보이지만 조명과 노출 차이가 있어 정확한 색값은 추정이다."
+    },
+    "windowPattern": {
+      "line": 79,
+      "nominalPitchMeters": 2.6,
+      "widthRatio": 0.44,
+      "southRowHeightMeters": 3.8,
+      "sillOffsetMeters": 0.8,
+      "headInsetMeters": 0.65,
+      "note": "대부분 같은 간격과 폭의 창을 반복한다. 남쪽 일반 창의 유리 높이는 2.35 m, 정면 구획 면적 대비 유리는 약 27.2%인 코드상 근사다. 사진에서 측정한 비율이 아니다."
+    },
+    "lowerGlass": {
+      "line": 95,
+      "relativeBottom": 3.9,
+      "relativeTop": 7.2,
+      "note": "날개 하부의 연속 유리는 사진의 낮은 유리 구간과 대응한다. 무조건 삭제할 대상은 아니다."
+    },
+    "centralGlass": {
+      "line": 121,
+      "worldZMin": -1811.7583300000001,
+      "worldZMax": -1783.18913,
+      "spanMeters": 28.569200000000002,
+      "note": "중앙 구역은 전체 남북 길이의 40%를 차지하며 접힌 유리 면을 만든다. 이 비율은 관찰된 흰 몸체 경계의 실측값이 아니다."
+    },
+    "partitionCandidate": {
+      "outlinePointIndicesZeroBased": [
+        4,
+        5,
+        6
+      ],
+      "roadsideEdge": [
+        [
+          301.28,
+          -1805.523
+        ],
+        [
+          303.484,
+          -1819.552
+        ]
+      ],
+      "currentBoundaryZ": -1811.7583300000001,
+      "edgeNorthernFractionInsideCentralPartition": 0.4444600470454206,
+      "candidateBoundaryZ": -1805.523,
+      "northwardDifferenceMeters": 6.235330000000204,
+      "identityConfidence": "hypothesis-only",
+      "note": "원본 보조 외곽 p5→p6의 북쪽 약 44%가 현재 중앙 분할 구역에 들어간다. 유리 면의 실제 투영 면적이 44%라는 뜻은 아니다. p4/p5 꺾임을 흰 몸체 경계 후보로 검토할 수 있으나 사진만으로 해당 변을 확정하지 않는다."
+    },
+    "entryDependency": {
+      "formula": "entryZ = az0 + (az1 - az0) * .66",
+      "predictedMovementMetersIfOnlyAz0Changed": 2.1200122000000694,
+      "note": "남쪽 분할선을 바꾸면 현관이 자동으로 약 2.12 m 북쪽으로 움직인다. 다리와 문 접합을 유지하려면 경계 수정과 현관 좌표를 분리해야 한다."
+    }
+  },
+  "currentImplementation": {
+    "file": "src/engineering303Landmark.ts",
+    "sha256": "7e64ea1ccb0bc925c3bae7f19c02b49c98a1429ef5ca3cbed392743a00c0da78",
+    "selection": "남쪽 날개 중 바깥 법선의 동쪽 성분이 0.8보다 큰 면, 북쪽 법선이 0.8보다 크면서 남쪽 날개 동단에서 6 m 이내인 가까운 모서리 한 구획",
+    "roadFace": {
+      "groupsPerRow": 3,
+      "windowCombination": "묶음마다 큰 창과 좁은 창",
+      "widthRatiosWithinGroup": [
+        0.3,
+        0.15
+      ],
+      "windowRows": 5
+    },
+    "corner": {
+      "bays": 1,
+      "windowsPerBay": 3,
+      "widthRatiosWithinSlot": [
+        0.46,
+        0.3,
+        0.3
+      ],
+      "windowRows": 5
+    },
+    "panelColor": "#e1e5e2",
+    "frames": "밝은 회녹색 창틀과 위쪽 0.30 m 분할 및 가는 환기창 부재",
+    "seams": "기존 벽 앞면에 얇은 수평과 수직 줄눈을 합쳤다. 줄눈과 환기창 부재는 해당 입면의 파괴 부품에 포함했다.",
+    "estimated": "색상값, 창 폭과 환기창 높이는 사진 비례에 따른 근사다. 현장 실측값이 아니다.",
+    "preserved": [
+      "전체 비율 분할과 남북 날개 높이",
+      "entryZ와 상하부 문, 다리 접속 기준",
+      "원본 보조 외곽과 지형",
+      "하층 연속 유리의 기존 구획과 기하",
+      "확인하지 않은 반대쪽 입면"
+    ],
+    "renderMeshes": 3,
+    "breakableParts": 2050,
+    "triangles": 61756
+  },
+  "verification": {
+    "typescript": "npx tsc --noEmit 통과",
+    "existing303": {
+      "script": "scripts/verify-engineering303.mjs",
+      "result": "artifacts/engineering303-roadview-refinement/verification-before-path-adjustment.json",
+      "passed": 11,
+      "failed": 0,
+      "scope": "실제 유리와 지형, 로드/미로드 광선, 아트리움과 필로티의 빈 공간, 문 파괴 후 왕복, 원거리 파괴와 복원 및 H 반사",
+      "glazingSamples": 34468,
+      "minimumTerrainClearanceMeters": 0.10057830810546875,
+      "selectedExposedRays": 201,
+      "maximumRenderColliderDifferenceMeters": 0.1546247065068591,
+      "maximumLoadedUnloadedDifferenceMeters": 0.00016329288486660598,
+      "raySelectionLimit": "실제 렌더에서 외부로 드러난 삼각형을 골랐다. 가림 5개와 반대/끝면 384개를 분리했으며 전체 외부면 광선 검사를 뜻하지 않는다.",
+      "testedTerrainSha256": "65b1b8ab537113d0f9c2b44cc00851862fd1a38f00be5665499a9f1445d14f64",
+      "terrainScope": "흰 입면 보완 직후의 검사다. 이후 남쪽 도로와 보행로 보정은 별도 최종 통합 검사에서 확인한다."
+    },
+    "beforeAfter": {
+      "artifact": "artifacts/engineering303-roadview-refinement/scope-comparison.json",
+      "metadataUnchanged": true,
+      "unreviewedTrianglesAndColorsUnchanged": 56519,
+      "lowerGlassAndDoorTrianglesUnchanged": 1512,
+      "changedFacadeParts": 24
+    },
+    "phoneOrGpuValidation": false,
+    "independentSourceReview": {
+      "reviewer": "controls",
+      "scope": "선택되는 지도 변과 창/프레임 코드의 읽기 전용 검토",
+      "eastEdgeWorld": [
+        [
+          303.484,
+          -1819.552
+        ],
+        [
+          302.25959,
+          -1811.75833
+        ]
+      ],
+      "eastNormalX": 0.98788,
+      "cornerSelection": "북향 분할선의 동쪽 끝 한 구획",
+      "oppositeFacadesExcluded": true,
+      "newGlazingProxyLeadApproxMeters": 0.146,
+      "limit": "기존 balanced-wall-and-glass 방식의 근사 충돌이다. 새 추가 물리 검사 결과로 기록하지 않는다."
+    },
+    "visualRecheck": {
+      "file": "artifacts/roadview-connections/303-east-facade-after-detail.jpg",
+      "sha256": "2c2107ec6ad4d942c54014b1537fad5012bac2758528b5d7786108ed39f85ff6",
+      "rootLiveGameViewed": true,
+      "referenceDirectlyViewedCapture": true,
+      "observed": "밝은 벽의 패널 줄눈과 큰 창/좁은 창 조합, 상부 분할을 확인했다. 중앙 유리의 큰 격자와 단색 표현은 이번 수정 후에도 남아 있다.",
+      "limit": "reference는 저장된 게임 화면을 봤다. 별도 브라우저 조작이나 휴대전화 성능 검증은 하지 않았다."
+    }
+  },
+  "followupCentralGlazing": {
+    "status": "deferred-not-implemented",
+    "gameCapture": {
+      "file": "artifacts/roadview-connections/303-east-facade-before-detail.jpg",
+      "sha256": "4e6688b2a0756f0a83a82952d18dca0fc89774b92e38f8cd543a025c1a5950b0",
+      "directlyViewed": true,
+      "captureStage": "흰 입면 최소 보완 전 root의 실제 게임 화면"
+    },
+    "roadviewObservationId": "303-east-south-wing-atrium-boundary-ui",
+    "observedMismatch": [
+      "같은 쪽을 보는 게임 화면의 중앙 유리는 사진보다 창틀 간격이 크다. 사진은 큰 층 구획 안에도 여러 작은 패널과 분할 창이 보인다.",
+      "게임 유리는 어두운 청록 단색에 가깝고, 사진에 보이는 푸른 하늘과 구름 반사가 충분히 드러나지 않는다."
+    ],
+    "implementationCandidate": [
+      "기존 접힌 유리의 실제 3D 면 위에 보조 세로/가로 프레임을 추가한다. 기존 주축, 전체 높이, 층고와 유리 경계는 유지한다. 간격은 사진 비례에 따른 근사로 기록한다.",
+      "보조 프레임은 현재 frames 메시와 기존 유리 파괴 구획에 합친다. 작은 창마다 새 메시나 물리 몸체를 만들지 않고 원거리 파괴와 복원 범위를 유지한다.",
+      "유리색과 밝기, 거칠기를 조정하고 제한된 정적 환경 반사 방식을 검토한다. 매 프레임 별도 반사 장면을 렌더하는 방식은 모바일 비용을 확인하기 전 도입하지 않는다."
+    ],
+    "requiredVerification": [
+      "접힌 면 위의 프레임이 유리에서 떨어지거나 다른 면을 가로지르지 않는지 실제 정점으로 확인한다.",
+      "3개 병합 메시 구조와 물리 타깃 수, 삼각형 증가량을 확인한다.",
+      "새 프레임이 기존 파괴 부품과 함께 사라지고 초기화되는지 확인한다.",
+      "같은 방향 화면을 비교하되 모바일 FPS와 실기기 성능은 별도 측정 전 확정하지 않는다."
+    ],
+    "runtimeChangedForThisFollowup": false
+  }
+}

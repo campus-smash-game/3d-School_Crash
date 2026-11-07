@@ -1,0 +1,137 @@
+{
+  "reviewedAt": "2026-11-06T16:30:03.874Z",
+  "status": "needs-current-photo-and-orientation-check",
+  "buildingId": "way/148286666",
+  "runtimeChanged": false,
+  "oldOfficialPhoto": {
+    "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000009.jpg",
+    "file": "../references/buildings/photos/009-9.jpg",
+    "captureDate": null,
+    "directlyViewedBy": "root",
+    "observed": "짙은 벽돌과 흰 골조, 끝벽 발코니 세 곳, 유리 현관과 왼쪽 경사로가 보인다.",
+    "limit": "정확한 촬영 방향과 리모델링 전후 시점은 미확인이다."
+  },
+  "remodelReference": {
+    "url": "https://diversity.snu.ac.kr/bbs/board.php?bo_table=workshop&page=3&sod=desc&sop=and&sst=wr_datetime&wr_id=27",
+    "title": "2020년 서울대학교 기관별 다양성 증진사례",
+    "verified": "9동 리모델링에서 자동문, 점자블록과 안내 표지판을 설치했다고 명시한다.",
+    "limits": "입구의 새 외형과 정확한 위치를 보여 주는 사진 근거는 아니다."
+  },
+  "surveyReference": "sources/humanities-court-accessibility-reference.json",
+  "next": [
+    "9동 공식 사진의 촬영 방향과 리모델링 이후 출입구 위치 대조",
+    "9동과 10동의 층별 연결통로 사진 확인",
+    "9동과 12동 사이 야외 출구 및 계단 확인"
+  ],
+  "limits": "9동의 리모델링 이후 외형과 연결통로 사진을 확보하지 못해 9동 모델은 변경하지 않았다. 11동은 별도 외관 기록에 따라 이번에 보완했다.",
+  "followup60": {
+    "documents": [
+      {
+        "id": "official-education-history",
+        "url": "https://edu.snu.ac.kr/대학소개/연혁/",
+        "localFile": "artifacts/education9-review60/education-history.html",
+        "publisher": "서울대학교 사범대학",
+        "publishedDate": null,
+        "eventDate": "2020-09",
+        "observed": "공식 대학연혁은 2020년 9월 항목에 9동(사범관1) 리모델링 준공식을 기록한다.",
+        "limit": "사진, 층별 평면도와 외관 변경 내역은 없다.",
+        "confidence": "high",
+        "sourceConflict": "검색에 나온 umsd.snu.ac.kr 등 다른 조직의 연혁 복제본에는 같은 항목이 2019년과 2020년에 중복되어 있다. 사범대학 원문에는 2019년 9월이 상담실 사담 개관으로 표시되므로 원문을 우선한다."
+      },
+      {
+        "id": "mathed-move-2020",
+        "url": "https://mathed.snu.ac.kr/author/14462/page/199/",
+        "articleUrl": "https://mathed.snu.ac.kr/38705/",
+        "localFile": "artifacts/education9-review60/mathed-2020-move-archive.html",
+        "publisher": "서울대학교 수학교육과",
+        "title": "[대학원] 리모델링 관련 연구실 정리 안내",
+        "publishedDate": null,
+        "eventDate": "2020-08-10",
+        "observed": "9동 리모델링이 끝나 가며 이삿날이 8월 10일 월요일이라고 안내한다. 같은 본문과 인접 공지가 2020학년도 2학기를 명시한다.",
+        "limit": "이사 예정일은 본문 맥락으로 확인했다. 정확한 게시일은 표시되지 않는다. 개별 글 URL은 이번 웹 조회에서 본문을 반환하지 않아 작성자 목록에 보이는 내용을 확인했다. 외관 사진은 없다.",
+        "confidence": "high-for-2020-move-context"
+      },
+      {
+        "id": "conference-9-via-10-2026",
+        "url": "https://societyandphilosophy.org/board/eventguide/article/281517",
+        "localFile": "artifacts/education9-review60/2026-conference-access.html",
+        "publisher": "한국사회정치철학회",
+        "title": "2026년 8월 신진학자 연구 발표회 안내",
+        "publishedDate": "2026-08-11",
+        "eventDate": "2026-08-22",
+        "observed": "장소는 9동 113호이며 당일 10동 1층 출입구를 통해 입장한 후 9동으로 이동하도록 안내한다.",
+        "limit": "10동에서 9동으로 이동할 수 있다는 근거다. 두 건물의 동일 층 연결이나 옥외 연결통로 외관까지 설명하지 않는다.",
+        "confidence": "high-for-connected-access"
+      }
+    ],
+    "photosReviewedBy": "education9_research",
+    "photoReview": [
+      {
+        "id": "prior-official-9",
+        "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000009.jpg",
+        "localFile": "../references/buildings/photos/009-9.jpg",
+        "publishedDate": null,
+        "captureDate": null,
+        "identification": "단부 벽의 숫자 9가 직접 보인다.",
+        "observed": "갈색 벽돌 벽과 흰 구조 띠, 단부에 세 층으로 쌓인 발코니, 유리 출입문과 앞 계단, 왼쪽 경사로와 금속 난간이 보인다. 오른쪽에는 회색 곡면 건물 일부가 보인다.",
+        "orientation": "오른쪽 회색 건물을 12동으로 보면 9동 남서쪽 단부를 바라본 구도로 해석할 수 있다. 이번 조사에서 연속 사진이나 촬영 지점으로 검증하지 못한 추정이다.",
+        "use": "기존 사진 관찰 유지",
+        "limit": "2020년 이후 촬영인지 확인할 수 없다. 사진에 보이는 문을 2024년 조사표의 1층 정문 또는 2층 12동 방향 출구로 단정하지 않는다."
+      },
+      {
+        "id": "much-2014-courtyard",
+        "pageUrl": "https://archive.much.go.kr/data/01/folderView.do?idnbr=2016015316&jobdirSeq=352",
+        "imageUrl": "https://archive.much.go.kr/archiveImage/thumb.do?idnbr=2016015281",
+        "localFile": "artifacts/education9-review60/much-2014-education.jpg",
+        "publishedDate": null,
+        "captureDate": "2014-11-03",
+        "dateBasis": "박물관 목록이 개별 이미지에 2014.11.3을 표시한다.",
+        "identification": "박물관 설명은 9, 10, 11동 사진으로 명시한다.",
+        "observed": "세 건물이 둘러싼 중정, 낮은 관목, 가로수, 붉은 계열 포장, 뒤편 건물로 올라가는 중앙 계단이 보인다.",
+        "orientation": "번호는 작은 썸네일에서 직접 판독하지 못했다. 지도상 배치에 따르면 9동이 왼쪽, 10동이 뒤, 11동이 오른쪽일 가능성이 있으나 이번 조사에서는 확정하지 않았다.",
+        "use": "과거 중정 구성의 보조 자료",
+        "limit": "9동 리모델링 전이며 400x267 썸네일이다. 현재 문, 연결부나 세부 치수 근거로 사용할 수 없다."
+      },
+      {
+        "id": "edu-home-slide-1",
+        "pageUrl": "https://edu.snu.ac.kr/",
+        "imageUrl": "https://edu.snu.ac.kr/wp-content/uploads/sites/17/elementor/thumbs/2_1-rr24lcaaq8l5vkvbr5lpwutgdzl9s1vel9xamddoc0.jpg",
+        "localFile": "artifacts/education9-review60/edu-home-slide-1.jpg",
+        "publishedDate": null,
+        "captureDate": null,
+        "identification": "건물 전면 숫자 12가 직접 보인다.",
+        "observed": "12동 곡선 외벽, 유리 저층부, 상부 데크와 금속 난간, 좌측 계단, 하단 경사로가 보인다.",
+        "use": "9동 자료에서 제외",
+        "limit": "9동 출구 또는 9동과 12동 사이 연결 장면은 보이지 않는다."
+      },
+      {
+        "id": "edu-home-slides-2-5",
+        "pageUrl": "https://edu.snu.ac.kr/",
+        "imageManifest": "artifacts/education9-review60/edu-home-slide-manifest.json",
+        "localFiles": [
+          "artifacts/education9-review60/edu-home-slide-2.jpg",
+          "artifacts/education9-review60/edu-home-slide-3.jpg",
+          "artifacts/education9-review60/edu-home-slide-4.jpg",
+          "artifacts/education9-review60/edu-home-slide-5.jpg"
+        ],
+        "publishedDate": null,
+        "captureDate": null,
+        "observed": "학습 공간과 실내 홀 사진이다. 3번 사진의 유리 밖 건물에 10으로 읽히는 번호가 보이지만 화질이 낮다.",
+        "use": "9동 자료에서 제외",
+        "limit": "9동 외벽이나 출입구를 식별하지 못했다. 홈페이지에서 현재 노출된다는 사실을 촬영일로 간주하지 않는다."
+      }
+    ],
+    "searchLimits": [
+      "9동, 사범관1, 리모델링, 정문, 외관, 연결통로와 2023~2024년을 조합한 공개 웹 및 이미지 검색에서 대상이 확인되는 새 사진을 확보하지 못했다.",
+      "네이버 블로그 한정 검색은 검색 도구에서 robots.txt 제한을 보고했다. 블로그 전체를 조사 완료한 것으로 표현하지 않는다.",
+      "공식 뉴스레터 주소 https://snuedunow.ac.kr/vol/ 은 텍스트 본문 없이 redirect.php로 이동하는 스크립트를 반환했다. redirect.php도 같은 응답을 반환하여 기사 내용을 확인하지 못했다.",
+      "2014년 7월 19일 촬영한 360Cities 사범관2 파노라마는 검색 결과에 날짜와 설명이 노출되지만 원문은 403 응답을 반환했다. 직접 본 사진 근거로 쓰지 않는다.",
+      "나무위키 검색 결과는 9동 사진이 리모델링 이전이라고 설명하지만 해당 이미지와 기존 공식 사진의 일치를 검증하지 못했다. 이를 촬영일 확정 근거로 쓰지 않는다."
+    ],
+    "conclusion": "리모델링 준공 시점은 공식 연혁에서 확인했다. 새로 확인한 공개 사진 가운데 2020년 이후 9동 외관이나 연결부를 직접 식별할 수 있는 사진은 확보하지 못했다.",
+    "rootVerified": [
+      "공식 사범대학 연혁의 2020년 9월 준공식",
+      "2026년 행사 안내의 10동 1층에서 9동으로 이동하는 설명"
+    ]
+  }
+}

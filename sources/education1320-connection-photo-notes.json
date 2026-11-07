@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T18:18:02.628Z",
+  "buildingId": "way/300587512",
+  "neighborIds": [
+    "way/251646340",
+    "way/167598095"
+  ],
+  "scope": "13동과 20동의 연결교, 양쪽 짧은 현관, 하부 포장과 남서쪽 계단을 보완했다.",
+  "status": "implemented-partial-photo-reference",
+  "references": [
+    {
+      "url": "https://kko.to/wm4dZK24bn",
+      "panoid": "1212805294",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/education20-review63/63-sw3.png",
+          "sha256": "40476ca4d7d8cb2a42fad425f081f5451187b17eca5f56763194bdf8c2350db8"
+        },
+        {
+          "file": "artifacts/education20-review63/63-bridge-up.png",
+          "sha256": "74049815849f449566678578e89090b8fdcdc99e7da9ad4d9eb630be807fc714"
+        }
+      ],
+      "observed": [
+        "흰 패널 외장과 가로로 이어지는 창, 상부 가로창과 세로 창틀",
+        "열린 하부, 낮은 앞계단과 평평한 참, 뒤쪽 긴 계단",
+        "흰 지지 기둥과 앞쪽 배수로"
+      ],
+      "limits": "절대 높이, 연결교 깊이와 기둥 위치, 계단 단수와 폭은 실측하지 않았다."
+    },
+    {
+      "url": "https://kko.to/du1Tc9tMIm",
+      "captureMonth": "2026-07",
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/education20-review63/63-bridge-oblique.png",
+          "sha256": "2bdcbceccf3d9388b73130d58505a0fcf0df1c86b00e34e0183ae51cb489f019"
+        }
+      ],
+      "observed": "옆쪽에서 연결교, 13동 끝벽, 하부 계단과 앞쪽 포장을 대조했다.",
+      "limits": "뒤쪽 벽면과 연결문 실내는 보이지 않는다."
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR94ZkRHP2VKnINb9ra1pZj3AmeD3TexbrKway6icdN5glvGpSjhuNrzslk9WzWh35_snK2vd1D0umr/pubhtml",
+      "surveyDate": "2024-12-02",
+      "sheetGid": "534084252",
+      "entry": "E10",
+      "observed": "13동 2층 20동 연결통로와 양방향 여닫이문을 기록한다. 20동 문턱의 휠체어 접근 제약은 보행자 통행 불가라는 뜻이 아니다.",
+      "limits": "조사 좌표를 문 중심이나 실측 높이로 취급하지 않았다."
+    }
+  ],
+  "mapEvidence": {
+    "file": "sources/campus.osm",
+    "bridgeId": "way/300587512",
+    "bridgeTags": {
+      "bridge": "yes",
+      "building": "university",
+      "layer": "1"
+    },
+    "stairRoad": "way/300587511/123",
+    "rawHeightPresent": false,
+    "rawLevelsPresent": false,
+    "rawInputsModified": false
+  },
+  "implementation": {
+    "modules": [
+      "src/education1320Site.ts",
+      "src/education1320Connection.ts"
+    ],
+    "floorSource": "기존 13동 2층의 게임 높이를 따른다.",
+    "estimatedBridgeDepth": 4.8,
+    "estimatedStairWidth": 7.2,
+    "depthReason": "지도 윤곽의 북서쪽 전면과 양쪽 건물 접점을 기준으로 사진의 낮은 연결교와 뒤쪽 계단을 분리한 근사다. 원본의 약 11m 깊이 전체를 4층 건물로 채우던 표현을 없앴다.",
+    "rawPolygonPreserved": true,
+    "estimatedRenderedPolygon": true,
+    "entranceRoomDepth": 3.2,
+    "features": [
+      "흰 패널, 창틀과 상부 가로창",
+      "열린 하부와 지지 기둥",
+      "짧은 앞계단, 평평한 포장과 뒤쪽 긴 계단",
+      "보도 줄눈, 계단 코, 배수로와 난간",
+      "양쪽 연결문과 짧은 현관"
+    ],
+    "fullInterior": false
+  },
+  "limitations": [
+    "연결교 깊이 4.8m, 계단 폭 7.2m와 단수, 바닥 높이 및 기둥 위치는 게임 근사다.",
+    "13동의 네 기존 현관과 주변 도로를 유지하며 전체 실내 동선은 재현하지 않았다.",
+    "사진 속 20동의 벽돌과 돌출 유리면, 어두운 석재 하부는 별도 외관 보완 대상으로 남아 있다.",
+    "현재 출입문 개방 상태와 이동식 시설, 가게 영업 상태는 재현하지 않았다.",
+    "참고 사진을 게임 텍스처로 사용하지 않았다."
+  ]
+}

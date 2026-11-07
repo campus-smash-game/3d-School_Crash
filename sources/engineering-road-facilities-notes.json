@@ -1,0 +1,152 @@
+{
+  "status": "implemented-node-verified",
+  "reviewedAt": "2026-11-05",
+  "modelFile": "src/engineeringRoadFacilities.ts",
+  "api": "createEngineeringRoadFacilities(scene, heightAt, anchors)",
+  "facilityId": "facilities/engineering301-303",
+  "scope": "301동과 303동 연결 다리 바로 주변의 횡단보도, 탄성 볼라드, 포장과 점자블록, 낮은 연석, 하부 출입구의 돌 경계와 식재를 구현했다.",
+  "photoSources": [
+    {
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-303-bridge-south-face.png",
+      "sha256": "fb89d273f9a3900ecb952caac51ba41580b0ad0b7fd5ca8404566dc9c99fd46c",
+      "provider": "KakaoMap Roadview",
+      "captureMonth": "2026-08",
+      "captureDateUIIncluded": false,
+      "dateBasis": "날짜가 보이지 않는 PNG는 루트의 라이브 관찰 기록에 따른다.",
+      "directlyViewed": true,
+      "observation": "다리 남쪽 차도의 횡단보도와 동쪽 가장자리의 노란 탄성 볼라드, 보도와 노란 안내 블록이 보인다."
+    },
+    {
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-bridge-east-elevator-stairs.png",
+      "sha256": "acc360c2122d53d79bbefe6872a99657b090146774ab33046c31bc449a400973",
+      "provider": "KakaoMap Roadview",
+      "captureMonth": "2026-08",
+      "captureDateUIIncluded": false,
+      "dateBasis": "날짜가 보이지 않는 PNG는 루트의 라이브 관찰 기록에 따른다.",
+      "directlyViewed": true,
+      "observation": "다리 아래 열린 포장 공간, 동쪽 계단 주변의 회색 포장과 점자블록, 기둥 주변의 돌과 식재가 보인다.",
+      "panoId": "1213023453",
+      "url": "https://map.kakao.com/?panoid=1213023453&map_type=TYPE_MAP&map_attribute=ROADVIEW"
+    },
+    {
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/303-east-lower-entrance.png",
+      "sha256": "753a2addaecb0100ea191b8ee578438bc60985e525c3dbff6668d55fbaf9f03a",
+      "provider": "KakaoMap Roadview",
+      "captureMonth": "2026-08",
+      "captureDateUIIncluded": false,
+      "dateBasis": "날짜가 보이지 않는 PNG는 루트의 라이브 관찰 기록에 따른다.",
+      "directlyViewed": true,
+      "observation": "303동 하부 유리문으로 이어지는 포장 길과 노란 점자블록, 입구 양옆의 돌 경계와 낮은 식재가 보인다.",
+      "panoId": "1213023453",
+      "url": "https://map.kakao.com/?panoid=1213023453&map_type=TYPE_MAP&map_attribute=ROADVIEW"
+    },
+    {
+      "file": "D:/codex/3d-School_Crash/references/roadview-audit/2026-08/301-303-road-south-ui.jpg",
+      "sha256": "21e00db2717975b12499cedfd7de69a9766f274aa99f418899ae737a9cac2602",
+      "provider": "KakaoMap Roadview",
+      "captureMonth": "2026-08",
+      "captureDateUIIncluded": true,
+      "dateBasis": "날짜가 보이지 않는 PNG는 루트의 라이브 관찰 기록에 따른다.",
+      "directlyViewed": true,
+      "observation": "다리에서 남쪽을 본 화면에 횡단보도, 동쪽 볼라드 열과 보도, 서쪽 돌 경계가 보인다. 화면에 2026년 08월 촬영일이 표시돼 있다."
+    }
+  ],
+  "placement": {
+    "basis": "현재 다리와 303동 하부 문, 동쪽 계단의 실제 게임 앵커를 입력받는다. 지도와 사진을 맞춘 근사이며 현장 측량값이 아니다.",
+    "crosswalkCenterD": [
+      316.0005,
+      -1801.4027
+    ],
+    "crosswalkDepthMetres": 3.8,
+    "bollards": 5,
+    "meshes": 5,
+    "breakableParts": 38,
+    "terrainFit": "193개 지면 패치를 roadSurfaceTriangles의 실제 지형 삼각형으로 잘랐다. 도로 위 페인트는 도로 렌더 표면보다 약 0.03m 높다.",
+    "pedestrianClearance": "횡단보도와 동쪽 계단 입구에서 볼라드와 연석을 끊고, 303동 문 앞은 돌과 식재 없이 비웠다.",
+    "estimated": [
+      "정확한 시설 좌표와 개수",
+      "볼라드 간격과 치수",
+      "횡단보도 폭과 띠 간격",
+      "연석과 돌의 크기",
+      "식재 종류와 배치",
+      "점자블록의 실제 규격과 전체 연결 경로"
+    ]
+  },
+  "excluded": [
+    "임시 행사 연등",
+    "사진 속 인물과 차량",
+    "사진을 복제한 텍스처"
+  ],
+  "sourceHashes": {
+    "src/engineeringRoadFacilities.ts": "7e63e93d16edd5bb51aafdecc67d987a6282a64b7bfa5d63fd73ed93eb11edc8",
+    "src/fullCampus.ts": "73fdc961bb0dac3aa167acc000bb98f182098a8ad0567ea610b568a86d1f219a",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "src/engineering301303Connection.ts": "db7f5a3296e290a924c8f25ed4b1c682d07388feaf19144c2792a0b7a4b9cbe2",
+    "src/engineering301303Site.ts": "b0c63ab74926e30bd808c042fd969d038346280e165e12ab837bd8ca761f0fc4"
+  },
+  "verification": {
+    "resultFile": "artifacts/engineering-road-facilities-test/results.json",
+    "resultSha256": "e76391e7fb7f46c0324bb9b3400d3d8e38748c425196a73e041c3f3e00aeddc0",
+    "reproductionFile": "scripts/verify-engineering-road-facilities.mjs",
+    "passed": 4,
+    "failed": 0,
+    "relevantInputsStillMatch": true,
+    "scope": [
+      "현재 fullCampus와 실제 지형, Three.js 기하 및 Rapier를 함께 생성했다.",
+      "지면 표시 8,140표본의 지형 위 최소 여유는 0.179982m였다.",
+      "약 15.8m 횡단보도와 303동 하부 문 앞 접근을 6m/s로 왕복했다. 실내 전체 통과 검사는 아니다.",
+      "실제 Traffic 차로 6개 변의 버스와 택시 자세 206개에서 새 시설과의 충돌이 없었다.",
+      "볼라드 파괴 후 279m와 900m에서 숨김을 유지했고 초기화 후 인스턴스 행렬이 복원됐다."
+    ],
+    "reproductionSha256": "829d0bd3e407a87c697a9221804bd0e74e9ccda7c4c16feed08536379181c0c2",
+    "previousResultFile": "artifacts/engineering-road-facilities-test/results-before-west-court-terrain.json",
+    "arrivalDiagnostic": {
+      "resultFile": "artifacts/engineering-road-facilities-test/arrival-diagnostic.json",
+      "resultSha256": "b307027564e166c5aea2d52adc6a2b0636708a5b8fcb07907eb93225f72c1bfc",
+      "destinationD": [
+        309.7,
+        -1792.902658
+      ],
+      "speedMetresPerSecond": 6,
+      "southDistanceMetres": 20,
+      "cases": [
+        {
+          "eastOffsetMetres": 0,
+          "remainingMetres": 0.05498300056518239,
+          "frames": 209,
+          "blockingContacts": 0
+        },
+        {
+          "eastOffsetMetres": 2,
+          "remainingMetres": 0.12409885189885693,
+          "frames": 208,
+          "blockingContacts": 0
+        }
+      ],
+      "scope": "실제 fullCampus 도착점에서 60프레임 접지 후 남쪽으로 걷는 경로와, 동쪽 2m 이동 후 남쪽으로 걷는 경로를 각각 확인했다. 점프와 차량 동적 충돌은 사용하지 않았다. 브라우저 키 입력의 지속이나 포커스는 검사하지 않았다.",
+      "status": "historical-before-final421-terrain",
+      "terrainSha256AtRun": "65b1b8ab537113d0f9c2b44cc00851862fd1a38f00be5665499a9f1445d14f64",
+      "currentTerrainMatches": false,
+      "note": "이 도착점 두 경로는 이전 지형 후보의 별도 진단이다. 이번 최종 후보에서는 시설 정식 검사에 포함된 횡단보도와 303동 하부 문 앞 경로만 다시 확인했다."
+    },
+    "allInputsStillMatch": true,
+    "terrainRegression": {
+      "reproductionFile": "scripts/verify-terrain.mjs",
+      "reproductionSha256": "93f4155fa783186775c3073937083e9b145aa15085d594b64dcd5e83e1a245d5",
+      "resultFile": "artifacts/engineering-road-facilities-test/terrain-final421-verification.json",
+      "resultSha256": "3586bac1d625750d395ac8d880d13c6b1279f417fa5a4c3abd6cb169328af344",
+      "passed": 8,
+      "failed": 0,
+      "terrainSha256": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+      "scope": "원시 고도 보존, 입력 순서 불변, 빈 외곽과 중정, 패드 제외, 지형 메시와 Rapier 높이, 박물관 하부 및 도서관 접근을 확인했다. 실제 브라우저와 휴대폰 검사가 아니다."
+    },
+    "finalTerrainUpdate": "최종 /421 지형 보정 후 시설 4개와 지형 8개를 다시 실행했다. 모델과 검사 스크립트는 변경하지 않았다.",
+    "previousVerificationNoteFile": "artifacts/engineering-road-facilities-test/notes-before-final421-1f381036e810.json"
+  },
+  "limitations": [
+    "사진은 2026년 8월 시점이다. 이후 시설 변경 여부는 확인하지 않았다.",
+    "도로와 출입구에 맞춘 치수와 배치를 실측 재현으로 표현하지 않는다.",
+    "원본 지도와 DEM은 수정하지 않고 전달받은 지형 샘플러를 사용한다.",
+    "이 기록의 검사는 Node에서 수행했다. 실제 브라우저 표시, 휴대폰 성능과 접근성 규격 적합성을 검증한 기록이 아니다."
+  ]
+}

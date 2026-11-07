@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-map-based-approximation",
+  "scope": "6동 북쪽에서 14동 서쪽과 뒤편을 거쳐 기존 도토리길 계단으로 이어지는 보행로",
+  "references": [
+    {
+      "kind": "mapped-steps-and-footway",
+      "localSource": "public/data/campus.json",
+      "roadIds": [
+        "way/456540167/307",
+        "way/456540170/308",
+        "way/456540196/319"
+      ],
+      "observed": "지도에 계단, 보행로, 계단 순서로 이어지는 선이 있다. 기존 14동 뒤 계단의 아래쪽 끝과 만난다.",
+      "limits": "지도에 폭은 추정값으로 표시돼 있다. 실제 단수, 포장, 난간 형태와 현재 통행 상태를 확인하지 못했다."
+    },
+    {
+      "url": "https://humanities.snu.ac.kr/about/campus",
+      "kind": "official-campus-directions",
+      "readAt": "2026-11-06",
+      "observed": "관악사 삼거리의 농구장 오른쪽 계단을 내려가면 14동 뒤편이라는 안내를 확인했다.",
+      "limits": "이 안내는 기존 도토리길의 위치를 뒷받침한다. 새로 연결한 6동 쪽 계단의 마감 사진은 아니다."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jIMJe65t6gs",
+      "kind": "official-competition-linked-aerial-film",
+      "localEvidence": "artifacts/humanities6-review/52-film-70s-loaded.png",
+      "observed": "주변 건물과 높낮이를 항공 화면에서 대조했다.",
+      "limits": "이번 연결 통로의 계단 단면이나 난간 형태를 확인할 해상도는 아니다."
+    }
+  ],
+  "implementation": {
+    "module": "src/humanitiesUpperApproach.ts",
+    "rawMapAndElevationModified": false,
+    "existingBuildingsAndRearStairModified": false,
+    "finishesPhotoVerified": false,
+    "railDesignEstimated": true,
+    "dimensionsEstimated": true,
+    "paving": "원본 게임 지형을 따라 포장하고, 계단 양끝은 연결 바닥을 높여 단차를 줄였다. 줄눈은 병합 기하로 표현했다.",
+    "stairs": "지도상 계단 구간에만 디딤판을 추가했다. 꺾이는 지점은 난간을 끊고 통행 공간을 확보했다.",
+    "photoUsedAsTexture": false,
+    "geometry": {
+      "meshes": 1,
+      "textures": 0,
+      "triangles": 6277,
+      "colliders": 245
+    }
+  },
+  "remaining": [
+    "새 통로의 근접 사진과 로드뷰",
+    "실제 포장과 난간 형태",
+    "14동 전체 외관과 출입구",
+    "실제 휴대전화의 프레임 속도 측정"
+  ],
+  "validation": {
+    "file": "artifacts/humanities-upper-access-test/results.json",
+    "groups": [
+      {
+        "name": "mapped approach changes preserve every existing building and rear stair",
+        "status": "PASS"
+      },
+      {
+        "name": "building 6 to building 14 rear road can be walked both ways at mobile and desktop speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "new stairs and paving match visible and physical floors",
+        "status": "PASS"
+      },
+      {
+        "name": "stairs and rails retain damage at a distance and restore on reset",
+        "status": "PASS"
+      }
+    ],
+    "unchangedParts": 40194,
+    "floorSamples": 155,
+    "walks": 4,
+    "maximumWalkingPenetration": 0,
+    "realPhoneFrameRateMeasured": false
+  }
+}

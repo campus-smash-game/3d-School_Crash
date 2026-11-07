@@ -1,0 +1,845 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T14:34:02.513Z",
+  "status": "integrated-partial",
+  "scope": "222동 남쪽 차도 옆 낮은 시설과 보행 공간. 지도 무명 윤곽의 정확한 정체와 소속은 확정하지 않았다.",
+  "facilityId": "facilities/living-science-south-site",
+  "sources": [
+    "sources/living-science-adjacent-roadview-review.json",
+    "https://kko.to/fmZ6Q7AEkn",
+    "https://kko.to/gq-gd54A6M"
+  ],
+  "observed": [
+    "회색 사각 보도와 차도 쪽 둥근 고리 난간",
+    "낮은 콘크리트 벽과 가로로 긴 금속 격자",
+    "단을 이룬 식재 구역과 가로등"
+  ],
+  "volumeDecision": {
+    "id": "way/455025059",
+    "disposition": "observed-ground-only",
+    "oldHeight": 14,
+    "oldLevels": 4,
+    "oldDimensionsEstimated": true,
+    "rawFootprintPreserved": true,
+    "identityConfirmed": false,
+    "demolitionConfirmed": false,
+    "undergroundUseConfirmed": false,
+    "reason": "연속 로드뷰와 선택한 스카이뷰에서 추정 4층 몸체가 보이지 않고 실제 차도 및 낮은 시설과 충돌한다."
+  },
+  "implementation": {
+    "role": "observed-ground-only",
+    "facilityId": "facilities/living-science-south-site",
+    "landmark": "living-science-south-site",
+    "sourceBuildingIdUnresolved": "way/455025059",
+    "replacesGenericBuildingVolume": false,
+    "origin": [
+      439.05,
+      0,
+      -254.28
+    ],
+    "axis": [
+      0.5482016374139336,
+      0,
+      -0.8363461990926256
+    ],
+    "across": [
+      0.8363461990926256,
+      0,
+      0.5482016374139336
+    ],
+    "coordinates": "D=(east,up,north); parent H applies once.",
+    "coordinatesEstimated": true,
+    "dimensionsEstimated": true,
+    "undergroundUseConfirmed": false,
+    "sourceCaptureDate": "2026-08",
+    "sourceNotes": "sources/living-science-adjacent-roadview-review.json",
+    "sourceImages": [
+      "30-adjacent-oblique-ui.jpg",
+      "30-sky2025-gap-close-ui.jpg",
+      "29-222-threshold-detail-ui.jpg"
+    ],
+    "terrainChanged": false,
+    "rawOutlineChanged": false,
+    "roadChanged": false,
+    "sidewalk": {
+      "s": [
+        3.5,
+        23
+      ],
+      "n": [
+        3,
+        4.7
+      ],
+      "approximateBlockSize": [
+        0.4,
+        0.3
+      ],
+      "actualTerrainOffset": 0.19,
+      "bottomDepth": 0.14
+    },
+    "floorBounds": [
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            443.47774432822666,
+            -255.56260678458239
+          ],
+          [
+            444.57414760305454,
+            -257.2352991827677
+          ],
+          [
+            445.995936141512,
+            -256.303356399164
+          ],
+          [
+            444.8995328666841,
+            -254.6306640009787
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            444.57414760305454,
+            -257.2352991827677
+          ],
+          [
+            445.6705508778824,
+            -258.9079915809529
+          ],
+          [
+            447.0923394163399,
+            -257.9760487973492
+          ],
+          [
+            445.995936141512,
+            -256.303356399164
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            445.6705508778824,
+            -258.9079915809529
+          ],
+          [
+            446.76695415271024,
+            -260.58068397913814
+          ],
+          [
+            448.1887426911677,
+            -259.64874119553446
+          ],
+          [
+            447.0923394163399,
+            -257.9760487973492
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            446.76695415271024,
+            -260.58068397913814
+          ],
+          [
+            447.8633574275381,
+            -262.25337637732343
+          ],
+          [
+            449.2851459659956,
+            -261.32143359371975
+          ],
+          [
+            448.1887426911677,
+            -259.64874119553446
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            447.8633574275381,
+            -262.25337637732343
+          ],
+          [
+            448.959760702366,
+            -263.92606877550867
+          ],
+          [
+            450.38154924082346,
+            -262.994125991905
+          ],
+          [
+            449.2851459659956,
+            -261.32143359371975
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            448.959760702366,
+            -263.92606877550867
+          ],
+          [
+            450.0561639771939,
+            -265.5987611736939
+          ],
+          [
+            451.47795251565134,
+            -264.6668183900902
+          ],
+          [
+            450.38154924082346,
+            -262.994125991905
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            450.0561639771939,
+            -265.5987611736939
+          ],
+          [
+            451.15256725202175,
+            -267.27145357187914
+          ],
+          [
+            452.5743557904792,
+            -266.33951078827545
+          ],
+          [
+            451.47795251565134,
+            -264.6668183900902
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            451.15256725202175,
+            -267.27145357187914
+          ],
+          [
+            452.2489705268496,
+            -268.9441459700644
+          ],
+          [
+            453.67075906530704,
+            -268.01220318646074
+          ],
+          [
+            452.5743557904792,
+            -266.33951078827545
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            452.2489705268496,
+            -268.9441459700644
+          ],
+          [
+            453.34537380167745,
+            -270.61683836824966
+          ],
+          [
+            454.7671623401349,
+            -269.684895584646
+          ],
+          [
+            453.67075906530704,
+            -268.01220318646074
+          ]
+        ]
+      },
+      {
+        "component": "gray-sidewalk",
+        "polygon": [
+          [
+            453.34537380167745,
+            -270.61683836824966
+          ],
+          [
+            454.16767625779835,
+            -271.8713576668886
+          ],
+          [
+            455.5894647962558,
+            -270.93941488328494
+          ],
+          [
+            454.7671623401349,
+            -269.684895584646
+          ]
+        ]
+      },
+      {
+        "component": "east-path-connection",
+        "polygon": [
+          [
+            455.0717360182241,
+            -272.07820652820834
+          ],
+          [
+            456.51349370348464,
+            -271.66428047564324
+          ],
+          [
+            456.1271627210906,
+            -270.31863996940007
+          ],
+          [
+            454.68540503583006,
+            -270.73256602196517
+          ]
+        ]
+      },
+      {
+        "component": "east-path-connection",
+        "polygon": [
+          [
+            456.51349370348464,
+            -271.66428047564324
+          ],
+          [
+            457.95525138874524,
+            -271.25035442307814
+          ],
+          [
+            457.5689204063512,
+            -269.90471391683496
+          ],
+          [
+            456.1271627210906,
+            -270.31863996940007
+          ]
+        ]
+      },
+      {
+        "component": "east-path-connection",
+        "polygon": [
+          [
+            457.95525138874524,
+            -271.25035442307814
+          ],
+          [
+            459.3970090740058,
+            -270.83642837051303
+          ],
+          [
+            459.01067809161174,
+            -269.49078786426986
+          ],
+          [
+            457.5689204063512,
+            -269.90471391683496
+          ]
+        ]
+      },
+      {
+        "component": "east-path-connection",
+        "polygon": [
+          [
+            459.3970090740058,
+            -270.83642837051303
+          ],
+          [
+            460.73316549119704,
+            -270.45282025312156
+          ],
+          [
+            460.346834508803,
+            -269.1071797468784
+          ],
+          [
+            459.01067809161174,
+            -269.49078786426986
+          ]
+        ]
+      }
+    ],
+    "wallSections": [
+      {
+        "s0": 5.4,
+        "s1": 7.6000000000000005,
+        "lowerGround": [
+          32.923690481257104,
+          33.45554073961969
+        ],
+        "lowerTop": [
+          34.923690481257104,
+          35.45554073961969
+        ],
+        "upperTop": [
+          35.673690481257104,
+          36.20554073961969
+        ]
+      },
+      {
+        "s0": 7.6000000000000005,
+        "s1": 9.8,
+        "lowerGround": [
+          33.45554073961969,
+          33.98739099798227
+        ],
+        "lowerTop": [
+          35.45554073961969,
+          35.98739099798227
+        ],
+        "upperTop": [
+          36.20554073961969,
+          36.73739099798227
+        ]
+      },
+      {
+        "s0": 9.8,
+        "s1": 12,
+        "lowerGround": [
+          33.98739099798227,
+          34.51924125634471
+        ],
+        "lowerTop": [
+          35.98739099798227,
+          36.51924125634471
+        ],
+        "upperTop": [
+          36.73739099798227,
+          37.26924125634471
+        ]
+      },
+      {
+        "s0": 12,
+        "s1": 14.2,
+        "lowerGround": [
+          34.51924125634471,
+          35.05109151470716
+        ],
+        "lowerTop": [
+          36.51924125634471,
+          37.05109151470716
+        ],
+        "upperTop": [
+          37.26924125634471,
+          37.80109151470716
+        ]
+      },
+      {
+        "s0": 14.2,
+        "s1": 16.4,
+        "lowerGround": [
+          35.05109151470716,
+          35.58294177306974
+        ],
+        "lowerTop": [
+          37.05109151470716,
+          37.58294177306974
+        ],
+        "upperTop": [
+          37.80109151470716,
+          38.33294177306974
+        ]
+      },
+      {
+        "s0": 16.4,
+        "s1": 18.599999999999998,
+        "lowerGround": [
+          35.58294177306974,
+          36.11479203143232
+        ],
+        "lowerTop": [
+          37.58294177306974,
+          38.11479203143232
+        ],
+        "upperTop": [
+          38.33294177306974,
+          38.86479203143232
+        ]
+      },
+      {
+        "s0": 18.599999999999998,
+        "s1": 20.799999999999997,
+        "lowerGround": [
+          36.11479203143232,
+          36.42574156679455
+        ],
+        "lowerTop": [
+          38.11479203143232,
+          38.42574156679455
+        ],
+        "upperTop": [
+          38.86479203143232,
+          39.17574156679455
+        ]
+      }
+    ],
+    "rail": {
+      "s": [
+        6,
+        20.8
+      ],
+      "n": 3.12,
+      "height": 1.04,
+      "roundedLoops": true
+    },
+    "lamp": {
+      "s": 17.7,
+      "n": 4.92,
+      "height": 3.65
+    },
+    "trees": [
+      [
+        7.7,
+        8.55,
+        3.8
+      ],
+      [
+        12.7,
+        9.15,
+        4.3
+      ],
+      [
+        18.1,
+        9,
+        3.7
+      ]
+    ],
+    "routes": [
+      {
+        "id": "passage-to-east-footway",
+        "routeWorld": [
+          {
+            "x": 439.905,
+            "y": 31.630833354872966,
+            "z": -252.472
+          },
+          {
+            "x": 441.9287360004959,
+            "y": 32.38389415280125,
+            "z": -255.02355836317588
+          },
+          {
+            "x": 444.9013007260935,
+            "y": 33.05229387822261,
+            "z": -256.18388545160093
+          },
+          {
+            "x": 447.20374760323205,
+            "y": 34.067644771834125,
+            "z": -259.69653948778995
+          },
+          {
+            "x": 450.4929574277156,
+            "y": 35.51814604842198,
+            "z": -264.7146166823457
+          },
+          {
+            "x": 453.7821672521992,
+            "y": 36.57423938494391,
+            "z": -269.73269387690146
+          },
+          {
+            "x": 454.8785705270271,
+            "y": 36.80013320602562,
+            "z": -271.40538627508676
+          },
+          {
+            "x": 460.54,
+            "y": 37.10992423919846,
+            "z": -269.78
+          }
+        ],
+        "sourceRoads": [
+          "way/1185265108/524",
+          "way/455018306/208",
+          "way/455020727/210"
+        ],
+        "startUsesExistingGround": true
+      }
+    ],
+    "routeWorld": [
+      {
+        "x": 439.905,
+        "y": 31.630833354872966,
+        "z": -252.472
+      },
+      {
+        "x": 441.9287360004959,
+        "y": 32.38389415280125,
+        "z": -255.02355836317588
+      },
+      {
+        "x": 444.9013007260935,
+        "y": 33.05229387822261,
+        "z": -256.18388545160093
+      },
+      {
+        "x": 447.20374760323205,
+        "y": 34.067644771834125,
+        "z": -259.69653948778995
+      },
+      {
+        "x": 450.4929574277156,
+        "y": 35.51814604842198,
+        "z": -264.7146166823457
+      },
+      {
+        "x": 453.7821672521992,
+        "y": 36.57423938494391,
+        "z": -269.73269387690146
+      },
+      {
+        "x": 454.8785705270271,
+        "y": 36.80013320602562,
+        "z": -271.40538627508676
+      },
+      {
+        "x": 460.54,
+        "y": 37.10992423919846,
+        "z": -269.78
+      }
+    ],
+    "parts": 366,
+    "triangles": 9184,
+    "renderMeshes": 2,
+    "textureCount": 1,
+    "limitations": [
+      "사진의 낮은 시설을 원본 작은 건물과 동일하다고 확정하지 않았다.",
+      "보도와 벽의 치수, 식재 개수와 수종은 게임용 근사다.",
+      "220동 출입문과 높은 보행면까지의 연결은 새로 만들지 않았다."
+    ]
+  },
+  "verification": {
+    "checks": [
+      {
+        "file": "artifacts/living-science-test/results.json",
+        "sha256": "b70fe9e0eca8e7ecff7270c54e0556aa293d888301356f1b88ff3043ea7967e1",
+        "passed": 15,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-health-test/results.json",
+        "sha256": "53475750cc9c2fc74439718a67387534125abcfefef178bb198744d0c0fe5de8",
+        "passed": 15,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-passage-test/results.json",
+        "sha256": "01ce22c1d1392b1e25afadcda81d8e772612c9ae8622590bf6975c7d85a38ce4",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "7e20c02d5b8d0b5882b0012a2791ee62e3414c88c723a7305e7e3b4d6827c261",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "51986da7274cdf3e94869d9769a005b4cd187197458e1f8f4bd25c34f146ea99",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/runtime-coordinates/results.json",
+        "sha256": "dfd081f58666cd869d0c11cc198e3f8d677098954037a4e7c331f348d5d0dee8",
+        "passed": 19,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/controls-verification.json",
+        "sha256": "da8121016f8a3e75abe7acf2cdbc3c696f35917ab965aa9409b0712f004697ec",
+        "passed": 31,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/world-presentation-test/results.json",
+        "sha256": "3f48c45628e9313da879a04a849737d176f5eddc94a9dbc22323a955cd0977fa",
+        "passed": 6,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-provenance-test/results.json",
+        "sha256": "d200ef8733a83e29643921015f8d49d5aada0e6b166e6197cfb322eb8c743847",
+        "passed": 11,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-supplements-test/results.json",
+        "sha256": "810fb80d9569a7adf38bef155426b58729535423caf6032545e81cc30966911b",
+        "passed": 16,
+        "failed": 0
+      }
+    ],
+    "totalPassed": 136,
+    "siteGeometrySelfChecks": {
+      "passed": 5,
+      "failed": 0
+    },
+    "fullScenePassage": {
+      "file": "artifacts/living-science-passage-test/results.json",
+      "sha256": "01ce22c1d1392b1e25afadcda81d8e772612c9ae8622590bf6975c7d85a38ce4",
+      "passed": 5,
+      "sourceHashesMatch": true
+    },
+    "browser": {
+      "reviewedAt": "2026-11-05T14:34:02.513Z",
+      "reviewer": "root",
+      "method": "Playwright CLI와 실제 Chrome WebGL 화면을 저장한 뒤 아홉 장을 직접 열람했다.",
+      "sourceSha256": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+      "previewSha256": "2a6de939217129d93b6f2605a80186497d4424da1bf14d10bd7ea98d1f57c80c",
+      "previews": [
+        {
+          "view": "roadviewwide",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/living-science-review/output/playwright/30-final-desktop-roadviewwide.png",
+          "sha256": "461176f0685c32de66b7a88bc297a09c35e3147793f495534b94590176b69bc6",
+          "directlyViewed": true
+        },
+        {
+          "view": "roadviewvent",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/living-science-review/output/playwright/30-final-desktop-roadviewvent.png",
+          "sha256": "1c1da52ecc8eb92e1a9ac4d4f508fbf7abe34bff414a8b958b42c7d9ebb8ab40",
+          "directlyViewed": true
+        },
+        {
+          "view": "walkstart",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/living-science-review/output/playwright/30-final-desktop-walkstart.png",
+          "sha256": "a6c94ddb5b71d0ee180e7561108b61f8d135219c02733f86674190fb69d3785a",
+          "directlyViewed": true
+        },
+        {
+          "view": "walkmiddle",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/living-science-review/output/playwright/30-final-desktop-walkmiddle.png",
+          "sha256": "c1e23921d4bd4f15b15014611a0624ad47d0e99bfe2f5ceaba1258323bed71a4",
+          "directlyViewed": true
+        },
+        {
+          "view": "walkend",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/living-science-review/output/playwright/30-final-desktop-walkend.png",
+          "sha256": "5566f0411db449a7582029bb34fa5615c8fda719dcca4ed3801234df20c9556d",
+          "directlyViewed": true
+        },
+        {
+          "view": "plan",
+          "kind": "desktop",
+          "width": 1920,
+          "height": 863,
+          "file": "artifacts/living-science-review/output/playwright/30-final-desktop-plan.png",
+          "sha256": "33d07b79235d9e446cff1d62134cdac0e2b84d8f208da2d460f864eae0d5a39e",
+          "directlyViewed": true
+        },
+        {
+          "view": "roadviewwide",
+          "kind": "mobile",
+          "width": 390,
+          "height": 844,
+          "file": "artifacts/living-science-review/output/playwright/30-final-mobile-roadviewwide.png",
+          "sha256": "7a90b2d825e68e0738b6191839fe995f4cbd20db2428299fd5bab6ab08a3af18",
+          "directlyViewed": true
+        },
+        {
+          "view": "walkmiddle",
+          "kind": "mobile",
+          "width": 390,
+          "height": 844,
+          "file": "artifacts/living-science-review/output/playwright/30-final-mobile-walkmiddle.png",
+          "sha256": "b7b6ad05e3305b6e20995f621f114313c61405093636b96e0c6779885661ee14",
+          "directlyViewed": true
+        },
+        {
+          "view": "walkend",
+          "kind": "mobile",
+          "width": 390,
+          "height": 844,
+          "file": "artifacts/living-science-review/output/playwright/30-final-mobile-walkend.png",
+          "sha256": "04d30fba7e95125795c3914d58493a700ac38d65a88ac99729e06c8e8872a546",
+          "directlyViewed": true
+        }
+      ],
+      "findings": [
+        "추정 4층 몸체가 사라지고 222동과 220동 사이에 낮은 시설이 보인다.",
+        "보도의 밝고 어두운 사각 블록, 둥근 고리 난간, 두 환기 격자와 가로등이 표시된다.",
+        "식재 받침 아래를 채웠고 보도 양 끝 진입부를 열어 두었다."
+      ],
+      "runtimeErrors": [],
+      "knownConsoleHistory": [
+        "최초 이전 미리보기의 favicon.ico는 404였다. 최종 남쪽 시설 페이지에서 오류 로그는 없었다."
+      ],
+      "limits": [
+        "데스크톱 Chrome 창 크기 검사이며 실제 휴대전화 성능과 터치 검사는 아니다.",
+        "미리보기는 실제 지형과 건물 생성기를 사용하지만 차량과 HUD는 포함하지 않는다.",
+        "토양의 노출 끝면은 단순한 녹색 단면이며 실제 옹벽 끝 접합은 미확인이다.",
+        "220동 지상 현관과 높은 보행면 연결은 아직 빠져 있다."
+      ]
+    }
+  },
+  "sourceSnapshot": {
+    "src/livingScienceSouthSite.ts": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+    "src/observedBuildingOverrides.ts": "7994c60951e1f1a8a7e4db1ee4ae9970b0999f72b708696bdedfc36a0a5651e1",
+    "src/fullCampus.ts": "c34092eadd699f6b057df8d9f8e5a010ee7fed1eaf4b72adf8dbdae7280e0705",
+    "src/minimap.ts": "7a174acf60ec867b04191f9dcb51396bc72c0d43e84bd53a79d7b828a4193e3d",
+    "src/livingScienceLandmark.ts": "a0f8a32bc346f06d2c730737b8a3567cc9796cdc11e73d7ece52ab00b0a30609",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "sources/living-science-adjacent-roadview-review.json": "8e115c10fad413090d44b35a87c9bd00933a6b548dcc038b619e7da0b082fb48",
+    "scripts/verify-living-science-passage.mjs": "64352896592a6e92dcdd52ef136bfb6e7a14ead6205eb1ecd5a110d8061b8ad1"
+  },
+  "limits": [
+    "낮은 사진 시설과 원본 way/455025059의 정확한 동일성은 확인하지 않았다.",
+    "보도, 2단 벽과 난간의 좌표와 높이, 식재 개수와 수종은 게임용 근사다.",
+    "지하 구조의 존재나 소속 건물, 실내 연결을 이 모델로 단정하지 않는다.",
+    "데스크톱 Chrome 창 크기 검사이며 실제 휴대전화 성능과 터치 검사는 아니다.",
+    "미리보기는 실제 지형과 건물 생성기를 사용하지만 차량과 HUD는 포함하지 않는다.",
+    "토양의 노출 끝면은 단순한 녹색 단면이며 실제 옹벽 끝 접합은 미확인이다.",
+    "220동 지상 현관과 높은 보행면은 후속 부분 구현 기록을 참조한다. 북쪽 전체 연결은 여전히 미확인이다.",
+    "시설 앵커, 보도 폭 1.7m, 하단 벽 2.0m와 뒤쪽 벽 1.1m는 게임용 근사다.",
+    "원본 차도 중심선과 추정 폭 5.5m는 유지했다. 실제 도로 폭은 측량하지 않았다."
+  ],
+  "next": "222동 안마당과 북쪽 통과구의 보행 연결을 사진과 대조한다.",
+  "followupGroundEntry": {
+    "reviewedAt": "2026-11-05T15:36:52.144Z",
+    "notes": "sources/education-southwest-entry-model-notes.json",
+    "oldSidewalkEndpointPreserved": true,
+    "verification": {
+      "file": "artifacts/living-science-passage-test/results.json",
+      "sha256": "9ccd6638c25195797b41618c9a22174830dd5d9f0edc4c4e9dd4d6445200c685",
+      "passed": 5,
+      "failed": 0
+    }
+  },
+  "verificationScope": "verification과 sourceSnapshot은 남쪽 보도를 만든 30판 기록이다. 후속 220동 현관 연결과 그 검사는 followupGroundEntry를 참조한다."
+}

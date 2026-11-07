@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "status": "integrated-partial-roadview-approximation",
+  "reviewedAt": "2026-11-05T21:23:10.800Z",
+  "buildingId": "way/167983986",
+  "scope": "76동 동측 계단, 북쪽 보행 연결과 옆 갈림길의 높은 참, 흰 보와 난간을 구현했다. 전체 입면과 상단 출입문은 완료하지 않았다.",
+  "roadviewReview": "sources/dining76-east-roadview-review.json",
+  "observationOrder": [
+    "2025년 7월 카카오 거리뷰 세 촬영점을 먼저 대조했다.",
+    "갈색 측벽과 회색 디딤판, 금속 난간 및 흰 구조를 확인했다. 상부 바닥은 수목에 가렸고 지도 화면에 촬영선이 없었다.",
+    "원본 지도 /87, /33, /83의 연결을 보존하고 사진 비례에 맞춘 게임용 치수로 구현했다."
+  ],
+  "implementation": {
+    "layout": {
+      "buildingId": "way/167983986",
+      "sourceRoad": "way/185937119/87",
+      "upperRoad": "way/167609545/33",
+      "sideRoad": "way/185937115/83",
+      "sourceNodeIds": [
+        "1966229953",
+        "1789931904"
+      ],
+      "origin": [
+        655.56,
+        -659.95
+      ],
+      "upper": [
+        663.63,
+        -649.29
+      ],
+      "axis": {
+        "x": 0.6035840493663799,
+        "z": 0.7972993762386145
+      },
+      "across": {
+        "x": -0.7972993762386145,
+        "z": 0.6035840493663799
+      },
+      "length": 13.370134629090408,
+      "junction": [
+        666.17,
+        -645.97
+      ],
+      "northBend": [
+        675.96,
+        -633.17
+      ],
+      "northEnd": [
+        694.13,
+        -618.84
+      ],
+      "sideEnd": [
+        659.53,
+        -641.3
+      ],
+      "datumAnchor": [
+        655.56,
+        -659.95
+      ],
+      "baselineDatumMeshY": 56.86780990097431,
+      "activeFootprintAnchor": [
+        636.23,
+        -637.79
+      ],
+      "lowerRoadPoints": [
+        [
+          649.8,
+          -670.21
+        ],
+        [
+          655.56,
+          -659.95
+        ]
+      ],
+      "lowerRoadProtectedHalfWidth": 2.8,
+      "lowerRoadProtectedExtension": 1.3,
+      "preservedWestRoadPoints": [
+        [
+          607.83,
+          -644.89
+        ],
+        [
+          626.18,
+          -656.11
+        ],
+        [
+          641.47,
+          -665.79
+        ],
+        [
+          649.8,
+          -670.21
+        ]
+      ],
+      "lowerFloor": 56.89999850530414,
+      "upperFloor": 61.379998505304144,
+      "stairStart": 2.2,
+      "stairEnd": 11.72,
+      "stepCount": 28,
+      "stepRise": 0.16,
+      "tread": 0.34,
+      "halfWidth": 2.4,
+      "sidewallWidth": 0.55,
+      "upperPathWidth": 3.2,
+      "sidePathWidth": 3.2,
+      "terrainBelowFloor": 0.18,
+      "upperPath": [
+        [
+          663.63,
+          -649.29
+        ],
+        [
+          666.17,
+          -645.97
+        ],
+        [
+          675.96,
+          -633.17
+        ],
+        [
+          694.13,
+          -618.84
+        ]
+      ],
+      "upperPathFloors": [
+        61.38,
+        61.38,
+        62.1,
+        63.900274
+      ],
+      "sidePlatform": {
+        "s0": 15.65,
+        "s1": 19.15,
+        "n0": 1.6,
+        "n1": 9.3,
+        "terrainUnfilled": true
+      },
+      "outer": {
+        "s0": 1.3,
+        "s1": 56.057214,
+        "n0": -10.8,
+        "n1": 5.2
+      },
+      "dimensionsEstimated": true,
+      "upperConnectionsObservedContinuously": false,
+      "buildingDoorAdded": false,
+      "datumOffset": -0.0000014946958586392611,
+      "correctionBounds": {
+        "minX": 652.1987025077354,
+        "maxX": 698.0060734856946,
+        "minZ": -665.4322185440468,
+        "maxZ": -612.1169811874204
+      },
+      "sourceScope": {
+        "stairMaterialAndSidewallsObserved": true,
+        "whiteBeamAndUpperRailingObserved": true,
+        "actualStepCountKnown": false,
+        "upperFloorConnectionHiddenByTrees": true,
+        "source83EndIsEntrance": false,
+        "rearFacadeComplete": false
+      }
+    },
+    "geometry": {
+      "parts": 514,
+      "triangles": 6586,
+      "mergedMeshes": 2,
+      "textures": 1
+    },
+    "features": [
+      "회색 디딤판과 밝은 앞모서리, 갈색 측벽과 안쪽 금속 난간",
+      "판석 줄눈을 표현한 상단 참과 북쪽 보행로",
+      "흰 보와 기둥, 상부 금속 난간 및 별도 낮은 공간",
+      "낮은 흰 식재 경계와 관목",
+      "직접 판독한 장애인편의시설 안내도 제목과 읽는 방향 수정"
+    ],
+    "paving": "줄눈은 작은 반복 텍스처를 사용한다. 돌 하나마다 별도 메시를 생성하지 않는다.",
+    "upperConnectionsObservedContinuously": false,
+    "buildingDoorAdded": false,
+    "lowerOpeningPurposeConfirmed": false,
+    "sign": {
+      "heading": "장애인편의시설 안내도",
+      "observedHeading": true,
+      "currentMapBasedSchematic": true,
+      "photographedMapCopied": false
+    },
+    "traffic": {
+      "existingGraphAndBusCurvesUnchanged": true,
+      "adjacentTaxiTurnsChecked": true
+    },
+    "rawDataPreserved": true,
+    "commonPhysicsPreserved": true
+  },
+  "verification": {
+    "checks": [
+      {
+        "file": "artifacts/dining76-east-access-test/results.json",
+        "sha256": "20e3311def8352454ec85c0557032d422e2cf7c2940e703633705a5e1e4d8223",
+        "passed": 7,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/dining76-access-test/results.json",
+        "sha256": "ce430cbf22e08e95c4a3046e4c65b019236e91a4130bad9dd88dbb9225346435",
+        "passed": 9,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/terrain-verification.json",
+        "sha256": "262db676f82c6e50a0c78e9ac092f33071e9b33dbb1100b203101730b807a9e4",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/family-terrain-test/results.json",
+        "sha256": "045a76884f294dc0dd61a73cc39d42d5ce9891b7a38f83a00972acc9e5152128",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "db0958b37c355da82333c540372315056a6f98bad34729fdc8e3a8bdb5ef2ff9",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "1d78c8216bd20512bc9d16e8d97468f922463913fc8ebabc51ba963c6676a915",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/humanities-passage-access-test/results.json",
+        "sha256": "4dcb7d8dd35fb345778a2cdbab76f2b43a343ca38a4d95552198d1882737aed8",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-parking-access-test/results.json",
+        "sha256": "acebc13f91b7a0e576634fb6ff4bdbe1a988686ef40fc0c0078b787352995cae",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-north-access-test/results.json",
+        "sha256": "7ce90b55ac78573aca8ee475cb8897aba1588a8e3dbc902ba92c4055c82fa946",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/engineering31-30-test/connection-results.json",
+        "sha256": "07a2119c6491d827cf0259cdf10e1f1f437cc8a6c545a53625e7f396694111e2",
+        "passed": 4,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/engineering301303-connection-test/results.json",
+        "sha256": "25c4ac2588f3283786acdbf22a4fa501b51530bfa0b250d75d5081bf829ff55e",
+        "passed": 19,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/traffic-verification.json",
+        "sha256": "036bf4856369a26bb6467f76c7a0aaae739b5e69e855f36def161174a7c1b1f1",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/transit-test/results.json",
+        "sha256": "64ccf32f8651ce8434ff06f64032fbda67739bec848ca19a01c8c3a2cc939288",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/controls-verification.json",
+        "sha256": "730f7578ecb98b4710a14f0664f73ef512000aba30afde7487b4b5321d21b2df",
+        "passed": 31,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/shuttle-starts/results.json",
+        "sha256": "dc0044ba1a43f2582d55df0081bd45d0899db4902a68fa7d545a0c5cd228e1fd",
+        "passed": 15,
+        "failed": 0
+      }
+    ],
+    "passed": 150,
+    "failed": 0,
+    "browser": {
+      "file": "artifacts/dining76-east-review/37-browser-review.json",
+      "sha256": "f111d00680e6a0899c8f895e40afe14592981a3cde1218ad5d2c4180938fb9d4"
+    },
+    "physicalPhoneTested": false
+  },
+  "limits": [
+    "28단, 단높이 16cm와 폭 4.8m는 사진 비례 및 게임 동선에 맞춘 근사다. 현장 실측값이 아니다.",
+    "지도 /83과 흰 상부 구조의 정확한 대응, 상단 바닥과 실제 출입문은 미확인이다. 새 문이나 실내 목적지를 만들지 않았다.",
+    "흰 보 아래 공간의 실제 기능은 미확인이다. 게임 속 낮은 바닥을 구현한 사실과 현장 통로 확인을 구분한다.",
+    "현재 영업장 이름과 간판은 확인하지 못했다. 안내판 내부는 사진 전사가 아닌 게임 지도 기반 약도다.",
+    "건물 전체 입면과 후면은 미완료다.",
+    "206개 건물 행 중 거리뷰 부분 관측은 20개이며 전체 대조 완료 건물은 아직 없다."
+  ],
+  "next": [
+    "76동의 나머지 입면과 실제 입점 시설 자료를 확인한 뒤 외관과 간판을 보완한다.",
+    "상부 길과 건물 사이의 가려진 부분은 추가 현장 사진을 찾아 대조한다.",
+    "남은 캠퍼스 구역도 거리뷰를 먼저 확인하고 연결 구조와 주변 시설을 보완한다."
+  ],
+  "sourceHashes": {
+    "src/dining76EastSite.ts": "d11594743ec0c4d8b857b5f3d673eeb49c98f5004174fdffb9903e6950cea7af",
+    "src/dining76EastTerrain.ts": "a27b00b47b82964a57c77648996cc17a53716ccea755aff699ce2706b168f49e",
+    "src/dining76EastApproach.ts": "0476d53caa6effdf28f91e6c40433719599b3cff5f5e846e28928b9db57b2a21",
+    "src/dining76Approach.ts": "821cf82592322f15a0e306b9ae715ed67242f191aa14cd7c2e9378852c67af04",
+    "src/terrain.ts": "32ffc908e07d955604c4f771e60786f13143ba6698740432a794313fbd0b4098",
+    "src/fullCampus.ts": "cbf7343a72dd347f06344cdca4636fbb20f5dceff584c826ad45e833b2fc80af",
+    "scripts/verify-dining76-east-access.mjs": "77ec825bb37fb3f71725cfa514dd09a9e4ee4d735f5d73efcc7ec7176036464a",
+    "sources/dining76-east-roadview-review.json": "e4a3a7bcf2f1a32c2c1270fd25cdb28028849ee70b31a8737ceab014a922f3c7",
+    "sources/campus-accessibility-reference.json": "4368a9384951dd848c6e6644ef090092af8e4318c6a04b8a5798ad7fb2d71fe3"
+  },
+  "unchangedHashes": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "public/data/campus-transit.json": "b76619a0cf01338994b98e9bab997a4ae6d90875b2b57a6d23bb085317c4f5b4",
+    "public/data/transit-facilities.json": "ab9b030046d0c4028422bdb0ff1db81ab6b844e67a43de1f1ddec4b1cb72efca",
+    "public/data/shuttle-stops.json": "8233cbe722f90665ea9fcc4b864f25557404aa6b23d7ceb1d1cceb0861ed6356",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/main.ts": "7ed609031916a2e23e6abf1f01467f26253f93160f458ddf283f25562b98b84a",
+    "src/controls.ts": "493c27adaeef90fe96aec523d94d522d4d663e66e265ce7429f99d2d3f2296aa",
+    "src/traffic.ts": "eb013f7cf6eb849a094fe2dc5f23c0bde59fe5778dbee113f5b195cb3d5b6880",
+    "src/dining76Site.ts": "3310688d3d5908b13d4ecf2bc3d235aaf606688b5354f12bb7d6c14c511b2e93",
+    "src/dining76Terrain.ts": "f7923a1b4a81f22822f94c8149f9c88c6418b60ed5c03de8863388be9f360d94"
+  },
+  "localResearch": {
+    "file": "artifacts/dining76-east-review/37-root-research.json",
+    "sha256": "fce2890510df927a6153f3eb8f0ae412e84b41559bdcdcaca7f2f8cc7f6761a5"
+  }
+}

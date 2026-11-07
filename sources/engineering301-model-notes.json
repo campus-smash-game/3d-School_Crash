@@ -1,0 +1,391 @@
+{
+  "buildingId": "way/228476658",
+  "buildingNumber": "301",
+  "name": "제1공학관",
+  "status": "integrated-partial",
+  "sources": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=187",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000178.jpg",
+      "localFile": "../references/buildings/photos/187-301.jpg",
+      "directlyViewed": true,
+      "observation": "탑의 푸른 반사 유리와 촘촘한 격자, 깊은 세로 슬롯을 확인했다. 사진의 하늘 반사색을 자재의 측정 색상으로 보지 않는다."
+    },
+    {
+      "url": "https://eng.snu.ac.kr/sites/default/files/서울공대 2016년 101호-여름.pdf",
+      "localFile": "artifacts/engineering301-review/eng-news-2016.pdf",
+      "observation": "공식 소식지의 301동 전경에서 남쪽 높은 탑, 북쪽 저층부, 길게 이어진 배럴 유리 지붕, 북단의 세로 곡면과 경사 유리, 상부 삼각 가새를 확인했다.",
+      "pdfPage": 80,
+      "directlyViewedRender": "artifacts/engineering301-review/eng-2016-301-exterior.png"
+    },
+    {
+      "url": "https://eng.snu.ac.kr/sites/default/files/gongdaesangsang1ho-seouldaegongdae_iyagi-2012-9.pdf",
+      "localFile": "artifacts/engineering301-review/eng-photo-2012.pdf",
+      "observation": "5쪽은 301동 꼭대기를 15층으로 설명한다. 40쪽 전경과 41쪽 위 내부 사진은 높은 탑과 낮은 날개, 열린 아트리움과 회랑 및 연결 통로를 보여 준다. 41쪽 아래의 붉은 X 가새 건물은 302동이므로 적용하지 않았다.",
+      "directlyViewedPages": [
+        5,
+        40,
+        41
+      ]
+    },
+    {
+      "url": "https://eng.snu.ac.kr/communication/notice/notice?bbsidx=1811&fileidx=2275&md=down",
+      "localFile": "artifacts/engineering301-review/deck-plan-2023.pdf",
+      "observation": "2쪽 항공사진에서 저층부의 긴 배럴 지붕과 양옆 평지붕, 북쪽의 경사 유리 지붕을 확인했다. 공사 표시선을 원본 건물 외곽으로 쓰지 않았다.",
+      "directlyViewedPages": [
+        2
+      ]
+    },
+    {
+      "url": "https://eng.snu.ac.kr/sites/default/files/notice/제35회 항공우주전 초대장.pdf",
+      "localFile": "artifacts/engineering301-review/exhibition-2022-official.pdf",
+      "observation": "2쪽 공식 항공우주전 안내는 북문을 B1으로 표시하고 1층 전시 복도에서 내려가는 계단을 안내한다. 실제 층고와 문턱 고도는 확인되지 않는다.",
+      "pdfPage": 2
+    },
+    {
+      "url": "https://cse.snu.ac.kr/api/v1/file/1695914765530_%5B%EB%B6%99%EC%9E%84%5D%20%EA%B4%80%EC%95%85%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EC%A0%84%EA%B8%B0%EC%B0%A8%20%EC%B6%A9%EC%A0%84%EA%B8%B0%20%EC%9D%B4%EC%9A%A9%EC%95%88%EB%82%B4%20%282%29.pdf",
+      "localFile": "artifacts/engineering301-review/basement-ev-plan-cse.pdf",
+      "observation": "41쪽 지하 1층 전력 간선 평면은 외곽과 중앙의 굽은 계단을 보여 준다. 해상도가 낮아 치수와 방위를 정확히 읽지 못했으므로 계단의 실측 도면으로 사용하지 않았다.",
+      "pdfPage": 41
+    },
+    {
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=75736&md=v",
+      "observation": "2009년 공식 기사의 73.4 m는 지하층을 포함한 높이다. 같은 문단의 고도 수치가 단순 합과 일치하지 않아 지상 높이로 환산하지 않았다."
+    }
+  ],
+  "confirmedAndEstimated": {
+    "confirmed": [
+      "공식 자료의 탑 최고 사용층은 15층이다. 저층부까지 15층이라는 뜻은 아니다.",
+      "북문은 공식 안내상 B1이며 1층에서 내려가는 동선이 있다.",
+      "남쪽 높은 탑과 북쪽 낮은 날개, 중앙 유리 아트리움, 북단 경사 유리와 열린 상부 가새는 공식 사진에서 확인된다."
+    ],
+    "estimated": [
+      "52.5 m는 지상 최고부의 모델 추정값이다. 공식 73.4 m를 지상 높이로 사용하지 않았다.",
+      "저층부의 세 창 띠는 사진의 상대 구성이다. 공식 지상 3층 또는 최고층을 확정한 값이 아니다.",
+      "탑과 저층부의 분할선, 슬롯 깊이와 간격, 지붕 곡률, 실내 회랑 폭, 북문 후퇴 깊이와 계단 치수는 추정이다.",
+      "현재 DEM의 고저차를 실제 현장의 고저차나 B1 층고로 해석하지 않는다."
+    ]
+  },
+  "geometry": {
+    "rawOutline": {
+      "uniquePoints": 18,
+      "holes": 0,
+      "preserved": true,
+      "mapAndDemUnchanged": true,
+      "sourceIds": [
+        "public/data/campus.json",
+        "public/data/terrain.json"
+      ]
+    },
+    "coordinateConvention": "논리 좌표는 D=(동,위,북)이다. 모델 생성과 물리 캡처 후 부모 world가 H=(x,y,-z)를 한 번 적용한다. 원본 지도점과 개별 건물을 따로 반사하지 않는다.",
+    "localOrigin": {
+      "x": 339.12,
+      "z": -1768.53,
+      "description": "원본 북단 8번점이다. y는 원본 외곽점 평균 위치에서 heightAt으로 읽는다."
+    },
+    "axis": {
+      "x": 0.9999102084039181,
+      "z": 0.013400564526657225
+    },
+    "heightDatum": {
+      "sampleX": 349.4772222222222,
+      "sampleZ": -1851.0766666666668,
+      "currentValue": 156.65866088867188,
+      "surveyed": false
+    },
+    "tower": {
+      "northCutZ": -80.9,
+      "mainRoofHeight": 49.5,
+      "crownTopHeight": 52.5,
+      "levels": 15,
+      "modelStoreyHeight": 3.3,
+      "allMeterDimensionsEstimated": true,
+      "note": "동쪽 4/5번점의 폭 변화와 서쪽 11~14번점의 오목부를 보존한다. 서쪽 오목부 전체를 별도 낮은 연결부로 넓히지 않았다."
+    },
+    "lowWing": {
+      "southZ": -79.6,
+      "northMainWallZ": -8,
+      "roofHeight": 10.8,
+      "windowBands": 3,
+      "maximumFloorsVerified": false
+    },
+    "atrium": {
+      "centerX": 17.536574637026465,
+      "radiusX": 5.8,
+      "archRise": 4.4,
+      "rimHeight": 10.8,
+      "zRange": [
+        -79.6,
+        -8
+      ],
+      "floorHeightAboveDatum": 0.34441831933174855,
+      "centralClearWidth": 7.9,
+      "galleryWidths": 1.85,
+      "galleryHeightsAboveFloor": [
+        3.6,
+        7.2
+      ],
+      "crossBridgeZ": [
+        -30,
+        -62
+      ],
+      "roofPanels": 130,
+      "note": "배럴 유리가 덮인 아트리움이다. 열린 중정으로 분류하지 않는다. 중앙을 층마다 막는 바닥이나 큰 상자 충돌체를 만들지 않았다. 교차 통로와 회랑의 위치는 내부 사진을 참고한 근사다."
+    },
+    "slots": {
+      "count": 4,
+      "width": 1.8,
+      "depth": 1.45,
+      "note": "후퇴 유리와 양옆 벽을 나누며 슬롯 앞 전체를 상자 하나로 막지 않는다. 사진에서 보이지 않는 모든 면의 정확한 슬롯 개수는 미확인이다."
+    },
+    "crown": {
+      "cells": 6,
+      "northZ": -80.9,
+      "xRange": [
+        14,
+        33
+      ],
+      "bottom": 49.5,
+      "top": 52.5,
+      "note": "각 대각 가새와 수평 보에 개별 볼록 충돌체를 둔다. 빈 셀은 지붕이나 외피로 덮지 않는다."
+    },
+    "materials": {
+      "towerGlass": "buildingAppearance의 301동 glassColor를 사용한다.",
+      "towerFrames": "buildingAppearance의 frameColor를 사용한다.",
+      "barrelGlass": 9090481,
+      "sourcePhotosUsedAsTextures": false,
+      "note": "색은 사진 관찰을 참고한 근사이며 반사율, 풍화와 조명은 실측하지 않았다."
+    }
+  },
+  "access": {
+    "officialLevel": "B1",
+    "door": {
+      "localX": 17.536574637026465,
+      "localZ": -2,
+      "width": 5.4,
+      "height": 3.05,
+      "worldFloor": 151.46307920800362,
+      "facadeSetback": 2
+    },
+    "forecourt": {
+      "depth": 2,
+      "gameApproximation": true
+    },
+    "interior": {
+      "levelDifference": 5.54,
+      "lobbyDepth": 2,
+      "connectionLength": 10,
+      "steps": 20,
+      "stepRise": 0.277,
+      "tread": 0.5,
+      "atriumFloor": 157.00307920800364,
+      "note": "5.54 m 차이와 내부 20단은 보존한 게임 DEM을 통과하는 연결부다. 실제 B1과 1층의 층고 또는 현장 계단 단수로 보지 않는다."
+    },
+    "exterior": {
+      "sourceWay": "way/481915895/424",
+      "nodes": [
+        [
+          -6.2958019046,
+          -83.2231054358
+        ],
+        [
+          -7.24374,
+          -12
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          17.536574637026465,
+          -1
+        ]
+      ],
+      "width": 2,
+      "length": 101.51223295800816,
+      "steps": 186,
+      "turnLandings": 2,
+      "targetMaximumRise": 0.25,
+      "targetTread": 0.55,
+      "maximumTerrainOffset": 5.360197228974926,
+      "measuredConstruction": false,
+      "note": "서쪽 지도 보행 계단을 따라 판을 두고 북쪽 후퇴 공간으로 연결했다. 현재 DEM의 급한 횡경사를 그대로 걸을 수 없어 계단 높이를 조정했다. 실제 계단 복원이 아니며 일부 판은 현재 지표보다 크게 높다. 차도와 주변 건물을 이동하거나 지형을 깎지 않았다."
+    },
+    "discardedCandidates": [
+      "북쪽에서 바로 오르는 경로는 현재 DEM의 45도 초과 경사를 통과하지 못했다.",
+      "폭 4 m 전면 계단은 service road 132와 겹쳐 폐기했다.",
+      "폭 0.8 m 모서리 우회는 플레이어 지름 0.7 m에 비해 좁아 채택하지 않았다.",
+      "첫 0.4 m 디딤판안은 가장자리 보행에서 연속 단에 막혀 약 0.55 m 디딤판으로 고쳤다."
+    ],
+    "xzConflictReview": {
+      "file": "artifacts/engineering301-review/recessed-access-conflicts.json",
+      "samples": 108120,
+      "drivingRoadOverlap": 0,
+      "neighborFootprintOverlap": 0,
+      "minimumDrivingRoadClearance": 1.3639034573461268,
+      "scope": "실제 계단판과 사각 계단참 삼각형의 도로 여유는 1.36390 m다. 초기 후보 폴리라인의 폭 표본에서는 1.73979 m였으며 검사 대상이 다르다. 도로 폭과 이웃 윤곽은 현재 지도 근사값이므로 현장 연석의 실측 여유가 아니다.",
+      "actualMeshTriangleMinimumClearance": 1.3639034573461268,
+      "actualMeshMethod": "후속 독립 검사에서 실제 계단판과 사각 계단참 삼각형을 도로 구간 및 이웃 다각형과 대조했다. 초기 중심 경로의 폭 표본과 검사 대상이 다르다.",
+      "candidatePolylineMinimumClearance": 1.73979
+    }
+  },
+  "renderAndDestruction": {
+    "mergedMeshes": 3,
+    "breakableParts": 1668,
+    "triangles": 33666,
+    "facadeTypicalBayMeters": 5.5,
+    "barrelCurveSegments": 10,
+    "note": "창 격자를 얇은 노출면으로 만들고 층별 작은 bay를 각각 파괴한다. 유리 곡면은 패널별 볼록 충돌체를 쓴다. 유리 위 장식 프레임은 같은 파괴 부품에 포함하되 유리 충돌체를 부풀리지 않는다.",
+    "distanceBehavior": "거리와 관계없이 남은 부품만 표시한다. 원거리에서 완전한 외피를 다시 만들지 않으며 초기화는 저장한 정점 배열을 복원한다.",
+    "mobileLimit": "세 메시와 삼각형 수는 CPU 기하의 비용 지표다. 실제 휴대전화 FPS나 WebGL 성능을 측정한 결과가 아니다. 물리 부품은 공용 거리 스트리밍을 따른다."
+  },
+  "validation": {
+    "typecheck": "npx tsc --noEmit 통과",
+    "reproduction": "node scripts/verify-engineering301.mjs",
+    "ownTests": {
+      "passed": 12,
+      "failed": 0,
+      "sourceHash": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef",
+      "testHash": "065163ded7e222e9043d2edd32ee71c64c204c55e2a4588bbc84d0a338036c5c",
+      "resultFile": "artifacts/engineering301-test/results.json",
+      "glassSamples": 23870,
+      "minimumGlassTerrainClearance": 0.16995357098824115,
+      "atriumFloorSamples": 1216,
+      "minimumAtriumFloorClearance": 0.2549163885947223,
+      "approachSurfaceSamples": 2926,
+      "minimumApproachClearance": 0.1299713287308748,
+      "accessRays": 209,
+      "maximumLoadedUnloadedDifference": 0.00008723735808757738,
+      "coincidentStepThresholdTies": 8,
+      "coincidentTieExplanation": "8개 광선은 같은 높이로 겹치는 계단판과 문턱의 표적 선택이 달랐다. 실제 두 프록시 교차가 0.0005 m 이내로 일치함을 별도로 확인했다. 물리 광선 누락이나 서로 다른 면의 불일치를 제외한 것은 아니다.",
+      "walking": {
+        "speed": 6,
+        "lateralOffsets": [
+          -0.45,
+          0,
+          0.45
+        ],
+        "roundTripPaths": 6,
+        "doorClosedStops": true,
+        "destroyedDoorEntersAtrium": true,
+        "startsOnActualTerrainBeforeFirstStep": true
+      },
+      "damageReset": {
+        "partialDistances": [
+          279,
+          281,
+          900
+        ],
+        "resetCycles": 3,
+        "completeDestruction": true,
+        "exactBufferRestore": true
+      },
+      "singleH": true,
+      "datumOffsetTest": 50,
+      "accessIterationEvidence": "artifacts/engineering301-review/access-iteration-review.json"
+    },
+    "independent": {
+      "status": "18-passed",
+      "resultFile": "artifacts/engineering301-independent-review/results.json",
+      "modelHash": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef",
+      "modelChecksPassed": 15,
+      "modelChecksFailed": 0,
+      "glassSamples": 51150,
+      "minimumGlassTerrainClearance": 0.14892700967266137,
+      "externalVerticalGlassRays": 71,
+      "maximumVerticalGlassPhysicsDifference": 0.03356761932369684,
+      "curvedGlassRays": 37,
+      "maximumCurvedGlassPhysicsDifference": 0.0001375854015425726,
+      "northSlopedGlassRays": 7,
+      "maximumNorthSlopedPhysicsDifference": 0.00018862605090341766,
+      "crownOpenRays": 49,
+      "crownMemberRays": 14,
+      "maximumCrownMemberPhysicsDifference": 0.0005479335785027462,
+      "actualAccessTriangleRoadClearance": 1.3639034573461268,
+      "neighborFootprintOverlap": 0,
+      "approachWalkingSpeed": 6,
+      "approachOffsets": [
+        -0.45,
+        0,
+        0.45
+      ],
+      "startsOnSourceFootwayTerrain": true,
+      "closedAndDestroyedDoorChecked": true,
+      "atriumWalkingLegs": 6,
+      "atriumAirFrames": 0,
+      "initialLoadedTargets": 554,
+      "initialWorldBodiesIncludingPlayer": 555,
+      "scope": "현재 모델의 실제 기하와 원본 DEM, Rapier 캡슐 및 광선을 대조했다. 실제 현장, 브라우저와 휴대전화 검사는 아니다.",
+      "integrationIssue": {
+        "status": "fixed-and-verified",
+        "description": "첫 계단 안에 놓이던 기존 빠른 이동점을, 연결된 footway 423의 끝점에서 이전점 방향으로 2 m 이동한 지면으로 옮겼다. 모델 형상과 DEM은 그대로 유지했다.",
+        "oldPosition": {
+          "x": 333.93097001544265,
+          "z": -1851.4920032237667
+        },
+        "priorInitialPenetration": 0.158705,
+        "priorStationary120FramesPenetration": 0.145888,
+        "newPosition": {
+          "x": 333.951039,
+          "z": -1853.82997
+        },
+        "sourceWay": "way/481915893/423",
+        "initial30And120FramesPenetrations": 0,
+        "forwardDistance": 5.90663,
+        "returnDistance": 5.99552,
+        "failureEvidence": "artifacts/engineering301-independent-review/fast-travel-failure.json"
+      },
+      "integrationChecksPassed": 3,
+      "integrationChecksFailed": 0,
+      "totalChecksPassed": 18,
+      "supplementalResultFile": "artifacts/engineering301-independent-review/supplemental-results.json",
+      "fullCampusHash": "20fb5545b0fc2418c4e908a9cb78bc1515bd2b255ad29c52388f8b7979769f9a",
+      "spriteLabel": {
+        "text": "301 제1공학관",
+        "singleHProjectionAndUvChecked": true
+      },
+      "integratedDamageReset": true,
+      "summaryFile": "artifacts/engineering301-independent-review/summary.json",
+      "summaryHash": "187aa5b7c6afef759c7a3c4277af4b45394f241195a268d074871e8486f79789",
+      "executionInputsVerified": 39,
+      "preservedArtifactHashesVerified": 15,
+      "photoReview": "artifacts/engineering301-independent-review/photo-review.json"
+    },
+    "cpuPreview": {
+      "files": [
+        "artifacts/engineering301-review/final-engineering301.png",
+        "artifacts/engineering301-review/final-engineering301-roofs.png"
+      ],
+      "provenance": "artifacts/engineering301-review/final-preview-provenance.json",
+      "modelHash": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef",
+      "directlyViewed": true,
+      "observations": "높은 남쪽 탑과 긴 북쪽 저층부, 북단 경사 유리, 긴 배럴과 서쪽 오목부, 상부 가새, 푸른 탑 유리와 옅은 배럴 색이 구분된다. 추가 고각도에서도 배럴의 위치와 낮은 옆 지붕을 확인했다.",
+      "limits": "CPU 정사영이며 WebGL, PBR, 반사, 그림자, 실제 폰 화면을 재현하지 않는다. 낮은 정면과 측면은 앞 지형이 가리는 범위가 있어 현장 시야와 일치한다고 단정하지 않는다.",
+      "photoReview": "artifacts/engineering301-independent-review/photo-review.json",
+      "integrationChangeAfterPreview": "미리보기 생성 뒤 공용 fullCampus의 빠른 이동 좌표만 바뀌었다. 모델 소스와 렌더 기하는 같은 ddf3d1ed를 유지한다."
+    },
+    "rawHashes": {
+      "campus": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+      "terrain": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "terrainSource": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5"
+    },
+    "fullSuite": {
+      "scripts": 35,
+      "passed": 334,
+      "failed": 0,
+      "exitCode": 0,
+      "logFile": "artifacts/release-verification.log",
+      "logHash": "11b06699d95700f377278529121ad39c72f139bbf92267554856016c1cdca940",
+      "scope": "현재 소스의 Node 기하 및 Rapier 회귀 검사다. 브라우저 렌더링과 휴대전화 성능 검사가 아니다."
+    }
+  },
+  "limitations": [
+    "정확한 준공 입면도와 지상 높이 측량값을 확보하지 못했다. 52.5 m와 부분별 치수는 추정이다.",
+    "아트리움의 회랑과 연결 통로는 내부 사진을 참고한 단순화다. 실제 흰 곡선 지지대, 굽은 내부 계단과 상세 난간, 내부 실 배치는 완전히 복원하지 않았다.",
+    "북쪽 하부 유리의 2 m 후퇴와 길이 약 101.5 m 접근 계단은 현재 게임 지형에서 보행을 잇기 위한 근사다. 현장 시공 상태와 동일하다고 주장하지 않는다.",
+    "저층부의 정확한 최고층 수와 일부 가려진 입면은 확인되지 않는다.",
+    "2024년 해동첨단공학관 연결 데크의 정확한 접속 층과 위치를 확인하지 못해 이번 모델에 추가하지 않았다.",
+    "유리 프레임 장식과 충돌면은 수 cm 차이가 날 수 있다. 창 표면과 빈 공간은 실제 삼각형 및 Rapier 광선으로 확인한다.",
+    "공식 사진은 관찰 자료로만 사용했고 게임에 원본 사진을 텍스처로 넣지 않았다."
+  ]
+}

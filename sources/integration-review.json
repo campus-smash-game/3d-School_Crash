@@ -1,0 +1,4149 @@
+{
+  "reviewedAt": "2026-11-04T20:30:16.160Z",
+  "status": "read-only-integration-review",
+  "scope": "공용 factory, 외관 설정, 지형, 물리 스트리밍과 이번 특수 모델의 연결을 읽기 전용으로 검토했다. 이번 검토에서 실행 코드를 변경하지 않았다.",
+  "sourceSnapshot": {
+    "hashAlgorithm": "SHA-256",
+    "files": [
+      {
+        "path": "public/data/campus.json",
+        "sha256": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64"
+      },
+      {
+        "path": "public/data/terrain.json",
+        "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+      },
+      {
+        "path": "src/buildingAppearance.ts",
+        "sha256": "95b2c7d33e6be4afa2f7ca7349581512347e345777b4adc43509d5a7badb1655"
+      },
+      {
+        "path": "src/cannon.ts",
+        "sha256": "e968c433ca24d5a2c7241972bba90778af67bb049b3e81b0c940a5072c11d095"
+      },
+      {
+        "path": "src/distantBuildings.ts",
+        "sha256": "20a13782054d4cb80ac8449f8105ee010d7efa9e9b2e0aaae4bf39d2a95293cb"
+      },
+      {
+        "path": "src/engineerHouseLandmark.ts",
+        "sha256": "e97e3adf9b645537472800e333b3930aef98fadfeb32bc252dd62db8ca668528"
+      },
+      {
+        "path": "src/engineering302Landmark.ts",
+        "sha256": "f7793201687e68fd252c89d90c4ae340ea9f12058f410234070036794231ee5c"
+      },
+      {
+        "path": "src/familyDormLandmark.ts",
+        "sha256": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e"
+      },
+      {
+        "path": "src/fullCampus.ts",
+        "sha256": "1f72ebaf9c684ef25ba6193f32a73ae43ec899094efa2317ff021f665699f135"
+      },
+      {
+        "path": "src/gyujanggakLandmark.ts",
+        "sha256": "44443efb564a22caf1bbcc41bf7348db2eedcdff186d9d988b0d61766e16f28f"
+      },
+      {
+        "path": "src/landmarkBuildings.ts",
+        "sha256": "12427fd11dbae726988169f4cd2aa66917278bc4fbae3d1453d28c363ae711c3"
+      },
+      {
+        "path": "src/libraryLandmark.ts",
+        "sha256": "8172e735aa4ee7b83fc5c6c176252e5b4b5f057b6749b06a7ad649ff817322cf"
+      },
+      {
+        "path": "src/observedAppearances.ts",
+        "sha256": "7c707e8bc33ec33dc3f38157ffd1b567c5bbf407cdc31035af3e649c8f5fcec6"
+      },
+      {
+        "path": "src/pavilionLandmark.ts",
+        "sha256": "115acdab76130e7c3e6b3d28a1a89e8213482d47f7cb3ca6a13a13e9780d4d17"
+      },
+      {
+        "path": "src/physics.ts",
+        "sha256": "b99cd1abda87e0d0d9882f9c842743604ab51aee843f421098fdc74450907b83"
+      },
+      {
+        "path": "src/researchParkLandmark.ts",
+        "sha256": "2787e19b9b63114f6a9c595d9dd56294eb4137b316e333d471579ffa3ea4d839"
+      },
+      {
+        "path": "src/samsungResearchLandmark.ts",
+        "sha256": "6be746eac2d9fd875964cbe357063b88af144b4b75a445ef9d0201ddc02edc35"
+      },
+      {
+        "path": "src/scene.ts",
+        "sha256": "347388d7301ced6d5a2d1bcbc3b1fd6dd5364a9b47de8f2fe21b577f07e7c7c1"
+      },
+      {
+        "path": "src/sportsLandmark.ts",
+        "sha256": "3783c04d6a77679fbd6fd1c05b6d29b4b3ab4c434a82e5972c6017d687473b36"
+      },
+      {
+        "path": "src/terrain.ts",
+        "sha256": "bf9eb351ccc9bef13b61552bbe8f5eaf9e5d0e8c5cf75353110a8b767fc0f6f7"
+      }
+    ],
+    "currentSourceDifferencesFromMeasuredTranspiledSnapshot": [],
+    "measurementScript": "artifacts/integration-audit/probe.mjs",
+    "measurementResults": "artifacts/integration-audit/results.json",
+    "artifactTracking": "검증용 artifacts는 Git에서 제외한다. 아래 해시는 검토 당시 실행 소스와 지도 자료를 식별한다."
+  },
+  "linkage": {
+    "specialBuildings": 14,
+    "specialParts": 5596,
+    "renderMeshes": 37,
+    "submittedTriangles": 192269,
+    "geometryAttributeBytes": 21760044,
+    "issues": [],
+    "buildings": [
+      {
+        "id": "way/193893586",
+        "name": "버들골 풍산마당",
+        "profile": "poongsan-pavilion",
+        "model": "poongsan-pavilion",
+        "shells": 1,
+        "parts": 368,
+        "meshes": 3,
+        "submittedTriangles": 4528
+      },
+      {
+        "id": "way/238935852",
+        "name": "규장각한국학연구원",
+        "profile": "gyujanggak",
+        "model": "gyujanggak",
+        "shells": 1,
+        "parts": 411,
+        "meshes": 3,
+        "submittedTriangles": 20565
+      },
+      {
+        "id": "way/252233408",
+        "name": "서울대학교 미술관",
+        "profile": "moa",
+        "model": "moa",
+        "shells": 1,
+        "parts": 38,
+        "meshes": 1,
+        "submittedTriangles": 4632
+      },
+      {
+        "id": "way/329398175",
+        "name": "관정도서관",
+        "profile": "gwanjeong",
+        "model": "gwanjeong",
+        "shells": 1,
+        "parts": 154,
+        "meshes": 2,
+        "submittedTriangles": 17072
+      },
+      {
+        "id": "way/386890466",
+        "name": "엔지니어하우스",
+        "profile": "engineer-house",
+        "model": "engineer-house",
+        "shells": 1,
+        "parts": 254,
+        "meshes": 2,
+        "submittedTriangles": 19168
+      },
+      {
+        "id": "way/409030550",
+        "name": "935",
+        "profile": "family-dorm",
+        "model": "family-dorm",
+        "shells": 1,
+        "parts": 398,
+        "meshes": 3,
+        "submittedTriangles": 8598
+      },
+      {
+        "id": "way/439687811",
+        "name": "포스코스포츠센터",
+        "profile": "posco-sports",
+        "model": "posco-sports",
+        "shells": 1,
+        "parts": 343,
+        "meshes": 2,
+        "submittedTriangles": 9334
+      },
+      {
+        "id": "way/439707875",
+        "name": "연구공원",
+        "profile": "research-park",
+        "model": "research-park",
+        "shells": 1,
+        "parts": 762,
+        "meshes": 3,
+        "submittedTriangles": 15218
+      },
+      {
+        "id": "way/439707892",
+        "name": "934",
+        "profile": "family-dorm",
+        "model": "family-dorm",
+        "shells": 1,
+        "parts": 352,
+        "meshes": 3,
+        "submittedTriangles": 8264
+      },
+      {
+        "id": "way/439707893",
+        "name": "933",
+        "profile": "family-dorm",
+        "model": "family-dorm",
+        "shells": 1,
+        "parts": 352,
+        "meshes": 3,
+        "submittedTriangles": 8148
+      },
+      {
+        "id": "way/439707894",
+        "name": "932",
+        "profile": "family-dorm",
+        "model": "family-dorm",
+        "shells": 1,
+        "parts": 352,
+        "meshes": 3,
+        "submittedTriangles": 8312
+      },
+      {
+        "id": "way/439707895",
+        "name": "931",
+        "profile": "family-dorm",
+        "model": "family-dorm",
+        "shells": 1,
+        "parts": 352,
+        "meshes": 3,
+        "submittedTriangles": 8136
+      },
+      {
+        "id": "way/482207537",
+        "name": "제2공학관",
+        "profile": "engineering-302",
+        "model": "engineering-302",
+        "shells": 1,
+        "parts": 914,
+        "meshes": 3,
+        "submittedTriangles": 21402
+      },
+      {
+        "id": "way/700872151",
+        "name": "삼성전자서울대연구소",
+        "profile": "samsung-research",
+        "model": "samsung-research",
+        "shells": 1,
+        "parts": 546,
+        "meshes": 3,
+        "submittedTriangles": 38892
+      }
+    ],
+    "conclusion": "14개 특수 건물 모두 외관 설정의 landmark와 factory가 생성한 단일 shell이 일치했다. 파괴 부품도 모두 등록돼 있었으며 연결 누락은 찾지 못했다."
+  },
+  "physics": {
+    "totalTargets": 9864,
+    "startupLoadedTargets": 572,
+    "startupColliders": 587,
+    "startupRigidBodies": 573,
+    "staticColliders": 14,
+    "focus": [
+      {
+        "id": "gate",
+        "name": "gate",
+        "loadedTargets": 572,
+        "colliders": 587,
+        "streamAndFirstStepMs": 25.844700000000103
+      },
+      {
+        "id": "way/329398175",
+        "name": "62-1 관정도서관",
+        "loadedTargets": 1862,
+        "colliders": 1877,
+        "streamAndFirstStepMs": 34.803499999999985
+      },
+      {
+        "id": "way/482207537",
+        "name": "302 제2공학관",
+        "loadedTargets": 1374,
+        "colliders": 1389,
+        "streamAndFirstStepMs": 28.426600000000235
+      },
+      {
+        "id": "way/386890466",
+        "name": "310 엔지니어하우스",
+        "loadedTargets": 1374,
+        "colliders": 1389,
+        "streamAndFirstStepMs": 20.281000000000404
+      },
+      {
+        "id": "way/700872151",
+        "name": "944 삼성전자서울대연구소",
+        "loadedTargets": 3404,
+        "colliders": 3419,
+        "streamAndFirstStepMs": 54.19920000000002
+      },
+      {
+        "id": "way/439707895",
+        "name": "931",
+        "loadedTargets": 3520,
+        "colliders": 3535,
+        "streamAndFirstStepMs": 101.55369999999994
+      },
+      {
+        "id": "way/439707875",
+        "name": "940 연구공원",
+        "loadedTargets": 3577,
+        "colliders": 3592,
+        "streamAndFirstStepMs": 90.7784999999999
+      },
+      {
+        "id": "way/439707877",
+        "name": "941 백학어린이집",
+        "loadedTargets": 3683,
+        "colliders": 3698,
+        "streamAndFirstStepMs": 102.1567
+      },
+      {
+        "id": "way/310022287",
+        "name": "946 BK국제관",
+        "loadedTargets": 3665,
+        "colliders": 3680,
+        "streamAndFirstStepMs": 93.98500000000013
+      },
+      {
+        "id": "way/439707878",
+        "name": "941-1 느티나무 어린이집",
+        "loadedTargets": 3604,
+        "colliders": 3619,
+        "streamAndFirstStepMs": 89.75480000000016
+      }
+    ],
+    "largestFreshLoadAtMappedFastTravelLocations": {
+      "id": "way/439707877",
+      "name": "941 백학어린이집",
+      "x": 853.1609972521561,
+      "z": -21.66048402825446,
+      "count": 3683
+    },
+    "limitations": "활성화 측정 전 이전 표적을 모두 내리고 현재 위치의 반경 350m 표적을 새로 불러왔다. 실제 이동 중에는 390m까지 기존 표적을 유지하므로 활성 수가 더 많을 수 있다. 차량과 파편은 제외했다. collider 수에는 고정 지형과 장애물, 플레이어가 포함된다.",
+    "finding": "동쪽 지역의 약 3,400~3,700개 활성 표적이 모바일 물리 부하의 주요 미확인 항목이다."
+  },
+  "shooting": {
+    "sampledBuildings": [
+      {
+        "id": "way/386890466",
+        "rays": 128
+      },
+      {
+        "id": "way/700872151",
+        "rays": 138
+      },
+      {
+        "id": "way/439707875",
+        "rays": 140
+      },
+      {
+        "id": "way/439707895",
+        "rays": 118
+      },
+      {
+        "id": "way/409030550",
+        "rays": 134
+      }
+    ],
+    "totalRays": 658,
+    "externalStartRaysWithoutPositionMismatch": 612,
+    "internalStartSemanticDifferences": 46,
+    "coincidentBoundaryDifferentTargetSelections": 9,
+    "maximumCoincidentDistanceDifferenceMetres": 0.000048160553011822316,
+    "method": "실제 전체 캠퍼스의 같은 상자 프록시를 사용해 표본 부품의 얇은 축 양쪽에서 사격했다. Rapier는 등록된 표적 충돌체만, Three.js는 미등록 표적 프록시만 조회했다. 지형과 차량은 비교에서 제외했다.",
+    "conclusion": "충돌체 밖에서 시작한 612개 표본의 충돌 위치는 일치했다. 그중 9개는 맞닿은 경계에서 다른 부품을 선택했지만 거리 차이가 0.000049m 미만이었다. 대포는 선택한 부품 ID 대신 폭발 위치로 피해를 계산하므로 이 동률은 이번 회귀로 판단하지 않았다.",
+    "internalStartLimit": "나머지 46개는 시험 시작점이 다른 벽이나 바닥 충돌체 안에 있었다. Rapier의 solid=true는 거리 0을, Three.js는 출구면을 반환하는 기존 의미 차이가 나타났다. 일반 외부 사격이 틀렸다는 근거로 확대하지 않았으며, 내부 시작이 모든 경우에 같다고 확인한 것도 아니다."
+  },
+  "terrain": {
+    "conclusion": "새 모델은 heightAt을 주입받아 지형 기준을 계산한다. 관정관은 지도상 본관 중심을 높이 기준으로 사용하고 실측점으로 표시하지 않는다. 310동의 국소 보정은 별도 현장 배치 회귀검사에서 원시 DEM 보존, 순서 불변, 실제 유리와 지붕 간격, 진입 보행 및 렌더와 물리 높이 일치를 확인했다.",
+    "references": [
+      "sources/engineer-house-model-notes.json",
+      "scripts/verify-engineer-house-site.mjs",
+      "sources/terrain-review.json"
+    ],
+    "remainingLimit": "화학공정신기술연구소의 기존 창 침범 약 0.506m는 310동 보정 후에도 남는다. 이웃 창 표본의 침범 악화와 기초 틈은 없었다. family 외관의 별도 최종 검사는 해당 담당자가 수행하므로 여기서 통과 판정을 대신하지 않는다."
+  },
+  "cpuRenderingEstimate": {
+    "camera": {
+      "fov": 78,
+      "aspect": "9:16",
+      "far": 7500
+    },
+    "cases": [
+      {
+        "id": "way/439707895",
+        "name": "931",
+        "position": [
+          919.16,
+          18.67782194471238,
+          62.73
+        ],
+        "target": [
+          899.6,
+          23.72134196089249,
+          80.106
+        ],
+        "estimatedMainPassDrawCalls": 16,
+        "submittedTriangles": 114106,
+        "custom": {
+          "draws": 6,
+          "triangles": 16448
+        }
+      },
+      {
+        "id": "way/439707875",
+        "name": "940 연구공원",
+        "position": [
+          1031.1111648443737,
+          33.780547144976985,
+          -70.41842569763989
+        ],
+        "target": [
+          981.1255555555555,
+          40.42163941531711,
+          -67.18666666666667
+        ],
+        "estimatedMainPassDrawCalls": 167,
+        "submittedTriangles": 203717,
+        "custom": {
+          "draws": 6,
+          "triangles": 29184
+        }
+      },
+      {
+        "id": "way/700872151",
+        "name": "944 삼성전자서울대연구소",
+        "position": [
+          1011.46,
+          18.686581597750706,
+          133.42
+        ],
+        "target": [
+          1055.6644444444444,
+          38.470636863496566,
+          61.413333333333334
+        ],
+        "estimatedMainPassDrawCalls": 42,
+        "submittedTriangles": 173960,
+        "custom": {
+          "draws": 9,
+          "triangles": 62708
+        }
+      }
+    ],
+    "method": "Three.js 장면의 표시 상태와 객체 경계구의 프러스텀 판정으로 센 주 렌더 패스 추정치다. 가려진 삼각형도 포함하며, WebGL 드라이버의 실제 호출 수나 픽셀 비용은 측정하지 않았다.",
+    "finding": "특수 모델 14개는 총 37개 합친 메시를 사용한다. 이번 검사에서 그리기 호출 수의 급증은 찾지 못했다. 다만 특수 모델은 원거리에서도 같은 상세 기하를 유지하며 제출 삼각형과 물리 표적 수가 늘었다."
+  },
+  "nodeTiming": {
+    "terrainMs": 101.71640000000002,
+    "gateMs": 12.345000000000027,
+    "campusMs": 933.2658000000001,
+    "simulationInitMs": 112.94419999999991,
+    "environment": "이 컴퓨터의 Node.js CPU 실행에서 한 번 측정한 값이다. TypeScript를 임시 모듈로 바꾸고 CanvasTexture 그리기만 최소 대체했다. WebGL 생성과 GPU 업로드는 포함하지 않는다."
+  },
+  "overallLimit": "이 수치를 모바일 FPS로 해석하지 않았다. 실제 브라우저 화면, GPU 시간, 실제 휴대전화 성능이나 터치 조작을 검증한 결과가 아니다. 통합 npm test 결과는 총괄의 별도 실행으로 확인한다.",
+  "followup": {
+    "reviewedAt": "2026-11-05T04:49:32.047Z",
+    "scope": "35동과 31동을 사진에 맞춘 별도 모델로 교체했다. 32동 공사 행의 잘못된 일반 건물은 공사 바닥과 가설 울타리로 구분하고 미니맵에 공사 색을 적용했다. 원본 건물 윤곽, 지도 및 지형 자료와 terrain, physics, controls, coordinates는 이전 릴리스와 비교해 보존을 확인했다.",
+    "specialBuildings": 38,
+    "customGenerators": 30,
+    "constructionAreas": 2,
+    "totalTargets": 28659,
+    "runtimeChanges": [
+      "35동과 31동을 사진에 맞춘 별도 모델로 교체했다. 32동 공사 행의 잘못된 일반 건물은 공사 바닥과 가설 울타리로 구분하고 미니맵에 공사 색을 적용했다. 원본 건물 윤곽, 지도 및 지형 자료와 terrain, physics, controls, coordinates는 이전 릴리스와 비교해 보존을 확인했다."
+    ],
+    "wholeSuite": {
+      "command": "node scripts/verify-all.mjs",
+      "artifact": "artifacts/release-19-verification.log",
+      "artifactSha256": "0760fd32bf4fe800473d81a6bb113d4593f4204fba00b3e5a142fd2141d59478",
+      "executedAt": "2026-11-05T04:49:32.047Z",
+      "scripts": 45,
+      "scriptCount": 45,
+      "passedChecks": 458,
+      "failedChecks": 0,
+      "exitCode": 0,
+      "completionEvidence": {
+        "artifact": "artifacts/engineering35-31-review/suite-completion.json",
+        "sha256": "9106784283c1cde7712361baf891a9e93af853108e022eacd6f7fad9c9c41b4f"
+      }
+    },
+    "administration": {
+      "notes": "sources/administration-model-notes.json",
+      "artifact": "artifacts/administration-test/results.json",
+      "passedChecks": 10,
+      "results": [
+        {
+          "name": "official five floors and B1 remain distinct from estimated height and facade rows",
+          "status": "passed",
+          "mappedPoints": 6,
+          "renderMeshes": 3,
+          "parts": 364,
+          "triangles": 15746,
+          "estimatedHeight": 20,
+          "basementInteriorModeled": false
+        },
+        {
+          "name": "roof and upper slab preserve actual outline with matching convex colliders",
+          "status": "passed",
+          "roofConvexParts": 26,
+          "upperFloorConvexParts": 26,
+          "insideSamples": 132,
+          "outsideSamples": 493
+        },
+        {
+          "name": "photographed roof covers retain their silhouette without filling square bounding-box corners",
+          "status": "passed",
+          "roundCovers": 3,
+          "angledCovers": 1,
+          "convexParts": 4,
+          "emptyCornerRays": 4,
+          "maximumHeightEstimate": 21.2
+        },
+        {
+          "name": "recessed glass clears actual terrain and deep front frames expose the window face",
+          "status": "passed",
+          "glassSamples": 17920,
+          "minimumTerrainClearance": 0.13074606099391062,
+          "frontGlassTriangles": 180,
+          "minimumOutwardNormalDot": 0.9999997436256954,
+          "facadeDepth": 1.0680326857712616
+        },
+        {
+          "name": "open southwest passage permits model rays and actual terrain capsule traversal",
+          "status": "passed",
+          "passageWidthEstimate": 12,
+          "clearRayLength": 23.863985775691514,
+          "capsuleProgress": 37.13241714185978,
+          "capsuleGroundGap": 0.022866268314611915
+        },
+        {
+          "name": "central glass door blocks the player until destroyed",
+          "status": "passed",
+          "closed": {
+            "progress": 10.811099474018093,
+            "groundGap": 0.5366975899621629
+          },
+          "destroyed": {
+            "progress": 13.395458749938502,
+            "groundGap": 0.021891983437054563
+          }
+        },
+        {
+          "name": "loaded and unloaded exterior rays agree for window bays and convex slabs",
+          "status": "passed",
+          "externalRays": 363,
+          "componentKinds": 16,
+          "maximumDistanceDifference": 0.00004719495773186644,
+          "coincidentSeamTiesExcluded": 0,
+          "startsInsideCollidersExcluded": true
+        },
+        {
+          "name": "partial and total destruction persist at distance and reset restores exact geometry",
+          "status": "passed",
+          "removedTriangles": 84,
+          "restoredTriangles": 15746,
+          "restoredParts": 364
+        },
+        {
+          "name": "H reflection preserves logical physics and places the passage on the photographic right",
+          "status": "passed",
+          "photographicRightDisplacement": 17.000000000000007,
+          "reflectedRayDistanceDifference": 0,
+          "logicalPhysicsUnchanged": true
+        },
+        {
+          "name": "elevation callback and reversed outline preserve front orientation",
+          "status": "passed",
+          "callbackOffset": 50,
+          "reversedWindingSameDatumAndFront": true
+        }
+      ]
+    },
+    "construction": {
+      "notes": "sources/culture-construction-notes.json",
+      "artifact": "artifacts/construction-test/results.json",
+      "passedChecks": 6,
+      "results": [
+        {
+          "name": "construction outline, documented height zones and terrain foundations remain bounded",
+          "status": "passed",
+          "parts": 115,
+          "renderMeshes": 3,
+          "heightZones": [
+            4,
+            8,
+            10
+          ],
+          "maximumFoundationAboveTerrain": -0.26999824479276313
+        },
+        {
+          "name": "construction ground follows actual terrain triangles and does not change terrain or source data",
+          "status": "passed",
+          "triangles": 233,
+          "samples": 932,
+          "maximumOverlayHeightError": 0.0000026509039251707,
+          "rawDataAndTerrainUnchanged": true
+        },
+        {
+          "name": "loaded and unloaded fence shots agree after the common render reflection",
+          "status": "passed",
+          "rays": 17,
+          "maximumDistanceError": 0.00004007816313444934
+        },
+        {
+          "name": "an intact panel blocks a capsule and a destroyed panel opens the same route",
+          "status": "passed",
+          "blockedTravel": 4.529885085805933,
+          "openTravel": 8.307310674380338
+        },
+        {
+          "name": "partial destruction remains visible far away and repeated resets restore all instances",
+          "status": "passed",
+          "resetCycles": 3,
+          "restoredPanels": 115,
+          "nonlethalFlashLocalized": true,
+          "deletedRemoteHitAbsent": true,
+          "loadedAndUnloadedCollisionRestored": true
+        },
+        {
+          "name": "full campus keeps the outside walking route and excludes generated tree trunks from the construction area",
+          "status": "passed",
+          "registeredFenceParts": 115,
+          "treeTrunks": 1165,
+          "trunksInsideSite": 0,
+          "outsideRouteOffset": 0.9,
+          "outsideRouteTravel": 41.6602598107103,
+          "routeScope": "One 41 m route parallel to mapped western fence with actual full-campus collisions; not a survey of the planned 2 m passage."
+        }
+      ],
+      "artifactSha256": "367b86030f84f1bdeef988fc0669f60925df27edde2331060ad218866f8935a1",
+      "failedChecks": 0,
+      "sourceHashes": {
+        "scene.ts": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba",
+        "physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+        "controls.ts": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d",
+        "terrain.ts": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263",
+        "traffic.ts": "1b4c6d749a13ce079631256cc7e36fb3a43930e3f8aa1df97c0b7af47d459cdb",
+        "cannon.ts": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8",
+        "minimap.ts": "5dd92f64df053544ab0c9b92bc53c2d88b59d4bded13304e1e63334c705e5918",
+        "fullCampus.ts": "d539906ff573279f74e3fb53277efc14417b8d5285ff4ffcb91b7e9da6e903a8",
+        "main.ts": "f79282132f6d80c8d4b7ef915aeec23eb13fb25d5fe8a019201e6b099ac4f97b",
+        "buildingAppearance.ts": "6e040c23cb243f2484da6ea7698958b704e18aabf3354925be1f6f521ccd1615",
+        "landmarkBuildings.ts": "1fae24f4d811baf5781c996cbe437a6eea07ff3b41951614cd159fcf666a52b0",
+        "observedAppearances.ts": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80",
+        "libraryLandmark.ts": "8172e735aa4ee7b83fc5c6c176252e5b4b5f057b6749b06a7ad649ff817322cf",
+        "sportsLandmark.ts": "3783c04d6a77679fbd6fd1c05b6d29b4b3ab4c434a82e5972c6017d687473b36",
+        "distantBuildings.ts": "20a13782054d4cb80ac8449f8105ee010d7efa9e9b2e0aaae4bf39d2a95293cb",
+        "gyujanggakLandmark.ts": "44443efb564a22caf1bbcc41bf7348db2eedcdff186d9d988b0d61766e16f28f",
+        "pavilionLandmark.ts": "115acdab76130e7c3e6b3d28a1a89e8213482d47f7cb3ca6a13a13e9780d4d17",
+        "engineerHouseLandmark.ts": "e97e3adf9b645537472800e333b3930aef98fadfeb32bc252dd62db8ca668528",
+        "samsungResearchLandmark.ts": "6be746eac2d9fd875964cbe357063b88af144b4b75a445ef9d0201ddc02edc35",
+        "engineering302Landmark.ts": "f7793201687e68fd252c89d90c4ae340ea9f12058f410234070036794231ee5c",
+        "familyDormLandmark.ts": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e",
+        "researchParkLandmark.ts": "2787e19b9b63114f6a9c595d9dd56294eb4137b316e333d471579ffa3ea4d839",
+        "globalEngineeringLandmark.ts": "1638023cd7d0fd118c7095dbbe423d04da86f8e955e33fc2fd92d90b28938a6f",
+        "admissionsLandmark.ts": "c38e5a91db4f437eff5506f0f6e7c12bdcb9e3bb9d36c9290e964c5cef404167",
+        "neutinamuLandmark.ts": "c73df7876f7d8e03c56e77dd24a4a33c9101948939cfe76740f248e18817471f",
+        "baekhakLandmark.ts": "75a750189d909cbeb5a901ddc99f7412c81acde8336c51538628bcc7da32d2d8",
+        "coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+        "mainLibraryLandmark.ts": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3",
+        "campusConstruction.ts": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22",
+        "administrationLandmark.ts": "615b389ecdf118fb4b06cb361e1d319a85eeb0053bc5a57be0948f522f4b7e81",
+        "studentCenterLandmark.ts": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+        "museumLandmark.ts": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+        "livingScienceLandmark.ts": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+        "gymLandmark.ts": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e",
+        "agricultureLandmark.ts": "ccafbeb5241692346a83f864171ed63fbc045f594ff13bd5324a1d0b2c3102b1",
+        "engineering301Landmark.ts": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef",
+        "educationHealthLandmark.ts": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+        "science500Landmark.ts": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+        "engineering303Landmark.ts": "1bf0d6c1d8409ae9bc0c8d8150ee24bc99010c13cbed4aab7f6f8d0f4db51114",
+        "facultyClubLandmark.ts": "e378fc1be9c0fa38cded6ef474888a5bd630f202e95848155522495f2feda38c",
+        "teachingCenterLandmark.ts": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f",
+        "engineering35Landmark.ts": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d",
+        "engineering31Landmark.ts": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12"
+      },
+      "regressionRelease": 19
+    },
+    "mobileControls": {
+      "notes": "sources/mobile-controls-review.json",
+      "script": "scripts/verify-controls.mjs",
+      "passedChecks": 27,
+      "scope": "DOM 대역과 실제 Simulation/Rapier를 결합해 착지 직전의 누름 유지 및 해제를 확인했다. 실제 터치 기기는 사용하지 않았다."
+    },
+    "coordinateChecks": [
+      {
+        "command": "node scripts/verify-coordinates.mjs",
+        "artifact": "artifacts/coordinate-test/results.json",
+        "checks": 9,
+        "passed": 9,
+        "scope": "Node geometry, actual gate generation and Rapier tests. No browser, texture-rendering or physical-device validation."
+      },
+      {
+        "command": "node scripts/verify-runtime-coordinates.mjs",
+        "artifact": "artifacts/runtime-coordinates/results.json",
+        "checks": 17,
+        "passed": 17,
+        "scope": "Actual main control flow and actual Cannon, Traffic, Simulation and Minimap, plus standalone data/render camera modes. Synthetic scene/terrain fixtures and explicit Controls/DOM/renderer test doubles. No browser, WebGL or phone validation."
+      },
+      {
+        "command": "node scripts/verify-world-presentation.mjs",
+        "artifact": "artifacts/world-presentation-test/results.json",
+        "checks": 6,
+        "passed": 6,
+        "scope": "CPU numerical projection and installed Three.js shader contract. No WebGL pixels, browser screen or mobile performance validation."
+      }
+    ],
+    "sourceSnapshot": [
+      {
+        "path": "src/coordinates.ts",
+        "sha256": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837"
+      },
+      {
+        "path": "src/main.ts",
+        "sha256": "f79282132f6d80c8d4b7ef915aeec23eb13fb25d5fe8a019201e6b099ac4f97b"
+      },
+      {
+        "path": "src/cannon.ts",
+        "sha256": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8"
+      },
+      {
+        "path": "src/minimap.ts",
+        "sha256": "5dd92f64df053544ab0c9b92bc53c2d88b59d4bded13304e1e63334c705e5918"
+      },
+      {
+        "path": "src/physics.ts",
+        "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f"
+      },
+      {
+        "path": "src/scene.ts",
+        "sha256": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba"
+      },
+      {
+        "path": "src/fullCampus.ts",
+        "sha256": "d539906ff573279f74e3fb53277efc14417b8d5285ff4ffcb91b7e9da6e903a8"
+      },
+      {
+        "path": "scripts/preview-geometry.mjs",
+        "sha256": "13bb8f851d47ddd997bd60627398e2c26d9a1eee10f8217839e8766b6d00b4f2"
+      },
+      {
+        "path": "scripts/verify-coordinates.mjs",
+        "sha256": "c958c24e418c95763de0a9db698cd00c85707ca28ba753872af17866ac8f22c8"
+      },
+      {
+        "path": "scripts/verify-runtime-coordinates.mjs",
+        "sha256": "6b88336569aa13d0f7092c0086015435f5d51343e55628796ccbb01c7659545d"
+      },
+      {
+        "path": "scripts/verify-world-presentation.mjs",
+        "sha256": "d6331b2118b458c5074c94176d460d4ffb697f0d05295dee3937a1eb50b9a28e"
+      },
+      {
+        "path": "src/mainLibraryLandmark.ts",
+        "sha256": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3"
+      },
+      {
+        "path": "src/buildingAppearance.ts",
+        "sha256": "6e040c23cb243f2484da6ea7698958b704e18aabf3354925be1f6f521ccd1615"
+      },
+      {
+        "path": "src/landmarkBuildings.ts",
+        "sha256": "1fae24f4d811baf5781c996cbe437a6eea07ff3b41951614cd159fcf666a52b0"
+      },
+      {
+        "path": "scripts/verify-streaming.mjs",
+        "sha256": "d9d75542ab298cc150aeabe1033a8215fc6ac120fd4541506898ca870ac78086"
+      },
+      {
+        "path": "scripts/verify-main-library.mjs",
+        "sha256": "d858cadc5d9872d00d41150bf7aacb9e109c23bcd15160e7fb115874cf393639"
+      },
+      {
+        "path": "scripts/streaming-test-helpers.mjs",
+        "sha256": "874fed6b74d16d4945da3ae3b05fd69a6fd1fe91241feba47f3cb1e1df87686c"
+      },
+      {
+        "path": "scripts/verify-all.mjs",
+        "sha256": "0bd1f26a066c7cbfde784ce4cedbb1ac4218baf913eaeef267c730016114bae3"
+      },
+      {
+        "path": "public/data/campus.json",
+        "sha256": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c"
+      },
+      {
+        "path": "public/data/terrain.json",
+        "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+      },
+      {
+        "path": "src/controls.ts",
+        "sha256": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d"
+      },
+      {
+        "path": "src/administrationLandmark.ts",
+        "sha256": "615b389ecdf118fb4b06cb361e1d319a85eeb0053bc5a57be0948f522f4b7e81"
+      },
+      {
+        "path": "src/campusConstruction.ts",
+        "sha256": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22"
+      },
+      {
+        "path": "scripts/verify-controls.mjs",
+        "sha256": "f7db7154ce33064ee23ba19e3d7297e88c7a90bcc46dce76b9dec5dc442187e4"
+      },
+      {
+        "path": "scripts/verify-administration.mjs",
+        "sha256": "48d2dd89ede72e10fa669faab5f2d78c0707ef69fa1ef9c9d5c6a4aa79f57548"
+      },
+      {
+        "path": "scripts/verify-construction.mjs",
+        "sha256": "1ee7e9383f8c3b88e47b04c5e7dd23154e08ef4d317f5d608c6b36a39b635f48"
+      },
+      {
+        "path": "scripts/verify-campus.mjs",
+        "sha256": "a94894bdee78debbc40e1ee6f38bc9e5ea94486e61e44676e5c92fe919bf9bec"
+      },
+      {
+        "path": "scripts/verify-library.mjs",
+        "sha256": "972a2454357b193776198c2509656c28dcac5157f2fd2e7bea123767bb0af9fd"
+      },
+      {
+        "path": "src/studentCenterLandmark.ts",
+        "sha256": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c"
+      },
+      {
+        "path": "scripts/verify-student-center.mjs",
+        "sha256": "5bff00efdd04adc32a78ffc52eb9d4c5f1a0eb79d959ab1d1e3cea154a1d4271"
+      },
+      {
+        "path": "sources/student-center-model-notes.json",
+        "sha256": "0bb5549f3f7483cf49623b60200f95e0c35389f6c51f327f6591fcb87de82d74"
+      },
+      {
+        "path": "README.md",
+        "sha256": "e916b167ecb4f0a3f9c97754718cb24538c515cc1b2cfc7bc7b19d6ee7840ea7"
+      },
+      {
+        "path": "src/museumLandmark.ts",
+        "sha256": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9"
+      },
+      {
+        "path": "scripts/verify-museum.mjs",
+        "sha256": "3fce1d4cd1440ab14e1915890167e4e5b290a07724efcec8630d3e65bde242aa"
+      },
+      {
+        "path": "sources/museum-model-notes.json",
+        "sha256": "eaf2283b3598d44a232378b41035ea9f1e0656daf936a6144b8656208fcbd1d1"
+      },
+      {
+        "path": "src/gymLandmark.ts",
+        "sha256": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e"
+      },
+      {
+        "path": "scripts/verify-gym.mjs",
+        "sha256": "166ccc8004f2f5942f49a0788765a90041524f9f9dfab0d1346a6d9d0c2eea07"
+      },
+      {
+        "path": "sources/gym-model-notes.json",
+        "sha256": "2dfc0850e2dda81c1040693260f11893d61a06700ac43ce425874d47517b2f34"
+      },
+      {
+        "path": "src/livingScienceLandmark.ts",
+        "sha256": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a"
+      },
+      {
+        "path": "scripts/verify-living-science.mjs",
+        "sha256": "7e90ebf1a67aff9b09663ffc26a6bfd1683fbb562c22abf24785df811a8f3afe"
+      },
+      {
+        "path": "sources/living-science-model-notes.json",
+        "sha256": "d041b8137c42f031058518885cd3593eba36a6e4ce9806ab808c9e0fa8a8237a"
+      },
+      {
+        "path": "src/agricultureLandmark.ts",
+        "sha256": "ccafbeb5241692346a83f864171ed63fbc045f594ff13bd5324a1d0b2c3102b1"
+      },
+      {
+        "path": "scripts/verify-agriculture.mjs",
+        "sha256": "6d379f1b4be6174d9a85d2689f336ec09c886f9e78329e064ea555380e6d5a7e"
+      },
+      {
+        "path": "sources/agriculture-model-notes.json",
+        "sha256": "896365283de6a5e4ef38a6e4b7992c86bbafdb491481509b599c97c586377aa2"
+      },
+      {
+        "path": "src/engineering301Landmark.ts",
+        "sha256": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef"
+      },
+      {
+        "path": "scripts/verify-engineering301.mjs",
+        "sha256": "065163ded7e222e9043d2edd32ee71c64c204c55e2a4588bbc84d0a338036c5c"
+      },
+      {
+        "path": "sources/engineering301-model-notes.json",
+        "sha256": "d413b5a127b1bb0dacaa061b7322f6f941c49428e13bef73bd3a02526a336c2d"
+      },
+      {
+        "path": "src/educationHealthLandmark.ts",
+        "sha256": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e"
+      },
+      {
+        "path": "scripts/verify-education-health.mjs",
+        "sha256": "98788b9fa3e99ee17a407893585990cf1cd475aef2c6592cc3344ab86de76632"
+      },
+      {
+        "path": "sources/education-health-model-notes.json",
+        "sha256": "73df079ed66e37e7e9f6351dcd3e6e4894e6bac8095542b7a2de97292f1abb05"
+      },
+      {
+        "path": "src/science500Landmark.ts",
+        "sha256": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106"
+      },
+      {
+        "path": "scripts/verify-science500.mjs",
+        "sha256": "bd1fa91cb5b4fc4e20e4d195ac71accef420b7e7a59c8ed1cfccb82b3807cd63"
+      },
+      {
+        "path": "sources/science500-model-notes.json",
+        "sha256": "cae5512bb15e5f2c6d3fd0fb570594218ad551158513736af033f84b43cd3aad"
+      },
+      {
+        "path": "src/terrain.ts",
+        "sha256": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263"
+      },
+      {
+        "path": "src/engineering303Landmark.ts",
+        "sha256": "1bf0d6c1d8409ae9bc0c8d8150ee24bc99010c13cbed4aab7f6f8d0f4db51114"
+      },
+      {
+        "path": "scripts/verify-engineering303.mjs",
+        "sha256": "9af048c5d387ab7990cc8ce401039f685f1a8bc9119c8fb80e9b712c56a7dedb"
+      },
+      {
+        "path": "sources/engineering303-model-notes.json",
+        "sha256": "7fb2c47c4572a707be235af0d341ce94b7d5c60fcfc8e0026ca76142bf4b014a"
+      },
+      {
+        "path": "sources/campus-supplemental-buildings.json",
+        "sha256": "d8caf0c818ad5cfcbd6714a8098d84df7a0cb29d6d9445ede1337b0ec77f4b1a"
+      },
+      {
+        "path": "sources/campus.osm",
+        "sha256": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598"
+      },
+      {
+        "path": "src/observedAppearances.ts",
+        "sha256": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80"
+      },
+      {
+        "path": "scripts/fetch-campus.mjs",
+        "sha256": "ec5272a8d9be3bf37076951c3cd2d2a0ee6f62bcc941702f476088514415219a"
+      },
+      {
+        "path": "scripts/merge-campus-supplements.mjs",
+        "sha256": "9958ee45d4c09f000a0a598c5b7f983c21cc53a8262e94f1b1ed0c43621fb157"
+      },
+      {
+        "path": "scripts/verify-campus-supplements.mjs",
+        "sha256": "f1b4e8b99bf0a56dd6882d75e6ab3c84323282fcfba3c78a9352ec2b22edc71c"
+      },
+      {
+        "path": "scripts/verify-campus-provenance.mjs",
+        "sha256": "ccd06634dfeec467afcfff4c40df576511f0a19d2e14fef4f7c07219f6c5fc06"
+      },
+      {
+        "path": "scripts/campus-provenance-baseline.mjs",
+        "sha256": "a2c5e2a7206e251ae00b94e0072777a17ad7b386357c0d61049d28f5ba80a491"
+      },
+      {
+        "path": "scripts/verify-family-terrain.mjs",
+        "sha256": "5c56199fd7c646b169cf1bccbd60ac6cdd3e6c3e3a603b2bd10f5f56ab7e85b9"
+      },
+      {
+        "path": "src/facultyClubLandmark.ts",
+        "sha256": "e378fc1be9c0fa38cded6ef474888a5bd630f202e95848155522495f2feda38c"
+      },
+      {
+        "path": "scripts/verify-faculty-club.mjs",
+        "sha256": "c0a895f6479fa043fa297ad60791e56811feda0634ae668e5f255d46d86dd552"
+      },
+      {
+        "path": "sources/faculty-club-model-notes.json",
+        "sha256": "e756b5f67c14c4285103627a311a98342d0130b08627506349a16ddfeaee762c"
+      },
+      {
+        "path": "src/teachingCenterLandmark.ts",
+        "sha256": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f"
+      },
+      {
+        "path": "scripts/verify-teaching-center.mjs",
+        "sha256": "a169bb340bfe99141579326358892ffdac7b96c2f36eff9660003acaa6e83b35"
+      },
+      {
+        "path": "sources/teaching-center-model-notes.json",
+        "sha256": "eebad52e0555689f825f8a0af6a86f3b1c09bdef690a6e693c6db749b0d2ff7b"
+      },
+      {
+        "path": "public/credits.html",
+        "sha256": "39a7b6aadf9af09beef35fd77b1bcb36294e88190e26ef19799c688011f5cce7"
+      },
+      {
+        "path": "src/engineering35Landmark.ts",
+        "sha256": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d"
+      },
+      {
+        "path": "scripts/verify-engineering35.mjs",
+        "sha256": "672c04a3b02d8fc73f2a276d9b2a527391c0c2270eebd1a436e879522d5496b7"
+      },
+      {
+        "path": "sources/engineering35-model-notes.json",
+        "sha256": "78e838396e835f768ee96a171fccbe9a5b2f5a66f7a862fce4e71b83a3e54977"
+      },
+      {
+        "path": "src/engineering31Landmark.ts",
+        "sha256": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12"
+      },
+      {
+        "path": "scripts/verify-engineering31.mjs",
+        "sha256": "1299108851ed85b99b00565b7b20416caceed6ac858d40ec567ed5ae3e29a1e6"
+      },
+      {
+        "path": "sources/engineering31-model-notes.json",
+        "sha256": "f4278f53cf02cb953d48db2cce3e9810930bd6671e40fbb58dd61f12ccfb28ce"
+      },
+      {
+        "path": "scripts/verify-distant.mjs",
+        "sha256": "c88da6d5b28796c65cfb518dabc3564589f5126f0bd563049a9fa54fe68eab95"
+      },
+      {
+        "path": "scripts/verify-engineering-construction.mjs",
+        "sha256": "a314333c0cff602d31f91e3fb47bd6159561ac7323461470f4c218186ac50ffd"
+      },
+      {
+        "path": "sources/engineering-construction-notes.json",
+        "sha256": "7d80b8f109260ca66ed747e46d7cfed87dbcaeb7b1469c3f25e4ebb4dae9b0af"
+      },
+      {
+        "path": "sources/culture-construction-notes.json",
+        "sha256": "c93e726b7c322e566c4c9d5136873946959788606fe4404023138cd8a836ef96"
+      }
+    ],
+    "limit": "Single Windows desktop Node CPU measurement, stationary player, actual gate plus campus geometry and Rapier. Canvas drawing is stubbed. Excludes WebGL, GPU upload/rendering, DOM, traffic, cannon/effects and physical phone performance. Concurrent processes can affect timing; this is not a mobile FPS estimate. 35동과 31동의 사용 층과 사진을 구분해 대조했으며, 높이와 세부 치수, 입면의 지도 대응과 접근판에는 게임용 근사가 포함된다. 32동 공사 울타리는 공식 계획에 근거한 근사이며 현재 공정과 현장 설치를 실측한 모델은 아니다. 실제 브라우저, 최신 거리뷰와 휴대전화 성능은 검증하지 않았다.",
+    "studentCenter": {
+      "notes": "sources/student-center-model-notes.json",
+      "artifact": "artifacts/student-center-test/results.json",
+      "passedChecks": 11,
+      "independentArtifact": "artifacts/student-independent-review/summary.json",
+      "independentIntegrityChecks": 4
+    },
+    "museum": {
+      "notes": "sources/museum-model-notes.json",
+      "artifact": "artifacts/museum-test/results.json",
+      "passedChecks": 12,
+      "renderMeshes": 3,
+      "parts": 631,
+      "triangles": 19772,
+      "independentArtifact": "artifacts/museum-independent-review/summary.json",
+      "modelSourceSha256": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9"
+    },
+    "latestModels": [
+      {
+        "buildingNumber": "35",
+        "buildingId": "way/892896238",
+        "landmark": "engineering-35",
+        "status": "implemented-and-numerically-verified",
+        "source": {
+          "path": "src/engineering35Landmark.ts",
+          "sha256": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d"
+        },
+        "notes": {
+          "path": "sources/engineering35-model-notes.json",
+          "sha256": "78e838396e835f768ee96a171fccbe9a5b2f5a66f7a862fce4e71b83a3e54977"
+        },
+        "own": {
+          "artifact": "artifacts/engineering35-test/results.json",
+          "artifactSha256": "e2a5da6d57fb91b491170659313d6556c27a270a95a306adc899cfb2d2c3a26e",
+          "checks": 13
+        },
+        "independent": {
+          "artifact": "artifacts/engineering35-31-independent-review/results.json",
+          "artifactSha256": "fba7dadacdf68d9b111b5387ea8570c2612ce5209f1129bd792b529cbe4da87d",
+          "checks": 19
+        },
+        "geometry": {
+          "name": "original outline and five differentiated storeys are retained in three merged surfaces",
+          "status": "passed",
+          "parts": 2833,
+          "triangles": 54714,
+          "renderMeshes": 3,
+          "highest": 17.49999726552234
+        },
+        "limitations": [
+          "전체 형상과 치수는 사진 및 원본 지도 윤곽에 맞춘 게임용 근사다. 정확한 준공 치수와 법적 층수 분류는 확보하지 못했다.",
+          "2026년 도색 후의 정확한 색과 옥상 텃밭의 현재 배치는 미확인이다. 식재, 가구, 표지 세부와 실내 방은 복원하지 않았다.",
+          "경사 지형 쪽 낮은 창은 현재 게임 DEM에 노출되는 부분만 남겼다. 실제 현장 기단 및 절성토와 같다고 주장하지 않는다.",
+          "검사는 데스크톱 Node의 Three.js 기하와 Rapier 물리에서 수행했다. 실제 브라우저, WebGL 또는 휴대전화 FPS 검증을 대신하지 않는다."
+        ]
+      },
+      {
+        "buildingNumber": "31",
+        "buildingId": "way/389628348",
+        "landmark": "engineering-31",
+        "status": "implemented-and-numerically-verified",
+        "source": {
+          "path": "src/engineering31Landmark.ts",
+          "sha256": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12"
+        },
+        "notes": {
+          "path": "sources/engineering31-model-notes.json",
+          "sha256": "f4278f53cf02cb953d48db2cce3e9810930bd6671e40fbb58dd61f12ccfb28ce"
+        },
+        "own": {
+          "artifact": "artifacts/engineering31-test/results.json",
+          "artifactSha256": "73e25dbb20fc99d9dfb47102bc738cbf384bb2999f44db3e3273dedd7c14e8e8",
+          "checks": 13
+        },
+        "independent": {
+          "artifact": "artifacts/engineering35-31-independent-review/results.json",
+          "artifactSha256": "fba7dadacdf68d9b111b5387ea8570c2612ce5209f1129bd792b529cbe4da87d",
+          "checks": 19
+        },
+        "geometry": {
+          "name": "original 11 point footprint DEM and neighboring building 30 remain unchanged",
+          "status": "PASS",
+          "parts": 525,
+          "triangles": 33480,
+          "meshes": 3,
+          "base": 37.30922317504883,
+          "mainRoof": 14,
+          "estimatedTowerTop": 17.5,
+          "neighborCopied": false
+        },
+        "limitations": [
+          "OSM의 전체 5층을 유지했지만 사진만으로 공식 전체 층수를 재확인하지 못했다. 본체 14m, 탑 17.5m와 날개별 높이 구분은 추정이다.",
+          "공식 사진의 낮은 연결부와 반원 지붕은 대부분 원본31 밖이라 미구현이다. 이 특징까지 포함한 전체 복원 완료로 표현하지 않는다.",
+          "현재 재건축 현장의 철거 범위를 직접 보지 못했다. 32 공사와 31의 사진 시기 외형을 분리했으며 향후 단계에서 31도 달라질 수 있다.",
+          "근경에 보이지 않는 면의 창 반복과 옥상 기계 치수는 단순 근사다. 현장 실측 입면 복원이 아니다.",
+          "북쪽 현관과 계단은 원본 도로 및 현재 DEM에 맞춘 게임 접근 경로다. 실제 출입구 위치나 현장 계단 단수를 확정한 것이 아니다.",
+          "실내는 문 뒤 짧은 로비만 구현했다. 층별 방과 실내 계단 전체는 재현하지 않았다."
+        ]
+      }
+    ],
+    "nodeCpuComparison": {
+      "baseline": {
+        "path": "artifacts/mobile-cpu-review/release-18-with-engineering35-31.json",
+        "sha256": "75f9aa2f6a1291a4efa51ff33922efefc74c23ac3a9def395e1325cb747b4b0b",
+        "sourceCommit": "f138814f890f95696c1ae1a96e6d1eec66f08e93",
+        "provenance": {
+          "path": "artifacts/mobile-cpu-review/release-18-with-engineering35-31-provenance.json",
+          "sha256": "8cf24c1f08a9bb5e51ec39a5743d3b3f9ee84d9dd709dd8aa611755d0ab66f0a"
+        }
+      },
+      "current": {
+        "path": "artifacts/mobile-cpu-review/release-19-with-engineering35-31.json",
+        "sha256": "fc2834ec3dffad0609e1f3e4808e06639ca5e40d36ff7efd827402e420be7185",
+        "provenance": {
+          "path": "artifacts/mobile-cpu-review/release-19-with-engineering35-31-provenance.json",
+          "sha256": "3f015a1da9fc44188664fe26af2661b22926b958953e6f941dfd47cbeefa87f1"
+        }
+      },
+      "comparison": {
+        "path": "artifacts/mobile-cpu-review/compare-18-19.json",
+        "sha256": "6bf0b0145c5e535fe5b0cb0b2edd004efd243f6565c544860f7d2dd0cc7d1a31"
+      },
+      "locations": 19,
+      "scope": "Single Windows desktop Node CPU measurement, stationary player, actual gate plus campus geometry and Rapier. Canvas drawing is stubbed. Excludes WebGL, GPU upload/rendering, DOM, traffic, cannon/effects and physical phone performance. Concurrent processes can affect timing; this is not a mobile FPS estimate."
+    },
+    "genericBuildings": 167,
+    "frozenInputs": {
+      "models": [
+        {
+          "buildingNumber": "35",
+          "buildingId": "way/892896238",
+          "landmark": "engineering-35",
+          "status": "implemented-and-numerically-verified",
+          "source": {
+            "path": "src/engineering35Landmark.ts",
+            "sha256": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d"
+          },
+          "notes": {
+            "path": "sources/engineering35-model-notes.json",
+            "sha256": "78e838396e835f768ee96a171fccbe9a5b2f5a66f7a862fce4e71b83a3e54977"
+          },
+          "own": {
+            "artifact": "artifacts/engineering35-test/results.json",
+            "artifactSha256": "e2a5da6d57fb91b491170659313d6556c27a270a95a306adc899cfb2d2c3a26e",
+            "checks": 13
+          },
+          "independent": {
+            "artifact": "artifacts/engineering35-31-independent-review/results.json",
+            "artifactSha256": "fba7dadacdf68d9b111b5387ea8570c2612ce5209f1129bd792b529cbe4da87d",
+            "checks": 19
+          },
+          "geometry": {
+            "name": "original outline and five differentiated storeys are retained in three merged surfaces",
+            "status": "passed",
+            "parts": 2833,
+            "triangles": 54714,
+            "renderMeshes": 3,
+            "highest": 17.49999726552234
+          },
+          "limitations": [
+            "전체 형상과 치수는 사진 및 원본 지도 윤곽에 맞춘 게임용 근사다. 정확한 준공 치수와 법적 층수 분류는 확보하지 못했다.",
+            "2026년 도색 후의 정확한 색과 옥상 텃밭의 현재 배치는 미확인이다. 식재, 가구, 표지 세부와 실내 방은 복원하지 않았다.",
+            "경사 지형 쪽 낮은 창은 현재 게임 DEM에 노출되는 부분만 남겼다. 실제 현장 기단 및 절성토와 같다고 주장하지 않는다.",
+            "검사는 데스크톱 Node의 Three.js 기하와 Rapier 물리에서 수행했다. 실제 브라우저, WebGL 또는 휴대전화 FPS 검증을 대신하지 않는다."
+          ]
+        },
+        {
+          "buildingNumber": "31",
+          "buildingId": "way/389628348",
+          "landmark": "engineering-31",
+          "status": "implemented-and-numerically-verified",
+          "source": {
+            "path": "src/engineering31Landmark.ts",
+            "sha256": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12"
+          },
+          "notes": {
+            "path": "sources/engineering31-model-notes.json",
+            "sha256": "f4278f53cf02cb953d48db2cce3e9810930bd6671e40fbb58dd61f12ccfb28ce"
+          },
+          "own": {
+            "artifact": "artifacts/engineering31-test/results.json",
+            "artifactSha256": "73e25dbb20fc99d9dfb47102bc738cbf384bb2999f44db3e3273dedd7c14e8e8",
+            "checks": 13
+          },
+          "independent": {
+            "artifact": "artifacts/engineering35-31-independent-review/results.json",
+            "artifactSha256": "fba7dadacdf68d9b111b5387ea8570c2612ce5209f1129bd792b529cbe4da87d",
+            "checks": 19
+          },
+          "geometry": {
+            "name": "original 11 point footprint DEM and neighboring building 30 remain unchanged",
+            "status": "PASS",
+            "parts": 525,
+            "triangles": 33480,
+            "meshes": 3,
+            "base": 37.30922317504883,
+            "mainRoof": 14,
+            "estimatedTowerTop": 17.5,
+            "neighborCopied": false
+          },
+          "limitations": [
+            "OSM의 전체 5층을 유지했지만 사진만으로 공식 전체 층수를 재확인하지 못했다. 본체 14m, 탑 17.5m와 날개별 높이 구분은 추정이다.",
+            "공식 사진의 낮은 연결부와 반원 지붕은 대부분 원본31 밖이라 미구현이다. 이 특징까지 포함한 전체 복원 완료로 표현하지 않는다.",
+            "현재 재건축 현장의 철거 범위를 직접 보지 못했다. 32 공사와 31의 사진 시기 외형을 분리했으며 향후 단계에서 31도 달라질 수 있다.",
+            "근경에 보이지 않는 면의 창 반복과 옥상 기계 치수는 단순 근사다. 현장 실측 입면 복원이 아니다.",
+            "북쪽 현관과 계단은 원본 도로 및 현재 DEM에 맞춘 게임 접근 경로다. 실제 출입구 위치나 현장 계단 단수를 확정한 것이 아니다.",
+            "실내는 문 뒤 짧은 로비만 구현했다. 층별 방과 실내 계단 전체는 재현하지 않았다."
+          ]
+        }
+      ],
+      "construction": {
+        "areaId": "way/1530459898",
+        "buildingNumber": "32",
+        "name": "32동 공사구역",
+        "status": "plan-based-approximation-node-verified",
+        "notes": {
+          "path": "sources/engineering-construction-notes.json",
+          "sha256": "7d80b8f109260ca66ed747e46d7cfed87dbcaeb7b1469c3f25e4ebb4dae9b0af"
+        },
+        "module": {
+          "path": "src/campusConstruction.ts",
+          "sha256": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22"
+        },
+        "test": "scripts/verify-engineering-construction.mjs",
+        "verification": {
+          "artifact": "artifacts/engineering-construction-test/results.json",
+          "artifactSha256": "ab9affc7180182fcce7ea63c057ab6217624a2cef76fe9ddec27190d09a8b196",
+          "checks": 8
+        },
+        "results": [
+          {
+            "name": "raw construction boundary stays intact and four rendered instance layers remain inside it",
+            "status": "PASS",
+            "rawVertices": 5,
+            "parts": 69,
+            "renderMeshes": 4,
+            "minimumRenderedInset": 0.8999414002269204,
+            "maximumFoundationAbove": -0.26999736311819333,
+            "rppHeight": 8,
+            "netHeight": 1,
+            "netOpacity": 0.38,
+            "heightScope": "General 2025 plan specification applied uniformly; exact edge-by-edge heights are unverified."
+          },
+          {
+            "name": "construction overlay follows original terrain triangles without changing source data or terrain",
+            "status": "PASS",
+            "triangles": 85,
+            "samples": 340,
+            "maximumOverlayError": 0.000005871066184680307,
+            "rawAndTerrainUnchanged": true
+          },
+          {
+            "name": "actual fence geometry preserves nearby road widths and the retained building 31 boundary",
+            "status": "PASS",
+            "retained31Clearance": 1.6647195115272801,
+            "roads": [
+              {
+                "id": "way/347806724/131",
+                "kind": "service",
+                "width": 6.4,
+                "drivable": true,
+                "centrelineClearance": 13.48426725269614,
+                "roadEdgeClearance": 10.28426725269614
+              },
+              {
+                "id": "way/389628251/149",
+                "kind": "footway",
+                "width": 2.5,
+                "drivable": false,
+                "centrelineClearance": 4.3187515573731075,
+                "roadEdgeClearance": 3.0687515573731075
+              },
+              {
+                "id": "way/389628252/150",
+                "kind": "footway",
+                "width": 2.5,
+                "drivable": false,
+                "centrelineClearance": 11.692495765589381,
+                "roadEdgeClearance": 10.442495765589381
+              },
+              {
+                "id": "way/457001534/360",
+                "kind": "service",
+                "width": 6.4,
+                "drivable": true,
+                "centrelineClearance": 13.389059871622294,
+                "roadEdgeClearance": 10.189059871622295
+              },
+              {
+                "id": "way/457001536/362",
+                "kind": "service",
+                "width": 5.5,
+                "drivable": true,
+                "centrelineClearance": 13.508193360547496,
+                "roadEdgeClearance": 10.758193360547496
+              },
+              {
+                "id": "way/457001540/363",
+                "kind": "service",
+                "width": 5.5,
+                "drivable": true,
+                "centrelineClearance": 3.0268419157817834,
+                "roadEdgeClearance": 0.2768419157817834
+              },
+              {
+                "id": "way/457001543/364",
+                "kind": "service",
+                "width": 5.5,
+                "drivable": true,
+                "centrelineClearance": 5.463818379668471,
+                "roadEdgeClearance": 2.7138183796684707
+              },
+              {
+                "id": "way/1186165729/527",
+                "kind": "footway",
+                "width": 2.5,
+                "drivable": false,
+                "centrelineClearance": 13.312226078609818,
+                "roadEdgeClearance": 12.062226078609818
+              },
+              {
+                "id": "way/1544364840/615",
+                "kind": "footway",
+                "width": 2.5,
+                "drivable": false,
+                "centrelineClearance": 4.2726537768779576,
+                "roadEdgeClearance": 3.0226537768779576
+              },
+              {
+                "id": "way/1544714450/676",
+                "kind": "footway",
+                "width": 2.5,
+                "drivable": false,
+                "centrelineClearance": 4.470225470626918,
+                "roadEdgeClearance": 3.220225470626918
+              },
+              {
+                "id": "way/1544714454/680",
+                "kind": "footway",
+                "width": 2.5,
+                "drivable": false,
+                "centrelineClearance": 4.447152850908769,
+                "roadEdgeClearance": 3.197152850908769
+              },
+              {
+                "id": "way/1544714455/681",
+                "kind": "footway",
+                "width": 2.5,
+                "drivable": false,
+                "centrelineClearance": 4.665548839719068,
+                "roadEdgeClearance": 3.415548839719068
+              }
+            ],
+            "scope": "Horizontal clearance from every actual rendered instance, including posts. Nominal road widths are map estimates, not measured pavement."
+          },
+          {
+            "name": "actual Traffic lane and curve poses keep eligible car and bus bodies outside the fence",
+            "status": "PASS",
+            "records": [
+              {
+                "kind": "car",
+                "width": 1.82,
+                "length": 4.3,
+                "straightSamples": 675,
+                "turnSamples": 861,
+                "minimumClearance": 0.602569893108008,
+                "worst": {
+                  "roadId": "way/457001540/363",
+                  "nextRoadId": "way/457001540/363",
+                  "edge": 1134,
+                  "next": 1135,
+                  "mode": "turn",
+                  "fraction": 0.55,
+                  "position": [
+                    120.01311381872374,
+                    40.86522007887989,
+                    -1114.8801065258676
+                  ],
+                  "footprint": [
+                    [
+                      118.98125007635335,
+                      -1116.959379433044
+                    ],
+                    [
+                      120.79820950216909,
+                      -1117.0645385740604
+                    ],
+                    [
+                      120.80848739228875,
+                      -1116.8869552546275
+                    ],
+                    [
+                      121.04497756109413,
+                      -1112.8008336186913
+                    ],
+                    [
+                      121.0552554512138,
+                      -1112.6232502992582
+                    ],
+                    [
+                      119.23829602539804,
+                      -1112.5180911582418
+                    ]
+                  ]
+                }
+              },
+              {
+                "kind": "bus",
+                "width": 2.45,
+                "length": 10.4,
+                "straightSamples": 350,
+                "turnSamples": 246,
+                "minimumClearance": 10.692059871622257,
+                "worst": {
+                  "roadId": "way/457001534/360",
+                  "nextRoadId": "way/455015956/201",
+                  "edge": 1113,
+                  "next": 890,
+                  "mode": "straight",
+                  "fraction": 0.4650619224265684,
+                  "position": [
+                    86.47677881958322,
+                    38.85684054775573,
+                    -1062.609440537555
+                  ],
+                  "footprint": [
+                    [
+                      84.30908082067965,
+                      -1057.7296870058572
+                    ],
+                    [
+                      84.32863364281907,
+                      -1057.833276588637
+                    ],
+                    [
+                      86.2565408511422,
+                      -1068.047203863411
+                    ],
+                    [
+                      88.6640296406262,
+                      -1067.5927836520327
+                    ],
+                    [
+                      88.64447681848678,
+                      -1067.4891940692528
+                    ],
+                    [
+                      86.71656961016365,
+                      -1057.275266794479
+                    ]
+                  ]
+                }
+              }
+            ],
+            "busEligibility": "Actual Traffic excludes buses on roads narrower than 6 m; 5.5 m service roads are car-only in this check.",
+            "selection": "All eligible outgoing curve alternatives near this fence; actual Traffic.pose includes DEM pitch and all eight body corners."
+          },
+          {
+            "name": "real panel and net surfaces agree with loaded and unloaded rays after one H reflection",
+            "status": "PASS",
+            "rays": 28,
+            "maxLoadedUnloaded": 0.00011445890328576347,
+            "maxRenderCollision": 0.07001599738216857,
+            "maxReflected": 0,
+            "records": [
+              {
+                "panel": 0,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9099999969547332,
+                "loaded": 1.900002360343933,
+                "unloaded": 1.9000102956923755
+              },
+              {
+                "panel": 0,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.970000000872646,
+                "loaded": 1.900002360343933,
+                "unloaded": 1.9000102956923755
+              },
+              {
+                "panel": 5,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9099999969547332,
+                "loaded": 1.900002360343933,
+                "unloaded": 1.9000059486290741
+              },
+              {
+                "panel": 5,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9700000008726468,
+                "loaded": 1.900002360343933,
+                "unloaded": 1.9000059486290741
+              },
+              {
+                "panel": 10,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000032879727,
+                "loaded": 1.8999965190887451,
+                "unloaded": 1.9000148057736579
+              },
+              {
+                "panel": 10,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.970000000095998,
+                "loaded": 1.8999965190887451,
+                "unloaded": 1.9000148057736579
+              },
+              {
+                "panel": 15,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000032880977,
+                "loaded": 1.8999965190887451,
+                "unloaded": 1.9000132537526477
+              },
+              {
+                "panel": 15,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.970000000095998,
+                "loaded": 1.8999965190887451,
+                "unloaded": 1.9000132537526477
+              },
+              {
+                "panel": 20,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000015549463,
+                "loaded": 1.9000564813613892,
+                "unloaded": 1.8999420224581034
+              },
+              {
+                "panel": 20,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9699999992805715,
+                "loaded": 1.9000564813613892,
+                "unloaded": 1.8999420224581034
+              },
+              {
+                "panel": 25,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000015549463,
+                "loaded": 1.9000564813613892,
+                "unloaded": 1.9000056286964466
+              },
+              {
+                "panel": 25,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9699999992805715,
+                "loaded": 1.9000564813613892,
+                "unloaded": 1.9000056286964466
+              },
+              {
+                "panel": 30,
+                "surface": "engineering32-fence-panels",
+                "render": 1.910000001554944,
+                "loaded": 1.9000564813613892,
+                "unloaded": 1.8999463353596477
+              },
+              {
+                "panel": 30,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9699999992805715,
+                "loaded": 1.9000564813613892,
+                "unloaded": 1.8999463353596477
+              },
+              {
+                "panel": 35,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000006979951,
+                "loaded": 1.8999887704849243,
+                "unloaded": 1.9000007271677875
+              },
+              {
+                "panel": 35,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9700000002096407,
+                "loaded": 1.8999887704849243,
+                "unloaded": 1.9000007271677875
+              },
+              {
+                "panel": 40,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000006979951,
+                "loaded": 1.8999887704849243,
+                "unloaded": 1.9000028002706677
+              },
+              {
+                "panel": 40,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9700000002096634,
+                "loaded": 1.8999887704849243,
+                "unloaded": 1.9000028002706677
+              },
+              {
+                "panel": 45,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000006979951,
+                "loaded": 1.8999887704849243,
+                "unloaded": 1.90000487337352
+              },
+              {
+                "panel": 45,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9700000002096634,
+                "loaded": 1.8999887704849243,
+                "unloaded": 1.90000487337352
+              },
+              {
+                "panel": 50,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000022403951,
+                "loaded": 1.8999840021133423,
+                "unloaded": 1.8999455607735538
+              },
+              {
+                "panel": 50,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9699999994955109,
+                "loaded": 1.8999840021133423,
+                "unloaded": 1.8999455607735538
+              },
+              {
+                "panel": 55,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000022403911,
+                "loaded": 1.8999840021133423,
+                "unloaded": 1.8999985594256952
+              },
+              {
+                "panel": 55,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9699999994955109,
+                "loaded": 1.8999840021133423,
+                "unloaded": 1.8999985594256952
+              },
+              {
+                "panel": 60,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000022403911,
+                "loaded": 1.8999840021133423,
+                "unloaded": 1.9000494184429955
+              },
+              {
+                "panel": 60,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9699999994955109,
+                "loaded": 1.8999840021133423,
+                "unloaded": 1.9000494184429955
+              },
+              {
+                "panel": 65,
+                "surface": "engineering32-fence-panels",
+                "render": 1.9100000022403951,
+                "loaded": 1.8999851942062378,
+                "unloaded": 1.8999815528454684
+              },
+              {
+                "panel": 65,
+                "surface": "engineering32-fence-dust-net",
+                "render": 1.9699999994955109,
+                "loaded": 1.8999851942062378,
+                "unloaded": 1.8999815528454684
+              }
+            ],
+            "netCollisionScope": "The dust net shares the solid panel proxy; the 0.2 m proxy is up to 0.07 m in front of the 0.06 m visual net."
+          },
+          {
+            "name": "an intact fence stops the capsule and local destruction opens the same real-terrain path",
+            "status": "PASS",
+            "speed": 5,
+            "blockedTravel": 4.530134059413588,
+            "openTravel": 8.334726999393986
+          },
+          {
+            "name": "local damage, distant deletion and repeated resets restore the exact four instance layers",
+            "status": "PASS",
+            "distances": [
+              279,
+              281,
+              900
+            ],
+            "resetCycles": 3,
+            "restoredPanels": 69,
+            "nonlethalFlashLocalized": true
+          },
+          {
+            "name": "full campus replaces the construction building, keeps 31 and safely settles both nearby destinations",
+            "status": "PASS",
+            "registeredPanels": 69,
+            "constructionBuildingShells": 0,
+            "retained31Shells": 1,
+            "treeTrunks": 1165,
+            "trunksInsideSite": 0,
+            "destinations": [
+              {
+                "id": "way/389628348",
+                "location": {
+                  "id": "way/389628348",
+                  "name": "31 공과대학",
+                  "x": 149.19478196767818,
+                  "z": -1006.4073499175544
+                },
+                "states": [
+                  {
+                    "frame": 0,
+                    "position": {
+                      "x": 149.1947784423828,
+                      "y": 37.60690689086914,
+                      "z": -1006.4073486328125
+                    },
+                    "grounded": false,
+                    "deepContacts": 0
+                  },
+                  {
+                    "frame": 30,
+                    "position": {
+                      "x": 149.19442749023438,
+                      "y": 37.47062301635742,
+                      "z": -1006.4073486328125
+                    },
+                    "grounded": true,
+                    "deepContacts": 0
+                  },
+                  {
+                    "frame": 120,
+                    "position": {
+                      "x": 149.19305419921875,
+                      "y": 37.47063064575195,
+                      "z": -1006.4073486328125
+                    },
+                    "grounded": true,
+                    "deepContacts": 0
+                  }
+                ]
+              },
+              {
+                "id": "way/1530459898",
+                "location": {
+                  "id": "way/1530459898",
+                  "name": "32동 증개축 공사 구역",
+                  "x": 136.7,
+                  "z": -1127.17
+                },
+                "states": [
+                  {
+                    "frame": 0,
+                    "position": {
+                      "x": 136.6999969482422,
+                      "y": 42.66133499145508,
+                      "z": -1127.1700439453125
+                    },
+                    "grounded": false,
+                    "deepContacts": 0
+                  },
+                  {
+                    "frame": 30,
+                    "position": {
+                      "x": 136.6999969482422,
+                      "y": 42.52256774902344,
+                      "z": -1127.1700439453125
+                    },
+                    "grounded": true,
+                    "deepContacts": 0
+                  },
+                  {
+                    "frame": 120,
+                    "position": {
+                      "x": 136.6999969482422,
+                      "y": 42.52276611328125,
+                      "z": -1127.1700439453125
+                    },
+                    "grounded": true,
+                    "deepContacts": 0
+                  }
+                ]
+              }
+            ],
+            "scope": "Safe arrival and settling, not a complete surveyed pedestrian route or present-day access permission."
+          }
+        ],
+        "implementation": "원본 construction 건물 행을 일반 14m 건물로 만들던 처리를 제거하고 지형을 따르는 공사 바닥과 파괴 가능한 가설 울타리로 구분했다. 문화관과 공통 울타리 함수를 사용하며 미니맵에도 공사 색을 적용했다.",
+        "countsAsSpecialBuilding": false,
+        "countsAsOriginalBuildingRow": true,
+        "limitations": [
+          "2025년 계획과 OSM 공사 경계를 2026년 11월 현재 설치 상태의 실측으로 해석하지 않는다. 현재 철거 범위와 진행률은 직접 확인하지 않았다.",
+          "울타리 색, 두께, 각 변의 높이와 정확한 출입문 위치는 실측하지 않았다. 별도 보행 안전펜스와 내부 공정은 재현하지 않았다.",
+          "방진망도 패널의 단단한 충돌 상자를 공유하므로 렌더 표면보다 충돌면이 최대 약 0.07002 m 앞선다.",
+          "도로 간격은 원본 도로의 추정 폭과 실제 게임 기하를 비교한 값이다. 계획의 보행로 폭이나 현장 차량 통행 여유를 측량한 결과가 아니다.",
+          "빠른 이동 검사는 도착점의 초기, 30프레임, 120프레임 접지를 확인했다. 현장 출입 허가나 모든 보행 동선을 확인한 것은 아니다."
+        ]
+      },
+      "cultureRegression": {
+        "artifact": "artifacts/construction-test/results.json",
+        "artifactSha256": "367b86030f84f1bdeef988fc0669f60925df27edde2331060ad218866f8935a1",
+        "checks": 6,
+        "notes": {
+          "path": "sources/culture-construction-notes.json",
+          "sha256": "c93e726b7c322e566c4c9d5136873946959788606fe4404023138cd8a836ef96"
+        }
+      },
+      "readme": {
+        "path": "README.md",
+        "sha256": "e916b167ecb4f0a3f9c97754718cb24538c515cc1b2cfc7bc7b19d6ee7840ea7"
+      },
+      "credits": {
+        "path": "public/credits.html",
+        "sha256": "39a7b6aadf9af09beef35fd77b1bcb36294e88190e26ef19799c688011f5cce7"
+      },
+      "independent": {
+        "artifact": "artifacts/engineering35-31-independent-review/results.json",
+        "artifactSha256": "fba7dadacdf68d9b111b5387ea8570c2612ce5209f1129bd792b529cbe4da87d",
+        "checks": 19
+      },
+      "preservedFromRelease18": [
+        {
+          "path": "public/data/campus.json",
+          "sha256": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+          "gitBlobSha256": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+          "comparison": "byte-identical"
+        },
+        {
+          "path": "public/data/terrain.json",
+          "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+          "gitBlobSha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+          "comparison": "byte-identical"
+        },
+        {
+          "path": "sources/campus.osm",
+          "sha256": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+          "gitBlobSha256": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+          "comparison": "byte-identical"
+        },
+        {
+          "path": "src/terrain.ts",
+          "sha256": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263",
+          "gitBlobSha256": "9171e2e0a80d0a9f16463b205a18c77ef04cdbce7b3c3a0903057484ca14faab",
+          "comparison": "same prior working-copy SHA; Git blob differs only in line endings"
+        },
+        {
+          "path": "src/physics.ts",
+          "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+          "gitBlobSha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+          "comparison": "byte-identical"
+        },
+        {
+          "path": "src/controls.ts",
+          "sha256": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d",
+          "gitBlobSha256": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d",
+          "comparison": "byte-identical"
+        },
+        {
+          "path": "src/coordinates.ts",
+          "sha256": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+          "gitBlobSha256": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+          "comparison": "byte-identical"
+        }
+      ]
+    },
+    "totalBuildings": 206,
+    "originalOsmBuildings": 205,
+    "supplementalBuildings": 1,
+    "supplementalDataReview": {
+      "originalFootprints": 205,
+      "supplementalFootprints": 1,
+      "totalFootprints": 206,
+      "originalRoads": 715,
+      "buildingId": "supplemental/snu-303",
+      "namespace": "supplemental/",
+      "footprintEstimated": true,
+      "originalData": {
+        "sources/campus.osm": {
+          "sha256": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+          "unchangedFromCommit": "a656cf0300615299e55e01cf7f9c11be14115346"
+        },
+        "public/data/terrain.json": {
+          "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+          "unchangedFromCommit": "a656cf0300615299e55e01cf7f9c11be14115346"
+        }
+      },
+      "processedCampus": {
+        "path": "public/data/campus.json",
+        "sha256": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+        "previousSha256": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64"
+      },
+      "manifest": {
+        "path": "sources/campus-supplemental-buildings.json",
+        "sha256": "d8caf0c818ad5cfcbd6714a8098d84df7a0cb29d6d9445ede1337b0ec77f4b1a"
+      },
+      "terrainCut": {
+        "level": 122.278,
+        "apron": 1,
+        "blend": 5,
+        "protectedCorridors": [
+          {
+            "id": "way/167667799/47",
+            "points": [
+              [
+                316.5,
+                -1825.11
+              ],
+              [
+                281.46,
+                -1836.26
+              ],
+              [
+                229.8,
+                -1856.64
+              ],
+              [
+                215.82,
+                -1866.36
+              ],
+              [
+                207.05,
+                -1879.16
+              ],
+              [
+                188.32,
+                -1918.28
+              ],
+              [
+                167.94,
+                -1945.06
+              ],
+              [
+                143.7,
+                -1966.37
+              ],
+              [
+                105.68,
+                -1988.54
+              ],
+              [
+                80.08,
+                -2000.55
+              ]
+            ],
+            "width": 11.5
+          },
+          {
+            "id": "way/481787202/411",
+            "points": [
+              [
+                319.64,
+                -1944.08
+              ],
+              [
+                319.21,
+                -1925.07
+              ],
+              [
+                318.13,
+                -1903
+              ],
+              [
+                317.28,
+                -1872.78
+              ],
+              [
+                316.5,
+                -1825.11
+              ],
+              [
+                315.76,
+                -1789.99
+              ],
+              [
+                317.24,
+                -1772.64
+              ],
+              [
+                317.83,
+                -1768.96
+              ],
+              [
+                324.77,
+                -1754.5
+              ],
+              [
+                336.86,
+                -1732.7
+              ],
+              [
+                345.15,
+                -1714.68
+              ],
+              [
+                346.31,
+                -1711.34
+              ],
+              [
+                349.59,
+                -1704.36
+              ]
+            ],
+            "width": 18.8
+          },
+          {
+            "id": "way/777510058/486",
+            "points": [
+              [
+                299.33,
+                -1738.9
+              ],
+              [
+                296.79,
+                -1759.47
+              ]
+            ],
+            "width": 8
+          }
+        ]
+      },
+      "terrainMetrics": {
+        "addedRegions": 42,
+        "previousVertices": 36890,
+        "currentVertices": 41191,
+        "outsideSamples": 29628,
+        "localSamples": 26250,
+        "changedSamples": 3374,
+        "maximumRaise": 0.000046349627268682525,
+        "maximumLowering": 9.445173526253768,
+        "maximumOutsideSupportChange": 0.00006366804825574945,
+        "maximumBuildingChange": 0.000019680235311625438,
+        "interpolationSupportAllowance": 2.8248581358006715,
+        "worst": {
+          "lowering": {
+            "x": 303.49000000000007,
+            "z": -1818.8022998046877,
+            "before": 131.69486274286754,
+            "after": 122.24968921661377
+          }
+        }
+      },
+      "roadMetrics": {
+        "terrain": {
+          "totalSamples": 5089,
+          "maximumHeightChange": 0.00008722415054762678,
+          "maximumGradeChange": 0.0001716339854807293,
+          "maximumAdjacentError": 0.00008527554408033211,
+          "roads": [
+            {
+              "id": "way/167667799/47",
+              "drivable": true,
+              "samples": 799,
+              "maximumHeightChange": 0.000008353270118277578,
+              "maximumGradeChange": 0.000027554103648539378
+            },
+            {
+              "id": "way/356701921/132",
+              "drivable": true,
+              "samples": 297,
+              "maximumHeightChange": 0.00006457840427742667,
+              "maximumGradeChange": 0.00012245441871744432
+            },
+            {
+              "id": "way/430289536/175",
+              "drivable": true,
+              "samples": 51,
+              "maximumHeightChange": 0,
+              "maximumGradeChange": 0
+            },
+            {
+              "id": "way/468665859/406",
+              "drivable": true,
+              "samples": 8,
+              "maximumHeightChange": 0,
+              "maximumGradeChange": 0
+            },
+            {
+              "id": "way/481787202/411",
+              "drivable": true,
+              "samples": 1157,
+              "maximumHeightChange": 0.00004045617535552992,
+              "maximumGradeChange": 0.00007803692766536545
+            },
+            {
+              "id": "way/481915893/423",
+              "drivable": false,
+              "samples": 195,
+              "maximumHeightChange": 0.000021563555776538124,
+              "maximumGradeChange": 0.00003028976006492967
+            },
+            {
+              "id": "way/481915895/424",
+              "drivable": false,
+              "samples": 504,
+              "maximumHeightChange": 0.00005334241618015767,
+              "maximumGradeChange": 0.000104644740364967
+            },
+            {
+              "id": "way/481915897/425",
+              "drivable": false,
+              "samples": 111,
+              "maximumHeightChange": 0,
+              "maximumGradeChange": 0
+            },
+            {
+              "id": "way/777504045/484",
+              "drivable": true,
+              "samples": 90,
+              "maximumHeightChange": 0,
+              "maximumGradeChange": 0
+            },
+            {
+              "id": "way/777504046/485",
+              "drivable": true,
+              "samples": 190,
+              "maximumHeightChange": 0.000003236782902149571,
+              "maximumGradeChange": 0.000005012496920697401
+            },
+            {
+              "id": "way/777510058/486",
+              "drivable": false,
+              "samples": 129,
+              "maximumHeightChange": 0.000003507670129465623,
+              "maximumGradeChange": 0.000003949406813346427
+            },
+            {
+              "id": "way/777628598/488",
+              "drivable": false,
+              "samples": 525,
+              "maximumHeightChange": 0.00008722415054762678,
+              "maximumGradeChange": 0.0001716339854807293
+            },
+            {
+              "id": "way/777628687/492",
+              "drivable": false,
+              "samples": 615,
+              "maximumHeightChange": 0.00003267052272803994,
+              "maximumGradeChange": 0.00005013813517479923
+            },
+            {
+              "id": "way/777628879/494",
+              "drivable": false,
+              "samples": 418,
+              "maximumHeightChange": 0.000012375444441659056,
+              "maximumGradeChange": 0.00002499540592861115
+            }
+          ]
+        },
+        "ribbon": {
+          "boundarySamples": 504,
+          "maximumBoundaryJump": 0.00005176710700993681,
+          "samples": 9016,
+          "minimumClearance": -2.2022860159846402,
+          "maximumWorsening": 0.00006248655998319919,
+          "changedRoads": 10,
+          "worst": {
+            "road": "way/481787202/411",
+            "x": 319.26678975423175,
+            "y": 160.258176167806,
+            "z": -1863.8069661458333,
+            "clearance": -2.2022860159846402,
+            "previousGround": 162.46046218379064,
+            "previousRoadY": 160.2581787109375,
+            "previousClearance": -2.2022834728531393
+          },
+          "correspondingRoadTriangles": 19611,
+          "maximumRoadVertexHeightChange": 0.0000457763671875,
+          "previousSurfaceSamples": 9016,
+          "maximumRoadClearanceLoss": 0.00004214150791881366,
+          "worstNewRoad": {
+            "road": "way/481915895/424",
+            "x": 333.874994913737,
+            "z": -1836.915771484375,
+            "previousRoadY": 152.58973439534506,
+            "currentRoadY": 152.58975474039713,
+            "previousClearance": 0.8912920249082674,
+            "clearance": 0.8912498834003486,
+            "loss": 0.00004214150791881366
+          },
+          "newlyBuriedSamples": 0,
+          "maximumNewBurial": 0,
+          "worstNewBurial": null,
+          "maximumExistingBurialIncrease": 0.000011913259783113972,
+          "worstExistingBurial": {
+            "road": "way/777628687/492",
+            "x": 323.31084696451825,
+            "z": -1862.895487467448,
+            "previousClearance": -0.15051356508863023,
+            "clearance": -0.15052547834841334,
+            "loss": 0.000011913259783113972
+          }
+        }
+      },
+      "limit": "원본 자료 보존과 처리 지형의 국소 변경을 구분한다. terrainPad:false만 적용한 경우는 이전 지형과 동일하며 explicit terrainCut이 있는 실제 303 부지에만 절개를 적용했다.",
+      "pendingIssues": [
+        {
+          "issue": "301 연결교의 높이 정합",
+          "status": "pending",
+          "evidence": "현재 북문 표본은 원시 메시 약 128.58m와 기존 건물 패드 약 149.42m 사이에 약 20.84m 차이가 있다. 303과 301의 연결교는 이번에 구현하지 않았다."
+        },
+        {
+          "issue": "service47의 차량 통행 태그",
+          "status": "pending",
+          "evidence": "원본 motor_vehicle=no와 기존 처리 데이터 drivable=true가 일치하지 않는다. 이번 추가 건물과 절개 작업에서는 도로 좌표와 기존 분류를 보존했으며 이 문제를 수정하지 않았다."
+        }
+      ]
+    },
+    "constructionBuildingRows": 1,
+    "latestConstruction": {
+      "areaId": "way/1530459898",
+      "buildingNumber": "32",
+      "name": "32동 공사구역",
+      "status": "plan-based-approximation-node-verified",
+      "notes": {
+        "path": "sources/engineering-construction-notes.json",
+        "sha256": "7d80b8f109260ca66ed747e46d7cfed87dbcaeb7b1469c3f25e4ebb4dae9b0af"
+      },
+      "module": {
+        "path": "src/campusConstruction.ts",
+        "sha256": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22"
+      },
+      "test": "scripts/verify-engineering-construction.mjs",
+      "verification": {
+        "artifact": "artifacts/engineering-construction-test/results.json",
+        "artifactSha256": "ab9affc7180182fcce7ea63c057ab6217624a2cef76fe9ddec27190d09a8b196",
+        "checks": 8
+      },
+      "results": [
+        {
+          "name": "raw construction boundary stays intact and four rendered instance layers remain inside it",
+          "status": "PASS",
+          "rawVertices": 5,
+          "parts": 69,
+          "renderMeshes": 4,
+          "minimumRenderedInset": 0.8999414002269204,
+          "maximumFoundationAbove": -0.26999736311819333,
+          "rppHeight": 8,
+          "netHeight": 1,
+          "netOpacity": 0.38,
+          "heightScope": "General 2025 plan specification applied uniformly; exact edge-by-edge heights are unverified."
+        },
+        {
+          "name": "construction overlay follows original terrain triangles without changing source data or terrain",
+          "status": "PASS",
+          "triangles": 85,
+          "samples": 340,
+          "maximumOverlayError": 0.000005871066184680307,
+          "rawAndTerrainUnchanged": true
+        },
+        {
+          "name": "actual fence geometry preserves nearby road widths and the retained building 31 boundary",
+          "status": "PASS",
+          "retained31Clearance": 1.6647195115272801,
+          "roads": [
+            {
+              "id": "way/347806724/131",
+              "kind": "service",
+              "width": 6.4,
+              "drivable": true,
+              "centrelineClearance": 13.48426725269614,
+              "roadEdgeClearance": 10.28426725269614
+            },
+            {
+              "id": "way/389628251/149",
+              "kind": "footway",
+              "width": 2.5,
+              "drivable": false,
+              "centrelineClearance": 4.3187515573731075,
+              "roadEdgeClearance": 3.0687515573731075
+            },
+            {
+              "id": "way/389628252/150",
+              "kind": "footway",
+              "width": 2.5,
+              "drivable": false,
+              "centrelineClearance": 11.692495765589381,
+              "roadEdgeClearance": 10.442495765589381
+            },
+            {
+              "id": "way/457001534/360",
+              "kind": "service",
+              "width": 6.4,
+              "drivable": true,
+              "centrelineClearance": 13.389059871622294,
+              "roadEdgeClearance": 10.189059871622295
+            },
+            {
+              "id": "way/457001536/362",
+              "kind": "service",
+              "width": 5.5,
+              "drivable": true,
+              "centrelineClearance": 13.508193360547496,
+              "roadEdgeClearance": 10.758193360547496
+            },
+            {
+              "id": "way/457001540/363",
+              "kind": "service",
+              "width": 5.5,
+              "drivable": true,
+              "centrelineClearance": 3.0268419157817834,
+              "roadEdgeClearance": 0.2768419157817834
+            },
+            {
+              "id": "way/457001543/364",
+              "kind": "service",
+              "width": 5.5,
+              "drivable": true,
+              "centrelineClearance": 5.463818379668471,
+              "roadEdgeClearance": 2.7138183796684707
+            },
+            {
+              "id": "way/1186165729/527",
+              "kind": "footway",
+              "width": 2.5,
+              "drivable": false,
+              "centrelineClearance": 13.312226078609818,
+              "roadEdgeClearance": 12.062226078609818
+            },
+            {
+              "id": "way/1544364840/615",
+              "kind": "footway",
+              "width": 2.5,
+              "drivable": false,
+              "centrelineClearance": 4.2726537768779576,
+              "roadEdgeClearance": 3.0226537768779576
+            },
+            {
+              "id": "way/1544714450/676",
+              "kind": "footway",
+              "width": 2.5,
+              "drivable": false,
+              "centrelineClearance": 4.470225470626918,
+              "roadEdgeClearance": 3.220225470626918
+            },
+            {
+              "id": "way/1544714454/680",
+              "kind": "footway",
+              "width": 2.5,
+              "drivable": false,
+              "centrelineClearance": 4.447152850908769,
+              "roadEdgeClearance": 3.197152850908769
+            },
+            {
+              "id": "way/1544714455/681",
+              "kind": "footway",
+              "width": 2.5,
+              "drivable": false,
+              "centrelineClearance": 4.665548839719068,
+              "roadEdgeClearance": 3.415548839719068
+            }
+          ],
+          "scope": "Horizontal clearance from every actual rendered instance, including posts. Nominal road widths are map estimates, not measured pavement."
+        },
+        {
+          "name": "actual Traffic lane and curve poses keep eligible car and bus bodies outside the fence",
+          "status": "PASS",
+          "records": [
+            {
+              "kind": "car",
+              "width": 1.82,
+              "length": 4.3,
+              "straightSamples": 675,
+              "turnSamples": 861,
+              "minimumClearance": 0.602569893108008,
+              "worst": {
+                "roadId": "way/457001540/363",
+                "nextRoadId": "way/457001540/363",
+                "edge": 1134,
+                "next": 1135,
+                "mode": "turn",
+                "fraction": 0.55,
+                "position": [
+                  120.01311381872374,
+                  40.86522007887989,
+                  -1114.8801065258676
+                ],
+                "footprint": [
+                  [
+                    118.98125007635335,
+                    -1116.959379433044
+                  ],
+                  [
+                    120.79820950216909,
+                    -1117.0645385740604
+                  ],
+                  [
+                    120.80848739228875,
+                    -1116.8869552546275
+                  ],
+                  [
+                    121.04497756109413,
+                    -1112.8008336186913
+                  ],
+                  [
+                    121.0552554512138,
+                    -1112.6232502992582
+                  ],
+                  [
+                    119.23829602539804,
+                    -1112.5180911582418
+                  ]
+                ]
+              }
+            },
+            {
+              "kind": "bus",
+              "width": 2.45,
+              "length": 10.4,
+              "straightSamples": 350,
+              "turnSamples": 246,
+              "minimumClearance": 10.692059871622257,
+              "worst": {
+                "roadId": "way/457001534/360",
+                "nextRoadId": "way/455015956/201",
+                "edge": 1113,
+                "next": 890,
+                "mode": "straight",
+                "fraction": 0.4650619224265684,
+                "position": [
+                  86.47677881958322,
+                  38.85684054775573,
+                  -1062.609440537555
+                ],
+                "footprint": [
+                  [
+                    84.30908082067965,
+                    -1057.7296870058572
+                  ],
+                  [
+                    84.32863364281907,
+                    -1057.833276588637
+                  ],
+                  [
+                    86.2565408511422,
+                    -1068.047203863411
+                  ],
+                  [
+                    88.6640296406262,
+                    -1067.5927836520327
+                  ],
+                  [
+                    88.64447681848678,
+                    -1067.4891940692528
+                  ],
+                  [
+                    86.71656961016365,
+                    -1057.275266794479
+                  ]
+                ]
+              }
+            }
+          ],
+          "busEligibility": "Actual Traffic excludes buses on roads narrower than 6 m; 5.5 m service roads are car-only in this check.",
+          "selection": "All eligible outgoing curve alternatives near this fence; actual Traffic.pose includes DEM pitch and all eight body corners."
+        },
+        {
+          "name": "real panel and net surfaces agree with loaded and unloaded rays after one H reflection",
+          "status": "PASS",
+          "rays": 28,
+          "maxLoadedUnloaded": 0.00011445890328576347,
+          "maxRenderCollision": 0.07001599738216857,
+          "maxReflected": 0,
+          "records": [
+            {
+              "panel": 0,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9099999969547332,
+              "loaded": 1.900002360343933,
+              "unloaded": 1.9000102956923755
+            },
+            {
+              "panel": 0,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.970000000872646,
+              "loaded": 1.900002360343933,
+              "unloaded": 1.9000102956923755
+            },
+            {
+              "panel": 5,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9099999969547332,
+              "loaded": 1.900002360343933,
+              "unloaded": 1.9000059486290741
+            },
+            {
+              "panel": 5,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9700000008726468,
+              "loaded": 1.900002360343933,
+              "unloaded": 1.9000059486290741
+            },
+            {
+              "panel": 10,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000032879727,
+              "loaded": 1.8999965190887451,
+              "unloaded": 1.9000148057736579
+            },
+            {
+              "panel": 10,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.970000000095998,
+              "loaded": 1.8999965190887451,
+              "unloaded": 1.9000148057736579
+            },
+            {
+              "panel": 15,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000032880977,
+              "loaded": 1.8999965190887451,
+              "unloaded": 1.9000132537526477
+            },
+            {
+              "panel": 15,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.970000000095998,
+              "loaded": 1.8999965190887451,
+              "unloaded": 1.9000132537526477
+            },
+            {
+              "panel": 20,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000015549463,
+              "loaded": 1.9000564813613892,
+              "unloaded": 1.8999420224581034
+            },
+            {
+              "panel": 20,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9699999992805715,
+              "loaded": 1.9000564813613892,
+              "unloaded": 1.8999420224581034
+            },
+            {
+              "panel": 25,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000015549463,
+              "loaded": 1.9000564813613892,
+              "unloaded": 1.9000056286964466
+            },
+            {
+              "panel": 25,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9699999992805715,
+              "loaded": 1.9000564813613892,
+              "unloaded": 1.9000056286964466
+            },
+            {
+              "panel": 30,
+              "surface": "engineering32-fence-panels",
+              "render": 1.910000001554944,
+              "loaded": 1.9000564813613892,
+              "unloaded": 1.8999463353596477
+            },
+            {
+              "panel": 30,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9699999992805715,
+              "loaded": 1.9000564813613892,
+              "unloaded": 1.8999463353596477
+            },
+            {
+              "panel": 35,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000006979951,
+              "loaded": 1.8999887704849243,
+              "unloaded": 1.9000007271677875
+            },
+            {
+              "panel": 35,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9700000002096407,
+              "loaded": 1.8999887704849243,
+              "unloaded": 1.9000007271677875
+            },
+            {
+              "panel": 40,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000006979951,
+              "loaded": 1.8999887704849243,
+              "unloaded": 1.9000028002706677
+            },
+            {
+              "panel": 40,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9700000002096634,
+              "loaded": 1.8999887704849243,
+              "unloaded": 1.9000028002706677
+            },
+            {
+              "panel": 45,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000006979951,
+              "loaded": 1.8999887704849243,
+              "unloaded": 1.90000487337352
+            },
+            {
+              "panel": 45,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9700000002096634,
+              "loaded": 1.8999887704849243,
+              "unloaded": 1.90000487337352
+            },
+            {
+              "panel": 50,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000022403951,
+              "loaded": 1.8999840021133423,
+              "unloaded": 1.8999455607735538
+            },
+            {
+              "panel": 50,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9699999994955109,
+              "loaded": 1.8999840021133423,
+              "unloaded": 1.8999455607735538
+            },
+            {
+              "panel": 55,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000022403911,
+              "loaded": 1.8999840021133423,
+              "unloaded": 1.8999985594256952
+            },
+            {
+              "panel": 55,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9699999994955109,
+              "loaded": 1.8999840021133423,
+              "unloaded": 1.8999985594256952
+            },
+            {
+              "panel": 60,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000022403911,
+              "loaded": 1.8999840021133423,
+              "unloaded": 1.9000494184429955
+            },
+            {
+              "panel": 60,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9699999994955109,
+              "loaded": 1.8999840021133423,
+              "unloaded": 1.9000494184429955
+            },
+            {
+              "panel": 65,
+              "surface": "engineering32-fence-panels",
+              "render": 1.9100000022403951,
+              "loaded": 1.8999851942062378,
+              "unloaded": 1.8999815528454684
+            },
+            {
+              "panel": 65,
+              "surface": "engineering32-fence-dust-net",
+              "render": 1.9699999994955109,
+              "loaded": 1.8999851942062378,
+              "unloaded": 1.8999815528454684
+            }
+          ],
+          "netCollisionScope": "The dust net shares the solid panel proxy; the 0.2 m proxy is up to 0.07 m in front of the 0.06 m visual net."
+        },
+        {
+          "name": "an intact fence stops the capsule and local destruction opens the same real-terrain path",
+          "status": "PASS",
+          "speed": 5,
+          "blockedTravel": 4.530134059413588,
+          "openTravel": 8.334726999393986
+        },
+        {
+          "name": "local damage, distant deletion and repeated resets restore the exact four instance layers",
+          "status": "PASS",
+          "distances": [
+            279,
+            281,
+            900
+          ],
+          "resetCycles": 3,
+          "restoredPanels": 69,
+          "nonlethalFlashLocalized": true
+        },
+        {
+          "name": "full campus replaces the construction building, keeps 31 and safely settles both nearby destinations",
+          "status": "PASS",
+          "registeredPanels": 69,
+          "constructionBuildingShells": 0,
+          "retained31Shells": 1,
+          "treeTrunks": 1165,
+          "trunksInsideSite": 0,
+          "destinations": [
+            {
+              "id": "way/389628348",
+              "location": {
+                "id": "way/389628348",
+                "name": "31 공과대학",
+                "x": 149.19478196767818,
+                "z": -1006.4073499175544
+              },
+              "states": [
+                {
+                  "frame": 0,
+                  "position": {
+                    "x": 149.1947784423828,
+                    "y": 37.60690689086914,
+                    "z": -1006.4073486328125
+                  },
+                  "grounded": false,
+                  "deepContacts": 0
+                },
+                {
+                  "frame": 30,
+                  "position": {
+                    "x": 149.19442749023438,
+                    "y": 37.47062301635742,
+                    "z": -1006.4073486328125
+                  },
+                  "grounded": true,
+                  "deepContacts": 0
+                },
+                {
+                  "frame": 120,
+                  "position": {
+                    "x": 149.19305419921875,
+                    "y": 37.47063064575195,
+                    "z": -1006.4073486328125
+                  },
+                  "grounded": true,
+                  "deepContacts": 0
+                }
+              ]
+            },
+            {
+              "id": "way/1530459898",
+              "location": {
+                "id": "way/1530459898",
+                "name": "32동 증개축 공사 구역",
+                "x": 136.7,
+                "z": -1127.17
+              },
+              "states": [
+                {
+                  "frame": 0,
+                  "position": {
+                    "x": 136.6999969482422,
+                    "y": 42.66133499145508,
+                    "z": -1127.1700439453125
+                  },
+                  "grounded": false,
+                  "deepContacts": 0
+                },
+                {
+                  "frame": 30,
+                  "position": {
+                    "x": 136.6999969482422,
+                    "y": 42.52256774902344,
+                    "z": -1127.1700439453125
+                  },
+                  "grounded": true,
+                  "deepContacts": 0
+                },
+                {
+                  "frame": 120,
+                  "position": {
+                    "x": 136.6999969482422,
+                    "y": 42.52276611328125,
+                    "z": -1127.1700439453125
+                  },
+                  "grounded": true,
+                  "deepContacts": 0
+                }
+              ]
+            }
+          ],
+          "scope": "Safe arrival and settling, not a complete surveyed pedestrian route or present-day access permission."
+        }
+      ],
+      "implementation": "원본 construction 건물 행을 일반 14m 건물로 만들던 처리를 제거하고 지형을 따르는 공사 바닥과 파괴 가능한 가설 울타리로 구분했다. 문화관과 공통 울타리 함수를 사용하며 미니맵에도 공사 색을 적용했다.",
+      "countsAsSpecialBuilding": false,
+      "countsAsOriginalBuildingRow": true,
+      "limitations": [
+        "2025년 계획과 OSM 공사 경계를 2026년 11월 현재 설치 상태의 실측으로 해석하지 않는다. 현재 철거 범위와 진행률은 직접 확인하지 않았다.",
+        "울타리 색, 두께, 각 변의 높이와 정확한 출입문 위치는 실측하지 않았다. 별도 보행 안전펜스와 내부 공정은 재현하지 않았다.",
+        "방진망도 패널의 단단한 충돌 상자를 공유하므로 렌더 표면보다 충돌면이 최대 약 0.07002 m 앞선다.",
+        "도로 간격은 원본 도로의 추정 폭과 실제 게임 기하를 비교한 값이다. 계획의 보행로 폭이나 현장 차량 통행 여유를 측량한 결과가 아니다.",
+        "빠른 이동 검사는 도착점의 초기, 30프레임, 120프레임 접지를 확인했다. 현장 출입 허가나 모든 보행 동선을 확인한 것은 아니다."
+      ]
+    }
+  },
+  "followupHistory": [
+    {
+      "reviewedAt": "2026-11-04T21:06:54.213Z",
+      "scope": "앞선 14개 모델 통합 검토는 당시 해시와 함께 보존한다. 이번 추가 검증은 npm test 20개 스크립트의 165개 검사로 한정한다. 앞선 전체 물리 표적 수와 CPU 비용을 이번 소스에서 다시 측정한 것으로 해석하지 않는다.",
+      "specialBuildings": 16,
+      "addedModels": [
+        {
+          "buildingNumber": "38",
+          "module": "src/globalEngineeringLandmark.ts",
+          "reference": "sources/global-engineering-model-notes.json",
+          "checks": 8
+        },
+        {
+          "buildingNumber": "150",
+          "module": "src/admissionsLandmark.ts",
+          "reference": "sources/admissions-model-notes.json",
+          "checks": 9
+        }
+      ],
+      "terrainReference": "sources/family-terrain-refinement.json",
+      "terrainChecks": 8,
+      "wholeSuite": {
+        "passedChecks": 165,
+        "scripts": 20,
+        "artifact": "artifacts/release-verification.log"
+      },
+      "sourceSnapshot": [
+        {
+          "path": "src/buildingAppearance.ts",
+          "sha256": "34b8c6220d686f85f7ff9c5b195e9d2d0c84d0630437e6388120cdd5e9c417a2"
+        },
+        {
+          "path": "src/landmarkBuildings.ts",
+          "sha256": "9002ee59e2e0717fe46731e34dcc464f8d179e6bafed5fb1b292cdf3e1d34f01"
+        },
+        {
+          "path": "src/fullCampus.ts",
+          "sha256": "4dfbf21c80f915dd998c7da541fe8dc4c1aa36fdbb895b3f59b737cb10b41503"
+        },
+        {
+          "path": "src/terrain.ts",
+          "sha256": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5"
+        },
+        {
+          "path": "src/globalEngineeringLandmark.ts",
+          "sha256": "1638023cd7d0fd118c7095dbbe423d04da86f8e955e33fc2fd92d90b28938a6f"
+        },
+        {
+          "path": "src/admissionsLandmark.ts",
+          "sha256": "c38e5a91db4f437eff5506f0f6e7c12bdcb9e3bb9d36c9290e964c5cef404167"
+        }
+      ],
+      "limit": "새 두 모델도 원거리에서 같은 기하를 표시한다. 모바일 GPU 비용과 실제 터치 입력은 아직 측정하지 않았다."
+    },
+    {
+      "reviewedAt": "2026-11-04T21:23:38.241Z",
+      "scope": "앞선 통합 측정은 당시 해시와 함께 보존한다. 이번 추가 검증은 최종 npm test 22개 스크립트의 190개 검사와 두 어린이집의 CPU 미리보기 대조다.",
+      "specialBuildings": 18,
+      "addedModels": [
+        {
+          "buildingNumber": "941",
+          "reference": "sources/baekhak-model-notes.json",
+          "meshes": 2,
+          "parts": 345,
+          "triangles": 4867,
+          "checks": 9
+        },
+        {
+          "buildingNumber": "941-1",
+          "reference": "sources/neutinamu-model-notes.json",
+          "meshes": 2,
+          "parts": 502,
+          "triangles": 17474,
+          "checks": 13
+        }
+      ],
+      "collisionChange": "BreakableSpec.collisionVertices를 제공하는 부품은 실제 미터 단위 로컬 볼록 정점으로 Rapier 충돌체를 만든다. 나머지 부품은 기존 상자 충돌체를 유지한다. 빈 모서리 보행, 회전 형상의 근거리 및 원거리 사격, 파괴 후 초기화를 추가 검사했다.",
+      "wholeSuite": {
+        "passedChecks": 190,
+        "scripts": 22,
+        "artifact": "artifacts/release-verification.log"
+      },
+      "sourceSnapshot": [
+        {
+          "path": "src/buildingAppearance.ts",
+          "sha256": "206f8d4c293b3be595c82b648406309f2e7358243e50a5b5d5b10e35a85b55be"
+        },
+        {
+          "path": "src/landmarkBuildings.ts",
+          "sha256": "2d5041cbb94736f183a121725d827ba8ac7ebd10fb10355ed40bbae4ffadbf22"
+        },
+        {
+          "path": "src/neutinamuLandmark.ts",
+          "sha256": "c73df7876f7d8e03c56e77dd24a4a33c9101948939cfe76740f248e18817471f"
+        },
+        {
+          "path": "src/baekhakLandmark.ts",
+          "sha256": "75a750189d909cbeb5a901ddc99f7412c81acde8336c51538628bcc7da32d2d8"
+        },
+        {
+          "path": "src/physics.ts",
+          "sha256": "372b9ecf413758fd54a1f91264b6c633dc9aa67b38ad6c424419c6aa6e751376"
+        },
+        {
+          "path": "src/scene.ts",
+          "sha256": "a69cded4ab88d8ad91c50abdf42a156d5ef72432889c594a698ae0110de61f7e"
+        }
+      ],
+      "knownCoordinateIssue": "sources/coordinate-review.json",
+      "limit": "이전 전체 표적 수, CPU 비용과 사격 표본을 이번 소스에서 모두 다시 측정한 것으로 해석하지 않는다. 실제 브라우저와 휴대전화는 확인하지 못했다."
+    },
+    {
+      "reviewedAt": "2026-11-04T21:44:52Z",
+      "scope": "이전 통합 측정은 당시 해시와 함께 보존한다. 이번 검증은 현재 소스의 npm test 25개 스크립트, 215개 검사와 공통 좌표 변경에 대한 사진 및 CPU 투영 대조다.",
+      "specialBuildings": 18,
+      "coordinateChange": "sources/coordinate-review.json",
+      "runtimeChanges": [
+        "빠른 이동과 초기화 직후에도 차량 표시 범위와 충돌체가 새 플레이어 위치를 따르도록 갱신했다.",
+        "차량의 Rapier 충돌과 별도 광선 질의가 0.00000179m 차이로 엇갈려 이름이 사라지는 문제를 고쳤다. 조준 표시의 거리 비교는 1mm 수치 오차를 허용한다.",
+        "평면에 그린 표지 글자는 U 좌표를 반사해 읽는 방향을 유지한다. Sprite 셰이더는 양의 열 길이로 크기를 계산하므로 글자 UV를 바꾸지 않는다.",
+        "150동 번호의 실제 13개 획을 투영해 기존 기하가 공통 변환 뒤에도 올바르게 읽힘을 확인했다.",
+        "정문의 높은 기둥과 기단, 삼각 수경시설의 긴 변을 공식 사진과 OSM 차도에 맞춰 서쪽에 놓았다.",
+        "위치가 지도 정류장과 맞지 않는 초기 시제품 정류장을 전체 캠퍼스에서 제외했다. 지도에 저장된 37개 정류장의 시설 외형은 아직 구현하지 않았다."
+      ],
+      "wholeSuite": {
+        "passedChecks": 215,
+        "scripts": 25,
+        "artifact": "artifacts/release-verification.log"
+      },
+      "coordinateChecks": [
+        {
+          "command": "node scripts/verify-coordinates.mjs",
+          "artifact": "artifacts/coordinate-test/results.json",
+          "checks": 9,
+          "passed": 9,
+          "scope": "Node geometry, actual gate generation and Rapier tests. No browser, texture-rendering or physical-device validation."
+        },
+        {
+          "command": "node scripts/verify-runtime-coordinates.mjs",
+          "artifact": "artifacts/runtime-coordinates/results.json",
+          "checks": 10,
+          "passed": 10,
+          "scope": "Actual main control flow and actual Cannon, Traffic, Simulation and Minimap, plus standalone data/render camera modes. Synthetic scene/terrain fixtures and explicit Controls/DOM/renderer test doubles. No browser, WebGL or phone validation."
+        },
+        {
+          "command": "node scripts/verify-world-presentation.mjs",
+          "artifact": "artifacts/world-presentation-test/results.json",
+          "checks": 6,
+          "passed": 6,
+          "scope": "CPU numerical projection and installed Three.js shader contract. No WebGL pixels, browser screen or mobile performance validation."
+        }
+      ],
+      "sourceSnapshot": [
+        {
+          "path": "src/coordinates.ts",
+          "sha256": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837"
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "c1d220ffcfde5e06d1d69db57a5b34b6d368cd736ccc1200d30a51a95e7da1c0"
+        },
+        {
+          "path": "src/cannon.ts",
+          "sha256": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8"
+        },
+        {
+          "path": "src/minimap.ts",
+          "sha256": "00aa6b6e9756a2abd1fd396708a57351ccbce976afde2cd12822e9e9a7282031"
+        },
+        {
+          "path": "src/physics.ts",
+          "sha256": "75f3e2c44006f840098d25d47b2ad58918508fd2259485729e1c1eb516f2df20"
+        },
+        {
+          "path": "src/scene.ts",
+          "sha256": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba"
+        },
+        {
+          "path": "src/fullCampus.ts",
+          "sha256": "013a165c3f055830d9d41daa22eb876094707ec1959dd61c4abf7107fd83be5a"
+        },
+        {
+          "path": "scripts/preview-geometry.mjs",
+          "sha256": "531dfb680bade41333c0bcb62d71eeac91e1c9ed9cc2b683250f95a08af072bb"
+        },
+        {
+          "path": "scripts/verify-coordinates.mjs",
+          "sha256": "ea6d211d1777f33a266643a44695a8851680a95baf300b79bd30c1b1bb4964e1"
+        },
+        {
+          "path": "scripts/verify-runtime-coordinates.mjs",
+          "sha256": "9be0d110215c6316471f944f05382e4e87049a1c6014b75c3abdf0b25ba10fcd"
+        },
+        {
+          "path": "scripts/verify-world-presentation.mjs",
+          "sha256": "d6331b2118b458c5074c94176d460d4ffb697f0d05295dee3937a1eb50b9a28e"
+        }
+      ],
+      "limit": "과거 전체 CPU 비용과 프러스텀 통계를 이번 소스에서 다시 측정한 것으로 해석하지 않는다. 브라우저, GPU와 실제 휴대전화는 검증하지 못했다."
+    },
+    {
+      "reviewedAt": "2026-11-04T22:17:34.070Z",
+      "scope": "이전 통합 측정과 좌표 검증을 당시 해시와 함께 보존한다. 이번 기록은 현재 소스의 npm test 27개 스크립트, 238개 검사와 본관 모델 및 물리 스트리밍 개선을 다룬다.",
+      "specialBuildings": 19,
+      "totalTargets": 12322,
+      "coordinateChange": "sources/coordinate-review.json",
+      "runtimeChanges": [
+        "본관을 공식 사진, 도서관 VR 사진과 평면도에 근거한 별도 모델로 교체했다. 상부 창 4행, 후퇴한 하부 2레벨, 양측 통로와 닫힌 옥상실을 구현했다. 높이와 세부 치수는 근사값이다.",
+        "가까운 표적의 충돌체는 표면 거리 75m 이내에서 불러오고 110m 밖에서 해제한다. 원거리 사격은 논리 좌표 프록시를 사용하며 이동하는 파편에 필요한 충돌체는 물리 step 전에 잠시 불러온다.",
+        "긴 형상이 걸친 모든 공간 셀에 표적을 등록하고 중복을 제거한다. 고정 패딩에 의존하던 공간 질의를 바꿨다.",
+        "원거리 건물 이름을 실제 조준 결과에 연결하고 앞쪽 지형, 고정 장애물과 차량의 가림을 반영한다. 고정 장애물에 body가 없는 경우를 명시적으로 구분한다.",
+        "각 모델의 물리 검사는 광선 경로 부근을 불러온 뒤 비교한다. 초기화 검사는 시작 위치의 로드 집합과 각 표적의 복원된 충돌 형상을 따로 확인한다."
+      ],
+      "wholeSuite": {
+        "command": "npm test",
+        "exitCode": 0,
+        "passedChecks": 238,
+        "failedChecks": 0,
+        "scripts": 27,
+        "artifact": "artifacts/release-verification.log"
+      },
+      "mainLibrary": {
+        "notes": "sources/main-library-model-notes.json",
+        "artifact": "artifacts/main-library-test/results.json",
+        "passedChecks": 8,
+        "geometry": {
+          "name": "mapped outline, six visible levels and bounded merged render geometry",
+          "status": "passed",
+          "mappedPoints": 13,
+          "renderMeshes": 3,
+          "parts": 650,
+          "triangles": 34060,
+          "mainRoofHeightEstimate": 28,
+          "maximumHeightWithRoofRooms": 31.2
+        },
+        "terrainAndBridge": {
+          "name": "shared terrain datum and new rooftop rooms clear the Gwanjeong bridge",
+          "status": "passed",
+          "base": 38.17753219604492,
+          "bridgeUnderside": 68.42753219604492,
+          "overlappingVertexSamples": 30882,
+          "minimumVerticalClearance": 2.2499961853027344,
+          "rooftopRoomOverlap": 0
+        },
+        "entrances": {
+          "name": "side passages remain open and front door destruction changes capsule entry",
+          "status": "passed",
+          "sidePassages": 2,
+          "actualTerrainSideWalks": [
+            {
+              "side": "southwest",
+              "progress": 10.000133904365097
+            },
+            {
+              "side": "northeast",
+              "progress": 10.020221052720007
+            }
+          ],
+          "closedDoor": {
+            "progress": 5.205867600723053,
+            "height": 39.16762924194336,
+            "groundGap": 0.5562551402920732
+          },
+          "destroyedDoor": {
+            "progress": 7.610593725776494,
+            "height": 39.16801834106445,
+            "groundGap": 0.5157169183548476
+          }
+        },
+        "rayComparison": {
+          "name": "loaded and unloaded exterior rays agree for facade and convex roof parts",
+          "status": "passed",
+          "externalRays": 590,
+          "componentKinds": 16,
+          "maximumDistanceDifference": 0.00024427175522134803,
+          "coincidentSeamTiesExcluded": 2,
+          "startsInsideCollidersExcluded": true
+        },
+        "limitations": "실측 높이, 창 수와 일부 측면 연결부의 높이는 미확정이다. 가려진 면과 실내는 단순화했고 실제 GPU 화면을 검증하지 못했다."
+      },
+      "streaming": {
+        "review": "sources/mobile-physics-review.json",
+        "artifact": "artifacts/streaming-test/results.json",
+        "passedChecks": 8,
+        "benchmark": "artifacts/mobile-physics-audit/comparison.json",
+        "interpretation": "같은 12,322개 표적을 사용한 개발 PC의 Node CPU 비교에서 대표 위치의 활성 충돌체와 물리 step 시간이 줄었다. 원거리 파편 사례의 step 시간은 거의 같았으며 실제 휴대폰 FPS는 측정하지 않았다."
+      },
+      "coordinateChecks": [
+        {
+          "command": "node scripts/verify-coordinates.mjs",
+          "artifact": "artifacts/coordinate-test/results.json",
+          "checks": 9,
+          "passed": 9,
+          "scope": "Node geometry, actual gate generation and Rapier tests. No browser, texture-rendering or physical-device validation."
+        },
+        {
+          "command": "node scripts/verify-runtime-coordinates.mjs",
+          "artifact": "artifacts/runtime-coordinates/results.json",
+          "checks": 17,
+          "passed": 17,
+          "scope": "Actual main control flow and actual Cannon, Traffic, Simulation and Minimap, plus standalone data/render camera modes. Synthetic scene/terrain fixtures and explicit Controls/DOM/renderer test doubles. No browser, WebGL or phone validation."
+        },
+        {
+          "command": "node scripts/verify-world-presentation.mjs",
+          "artifact": "artifacts/world-presentation-test/results.json",
+          "checks": 6,
+          "passed": 6,
+          "scope": "CPU numerical projection and installed Three.js shader contract. No WebGL pixels, browser screen or mobile performance validation."
+        }
+      ],
+      "sourceSnapshot": [
+        {
+          "path": "src/coordinates.ts",
+          "sha256": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837"
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "f79282132f6d80c8d4b7ef915aeec23eb13fb25d5fe8a019201e6b099ac4f97b"
+        },
+        {
+          "path": "src/cannon.ts",
+          "sha256": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8"
+        },
+        {
+          "path": "src/minimap.ts",
+          "sha256": "00aa6b6e9756a2abd1fd396708a57351ccbce976afde2cd12822e9e9a7282031"
+        },
+        {
+          "path": "src/physics.ts",
+          "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f"
+        },
+        {
+          "path": "src/scene.ts",
+          "sha256": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba"
+        },
+        {
+          "path": "src/fullCampus.ts",
+          "sha256": "013a165c3f055830d9d41daa22eb876094707ec1959dd61c4abf7107fd83be5a"
+        },
+        {
+          "path": "scripts/preview-geometry.mjs",
+          "sha256": "1a02dbc9d718e2ba4b07eb7f6f5e01f857a46e4da46020ef7d40a11e9fdc53b0"
+        },
+        {
+          "path": "scripts/verify-coordinates.mjs",
+          "sha256": "c958c24e418c95763de0a9db698cd00c85707ca28ba753872af17866ac8f22c8"
+        },
+        {
+          "path": "scripts/verify-runtime-coordinates.mjs",
+          "sha256": "6b88336569aa13d0f7092c0086015435f5d51343e55628796ccbb01c7659545d"
+        },
+        {
+          "path": "scripts/verify-world-presentation.mjs",
+          "sha256": "d6331b2118b458c5074c94176d460d4ffb697f0d05295dee3937a1eb50b9a28e"
+        },
+        {
+          "path": "src/mainLibraryLandmark.ts",
+          "sha256": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3"
+        },
+        {
+          "path": "src/buildingAppearance.ts",
+          "sha256": "ca80c90b8c6435583f49c4eb1d8702c16e120718cbef5e7df84193896eb92571"
+        },
+        {
+          "path": "src/landmarkBuildings.ts",
+          "sha256": "d865317932741d2b82bddc46f35d08ac793a2c2cec234134f642989095b9b7e3"
+        },
+        {
+          "path": "scripts/verify-streaming.mjs",
+          "sha256": "d9d75542ab298cc150aeabe1033a8215fc6ac120fd4541506898ca870ac78086"
+        },
+        {
+          "path": "scripts/verify-main-library.mjs",
+          "sha256": "d858cadc5d9872d00d41150bf7aacb9e109c23bcd15160e7fb115874cf393639"
+        },
+        {
+          "path": "scripts/streaming-test-helpers.mjs",
+          "sha256": "874fed6b74d16d4945da3ae3b05fd69a6fd1fe91241feba47f3cb1e1df87686c"
+        },
+        {
+          "path": "scripts/verify-all.mjs",
+          "sha256": "8888e2429173cab68a53bed069222d94b60af3bf0b2d4f1a368935056d96570a"
+        },
+        {
+          "path": "public/data/campus.json",
+          "sha256": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64"
+        },
+        {
+          "path": "public/data/terrain.json",
+          "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+        }
+      ],
+      "limit": "이전 전체 프러스텀 통계와 렌더 비용을 이번 소스에서 다시 측정한 것으로 해석하지 않는다. 카카오맵과 네이버지도 로드뷰, 실제 브라우저 화면, GPU 성능과 실제 휴대폰 조작은 검증하지 못했다."
+    },
+    {
+      "reviewedAt": "2026-11-04T22:38:18.485Z",
+      "scope": "이전 통합 측정은 당시 해시와 함께 보존한다. 이번 기록은 행정관 외형, 문화관 공사구역과 모바일 입력 개선을 통합한 소스의 검사 결과다.",
+      "specialBuildings": 20,
+      "customGenerators": 16,
+      "constructionAreas": 1,
+      "totalTargets": 12778,
+      "runtimeChanges": [
+        "행정관 60동을 공식 사진과 5층/B1 자료에 맞춘 별도 모델로 교체했다. 상부 격자 창 3행, 후퇴한 하부, 열린 통로와 옥상 덮개 4개를 구현했다. 본체 높이 20m와 설비를 포함한 21.2m는 추정이다.",
+        "문화관 공사구역은 원본 OSM 경계와 2025년 가설계획을 바탕으로 4m, 8m와 10m 높이의 울타리를 구현했다. 경계의 세부 굴곡과 재료는 근사이며 현재 공정과 출입문 위치는 미확정이다.",
+        "공사 바닥은 실제 지형 삼각형을 윤곽에 잘라 표시하고, 해당 부지 안에는 임의의 수목을 생성하지 않는다. 원본 지형의 높이, 물리 면과 지도 자료는 바꾸지 않았다.",
+        "터치 점프 버튼을 누르는 동안 착지 후에도 점프 요청을 유지한다. 터치를 마친 뒤 실제 마우스 입력으로 복귀하며 전환 클릭은 발사하지 않는다. 활성 터치의 합성 마우스 간섭을 방지한다."
+      ],
+      "wholeSuite": {
+        "command": "npm test",
+        "exitCode": 0,
+        "passedChecks": 261,
+        "failedChecks": 0,
+        "scripts": 29,
+        "artifact": "artifacts/release-verification.log"
+      },
+      "administration": {
+        "notes": "sources/administration-model-notes.json",
+        "artifact": "artifacts/administration-test/results.json",
+        "passedChecks": 10,
+        "results": [
+          {
+            "name": "official five floors and B1 remain distinct from estimated height and facade rows",
+            "status": "passed",
+            "mappedPoints": 6,
+            "renderMeshes": 3,
+            "parts": 364,
+            "triangles": 15746,
+            "estimatedHeight": 20,
+            "basementInteriorModeled": false
+          },
+          {
+            "name": "roof and upper slab preserve actual outline with matching convex colliders",
+            "status": "passed",
+            "roofConvexParts": 26,
+            "upperFloorConvexParts": 26,
+            "insideSamples": 132,
+            "outsideSamples": 493
+          },
+          {
+            "name": "photographed roof covers retain their silhouette without filling square bounding-box corners",
+            "status": "passed",
+            "roundCovers": 3,
+            "angledCovers": 1,
+            "convexParts": 4,
+            "emptyCornerRays": 4,
+            "maximumHeightEstimate": 21.2
+          },
+          {
+            "name": "recessed glass clears actual terrain and deep front frames expose the window face",
+            "status": "passed",
+            "glassSamples": 17920,
+            "minimumTerrainClearance": 0.13074606099391062,
+            "frontGlassTriangles": 180,
+            "minimumOutwardNormalDot": 0.9999997436256954,
+            "facadeDepth": 1.0680326857712616
+          },
+          {
+            "name": "open southwest passage permits model rays and actual terrain capsule traversal",
+            "status": "passed",
+            "passageWidthEstimate": 12,
+            "clearRayLength": 23.863985775691514,
+            "capsuleProgress": 37.13241714185978,
+            "capsuleGroundGap": 0.022866268314611915
+          },
+          {
+            "name": "central glass door blocks the player until destroyed",
+            "status": "passed",
+            "closed": {
+              "progress": 10.811099474018093,
+              "groundGap": 0.5366975899621629
+            },
+            "destroyed": {
+              "progress": 13.395458749938502,
+              "groundGap": 0.021891983437054563
+            }
+          },
+          {
+            "name": "loaded and unloaded exterior rays agree for window bays and convex slabs",
+            "status": "passed",
+            "externalRays": 363,
+            "componentKinds": 16,
+            "maximumDistanceDifference": 0.00004719495773186644,
+            "coincidentSeamTiesExcluded": 0,
+            "startsInsideCollidersExcluded": true
+          },
+          {
+            "name": "partial and total destruction persist at distance and reset restores exact geometry",
+            "status": "passed",
+            "removedTriangles": 84,
+            "restoredTriangles": 15746,
+            "restoredParts": 364
+          },
+          {
+            "name": "H reflection preserves logical physics and places the passage on the photographic right",
+            "status": "passed",
+            "photographicRightDisplacement": 17.000000000000007,
+            "reflectedRayDistanceDifference": 0,
+            "logicalPhysicsUnchanged": true
+          },
+          {
+            "name": "elevation callback and reversed outline preserve front orientation",
+            "status": "passed",
+            "callbackOffset": 50,
+            "reversedWindingSameDatumAndFront": true
+          }
+        ]
+      },
+      "construction": {
+        "notes": "sources/culture-construction-notes.json",
+        "artifact": "artifacts/construction-test/results.json",
+        "passedChecks": 6,
+        "results": [
+          {
+            "name": "construction outline, documented height zones and terrain foundations remain bounded",
+            "status": "passed",
+            "parts": 115,
+            "renderMeshes": 3,
+            "heightZones": [
+              4,
+              8,
+              10
+            ],
+            "maximumFoundationAboveTerrain": -0.26999824479276313
+          },
+          {
+            "name": "construction ground follows actual terrain triangles and does not change terrain or source data",
+            "status": "passed",
+            "triangles": 233,
+            "samples": 932,
+            "maximumOverlayHeightError": 0.0000026509039251707,
+            "rawDataAndTerrainUnchanged": true
+          },
+          {
+            "name": "loaded and unloaded fence shots agree after the common render reflection",
+            "status": "passed",
+            "rays": 17,
+            "maximumDistanceError": 0.00004007816313444934
+          },
+          {
+            "name": "an intact panel blocks a capsule and a destroyed panel opens the same route",
+            "status": "passed",
+            "blockedTravel": 4.529885085805933,
+            "openTravel": 8.307310674380338
+          },
+          {
+            "name": "partial destruction remains visible far away and repeated resets restore all instances",
+            "status": "passed",
+            "resetCycles": 3,
+            "restoredPanels": 115,
+            "nonlethalFlashLocalized": true,
+            "deletedRemoteHitAbsent": true,
+            "loadedAndUnloadedCollisionRestored": true
+          },
+          {
+            "name": "full campus keeps the outside walking route and excludes generated tree trunks from the construction area",
+            "status": "passed",
+            "registeredFenceParts": 115,
+            "treeTrunks": 1165,
+            "trunksInsideSite": 0,
+            "outsideRouteOffset": 0.9,
+            "outsideRouteTravel": 41.6602598107103,
+            "routeScope": "One 41 m route parallel to mapped western fence with actual full-campus collisions; not a survey of the planned 2 m passage."
+          }
+        ]
+      },
+      "mobileControls": {
+        "notes": "sources/mobile-controls-review.json",
+        "script": "scripts/verify-controls.mjs",
+        "passedChecks": 27,
+        "scope": "DOM 대역과 실제 Simulation/Rapier를 결합해 착지 직전의 누름 유지 및 해제를 확인했다. 실제 터치 기기는 사용하지 않았다."
+      },
+      "coordinateChecks": [
+        {
+          "command": "node scripts/verify-coordinates.mjs",
+          "artifact": "artifacts/coordinate-test/results.json",
+          "checks": 9,
+          "passed": 9,
+          "scope": "Node geometry, actual gate generation and Rapier tests. No browser, texture-rendering or physical-device validation."
+        },
+        {
+          "command": "node scripts/verify-runtime-coordinates.mjs",
+          "artifact": "artifacts/runtime-coordinates/results.json",
+          "checks": 17,
+          "passed": 17,
+          "scope": "Actual main control flow and actual Cannon, Traffic, Simulation and Minimap, plus standalone data/render camera modes. Synthetic scene/terrain fixtures and explicit Controls/DOM/renderer test doubles. No browser, WebGL or phone validation."
+        },
+        {
+          "command": "node scripts/verify-world-presentation.mjs",
+          "artifact": "artifacts/world-presentation-test/results.json",
+          "checks": 6,
+          "passed": 6,
+          "scope": "CPU numerical projection and installed Three.js shader contract. No WebGL pixels, browser screen or mobile performance validation."
+        }
+      ],
+      "sourceSnapshot": [
+        {
+          "path": "src/coordinates.ts",
+          "sha256": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837"
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "f79282132f6d80c8d4b7ef915aeec23eb13fb25d5fe8a019201e6b099ac4f97b"
+        },
+        {
+          "path": "src/cannon.ts",
+          "sha256": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8"
+        },
+        {
+          "path": "src/minimap.ts",
+          "sha256": "00aa6b6e9756a2abd1fd396708a57351ccbce976afde2cd12822e9e9a7282031"
+        },
+        {
+          "path": "src/physics.ts",
+          "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f"
+        },
+        {
+          "path": "src/scene.ts",
+          "sha256": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba"
+        },
+        {
+          "path": "src/fullCampus.ts",
+          "sha256": "072ab4ef02b8a8eff8f1b4885d413645d18784a258396cd0cb07738002e441d5"
+        },
+        {
+          "path": "scripts/preview-geometry.mjs",
+          "sha256": "2ffdceb4dce6c9ba9e993229a3c425f2058c14b15bc91ae20b439eec77fb8f46"
+        },
+        {
+          "path": "scripts/verify-coordinates.mjs",
+          "sha256": "c958c24e418c95763de0a9db698cd00c85707ca28ba753872af17866ac8f22c8"
+        },
+        {
+          "path": "scripts/verify-runtime-coordinates.mjs",
+          "sha256": "6b88336569aa13d0f7092c0086015435f5d51343e55628796ccbb01c7659545d"
+        },
+        {
+          "path": "scripts/verify-world-presentation.mjs",
+          "sha256": "d6331b2118b458c5074c94176d460d4ffb697f0d05295dee3937a1eb50b9a28e"
+        },
+        {
+          "path": "src/mainLibraryLandmark.ts",
+          "sha256": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3"
+        },
+        {
+          "path": "src/buildingAppearance.ts",
+          "sha256": "87fd13e08c139e344863f4b3f474809767946315e437ad8be8cbba92ac471397"
+        },
+        {
+          "path": "src/landmarkBuildings.ts",
+          "sha256": "beea8ae5dc3ce244ce4cfccd37b83accb52fb279bbcf0b8d9644ed5f23a05594"
+        },
+        {
+          "path": "scripts/verify-streaming.mjs",
+          "sha256": "d9d75542ab298cc150aeabe1033a8215fc6ac120fd4541506898ca870ac78086"
+        },
+        {
+          "path": "scripts/verify-main-library.mjs",
+          "sha256": "d858cadc5d9872d00d41150bf7aacb9e109c23bcd15160e7fb115874cf393639"
+        },
+        {
+          "path": "scripts/streaming-test-helpers.mjs",
+          "sha256": "874fed6b74d16d4945da3ae3b05fd69a6fd1fe91241feba47f3cb1e1df87686c"
+        },
+        {
+          "path": "scripts/verify-all.mjs",
+          "sha256": "f4e257ba43c06d8d918d7d628bd6fc589c8aa1b12b964f149c17de5d1aa1b0ab"
+        },
+        {
+          "path": "public/data/campus.json",
+          "sha256": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64"
+        },
+        {
+          "path": "public/data/terrain.json",
+          "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+        },
+        {
+          "path": "src/controls.ts",
+          "sha256": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d"
+        },
+        {
+          "path": "src/administrationLandmark.ts",
+          "sha256": "615b389ecdf118fb4b06cb361e1d319a85eeb0053bc5a57be0948f522f4b7e81"
+        },
+        {
+          "path": "src/campusConstruction.ts",
+          "sha256": "ecb1731047a9589df6b4b705a60518588fe243f8adb74027c8533a548bc9f1fe"
+        },
+        {
+          "path": "scripts/verify-controls.mjs",
+          "sha256": "f7db7154ce33064ee23ba19e3d7297e88c7a90bcc46dce76b9dec5dc442187e4"
+        },
+        {
+          "path": "scripts/verify-administration.mjs",
+          "sha256": "48d2dd89ede72e10fa669faab5f2d78c0707ef69fa1ef9c9d5c6a4aa79f57548"
+        },
+        {
+          "path": "scripts/verify-construction.mjs",
+          "sha256": "1ee7e9383f8c3b88e47b04c5e7dd23154e08ef4d317f5d608c6b36a39b635f48"
+        },
+        {
+          "path": "scripts/verify-campus.mjs",
+          "sha256": "8306bb96c02c799f1f06d0c18a7a6215cfa6ae911167b13138c57039e9f25de4"
+        },
+        {
+          "path": "scripts/verify-library.mjs",
+          "sha256": "117c59df2e35a32bffb69baedddf25be85cc8eacee0b7c40993e818a715a10d0"
+        }
+      ],
+      "limit": "이전 12,322개 표적을 사용한 CPU 성능 비교를 이번 12,778개 형상의 성능 측정으로 해석하지 않는다. 브라우저, GPU, 실제 휴대전화와 카카오맵 및 네이버지도 거리뷰는 검증하지 못했다. 학생회관은 날개별 층수와 새 출입구 위치를 추가로 확인해야 한다."
+    },
+    {
+      "reviewedAt": "2026-11-04T23:05:13.260Z",
+      "sourceCommit": "086b5b691c240198e0e12b1cdd0797dbfac1c300",
+      "scope": "학생회관 모델을 추가한 현재 소스의 통합 검사다. 이전 측정은 당시 해시와 함께 보존한다.",
+      "specialBuildings": 21,
+      "customGenerators": 17,
+      "totalTargets": 13256,
+      "wholeSuite": {
+        "command": "npm test",
+        "artifact": "artifacts/release-verification.log",
+        "artifactSha256": "93e0cc893a9b9890274f3b9b36a8464c1dc37fcc044de3f2d50ba1131551af95",
+        "executedAt": "2026-11-04T23:05:13.260Z",
+        "scripts": 30,
+        "passedChecks": 272,
+        "failedChecks": 0,
+        "exitCode": 0
+      }
+    },
+    {
+      "reviewedAt": "2026-11-04T23:31:35.771Z",
+      "sourceCommit": "def5d96dc2dc99d3a496302948346d890fd2b9ee",
+      "scope": "박물관 모델을 추가한 현재 소스의 통합 검사다. 이전 측정과 소스는 이력 및 해당 Git 커밋에 보존한다.",
+      "specialBuildings": 22,
+      "customGenerators": 18,
+      "totalTargets": 13849,
+      "wholeSuite": {
+        "command": "npm test",
+        "artifact": "artifacts/release-verification.log",
+        "artifactSha256": "ff04e8d984a64c5d5a44c8b3d462b51867cfaa9f78576d98c145a58003d4a0d4",
+        "executedAt": "2026-11-04T23:31:35.771Z",
+        "scripts": 31,
+        "passedChecks": 284,
+        "failedChecks": 0,
+        "exitCode": 0
+      }
+    },
+    {
+      "reviewedAt": "2026-11-04T23:58:19.931Z",
+      "sourceCommit": "f2eb89da03cc82a5a566a272b880377d5d394e35",
+      "scope": "체육관과 생활과학대학을 추가한 현재 소스의 통합 검사다. 이전 소스와 측정은 이력 및 해당 Git 커밋에 보존한다.",
+      "specialBuildings": 24,
+      "customGenerators": 20,
+      "totalTargets": 15019,
+      "wholeSuite": {
+        "command": "npm test",
+        "artifact": "artifacts/release-verification.log",
+        "artifactSha256": "98d9343844dd0f29a309fe902f1091f0f33b184b96fb77993e82d9296d1dc277",
+        "executedAt": "2026-11-04T23:58:19.931Z",
+        "scripts": 33,
+        "passedChecks": 308,
+        "failedChecks": 0,
+        "exitCode": 0
+      }
+    },
+    {
+      "reviewedAt": "2026-11-05T00:35:03.356Z",
+      "sourceCommit": "0b989271297a961e6ed505d9d88145a8f6bfbe6b",
+      "scope": "농생대 모델을 추가한 현재 소스의 통합 검사다. 이전 결과와 소스는 이력 및 해당 Git 커밋에 보존한다.",
+      "specialBuildings": 25,
+      "customGenerators": 21,
+      "totalTargets": 16212,
+      "wholeSuite": {
+        "command": "npm test",
+        "artifact": "artifacts/release-13-verification.log",
+        "artifactSha256": "a61b1201091fd88a8c6242ce9559b6ee0109b986298222363bffe77ac04fd67f",
+        "executedAt": "2026-11-05T00:35:03.356Z",
+        "scripts": 34,
+        "passedChecks": 320,
+        "failedChecks": 0,
+        "exitCode": 0
+      }
+    },
+    {
+      "reviewedAt": "2026-11-05T01:17:43.379Z",
+      "sourceCommit": "0edbf712228f89028ae3ad057c6c294e4da295d4",
+      "scope": "301동 모델을 추가한 현재 소스의 통합 검사다. 이전 결과와 소스는 이력 및 해당 Git 커밋에 보존한다.",
+      "specialBuildings": 26,
+      "customGenerators": 22,
+      "totalTargets": 17832,
+      "wholeSuite": {
+        "command": "npm test",
+        "artifact": "artifacts/release-14-verification.log",
+        "artifactSha256": "11b06699d95700f377278529121ad39c72f139bbf92267554856016c1cdca940",
+        "executedAt": "2026-11-05T01:17:43.379Z",
+        "scripts": 35,
+        "passedChecks": 334,
+        "failedChecks": 0,
+        "exitCode": 0
+      }
+    },
+    {
+      "reviewedAt": "2026-11-05T01:55:10.312Z",
+      "scope": "220동과 221동 모델을 추가한 현재 소스의 통합 검사다. 이전 결과와 소스는 이력 및 해당 Git 커밋에 보존한다.",
+      "specialBuildings": 28,
+      "customGenerators": 24,
+      "constructionAreas": 1,
+      "totalTargets": 19353,
+      "runtimeChanges": [
+        "220동의 큰 하부 통로와 상부 유리 몸체, 밝은 끝벽과 열린 차양을 나누고 221동에는 최근 증축 사진의 유리 입구, 갈색 처마와 2층 루버를 반영했다. 두 동의 상층 데크와 연결통로를 이어 만들었다. 220동 사진 전면의 지도 방위와 모든 높이 및 접근 계단 치수는 추정이며 원본 지형을 바꾸지 않았다."
+      ],
+      "wholeSuite": {
+        "command": "npm test",
+        "artifact": "artifacts/release-15-verification.log",
+        "artifactSha256": "b5a35cbe30b7198f9c23e25fa2ea89a85de7af1e406cd5ae957403ee83d9c035",
+        "executedAt": "2026-11-05T01:55:10.312Z",
+        "scripts": 36,
+        "passedChecks": 347,
+        "failedChecks": 0,
+        "exitCode": 0
+      },
+      "administration": {
+        "notes": "sources/administration-model-notes.json",
+        "artifact": "artifacts/administration-test/results.json",
+        "passedChecks": 10,
+        "results": [
+          {
+            "name": "official five floors and B1 remain distinct from estimated height and facade rows",
+            "status": "passed",
+            "mappedPoints": 6,
+            "renderMeshes": 3,
+            "parts": 364,
+            "triangles": 15746,
+            "estimatedHeight": 20,
+            "basementInteriorModeled": false
+          },
+          {
+            "name": "roof and upper slab preserve actual outline with matching convex colliders",
+            "status": "passed",
+            "roofConvexParts": 26,
+            "upperFloorConvexParts": 26,
+            "insideSamples": 132,
+            "outsideSamples": 493
+          },
+          {
+            "name": "photographed roof covers retain their silhouette without filling square bounding-box corners",
+            "status": "passed",
+            "roundCovers": 3,
+            "angledCovers": 1,
+            "convexParts": 4,
+            "emptyCornerRays": 4,
+            "maximumHeightEstimate": 21.2
+          },
+          {
+            "name": "recessed glass clears actual terrain and deep front frames expose the window face",
+            "status": "passed",
+            "glassSamples": 17920,
+            "minimumTerrainClearance": 0.13074606099391062,
+            "frontGlassTriangles": 180,
+            "minimumOutwardNormalDot": 0.9999997436256954,
+            "facadeDepth": 1.0680326857712616
+          },
+          {
+            "name": "open southwest passage permits model rays and actual terrain capsule traversal",
+            "status": "passed",
+            "passageWidthEstimate": 12,
+            "clearRayLength": 23.863985775691514,
+            "capsuleProgress": 37.13241714185978,
+            "capsuleGroundGap": 0.022866268314611915
+          },
+          {
+            "name": "central glass door blocks the player until destroyed",
+            "status": "passed",
+            "closed": {
+              "progress": 10.811099474018093,
+              "groundGap": 0.5366975899621629
+            },
+            "destroyed": {
+              "progress": 13.395458749938502,
+              "groundGap": 0.021891983437054563
+            }
+          },
+          {
+            "name": "loaded and unloaded exterior rays agree for window bays and convex slabs",
+            "status": "passed",
+            "externalRays": 363,
+            "componentKinds": 16,
+            "maximumDistanceDifference": 0.00004719495773186644,
+            "coincidentSeamTiesExcluded": 0,
+            "startsInsideCollidersExcluded": true
+          },
+          {
+            "name": "partial and total destruction persist at distance and reset restores exact geometry",
+            "status": "passed",
+            "removedTriangles": 84,
+            "restoredTriangles": 15746,
+            "restoredParts": 364
+          },
+          {
+            "name": "H reflection preserves logical physics and places the passage on the photographic right",
+            "status": "passed",
+            "photographicRightDisplacement": 17.000000000000007,
+            "reflectedRayDistanceDifference": 0,
+            "logicalPhysicsUnchanged": true
+          },
+          {
+            "name": "elevation callback and reversed outline preserve front orientation",
+            "status": "passed",
+            "callbackOffset": 50,
+            "reversedWindingSameDatumAndFront": true
+          }
+        ]
+      },
+      "construction": {
+        "notes": "sources/culture-construction-notes.json",
+        "artifact": "artifacts/construction-test/results.json",
+        "passedChecks": 6,
+        "results": [
+          {
+            "name": "construction outline, documented height zones and terrain foundations remain bounded",
+            "status": "passed",
+            "parts": 115,
+            "renderMeshes": 3,
+            "heightZones": [
+              4,
+              8,
+              10
+            ],
+            "maximumFoundationAboveTerrain": -0.26999824479276313
+          },
+          {
+            "name": "construction ground follows actual terrain triangles and does not change terrain or source data",
+            "status": "passed",
+            "triangles": 233,
+            "samples": 932,
+            "maximumOverlayHeightError": 0.0000026509039251707,
+            "rawDataAndTerrainUnchanged": true
+          },
+          {
+            "name": "loaded and unloaded fence shots agree after the common render reflection",
+            "status": "passed",
+            "rays": 17,
+            "maximumDistanceError": 0.00004007816313444934
+          },
+          {
+            "name": "an intact panel blocks a capsule and a destroyed panel opens the same route",
+            "status": "passed",
+            "blockedTravel": 4.529885085805933,
+            "openTravel": 8.307310674380338
+          },
+          {
+            "name": "partial destruction remains visible far away and repeated resets restore all instances",
+            "status": "passed",
+            "resetCycles": 3,
+            "restoredPanels": 115,
+            "nonlethalFlashLocalized": true,
+            "deletedRemoteHitAbsent": true,
+            "loadedAndUnloadedCollisionRestored": true
+          },
+          {
+            "name": "full campus keeps the outside walking route and excludes generated tree trunks from the construction area",
+            "status": "passed",
+            "registeredFenceParts": 115,
+            "treeTrunks": 1165,
+            "trunksInsideSite": 0,
+            "outsideRouteOffset": 0.9,
+            "outsideRouteTravel": 41.6602598107103,
+            "routeScope": "One 41 m route parallel to mapped western fence with actual full-campus collisions; not a survey of the planned 2 m passage."
+          }
+        ]
+      },
+      "mobileControls": {
+        "notes": "sources/mobile-controls-review.json",
+        "script": "scripts/verify-controls.mjs",
+        "passedChecks": 27,
+        "scope": "DOM 대역과 실제 Simulation/Rapier를 결합해 착지 직전의 누름 유지 및 해제를 확인했다. 실제 터치 기기는 사용하지 않았다."
+      },
+      "coordinateChecks": [
+        {
+          "command": "node scripts/verify-coordinates.mjs",
+          "artifact": "artifacts/coordinate-test/results.json",
+          "checks": 9,
+          "passed": 9,
+          "scope": "Node geometry, actual gate generation and Rapier tests. No browser, texture-rendering or physical-device validation."
+        },
+        {
+          "command": "node scripts/verify-runtime-coordinates.mjs",
+          "artifact": "artifacts/runtime-coordinates/results.json",
+          "checks": 17,
+          "passed": 17,
+          "scope": "Actual main control flow and actual Cannon, Traffic, Simulation and Minimap, plus standalone data/render camera modes. Synthetic scene/terrain fixtures and explicit Controls/DOM/renderer test doubles. No browser, WebGL or phone validation."
+        },
+        {
+          "command": "node scripts/verify-world-presentation.mjs",
+          "artifact": "artifacts/world-presentation-test/results.json",
+          "checks": 6,
+          "passed": 6,
+          "scope": "CPU numerical projection and installed Three.js shader contract. No WebGL pixels, browser screen or mobile performance validation."
+        }
+      ],
+      "sourceSnapshot": [
+        {
+          "path": "src/coordinates.ts",
+          "sha256": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837"
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "f79282132f6d80c8d4b7ef915aeec23eb13fb25d5fe8a019201e6b099ac4f97b"
+        },
+        {
+          "path": "src/cannon.ts",
+          "sha256": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8"
+        },
+        {
+          "path": "src/minimap.ts",
+          "sha256": "00aa6b6e9756a2abd1fd396708a57351ccbce976afde2cd12822e9e9a7282031"
+        },
+        {
+          "path": "src/physics.ts",
+          "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f"
+        },
+        {
+          "path": "src/scene.ts",
+          "sha256": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba"
+        },
+        {
+          "path": "src/fullCampus.ts",
+          "sha256": "fb32665b1068312fcfc87a1f99a4ecf9964af2829129e4182f801a31f5a90c48"
+        },
+        {
+          "path": "scripts/preview-geometry.mjs",
+          "sha256": "2f46d9bb63778d362dc2860df8746d7e28315d94e1f7a583bfb649d601568e27"
+        },
+        {
+          "path": "scripts/verify-coordinates.mjs",
+          "sha256": "c958c24e418c95763de0a9db698cd00c85707ca28ba753872af17866ac8f22c8"
+        },
+        {
+          "path": "scripts/verify-runtime-coordinates.mjs",
+          "sha256": "6b88336569aa13d0f7092c0086015435f5d51343e55628796ccbb01c7659545d"
+        },
+        {
+          "path": "scripts/verify-world-presentation.mjs",
+          "sha256": "d6331b2118b458c5074c94176d460d4ffb697f0d05295dee3937a1eb50b9a28e"
+        },
+        {
+          "path": "src/mainLibraryLandmark.ts",
+          "sha256": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3"
+        },
+        {
+          "path": "src/buildingAppearance.ts",
+          "sha256": "1f003a07b7bce1e1a309217f5241f8a2a06273448ddea19f093e115a07c7172e"
+        },
+        {
+          "path": "src/landmarkBuildings.ts",
+          "sha256": "29ffc9492c4f0bb387b058d976d845fbd9ef4967388079d238f08e88e4e1f682"
+        },
+        {
+          "path": "scripts/verify-streaming.mjs",
+          "sha256": "d9d75542ab298cc150aeabe1033a8215fc6ac120fd4541506898ca870ac78086"
+        },
+        {
+          "path": "scripts/verify-main-library.mjs",
+          "sha256": "d858cadc5d9872d00d41150bf7aacb9e109c23bcd15160e7fb115874cf393639"
+        },
+        {
+          "path": "scripts/streaming-test-helpers.mjs",
+          "sha256": "874fed6b74d16d4945da3ae3b05fd69a6fd1fe91241feba47f3cb1e1df87686c"
+        },
+        {
+          "path": "scripts/verify-all.mjs",
+          "sha256": "5f217dea13a24dec823aa9d8f893e9322d799047110a05c3ec9d18c669efc2e3"
+        },
+        {
+          "path": "public/data/campus.json",
+          "sha256": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64"
+        },
+        {
+          "path": "public/data/terrain.json",
+          "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+        },
+        {
+          "path": "src/controls.ts",
+          "sha256": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d"
+        },
+        {
+          "path": "src/administrationLandmark.ts",
+          "sha256": "615b389ecdf118fb4b06cb361e1d319a85eeb0053bc5a57be0948f522f4b7e81"
+        },
+        {
+          "path": "src/campusConstruction.ts",
+          "sha256": "ecb1731047a9589df6b4b705a60518588fe243f8adb74027c8533a548bc9f1fe"
+        },
+        {
+          "path": "scripts/verify-controls.mjs",
+          "sha256": "f7db7154ce33064ee23ba19e3d7297e88c7a90bcc46dce76b9dec5dc442187e4"
+        },
+        {
+          "path": "scripts/verify-administration.mjs",
+          "sha256": "48d2dd89ede72e10fa669faab5f2d78c0707ef69fa1ef9c9d5c6a4aa79f57548"
+        },
+        {
+          "path": "scripts/verify-construction.mjs",
+          "sha256": "1ee7e9383f8c3b88e47b04c5e7dd23154e08ef4d317f5d608c6b36a39b635f48"
+        },
+        {
+          "path": "scripts/verify-campus.mjs",
+          "sha256": "9b5bffbd79d684f707d393867c7c581515e4b73d3c7025ba94f417884db42849"
+        },
+        {
+          "path": "scripts/verify-library.mjs",
+          "sha256": "f76879e5fd384da50838760659f7f032afb8a4e5a9adaeddcfbac8f4a73b8be5"
+        },
+        {
+          "path": "src/studentCenterLandmark.ts",
+          "sha256": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c"
+        },
+        {
+          "path": "scripts/verify-student-center.mjs",
+          "sha256": "5bff00efdd04adc32a78ffc52eb9d4c5f1a0eb79d959ab1d1e3cea154a1d4271"
+        },
+        {
+          "path": "sources/student-center-model-notes.json",
+          "sha256": "0bb5549f3f7483cf49623b60200f95e0c35389f6c51f327f6591fcb87de82d74"
+        },
+        {
+          "path": "README.md",
+          "sha256": "0443cb7f47cf7742f450c22a7220bdd5b1a57bcf05d8fe30b99b2b5166c6ccd0"
+        },
+        {
+          "path": "src/museumLandmark.ts",
+          "sha256": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9"
+        },
+        {
+          "path": "scripts/verify-museum.mjs",
+          "sha256": "3fce1d4cd1440ab14e1915890167e4e5b290a07724efcec8630d3e65bde242aa"
+        },
+        {
+          "path": "sources/museum-model-notes.json",
+          "sha256": "eaf2283b3598d44a232378b41035ea9f1e0656daf936a6144b8656208fcbd1d1"
+        },
+        {
+          "path": "src/gymLandmark.ts",
+          "sha256": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e"
+        },
+        {
+          "path": "scripts/verify-gym.mjs",
+          "sha256": "166ccc8004f2f5942f49a0788765a90041524f9f9dfab0d1346a6d9d0c2eea07"
+        },
+        {
+          "path": "sources/gym-model-notes.json",
+          "sha256": "2dfc0850e2dda81c1040693260f11893d61a06700ac43ce425874d47517b2f34"
+        },
+        {
+          "path": "src/livingScienceLandmark.ts",
+          "sha256": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a"
+        },
+        {
+          "path": "scripts/verify-living-science.mjs",
+          "sha256": "7e90ebf1a67aff9b09663ffc26a6bfd1683fbb562c22abf24785df811a8f3afe"
+        },
+        {
+          "path": "sources/living-science-model-notes.json",
+          "sha256": "d041b8137c42f031058518885cd3593eba36a6e4ce9806ab808c9e0fa8a8237a"
+        },
+        {
+          "path": "src/agricultureLandmark.ts",
+          "sha256": "ccafbeb5241692346a83f864171ed63fbc045f594ff13bd5324a1d0b2c3102b1"
+        },
+        {
+          "path": "scripts/verify-agriculture.mjs",
+          "sha256": "6d379f1b4be6174d9a85d2689f336ec09c886f9e78329e064ea555380e6d5a7e"
+        },
+        {
+          "path": "sources/agriculture-model-notes.json",
+          "sha256": "896365283de6a5e4ef38a6e4b7992c86bbafdb491481509b599c97c586377aa2"
+        },
+        {
+          "path": "src/engineering301Landmark.ts",
+          "sha256": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef"
+        },
+        {
+          "path": "scripts/verify-engineering301.mjs",
+          "sha256": "065163ded7e222e9043d2edd32ee71c64c204c55e2a4588bbc84d0a338036c5c"
+        },
+        {
+          "path": "sources/engineering301-model-notes.json",
+          "sha256": "d413b5a127b1bb0dacaa061b7322f6f941c49428e13bef73bd3a02526a336c2d"
+        },
+        {
+          "path": "src/educationHealthLandmark.ts",
+          "sha256": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e"
+        },
+        {
+          "path": "scripts/verify-education-health.mjs",
+          "sha256": "98788b9fa3e99ee17a407893585990cf1cd475aef2c6592cc3344ab86de76632"
+        },
+        {
+          "path": "sources/education-health-model-notes.json",
+          "sha256": "73df079ed66e37e7e9f6351dcd3e6e4894e6bac8095542b7a2de97292f1abb05"
+        }
+      ],
+      "limit": "새 CPU 비교는 이 Windows 컴퓨터의 Node에서 정문과 전체 캠퍼스의 정지 상태 물리 계산, 건물 갱신과 사격 질의만 측정했다. 실제 브라우저, GPU, 차량과 포탄 이펙트, 휴대전화 프레임률을 검증한 결과가 아니다. 220동 7층과 221동 6층의 연결은 공식 자료로 확인했다. 221동 하부는 2026년 설계 소개의 최근 사진을 우선했다. 220동 유리 전면을 북서쪽 날개에 놓은 방위는 추정이며 다른 후보를 배제하지 못했다. 높이, 데크 폭과 절대 고도, 문턱과 보행로 연결은 게임 지형에 맞춘 근사다. 현재 거리뷰와 실제 GPU 화면 및 휴대전화는 확인하지 못했다.",
+      "studentCenter": {
+        "notes": "sources/student-center-model-notes.json",
+        "artifact": "artifacts/student-center-test/results.json",
+        "passedChecks": 11,
+        "independentArtifact": "artifacts/student-independent-review/summary.json",
+        "independentIntegrityChecks": 4
+      },
+      "museum": {
+        "notes": "sources/museum-model-notes.json",
+        "artifact": "artifacts/museum-test/results.json",
+        "passedChecks": 12,
+        "renderMeshes": 3,
+        "parts": 631,
+        "triangles": 19772,
+        "independentArtifact": "artifacts/museum-independent-review/summary.json",
+        "modelSourceSha256": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9"
+      },
+      "latestModels": [
+        {
+          "buildingNumber": "220",
+          "osmId": "way/297046999",
+          "name": "종합교육연구동",
+          "landmark": "education-220",
+          "status": "custom-model-applied-partial",
+          "notes": "sources/education-health-model-notes.json",
+          "renderMeshes": 3,
+          "parts": 1077,
+          "triangles": 64184,
+          "triangleCriterion": "cross.lengthSq() > 1e-10",
+          "regression": {
+            "command": "node scripts/verify-education-health.mjs",
+            "artifact": "artifacts/education-health-test/results.json",
+            "passedChecks": 13,
+            "scope": "paired model checks"
+          },
+          "independentReview": [
+            "artifacts/education-health-independent-review/results.json",
+            "artifacts/education-health-independent-review/supplemental-results.json"
+          ],
+          "independentChecks": 19,
+          "limits": "220동 7층과 221동 6층의 연결은 공식 자료로 확인했다. 221동 하부는 2026년 설계 소개의 최근 사진을 우선했다. 220동 유리 전면을 북서쪽 날개에 놓은 방위는 추정이며 다른 후보를 배제하지 못했다. 높이, 데크 폭과 절대 고도, 문턱과 보행로 연결은 게임 지형에 맞춘 근사다. 현재 거리뷰와 실제 GPU 화면 및 휴대전화는 확인하지 못했다.",
+          "modelSourceSha256": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e"
+        },
+        {
+          "buildingNumber": "221",
+          "osmId": "way/297047243",
+          "name": "보건대학원",
+          "landmark": "public-health-221",
+          "status": "custom-model-applied-partial",
+          "notes": "sources/education-health-model-notes.json",
+          "renderMeshes": 3,
+          "parts": 526,
+          "triangles": 30192,
+          "triangleCriterion": "cross.lengthSq() > 1e-10",
+          "regression": {
+            "command": "node scripts/verify-education-health.mjs",
+            "artifact": "artifacts/education-health-test/results.json",
+            "passedChecks": 13,
+            "scope": "paired model checks"
+          },
+          "independentReview": [
+            "artifacts/education-health-independent-review/results.json",
+            "artifacts/education-health-independent-review/supplemental-results.json"
+          ],
+          "independentChecks": 19,
+          "limits": "220동 7층과 221동 6층의 연결은 공식 자료로 확인했다. 221동 하부는 2026년 설계 소개의 최근 사진을 우선했다. 220동 유리 전면을 북서쪽 날개에 놓은 방위는 추정이며 다른 후보를 배제하지 못했다. 높이, 데크 폭과 절대 고도, 문턱과 보행로 연결은 게임 지형에 맞춘 근사다. 현재 거리뷰와 실제 GPU 화면 및 휴대전화는 확인하지 못했다.",
+          "modelSourceSha256": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e"
+        }
+      ],
+      "nodeCpuComparison": {
+        "baselineArtifact": "artifacts/mobile-cpu-review/release-14-with-education-health.json",
+        "baselineProvenance": "artifacts/mobile-cpu-review/release-14-with-education-health-provenance.json",
+        "currentArtifact": "artifacts/mobile-cpu-review/release-15-with-education-health.json",
+        "currentProvenance": "artifacts/mobile-cpu-review/release-15-with-education-health-provenance.json",
+        "baselineTargets": 17832,
+        "currentTargets": 19353,
+        "sampleLocations": 9,
+        "scope": "Single Windows desktop Node CPU measurement, stationary player, actual gate plus campus geometry and Rapier. Canvas drawing is stubbed. Excludes WebGL, GPU upload/rendering, DOM, traffic, cannon/effects and physical phone performance. Concurrent processes can affect timing; this is not a mobile FPS estimate.",
+        "baselineCommit": "0edbf712228f89028ae3ad057c6c294e4da295d4",
+        "currentModelSourceSha256": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e"
+      },
+      "sourceCommit": "512706e5a95990ae243f9a7eb572bd65c8383058"
+    },
+    {
+      "release": 16,
+      "sourceCommit": "a656cf0300615299e55e01cf7f9c11be14115346",
+      "path": "sources/integration-review.json",
+      "sha256": "c6b921ec340a3170c23408f7d05f867a3e611c2e6abf80431aeb1cdbffa448e2",
+      "previousWorkingCopySha256": "c6b921ec340a3170c23408f7d05f867a3e611c2e6abf80431aeb1cdbffa448e2",
+      "reviewedAt": "2026-11-04T20:30:16.160Z",
+      "verification": {
+        "scripts": 37,
+        "passed": 359,
+        "failed": 0,
+        "artifact": "artifacts/release-16-verification.log",
+        "artifactSha256": "109102be680d5ea312450afda34a57b5dd8770032057a59df4bd583f6993344c"
+      },
+      "preservation": "전체 이전 문서와 snapshot, 기존 history는 이 Git 커밋에 보존한다. 이번 이력에는 문서 전체를 중복 복제하지 않는다."
+    },
+    {
+      "release": 17,
+      "sourceCommit": "d07aaf3f8f22aeab2fa2ee8057fb8bb673141f90",
+      "path": "sources/integration-review.json",
+      "sha256": "a5f3460328865f2d1be95a816d7ad5950a159eeab7422b104bacf315ed5d5cdd",
+      "verification": {
+        "scripts": 40,
+        "passed": 398,
+        "failed": 0,
+        "artifact": "artifacts/release-17-verification.log",
+        "artifactSha256": "416a65397fbbccee16289eb666f6cf6b6824f7302a68797a5e9449c46aa16bfd"
+      },
+      "preservation": "이전 전체 기록은 해당 Git 커밋에 보존한다."
+    },
+    {
+      "release": 18,
+      "sourceCommit": "f138814f890f95696c1ae1a96e6d1eec66f08e93",
+      "path": "sources/integration-review.json",
+      "sha256": "588c542fc7aeaddf24c3af6781cc7f62370fd4d04afc36e5a07ca2be273a7e21",
+      "verification": {
+        "scripts": 42,
+        "passed": 424,
+        "failed": 0,
+        "artifact": "artifacts/release-18-verification.log",
+        "artifactSha256": "bd402c83f78f4488232c1584af9372ee4b4a79e3fa25d9a0456b2813b7e9d836"
+      },
+      "preservation": "이전 전체 기록은 해당 Git 커밋에 보존한다."
+    }
+  ]
+}

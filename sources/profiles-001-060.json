@@ -1,0 +1,2314 @@
+{
+  "description": "Photos were visually inspected. Palette, window ratios and bay widths are modeling estimates; dimensions were not measured. Profile null means the photograph does not show a usable building exterior.",
+  "entries": [
+    {
+      "buildingNumber": "1",
+      "officialSeq": 1,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=1",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000001.jpg",
+      "observations": [
+        "갈색 벽돌 사이에 흰 기둥과 층별 보가 드러난다. 사진 중앙에 청록 유리 계단실이 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=1",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000001.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "2",
+      "officialSeq": 2,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=2",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000002.jpg",
+      "observations": [
+        "긴 벽돌 입면에 흰 수평 보가 이어진다. 맨 위층 창은 아래층보다 작다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=2",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000002.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "3",
+      "officialSeq": 3,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=3",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000003.jpg",
+      "observations": [
+        "회갈색 벽돌 벽을 흰 격자 골조가 나눈다. 처마가 깊다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=3",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000003.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "4",
+      "officialSeq": 4,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=4",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000004.jpg",
+      "observations": [
+        "전면은 청록색과 회색 유리 격자이며 일부 사각 칸의 색이 다르다. 측면은 짙은 회색 벽이다."
+      ],
+      "profile": {
+        "wallColor": "#b8c7c3",
+        "glassColor": "#5a8d99",
+        "frameColor": "#687c7b",
+        "accentColor": "#687c7b",
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.88,
+        "bayWidth": 2.3,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=4",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000004.jpg"
+        ],
+        "roofStyle": "flat",
+        "facadePattern": "checker"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "5",
+      "officialSeq": 5,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=5",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000005.jpg",
+      "observations": [
+        "짙은 벽돌 벽에 흰 수평 띠와 세로 기둥이 이어진다. 모서리에 세로 유리 계단실이 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=5",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000005.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "6",
+      "officialSeq": 6,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=6",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000006.jpg",
+      "observations": [
+        "갈색 벽돌, 흰 콘크리트 격자, 긴 창 묶음이 보인다. 측벽은 대부분 막혀 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=6",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000006.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "7",
+      "officialSeq": 7,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=7",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000007.jpg",
+      "observations": [
+        "짙은 갈색 벽돌의 측벽에 흰 수평 띠가 반복된다. 계단실 부분에 좁은 세로 개구부가 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=7",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000007.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "8",
+      "officialSeq": 8,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=8",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000008.jpg",
+      "observations": [
+        "갈색 벽돌 입면을 검은 세로 패널이 불규칙하게 나눈다. 창은 높고 좁으며 입구 부분이 깊게 들어가 있다."
+      ],
+      "profile": {
+        "wallColor": "#aa8059",
+        "glassColor": "#55777a",
+        "frameColor": "#c9c5b5",
+        "accentColor": "#c9c5b5",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=8",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000008.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "9",
+      "officialSeq": 9,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=9",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000009.jpg",
+      "observations": [
+        "짙은 벽돌 입면에 흰 격자 골조가 보인다. 하부의 긴 기둥열과 모서리 계단실 틈이 드러난다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=9",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000009.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "10",
+      "officialSeq": 10,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=10",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000010.jpg",
+      "observations": [
+        "흰 골조와 짙은 벽돌이 반복된다. 창 크기가 층마다 다르고 하부에 넓은 유리 입구가 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=10",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000010.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "10-1",
+      "officialSeq": 11,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=11",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000011.jpg",
+      "observations": [
+        "밝은 패널 벽에 청록 가로창이 이어진다. 가까운 부분은 둥근 모서리이며 하부를 기둥이 받친다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=11",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000011.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "11",
+      "officialSeq": 12,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=12",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000012.jpg",
+      "observations": [
+        "갈색 벽돌에 흰 콘크리트 띠가 있다. 상부 창은 작고 아래층 창은 넓다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=12",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000012.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "12",
+      "officialSeq": 13,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=13",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000013.jpg",
+      "observations": [
+        "둥근 입면 상부에 흰 세로 돌출부가 촘촘하다. 가운데 두꺼운 회색 곡면 띠와 유리 하부가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=13",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000013.jpg"
+        ]
+      },
+      "observedRoofShape": "curved-flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "13",
+      "officialSeq": 14,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=14",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000014.jpg",
+      "observations": [
+        "짙은 회갈색 벽돌과 흰 골조가 반복된다. 상층은 작은 창, 하층은 넓은 창이다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=14",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000014.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "14",
+      "officialSeq": 15,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=15",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000015.jpg",
+      "observations": [
+        "회색 상부 덩어리가 유리 하부 위로 크게 돌출된다. 상층에 길고 촘촘한 세로 차양이 보인다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=15",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000015.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "15",
+      "officialSeq": 16,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=16",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000016.jpg",
+      "observations": [
+        "연한 회색 패널과 큰 창 격자가 반복된다. 세로 기둥이 도드라지며 모서리에 높은 유리 계단실이 있다."
+      ],
+      "profile": {
+        "wallColor": "#c8cbc8",
+        "glassColor": "#66858a",
+        "frameColor": "#a5aaaa",
+        "accentColor": "#a5aaaa",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=16",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000016.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "15-1",
+      "officialSeq": 17,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=17",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000017.jpg",
+      "observations": [
+        "넓은 밝은 벽면에 좁은 세로창 몇 개가 있다. 중앙 입구에 높은 유리와 기둥이 배치돼 있다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=17",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000017.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "16",
+      "officialSeq": 18,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=18",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000018.jpg",
+      "observations": [
+        "연한 베이지색 긴 본체에 작은 창이 반복된다. 전면 모서리에 둥근 유리 입구가 붙어 있다."
+      ],
+      "profile": {
+        "wallColor": "#c8cbc8",
+        "glassColor": "#66858a",
+        "frameColor": "#a5aaaa",
+        "accentColor": "#a5aaaa",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=18",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000018.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "16-1",
+      "officialSeq": 19,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=19",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000019.jpg",
+      "observations": [
+        "밝은 회색 박스 안에 짙은 가로창이 깊게 들어간다. 측면에는 검은 세로 요소가 반복된다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=19",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000019.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "17",
+      "officialSeq": 20,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=20",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000020.jpg",
+      "observations": [
+        "하부는 적벽돌과 개별창, 상부는 흰 격자와 세로 창이다. 가운데 유리 연결부가 있다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=20",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000020.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "18",
+      "officialSeq": 21,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=21",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000021.jpg",
+      "observations": [
+        "주황 적벽돌 벽에 규칙적인 개별창이 있다. 하부 일부는 창 아래 흰 패널, 중앙은 세로 유리창이다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=21",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000021.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "19",
+      "officialSeq": 22,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=22",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000022.jpg",
+      "observations": [
+        "적벽돌 기둥 사이에 창이 반복된다. 아래층 창 사이에는 넓은 흰 패널이 있다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=22",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000022.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "20",
+      "officialSeq": 23,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=23",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000023.jpg",
+      "observations": [
+        "밝은 콘크리트 격자, 개별창과 넓고 두꺼운 출입구 캐노피가 보인다. 사진은 입구 위주다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=23",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000023.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "21",
+      "officialSeq": 24,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=24",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000024.jpg",
+      "observations": [
+        "짙은 벽돌과 흰 콘크리트 격자이며 층별 창 크기가 다르다. 입구 위에 상자가 돌출된다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=24",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000024.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "21-1",
+      "officialSeq": 25,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=25",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000025.jpg",
+      "observations": [
+        "작은 노출 콘크리트 창고다. 큰 회색 문과 한쪽 세로 환기구가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=25",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000025.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "22",
+      "officialSeq": 26,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=26",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000026.jpg",
+      "observations": [
+        "갈색 벽돌, 흰 층별 띠와 깊은 처마가 있다. 중앙 유리 계단실과 상층 연결통로가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=26",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000026.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "23",
+      "officialSeq": 27,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=27",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000027.jpg",
+      "observations": [
+        "갈색 벽돌과 흰 격자 골조다. 위층 작은 창과 아래층 큰 창이 나뉘며 바깥 계단이 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=27",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000027.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "24",
+      "officialSeq": 28,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=28",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000028.jpg",
+      "observations": [
+        "짙은 벽돌과 흰 층별 띠다. 전면 중앙에 파란 세로 유리 부분이 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=28",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000028.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "25",
+      "officialSeq": 29,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=29",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000029.jpg",
+      "observations": [
+        "긴 벽돌 건물에 흰 콘크리트 격자가 반복된다. 끝벽에는 외부 계단과 작은 발코니가 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=29",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000029.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "25-1",
+      "officialSeq": 30,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=30",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000030.jpg",
+      "observations": [
+        "적색 벽돌 수평띠와 긴 청록창이 번갈아 이어진다. 하부에 둥근 벽과 높은 기둥 통로가 있다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=30",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000030.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "26",
+      "officialSeq": 31,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=31",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000031.jpg",
+      "observations": [
+        "거친 밝은 콘크리트 저층 건물이다. 창 앞 세로 돌출 기둥과 바깥 계단, 깊은 입구가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=31",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000031.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "27",
+      "officialSeq": 32,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=32",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000032.jpg",
+      "observations": [
+        "갈색 벽돌, 흰 수평 띠와 깊은 처마가 있다. 측면에 좁은 세로 계단실 유리가 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=32",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000032.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "28",
+      "officialSeq": 33,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=33",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000033.jpg",
+      "observations": [
+        "황갈색의 큰 막힌 벽면에 벗겨진 흔적이 있다. 작은 중앙 창줄과 낮은 출입구가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#ae965d",
+        "glassColor": "#53666b",
+        "frameColor": "#cfcdc0",
+        "accentColor": "#cfcdc0",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=33",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000033.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "29",
+      "officialSeq": 34,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=34",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000034.jpg",
+      "observations": [
+        "연한 황갈색 작은 타일 또는 벽돌로 보이는 낮은 입면이다. 긴 수평 본체 가운데 입구가 높게 솟는다."
+      ],
+      "profile": {
+        "wallColor": "#aa8059",
+        "glassColor": "#55777a",
+        "frameColor": "#c9c5b5",
+        "accentColor": "#c9c5b5",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=34",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000034.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "30",
+      "officialSeq": 35,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=35",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000035.jpg",
+      "observations": [
+        "연한 적색 벽돌 띠와 긴 창이 반복된다. 흰 세로 기둥과 깊은 처마가 있다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=35",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000035.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "30-1",
+      "officialSeq": 36,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=36",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000036.jpg",
+      "observations": [
+        "흰 창고 벽과 작은 회색 문이 보인다. 지붕 끝에 파란 띠가 있다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=36",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000036.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "30-2",
+      "officialSeq": 37,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=37",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000037.jpg",
+      "observations": [
+        "낮은 회색 패널 입구다. 큰 유리문과 유리 측면, 얇은 차양이 있다."
+      ],
+      "profile": {
+        "wallColor": "#c8cbc8",
+        "glassColor": "#66858a",
+        "frameColor": "#a5aaaa",
+        "accentColor": "#a5aaaa",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=37",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000037.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "31",
+      "officialSeq": 38,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=38",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000038.jpg",
+      "observations": [
+        "긴 흰 벽에 짙은 가로창이 있다. 한쪽 끝에 작은 창이 반복되는 흰 수직 탑이 돌출된다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=38",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000038.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "31-1",
+      "officialSeq": 39,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=39",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000039.jpg",
+      "observations": [
+        "회색 금속 패널과 반투명 청록 유리가 세로로 나뉜다. 얇은 수평 프레임이 촘촘하다."
+      ],
+      "profile": {
+        "wallColor": "#b5bfbd",
+        "glassColor": "#668d97",
+        "frameColor": "#7e8c8b",
+        "accentColor": "#7e8c8b",
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.88,
+        "bayWidth": 2.3,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=39",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000039.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "32",
+      "officialSeq": 40,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=40",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000040.jpg",
+      "observations": [
+        "짙은 벽돌에 흰 콘크리트 격자가 반복된다. 위층 작은 창과 깊은 처마가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=40",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000040.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "32-1",
+      "officialSeq": 41,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=41",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000041.jpg",
+      "observations": [
+        "유리 박스에 가는 금속 격자가 있다. 상부와 중간의 갈색 차양, 높은 유리 연결부가 특징이다."
+      ],
+      "profile": {
+        "wallColor": "#b5bfbd",
+        "glassColor": "#668d97",
+        "frameColor": "#7e8c8b",
+        "accentColor": "#7e8c8b",
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.88,
+        "bayWidth": 2.3,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=41",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000041.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "33",
+      "officialSeq": 42,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=42",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000042.jpg",
+      "observations": [
+        "주황 벽돌 띠와 흰 기둥이 교차한다. 위층 작은 창, 아래층 큰 창, 청록 지붕 연결통로가 있다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=42",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000042.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "35",
+      "officialSeq": 44,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=44",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000043.jpg",
+      "observations": [
+        "전면에 회색 금속 격자와 차양판이 촘촘하다. 하부는 연속된 유리문이다."
+      ],
+      "profile": {
+        "wallColor": "#b5bfbd",
+        "glassColor": "#668d97",
+        "frameColor": "#7e8c8b",
+        "accentColor": "#7e8c8b",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=44",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000043.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "36",
+      "officialSeq": 45,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=45",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000044.jpg",
+      "observations": [
+        "흰 콘크리트 격자와 갈색 벽돌 띠가 규칙적으로 반복된다. 창 묶음이 층별로 길게 이어진다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=45",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000044.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "37",
+      "officialSeq": 46,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=46",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000045.jpg",
+      "observations": [
+        "흰 격자 골조와 벽돌 띠가 반복되는 긴 입면이다. 오른쪽에는 밝은 수직 탑이 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=46",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000045.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "38",
+      "officialSeq": 47,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=47",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000046.jpg",
+      "observations": [
+        "청색 반사 유리와 밝은 세로 프레임의 전면 격자다. 하부 일부를 가느다란 흰 기둥이 받친다."
+      ],
+      "profile": {
+        "wallColor": "#7898a5",
+        "glassColor": "#4f8ea6",
+        "frameColor": "#606e74",
+        "accentColor": "#606e74",
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.88,
+        "bayWidth": 2.3,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=47",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000046.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "39",
+      "officialSeq": 48,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=48",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000047.jpg",
+      "observations": [
+        "회색 콘크리트 골조에 큰 창이 반복된다. 측벽에는 촘촘한 세로 홈이 있고 기둥 위로 본체가 돌출된다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=48",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000047.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "40",
+      "officialSeq": 49,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=49",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000048.jpg",
+      "observations": [
+        "낮고 긴 벽돌 창고에 두꺼운 흰 상부 띠가 있다. 오른쪽에 큰 셔터 문이 있다."
+      ],
+      "profile": {
+        "wallColor": "#6d5a4c",
+        "glassColor": "#46646b",
+        "frameColor": "#dfdfd6",
+        "accentColor": "#dfdfd6",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=49",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000048.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "41",
+      "officialSeq": 50,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=50",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000049.jpg",
+      "observations": [
+        "회색 금속 패널 벽에 큰 흰 프레임 창 묶음이 있다. 덩어리가 층마다 조금씩 어긋난다."
+      ],
+      "profile": {
+        "wallColor": "#c8cbc8",
+        "glassColor": "#66858a",
+        "frameColor": "#a5aaaa",
+        "accentColor": "#a5aaaa",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=50",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000049.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "42",
+      "officialSeq": 51,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=51",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000050.jpg",
+      "observations": [
+        "적벽돌 긴 본체에 창이 반복된다. 하부의 흰 기둥과 보, 한쪽 유리 입구가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=51",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000050.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "42-1",
+      "officialSeq": 52,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=52",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000051.jpg",
+      "observations": [
+        "밝은 패널 창고에 작은 가로창이 드문드문 있다. 입구 옆은 황토색 세로 패널과 청록 유리다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=52",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000051.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "43",
+      "officialSeq": 53,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=53",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/1abc4a06-b880-4b6a-ac9a-2736e9fcf502.jpg",
+      "observations": [
+        "짙은 회색 벽돌 상부에 길고 좁은 창과 밝은 세로 패널이 반복된다. 하부는 밝은 큰 박스와 유리다."
+      ],
+      "profile": {
+        "wallColor": "#676b67",
+        "glassColor": "#637b75",
+        "frameColor": "#c8c9c0",
+        "accentColor": "#c8c9c0",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=53",
+          "https://map.snu.ac.kr/api/upload/building/1abc4a06-b880-4b6a-ac9a-2736e9fcf502.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "43-1",
+      "officialSeq": 54,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=54",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000053.jpg",
+      "observations": [
+        "회백색 벽의 날카로운 삼각 모서리와 곡면 부분이 함께 있다. 하부는 유리이며 일부 본체가 돌출된다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=54",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000053.jpg"
+        ]
+      },
+      "observedRoofShape": "curved-flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "44",
+      "officialSeq": 55,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=55",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000054.jpg",
+      "observations": [
+        "큰 주황 벽돌 구획을 흰 기둥과 보가 나눈다. 높은 곳 작은 창과 낮은 가로창만 보인다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=55",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000054.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "44-1",
+      "officialSeq": 56,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=56",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000055.jpg",
+      "observations": [
+        "둥근 유리 전면에 수평 띠와 얇은 외부 차양 격자가 반복된다. 지붕 끝은 청록색이다."
+      ],
+      "profile": {
+        "wallColor": "#b5bfbd",
+        "glassColor": "#668d97",
+        "frameColor": "#7e8c8b",
+        "accentColor": "#7e8c8b",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=56",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000055.jpg"
+        ]
+      },
+      "observedRoofShape": "curved-flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "45",
+      "officialSeq": 57,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=57",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000056.jpg",
+      "observations": [
+        "사진은 입구와 소나무 위주다. 콘크리트 벽, 가로 슬릿과 세로로 긴 계단실 창만 확인된다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=57",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000056.jpg"
+        ]
+      },
+      "observedRoofShape": "unknown",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "46",
+      "officialSeq": 58,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=58",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000057.jpg",
+      "observations": [
+        "사진에는 숲과 긴 계단만 보인다. 건물 외벽과 지붕 형태는 확인할 수 없다."
+      ],
+      "profile": null,
+      "observedRoofShape": "unknown",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "47",
+      "officialSeq": 59,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=59",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000058.jpg",
+      "observations": [
+        "밝은 패널 벽과 모서리를 감싼 큰 유리창이 보인다. 좌우 수직 벽체가 지붕 위로 조금 솟는다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=59",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000058.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "48",
+      "officialSeq": 60,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=60",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000059.jpg",
+      "observations": [
+        "낮은 밝은 콘크리트 건물이며 입구가 깊게 들어간다. 창틀은 붉은 갈색이다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=60",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000059.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "48-1",
+      "officialSeq": 61,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=61",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000060.jpg",
+      "observations": [
+        "낮은 적벽돌 건물에 작은 창이 있다. 흰 콘크리트 출입구 틀이 돌출된다."
+      ],
+      "profile": {
+        "wallColor": "#b86f54",
+        "glassColor": "#667c82",
+        "frameColor": "#dddcd3",
+        "accentColor": "#dddcd3",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=61",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000060.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "49",
+      "officialSeq": 62,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=62",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000061.jpg",
+      "observations": [
+        "밝은 사각 패널이 두 곡면 벽을 덮는다. 작은 정사각 창과 상부 긴 유리띠가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=62",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000061.jpg"
+        ]
+      },
+      "observedRoofShape": "curved-flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "50",
+      "officialSeq": 63,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=63",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000062.jpg",
+      "observations": [
+        "짙은 갈색 벽돌의 큰 막힌 측벽과 상부 작은 세로창이 보인다."
+      ],
+      "profile": {
+        "wallColor": "#65534c",
+        "glassColor": "#50676b",
+        "frameColor": "#b9b6ac",
+        "accentColor": "#b9b6ac",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=63",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000062.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "51",
+      "officialSeq": 64,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=64",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000063.jpg",
+      "observations": [
+        "짙은 벽돌 동 사이에 유리 연결통로가 있다. 전면에 밝은 회색 계단실 탑과 좁은 수직 창이 보인다."
+      ],
+      "profile": {
+        "wallColor": "#65534c",
+        "glassColor": "#50676b",
+        "frameColor": "#b9b6ac",
+        "accentColor": "#b9b6ac",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=64",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000063.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "52",
+      "officialSeq": 65,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=65",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000064.jpg",
+      "observations": [
+        "황갈색 벽돌 덩어리들이 단차를 이룬다. 작은 창과 하부의 긴 창이 보인다."
+      ],
+      "profile": {
+        "wallColor": "#aa8059",
+        "glassColor": "#55777a",
+        "frameColor": "#c9c5b5",
+        "accentColor": "#c9c5b5",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=65",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000064.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "52-2",
+      "officialSeq": 67,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=67",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000065.jpg",
+      "observations": [
+        "금속 기둥이 받치는 개방형 작업장이다. 큰 박공지붕과 옆의 낮은 얇은 지붕이 있다."
+      ],
+      "profile": {
+        "wallColor": "#c8cbc8",
+        "glassColor": "#66858a",
+        "frameColor": "#a5aaaa",
+        "accentColor": "#a5aaaa",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0,
+        "windowHeightRatio": 0,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=67",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000065.jpg"
+        ]
+      },
+      "observedRoofShape": "gable",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "53",
+      "officialSeq": 68,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=68",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000066.jpg",
+      "observations": [
+        "황갈색 벽돌 벽에 좁은 세로창이 드문드문 있다. 덩어리 높이가 조금씩 다르다."
+      ],
+      "profile": {
+        "wallColor": "#aa8059",
+        "glassColor": "#55777a",
+        "frameColor": "#c9c5b5",
+        "accentColor": "#c9c5b5",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=68",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000066.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "54",
+      "officialSeq": 69,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=69",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000067.jpg",
+      "observations": [
+        "짙은 갈색 벽돌과 작은 창이 보인다. 뒤쪽 연결부 상부에 붉은 세로 요소가 반복된다."
+      ],
+      "profile": {
+        "wallColor": "#65534c",
+        "glassColor": "#50676b",
+        "frameColor": "#b9b6ac",
+        "accentColor": "#b9b6ac",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=69",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000067.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "55",
+      "officialSeq": 70,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=70",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000068.jpg",
+      "observations": [
+        "짙은 갈색 벽돌의 큰 막힌 벽이 주된 입면이다. 측면에 적은 수의 가로창이 있다."
+      ],
+      "profile": {
+        "wallColor": "#65534c",
+        "glassColor": "#50676b",
+        "frameColor": "#b9b6ac",
+        "accentColor": "#b9b6ac",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=70",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000068.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "56",
+      "officialSeq": 71,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=71",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000069.jpg",
+      "observations": [
+        "황갈색 패널 벽에 긴 검은 프레임 창줄이 반복된다. 모서리와 끝벽은 은회색 패널이다."
+      ],
+      "profile": {
+        "wallColor": "#ae965d",
+        "glassColor": "#53666b",
+        "frameColor": "#cfcdc0",
+        "accentColor": "#cfcdc0",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=71",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000069.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "56-1",
+      "officialSeq": 259,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=259",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/30e5e582-1901-4151-b120-18fa2b749663.png",
+      "observations": [
+        "흰 층별 슬래브가 깊게 돌출되고 전면은 유리다. 층마다 계단식 테라스가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#d9d9cd",
+        "glassColor": "#5a777d",
+        "frameColor": "#b8bdbb",
+        "accentColor": "#b8bdbb",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=259",
+          "https://map.snu.ac.kr/api/upload/building/30e5e582-1901-4151-b120-18fa2b749663.png"
+        ]
+      },
+      "observedRoofShape": "flat-terraced",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "57",
+      "officialSeq": 72,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=72",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000070.jpg",
+      "observations": [
+        "은색 금속 패널과 청록 유리가 섞인다. 오른쪽은 물결 모양 곡면이며 중앙에 원형 창줄이 있다."
+      ],
+      "profile": {
+        "wallColor": "#b5bfbd",
+        "glassColor": "#668d97",
+        "frameColor": "#7e8c8b",
+        "accentColor": "#7e8c8b",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=72",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000070.jpg"
+        ]
+      },
+      "observedRoofShape": "curved-flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "57-1",
+      "officialSeq": 73,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=73",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000071.jpg",
+      "observations": [
+        "연한 황갈색 벽돌과 얇은 밝은 수평 띠가 보인다. 긴 창줄과 유리 연결부가 있다."
+      ],
+      "profile": {
+        "wallColor": "#aa8059",
+        "glassColor": "#55777a",
+        "frameColor": "#c9c5b5",
+        "accentColor": "#c9c5b5",
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=73",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000071.jpg"
+        ]
+      },
+      "observedRoofShape": "flat-overhang",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "58",
+      "officialSeq": 74,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=74",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000072.jpg",
+      "observations": [
+        "짙은 적벽돌 저층 건물이다. 단차가 있는 지붕선과 흰 기둥이 받치는 큰 입구 차양이 보인다."
+      ],
+      "profile": {
+        "wallColor": "#935b4c",
+        "glassColor": "#537477",
+        "frameColor": "#bcb9ae",
+        "accentColor": "#bcb9ae",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=74",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000072.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "59",
+      "officialSeq": 75,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=75",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000073.jpg",
+      "observations": [
+        "큰 은회색 패널 전면이 대부분 막혀 있다. 하부 입구가 깊게 들어가며 옆에 기울어진 연결부가 보인다."
+      ],
+      "profile": {
+        "wallColor": "#c8cbc8",
+        "glassColor": "#66858a",
+        "frameColor": "#a5aaaa",
+        "accentColor": "#a5aaaa",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=75",
+          "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000073.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "59-1",
+      "officialSeq": 251,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=251",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/7d6f94b9-b529-47ab-be57-899ad17c751e.png",
+      "observations": [
+        "상부는 얇은 세로 프레임이 촘촘한 유리 벽이다. 중간 콘크리트 박스에 좁은 창이 있고 하부는 높은 기둥 통로다."
+      ],
+      "profile": {
+        "wallColor": "#b5bfbd",
+        "glassColor": "#668d97",
+        "frameColor": "#7e8c8b",
+        "accentColor": "#7e8c8b",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=251",
+          "https://map.snu.ac.kr/api/upload/building/7d6f94b9-b529-47ab-be57-899ad17c751e.png"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    },
+    {
+      "buildingNumber": "60",
+      "officialSeq": 76,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=76",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/building/415e399d-814f-44c2-973b-6fab7278676a.jpg",
+      "observations": [
+        "회갈색 콘크리트 입면에 깊은 청록 창이 세 줄로 반복된다. 하부는 짙은 돌과 유리이며 일부가 기둥 통로다."
+      ],
+      "profile": {
+        "wallColor": "#b3afa2",
+        "glassColor": "#3e575e",
+        "frameColor": "#c4c3b8",
+        "accentColor": "#c4c3b8",
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=76",
+          "https://map.snu.ac.kr/api/upload/building/415e399d-814f-44c2-973b-6fab7278676a.jpg"
+        ],
+        "roofStyle": "flat"
+      },
+      "observedRoofShape": "flat",
+      "inspectionMethod": "Direct viewing of a numbered 480 by 270 pixel contact image; building 60 also viewed individually at full display size.",
+      "limitations": "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+      "parametersAreApproximate": true
+    }
+  ]
+}

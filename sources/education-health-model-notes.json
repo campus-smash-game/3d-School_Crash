@@ -1,0 +1,1164 @@
+{
+  "schemaVersion": 2,
+  "status": "integrated-partial",
+  "reviewedAt": "2026-11-05T19:05:39.074Z",
+  "landmarks": [
+    "education-220",
+    "public-health-221"
+  ],
+  "modelFile": "src/educationHealthLandmark.ts",
+  "courtyardFile": "src/healthCourtyard.ts",
+  "api": "createEducationHealthLandmark(scene, building, profile, heightAt)",
+  "scope": "직접 관측한 거리뷰로 건물과 상층 테라스의 상대 위치를 대조한 뒤 공식 연결 통로 도면과 사진, 준공 후 리모델링 자료로 가려진 구조를 보완했다. 현장 측량이나 건물 전체 정밀 복원이 아니다.",
+  "sources": [
+    {
+      "id": "snu-map-220",
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178",
+      "local": "../references/buildings/photos/178-220.jpg",
+      "captureDate": null,
+      "visuallyInspected": true,
+      "role": "220 표기와 유리 입면, 하부 개방부, 옥상 차양을 확인하는 공식 외관 사진이다.",
+      "sha256": "c10f2853bcd2ffe1c0a2f33bfac78bb50e99eb17a6e9dee5de2233dbbafebb79"
+    },
+    {
+      "id": "snu-map-221",
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=179",
+      "local": "../references/buildings/photos/179-221.jpg",
+      "captureDate": null,
+      "visuallyInspected": true,
+      "role": "벽돌 상부, 중앙 유리 계단실, 옥상 차양과 연결부를 확인한다. 낮은 필로티는 최근 증축 이전 모습이므로 현재 외형으로 적용하지 않는다.",
+      "sha256": "93181c11af43ae082ebd4c4d17b5a5858c1f21af6a0e404e0074a6e3f9f9e12d"
+    },
+    {
+      "id": "whitepaper-2010",
+      "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/24th_vision_change.pdf",
+      "local": "artifacts/living-science-review/public-whitepaper-2010.pdf",
+      "page": 44,
+      "printedPage": 42,
+      "render": "artifacts/living-science-review/whitepaper-2010-page-44.png",
+      "visuallyInspected": true,
+      "role": "종합교육연구단지를 지상 7층, 지하 2층으로 분류한다. 여러 동을 묶은 설명이므로 221동을 7층으로 정하는 근거로 쓰지 않는다. 사진은 220/221의 옛 연결 상태를 함께 보여 준다.",
+      "sha256": "674c39afee02ec3195ac403536c7f817aa8e10a7604993f4d379c9226444a176"
+    },
+    {
+      "id": "220-ground-plan",
+      "url": "https://cse.snu.ac.kr/api/v1/file/1695914765530_%5B%EB%B6%99%EC%9E%84%5D%20%EA%B4%80%EC%95%85%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EC%A0%84%EA%B8%B0%EC%B0%A8%20%EC%B6%A9%EC%A0%84%EA%B8%B0%20%EC%9D%B4%EC%9A%A9%EC%95%88%EB%82%B4%20%282%29.pdf",
+      "local": "artifacts/engineering301-review/basement-ev-plan-cse.pdf",
+      "pages": [
+        15,
+        50
+      ],
+      "render": "artifacts/education-health-review/220-plan-ev-page15.png",
+      "drawingDate": "2017-03-22",
+      "visuallyInspected": true,
+      "role": "종합교육연구동 지상 1층 도면이다. 주차장, 진입 램프, 계단이 표시된다. 상층 외곽과 다르므로 지상 전체를 같은 직사각형으로 만들지 않는다.",
+      "sha256": "9ba06bb550a797d553075ba26603233bf484397a70396dd08b260805729fe2f0"
+    },
+    {
+      "id": "bridge-notice-2024",
+      "url": "https://health.snu.ac.kr/일반공지/?mod=document&uid=4103",
+      "local": "artifacts/education-health-review/bridge-railing-2024.pdf",
+      "published": "2024-12-12",
+      "renders": [
+        "artifacts/education-health-review/bridge-page-1.png",
+        "artifacts/education-health-review/bridge-page-2.png"
+      ],
+      "visuallyInspected": true,
+      "role": "220동 지상 7층과 221동 지상 6층을 잇는 외부 통로의 도면과 현장 사진이다. 난간 설치 공지이며 현재의 모든 세부 재료를 확정하지는 않는다.",
+      "sha256": "da9cd18d0e38081d161cf06de22c227ae97e5448ec83674c3a336deb401c54e6"
+    },
+    {
+      "id": "221-remodel-2026",
+      "url": "https://kiramonthly.com/2623",
+      "local": "artifacts/education-health-review/health-remodel-2026.html",
+      "publication": "2026-05",
+      "datePublished": "2026-05-31",
+      "publisher": "대한건축사협회 월간 건축사",
+      "creditedArchitect": "박도현 건축사사무소",
+      "authorshipLimit": "설계자와 설계 의도 구현 담당으로 박도현을 명시한다. 본문 작성자가 설계자 본인이라는 별도 서명은 확인하지 못했다.",
+      "constructionPeriod": "2024-04~2025-12",
+      "designPeriod": "2022-08~2024-01",
+      "currentPhotoFiles": [
+        "health-image-01.jpg",
+        "health-image-02.jpg"
+      ],
+      "historicPhotoFiles": [
+        "health-image-03.jpg",
+        "health-image-04.jpg"
+      ],
+      "currentPlanFiles": [
+        "health-image-10.jpg",
+        "health-image-11.jpg"
+      ],
+      "visuallyInspected": true,
+      "role": "최근 완료된 증축의 외관과 1층/2층 평면을 확인하는 설계 사례다. 기존 사진과 현재 사진을 구분했다.",
+      "sha256": "85078a7109bff37e18821c1c6cf0b6dae4d6c095c2fc4fad03bd5647fab41da4"
+    }
+  ],
+  "roadviewReview": "sources/education-health-connection-roadview-review.json",
+  "observationOrder": [
+    "기존 로드뷰 캡처와 기록을 확인했다.",
+    "reference가 서쪽 연속 두 시점과 동쪽 140-2 표기를 직접 관측했고, controls가 남서쪽 통과구를 222동으로 식별했다.",
+    "root가 새 서쪽 캡처 두 장과 공식 도면, 현장 사진 및 리모델링 사진을 직접 열어 대조했다.",
+    "관측과 도면 대조 후 실행 모델을 수정했다."
+  ],
+  "changes": {
+    "upperConnection": {
+      "previousFloorWorldY": 63.48266284657249,
+      "newFloorWorldY": 60.18266284657249,
+      "reason": "옥상 위 바닥을 221동 6층과 220동 7층 접속 높이로 수정했다.",
+      "levelRelationshipConfirmed": true,
+      "absoluteHeightSurveyed": false,
+      "contract": {
+        "floorWorldY": 60.182662846572484,
+        "canopyWorldY": 63.682662846572484,
+        "doors": [
+          {
+            "component": "education-upper-connection-door",
+            "buildingId": "way/297046999",
+            "center": {
+              "x": 539.2264864770856,
+              "y": 60.182662846572484,
+              "z": -185.86549815548702
+            },
+            "panelCenter": {
+              "x": 539.2264864770856,
+              "y": 61.532662846572485,
+              "z": -185.86549815548702
+            },
+            "floor": {
+              "x": 539.2264864770856,
+              "y": 60.182662846572484,
+              "z": -185.86549815548702
+            },
+            "outward": {
+              "x": 0.497796037995254,
+              "y": 0,
+              "z": 0.8672941280535844
+            },
+            "tangent": [
+              -0.8672941280535844,
+              0,
+              0.497796037995254
+            ],
+            "width": 3.4,
+            "height": 2.7,
+            "estimated": true
+          },
+          {
+            "component": "health-upper-connection-door",
+            "buildingId": "way/297047243",
+            "center": {
+              "x": 548.6137251714923,
+              "y": 60.182662846572484,
+              "z": -168.79010674377912
+            },
+            "panelCenter": {
+              "x": 548.6137251714923,
+              "y": 61.532662846572485,
+              "z": -168.79010674377912
+            },
+            "floor": {
+              "x": 548.6137251714923,
+              "y": 60.182662846572484,
+              "z": -168.79010674377912
+            },
+            "outward": {
+              "x": -0.8763074853936069,
+              "y": 0,
+              "z": 0.48175220917307
+            },
+            "tangent": [
+              -0.48175220917307,
+              0,
+              -0.8763074853936069
+            ],
+            "width": 3.4,
+            "height": 2.7,
+            "estimated": true
+          }
+        ],
+        "routeLocal": [
+          {
+            "x": 15,
+            "z": 16
+          },
+          {
+            "x": 8,
+            "z": 16
+          },
+          {
+            "x": 8,
+            "z": 4
+          },
+          {
+            "x": 12,
+            "z": 0
+          },
+          {
+            "x": 12,
+            "z": -6
+          },
+          {
+            "x": 21,
+            "z": -6
+          }
+        ],
+        "routeWorld": [
+          {
+            "x": 551.2426476276731,
+            "y": 60.182662846572484,
+            "z": -170.23536337129835
+          },
+          {
+            "x": 545.1084952299179,
+            "y": 60.182662846572484,
+            "z": -166.86309790708685
+          },
+          {
+            "x": 539.3274687198411,
+            "y": 60.182662846572484,
+            "z": -177.37878773181012
+          },
+          {
+            "x": 540.9056898247233,
+            "y": 60.182662846572484,
+            "z": -182.81102651007683
+          },
+          {
+            "x": 538.0151765696849,
+            "y": 60.182662846572484,
+            "z": -188.06887142243846
+          },
+          {
+            "x": 545.9019439382273,
+            "y": 60.182662846572484,
+            "z": -192.40464130499612
+          }
+        ],
+        "estimated": true,
+        "surveyed": false,
+        "interiorBounds": {
+          "x0": 12,
+          "x1": 20,
+          "z0": 13,
+          "z1": 19
+        },
+        "doorCenterMeaning": "floor",
+        "layoutSource": "2024 bridge plan and photograph; dimensions and door placement estimated"
+      },
+      "details": "221동 상층의 열린 테라스와 안쪽 밝은 벽, 낮은 유리창, 양끝 출입문과 내부 접속 바닥을 구분했다. 갈색 통로와 난간, 기둥 및 차양을 보완했다.",
+      "limits": "양끝 문과 L자 꺾임은 거리뷰에서 수목에 가려 보이지 않는다. 문 좌표와 폭, 도면을 지도에 맞춘 경로 및 절대 높이는 게임용 근사다."
+    },
+    "courtyard": {
+      "reference": "https://kiramonthly.com/2623",
+      "currentPhotos": [
+        "artifacts/education-health-review/health-image-01.jpg",
+        "artifacts/education-health-review/health-image-02.jpg"
+      ],
+      "plan": "artifacts/education-health-review/health-image-10.jpg",
+      "confirmedFeatures": [
+        "서쪽 입구의 벽돌 포장",
+        "도면 8번 북쪽 휴게데크",
+        "도면 7번 뒤편 계단식 스탠드"
+      ],
+      "mapping": "도면 위쪽을 공통 로컬 +u, 왼쪽을 +v로 대응했다. 원본 외곽과 도면 비례가 달라 치수는 근사다.",
+      "details": "포장 줄눈을 표현하고 북쪽 데크를 넓혔다. 뒤편 좌석 3단과 옆 보행 계단 6단을 두고 북쪽 보도로 연결했다. 원본 지형과 바닥 높이 차이는 받침을 넣어 연결했다.",
+      "estimatedDimensions": {
+        "pavingBrick": [
+          0.24,
+          0.12
+        ],
+        "northDeckLocal": [
+          1,
+          20.6,
+          58.5,
+          65.5
+        ],
+        "seatRise": 0.36,
+        "walkRise": 0.18
+      },
+      "terrainUnchanged": true
+    },
+    "identification": {
+      "eastVisibleBody": "140-2",
+      "southwestUnderpass": "222",
+      "usedAs220PilotisEvidence": false,
+      "underpass222Implemented": false
+    },
+    "groundEntry": {
+      "notes": "sources/education-southwest-entry-model-notes.json",
+      "buildingId": "way/297046999",
+      "photoBeforeImplementation": true,
+      "wholeBuildingCompared": false
+    },
+    "northAccess": {
+      "originalEntranceNodes": [
+        "4531518011",
+        "4514838231"
+      ],
+      "stairRoad": "/347",
+      "externalWalk": "/338",
+      "pmFacilities": [
+        972,
+        973
+      ],
+      "parkingRampImplemented": true
+    },
+    "parkingAccess": {
+      "externalRamp": true,
+      "shortPortalDepth": 5,
+      "fullInterior": false,
+      "actualDimensionsEstimated": true
+    }
+  },
+  "validation": {
+    "currentNotes": "sources/education-parking-model-notes.json",
+    "checks": [
+      {
+        "file": "artifacts/education-health-test/results.json",
+        "sha256": "24b1d61d76077d73ce16f8daf89813d955be4f2d047964c7146e7f62147d5eaa",
+        "passed": 19,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-parking-access-test/results.json",
+        "sha256": "388a72c57c53c7b16103002faedcc299d758e21e3711f1e782da1cc358038e02",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-health-access-test/results.json",
+        "sha256": "0ca41aec5941d8ddf596db0d7911f8825a6bcf2c40398d718d4147eacd3ae5fc",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-passage-test/results.json",
+        "sha256": "2a79ccd0955eb7c8c0a009901141dd7d3d28ec3c6b14101931dc5496999047d8",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-courtyard-test/results.json",
+        "sha256": "ce19df4f79e5170a9317d7112dcbad0c9398a9962d53b6eef655c4520929dd08",
+        "passed": 3,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-north-access-test/results.json",
+        "sha256": "f7a4e8e15092e91b74db73260220d303df32c39a060e0baf606550285a745be1",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "c444316d990d016fc02027d4464d692741541114d150f4baa2b0702219c6f143",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "3b6a02881d7b0c4b4d1668c058e3d287ab0012d61f0c9170c4389bb893cf9d79",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/terrain-verification.json",
+        "sha256": "685915d921f0ae449a671cecd2a0e54f824466a02c499ff306084eaa603c0276",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/family-terrain-test/results.json",
+        "sha256": "4583c22851b9ef34b338337d82f2edcd2f98322554f1f303948fe3b0e5af6daa",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/traffic-verification.json",
+        "sha256": "3e404d6cb15adf1c584d1844ac8e0676b882d87e965b25088d76dbb1dad1b7e9",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/transit-test/results.json",
+        "sha256": "d3b23c1e03a15c8cfc92046d182b14c4b349a77b8f75ab23ec5b2008426645f4",
+        "passed": 8,
+        "failed": 0
+      }
+    ],
+    "physicalPhoneTested": false
+  },
+  "limitations": [
+    "220동의 하부 필로티 전체 경로와 후면은 새 로드뷰에서 확인하지 못했다.",
+    "2025년 7월의 221동 하층은 2025년 12월 준공 전이다. 현재 하층은 2026년 설계 사례의 준공 사진을 근거로 삼았다.",
+    "포장 경계와 실제 단수, 문 중심, 창 분할 및 높이는 실측하지 않았다.",
+    "실내 전체, 실제 문 개폐 기구와 전 층 동선은 구현하지 않았다.",
+    "브라우저 화면 크기 검사와 실제 휴대전화 성능 검사는 구분한다."
+  ],
+  "sourceHashes": {
+    "src/educationHealthLandmark.ts": "d9836095d7db9643899b0d3b4878616af450891c017ec739b3ab9d0685d32a5f",
+    "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+    "scripts/verify-education-health.mjs": "7ee6076a23e4ce3190cdb8b9ce73bed70c5d2354c59d26444382c7beae39a86f",
+    "scripts/verify-education-health-access.mjs": "450f2812f249b3d49337fcd71a0e3c441ab42c41dd2ea7bd5ef23271f1164f70",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "src/terrain.ts": "15f6764d6526760b7b73e10ffa6d23a4b2a619e86647dc643e774296600c9359",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+    "sources/education-health-connection-roadview-review.json": "01a24051366b1ce58863b988cc756f108eaa51d8f1fce42e197f4dafc4f92859",
+    "sources/education-southwest-entry-roadview-review.json": "e2e89e7406a00a7fdcb632c9d7ffdad4eb273f6facb237d1c3e94dabb14d7fe1",
+    "sources/education-southwest-entry-model-notes.json": "1e0ce14b7ee7f0c7e614365733ed472a62263031d2017bb5d86ae056f0bf626a",
+    "src/educationNorthApproach.ts": "70cc3acd9ec64a93b53cead881490ff3771eb6825c2ffcab9e67a6fbba26bf45",
+    "src/fullCampus.ts": "84c37875e8d908cf536cbb457d6418b7286e937f7c043ab0fe45f00d61c1f128",
+    "sources/education-north-model-notes.json": "8cb284ef49fea4f03131e3c913d9e4ff457a836c47a0f07d52123e80325f36aa",
+    "sources/education-north-roadview-review.json": "3c1d844f8e34986aca36cfd40fd496966e034e966419d46a8d9f19ba1329722d",
+    "src/educationParkingApproach.ts": "9b5c45a71d6a921afb6650fb034c88d9ed9c2b5b059c7ee17c50af601453f02a",
+    "src/educationParkingSite.ts": "57214d59d8f424a4840c97d888f5ba84a50938ed29e525c62d34039a191832d1",
+    "src/educationParkingTerrain.ts": "e8ac2b2ad6d9f036be417a69cff72e1eb728c22e7e06ce1f0445fbb089cb7c76",
+    "scripts/verify-education-parking-access.mjs": "e055fdde20f778ef73b3c38748f7a8f13d632830dbe38f97224ead4db5d1bb90",
+    "scripts/verify-education-north-access.mjs": "7dea13271b011a86124ae7f9b15af47c0f0b8bb73e1b6ce3e6d2dc2345106b1d",
+    "sources/education-parking-roadview-review.json": "2a945af5797aaaa4dfa0b3525bd2452e5b922c47799a7bea1d23b75734f09eb9",
+    "sources/education-parking-model-notes.json": "a76ebb95ae50e66e80cf325816171feb51288ed5466602a602bc99872d41ef22"
+  },
+  "historicalBaselineExplanation": "아래는 릴리스 15 당시의 모델과 검사를 그대로 보존한 기록이다. 옛 옥상 연결 높이와 당시 미수행 검증을 현재 상태로 해석하지 않는다.",
+  "historicalBaseline": {
+    "status": "integrated-partial",
+    "landmarks": [
+      "education-220",
+      "public-health-221"
+    ],
+    "modelFile": "src/educationHealthLandmark.ts",
+    "api": "createEducationHealthLandmark(scene, building, profile, heightAt)",
+    "reviewedAt": "2026-11-05T01:53:56.803Z",
+    "scope": "공식 외관 사진과 공개 도면, 최근 증축 설계 사례를 바탕으로 만든 파괴 가능한 게임 모델이다. 사진으로 확인한 구조와 지도 대응, 게임용 추정 치수를 구분한다. 현장 측량이나 건물 전체의 정밀 복원이 아니다.",
+    "sources": [
+      {
+        "id": "snu-map-220",
+        "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178",
+        "local": "../references/buildings/photos/178-220.jpg",
+        "captureDate": null,
+        "visuallyInspected": true,
+        "role": "220 표기와 유리 입면, 하부 개방부, 옥상 차양을 확인하는 공식 외관 사진이다.",
+        "sha256": "c10f2853bcd2ffe1c0a2f33bfac78bb50e99eb17a6e9dee5de2233dbbafebb79"
+      },
+      {
+        "id": "snu-map-221",
+        "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=179",
+        "local": "../references/buildings/photos/179-221.jpg",
+        "captureDate": null,
+        "visuallyInspected": true,
+        "role": "벽돌 상부, 중앙 유리 계단실, 옥상 차양과 연결부를 확인한다. 낮은 필로티는 최근 증축 이전 모습이므로 현재 외형으로 적용하지 않는다.",
+        "sha256": "93181c11af43ae082ebd4c4d17b5a5858c1f21af6a0e404e0074a6e3f9f9e12d"
+      },
+      {
+        "id": "whitepaper-2010",
+        "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/24th_vision_change.pdf",
+        "local": "artifacts/living-science-review/public-whitepaper-2010.pdf",
+        "page": 44,
+        "printedPage": 42,
+        "render": "artifacts/living-science-review/whitepaper-2010-page-44.png",
+        "visuallyInspected": true,
+        "role": "종합교육연구단지를 지상 7층, 지하 2층으로 분류한다. 여러 동을 묶은 설명이므로 221동을 7층으로 정하는 근거로 쓰지 않는다. 사진은 220/221의 옛 연결 상태를 함께 보여 준다.",
+        "sha256": "674c39afee02ec3195ac403536c7f817aa8e10a7604993f4d379c9226444a176"
+      },
+      {
+        "id": "220-ground-plan",
+        "url": "https://cse.snu.ac.kr/api/v1/file/1695914765530_%5B%EB%B6%99%EC%9E%84%5D%20%EA%B4%80%EC%95%85%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EC%A0%84%EA%B8%B0%EC%B0%A8%20%EC%B6%A9%EC%A0%84%EA%B8%B0%20%EC%9D%B4%EC%9A%A9%EC%95%88%EB%82%B4%20%282%29.pdf",
+        "local": "artifacts/engineering301-review/basement-ev-plan-cse.pdf",
+        "pages": [
+          15,
+          50
+        ],
+        "render": "artifacts/education-health-review/220-plan-ev-page15.png",
+        "drawingDate": "2017-03-22",
+        "visuallyInspected": true,
+        "role": "종합교육연구동 지상 1층 도면이다. 주차장, 진입 램프, 계단이 표시된다. 상층 외곽과 다르므로 지상 전체를 같은 직사각형으로 만들지 않는다.",
+        "sha256": "9ba06bb550a797d553075ba26603233bf484397a70396dd08b260805729fe2f0"
+      },
+      {
+        "id": "bridge-notice-2024",
+        "url": "https://health.snu.ac.kr/일반공지/?mod=document&uid=4103",
+        "local": "artifacts/education-health-review/bridge-railing-2024.pdf",
+        "published": "2024-12-12",
+        "renders": [
+          "artifacts/education-health-review/bridge-page-1.png",
+          "artifacts/education-health-review/bridge-page-2.png"
+        ],
+        "visuallyInspected": true,
+        "role": "220동 지상 7층과 221동 지상 6층을 잇는 외부 통로의 도면과 현장 사진이다. 난간 설치 공지이며 현재의 모든 세부 재료를 확정하지는 않는다.",
+        "sha256": "da9cd18d0e38081d161cf06de22c227ae97e5448ec83674c3a336deb401c54e6"
+      },
+      {
+        "id": "221-remodel-2026",
+        "url": "https://kiramonthly.com/2623",
+        "local": "artifacts/education-health-review/health-remodel-2026.html",
+        "publication": "2026-05",
+        "datePublished": "2026-05-31",
+        "publisher": "대한건축사협회 월간 건축사",
+        "creditedArchitect": "박도현 건축사사무소",
+        "authorshipLimit": "설계자와 설계 의도 구현 담당으로 박도현을 명시한다. 본문 작성자가 설계자 본인이라는 별도 서명은 확인하지 못했다.",
+        "constructionPeriod": "2024-04~2025-12",
+        "designPeriod": "2022-08~2024-01",
+        "currentPhotoFiles": [
+          "health-image-01.jpg",
+          "health-image-02.jpg"
+        ],
+        "historicPhotoFiles": [
+          "health-image-03.jpg",
+          "health-image-04.jpg"
+        ],
+        "currentPlanFiles": [
+          "health-image-10.jpg",
+          "health-image-11.jpg"
+        ],
+        "visuallyInspected": true,
+        "role": "최근 완료된 증축의 외관과 1층/2층 평면을 확인하는 설계 사례다. 기존 사진과 현재 사진을 구분했다.",
+        "sha256": "85078a7109bff37e18821c1c6cf0b6dae4d6c095c2fc4fad03bd5647fab41da4"
+      }
+    ],
+    "documentedFacts": {
+      "education220": {
+        "osmId": "way/297046999",
+        "uniqueOutlinePoints": 23,
+        "holes": 0,
+        "levels": 7,
+        "levelsEstimated": false,
+        "evidence": [
+          "bridge-notice-2024의 220동 7층 표기",
+          "whitepaper-2010의 단지 최고 지상 7층 분류"
+        ],
+        "limits": "날개별 최상층과 실제 높이, 단지 지하 2층 분류의 동별 적용 범위는 미확인이다."
+      },
+      "publicHealth221": {
+        "osmId": "way/297047243",
+        "uniqueOutlinePoints": 8,
+        "holes": 0,
+        "aboveGroundLevels": 6,
+        "belowGroundLevels": 1,
+        "levelsEstimated": false,
+        "evidence": "221-remodel-2026의 B1F~6F, bridge-notice-2024의 221동 6층 표기",
+        "remodelPeriod": "2024-04~2025-12",
+        "knownExistingFirstFloorHeight": 4.5,
+        "currentAppearance": "북쪽 긴 날개의 옛 두 층 높이 필로티에는 1층 강의실/라운지와 2층 행정실이 들어섰다. 2026 설계 사례의 현재 사진 01/02와 평면 10/11을 하부 외관의 우선 근거로 삼았다.",
+        "historicAppearance": "179-221과 현재 사례의 사진 03/04는 증축 전 하부를 보여 준다. 이 사진의 열린 필로티를 현재 221동에 되살리지 않았다."
+      },
+      "upperConnection": "공식 난간 공사 자료는 220동 7층과 221동 6층 사이의 외부 통로를 확인한다. 층 이름 차이를 한 층의 수직 단차로 환산하지 않았다."
+    },
+    "coordinateContract": {
+      "data": "D=(E,U,N)",
+      "render": "부모 world가 H=(x,y,-z)를 한 번 적용한다. 모듈 내부에서는 원본 좌표나 건물 기하를 반사하지 않는다.",
+      "origin": [
+        530.39,
+        -177.03
+      ],
+      "axisU": [
+        0.8763074853936069,
+        -0.48175220917307
+      ],
+      "axisV": [
+        0.48175220917307,
+        0.8763074853936069
+      ],
+      "outline": "220동 23점과 221동 8점의 원본 외곽을 유지했다. 실제 빈 공간은 건물 내부의 별도 부품 구획으로 만들며 campus.json과 terrain.json을 수정하지 않았다."
+    },
+    "modelHeights": {
+      "heightUnits": "m",
+      "reference": "heightAt에서 읽는 게임 지형 기준이며 실측 건축 기준고가 아니다.",
+      "sharedSample": {
+        "x": 559.5275,
+        "z": -168.73875,
+        "y": 42.48266284657249
+      },
+      "educationBase": 39.99327635765073,
+      "publicHealthBase": 42.48266284657249,
+      "sharedWalkwayWorldY": 63.48266284657249,
+      "sharedCanopyWorldY": 66.98266284657248,
+      "educationProfileHeight": 27,
+      "educationActualRelativeCanopyTop": 26.989386488921753,
+      "publicHealthProfileHeight": 24.5,
+      "heightsEstimated": true,
+      "healthLevels": [
+        0,
+        4.5,
+        7.8,
+        11.1,
+        14.4,
+        17.7,
+        21
+      ],
+      "educationGlassWingLevels": [
+        0,
+        4.329795496307253,
+        8.659590992614506,
+        12.98938648892176,
+        16.48938648892176,
+        19.98938648892176,
+        23.48938648892176
+      ],
+      "limits": "221동 기존 1층 4.5 m를 제외한 층별 높이와 220동 날개별 높이 배분은 모델 추정이다. 두 건물 지붕의 접속을 맞추기 위해 같은 기준점을 사용했다."
+    },
+    "photoMapping": {
+      "education220": {
+        "chosenFront": "북서 가로 날개의 +v 면, 원본 p0/p22/p21 일대",
+        "status": "inferred",
+        "evidence": "178-220 사진의 긴 유리 몸체와 오른쪽 밝은 220 끝벽, 2010 백서와 공식 항공의 두 건물 관계를 지도와 대조했다.",
+        "notExcluded": "긴 서측 몸체 p4→p8의 -u 면 대안은 공식 촬영점 자료가 없어 완전히 배제하지 못했다.",
+        "modelChoice": "유리 몸체 아래의 큰 통로를 북서 날개 일부에만 두었다. 남쪽 긴 몸체 전체를 관통시키지 않았다.",
+        "underpass": {
+          "x0": -49,
+          "x1": -18,
+          "z0": -48.3,
+          "z1": -24.5,
+          "ceiling": 12.98938648892176,
+          "estimated": true
+        }
+      },
+      "publicHealth221": {
+        "front": "서쪽 정면인 local -u",
+        "evidence": "설계 사례의 서측 보행로 설명, 북쪽 녹지와 동쪽 경사 설명, L자 외곽 및 최근 평면을 함께 대조했다.",
+        "remodelRange": {
+          "u": [
+            0,
+            20.62
+          ],
+          "v": [
+            31,
+            58.5
+          ]
+        },
+        "rangeEstimated": true,
+        "represented": [
+          "1층 큰 유리와 갈색 돌출 처마, 파괴 가능한 문",
+          "2층 유리 앞의 개별 회색 세로 루버",
+          "네 줄의 상부 벽돌 띠와 리본 창",
+          "중앙 유리 계단실과 남쪽 막힌 번호 벽",
+          "기둥 사이가 열린 흰 옥상 차양"
+        ],
+        "upperWindowProportions": "상부 3.3 m 모델 구획에서 창 아래 벽돌 1.22 m와 위쪽 0.48 m를 두었다. 정확한 창 치수는 사진 비례 추정이다."
+      }
+    },
+    "upperWalkway": {
+      "worldY": 63.48266284657249,
+      "width": 4,
+      "path": [
+        {
+          "x": 12,
+          "z": 18
+        },
+        {
+          "x": 12,
+          "z": -6
+        },
+        {
+          "x": 21,
+          "z": -6
+        }
+      ],
+      "healthTerrace": {
+        "x0": 10,
+        "x1": 14,
+        "z0": 0,
+        "z1": 19,
+        "floor": 21,
+        "worldFloor": 63.48266284657249,
+        "estimated": true
+      },
+      "gap": {
+        "x0": 10,
+        "x1": 14,
+        "z0": -3.8,
+        "z1": 0.15,
+        "floor": 23.48938648892176,
+        "worldFloor": 63.48266284657249,
+        "canopy": 26.989386488921753,
+        "fromLevel": "220 7F",
+        "toLevel": "221 6F",
+        "estimated": true
+      },
+      "physicalContract": "221동 차양 아래의 긴 갈색 데크, 지도 외곽 사이의 짧은 다리, 220동 지붕에서 꺾이는 갈색 바닥을 같은 높이로 잇는다. 난간의 가로대와 세로대는 별도 프록시여서 사이 공간을 막지 않는다.",
+      "estimated": "정확한 폭, 총길이, 꺾임 위치, 바닥 고도와 중간 단수는 확인하지 못했다. 공식 사진의 밝은 옆벽과 작은 창, 기둥 수 및 마감의 정밀 복원은 남아 있다."
+    },
+    "groundAccess": {
+      "reference": "원본 DEM을 유지하는 게임용 접속이며 실제 현관 측량이나 계단 도면의 복원이 아니다.",
+      "sourceWay": "way/455018302/204",
+      "apron": {
+        "x0": -3.3,
+        "x1": 0.5,
+        "z0": 31,
+        "z1": 58.5
+      },
+      "worldApronFloor": 42.019884295027715,
+      "selection": "북서 보행로에서 접근하는 15단 계단과 평탄한 서측 앞마당을 사용한다. 낮은 중앙 서측 지면에서 사진에 없는 큰 정면 계단을 직선으로 올리는 초안은 폐기했다.",
+      "path": [
+        {
+          "x": -4.9949582000110935,
+          "z": 67.33304577913346
+        },
+        {
+          "x": -4.56718612199,
+          "z": 66
+        },
+        {
+          "x": -2,
+          "z": 58
+        },
+        {
+          "x": -2.5,
+          "z": 54
+        },
+        {
+          "x": -2.5,
+          "z": 44
+        },
+        {
+          "x": 2,
+          "z": 44
+        }
+      ],
+      "width": 2,
+      "transitionLength": 1.4,
+      "stepCount": 15,
+      "tread": 0.5601207988161048,
+      "nominalRise": 0.24356295836583453,
+      "firstCrossSectionOriginalRange": [
+        37.855996,
+        38.26644
+      ],
+      "firstCrossSectionHeightDifference": 0.410444,
+      "transition": "폭 양끝의 원지형 높이가 약 0.410 m 다르므로 1.4 m 길이의 접속판을 삼각형으로 나누어 실제 지형에서 첫 단으로 연결했다.",
+      "northDeckWorldFloor": 42.58266284657249,
+      "entrances": [
+        {
+          "name": "remodeled-west-entrance",
+          "x": -1.4,
+          "z": 44,
+          "width": 6,
+          "floor": -0.4627785515447724,
+          "height": 2.96,
+          "startX": -6.4,
+          "startHeight": -4.680204472834688,
+          "steps": 0,
+          "pitch": 0.23333333333333334,
+          "approach": "north-deck-apron",
+          "estimated": true,
+          "worldFloor": 42.019884295027715
+        },
+        {
+          "name": "existing-core-entrance",
+          "x": 0,
+          "z": 25,
+          "width": 3.8,
+          "floor": -0.9499371847289458,
+          "height": 2.96,
+          "startX": -5,
+          "startHeight": -2.3032509444182803,
+          "steps": 6,
+          "pitch": 0.7000000000000001,
+          "approach": "front-steps",
+          "estimated": true,
+          "worldFloor": 41.53272566184354
+        }
+      ],
+      "roadCandidateReview": {
+        "artifact": "artifacts/education-health-review/northwest-stair-constraints.json",
+        "minimumRoadClearance": 2.87544,
+        "neighborOverlapSamples": 0,
+        "scope": "폭 2 m의 중심 경로와 양끝 접속부 표본에 대한 지도 XZ 후보 검사다. 실제 최종 계단 메시의 차도 여유 검사와 같은 값으로 취급하지 않는다. 도로 폭 자체도 지도 속성의 근사다."
+      },
+      "apiOffset": "현재 heightAt은 렌더 및 물리 지형 삼각형보다 0.03 m 높다. 유리 침범 검사는 meshHeightAt으로, 실제 접근 검사는 Rapier 지형과 캡슐로 수행했다."
+    },
+    "renderingAndCollision": {
+      "mergedMeshes": 6,
+      "meshesPerBuilding": 3,
+      "parts": 1603,
+      "triangles": 94376,
+      "perBuilding": [
+        {
+          "id": "way/297046999",
+          "parts": 1077,
+          "triangles": 64184
+        },
+        {
+          "id": "way/297047243",
+          "parts": 526,
+          "triangles": 30192
+        }
+      ],
+      "facades": "층별 약 5.5 m 구획을 파괴 부품으로 사용한다. 폐쇄 입면의 벽과 창을 하나의 얇은 OBB로 근사하고, 빈 통로/차양/난간/기둥은 따로 분리했다.",
+      "geometry": "벽돌 무늬는 절차적으로 생성한 DataTexture다. 공식 사진을 게임 텍스처로 복제하지 않았다.",
+      "damage": "프록시를 숨기면 대응 삼각형만 접어 부분 파괴를 유지한다. 거리별 온전한 대체 외피를 다시 표시하지 않으며 초기화는 원래 정점을 복원한다.",
+      "numbers": "파란 220/221 번호는 기하 선분으로 만들고 부착 벽의 파괴 부품에 포함했다. 한 번의 H 이후 읽는 방향과 실제 광선 노출을 검사했다.",
+      "performanceLimit": "메시 및 삼각형 수는 코드와 CPU 기하에서 센 값이다. 모바일 GPU 처리 시간이나 실제 휴대전화 FPS를 측정한 값이 아니다."
+    },
+    "verification": {
+      "own": {
+        "script": "node scripts/verify-education-health.mjs",
+        "result": "artifacts/education-health-test/results.json",
+        "passed": 13,
+        "failed": 0,
+        "coverage": [
+          "two source footprints and level classifications use six merged surfaces",
+          "all actual glass triangles clear the unchanged terrain",
+          "the 220 underpass and both roof canopies contain actual open volume",
+          "the two building decks and the linking bridge share one physical elevation",
+          "the existing core entrance connects real ground and opens only after door destruction",
+          "the northwestern source footway reaches the remodeled entrance through the level apron",
+          "the entire upper L walkway carries capsules in both directions",
+          "the 220 underpass supports real terrain capsule crossings in both directions",
+          "exposed glass surfaces agree with loaded and unloaded collision queries",
+          "the core to remodeled wing transition has no unintended full-height slit",
+          "both attached wall numbers remain exposed and read left to right after one H",
+          "partial destruction persists at distance and repeated reset restores both models",
+          "one H and a shifted terrain callback preserve the shared logical building datum"
+        ],
+        "glassGroundClearance": [
+          {
+            "id": "way/297046999",
+            "samples": 15190,
+            "minimum": 0.18386925856948722
+          },
+          {
+            "id": "way/297047243",
+            "samples": 6818,
+            "minimum": 0.18999660337089352
+          }
+        ],
+        "externalGlass": [
+          {
+            "id": "way/297046999",
+            "tested": 404,
+            "occluded": 30,
+            "maxSurfaceError": 0.1250571727752563,
+            "maxLoadError": 0.000042875537807463004
+          },
+          {
+            "id": "way/297047243",
+            "tested": 120,
+            "occluded": 73,
+            "maxSurfaceError": 0.12507410049447487,
+            "maxLoadError": 0.00005236898529870082
+          }
+        ],
+        "typecheck": "npx tsc --noEmit 통과"
+      },
+      "independent": {
+        "status": "passed",
+        "basePassed": 15,
+        "fullCampusPassed": 4,
+        "totalPassed": 19,
+        "failed": 0,
+        "result": "artifacts/education-health-independent-review/results.json",
+        "supplemental": "artifacts/education-health-independent-review/supplemental-results.json",
+        "resultSha256": "720ee38923087c8dda9ba4ccaf7bf1c00b659bb625dab32c3b53b73474347496",
+        "supplementalSha256": "25933b5f91b17fdc94d9810d59e59cd403f8d29867ca3bde391de71aa0272787",
+        "glassTerrainSamples": 47160,
+        "minimumGlassTerrainClearance": 0.1614654104865636,
+        "externalGlazingRays": 91,
+        "maximumRenderPhysicsError": 0.12505635023107858,
+        "maximumLoadedUnloadedError": 0.000042562952065505755,
+        "coverage": [
+          "both mapped buildings retain separate shells and real shared roof elevations",
+          "actual glazing and door samples do not enter the current terrain mesh",
+          "exposed render glass agrees with actual loaded and unloaded shots",
+          "the remodeled 221 lower north facade is filled by current glass and louver surfaces",
+          "the 221 west core transition has no unintended open vertical slit",
+          "the 220 lower connecting body remains open between actual round supports",
+          "the capsule crosses the 220 underpass on actual terrain without a hidden facade box",
+          "roof canopy columns and slat gaps remain distinct physical features",
+          "the shared 220 seventh-floor and 221 sixth-floor deck has continuous actual surfaces",
+          "bridge and terrace rails leave real gaps and the suspended floor disappears on destruction",
+          "the remodeled entrance is reached from mapped northern terrain through stairs and apron",
+          "the existing 221 core entrance opens after destruction and supports terrain round trips",
+          "actual blue building-number strokes remain exposed and readable after one reflection",
+          "partial damage stays absent at long distance and reset restores both instances",
+          "complete destruction and reset restore original geometry and loaded-body sets",
+          "actual fullCampus 220 destination settles and supports a six-metre round trip",
+          "actual fullCampus 221 destination settles and supports a six-metre round trip",
+          "both integrated models preserve partial destruction through distance thresholds and reset",
+          "actual 220 and 221 Sprite labels stay upright and readable after one reflection"
+        ],
+        "scope": "실제 원본 지형, 렌더 정점 및 Rapier 캡슐과 광선을 사용한 별도 Node 검사다. 브라우저나 실제 휴대전화 검증을 뜻하지 않는다."
+      },
+      "fullSuite": {
+        "status": "passed",
+        "command": "npm test",
+        "scripts": 36,
+        "passed": 347,
+        "failed": 0,
+        "exitCode": 0,
+        "log": "artifacts/release-verification.log",
+        "sha256": "b5a35cbe30b7198f9c23e25fa2ea89a85de7af1e406cd5ae957403ee83d9c035"
+      },
+      "preservedEarlyFailures": [
+        {
+          "file": "artifacts/education-health-independent-review/draft-01/results.json",
+          "issue": "폐기한 정면 직접 접근 초안에서 새 입구 첫 단 진입이 막혔다. 현재 북서 접근 경로와 구분한다."
+        },
+        {
+          "file": "artifacts/education-health-test/draft-northwest-route-results.json",
+          "issue": "새 계단 끝에서 u=-1.57로 처마 앞을 걷던 경로가 실제 기둥에 막혔다. 기하를 지우지 않고 apron 안의 u=-2.5 중심 경유점으로 경로를 바로잡았다."
+        },
+        {
+          "file": "artifacts/education-health-independent-review/candidate-01",
+          "issue": "추가 검사 초안에서 공통 표지가 35 m 이내에서 숨겨지는 규칙을 오해했다. 가까운 숨김과 유효 거리에서의 H/UV를 구분해 하네스를 고친 뒤 통과했다. 모델 오류로 처리하지 않았다."
+        }
+      ]
+    },
+    "visualReview": {
+      "method": "실제 Three.js 기하를 CPU 정사영으로 투영했다. WebGL/PBR/조명/텍스처/실제 휴대전화 화면 검증이 아니다.",
+      "artifactDirectory": "artifacts/education-health-review/candidate-03",
+      "files": [
+        "education220.png",
+        "public-health221.png",
+        "education-health-pair.png"
+      ],
+      "provenance": {
+        "createdAt": "2026-11-05T01:50:59.959Z",
+        "modelSourceSha256": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+        "compiledModelSha256": "79a6ac1816a9d65d02b0f9eabf65f34cd88022e6b0e1592a75e1e475b5ee0086",
+        "inputs": {
+          "src/educationHealthLandmark.ts": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+          "src/fullCampus.ts": "fb32665b1068312fcfc87a1f99a4ecf9964af2829129e4182f801a31f5a90c48",
+          "src/buildingAppearance.ts": "1f003a07b7bce1e1a309217f5241f8a2a06273448ddea19f093e115a07c7172e",
+          "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5",
+          "public/data/campus.json": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+          "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+          "scripts/preview-geometry.mjs": "2f46d9bb63778d362dc2860df8746d7e28315d94e1f7a583bfb649d601568e27"
+        },
+        "scope": "CPU geometry preview. No browser or GPU."
+      },
+      "directlyViewed": true,
+      "comparison": "178-220 및 최근 health-image-02를 CPU 이미지와 직접 대조했다. 220동의 세 줄 유리 몸체와 하부 통로, 밝은 끝벽, 열린 옥상 차양 및 221동의 벽돌 상부/유리 계단실/증축 하부와 열린 차양의 구분을 확인했다.",
+      "limits": "CPU 이미지에는 실제 광학 반사와 벽돌 텍스처가 없다. 220동 촬영 방위의 불확실성, 실제 지형 가림의 일치 여부와 세부 재료 차이는 남아 있다."
+    },
+    "limitations": [
+      "220동의 후면과 남쪽 날개 창 반복은 가려진 면에 대한 모델 추정이다. 날개별 실제 높이와 실내 배치는 확정하지 않았다.",
+      "221동 실내 강의실, 전 층의 계단 동선과 문 개폐 기구는 정밀 복원하지 않았다. 공개된 출입문은 파괴 전에는 닫힌 상태다.",
+      "벽돌의 풍화, 배관, 조경, 정확한 창 분할과 옥상 설비는 일부 생략했다.",
+      "상층 L자 데크의 폭/경로와 북서 계단 및 앞마당의 높이는 실측 치수가 아니다. 원본 지형에 맞춘 게임용 연결로 기록했다.",
+      "현장 측량, 카카오 로드뷰 대조, 브라우저 렌더링과 모바일 기기 성능 검사는 수행하지 않았다."
+    ],
+    "sourceHashes": {
+      "src/educationHealthLandmark.ts": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+      "scripts/verify-education-health.mjs": "98788b9fa3e99ee17a407893585990cf1cd475aef2c6592cc3344ab86de76632",
+      "public/data/campus.json": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "src/terrain.ts": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5"
+    },
+    "frozen": {
+      "runtime": true,
+      "ownTest": true,
+      "notesReviewed": true,
+      "date": "2026-11-05T01:54:50.291Z"
+    }
+  },
+  "historicalBeforeGroundEntry": {
+    "reviewedAt": "2026-11-05T13:35:24.928Z",
+    "validation": {
+      "own": {
+        "file": "artifacts/education-health-test/results.json",
+        "sha256": "0ded80b7ec3c36999047a51bdd1bb9dee3434d46a767c2b5777ba8e2be0bcaad",
+        "results": [
+          {
+            "name": "two source footprints and level classifications use six merged surfaces",
+            "status": "passed"
+          },
+          {
+            "name": "all actual glass triangles clear the unchanged terrain",
+            "status": "passed"
+          },
+          {
+            "name": "the 220 underpass and the retained open roof pergolas contain actual open volume",
+            "status": "passed"
+          },
+          {
+            "name": "the bridge matches the real sixth and seventh storey floors rather than the roof",
+            "status": "passed"
+          },
+          {
+            "name": "the existing core entrance connects real ground and opens only after door destruction",
+            "status": "passed"
+          },
+          {
+            "name": "the northwestern source footway reaches the remodeled entrance through the level apron",
+            "status": "passed"
+          },
+          {
+            "name": "both upper doors block entry and leave a real opening after destruction",
+            "status": "passed"
+          },
+          {
+            "name": "the upper connection joins both building interiors through the two doors",
+            "status": "passed"
+          },
+          {
+            "name": "the connection canopy has one-storey clearance and translucent geometry without extra meshes",
+            "status": "passed"
+          },
+          {
+            "name": "the 220 underpass supports real terrain capsule crossings in both directions",
+            "status": "passed"
+          },
+          {
+            "name": "exposed vertical windows agree with loaded and unloaded collision queries",
+            "status": "passed"
+          },
+          {
+            "name": "the core to remodeled wing transition has no unintended full-height slit",
+            "status": "passed"
+          },
+          {
+            "name": "both attached wall numbers remain exposed and read left to right after one H",
+            "status": "passed"
+          },
+          {
+            "name": "partial destruction persists at distance and repeated reset restores both models",
+            "status": "passed"
+          },
+          {
+            "name": "one H and a shifted terrain callback preserve the shared logical building datum",
+            "status": "passed"
+          }
+        ]
+      },
+      "independent": {
+        "file": "artifacts/education-health-access-test/results.json",
+        "sha256": "11214c4bfe0f1bd2fbf2aaa6046b8915bc3b0a617452ab3eb2c0dc530bf92346",
+        "results": [
+          {
+            "name": "both interior routes stop at their own closed connection door",
+            "status": "PASS"
+          },
+          {
+            "name": "three continuous interior-to-interior return paths remain clear in the full scene",
+            "status": "PASS"
+          },
+          {
+            "name": "both interior floors and every bridge bend join the sixth-floor walking level",
+            "status": "PASS"
+          },
+          {
+            "name": "door surfaces preserve loaded unloaded H damage and repeated restoration",
+            "status": "PASS"
+          },
+          {
+            "name": "a shifted terrain callback moves both endpoints and walking geometry together",
+            "status": "PASS"
+          },
+          {
+            "name": "the north deck rear walk and six side steps form one ground return route",
+            "status": "PASS"
+          }
+        ],
+        "sourceStillMatches": {
+          "src/main.ts": true,
+          "src/terrain.ts": true,
+          "src/engineering301303Site.ts": true,
+          "src/scene.ts": true,
+          "src/fullCampus.ts": true,
+          "src/buildingAppearance.ts": true,
+          "src/observedAppearances.ts": true,
+          "src/landmarkBuildings.ts": true,
+          "src/libraryLandmark.ts": true,
+          "src/mainLibraryLandmark.ts": true,
+          "src/administrationLandmark.ts": true,
+          "src/studentCenterLandmark.ts": true,
+          "src/museumLandmark.ts": true,
+          "src/livingScienceLandmark.ts": true,
+          "src/gymLandmark.ts": true,
+          "src/agricultureLandmark.ts": true,
+          "src/sportsLandmark.ts": true,
+          "src/gyujanggakLandmark.ts": true,
+          "src/pavilionLandmark.ts": true,
+          "src/engineering302Landmark.ts": true,
+          "src/engineering301Landmark.ts": true,
+          "src/engineering303Landmark.ts": true,
+          "src/engineering312Landmark.ts": true,
+          "src/facultyClubLandmark.ts": true,
+          "src/teachingCenterLandmark.ts": true,
+          "src/engineering35Landmark.ts": true,
+          "src/engineering31Landmark.ts": true,
+          "src/engineering3130Connection.ts": true,
+          "src/educationHealthLandmark.ts": true,
+          "src/healthCourtyard.ts": true,
+          "src/science500Landmark.ts": true,
+          "src/engineerHouseLandmark.ts": true,
+          "src/samsungResearchLandmark.ts": true,
+          "src/familyDormLandmark.ts": true,
+          "src/researchParkLandmark.ts": true,
+          "src/globalEngineeringLandmark.ts": true,
+          "src/admissionsLandmark.ts": true,
+          "src/neutinamuLandmark.ts": true,
+          "src/baekhakLandmark.ts": true,
+          "src/distantBuildings.ts": true,
+          "src/campusConstruction.ts": true,
+          "src/engineering301303Connection.ts": true,
+          "src/engineering303312Connection.ts": true,
+          "src/engineeringRoadFacilities.ts": true,
+          "src/physics.ts": true,
+          "src/transitFacilities.ts": true,
+          "src/centralPlazaFacilities.ts": true,
+          "src/administrationPlazaFacilities.ts": true,
+          "src/informationCourtApproach.ts": true,
+          "src/administrationPlazaGround.ts": true,
+          "src/gyujanggakApproach.ts": true,
+          "public/data/campus.json": true,
+          "public/data/terrain.json": true,
+          "public/data/campus-transit.json": true,
+          "public/data/transit-facilities.json": true
+        }
+      },
+      "browser": {
+        "file": "artifacts/education-health-review/28-browser-review.json",
+        "sha256": "d3210e8b1b3d9dff514ecd1ae68e98292d6f638a0b74470d11c69022f666d8ae"
+      },
+      "physicalPhoneTested": false
+    },
+    "limitations": [
+      "220동의 하부 필로티 전체 경로와 후면은 새 로드뷰에서 확인하지 못했다.",
+      "2025년 7월의 221동 하층은 2025년 12월 준공 전이다. 현재 하층은 2026년 설계 사례의 준공 사진을 근거로 삼았다.",
+      "포장 경계와 실제 단수, 문 중심, 창 분할 및 높이는 실측하지 않았다.",
+      "실내 전체, 실제 문 개폐 기구와 전 층 동선은 구현하지 않았다.",
+      "브라우저 화면 크기 검사와 실제 휴대전화 성능 검사는 구분한다."
+    ],
+    "sourceHashes": {
+      "src/educationHealthLandmark.ts": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8",
+      "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+      "scripts/verify-education-health.mjs": "a1b873dbfdab94c13f07b9c36a7c449c2d70118456de6e9824a30772de46af83",
+      "scripts/verify-education-health-access.mjs": "267d62ceaf0eacd9ad97e4696ca02a4595dd0ee76d34a2aeafe4b65ffe37d2e6",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+      "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+      "sources/education-health-connection-roadview-review.json": "01a24051366b1ce58863b988cc756f108eaa51d8f1fce42e197f4dafc4f92859",
+      "sources/education-southwest-entry-roadview-review.json": "e2e89e7406a00a7fdcb632c9d7ffdad4eb273f6facb237d1c3e94dabb14d7fe1",
+      "sources/education-southwest-entry-model-notes.json": "1e0ce14b7ee7f0c7e614365733ed472a62263031d2017bb5d86ae056f0bf626a"
+    }
+  },
+  "historicalBeforeNorthAccess": {
+    "commit": "cad2f7aa6ef2678d973544c5cf72aaf969d1797a",
+    "file": "sources/education-health-model-notes.json",
+    "reviewedAt": "2026-11-05T15:36:52.144Z",
+    "meaning": "이전 검증과 입면 기록은 해당 커밋의 파일에서 확인할 수 있다."
+  },
+  "northAccess": {
+    "notes": "sources/education-north-model-notes.json",
+    "roadviewReview": "sources/education-north-roadview-review.json",
+    "wholeBuildingCompared": false
+  },
+  "sourceSnapshotScope": "현재 입력 해시다. 과거 구현의 동결 기록은 historical 필드와 해당 커밋에서 구분한다.",
+  "historicalBeforeParking": {
+    "commit": "bd7941e43dbd6aa8da74bdedc1c6db5a409b3354",
+    "file": "sources/education-health-model-notes.json",
+    "reviewedAt": "2026-11-05T18:06:39.389Z",
+    "meaning": "이전 구현과 검증은 해당 커밋의 파일에서 확인할 수 있다."
+  },
+  "parkingAccess": {
+    "notes": "sources/education-parking-model-notes.json",
+    "roadviewReview": "sources/education-parking-roadview-review.json",
+    "wholeBuildingCompared": false
+  }
+}

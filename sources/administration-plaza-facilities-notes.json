@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05",
+  "scope": "행정관 서측 차량 진입로의 안내판, 게시판, 차단기와 가로등",
+  "source": {
+    "provider": "Naver Streetview",
+    "captureMonth": "2025-09",
+    "panoramaId": "NYSrsJIQuCQ8ogVSuOR7aA",
+    "directlyViewedBeforeImplementation": true,
+    "views": [
+      97,
+      142,
+      -173
+    ],
+    "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%96%89%EC%A0%95%EA%B4%80?c=15.98,0,0,0,adh&p=NYSrsJIQuCQ8ogVSuOR7aA,-173,10,80,Float",
+    "screenshots": [
+      "../references/central-approaches/2025-09/admin-map-board-gates-ui.jpg",
+      "../references/central-approaches/2025-09/admin-board-notices-paving-ui.jpg"
+    ],
+    "dateLimit": "화면의 2025년 09월(최신) 표시는 해당 지점에서 제공하는 촬영월이다. 현재 현장 상태를 확인했다는 뜻은 아니다."
+  },
+  "observed": [
+    "Campus Map 표제가 붙은 키 큰 안내판과 얕은 흰 지붕, 어두운 테두리와 기둥을 확인했다.",
+    "안내판 뒤로 지붕이 있는 낮고 넓은 게시판이 이어진다. 수량과 개별 치수는 확정하지 않았다.",
+    "노란 중앙 섬에 차단기 두 대와 어두운 카드 인식기가 있고, 좌우 차로를 가로지르는 빨간색과 흰색 차단봉이 보인다.",
+    "차량 길 옆 보행 공간에 속이 빈 직사각형 기둥 형태의 어두운 가로등이 보인다.",
+    "어두운 블록 포장, 밝은 가로 띠와 노란 가장자리, 게시판 뒤의 낮은 식재를 확인했다."
+  ],
+  "placement": {
+    "roadId": "way/167597965/24",
+    "startXZ": [
+      187.02,
+      -728.95
+    ],
+    "endXZ": [
+      196.52,
+      -737.88
+    ],
+    "basis": "확대 소지도의 60동, 102동과 G2 진입로 관계를 원본 OSM 길에 맞춘 게임용 배치다. 거리뷰의 정확한 위경도나 시설별 측량점은 확보하지 않았다.",
+    "coordinatesEstimated": true,
+    "dimensionsEstimated": true,
+    "noticeCountEstimated": true,
+    "fixedOpenGates": "차단봉은 일반 차량 통행을 위해 82도로 들어 올린 상태다. 사진에 보이는 닫힌 상태와 다르며 실제 개폐 제어나 운영 시간을 재현하지 않는다.",
+    "turnClearanceAdjustment": "서쪽 서비스 도로에서 진입하는 승용차의 회전 공간을 확보하도록 차단기 중심을 짧은 길의 시작에서 7.3m 지점으로 옮겼다. 이 간격은 실측값이 아니다."
+  },
+  "texturePolicy": "안내판의 지도는 게임에 쓰는 OSM 건물과 도로를 다시 그렸다. 안내 목록, 서울대학교 게시판이라는 표제와 게시물은 직접 만든 일반 도안이며 사진의 문구를 전사한 것이 아니다. 거리뷰 사진이나 실제 광고를 텍스처로 복제하지 않았다.",
+  "limits": [
+    "이번 관찰로 행정관, 학생회관의 전체 외관이나 광장 전체 연결을 확인했다고 표시하지 않는다.",
+    "차단기 시설의 정확한 높이와 색, 게시판 수와 조명 기구 간격에는 게임용 근사가 포함된다.",
+    "모바일 화면과 조작 검증은 실제 휴대전화의 GPU 성능 검사와 구분한다."
+  ],
+  "sourceHashes": {
+    "src/administrationPlazaFacilities.ts": "6a344e546864a2a64920a5b5d2a7f45052b9d4ba9316d19aad941bf201142f04",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "../references/central-approaches/2025-09/admin-map-board-gates-ui.jpg": "291b55cee23e4a6bbfbcb93cab77b44018f2e48706b91f38d4a177c6c9be5fa6",
+    "../references/central-approaches/2025-09/admin-board-notices-paving-ui.jpg": "163f921fb2c88d1d9da0513dc1a7796e572d7cc4a3813f186c512e487249be3c"
+  },
+  "groundAndPlanting": "sources/administration-plaza-ground-notes.json"
+}

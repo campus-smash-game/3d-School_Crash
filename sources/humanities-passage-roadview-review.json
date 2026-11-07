@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T19:33:04.277Z",
+  "baselineCommit": "3a526ace4d2da6d41ad85a4c80c4f6a632a82bf6",
+  "title": "인문대 1동 통과구의 거리뷰 한계와 동쪽 76동 계단 관측",
+  "scope": {
+    "purpose": "1동 통과구를 먼저 찾고, 직접 볼 수 있었던 동쪽 계단을 별도 후속 대상으로 구분한다.",
+    "runtimeChangedByThisReview": false,
+    "rawDataChangedByThisReview": false,
+    "building1PassageVisuallyObserved": false,
+    "building1WholeRoadviewCompared": false,
+    "wholeHumanitiesRoadviewCompared": false,
+    "implementationVerificationIncluded": false
+  },
+  "browser": {
+    "tool": "Playwright CLI",
+    "session": "school35reference",
+    "profile": "D:/codex/.tmp/3d-School_Crash/pwcli-profile35reference",
+    "ownedTabsOnly": true,
+    "closedAtEnd": true,
+    "history": "카카오 공개 링크에서 검색 UI와 지도 촬영선, 실제 도로 화살표로 이동했다. 네이버는 기존에 확인한 공개 링크에서 검색 UI로 1동을 찾았다. 파노라마 ID를 생성하거나 사용자 탭을 조작하지 않았다."
+  },
+  "coordinates": {
+    "axes": "D 좌표는 동쪽 +x, 북쪽 +z이며 단위는 m이다.",
+    "origin": {
+      "lat": 37.4663683,
+      "lon": 126.948395075,
+      "source": "https://www.openstreetmap.org/way/419542255"
+    },
+    "methodArtifact": "artifacts/humanities-review/35-reference-map-check.json",
+    "limitation": "WCONG 공유 좌표를 기존 계산식으로 변환했다. 링크의 서비스 좌표와 실제 촬영 장비의 위치 차이는 확인하지 않았으므로 측량 좌표로 쓰지 않는다. 원본 계단선도 실제 계단 모서리와 폭을 측량한 경계가 아니다."
+  },
+  "building1Passage": {
+    "buildingId": "way/167984624",
+    "roadId": "way/1429747754/540",
+    "sourceWayVersion": 1,
+    "sourceWayTimestamp": "2025-09-14T15:44:53Z",
+    "sourceTags": {
+      "highway": "pedestrian",
+      "covered": "yes",
+      "tunnel": "building_passage"
+    },
+    "nodeIds": [
+      "1793018816",
+      "1793018821"
+    ],
+    "mapEndpoints": [
+      [
+        343.78,
+        -690.7
+      ],
+      [
+        353.58,
+        -662.89
+      ]
+    ],
+    "footprintCrossingsFromScene": [
+      [
+        344.36,
+        -689.054
+      ],
+      [
+        351.341,
+        -669.245
+      ]
+    ],
+    "crossingMeaning": "원본 지도 선과 외곽의 계산상 교점이다. 개구부 실측 위치가 아니다.",
+    "rawWayReadByReference": true,
+    "roadviewAttempt": {
+      "query": "서울대학교 중어중문학과",
+      "poiAddress": "1동 401호",
+      "actualResult": {
+        "provider": "Kakao",
+        "panoId": "1212805296",
+        "shareUrl": "https://kko.to/ZDKMInwDP6",
+        "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1212805296&pan=324&tilt=-4&zoom=2&urlLevel=3&urlX=489670&urlY=1099925",
+        "captureMonth": "2026-07",
+        "captureMonthReadFromUi": true,
+        "shareCreatedThroughUi": true,
+        "shareReopened": true,
+        "serviceCoordinates": {
+          "urlX": 489670,
+          "urlY": 1099925,
+          "computedD": [
+            433.09680401817224,
+            -804.8881641196394
+          ],
+          "computedLatitude": 37.45913789967553,
+          "computedLongitude": 126.95329680782181,
+          "actualCameraSurveyVerified": false
+        }
+      },
+      "capture": {
+        "file": "artifacts/humanities-review/output/playwright/35-1-first-ui.png",
+        "sha256": "95b44b4aab10d531a14d336c30051e81df7600bb952c0fed4a96cfbc069714aa",
+        "directlyViewedByReference": true
+      },
+      "observed": "검색 결과의 로드뷰는 관정관 남동쪽 도로를 열었다. 관정관 큰 상부 몸체와 하부 테라스, 난간, 수목이 보였으나 1동 /540의 양끝과 내부는 보이지 않았다.",
+      "limitation": "검색한 장소명이나 POI 표시만으로 실제 화면을 1동 관측으로 세지 않는다."
+    },
+    "coverageChecks": [
+      {
+        "provider": "Kakao",
+        "capture": {
+          "file": "artifacts/humanities-review/output/playwright/35-1-2-coverage-ui.png",
+          "sha256": "af86275e0ec902241dd1968c838e8e1aa233f8f8123b346c9fe414c4eaeaf879",
+          "directlyViewedByReference": true
+        },
+        "observed": "1동과 2동, 자하연을 함께 확대한 지도에서 내부 보행로에는 파란 촬영선이 표시되지 않았다. 외곽 도서관 도로와 동쪽 도로에는 선이 보였다."
+      },
+      {
+        "provider": "Naver",
+        "query": "서울대학교 인문관1",
+        "capture": {
+          "file": "artifacts/humanities-review/output/playwright/35-naver-1-near-lines-ui.png",
+          "sha256": "d502341ffd0744a362a6d429cda07a4be7ff2d3003a157e3f9e00b4d1feba26e",
+          "directlyViewedByReference": true
+        },
+        "observed": "1동과 2동, 자하연 내부 보행로에는 보라색 촬영선이 보이지 않았다. 남동쪽 도서관 옆 도로에 선과 미니뷰가 표시됐다.",
+        "miniPanoId": "tJabxTst4txYHCnHubdCaQ",
+        "miniCaptureMonth": null,
+        "miniViewNotCountedAsBuilding1": true
+      }
+    ],
+    "coverageLimit": "확인 당시 지도 UI의 표시 범위다. 다른 시기 자료나 모든 서비스에 사진이 전혀 없다는 증명은 아니다.",
+    "officialPhotoLimits": {
+      "building1": "001-1 사진에서 흰 골조, 벽돌과 청록 유리 코어, 정원 시설은 보인다. 수목이 하부를 가려 /540 개구부를 식별할 수 없다.",
+      "building2": "002-2 사진 왼쪽 아래에 계단, 밝은 개구부와 상부 유리 연결 몸체가 보인다. 이를 1동 /540과 같은 통과구로 확정할 수 없다."
+    },
+    "modelComparison": {
+      "basis": "artifacts/humanities-review/35-model-baseline.json",
+      "state": "35차 시작 시점의 일반 모델은 원본 /540 통과구를 열지 않았다. 후속 구현의 검사 결과는 별도 기록을 따른다.",
+      "uncertainty": "지도 태그는 지붕 아래 건물 통과 경로를 지지하지만 실제 개구부 높이, 폭, 바닥 경사, 문 유무와 마감은 직접 관측하지 못했다."
+    },
+    "separateConnections": [
+      "1~2동의 250 연결동과 1동 /540은 별개로 다룬다.",
+      "6~7동의 251 연결동을 이번 화면에서 확인한 것으로 기록하지 않는다."
+    ]
+  },
+  "officialPhotos": [
+    {
+      "buildingNumber": "1",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=1",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000001.jpg",
+      "path": "../references/buildings/photos/001-1.jpg",
+      "sha256": "a309686c941f30c0232e5ac3ee1bfcf2b38cdbcb4596ef35096acef3f87e7a2e",
+      "photoCaptureDate": null,
+      "directlyViewedByReference": true
+    },
+    {
+      "buildingNumber": "2",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=2",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000002.jpg",
+      "path": "../references/buildings/photos/002-2.jpg",
+      "sha256": "84855adcbff1bcad94bcb579d91545ed5620beb51100a51c945c48d680519347",
+      "photoCaptureDate": null,
+      "directlyViewedByReference": true
+    },
+    {
+      "buildingNumber": "10",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=10",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000010.jpg",
+      "path": "../references/buildings/photos/010-10.jpg",
+      "sha256": "cea1b87270aec6bde8a564b166fa8c430c8d2276d7b964994ddc1ba4c01a54b6",
+      "photoCaptureDate": null,
+      "directlyViewedByReference": true
+    },
+    {
+      "buildingNumber": "76",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=97",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000094.jpg",
+      "path": "../references/buildings/photos/097-76.jpg",
+      "sha256": "cb73e787966d3c0dd1e051048be572019949f5c272af1a28af65bbc4b408e385",
+      "photoCaptureDate": null,
+      "directlyViewedByReference": true
+    }
+  ],
+  "officialText": [
+    {
+      "url": "https://humanities.snu.ac.kr/about/campus",
+      "directlyReadByReference": true,
+      "scope": "정문 쪽 접근은 규장각과 법대에서 자하연과 농협 사이 길로 이어진다고 안내한다. 후문 쪽 14동은 농구장 오른쪽 계단으로 안내한다.",
+      "limitation": "접근 방향의 보조 근거이며 /540의 개구부 형상이나 동쪽 76동 계단을 설명하는 자료는 아니다."
+    },
+    {
+      "description": "2025-11-14 입시면접 공지 3628의 1~3동은 2동 자하연 방향 출입구, 5~7동은 6동 1층 출입구 안내",
+      "observationBy": "root가 공식 공지를 확인해 전달했다.",
+      "directlyReadByReference": false,
+      "limitation": "특정 행사 출입 안내다. 일반 상시 통행이나 이번 통과구의 실제 마감을 확정하지 않는다."
+    }
+  ],
+  "easternFollowup": {
+    "identity": "76동으로 식별되는 계단과 입면",
+    "buildingId": "way/167983986",
+    "buildingNumber": "76",
+    "leftBuilding": {
+      "buildingId": "way/180954536",
+      "buildingNumber": "10",
+      "name": "사범관2",
+      "observedScope": "수목 사이 흰 골조와 짙은 벽돌 입면 일부"
+    },
+    "identificationBasis": [
+      "공식 건물 색인의 76동 표지점과 원본 외곽 대응을 기존 building-match-review.json에서 확인했다.",
+      "공식 097-76 사진을 직접 열어 넓은 석재계단, 중앙과 양측 금속난간, 황갈색 벽돌 상부를 대조했다.",
+      "공유 좌표의 계산상 위치, /84 계단선의 방향과 사진의 좌우 배치가 일치한다.",
+      "scene도 두 이미지를 직접 대조해 76동 서측 계단 후보를 지지했다."
+    ],
+    "buildingNumberReadableInRoadview": false,
+    "stairMapCandidate": {
+      "roadId": "way/185937116/84",
+      "sourceTags": {
+        "highway": "steps",
+        "incline": "up"
+      },
+      "mapEndpoints": [
+        [
+          626.18,
+          -656.11
+        ],
+        [
+          634.11,
+          -641.77
+        ]
+      ],
+      "processedWidth": 2,
+      "widthEstimated": true,
+      "exactBoundsVerified": false,
+      "note": "처음 시점에서 지도 계단 양끝 방위는 약 299.7도와 340.0도다. pan292 화면의 오른쪽 계단과 방향이 맞지만 사진의 넓은 계단 폭을 원본 기본 폭2m로 확정하지 않는다."
+    },
+    "observations": [
+      {
+        "provider": "Kakao",
+        "panoId": "1198671999",
+        "shareUrl": "https://kko.to/kgIw-mHhpK",
+        "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1198671999&pan=292&tilt=-9&zoom=2&urlLevel=3&urlX=490195&urlY=1100272",
+        "captureMonth": "2025-07",
+        "captureMonthReadFromUi": true,
+        "shareCreatedThroughUi": true,
+        "shareReopened": true,
+        "serviceCoordinates": {
+          "urlX": 490195,
+          "urlY": 1100272,
+          "computedD": [
+            642.752019497064,
+            -665.5690847033181
+          ],
+          "computedLatitude": 37.460389418534824,
+          "computedLongitude": 126.9556696580517,
+          "actualCameraSurveyVerified": false
+        },
+        "captures": [
+          {
+            "file": "artifacts/humanities-review/output/playwright/35-1999-stair-lower-ui.png",
+            "sha256": "8b2019b6c453585c8fe5da33c6b8d6758cdeae58a3f12fae16e5b13b62b8964e",
+            "directlyViewedByReference": true
+          },
+          {
+            "file": "artifacts/humanities-review/output/playwright/35-1999-stair-context-ui.png",
+            "sha256": "d98014ea60484fc075fb2af7b1e163e96f13b2b6e85cb5dd5bc7b2341efccd2b",
+            "directlyViewedByReference": true
+          }
+        ],
+        "captureVariants": "두 번째 캡처는 같은 위치에서 화면의 줌아웃을 두 번 눌러 zoom0으로 넓혔다.",
+        "visible": [
+          "오른쪽 넓은 밝은 석재계단과 중앙 및 양측 금속난간",
+          "계단 왼쪽으로 이어지는 낮은 아스팔트 보행로와 입구의 가는 볼라드",
+          "낮은 식재 경계와 수목, 왼쪽 흰 골조와 벽돌 입면 일부"
+        ],
+        "unconfirmed": [
+          "계단 상단과 실내 연결 전체",
+          "정확한 단수, 높이, 폭과 난간 간격",
+          "작은 파란 안내판의 문구와 현재 입점 상호"
+        ]
+      },
+      {
+        "provider": "Kakao",
+        "panoId": "1198671996",
+        "shareUrl": "https://kko.to/73sDrq62wE",
+        "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1198671996&pan=292&tilt=-9&zoom=0&urlLevel=3&urlX=490217&urlY=1100255",
+        "captureMonth": "2025-07",
+        "captureMonthReadFromUi": true,
+        "shareCreatedThroughUi": true,
+        "shareReopened": true,
+        "serviceCoordinates": {
+          "urlX": 490217,
+          "urlY": 1100255,
+          "computedD": [
+            651.5436399070763,
+            -672.3853797719266
+          ],
+          "computedLatitude": 37.4603281869945,
+          "computedLongitude": 126.95576916045837,
+          "actualCameraSurveyVerified": false
+        },
+        "capture": {
+          "file": "artifacts/humanities-review/output/playwright/35-adjacent1-ui.png",
+          "sha256": "5863625af27f18d89c9545dadbfbcecc38b5ae92139acf89e248d3fcc4d74431",
+          "directlyViewedByReference": true
+        },
+        "movement": "앞 시점의 화면에 보이는 남동쪽 도로 화살표를 한 번 눌러 이동했다. 계단을 올라간 관측이 아니다.",
+        "visible": [
+          "더 먼 거리에서 같은 계단과 낮은 보행로",
+          "왼쪽 흰 골조 벽돌 입면과 도로변 수목"
+        ],
+        "limitation": "주차 차량, 사람과 이동식 차단물은 상설 시설로 채택하지 않는다."
+      },
+      {
+        "provider": "Kakao",
+        "panoId": "1198671999",
+        "shareUrl": "https://kko.to/Zqa4IkeNL4",
+        "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1198671999&pan=359.8&tilt=-6.7&zoom=2&urlLevel=3&urlX=490195&urlY=1100272",
+        "captureMonth": "2025-07",
+        "captureMonthReadFromUi": true,
+        "shareCreatedThroughUi": true,
+        "shareReopened": true,
+        "serviceCoordinates": {
+          "urlX": 490195,
+          "urlY": 1100272,
+          "computedD": [
+            642.752019497064,
+            -665.5690847033181
+          ],
+          "computedLatitude": 37.460389418534824,
+          "computedLongitude": 126.9556696580517,
+          "actualCameraSurveyVerified": false
+        },
+        "capture": {
+          "file": "artifacts/humanities-review/output/playwright/35-76-stair-front-ui.png",
+          "sha256": "b36445b7298ac91ab79aecad01c4d05ae1112932e5c576175b11b8cee052395c",
+          "directlyViewedByReference": true
+        },
+        "movement": "같은 촬영점에서 화면을 북쪽으로 회전했다. 공유 UI의 새 URL을 다시 열어 pano와 방향을 확인했다.",
+        "visible": [
+          "계단의 정면 일부와 나무 사이 하층 유리, 상부 벽돌",
+          "계단 오른쪽의 식재 구역과 원판 모양 가로등"
+        ],
+        "limitation": "건물 번호와 작은 안내판 문구는 판독하지 않았다. 수목이 가린 입면은 확인 범위에 넣지 않는다."
+      }
+    ],
+    "namingCaution": {
+      "historicalOfficialPhoto": "공식 097-76 사진에는 농협 하나로마트와 두레미담 표지가 보인다. 촬영일은 모른다.",
+      "currentAmenities": {
+        "url": "https://new.snu.ac.kr/campuslife/facilities/amenities",
+        "reportedBy": "root",
+        "reportedObservation": "현재 공식 편의시설 안내에는 서당골이74동B1로 표기돼 있다.",
+        "referenceVerification": "해당 페이지를 열었으나 웹 텍스트 변환 결과에서는 서당골 행이 나오지 않아 이 행은 root의 직접 확인 전달로 구분했다."
+      },
+      "conclusion": "사진 건물 식별과 현재 상호 또는 운영 시설 식별은 별개다. 76동의 현재 영업장명, 입점 시기와 표지 존치는 확정하지 않는다."
+    },
+    "comparisonCandidate": "후속 구현은 /84 주변 넓은 계단과 별도 낮은 보행로, 난간, 식재 경계의 관계부터 검토할 수 있다. 이번 문서는 치수와 현행 상호를 정하거나 구현 완료를 보고하지 않는다.",
+    "correctionHistory": [
+      {
+        "earlierHypothesis": "동쪽 넓은 계단이14동 접근일 가능성을 검토했다.",
+        "correction": "공유 좌표, 원본 계단선과 공식76동 사진을 대조해14동 대응을 제외했다. /540과도 별개다."
+      }
+    ]
+  },
+  "excludedEvidence": [
+    {
+      "file": "artifacts/humanities-review/output/playwright/35-76-final-start-ui.png",
+      "reason": "공유 링크를 다시 연 직후의 검정 로딩 화면이다. 실제 관측 근거에서 제외했다."
+    },
+    {
+      "event": "Kakao 1동 검색 뒤 지도 전환 중 로드뷰가 제공되지 않는 곳이라는 안내가 한 번 표시됐다.",
+      "reason": "그 알림만으로 캠퍼스 내부 전체의 촬영 자료가 없다고 판단하지 않았다."
+    }
+  ],
+  "finalLimits": [
+    "1동 /540 개구부는 실제 로드뷰에서 확인하지 못했다. 1동 전체 관측 완료로 분류하지 않는다.",
+    "76동 계단과10동 입면은 일부만 관측했다. 정확한 좌표와 치수 또는 현재 영업장까지 확인한 것은 아니다.",
+    "공식 사진과 거리뷰 촬영 시점을 구분하며, 사람이나 주차 차량을 게임의 상설 시설로 제안하지 않는다."
+  ],
+  "sourceHashes": {
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/building-references.json": "ef6f5ec8c4c7b9e159838a0971d98bb8734db8e784eec6da018b524f73efa6f9",
+    "sources/building-match-review.json": "61b7d5e453fe3595be67a6ad5fd6a7c266e52d56a4887c50063859b22d53ee14",
+    "artifacts/humanities-review/35-model-baseline.json": "9d9ae835835c6c0e68063cad12702443feccdeaf53c6880cde2d67b6b4c8b117",
+    "artifacts/humanities-review/35-reference-map-check.json": "ec95b4d7d1be3fe7c6984e2eb49bcebcfd2024638b0a2429e0fa191e64ce9d4f"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "buildingNumber": "940",
+  "osmId": "way/439707875",
+  "name": "연구공원지원시설",
+  "status": "custom-model-implemented-partial-reference",
+  "landmark": "research-park",
+  "modelFile": "src/researchParkLandmark.ts",
+  "api": "createResearchParkLandmark(scene, building, profile, heightAt) -> { breakables, update }",
+  "reviewedAt": "2026-11-05",
+  "sources": [
+    {
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=223",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000214.jpg",
+      "localImagePath": "../references/buildings/photos/223-940.jpg",
+      "sourceType": "official-campus-map-photograph",
+      "directlyViewed": true,
+      "captureDate": null,
+      "observations": [
+        "중앙의 높은 청색 유리 입면이 세 번 접혀 앞으로 돌출한다. 접힌 부분의 좌우 면에는 밝고 어두운 반사가 번갈아 보인다.",
+        "중앙보다 낮은 몸체가 양쪽으로 단계적으로 이어진다. 날개의 앞쪽과 옆쪽도 유리 커튼월이다.",
+        "전면 하부에 넓은 경사 유리 차양이 있고 그 아래에는 낮은 출입구 유리 면이 보인다.",
+        "어두운 세로 창틀과 회색 테두리가 반복되며 가로 창틀도 촘촘하다. 격자 한 줄이 한 층이라는 근거는 없다.",
+        "후면, 내부 구조, 정확한 부분 높이와 깊이는 이 사진으로 확인할 수 없다."
+      ],
+      "accessNote": "이번 웹 도구에서는 공식 상세 페이지를 열지 못했다. 기존에 공식 이미지 주소에서 수집한 로컬 원본 사진을 직접 확인했다."
+    },
+    {
+      "sourceUrl": "https://snurnd.snu.ac.kr/?q=board/bd009/view/3292",
+      "sourceType": "official-university-page",
+      "publishedDate": "2009-07-27",
+      "facts": [
+        "페이지 본문의 연구공원 창업보육센터 입주 안내에는 본관 4층의 411호실과 421호실이 나온다.",
+        "이 자료는 4층이 존재한다는 근거다. 건물의 총층수가 4층이거나 높이가 14m라는 근거로 사용하지 않는다."
+      ],
+      "documentedTotalLevels": null,
+      "documentedHeightMeters": null
+    },
+    {
+      "sourceUrl": "https://www.snu.or.kr/new/?page_id=2381",
+      "sourceType": "official-university-foundation-page",
+      "facts": [
+        "발전재단의 주소 안내는 연구공원본관을 940동으로 표기한다."
+      ]
+    },
+    {
+      "sourceUrl": "https://www.openstreetmap.org/way/439707875",
+      "localPath": "public/data/campus.json",
+      "sourceType": "map-footprint",
+      "use": "비대칭으로 꺾이는 두 날개, 약 59m의 긴 전면 변과 뒤쪽의 오목한 윤곽을 유지한다. 기존 높이 14m와 4층은 추정값으로 유지한다."
+    }
+  ],
+  "localReviewInputs": [
+    "sources/profiles-200-plus.json",
+    "sources/appearance-review.json"
+  ],
+  "implemented": [
+    "사진에서 본 중앙의 세 접힘을 수직 유리 면 여섯 개로 나눴다. 접힘의 골과 돌출 끝 사이에는 실제 깊이 차이가 있다.",
+    "중앙 14m, 양옆 10.78m, 더 낮은 끝부분 7.84m의 세 높이로 몸체와 지붕을 나눴다. 세 높이 모두 실측값이 아니다.",
+    "지도 전면 변 안쪽에 경사 차양을 배치했다. 차양은 높은 끝 약 4.76m에서 낮은 끝 약 2.24m로 내려오며 약 7m 깊이다.",
+    "짙은 가로 창틀과 세로 창틀을 유리 바깥쪽에 놓았다. OSM 외곽 점 순서를 뒤집어도 바깥 방향을 유지한다.",
+    "지도 뒤쪽의 오목한 빈 공간을 보존했다. 차양 위아래의 빈 공간과 접힌 입면의 골을 큰 충돌 상자로 채우지 않았다.",
+    "차양, 유리 면과 지붕 구간마다 기하 방향을 따르는 OBB를 둔다. 지붕과 옆벽이 맞닿는 곳은 지붕 충돌면에 1cm 여유를 더 주어 같은 사격선의 표적이 로드 여부에 따라 바뀌지 않게 했다.",
+    "3개 병합 메시 안에서 부품별 정점 구간을 숨기거나 복원한다. 멀리서도 남은 몸체와 파괴된 빈 공간을 유지한다.",
+    "모델 기준 높이와 기초 하단은 heightAt 함수에서 구한다. 고정 지면 높이를 사용하지 않는다."
+  ],
+  "estimatedParameters": {
+    "totalLevels": 4,
+    "totalLevelsVerified": false,
+    "overallHeightMeters": 14,
+    "shoulderHeightMeters": 10.78,
+    "outerWingHeightMeters": 7.84,
+    "foldProjectionMeters": 1.8,
+    "canopyDepthMeters": 7,
+    "canopyLowHeightMeters": 2.24,
+    "canopyHighHeightMeters": 4.76,
+    "frontageDirection": "northwest",
+    "frontageDirectionEvidence": "지도에서 가장 긴 변과 사진의 중앙 입면 및 양옆 날개 배치를 대조한 추정이다. 사진 촬영 위치나 방위각을 확인한 것은 아니다.",
+    "notMeasured": true
+  },
+  "limitations": [
+    "사진을 참고한 외형 근사다. 설계도나 실측 모델을 복원한 것은 아니다.",
+    "현재 4층과 14m는 추정값이다. 유리 격자 개수로 층수를 정하지 않았고, 4층 호실의 존재를 총층수의 근거로 확대하지 않았다.",
+    "부분 높이, 접힌 입면의 폭과 깊이, 창틀 간격, 유리 색과 차양 치수는 사진 비례를 따른 근사값이다.",
+    "사진에 보이지 않는 후면과 옥상 세부를 확인하지 않았다. 단순한 지붕과 반복 유리 면으로 표현했다.",
+    "공식 사진 촬영일과 현재 외관의 일치 여부는 미확인이다. 사진은 참고자료로만 보관하고 공개 게임 자산에 넣지 않았다.",
+    "브라우저의 WebGL 렌더링과 모바일 실기기 성능을 검증하지 않았다. 캠퍼스 전체 재현 완료를 의미하지 않는다."
+  ],
+  "verification": {
+    "script": "scripts/verify-research-park.mjs",
+    "resultArtifact": "artifacts/research-park-test/results.json",
+    "geometryArtifact": "artifacts/research-park-test/geometry.json",
+    "cpuPreview": "artifacts/geometry-previews/research-park.png",
+    "scope": "실제 TypeScript 소스를 변환해 Three.js 기하와 Rapier 충돌을 검사했다. CPU 기하 미리보기도 직접 확인했다. 실제 브라우저나 모바일 하드웨어 검사는 아니다.",
+    "checksPassed": 10,
+    "meshes": 3,
+    "breakableParts": 762,
+    "nondegenerateTriangles": 15212,
+    "loadedUnloadedRayComparisons": 754,
+    "checks": [
+      "비대칭 지도 윤곽, 중앙 접힌 입면과 양쪽 높이 단차",
+      "세 개의 돌출 끝과 안쪽 골의 사격 거리 차이, 뒤쪽 지도 빈 공간 보존",
+      "경사 차양 위아래의 빈 공간과 42개 유리 구간의 얇은 경사 충돌면",
+      "정상 및 역순 윤곽 각각 창틀 표본 90개가 외부에서 보이는지 확인, 그중 가로틀 52개 포함",
+      "754개 사격선의 로드 및 미로드 표적과 거리 일치",
+      "차양 한 구간을 파괴한 뒤 원거리에서도 빈 공간과 인접 유리 유지",
+      "초기화 뒤 원본 정점 배열, 체력과 충돌 복원",
+      "전체 파괴 뒤 비표시, 파편 수 제한과 반복 초기화",
+      "가변 지형 기준 높이와 기초, 평지에서의 14m 상대 높이",
+      "현재 지형에서 차양의 낮은 끝과 바로 앞 접근부를 31곳 확인"
+    ],
+    "actualTerrainClearance": {
+      "samples": 31,
+      "minimumLowCanopyEdgeMeters": 1.9445362879529853,
+      "minimumImmediateApproachMeters": 1.91328362371096,
+      "approachDistanceFromEdgeMeters": 2,
+      "note": "게임의 현재 지형 데이터와 높이 함수로 계산한 여유다. 현장 지면이나 실제 건물의 유효 높이를 측정한 값이 아니다."
+    }
+  }
+}

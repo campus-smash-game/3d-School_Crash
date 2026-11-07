@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "buildingId": "supplemental/snu-56-1",
+      "buildingNumber": "56-1",
+      "identityVerified": true,
+      "sourceUrl": "https://vmspace.com/project/project_view.html?base_seq=Mzc4Mw%3D%3D",
+      "identityEvidence": "공식 준공 기사와 지도에 56-1동이 관정관과 56동 사이에 표시된다. 공개 배치도와 주변 건물을 대조했다.",
+      "documentedLevels": 4,
+      "observations": [
+        "흰 석재 띠와 유리 난간을 두른 계단식 테라스",
+        "낮은 서쪽 지하 1층 입구와 높은 동쪽 3층 입구",
+        "동쪽 현관 계단과 지그재그 경사로, 건물 양옆 계단",
+        "2층과 3층의 56동 연결다리, 옥상 태양광 패널"
+      ],
+      "limitations": [
+        "외곽 좌표, 층별 바닥 높이와 통로 치수는 공개 도면과 게임 지형에 맞춘 근사다.",
+        "공개 사진에 보이는 외관과 짧은 현관, 연결교 접속부를 구현했다. 전체 실내와 실내 층간 이동은 구현하지 않았다."
+      ],
+      "profile": {
+        "wallColor": "#d5d8d1",
+        "roofColor": "#a8b4a5",
+        "glassColor": "#799b98",
+        "frameColor": "#b3bfb7",
+        "accentColor": "#27536d",
+        "surface": "stone",
+        "windowStyle": "curtain",
+        "height": 14.32,
+        "heightEstimated": false,
+        "levels": 4,
+        "levelsEstimated": false,
+        "sourceUrls": [
+          "https://vmspace.com/project/project_view.html?base_seq=Mzc4Mw%3D%3D",
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=259"
+        ]
+      }
+    }
+  ]
+}

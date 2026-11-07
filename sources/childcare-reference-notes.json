@@ -1,0 +1,59 @@
+{
+  "reviewedAt": "2026-11-04T21:23:38.241Z",
+  "sourceUrl": "https://kidshome.snu.ac.kr/시설현황/",
+  "sourceType": "서울대학교 어린이보육지원센터 공식 시설현황",
+  "buildings": [
+    {
+      "id": "way/439707877",
+      "buildingNumber": "941",
+      "name": "백학어린이집",
+      "officialAboveGroundFloors": 3,
+      "previousEstimatedFloors": 4,
+      "appliedFloors": 3,
+      "estimatedHeightMeters": 10.5,
+      "heightMethod": "실측 높이가 없어 층당 3.5m라는 기존 환산 기준을 유지했다.",
+      "implementation": {
+        "module": "src/baekhakLandmark.ts",
+        "notes": "sources/baekhak-model-notes.json",
+        "status": "custom-model-applied-partial"
+      },
+      "remainingWork": "최신 거리뷰, 촬영 방위와 실측 치수, 보이지 않는 면 및 실제 휴대전화 화면은 추가 확인이 필요하다."
+    },
+    {
+      "id": "way/439707878",
+      "buildingNumber": "941-1",
+      "name": "느티나무어린이집",
+      "officialAboveGroundFloors": 4,
+      "officialBasementFloors": 1,
+      "previousEstimatedFloors": 4,
+      "appliedFloors": 4,
+      "estimatedHeightMeters": 14,
+      "heightMethod": "공식 자료로 지상 층수만 확인했다. 기존 추정 높이는 유지한다.",
+      "photo": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000216.jpg",
+      "observedFeatures": [
+        "회색 노출 콘크리트 본체와 노란 돌출 부분이 구분된다.",
+        "노란 부분 아래는 비어 있고 가느다란 기둥 두 개가 받친다.",
+        "돌출 부분 전면에는 모서리가 둥근 불규칙한 창 세 개가 있다."
+      ],
+      "remainingWork": "최신 거리뷰, 촬영 방위와 실측 치수, 보이지 않는 면 및 실제 휴대전화 화면은 추가 확인이 필요하다.",
+      "implementation": {
+        "module": "src/neutinamuLandmark.ts",
+        "notes": "sources/neutinamu-model-notes.json",
+        "status": "custom-model-applied-partial"
+      }
+    }
+  ],
+  "additionalPhotoReview": {
+    "page": "https://kidshome.snu.ac.kr/시설환경/",
+    "images": [
+      "out1.jpg",
+      "out2.jpg"
+    ],
+    "directory": "../references/exteriors/nursery",
+    "result": "공식 실외놀이터 사진 두 장을 직접 확인했다. 두 어린이집 중 어느 건물의 어느 면인지 확정하지 못했으므로 입면 재현 근거로 적용하지 않았다."
+  },
+  "limitations": [
+    "건축면적과 연면적을 OSM 윤곽의 치수로 임의 환산하지 않았다.",
+    "실측 높이, 최신 거리뷰와 보이지 않는 입면은 미확인이다."
+  ]
+}

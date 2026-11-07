@@ -1,0 +1,681 @@
+{
+  "areaId": "way/1485386287",
+  "buildingNumber": "73",
+  "name": "문화관 공사구역",
+  "status": "integrated-approximation-node-verified",
+  "module": "src/campusConstruction.ts",
+  "integration": "src/fullCampus.ts",
+  "reviewedAt": "2026-11-05T04:49:32.047Z",
+  "sourceEvidence": [
+    {
+      "url": "https://ece.snu.ac.kr/community/campus-life?bbsidx=56537&md=v",
+      "documentDate": "2025-05-20",
+      "kind": "공식 공사 안내",
+      "facts": "문화관 리모델링 및 증개축 공사를 2025년 5월부터 2028년 7월까지 시행하는 계획이다. 계획 규모는 지하 1층, 지상 2층과 연면적 12,248㎡다. 미래 완성 건물의 제원을 현재 공사구역 형상으로 사용하지 않았다."
+    },
+    {
+      "url": "https://gsep.snu.ac.kr/media/43/board/2025/05/20/붙임_보행자_동선_및_가설계획_1부.pdf",
+      "localFile": "artifacts/culture-review/site-plan.pdf",
+      "directlyViewedRenderedPages": [
+        1,
+        2
+      ],
+      "pageImages": [
+        "artifacts/culture-review/plan-1.png",
+        "artifacts/culture-review/plan-2.png"
+      ],
+      "kind": "공식 보행자 동선 및 가설 울타리 계획",
+      "facts": [
+        "2쪽 범례는 빨강 4m, 파랑 8m, 노랑 10m다. 본문은 잔디광장 방면 4m, 자하연 전면 및 문화관/규장각 사이 8m, 법대 쪽 8m/10m를 명시한다.",
+        "1쪽은 대부분의 통로 폭을 약 4~8m 이상, 규장각/문화관 사이 구간을 2m로 안내한다. 이는 울타리 높이와 다른 값이다."
+      ],
+      "limit": "계획도에 표시된 높이이며 2026년 11월 현장의 설치 완료 높이를 실측한 값이 아니다."
+    },
+    {
+      "url": "https://www.openstreetmap.org/way/1485386287",
+      "localFile": "sources/campus.osm",
+      "version": 1,
+      "changeset": 179351330,
+      "editedAt": "2026-03-04T14:04:39Z",
+      "tag": "landuse=construction",
+      "distinctVertices": 11,
+      "facts": "원본 OSM 공사 부지 윤곽을 기존 public/data/campus.json에서 읽는다. OSM 편집 날짜는 현장 촬영일 또는 경계 측량일을 뜻하지 않는다."
+    }
+  ],
+  "relationshipToOldBuilding": "기존 문화관 지도 사진은 공사 전 건물 외형을 보여 준다. 현재 campus.json의 205개 건물에는 이에 대응하는 건물 윤곽이 없으며, 공사구역 area를 별도로 표시한다. 과거 문화관이나 미래 준공안을 현장 설치물처럼 추가하지 않았다.",
+  "geometry": {
+    "coordinateSystem": "D=(동쪽,위쪽,북쪽) 원본 좌표를 사용한다. 공통 월드 반사는 기존 렌더 계층에서 한 번 적용한다.",
+    "outline": "원본 area.points의 시작점과 순서를 유지한다. 11개 변의 높이 대응은 이 순서에 연결돼 있다.",
+    "ringStart": [
+      174.81,
+      -518.42
+    ],
+    "plannedHeightsMeters": [
+      8,
+      8,
+      10,
+      10,
+      10,
+      8,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "edgeMapping": [
+      {
+        "edge": 0,
+        "from": [
+          174.81,
+          -518.42
+        ],
+        "to": [
+          217.04,
+          -478.41
+        ],
+        "heightMeters": 8,
+        "planSide": "규장각 쪽 긴 측면",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 1,
+        "from": [
+          217.04,
+          -478.41
+        ],
+        "to": [
+          257.78,
+          -520.64
+        ],
+        "heightMeters": 8,
+        "planSide": "법대 15/15-1동 쪽 짧은 상단",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 2,
+        "from": [
+          257.78,
+          -520.64
+        ],
+        "to": [
+          274.28,
+          -547.35
+        ],
+        "heightMeters": 10,
+        "planSide": "법대 72동 앞 상단 시작",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 3,
+        "from": [
+          274.28,
+          -547.35
+        ],
+        "to": [
+          298.53,
+          -575.3
+        ],
+        "heightMeters": 10,
+        "planSide": "법대 72동 앞 상단 중간",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 4,
+        "from": [
+          298.53,
+          -575.3
+        ],
+        "to": [
+          321.55,
+          -588.72
+        ],
+        "heightMeters": 10,
+        "planSide": "법대 72동 앞 상단 끝 및 자하연 쪽 전이",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 5,
+        "from": [
+          321.55,
+          -588.72
+        ],
+        "to": [
+          278,
+          -637.75
+        ],
+        "heightMeters": 8,
+        "planSide": "자하연 쪽 측면",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 6,
+        "from": [
+          278,
+          -637.75
+        ],
+        "to": [
+          271.6,
+          -631.27
+        ],
+        "heightMeters": 4,
+        "planSide": "잔디광장 쪽 끝 꺾임",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 7,
+        "from": [
+          271.6,
+          -631.27
+        ],
+        "to": [
+          235.17,
+          -596.72
+        ],
+        "heightMeters": 4,
+        "planSide": "잔디광장 쪽 전면",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 8,
+        "from": [
+          235.17,
+          -596.72
+        ],
+        "to": [
+          199.7,
+          -560.83
+        ],
+        "heightMeters": 4,
+        "planSide": "잔디광장 쪽 전면",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 9,
+        "from": [
+          199.7,
+          -560.83
+        ],
+        "to": [
+          201.97,
+          -557.16
+        ],
+        "heightMeters": 4,
+        "planSide": "잔디광장 쪽 작은 단차",
+        "confidence": "directional-approximation"
+      },
+      {
+        "edge": 10,
+        "from": [
+          201.97,
+          -557.16
+        ],
+        "to": [
+          174.81,
+          -518.42
+        ],
+        "heightMeters": 4,
+        "planSide": "잔디광장 쪽 전면에서 규장각 측면까지",
+        "confidence": "directional-approximation"
+      }
+    ],
+    "mappingAssessment": "edge 0/1=8m,2/3/4=10m,5=8m,6~10=4m는 도면의 구간 순서와 주변 건물 방향을 반영한 근사 배치로 사용할 수 있다. 도면과 OSM의 모든 꼭짓점이 일치한다는 검증 결과는 아니다.",
+    "alignmentLimits": [
+      "공식 도면의 북서쪽 파란 선은 짧게 돌출했다 되돌아오는 굴곡을 포함한다. 단순한 OSM edge 0/1에 그대로 대응하지 않는다.",
+      "도면 동쪽에는 노란 선이 꺾인 뒤 짧은 파란 수평 구간과 긴 파란 측면이 이어진다. OSM의 꼭짓점 5를 높이 전환점으로 쓰는 것은 근사이며 정확한 전환 좌표를 측량한 것이 아니다.",
+      "OSM 아래쪽 작은 단차와 도면의 빨간 단차는 비슷한 순서로 나타나지만 길이와 위치가 같은지 확인하지 못했다.",
+      "계획 사진은 원근과 촬영 시점 차이가 있고 OSM은 공사 부지 윤곽이다. 울타리 설치선의 정밀 지리 좌표로 간주하지 않는다.",
+      "울타리 선을 원본 OSM 경계에 배치한다고 해서 도면이 요구하는 보행 폭 2m 또는 4~8m가 자동 보장되는 것은 아니다. 실제 게임 경로와 별도로 확인해야 한다."
+    ],
+    "panelWidth": "각 변을 4m 이하의 같은 폭 조각으로 나눈다. 실제 현장 패널 폭을 확인한 값은 아니다.",
+    "terrainFollowing": "각 패널을 따라 heightAt을 다섯 곳에서 읽고 가장 낮은 값보다 0.3m 아래부터 가장 높은 값에 계획 높이를 더한 곳까지 만든다. 경사면에서 틈을 줄이기 위한 근사이므로 어느 지점에서나 같은 높이의 실측 울타리라는 뜻은 아니다.",
+    "collision": "패널, 이음 기둥과 상부 띠를 감싸는 두께 0.2m 상자 프록시를 패널별 파괴 대상으로 등록한다. 실제 Rapier 검사에서 닫힌 패널은 보행을 막고 해당 패널을 파괴하면 같은 경로를 통과했다.",
+    "entrances": "두 도면은 공사구역 둘레의 높이와 보행 동선을 안내하지만 차량/작업자 출입문의 정확한 위치와 폭을 명시하지 않는다. 사진의 색 전환점이나 꺾임을 출입구로 해석하지 않는다."
+  },
+  "materialEstimates": {
+    "measured": false,
+    "panelColor": "#b5bcb8",
+    "postAndRailColor": "#8a9591",
+    "groundColor": "#9b917c",
+    "panelThicknessMeters": 0.18,
+    "collisionThicknessMeters": 0.2,
+    "seamPostWidthMeters": 0.09,
+    "topRailHeightMeters": 0.15,
+    "basis": "회색 금속 판과 이음부를 절차 기하로 근사했다. 공식 계획도는 구간별 높이를 색으로 구분할 뿐 실제 울타리의 재료색, 두께와 패널 형식을 명시하지 않는다. 도면 범례의 빨강/파랑/노랑은 게임 재료색으로 복사하지 않았다.",
+    "photoTexturesUsed": false
+  },
+  "terrainAndVegetation": {
+    "implementation": "campus-terrain의 실제 삼각형을 공사구역 윤곽으로 잘라 낸 뒤 0.025m 위에 흙빛 표시 면을 둔다. 큰 단일 삼각형으로 경사면을 가로지르지 않도록 기존 지형 표면을 따라간다.",
+    "terrainSourceModified": false,
+    "terrainCollisionModified": false,
+    "fallback": "terrain mesh가 없으면 fullCampus의 기존 area 표면 생성 경로에서 공사구역의 흙빛 색상을 적용한다.",
+    "trees": "fullCampus의 절차 수목 배치 제외 영역에 construction을 추가했다. 공사구역 안의 임의 수목 생성을 막으며 현장의 모든 기존 나무가 제거됐다는 뜻은 아니다.",
+    "originalDataPreserved": [
+      "sources/campus.osm",
+      "public/data/campus.json",
+      "public/data/terrain.json"
+    ],
+    "internalProgress": "공사 장비, 적재물, 굴착 형상과 공정별 구조물은 재현하지 않았다. 이 자료만으로 현재 내부 공정을 확정할 수 없다."
+  },
+  "runtime": {
+    "renderStructure": "울타리 패널, 이음 기둥과 상부 띠를 3개의 InstancedMesh로 표시한다. 지면 표시 면은 별도 mesh다.",
+    "distance": "update는 플레이어 거리에 따라 울타리를 숨기지 않는다. 파괴 후에도 남은 패널의 형상을 같은 방식으로 유지한다.",
+    "destruction": "현재 소스는 프록시의 visible 상태에 따라 해당 패널과 이음부의 인스턴스 행렬을 0배율로 접는다. 모든 패널이 사라지면 울타리 그룹을 숨긴다.",
+    "reset": "프록시 복원 후 원래 인스턴스 행렬과 색을 적용한다. 반복 초기화 3회에서 115개 패널, 이음부와 로드/미로드 충돌을 복원했다.",
+    "performanceLimit": "메시 구성 수를 확인한 소스 검토다. 전체 draw call, 실제 GPU 성능 또는 휴대전화 프레임률을 측정한 결과가 아니다.",
+    "breakablePanels": 115,
+    "hitColor": "패널마다 독립된 프록시 재질을 사용한다. 타격색을 해당 패널의 instanceColor에만 반영하고 다른 패널의 색은 유지한다."
+  },
+  "verification": {
+    "status": "passed-node-geometry-and-physics",
+    "script": "scripts/verify-construction.mjs",
+    "artifact": "artifacts/construction-test/results.json",
+    "passedChecks": 6,
+    "failedChecks": 0,
+    "scope": "실제 campus.json과 terrain mesh, Rapier를 사용한 Node 기하 및 물리 검사다. 현장 측량, 브라우저 픽셀 또는 휴대전화 성능 검사가 아니다.",
+    "checks": [
+      {
+        "name": "construction outline, documented height zones and terrain foundations remain bounded",
+        "status": "passed",
+        "parts": 115,
+        "renderMeshes": 3,
+        "heightZones": [
+          4,
+          8,
+          10
+        ],
+        "maximumFoundationAboveTerrain": -0.26999824479276313
+      },
+      {
+        "name": "construction ground follows actual terrain triangles and does not change terrain or source data",
+        "status": "passed",
+        "triangles": 233,
+        "samples": 932,
+        "maximumOverlayHeightError": 0.0000026509039251707,
+        "rawDataAndTerrainUnchanged": true
+      },
+      {
+        "name": "loaded and unloaded fence shots agree after the common render reflection",
+        "status": "passed",
+        "rays": 17,
+        "maximumDistanceError": 0.00004007816313444934
+      },
+      {
+        "name": "an intact panel blocks a capsule and a destroyed panel opens the same route",
+        "status": "passed",
+        "blockedTravel": 4.529885085805933,
+        "openTravel": 8.307310674380338
+      },
+      {
+        "name": "partial destruction remains visible far away and repeated resets restore all instances",
+        "status": "passed",
+        "resetCycles": 3,
+        "restoredPanels": 115,
+        "nonlethalFlashLocalized": true,
+        "deletedRemoteHitAbsent": true,
+        "loadedAndUnloadedCollisionRestored": true
+      },
+      {
+        "name": "full campus keeps the outside walking route and excludes generated tree trunks from the construction area",
+        "status": "passed",
+        "registeredFenceParts": 115,
+        "treeTrunks": 1165,
+        "trunksInsideSite": 0,
+        "outsideRouteOffset": 0.9,
+        "outsideRouteTravel": 41.6602598107103,
+        "routeScope": "One 41 m route parallel to mapped western fence with actual full-campus collisions; not a survey of the planned 2 m passage."
+      }
+    ],
+    "routeLimit": "실제 전체 캠퍼스 충돌체를 포함해 지도상 서쪽 울타리에서 바깥으로 0.9m 떨어진 한 평행 경로를 41.660m 걸었다. 공식 계획의 2m 통로 폭을 실측하거나 주변 모든 접근 경로를 검사한 것은 아니다.",
+    "pending": [
+      "현장에 설치된 울타리 재료, 정확한 경계와 출입문",
+      "계획 통로 폭 2m 및 4~8m와 실제 현장의 일치",
+      "브라우저 표시와 실제 휴대전화 조작 및 성능"
+    ],
+    "independentReview": "artifacts/culture-review/independent-fence-review.json",
+    "browserAndDeviceVerified": false,
+    "artifactSha256": "367b86030f84f1bdeef988fc0669f60925df27edde2331060ad218866f8935a1",
+    "executedAt": "2026-11-05T04:48:28.721Z",
+    "sourceHashes": {
+      "scene.ts": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba",
+      "physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "controls.ts": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d",
+      "terrain.ts": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263",
+      "traffic.ts": "1b4c6d749a13ce079631256cc7e36fb3a43930e3f8aa1df97c0b7af47d459cdb",
+      "cannon.ts": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8",
+      "minimap.ts": "5dd92f64df053544ab0c9b92bc53c2d88b59d4bded13304e1e63334c705e5918",
+      "fullCampus.ts": "d539906ff573279f74e3fb53277efc14417b8d5285ff4ffcb91b7e9da6e903a8",
+      "main.ts": "f79282132f6d80c8d4b7ef915aeec23eb13fb25d5fe8a019201e6b099ac4f97b",
+      "buildingAppearance.ts": "6e040c23cb243f2484da6ea7698958b704e18aabf3354925be1f6f521ccd1615",
+      "landmarkBuildings.ts": "1fae24f4d811baf5781c996cbe437a6eea07ff3b41951614cd159fcf666a52b0",
+      "observedAppearances.ts": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80",
+      "libraryLandmark.ts": "8172e735aa4ee7b83fc5c6c176252e5b4b5f057b6749b06a7ad649ff817322cf",
+      "sportsLandmark.ts": "3783c04d6a77679fbd6fd1c05b6d29b4b3ab4c434a82e5972c6017d687473b36",
+      "distantBuildings.ts": "20a13782054d4cb80ac8449f8105ee010d7efa9e9b2e0aaae4bf39d2a95293cb",
+      "gyujanggakLandmark.ts": "44443efb564a22caf1bbcc41bf7348db2eedcdff186d9d988b0d61766e16f28f",
+      "pavilionLandmark.ts": "115acdab76130e7c3e6b3d28a1a89e8213482d47f7cb3ca6a13a13e9780d4d17",
+      "engineerHouseLandmark.ts": "e97e3adf9b645537472800e333b3930aef98fadfeb32bc252dd62db8ca668528",
+      "samsungResearchLandmark.ts": "6be746eac2d9fd875964cbe357063b88af144b4b75a445ef9d0201ddc02edc35",
+      "engineering302Landmark.ts": "f7793201687e68fd252c89d90c4ae340ea9f12058f410234070036794231ee5c",
+      "familyDormLandmark.ts": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e",
+      "researchParkLandmark.ts": "2787e19b9b63114f6a9c595d9dd56294eb4137b316e333d471579ffa3ea4d839",
+      "globalEngineeringLandmark.ts": "1638023cd7d0fd118c7095dbbe423d04da86f8e955e33fc2fd92d90b28938a6f",
+      "admissionsLandmark.ts": "c38e5a91db4f437eff5506f0f6e7c12bdcb9e3bb9d36c9290e964c5cef404167",
+      "neutinamuLandmark.ts": "c73df7876f7d8e03c56e77dd24a4a33c9101948939cfe76740f248e18817471f",
+      "baekhakLandmark.ts": "75a750189d909cbeb5a901ddc99f7412c81acde8336c51538628bcc7da32d2d8",
+      "coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+      "mainLibraryLandmark.ts": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3",
+      "campusConstruction.ts": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22",
+      "administrationLandmark.ts": "615b389ecdf118fb4b06cb361e1d319a85eeb0053bc5a57be0948f522f4b7e81",
+      "studentCenterLandmark.ts": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+      "museumLandmark.ts": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+      "livingScienceLandmark.ts": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+      "gymLandmark.ts": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e",
+      "agricultureLandmark.ts": "ccafbeb5241692346a83f864171ed63fbc045f594ff13bd5324a1d0b2c3102b1",
+      "engineering301Landmark.ts": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef",
+      "educationHealthLandmark.ts": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+      "science500Landmark.ts": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+      "engineering303Landmark.ts": "1bf0d6c1d8409ae9bc0c8d8150ee24bc99010c13cbed4aab7f6f8d0f4db51114",
+      "facultyClubLandmark.ts": "e378fc1be9c0fa38cded6ef474888a5bd630f202e95848155522495f2feda38c",
+      "teachingCenterLandmark.ts": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f",
+      "engineering35Landmark.ts": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d",
+      "engineering31Landmark.ts": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12"
+    },
+    "regressionRelease": 19
+  },
+  "remainingLimits": [
+    "공식 도면은 2025년 계획이며 OSM 윤곽은 2026년 3월 편집 자료다. 둘을 현재 설치 현황의 정밀 실측값으로 보지 않는다.",
+    "특히 북서쪽 작은 굴곡과 동쪽 10m/8m 전환 지점이 OSM 꼭짓점과 정확히 일치하지 않는다.",
+    "도면의 보행 폭 2m와 4~8m는 울타리 높이와 별개다. OSM 경계에 울타리를 놓는 것만으로 해당 폭을 보장하지 않는다.",
+    "차량 및 작업자 출입문의 위치와 폭은 미확정이다. 경계 꺾임이나 색 전환점을 출입문으로 추정하지 않는다.",
+    "카카오맵/네이버지도 거리뷰와 현장 사진으로 현재 설치 상태를 확인하지 않았다."
+  ],
+  "sourceSnapshot": {
+    "status": "release19-current-regression-inputs-match",
+    "files": [
+      {
+        "file": "public/data/campus.json",
+        "sha256": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c"
+      },
+      {
+        "file": "public/data/terrain.json",
+        "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+      },
+      {
+        "file": "scripts/verify-construction.mjs",
+        "sha256": "1ee7e9383f8c3b88e47b04c5e7dd23154e08ef4d317f5d608c6b36a39b635f48"
+      },
+      {
+        "file": "sources/campus.osm",
+        "sha256": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598"
+      },
+      {
+        "file": "src/campusConstruction.ts",
+        "sha256": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22"
+      },
+      {
+        "file": "src/fullCampus.ts",
+        "sha256": "d539906ff573279f74e3fb53277efc14417b8d5285ff4ffcb91b7e9da6e903a8"
+      },
+      {
+        "file": "src/physics.ts",
+        "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f"
+      },
+      {
+        "file": "src/terrain.ts",
+        "sha256": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263"
+      }
+    ],
+    "verificationArtifact": "artifacts/construction-test/results.json"
+  },
+  "history": [
+    {
+      "event": "before-construction-regression",
+      "verification": {
+        "status": "pending",
+        "completed": [
+          "공식 PDF 두 쪽을 직접 보고 높이와 통로 폭의 의미를 구분했다.",
+          "원본 OSM 11개 변과 계획도 구간 순서를 독립적으로 대조했다.",
+          "현재 생성 코드와 fullCampus의 연결, 지면 덮기와 수목 제외 경로를 읽었다."
+        ],
+        "pending": [
+          "실제 지형과 공사 표시 면의 일치 및 경계 밖 침범 여부",
+          "패널별 로드/미로드 광선과 물리 충돌의 일치",
+          "원거리 잔존, 부분 파괴와 초기화 복원",
+          "주변 도로와 보행 경로의 접근 가능성 및 막힌 구간",
+          "브라우저 표시와 실제 휴대전화 조작 및 성능"
+        ],
+        "independentReview": "artifacts/culture-review/independent-fence-review.json",
+        "passedChecks": null,
+        "browserAndDeviceVerified": false
+      }
+    },
+    {
+      "event": "before-release19-shared-construction-regression",
+      "sourceCommit": "f138814f890f95696c1ae1a96e6d1eec66f08e93",
+      "path": "sources/culture-construction-notes.json",
+      "sha256": "c3ea60dece134a73cd97219de2df45d285880208ed0f7a3c1df31b25ed3a26be",
+      "verification": {
+        "status": "passed-node-geometry-and-physics",
+        "script": "scripts/verify-construction.mjs",
+        "artifact": "artifacts/construction-test/results.json",
+        "passedChecks": 6,
+        "failedChecks": 0,
+        "scope": "실제 campus.json과 terrain mesh, Rapier를 사용한 Node 기하 및 물리 검사다. 현장 측량, 브라우저 픽셀 또는 휴대전화 성능 검사가 아니다.",
+        "checks": [
+          {
+            "name": "원본 공사 윤곽과 계획 높이 및 기초",
+            "parts": 115,
+            "renderMeshes": 3,
+            "heightZones": [
+              4,
+              8,
+              10
+            ],
+            "maximumFoundationAboveTerrainMeters": -0.26999824479276313
+          },
+          {
+            "name": "원본 지형 삼각형을 따르는 공사 바닥",
+            "triangles": 233,
+            "samples": 932,
+            "maximumOverlayHeightErrorMeters": 0.0000026509039251707,
+            "rawDataAndTerrainUnchanged": true
+          },
+          {
+            "name": "공통 반사 후 로드/미로드 광선",
+            "rays": 17,
+            "maximumDistanceErrorMeters": 0.00004007816313444934
+          },
+          {
+            "name": "동일 경로의 패널 파괴 전후 보행",
+            "blockedTravelMeters": 4.529885085805933,
+            "openTravelMeters": 8.307310674380338
+          },
+          {
+            "name": "타격색의 국소성, 원거리 부분 파괴와 반복 초기화",
+            "resetCycles": 3,
+            "restoredPanels": 115,
+            "nonlethalFlashLocalized": true,
+            "deletedRemoteHitAbsent": true,
+            "loadedAndUnloadedCollisionRestored": true
+          },
+          {
+            "name": "전체 캠퍼스의 외부 보행과 임의 수목 제외",
+            "registeredFenceParts": 115,
+            "treeTrunksChecked": 1165,
+            "trunksInsideSite": 0,
+            "outsideRouteOffsetMeters": 0.9,
+            "outsideRouteTravelMeters": 41.6602598107103
+          }
+        ],
+        "routeLimit": "실제 전체 캠퍼스 충돌체를 포함해 지도상 서쪽 울타리에서 바깥으로 0.9m 떨어진 한 평행 경로를 41.660m 걸었다. 공식 계획의 2m 통로 폭을 실측하거나 주변 모든 접근 경로를 검사한 것은 아니다.",
+        "pending": [
+          "현장에 설치된 울타리 재료, 정확한 경계와 출입문",
+          "계획 통로 폭 2m 및 4~8m와 실제 현장의 일치",
+          "브라우저 표시와 실제 휴대전화 조작 및 성능"
+        ],
+        "independentReview": "artifacts/culture-review/independent-fence-review.json",
+        "browserAndDeviceVerified": false,
+        "artifactSha256": "1e55dff6e46047d8ce1b83e8d8133a604d9b9f3ba1af173aa00e715e84275f80",
+        "executedAt": "2026-11-04T22:36:40.000Z"
+      },
+      "sourceSnapshot": {
+        "status": "frozen-files-match-final-verification",
+        "files": [
+          {
+            "file": "public/data/campus.json",
+            "sha256": "8c91fc2b95d2d39698ab10eea3d89a4ec10f785392dc58e267b2585a911aac64"
+          },
+          {
+            "file": "public/data/terrain.json",
+            "sha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a"
+          },
+          {
+            "file": "scripts/verify-construction.mjs",
+            "sha256": "1ee7e9383f8c3b88e47b04c5e7dd23154e08ef4d317f5d608c6b36a39b635f48"
+          },
+          {
+            "file": "sources/campus.osm",
+            "sha256": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598"
+          },
+          {
+            "file": "src/campusConstruction.ts",
+            "sha256": "ecb1731047a9589df6b4b705a60518588fe243f8adb74027c8533a548bc9f1fe"
+          },
+          {
+            "file": "src/fullCampus.ts",
+            "sha256": "072ab4ef02b8a8eff8f1b4885d413645d18784a258396cd0cb07738002e441d5"
+          },
+          {
+            "file": "src/physics.ts",
+            "sha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f"
+          },
+          {
+            "file": "src/terrain.ts",
+            "sha256": "3212b9ff6a79e4b84290d2e12acbe607a77a1ee3c9e6a9aecac933e9a27523a5"
+          }
+        ],
+        "verificationArtifact": "artifacts/construction-test/results.json"
+      },
+      "preservation": "이전 고증 및 검증 기록은 해당 Git 커밋과 이 항목에 보존한다."
+    }
+  ],
+  "visualReview": {
+    "file": "artifacts/geometry-previews/culture-construction.png",
+    "directlyViewed": true,
+    "method": "실제 생성 기하와 원본 terrain 삼각형을 CPU 정투영한 이미지이며 게임 화면 캡처가 아니다.",
+    "renderMeshes": 4,
+    "nondegenerateTriangles": 5753,
+    "observed": "비스듬한 위쪽 시점에서 흙빛 바닥과 경사에 따라 높이가 변하는 회색 울타리를 확인했다. 정면과 측면의 일부는 전경 지형에 가려진다. 가림 정도가 현장과 같은지는 미확인이다.",
+    "limit": "재표본화한 미리보기용 지면이 아니라 기존 지형 삼각형을 사용했다. 이 변경은 게임 지형이나 원본 지도 데이터를 수정하지 않는다. 실제 PBR 조명, 그림자와 텍스처를 렌더링하지 않는다."
+  },
+  "release19Regression": {
+    "release": 19,
+    "status": "passed-node-geometry-and-physics",
+    "command": "node scripts/verify-construction.mjs",
+    "artifact": "artifacts/construction-test/results.json",
+    "artifactSha256": "367b86030f84f1bdeef988fc0669f60925df27edde2331060ad218866f8935a1",
+    "checks": 6,
+    "passedChecks": 6,
+    "failedChecks": 0,
+    "sourceHashes": {
+      "scene.ts": "164a376e46244c5091f4ceb289f238c4f8e01d86ee964b2bc4ee238afbbd4dba",
+      "physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+      "controls.ts": "9d9c4e7a52c922efa17b8250d35c176b8451e00ced403177ac14bf69e81dc41d",
+      "terrain.ts": "4d5a862dee2da1985627b80190cc051634293ae54f6a6ec0e80e3130a0c52263",
+      "traffic.ts": "1b4c6d749a13ce079631256cc7e36fb3a43930e3f8aa1df97c0b7af47d459cdb",
+      "cannon.ts": "aa4d91d568efb51e0256a4640c0f1aa9387a0cefb5f1b73348c088ed8d2d03b8",
+      "minimap.ts": "5dd92f64df053544ab0c9b92bc53c2d88b59d4bded13304e1e63334c705e5918",
+      "fullCampus.ts": "d539906ff573279f74e3fb53277efc14417b8d5285ff4ffcb91b7e9da6e903a8",
+      "main.ts": "f79282132f6d80c8d4b7ef915aeec23eb13fb25d5fe8a019201e6b099ac4f97b",
+      "buildingAppearance.ts": "6e040c23cb243f2484da6ea7698958b704e18aabf3354925be1f6f521ccd1615",
+      "landmarkBuildings.ts": "1fae24f4d811baf5781c996cbe437a6eea07ff3b41951614cd159fcf666a52b0",
+      "observedAppearances.ts": "cfd54ab0c5cfca4c7ce4da942a84419ba580fa273729d1c7498aa8fbcc8a1f80",
+      "libraryLandmark.ts": "8172e735aa4ee7b83fc5c6c176252e5b4b5f057b6749b06a7ad649ff817322cf",
+      "sportsLandmark.ts": "3783c04d6a77679fbd6fd1c05b6d29b4b3ab4c434a82e5972c6017d687473b36",
+      "distantBuildings.ts": "20a13782054d4cb80ac8449f8105ee010d7efa9e9b2e0aaae4bf39d2a95293cb",
+      "gyujanggakLandmark.ts": "44443efb564a22caf1bbcc41bf7348db2eedcdff186d9d988b0d61766e16f28f",
+      "pavilionLandmark.ts": "115acdab76130e7c3e6b3d28a1a89e8213482d47f7cb3ca6a13a13e9780d4d17",
+      "engineerHouseLandmark.ts": "e97e3adf9b645537472800e333b3930aef98fadfeb32bc252dd62db8ca668528",
+      "samsungResearchLandmark.ts": "6be746eac2d9fd875964cbe357063b88af144b4b75a445ef9d0201ddc02edc35",
+      "engineering302Landmark.ts": "f7793201687e68fd252c89d90c4ae340ea9f12058f410234070036794231ee5c",
+      "familyDormLandmark.ts": "6e2d9393f39ef595028e906e219febc1fcc4716078f88551911f012cfade517e",
+      "researchParkLandmark.ts": "2787e19b9b63114f6a9c595d9dd56294eb4137b316e333d471579ffa3ea4d839",
+      "globalEngineeringLandmark.ts": "1638023cd7d0fd118c7095dbbe423d04da86f8e955e33fc2fd92d90b28938a6f",
+      "admissionsLandmark.ts": "c38e5a91db4f437eff5506f0f6e7c12bdcb9e3bb9d36c9290e964c5cef404167",
+      "neutinamuLandmark.ts": "c73df7876f7d8e03c56e77dd24a4a33c9101948939cfe76740f248e18817471f",
+      "baekhakLandmark.ts": "75a750189d909cbeb5a901ddc99f7412c81acde8336c51538628bcc7da32d2d8",
+      "coordinates.ts": "a288c61d03f29abcb5942f4d1ad0c7564fbd59f7c3d1aef82f8398dd20bad837",
+      "mainLibraryLandmark.ts": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3",
+      "campusConstruction.ts": "054a6fc29196fd34dc3f1981e6df518741145bfdcfd6f0ca2fc1c1abf584ff22",
+      "administrationLandmark.ts": "615b389ecdf118fb4b06cb361e1d319a85eeb0053bc5a57be0948f522f4b7e81",
+      "studentCenterLandmark.ts": "116209017536cdb38cb6aea32fcfa9963e6b9b3249a2402250063e624ddcd78c",
+      "museumLandmark.ts": "30a4677c2677781d99be1283339ecd74ea1114bdc74742a734a2de896ff612c9",
+      "livingScienceLandmark.ts": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+      "gymLandmark.ts": "6dd3806047731c9fe128f7485e4ef38edb4a11551857fb55047b75c6bbc3880e",
+      "agricultureLandmark.ts": "ccafbeb5241692346a83f864171ed63fbc045f594ff13bd5324a1d0b2c3102b1",
+      "engineering301Landmark.ts": "ddf3d1ed6dc230ff1b98b53494fd7b267ff790f0b6067c390ad3ad6fa4eb97ef",
+      "educationHealthLandmark.ts": "0d2cd1944a402e96112915687c4fc74da1e32b47e8170d40533a2e2d20e2b83e",
+      "science500Landmark.ts": "daabc3c95ea49194f6ffb30c7f4dc892688159007e75d1a6ca9182f9047e4106",
+      "engineering303Landmark.ts": "1bf0d6c1d8409ae9bc0c8d8150ee24bc99010c13cbed4aab7f6f8d0f4db51114",
+      "facultyClubLandmark.ts": "e378fc1be9c0fa38cded6ef474888a5bd630f202e95848155522495f2feda38c",
+      "teachingCenterLandmark.ts": "4bd470f194a6432f158888a1f0502f9c52f4ebfd3acbcbf685903ab565d0ed5f",
+      "engineering35Landmark.ts": "8c98d71c270aee7800059a54d4922580c2bf3d4cf62a6f3c806ef61f541b8f0d",
+      "engineering31Landmark.ts": "bbdbf0242f41024cdde13199c2a91720dce1d806edbb0484107485e70de05a12"
+    },
+    "results": [
+      {
+        "name": "construction outline, documented height zones and terrain foundations remain bounded",
+        "status": "passed",
+        "parts": 115,
+        "renderMeshes": 3,
+        "heightZones": [
+          4,
+          8,
+          10
+        ],
+        "maximumFoundationAboveTerrain": -0.26999824479276313
+      },
+      {
+        "name": "construction ground follows actual terrain triangles and does not change terrain or source data",
+        "status": "passed",
+        "triangles": 233,
+        "samples": 932,
+        "maximumOverlayHeightError": 0.0000026509039251707,
+        "rawDataAndTerrainUnchanged": true
+      },
+      {
+        "name": "loaded and unloaded fence shots agree after the common render reflection",
+        "status": "passed",
+        "rays": 17,
+        "maximumDistanceError": 0.00004007816313444934
+      },
+      {
+        "name": "an intact panel blocks a capsule and a destroyed panel opens the same route",
+        "status": "passed",
+        "blockedTravel": 4.529885085805933,
+        "openTravel": 8.307310674380338
+      },
+      {
+        "name": "partial destruction remains visible far away and repeated resets restore all instances",
+        "status": "passed",
+        "resetCycles": 3,
+        "restoredPanels": 115,
+        "nonlethalFlashLocalized": true,
+        "deletedRemoteHitAbsent": true,
+        "loadedAndUnloadedCollisionRestored": true
+      },
+      {
+        "name": "full campus keeps the outside walking route and excludes generated tree trunks from the construction area",
+        "status": "passed",
+        "registeredFenceParts": 115,
+        "treeTrunks": 1165,
+        "trunksInsideSite": 0,
+        "outsideRouteOffset": 0.9,
+        "outsideRouteTravel": 41.6602598107103,
+        "routeScope": "One 41 m route parallel to mapped western fence with actual full-campus collisions; not a survey of the planned 2 m passage."
+      }
+    ],
+    "scope": "공용 공사 구역 생성 함수 변경 뒤 문화관의 기존 6개 검사를 현재 입력으로 다시 실행했다. 새 현장 조사나 고증 자료의 변경을 뜻하지 않는다."
+  }
+}

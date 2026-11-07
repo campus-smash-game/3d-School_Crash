@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T15:37:00.136Z",
+  "status": "implemented-partial-photo-reference",
+  "buildingIds": [
+    "way/167983609",
+    "way/167983611"
+  ],
+  "buildingNumbers": [
+    "3",
+    "5"
+  ],
+  "scope": "3동과 5동의 기본 외벽을 각 건물의 공식 사진을 참고한 모델로 교체했다. 기존 2동 및 5동 연결교, 지상 통로와 5동 입구 계단 및 경사로는 유지했다.",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000003.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=3",
+      "localPhoto": "../references/buildings/photos/003-3.jpg",
+      "sha256": "8bdb353b1c49235a1f246f3629ca5c744da290f40c7fadc576366eb273e27684",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "짙은 회색 벽돌과 흰 골조",
+        "위층의 작은 창과 아래층의 큰 창, 맨 아래 창살",
+        "깊은 처마, 처마 아래 지지대와 세로 배수관",
+        "일반 창이 없는 끝벽과 두 발코니",
+        "모서리 처마의 3동 번호"
+      ],
+      "faceMapping": "오른쪽에 보이는 4동의 지도상 위치를 대조해 긴 면은 서쪽, 끝벽은 북쪽으로 대응했다. 사진과 지도 면의 대응은 추정이다.",
+      "limits": "창 개수, 층별 높이, 발코니 위치와 깊이, 번호 크기 및 재료 치수는 근사다. 사진에 보이지 않는 남쪽 및 동쪽 면의 상세 외관은 미확인이다."
+    },
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000005.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=5",
+      "localPhoto": "../references/buildings/photos/005-5.jpg",
+      "sha256": "4924afc1cab6fd5cb7434d98b72630dce25f9f70989056bd078bfd91d5030b93",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "짙은 벽돌과 흰 골조",
+        "위쪽 두 줄의 작은 창과 아래 큰 창, 맨 아래 창살",
+        "깊은 처마와 세로 배수관",
+        "남쪽 입구와 흰 차양, 끝벽의 창 및 난간",
+        "열린 난간의 연결교와 둥근 지지 기둥"
+      ],
+      "limits": "입구와 연결부는 앞서 구현한 별도 모델을 유지했다. 동쪽과 북쪽 외벽의 근접 사진, 치수와 촬영일은 미확인이다."
+    },
+    {
+      "url": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+      "title": "인문대 소식 제62호, 2026년 1호",
+      "published": "2026-04-20",
+      "captureDate": null,
+      "pdfPage": 14,
+      "printedPage": 27,
+      "localPhoto": "artifacts/humanities23-review/47-newsletter-007.png",
+      "directlyViewedBy": "root",
+      "use": "기존 2동과 3동 연결교 및 아래 통로를 다시 대조했다. 새 북쪽 발코니 사진으로 사용하지 않았다."
+    }
+  ],
+  "roadview": {
+    "priorRecord": "sources/humanities35-photo-notes.json",
+    "satelliteCapture": "artifacts/humanities23-review/47-kakao-coverage-detail.png",
+    "directlyViewedBy": "root",
+    "newLiveVisit": false,
+    "interiorRoadviewObtained": false,
+    "limits": "기존 위성 화면을 통해 건물 배치를 대조했다. 이를 로드뷰 관측으로 집계하지 않는다."
+  },
+  "implementation": {
+    "module": "src/humanities35Exterior.ts",
+    "geometry": [
+      {
+        "number": "3",
+        "meshes": 2,
+        "textures": 0,
+        "triangles": 40686,
+        "colliders": 200,
+        "floor": 38.37798386764527,
+        "roof": 52.37798386764527,
+        "openings": 2
+      },
+      {
+        "number": "5",
+        "meshes": 2,
+        "textures": 0,
+        "triangles": 46454,
+        "colliders": 235,
+        "floor": 40.01852578932219,
+        "roof": 54.01852578932219,
+        "openings": 3
+      }
+    ],
+    "levels": 4,
+    "heightMeters": 14,
+    "levelsEstimated": true,
+    "heightEstimated": true,
+    "dimensionsEstimated": true,
+    "photoFaceMappingEstimated": true,
+    "building3ObservedEdges": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "building5ObservedEdges": [
+      1,
+      7,
+      8,
+      9
+    ],
+    "building3Balconies": {
+      "edge": 4,
+      "spanMeters": [
+        1.8,
+        5
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "locationEstimated": true
+    },
+    "rawMapAndElevationModified": false,
+    "terrainModified": false,
+    "roadsModified": false,
+    "existingConnectionsPreserved": true,
+    "wholeInteriorImplemented": false,
+    "photoTexturesCopied": false,
+    "geometryPolicy": "작은 줄눈, 창틀과 처마 세부는 건물별 두 개의 메시로 합치고 소속 벽이나 처마가 부서지면 함께 사라진다. 작은 줄눈마다 충돌체를 만들지 않는다.",
+    "limits": [
+      "전체 실내와 상부 발코니로 이어지는 실내 동선은 구현하지 않았다.",
+      "사진 밖 외벽은 일반 마감으로 남겼으며 해당 면을 사진 재현 범위에 넣지 않았다.",
+      "식생, 안내문 문구와 사진 속 이동식 물품은 이번 외벽 모델에 추가하지 않았다."
+    ]
+  },
+  "validation": {
+    "file": "artifacts/humanities35-exterior-test/results.json",
+    "groups": [
+      {
+        "name": "3 and 5 facade replacement preserves other objects, connections, roads and terrain",
+        "status": "PASS"
+      },
+      {
+        "name": "both winding directions put photo detail outside their respective buildings",
+        "status": "PASS"
+      },
+      {
+        "name": "footprint roofs and balcony floors match their own colliders and visible surface",
+        "status": "PASS"
+      },
+      {
+        "name": "photo details follow damage at distance and restore with their buildings",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherParts": 41576,
+    "roofAndBalconySamples": 15,
+    "realPhoneFrameRateMeasured": false
+  }
+}

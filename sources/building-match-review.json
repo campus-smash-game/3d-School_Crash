@@ -1,0 +1,5498 @@
+[
+  {
+    "osmId": "relation/9741477",
+    "buildingNumber": "80",
+    "officialSeq": 99,
+    "status": "verified",
+    "reason": "OSM 수의대부속 동물병원과 공식 80동의 명칭이 일치한다. 공식 좌표는 두 번째 외곽선 안에 있다. 원본 relation은 서로 다른 outer way 700876324와 386891111을 포함하므로 동일 도형 중복이 아니다. 두 윤곽을 병원 단위로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "수의대부속 동물병원",
+    "officialName": "수의대부속동물병원",
+    "footprintCount": 2,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 27.3
+      },
+      {
+        "inside": true,
+        "edgeDistanceM": 3.27
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=99"
+    ],
+    "photoScope": "병원 단위 사진이며 두 외곽선 각각의 외관까지 확인한 것은 아니다.",
+    "automaticCandidate": {
+      "buildingNumber": "80",
+      "officialSeq": 99,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/93549089",
+    "buildingNumber": "38",
+    "officialSeq": 47,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "글로벌공학교육센터",
+    "officialName": "글로벌공학교육센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 21.71
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=47"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "38",
+      "officialSeq": 47,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/146155734",
+    "buildingNumber": "11",
+    "officialSeq": 12,
+    "status": "verified",
+    "reason": "공식 11동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "사범대학",
+    "officialName": "사범관3",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.9
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=12"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "11",
+      "officialSeq": 12,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/148286666",
+    "buildingNumber": "9",
+    "officialSeq": 9,
+    "status": "verified",
+    "reason": "공식 9동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "사범대학",
+    "officialName": "사범관1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.29
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=9"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "9",
+      "officialSeq": 9,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/148286730",
+    "buildingNumber": "62",
+    "officialSeq": 78,
+    "status": "verified",
+    "reason": "공식 62동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "중앙도서관",
+    "officialName": "중앙도서관 본관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 16.94
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=78"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "62",
+      "officialSeq": 78,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/161950628",
+    "buildingNumber": "27",
+    "officialSeq": 32,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 27와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "27동",
+    "officialName": "자연과학관9",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.07
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=32"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "27",
+      "officialSeq": 32,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/161957771",
+    "buildingNumber": "23",
+    "officialSeq": 27,
+    "status": "verified",
+    "reason": "공식 23동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "자연과학대학",
+    "officialName": "자연과학관5",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.81
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=27"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "23",
+      "officialSeq": 27,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/161957772",
+    "buildingNumber": "25",
+    "officialSeq": 29,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 25와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "25동",
+    "officialName": "자연과학관7",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.85
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=29"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "25",
+      "officialSeq": 29,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/162045723",
+    "buildingNumber": "43-1",
+    "officialSeq": 54,
+    "status": "verified",
+    "reason": "공식 43-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "멀티미디어강의동 (이공계)",
+    "officialName": "이공계멀티미디어강의동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.16
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=54"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "43-1",
+      "officialSeq": 54,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167595745",
+    "buildingNumber": "56",
+    "officialSeq": 71,
+    "status": "verified",
+    "reason": "공식 56동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "자연과학대학",
+    "officialName": "자연과학관10",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.28
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=71"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "56",
+      "officialSeq": 71,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167598052",
+    "buildingNumber": "21",
+    "officialSeq": 24,
+    "status": "verified",
+    "reason": "공식 21동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "약학대학",
+    "officialName": "약학관1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.12
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=24"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "21",
+      "officialSeq": 24,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167598095",
+    "buildingNumber": "20",
+    "officialSeq": 23,
+    "status": "verified",
+    "reason": "공식 20동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "약학대학",
+    "officialName": "약학관3",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.93
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=23"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "20",
+      "officialSeq": 23,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167605495",
+    "buildingNumber": "22",
+    "officialSeq": 26,
+    "status": "verified",
+    "reason": "공식 22동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "자연과학대학",
+    "officialName": "자연과학관4",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.11
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=26"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "22",
+      "officialSeq": 26,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167606938",
+    "buildingNumber": "129",
+    "officialSeq": 149,
+    "status": "verified",
+    "reason": "공식 129동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "상산수리과학관",
+    "officialName": "수리과학연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.11
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=149"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "129",
+      "officialSeq": 149,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167607356",
+    "buildingNumber": "63",
+    "officialSeq": 80,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "학생회관",
+    "officialName": "학생회관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.55
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=80"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "63",
+      "officialSeq": 80,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167608115",
+    "buildingNumber": "28",
+    "officialSeq": 33,
+    "status": "verified",
+    "reason": "공식 28동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "자연과학대학",
+    "officialName": "자연대(대형)",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.65
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=33"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "28",
+      "officialSeq": 33,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167609164",
+    "buildingNumber": "14",
+    "officialSeq": 15,
+    "status": "verified",
+    "reason": "공식 14동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "인문대학",
+    "officialName": "인문관7",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.07
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=15"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "14",
+      "officialSeq": 15,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167609409",
+    "buildingNumber": "60",
+    "officialSeq": 76,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "행정관",
+    "officialName": "행정관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.75
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=76"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "60",
+      "officialSeq": 76,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167656591",
+    "buildingNumber": "25-1",
+    "officialSeq": 30,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 25-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "25-1동",
+    "officialName": "자연대강의및실험연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.91
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=30"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "25-1",
+      "officialSeq": 30,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167659979",
+    "buildingNumber": "65",
+    "officialSeq": 82,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "교수회관",
+    "officialName": "교수회관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.73
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=82"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "65",
+      "officialSeq": 82,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167660634",
+    "buildingNumber": "75-1",
+    "officialSeq": 96,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 75-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "제3식당 (전망대)",
+    "officialName": "제3학생식당",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 16.52
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=96"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "75-1",
+      "officialSeq": 96,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167663455",
+    "buildingNumber": "83",
+    "officialSeq": 103,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 83와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "멀티미디어강의동 (인문사회계)",
+    "officialName": "인문사회계멀티미디어강의동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.8
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=103"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "83",
+      "officialSeq": 103,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167663930",
+    "buildingNumber": "113",
+    "officialSeq": 130,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 113와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "동원생활관",
+    "officialName": "동원생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.09
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=130"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "113",
+      "officialSeq": 130,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167665986",
+    "buildingNumber": "109",
+    "officialSeq": 127,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 109와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "자하연식당",
+    "officialName": "자하연식당",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.36
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=127"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "109",
+      "officialSeq": 127,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167666702",
+    "buildingNumber": "4",
+    "officialSeq": 4,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 4와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "신양학술정보관 Ⅱ",
+    "officialName": "신양인문학술정보관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.58
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=4"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "4",
+      "officialSeq": 4,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167983080",
+    "buildingNumber": "2",
+    "officialSeq": 2,
+    "status": "verified",
+    "reason": "공식 2동과 연결동 250의 좌표가 같은 OSM 윤곽 안에 있다. 중심에 가까운 인문관 2동을 대표 건물로 삼고 250은 부속 연결동으로 기록한다.",
+    "appearanceUsable": true,
+    "osmName": "인문대학",
+    "officialName": "인문관2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.59
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=2"
+    ],
+    "photoScope": "2동 본체 기준. 연결동의 재료와 창문까지 같다고 확정하지 않는다.",
+    "additionalOfficialNumbers": [
+      "250"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "2",
+      "officialSeq": 2,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167983609",
+    "buildingNumber": "3",
+    "officialSeq": 3,
+    "status": "verified",
+    "reason": "공식 3동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "인문대학",
+    "officialName": "인문관3",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.77
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=3"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "3",
+      "officialSeq": 3,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167983611",
+    "buildingNumber": "5",
+    "officialSeq": 5,
+    "status": "verified",
+    "reason": "공식 5동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "인문대학",
+    "officialName": "인문관4",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.7
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=5"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "5",
+      "officialSeq": 5,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167983986",
+    "buildingNumber": "76",
+    "officialSeq": 97,
+    "status": "verified",
+    "reason": "공식 76동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "제4식당",
+    "officialName": "제4식당(서당골)",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.82
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=97"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "76",
+      "officialSeq": 97,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/167984624",
+    "buildingNumber": "1",
+    "officialSeq": 1,
+    "status": "verified",
+    "reason": "공식 1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "인문대학",
+    "officialName": "인문관1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.98
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=1"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "1",
+      "officialSeq": 1,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/179742149",
+    "buildingNumber": "200",
+    "officialSeq": 174,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "농업생명과학대학",
+    "officialName": "농업생명과학대학",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 23.39
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=174"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "200",
+      "officialSeq": 174,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/179742150",
+    "buildingNumber": "502",
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "OSM 이름은 502동이고 자연과학대학 공식 시설 안내에도 502동이 있다. 그러나 공식 사진 색인에는 502가 없고 가장 가까운 500동 점도 이 윤곽 밖에 있다. 500동 사진이 이 동을 직접 보여 주는지 확인하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "자연과학대학 (502)",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [
+      "https://science.snu.ac.kr/campus-life/facility"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "500",
+      "officialSeq": 199,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/179742151",
+    "buildingNumber": "26",
+    "officialSeq": 31,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 26와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "26동",
+    "officialName": "자연과학관8",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.96
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=31"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "26",
+      "officialSeq": 31,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/179742153",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "가까운 203동 점은 별도의 SPC 연구동 윤곽 안에 있다. 이 자연과학대학 건물을 203동으로 연결할 근거가 없다. 500동 단지의 어느 동인지도 확인하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "자연과학대학",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "203",
+      "officialSeq": 176,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/179742154",
+    "buildingNumber": "39",
+    "officialSeq": 48,
+    "status": "verified",
+    "reason": "공식 39동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "대학원연구동(1단계)",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.69
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=48"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "39",
+      "officialSeq": 48,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/179742155",
+    "buildingNumber": "500",
+    "officialSeq": 199,
+    "status": "verified",
+    "reason": "공식 500동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "자연과학대학",
+    "officialName": "대학원연구동(2단계)",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.5
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=199"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "500",
+      "officialSeq": 199,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/180954536",
+    "buildingNumber": "10",
+    "officialSeq": 10,
+    "status": "verified",
+    "reason": "공식 10동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "사범대학",
+    "officialName": "사범관2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.43
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=10"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "10",
+      "officialSeq": 10,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/185936758",
+    "buildingNumber": "15",
+    "officialSeq": 16,
+    "status": "verified",
+    "reason": "공식 15동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "법과대학",
+    "officialName": "법학관1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.42
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=16"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "15",
+      "officialSeq": 16,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/185936759",
+    "buildingNumber": "58",
+    "officialSeq": 74,
+    "status": "verified",
+    "reason": "공식 58동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "경영대학 (SK경영관)",
+    "officialName": "SK경영관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.21
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=74"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "58",
+      "officialSeq": 74,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/193893586",
+    "buildingNumber": "100",
+    "officialSeq": 112,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "버들골 풍산마당",
+    "officialName": "버들골 풍산마당",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.3
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=112"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "100",
+      "officialSeq": 112,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/193893590",
+    "buildingNumber": "102",
+    "officialSeq": 114,
+    "status": "verified",
+    "reason": "공식 102동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "정보화본부(102동)",
+    "officialName": "정보화본부",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.12
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=114"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "102",
+      "officialSeq": 114,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/193893591",
+    "buildingNumber": "61",
+    "officialSeq": 77,
+    "status": "verified",
+    "reason": "공식 61동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "교수학습개발센터 및 기초교육원",
+    "officialName": "기초교육원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 13.11
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=77"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "61",
+      "officialSeq": 77,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/228476658",
+    "buildingNumber": "301",
+    "officialSeq": 187,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "제1공학관",
+    "officialName": "제1공학관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.16
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=187"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "301",
+      "officialSeq": 187,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/230089557",
+    "buildingNumber": "950",
+    "officialSeq": 230,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "국제백신연구소",
+    "officialName": "국제백신연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 18.48
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=230"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "950",
+      "officialSeq": 230,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/231167704",
+    "buildingNumber": "16",
+    "officialSeq": 18,
+    "status": "verified",
+    "reason": "공식 16동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "사회과학관 (이희건관)",
+    "officialName": "사회과학관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.78
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=18"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "16",
+      "officialSeq": 18,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/231168241",
+    "buildingNumber": "101",
+    "officialSeq": 113,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "아시아연구소",
+    "officialName": "아시아연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 14.66
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=113"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "101",
+      "officialSeq": 113,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/231168242",
+    "buildingNumber": "67",
+    "officialSeq": 84,
+    "status": "verified",
+    "reason": "공식 67동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "두레학생문예관",
+    "officialName": "NH농협두레문예관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.47
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=84"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "67",
+      "officialSeq": 84,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238935654",
+    "buildingNumber": "16-1",
+    "officialSeq": 19,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 16-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "신양학술정보관 Ⅲ",
+    "officialName": "신양학술정보관Ⅲ",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.1
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=19"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "16-1",
+      "officialSeq": 19,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238935744",
+    "buildingNumber": "72",
+    "officialSeq": 92,
+    "status": "verified",
+    "reason": "공식 72동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "법학도서관 (국산도서관, 서암관)",
+    "officialName": "법학도서관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 19.63
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=92"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "72",
+      "officialSeq": 92,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238935767",
+    "buildingNumber": "84",
+    "officialSeq": 104,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "근대법학교육100주년기념관",
+    "officialName": "근대법학교육100주년기념관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.07
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=104"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "84",
+      "officialSeq": 104,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238935852",
+    "buildingNumber": "103",
+    "officialSeq": 115,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "규장각한국학연구원",
+    "officialName": "규장각한국학연구원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 24.54
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=115"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "103",
+      "officialSeq": 115,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238935911",
+    "buildingNumber": "17",
+    "officialSeq": 20,
+    "status": "verified",
+    "reason": "공식 17동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "법과대학",
+    "officialName": "법학관2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.51
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=20"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "17",
+      "officialSeq": 20,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238936704",
+    "buildingNumber": "12",
+    "officialSeq": 13,
+    "status": "verified",
+    "reason": "공식 12동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "기초사범교육협력센터",
+    "officialName": "사범교육협력센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.35
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=13"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "12",
+      "officialSeq": 13,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238936948",
+    "buildingNumber": "6",
+    "officialSeq": 6,
+    "status": "verified",
+    "reason": "공식 6동과 연결동 251의 좌표가 같은 OSM 윤곽 안에 있다. 인문관 6동을 대표 건물로 삼고 251은 6동과 7동 사이 연결동으로 기록한다.",
+    "appearanceUsable": true,
+    "osmName": "인문대학",
+    "officialName": "인문관5",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.91
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=6"
+    ],
+    "photoScope": "6동 본체 기준. 연결동 전체의 외관을 확인한 것은 아니다.",
+    "additionalOfficialNumbers": [
+      "251"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "6",
+      "officialSeq": 6,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238937021",
+    "buildingNumber": "7",
+    "officialSeq": 7,
+    "status": "verified",
+    "reason": "공식 7동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "인문대학",
+    "officialName": "인문관6",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.27
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=7"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "7",
+      "officialSeq": 7,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238937058",
+    "buildingNumber": "8",
+    "officialSeq": 8,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "두산인문관",
+    "officialName": "두산인문관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.86
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=8"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "8",
+      "officialSeq": 8,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238937145",
+    "buildingNumber": "10-1",
+    "officialSeq": 11,
+    "status": "verified",
+    "reason": "공식 10-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "교육정보관",
+    "officialName": "사범대교육정보관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 16.62
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=11"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "10-1",
+      "officialSeq": 11,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238937635",
+    "buildingNumber": "24",
+    "officialSeq": 28,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 24와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "24동",
+    "officialName": "자연과학관6",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.79
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=28"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "24",
+      "officialSeq": 28,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/238937965",
+    "buildingNumber": "85",
+    "officialSeq": 105,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "수의과대학",
+    "officialName": "수의과대학",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.6
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=105"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "85",
+      "officialSeq": 105,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/251646340",
+    "buildingNumber": "13",
+    "officialSeq": 14,
+    "status": "verified",
+    "reason": "공식 13동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "사범대학",
+    "officialName": "과학교육관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.6
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=14"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "13",
+      "officialSeq": 14,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/252233408",
+    "buildingNumber": "151",
+    "officialSeq": 170,
+    "status": "verified",
+    "reason": "공식 151동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "서울대학교 미술관",
+    "officialName": "미술관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.67
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=170"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "151",
+      "officialSeq": 170,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/262983332",
+    "buildingNumber": "37",
+    "officialSeq": 46,
+    "status": "verified",
+    "reason": "공식 37동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "공학관8",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.93
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=46"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "37",
+      "officialSeq": 46,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/297044753",
+    "buildingNumber": "64",
+    "officialSeq": 81,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "IBK 커뮤니케이션센터",
+    "officialName": "IBK커뮤니케이션센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.75
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=81"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "64",
+      "officialSeq": 81,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/297046999",
+    "buildingNumber": "220",
+    "officialSeq": 178,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "종합교육연구동",
+    "officialName": "종합교육연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.17
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "220",
+      "officialSeq": 178,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/297047243",
+    "buildingNumber": "221",
+    "officialSeq": 179,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "보건대학원",
+    "officialName": "보건대학원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.01
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=179"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "221",
+      "officialSeq": 179,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/297047483",
+    "buildingNumber": "82",
+    "officialSeq": 102,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "환경대학원",
+    "officialName": "환경대학원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.29
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=102"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "82",
+      "officialSeq": 102,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/297047750",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "가장 가까운 공식 506동은 생명과학부 시약보관창고다. 사진에도 낮은 위험물 저장소가 보이지만 OSM 윤곽은 약 40m x 59m의 자연과학대학 건물이며 공식 점이 밖에 있다. 이 윤곽 전체를 창고 사진으로 표현할 근거가 없다.",
+    "appearanceUsable": false,
+    "osmName": "자연과학대학",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "506",
+      "officialSeq": 200,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/300587512",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "이름과 번호가 없는 별도 윤곽이다. 공식 20동 점은 이미 다른 약학대학 본체 안에 있으며 이 윤곽까지의 경계 거리는 약 42m다. 20동 부속 건물인지 확인하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "20",
+      "officialSeq": 23,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/310022287",
+    "buildingNumber": "946",
+    "officialSeq": 229,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "BK국제관",
+    "officialName": "BK국제관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.7
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=229"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "946",
+      "officialSeq": 229,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/313338192",
+    "buildingNumber": "943",
+    "officialSeq": 227,
+    "status": "verified",
+    "reason": "공식 943동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "SK텔레콤 연구동",
+    "officialName": "SK텔레콤",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.49
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=227"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "943",
+      "officialSeq": 227,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/320669392",
+    "buildingNumber": "32-1",
+    "officialSeq": 41,
+    "status": "verified",
+    "reason": "공식 32-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "해동학술관",
+    "officialName": "해동학술문화관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.02
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=41"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "32-1",
+      "officialSeq": 41,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/329398175",
+    "buildingNumber": "62-1",
+    "officialSeq": 79,
+    "status": "verified",
+    "reason": "공식 62-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "관정도서관",
+    "officialName": "중앙도서관 관정관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.06
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=79"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "62-1",
+      "officialSeq": 79,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/329398248",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "500동 인근의 길고 좁은 자연과학대학 윤곽이다. 공식 500동 점은 다른 윤곽 안에 있고 이 부분의 동 번호나 연결동 범위는 확인하지 못했다. 본체 사진을 그대로 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "자연과학대학",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "500",
+      "officialSeq": 199,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/347804717",
+    "buildingNumber": "33",
+    "officialSeq": 42,
+    "status": "verified",
+    "reason": "공식 33동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "공학관4",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.24
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=42"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "33",
+      "officialSeq": 42,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/347806719",
+    "buildingNumber": "36",
+    "officialSeq": 45,
+    "status": "verified",
+    "reason": "공식 36동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "공학관7",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.27
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=45"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "36",
+      "officialSeq": 45,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/347806720",
+    "buildingNumber": "34",
+    "officialSeq": 43,
+    "status": "verified",
+    "reason": "공식 34동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": false,
+    "osmName": "공과대학",
+    "officialName": "공학관5",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.55
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=43"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "34",
+      "officialSeq": 43,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/347806722",
+    "buildingNumber": "44-1",
+    "officialSeq": 56,
+    "status": "verified",
+    "reason": "공식 44-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "신양학술정보관 I",
+    "officialName": "신양학술정보관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.66
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=56"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "44-1",
+      "officialSeq": 56,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/347806723",
+    "buildingNumber": "75",
+    "officialSeq": 95,
+    "status": "verified",
+    "reason": "총동창회 입주 기사에 75동 융합관 전경으로 명시된 사진이며 건물에 75 표시가 보인다. 서울대 공식 준공 기사는 기존 대학신문 건물의 재건축임을 확인한다.",
+    "appearanceUsable": true,
+    "osmName": "대학신문",
+    "officialName": "융합관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 16.5
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=95",
+      "https://now.snu.ac.kr/category/3/326",
+      "https://www.snua.or.kr/magazine?md=v&seqidx=11884"
+    ],
+    "photoScope": "새 공식 외관 자료를 직접 확인했다. sources/profiles-supplemental.json의 OSM ID별 프로필과 제한을 따른다.",
+    "automaticCandidate": {
+      "buildingNumber": "75",
+      "officialSeq": 95,
+      "pointInside": true
+    },
+    "previousAppearanceReason": "공식 좌표, 대학신문이라는 OSM 이름과 공식 영문명이 일치한다. 다만 공식 색인의 사진은 낮은 옛 대학신문 건물을 보여 준다. 2024년 공식 기사에서 같은 75동의 융합관 준공을 확인했으므로 이 사진은 현재 외관 참고에서 제외한다.",
+    "supplementalReference": "sources/profiles-supplemental.json"
+  },
+  {
+    "osmId": "way/377154957",
+    "buildingNumber": "30-2",
+    "officialSeq": 37,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "공대간이식당",
+    "officialName": "공대간이식당",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.23
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=37"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "30-2",
+      "officialSeq": 37,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/386889980",
+    "buildingNumber": "140",
+    "officialSeq": 161,
+    "status": "verified",
+    "reason": "국제대학원 이름이 일치하며 공식 140, 140-1, 140-2의 좌표가 같은 OSM 윤곽 안에 있다. 대표 번호 140으로 연결하되 복합동의 범위를 보존한다.",
+    "appearanceUsable": true,
+    "osmName": "국제대학원",
+    "officialName": "국제대학원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.95
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=161"
+    ],
+    "photoScope": "140동 본체 기준. 140-1과 140-2를 같은 외관으로 확정하지 않는다.",
+    "additionalOfficialNumbers": [
+      "140-1",
+      "140-2"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "140",
+      "officialSeq": 161,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/386890380",
+    "buildingNumber": "49",
+    "officialSeq": 62,
+    "status": "verified",
+    "reason": "예술관이라는 명칭이 공식 예술관연구동과 대응하며 공식 49동 점은 이 윤곽 경계에서 약 0.9m 밖에 있다. 다른 본체로 잘못 연결된 후보가 아니어서 좌표 반올림과 윤곽 오차 범위의 일치로 판단한다.",
+    "appearanceUsable": true,
+    "osmName": "예술관",
+    "officialName": "예술관연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 0.94
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=62"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "49",
+      "officialSeq": 62,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/386890466",
+    "buildingNumber": "310",
+    "officialSeq": 190,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "엔지니어하우스",
+    "officialName": "엔지니어하우스",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.98
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=190"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "310",
+      "officialSeq": 190,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/386890828",
+    "buildingNumber": "222",
+    "officialSeq": 180,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "생활과학대학",
+    "officialName": "생활과학대학",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.62
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=180"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "222",
+      "officialSeq": 180,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/386890861",
+    "buildingNumber": "57-1",
+    "officialSeq": 73,
+    "status": "verified",
+    "reason": "공식 57-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "행정대학원(57-1동)",
+    "officialName": "행정대학원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.81
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=73"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "57-1",
+      "officialSeq": 73,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/386890918",
+    "buildingNumber": "43",
+    "officialSeq": 53,
+    "status": "verified",
+    "reason": "OSM의 폐기물보관소라는 이름 때문에 보류했으나 공식 입시설명회 14쪽의 43동 사진, 별도 배치도와 공식 캠퍼스 지도 좌표를 함께 대조했다. 배치도는 이 본체와 남서쪽의 43-2를 분리해 표시하며 OSM 윤곽 배치와 대응한다. OSM 이름 오류로 판단한다.",
+    "appearanceUsable": true,
+    "osmName": "폐기물보관소",
+    "officialName": "데이터사이언스대학원 및 공과대학 강의동 1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.81
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=53",
+      "https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf"
+    ],
+    "photoScope": "새 공식 외관 자료를 직접 확인했다. sources/profiles-supplemental.json의 OSM ID별 프로필과 제한을 따른다.",
+    "automaticCandidate": {
+      "buildingNumber": "43",
+      "officialSeq": 53,
+      "pointInside": true
+    },
+    "previousAppearanceReason": "공식 43동 점은 윤곽 안에 있고 사진에도 43 표시가 보이지만 OSM 명칭은 폐기물보관소다. 사진의 다층 강의동과 기존 이름이 크게 달라 건물 교체 또는 지도 오류를 독립적으로 확인하기 전에는 외관을 적용하지 않는다.",
+    "supplementalReference": "sources/profiles-supplemental.json",
+    "osmNameConflict": true
+  },
+  {
+    "osmId": "way/386891006",
+    "buildingNumber": "71",
+    "officialSeq": 90,
+    "status": "verified",
+    "reason": "공식 71동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "종합체육관",
+    "officialName": "체육관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 29.58
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=90"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "71",
+      "officialSeq": 90,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/386891016",
+    "buildingNumber": "150",
+    "officialSeq": 169,
+    "status": "verified",
+    "reason": "공식 점이 윤곽 안에 있고 공식 영문명은 Office of Admissions다. 서울대 입학본부 안내에도 입학본부가 150동으로 명시돼 OSM 입학본부와 같은 건물임을 확인했다. 공식 한글명 명예교수연구동과의 차이는 명칭 차이로 기록한다.",
+    "appearanceUsable": true,
+    "osmName": "입학본부",
+    "officialName": "명예교수연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.45
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=169",
+      "https://admission.snu.ac.kr/webdata/admission/files/2021spring_foreign_hap_kor.pdf"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "150",
+      "officialSeq": 169,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/389628347",
+    "buildingNumber": "30",
+    "officialSeq": 35,
+    "status": "verified",
+    "reason": "공식 30동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "공학관1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.2
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=35"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "30",
+      "officialSeq": 35,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/389628348",
+    "buildingNumber": "31",
+    "officialSeq": 38,
+    "status": "verified",
+    "reason": "공식 31동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "공학관2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.47
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=38"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "31",
+      "officialSeq": 38,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/391747018",
+    "buildingNumber": "918",
+    "officialSeq": 208,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 918와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "918",
+    "officialName": "(관악사)대학원 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.93
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=208"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "918",
+      "officialSeq": 208,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/409030550",
+    "buildingNumber": "935",
+    "officialSeq": 221,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 935와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "935",
+    "officialName": "가족생활관5",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.04
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=221"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "935",
+      "officialSeq": 221,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/424324200",
+    "buildingNumber": "125",
+    "officialSeq": 142,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "호암교수회관",
+    "officialName": "호암교수회관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.83
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=142"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "125",
+      "officialSeq": 142,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/424946985",
+    "buildingNumber": "945",
+    "officialSeq": 228,
+    "status": "verified",
+    "reason": "공식 945동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "코웨이 R&D 센터",
+    "officialName": "웅진R&D센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.06
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=228"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "945",
+      "officialSeq": 228,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/424949442",
+    "buildingNumber": "105",
+    "officialSeq": 120,
+    "status": "verified",
+    "reason": "유전공학연구소 명칭이 일치하며 공식 105와 105-1 좌표가 같은 OSM 윤곽 안에 있다. 대표 본체 105로 연결하고 105-1도 포함된 복합 윤곽임을 기록한다.",
+    "appearanceUsable": true,
+    "osmName": "유전공학연구소",
+    "officialName": "유전공학연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.87
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=120"
+    ],
+    "photoScope": "105동 본체 기준. 다른 부속동의 외관까지 동일하다고 확정하지 않는다.",
+    "additionalOfficialNumbers": [
+      "105-1"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "105",
+      "officialSeq": 120,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430040354",
+    "buildingNumber": "104",
+    "officialSeq": 116,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "반도체공동연구소",
+    "officialName": "반도체공동연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.35
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=116"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "104",
+      "officialSeq": 116,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430040355",
+    "buildingNumber": "42",
+    "officialSeq": 51,
+    "status": "verified",
+    "reason": "공식 42동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "선형수조실험공장동",
+    "officialName": "선형수조실험동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.15
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=51"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "42",
+      "officialSeq": 51,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430040357",
+    "buildingNumber": "41",
+    "officialSeq": 50,
+    "status": "verified",
+    "reason": "공식 41동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "선박실험공장동",
+    "officialName": "선체구조실험동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.1
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=50"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "41",
+      "officialSeq": 50,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430040359",
+    "buildingNumber": "132",
+    "officialSeq": 152,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "뉴미디어통신공동연구소",
+    "officialName": "뉴미디어통신공동연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.72
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=152"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "132",
+      "officialSeq": 152,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430163191",
+    "buildingNumber": "311",
+    "officialSeq": 191,
+    "status": "verified",
+    "reason": "OSM과 공식 명칭이 화학공정신기술연구소로 일치한다. 공식 점은 윤곽 경계에서 약 0.8m 밖에 있어 위치도 대응한다.",
+    "appearanceUsable": true,
+    "osmName": "화학공정신기술연구소",
+    "officialName": "화학공정신기술연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 0.77
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=191"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "311",
+      "officialSeq": 191,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/430289140",
+    "buildingNumber": "313",
+    "officialSeq": 193,
+    "status": "verified",
+    "reason": "공식 313동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "정밀기계설계공동연구소",
+    "officialName": "정밀기계공동연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.19
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=193"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "313",
+      "officialSeq": 193,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430289533",
+    "buildingNumber": "314",
+    "officialSeq": 194,
+    "status": "verified",
+    "reason": "공식 314동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "차세대자동차기술연구센터",
+    "officialName": "차세대자동차신기술연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.82
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=194"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "314",
+      "officialSeq": 194,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430289534",
+    "buildingNumber": "300",
+    "officialSeq": 256,
+    "status": "verified",
+    "reason": "공식 300동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": false,
+    "osmName": "유회진학술정보관 (300동)",
+    "officialName": "관악 300동[유회진 학술정보관]",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.63
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=256"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "300",
+      "officialSeq": 256,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430291668",
+    "buildingNumber": "137-1",
+    "officialSeq": 156,
+    "status": "verified",
+    "reason": "공식 137-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "언어교육원 CJ어학관",
+    "officialName": "CJ어학관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.71
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=156"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "137-1",
+      "officialSeq": 156,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430291669",
+    "buildingNumber": "137",
+    "officialSeq": 155,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "언어교육원",
+    "officialName": "언어교육원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.99
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=155"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "137",
+      "officialSeq": 155,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430291671",
+    "buildingNumber": "68",
+    "officialSeq": 85,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "파워플랜트",
+    "officialName": "파워플랜트",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.41
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=85"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "68",
+      "officialSeq": 85,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/430291672",
+    "buildingNumber": "68-1",
+    "officialSeq": 86,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "신림변전소",
+    "officialName": "신림변전소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.56
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=86"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "68-1",
+      "officialSeq": 86,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/434754623",
+    "buildingNumber": "143",
+    "officialSeq": 166,
+    "status": "verified",
+    "reason": "약학대학 신약개발센터라는 OSM 이름이 공식 약대신약개발연구센터와 대응한다. 공식 점은 윤곽 경계에서 약 0.5m 밖에 있어 위치도 일치한다.",
+    "appearanceUsable": true,
+    "osmName": "약학대학 신약개발센터",
+    "officialName": "약대신약개발연구센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 0.51
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=166"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "143",
+      "officialSeq": 166,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/435329614",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "이름과 번호가 없는 별도 윤곽이다. 공식 21동 점은 이미 약학대학 본체 안에 있으며 이 윤곽까지의 경계 거리는 약 43m다. 같은 건물로 볼 근거가 부족하다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "21",
+      "officialSeq": 24,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/435330210",
+    "buildingNumber": "142",
+    "officialSeq": 165,
+    "status": "verified",
+    "reason": "공식 142동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "약학대학",
+    "officialName": "약학관5",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.55
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=165"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "142",
+      "officialSeq": 165,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/435330211",
+    "buildingNumber": "141",
+    "officialSeq": 164,
+    "status": "verified",
+    "reason": "공식 141동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "약학대학",
+    "officialName": "약학관4",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.86
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=164"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "141",
+      "officialSeq": 164,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/436516327",
+    "buildingNumber": "66",
+    "officialSeq": 83,
+    "status": "verified",
+    "reason": "공식 66동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "학생군사교육단",
+    "officialName": "학군단",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.95
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=83"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "66",
+      "officialSeq": 83,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/436516328",
+    "buildingNumber": "66",
+    "officialSeq": 83,
+    "status": "verified",
+    "reason": "OSM 명칭은 학생군사교육단으로 공식 학군단과 일치한다. 다만 66동 공식 점은 옆의 본체 안에 있고 이 윤곽은 떨어진 부속동이다. 학군단 소속은 연결하되 본체 사진으로 부속동의 외관을 확정하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "학생군사교육단",
+    "officialName": "학군단",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 22.94
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=83"
+    ],
+    "photoScope": "학군단 부속동. 공식 사진은 본체 참고이며 이 부속동 외관은 미확인이다.",
+    "automaticCandidate": {
+      "buildingNumber": "66",
+      "officialSeq": 83,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/436516329",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "학군단 옆의 작은 무명 윤곽이다. 공식 66동 점은 본체 안에 있고 이 건물은 경계에서 약 8.5m 떨어져 있다. 소속과 용도를 확인하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "66",
+      "officialSeq": 83,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/436516336",
+    "buildingNumber": "138",
+    "officialSeq": 158,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "컴퓨터연구소",
+    "officialName": "컴퓨터연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.46
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=158"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "138",
+      "officialSeq": 158,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/436516337",
+    "buildingNumber": "139",
+    "officialSeq": 159,
+    "status": "verified",
+    "reason": "공식 139동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "기초과학공동기기원",
+    "officialName": "공동기기원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.9
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=159"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "139",
+      "officialSeq": 159,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/436516338",
+    "buildingNumber": "29",
+    "officialSeq": 34,
+    "status": "verified",
+    "reason": "공식 29동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "약학대학",
+    "officialName": "약학관2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.44
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=34"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "29",
+      "officialSeq": 34,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/436516339",
+    "buildingNumber": "19",
+    "officialSeq": 22,
+    "status": "verified",
+    "reason": "공식 19동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "자연과학대학",
+    "officialName": "자연과학관2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.39
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=22"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "19",
+      "officialSeq": 22,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/436516340",
+    "buildingNumber": "18",
+    "officialSeq": 21,
+    "status": "verified",
+    "reason": "공식 18동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "자연과학대학",
+    "officialName": "자연과학관1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.34
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=21"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "18",
+      "officialSeq": 21,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/436516341",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "18동 옆의 약 4m x 7m 무명 윤곽이다. 공식 점은 자연과학관 본체 안에 있으며 작은 시설이 본체 일부인지 확인하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "18",
+      "officialSeq": 21,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/439687807",
+    "buildingNumber": "98",
+    "officialSeq": 109,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "환경안전원",
+    "officialName": "환경안전원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.19
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=109"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "98",
+      "officialSeq": 109,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439687808",
+    "buildingNumber": "97",
+    "officialSeq": 108,
+    "status": "verified",
+    "reason": "공식 97동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "방사선동위원소폐기물보관소",
+    "officialName": "환경안전원1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.28
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=108"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "97",
+      "officialSeq": 108,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439687809",
+    "buildingNumber": "152-1",
+    "officialSeq": 172,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "롯데국제교육관",
+    "officialName": "롯데국제교육관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.03
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=172"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "152-1",
+      "officialSeq": 172,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439687810",
+    "buildingNumber": "152",
+    "officialSeq": 171,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "CJ인터내셔널센터",
+    "officialName": "CJ인터내셔널센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.21
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=171"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "152",
+      "officialSeq": 171,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439687811",
+    "buildingNumber": "71-2",
+    "officialSeq": 91,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "포스코스포츠센터",
+    "officialName": "포스코스포츠센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 17.86
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=91"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "71-2",
+      "officialSeq": 91,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439687812",
+    "buildingNumber": "80-1",
+    "officialSeq": 100,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "생물공학연구소",
+    "officialName": "생물공학연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 0.8
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=100"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "80-1",
+      "officialSeq": 100,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439687813",
+    "buildingNumber": "86",
+    "officialSeq": 107,
+    "status": "verified",
+    "reason": "공식 점은 윤곽 경계에서 약 3.2m 밖에 있다. 공식 사진에서 86 표시와 관악서울대학교치과병원 간판을 직접 확인해 OSM 병원명과의 일치를 확인했다.",
+    "appearanceUsable": true,
+    "osmName": "관악서울대학교치과병원",
+    "officialName": "치의학대학원 첨단교육연구복합단지",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 3.24
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=107"
+    ],
+    "photoScope": "공식 사진의 86 표시와 치과병원 간판을 확인했다.",
+    "automaticCandidate": {
+      "buildingNumber": "86",
+      "officialSeq": 107,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/439687814",
+    "buildingNumber": "81",
+    "officialSeq": 101,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "생명공학연구동",
+    "officialName": "생명공학연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 14.14
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=101"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "81",
+      "officialSeq": 101,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439687815",
+    "buildingNumber": "137-2",
+    "officialSeq": 157,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "대림국제관",
+    "officialName": "대림국제관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.42
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=157"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "137-2",
+      "officialSeq": 157,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693755",
+    "buildingNumber": "59",
+    "officialSeq": 75,
+    "status": "verified",
+    "reason": "공식 59와 59-1 점이 모두 윤곽 안에 있다. OSM 이름이 LG경영관이므로 단순 중심 거리로 선택된 59-1 대신 명칭이 일치하는 59를 대표 번호로 삼는다. 연결된 매니지먼트센터 59-1은 별도 구성 부분으로 기록한다.",
+    "appearanceUsable": true,
+    "osmName": "경영전문대학원 (LG경영관)",
+    "officialName": "LG경영관(경영연구관및산학협동관)",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.37
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=75"
+    ],
+    "photoScope": "LG경영관 59동 기준. 59-1 전체의 외관까지 같다고 확정하지 않는다.",
+    "additionalOfficialNumbers": [
+      "59-1"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "59-1",
+      "officialSeq": 251,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693756",
+    "buildingNumber": "57",
+    "officialSeq": 72,
+    "status": "verified",
+    "reason": "공식 57동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "행정대학원(57동)",
+    "officialName": "행정대학원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.14
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=72"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "57",
+      "officialSeq": 72,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693757",
+    "buildingNumber": "70",
+    "officialSeq": 89,
+    "status": "verified",
+    "reason": "공식 70동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "서울대학교 박물관",
+    "officialName": "박물관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 14.99
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=89"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "70",
+      "officialSeq": 89,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693758",
+    "buildingNumber": "74",
+    "officialSeq": 94,
+    "status": "verified",
+    "reason": "공식 74동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "예술계복합교육연구동",
+    "officialName": "예술복합연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 8.54
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=94"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "74",
+      "officialSeq": 94,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693759",
+    "buildingNumber": "50",
+    "officialSeq": 63,
+    "status": "verified",
+    "reason": "공식 50동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "미술대학",
+    "officialName": "예술관(미대)1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.43
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=63"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "50",
+      "officialSeq": 63,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693760",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "미술대학이라는 소속만 있고 번호는 없다. 공식 50동 점은 옆 본체에 있으며 51동도 가깝다. 50동 부속동인지 다른 시설인지 구분하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "미술대학",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "50",
+      "officialSeq": 63,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/439693761",
+    "buildingNumber": "51",
+    "officialSeq": 64,
+    "status": "verified",
+    "reason": "공식 51동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "미술대학",
+    "officialName": "예술관(미대)2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.72
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=64"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "51",
+      "officialSeq": 64,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693762",
+    "buildingNumber": "52",
+    "officialSeq": 65,
+    "status": "verified",
+    "reason": "공식 52동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "미술대학",
+    "officialName": "예술관(미대)3",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.72
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=65"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "52",
+      "officialSeq": 65,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693763",
+    "buildingNumber": "52-1",
+    "officialSeq": 66,
+    "status": "verified",
+    "reason": "공식 52-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": false,
+    "osmName": "미술대학",
+    "officialName": "미대교양실습동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.13
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=66"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "52-1",
+      "officialSeq": 66,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693764",
+    "buildingNumber": "53",
+    "officialSeq": 68,
+    "status": "verified",
+    "reason": "공식 53동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "음악대학",
+    "officialName": "예술관(음대)1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.9
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=68"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "53",
+      "officialSeq": 68,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693765",
+    "buildingNumber": "54",
+    "officialSeq": 69,
+    "status": "verified",
+    "reason": "공식 54동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "음악대학",
+    "officialName": "예술관(음대)2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.04
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=69"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "54",
+      "officialSeq": 69,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439693766",
+    "buildingNumber": "55",
+    "officialSeq": 70,
+    "status": "verified",
+    "reason": "공식 55동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "음악대학",
+    "officialName": "예술관(음대)3",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.25
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=70"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "55",
+      "officialSeq": 70,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439696422",
+    "buildingNumber": "203",
+    "officialSeq": 176,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "SPC 농생명과학 및 기초과학연구동",
+    "officialName": "SPC농생명과학 및 기초과학연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.47
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=176"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "203",
+      "officialSeq": 176,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703618",
+    "buildingNumber": "201",
+    "officialSeq": 175,
+    "status": "verified",
+    "reason": "공식 201동 점이 윤곽 안에 있다. 서울대 공식 행사 안내가 농생명과학공동기기원을 201동으로 명시하므로 OSM 이름과 공식 색인의 농업생명과학대학환경관은 같은 건물로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "농생명과학공동기기원",
+    "officialName": "농업생명과학대학환경관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 16.41
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=175",
+      "https://newkaku.snu.ac.kr/snunow/events?bbsidx=176504&md=v"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "201",
+      "officialSeq": 175,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703621",
+    "buildingNumber": "40",
+    "officialSeq": 49,
+    "status": "verified",
+    "reason": "공식 40동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "풍동실험동1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.34
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=49"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "40",
+      "officialSeq": 49,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703622",
+    "buildingNumber": "133",
+    "officialSeq": 153,
+    "status": "verified",
+    "reason": "공식 133동 점이 윤곽 안에 있고 공식 사진에도 133 표시가 보인다. 서울대 공지에서 자동화연구소는 133동, 신소재공동연구소는 131동으로 구분하며 131동은 별도 OSM 윤곽과 일치한다. 따라서 이 윤곽의 OSM 이름을 잘못된 명칭으로 보고 공식 133동을 채택한다.",
+    "appearanceUsable": true,
+    "osmName": "신소재공동연구소",
+    "officialName": "자동화연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.6
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=153",
+      "https://cals.snu.ac.kr/board/notice?bbsidx=7823&bm=v"
+    ],
+    "photoScope": "공식 사진에서 133 표시를 확인했다.",
+    "osmNameConflict": true,
+    "automaticCandidate": {
+      "buildingNumber": "133",
+      "officialSeq": 153,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703623",
+    "buildingNumber": "130",
+    "officialSeq": 150,
+    "status": "verified",
+    "reason": "공식 130동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "기초전력연구원",
+    "officialName": "기초전력연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.29
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=150"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "130",
+      "officialSeq": 150,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703625",
+    "buildingNumber": "44",
+    "officialSeq": 55,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "풍동실험동2",
+    "officialName": "풍동실험동2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.25
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=55"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "44",
+      "officialSeq": 55,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703626",
+    "buildingNumber": "135",
+    "officialSeq": 154,
+    "status": "verified",
+    "reason": "에너지자원신기술연구소라는 OSM 이름이 공식 에너지신기술연구동과 대응한다. 공식 점이 본체 바로 옆에 있고 다른 공식 건물 점이 이 윤곽에 배정되지 않는다.",
+    "appearanceUsable": true,
+    "osmName": "에너지자원신기술연구소",
+    "officialName": "에너지신기술연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 2.96
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=154"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "135",
+      "officialSeq": 154,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/439703629",
+    "buildingNumber": "131",
+    "officialSeq": 151,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "신소재공동연구소",
+    "officialName": "신소재공동연구소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.99
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=151"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "131",
+      "officialSeq": 151,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703635",
+    "buildingNumber": "330",
+    "officialSeq": 196,
+    "status": "verified",
+    "reason": "공식 330과 332 점이 같은 윤곽 안에 있다. OSM 이름 제2파워플랜트와 일치하는 330을 대표로 삼는다. 두 공식 사진에서 파워플랜트와 붙어 있는 차고 부분을 확인했으며 332는 차고 부분으로 보존한다.",
+    "appearanceUsable": true,
+    "osmName": "제2파워플랜트",
+    "officialName": "제2파워플랜트",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.73
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=196"
+    ],
+    "photoScope": "330동 본체 기준. 332 차고는 별도 금속 외장 부분이다.",
+    "additionalOfficialNumbers": [
+      "332"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "332",
+      "officialSeq": 198,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439703636",
+    "buildingNumber": "331",
+    "officialSeq": 197,
+    "status": "verified",
+    "reason": "차량정비고라는 OSM 이름과 공식 이름이 일치한다. 공식 점은 윤곽 경계에서 약 2.2m 밖에 있어 위치도 대응한다.",
+    "appearanceUsable": true,
+    "osmName": "차량정비고",
+    "officialName": "차량정비고",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 2.19
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=197"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "331",
+      "officialSeq": 197,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/439703637",
+    "buildingNumber": "316",
+    "officialSeq": 195,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "대형구조실험동",
+    "officialName": "대형구조실험동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.55
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=195"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "316",
+      "officialSeq": 195,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439704946",
+    "buildingNumber": "104-1",
+    "officialSeq": 117,
+    "status": "verified",
+    "reason": "공식 104-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "반도체공동연구소 교육관",
+    "officialName": "반도체교육관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.87
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=117"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "104-1",
+      "officialSeq": 117,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439704948",
+    "buildingNumber": "139-1",
+    "officialSeq": 160,
+    "status": "verified",
+    "reason": "공식 139-1동 점이 윤곽 안에 있다. 기초과학공동기기원 공식 교육 안내가 139-1동을 사용하므로 OSM 소속명과 공식 정전가속기동이 같은 건물을 가리키는 것을 확인했다.",
+    "appearanceUsable": true,
+    "osmName": "기초과학공동기기원",
+    "officialName": "정전가속기동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.35
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=160",
+      "https://irf.snu.ac.kr/training_seminar/occasional.php?boardid=educations&category=1&idx=68&mode=view"
+    ],
+    "photoScope": "건물 식별만 확인했다. 공식 사진의 가림막 때문에 외관 프로필 사용 가능 여부는 별도 사진 검토를 따라야 한다.",
+    "automaticCandidate": {
+      "buildingNumber": "139-1",
+      "officialSeq": 160,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439704951",
+    "buildingNumber": "46",
+    "officialSeq": 58,
+    "status": "verified",
+    "reason": "공식 46동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "천문대",
+    "officialName": "천문관측소",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.11
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=58"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "46",
+      "officialSeq": 58,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707874",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "가장 가까운 924동은 학부 생활관이므로 국제백신연구소라는 OSM 이름과 맞지 않는다. 공식 국제백신연구소 950동 점은 별도 본체 안에 있다. 이 윤곽이 950동의 어느 부속 시설인지 확인하지 못해 924와 950의 사진을 모두 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "국제백신연구소",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "rejectedOfficialNumbers": [
+      "924"
+    ],
+    "possibleComplexNumber": "950",
+    "automaticCandidate": {
+      "buildingNumber": "924",
+      "officialSeq": 214,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/439707875",
+    "buildingNumber": "940",
+    "officialSeq": 223,
+    "status": "verified",
+    "reason": "공식 940동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "연구공원",
+    "officialName": "연구공원지원시설",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 12.18
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=223"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "940",
+      "officialSeq": 223,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707876",
+    "buildingNumber": "942",
+    "officialSeq": 226,
+    "status": "verified",
+    "reason": "공식 942동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "LG전자 서울대연구소",
+    "officialName": "LG연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 10.78
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=226"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "942",
+      "officialSeq": 226,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707877",
+    "buildingNumber": "941",
+    "officialSeq": 224,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "백학어린이집",
+    "officialName": "백학어린이집",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.14
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=224"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "941",
+      "officialSeq": 224,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707878",
+    "buildingNumber": "941-1",
+    "officialSeq": 225,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "느티나무 어린이집",
+    "officialName": "느티나무어린이집",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.8
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=225"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "941-1",
+      "officialSeq": 225,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707880",
+    "buildingNumber": "936",
+    "officialSeq": 222,
+    "status": "verified",
+    "reason": "공식 936동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "직원아파트",
+    "officialName": "교직원아파트",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.73
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=222"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "936",
+      "officialSeq": 222,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707881",
+    "buildingNumber": "125-2",
+    "officialSeq": 144,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "게스트하우스",
+    "officialName": "게스트하우스",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 4.87
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=144"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "125-2",
+      "officialSeq": 144,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707882",
+    "buildingNumber": "125-1",
+    "officialSeq": 143,
+    "status": "verified",
+    "reason": "공식 125-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "호암컨벤션센터",
+    "officialName": "컨벤션센타",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 14.62
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=143"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "125-1",
+      "officialSeq": 143,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707883",
+    "buildingNumber": "127",
+    "officialSeq": 146,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "호암서관",
+    "officialName": "호암서관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.62
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=146"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "127",
+      "officialSeq": 146,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707884",
+    "buildingNumber": "126",
+    "officialSeq": 145,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "호암동관",
+    "officialName": "호암동관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.71
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=145"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "126",
+      "officialSeq": 145,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707885",
+    "buildingNumber": "111",
+    "officialSeq": 129,
+    "status": "verified",
+    "reason": "공식 111동 점이 윤곽 안에 있고 서울대 대학원 안내가 사범대 파스쿠찌를 111동으로 명시한다. OSM 카페명과 공식 사범대학 간이식당은 같은 장소다.",
+    "appearanceUsable": true,
+    "osmName": "파스쿠찌",
+    "officialName": "사범대학 간이식당",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 0.78
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=129",
+      "https://nursing.snu.ac.kr/board/notice?bbsidx=156722&bm=down&fileidx=67308"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "111",
+      "officialSeq": 129,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707892",
+    "buildingNumber": "934",
+    "officialSeq": 220,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 934와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "934",
+    "officialName": "가족생활관4",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.1
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=220"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "934",
+      "officialSeq": 220,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707893",
+    "buildingNumber": "933",
+    "officialSeq": 219,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 933와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "933",
+    "officialName": "가족생활관3",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.74
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=219"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "933",
+      "officialSeq": 219,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707894",
+    "buildingNumber": "932",
+    "officialSeq": 218,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 932와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "932",
+    "officialName": "가족생활관2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.94
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=218"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "932",
+      "officialSeq": 218,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/439707895",
+    "buildingNumber": "931",
+    "officialSeq": 217,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 931와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "931",
+    "officialName": "가족생활관1",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.26
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=217"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "931",
+      "officialSeq": 217,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/455025059",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "미대 교양실습동 옆의 작은 무명 윤곽이다. 공식 52-1동 점은 다른 본체 안에 있고 이 시설의 번호와 용도를 확인하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "52-1",
+      "officialSeq": 66,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/456300256",
+    "buildingNumber": "919",
+    "officialSeq": 209,
+    "status": "verified",
+    "reason": "OSM 이름은 919B이며 서울대 공식 자료도 919동의 A, B, C, D 구분을 사용한다. 공식 색인은 919동을 한 점으로 제공하므로 각 날개와 점 사이의 거리만으로 다른 건물에 연결하면 안 된다. 직접 확인한 공식 사진은 입구에 A동이 표시돼 있다. B동 외관에 A동 사진을 그대로 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "919B",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 2.13
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=209",
+      "https://map.snu.ac.kr/m/facility_map.action?convin_inst_knd_cd=0",
+      "https://www.snu.ac.kr/snunow/snu_story?bbsidx=167507&md=v"
+    ],
+    "photoScope": "공식 사진은 A동이며 이 날개의 외관은 미확인이다.",
+    "wing": "B",
+    "automaticCandidate": {
+      "buildingNumber": "919",
+      "officialSeq": 209,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/456356711",
+    "buildingNumber": "153",
+    "officialSeq": 173,
+    "status": "verified",
+    "reason": "공식 153동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "우정원 글로벌사회공헌센터(153동)",
+    "officialName": "우정원 글로벌사회공헌센터",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.4
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=173"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "153",
+      "officialSeq": 173,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/456356713",
+    "buildingNumber": "71-1",
+    "officialSeq": null,
+    "status": "verified",
+    "reason": "서울대 공간 탐방 기사가 동 번호 71-1과 체육문화교육연구동 명칭을 명시하며 여러 방향 사진을 제공한다. 정면 사진의 71-1 표시와 OSM 명칭이 일치한다.",
+    "appearanceUsable": true,
+    "osmName": "체육문화교육연구동(71-1동)",
+    "officialName": "체육문화교육연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [
+      "https://nursing.snu.ac.kr/board/notice?bbsidx=156722&bm=down&fileidx=67308",
+      "https://snu.ac.kr/snunow/snu_story?bbsidx=123072&md=v"
+    ],
+    "photoScope": "새 공식 외관 자료를 직접 확인했다. sources/profiles-supplemental.json의 OSM ID별 프로필과 제한을 따른다.",
+    "rejectedOfficialNumbers": [
+      "153"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "153",
+      "officialSeq": 173,
+      "pointInside": false
+    },
+    "previousAppearanceReason": "OSM 이름에 체육문화교육연구동 71-1이 명시돼 있고 공식 대학원 안내에도 71-1동이 있다. 공식 사진 색인에는 해당 번호가 없다. 가장 가까운 153동 우정원은 별도 건물이므로 연결하지 않는다.",
+    "supplementalReference": "sources/profiles-supplemental.json"
+  },
+  {
+    "osmId": "way/460919054",
+    "buildingNumber": "42-1",
+    "officialSeq": 52,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 42-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "42-1동",
+    "officialName": "슬로싱실험동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.85
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=52"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "42-1",
+      "officialSeq": 52,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/460919056",
+    "buildingNumber": "45",
+    "officialSeq": 57,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 45와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "45동",
+    "officialName": "천문대(신)",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.63
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=57"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "45",
+      "officialSeq": 57,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482207537",
+    "buildingNumber": "302",
+    "officialSeq": 188,
+    "status": "verified",
+    "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "제2공학관",
+    "officialName": "제2공학관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 0.9
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "302",
+      "officialSeq": 188,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220667",
+    "buildingNumber": "900",
+    "officialSeq": 201,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 900와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "900",
+    "officialName": "(관악사)대학원 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.8
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=201"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "900",
+      "officialSeq": 201,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220668",
+    "buildingNumber": "922",
+    "officialSeq": 212,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 922와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "922",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 2.42
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=212"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "922",
+      "officialSeq": 212,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220670",
+    "buildingNumber": "924",
+    "officialSeq": 214,
+    "status": "verified",
+    "reason": "OSM 이름의 924와 공식 번호가 일치한다. 공식 점은 윤곽 경계에서 약 2.5m 밖에 있어 위치도 대응한다.",
+    "appearanceUsable": true,
+    "osmName": "924",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 2.53
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=214"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "924",
+      "officialSeq": 214,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/482220671",
+    "buildingNumber": "919",
+    "officialSeq": 209,
+    "status": "verified",
+    "reason": "OSM 이름은 919D이며 서울대 공식 자료도 919동의 A, B, C, D 구분을 사용한다. 공식 색인은 919동을 한 점으로 제공하므로 각 날개와 점 사이의 거리만으로 다른 건물에 연결하면 안 된다. 직접 확인한 공식 사진은 입구에 A동이 표시돼 있다. D동 외관에 A동 사진을 그대로 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "919D",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 43.78
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=209",
+      "https://map.snu.ac.kr/m/facility_map.action?convin_inst_knd_cd=0",
+      "https://www.snu.ac.kr/snunow/snu_story?bbsidx=167507&md=v"
+    ],
+    "photoScope": "공식 사진은 A동이며 이 날개의 외관은 미확인이다.",
+    "rejectedOfficialNumbers": [
+      "906"
+    ],
+    "wing": "D",
+    "automaticCandidate": {
+      "buildingNumber": "906",
+      "officialSeq": 207,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/482220672",
+    "buildingNumber": "906",
+    "officialSeq": 207,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 906와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "906",
+    "officialName": "(관악사)대학원 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.16
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=207"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "906",
+      "officialSeq": 207,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220673",
+    "buildingNumber": "904",
+    "officialSeq": 205,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 904와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "904",
+    "officialName": "(관악사)대학원 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 0.48
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=205"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "904",
+      "officialSeq": 205,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220675",
+    "buildingNumber": "905",
+    "officialSeq": 206,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 905와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "905",
+    "officialName": "(관악사)대학원 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.36
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=206"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "905",
+      "officialSeq": 206,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220678",
+    "buildingNumber": "903",
+    "officialSeq": 204,
+    "status": "verified",
+    "reason": "OSM 이름의 903과 공식 번호가 일치한다. 공식 점은 윤곽 경계에서 약 2.2m 밖에 있어 위치도 대응한다.",
+    "appearanceUsable": true,
+    "osmName": "903",
+    "officialName": "(관악사)대학원 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 2.17
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=204"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "903",
+      "officialSeq": 204,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/482220679",
+    "buildingNumber": "923",
+    "officialSeq": 213,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 923와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "923",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.09
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=213"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "923",
+      "officialSeq": 213,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220680",
+    "buildingNumber": "902",
+    "officialSeq": 203,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 902와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "902",
+    "officialName": "(관악사)대학원 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.43
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=203"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "902",
+      "officialSeq": 203,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482220682",
+    "buildingNumber": "901",
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "OSM은 901동이고 공식 대학원 안내에도 기숙사 901동 시설이 있다. 공식 사진 색인에는 901이 없으며 가까운 900동은 별도 윤곽이다. 900동 사진을 901동에 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "901",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [
+      "https://nursing.snu.ac.kr/board/notice?bbsidx=156722&bm=down&fileidx=67308"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "rejectedOfficialNumbers": [
+      "900"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "900",
+      "officialSeq": 201,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/482220683",
+    "buildingNumber": "921",
+    "officialSeq": 211,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 921와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "921",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 0.64
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=211"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "921",
+      "officialSeq": 211,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482425583",
+    "buildingNumber": "919",
+    "officialSeq": 209,
+    "status": "verified",
+    "reason": "OSM 이름은 919A이며 서울대 공식 자료도 919동의 A, B, C, D 구분을 사용한다. 공식 색인은 919동을 한 점으로 제공하므로 각 날개와 점 사이의 거리만으로 다른 건물에 연결하면 안 된다. 직접 확인한 공식 사진은 입구에 A동이 표시돼 있다. A동 사진만 이 윤곽의 참고로 사용한다.",
+    "appearanceUsable": true,
+    "osmName": "919A",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 39.05
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=209",
+      "https://map.snu.ac.kr/m/facility_map.action?convin_inst_knd_cd=0",
+      "https://www.snu.ac.kr/snunow/snu_story?bbsidx=167507&md=v"
+    ],
+    "photoScope": "사진의 A동 입구 표시 확인.",
+    "wing": "A",
+    "automaticCandidate": {
+      "buildingNumber": "919",
+      "officialSeq": 209,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/482425584",
+    "buildingNumber": "919",
+    "officialSeq": 209,
+    "status": "verified",
+    "reason": "OSM 이름은 919C이며 서울대 공식 자료도 919동의 A, B, C, D 구분을 사용한다. 공식 색인은 919동을 한 점으로 제공하므로 각 날개와 점 사이의 거리만으로 다른 건물에 연결하면 안 된다. 직접 확인한 공식 사진은 입구에 A동이 표시돼 있다. C동 외관에 A동 사진을 그대로 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "919C",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 17.26
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=209",
+      "https://map.snu.ac.kr/m/facility_map.action?convin_inst_knd_cd=0",
+      "https://www.snu.ac.kr/snunow/snu_story?bbsidx=167507&md=v"
+    ],
+    "photoScope": "공식 사진은 A동이며 이 날개의 외관은 미확인이다.",
+    "wing": "C",
+    "automaticCandidate": {
+      "buildingNumber": "919",
+      "officialSeq": 209,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/482425585",
+    "buildingNumber": "925",
+    "officialSeq": 215,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 925와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "925",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.34
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=215"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "925",
+      "officialSeq": 215,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482425586",
+    "buildingNumber": "926",
+    "officialSeq": 216,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 926와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "926",
+    "officialName": "(관악사)학부 생활관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 1.16
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=216"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "926",
+      "officialSeq": 216,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/482425587",
+    "buildingNumber": "920",
+    "officialSeq": 210,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 920와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "920",
+    "officialName": "관악사후생관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.44
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=210"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "920",
+      "officialSeq": 210,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/700872151",
+    "buildingNumber": "944",
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "공식 수강편람은 삼성전자 서울대연구소를 944동으로 명시한다. 공식 사진 색인에는 944가 없다. 자동 후보 936은 교직원아파트로 전혀 다른 건물이므로 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "삼성전자서울대연구소",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [
+      "https://snuc.snu.ac.kr/wp-content/uploads/sites/305/2025/07/%E2%98%852025%ED%95%99%EB%85%84%EB%8F%84-2%ED%95%99%EA%B8%B0-%EA%B8%B0%EC%B4%88%EA%B5%90%EC%96%91-%EC%88%98%EA%B0%95%ED%8E%B8%EB%9E%8C%EB%B0%B0%ED%8F%AC_20250707.pdf"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "rejectedOfficialNumbers": [
+      "936"
+    ],
+    "automaticCandidate": {
+      "buildingNumber": "936",
+      "officialSeq": 222,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/777502176",
+    "buildingNumber": "312",
+    "officialSeq": 192,
+    "status": "verified",
+    "reason": "공식 312동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "appearanceUsable": true,
+    "osmName": "312 정밀기계설계 실험동",
+    "officialName": "정밀기계연구소실험연구동",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 6.4
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=192"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "312",
+      "officialSeq": 192,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/892896238",
+    "buildingNumber": "35",
+    "officialSeq": 44,
+    "status": "verified",
+    "reason": "OSM의 건물 번호 35와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "appearanceUsable": true,
+    "osmName": "공과대학",
+    "officialName": "공학관6",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 11.76
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=44"
+    ],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "35",
+      "officialSeq": 44,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/905718842",
+    "buildingNumber": "69",
+    "officialSeq": 88,
+    "status": "verified",
+    "reason": "관리원 공식 시설 안내가 위치를 69동으로 명시하고 사진에도 69 표시가 보인다. 공식 연혁은 2019년 8월 재건축 준공을 기록한다.",
+    "appearanceUsable": true,
+    "osmName": "실험동물자원관리원",
+    "officialName": "실험동물자원관리원",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 7.24
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=88",
+      "https://ilar.snu.ac.kr/03_research-facility/facility-1/",
+      "https://ilar.snu.ac.kr/01_intro/history/"
+    ],
+    "photoScope": "새 공식 외관 자료를 직접 확인했다. sources/profiles-supplemental.json의 OSM ID별 프로필과 제한을 따른다.",
+    "automaticCandidate": {
+      "buildingNumber": "69",
+      "officialSeq": 88,
+      "pointInside": true
+    },
+    "previousAppearanceReason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+    "supplementalReference": "sources/profiles-supplemental.json"
+  },
+  {
+    "osmId": "way/1469808348",
+    "buildingNumber": "149",
+    "officialSeq": 168,
+    "status": "verified",
+    "reason": "이름 없는 grandstand 윤곽 안에 공식 종합운동장본부석 149동 점이 있다. 같은 자리의 roof 윤곽과 본부석 본체를 구분해 연결한다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": "종합운동장본부석",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.4
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=168"
+    ],
+    "photoScope": "운동장 본부석. 일반 강의동 외관으로 적용하지 않는다.",
+    "automaticCandidate": {
+      "buildingNumber": "149",
+      "officialSeq": 168,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/1469808353",
+    "buildingNumber": "149",
+    "officialSeq": 168,
+    "status": "verified",
+    "reason": "이름 없는 roof 윤곽 안에 공식 종합운동장본부석 149동 점이 있다. 별도 grandstand 윤곽 위의 지붕 부분이므로 독립된 다층 건물 외관을 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": "종합운동장본부석",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 3.4
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=168"
+    ],
+    "photoScope": "본부석의 지붕 구성 부분. 독립 건물 사진 적용 대상이 아니다.",
+    "automaticCandidate": {
+      "buildingNumber": "149",
+      "officialSeq": 168,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/1469808354",
+    "buildingNumber": null,
+    "officialSeq": null,
+    "status": "unresolved",
+    "reason": "동원생활관 부근의 약 5m x 14m 무명 윤곽이다. 공식 113동 점은 본체 안에 있고 이 시설까지 약 51m 떨어져 있다. 용도와 소속을 확인하지 못했다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": null,
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [],
+    "sourceUrls": [],
+    "photoScope": "공식 색인 사진 기준. 촬영일, 현재 외관과의 일치, 보이지 않는 면은 확인하지 않았다.",
+    "automaticCandidate": {
+      "buildingNumber": "113",
+      "officialSeq": 130,
+      "pointInside": false
+    }
+  },
+  {
+    "osmId": "way/1485386282",
+    "buildingNumber": "43-2",
+    "officialSeq": 255,
+    "status": "verified",
+    "reason": "공식 2026학년도 입시설명회 자료 18쪽 사진에 43-2 번호가 보이고 14쪽 배치도도 별도 건물로 표시한다. 공식 캠퍼스 지도 점과 OSM 명칭이 이 윤곽에 대응한다.",
+    "appearanceUsable": true,
+    "osmName": "데이터사이언스대학원",
+    "officialName": "데이터사이언스대학원 및 공과대학 강의동 2",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 5.99
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=255",
+      "https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf",
+      "https://gsds.snu.ac.kr/about/location/"
+    ],
+    "photoScope": "새 공식 외관 자료를 직접 확인했다. sources/profiles-supplemental.json의 OSM ID별 프로필과 제한을 따른다.",
+    "automaticCandidate": {
+      "buildingNumber": "43-2",
+      "officialSeq": 255,
+      "pointInside": true
+    },
+    "previousAppearanceReason": "공식 43-2동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+    "supplementalReference": "sources/profiles-supplemental.json"
+  },
+  {
+    "osmId": "way/1530459898",
+    "buildingNumber": "32",
+    "officialSeq": 40,
+    "status": "unresolved",
+    "reason": "공식 옛 32동 점이 윤곽 안에 있지만 OSM은 construction으로 표시한다. 서울대 공대가 31~32동 증개축과 간호대 이전 공사를 공지했으므로 옛 32동 사진을 이 새 공사 윤곽의 외관으로 적용하지 않는다.",
+    "appearanceUsable": false,
+    "osmName": "",
+    "officialName": "공학관3",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 20.71
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=40",
+      "https://eng.snu.ac.kr/research/research-achievements?bbsidx=6158&md=v"
+    ],
+    "photoScope": "기존 32동 사진과 현재 공사 윤곽의 시기가 다르다.",
+    "automaticCandidate": {
+      "buildingNumber": "32",
+      "officialSeq": 40,
+      "pointInside": true
+    }
+  },
+  {
+    "osmId": "way/1537839925",
+    "buildingNumber": "16",
+    "officialSeq": 18,
+    "status": "verified",
+    "reason": "경제학부 2026년 4월 소식지 1쪽의 한국경제혁신센터 1단계 완료 기사와 실제 항공사진을 확인했다. 사진 앞의 101동 아시아연구소, 뒤의 사회과학관과의 배치가 OSM 증축부 위치와 대응한다. 기사에는 2025년 12월 신축 건물 입주가 명시돼 있다.",
+    "appearanceUsable": true,
+    "osmName": "한국경제혁신센터",
+    "officialName": "한국경제혁신센터 증축부",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": false,
+    "footprintPointChecks": [
+      {
+        "inside": false,
+        "edgeDistanceM": 3.78
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=18",
+      "https://econbk21.snu.ac.kr/%EC%B0%BE%EC%95%84%EC%98%A4%EC%8B%9C%EB%8A%94%EA%B8%B82/",
+      "https://econ.snu.ac.kr/announcement/notice?bbsidx=10696&bm=v&page=356",
+      "https://econ.snu.ac.kr/about/newsletter?mode=download&seqidx=51"
+    ],
+    "photoScope": "새 공식 외관 자료를 직접 확인했다. sources/profiles-supplemental.json의 OSM ID별 프로필과 제한을 따른다.",
+    "automaticCandidate": {
+      "buildingNumber": "16",
+      "officialSeq": 18,
+      "pointInside": false
+    },
+    "previousAppearanceReason": "경제학부 BK21의 공식 주소가 한국경제혁신센터를 16동으로 명시한다. 공식 공지에서 16동 리모델링과 센터 증개축 공사도 확인했다. 다만 공식 사진 점은 기존 사회과학관 쪽에 있고 이 윤곽은 증축부이므로 기존 16동 사진의 외관을 적용하지 않는다.",
+    "supplementalReference": "sources/profiles-supplemental.json"
+  },
+  {
+    "osmId": "way/1542788687",
+    "buildingNumber": "223",
+    "officialSeq": 254,
+    "status": "verified",
+    "reason": "서울대 빅데이터 핀테크 AI 고급 전문가 과정 사무국의 방문 안내가 우석경제관 223동 외관과 계단을 명시하며 해당 사진을 제공한다. 공식 지도 좌표와 건물명도 OSM과 일치한다.",
+    "appearanceUsable": true,
+    "osmName": "우석경제관",
+    "officialName": "우석경제관",
+    "footprintCount": 1,
+    "officialPointInAnyFootprint": true,
+    "footprintPointChecks": [
+      {
+        "inside": true,
+        "edgeDistanceM": 9.5
+      }
+    ],
+    "sourceUrls": [
+      "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=254",
+      "https://www.snukdt.com/abs/notice/notice.php?code=notice&idx=219&page=1&ptype=view"
+    ],
+    "photoScope": "새 공식 외관 자료를 직접 확인했다. sources/profiles-supplemental.json의 OSM ID별 프로필과 제한을 따른다.",
+    "automaticCandidate": {
+      "buildingNumber": "223",
+      "officialSeq": 254,
+      "pointInside": true
+    },
+    "previousAppearanceReason": "공식 우석경제관 이름이 일치하고 공식 좌표도 윤곽 중심과 거의 같다. 공식 색인에 사진이 없어 위치와 이름만 연결한다.",
+    "supplementalReference": "sources/profiles-supplemental.json"
+  }
+]

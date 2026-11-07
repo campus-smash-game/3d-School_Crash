@@ -1,0 +1,284 @@
+{
+  "title": "222동 남쪽 인접 무명 윤곽과 실제 도로 공간 대조",
+  "reviewedAt": "2026-11-05T14:19:42.353483+00:00",
+  "releaseContext": {
+    "baselineHead": "2e4f2dc7cee49005bd2ec1905f4cc635781ded52",
+    "buildingId": "way/455025059",
+    "runtimeChangedByThisReviewer": false,
+    "priorRelease29RecordPreserved": true
+  },
+  "conclusion": {
+    "observed": "2026년 8월 로드뷰의 연속된 도로 시점과 2025년 선택 스카이뷰에서 222동 남쪽과 220동 서쪽 사이의 차도, 낮은 콘크리트 벽, 격자, 수목과 보행 공간을 확인했다. 이 범위에 독립된 14m 높이의 4층 몸체는 보이지 않는다.",
+    "mapIdentity": "작은 원본 윤곽의 네 모서리를 사진 속 특정 구조의 네 모서리와 정합하지 못했다. 이 윤곽이 낮은 옹벽이나 지하 구조를 뜻한다고 확정하지 않는다. 철거 이력도 확인하지 않았다.",
+    "modelImplication": "14m와 4층은 원본 제원이 아닌 일반 모델의 추정값이다. 관측한 차도 공간과 충돌하는 해당 일반 체적을 제외하는 근거로 사용할 수 있다. 낮은 시설을 별도로 만들 때에는 사진에서 확인한 형태와 위치 근사를 명시해야 한다.",
+    "notSurveyed": [
+      "도로 폭과 양방향 차선의 정확한 폭",
+      "낮은 벽과 격자의 높이 및 소속",
+      "수목에 가린 상부와 뒤쪽 공간",
+      "작은 원본 윤곽과 낮은 시설의 동일성"
+    ]
+  },
+  "observations": [
+    {
+      "id": "30-rv-2760",
+      "type": "kakao-roadview",
+      "sourceUrl": "https://kko.to/fmZ6Q7AEkn",
+      "panoId": "1213022760",
+      "captureMonth": "2026-08",
+      "captureMonthReadFromUi": true,
+      "urlCoordinates": {
+        "urlX": 489695,
+        "urlY": 1101287
+      },
+      "screenshots": [
+        {
+          "file": "artifacts/living-science-review/output/playwright/30-first-ui.jpg",
+          "sha256": "d702db80fbc4b1b2e849ca8b36a49134387f73d1c24fbce243f0d5124532f84d",
+          "directlyViewed": true
+        }
+      ],
+      "facts": [
+        "222동 통과구 옆에 볼록거울과 회색 사각 보도가 보인다.",
+        "보도 뒤 낮은 콘크리트 벽의 하부에 가로로 긴 금속 격자가 있고 위쪽에는 수목이 있다.",
+        "차도와 보도 사이에는 반복된 둥근 고리 모양의 금속 난간이 있다. 흰 승용차가 차도 쪽에 보인다."
+      ],
+      "limitations": [
+        "격자를 환기 설비로 볼 수 있으나 설비 명칭과 소속 건물은 확인하지 않았다.",
+        "수목에 가린 구조를 보이는 것으로 처리하지 않았다."
+      ]
+    },
+    {
+      "id": "30-rv-intermediate",
+      "type": "kakao-roadview",
+      "sourceContext": "2760 화면의 남동쪽 이동 화살표를 한 번 눌렀다.",
+      "panoId": null,
+      "captureMonth": "2026-08",
+      "screenshots": [
+        {
+          "file": "artifacts/living-science-review/output/playwright/30-southeast-step1-ui.jpg",
+          "sha256": "92efd5c6c86bcfe02798516a214ab373deacdf45512fe42ba29b5c1d35516c79",
+          "directlyViewed": true
+        }
+      ],
+      "facts": [
+        "낮은 벽과 격자, 차도 옆 차량을 다른 거리에서 확인했다."
+      ],
+      "limitations": [
+        "화면은 기존 2762 자료와 대응하지만 이동 직후 주소창에는 최초 주소가 남았다. 이 캡처의 파노라마 ID를 주소창만으로 확정하지 않았다.",
+        "기존 두 번째 공유 링크 https://kko.to/Zi7nJGPRQO 는 이전 관측 근거로 보존하며 이번 캡처의 직접 공유 링크로 대체하지 않는다."
+      ]
+    },
+    {
+      "id": "30-rv-2764",
+      "type": "kakao-roadview",
+      "sourceUrl": "https://kko.to/gq-gd54A6M",
+      "panoId": "1213022764",
+      "captureMonth": "2026-08",
+      "captureMonthReadFromUi": true,
+      "urlCoordinates": {
+        "urlX": 489722,
+        "urlY": 1101247
+      },
+      "sharedView": {
+        "pan": 15.1,
+        "tilt": -5.0,
+        "zoom": 1
+      },
+      "navigation": "2760에서 남동쪽 도로 화살표로 두 번 이동한 뒤 화면을 돌렸다. 실제 공유 메뉴의 현재페이지 URL을 새 탭에 열어 pano1213022764를 확인했다.",
+      "shareSnapshot": "artifacts/living-science-review/output/playwright/30-oblique-share.yml",
+      "resolvedSnapshot": "artifacts/living-science-review/output/playwright/30-new-pano-share-resolved.yml",
+      "screenshots": [
+        {
+          "file": "artifacts/living-science-review/output/playwright/30-southeast-step2-ui.jpg",
+          "sha256": "502cd7b7e382720a4224736ae27ef9ceada92e301d5b7c8bac94a6a17727c722",
+          "directlyViewed": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/30-adjacent-oblique-ui.jpg",
+          "sha256": "acddab09e2ef9855b17e4c8c7fbf01b519d9ffcd57e3f26dc202570d32b86032",
+          "directlyViewed": true
+        }
+      ],
+      "facts": [
+        "222동이 왼쪽, 220동으로 대응하는 긴 벽돌 건물이 오른쪽인 화면에서 두 몸체 사이 낮은 벽과 식재, 도로를 함께 확인했다.",
+        "오른쪽 벽돌 몸체의 출입문 앞에는 벽돌 포장, 낮은 벽돌 화단과 금속 난간이 있고 그 보행면이 왼쪽으로 이어진다.",
+        "도로 바로 옆 낮은 회색 보도와 그보다 높은 출입 보행면 사이에 콘크리트 벽이 보인다.",
+        "도로 앞쪽에는 여러 승용차가 있으며 독립된 작은 4층 건물은 보이지 않는다."
+      ],
+      "limitations": [
+        "사진 속 경사로의 정확한 경사와 폭을 측정하지 않았다.",
+        "220동 식별은 기존 지도와 두 건물의 상대 배치에 근거하며 이 시점에서 새 건물 정보 표시를 누르지는 않았다.",
+        "사진의 차량은 촬영 순간의 관측이며 현재 운행 방향이나 도로 폭의 실측 근거가 아니다."
+      ]
+    },
+    {
+      "id": "30-sky-2025",
+      "type": "kakao-skyview",
+      "openedFrom": "https://kko.to/gq-gd54A6M",
+      "selectedYear": "2025",
+      "yearSelectionDirectlyConfirmed": true,
+      "screenshots": [
+        {
+          "file": "artifacts/living-science-review/output/playwright/30-sky-year-selected-ui.jpg",
+          "sha256": "267f2c69bea5a79039b1bd109cec6b65bc50b7fbb3ef8595dafa24ffc72d978f",
+          "directlyViewed": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/30-sky2025-map-ui.jpg",
+          "sha256": "dffa8b9f6da290b7bf069a1771f6c6b6664cd6f69b1f0e44b87455547edcd696",
+          "directlyViewed": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/30-sky2025-gap-close-ui.jpg",
+          "sha256": "c2acd3a2a65adf796f8009975463f74531b12dea998f164b9112c7c03ee2f2fd",
+          "directlyViewed": true
+        }
+      ],
+      "facts": [
+        "스카이뷰의 연도 목록에서 2025를 선택했고 선택 표시와 화면의 2025년 촬영지역 문구를 확인했다.",
+        "222동 남쪽 태양광 지붕 아래 회색 포장 구간과 220동 서쪽 차로를 확대해 확인했다. 이 사이에 독립된 4층 몸체는 보이지 않는다."
+      ],
+      "limitations": [
+        "개별 항공 타일의 정확한 촬영일은 확인하지 않았다. 2025는 사용자가 선택한 화면의 연도이다.",
+        "작은 원본 도형을 항공사진에 정밀 투영하지 않았으므로 회색 포장 구간과 원본 도형의 동일성을 확정하지 않는다.",
+        "30-sky2025-close-ui.jpg는 실제 2025 선택 전에 찍힌 중간 캡처다. 파일명만으로 촬영 연도를 판단하지 않으며 최종 근거에서 제외했다."
+      ]
+    }
+  ],
+  "rawMap": {
+    "source": "sources/campus.osm",
+    "buildingTags": {
+      "building": "yes"
+    },
+    "wayTimestamp": "2016-11-22T07:08:43Z",
+    "vertexTimestamp": "2023-06-29T14:01:09Z",
+    "timestampMeaning": "way의 기록 시점과 꼭짓점의 수정 시점이 다르다. 2016년 정보를 곧 2016년 현장 외곽이라고 해석하지 않는다.",
+    "pointsD": [
+      [
+        443.32,
+        -258.91
+      ],
+      [
+        449.1,
+        -254.58
+      ],
+      [
+        457.35,
+        -264.69
+      ],
+      [
+        451.29,
+        -268.87
+      ]
+    ],
+    "centroidD": [
+      450.265,
+      -261.7625
+    ],
+    "areaSquareMeters": 93.91525,
+    "processedHeight": 14,
+    "processedLevels": 4,
+    "heightEstimated": true,
+    "levelsEstimated": true,
+    "projectionReview": "scene과 controls의 독립 계산에서 원본 경위도와 가공 도형의 차이는 최대 약 4.44mm의 반올림 범위였다. 투영 오류로 작은 건물이 잘못 옮겨진 것으로 보이지 않는다."
+  },
+  "serviceCoordinateCrosscheck": {
+    "calculatedBy": "scene",
+    "evidence": "artifacts/living-science-review/scene-30-map-diagnostic.json",
+    "method": "공유 URL의 WCONGNAMUL 좌표를 2.5로 나눈 WTM(EPSG:5181)에 GRS80 횡메르카토르 역산을 적용한 뒤 프로젝트의 기존 경위도 투영식을 적용했다. 이는 서비스 좌표의 계산값이며 현장 측량값이 아니다.",
+    "citations": [
+      "https://devtalk.kakao.com/t/drawing-library/139708",
+      "https://devtalk.kakao.com/t/setposition/139142",
+      "https://apis.map.kakao.com/ios_v2/references/Classes/MapCoordConverter.html"
+    ],
+    "panos": [
+      {
+        "panoId": "1213022760",
+        "urlX": 489695,
+        "urlY": 1101287,
+        "approximateD": [
+          442.8143839223657,
+          -258.4454073169485
+        ]
+      },
+      {
+        "panoId": "1213022762",
+        "urlX": 489712,
+        "urlY": 1101270,
+        "approximateD": [
+          449.6091292144109,
+          -265.2624759388982
+        ]
+      },
+      {
+        "panoId": "1213022764",
+        "urlX": 489722,
+        "urlY": 1101247,
+        "approximateD": [
+          453.60859517307637,
+          -274.4881492467903
+        ]
+      }
+    ],
+    "interpretation": "공유좌표를 환산한 2762 위치가 작은 원본 윤곽 안에 놓인다. 영상에서 차도와 차량이 보이는 점과 함께 원본 윤곽의 위치 또는 현재 체적 해석을 재검토할 단서가 된다.",
+    "limitations": [
+      "urlX와 urlY가 실제 촬영 카메라 중심의 정확한 측량 좌표인지 확인하지 못했다.",
+      "좌표식의 수치 왕복 오차가 작아도 현장 위치 오차가 같은 수준이라는 뜻은 아니다.",
+      "이 계산만으로 지도 윤곽이 틀렸거나 시설이 철거됐다고 확정하지 않는다."
+    ]
+  },
+  "roadConflictCrosscheck": {
+    "calculatedBy": "controls",
+    "evidence": "artifacts/living-science-review/controls-30-summary.json",
+    "roadId": "way/455018306/208",
+    "rawRoadTags": {
+      "highway": "service"
+    },
+    "width": 5.5,
+    "widthEstimated": true,
+    "twoWayEstimated": true,
+    "centerlineInsideFootprint": false,
+    "northboundLaneInsideFootprintMeters": 2.4581000438280634,
+    "laneRunD": {
+      "from": [
+        444.8535577204091,
+        -260.82646610982124
+      ],
+      "to": [
+        443.50602325145536,
+        -258.7706434811762
+      ],
+      "length": 2.4581000438280634
+    },
+    "interpretation": "추정 도로 폭과 양방향 차선 배치에서는 북향 차선이 작은 도형 안으로 들어간다. 원본 선과 폭 추정, 사진의 실제 도로 공간을 구분해 보정해야 한다. 일반 모델의 높이만 낮춰서는 차체 높이의 외벽 충돌이 남는다. 이 검토자는 해당 물리 검사를 새로 실행하지 않았고 controls의 결과를 읽었다."
+  },
+  "signage": {
+    "newReadableExteriorShopSigns": [],
+    "confirmedTextForReproduction": [],
+    "note": "새로 읽을 수 있는 가게 간판이나 시설 명칭을 확인하지 못했다. 작은 문패와 게시물의 문구는 만들지 않는다."
+  },
+  "excludedIdentityEvidence": [
+    {
+      "url": "https://foodnutrition.snu.ac.kr/오시는-길/",
+      "reason": "220 공유 주차장과 222 방면 출구를 설명하지만 작은 남쪽 윤곽을 특정하지 않는다. 지하 구조라는 판정에 사용하지 않는다."
+    }
+  ],
+  "preservedEvidence": {
+    "release29Source": "sources/living-science-south-passage-roadview-review.json",
+    "release29Artifact": "artifacts/living-science-review/29-adjacent-footprint-review.json",
+    "history": "이전 기록은 방향상 낮은 시설 후보라고만 판단했다. 이번에는 연속 도로 시점, 새 공유 링크, 선택 연도 스카이뷰, 별도 좌표 환산과 도로 충돌 진단을 추가했다. 동일 구조 미확정은 유지한다."
+  },
+  "sourceHashes": {
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/living-science-south-passage-roadview-review.json": "050f34305bf6e7d4c3d4c33ab0297c40e1fcd4318ba93fea4802f2f26c25be00",
+    "artifacts/living-science-review/29-adjacent-footprint-review.json": "a784e539790743d30b8dbd149a339958b0bab5c71cbced829a3705d43cf6d90b",
+    "artifacts/living-science-review/scene-30-map-diagnostic.json": "657abd953f60e90d99a600220f8ba4b8a3e5291da85d4f9c6e32b36330738bf1",
+    "artifacts/living-science-review/controls-30-summary.json": "4c512657a25199181ef2fcc373f490cff6efe3a3fcb685a5314c93f0a204e739"
+  },
+  "scopeLimits": [
+    "캠퍼스 전체 대조 완료를 뜻하지 않는다.",
+    "이번 관측자는 실행 소스, 원본 지도와 지형을 수정하지 않았다.",
+    "root와 scene이 진행하는 후속 구현 및 검사는 이 관측 기록과 별도이다."
+  ]
+}

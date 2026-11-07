@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05",
+  "area": "규장각 103동의 북동쪽 현관 접근부와 동쪽 보도",
+  "buildingId": "way/238935852",
+  "buildingNumber": "103",
+  "status": "partial-roadview-observation",
+  "implementationChangedByThisReview": false,
+  "wholeBuildingCompared": false,
+  "scope": {
+    "method": "별도 Chrome 연구 탭에서 카카오맵 검색 결과의 로드뷰를 열고 도로 화살표와 화면 회전으로 인접 지점을 직접 관찰했다.",
+    "captureMethod": "CUA의 실제 브라우저 화면 캡처를 D 드라이브에 보존했다. 지도 서비스에서 받은 원본 파노라마 파일은 아니다.",
+    "captureMonth": "2026-08",
+    "monthBasis": "영상 로딩이 끝난 화면 왼쪽 위의 2026년 08월 표시를 직접 확인했다.",
+    "loadingCaution": "일부 페이지의 초기 로딩 중 나타난 2011.03 항목은 실제 관측 영상의 촬영일로 사용하지 않았다.",
+    "notVerified": [
+      "건물 후면과 실내",
+      "현관의 정확한 좌표, 문 폭, 계단 높이와 단수",
+      "수목에 가린 외부 계단의 양 끝과 연결층",
+      "촬영일 이후 시설 변경 여부",
+      "실제 게임의 해당 구역 화면, 보행, 모바일 성능"
+    ]
+  },
+  "observations": [
+    {
+      "id": "northeast-road",
+      "image": "../references/roadview-audit/2026-08/gyujanggak-northeast-road-ui.jpg",
+      "sha256": "5bec10bbe6a0d563e1aea8a5032d220ecea792b32bc95c27535858efe16df3c0",
+      "directlyViewed": true,
+      "captureMonth": "2026-08",
+      "shareUrl": "https://kko.to/Aubh6MMCm8",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022656&pan=241.0&tilt=1.0&zoom=2&urlLevel=3&urlX=489105&urlY=1100850",
+      "panoramaId": "1213022656",
+      "serviceCoordinates": {
+        "urlX": 489105,
+        "urlY": 1100850,
+        "basis": "공유 URL의 카카오 서비스 좌표이며 측량 좌표로 변환하지 않았다."
+      },
+      "observed": [
+        "기와지붕과 깊은 처마 아래 건물 외벽이 보이며, 보도와 건물 사이에 수목과 관목이 이어진다.",
+        "도로 가장자리에 황갈색 계열 블록 보도와 밝은 경계석이 있다.",
+        "검은 몸체와 노란 상부를 가진 낮은 볼라드, 한 등 가로등과 작은 직사각 부착물이 보인다.",
+        "주황색 콘, 검정과 노랑 띠의 이동식 차단물, 도로의 노란 사선 표시는 촬영 당시 존재한다."
+      ],
+      "uncertain": [
+        "가로등 부착물의 기능과 문구는 판독하지 못했다.",
+        "이동식 차단물의 상시 설치 여부는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "east-sidewall",
+      "image": "../references/roadview-audit/2026-08/gyujanggak-east-sidewall-ui.jpg",
+      "sha256": "fd02eac8a7020f365befac9036eef41aff2b47bb0637e18907e332196c81f9ce",
+      "directlyViewed": true,
+      "captureMonth": "2026-08",
+      "shareUrl": "https://kko.to/r-sHjmk_TQ",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022658&pan=269.4&tilt=1.0&zoom=2&urlLevel=3&urlX=489127&urlY=1100810",
+      "panoramaId": "1213022658",
+      "serviceCoordinates": {
+        "urlX": 489127,
+        "urlY": 1100810
+      },
+      "movementBasis": "첫 관측 지점에서 남동 방향 화살표로 두 번 이동하고 건물 쪽으로 회전했다.",
+      "observed": [
+        "큰 기와지붕 아래 기둥과 후퇴한 벽이 보인다.",
+        "도로 쪽 낮은 석재 벽과 어두운 세로 금속 난간, 앞의 블록 보도가 이어진다.",
+        "화면 왼쪽에 밝은 외부 계단의 일부가 보이지만 수목과 건물에 가려 양 끝은 확인되지 않는다.",
+        "붉은 접이식 차단물과 콘이 도로 가장자리에 놓여 있다."
+      ],
+      "uncertain": [
+        "계단을 특정 층이나 보행로에 연결할 근거가 부족하다.",
+        "난간 높이, 간격과 벽의 정확한 길이는 사진 비례만으로 확정하지 않는다."
+      ]
+    },
+    {
+      "id": "entrance-approach",
+      "image": "../references/roadview-audit/2026-08/gyujanggak-entrance-approach-ui.jpg",
+      "sha256": "e252aceeca733df4d44a14ee6e5fe23dbbefd64ccfb59e0ffd4d49ddf59a53b3",
+      "directlyViewed": true,
+      "captureMonth": "2026-08",
+      "shareUrl": "https://kko.to/bnuCB94ZGS",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022655&pan=249.7&tilt=1.0&zoom=2&urlLevel=3&urlX=489090&urlY=1100872",
+      "panoramaId": "1213022655",
+      "serviceCoordinates": {
+        "urlX": 489090,
+        "urlY": 1100872
+      },
+      "movementBasis": "동쪽 벽 관측 지점에서 북서 방향 화살표로 세 번 이동하고 현관 쪽으로 회전했다.",
+      "observed": [
+        "파란 독립 안내판에 103 규장각한국학연구원이라는 건물 번호와 이름이 읽힌다.",
+        "도로에서 낮은 유리 현관 앞으로 이어지는 넓은 포장 공간이 보인다.",
+        "진입부에는 큰 수목과 바위 형태의 경관 요소가 있고 현관 옆 식재와 연결된다."
+      ],
+      "uncertain": [
+        "안내판의 작은 목록은 판독하지 않았다.",
+        "전경 차량과 수목이 현관 일부와 도로 경계를 가린다.",
+        "바위의 글자와 정확한 용도는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "glass-entrance",
+      "image": "../references/roadview-audit/2026-08/gyujanggak-glass-entrance-ui.jpg",
+      "sha256": "c0c8d808a5d44f0165bea93c94f8511ee9d3bc335d3a7925eebc9b6106d09eb6",
+      "directlyViewed": true,
+      "captureMonth": "2026-08",
+      "shareUrl": "https://kko.to/TR4dfqZPH8",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022654&pan=236.6&tilt=1.0&zoom=2&urlLevel=3&urlX=489075&urlY=1100890",
+      "panoramaId": "1213022654",
+      "serviceCoordinates": {
+        "urlX": 489075,
+        "urlY": 1100890
+      },
+      "movementBasis": "직전 지점에서 북서 방향 화살표로 한 번 이동한 뒤 유리 현관을 향해 회전했다.",
+      "observed": [
+        "낮고 긴 유리 현관에 가는 수직 프레임과 여러 문 구획이 있다.",
+        "현관 위에는 얕은 차양이 있고 앞에는 낮은 단과 밝은 포장 마당이 보인다.",
+        "현관 오른쪽에 여러 사각 칸으로 나뉜 독립 게시판이 서 있다.",
+        "포장 마당은 도로 쪽으로 열려 있고 한쪽은 식재와 낮은 석재 경계로 구분된다."
+      ],
+      "uncertain": [
+        "현재 화면에서 각 문이 실제 출입문인지 고정 유리인지 모두 구분할 수 없다.",
+        "주차 차량이 앞마당 일부를 가리므로 전체 포장 외곽과 무장애 접근 경로는 확정하지 않는다.",
+        "게시물 문구와 게시판 칸 수를 완전하게 판독하지 않았다."
+      ]
+    },
+    {
+      "id": "entrance-north-junction-followup",
+      "image": "../references/roadview-audit/2026-08/gyujanggak-entrance-junction-followup-ui.jpg",
+      "sha256": "d1567999b22b804aef137446ca0d121403948e29383503c89eaadebf57ab397b",
+      "directlyViewed": true,
+      "captureMonth": "2026-08",
+      "shareUrl": "https://kko.to/TlQiwbcSuq",
+      "resolvedUrl": "https://map.kakao.com/?map_type=TYPE_MAP&map_attribute=ROADVIEW&panoid=1213022653&pan=223.2&tilt=1.0&zoom=2&urlLevel=3&urlX=489055&urlY=1100905",
+      "panoramaId": "1213022653",
+      "serviceCoordinates": {
+        "urlX": 489055,
+        "urlY": 1100905,
+        "basis": "공유 URL에 표시된 서비스 좌표이며 게임 좌표나 측량 좌표로 변환하지 않았다."
+      },
+      "movementBasis": "기존 pano 1213022654에서 북서 화살표로 한 번 이동하고 현관 쪽으로 회전했다. 공유 메뉴의 현재 페이지 URL을 새로 열어 pano 1213022653을 확인했다.",
+      "observed": [
+        "현관의 긴 유리 면과 얕은 차양은 낮은 테라스 벽 아래에서 연속된다. 높은 기와지붕은 그 뒤 왼쪽에 보인다.",
+        "현관 앞에는 넓은 밝은 포장 마당이 있고, 바로 앞 낮은 단과 금속 손잡이를 둔 완만한 접근판이 나란히 보인다.",
+        "포장 마당 오른쪽 식재 경계에 여러 칸 게시판과 작은 독립 안내판이 있다. 도로는 마당 바깥에서 서쪽 방향으로 꺾인다.",
+        "왼쪽 진입 가장자리에는 큰 바위와 수목이 있으며, 도로 가장자리에는 블록 보도와 밝은 경계석이 이어진다."
+      ],
+      "uncertain": [
+        "포장 마당의 일부는 차량과 수목에 가린다. 정확한 문 중심과 포장 외곽을 측정하지 않았다.",
+        "현관 차양의 한자는 일부 읽히지만 가린 부분까지 전체 문구를 전사하지 않는다.",
+        "접근판의 기울기, 난간 높이와 단차는 사진에서 수치로 확정하지 않는다."
+      ]
+    }
+  ],
+  "supportingSources": [
+    {
+      "kind": "official-map-photo",
+      "pageUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=115",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000112.jpg",
+      "localImage": "../references/buildings/photos/115-103.jpg",
+      "directlyViewed": true,
+      "captureMonth": null,
+      "use": "낮은 유리 현관, 앞 포장 마당과 독립 안내판의 상대 배치를 보조 대조했다. 촬영 시점을 현재 로드뷰와 같다고 보지 않는다."
+    },
+    {
+      "kind": "existing-model-notes",
+      "path": "sources/gyujanggak-model-notes.json",
+      "use": "공식 사진에 근거한 큰 지붕, 낮은 전시실과 추정 치수의 기존 설명을 확인했다."
+    },
+    {
+      "kind": "official-library-aerial-vr",
+      "pageUrl": "https://lib.snu.ac.kr/vr/",
+      "indexUrl": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+      "localIndex": "../references/exteriors/library-vr.xml",
+      "indexSha256": "d4e529be125906c677a4922222ef70f6c9f9825fa1366d6de85c64259fffc986",
+      "captureMonth": null,
+      "images": [
+        {
+          "scene": "pano9016",
+          "cubeFace": "front",
+          "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky4_9016/html5/0.jpg",
+          "localImage": "artifacts/gym-review/sky4_9016-html5-0.jpg",
+          "sha256": "80d6624c8575f4a4cb8cd090e63d57ed4d7caab2617f7bb3a61341cb55c12083",
+          "directlyViewed": true,
+          "scenePositionInIndex": {
+            "latitude": 37.460177777778,
+            "longitude": 126.95078055556
+          },
+          "observed": "화면 아래 왼쪽에 규장각의 큰 기와지붕과 그 뒤쪽의 낮은 평지붕 부분이 구분된다. 큰 지붕 아래 기둥열과 외부 계단도 보이지만 현관 문과 앞마당 경계는 가려져 있다."
+        },
+        {
+          "scene": "pano10820",
+          "cubeFace": "left",
+          "imageUrl": "https://lib.snu.ac.kr/vr/indexdata/sky11_10820/html5/3.jpg",
+          "localImage": "artifacts/science500-review/sky11-face3.jpg",
+          "sha256": "f1995936312975fa47cfda960752839538e2dfc4e54ff126fa8f9cd3ec61a71c",
+          "directlyViewed": true,
+          "scenePositionInIndex": {
+            "latitude": 37.460925,
+            "longitude": 126.95304444444
+          },
+          "observed": "문화관 뒤쪽에 규장각의 기와지붕, 낮은 평지붕 부분과 옆 도로가 함께 보인다. 문화관과 수목이 현관 하부를 가려 문 중심을 판독할 수 없다."
+        }
+      ],
+      "use": "큰 기와지붕과 낮은 전시실이 서로 다른 높이의 몸체라는 점, 주변 도로와 문화관의 상대 위치를 대조했다. 공식 VR 항공사진이며 카카오 로드뷰나 실측 배치도가 아니다."
+    },
+    {
+      "kind": "kakao-skyview-ui",
+      "pageUrl": "https://map.kakao.com/",
+      "localImage": "../references/roadview-audit/2026-08/gyujanggak-skyview-alignment-ui.jpg",
+      "sha256": "83bc5066a40a8dcf9526ed70672b83bdea6f9dbbe3902cd693eb58a4d289697b",
+      "directlyViewed": true,
+      "selectedLayer": "최근사진",
+      "captureYear": null,
+      "captureMonth": null,
+      "yearSelectionCheck": "연도 메뉴에서 최근사진이 선택된 것을 직접 확인했다. 2025 항목을 선택하려 했으나 다음 화면에서도 최근사진이 유지돼 연도 변경 성공을 확인하지 못했다. 이 항공 화면을 2025년 또는 2026년 촬영으로 표시하지 않는다.",
+      "directoryCaution": "파일은 해당 로드뷰 조사 폴더에 함께 보존했으나 폴더명 2026-08은 이 항공사진의 촬영일이 아니다.",
+      "creditVisible": "Kakao, 국토지리정보원",
+      "observed": "높은 기와지붕은 건물의 남동쪽에 있고 긴 능선은 북동쪽과 남서쪽을 잇는다. 낮은 평지붕 부분은 북서쪽에 있으며, 그 북동쪽 끝의 포장 마당이 북쪽 도로 굴곡으로 열린다.",
+      "use": "로드뷰의 현관과 마당을 원본 외곽의 북동쪽 굴곡에 대응하고 큰 지붕 장축을 대조했다. 항공사진과 지도 외곽의 높이별 차이는 측량 정합하지 않았다."
+    }
+  ],
+  "mapAlignment": {
+    "coordinateConvention": "게임 데이터의 x는 동쪽, z는 북쪽이며 미터 단위다. 렌더 좌표의 반사와 구분한다.",
+    "buildingCenter": {
+      "x": 157.1031,
+      "z": -442.8846,
+      "basis": "원본 외곽의 닫힘 중복점을 제외한 13점 평균이며 현관이나 촬영 위치가 아니다."
+    },
+    "roadCorridor": {
+      "id": "way/456487337/266",
+      "points": [
+        [
+          195.45,
+          -413.29
+        ],
+        [
+          211.94,
+          -439.57
+        ],
+        [
+          213.5,
+          -441.17
+        ]
+      ],
+      "basis": "로드뷰 소지도와 건물 동쪽 도로의 위치 관계를 원본 지도에 대조한 구역 후보다. 각 파노라마의 정확한 xz 좌표를 산출하지 않았다."
+    },
+    "northJunction": {
+      "x": 195.45,
+      "z": -413.29,
+      "connectedRoads": [
+        "way/456487335/264",
+        "way/456487337/266",
+        "way/456356734/247"
+      ],
+      "basis": "원본 지도 도로의 공유점이다. 사진의 현관 중심으로 간주하지 않는다."
+    },
+    "currentModelCanopyCenter": {
+      "x": 191.1164,
+      "z": -444.3403,
+      "basis": "현재 gyujanggakLandmark.ts의 entryX=length*0.72, entryZ=depth+0.9를 세계 좌표로 계산했다. 실제 현관 좌표의 확인값이 아니다."
+    },
+    "exactDoorAnchorVerified": false,
+    "remainingAlignment": "사진상 현관은 건물 북동쪽 도로에서 포장 마당을 통해 접근한다. 현재 모델의 차양 중심을 그대로 실제 문 위치로 채택하기 전에 현관 면, 도로 분기점과 원본 외곽의 대응을 추가 대조해야 한다.",
+    "officialAerialFollowup": {
+      "reviewedAt": "2026-11-05",
+      "status": "area-supported-exact-anchor-unresolved",
+      "confirmedRelativeForm": [
+        "공식 지도 전경 사진의 현관은 낮은 유리 전시실과 상부 테라스 아래에 있다. 큰 기와지붕의 기둥열에 바로 붙은 문으로 해석하지 않는다.",
+        "2026년 8월 로드뷰에서 이 낮은 현관 앞 포장 마당이 도로로 열리는 모습과 오른쪽 독립 게시판을 직접 확인했다.",
+        "공식 항공 VR 두 시점은 큰 지붕과 낮은 몸체, 도로의 상대 관계를 보조하지만 현관 좌표를 직접 제공하지 않는다."
+      ],
+      "candidateArea": {
+        "basis": "로드뷰 소지도와 원본 도로, 공식 전경 사진 및 항공사진을 함께 대조한 후속 검토 범위다. 아래 선과 영역은 실측 현관 외곽이나 검증된 설치 위치가 아니다.",
+        "frontageToReview": {
+          "originalVertexIndices": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "points": [
+            [
+              155.88,
+              -421.99
+            ],
+            [
+              164.44,
+              -431.3
+            ],
+            [
+              167.02,
+              -427.18
+            ],
+            [
+              173.01,
+              -433.66
+            ],
+            [
+              176.78,
+              -430.16
+            ],
+            [
+              203.66,
+              -459.24
+            ]
+          ]
+        },
+        "roadSideBoundary": {
+          "roadId": "way/456487337/266",
+          "points": [
+            [
+              195.45,
+              -413.29
+            ],
+            [
+              211.94,
+              -439.57
+            ],
+            [
+              213.5,
+              -441.17
+            ]
+          ]
+        },
+        "interpretation": "원본 외곽의 북동쪽 굴곡과 동쪽 도로 사이를 현관 및 포장 마당의 후보 구역으로 남긴다. 이 영역 전체를 포장하거나 외곽의 모든 변에 현관을 설치할 근거는 없다.",
+        "exactDoorPoint": null,
+        "exactPavingPolygon": null,
+        "roadviewCameraWorldPosition": null
+      },
+      "currentModelAnchorAssessment": "현재 차양 중심 (191.1164, -444.3403)은 모델의 비례식에서 나온 값이다. 이번 항공자료로 그 점을 실제 현관 중심으로 확인하지 못했다. 새 문이나 접근 계단의 확정 좌표로 승격하지 않는다.",
+      "notResolved": [
+        "북동쪽 원본 변 중 실제 현관 정면과 정확히 대응하는 변",
+        "항공사진 촬영일과 2026년 로드뷰 사이의 외관 변경 여부",
+        "원본 외곽의 굴곡이 지상 현관, 상부 테라스 또는 다른 높이의 외곽 중 무엇을 나타내는지",
+        "문 중심, 포장 끝선, 계단 단수와 무장애 동선의 정확한 좌표"
+      ],
+      "nextImplementationConstraint": "낮은 현관과 포장 마당의 상대 형태는 근거가 있으나 정확한 지도 접점은 미확정이다. 다음 구현에서 좌표를 정하면 게임용 근사임을 표시하고, 기존 차양 위치를 실측 기준으로 사용하지 않는다.",
+      "runtimeModified": false,
+      "coverageUnchanged": true
+    },
+    "roadviewAndSkyviewFollowup": {
+      "reviewedAt": "2026-11-05",
+      "basis": [
+        "entrance-north-junction-followup",
+        "../references/roadview-audit/2026-08/gyujanggak-skyview-alignment-ui.jpg",
+        "../references/buildings/photos/115-103.jpg"
+      ],
+      "interpretation": [
+        "긴 유리 현관과 앞마당은 남동쪽 높은 기와 몸체의 동쪽 긴 면보다 북서쪽 낮은 몸체의 북동쪽 끝에 대응하는 해석이 더 일관된다.",
+        "현관 정면과 마당은 원본 p5부터 p9까지의 굴곡 주변을 우선 후보로 삼는다. p9에서 p10으로 이어지는 긴 변의 남동쪽 부분은 높은 기와 몸체 쪽에 가까워 보인다.",
+        "높은 기와지붕의 긴 능선은 기존 모델의 u축과 직각인 v축에 가깝다. 남동쪽 높은 몸체와 북서쪽 낮은 몸체의 배치부터 바로잡은 뒤 현관을 배치해야 한다."
+      ],
+      "candidateDoorArea": {
+        "xRange": [
+          165,
+          176
+        ],
+        "zRange": [
+          -435,
+          -425
+        ],
+        "unit": "m",
+        "coordinateConvention": "data x east / z north",
+        "confidence": "visual-map-alignment-estimate",
+        "isSurveyed": false,
+        "basis": "새 로드뷰의 도로 굴곡과 항공 화면의 낮은 몸체를 원본 외곽에 시각적으로 대응한 넓은 범위다. 단일 문 중심이나 설치 허용 경계를 뜻하지 않는다."
+      },
+      "roadJunction": {
+        "x": 195.45,
+        "z": -413.29,
+        "basis": "원본 /264와 /266의 공유점이다. 실제 사진의 회전 공간 외곽을 정확히 나타내지는 않는다."
+      },
+      "currentModelAnchorCaution": "기존 차양 중심 (191.1164, -444.3403)은 새 후보보다 남동쪽에 있다. 현재 값을 실제 현관 위치로 고정하지 않으며, 수정 모델의 보행 경로와 높이는 별도 검증해야 한다.",
+      "supersedesOnly": "이전 officialAerialFollowup의 p5~p10 전체 후보를 더 좁힌 후속 해석이다. 이전 관측과 그 당시의 미확정 기록은 보존한다.",
+      "exactDoorAnchorVerified": false,
+      "exactForecourtPolygonVerified": false,
+      "runtimeModifiedByReviewer": false
+    }
+  },
+  "currentModelComparison": {
+    "reviewedSource": "src/gyujanggakLandmark.ts",
+    "reviewedSourceSha256": "44443efb564a22caf1bbcc41bf7348db2eedcdff186d9d988b0d61766e16f28f",
+    "campusDataSha256": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "alreadyRepresented": [
+      "큰 기와지붕, 깊은 처마와 기둥",
+      "낮은 전시실 유리 몸체와 차양의 개략 형태"
+    ],
+    "buildingModuleGaps": [
+      "코드는 전시실 입구의 실제 문과 표지 상세를 재현하지 않는다고 명시한다. 현재 관측한 여러 유리 문 구획과 103 안내판을 구분할 근거가 생겼다.",
+      "현관 앞 포장 마당에서 문까지 이어지는 경로, 낮은 단과 석재 경계를 별도 접근 구조로 구현하지 않았다.",
+      "동쪽 보도의 블록, 낮은 벽과 세로 난간, 가로등 및 볼라드를 건물 전용 부품으로 구성하지 않았다. 캠퍼스 공용 시설의 중복 여부는 후속 구현 전에 확인해야 한다."
+    ],
+    "recommendedNextScope": [
+      {
+        "priority": 1,
+        "area": "북동쪽 현관 앞마당과 유리 현관",
+        "proposal": "정확한 지도 면 대응을 먼저 확인한 뒤 낮은 문 구획과 얕은 차양, 포장 마당, 103 안내판 및 오른쪽 게시판을 좁은 범위로 보완한다.",
+        "preserveUncertainty": "문 폭과 높이, 게시판 크기, 안내판 좌표는 사진 근사로 기록한다. 작은 문구는 임의로 전사하지 않는다."
+      },
+      {
+        "priority": 2,
+        "area": "동쪽 service /266 주변 보도",
+        "proposal": "실제 차도 폭을 보존하며 보도 블록, 밝은 경계석, 낮은 벽과 세로 난간을 사진에 보이는 구간에서 연결한다.",
+        "preserveUncertainty": "수목에 가린 계단의 연결층은 보류한다. 콘과 이동식 차단물은 상설 시설로 확정하지 않는다."
+      }
+    ],
+    "validationNeededBeforeImplementationCompletion": [
+      "현관과 앞마당의 실제 렌더 및 충돌 표면 대조",
+      "차도와 보도를 분리한 플레이어 접근, 문 파괴 후 진입과 복원",
+      "가려지지 않는 안내판 방향과 H 반사 후 글자 방향",
+      "기존 도로 및 공용 시설과 중복 또는 침범 여부"
+    ]
+  },
+  "facilityPlacementEvidence": {
+    "referenceFacing": "도로에서 유리 현관을 바라보는 방향을 기준으로 좌우를 설명한다. 개별 시설의 지도 좌표는 미확정이다.",
+    "items": [
+      {
+        "kind": "building-sign",
+        "relativeLocation": "왼쪽 진입 가장자리의 식재와 수목 앞",
+        "observedForm": "파란 바탕의 독립 직사각 안내판과 지지대",
+        "readableText": [
+          "103",
+          "규장각한국학연구원"
+        ],
+        "sourceObservationIds": [
+          "entrance-approach",
+          "glass-entrance"
+        ],
+        "limitation": "작은 목록은 판독하지 않았다."
+      },
+      {
+        "kind": "notice-board",
+        "relativeLocation": "현관 오른쪽 포장 마당과 식재의 경계",
+        "observedForm": "밝은 사각 게시면 여러 칸과 어두운 테두리, 앞쪽의 작은 독립 안내판",
+        "sourceObservationIds": [
+          "glass-entrance",
+          "entrance-north-junction-followup"
+        ],
+        "limitation": "게시물 문구와 전체 칸 수는 확정하지 않았다."
+      },
+      {
+        "kind": "sidewalk-wall-railing",
+        "relativeLocation": "현관에서 남동쪽으로 이어지는 /266 도로의 건물 쪽 보도",
+        "observedForm": "황갈색 블록 보도와 밝은 경계석, 안쪽 낮은 석재 벽과 검은 세로 금속 난간",
+        "sourceObservationIds": [
+          "east-sidewall"
+        ],
+        "limitation": "수목에 가린 전체 길이와 남쪽 계단의 접속층은 미확정이다."
+      },
+      {
+        "kind": "streetlamp",
+        "relativeLocation": "현관 남동쪽 보도 안쪽의 식재 구간",
+        "observedForm": "원반형 갓과 하나의 밝은 등기구를 가진 가는 기둥, 중간의 작은 직사각 부착판",
+        "sourceObservationIds": [
+          "northeast-road"
+        ],
+        "limitation": "부착판의 기능과 문구, 정확한 높이와 좌표는 미확정이다."
+      },
+      {
+        "kind": "bollards",
+        "relativeLocation": "현관 남동쪽 보도의 차도 쪽 가장자리",
+        "observedForm": "검은 몸체와 노란 윗부분의 낮은 볼라드 두 개가 한 화면에서 보인다.",
+        "sourceObservationIds": [
+          "northeast-road"
+        ],
+        "limitation": "전체 설치 수를 두 개로 한정하지 않으며 간격과 높이는 추정이다."
+      }
+    ],
+    "excludeFromPermanentFacilities": [
+      "주황색 콘",
+      "검정과 노랑 띠의 이동식 차단물",
+      "붉은 접이식 차단물"
+    ],
+    "implementationScope": "문구가 읽히는 건물 안내판과 관찰한 시설 형태만 근거로 제공한다. 정확한 시설 좌표와 치수는 게임 근사로 기록하고, 차도 및 보행 폭을 별도로 검증한다."
+  }
+}

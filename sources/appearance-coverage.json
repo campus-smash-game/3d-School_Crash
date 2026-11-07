@@ -1,0 +1,3293 @@
+{
+  "totalFootprints": 207,
+  "referencedFootprints": 190,
+  "entries": [
+    {
+      "id": "relation/9741477",
+      "name": "수의대부속 동물병원",
+      "buildingNumber": "80",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=99",
+      "observations": [
+        "연한 적벽돌, 흰 창틀과 별도 유리 계단탑"
+      ],
+      "reason": "OSM 수의대부속 동물병원과 공식 80동의 명칭이 일치한다. 공식 좌표는 두 번째 외곽선 안에 있다. 원본 relation은 서로 다른 outer way 700876324와 386891111을 포함하므로 동일 도형 중복이 아니다. 두 윤곽을 병원 단위로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "relation/9741477",
+      "name": "수의대부속 동물병원",
+      "buildingNumber": "80",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=99",
+      "observations": [
+        "연한 적벽돌, 흰 창틀과 별도 유리 계단탑"
+      ],
+      "reason": "OSM 수의대부속 동물병원과 공식 80동의 명칭이 일치한다. 공식 좌표는 두 번째 외곽선 안에 있다. 원본 relation은 서로 다른 outer way 700876324와 386891111을 포함하므로 동일 도형 중복이 아니다. 두 윤곽을 병원 단위로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/93549089",
+      "name": "글로벌공학교육센터",
+      "buildingNumber": "38",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=47",
+      "observations": [
+        "청색 반사 유리와 밝은 세로 프레임의 전면 격자다. 하부 일부를 가느다란 흰 기둥이 받친다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/146155734",
+      "name": "사범대학",
+      "buildingNumber": "11",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=12",
+      "observations": [
+        "2025년 7월 동쪽 로드뷰와 공식 사진을 대조한 벽돌, 흰 골조와 처마, 층별 창과 옥상 문구",
+        "도로보다 낮은 유리 현관과 흰 차양, 계단과 난간",
+        "사범관 2 및 사범관 3 안내판과 쌍등 조명",
+        "설계자 사진과 평면도를 대조해 11동과 12동의 두 층 연결, 저층 유리 홀과 내부 계단을 보완했다."
+      ],
+      "reason": "공식 11동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "높이 14m, 4층 구성과 계단실 높이, 창과 시설 치수는 근사다.",
+        "도로 통행 폭을 확보하려고 동쪽 게임 외벽을 약 1m 안쪽으로 조정했다. 원본 지도와 표고는 보존했다.",
+        "공식 사진 촬영일과 미확인 면, 전체 실내는 확인하지 못했다. 연결부의 확인 범위와 근사는 후속 기록에 구분했다."
+      ],
+      "implementationReference": "sources/education11-exterior-photo-notes.json",
+      "connection1112": {
+        "module": "src/education1112Connection.ts",
+        "sourceNotes": "sources/education1112-connection-photo-notes.json",
+        "photoObserved": true,
+        "dimensionsEstimated": true,
+        "wholeInteriorModeled": false
+      }
+    },
+    {
+      "id": "way/148286666",
+      "name": "사범대학",
+      "buildingNumber": "9",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=9",
+      "observations": [
+        "짙은 벽돌 입면에 흰 격자 골조가 보인다. 하부의 긴 기둥열과 모서리 계단실 틈이 드러난다."
+      ],
+      "reason": "공식 9동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/148286730",
+      "name": "중앙도서관",
+      "buildingNumber": "62",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=78",
+      "observations": [
+        "짙은 베이지 콘크리트 띠, 깊은 사각 청록창이 반복되는 입면"
+      ],
+      "reason": "공식 62동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/161950628",
+      "name": "27동",
+      "buildingNumber": "27",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=32",
+      "observations": [
+        "갈색 벽돌, 흰 수평 띠와 깊은 처마가 있다. 측면에 좁은 세로 계단실 유리가 있다."
+      ],
+      "reason": "OSM의 건물 번호 27와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/161957771",
+      "name": "자연과학대학",
+      "buildingNumber": "23",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=27",
+      "observations": [
+        "갈색 벽돌과 흰 격자 골조다. 위층 작은 창과 아래층 큰 창이 나뉘며 바깥 계단이 있다."
+      ],
+      "reason": "공식 23동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/161957772",
+      "name": "25동",
+      "buildingNumber": "25",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=29",
+      "observations": [
+        "긴 벽돌 건물에 흰 콘크리트 격자가 반복된다. 끝벽에는 외부 계단과 작은 발코니가 있다."
+      ],
+      "reason": "OSM의 건물 번호 25와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/162045723",
+      "name": "멀티미디어강의동 (이공계)",
+      "buildingNumber": "43-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=54",
+      "observations": [
+        "회백색 벽의 날카로운 삼각 모서리와 곡면 부분이 함께 있다. 하부는 유리이며 일부 본체가 돌출된다."
+      ],
+      "reason": "공식 43-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167595745",
+      "name": "자연과학대학",
+      "buildingNumber": "56",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=71",
+      "observations": [
+        "황갈색 패널 벽에 긴 검은 프레임 창줄이 반복된다. 모서리와 끝벽은 은회색 패널이다."
+      ],
+      "reason": "공식 56동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167598052",
+      "name": "약학대학",
+      "buildingNumber": "21",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=24",
+      "observations": [
+        "짙은 벽돌과 흰 콘크리트 격자이며 층별 창 크기가 다르다. 입구 위에 상자가 돌출된다."
+      ],
+      "reason": "공식 21동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167598095",
+      "name": "약학대학",
+      "buildingNumber": "20",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://kko.to/lwLoYKoIpS",
+      "observations": [
+        "세로 벽돌 구획과 돌출 유리창, 밝은 금속 덮개",
+        "북동쪽의 낮고 어두운 곡면 외벽과 경사진 상부 덮개",
+        "북서쪽 현관과 유리 외벽, 밝은 석재 하부와 좁은 창",
+        "노란 점자블록과 보도",
+        "중앙 외부 계단과 금속 난간, 위층 테라스와 차양",
+        "밝은 지지 기둥과 식재",
+        "중앙 지상 현관, College of Pharmacy 문구와 약학관3 안내판",
+        "남동쪽의 가로 벽돌 띠, 후퇴한 창과 밝은 차양",
+        "낮은 회색 외벽과 창, 옥상 설비",
+        "북서쪽 전체 입면, 현관과 중앙 외부 계단의 상대 배치",
+        "옥상 설비와 난간, 경사진 패널 형태"
+      ],
+      "reason": "공식 20동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "높이, 층수, 현관 좌표, 계단 단수와 폭, 창 구획과 옥상 설비 위치는 사진과 게임 지형에 맞춘 근사다.",
+        "북서쪽 외벽을 지도 윤곽보다 안쪽에 배치해 도로와 보도, 하부 공간을 구분했다. 원본 좌표와 DEM은 보존했다.",
+        "2021년 신축 이전의 밝은 격자 외벽 사진을 현재 20동 외관의 기준으로 사용하지 않았다.",
+        "남서쪽 20동과 21동 사이 분홍색 구조물은 별도 연결부로 남겼다. 20동 전체에 같은 외관을 적용하지 않았다.",
+        "짧은 현관까지만 구현했으며 전체 실내, 현재 출입 상태와 가게 영업 상태는 재현하지 않았다.",
+        "사진을 게임 텍스처로 사용하지 않았다."
+      ],
+      "evidenceFile": "sources/pharmacy20-exterior-photo-notes.json",
+      "previousPhotoLimit": "공식 캠퍼스의 구형 밝은 격자 외관 사진은 2021년 신축 이후 외관과 달라 현재 모델의 기준에서 제외했다."
+    },
+    {
+      "id": "way/167605495",
+      "name": "자연과학대학",
+      "buildingNumber": "22",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=26",
+      "observations": [
+        "갈색 벽돌, 흰 층별 띠와 깊은 처마가 있다. 중앙 유리 계단실과 상층 연결통로가 보인다."
+      ],
+      "reason": "공식 22동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167606938",
+      "name": "상산수리과학관",
+      "buildingNumber": "129",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=149",
+      "observations": [
+        "흰 석재, 어두운 창, 원통형 모서리 탑"
+      ],
+      "reason": "공식 129동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167607356",
+      "name": "학생회관",
+      "buildingNumber": "63",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=80",
+      "observations": [
+        "흰 외벽과 긴 창띠, 돌출 창상자와 입구 기둥"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167608115",
+      "name": "자연과학대학",
+      "buildingNumber": "28",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=33",
+      "observations": [
+        "황갈색의 큰 막힌 벽면에 벗겨진 흔적이 있다. 작은 중앙 창줄과 낮은 출입구가 보인다."
+      ],
+      "reason": "공식 28동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167609164",
+      "name": "인문대학",
+      "buildingNumber": "14",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=15",
+      "observations": [
+        "돌출 콘크리트 상부, 후퇴한 유리 하부, 촘촘한 세로 차양과 끝벽의 창 및 난간을 공식 사진에서 확인했다.",
+        "현관 차양과 옆 계단, 암석 화단을 사진에 맞춰 근사했다.",
+        "2025년 인문대 기사에서 6층 테라스와 목재 바닥, 화분, 테이블, 벤치와 난간을 확인했다."
+      ],
+      "reason": "공식 14동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진 촬영일과 보이지 않는 면은 미확인이다. 높이, 시설 치수와 포장 경계는 근사다.",
+        "지하층과 6층 테라스의 존재는 공식 안내에서 확인했으나 하부 현관의 층 표기, 층별 지표면 관계와 테라스의 정확한 방향은 미확인이다.",
+        "현관에서 테라스까지의 실내 동선과 건물 전체 실내는 구현하지 않았다."
+      ],
+      "implementation": {
+        "module": "src/humanities14Landmark.ts",
+        "notes": "sources/humanities14-exterior-photo-notes.json",
+        "entranceAndSideStair": true,
+        "terraceExterior": true,
+        "wholeInterior": false
+      }
+    },
+    {
+      "id": "way/167609409",
+      "name": "행정관",
+      "buildingNumber": "60",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=76",
+      "observations": [
+        "회갈색 콘크리트 입면에 깊은 청록 창이 세 줄로 반복된다. 하부는 짙은 돌과 유리이며 일부가 기둥 통로다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167656591",
+      "name": "25-1동",
+      "buildingNumber": "25-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=30",
+      "observations": [
+        "적색 벽돌 수평띠와 긴 청록창이 번갈아 이어진다. 하부에 둥근 벽과 높은 기둥 통로가 있다."
+      ],
+      "reason": "OSM의 건물 번호 25-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167659979",
+      "name": "교수회관",
+      "buildingNumber": "65",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=82",
+      "observations": [
+        "짙은 갈색 벽과 검정 띠, 깊은 지붕 처마"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167660634",
+      "name": "제3식당 (전망대)",
+      "buildingNumber": "75-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=96",
+      "observations": [
+        "밝은 석재 벽, 중앙 유리 현관과 좁은 수평창"
+      ],
+      "reason": "OSM의 건물 번호 75-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167663455",
+      "name": "멀티미디어강의동 (인문사회계)",
+      "buildingNumber": "83",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=103",
+      "observations": [
+        "은색 곡면 벽의 작은 창, 옆쪽 큰 유리 매스"
+      ],
+      "reason": "OSM의 건물 번호 83와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167663930",
+      "name": "동원생활관",
+      "buildingNumber": "113",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=130",
+      "observations": [
+        "콘크리트 수평 처마, 어두운 유리 띠와 유리 모서리"
+      ],
+      "reason": "OSM의 건물 번호 113와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167665986",
+      "name": "자하연식당",
+      "buildingNumber": "109",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=127",
+      "observations": [
+        "흰 굵은 격자와 청색 반사유리 상층, 짙은 갈색 하층"
+      ],
+      "reason": "OSM의 건물 번호 109와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167666702",
+      "name": "신양학술정보관 Ⅱ",
+      "buildingNumber": "4",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=4",
+      "observations": [
+        "전면은 청록색과 회색 유리 격자이며 일부 사각 칸의 색이 다르다. 측면은 짙은 회색 벽이다."
+      ],
+      "reason": "OSM의 건물 번호 4와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/167983080",
+      "name": "인문대학",
+      "buildingNumber": "2",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=2",
+      "observations": [
+        "남쪽 긴 외벽의 벽돌과 흰 골조, 층별 창 크기, 아래층 창살과 석재 하부, 깊은 처마와 지지대 및 옥상 난간을 공식 사진에서 확인했다.",
+        "소식지에서 동쪽 끝벽의 두 발코니와 출입문, 2동 번호 및 3동 연결교를 대조했다.",
+        "공식 1동 사진에서 2동 남쪽의 두 개방형 발코니를 확인했다."
+      ],
+      "reason": "공식 2동과 연결동 250의 좌표가 같은 OSM 윤곽 안에 있다. 중심에 가까운 인문관 2동을 대표 건물로 삼고 250은 부속 연결동으로 기록한다.",
+      "limitations": [
+        "높이 14m와 4층 구성, 지도와 사진 면의 대응, 창 배치와 치수는 근사다.",
+        "사진 촬영일, 북쪽 및 서쪽 근접 외관과 전체 실내는 미확인이다. 자하연 쪽 입구는 공식 약도의 서쪽 방향을 참고했으며 문 위치, 계단과 난간 형태는 근사다.",
+        "250동과 3동 연결부는 기존 별도 모델을 유지했다."
+      ],
+      "implementation": {
+        "module": "src/humanities2Landmark.ts",
+        "notes": "sources/humanities2-exterior-photo-notes.json",
+        "existing250And23Preserved": true,
+        "wholeInterior": false,
+        "jahayeonEntrance": true,
+        "westEntrancePhotoConfirmed": false,
+        "entryNotes": "sources/humanities2-entry-notes.json"
+      }
+    },
+    {
+      "id": "way/167983609",
+      "name": "인문대학",
+      "buildingNumber": "3",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=3",
+      "observations": [
+        "짙은 회색 벽돌과 흰 골조",
+        "위층의 작은 창과 아래층의 큰 창, 맨 아래 창살",
+        "깊은 처마, 처마 아래 지지대와 세로 배수관",
+        "일반 창이 없는 끝벽과 두 발코니",
+        "모서리 처마의 3동 번호"
+      ],
+      "reason": "공식 3동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "높이 14m와 4층 구성, 창 배치 및 치수는 근사다.",
+        "창 개수, 층별 높이, 발코니 위치와 깊이, 번호 크기 및 재료 치수는 근사다. 사진에 보이지 않는 남쪽 및 동쪽 면의 상세 외관은 미확인이다.",
+        "사진 촬영일과 전체 실내는 미확인이다."
+      ],
+      "implementation": {
+        "module": "src/humanities35Exterior.ts",
+        "notes": "sources/humanities35-exterior-photo-notes.json",
+        "existingConnectionsPreserved": true,
+        "wholeInterior": false
+      }
+    },
+    {
+      "id": "way/167983611",
+      "name": "인문대학",
+      "buildingNumber": "5",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=5",
+      "observations": [
+        "짙은 벽돌과 흰 골조",
+        "위쪽 두 줄의 작은 창과 아래 큰 창, 맨 아래 창살",
+        "깊은 처마와 세로 배수관",
+        "남쪽 입구와 흰 차양, 끝벽의 창 및 난간",
+        "열린 난간의 연결교와 둥근 지지 기둥"
+      ],
+      "reason": "공식 5동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "높이 14m와 4층 구성, 창 배치 및 치수는 근사다.",
+        "입구와 연결부는 앞서 구현한 별도 모델을 유지했다. 동쪽과 북쪽 외벽의 근접 사진, 치수와 촬영일은 미확인이다.",
+        "사진 촬영일과 전체 실내는 미확인이다."
+      ],
+      "implementation": {
+        "module": "src/humanities35Exterior.ts",
+        "notes": "sources/humanities35-exterior-photo-notes.json",
+        "existingConnectionsPreserved": true,
+        "wholeInterior": false
+      }
+    },
+    {
+      "id": "way/167983986",
+      "name": "제4식당",
+      "buildingNumber": "76",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=97",
+      "observations": [
+        "짙은 황갈색 외벽, 깊은 입구와 긴 상층창"
+      ],
+      "reason": "공식 76동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/167984624",
+      "name": "인문대학",
+      "buildingNumber": "1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=1",
+      "observations": [
+        "정면 사진에서 갈색 벽돌, 흰 골조, 작은 상층 창, 아래층 창살과 열린 발코니를 확인했다.",
+        "공식 지도 사진에서 동쪽 끝벽의 1동 번호와 옥상 테두리, 250동 연결부의 상대 위치를 대조했다."
+      ],
+      "reason": "공식 1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "높이 14m와 4층 구성, 창 배치와 세부 치수는 근사다. 전체 창 개수와 층별 지표면 관계는 미확인이다.",
+        "사진 촬영일, 후면 및 서쪽 끝의 세부, 전체 실내와 발코니 접근 동선은 확인하지 못했다.",
+        "중앙의 청록 유리 계단 연결부는 별도 250동 모델이며 1동의 일반 창 형태로 확장하지 않는다."
+      ],
+      "implementation": {
+        "module": "src/humanities1Landmark.ts",
+        "notes": "sources/humanities1-exterior-photo-notes.json",
+        "frontApproach": true,
+        "existingPassageAnd250Preserved": true,
+        "wholeInterior": false
+      }
+    },
+    {
+      "id": "way/179742149",
+      "name": "농업생명과학대학",
+      "buildingNumber": "200",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=174",
+      "observations": [
+        "주황빛 벽돌 외벽에 짙은 청록색 직사각형 창이 반복된다.",
+        "층 사이 밝은 수평 띠가 있고, 최상층은 연속 유리창과 밝은 처마로 구분된다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/179742150",
+      "name": "자연과학대학 (502)",
+      "buildingNumber": "502",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "observations": [
+        "북쪽 평행 연구동은 적갈색 외벽과 밝은 수평 구분선, 가로로 반복되는 짙은 창을 가진다.",
+        "지붕에는 연한 회녹색 평면, 낮은 둘레벽과 상부 설비가 보인다."
+      ],
+      "reason": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/179742150",
+          "reason": "서쪽을 바라보는 3.jpg의 오른쪽 끝에 보이는 평행 연구동. 아래쪽 5.jpg에서는 세 평행동 중 북쪽 동으로 이어진다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ]
+    },
+    {
+      "id": "way/179742151",
+      "name": "26동",
+      "buildingNumber": "26",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=31",
+      "observations": [
+        "거친 밝은 콘크리트 저층 건물이다. 창 앞 세로 돌출 기둥과 바깥 계단, 깊은 입구가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 26와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/179742153",
+      "name": "자연과학대학",
+      "buildingNumber": null,
+      "appearance": "photo-reference",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "observations": [
+        "남쪽 평행 연구동의 지붕은 가운데에 길쭉한 상부 구조물이 있고 양옆에 밝은 평면이 있다.",
+        "보이는 측면에는 적갈색 벽과 밝은 수평 부재, 짙은 가로 창이 반복된다."
+      ],
+      "reason": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/179742153",
+          "reason": "3.jpg의 오른쪽에서 세 번째 평행 연구동. 가운데 동과 평행하며 동쪽 긴 연결동에 닿는 남쪽 OSM 직사각형 윤곽이다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ]
+    },
+    {
+      "id": "way/179742154",
+      "name": "공과대학",
+      "buildingNumber": "39",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=48",
+      "observations": [
+        "회색 콘크리트 골조에 큰 창이 반복된다. 측벽에는 촘촘한 세로 홈이 있고 기둥 위로 본체가 돌출된다."
+      ],
+      "reason": "공식 39동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/179742155",
+      "name": "자연과학대학",
+      "buildingNumber": "500",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "observations": [
+        "가운데 평행 연구동은 붉은 벽돌 면과 밝은 층간 띠, 반복되는 가로 창으로 구성된다.",
+        "길쭉한 지붕 중앙에 낮은 상부 구조물이 있고 가장자리에 낮은 둘레벽이 보인다."
+      ],
+      "reason": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/179742155",
+          "reason": "3.jpg의 오른쪽에서 두 번째 평행 연구동. 공식 500동 좌표가 포함된 가운데 윤곽이다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ]
+    },
+    {
+      "id": "way/180954536",
+      "name": "사범대학",
+      "buildingNumber": "10",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=10",
+      "observations": [
+        "짙은 벽돌과 흰 수직 골조 및 층별 띠",
+        "작은 위층 창과 넓은 아래층 창",
+        "아래층의 돌출 수직 부재와 깊은 처마",
+        "두 층의 움푹 들어간 발코니와 빈 틈이 있는 흰 난간",
+        "중앙 유리 현관과 돌출 차양, 낮은 계단",
+        "사각 석재 하부와 현관 왼쪽 금속 게시판"
+      ],
+      "reason": "공식 10동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진 면의 남쪽 대응, 현관 위치, 높이 14m와 4층 구성은 근사다.",
+        "촬영일, 미관측 면과 전체 실내는 미확인이다."
+      ],
+      "implementation": {
+        "module": "src/education10Exterior.ts",
+        "notes": "sources/education10-exterior-photo-notes.json",
+        "wholeInterior": false,
+        "existingEastConnectionsPreserved": true
+      }
+    },
+    {
+      "id": "way/185936758",
+      "name": "법과대학",
+      "buildingNumber": "15",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=16",
+      "observations": [
+        "연한 회색 패널과 큰 창 격자가 반복된다. 세로 기둥이 도드라지며 모서리에 높은 유리 계단실이 있다."
+      ],
+      "reason": "공식 15동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/185936759",
+      "name": "경영대학 (SK경영관)",
+      "buildingNumber": "58",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=74",
+      "observations": [
+        "짙은 적벽돌 저층 건물이다. 단차가 있는 지붕선과 흰 기둥이 받치는 큰 입구 차양이 보인다."
+      ],
+      "reason": "공식 58동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/193893586",
+      "name": "버들골 풍산마당",
+      "buildingNumber": "100",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=112",
+      "observations": [
+        "곡면 은색 지붕이 지면으로 내려오는 조형, 큰 유리 출입면"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/193893590",
+      "name": "정보화본부(102동)",
+      "buildingNumber": "102",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=114",
+      "observations": [
+        "밝은 회색 패널, 녹색 가로창과 낮은 현관"
+      ],
+      "reason": "공식 102동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/193893591",
+      "name": "교수학습개발센터 및 기초교육원",
+      "buildingNumber": "61",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=77",
+      "observations": [
+        "흰 패널, 청록 유리 모서리와 큰 출입구, 돌출 차양"
+      ],
+      "reason": "공식 61동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/228476658",
+      "name": "제1공학관",
+      "buildingNumber": "301",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=187",
+      "observations": [
+        "청색 반사 유리 면 전체에 촘촘한 짙은 격자가 있다.",
+        "층을 가로지르는 짙은 세로 구간이 곳곳에 보이며, 넓은 벽돌 벽은 보이지 않는다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/230089557",
+      "name": "국제백신연구소",
+      "buildingNumber": "950",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=230",
+      "observations": [
+        "밝은 회백색 판재 외벽과 청색 유리 면이 함께 보인다.",
+        "옆면은 작은 창이 반복되고 앞쪽에는 유리 면이 큰 돌출 매스와 상부 환기 루버가 있다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/231167704",
+      "name": "사회과학관 (이희건관)",
+      "buildingNumber": "16",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=18",
+      "observations": [
+        "연한 베이지색 긴 본체에 작은 창이 반복된다. 전면 모서리에 둥근 유리 입구가 붙어 있다."
+      ],
+      "reason": "공식 16동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/231168241",
+      "name": "아시아연구소",
+      "buildingNumber": "101",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=113",
+      "observations": [
+        "갈색 벽돌과 흰 수평선, 가늘고 긴 창과 계단탑"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/231168242",
+      "name": "두레학생문예관",
+      "buildingNumber": "67",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=84",
+      "observations": [
+        "밝은 석재와 유리 창띠, 붉은 벽돌 일부"
+      ],
+      "reason": "공식 67동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/238935654",
+      "name": "신양학술정보관 Ⅲ",
+      "buildingNumber": "16-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=19",
+      "observations": [
+        "밝은 회색 박스 안에 짙은 가로창이 깊게 들어간다. 측면에는 검은 세로 요소가 반복된다."
+      ],
+      "reason": "OSM의 건물 번호 16-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/238935744",
+      "name": "법학도서관 (국산도서관, 서암관)",
+      "buildingNumber": "72",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=92",
+      "observations": [
+        "청록 유리 격자로 덮인 입면과 흰 층별 띠"
+      ],
+      "reason": "공식 72동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/238935767",
+      "name": "근대법학교육100주년기념관",
+      "buildingNumber": "84",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=104",
+      "observations": [
+        "회색 석재의 낮은 벽, 중앙 세로 금속살 출입구"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/238935852",
+      "name": "규장각한국학연구원",
+      "buildingNumber": "103",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=115",
+      "observations": [
+        "회색 하부, 깊은 기와 처마와 상층 연속창"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/238935911",
+      "name": "법과대학",
+      "buildingNumber": "17",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=20",
+      "observations": [
+        "하부는 적벽돌과 개별창, 상부는 흰 격자와 세로 창이다. 가운데 유리 연결부가 있다."
+      ],
+      "reason": "공식 17동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/238936704",
+      "name": "기초사범교육협력센터",
+      "buildingNumber": "12",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=13",
+      "observations": [
+        "둥근 입면 상부에 흰 세로 돌출부가 촘촘하다. 가운데 두꺼운 회색 곡면 띠와 유리 하부가 보인다.",
+        "설계자 사진과 평면도를 대조해 11동과 12동의 두 층 연결, 저층 유리 홀과 내부 계단을 보완했다."
+      ],
+      "reason": "공식 12동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진 촬영일과 세부 치수는 미확인이다. 확인한 면과 저층 연결 구조를 사진과 도면에 맞춰 근사했다.",
+        "전체 실내, 현재 가게 운영 상태와 3층 테라스 연결은 구현하지 않았다."
+      ],
+      "connection1112": {
+        "module": "src/education1112Connection.ts",
+        "sourceNotes": "sources/education1112-connection-photo-notes.json",
+        "photoObserved": true,
+        "dimensionsEstimated": true,
+        "wholeInteriorModeled": false
+      }
+    },
+    {
+      "id": "way/238936948",
+      "name": "인문대학",
+      "buildingNumber": "6",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=6",
+      "observations": [
+        "갈색 벽돌과 흰 골조, 위층의 작은 창과 아래층의 큰 창, 넓은 처마와 사선 지지대, 끝벽 발코니와 6동 번호를 확인했다.",
+        "공식 설계공모의 2024년 영상에서 공사 전 지상 4층, 옥상 설비실과 실외기를 확인했다."
+      ],
+      "reason": "공식 6동과 연결동 251의 좌표가 같은 OSM 윤곽 안에 있다. 인문관 6동을 대표 건물로 삼고 251은 6동과 7동 사이 연결동으로 기록한다.",
+      "limitations": [
+        "사진과 2024년 공사 전 영상에 근거한 부분 모델이다. 높이, 개구부, 현관, 계단과 포장 치수는 근사다.",
+        "251동은 6동과 같은 지도 외곽 안에 있다. 층별 경계와 실내 연결, 후면 근접 외관, 현재 공사 진척은 미확인이다."
+      ],
+      "detailSource": "sources/humanities6-photo-notes.json"
+    },
+    {
+      "id": "way/238937021",
+      "name": "인문대학",
+      "buildingNumber": "7",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=7",
+      "observations": [
+        "짙은 갈색 벽돌의 측벽에 흰 수평 띠가 반복된다. 계단실 부분에 좁은 세로 개구부가 있다."
+      ],
+      "reason": "공식 7동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/238937058",
+      "name": "두산인문관",
+      "buildingNumber": "8",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=8",
+      "observations": [
+        "갈색 벽돌 입면을 검은 세로 패널이 불규칙하게 나눈다. 창은 높고 좁으며 입구 부분이 깊게 들어가 있다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/238937145",
+      "name": "교육정보관",
+      "buildingNumber": "10-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=11",
+      "observations": [
+        "밝은 패널 벽에 청록 가로창이 이어진다. 가까운 부분은 둥근 모서리이며 하부를 기둥이 받친다."
+      ],
+      "reason": "공식 10-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/238937635",
+      "name": "24동",
+      "buildingNumber": "24",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=28",
+      "observations": [
+        "짙은 벽돌과 흰 층별 띠다. 전면 중앙에 파란 세로 유리 부분이 있다."
+      ],
+      "reason": "OSM의 건물 번호 24와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/238937965",
+      "name": "수의과대학",
+      "buildingNumber": "85",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=105",
+      "observations": [
+        "밝은 석재 격자, 청록창과 유리 연결 현관"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/251646340",
+      "name": "사범대학",
+      "buildingNumber": "13",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=14",
+      "observations": [
+        "짙은 회갈색 벽돌과 흰 골조가 반복된다. 상층은 작은 창, 하층은 넓은 창이다.",
+        "2026년 7월 로드뷰와 공식 사진으로 벽돌, 흰 돌출 구조, 창살과 석재 하부를 대조했다. 네 현관과 인접 계단은 공개 출입구 조사와 지도 위치에 맞춘 근사다."
+      ],
+      "reason": "공식 13동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다.",
+        "전체 실내, 공식 사진의 촬영일과 현관의 실측 치수는 미확인이다. 20동 연결교와 긴 남서쪽 계단은 별도 근거 기록을 참고한다."
+      ],
+      "detailReview": "sources/education13-exterior-photo-notes.json",
+      "detailImplementation": "src/education13Exterior.ts",
+      "connectionReview": "sources/education1320-connection-photo-notes.json"
+    },
+    {
+      "id": "way/252233408",
+      "name": "서울대학교 미술관",
+      "buildingNumber": "151",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=170",
+      "observations": [
+        "공중에 돌출된 반투명 외피, 흰 대각 트러스와 경사 밑면"
+      ],
+      "reason": "공식 151동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/262983332",
+      "name": "공과대학",
+      "buildingNumber": "37",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=46",
+      "observations": [
+        "흰 격자 골조와 벽돌 띠가 반복되는 긴 입면이다. 오른쪽에는 밝은 수직 탑이 있다."
+      ],
+      "reason": "공식 37동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/297044753",
+      "name": "IBK 커뮤니케이션센터",
+      "buildingNumber": "64",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=81",
+      "observations": [
+        "불규칙한 금색 수직 루버와 유리 하부, 외부 계단"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/297046999",
+      "name": "종합교육연구동",
+      "buildingNumber": "220",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178",
+      "observations": [
+        "정면 대부분이 밝은 청록색 유리 격자로 덮여 있고, 층마다 긴 수평 띠가 보인다.",
+        "오른쪽은 밝은 판재 벽이며, 하부 중앙에 기둥 사이로 통과하는 큰 개방 공간이 보인다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/297047243",
+      "name": "보건대학원",
+      "buildingNumber": "221",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=179",
+      "observations": [
+        "주황빛 벽돌 몸체에 긴 창 띠가 반복되고 중앙에는 청록색 유리 계단실이 있다.",
+        "최상부에는 깊은 지붕 돌출부와 그 아래 열린 공간이 보인다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/297047483",
+      "name": "환경대학원",
+      "buildingNumber": "82",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=102",
+      "observations": [
+        "밝은 석재 격자 사이 넓은 청록창, 유리 상층"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/297047750",
+      "name": "자연과학대학",
+      "buildingNumber": null,
+      "appearance": "photo-reference",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "observations": [
+        "북단 세로동에는 주황빛 벽돌 면, 밝은 층간 부재와 길게 이어지는 짙은 창이 보인다.",
+        "끝부분과 위쪽 일부는 밝은 프레임의 큰 유리 면으로 구분되고, 평지붕에는 낮은 상부 구조물이 보인다."
+      ],
+      "reason": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/297047750",
+          "reason": "0.jpg 왼쪽 아래에 보이는 남북 방향의 좁고 긴 동이다. 북쪽 도로 곡선 옆에 있으며 세 평행동의 북쪽 끝과 연결된 OSM 세로 윤곽에 대응한다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ]
+    },
+    {
+      "id": "way/300587512",
+      "name": "13동과 20동 연결교",
+      "buildingNumber": null,
+      "appearance": "photo-reference",
+      "sourceUrl": "https://kko.to/wm4dZK24bn",
+      "observations": [
+        "2026년 7월 로드뷰에서 흰 패널과 띠창, 열린 하부와 앞뒤 계단을 확인했다.",
+        "2024년 공개 출입구 조사의 13동 2층 20동 연결통로와 지도 bridge=yes 태그를 대조했다."
+      ],
+      "reason": "13동과 20동 사이의 연결교 윤곽이다. layer=1을 층수로 해석하지 않으며 원본 지도에는 높이와 층수 정보가 없다.",
+      "limitations": [
+        "연결교 깊이 4.8m, 바닥 높이, 계단 폭과 단수는 사진과 게임 지형에 맞춘 근사다.",
+        "양쪽 짧은 현관까지만 구현했으며 전체 실내와 현재 출입 상태는 재현하지 않았다."
+      ],
+      "detailReview": "sources/education1320-connection-photo-notes.json",
+      "detailImplementation": "src/education1320Connection.ts"
+    },
+    {
+      "id": "way/310022287",
+      "name": "BK국제관",
+      "buildingNumber": "946",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=229",
+      "observations": [
+        "밝은 회백색 수직 기둥과 층간 띠 사이에 넓은 창과 분홍빛 패널이 반복된다.",
+        "오른쪽에는 창이 적은 밝은 계단실 매스가 있다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/313338192",
+      "name": "SK텔레콤 연구동",
+      "buildingNumber": "943",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=227",
+      "observations": [
+        "청색 반사 유리 면 옆에 밝은 회백색 판재 벽이 솟아 있다.",
+        "유리는 가는 밝은 격자로 나뉘며 전면 수목이 저층을 일부 가린다."
+      ],
+      "reason": "공식 943동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/320669392",
+      "name": "해동학술관",
+      "buildingNumber": "32-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=41",
+      "observations": [
+        "유리 박스에 가는 금속 격자가 있다. 상부와 중간의 갈색 차양, 높은 유리 연결부가 특징이다."
+      ],
+      "reason": "공식 32-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/329398175",
+      "name": "관정도서관",
+      "buildingNumber": "62-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=79",
+      "observations": [
+        "금속판과 유리가 엇갈리는 입면, 본관 위에 걸친 긴 상부 매스",
+        "상승 테라스 계단과 남서쪽 하강 통과 계단을 별도 위치로 구분했다.",
+        "석재 벽, 유리 난간, 격자문과 하강 입구의 점자블록, 볼라드를 참고했다."
+      ],
+      "reason": "공식 62-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "촬영점과 계단 중심은 다르며 폭, 높이, 단수와 지지부 치수는 게임 근사다. 편의시설 전체와 본관 연결은 미완성이다."
+      ],
+      "evidenceFile": "sources/library-stair-alignment-photo-notes.json"
+    },
+    {
+      "id": "way/329398248",
+      "name": "자연과학대학",
+      "buildingNumber": null,
+      "appearance": "photo-reference",
+      "sourceUrl": "https://lib.snu.ac.kr/vr/index.html",
+      "observations": [
+        "세 연구동 앞쪽을 잇는 낮고 긴 연결동에는 밝은 회색 지붕과 세로 프레임으로 나뉜 유리 입면이 보인다.",
+        "500동 공식 외부 사진 왼쪽에서도 낮은 유리 연결부가 보여 평행 연구동의 벽돌 입면과 구분할 수 있다."
+      ],
+      "reason": [
+        {
+          "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+          "reason": "공식 VR의 pano10821은 위도 37.458722222222001, 경도 126.94977777778의 항공 파노라마다. 서쪽 큐브 면과 아래쪽 면에서 도로, 평행한 세 연구동과 동쪽 연결동의 배열을 OSM과 대조했다."
+        },
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3065",
+          "reason": "공식 행사 안내는 501부터 504까지를 통틀어 500동이라고 부른다고 설명한다. 개별 동 번호를 사진만으로 새로 지정하지 않는다."
+        },
+        {
+          "url": "https://science.snu.ac.kr/campus-life/facility",
+          "reason": "자연과학대학 공식 시설 안내가 501, 502, 503동을 각각 구분한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/329398248",
+          "reason": "5.jpg의 왼쪽 가장자리를 따라 이어지는 길고 낮은 밝은 지붕이다. 평행한 세 연구동의 동쪽 끝을 연결하며, 500동 공식 외부 사진의 낮은 유리 복도와 위치가 대응한다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "번호가 명시되지 않은 건물은 새 동 번호를 추정해 붙이지 않았다. 502 표기는 기존 OSM 이름이며 항공 사진에서 동 번호를 직접 읽은 것은 아니다.",
+        "촬영 시점과 현재 외관의 일치는 확인하지 않았다. 파노라마 투영과 가림 때문에 모든 면과 입구를 확인한 것은 아니다.",
+        "색, 창 비율과 지붕 표현은 보이는 부분의 근사값이며 실측치가 아니다."
+      ]
+    },
+    {
+      "id": "way/347804717",
+      "name": "공과대학",
+      "buildingNumber": "33",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=42",
+      "observations": [
+        "주황 벽돌 띠와 흰 기둥이 교차한다. 위층 작은 창, 아래층 큰 창, 청록 지붕 연결통로가 있다."
+      ],
+      "reason": "공식 33동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/347806719",
+      "name": "공과대학",
+      "buildingNumber": "36",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=45",
+      "observations": [
+        "흰 콘크리트 격자와 갈색 벽돌 띠가 규칙적으로 반복된다. 창 묶음이 층별로 길게 이어진다."
+      ],
+      "reason": "공식 36동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/347806720",
+      "name": "공과대학",
+      "buildingNumber": "34",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "공식 34동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": []
+    },
+    {
+      "id": "way/347806722",
+      "name": "신양학술정보관 I",
+      "buildingNumber": "44-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=56",
+      "observations": [
+        "둥근 유리 전면에 수평 띠와 얇은 외부 차양 격자가 반복된다. 지붕 끝은 청록색이다."
+      ],
+      "reason": "공식 44-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/347806723",
+      "name": "대학신문",
+      "buildingNumber": "75",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://www.snua.or.kr/magazine?md=v&seqidx=11884",
+      "observations": [
+        "상부는 밝은 회색 외장과 가늘고 깊은 세로 창틀이 반복되며 큰 파란 유리 면이 섞여 있다.",
+        "하부에는 연한 적갈색 벽돌 부분과 긴 가로창이 있고 정면 큰 유리 상자가 돌출된다.",
+        "기사에서 지상 6층과 지하 2층을 확인했다. 사진 오른쪽은 기사 도표가 가려 세부 외관을 확인할 수 없다."
+      ],
+      "reason": "총동창회 입주 기사에 75동 융합관 전경으로 명시된 사진이며 건물에 75 표시가 보인다. 서울대 공식 준공 기사는 기존 대학신문 건물의 재건축임을 확인한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "기존 OSM 윤곽이 재건축 이후의 외곽선과 정확히 같은지는 확인하지 않았다.",
+        "단일 외관 프로필은 상부 밝은 외장과 하부 벽돌을 층별로 정확히 나누지 못한다."
+      ]
+    },
+    {
+      "id": "way/377154957",
+      "name": "공대간이식당",
+      "buildingNumber": "30-2",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=37",
+      "observations": [
+        "낮은 회색 패널 입구다. 큰 유리문과 유리 측면, 얇은 차양이 있다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/386889980",
+      "name": "국제대학원",
+      "buildingNumber": "140",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=161",
+      "observations": [
+        "밝은 회색 외벽, 깊은 처마, 가로로 놓인 사각창"
+      ],
+      "reason": "국제대학원 이름이 일치하며 공식 140, 140-1, 140-2의 좌표가 같은 OSM 윤곽 안에 있다. 대표 번호 140으로 연결하되 복합동의 범위를 보존한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/386890380",
+      "name": "예술관",
+      "buildingNumber": "49",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=62",
+      "observations": [
+        "밝은 사각 패널이 두 곡면 벽을 덮는다. 작은 정사각 창과 상부 긴 유리띠가 보인다."
+      ],
+      "reason": "예술관이라는 명칭이 공식 예술관연구동과 대응하며 공식 49동 점은 이 윤곽 경계에서 약 0.9m 밖에 있다. 다른 본체로 잘못 연결된 후보가 아니어서 좌표 반올림과 윤곽 오차 범위의 일치로 판단한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/386890466",
+      "name": "엔지니어하우스",
+      "buildingNumber": "310",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=190",
+      "observations": [
+        "밝은 베이지색 기둥과 촘촘한 세로 루버가 보인다.",
+        "낮고 긴 매스 중앙에 넓은 유리 입구가 있고, 경사진 유리 채광부와 지붕이 보인다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "중앙 경사 채광창과 지붕은 기본 평지붕 프로필만으로 표현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/386890828",
+      "name": "생활과학대학",
+      "buildingNumber": "222",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=180",
+      "observations": [
+        "주황빛 벽돌 날개와 밝은 회색 판재 날개가 연결된다.",
+        "층별로 길게 이어진 창과 밝은 수평 띠가 반복된다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/386890861",
+      "name": "행정대학원(57-1동)",
+      "buildingNumber": "57-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=73",
+      "observations": [
+        "연한 황갈색 벽돌과 얇은 밝은 수평 띠가 보인다. 긴 창줄과 유리 연결부가 있다."
+      ],
+      "reason": "공식 57-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/386890918",
+      "name": "폐기물보관소",
+      "buildingNumber": "43",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf",
+      "observations": [
+        "상층은 짙은 회색 벽돌처럼 보이는 외장에 가늘고 높은 세로 창이 반복된다.",
+        "유리와 밝은 불투명 판을 번갈아 배치한 모서리 부분이 있으며 하부에는 밝은 큰 외장 판이 있다.",
+        "최상부 모서리에 43 표시가 보이고 지붕은 평평하다."
+      ],
+      "reason": "OSM의 폐기물보관소라는 이름 때문에 보류했으나 공식 입시설명회 14쪽의 43동 사진, 별도 배치도와 공식 캠퍼스 지도 좌표를 함께 대조했다. 배치도는 이 본체와 남서쪽의 43-2를 분리해 표시하며 OSM 윤곽 배치와 대응한다. OSM 이름 오류로 판단한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "공식 지도와 배치도로 건물을 식별했지만 OSM 원본 이름은 변경하지 않았다.",
+        "하부의 밝은 판과 상부 어두운 벽돌을 단일 반복 프로필로 정확히 구분하지 못한다."
+      ]
+    },
+    {
+      "id": "way/386891006",
+      "name": "종합체육관",
+      "buildingNumber": "71",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=90",
+      "observations": [
+        "연한 모래색 벽, 낮은 가로창과 넓은 입구 차양"
+      ],
+      "reason": "공식 71동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/386891016",
+      "name": "입학본부",
+      "buildingNumber": "150",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=169",
+      "observations": [
+        "주황 벽돌, 드문 창과 중앙 세로 유리탑, 두 곡면 지붕"
+      ],
+      "reason": "공식 점이 윤곽 안에 있고 공식 영문명은 Office of Admissions다. 서울대 입학본부 안내에도 입학본부가 150동으로 명시돼 OSM 입학본부와 같은 건물임을 확인했다. 공식 한글명 명예교수연구동과의 차이는 명칭 차이로 기록한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/389628347",
+      "name": "공과대학",
+      "buildingNumber": "30",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=35",
+      "observations": [
+        "연한 적색 벽돌 띠와 긴 창이 반복된다. 흰 세로 기둥과 깊은 처마가 있다."
+      ],
+      "reason": "공식 30동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/389628348",
+      "name": "공과대학",
+      "buildingNumber": "31",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=38",
+      "observations": [
+        "긴 흰 벽에 짙은 가로창이 있다. 한쪽 끝에 작은 창이 반복되는 흰 수직 탑이 돌출된다."
+      ],
+      "reason": "공식 31동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/391747018",
+      "name": "918",
+      "buildingNumber": "918",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=208",
+      "observations": [
+        "옅은 황토색 벽과 붉은 갈색 층간 구간 사이로 창이 가로로 반복된다.",
+        "중앙에는 창이 적은 높은 계단실 매스가 있고 최상단에 난간이 보인다."
+      ],
+      "reason": "OSM의 건물 번호 918와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/409030550",
+      "name": "935",
+      "buildingNumber": "935",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=221",
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "큰 측벽 앞을 소나무가 가리고, 옆으로 유리 발코니가 길게 이어진다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 935와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/424324200",
+      "name": "호암교수회관",
+      "buildingNumber": "125",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=142",
+      "observations": [
+        "짙은 적벽돌, 흰 수평선과 검은 창, 낮은 현관 차양"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/424946985",
+      "name": "코웨이 R&D 센터",
+      "buildingNumber": "945",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=228",
+      "observations": [
+        "짙은 갈색 판재 매스 사이에 가느다란 청색 유리 띠가 세로로 이어진다.",
+        "중앙에는 폭이 넓은 유리 구간이 있고 측면에는 촘촘한 수직 돌출 요소가 보인다."
+      ],
+      "reason": "공식 945동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/424949442",
+      "name": "유전공학연구소",
+      "buildingNumber": "105",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=120",
+      "observations": [
+        "흰 패널, 청록창과 원통 계단탑, 유리 전면 일부"
+      ],
+      "reason": "유전공학연구소 명칭이 일치하며 공식 105와 105-1 좌표가 같은 OSM 윤곽 안에 있다. 대표 본체 105로 연결하고 105-1도 포함된 복합 윤곽임을 기록한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430040354",
+      "name": "반도체공동연구소",
+      "buildingNumber": "104",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=116",
+      "observations": [
+        "적벽돌 외벽, 흰 틀의 가로창과 금속 현관 차양"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430040355",
+      "name": "선형수조실험공장동",
+      "buildingNumber": "42",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=51",
+      "observations": [
+        "적벽돌 긴 본체에 창이 반복된다. 하부의 흰 기둥과 보, 한쪽 유리 입구가 보인다."
+      ],
+      "reason": "공식 42동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/430040357",
+      "name": "선박실험공장동",
+      "buildingNumber": "41",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=50",
+      "observations": [
+        "회색 금속 패널 벽에 큰 흰 프레임 창 묶음이 있다. 덩어리가 층마다 조금씩 어긋난다."
+      ],
+      "reason": "공식 41동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/430040359",
+      "name": "뉴미디어통신공동연구소",
+      "buildingNumber": "132",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=152",
+      "observations": [
+        "밝은 석재와 청록 유리 띠, 붉은 수직 기둥"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430163191",
+      "name": "화학공정신기술연구소",
+      "buildingNumber": "311",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=191",
+      "observations": [
+        "밝은 회색 판재 사이로 세로로 긴 청록색 창이 반복된다.",
+        "층 사이 벽체가 두껍고 창 사이 수직 벽체가 앞으로 나온다."
+      ],
+      "reason": "OSM과 공식 명칭이 화학공정신기술연구소로 일치한다. 공식 점은 윤곽 경계에서 약 0.8m 밖에 있어 위치도 대응한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430289140",
+      "name": "정밀기계설계공동연구소",
+      "buildingNumber": "313",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=193",
+      "observations": [
+        "밝은 회색 판재 옆으로 큰 청색 유리 면이 반복된다.",
+        "짙은 회색 수직 기둥과 층간 수평 띠가 유리 면을 굵게 나눈다."
+      ],
+      "reason": "공식 313동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430289533",
+      "name": "차세대자동차기술연구센터",
+      "buildingNumber": "314",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=194",
+      "observations": [
+        "밝은 회백색 판재 외벽에 긴 청록색 유리 띠가 이어진다.",
+        "창 아래의 짙은 수평 띠가 입면을 강조한다."
+      ],
+      "reason": "공식 314동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430289534",
+      "name": "유회진학술정보관 (300동)",
+      "buildingNumber": "300",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "공식 300동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": []
+    },
+    {
+      "id": "way/430291668",
+      "name": "언어교육원 CJ어학관",
+      "buildingNumber": "137-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=156",
+      "observations": [
+        "청록 유리 격자 전면, 어두운 벽 테두리"
+      ],
+      "reason": "공식 137-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430291669",
+      "name": "언어교육원",
+      "buildingNumber": "137",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=155",
+      "observations": [
+        "갈색 벽돌과 흰 창틀, 상층 연결 다리"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430291671",
+      "name": "파워플랜트",
+      "buildingNumber": "68",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=85",
+      "observations": [
+        "주황 적벽돌 벽을 흰 콘크리트 기둥과 띠가 나눔"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/430291672",
+      "name": "신림변전소",
+      "buildingNumber": "68-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=86",
+      "observations": [
+        "밝은 석재 패널과 큰 청록 유리 부분, 세로 유리띠"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/434754623",
+      "name": "약학대학 신약개발센터",
+      "buildingNumber": "143",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=166",
+      "observations": [
+        "금색 세로 루버를 두른 곡면 유리 입면"
+      ],
+      "reason": "약학대학 신약개발센터라는 OSM 이름이 공식 약대신약개발연구센터와 대응한다. 공식 점은 윤곽 경계에서 약 0.5m 밖에 있어 위치도 일치한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/435329614",
+      "name": "20동과 21동 연결부",
+      "buildingNumber": null,
+      "appearance": "photo-reference",
+      "sourceUrl": "https://kko.to/6GQzzNC7rO",
+      "observations": [
+        "두 층의 곡선 유리 발코니와 분홍색 판 외장, 오른쪽 넓은 창",
+        "후퇴한 낮은 유리 연결통로와 열린 하부, 흰 원형 기둥",
+        "하부 뒤쪽 계단과 앞쪽 보도, 자전거 거치대 및 배수로",
+        "뒤쪽의 넓은 유리 외벽과 금속 프레임, 노란빛 환기구",
+        "낮은 난간과 식재, 앞쪽의 별도 고가 연결교 기둥",
+        "유리 외벽 아래로 내려가는 계단과 금속 난간",
+        "도로에서 계단으로 이어지는 포장길, 양쪽 식재와 단차"
+      ],
+      "reason": "원본 지도에서 20동과 21동의 끝변을 잇는 별도 윤곽이다. 양쪽 로드뷰와 기존 약학대학 사진을 대조해 연결부로 판단했다.",
+      "limitations": [
+        "층고, 난간 곡률, 계단 단수와 참, 통로 깊이와 문 치수는 사진과 게임 지형에 맞춘 근사다.",
+        "양쪽 건물은 짧은 현관까지만 연결한다. 위층 전시실과 전체 실내는 재현하지 않았다.",
+        "실제 문 개방 상태와 주차 차량 배치는 재현하지 않았다.",
+        "143동 방향 별도 연결교와 20동 뒤쪽 출입구는 별도 보완 대상이다.",
+        "사진을 게임 텍스처로 사용하지 않았다."
+      ],
+      "evidenceFile": "sources/pharmacy2021-connection-photo-notes.json"
+    },
+    {
+      "id": "way/435330210",
+      "name": "약학대학",
+      "buildingNumber": "142",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=165",
+      "observations": [
+        "연한 적벽돌, 흰 창틀과 넓은 사각창"
+      ],
+      "reason": "공식 142동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/435330211",
+      "name": "약학대학",
+      "buildingNumber": "141",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=164",
+      "observations": [
+        "베이지 벽돌의 둥근 전면, 긴 창과 외부계단"
+      ],
+      "reason": "공식 141동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/436516327",
+      "name": "학생군사교육단",
+      "buildingNumber": "66",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=83",
+      "observations": [
+        "적벽돌 벽, 흰 돌출 현관과 발코니"
+      ],
+      "reason": "공식 66동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/436516328",
+      "name": "학생군사교육단",
+      "buildingNumber": "66",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "OSM 명칭은 학생군사교육단으로 공식 학군단과 일치한다. 다만 66동 공식 점은 옆의 본체 안에 있고 이 윤곽은 떨어진 부속동이다. 학군단 소속은 연결하되 본체 사진으로 부속동의 외관을 확정하지 않는다.",
+      "limitations": []
+    },
+    {
+      "id": "way/436516329",
+      "name": "",
+      "buildingNumber": null,
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "학군단 옆의 작은 무명 윤곽이다. 공식 66동 점은 본체 안에 있고 이 건물은 경계에서 약 8.5m 떨어져 있다. 소속과 용도를 확인하지 못했다.",
+      "limitations": []
+    },
+    {
+      "id": "way/436516336",
+      "name": "컴퓨터연구소",
+      "buildingNumber": "138",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=158",
+      "observations": [
+        "밝은 석재, 사각 청록창, 중앙 계단탑"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/436516337",
+      "name": "기초과학공동기기원",
+      "buildingNumber": "139",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=159",
+      "observations": [
+        "갈색 벽돌과 수평 청록창, 둥근 계단탑"
+      ],
+      "reason": "공식 139동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/436516338",
+      "name": "약학대학",
+      "buildingNumber": "29",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=34",
+      "observations": [
+        "연한 황갈색 작은 타일 또는 벽돌로 보이는 낮은 입면이다. 긴 수평 본체 가운데 입구가 높게 솟는다."
+      ],
+      "reason": "공식 29동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/436516339",
+      "name": "자연과학대학",
+      "buildingNumber": "19",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=22",
+      "observations": [
+        "적벽돌 기둥 사이에 창이 반복된다. 아래층 창 사이에는 넓은 흰 패널이 있다."
+      ],
+      "reason": "공식 19동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/436516340",
+      "name": "자연과학대학",
+      "buildingNumber": "18",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=21",
+      "observations": [
+        "주황 적벽돌 벽에 규칙적인 개별창이 있다. 하부 일부는 창 아래 흰 패널, 중앙은 세로 유리창이다."
+      ],
+      "reason": "공식 18동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/436516341",
+      "name": "",
+      "buildingNumber": null,
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "18동 옆의 약 4m x 7m 무명 윤곽이다. 공식 점은 자연과학관 본체 안에 있으며 작은 시설이 본체 일부인지 확인하지 못했다.",
+      "limitations": []
+    },
+    {
+      "id": "way/439687807",
+      "name": "환경안전원",
+      "buildingNumber": "98",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=109",
+      "observations": [
+        "황갈색 벽돌 본체와 회색 금속 격자 별동"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687808",
+      "name": "방사선동위원소폐기물보관소",
+      "buildingNumber": "97",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=108",
+      "observations": [
+        "황토색 벽돌, 드문 세로창과 세로 유리 계단실"
+      ],
+      "reason": "공식 97동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687809",
+      "name": "롯데국제교육관",
+      "buildingNumber": "152-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=172",
+      "observations": [
+        "베이지 벽돌, 깊은 흰 세로 구획과 청록창"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687810",
+      "name": "CJ인터내셔널센터",
+      "buildingNumber": "152",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=171",
+      "observations": [
+        "짙은 철골과 유리 전면, 아래 거친 석재 벽"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687811",
+      "name": "포스코스포츠센터",
+      "buildingNumber": "71-2",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=91",
+      "observations": [
+        "은색 통형 지붕, 큰 곡면 청록 유리 입면"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687812",
+      "name": "생물공학연구소",
+      "buildingNumber": "80-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=100",
+      "observations": [
+        "흰 단층 벽, 작은 정방형 창, 파란 지붕 테두리"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687813",
+      "name": "관악서울대학교치과병원",
+      "buildingNumber": "86",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=107",
+      "observations": [
+        "황갈색 수직 루버를 두른 상부와 청록 유리 하부"
+      ],
+      "reason": "공식 점은 윤곽 경계에서 약 3.2m 밖에 있다. 공식 사진에서 86 표시와 관악서울대학교치과병원 간판을 직접 확인해 OSM 병원명과의 일치를 확인했다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687814",
+      "name": "생명공학연구동",
+      "buildingNumber": "81",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=101",
+      "observations": [
+        "회색 금속판과 유리, 상층의 촘촘한 수직 프레임"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439687815",
+      "name": "대림국제관",
+      "buildingNumber": "137-2",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=157",
+      "observations": [
+        "갈색 벽돌과 깊은 콘크리트 구획, 넓은 청록창"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439693755",
+      "name": "경영전문대학원 (LG경영관)",
+      "buildingNumber": "59",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=75",
+      "observations": [
+        "큰 은회색 패널 전면이 대부분 막혀 있다. 하부 입구가 깊게 들어가며 옆에 기울어진 연결부가 보인다."
+      ],
+      "reason": "공식 59와 59-1 점이 모두 윤곽 안에 있다. OSM 이름이 LG경영관이므로 단순 중심 거리로 선택된 59-1 대신 명칭이 일치하는 59를 대표 번호로 삼는다. 연결된 매니지먼트센터 59-1은 별도 구성 부분으로 기록한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439693756",
+      "name": "행정대학원(57동)",
+      "buildingNumber": "57",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=72",
+      "observations": [
+        "은색 금속 패널과 청록 유리가 섞인다. 오른쪽은 물결 모양 곡면이며 중앙에 원형 창줄이 있다."
+      ],
+      "reason": "공식 57동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439693757",
+      "name": "서울대학교 박물관",
+      "buildingNumber": "70",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=89",
+      "observations": [
+        "밝은 석재 무창 곡면벽과 검은 지붕 테두리, 낮은 유리 현관"
+      ],
+      "reason": "공식 70동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439693758",
+      "name": "예술계복합교육연구동",
+      "buildingNumber": "74",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=94",
+      "observations": [
+        "주황 외벽과 드문 세로창, 낮은 삼각 유리 매스"
+      ],
+      "reason": "공식 74동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439693759",
+      "name": "미술대학",
+      "buildingNumber": "50",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=63",
+      "observations": [
+        "짙은 갈색 벽돌의 큰 막힌 측벽과 상부 작은 세로창이 보인다."
+      ],
+      "reason": "공식 50동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439693760",
+      "name": "미술대학",
+      "buildingNumber": null,
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "미술대학이라는 소속만 있고 번호는 없다. 공식 50동 점은 옆 본체에 있으며 51동도 가깝다. 50동 부속동인지 다른 시설인지 구분하지 못했다.",
+      "limitations": []
+    },
+    {
+      "id": "way/439693761",
+      "name": "미술대학",
+      "buildingNumber": "51",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=64",
+      "observations": [
+        "짙은 벽돌 동 사이에 유리 연결통로가 있다. 전면에 밝은 회색 계단실 탑과 좁은 수직 창이 보인다."
+      ],
+      "reason": "공식 51동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439693762",
+      "name": "미술대학",
+      "buildingNumber": "52",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=65",
+      "observations": [
+        "황갈색 벽돌 덩어리들이 단차를 이룬다. 작은 창과 하부의 긴 창이 보인다."
+      ],
+      "reason": "공식 52동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439693763",
+      "name": "미술대학",
+      "buildingNumber": "52-1",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "공식 52-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": []
+    },
+    {
+      "id": "way/439693764",
+      "name": "음악대학",
+      "buildingNumber": "53",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=68",
+      "observations": [
+        "황갈색 벽돌 벽에 좁은 세로창이 드문드문 있다. 덩어리 높이가 조금씩 다르다."
+      ],
+      "reason": "공식 53동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439693765",
+      "name": "음악대학",
+      "buildingNumber": "54",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=69",
+      "observations": [
+        "짙은 갈색 벽돌과 작은 창이 보인다. 뒤쪽 연결부 상부에 붉은 세로 요소가 반복된다."
+      ],
+      "reason": "공식 54동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439693766",
+      "name": "음악대학",
+      "buildingNumber": "55",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=70",
+      "observations": [
+        "짙은 갈색 벽돌의 큰 막힌 벽이 주된 입면이다. 측면에 적은 수의 가로창이 있다."
+      ],
+      "reason": "공식 55동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439696422",
+      "name": "SPC 농생명과학 및 기초과학연구동",
+      "buildingNumber": "203",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=176",
+      "observations": [
+        "주황색 벽돌 기둥 사이에 넓은 유리 면이 세로로 이어진다.",
+        "측면은 띠 모양 창과 벽돌 층간 띠가 번갈아 나타나며, 입구 쪽 유리창은 밝은 격자로 나뉜다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439703618",
+      "name": "농생명과학공동기기원",
+      "buildingNumber": "201",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=175",
+      "observations": [
+        "밝은 회백색 판재 외벽에 청록색 창이 수평으로 나뉘어 있다.",
+        "사진 전면은 낮은 매스이며 뒤쪽 주황색 고층 건물과 외관이 다르다."
+      ],
+      "reason": "공식 201동 점이 윤곽 안에 있다. 서울대 공식 행사 안내가 농생명과학공동기기원을 201동으로 명시하므로 OSM 이름과 공식 색인의 농업생명과학대학환경관은 같은 건물로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439703621",
+      "name": "공과대학",
+      "buildingNumber": "40",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=49",
+      "observations": [
+        "낮고 긴 벽돌 창고에 두꺼운 흰 상부 띠가 있다. 오른쪽에 큰 셔터 문이 있다."
+      ],
+      "reason": "공식 40동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439703622",
+      "name": "신소재공동연구소",
+      "buildingNumber": "133",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=153",
+      "observations": [
+        "은회색 패널과 청록 유리 수평띠, 유리 하부"
+      ],
+      "reason": "공식 133동 점이 윤곽 안에 있고 공식 사진에도 133 표시가 보인다. 서울대 공지에서 자동화연구소는 133동, 신소재공동연구소는 131동으로 구분하며 131동은 별도 OSM 윤곽과 일치한다. 따라서 이 윤곽의 OSM 이름을 잘못된 명칭으로 보고 공식 133동을 채택한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439703623",
+      "name": "기초전력연구원",
+      "buildingNumber": "130",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=150",
+      "observations": [
+        "밝은 외벽의 긴 가로띠, 짙은 유리 연속창"
+      ],
+      "reason": "공식 130동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439703625",
+      "name": "풍동실험동2",
+      "buildingNumber": "44",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=55",
+      "observations": [
+        "큰 주황 벽돌 구획을 흰 기둥과 보가 나눈다. 높은 곳 작은 창과 낮은 가로창만 보인다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/439703626",
+      "name": "에너지자원신기술연구소",
+      "buildingNumber": "135",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=154",
+      "observations": [
+        "갈색 벽돌, 흰 돌출 창틀과 사각창"
+      ],
+      "reason": "에너지자원신기술연구소라는 OSM 이름이 공식 에너지신기술연구동과 대응한다. 공식 점이 본체 바로 옆에 있고 다른 공식 건물 점이 이 윤곽에 배정되지 않는다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439703629",
+      "name": "신소재공동연구소",
+      "buildingNumber": "131",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=151",
+      "observations": [
+        "모서리가 둥근 흰 패널, 좁은 가로창"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439703635",
+      "name": "제2파워플랜트",
+      "buildingNumber": "330",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=196",
+      "observations": [
+        "회색 콘크리트 벽과 커다란 회색 셔터, 외부 배관이 보인다.",
+        "사진 상단에 작은 청색 창과 일부 곡면 유리 구조가 보이나 건물 전체는 담기지 않았다."
+      ],
+      "reason": "공식 330과 332 점이 같은 윤곽 안에 있다. OSM 이름 제2파워플랜트와 일치하는 330을 대표로 삼는다. 두 공식 사진에서 파워플랜트와 붙어 있는 차고 부분을 확인했으며 332는 차고 부분으로 보존한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "부분 사진이므로 전체 지붕 형태와 보이지 않는 입면은 기본값을 사용한다."
+      ]
+    },
+    {
+      "id": "way/439703636",
+      "name": "차량정비고",
+      "buildingNumber": "331",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=197",
+      "observations": [
+        "밝은 회백색 벽과 어두운 대형 차고 셔터가 보인다.",
+        "위층에는 가로로 긴 청색 창이 있고, 외부 계단에 짙은 난간이 설치돼 있다."
+      ],
+      "reason": "차량정비고라는 OSM 이름과 공식 이름이 일치한다. 공식 점은 윤곽 경계에서 약 2.2m 밖에 있어 위치도 대응한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439703637",
+      "name": "대형구조실험동",
+      "buildingNumber": "316",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=195",
+      "observations": [
+        "회백색 판재 외벽에 긴 창 띠가 층마다 반복된다.",
+        "각 창 띠 아래에는 짙은 회색 돌출 띠가 있고, 하부에 큰 배관이 노출돼 있다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439704946",
+      "name": "반도체공동연구소 교육관",
+      "buildingNumber": "104-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=117",
+      "observations": [
+        "밝은 석재의 둥근 전면, 긴 청록창과 유리 현관"
+      ],
+      "reason": "공식 104-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439704948",
+      "name": "기초과학공동기기원",
+      "buildingNumber": "139-1",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "공식 139-1동 점이 윤곽 안에 있다. 기초과학공동기기원 공식 교육 안내가 139-1동을 사용하므로 OSM 소속명과 공식 정전가속기동이 같은 건물을 가리키는 것을 확인했다.",
+      "limitations": []
+    },
+    {
+      "id": "way/439704951",
+      "name": "천문대",
+      "buildingNumber": "46",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "공식 46동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": []
+    },
+    {
+      "id": "way/439707874",
+      "name": "국제백신연구소",
+      "buildingNumber": null,
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "가장 가까운 924동은 학부 생활관이므로 국제백신연구소라는 OSM 이름과 맞지 않는다. 공식 국제백신연구소 950동 점은 별도 본체 안에 있다. 이 윤곽이 950동의 어느 부속 시설인지 확인하지 못해 924와 950의 사진을 모두 적용하지 않는다.",
+      "limitations": []
+    },
+    {
+      "id": "way/439707875",
+      "name": "연구공원",
+      "buildingNumber": "940",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=223",
+      "observations": [
+        "청색 반사 유리 커튼월에 짙은 격자가 촘촘히 반복된다.",
+        "중앙은 수직으로 접힌 유리 구간이고 하부에 넓은 경사 유리 지붕이 보인다."
+      ],
+      "reason": "공식 940동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "하부 경사 유리 지붕과 중앙의 접힌 매스는 기본 외관 프로필만으로 재현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/439707876",
+      "name": "LG전자 서울대연구소",
+      "buildingNumber": "942",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=226",
+      "observations": [
+        "넓은 청록색 반사 유리 구간과 밝은 판재 수직 매스가 번갈아 나타난다.",
+        "유리 면 위에는 어두운 가로 띠가 있고 일부는 열린 발코니와 연결된다."
+      ],
+      "reason": "공식 942동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439707877",
+      "name": "백학어린이집",
+      "buildingNumber": "941",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=224",
+      "observations": [
+        "낮은 주황빛 벽돌 외벽과 밝은 창틀, 노란색 처마 테두리가 보인다.",
+        "우측은 둥글게 휘어진 벽면이며 사진 전면에 별도 노란색 기둥 구조가 있다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439707878",
+      "name": "느티나무 어린이집",
+      "buildingNumber": "941-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=225",
+      "observations": [
+        "노란색 돌출 매스에 모서리가 둥근 불규칙한 창 세 개가 보인다.",
+        "매스 아래에는 노란 기둥과 개방 공간이 있고 옆은 회색 노출 콘크리트다."
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "불규칙한 창과 들어 올린 매스는 일반 사각 창 프로필만으로 표현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/439707880",
+      "name": "직원아파트",
+      "buildingNumber": "936",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=222",
+      "observations": [
+        "적갈색 벽돌 외벽에 밝은 수평 띠와 직사각형 창이 반복된다.",
+        "돌출된 모서리 발코니는 청록색 유리와 밝은 프레임으로 둘러싸여 있다."
+      ],
+      "reason": "공식 936동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "사진 위쪽이 잘려 지붕 형태와 색상은 기본값을 사용한다."
+      ]
+    },
+    {
+      "id": "way/439707881",
+      "name": "게스트하우스",
+      "buildingNumber": "125-2",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=144",
+      "observations": [
+        "붉은 벽돌, 흰 돌출 창틀과 유리 계단실"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439707882",
+      "name": "호암컨벤션센터",
+      "buildingNumber": "125-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=143",
+      "observations": [
+        "갈색 벽돌, 좁은 청록창과 큰 낮은 회색 현관"
+      ],
+      "reason": "공식 125-1동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439707883",
+      "name": "호암서관",
+      "buildingNumber": "127",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=146",
+      "observations": [
+        "갈색 벽돌, 밝은 띠와 사각창, 중앙 청색 유리탑"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439707884",
+      "name": "호암동관",
+      "buildingNumber": "126",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=145",
+      "observations": [
+        "연회색 패널과 선명한 청색 유리 띠, 양끝 계단탑"
+      ],
+      "reason": "OSM과 공식 건물 이름이 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439707885",
+      "name": "파스쿠찌",
+      "buildingNumber": "111",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=129",
+      "observations": [
+        "붉은 벽돌 일부와 유리 전면, 상부 세로 갈색 프레임"
+      ],
+      "reason": "공식 111동 점이 윤곽 안에 있고 서울대 대학원 안내가 사범대 파스쿠찌를 111동으로 명시한다. OSM 카페명과 공식 사범대학 간이식당은 같은 장소다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/439707892",
+      "name": "934",
+      "buildingNumber": "934",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=220",
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "앞쪽 소나무가 일부 창을 가리지만 원형 창과 유리 발코니가 보인다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 934와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/439707893",
+      "name": "933",
+      "buildingNumber": "933",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=219",
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "옆에서 본 발코니의 청록색 유리와 흰색 프레임이 강조된다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 933와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/439707894",
+      "name": "932",
+      "buildingNumber": "932",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=218",
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "정면 창 사이에 원형 창이 반복되고 하부 출입구는 수목에 일부 가려져 있다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 932와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/439707895",
+      "name": "931",
+      "buildingNumber": "931",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=217",
+      "observations": [
+        "붉은 갈색 벽돌 외벽에 큰 유리 발코니와 흰색 창틀이 반복된다.",
+        "가장자리의 막힌 벽과 중앙의 원형 창 열이 함께 보인다.",
+        "상단에 낮은 박공지붕과 붉은 기와색 가장자리가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 931와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "원형 창과 박공지붕은 현재 기본 창과 지붕 분류만으로 그대로 표현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/455025059",
+      "name": "",
+      "buildingNumber": null,
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "미대 교양실습동 옆의 작은 무명 윤곽이다. 공식 52-1동 점은 다른 본체 안에 있고 이 시설의 번호와 용도를 확인하지 못했다.",
+      "limitations": []
+    },
+    {
+      "id": "way/456300256",
+      "name": "919B",
+      "buildingNumber": "919B",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://snudorm.snu.ac.kr/생활관-정보/학생생활관/학부생활관/919동/",
+      "observations": [
+        "밝은 회백색 판재 외벽 사이에 주황빛 갈색 수평 띠와 큰 직사각형 창이 반복된다. 창 앞에 회색 난간이 보인다.",
+        "중정에서 두 입면이 직각으로 만나며, 하부에는 둥근 기둥과 유리로 둘러싼 출입부가 있다.",
+        "사진에 B동 글자가 보이므로 A동 사진을 대신 적용한 것이 아니다."
+      ],
+      "reason": [
+        {
+          "url": "https://snudorm.snu.ac.kr/생활관-정보/학생생활관/학부생활관/919동/",
+          "reason": "919동 공식 안내의 외부 사진이며, 사진 속 서로 직각으로 만나는 두 입면의 하단에 B동 표기가 직접 보인다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/456300256",
+          "reason": "OSM 이름이 919B이고 윤곽이 직각으로 꺾인 형태다. 사진의 B동 표기와 꺾인 중정 입면을 이 윤곽에 연결했다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "사진에 보이지 않는 뒤쪽 면과 지붕면은 확인하지 않았다.",
+        "현 프로필은 중정 입면의 주된 색과 창 비율을 근사하며, 난간과 유리 출입부를 별도 모델로 재현하지 않는다."
+      ]
+    },
+    {
+      "id": "way/456356711",
+      "name": "우정원 글로벌사회공헌센터(153동)",
+      "buildingNumber": "153",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=173",
+      "observations": [
+        "밝은 외벽, 청록 사각창 반복과 기둥이 드러난 하부"
+      ],
+      "reason": "공식 153동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/456356713",
+      "name": "체육문화교육연구동(71-1동)",
+      "buildingNumber": "71-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://snu.ac.kr/snunow/snu_story?bbsidx=123072&md=v",
+      "observations": [
+        "도로 쪽 긴 건물은 밝은 석재 판처럼 보이는 외장과 높이가 다른 세로 창으로 구성된다.",
+        "최상층은 짙은 회색 외장과 가는 세로 창이 반복되며 모서리에는 넓은 유리가 있다.",
+        "체육관으로 보이는 큰 뒷부분은 회갈색 세로 판과 유리 하부로 구성되고 창이 드물다.",
+        "공식 기사에서 지상 5층과 지하 1층을 확인했다."
+      ],
+      "reason": "서울대 공간 탐방 기사가 동 번호 71-1과 체육문화교육연구동 명칭을 명시하며 여러 방향 사진을 제공한다. 정면 사진의 71-1 표시와 OSM 명칭이 일치한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "2016년 준공 당시 사진이며 이후 외장 변경 여부는 확인하지 않았다.",
+        "공통 프로필은 도로 쪽 밝은 건물을 기준으로 하며 창이 적은 체육관 부분까지 정확히 구분하지 못한다."
+      ]
+    },
+    {
+      "id": "way/460919054",
+      "name": "42-1동",
+      "buildingNumber": "42-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=52",
+      "observations": [
+        "밝은 패널 창고에 작은 가로창이 드문드문 있다. 입구 옆은 황토색 세로 패널과 청록 유리다."
+      ],
+      "reason": "OSM의 건물 번호 42-1와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/460919056",
+      "name": "45동",
+      "buildingNumber": "45",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=57",
+      "observations": [
+        "사진은 입구와 소나무 위주다. 콘크리트 벽, 가로 슬릿과 세로로 긴 계단실 창만 확인된다."
+      ],
+      "reason": "OSM의 건물 번호 45와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/482207537",
+      "name": "제2공학관",
+      "buildingNumber": "302",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+      "observations": [
+        "회색 외벽의 넓은 수평 띠와 청색 창 띠가 번갈아 나타난다.",
+        "중앙 유리 구간에 붉은빛 X자 구조가 보인다.",
+        "공식 개관식 기사는 지상 10층을 명시한다. 현재 OSM에서 가져온 20층과 다르다."
+      ],
+      "reason": [
+        {
+          "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=188",
+          "reason": "공식 지도에서 제2공학관을 302동으로 명시한다. 건물 사진 전면에도 302 ENGINEERING 표기가 있다."
+        },
+        {
+          "url": "https://eng.snu.ac.kr/sites/default/files/%EC%84%9C%EC%9A%B8%EA%B3%B5%EB%8C%80%202002%EB%85%84%204.5.6%EC%9B%94%ED%98%B8.pdf#page=67",
+          "reason": "서울대학교 공과대학이 배포한 제2공학관 개관식 기사로, 공식 지도와 건물명이 일치한다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "중앙 X자 구조는 색상 프로필만으로 재현되지 않는다.",
+        "실제 높이 수치는 확인하지 않았다. 현재 데이터의 70m는 OSM 20층에서 계산한 추정값이다. 10층에 기본 층고 3.5m를 곱한 35m도 추정 높이다.",
+        "공식 건축 층수는 건물 전체의 규모다. 사진에서 보이는 낮은 전면부와 높은 양쪽 부분의 층수 차이는 이 단일 프로필로 재현하지 않는다."
+      ]
+    },
+    {
+      "id": "way/482220667",
+      "name": "900",
+      "buildingNumber": "900",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=201",
+      "observations": [
+        "노란빛이 섞인 밝은 벽돌 외벽에 작은 정사각형 창이 일정하게 놓여 있다.",
+        "창은 청록빛이며 은회색 프레임과 밝은 출입구 차양이 보인다."
+      ],
+      "reason": "OSM의 건물 번호 900와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220668",
+      "name": "922",
+      "buildingNumber": "922",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=212",
+      "observations": [
+        "짙은 적갈색 벽돌 외벽에 깊게 들어간 세로 창 구간이 반복된다.",
+        "창 사이의 짧은 흰색 판과 낮은 처마가 보이며 수목이 일부를 가린다."
+      ],
+      "reason": "OSM의 건물 번호 922와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220670",
+      "name": "924",
+      "buildingNumber": "924",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=214",
+      "observations": [
+        "적갈색 벽돌과 깊게 들어간 세로 창이 반복된다.",
+        "창 사이 흰색 판, 흰 계단 난간과 녹색 반투명 출입구 차양이 보인다."
+      ],
+      "reason": "OSM 이름의 924와 공식 번호가 일치한다. 공식 점은 윤곽 경계에서 약 2.5m 밖에 있어 위치도 대응한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220671",
+      "name": "919D",
+      "buildingNumber": "919",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "OSM 이름은 919D이며 서울대 공식 자료도 919동의 A, B, C, D 구분을 사용한다. 공식 색인은 919동을 한 점으로 제공하므로 각 날개와 점 사이의 거리만으로 다른 건물에 연결하면 안 된다. 직접 확인한 공식 사진은 입구에 A동이 표시돼 있다. D동 외관에 A동 사진을 그대로 적용하지 않는다.",
+      "limitations": []
+    },
+    {
+      "id": "way/482220672",
+      "name": "906",
+      "buildingNumber": "906",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=207",
+      "observations": [
+        "밝은 황갈색 벽돌 벽과 작은 청록색 창이 반복된다.",
+        "가운데 깊은 틈에는 열린 복도가 여러 층 겹치고, 건물 끝에 흰색 발코니가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 906와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220673",
+      "name": "904",
+      "buildingNumber": "904",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=205",
+      "observations": [
+        "밝은 황갈색 벽돌 건물이 중정을 둘러싸고 있으며 작은 사각 창이 여러 줄로 반복된다.",
+        "창 사이 일부에 갈색 패널이 있고 하부에는 기둥과 열린 공간이 보인다."
+      ],
+      "reason": "OSM의 건물 번호 904와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220675",
+      "name": "905",
+      "buildingNumber": "905",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=206",
+      "observations": [
+        "황갈색 벽돌 외벽에 작은 사각 창이 반복되고 건물 끝에 흰색 발코니가 세로로 돌출된다.",
+        "일부 창 사이에는 갈색 패널이 보인다."
+      ],
+      "reason": "OSM의 건물 번호 905와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220678",
+      "name": "903",
+      "buildingNumber": "903",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=204",
+      "observations": [
+        "황갈색 벽돌 벽에 작은 사각 창이 규칙적으로 배치된다.",
+        "오른쪽 좁은 수직 유리 구간은 어둡고, 출입구에는 밝은 사각 차양이 있다."
+      ],
+      "reason": "OSM 이름의 903과 공식 번호가 일치한다. 공식 점은 윤곽 경계에서 약 2.2m 밖에 있어 위치도 대응한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220679",
+      "name": "923",
+      "buildingNumber": "923",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=213",
+      "observations": [
+        "짙은 적갈색 벽돌 벽과 세로 창 구간이 반복된다.",
+        "밝은 수평 판이 창 사이에 짧게 들어가고 출입구 앞에 흰 계단 난간이 있다."
+      ],
+      "reason": "OSM의 건물 번호 923와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220680",
+      "name": "902",
+      "buildingNumber": "902",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=203",
+      "observations": [
+        "밝은 황갈색 벽돌 벽에 정사각형 창이 반복된다.",
+        "오른쪽은 열린 복도 또는 발코니와 밝은 바닥 띠가 겹쳐 있으며, 유리 지붕의 보행 통로가 앞에 있다."
+      ],
+      "reason": "OSM의 건물 번호 902와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482220682",
+      "name": "901",
+      "buildingNumber": "901",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3082",
+      "observations": [
+        "누런 주황빛 벽돌 외벽에 작고 분리된 청록색 창이 규칙적으로 배열된다.",
+        "탑형 덩어리의 한쪽 입면에 큰 직사각형 후퇴부가 있고, 모서리에는 좁은 세로 유리창이 보인다.",
+        "지면 가까운 부분은 밝은 기둥과 넓은 유리창으로 구성된다.",
+        "공식 901동 페이지가 919동 외부 사진을 재사용하고 있어 해당 사진은 901동의 외관 근거에서 제외했다."
+      ],
+      "reason": [
+        {
+          "url": "https://kbo.bioedu.kr/공지사항/?mod=document&uid=3082",
+          "reason": "행사 주최 기관의 공식 안내가 901동을 명시하며, 첨부 사진의 붉은 화살표가 901동 외벽을 직접 가리킨다."
+        },
+        {
+          "url": "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_map02.png",
+          "reason": "공식 생활관 배치도에서 901동은 900동 남쪽, 902동 서쪽의 독립된 탑형 건물이다. OSM 윤곽 및 사진의 주변 배치를 대조했다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/482220682",
+          "reason": "OSM 이름 901과 별도 탑형 윤곽이 공식 배치도의 901동 위치에 대응한다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "대학이 직접 촬영한 사진이 아니라 행사 주최 기관이 게시한 거리뷰 캡처다. 원래 거리뷰 서비스의 현재 화면을 직접 조회한 것은 아니다.",
+        "상단 사진은 2014년 4월 표기가 있어 현재 외관과의 일치는 확인하지 못했다.",
+        "건물의 큰 후퇴부와 하부 유리 공간은 일반 외관 프로필만으로 재현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/482220683",
+      "name": "921",
+      "buildingNumber": "921",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=211",
+      "observations": [
+        "짙은 적갈색 벽돌 기둥 사이에 좁고 긴 창 구간이 들어가 있다.",
+        "층 사이의 짧은 흰색 판과 녹색 반투명 출입구 차양이 보인다."
+      ],
+      "reason": "OSM의 건물 번호 921와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482425583",
+      "name": "919A",
+      "buildingNumber": "919",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=209",
+      "observations": [
+        "밝은 회백색 판재 외벽에 세로로 긴 창이 일정한 간격으로 반복된다.",
+        "층 사이 얇은 분홍빛 띠와 세로 유리 계단실이 보인다."
+      ],
+      "reason": "OSM 이름은 919A이며 서울대 공식 자료도 919동의 A, B, C, D 구분을 사용한다. 공식 색인은 919동을 한 점으로 제공하므로 각 날개와 점 사이의 거리만으로 다른 건물에 연결하면 안 된다. 직접 확인한 공식 사진은 입구에 A동이 표시돼 있다. A동 사진만 이 윤곽의 참고로 사용한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482425584",
+      "name": "919C",
+      "buildingNumber": "919",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "OSM 이름은 919C이며 서울대 공식 자료도 919동의 A, B, C, D 구분을 사용한다. 공식 색인은 919동을 한 점으로 제공하므로 각 날개와 점 사이의 거리만으로 다른 건물에 연결하면 안 된다. 직접 확인한 공식 사진은 입구에 A동이 표시돼 있다. C동 외관에 A동 사진을 그대로 적용하지 않는다.",
+      "limitations": []
+    },
+    {
+      "id": "way/482425585",
+      "name": "925",
+      "buildingNumber": "925",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=215",
+      "observations": [
+        "붉은 갈색 벽돌 기둥이 세로로 반복되고 창은 기둥 사이에 깊게 들어가 있다.",
+        "창 구간 사이의 짧은 밝은 판과 지붕 가장자리의 밝은 처마가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 925와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/482425586",
+      "name": "926",
+      "buildingNumber": "926",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=216",
+      "observations": [
+        "짙은 적갈색 벽돌 건물의 긴 옆면에 세로 창 구간이 반복된다.",
+        "건물 끝의 흰색 외부 발코니가 뚜렷하고 지붕 가장자리에 얕은 경사가 보인다."
+      ],
+      "reason": "OSM의 건물 번호 926와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "사진의 얕은 지붕 경사는 기본 roofStyle로 직접 표현하지 않는다."
+      ]
+    },
+    {
+      "id": "way/482425587",
+      "name": "920",
+      "buildingNumber": "920",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=210",
+      "observations": [
+        "짙은 붉은 벽돌 외벽에 길쭉한 청록색 창이 보인다.",
+        "중앙 출입구는 큰 유리 면으로 구성되고 붉은색 얇은 차양 테두리가 있다."
+      ],
+      "reason": "OSM의 건물 번호 920와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/700872151",
+      "name": "삼성전자서울대연구소",
+      "buildingNumber": "944",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf",
+      "observations": [
+        "넓은 청록색 유리 입면에 가는 밝은 세로 프레임이 반복된다.",
+        "주황색 직사각형 테두리가 일부 층의 돌출 창과 큰 유리 구간을 강조한다.",
+        "높이가 다른 두 주된 매스와 유리 연결부가 보이며, 오른쪽 지붕에는 넓게 떠 있는 짙은 패널 차양이 있다.",
+        "보고서 본문은 지상 10층과 2017년 7월 준공을 명시한다. 사진의 정확한 촬영일은 명시하지 않는다."
+      ],
+      "reason": [
+        {
+          "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf#page=58",
+          "reason": "인쇄 112쪽의 삼성전자 연구소 신축 항목에 건물명과 완성된 외관 사진이 함께 실려 있다. 앞쪽 가족생활관 931동 표기도 사진에서 확인된다."
+        },
+        {
+          "url": "https://snudorm.snu.ac.kr/wp-content/uploads/sites/39/2021/01/img_map02.png",
+          "reason": "공식 배치도는 가족생활관 뒤쪽 연구공원에 944동을 표시한다. 사진의 가족생활관 뒤 두 매스와 OSM 삼성전자서울대연구소 윤곽의 상대 위치가 일치한다."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/700872151",
+          "reason": "OSM에 삼성전자서울대연구소로 명명된 이 윤곽을 944동으로 연결한다. 교직원아파트 936동은 제외한다."
+        }
+      ],
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "공식 자료는 지상 10층을 명시한다. 실제 높이 수치는 확인하지 않았다. 생성기가 계산하는 35m는 10층에 기본 층고 3.5m를 곱한 추정값이며 실측 높이가 아니다.",
+        "지붕의 큰 패널 차양과 두 매스 사이의 높이 차는 일반 외관 프로필로 정확히 재현되지 않는다."
+      ]
+    },
+    {
+      "id": "way/777502176",
+      "name": "312 정밀기계설계 실험동",
+      "buildingNumber": "312",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=192",
+      "observations": [
+        "밝은 회색 판재 외벽에 짙은 회색 수평 띠와 세로 기둥이 반복된다.",
+        "가로로 넓은 창은 갈색 또는 회색으로 보이며 일부 하부는 수목과 부속 시설에 가려져 있다."
+      ],
+      "reason": "공식 312동 좌표가 이 OSM 윤곽 안에 있으며 다른 공식 건물 점과 겹치지 않는다. OSM 소속명과 공식 건물명 사이에 건물 식별을 뒤집을 명백한 충돌이 없어 이 위치로 연결한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다."
+      ]
+    },
+    {
+      "id": "way/892896238",
+      "name": "공과대학",
+      "buildingNumber": "35",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=44",
+      "observations": [
+        "전면에 회색 금속 격자와 차양판이 촘촘하다. 하부는 연속된 유리문이다."
+      ],
+      "reason": "OSM의 건물 번호 35와 공식 번호가 일치하고 공식 좌표가 윤곽 안에 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "한 방향 사진에서 보이는 외관만 확인했다. 사진 촬영일, 정확한 재료, 크기와 뒤쪽 형태는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/905718842",
+      "name": "실험동물자원관리원",
+      "buildingNumber": "69",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://ilar.snu.ac.kr/03_research-facility/facility-1/",
+      "observations": [
+        "붉은 갈색 벽돌 외장에 가는 밝은 가로 띠가 층마다 이어진다.",
+        "상부의 넓은 면과 오른쪽 세로 부분은 은회색 가로 날개로 덮여 있다.",
+        "낮은 층에는 밝은 불투명 판과 짙은 창이 섞여 있고 중간 층은 일반 강의동보다 창이 적다."
+      ],
+      "reason": "관리원 공식 시설 안내가 위치를 69동으로 명시하고 사진에도 69 표시가 보인다. 공식 연혁은 2019년 8월 재건축 준공을 기록한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "작은 정면 사진으로 확인했으며 옆면과 지붕 설비의 구체적인 형태는 보이지 않는다.",
+        "가로 날개와 불투명 판은 창 유리와 다르므로 전체를 투명한 유리벽으로 표현하면 부정확하다."
+      ]
+    },
+    {
+      "id": "way/1469808348",
+      "name": "",
+      "buildingNumber": "149",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "이름 없는 grandstand 윤곽 안에 공식 종합운동장본부석 149동 점이 있다. 같은 자리의 roof 윤곽과 본부석 본체를 구분해 연결한다.",
+      "limitations": []
+    },
+    {
+      "id": "way/1469808353",
+      "name": "",
+      "buildingNumber": "149",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "이름 없는 roof 윤곽 안에 공식 종합운동장본부석 149동 점이 있다. 별도 grandstand 윤곽 위의 지붕 부분이므로 독립된 다층 건물 외관을 적용하지 않는다.",
+      "limitations": []
+    },
+    {
+      "id": "way/1469808354",
+      "name": "",
+      "buildingNumber": null,
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "동원생활관 부근의 약 5m x 14m 무명 윤곽이다. 공식 113동 점은 본체 안에 있고 이 시설까지 약 51m 떨어져 있다. 용도와 소속을 확인하지 못했다.",
+      "limitations": []
+    },
+    {
+      "id": "way/1485386282",
+      "name": "데이터사이언스대학원",
+      "buildingNumber": "43-2",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://gsds.snu.ac.kr/wp-content/uploads/2025/09/%EB%B6%99%EC%9E%841-2026%ED%95%99%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%ED%95%99%EC%9B%90-%EC%8B%A0%EC%9E%85%EC%83%9D-%EB%AA%A8%EC%A7%91-%EC%9E%85%EC%8B%9C-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%9E%90%EB%A3%8C-2025.-9.-12..pdf",
+      "observations": [
+        "길고 낮은 본체는 밝은 회색 큰 외장 판과 한 줄의 짙은 가로창으로 구성된다.",
+        "회색 상부 아래에는 돌출된 유리 출입구와 갈색 세로 판처럼 보이는 하부가 있다.",
+        "상부는 넓은 창 없는 면과 낮은 지붕 난간이 이어진다."
+      ],
+      "reason": "공식 2026학년도 입시설명회 자료 18쪽 사진에 43-2 번호가 보이고 14쪽 배치도도 별도 건물로 표시한다. 공식 캠퍼스 지도 점과 OSM 명칭이 이 윤곽에 대응한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "사진 한 장에서 보이는 길쭉한 면만 확인했다. 뒤쪽과 경사 지형 쪽의 노출 층수는 확인하지 않았다."
+      ]
+    },
+    {
+      "id": "way/1530459898",
+      "name": "",
+      "buildingNumber": "32",
+      "appearance": "unverified",
+      "sourceUrl": null,
+      "observations": [],
+      "reason": "공식 옛 32동 점이 윤곽 안에 있지만 OSM은 construction으로 표시한다. 서울대 공대가 31~32동 증개축과 간호대 이전 공사를 공지했으므로 옛 32동 사진을 이 새 공사 윤곽의 외관으로 적용하지 않는다.",
+      "limitations": []
+    },
+    {
+      "id": "way/1537839925",
+      "name": "한국경제혁신센터",
+      "buildingNumber": "16",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://econ.snu.ac.kr/about/newsletter?mode=download&seqidx=51",
+      "observations": [
+        "긴 상부 건물에 밝은 베이지색 격자와 짙은 세로 유리창이 반복된다.",
+        "층 경계의 가는 가로 띠와 강한 세로 기둥이 함께 보이며 하부에는 긴 유리 면이 있다.",
+        "상부 지붕에 검은 태양광 패널이 줄지어 놓였고, 한쪽 끝에는 어두운 세로 날개가 이어진다.",
+        "주변 기존 건물 일부는 공사 가림막으로 덮여 있다. 가림막 색은 건물의 최종 외장으로 사용하지 않는다."
+      ],
+      "reason": "경제학부 2026년 4월 소식지 1쪽의 한국경제혁신센터 1단계 완료 기사와 실제 항공사진을 확인했다. 사진 앞의 101동 아시아연구소, 뒤의 사회과학관과의 배치가 OSM 증축부 위치와 대응한다. 기사에는 2025년 12월 신축 건물 입주가 명시돼 있다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "이 프로필은 새 증축부에만 적용하며 같은 번호를 쓰는 기존 사회과학관 전체에 적용하지 않는다.",
+        "사진의 바깥쪽 긴 면만 확인했고 정확한 높이와 전체 층수는 측정하지 않았다."
+      ]
+    },
+    {
+      "id": "way/1542788687",
+      "name": "우석경제관",
+      "buildingNumber": "223",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://www.snukdt.com/abs/notice/notice.php?code=notice&idx=219&page=1&ptype=view",
+      "observations": [
+        "차가운 회색 정사각 외장 패널과 깊은 개별 창이 반복된다.",
+        "오른쪽 건물은 큰 사각 테두리 안에 유리벽을 두고 중앙 유리 연결 부분과 바깥 계단으로 이어진다.",
+        "왼쪽 상층은 개별 창 위주이며 낮은 층과 오른쪽 부분은 유리 비중이 크다. 지붕 위에는 난간과 뒤로 물러난 작은 상부가 보인다."
+      ],
+      "reason": "서울대 빅데이터 핀테크 AI 고급 전문가 과정 사무국의 방문 안내가 우석경제관 223동 외관과 계단을 명시하며 해당 사진을 제공한다. 공식 지도 좌표와 건물명도 OSM과 일치한다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "해질 무렵 사진이므로 외장 색의 수치는 조명에 영향을 받은 근사값이다.",
+        "하나의 반복 입면으로는 오른쪽 대형 유리 부분과 왼쪽 개별 창을 정확히 분리하지 못한다."
+      ]
+    },
+    {
+      "id": "supplemental/snu-303",
+      "name": "해동첨단공학관",
+      "buildingNumber": "303",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://haec.snu.ac.kr/about",
+      "observations": [
+        "회색 패널을 두른 남쪽 몸체에는 큰 창 다섯 줄이 보이고, 북쪽 몸체에는 큰 창 세 줄과 낮은 창 띠가 보인다.",
+        "가운데 유리면은 접혀 있으며 내부에 목재 기둥과 대각선 부재, 좁은 회랑과 위층까지 열린 공간이 보인다.",
+        "서쪽에는 열린 주차 필로티가 있고 동쪽 2층 현관 앞에는 넓은 데크가 있다."
+      ],
+      "reason": "공식 시설 소개의 303동 명칭과 준공 사진, Rawwrks의 2024년 촬영을 대조했다. 공식 약도로 주변 건물과의 상대 위치를 확인했으나 실측 외곽은 확보하지 못했다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "7층은 공식 규모다. 28m 높이와 부분별 높이, 창 치수는 사진에 따른 추정이다.",
+        "약도 정합의 별도 검증점 오차는 약 8~19m다. 보조 외곽의 소수 자릿수는 실측 정확도를 뜻하지 않는다.",
+        "301동 방향의 연결 데크는 사진에 보이지만 게임의 기존 지형과 높이가 맞지 않아 연결 다리는 보류했다."
+      ]
+    },
+    {
+      "id": "supplemental/snu-56-1",
+      "name": "김철수물리관",
+      "buildingNumber": "56-1",
+      "appearance": "photo-reference",
+      "sourceUrl": "https://vmspace.com/project/project_view.html?base_seq=Mzc4Mw%3D%3D",
+      "observations": [
+        "흰 석재 띠와 유리 난간을 두른 계단식 테라스",
+        "낮은 서쪽 지하 1층 입구와 높은 동쪽 3층 입구",
+        "동쪽 현관 계단과 지그재그 경사로, 건물 양옆 계단",
+        "2층과 3층의 56동 연결다리, 옥상 태양광 패널"
+      ],
+      "reason": "공식 준공 기사와 지도에 56-1동이 관정관과 56동 사이에 표시된다. 공개 배치도와 주변 건물을 대조했다.",
+      "limitations": [
+        "사진에서 보이는 면을 참고한 근사 모델이다. 사진 촬영일과 보이지 않는 면은 각 자료의 한계를 따른다.",
+        "외곽 좌표, 층별 바닥 높이와 통로 치수는 공개 도면과 게임 지형에 맞춘 근사다.",
+        "공개 사진에 보이는 외관과 짧은 현관, 연결교 접속부를 구현했다. 전체 실내와 실내 층간 이동은 구현하지 않았다."
+      ]
+    }
+  ]
+}

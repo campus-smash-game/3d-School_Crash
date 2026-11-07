@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T21:56:22.930Z",
+  "buildingId": "way/434754623",
+  "status": "implemented-partial-photo-reference",
+  "scope": "143동 북서면, 현관과 경사로, 20동 방향 유리 연결교",
+  "references": [
+    {
+      "url": "https://kko.to/VPgWKMI4ox",
+      "panoId": "1212805213",
+      "captureMonth": "2026-07",
+      "view": "20동 쪽 교각과 연결부 후면",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy143-review69/69-rear-start.png",
+          "sha256": "75fe70cca2efdf55fd0752896815ab81abbe9ae258c93b3867ba9b118d1909c4"
+        }
+      ],
+      "directlyViewedBy": "root"
+    },
+    {
+      "url": "https://kko.to/jkK4KroZYg",
+      "panoId": "1212805213",
+      "captureMonth": "2026-07",
+      "view": "143동 연결교 접속부와 하부 현관",
+      "lat": 37.45824384373843,
+      "lon": 126.95266441429237,
+      "gamePoint": [
+        377.22113179378,
+        -904.4144710379095
+      ],
+      "captures": [
+        {
+          "file": "artifacts/pharmacy143-review69/69-143-end.png",
+          "sha256": "cfcb7e41d48aa448a231cb6f8b7287f64810bc0fcc3c5711866954629a06b954"
+        },
+        {
+          "file": "artifacts/pharmacy143-review69/69-143-upper.png",
+          "sha256": "dd25375bd81e3f7e14dec8c0f3f45968ed34aa13f1ac4238c754a5fd7cdc96d6"
+        }
+      ],
+      "directlyViewedBy": "root"
+    },
+    {
+      "url": "https://kko.to/mr_-BnA1sn",
+      "panoId": "1212805211",
+      "captureMonth": "2026-07",
+      "view": "북동쪽 도로에서 본 연결교와 하부 통과 공간",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy143-review69/69-bridge-side-ready.png",
+          "sha256": "fea764dc204d666f5039d82e841b5cffd0949a7997d4fd064e1ba0dcc545d97d"
+        }
+      ],
+      "directlyViewedBy": "root"
+    },
+    {
+      "url": "https://kko.to/GevcCRi1C4",
+      "panoId": "1212805211",
+      "captureMonth": "2026-07",
+      "view": "143동 북쪽 현관과 경사로",
+      "captures": [
+        {
+          "file": "artifacts/pharmacy143-review69/69-road-ne-step.png",
+          "sha256": "4b1555433c91619cdee8bd28b619c10cbb9d0e70a70e41ebeb24aea97b289eac"
+        }
+      ],
+      "directlyViewedBy": "root"
+    },
+    {
+      "url": "https://www.snu.ac.kr/snunow/press?bbsidx=120305&md=v",
+      "publishedAt": "2014-05-13",
+      "eventAt": "2014-05-12",
+      "observed": [
+        "공식 규모는 지하 1층, 지상 5층, 연면적 8969제곱미터다.",
+        "공식 개관식 사진에서 넓은 계단, 금색 계열 문틀, 세로 무늬 유리판과 짙은 천장을 확인했다."
+      ]
+    },
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=166",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000163.jpg",
+      "captureDate": null,
+      "observed": [
+        "곡선 외벽과 세로 부재, 하부 유리면, 굵은 기둥과 연결교"
+      ]
+    },
+    {
+      "url": "https://en.snu.ac.kr/snunow/snu_media/news?bbsidx=123068&md=v",
+      "publishedAt": "2016-04-28",
+      "captureDate": null,
+      "observed": [
+        "도로 위를 가로지르는 유리 연결교와 차량 통과 공간"
+      ]
+    },
+    {
+      "url": "https://www.edujin.co.kr/news/articleView.html?idxno=48173",
+      "imageUrl": "https://cdn.edujin.co.kr/news/photo/202411/48173_93156_551.png",
+      "captureDate": null,
+      "observed": [
+        "상부 세 층의 창 띠와 세로 핀, 흰 곡면 덮개와 경사진 옥상 골조"
+      ],
+      "limit": "기사 본문은 403으로 열리지 않았다. 공개 사진을 직접 보고 공식 사진과 대조했으며 URL 경로를 촬영일로 해석하지 않았다."
+    },
+    {
+      "url": "https://snupharm.snu.ac.kr/공지사항/?mod=document&uid=8613",
+      "publishedAt": "2025-12-29",
+      "eventAt": "2026-01-09",
+      "observed": [
+        "공식 시험 안내에 143동 1층 좌측 출입구와 102호가 명시됐다."
+      ],
+      "limit": "좌측의 기준 방위, 문 중심 좌표나 연결교 접속층을 확정하는 자료는 아니다."
+    }
+  ],
+  "implemented": [
+    "북서쪽 곡면과 벽돌 기둥, 밝은 세로 핀, 상부 세 층의 창 띠",
+    "후퇴한 하부 두 층의 유리면과 사각 기둥, 짙은 천장",
+    "현관의 금색 문틀과 건물명, 넓은 계단과 북쪽 경사로",
+    "보도 줄눈과 점자블록, 143동 안내판",
+    "20동 쪽 원형 교각과 143동 쪽 강재 교각, 유리 연결교와 양쪽 짧은 현관",
+    "원본 지도에 표시된 교량 보행로의 지상 도로 표현을 끄고 높은 연결교로 구분"
+  ],
+  "estimates": [
+    "지상 5층은 공식 규모다. 게임 바닥 표고 69m, 높이 17.5m와 층고는 실측값이 아니다.",
+    "연결교의 중심선은 OSM way/435329616을 따르며 지도에 폭 1.5m가 기록돼 있다. 실제 통과 폭과 난간 치수는 측량하지 않았다.",
+    "연결교 바닥 표고 72.5m, 접속 개구부와 짧은 현관의 위치는 게임 지형과 건물에 맞춘 근사다. 공식 층 번호와 대응하지 않는다.",
+    "계단 8단, 경사로 위치와 길이, 기둥 간격, 창틀과 외장 반복은 사진 비례에 따른 근사다. 경사로의 통행 폭을 확보하도록 해당 기둥을 안쪽에 배치했다.",
+    "곡면을 짧은 평면으로 나눴으며 후퇴한 하부와 옥상 구조의 크기는 근사다.",
+    "원본 지도와 DEM은 보존하고 현관 앞 보행 구역의 게임 지형만 국소 보정한다."
+  ],
+  "unresolved": [
+    "남동쪽 뒤편의 창과 출입구, 옥상 구조물의 용도와 정확한 치수",
+    "연결교 양 끝 문틀의 실제 상세와 공식 연결층 번호",
+    "지상 현관에서 연결교 층으로 올라가는 실내 동선",
+    "지하층과 전체 실내, 현재 출입 가능 상태"
+  ],
+  "performance": "외벽과 유리, 보도 줄눈과 난간을 병합 기하로 묶는다. 장식마다 별도 물리 객체를 만들지 않는다.",
+  "sourceImagesUsedAsTextures": false
+}

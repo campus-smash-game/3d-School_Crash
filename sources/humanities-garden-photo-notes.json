@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T09:34:04.168Z",
+  "status": "implemented-partial-photo-reference",
+  "buildingIds": [
+    "way/167984624",
+    "way/167983080"
+  ],
+  "buildingNumbers": [
+    "1",
+    "2"
+  ],
+  "scope": "1동 동쪽 끝과 2동 남쪽 면 사이 아방궁의 쉼터와 추정 보행 동선을 보완했다. 두 건물 전체와 250동 유리 연결부는 이번 구현에 포함하지 않았다.",
+  "references": [
+    {
+      "kind": "official-map-photo",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000001.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=1",
+      "localPhoto": "../references/buildings/photos/001-1.jpg",
+      "sha256": "a309686c941f30c0232e5ac3ee1bfcf2b38cdbcb4596ef35096acef3f87e7a2e",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "1동의 동쪽 끝과 2동의 남쪽 긴 면 사이 정원",
+        "벽돌 기둥과 등나무 틀, 긴 벤치",
+        "조경석, 나무와 낮은 식생",
+        "건물 모서리의 유리 계단 연결부"
+      ],
+      "limits": [
+        "촬영일과 실측 치수는 미확인이다.",
+        "옛 사진에 보이는 이동식 원형 탁자와 구형 조명을 현재 시설로 단정하지 않았다."
+      ]
+    },
+    {
+      "kind": "official-newsletter-photo",
+      "url": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+      "title": "인문대 소식 제62호, 2026년 1호",
+      "published": "2026-04-20",
+      "captureDate": null,
+      "pdfPage": 15,
+      "printedPage": 29,
+      "photoCredit": "이동훈",
+      "localPhoto": "artifacts/humanities14-review/44-newsletter-008.png",
+      "sha256": "0f76f4dd128996cdaed20ed07af8ef353baf3b698048cfbf219d447b43cedd11",
+      "directlyViewedBy": "root",
+      "observed": [
+        "회색과 밝은 베이지색의 불규칙한 돌 포장",
+        "왼쪽 벽돌 기둥 쉼터와 등나무 틀, 벤치",
+        "흰 덮개가 달린 낮은 어두운 조명",
+        "넓적한 갓의 정원등, 좁은 침엽수와 길가 조경석"
+      ],
+      "limits": [
+        "소식지 발행일을 사진 촬영일로 간주하지 않았다.",
+        "사진에 가려진 길의 전체 선형과 실제 시설 개수는 알 수 없다."
+      ]
+    },
+    {
+      "kind": "kakao-satellite-ui",
+      "page": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%EC%9D%B8%EB%AC%B8%EA%B4%802",
+      "place": "https://place.map.kakao.com/17561236",
+      "uiGeneratedShare": "https://kko.to/o7e94r7s_3",
+      "shareReopened": false,
+      "captureDate": null,
+      "localCapture": "artifacts/humanities-garden-review/output/playwright/45-satellite.png",
+      "sha256": "a2bb3d62c7ce6666bb24f1733403606e6bfe15ab1f466d9c8ab4b0953fdddbd9",
+      "directlyViewedBy": "root",
+      "use": "건물과 정원의 상대 위치를 대조했다. 수목에 가린 내부 길을 실측하지 않았다."
+    }
+  ],
+  "roadview": {
+    "interiorObserved": false,
+    "coverageEvidence": "sources/humanities-passage-roadview-review.json",
+    "scope": "앞서 확인한 카카오와 네이버의 내부 1동과 2동 정원 주변 촬영선에서는 정원 내부 시점을 확보하지 못했다. 이번 위성사진 확인은 로드뷰 관측에 포함하지 않는다."
+  },
+  "implementation": {
+    "route": [
+      [
+        397.1,
+        -726.88
+      ],
+      [
+        394,
+        -720
+      ],
+      [
+        389,
+        -712
+      ],
+      [
+        386.5,
+        -704
+      ],
+      [
+        387.5,
+        -696
+      ],
+      [
+        389.6825,
+        -686.7725
+      ],
+      [
+        399.5,
+        -690.5
+      ],
+      [
+        407.915,
+        -693.695
+      ],
+      [
+        411,
+        -696
+      ],
+      [
+        421.5,
+        -702.25
+      ]
+    ],
+    "routeWidth": 2.8,
+    "pergola": [
+      399.5,
+      -690.5
+    ],
+    "geometry": {
+      "parts": 1477,
+      "colliders": 257,
+      "triangles": 21610,
+      "meshes": 1,
+      "textures": 0
+    },
+    "dimensionsEstimated": true,
+    "rawDEMModified": false,
+    "rawRoadsModified": false,
+    "localTerrainLevelled": true,
+    "terrainRecord": "src/humanitiesGardenSite.ts",
+    "mergedRenderMeshes": 1,
+    "photoTexturesCopied": false,
+    "details": [
+      "불규칙한 돌 무늬와 모서리 틈을 메운 보행 포장",
+      "벽돌 기둥 8개, 등나무 틀과 잎",
+      "긴 벤치 3개와 낮은 조명 8개",
+      "정원등, 침엽수와 조경석, 나무"
+    ],
+    "limits": [
+      "동선, 길 폭, 기둥 간격과 바닥 높이는 사진 및 게임 지형에 맞춘 근사다.",
+      "수종과 계절별 식생, 안내문 글자는 재현하지 않았다.",
+      "유리 연결동 250과 2동 외벽의 개별 입구 및 창은 추후 보완 대상이다.",
+      "차도와 겹치는 양끝은 원래 차도의 표시 높이와 지형 충돌 높이 차이가 남아 있다. 새 돌길 바닥 표본과 별도로 확인했다."
+    ]
+  },
+  "validation": {
+    "resultFile": "artifacts/humanities-garden-access-test/results.json",
+    "status": "PASS",
+    "groups": [
+      {
+        "name": "release44 roads and buildings remain exact and terrain changes stay inside the garden",
+        "status": "PASS"
+      },
+      {
+        "name": "garden walking at desktop and mobile speed with three lanes and both street approaches",
+        "status": "PASS"
+      },
+      {
+        "name": "stone paving has matching collision and pergola leaves a walkable central aisle",
+        "status": "PASS"
+      },
+      {
+        "name": "destruction removes attached stones and foliage and reset restores original colours",
+        "status": "PASS"
+      }
+    ],
+    "mobileMovementSpeeds": [
+      6,
+      8
+    ],
+    "realPhoneFrameRateMeasured": false
+  },
+  "laterConstructionReview": {
+    "reviewedAt": "2026-11-06T10:11:24.588Z",
+    "notice": {
+      "url": "https://english.snu.ac.kr/?post_type=post&p=39549",
+      "title": "인문대 힐링공간(아방궁) 조성 공사 시행에 따른 협조 요청",
+      "published": "2026-02-12",
+      "directBrowserDOMObserved": true,
+      "areas": [
+        "51동 후면 중정",
+        "2동 후면 아방궁",
+        "220동 필로티와 보행 공간"
+      ],
+      "dateLimitation": "본문은 시작일을 2025.2.13.(금), 종료일을 2026.5.9.(토)로 적었다. 시작 연도와 요일이 맞지 않아 원문 표기를 보존했다.",
+      "attachmentsPresent": false
+    },
+    "specification": {
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01251892&bidPbancOrd=000&fileSeq=2&fileType=&prcmBsneSeCd=07",
+      "title": "서울대학교 관악캠퍼스 내 힐링공간(휴게공간) 조성공사 조경시방서",
+      "documentDate": "2025-11",
+      "localFile": "artifacts/humanities250-review/46-healing-landscape-specification.pdf",
+      "sha256": "13ef3833fef0e5037b0eb8e5d0a7515388966991d78a5ecd3a50a522882f0a7b",
+      "pages": 150,
+      "review": "목차와 특기 시방을 읽고 PDF 136쪽을 렌더링해 재료 설명을 대조했다. 등의자, 디자인벤치, 계단연계형평상 시방이 있으나 아방궁 내 위치를 특정할 배치도와 준공 사진은 확보하지 못했다."
+    },
+    "currentCompletionConfirmed": false,
+    "consequence": "45판 정원은 촬영일 미상의 사진을 따른 근사 모델이다. 정비 후 현재 배치와의 일치는 미확인이다. 위치를 확인하지 못한 새 벤치와 평상은 추가하지 않았다."
+  }
+}

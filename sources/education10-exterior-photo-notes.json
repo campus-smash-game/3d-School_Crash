@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T16:03:29.675Z",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/180954536",
+  "buildingNumber": "10",
+  "scope": "10동 기본 외벽을 보완하고 중정 쪽에 사진을 참고한 현관, 계단, 두 발코니와 게시판을 추가했다. 기존 동쪽 연결교와 세 구간 계단, 아래 출입문은 유지했다.",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000010.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=10",
+      "localPhoto": "../references/buildings/photos/010-10.jpg",
+      "sha256": "cea1b87270aec6bde8a564b166fa8c430c8d2276d7b964994ddc1ba4c01a54b6",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "짙은 벽돌과 흰 수직 골조 및 층별 띠",
+        "작은 위층 창과 넓은 아래층 창",
+        "아래층의 돌출 수직 부재와 깊은 처마",
+        "두 층의 움푹 들어간 발코니와 빈 틈이 있는 흰 난간",
+        "중앙 유리 현관과 돌출 차양, 낮은 계단",
+        "사각 석재 하부와 현관 왼쪽 금속 게시판"
+      ],
+      "readableText": [
+        "게시판"
+      ],
+      "faceMapping": "동쪽 거리뷰에서 확인한 북쪽 긴 면에는 사진의 돌출 수직 부재가 뚜렷하지 않아 사진 면을 남쪽 중정 쪽에 대응했다. 정확한 촬영 방위와 문 중심을 확인한 것은 아니며 지도 면의 대응은 추정이다.",
+      "limits": "사진의 촬영일, 문과 발코니의 지도상 정확한 위치, 창 개수와 실측 치수는 미확인이다. 게시물 내용과 가려진 간판 문구는 복제하지 않았다."
+    },
+    {
+      "url": "https://kko.to/cnm-2mtd_j",
+      "panoId": "1198671992",
+      "captureMonth": "2025-07",
+      "newLiveVisit": true,
+      "directlyViewedBy": "root",
+      "captures": [
+        {
+          "file": "artifacts/education10-exterior-review/59-reference-10.png",
+          "sha256": "c09a85169064a4f95bbdc939d6f7f63c5e65cae8f49ed9a984f21d16e31f50a2"
+        },
+        {
+          "file": "artifacts/education10-exterior-review/59-10-end.png",
+          "sha256": "71b89dcb5190073beb700575b84bf16d535e74c6f000619b6e1ebebbb172422c"
+        }
+      ],
+      "observed": [
+        "10동 번호가 있는 벽돌 끝벽",
+        "기존 연결교와 곡면 유리 차양",
+        "외부 금속 계단과 북쪽 긴 면의 흰 띠 및 창"
+      ],
+      "limits": "같은 촬영점에서 화면을 회전했다. 회전 후 주소의 방위각은 갱신되지 않았으므로 정확한 방위값으로 쓰지 않았다. 중정 안 현관을 새 거리뷰로 확인한 것은 아니다. 2026년 현재 모습이나 실측 고도를 보증하지 않는다."
+    },
+    {
+      "record": "sources/humanities-court-accessibility-reference.json",
+      "surveyDate": "2024-10-16",
+      "use": "10동의 층별 출입구와 9동 연결 관계를 보조 확인했다.",
+      "limits": "조사표 좌표는 사진의 문 중심과 일치한다고 단정하지 않았다. 조사표만으로 9동 연결통로의 외형을 만들지 않았다."
+    }
+  ],
+  "implementation": {
+    "module": "src/education10Exterior.ts",
+    "geometry": {
+      "meshes": 3,
+      "textures": 1,
+      "triangles": 49042,
+      "colliders": 198
+    },
+    "floor": 54.233833599847344,
+    "roof": 68.23383359984734,
+    "heightMeters": 14,
+    "levels": 4,
+    "heightEstimated": true,
+    "levelsEstimated": true,
+    "dimensionsEstimated": true,
+    "photoFaceMappingEstimated": true,
+    "observedEdges": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "unobservedEdges": [
+      0,
+      1
+    ],
+    "existingEastConnectionsPreserved": true,
+    "rawMapAndElevationModified": false,
+    "terrainModified": false,
+    "roadsModified": false,
+    "wholeInteriorImplemented": false,
+    "photoTexturesCopied": false,
+    "geometryPolicy": "작은 줄눈과 창틀, 돌출 부재는 두 개의 메시로 합치고 소속 벽과 함께 파괴한다. 게시판 제목만 작은 별도 글자 텍스처로 표시한다.",
+    "limits": [
+      "현관 뒤는 짧은 공간까지만 구현했다. 실내 복도와 층간 이동은 미구현이다.",
+      "9동 연결통로와 북쪽의 별도 출입문은 아직 구현하지 않았다.",
+      "게시판 내용은 읽을 수 없는 종이 형태로 단순화했다.",
+      "사진의 식재, 중정 전체 포장과 모든 배수 시설은 이번 범위에 포함하지 않았다."
+    ]
+  },
+  "validation": {
+    "file": "artifacts/education10-exterior-test/results.json",
+    "groups": [
+      {
+        "name": "building 10 replacement preserves terrain, other buildings and completed connections",
+        "status": "PASS"
+      },
+      {
+        "name": "roof surfaces match their colliders",
+        "status": "PASS"
+      },
+      {
+        "name": "courtyard entrance remains walkable at desktop and mobile speeds in both directions",
+        "status": "PASS"
+      },
+      {
+        "name": "entrance surfaces and recessed balcony openings match physics",
+        "status": "PASS"
+      },
+      {
+        "name": "existing east bridge retains two-way access through the replacement shell",
+        "status": "PASS"
+      },
+      {
+        "name": "lower east entrance and three stair flights remain walkable at both speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "photo facade details retain destruction at distance and restore together",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherParts": 41989,
+    "movementSpeeds": [
+      6,
+      8
+    ],
+    "realPhoneFrameRateMeasured": false
+  }
+}

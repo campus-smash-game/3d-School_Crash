@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/238937058",
+  "buildingNumber": "8",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000008.jpg",
+      "localPhoto": "../references/buildings/photos/008-8.jpg",
+      "kind": "official-map-photo",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "갈색 벽돌과 불규칙한 검은 세로 창 패널",
+        "좁고 높은 창과 검은 층 경계",
+        "깊고 높은 출입구와 안쪽 유리문",
+        "왼쪽 돌출 창 상자",
+        "두산인문관 한글 및 영문 표기와 8동 번호",
+        "두 개의 구형 조명이 달린 가로등",
+        "오른쪽 계단과 낮은 생울타리, 앞쪽 낙엽수"
+      ],
+      "limits": [
+        "보이지 않는 후면과 전체 실내 평면은 미확인이다.",
+        "사진의 정확한 시설 치수와 촬영일은 확인하지 못했다."
+      ],
+      "sha256": "ddb5849035ce010458b224b0c07bb2881439713745e4ee51d07ef61bb909932e"
+    },
+    {
+      "url": "https://www.snu.ac.kr/snunow/snu_story?bbsidx=108773&md=v",
+      "title": "연강기념홀 '두산인문관'으로 재탄생",
+      "published": "2012-04-27",
+      "kind": "official-completion-report",
+      "verified": "2012년 3월 28일 준공, 지하 1층과 지상 6층을 확인했다.",
+      "photoUrl": "https://www.snu.ac.kr/webdata/boards/konews/img_20120427_15.jpg",
+      "localPhoto": "artifacts/humanities8-review/50-completion-2012.jpg",
+      "directlyViewedBy": "root",
+      "observed": "건물 전면, 깊은 입구, 왼쪽 창 상자와 오른쪽 계단을 대조했다. 현재 현장 상태 전체를 보증하는 자료로 사용하지 않았다.",
+      "sha256": "73ef4f5f7f826d98f664d8961ee02cf73a082e7fbd21997d880455bb0c31a292"
+    },
+    {
+      "url": "https://chio.snu.ac.kr/program/student01.php",
+      "kind": "official-current-location",
+      "verified": "학교 국제화지원센터 안내에 두산인문관 6층 610호가 표시돼 있다."
+    },
+    {
+      "kind": "official-newsletter-photo",
+      "url": "https://humanities.snu.ac.kr/community/newsletter?md=download&seqidx=63",
+      "title": "인문대 소식 제62호",
+      "published": "2026-04-20",
+      "printedPage": 16,
+      "captureDate": null,
+      "localPhoto": "artifacts/humanities8-review/50-newsletter-16-17.png",
+      "directlyViewedBy": "root",
+      "review": "입구, 돌출 창 상자와 검은 창 패널을 추가 대조했다. 왼쪽 모서리의 막힌 벽면과 다른 방향의 8동 번호를 보완했다. 촬영일과 정확한 치수는 미확인이다.",
+      "sha256": "c357efa03b7a920025717cfa1c3b79b3dcff0679df4c053230bdce1451022c50"
+    }
+  ],
+  "mapReview": {
+    "url": "https://map.kakao.com/?q=서울대학교%20두산인문관",
+    "directlyViewedBy": "root",
+    "captures": [
+      "artifacts/humanities8-review/50-kakao-roadview.png",
+      "artifacts/humanities8-review/50-kakao-inner-coverage.png"
+    ],
+    "roadviewMonth": "2026-07",
+    "observed": "검색 결과의 로드뷰는 남쪽 13동 부근 도로로 연결됐다. 그 화면에서는 나무와 앞 건물 때문에 8동 입구를 확인할 수 없었다. 위성 지도와 로드뷰 경로 표시에서는 내부 계단 구역을 지나는 파란 촬영선이 보이지 않았다.",
+    "satelliteCaptureDate": null,
+    "facadeObservedInRoadview": false
+  },
+  "mappedTopology": {
+    "source": "sources/campus.osm",
+    "frontStairRoad": "way/167609411/30",
+    "frontStairImplementedPoints": [
+      [
+        458,
+        -686.62
+      ],
+      [
+        469.75,
+        -695.45
+      ],
+      [
+        493.48,
+        -713.28
+      ],
+      [
+        521.02,
+        -730.68
+      ]
+    ],
+    "limits": "계단축은 원본 지도 선을 따르며 시작부를 3동 및 5동의 기존 포장 바깥으로 조정했다. 단수와 폭, 높이는 게임 지형을 기준으로 근사했다."
+  },
+  "implementation": {
+    "source": "src/humanities8Landmark.ts",
+    "levels": 6,
+    "levelsEstimated": false,
+    "heightAboveEntranceMetres": 20.4,
+    "heightEstimated": true,
+    "dimensionsEstimated": true,
+    "rawRoadsChanged": false,
+    "rawTerrainChanged": false,
+    "rawFootprintChanged": false,
+    "wholeInteriorImplemented": false,
+    "basementImplemented": false,
+    "connectionTo7Implemented": false,
+    "northStairTo5Implemented": false,
+    "photoTexturesCopied": false,
+    "limits": [
+      "정확한 입구와 시설 위치는 사진과 지도 배치에서 추정했다.",
+      "게임에서는 문을 열고 짧은 출입 공간까지 들어갈 수 있게 했다.",
+      "2008년 기사에 나온 옛 8동의 실내 연결을 2012년 재건축 건물에 적용하지 않았다.",
+      "5동과 8동 북쪽 사이의 높은 계단 및 안마당 높이 관계는 후속 확인이 필요하다.",
+      "계단참의 간격과 길이는 지도축 및 게임 지형에 맞춘 근사다."
+    ],
+    "geometry": {
+      "meshes": 2,
+      "signMeshes": 4,
+      "textures": 4,
+      "triangles": 36026,
+      "colliders": 264
+    }
+  },
+  "validation": {
+    "file": "artifacts/humanities8-access-test/results.json",
+    "groups": [
+      {
+        "name": "building 8 scope, bounded geometry and preservation of terrain, roads and other buildings",
+        "status": "PASS"
+      },
+      {
+        "name": "mapped southern and western approaches remain walkable at desktop and mobile speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "front steps and open entrance allow return trips without jumping",
+        "status": "PASS"
+      },
+      {
+        "name": "paving, steps and entrance floors match collision surfaces",
+        "status": "PASS"
+      },
+      {
+        "name": "facade and signs preserve distant damage, reset and world reflection",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherBuildingParts": 38996,
+    "floorSamples": 189,
+    "stairsMaximumPenetration": 0,
+    "rawInputsExact": true,
+    "terrainExact": true,
+    "realPhoneFrameRateMeasured": false
+  },
+  "followupNorthStair": {
+    "record": "sources/humanities7-photo-notes.json",
+    "scope": "51판에서 5동 옆 계단과 안마당, 북쪽 보행로를 보완했다. 기존 본문은 50판 당시 확인 범위를 보존한다."
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "buildingId": "way/386890466",
+  "buildingNumber": "310",
+  "name": "엔지니어하우스",
+  "module": "src/engineerHouseLandmark.ts",
+  "landmark": "engineer-house",
+  "sourceReferences": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=190",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000181.jpg",
+      "localImage": "../references/buildings/photos/190-310.jpg",
+      "visuallyInspected": true,
+      "observations": "공식 사진을 직접 확인했다. 낮고 긴 몸체 위에 넓은 금속 경사 지붕이 있고, 중앙의 큰 경사 유리 부분은 양옆 지붕보다 높다. 흰 삼각 골조와 수평 부재가 지붕 위에 드러나며, 앞쪽에는 높은 중앙 차양과 낮은 양옆 차양, 사선 기둥이 있다."
+    },
+    {
+      "url": "https://eng.snu.ac.kr/about/support-facilities/engineering-house",
+      "localCopy": "../references/exteriors/engineer-house-official.html",
+      "verified": "공식 공과대학 소개에서 2000년 5월 21일 준공과 건립 연혁을 확인했다. 이 페이지에서 준공 건물의 전체 층수와 실측 최고 높이는 확인하지 못했다."
+    },
+    {
+      "url": "https://eng.snu.ac.kr/sites/default/files/%EC%84%9C%EC%9A%B8%EA%B3%B5%EB%8C%80%201998%EB%85%84%204%2C5%2C6%EC%9B%94%ED%98%B8.pdf",
+      "scope": "1998년 건립계획의 지상 1층과 2층 표기는 계획 당시 내용이다. 현재 준공 층수를 확정하는 자료로 사용하지 않았다."
+    }
+  ],
+  "documented": {
+    "completionDate": "2000-05-21",
+    "completedBuildingHeight": null,
+    "completedBuildingStoreys": null
+  },
+  "placement": {
+    "source": "public/data/campus.json의 건물 윤곽과 동쪽 진입 차도",
+    "mapEnvelopeMeters": {
+      "length": 63.94890598263828,
+      "depth": 31.946597590862297
+    },
+    "method": "지도 윤곽의 가장 긴 변으로 거의 남북인 장축을 정했다. 동쪽 진입 차도를 향하는 local +z 면을 전면으로 두고, 중심 돌출부 범위 안에서 차양을 만든다.",
+    "limitation": "외곽 투영 범위 안에서 낮은 몸체와 차양을 나눈 근사 배치다. 사진에는 방위표시가 없어 세부 배치와 차양 깊이는 측량으로 확정하지 않았다."
+  },
+  "estimated": {
+    "highestFrameMeters": 10.1,
+    "opaqueRoofRidgeMeters": 8.3,
+    "centralGlazingRidgeMeters": 9.95,
+    "wallTopMeters": 4.3,
+    "centralCanopyMeters": 5.5,
+    "sideCanopyMeters": 4.25,
+    "gameStoreys": 2,
+    "storeysEstimated": true,
+    "heightRationale": "사진에 보이는 낮은 몸체와 넓은 경사 지붕의 비례로 정했다. 기존 지도 자료의 14m와 4층을 실제 현황으로 유지하지 않았다.",
+    "roofAndFrame": "중앙 유리 부분, 양옆의 낮은 금속 지붕과 그 위 흰 삼각 골조를 분리했다. 경사각, 골조 간격, 창 칸과 금속 이음선 치수는 사진에 따른 근사다.",
+    "unseenFaces": "사진에 보이지 않는 뒤쪽 지붕과 벽은 관찰한 구조를 단순화해 연장했다. 내부 구조와 지하층, 계단과 경사로의 정확한 형태는 재현하지 않았다.",
+    "photoDate": "사진 촬영일과 현재 외관의 일치 여부는 확인하지 않았다."
+  },
+  "implementation": {
+    "renderMeshes": 2,
+    "breakablePartsOnReviewedTerrain": 254,
+    "trianglesOnReviewedTerrain": 19164,
+    "photoTexturesIncluded": false,
+    "collision": "경사 지붕과 사선 기둥은 실제 기하 방향에 맞춰 기울인 구간별 충돌체를 쓴다. 중앙 유리의 옆면과 박공 경계에는 작은 외접 상자에 따른 오차가 있다. 흰 골조 사이의 빈 공간은 큰 벽으로 채우지 않았다.",
+    "damage": "파괴한 부품의 충돌체와 합친 메시의 해당 꼭짓점을 함께 제거한다. 초기화하면 원래 배열과 충돌체를 복구하며, 남은 기하는 거리 때문에 숨기지 않는다.",
+    "terrain": "높이 기준과 외벽 기초를 heightAt에서 계산한다. 현재 지형의 절대 고도를 코드에 고정하지 않는다."
+  },
+  "verification": {
+    "script": "scripts/verify-engineer-house.mjs",
+    "passed": 6,
+    "scope": "실제 지도 방향과 지형 기초, 중앙 유리와 양옆 지붕의 높이 차, 흰 골조 사이의 빈 공간과 사선 기둥 충돌, 부분 파괴와 원거리 사격, 완전 파괴와 초기화, 지형 기준 높이 변화 추종을 확인했다.",
+    "limitation": "실측 정확성, 전체 사진 일치, 브라우저 화면과 실제 휴대전화 조작을 검증한 것은 아니다."
+  },
+  "status": "integrated-partial",
+  "siteReview": {
+    "method": "현재 통합 소스의 실제 삼각형과 인스턴스 행렬, OSM 도로 좌표, heightAt 및 Rapier 충돌체를 비교했다. 공식 외관 사진과 CPU 정사영 파일도 직접 확인했다.",
+    "diagnosis": "기존 정사영의 큰 지형 가림에는 수평 시선의 영향이 있었다. 다만 실제 유리와 금속 지붕의 일부가 지형에 묻힌 문제도 별도로 확인했다. 건물 내부만 평탄하게 하고 그 바깥 12m를 경사로 이으면, 약 20m 지형 격자의 경계 보간이 낮은 건물 외곽까지 원래 높은 지형을 끌어온다. 사각형으로 근사한 몸체와 지붕 끝이 실제 OSM 외곽보다 약 1~2m 돌출한 부분에서도 침범이 생겼다.",
+    "before": {
+      "frontGlassMinimumClearance": -4.095094598960827,
+      "allGlassMinimumClearance": -4.9737441123163535,
+      "metalRoofMinimumClearance": -0.9558062498544757,
+      "source": "최종 검사에서 310동의 추가 평탄 영역만 비활성화한 비교 지형이다. 앞선 원본 진단 자료는 artifacts/engineer-house-site-before.json에 보존했다."
+    },
+    "rejectedCandidate": {
+      "plateauWidthMetres": 14.124,
+      "platformMinimumClearance": -0.27603918631621127,
+      "reason": "격자 반 대각선 범위에서는 입구 바닥의 앞 가장자리가 최대 약 28cm 묻혀 최종안으로 채택하지 않았다.",
+      "artifact": "artifacts/engineer-house-site-half-diagonal.json"
+    },
+    "correction": {
+      "scope": "310동에만 적용한 게임용 DEM 보정이다. 건물 높이와 원시 DEM 자료를 변경하지 않았다.",
+      "plateauWidth": "Math.max(stepX,stepZ)",
+      "plateauWidthMetres": 20,
+      "outerBlendMetres": 12,
+      "baseElevationUnchanged": 143.9508056640625,
+      "changedGridVertices": 24,
+      "maxGridCutMetres": 9.824905395507812,
+      "maxGridFillMetres": 5.1608123779296875,
+      "changedVertexBounds": {
+        "minX": 180,
+        "maxX": 260,
+        "minZ": -2042.6767578125,
+        "maxZ": -1922.9798583984375
+      },
+      "limitation": "절토와 성토 수치는 이번 보정 전후의 게임 지형 높이 차다. 현장 공사의 절성토량이나 측량 결과가 아니다. 공식 사진은 입구와 외벽이 드러난다는 근거이며, 이 평탄 영역의 정확한 폭이나 절대 고도를 입증하지 않는다."
+    },
+    "after": {
+      "frontGlassSamples": 1080,
+      "frontGlassMinimumClearance": 0.350006103515625,
+      "allGlassSamples": 11700,
+      "allGlassMinimumClearance": 0.350006103515625,
+      "metalRoofSamples": 7200,
+      "metalRoofMinimumClearance": 4.240941700339306,
+      "platformMinimumClearance": 0.09678141510929095,
+      "roadObservers": 20,
+      "eyeHeightMetres": 1.7,
+      "terrainSightlines": 120,
+      "terrainBlockedSightlines": 0,
+      "walkedMetres": 12.79038380242692,
+      "remainingToExteriorPlatformMetres": 0.09345966793823662
+    },
+    "neighbors": {
+      "unchangedBuildingCentres": 204,
+      "affectedBuildingId": "way/430163191",
+      "affectedBuildingName": "화학공정신기술연구소",
+      "maximumCornerHeightChangeMetres": 1.283076095581066,
+      "actualGeometry": {
+        "id": "way/430163191",
+        "samples": 2000,
+        "before": {
+          "windows": 200,
+          "minimumWindowClearance": -0.5060671271488957,
+          "maximumFoundationAboveGround": -0.541169178160601
+        },
+        "after": {
+          "windows": 200,
+          "minimumWindowClearance": -0.5060671271488957,
+          "maximumFoundationAboveGround": -0.4652047004066162
+        },
+        "worsenedSamples": 0,
+        "note": "The pre-existing lowest window intrusion remains; this local correction introduces no new or deeper sampled glazing intrusion."
+      },
+      "note": "인접 건물의 실제 창 아래 2,000개 표본에서 새 침범이나 침범 악화는 없었다. 기초 바닥은 지면 아래에 남았다. 이웃 건물에 원래 있던 창의 최대 약 0.506m 침범은 그대로이며, 이번 310동 보정에서 해결했다고 보지 않는다."
+    },
+    "roads": {
+      "affectedSamples": 72,
+      "maxCutMetres": 4.68863364585394,
+      "maxSlopeAfter": 0.4086562732474436,
+      "reviewedEntranceSegmentSlopeBefore": 0.2861723033411385,
+      "reviewedEntranceSegmentSlopeAfter": 0,
+      "note": "입구 구간의 경사는 줄었지만 동쪽 연결 도로 일부는 더 가팔라졌다. 영향 구간의 최대 경사 약 0.409는 게임 캐릭터의 45도 등판 제한보다 낮다. 실제 도로 설계 경사를 검증한 값은 아니다."
+    },
+    "verification": {
+      "script": "scripts/verify-engineer-house-site.mjs",
+      "passed": 7,
+      "total": 7,
+      "artifact": "artifacts/engineer-house-site-verification.json",
+      "renderPhysicsSamples": 92,
+      "maxRenderErrorMetres": 0.00002638299019963597,
+      "maxPhysicsErrorMetres": 0.00005340576171875,
+      "existingGroundOffsetMetres": 0.03,
+      "existingModelRegressionPassed": 6,
+      "typescript": "npx tsc --noEmit 통과"
+    },
+    "visualReview": {
+      "artifact": "artifacts/geometry-previews/engineer-house.png",
+      "directlyViewed": true,
+      "method": "최종 지형 보정 후 통합 장면의 CPU 정사영을 재생성했다. WebGL 화면이 아니다.",
+      "result": "정면과 사선에서 입구 바닥, 전면 유리와 경사 지붕이 드러난다. 측면 수평 정사영에는 앞쪽 땅이 일부 겹쳐 보이지만, 실제 유리와 지붕 표본의 지면 간격은 모두 양수다. 공식 사진의 중앙 유리 지붕, 높은 중앙 차양과 사선 기둥을 대조했다. 외관 비례와 보이지 않는 뒤쪽 구성은 기존 추정 범위를 유지한다."
+    },
+    "limits": "도로 시선 검사는 지형 가림만 검사했다. 수목이나 다른 건물의 가림, 실내 진입, 브라우저 화면, 실제 휴대전화 성능 또는 현장 측량을 대신하지 않는다."
+  }
+}

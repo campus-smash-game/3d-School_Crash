@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "title": "10동 앞 세 구간 계단과 유리 출입문",
+  "observations": [
+    {
+      "id": "42-10-stair-front",
+      "file": "output/playwright/42-10-stair-front.png",
+      "sha256": "89d0f83e69c679975c16fff0abf7cbdfc34898378641c3ae70dc7b7d6b778625",
+      "serviceId": "kakao-roadview",
+      "evidenceKind": "roadview-ui",
+      "month": "2025-07",
+      "panoId": "1198671990",
+      "shareUrl": "https://kko.to/iseytKw1lD",
+      "directObservationReviewer": "root",
+      "localImageDirectlyViewedBy": [
+        "root"
+      ],
+      "rootLiveViewConfirmed": true,
+      "buildingIds": [
+        "way/180954536",
+        "way/238937145"
+      ],
+      "countsAsBuildingRoadviewObservation": true,
+      "evidence": "sources/education10-stair-roadview-review.json",
+      "scopeLimit": "정면과 아래쪽 회전 시점을 관측했다. 회전 후 방위각과 치수는 실측하지 않았다."
+    },
+    {
+      "id": "42-10-stair-downward",
+      "file": "output/playwright/42-10-stair-downward.png",
+      "sha256": "3d2812a7cc6121d38a4b244d964eb853b45ccb7be4bff24ca3a82047d9e6ea01",
+      "serviceId": "kakao-roadview",
+      "evidenceKind": "roadview-ui",
+      "month": "2025-07",
+      "panoId": "1198671990",
+      "shareUrl": "https://kko.to/iseytKw1lD",
+      "directObservationReviewer": "root",
+      "localImageDirectlyViewedBy": [
+        "root"
+      ],
+      "rootLiveViewConfirmed": true,
+      "buildingIds": [
+        "way/180954536",
+        "way/238937145"
+      ],
+      "countsAsBuildingRoadviewObservation": true,
+      "evidence": "sources/education10-stair-roadview-review.json",
+      "scopeLimit": "정면과 아래쪽 회전 시점을 관측했다. 회전 후 방위각과 치수는 실측하지 않았다."
+    }
+  ],
+  "shareResolution": {
+    "shareUrl": "https://kko.to/iseytKw1lD",
+    "panoid": "1198671990",
+    "pan": 311.6,
+    "tilt": -4,
+    "zoom": 2,
+    "urlX": 490205,
+    "urlY": 1100195,
+    "method": "공유 메뉴에서 얻은 링크를 다시 열어 파노라마 번호를 확인했다. 이동 전 주소창에 남아 있던 1198671992를 현재 촬영점으로 사용하지 않았다."
+  },
+  "observed": [
+    "세 경사 구간과 두 중간참으로 이어지는 외부 금속 계단",
+    "낮은 계단 옆 유리 양문과 금속 문틀",
+    "문 앞 회색 사각 포장과 원통기둥의 짙은 하부 띠"
+  ],
+  "correction": "앞선 두 구간 계단 모델을 새 정면 관측에 맞춰 수정한다. 사진 아래쪽 경사 구간을 별도의 지하층 계단으로 확정하지 않는다.",
+  "limits": [
+    "정확한 폭, 단수, 높이는 실측하지 않았다.",
+    "유리문 뒤 건물 내부와 전체 입면은 미관측이다.",
+    "작은 안내 문구와 임시 교통콘, 이동식 차단물은 상설 시설로 재현하지 않는다.",
+    "촬영 시점은 2025년 7월이며 현재 현장 상태를 확인한 것은 아니다."
+  ],
+  "wholeBuildingCompared": false
+}

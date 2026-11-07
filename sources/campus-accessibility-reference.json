@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-05T20:54:16.217Z",
+  "report": {
+    "title": "서울대학교 관악캠퍼스 휠체어 이동/접근성 연구",
+    "submittedDate": "2024-10-31",
+    "url": "https://snudanbi.snu.ac.kr/wp-content/uploads/sites/12/2025/02/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90-%EA%B4%80%EC%95%85%EC%BA%A0%ED%8D%BC%EC%8A%A4-%ED%9C%A0%EC%B2%B4%EC%96%B4-%EC%9D%B4%EB%8F%99%EC%A0%91%EA%B7%BC%EC%84%B1-%EC%97%B0%EA%B5%AC-%EA%B2%B0%EA%B3%BC-%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+    "file": "artifacts/dining76-east-review/37-bbf-accessibility-report.pdf",
+    "sha256": "dcbcb7770b648a707856e560e5d773648ce489567a23619efd8760f907c74a92",
+    "pagesDirectlyViewed": [
+      {
+        "pdfPage": 34,
+        "printedPage": 26
+      },
+      {
+        "pdfPage": 35,
+        "printedPage": 27
+      }
+    ]
+  },
+  "map": {
+    "url": "https://hyunwoolee2.github.io/SNU_BBF_MAP/",
+    "primaryReportLinksToMap": true,
+    "indexUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQzxmSMEHHgSdJ5p4igiBToAy5PzdkAj9q_IwnzqkkzPMmZDTXfmpBaTpYRUbzR1Kzxh79greDeyR0i/pub?gid=180516084&single=true&output=csv",
+    "indexFile": "artifacts/dining76-east-review/37-bbf-index.csv",
+    "indexSha256": "f70a125c0bc9a616aea364b565bf1286467d9f1579f298221c7276b7af27e463",
+    "surveyLinks": [
+      {
+        "number": "9",
+        "building": "관악 9동[사범관1]",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRyfNlSWnNabqgTC_-xHw2Z3E36ksHM7fC6aEIwbpIBePzSyjFL3dzpUMExhpBwG8DhEO8vBvvLVp0b/pubhtml",
+        "recordedDate": "2024.10.16.",
+        "contentsInspected": false
+      },
+      {
+        "number": "10",
+        "building": "관악 10동[사범관2]",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS0NDK8VuIzvR3Ii9z-l9EtjMI1qDdYUVYRHr7gipn1kKInUTbP25I7FT7OU-GBzocZnKXvBNSdYeBZ/pubhtml",
+        "recordedDate": "2024.10.16.",
+        "contentsInspected": false
+      },
+      {
+        "number": "10-1",
+        "building": "관악 10-1동[사범대교육정보관]",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTZAPdq4WOamI1Yy-m89pYyteMf9aWSRozvlHfwJRQKIUYyz27LudeqVYZL1Edx_Z1q1tBwJiQb2soV/pubhtml",
+        "recordedDate": "2024.12.02",
+        "contentsInspected": false
+      },
+      {
+        "number": "11",
+        "building": "관악 11동[사범관3]",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2is4tD-wFna-5Fu3_--6EaFe4FIQEtu8IonjipJjcSWfR-eDd33mP3Fg29MzG3-pMFyx-xWnIQNCQ/pubhtml",
+        "recordedDate": "2024.11.13",
+        "contentsInspected": false
+      },
+      {
+        "number": "12",
+        "building": "관악 12동[사범교육협력센터]",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMekIVPICOP8FMHEYlqM1BodrVKCJX71DPRMS-eWWTgMeE1AUZ1dvfafcANJhJOE8vi-COeZtbKHLr/pubhtml",
+        "recordedDate": "2024.11.13",
+        "contentsInspected": false
+      },
+      {
+        "number": "13",
+        "building": "관악 13동[과학교육관]",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR94ZkRHP2VKnINb9ra1pZj3AmeD3TexbrKway6icdN5glvGpSjhuNrzslk9WzWh35_snK2vd1D0umr/pubhtml",
+        "recordedDate": "2024.12.02",
+        "contentsInspected": false
+      },
+      {
+        "number": "58",
+        "building": "관악 58동[경영대학 SK경영]",
+        "url": "https://docs.google.com/spreadsheets/d/1KYxjxOGxlb4ULMpv718IUVE1MLoZ95jK/edit?gid=2091354043#gid=2091354043",
+        "recordedDate": "2025.10.01",
+        "contentsInspected": false
+      }
+    ]
+  },
+  "limits": [
+    "보고서 26쪽의 출입문 예시는 사범관2(10동)이며 76동 출입문이 아니다.",
+    "76동 나인온스버거와 슬로우보울은 보고서에 들어간 배경 지도 표기다. 간판의 현재 문구나 위치를 입증하는 사진이 아니다.",
+    "공개 색인에서 조사 링크를 확인했으며 개별 조사 문서의 내용과 사진은 아직 검토하지 않았다.",
+    "실제 로드뷰 대조를 대신하거나 전체 건물의 관측 완료 수에 포함하지 않는다."
+  ]
+}

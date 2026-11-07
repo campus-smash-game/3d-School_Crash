@@ -1,0 +1,428 @@
+{
+  "reviewedAt": "2026-11-05T13:07:47.639Z",
+  "observer": "controls",
+  "status": "identified-building-and-mapped-passage; dimensions-unmeasured",
+  "scope": "두 공개 거리뷰를 직접 다시 보고 222동의 기존 통과구를 식별했다. 실행 코드와 공용 근거 파일은 변경하지 않았다.",
+  "conclusion": {
+    "buildingNumber": "222",
+    "osmId": "way/386890828",
+    "name": "생활과학대학",
+    "identification": "통과구 위 회색 모서리의 지도 건물 정보에 생활과학대학, 의류학과, 소비자학과와 생활과학연구소가 표시됐다. 같은 위치에서 222동 외곽을 관통하는 원본 building_passage 보행로가 확인돼 222동 남쪽 짧은 날개로 식별했다.",
+    "distinction": "220동 공식 사진의 큰 유리 필로티와는 다른 구조다. 화면 오른쪽의 별도 벽돌 몸체를 통과구가 속한 건물과 합치지 않았다.",
+    "currentStateScope": "촬영 UI는 두 시점 모두 2026년 08월이다. 촬영 이후 변화를 확인한 것은 아니다."
+  },
+  "observations": [
+    {
+      "id": "pano1213022760-underpass",
+      "sourceUrl": "https://kko.to/fmZ6Q7AEkn",
+      "panoId": "1213022760",
+      "captureMonth": "2026-08",
+      "dateDirectlyRead": true,
+      "initialView": {
+        "pan": 51,
+        "tilt": -5,
+        "zoom": 1,
+        "urlX": 489695,
+        "urlY": 1101287
+      },
+      "captures": [
+        "underpass-2026-08-ui.jpg",
+        "underpass-upper-left-ui.jpg",
+        "underpass-building-poi-ui.jpg"
+      ],
+      "directlyObserved": [
+        "회색 모서리 몸체 아래의 통과구로 붉은 포장이 이어진다.",
+        "통과구 반대편에 밝은 바닥과 수목이 보인다.",
+        "오른쪽 입구 기둥 옆에 볼록거울이 있고 바깥에는 금속 난간과 경사로가 있다.",
+        "위를 돌려 보니 벽돌 면에 긴 창과 금속 난간이 반복되고, 통과구 끝 모서리는 회색 패널이다.",
+        "건물 정보 창에 서울대학교대학원연구동이라는 제목과 생활과학대학 소속 학과 및 연구소가 표시된다."
+      ],
+      "limitation": "회전한 화면의 pan 값은 초기 URL에 자동 반영되지 않았다. 그 캡처의 정확한 회전각은 기록하지 않았다. 주변 장소 목록만으로 동일 건물이라고 단정하지 않고 원본 보행로와 외곽을 함께 대조했다."
+    },
+    {
+      "id": "pano1213022762-south-wing",
+      "sourceUrl": "https://kko.to/Zi7nJGPRQO",
+      "rotatedShareUrl": "https://kko.to/bGL_ZehPca",
+      "panoId": "1213022762",
+      "captureMonth": "2026-08",
+      "dateDirectlyRead": true,
+      "initialView": {
+        "pan": 51,
+        "tilt": -5,
+        "zoom": 1,
+        "urlX": 489712,
+        "urlY": 1101270
+      },
+      "finalView": {
+        "pan": 348.9,
+        "tilt": -5,
+        "zoom": 1,
+        "urlX": 489712,
+        "urlY": 1101270
+      },
+      "captures": [
+        "southwest-approach-1213022762-ui.jpg",
+        "approach-left-building-ui.jpg",
+        "underpass-south-wing-pan3489-ui.jpg"
+      ],
+      "directlyObserved": [
+        "북쪽으로 돌린 화면에서 같은 통과구가 남쪽 날개의 동쪽 끝에 붙어 있다.",
+        "통과구 왼쪽에는 금속 난간을 따라 내려가는 길과 낮은 층 창이 보인다.",
+        "오른쪽은 수목과 낮은 콘크리트 벽이며, 별도 벽돌 건물의 유리 수직띠 및 출입 경사로가 뒤에 보인다."
+      ],
+      "limitation": "오른쪽 별도 건물의 번호는 이 두 시점에서 직접 읽지 못했다. 220동 대응은 위치에 따른 추론으로 남긴다."
+    }
+  ],
+  "originalMapCorrespondence": {
+    "coordinateSystem": "D=(east,up,north); listed pairs are [x,z]",
+    "buildingPoints": [
+      [
+        403.52,
+        -231.37
+      ],
+      [
+        443.57,
+        -253.6
+      ],
+      [
+        452.51,
+        -237.49
+      ],
+      [
+        431.73,
+        -225.96
+      ],
+      [
+        437.34,
+        -215.85
+      ],
+      [
+        451.07,
+        -191.11
+      ],
+      [
+        440.41,
+        -185.2
+      ],
+      [
+        431.81,
+        -180.43
+      ],
+      [
+        429.31,
+        -184.8
+      ],
+      [
+        419.39,
+        -202.11
+      ],
+      [
+        410.23,
+        -219
+      ],
+      [
+        403.52,
+        -231.37
+      ]
+    ],
+    "road": {
+      "id": "way/1185265108/524",
+      "name": "",
+      "kind": "footway",
+      "points": [
+        [
+          439.05,
+          -254.28
+        ],
+        [
+          449.8,
+          -231.55
+        ]
+      ],
+      "nodeIds": [
+        "4514838237",
+        "4531517990"
+      ],
+      "width": 2.5,
+      "widthEstimated": true,
+      "drivable": false,
+      "oneway": false,
+      "access": ""
+    },
+    "rawWayTags": {
+      "highway": "footway",
+      "layer": "-1",
+      "tunnel": "building_passage"
+    },
+    "originalNodeIds": [
+      "4514838237",
+      "4531517990"
+    ],
+    "intersections": [
+      {
+        "edge": 0,
+        "segmentFraction": 0.11112207422024882,
+        "edgeFraction": 0.9169678476371459,
+        "x": 440.2445622978677,
+        "z": -251.75419525297374
+      },
+      {
+        "edge": 2,
+        "segmentFraction": 0.8453958219746562,
+        "edgeFraction": 0.2103943654365944,
+        "x": 448.13800508622757,
+        "z": -235.06415296651608
+      }
+    ],
+    "bearingFromNorthDegrees": 25.311491958736422,
+    "mappedSegmentLengthMeters": 25.14389389096286,
+    "mappedInsideFootprintLengthMeters": 18.46250120045645,
+    "interpretation": "남서쪽 외부 진입점에서 북동쪽 안마당 방향으로 짧은 날개를 통과한다. 외곽 남쪽 변 p0→p1을 들어가 안쪽 변 p2→p3로 나온다.",
+    "limitations": [
+      "좌표와 길이는 기존 OSM 외곽과 보행로의 계산값이며 현장 실측이 아니다.",
+      "가공 road.width=2.5는 폭 미기재 보행로의 기본값이다. 실제 통로 폭으로 채택하지 않는다.",
+      "layer=-1은 OSM의 상대 층위이며 실제 건물 층 이름이나 지하 깊이를 뜻하지 않는다."
+    ]
+  },
+  "officialPhotoComparison": [
+    {
+      "file": "../references/buildings/photos/180-222.jpg",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=180",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000177.jpg",
+      "directlyViewed": true,
+      "observation": "공식 사진은 안마당 쪽 벽돌 날개와 회색 긴 날개, 파란 222 표기를 보여 준다. 이번 거리뷰는 그 짧은 날개의 반대쪽이므로 창 배열이 다르다.",
+      "limitation": "사진 촬영일은 미확인이다. 공식 사진만으로 이번 통과구를 직접 확인하지 않았다."
+    },
+    {
+      "file": "../references/buildings/photos/178-220.jpg",
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=178",
+      "directlyViewed": true,
+      "observation": "220 표기가 있는 넓은 격자 유리와 높은 필로티를 직접 대조했다. 이번 222 통과구와 같은 구조로 해석하지 않는다.",
+      "limitation": "공식 사진의 촬영일은 미확인이다."
+    }
+  ],
+  "implementationPreflight": {
+    "source": "src/livingScienceLandmark.ts",
+    "inspection": "현재 하부 개구부는 edge3의 recessed-entry-door만 예외로 처리한다. 새로 식별한 통과선이 지나는 edge0과 edge2는 기초 및 row0 벽을 만든다. 해당 통과구의 절개는 현재 코드에 없다.",
+    "nextScope": [
+      "원본 외곽은 유지하고 두 교점 사이 하부 통과구만 보완할 수 있다.",
+      "통로 바닥과 천장, 양 끝 경사 및 실제 폭은 다음 구현 전에 지형과 사진을 함께 검토한다.",
+      "문으로 막힌 현재 edge3 출입구와 이번 관통 보행로를 별개로 유지한다."
+    ],
+    "verificationLimit": "이번에는 모델 생성, 물리 보행, 충돌 광선 및 휴대폰 검사를 실행하지 않았다. 코드상 누락 진단을 실제 보행 검사 통과로 표현하지 않는다."
+  },
+  "screenshotEvidence": [
+    {
+      "file": "artifacts/education-health-review/controls-222/underpass-2026-08-ui.jpg",
+      "sha256": "1e53646b42598f8621a09dfc8543fb96200b40fafda4c7e9d1f5b65b36029f97"
+    },
+    {
+      "file": "artifacts/education-health-review/controls-222/underpass-minimap-2026-08-ui.jpg",
+      "sha256": "dec118e73e2301db513bd1100cbd98f204e0712fc86a568fc5c242682ff18d2c"
+    },
+    {
+      "file": "artifacts/education-health-review/controls-222/underpass-minimap-close-ui.jpg",
+      "sha256": "4fde213104c8f64f8eaba8603f1b7502e95be640399ba59d99b87695a041cdfc"
+    },
+    {
+      "file": "artifacts/education-health-review/controls-222/underpass-upper-left-ui.jpg",
+      "sha256": "9ac156d6d5ae2e2c729df5558f0ce80479a3f119cabb3e9549235e237f289b8e"
+    },
+    {
+      "file": "artifacts/education-health-review/controls-222/underpass-building-poi-ui.jpg",
+      "sha256": "01db62bfbcc4c760271a853c987b54e416af03b3d270c7a534f14e9388a521a0"
+    },
+    {
+      "file": "artifacts/education-health-review/controls-222/southwest-approach-1213022762-ui.jpg",
+      "sha256": "dd22e3a109967c83278f66c601ef8845881c3178b38416c3598ab9d2ead40f99"
+    },
+    {
+      "file": "artifacts/education-health-review/controls-222/approach-left-building-ui.jpg",
+      "sha256": "221edac2b4c8db96a3375d7de8921a3049af7509b2e60a11072d08182e8afa70"
+    },
+    {
+      "file": "artifacts/education-health-review/controls-222/underpass-south-wing-pan3489-ui.jpg",
+      "sha256": "fdef02eb662185055675cc65d3504d3c3531dd7bfb37604f783cede814b3184b"
+    }
+  ],
+  "sourceSnapshot": {
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "src/livingScienceLandmark.ts": "658740a9200288c99dc188f6c888ff71d6e4719edaefb43b98fd1839fe42e81a",
+    "sources/living-science-model-notes.json": "d041b8137c42f031058518885cd3593eba36a6e4ce9806ab808c9e0fa8a8237a",
+    "sources/education-health-connection-roadview-review.json": "89f5924d66f7527544987942e702918cb18e192a4beac676ec5c0b54a6142923"
+  },
+  "preservation": "기존 unresolved 관측 원문을 이 파일에서 덮어쓰지 않았다. 공용 기록 담당자가 이번 직접 관측과 지도 대조를 후속 근거로 연결한다.",
+  "followupReviews": [
+    {
+      "id": "release29-passage-recheck",
+      "reviewedAt": "2026-11-05T13:51:50.710446+00:00",
+      "observer": "reference",
+      "method": "사용자가 요청한 별도 Playwright CLI Chrome 세션 school29rv에서 공개 로드뷰를 열고 화면을 회전해 관찰했다. 저장한 화면은 모두 직접 다시 열었다. 기존 CUA와 공개 게임 탭은 사용하지 않았다.",
+      "observations": [
+        {
+          "id": "release29-pano1213022760-south-entrance",
+          "sourceUrl": "https://kko.to/fmZ6Q7AEkn",
+          "panoId": "1213022760",
+          "captureMonth": "2026-08",
+          "dateDirectlyRead": true,
+          "initialServiceCoordinates": {
+            "urlX": 489695,
+            "urlY": 1101287,
+            "pan": 51,
+            "tilt": -5,
+            "zoom": 1
+          },
+          "rotatedViewAnglesVerified": false,
+          "captures": [
+            "artifacts/living-science-review/output/playwright/29-222-initial-ui.jpg",
+            "artifacts/living-science-review/output/playwright/29-222-south-entrance-ui.jpg",
+            "artifacts/living-science-review/output/playwright/29-222-paving-threshold-ui.jpg",
+            "artifacts/living-science-review/output/playwright/29-222-poi-confirm-ui.jpg",
+            "artifacts/living-science-review/output/playwright/29-222-threshold-detail-ui.jpg"
+          ],
+          "directlyObserved": [
+            "회색 진입면에서 통과구의 붉은 벽돌 포장으로 이어진다. 보이는 입구에는 닫힌 문짝이나 큰 수직 문턱이 없다.",
+            "통과구 왼쪽은 밝은 벽이며 작은 사각 포스터 여러 장이 붙어 있다. 글자는 읽지 못했다.",
+            "오른쪽에는 낮은 벽돌 화단이 안쪽으로 이어지고, 바깥 회색 기둥 옆 노란 봉에 원형 볼록거울이 달려 있다.",
+            "통과구 오른쪽 바깥 보도는 밝고 짙은 회색 사각 포장으로 나뉘며 붉은 사각 덮개가 보인다. 덮개를 점자블록이라고 식별하지 않았다.",
+            "왼쪽 낮은 층 앞 길에는 굵은 수평 가로대 난간이 있고, 오른쪽 도로 변 보도에는 둥근 고리 모양을 반복한 금속 난간이 있다.",
+            "그늘진 통과구 뒤쪽에는 밝은 바닥과 수목이 보인다. 뒤쪽 바닥을 붉은 벽돌이라고 확정할 수는 없다.",
+            "사진 위 건물 정보 표시를 직접 열어 생활과학연구소, 소비자학과, 의류학과와 생활과학대학 항목을 재확인했다. 정보 창 제목은 서울대학교대학원연구동이며, 이전 원본 지도 대응과 함께 222동 식별을 유지한다."
+          ],
+          "limitations": [
+            "위 정보 목록만으로 건물 경계와 통과구 폭을 측량한 것은 아니다.",
+            "사진의 그림자와 원근 때문에 작은 단차, 정확한 종단 경사와 통과구 양 끝 높이는 미확인이다.",
+            "화면 회전과 확대 후 주소창 pan/tilt/zoom은 갱신되지 않았으므로 초기 URL 수치를 최종 캡처 각도로 쓰지 않는다."
+          ]
+        },
+        {
+          "id": "release29-pano1213022762-south-wing",
+          "sourceUrl": "https://kko.to/Zi7nJGPRQO",
+          "panoId": "1213022762",
+          "captureMonth": "2026-08",
+          "dateDirectlyRead": true,
+          "initialServiceCoordinates": {
+            "urlX": 489712,
+            "urlY": 1101270,
+            "pan": 51,
+            "tilt": -5,
+            "zoom": 1
+          },
+          "rotatedShareUrl": "https://kko.to/4NObhCRie7",
+          "shareUrlBasis": "회전 후 실제 공유하기 메뉴의 현재페이지 URL에서 읽었다. 짧은 주소의 이동 결과를 별도로 열지는 않았다.",
+          "captures": [
+            "artifacts/living-science-review/output/playwright/29-222-southwest-initial-ui.jpg",
+            "artifacts/living-science-review/output/playwright/29-222-south-wing-ui.jpg"
+          ],
+          "directlyObserved": [
+            "같은 회색 모서리 아래 통과구와 오른쪽 볼록거울을 비스듬한 시점에서 확인했다.",
+            "통과구의 왼쪽 밝은 벽, 윗층 회색 패널과 창, 더 왼쪽 벽돌 입면의 관계가 첫 시점과 이어진다.",
+            "도로의 붉은 표면과 통과구 안쪽 붉은 벽돌 사이에는 회색 진입 구간이 있다. 두 붉은 표면을 하나의 재질로 보지 않는다.",
+            "오른쪽 수목 뒤 별도 건물과 통로가 보이지만, 이 관측만으로 건물 번호와 출입구 연결을 추가 확정하지 않았다."
+          ],
+          "limitations": [
+            "이 시점도 통과구 남서쪽 도로에 있다. 반대편 출구에서 안쪽을 보는 시점은 아니다.",
+            "포스터의 문구와 실제 가게 간판은 확인하지 못했다."
+          ]
+        }
+      ],
+      "navigationReview": {
+        "file": "artifacts/living-science-review/output/playwright/29-map-north.jpg",
+        "sha256": "71d125c717e472f1b64d1986f8d81bf68a2cbc07cd7cbd0b8107378a246cb8a2",
+        "directlyViewed": true,
+        "actions": "소지도를 확대하고 북쪽으로 이동해 통과구 안마당 쪽 촬영선을 살폈다.",
+        "result": "반대편 출구 바로 앞의 촬영 지점을 특정하지 못해 그 시점으로 이동하지 않았다. 해당 구역에 거리뷰가 전혀 없다고 확인한 것은 아니다.",
+        "oppositeEndDirectlyObserved": false,
+        "continuousTraversalObserved": false
+      },
+      "detailGuidance": {
+        "confirmedScope": [
+          "남서 입구의 붉은 벽돌 바닥과 그 앞 회색 진입면",
+          "입구 오른쪽 낮은 벽돌 화단과 볼록거울의 상대 위치",
+          "왼쪽 벽의 작은 사각 포스터 배치 형태",
+          "바깥 회색 사각 보도 포장과 서로 다른 두 난간 형태"
+        ],
+        "notVerified": [
+          "반대편 출구의 붉은 포장 여부",
+          "통과구의 실제 폭과 천장 높이",
+          "양 끝의 정확한 바닥 높이와 작은 문턱",
+          "가게 이름과 외부 간판 위치",
+          "포스터 내용과 상시 게시물 여부"
+        ],
+        "posterTextReproduced": false,
+        "shopSignsConfirmed": false,
+        "metricDimensionsMeasured": false
+      },
+      "screenshotEvidence": [
+        {
+          "file": "artifacts/living-science-review/output/playwright/29-222-initial-ui.jpg",
+          "sha256": "d702db80fbc4b1b2e849ca8b36a49134387f73d1c24fbce243f0d5124532f84d",
+          "directlyViewedBy": "reference",
+          "captureMonth": "2026-08",
+          "captureDateUiDirectlyRead": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/29-222-south-entrance-ui.jpg",
+          "sha256": "70099e47b0d33874f5499fd00531046c823c7d9891afb65553557fd69d06c1b5",
+          "directlyViewedBy": "reference",
+          "captureMonth": "2026-08",
+          "captureDateUiDirectlyRead": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/29-222-southwest-initial-ui.jpg",
+          "sha256": "e393d6a3e2a81043b86a5918ae146d58d832bc0f5765ce428f7cfb13f905d130",
+          "directlyViewedBy": "reference",
+          "captureMonth": "2026-08",
+          "captureDateUiDirectlyRead": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/29-222-south-wing-ui.jpg",
+          "sha256": "cb20bd810418fbb5528246600a89c4a088c42c2430b52efb76e5ebee2552bc92",
+          "directlyViewedBy": "reference",
+          "captureMonth": "2026-08",
+          "captureDateUiDirectlyRead": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/29-222-paving-threshold-ui.jpg",
+          "sha256": "462b35fe182ef3c3b45d3ebc015c452c7f63d2e2d80a4247edfb829f381d53c2",
+          "directlyViewedBy": "reference",
+          "captureMonth": "2026-08",
+          "captureDateUiDirectlyRead": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/29-222-poi-confirm-ui.jpg",
+          "sha256": "df3cc71c1387adde7a476bcf1b310609278ac703ddf31018ef656192a7acf197",
+          "directlyViewedBy": "reference",
+          "captureMonth": "2026-08",
+          "captureDateUiDirectlyRead": true
+        },
+        {
+          "file": "artifacts/living-science-review/output/playwright/29-222-threshold-detail-ui.jpg",
+          "sha256": "9c569f95554856d8c283da1e0328e5a4639a82e6a55e86c1375f728a2c8ba8b6",
+          "directlyViewedBy": "reference",
+          "captureMonth": "2026-08",
+          "captureDateUiDirectlyRead": true
+        }
+      ],
+      "session": {
+        "name": "school29rv",
+        "profile": "D:/codex/.tmp/3d-School_Crash/pwcli-profile29rv",
+        "closed": true,
+        "closeResult": "Browser school29rv closed",
+        "existingPublicGameTouched": false
+      },
+      "runtimeChanged": false,
+      "wholeBuildingCompared": false,
+      "currentStateScope": "두 시점의 UI 촬영월은 2026년 8월이다. 촬영 이후 현장 변화를 확인한 것은 아니다."
+    }
+  ],
+  "latestFollowupAt": "2026-11-05T13:51:50.710446+00:00",
+  "historicalBaseline": {
+    "artifact": "artifacts/education-health-review/controls-222-identification.json",
+    "artifactSha256": "2ab4c92ce1c0b54da48cf3b84c2287f44d5ad25e05816f769df159dbd9551cce",
+    "sourceCopyBeforeFollowupSha256": "2ab4c92ce1c0b54da48cf3b84c2287f44d5ad25e05816f769df159dbd9551cce",
+    "meaning": "상단의 최초 관측, 지도 계산과 sourceSnapshot은 controls의 2026년 11월 5일 13:07 조사 당시 기록으로 보존했다. 뒤의 후속 관측은 별도 항목이며 현재 실행 코드와 같다는 뜻이 아니다."
+  },
+  "latestObservationSummary": "2026년 8월 남서쪽 두 시점을 다시 보아 회색 진입면, 통과구의 붉은 벽돌, 오른쪽 화단과 볼록거울 및 두 종류의 난간을 확인했다. 반대편 출구의 재질과 연속 경사, 정확한 치수 및 포스터 문구와 가게 간판은 미확인이다."
+}

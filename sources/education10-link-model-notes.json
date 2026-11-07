@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "title": "10동 연결교와 유리 차양 보완",
+  "buildingIds": [
+    "way/180954536",
+    "way/238937145"
+  ],
+  "reference": "sources/education10-link-roadview-review.json",
+  "referenceSha256": "de54ebdb0b73037a654b71ad9af722e0e1cb30bdc63fbeba1a2e27a0b3db8049",
+  "implementation": {
+    "modules": [
+      "src/education101Site.ts",
+      "src/education101Approach.ts",
+      "src/fullCampus.ts"
+    ],
+    "changes": [
+      "10동 원본 윤곽의 5번 끝벽에만 연결교 개구부를 냈다.",
+      "기존 연결교 바닥을 벽 너머 짧은 참까지 연장했다.",
+      "유리 차양과 금속 격자, 흰 수직 골조와 10 번호를 추가했다.",
+      "관측한 끝벽에는 일반 창 배열을 생성하지 않는다.",
+      "간판 받침과 검은 표시판까지 생성한 뒤 병합 기하를 확정하도록 순서를 고쳤다."
+    ],
+    "estimated": [
+      "개구부 폭 2.31m와 바닥 높이는 기존 게임의 연결교에 맞춘 근사다.",
+      "건물 내부는 복원하지 않았다. 짧은 참과 막음벽은 이동 끝을 정하는 게임용 구조다.",
+      "차양 분할 수와 곡률, 부재 두께, 기둥 폭은 근사다.",
+      "번호 표기는 가까운 흰 골조와 파괴 상태를 함께 관리한다."
+    ],
+    "preserved": [
+      "원본 지도와 DEM",
+      "도로 중심선과 차량 경로",
+      "10동에서 연결교가 닿는 끝벽을 제외한 기존 외벽"
+    ],
+    "mobile": {
+      "mergedGeometry": true,
+      "baseMergedMeshes": 3,
+      "numberTexturePixels": [
+        192,
+        160
+      ],
+      "realPhoneBenchmark": false
+    }
+  },
+  "validation": {
+    "status": "validated-for-publication",
+    "harness": "scripts/verify-education101-access.mjs",
+    "report": "artifacts/education101-access-test/results.json",
+    "visuals": [
+      "artifacts/education10-link-review/41-walk-desktop-publish.png",
+      "artifacts/education10-link-review/41-link-mobile-final.png"
+    ],
+    "testGroups": [
+      {
+        "name": "release37 raw inputs, terrain outside the declared correction, unrelated buildings and transit remain unchanged",
+        "status": "PASS"
+      },
+      {
+        "name": "10 upper connection clears its actual wall and canopy in both directions",
+        "status": "PASS"
+      },
+      {
+        "name": "10 canopy glass has matching damage, distant display and reset",
+        "status": "PASS"
+      },
+      {
+        "name": "raw road portal and separate entrance support continuous real capsule movement",
+        "status": "PASS"
+      },
+      {
+        "name": "actual adjacent taxi curves clear the portal without worsening old outside collisions",
+        "status": "PASS"
+      },
+      {
+        "name": "portal floors, clearance and retained walls match real render and collision",
+        "status": "PASS"
+      },
+      {
+        "name": "one H, distant openings, partial damage and reset retain physical access",
+        "status": "PASS"
+      }
+    ],
+    "sourceInputsUnchangedAfterTest": true,
+    "otherChecks": [
+      "verify-campus-provenance",
+      "verify-distant",
+      "verify-streaming",
+      "verify-runtime-coordinates",
+      "verify-controls",
+      "verify-campus"
+    ],
+    "browser": "Chrome desktop and 390x844 mobile touch emulation",
+    "realPhoneTest": false
+  },
+  "remaining": [
+    "아래층 금속 계단과 바닥 접속",
+    "10동의 다른 출입구와 건물 사이 보행로",
+    "10동과 10-1동의 전체 입면 대조"
+  ],
+  "wholeBuildingCompleted": false,
+  "followup": {
+    "stage": 42,
+    "notes": "sources/education10-stair-model-notes.json",
+    "scope": "아래 출입문과 세 구간 외부 계단은 이 후속 기록을 따른다. 기존 검사는 41차 구현 당시의 기록이다."
+  }
+}

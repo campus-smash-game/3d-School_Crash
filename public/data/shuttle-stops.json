@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "route": {
+    "id": "snu-campus-circular",
+    "officialRouteId": "61",
+    "direction": "counterclockwise",
+    "operation": "loop",
+    "servicePeriod": {
+      "start": "2026-09-01",
+      "end": "2026-12-21",
+      "exclude": "주말, 공휴일, 임시공휴일"
+    },
+    "stopSequenceSource": "https://law.snu.ac.kr/bbs/board.php?bo_table=normal_board&wr_id=7463",
+    "positionSource": "https://map.snu.ac.kr/api/bus/suttle/61.action"
+  },
+  "defaultStopId": "snu-101",
+  "stops": [
+    {
+      "id": "snu-101",
+      "name": "정문",
+      "x": -8.228,
+      "z": -76.582,
+      "bearing": 1.2437741228204136,
+      "stopX": 4.7698,
+      "stopZ": -75.676169,
+      "sourceStopId": "101",
+      "sourceStopName": "정문",
+      "routeOrder": 0,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/456356715/232",
+      "officialPosition": {
+        "latitude": 37.4656884925184,
+        "longitude": 126.948449058974,
+        "x": 4.7698,
+        "z": -75.676169
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/468202819/405",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산"
+    },
+    {
+      "id": "snu-201",
+      "name": "법과대",
+      "x": 56.14,
+      "z": -404.53,
+      "bearing": 1.3864995128204134,
+      "stopX": 59.628401,
+      "stopZ": -403.879914,
+      "sourceStopId": "201",
+      "sourceStopName": "법대입구",
+      "routeOrder": 1,
+      "positionBasis": "공식 정류장 쪽 주도로 바깥 지면",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": null,
+      "officialPosition": {
+        "latitude": 37.4627402015981,
+        "longitude": 126.949069941419,
+        "x": 59.628401,
+        "z": -403.879914
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/468202819/405",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산"
+    },
+    {
+      "id": "snu-401",
+      "name": "자연대",
+      "x": 43.545,
+      "z": -668.223,
+      "bearing": 1.847842882820414,
+      "stopX": 48.28661,
+      "stopZ": -669.682792,
+      "sourceStopId": "401",
+      "sourceStopName": "자연대500동(행정관)",
+      "routeOrder": 2,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/1544714468/694",
+      "officialPosition": {
+        "latitude": 37.4603524646429,
+        "longitude": 126.948941576515,
+        "x": 48.28661,
+        "z": -669.682792
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/468202819/405",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산"
+    },
+    {
+      "id": "snu-501",
+      "name": "농생대",
+      "x": 67.922,
+      "z": -1022.569,
+      "bearing": 1.3936505328204136,
+      "stopX": 72.194353,
+      "stopZ": -1021.725246,
+      "sourceStopId": "501",
+      "sourceStopName": "농생대",
+      "routeOrder": 3,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/1544714466/692",
+      "officialPosition": {
+        "latitude": 37.4571900279417,
+        "longitude": 126.949212161221,
+        "x": 72.194353,
+        "z": -1021.725246
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/455015956/201",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산"
+    },
+    {
+      "id": "snu-601",
+      "name": "38동",
+      "x": 127.77,
+      "z": -1269.44,
+      "bearing": 1.3237267628204137,
+      "stopX": 130.771,
+      "stopZ": -1268.676,
+      "sourceStopId": "601",
+      "sourceStopName": "공대입구",
+      "routeOrder": 4,
+      "positionBasis": "공식 정류장 쪽 도로 바깥 지면",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": null,
+      "officialPosition": {
+        "latitude": 37.454964794994,
+        "longitude": 126.949840936747,
+        "x": 127.750354,
+        "z": -1269.438177
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/456934306/352",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 표식 부근의 원본 도로 차로로 투영한 게임 정차점"
+    },
+    {
+      "id": "snu-701",
+      "name": "신소재공동연구소",
+      "x": 157.02,
+      "z": -1426.44,
+      "bearing": 1.501437062820414,
+      "stopX": 161.286337,
+      "stopZ": -1426.140266,
+      "sourceStopId": "701",
+      "sourceStopName": "신소재연구소",
+      "routeOrder": 5,
+      "positionBasis": "공식 정류장 쪽 주도로 바깥 지면",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": null,
+      "officialPosition": {
+        "latitude": 37.4535571226189,
+        "longitude": 126.950220492609,
+        "x": 161.286337,
+        "z": -1426.140266
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/1513607848/568",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산"
+    },
+    {
+      "id": "snu-801",
+      "name": "제2파워플랜트",
+      "x": 120.63,
+      "z": -1831.15,
+      "bearing": 1.604602132820414,
+      "stopX": 125.03,
+      "stopZ": -1831.3,
+      "sourceStopId": "801",
+      "sourceStopName": "제2파워플랜트",
+      "routeOrder": 6,
+      "positionBasis": "시설 내부에 놓인 공식 지도 표식을 인접 남향 주도로 바깥 지면으로 옮긴 근사",
+      "positionConfidence": "projected-estimate",
+      "walkwayId": null,
+      "officialPosition": {
+        "latitude": 37.44990577747926,
+        "longitude": 126.95024834044337,
+        "x": 163.746856,
+        "z": -1832.608007
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/456934307/353",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "시설 내부 공식 표식을 인접 남향 차로로 옮긴 추정 위치"
+    },
+    {
+      "id": "snu-901",
+      "name": "302동",
+      "x": 327.335,
+      "z": -1955.387,
+      "bearing": 4.6683687,
+      "stopX": 323.156,
+      "stopZ": -1955.564,
+      "sourceStopId": "901",
+      "sourceStopName": "302동 공학관",
+      "routeOrder": 7,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/777628687/492",
+      "officialPosition": {
+        "latitude": 37.4488027992655,
+        "longitude": 126.952096825205,
+        "x": 327.071312,
+        "z": -1955.391542
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/1513607847/567",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 표식 부근의 원본 도로 차로로 투영한 게임 정차점"
+    },
+    {
+      "id": "snu-1001",
+      "name": "301동",
+      "x": 363.78,
+      "z": -1682.99,
+      "bearing": 5.060255497963443,
+      "stopX": 360.872,
+      "stopZ": -1677.794,
+      "sourceStopId": "1001",
+      "sourceStopName": "301동 공학관",
+      "routeOrder": 8,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 끝에서 원본 차량 도로 폭과 캡슐 여유를 확보하도록 조정",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/777628598/488",
+      "officialPosition": {
+        "latitude": 37.4513145395911,
+        "longitude": 126.952504907509,
+        "x": 363.127773,
+        "z": -1675.784609
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/468665859/406",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 표식 부근의 원본 도로 차로로 투영한 게임 정차점",
+      "spawnAdjustment": {
+        "reason": "원본 모든 차량 도로 경계에서 0.9m 이상 떨어지도록 보행자 위치만 조정",
+        "originalPlayer": [
+          361.58,
+          -1682.09
+        ],
+        "shiftMetres": 2.3769728648009423
+      }
+    },
+    {
+      "id": "snu-1101",
+      "name": "유전공학연구소",
+      "x": 478.791,
+      "z": -1347.993,
+      "bearing": 2.088557,
+      "stopX": 489.789037,
+      "stopZ": -1354.257391,
+      "sourceStopId": "1101",
+      "sourceStopName": "유전공학연구소",
+      "routeOrder": 9,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/777628599/489",
+      "officialPosition": {
+        "latitude": 37.4542028545218,
+        "longitude": 126.953938443076,
+        "x": 489.789037,
+        "z": -1354.257391
+      },
+      "onSiteLocationVerified": false,
+      "facingBasis": "가까운 원본 순환 차도 선형이 없어 공식 정류장 표식 쪽을 향한 근사 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산"
+    },
+    {
+      "id": "snu-1301",
+      "name": "교수회관",
+      "x": 597.699,
+      "z": -1148.199,
+      "bearing": 3.7044732089931136,
+      "stopX": 605.283311,
+      "stopZ": -1155.35523,
+      "sourceStopId": "1301",
+      "sourceStopName": "교수회관입구",
+      "routeOrder": 10,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심에서 원본 차량 도로 폭과 캡슐 여유를 확보하도록 조정",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/1544574869/631",
+      "officialPosition": {
+        "latitude": 37.455989614862,
+        "longitude": 126.955245592118,
+        "x": 605.283311,
+        "z": -1155.35523
+      },
+      "onSiteLocationVerified": false,
+      "facingBasis": "가까운 원본 순환 차도 선형이 없어 공식 정류장 표식 쪽을 향한 근사 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산",
+      "spawnAdjustment": {
+        "reason": "원본 모든 차량 도로 경계에서 0.9m 이상 떨어지도록 보행자 위치만 조정",
+        "originalPlayer": [
+          597.099,
+          -1148.799
+        ],
+        "shiftMetres": 0.8485281374238557
+      }
+    },
+    {
+      "id": "snu-1501",
+      "name": "기숙사삼거리",
+      "x": 733.298,
+      "z": -614.381,
+      "bearing": 4.294991994326281,
+      "stopX": 729.614929,
+      "stopZ": -615.929816,
+      "sourceStopId": "1501",
+      "sourceStopName": "기숙사삼거리",
+      "routeOrder": 11,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심에서 원본 차량 도로 폭과 캡슐 여유를 확보하도록 조정",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/1544364787/577",
+      "officialPosition": {
+        "latitude": 37.4608353336368,
+        "longitude": 126.956652761066,
+        "x": 729.614929,
+        "z": -615.929816
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/847951700/496",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산",
+      "spawnAdjustment": {
+        "reason": "원본 모든 차량 도로 경계에서 0.9m 이상 떨어지도록 보행자 위치만 조정",
+        "originalPlayer": [
+          732.798,
+          -614.681
+        ],
+        "shiftMetres": 0.5830951894845288
+      }
+    },
+    {
+      "id": "snu-1601",
+      "name": "국제대학원",
+      "x": 593.674,
+      "z": -245.608,
+      "bearing": 1.679293390859705,
+      "stopX": 605.852169,
+      "stopZ": -246.630857,
+      "sourceStopId": "1601",
+      "sourceStopName": "국제대학원",
+      "routeOrder": 12,
+      "positionBasis": "공식 정류장 가까이에서 원본 보충 차도까지 포함해 도로 밖 여유를 확보한 게임 시작점",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/1544714427/653",
+      "officialPosition": {
+        "latitude": 37.4641527874505,
+        "longitude": 126.955252030382,
+        "x": 605.852169,
+        "z": -246.630857
+      },
+      "onSiteLocationVerified": false,
+      "facingBasis": "가까운 원본 순환 차도 선형이 없어 공식 정류장 표식 쪽을 향한 근사 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산",
+      "spawnAdjustment": {
+        "reason": "원본에서 누락돼 복원한 동쪽 순환도로 경계와 0.9m 이상 분리",
+        "originalPlayer": [
+          596.674,
+          -245.708
+        ],
+        "shiftMetres": 3.001666203960733
+      }
+    },
+    {
+      "id": "snu-1701",
+      "name": "수의대",
+      "x": 551.832,
+      "z": -26.049,
+      "bearing": 3.779586343637218,
+      "stopX": 550.567034,
+      "stopZ": -27.751386,
+      "sourceStopId": "1701",
+      "sourceStopName": "종합교육연구동",
+      "routeOrder": 13,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심에서 원본 차량 도로 폭과 캡슐 여유를 확보하도록 조정",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/1544364808/583",
+      "officialPosition": {
+        "latitude": 37.4661190061983,
+        "longitude": 126.954626320475,
+        "x": 550.567034,
+        "z": -27.751386
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/847953679/501",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산",
+      "spawnAdjustment": {
+        "reason": "원본 모든 차량 도로 경계에서 0.9m 이상 떨어지도록 보행자 위치만 조정",
+        "originalPlayer": [
+          551.532,
+          -26.449
+        ],
+        "shiftMetres": 0.4999999999999986
+      }
+    },
+    {
+      "id": "snu-1801",
+      "name": "경영대",
+      "x": 331.441,
+      "z": -32.993,
+      "bearing": 3.1153772928204138,
+      "stopX": 331.593752,
+      "stopZ": -38.141019,
+      "sourceStopId": "1801",
+      "sourceStopName": "경영대",
+      "routeOrder": 14,
+      "positionBasis": "공식 정류장 가까이의 지도 보행로 중심",
+      "positionConfidence": "official-map-nearby-spawn",
+      "walkwayId": "way/1544364811/586",
+      "officialPosition": {
+        "latitude": 37.4660256749621,
+        "longitude": 126.952148009596,
+        "x": 331.593752,
+        "z": -38.141019
+      },
+      "onSiteLocationVerified": false,
+      "facingRoadId": "way/847953679/501",
+      "facingBasis": "가까운 순환 차도 중심을 향하도록 계산한 방위",
+      "stopPositionBasis": "공식 지도 API의 정류장 표식 위치이며 실제 차량 중심선은 노선 생성 시 별도 계산"
+    }
+  ],
+  "sources": [
+    "https://law.snu.ac.kr/bbs/board.php?bo_table=normal_board&wr_id=7463",
+    "https://law.snu.ac.kr/bbs/download.php?bo_table=normal_board&wr_id=7463&no=0",
+    "https://map.snu.ac.kr/api/bus/suttle/61.action",
+    "https://map.snu.ac.kr/api/bus/search.action?search_word=",
+    "https://www.snu.ac.kr/about/gwanak/shuttles/campus_shuttles"
+  ],
+  "notes": [
+    "공식 시간표의 정류장 순서와 공식 지도 API의 위경도를 대조했다. 보행자 시작점은 지도 보행로 또는 차도 밖 지면으로 조정한 게임 좌표다.",
+    "제2파워플랜트 공식 지도 표식은 원본 건물 안에 있어 인접 도로 쪽으로 옮겼다. 정확한 정차 위치는 현장 확인하지 않았다.",
+    "38동과 수의대는 공식 지도 API의 공대입구 및 종합교육연구동에 순서로 대응한다. 서로 다른 방향의 정류장은 합치지 않았다."
+  ]
+}

@@ -1,0 +1,2297 @@
+{
+  "scope": "공식 사진에서 보이는 면을 관찰했다. 색과 창 비율은 모델링 근사값이며 사진 밖의 면, 지붕과 정확한 치수는 확인하지 않았다.",
+  "entries": [
+    {
+      "buildingNumber": "61",
+      "officialSeq": 77,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=77",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000075.jpg",
+      "observations": [
+        "흰 패널, 청록 유리 모서리와 큰 출입구, 돌출 차양"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13883087,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.64,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=77"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "62",
+      "officialSeq": 78,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=78",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000076.jpg",
+      "observations": [
+        "짙은 베이지 콘크리트 띠, 깊은 사각 청록창이 반복되는 입면"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11577755,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.74,
+        "windowHeightRatio": 0.43,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=78"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "62-1",
+      "officialSeq": 79,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=79",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000077.jpg",
+      "observations": [
+        "금속판과 유리가 엇갈리는 입면, 본관 위에 걸친 긴 상부 매스"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12893354,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.48,
+        "windowHeightRatio": 0.92,
+        "bayWidth": 2.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=79"
+        ],
+        "facadePattern": "checker"
+      }
+    },
+    {
+      "buildingNumber": "63",
+      "officialSeq": 80,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=80",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000078.jpg",
+      "observations": [
+        "흰 외벽과 긴 창띠, 돌출 창상자와 입구 기둥"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 14212051,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=80"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "64",
+      "officialSeq": 81,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=81",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000079.jpg",
+      "observations": [
+        "불규칙한 금색 수직 루버와 유리 하부, 외부 계단"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11440744,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.9,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=81"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "65",
+      "officialSeq": 82,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=82",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000080.jpg",
+      "observations": [
+        "짙은 갈색 벽과 검정 띠, 깊은 지붕 처마"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 6642512,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.44,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=82"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "66",
+      "officialSeq": 83,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=83",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000081.jpg",
+      "observations": [
+        "적벽돌 벽, 흰 돌출 현관과 발코니"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10180156,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.54,
+        "windowHeightRatio": 0.65,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=83"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "67",
+      "officialSeq": 84,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=84",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000082.jpg",
+      "observations": [
+        "밝은 석재와 유리 창띠, 붉은 벽돌 일부"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12697519,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.91,
+        "windowHeightRatio": 0.64,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=84"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "68",
+      "officialSeq": 85,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=85",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000083.jpg",
+      "observations": [
+        "주황 적벽돌 벽을 흰 콘크리트 기둥과 띠가 나눔"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10970693,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.38,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=85"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "68-1",
+      "officialSeq": 86,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=86",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000084.jpg",
+      "observations": [
+        "밝은 석재 패널과 큰 청록 유리 부분, 세로 유리띠"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13223092,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.56,
+        "windowHeightRatio": 0.63,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=86"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "68-2",
+      "officialSeq": 87,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=87",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000085.jpg",
+      "observations": [
+        "회색 금속판 외벽, 큰 셔터와 측면의 작은 가로창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13554639,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.25,
+        "windowHeightRatio": 0.25,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=87"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "70",
+      "officialSeq": 89,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=89",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000086.jpg",
+      "observations": [
+        "밝은 석재 무창 곡면벽과 검은 지붕 테두리, 낮은 유리 현관"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13749953,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0,
+        "windowHeightRatio": 0,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=89"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "71",
+      "officialSeq": 90,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=90",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000087.jpg",
+      "observations": [
+        "연한 모래색 벽, 낮은 가로창과 넓은 입구 차양"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13352873,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.28,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=90"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "71-2",
+      "officialSeq": 91,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=91",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000088.jpg",
+      "observations": [
+        "은색 통형 지붕, 큰 곡면 청록 유리 입면"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11713212,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.9,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=91"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "72",
+      "officialSeq": 92,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=92",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000089.jpg",
+      "observations": [
+        "청록 유리 격자로 덮인 입면과 흰 층별 띠"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 8169901,
+        "glassColor": 4557985,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.97,
+        "windowHeightRatio": 0.95,
+        "bayWidth": 1.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=92"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "73",
+      "officialSeq": 93,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=93",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000090.jpg",
+      "observations": [
+        "밝은 베이지 벽돌, 길게 파인 어두운 창띠와 하부 유리 출입문"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12892060,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 1,
+        "windowHeightRatio": 0.32,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=93"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "74",
+      "officialSeq": 94,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=94",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000091.jpg",
+      "observations": [
+        "주황 외벽과 드문 세로창, 낮은 삼각 유리 매스"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13272412,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.67,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=94"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "75",
+      "officialSeq": 95,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=95",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000092.jpg",
+      "observations": [
+        "흰 패널과 긴 창띠, 중앙 청록 유리 계단탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13225674,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.93,
+        "windowHeightRatio": 0.45,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=95"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "75-1",
+      "officialSeq": 96,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=96",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000093.jpg",
+      "observations": [
+        "밝은 석재 벽, 중앙 유리 현관과 좁은 수평창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13223862,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.35,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=96"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "76",
+      "officialSeq": 97,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=97",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000094.jpg",
+      "observations": [
+        "짙은 황갈색 외벽, 깊은 입구와 긴 상층창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10125144,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.43,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=97"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "76-1",
+      "officialSeq": 98,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=98",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000095.jpg",
+      "observations": [
+        "수평 금속 루버, 유리 상부와 열린 하부"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11056304,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.96,
+        "windowHeightRatio": 0.88,
+        "bayWidth": 1.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=98"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "80",
+      "officialSeq": 99,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=99",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000096.jpg",
+      "observations": [
+        "연한 적벽돌, 흰 창틀과 별도 유리 계단탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12090195,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.62,
+        "windowHeightRatio": 0.63,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=99"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "80-1",
+      "officialSeq": 100,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=100",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000097.jpg",
+      "observations": [
+        "흰 단층 벽, 작은 정방형 창, 파란 지붕 테두리"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 14343120,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.2,
+        "windowHeightRatio": 0.22,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=100"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "81",
+      "officialSeq": 101,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=101",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000098.jpg",
+      "observations": [
+        "회색 금속판과 유리, 상층의 촘촘한 수직 프레임"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 6451058,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.83,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=101"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "82",
+      "officialSeq": 102,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=102",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000099.jpg",
+      "observations": [
+        "밝은 석재 격자 사이 넓은 청록창, 유리 상층"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12896705,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.82,
+        "windowHeightRatio": 0.75,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=102"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "83",
+      "officialSeq": 103,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=103",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000100.jpg",
+      "observations": [
+        "은색 곡면 벽의 작은 창, 옆쪽 큰 유리 매스"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10924467,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.28,
+        "windowHeightRatio": 0.43,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=103"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "84",
+      "officialSeq": 104,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=104",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000101.jpg",
+      "observations": [
+        "회색 석재의 낮은 벽, 중앙 세로 금속살 출입구"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12039079,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.2,
+        "windowHeightRatio": 0.2,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=104"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "85",
+      "officialSeq": 105,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=105",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000102.jpg",
+      "observations": [
+        "밝은 석재 격자, 청록창과 유리 연결 현관"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13750468,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.67,
+        "windowHeightRatio": 0.68,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=105"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "85-1",
+      "officialSeq": 106,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=106",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000103.jpg",
+      "observations": [
+        "낮은 노출 콘크리트 벽, 창 없는 설비실과 문"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12567484,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0,
+        "windowHeightRatio": 0,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=106"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "86",
+      "officialSeq": 107,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=107",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000104.jpg",
+      "observations": [
+        "황갈색 수직 루버를 두른 상부와 청록 유리 하부"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12689517,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.75,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=107"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "97",
+      "officialSeq": 108,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=108",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000105.jpg",
+      "observations": [
+        "황토색 벽돌, 드문 세로창과 세로 유리 계단실"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11770224,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.25,
+        "windowHeightRatio": 0.52,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=108"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "98",
+      "officialSeq": 109,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=109",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000106.jpg",
+      "observations": [
+        "황갈색 벽돌 본체와 회색 금속 격자 별동"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12817253,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.46,
+        "windowHeightRatio": 0.69,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=109"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "98-2",
+      "officialSeq": 110,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=110",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000107.jpg",
+      "observations": [
+        "낮은 회색 셔터 열과 상단 거친 석재 테두리"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11643542,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0,
+        "windowHeightRatio": 0,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=110"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "99-1",
+      "officialSeq": 111,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=111",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000108.jpg",
+      "observations": [
+        "흰 조립식 벽, 지붕 아래의 작은 연속창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13684933,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.2,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=111"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "100",
+      "officialSeq": 112,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=112",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000109.jpg",
+      "observations": [
+        "곡면 은색 지붕이 지면으로 내려오는 조형, 큰 유리 출입면"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10727344,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.93,
+        "windowHeightRatio": 0.8,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=112"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "101",
+      "officialSeq": 113,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=113",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000110.jpg",
+      "observations": [
+        "갈색 벽돌과 흰 수평선, 가늘고 긴 창과 계단탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10453094,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.4,
+        "windowHeightRatio": 0.72,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=113"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "102",
+      "officialSeq": 114,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=114",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000111.jpg",
+      "observations": [
+        "밝은 회색 패널, 녹색 가로창과 낮은 현관"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 14145224,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.88,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=114"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "103",
+      "officialSeq": 115,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=115",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000112.jpg",
+      "observations": [
+        "회색 하부, 깊은 기와 처마와 상층 연속창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11184277,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.37,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=115"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "104",
+      "officialSeq": 116,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=116",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000113.jpg",
+      "observations": [
+        "적벽돌 외벽, 흰 틀의 가로창과 금속 현관 차양"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11761235,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.44,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=116"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "104-1",
+      "officialSeq": 117,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=117",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000114.jpg",
+      "observations": [
+        "밝은 석재의 둥근 전면, 긴 청록창과 유리 현관"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12762544,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=117"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "104-2",
+      "officialSeq": 118,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=118",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000115.jpg",
+      "observations": [
+        "창 없는 낮은 노출 콘크리트 벽과 중앙 문"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11448741,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0,
+        "windowHeightRatio": 0,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=118"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "104-3",
+      "officialSeq": 119,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=119",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000116.jpg",
+      "observations": [
+        "낮은 회색 설비 건물, 박공지붕과 상부 환기구"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12830398,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0,
+        "windowHeightRatio": 0,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=119"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "105",
+      "officialSeq": 120,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=120",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000117.jpg",
+      "observations": [
+        "흰 패널, 청록창과 원통 계단탑, 유리 전면 일부"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12963015,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.84,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=120"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "105-1",
+      "officialSeq": 121,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=121",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000118.jpg",
+      "observations": [
+        "은회색 금속판, 넓은 가로창과 층별 수평 줄무늬"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12634567,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.65,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=121"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "105-2",
+      "officialSeq": 122,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=122",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000119.jpg",
+      "observations": [
+        "유리 전면과 밝은 패널, 어두운 세로 프레임"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12107191,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.93,
+        "windowHeightRatio": 0.77,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=122"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "106",
+      "officialSeq": 123,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=123",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000120.jpg",
+      "observations": [
+        "낮은 회색 콘크리트 벽과 큰 낡은 창, 외부 계단"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11121575,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.72,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=123"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "107-1",
+      "officialSeq": 124,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=124",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000121.jpg",
+      "observations": [
+        "나뭇가지 뒤에 보이는 밝은 벽과 청록 유리 부분"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12699839,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=124"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "107-2",
+      "officialSeq": 125,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=125",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000122.jpg",
+      "observations": [
+        "나무 뒤 회색 벽, 깊은 처마와 큰 어두운 창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11579297,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.72,
+        "windowHeightRatio": 0.65,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=125"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "107-3",
+      "officialSeq": 126,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=126",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000123.jpg",
+      "observations": [
+        "연회색 벽과 큰 창, 창 앞 세로 방범창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13092793,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.7,
+        "windowHeightRatio": 0.72,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=126"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "109",
+      "officialSeq": 127,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=127",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000124.jpg",
+      "observations": [
+        "흰 굵은 격자와 청색 반사유리 상층, 짙은 갈색 하층"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13948105,
+        "glassColor": 3570587,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.82,
+        "windowHeightRatio": 0.8,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=127"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "110",
+      "officialSeq": 128,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=128",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000125.jpg",
+      "observations": [
+        "작은 흰 단층 벽, 개별 창과 문"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13750978,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.38,
+        "windowHeightRatio": 0.6,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=128"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "111",
+      "officialSeq": 129,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=129",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000126.jpg",
+      "observations": [
+        "붉은 벽돌 일부와 유리 전면, 상부 세로 갈색 프레임"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10187860,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.83,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=129"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "113",
+      "officialSeq": 130,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=130",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000127.jpg",
+      "observations": [
+        "콘크리트 수평 처마, 어두운 유리 띠와 유리 모서리"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12040361,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.55,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=130"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "115",
+      "officialSeq": 131,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=131",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000128.jpg",
+      "observations": [
+        "작은 경비실의 벽돌 측면과 유리창, 청록 지붕 테두리"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 9204310,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.91,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=131"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "117",
+      "officialSeq": 132,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=132",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000129.jpg",
+      "observations": [
+        "나무 뒤 흰 외벽과 가는 세로 유리창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13948360,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.31,
+        "windowHeightRatio": 0.65,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=132"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "120",
+      "officialSeq": 133,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=133",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000130.jpg",
+      "observations": [
+        "흰 소형 설비실, 파란 박공지붕과 환기구"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13751497,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.2,
+        "windowHeightRatio": 0.22,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=133"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "121",
+      "officialSeq": 134,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=134",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000131.jpg",
+      "observations": [
+        "모래색 벽돌, 흰 돌출 상자와 서로 다른 크기 창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11836797,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.5,
+        "windowHeightRatio": 0.54,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=134"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "122-1",
+      "officialSeq": 135,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=135",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000132.jpg",
+      "observations": [
+        "밝은 벽돌과 청록 유리 발코니, 검은 곡면 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12888971,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.75,
+        "windowHeightRatio": 0.76,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=135"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "122-2",
+      "officialSeq": 136,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=136",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000133.jpg",
+      "observations": [
+        "밝은 벽돌과 흰 측벽, 청록 발코니와 검은 곡면 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13086610,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.75,
+        "windowHeightRatio": 0.76,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=136"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "122-3",
+      "officialSeq": 137,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=137",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000134.jpg",
+      "observations": [
+        "밝은 벽돌, 유리 발코니와 흰 세로 구획, 검은 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13086091,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.76,
+        "windowHeightRatio": 0.76,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=137"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "122-4",
+      "officialSeq": 138,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=138",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000135.jpg",
+      "observations": [
+        "밝은 벽돌과 흰 벽, 청록 발코니, 검은 곡면 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13217938,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.76,
+        "windowHeightRatio": 0.76,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=138"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "122-5",
+      "officialSeq": 139,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=139",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000136.jpg",
+      "observations": [
+        "모래색 벽돌과 넓은 발코니 창, 흰 차양"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12887427,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.73,
+        "windowHeightRatio": 0.74,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=139"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "122-6",
+      "officialSeq": 140,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=140",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000137.jpg",
+      "observations": [
+        "밝은 벽돌과 청록 발코니, 흰 측벽과 검은 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12823176,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.73,
+        "windowHeightRatio": 0.74,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=140"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "122-7",
+      "officialSeq": 141,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=141",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000138.jpg",
+      "observations": [
+        "밝은 벽돌과 흰 측벽, 하부 관통 통로, 발코니 반복"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12888712,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.78,
+        "windowHeightRatio": 0.74,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=141"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "125",
+      "officialSeq": 142,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=142",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000139.jpg",
+      "observations": [
+        "짙은 적벽돌, 흰 수평선과 검은 창, 낮은 현관 차양"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10051394,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.67,
+        "windowHeightRatio": 0.6,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=142"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "125-1",
+      "officialSeq": 143,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=143",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000140.jpg",
+      "observations": [
+        "갈색 벽돌, 좁은 청록창과 큰 낮은 회색 현관"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10317916,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.8,
+        "windowHeightRatio": 0.32,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=143"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "125-2",
+      "officialSeq": 144,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=144",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000141.jpg",
+      "observations": [
+        "붉은 벽돌, 흰 돌출 창틀과 유리 계단실"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10317917,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.7,
+        "windowHeightRatio": 0.58,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=144"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "126",
+      "officialSeq": 145,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=145",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000142.jpg",
+      "observations": [
+        "연회색 패널과 선명한 청색 유리 띠, 양끝 계단탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12896191,
+        "glassColor": 4557985,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 1,
+        "windowHeightRatio": 0.5,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=145"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "127",
+      "officialSeq": 146,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=146",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000143.jpg",
+      "observations": [
+        "갈색 벽돌, 밝은 띠와 사각창, 중앙 청색 유리탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 9136215,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.63,
+        "windowHeightRatio": 0.51,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=146"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "127-1",
+      "officialSeq": 147,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=147",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000144.jpg",
+      "observations": [
+        "낮은 밝은 벽, 청록 유리 입구와 회색 깊은 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13026999,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.94,
+        "windowHeightRatio": 0.83,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=147"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "128",
+      "officialSeq": 148,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=148",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000145.jpg",
+      "observations": [
+        "작은 적벽돌 벽, 드문 검은 창과 녹색 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 8740430,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.35,
+        "windowHeightRatio": 0.4,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=148"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "129",
+      "officialSeq": 149,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=149",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000146.jpg",
+      "observations": [
+        "흰 석재, 어두운 창, 원통형 모서리 탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13092538,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.6,
+        "windowHeightRatio": 0.61,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=149"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "130",
+      "officialSeq": 150,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=150",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000147.jpg",
+      "observations": [
+        "밝은 외벽의 긴 가로띠, 짙은 유리 연속창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12895928,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 1,
+        "windowHeightRatio": 0.42,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=150"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "131",
+      "officialSeq": 151,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=151",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000148.jpg",
+      "observations": [
+        "모서리가 둥근 흰 패널, 좁은 가로창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13686223,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.57,
+        "windowHeightRatio": 0.28,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=151"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "132",
+      "officialSeq": 152,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=152",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000149.jpg",
+      "observations": [
+        "밝은 석재와 청록 유리 띠, 붉은 수직 기둥"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12959408,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 1,
+        "windowHeightRatio": 0.44,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=152"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "133",
+      "officialSeq": 153,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=153",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000150.jpg",
+      "observations": [
+        "은회색 패널과 청록 유리 수평띠, 유리 하부"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13160136,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 1,
+        "windowHeightRatio": 0.48,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=153"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "135",
+      "officialSeq": 154,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=154",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000151.jpg",
+      "observations": [
+        "갈색 벽돌, 흰 돌출 창틀과 사각창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10251093,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.67,
+        "windowHeightRatio": 0.65,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=154"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "137",
+      "officialSeq": 155,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=155",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000152.jpg",
+      "observations": [
+        "갈색 벽돌과 흰 창틀, 상층 연결 다리"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 8544593,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.67,
+        "windowHeightRatio": 0.6,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=155"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "137-1",
+      "officialSeq": 156,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=156",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000153.jpg",
+      "observations": [
+        "청록 유리 격자 전면, 어두운 벽 테두리"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10792618,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.9,
+        "windowHeightRatio": 0.82,
+        "bayWidth": 1.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=156"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "137-2",
+      "officialSeq": 157,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=157",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000154.jpg",
+      "observations": [
+        "갈색 벽돌과 깊은 콘크리트 구획, 넓은 청록창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10124128,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.79,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=157"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "138",
+      "officialSeq": 158,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=158",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000155.jpg",
+      "observations": [
+        "밝은 석재, 사각 청록창, 중앙 계단탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12564907,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.7,
+        "windowHeightRatio": 0.54,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=158"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "139",
+      "officialSeq": 159,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=159",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000156.jpg",
+      "observations": [
+        "갈색 벽돌과 수평 청록창, 둥근 계단탑"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 8611159,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.92,
+        "windowHeightRatio": 0.42,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=159"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "140",
+      "officialSeq": 161,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=161",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000158.jpg",
+      "observations": [
+        "밝은 회색 외벽, 깊은 처마, 가로로 놓인 사각창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12830139,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.65,
+        "windowHeightRatio": 0.55,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=161"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "140-1",
+      "officialSeq": 162,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=162",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000159.jpg",
+      "observations": [
+        "흰 패널과 파란 격자선, 중앙 세로창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13159879,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.25,
+        "windowHeightRatio": 0.55,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=162"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "140-2",
+      "officialSeq": 163,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=163",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000160.jpg",
+      "observations": [
+        "갈색 수평 구획과 연두빛 유리 전면, 노출 외부계단"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 10788753,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.95,
+        "windowHeightRatio": 0.76,
+        "bayWidth": 1.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=163"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "141",
+      "officialSeq": 164,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=164",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000161.jpg",
+      "observations": [
+        "베이지 벽돌의 둥근 전면, 긴 창과 외부계단"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12167820,
+        "glassColor": 5602944,
+        "windowStyle": "ribbon",
+        "windowWidthRatio": 0.83,
+        "windowHeightRatio": 0.38,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=164"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "142",
+      "officialSeq": 165,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=165",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000162.jpg",
+      "observations": [
+        "연한 적벽돌, 흰 창틀과 넓은 사각창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11961699,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.72,
+        "windowHeightRatio": 0.56,
+        "bayWidth": 3.5,
+        "horizontalBands": true,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=165"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "143",
+      "officialSeq": 166,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=166",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000163.jpg",
+      "observations": [
+        "금색 세로 루버를 두른 곡면 유리 입면"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11835505,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.96,
+        "windowHeightRatio": 0.88,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=166"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "144",
+      "officialSeq": 167,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=167",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000164.jpg",
+      "observations": [
+        "작은 경비실, 청색 기와지붕과 굵은 기둥"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12105637,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.85,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=167"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "149",
+      "officialSeq": 168,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=168",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000165.jpg",
+      "observations": [
+        "관중석 아래 낮은 회색 벽과 상부 긴 차양"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12566965,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.35,
+        "windowHeightRatio": 0.38,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=168"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "150",
+      "officialSeq": 169,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=169",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000166.jpg",
+      "observations": [
+        "주황 벽돌, 드문 창과 중앙 세로 유리탑, 두 곡면 지붕"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 12089935,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.27,
+        "windowHeightRatio": 0.46,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=169"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "151",
+      "officialSeq": 170,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=170",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000167.jpg",
+      "observations": [
+        "공중에 돌출된 반투명 외피, 흰 대각 트러스와 경사 밑면"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11124155,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.96,
+        "windowHeightRatio": 0.94,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=170"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "152",
+      "officialSeq": 171,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=171",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000168.jpg",
+      "observations": [
+        "짙은 철골과 유리 전면, 아래 거친 석재 벽"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 6380104,
+        "glassColor": 5602944,
+        "windowStyle": "curtain",
+        "windowWidthRatio": 0.96,
+        "windowHeightRatio": 0.8,
+        "bayWidth": 1.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=171"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "152-1",
+      "officialSeq": 172,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=172",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000169.jpg",
+      "observations": [
+        "베이지 벽돌, 깊은 흰 세로 구획과 청록창"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 11441269,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.75,
+        "windowHeightRatio": 0.7,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": true,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=172"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "153",
+      "officialSeq": 173,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=173",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000170.jpg",
+      "observations": [
+        "밝은 외벽, 청록 사각창 반복과 기둥이 드러난 하부"
+      ],
+      "visuallyInspected": true,
+      "profile": {
+        "wallColor": 13026743,
+        "glassColor": 5602944,
+        "windowStyle": "punched",
+        "windowWidthRatio": 0.72,
+        "windowHeightRatio": 0.68,
+        "bayWidth": 3.5,
+        "horizontalBands": false,
+        "verticalFins": false,
+        "confidence": "reference",
+        "sourceUrls": [
+          "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=173"
+        ]
+      }
+    },
+    {
+      "buildingNumber": "139-1",
+      "officialSeq": 160,
+      "sourceUrl": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=160",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000157.jpg",
+      "observations": [
+        "공사 가림막으로 외관이 가려져 있어 준공 외관은 미확인"
+      ],
+      "visuallyInspected": true,
+      "profile": null
+    }
+  ]
+}

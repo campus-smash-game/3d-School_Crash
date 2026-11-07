@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 1,
+  "status": "integrated-partial",
+  "reviewedAt": "2026-11-05T17:03:41.129Z",
+  "buildingId": "way/386890828",
+  "scope": "222동 동측 주현관, 그 앞 안마당의 일부와 기존 남쪽 통과구 북끝의 보행 연결. 220동까지 이어지는 전체 마당과 북쪽 계단의 완전 재현은 아니다.",
+  "roadviewReview": "sources/living-science-courtyard-roadview-review.json",
+  "observationOrder": [
+    "2026년 8월 카카오 로드뷰의 남쪽 두 촬영점과 실제 이동 화살표를 먼저 확인했다.",
+    "안마당 내부 촬영선이 이번 카카오 지도에 표시되지 않아 공식 2024 행사 사진과 위치도로 현관과 주변 시설을 대조했다.",
+    "원본 출입구 노드 4531517992와 /339를 확인하고, 기존 문이 약 6.5m 어긋나 보행로가 막힌 것을 재현한 뒤 수정했다."
+  ],
+  "observed": [
+    "생활과학대학 문구와 후퇴한 유리 현관",
+    "붉은색과 갈색 벽돌 포장과 직각으로 분기하는 노란 유도선",
+    "돌 상단 마감이 있는 굽은 벽돌 화단과 수목",
+    "짧은 기둥등과 글씨를 판독하지 못한 파란 안내대"
+  ],
+  "implementation": {
+    "status": "frozen-model-and-targeted-validation-passed",
+    "sourceHashes": {
+      "src/livingScienceLandmark.ts": "d18b2114e105014d1d68a8f4d9d1602eec121d4d16ca70fffeaf97414fc6a6e4",
+      "src/livingScienceCourtyardSite.ts": "6898402ad56811c8718016e4640907f9dadf3b37e88674a748078de9a3732eb9",
+      "src/terrain.ts": "56fe9df3a86829079132ac4ab91c337344a1f0adc50bfa924b08ea0c6ff82809",
+      "src/livingScienceSouthSite.ts": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+      "src/educationHealthLandmark.ts": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8",
+      "scripts/verify-living-science.mjs": "8856029a4f744b15b369a06f77df46231491cf92e11aedba29248c18e570ce3f",
+      "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+      "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+      "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+      "sources/living-science-courtyard-roadview-review.json": "438099db10e1145f2f8122349d0457e7db90143788df4c6f1c46a2de3a6fb233",
+      "artifacts/living-science-test/results.json": "8864c7f37aab9d0167b562f3dc34a6277bae1e4e4b81f75b07c786e8351b8a18",
+      "artifacts/education-health-review/scene-32-surface-probe.json": "c6e091df8160386c444af40a7ae2a06e0a02bae2318aa6d5f87aba9042488ead",
+      "artifacts/living-science-courtyard-test/results.json": "fe3243178ab7824c5d8f092f92e540c97919f795bd2bb1892950d901b47bdce3",
+      "artifacts/living-science-passage-test/results.json": "bad2866989e0e9e4cd193a24e26edbcefb3e89709ae00449fec7ceef9bcf9d9e"
+    },
+    "sourceStillMatches": {
+      "src/livingScienceLandmark.ts": true,
+      "src/livingScienceCourtyardSite.ts": true,
+      "src/terrain.ts": true,
+      "src/livingScienceSouthSite.ts": true,
+      "src/educationHealthLandmark.ts": true,
+      "scripts/verify-living-science.mjs": true,
+      "public/data/campus.json": true,
+      "public/data/terrain.json": true,
+      "sources/campus.osm": true,
+      "sources/living-science-courtyard-roadview-review.json": true,
+      "artifacts/living-science-test/results.json": true,
+      "artifacts/education-health-review/scene-32-surface-probe.json": true,
+      "artifacts/living-science-courtyard-test/results.json": true,
+      "artifacts/living-science-passage-test/results.json": true
+    },
+    "rawPreserved": {
+      "public/data/campus.json": true,
+      "public/data/terrain.json": true,
+      "sources/campus.osm": true
+    },
+    "geometry": {
+      "parts": 1052,
+      "triangles": 29965,
+      "mergedMeshes": 3,
+      "browserLabelMeshes": 1,
+      "previousParts": 713,
+      "addedParts": 339,
+      "proceduralTextures": 1,
+      "labelAtlasTextures": 1,
+      "newLabelAtlasSize": [
+        1024,
+        128
+      ],
+      "pavingTopTriangles": 323,
+      "componentCounts": {
+        "mapped-roof-panel": 78,
+        "ribbon-window": 289,
+        "roof-edge-cap": 45,
+        "terrain-following-foundation": 43,
+        "opaque-wall-bay": 23,
+        "upper-narrow-window": 5,
+        "passage-gray-approach": 36,
+        "passage-red-paving": 108,
+        "passage-left-wall": 7,
+        "passage-overhead-beam": 7,
+        "passage-low-brick-planter": 5,
+        "passage-right-column": 2,
+        "passage-poster-panel": 4,
+        "passage-exterior-rail-post": 5,
+        "passage-exterior-rail-bar": 2,
+        "passage-convex-mirror": 1,
+        "recessed-entry-door": 1,
+        "entry-recess-side": 2,
+        "entry-recess-lintel": 1,
+        "entry-lobby-floor": 1,
+        "courtyard-brick-paving": 315,
+        "entry-ground-connection": 8,
+        "courtyard-curved-brick-planter": 6,
+        "courtyard-low-shrub": 5,
+        "courtyard-tree-trunk": 3,
+        "courtyard-tree-crown": 9,
+        "courtyard-column-light": 4,
+        "courtyard-unreadable-information-stand": 1,
+        "floating-canopy-panel": 18,
+        "canopy-support-column": 12,
+        "canopy-support-beam": 6
+      }
+    },
+    "entry": {
+      "x": 21.038266267103676,
+      "facadeX": 22.038266267103676,
+      "z": 29.982955490415545,
+      "width": 5.6,
+      "floor": 0.20970220855278385,
+      "height": 2.8,
+      "approachX": 27.4,
+      "estimated": true
+    },
+    "courtyard": {
+      "entryNode": "4531517992",
+      "entryTags": {
+        "entrance": "yes",
+        "wheelchair": "yes"
+      },
+      "sourceEntryWorld": [
+        437.34,
+        -215.85
+      ],
+      "door": {
+        "component": "recessed-entry-door",
+        "center": [
+          436.4656574276678,
+          30.616581773279197,
+          -215.3646907519864
+        ],
+        "outward": [
+          0.8743425723321923,
+          0,
+          -0.4853092480135989
+        ],
+        "tangent": [
+          0.4853092480135989,
+          0,
+          0.8743425723321923
+        ],
+        "width": 5.6,
+        "height": 2.8
+      },
+      "insideEnd": [
+        434.1049324823708,
+        30.616581773279197,
+        -214.0543557823497
+      ],
+      "routeWorld": [
+        [
+          449.8,
+          31.91913441341991,
+          -231.55
+        ],
+        [
+          438.29999999995107,
+          30.955963325845556,
+          -224.06000000002516
+        ],
+        [
+          441.28,
+          30.962992242732366,
+          -218.75
+        ],
+        [
+          437.73345415754943,
+          30.616581773279197,
+          -216.06838916160612
+        ],
+        [
+          436.4656574276678,
+          30.616581773279197,
+          -215.3646907519864
+        ],
+        [
+          434.1049324823708,
+          30.616581773279197,
+          -214.0543557823497
+        ]
+      ],
+      "pavingBounds": {
+        "sMin": -10,
+        "sMax": 20,
+        "nMin": 0.45,
+        "nMax": 34
+      },
+      "pavingTriangles": 323,
+      "surfaceComponents": [
+        "entry-lobby-floor",
+        "entry-ground-connection",
+        "courtyard-brick-paving"
+      ],
+      "guidance": [
+        {
+          "s0": -0.3,
+          "s1": 0.3,
+          "n0": 0.5,
+          "n1": 20.7
+        },
+        {
+          "s0": -9.5,
+          "s1": 19.5,
+          "n0": 20.7,
+          "n1": 21.3
+        }
+      ],
+      "plantingCurve": [
+        {
+          "s": 3.4,
+          "n": 0.35
+        },
+        {
+          "s": 3.4,
+          "n": 2.9
+        },
+        {
+          "s": 6,
+          "n": 3.3
+        },
+        {
+          "s": 10,
+          "n": 3.4
+        },
+        {
+          "s": 14,
+          "n": 3.1
+        },
+        {
+          "s": 17,
+          "n": 2.3
+        },
+        {
+          "s": 19,
+          "n": 0.4
+        }
+      ],
+      "entrySign": {
+        "text": "생활과학대학",
+        "parentComponent": "entry-recess-lintel",
+        "textureCount": 1
+      },
+      "floorDatumEstimated": true,
+      "facilitiesEstimated": true,
+      "photoPublication": "2024-09-20",
+      "photoCaptureDate": null,
+      "interiorCourtyardRoadviewObserved": false,
+      "currentKakaoInteriorCoverageShown": false,
+      "passageUnchanged": true
+    },
+    "siteCorrection": {
+      "origin": {
+        "x": 437.34,
+        "z": -215.85
+      },
+      "outward": {
+        "x": 0.8743425723321923,
+        "z": -0.4853092480135989
+      },
+      "tangent": {
+        "x": 0.4853092480135989,
+        "z": 0.8743425723321923
+      },
+      "entryFloor": 30.616582416844743,
+      "baselineEntryHeightAt": 30.43645901016042,
+      "passageEnd": {
+        "x": 449.8,
+        "z": -231.55,
+        "floorY": 31.919134530320942
+      },
+      "acrossSlope": 0.07035625894731368,
+      "northSlope": 0.02,
+      "pavingClearance": 0.2,
+      "correction": {
+        "sMin": -12,
+        "sMax": 24,
+        "nMin": 0,
+        "nMax": 42,
+        "coreSMin": -8,
+        "coreSMax": 18,
+        "coreNMin": 1,
+        "coreNMax": 34,
+        "loweringOnly": true,
+        "passageProtectedRadius": 5.2,
+        "passageBlendRadius": 6.4
+      },
+      "paving": {
+        "sMin": -10,
+        "sMax": 20,
+        "nMin": 0.2,
+        "nMax": 34
+      },
+      "surveyed": false,
+      "photoCaptureDate": null,
+      "photoPublicationDate": "2024-09-20"
+    },
+    "passagePreservation": {
+      "comparedRenderVertices": 5040,
+      "maximumCoordinateDifference": 0,
+      "baseline": "HEAD model built with the same current terrain",
+      "scope": "The historical terrain comparison is the separate courtyard provenance check."
+    },
+    "validation": {
+      "own": {
+        "status": "passed",
+        "checks": 16,
+        "failed": 0,
+        "artifact": "artifacts/living-science-test/results.json"
+      },
+      "courtyardSurface": {
+        "name": "the source entrance and broad courtyard have terrain-clear paving with shared tactile ownership",
+        "status": "passed",
+        "triangles": 323,
+        "samples": 21318,
+        "minimumClearance": 0.0759739124457468,
+        "maximumSurfaceDifference": 0.013997985097962129,
+        "tactileTriangleRays": 301,
+        "tactileMaximumOffsetError": 0.000012102067470551661,
+        "tactileUsesFloorParts": true,
+        "entrySignSharesHeaderDestruction": true,
+        "maximumGradeDegrees": 34.426262775174465,
+        "centralRegion": {
+          "s": [
+            -5,
+            15
+          ],
+          "n": [
+            6,
+            28
+          ],
+          "triangles": 84,
+          "maximumGradeDegrees": 6.596374025309558
+        },
+        "maximumGradeTriangle": [
+          [
+            453.9139404296875,
+            32.45720672607422,
+            -233.27947998046875
+          ],
+          [
+            452.4600524902344,
+            32.20950698852539,
+            -232.80804443359375
+          ],
+          [
+            455.1777648925781,
+            32.436737060546875,
+            -234.0933837890625
+          ]
+        ]
+      },
+      "oldPassage": {
+        "name": "mapped passage is open beneath a real beam with terrain-clear paving and exact convex surfaces",
+        "status": "passed",
+        "floorRays": 245,
+        "minimumTerrainClearance": 0.1512405349256838,
+        "minimumHeadroom": 3.051122012382777,
+        "maxSurfaceError": 0.00009578286748990195,
+        "maxUnloadedError": 0.00009578298751833358,
+        "rawCenterlinePreserved": true
+      },
+      "fullScene": {
+        "status": "passed",
+        "artifact": "artifacts/living-science-courtyard-test/results.json",
+        "checks": 3,
+        "passed": 3,
+        "inputMatches": true,
+        "sourceStillMatches": true,
+        "scope": "실제 전체 장면에서 원본 /524 북쪽 출구, /338과 /339를 따라 222 현관을 검사한다. 공식 사진의 공간을 근사한 모델의 보행과 충돌 검사이며, 안마당 내부 거리뷰 관측이나 실제 접근성 규격 검증은 아니다.",
+        "coveredStructureAudit": "14개 상부 렌더와 같은 충돌 소유자를 확인했다. 13개는2.5cm 이내이며 안내판1개는 정밀표면 통과로 집계하지 않고3.891cm 근사 차이를 기록했다.",
+        "finalIndependentSummary": "artifacts/education-health-review/controls-32-final-verification.json"
+      },
+      "existingPassageFullScene": {
+        "status": "passed",
+        "artifact": "artifacts/living-science-passage-test/results.json",
+        "checks": 5,
+        "passed": 5,
+        "inputMatches": true,
+        "sourceStillMatches": true,
+        "scope": "실제 전체 캠퍼스, DEM, 원본 /524 보행로와 /208 차량 경로를 함께 검사한다. 사진의 정확한 치수와 실제 휴대전화 성능은 검사하지 않는다."
+      }
+    },
+    "observed": [
+      "공식 2024년 공개 사진의 생활과학대학 문구, 후퇴한 유리 현관, 넓은 벽돌 포장, 직각 유도선, 현관 오른쪽 화단과 작은 시설을 반영했다.",
+      "2026년 8월 거리뷰에서는 남쪽 통과구와 멀리 보이는 북쪽 출구까지만 확인했다."
+    ],
+    "estimates": [
+      "문 폭5.6m, 후퇴1m, 내부 약3m와 포장 외곽은 원본 출입구 노드와 사진에 맞춘 게임용 근사다.",
+      "보정한 중앙 포장 높이는 p4 현관과 기존 /524 끝 높이를 연결한 설계값이며 실측 고도가 아니다.",
+      "보호 지형을 잇는 북끝 바깥쪽 작은 삼각면의 최대 경사는 34.43도다. 중앙 s=-5..15m, n=6..28m 안의 84개 삼각면은 최대 6.60도이며 전체 바닥이 같은 경사라는 뜻은 아니다.",
+      "수목의 수종, 개수, 높이와 화단 곡률 및 안내대의 치수는 추정이다. 판독되지 않은 안내문은 쓰지 않았다."
+    ],
+    "limits": [
+      "220 쪽 사면과 안마당 전체 북쪽 연결을 재현했다고 주장하지 않는다.",
+      "기존 /209 계단 전체와 220/221 모델은 이번 모듈에서 수정하지 않았다.",
+      "내부 로비는 짧은 진입 확인 구역이며 건물 실내 전체가 아니다.",
+      "노란 선형 돌기는 진행 방향을 따라 표시하며 바닥 부품과 함께 파괴된다. 개별 블록 충돌체는 없다.",
+      "모바일 실제 기기의 프레임 속도를 검증한 기록이 아니다.",
+      "통과구 북끝 가장자리 한 곳에 약3.224cm 단차가 남고 안내판 통합 볼록체는 판의 정확한 외피와 약3.891cm 차이가 있다. 실제 보행 검사는 통과했지만 전 표면이 정밀하게 일치하는 모델은 아니다."
+    ],
+    "knownLocalLimits": {
+      "passageEdge": {
+        "record": "artifacts/education-health-review/controls-32-boundary-planes.json",
+        "worldXZ": [
+          448.172805733,
+          -230.78042946
+        ],
+        "oldSurfaceY": 31.708826987,
+        "newSurfaceY": 31.74107084,
+        "discontinuityMetres": 0.032243853,
+        "meaning": "같은 경계 좌표로 환산한 두 삼각평면의 실제 높이 차이다. 단순 경사 차이나 완전 해소로 표현하지 않는다. 기존3.5cm 검사 상한과 중앙 및 좌우 왕복 보행은 통과한다."
+      },
+      "informationStand": {
+        "component": "courtyard-unreadable-information-stand",
+        "maximumObservedProxyDifferenceMetres": 0.03891228,
+        "meaning": "경사진 안내판과 기둥을 합친 볼록 충돌체는 판의 정확한 외피가 아니다. 안내판 밑 표본에서 실제 상부 렌더를 확인했으며 약3.891cm의 외피 차이는 별도 근사로 기록한다. 보행 바닥의2.5cm 기준을 이 시설에 맞춰 늘리지 않는다."
+      }
+    }
+  },
+  "verification": {
+    "checks": [
+      {
+        "file": "artifacts/living-science-test/results.json",
+        "sha256": "8864c7f37aab9d0167b562f3dc34a6277bae1e4e4b81f75b07c786e8351b8a18",
+        "passed": 16,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-courtyard-test/results.json",
+        "sha256": "fe3243178ab7824c5d8f092f92e540c97919f795bd2bb1892950d901b47bdce3",
+        "passed": 3,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/living-science-passage-test/results.json",
+        "sha256": "bad2866989e0e9e4cd193a24e26edbcefb3e89709ae00449fec7ceef9bcf9d9e",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-health-test/results.json",
+        "sha256": "f5760e88106d43dc0ae280e6e7d05dc2cc00faa0c89c1cd6a579a7a7814125b0",
+        "passed": 15,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/education-health-access-test/results.json",
+        "sha256": "58227f74366c040dede93969c1399f0701f4ed2ed8214e42ba0ff319c68f734d",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-verification.json",
+        "sha256": "09d7e3de911a25e78b267dc36352dcaddfdceb1fe5275b4bcbfd7a0a13244731",
+        "passed": 13,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/distant-verification.json",
+        "sha256": "fac23f5c7bf18dfd63616a746e9e3f14954718057f0dec162d484da1ec38c525",
+        "passed": 5,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/campus-provenance-test/results.json",
+        "sha256": "254b86b141b008514e8996a42463b80f92c01fff94b6472825dd9279ed226676",
+        "passed": 14,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/terrain-verification.json",
+        "sha256": "764d2623819d821c4823e7e1a8c82e9b99ed3a36c9668a9c41b7b3f560b766cc",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/family-terrain-test/results.json",
+        "sha256": "7db89bec2dc49d5454e336885a161eb00dd0aef4100b0483fbcdc4f5748ddc18",
+        "passed": 8,
+        "failed": 0
+      },
+      {
+        "file": "artifacts/engineering301303-connection-test/results.json",
+        "sha256": "d3a9e7e98eafab10e03b8a53c6af012b8707362e438614cbbdab5496170ae840",
+        "passed": 19,
+        "failed": 0
+      }
+    ],
+    "totalPassed": 114,
+    "browser": {
+      "reviewedAt": "2026-11-05T16:52:14.938Z",
+      "reviewer": "root",
+      "method": "Playwright CLI가 조작하는 Chrome의 최종 WebGL 화면을 PC와 세로 화면에서 저장하고 아홉 장을 직접 열어 확인했다.",
+      "sourceHashes": {
+        "src/livingScienceLandmark.ts": "d18b2114e105014d1d68a8f4d9d1602eec121d4d16ca70fffeaf97414fc6a6e4",
+        "src/livingScienceCourtyardSite.ts": "6898402ad56811c8718016e4640907f9dadf3b37e88674a748078de9a3732eb9",
+        "src/terrain.ts": "56fe9df3a86829079132ac4ab91c337344a1f0adc50bfa924b08ea0c6ff82809",
+        "src/main.ts": "7ed609031916a2e23e6abf1f01467f26253f93160f458ddf283f25562b98b84a",
+        "src/controls.ts": "493c27adaeef90fe96aec523d94d522d4d663e66e265ce7429f99d2d3f2296aa",
+        "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+        "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f"
+      },
+      "previewFile": "artifacts/education-health-review/courtyard32.html",
+      "previewSha256": "8da79b8b92de2d71ca46e706e9b94bcaeb4bda43a2aebd62477ff20e114b894c",
+      "previews": [
+        {
+          "kind": "desktop",
+          "view": "court",
+          "drawCalls": 205,
+          "triangles": 450908,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-court.png",
+          "sha256": "ea6c22f4a6fd9cdedff90398a0bde75139e23a17b935a5b285ce14af038ce853",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "door",
+          "drawCalls": 225,
+          "triangles": 414577,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-door.png",
+          "sha256": "671e693fd231dbc4d1ff11be24caa681a81f24929e0e57fd1ed89a3d7e7c2980",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "pavers",
+          "drawCalls": 221,
+          "triangles": 423736,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-pavers.png",
+          "sha256": "728cb393a698e0204d5682e9b94569710ca4dbdc5d8daffba6f81a6f0bc1a499",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "exit",
+          "drawCalls": 141,
+          "triangles": 528030,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-exit.png",
+          "sha256": "a44bb0047e7f82e6a4ee1cffbc3c873ca8c59529fe56e9ba4d27383bd439eedb",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "north",
+          "drawCalls": 314,
+          "triangles": 878615,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-north.png",
+          "sha256": "cc642ef10aa6a550e6432c81258692be270f7be4d9a0a7c0fd258b86ac692934",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "desktop",
+          "view": "overview",
+          "drawCalls": 206,
+          "triangles": 442523,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-desktop-overview.png",
+          "sha256": "86a5ff281dddd32b5ac241213c96ec6cf6ae758685b2487913fcc512d1e65bab",
+          "width": 1920,
+          "height": 863,
+          "directlyViewed": true
+        },
+        {
+          "kind": "mobile",
+          "view": "court",
+          "drawCalls": 69,
+          "triangles": 351288,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-mobile-court.png",
+          "sha256": "55b2ced12d0a3aa922d37bbcdd6cedbb583b12db13eda04b42a65c1442883464",
+          "width": 390,
+          "height": 844,
+          "directlyViewed": true
+        },
+        {
+          "kind": "mobile",
+          "view": "door",
+          "drawCalls": 169,
+          "triangles": 352592,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-mobile-door.png",
+          "sha256": "f439bd04d6c98bb15b9463670609e179ab995ccb1a2556a7f6abc81422ec4b7f",
+          "width": 390,
+          "height": 844,
+          "directlyViewed": true
+        },
+        {
+          "kind": "mobile",
+          "view": "pavers",
+          "drawCalls": 83,
+          "triangles": 366049,
+          "file": "artifacts/education-health-review/output/playwright/32-verified-mobile-pavers.png",
+          "sha256": "1824a5221f51bc4c61a293a09a48e24c94991d43605bbe30a5af19d1a9e6cf0b",
+          "width": 390,
+          "height": 844,
+          "directlyViewed": true
+        }
+      ],
+      "findings": [
+        "생활과학대학 표기가 반전 없이 보이고 유리문, 문틀과 손잡이가 구분된다.",
+        "벽돌 포장과 화단에 반복 무늬가 보이며 노란 유도선의 선형 돌기가 진행 방향과 나란하다.",
+        "통과구 북쪽에서 현관 앞 포장으로 이어지는 바닥과 화단, 수목, 작은 조명을 확인했다.",
+        "세로 화면의 현관 시점에서 표기와 문틀, 진입 유도선이 구분된다.",
+        "220동 쪽 기존 잔디 사면과 나머지 연결부는 남아 있다. 이번 부분 구현의 한계로 기록했다.",
+        "통과구 연결의 중앙과 좌우 보행은 통과했지만 가장자리 한 곳에는 동일 경계 좌표 기준 약3.224cm 불연속이 남는다. 육안 연속성과 수치상 완전 연속을 혼동하지 않는다."
+      ],
+      "earlyCandidateFindings": [
+        "첫 포장 후보에 무늬 좌표가 빠져 단색으로 보였고 화단 벽도 단색이었다. 두 부분에 반복 무늬를 적용했다.",
+        "직각 유도선의 두 갈래 돌기가 같은 방향을 향하던 것을 각 진행 방향으로 수정했다.",
+        "북동쪽 미리보기 카메라가 220동 벽 안에 놓여 벽만 보였다. 검토 카메라를 외부로 옮겼다.",
+        "통과구 경계 높이와 경사면에서 뜨는 유도선은 독립 물리 검사에서 발견해 수정했다. 경계 양측 비교의 정확한 의미와 수치는 해당 검사에 남겼다.",
+        "모바일 일시정지 직후 찍은 첫 화면은 전환 중이었다. 전환이 끝난 뒤 다시 저장해 검토했다."
+      ],
+      "previewConsole": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "mainMobile": {
+        "url": "http://127.0.0.1:5173/",
+        "configuration": "artifacts/education-health-review/32-mobile-browser.config.json",
+        "configurationSha256": "7927294a90113e85943ea7e1e79a2fa19a898c2aef6c717d0d09edc5b6ba6069",
+        "startStop": "국제대학원",
+        "simultaneousNativeTouchPoints": 2,
+        "touchMoveEvents": 6,
+        "actions": [
+          "정류장 선택 후 터치로 시작",
+          "이동 패드와 시점 영역에 동시 터치",
+          "점프와 발사 버튼 터치",
+          "일시정지 후 교내 정류장 15개 확인",
+          "계속 둘러보기로 재개 후 점프, 발사, 일시정지 버튼 표시 확인"
+        ],
+        "screenshots": [
+          {
+            "view": "start",
+            "file": "artifacts/education-health-review/output/playwright/32-verified-main-mobile-start.png",
+            "sha256": "513d96399ce08621107ecfc4adea1df682a2b6f0061fe11124cd294b2d7a69f5",
+            "width": 390,
+            "height": 844,
+            "directlyViewed": true
+          },
+          {
+            "view": "pause",
+            "file": "artifacts/education-health-review/output/playwright/32-verified-main-mobile-pause.png",
+            "sha256": "c9af1e1588c59203476169e40266e9f3fa935e95afe2a71dbfe9e5041b3c7664",
+            "width": 390,
+            "height": 844,
+            "directlyViewed": true
+          },
+          {
+            "view": "resume",
+            "file": "artifacts/education-health-review/output/playwright/32-verified-main-mobile-resume.png",
+            "sha256": "fd3ae75a3b845b191d1666a96c272e57d0e9ae64f3fb6d0407a409153a743bf4",
+            "width": 390,
+            "height": 844,
+            "directlyViewed": true
+          }
+        ],
+        "visualMotionObserved": true,
+        "distanceOrFrameRateMeasured": false,
+        "runtimeErrors": [],
+        "knownConsole": [
+          "Rapier 초기화 인수에 대한 기존 deprecated 경고",
+          "favicon.ico 요청의 404"
+        ],
+        "consoleFile": ".playwright-cli/console-2026-11-05T16-25-57-616Z.log"
+      },
+      "limits": [
+        "안마당 전용 미리보기는 현재 실제 지형과 건물 생성기를 쓰지만 차량, HUD와 플레이어 물리는 포함하지 않는다. 전체 장면 보행과 파괴 검사는 별도로 실행했다.",
+        "모바일 화면과 터치는 데스크톱 Chrome 에뮬레이션이다. 실제 휴대전화의 프레임률과 발열은 확인하지 않았다.",
+        "시설의 치수와 좌표, 수종과 포장 규격은 사진과 지도에 맞춘 게임용 근사다.",
+        "안내대의 작은 글씨와 가게 상호는 확인하지 못해 넣지 않았다."
+      ],
+      "physicalPhoneTested": false
+    },
+    "physicalPhoneTested": false
+  },
+  "terrain": {
+    "record": "artifacts/campus-provenance-test/results.json",
+    "independentMetrics": {
+      "allowedCells": {
+        "minX": 400,
+        "maxX": 520,
+        "minZ": -267.1717224121094,
+        "maxZ": -167.4242401123047
+      },
+      "declaredCells": 30,
+      "exteriorTriangles": 104868,
+      "outsideSamples": 88998,
+      "changedSamples": 1065,
+      "maximumLowering": 3.327141993989649,
+      "maximumRaise": 0.000002163035610180941,
+      "protectedPoints": [
+        {
+          "id": "220 southwest p7",
+          "x": 464.33,
+          "z": -272.09
+        },
+        {
+          "id": "220 southwest approach",
+          "x": 460.54,
+          "z": -269.78
+        },
+        {
+          "id": "221 shared upper datum",
+          "x": 559.5275,
+          "z": -168.73875
+        },
+        {
+          "id": "way/297046999 model datum",
+          "x": 499.6847826086956,
+          "z": -231.9973913043479
+        },
+        {
+          "id": "way/297047243 model datum",
+          "x": 559.5275,
+          "z": -168.73875
+        },
+        {
+          "id": "way/386890828 model datum",
+          "x": 431.89909090909083,
+          "z": -211.5381818181818
+        }
+      ],
+      "protectedRoadSamples": 131454,
+      "maximumProtectedDifference": 0.000002991726027801178,
+      "worstProtected": {
+        "x": 437.8483636363637,
+        "z": -255.15218181818182,
+        "label": "way/455018306/208",
+        "method": "heightAt",
+        "before": 32.366059806765094,
+        "after": 32.366056815039066,
+        "delta": 0.000002991726027801178
+      }
+    },
+    "rawDEMModified": false,
+    "sourceFootprintModified": false,
+    "surveyed": false
+  },
+  "limits": [
+    "안마당 사진의 게시일은 2024-09-20이며 촬영일은 미상이다. 2026년 현재 상태 전체와의 일치를 보증하지 않는다.",
+    "도로에서 통과구 너머 일부를 봤지만 안마당 내부를 로드뷰로 직접 둘러본 것은 아니다.",
+    "출입구 노드는 지도 근거이며 실제 문 중심과 폭, 문턱 높이를 실측한 것은 아니다.",
+    "포장 외곽과 치수, 높이, 화단 곡률과 시설 좌표 및 수종은 게임용 근사다.",
+    "220동 쪽에는 기존 잔디 사면과 미구현 연결이 남아 있다. /209 전체 계단, /207 북쪽 끝, 실내 전체는 이번에 복원하지 않았다.",
+    "가게 간판이나 안내대의 작은 글씨는 확인하지 못해 임의 상호나 문구를 넣지 않았다.",
+    "PC Chrome의 세로 화면과 터치 에뮬레이션으로 기능을 확인했다. 실제 휴대전화의 프레임률과 발열은 확인하지 않았다."
+  ],
+  "sourceHashes": {
+    "src/livingScienceLandmark.ts": "d18b2114e105014d1d68a8f4d9d1602eec121d4d16ca70fffeaf97414fc6a6e4",
+    "src/livingScienceCourtyardSite.ts": "6898402ad56811c8718016e4640907f9dadf3b37e88674a748078de9a3732eb9",
+    "src/terrain.ts": "56fe9df3a86829079132ac4ab91c337344a1f0adc50bfa924b08ea0c6ff82809",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "src/traffic.ts": "abbda517a0ec1c10184b3b7fc36de6ffbcdca28259d76258dc3dc0e45c49aa2f",
+    "src/fullCampus.ts": "c34092eadd699f6b057df8d9f8e5a010ee7fed1eaf4b72adf8dbdae7280e0705",
+    "src/livingScienceSouthSite.ts": "4d78124be34c44ed6fbd013787cd8a256fe4d02d32c5de905d6e2080e88a2c8d",
+    "src/educationHealthLandmark.ts": "3f2b11297f517ca3f8a9e8d5419ad667be2710bae93f4405dc2e5acd34a49bd8",
+    "src/healthCourtyard.ts": "56bf683833689e1f58f0e55ffa3d5860ba82e4ba23a025620b5f9892966d4581",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "sources/campus.osm": "a3f87707e99b1cec9a8603aac5a3a99fa84e5005f8e0da0d38c05195804b3598",
+    "sources/living-science-courtyard-roadview-review.json": "438099db10e1145f2f8122349d0457e7db90143788df4c6f1c46a2de3a6fb233",
+    "scripts/verify-living-science.mjs": "8856029a4f744b15b369a06f77df46231491cf92e11aedba29248c18e570ce3f",
+    "scripts/verify-living-science-courtyard.mjs": "f56271679adf739b0838ca6b66f5a567dcee15a676050697d2bea2c01ab8f640",
+    "scripts/verify-campus-provenance.mjs": "08e3176b2adee4b10d1fad80137f47cb1667dfb5c25138061113db4af28d8f01"
+  },
+  "next": "220동 쪽 안마당의 나머지 접속과 /209 계단을 공식 사진과 지도에 대조하고, 다른 미관측 건물의 연결부도 로드뷰부터 확인한다."
+}

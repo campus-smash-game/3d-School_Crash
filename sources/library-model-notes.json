@@ -1,0 +1,296 @@
+{
+  "buildingId": "way/329398175",
+  "buildingNumber": "62-1",
+  "name": "중앙도서관 관정관",
+  "module": "src/libraryLandmark.ts",
+  "landmark": "gwanjeong",
+  "documented": {
+    "dimensionsMeters": {
+      "length": 165,
+      "width": 30,
+      "height": 42.75
+    },
+    "floors": {
+      "aboveGround": 7,
+      "belowGround": 1,
+      "note": "공식 보고서의 건축 층수다. 도서관의 이용자 안내에는 8층이라는 층 이름도 쓰인다."
+    },
+    "facadeMaterials": [
+      "유리",
+      "아노다이즈드 알루미늄"
+    ],
+    "facadePanelMeters": {
+      "width": 1.25,
+      "height": 2.5
+    },
+    "facadePanelAngleDegrees": 12.5,
+    "structuralDescription": "본관 상부를 가로지르는 공중 구조에 네 개의 STAGGERED MEGA TRUSS를 적용했다고 설계 설명에 명시돼 있다."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://www.snu.ac.kr/webdata/uploads/kor/file/2020/02/26th_vision_change.pdf",
+      "printedPage": 104,
+      "pdfPage": 54,
+      "verified": "본문과 렌더링에서 전체 치수, 층수와 외장 재료를 확인했다."
+    },
+    {
+      "url": "https://www.aurum.re.kr/Bits/BuildingDoc.aspx?mm=4&num=6114&ss=1",
+      "verified": "설계 설명에서 패널 규격과 각도, 상부 구조를 확인했다. 배치도와 지붕평면도, 종단면도, 횡단면도를 직접 봤다."
+    },
+    {
+      "url": "https://www.snu.ac.kr/webdata/uploads/kor/image/2024/03/campuslife-facilities-library-intro.jpg",
+      "verified": "전경 사진에서 본관 뒤쪽의 긴 상부 구조와 지지부, 금속판과 유리의 반복을 확인했다."
+    },
+    {
+      "url": "https://lib.snu.ac.kr/vr/indexdata/index.xml",
+      "verified": "공개 파노라마 좌표를 확인하고 내려다본 이미지 네 장을 봤다. 해당 네 장에는 관정관 전체가 담기지 않아 배치 확정 근거로 쓰지 않았다."
+    },
+    {
+      "url": "https://kko.to/KD6aVfZMaS",
+      "localPhoto": "../references/roadview-audit/2026-07-central/library-pascucci-front-ui.jpg",
+      "captureMonth": "2026-07",
+      "verified": "금색 상부 아래의 짙은 유리띠, 열린 테라스와 유리난간, 왼쪽 외부 계단, 앞쪽 주차면과 낮은 석축을 확인했다."
+    },
+    {
+      "url": "https://kko.to/31Rtajq3u8",
+      "localPhoto": "../references/roadview-audit/2026-07-central/library-southeast-stairs-ui.jpg",
+      "captureMonth": "2026-07",
+      "verified": "직선 계단과 유리난간 테라스, 왼쪽 카페 유리문 및 그 오른쪽 개방부를 확인했다. 계단은 약 18~20단으로 보이지만 정확한 단수와 치수는 측정하지 않았다."
+    },
+    {
+      "url": "https://kko.to/qAyahwe_1x",
+      "localPhoto": "../references/roadview-audit/2026-07-central/library-stair-lower-landing-ui.jpg",
+      "captureMonth": "2026-07",
+      "verified": "주차면 쪽 낮은 3~4단, 넓은 포장참, 직선 계단, 유리난간 테라스가 이어진다. 상단에는 백색 접이식 격자로 보이는 구조가 있어 상시 개방으로 처리하지 않았다."
+    }
+  ],
+  "estimated": {
+    "placement": "OSM footprint의 가장 긴 변으로 장축을 정한다. 동쪽을 향하는 장축의 왼쪽인 북서쪽을 본관 방향으로 본다. 뒤쪽 경계를 유지하면서 폭을 30m로 넓힌다.",
+    "osmOriginalSpanMeters": {
+      "length": 127.6828,
+      "width": 13.3056
+    },
+    "originalStripCenter": {
+      "x": 355.5368,
+      "z": -827.4933
+    },
+    "shiftTowardMainLibraryMeters": 8.3472,
+    "lengthExtension": "기존 장축의 중점을 유지하고 길이를 양끝으로 균등하게 165m까지 늘린다.",
+    "bridgeBottomMeters": 30.25,
+    "upperMassHeightMeters": 12.5,
+    "endSupportWidthMeters": 22,
+    "terrainDatum": "OSM 본관 way/148286730의 외곽점에서 마지막 중복점을 뺀 평균 중심의 heightAt 값을 공통 높이 기준으로 쓴다. 관정관의 수평 중심 좌표와 높이 기준을 구분한다. 지지부 밑면은 각 모서리의 가장 낮은 지면보다 0.45m 아래까지 내린다.",
+    "elevationReference": {
+      "x": 322.9407692307692,
+      "z": -791.5776923076924,
+      "kind": "mapped-main-library-centre",
+      "surveyed": false,
+      "source": "src/libraryLandmark.ts의 mainLibraryAnchor와 elevationReference 메타데이터"
+    },
+    "placementLimit": "좌표는 측량값이 아니다. 공개 도면의 배치 관계와 OSM 방향을 합친 근사 배치다. 본관의 높이 28m는 기존 모델 값을 유지한다.",
+    "geometryLimit": "상부 구조와 양끝 지지체를 유지하고, 직접 확인한 남동쪽 배면 몸체, 개방 테라스, 계단, 난간과 격자문을 추가했다. 정확한 배면 폭과 층 높이, 내부 및 본관으로 이어지는 끝점은 미확인이다.",
+    "facadeLimit": "판의 기본 단위와 접힘 각도는 출처에 따랐다. 색상과 판 교차 순서, 유리 반사 정도는 사진을 바탕으로 정했다. 판 접힘 때문에 외장 끝은 명목 크기보다 최대 약 0.32m 돌출된다."
+  },
+  "runtime": {
+    "renderedMeshes": 3,
+    "breakableParts": 837,
+    "trianglesOnCurrentTerrain": 24156,
+    "metricScope": "현재 지형으로 생성한 모델의 값이다. 지지부의 시작 높이에 따라 벽 구간과 삼각형 수가 달라질 수 있다.",
+    "colliderSeamAllowanceMeters": 0.02,
+    "photoTexturesUsed": false,
+    "rendering": "기존 금속 및 구조 메시와 유리 메시를 유지하고, 반투명 난간 메시 하나를 추가했다. 전체 3개 메시이며 거리 때문에 잔존 부품을 숨기지 않는다.",
+    "destruction": "별도 충돌 프록시의 visible 값이 바뀌면 해당 메시 구간만 접거나 복원한다. 모든 부분이 파괴되면 외피 그룹을 숨긴다.",
+    "reset": "Simulation.reset이 프록시를 다시 보이게 한 뒤 update를 호출하면 원래 정점 배열을 복원한다.",
+    "southeastCollision": "추가 구조는 실제 볼록 부재나 삼각기둥의 정점을 충돌 형상으로 사용한다. 난간, 격자문과 테라스 빈 공간을 하나의 상자로 묶지 않는다. 기존 상층의 2cm 겹침 여유와 구분한다."
+  },
+  "currentTerrainObservation": {
+    "coordinateSystem": "게임의 상대 높이이며 실측 표고가 아니다.",
+    "baseY": 38.17753219604492,
+    "mainLibraryRoofY": 66.17753219604492,
+    "bridgeGeometryUndersideY": 68.42753219604492,
+    "geometryClearanceMeters": 2.25,
+    "bridgeCollisionUndersideY": 68.41752576828003,
+    "collisionClearanceMeters": 2.2399935722351074,
+    "collisionNote": "충돌체는 이음부 누출을 막기 위해 크기를 0.02m 늘려 시각적 밑면보다 약 0.01m 낮게 닿는다.",
+    "evidence": [
+      "src/libraryLandmark.ts",
+      "scripts/verify-library.mjs",
+      "artifacts/library-test/results.json"
+    ],
+    "verificationScope": "기존 도서관 6개 검사와 신규 남동측 9개 검사, 본관 8개 검사가 통과했다. 본관 지붕과의 간격 및 기존 배치는 유지한다. 신규 검사 결과와 원본 자료는 별도 기록을 참조한다."
+  },
+  "previousObservations": [
+    {
+      "stage": "지형과 본관 공통 높이 기준을 보정하기 전의 검토",
+      "terrainDatum": "당시에는 보정한 관정관 수평 중심의 heightAt 값을 높이 기준으로 썼다.",
+      "baseY": 51.840919494628906,
+      "mainLibraryRoofY": 79.8409194946289,
+      "bridgeGeometryUndersideY": 82.0909194946289,
+      "geometryClearanceMeters": 2.25,
+      "breakableParts": 162,
+      "triangles": 21560,
+      "evidence": "artifacts/landmark-placement-review/results.json",
+      "status": "과거 검토값이다. 현재 모델의 지형 기준과 부품 수로 사용하지 않는다."
+    },
+    {
+      "stage": "초기 평탄 지형 검토",
+      "triangles": 19152,
+      "status": "이전 메모에 있던 평탄 지형 검토값을 보존했다. 현재 지형의 삼각형 수는 아니다."
+    },
+    {
+      "stage": "2026년 7월 남동측 로드뷰 반영 전",
+      "runtime": {
+        "renderedMeshes": 2,
+        "breakableParts": 154,
+        "trianglesOnCurrentTerrain": 17072,
+        "metricScope": "현재 지형으로 생성한 모델의 값이다. 지지부의 시작 높이에 따라 벽 구간과 삼각형 수가 달라질 수 있다.",
+        "colliderSeamAllowanceMeters": 0.02,
+        "photoTexturesUsed": false,
+        "rendering": "금속과 구조를 한 메시, 유리를 한 메시로 병합했다. 거리에 따른 상한으로 건물을 숨기지 않는다.",
+        "destruction": "별도 충돌 프록시의 visible 값이 바뀌면 해당 메시 구간만 접거나 복원한다. 모든 부분이 파괴되면 외피 그룹을 숨긴다.",
+        "reset": "Simulation.reset이 프록시를 다시 보이게 한 뒤 update를 호출하면 원래 정점 배열을 복원한다."
+      },
+      "geometryLimit": "양끝 외피와 지붕, 밑면을 표현했다. 실내, 실제 트러스 접합부, 출입구와 계단의 세부 형태는 재현하지 않았다. 지지부 내부는 비어 있다."
+    }
+  ],
+  "southeastRoadviewUpdate": {
+    "status": "implemented-targeted-checks-passed",
+    "record": "sources/central-library-roadview-notes.json",
+    "baseY": 38.17753219604492,
+    "terraceWorldY": 63.16221367939488,
+    "site": {
+      "sourceDate": "2026-07",
+      "dimensionsEstimated": true,
+      "surveyed": false,
+      "photographedFace": "southeast",
+      "localCoordinates": "x follows the existing library axis; negative z faces southeast",
+      "terrace": {
+        "minX": -60.5,
+        "maxX": 60.5,
+        "frontZ": -21,
+        "backZ": -2,
+        "floor": 24.984681483349963
+      },
+      "openBay": {
+        "minX": -54.2,
+        "maxX": 48,
+        "frontZ": -15,
+        "backZ": -2,
+        "floor": 24.984681483349963,
+        "ceiling": 28.3
+      },
+      "stairs": {
+        "x": -51.2,
+        "width": 6,
+        "lowerStartZ": -40.5,
+        "lowerEndZ": -38.9,
+        "lowerSteps": 4,
+        "firstFloor": 21.244681483349964,
+        "landingFloor": 21.924681483349964,
+        "mainStartZ": -30.6,
+        "mainEndZ": -22.5,
+        "mainSteps": 18,
+        "top": 24.984681483349963
+      },
+      "approach": {
+        "x": -51.2,
+        "startZ": -41.6,
+        "endZ": -40.5,
+        "width": 6,
+        "sourceRoad": "way/457001557/376",
+        "sourceSteps": "way/167597860/23"
+      },
+      "gate": {
+        "x": -51.2,
+        "z": -21.7,
+        "width": 6,
+        "height": 1.18,
+        "floor": 24.984681483349963,
+        "initiallyClosed": true,
+        "permanentAccessVerified": false
+      },
+      "cafeDoor": {
+        "x": -57.25,
+        "z": -14.85,
+        "floor": 24.984681483349963,
+        "width": 3.3,
+        "height": 2.65
+      },
+      "mainLibraryConnectionVerified": false,
+      "sourceUrls": [
+        "https://kko.to/KD6aVfZMaS",
+        "https://kko.to/31Rtajq3u8",
+        "https://kko.to/qAyahwe_1x"
+      ],
+      "retainingPlinth": {
+        "frontZ": -21,
+        "thickness": 0.44,
+        "maximumExposure": 9.381380921682332,
+        "gameTerrainMismatch": true
+      }
+    },
+    "unchanged": "본관 모델, 상층 치수, 본관과의 공통 기준고, 원본 지형과 지도는 바꾸지 않았다.",
+    "limits": [
+      "기단 최대 노출 9.381m는 현재 게임 DEM과 추정 보행층의 차이다. 실제 낮은 석축의 높이를 측량해 재현한 값이 아니다.",
+      "외부 계단에서 테라스까지를 구현했으며 본관 내부로 이어지는 연결의 끝은 아직 확인하지 않았다.",
+      "카페 문의 폭과 위치, 계단 폭과 높이는 사진과 기존 지도 계단을 합친 근사다. 실제 영업 공간 내부는 재현하지 않았다."
+    ]
+  },
+  "sourceHashes": {
+    "src/libraryLandmark.ts": "665031181f1314a982fec200b1c74dc9d039ff0e854b3519a4a22ddb4db2a5a6",
+    "scripts/verify-library-southeast-site.mjs": "109f8d11e0a693437fe4bc01ffcac299d5a4e683a9dd80b82ff94df1c24e2486",
+    "scripts/verify-library.mjs": "09cb4b5015cde9778bc7ddd0a90334c36545658f0adc4e85595bc9c5ba11e57e",
+    "src/mainLibraryLandmark.ts": "9cd9734775cb3752b303678e4552a3011ea67b3ab948cfcbce1e68afea94d9c3",
+    "src/terrain.ts": "5f4cc11b1614563cd7687a13440f952cad984ab67f2ce258d511ec3d5341992a",
+    "src/physics.ts": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+    "public/data/campus.json": "385cd702a8c2faf152ed726d349d7b5ebb06d979838b7b3ddbe947d768b6193c",
+    "public/data/terrain.json": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "artifacts/library-southeast-test/results.json": "580ae2b11a57036a2760fae70aa3c6c61063f11397b10d899a17d752d3cb89cf",
+    "artifacts/library-test/results.json": "fa32058f83cd49a32616bd73ee8aec08ad153124a914c4eab72711bddc7c6125",
+    "artifacts/main-library-test/results.json": "7b359ba6bba7100904884183069cbb720f14dc56b56ae53849c443f9fd03c6bc"
+  },
+  "validation": {
+    "own": {
+      "script": "scripts/verify-library-southeast-site.mjs",
+      "passed": 9,
+      "failed": 0,
+      "artifact": "artifacts/library-southeast-test/results.json",
+      "scope": "신규 9개 검사는 관정관 단독 모델과 실제 캠퍼스 지형을 사용한다. 전체 본관 접속, 실제 교통 차량의 통과 여유, 카페 실내 보행을 검증한 결과가 아니다. 카페 문은 1.2m 광선으로 파괴 전후만 확인했다."
+    },
+    "existingLibrary": {
+      "script": "scripts/verify-library.mjs",
+      "passed": 6,
+      "failed": 0
+    },
+    "existingMainLibrary": {
+      "script": "scripts/verify-main-library.mjs",
+      "passed": 8,
+      "failed": 0
+    },
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "exitCode": 0
+    },
+    "independent": {
+      "status": "scoped-full-campus-walk-passed",
+      "record": "artifacts/library-full-campus-review/results.json",
+      "passed": 4,
+      "failed": 0,
+      "sourceSha256": "665031181f1314a982fec200b1c74dc9d039ff0e854b3519a4a22ddb4db2a5a6",
+      "scope": "전체 캠퍼스와 보충 도로를 포함한 실제 지형에서 도로, 계단, 테라스 앞쪽과 중앙을 연속 왕복했다. 본관 문까지의 전체 연결과 카페 내부 보행을 검증한 것은 아니다."
+    },
+    "fullRelease": {
+      "status": "build-and-scoped-regressions-passed",
+      "checks": {
+        "campus": 13,
+        "transit": 8,
+        "shuttleStarts": 15,
+        "terrain": 8
+      },
+      "build": "Sites build-site.mjs, TypeScript와 Vite 빌드 통과",
+      "warnings": [
+        "기존 번들 크기 경고와 Rapier 초기화 방식 경고가 남아 있다."
+      ]
+    }
+  }
+}

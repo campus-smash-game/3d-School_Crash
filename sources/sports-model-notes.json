@@ -1,0 +1,50 @@
+{
+  "buildingId": "way/439687811",
+  "buildingNumber": "71-2",
+  "name": "포스코스포츠센터",
+  "module": "src/sportsLandmark.ts",
+  "landmark": "posco-sports",
+  "documented": {
+    "aboveGroundFloors": 4,
+    "belowGroundFloors": 1,
+    "grossFloorAreaSquareMeters": 6179.1,
+    "buildingAreaSquareMeters": 2765,
+    "sourceUrl": "https://spolex.snu.ac.kr/intro/intro01.php"
+  },
+  "sourceReferences": [
+    {
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=91",
+      "imageUrl": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000088.jpg",
+      "localImage": "../references/buildings/photos/091-71-2.jpg",
+      "observation": "공식 사진을 직접 봤다. 은색 긴 통형 외피가 아래쪽으로 말리고, 긴 측면에는 녹색 곡면 띠창이 이어진다. 지붕 중앙에 가로 방향 채광창 띠가 있고, 낮은 밝은 하부에 출입구와 차양이 보인다."
+    },
+    {
+      "url": "https://spolex.snu.ac.kr/intro/intro01.php",
+      "imageUrl": "https://spolex.snu.ac.kr/images/sub/intro1.jpg",
+      "localImage": "../references/exteriors/sports-official.jpg",
+      "observation": "센터 공식 사진을 직접 봤다. 넓은 타원형 끝면에 녹색 유리가 있고, 유리보다 은색 외피가 깊게 돌출한다. 외피 아래에는 폭이 좁은 낮은 기단이 보인다."
+    }
+  ],
+  "placement": {
+    "source": "public/data/campus.json 및 sources/building-match-review.json",
+    "officialSequence": 91,
+    "matchingEvidence": "검토된 대응표에서 공식 지도 건물점이 way/439687811 윤곽 안에 있다.",
+    "method": "실제 지도 윤곽의 가장 긴 변을 장축으로 쓰고, 모든 꼭짓점을 투영한 직사각형 외곽 범위를 따른다. 약 82m 길이와 약 40m 폭은 지도 좌표에서 계산하며 실측 치수로 취급하지 않는다."
+  },
+  "estimated": {
+    "heightMeters": 23.5,
+    "podiumTopMeters": 4,
+    "barrelCrossSection": "위쪽 270도 타원 호와 낮은 하부로 근사한다. 지붕의 최고점과 폭, 아래로 말리는 옆면을 사진 비례에 맞췄다.",
+    "endGlassRecessMeters": 1.85,
+    "facadeDetails": "창 칸의 치수, 금속 이음선 간격, 채광창의 폭과 위치, 출입구 차양의 치수는 사진을 바탕으로 단순화했다.",
+    "unseenSide": "사진에 보이지 않는 반대쪽 끝면과 긴 측면은 관찰한 면의 형태를 연장했다. 현재 외관과 촬영 당시 외관의 일치 여부는 확인하지 않았다."
+  },
+  "implementation": {
+    "renderMeshes": 2,
+    "materials": "사진을 게임 텍스처로 사용하지 않고 색상과 금속 이음선, 창 프레임을 절차적으로 생성한다.",
+    "collision": "통형 외피의 각 구간은 현의 방향으로 기울인 얇은 상자 충돌체를 쓴다. 타원 유리 끝면은 잘라 낸 작은 격자별 상자로 근사한다. 끝면 경계의 충돌은 잘린 격자의 외접 사각형까지 포함할 수 있다.",
+    "damage": "부품을 파괴하면 해당 충돌체와 합친 메시 안의 해당 꼭짓점을 함께 제거한다. 초기화하면 원래 꼭짓점과 충돌체를 복구한다.",
+    "distance": "거리만으로 남은 건물 외피를 숨기지 않는다."
+  },
+  "verificationScope": "자동 검사는 지도 방향, 곡면 충돌, 부분 파괴, 원거리 잔존과 초기화를 확인한다. 실측, 전체 사진 일치, 브라우저 렌더링과 실제 휴대전화 조작을 검증한 것은 아니다."
+}

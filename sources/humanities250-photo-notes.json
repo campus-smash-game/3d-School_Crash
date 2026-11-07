@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06T10:11:24.593Z",
+  "status": "implemented-partial-photo-reference",
+  "buildingIds": [
+    "way/167984624",
+    "way/167983080"
+  ],
+  "buildingNumbers": [
+    "1",
+    "2",
+    "250"
+  ],
+  "scope": "250동 정원 쪽 유리 계단실을 보완했다. 외관에서 확인한 구조와 내부 동선의 근사를 구분한다.",
+  "references": [
+    {
+      "kind": "official-map-identity",
+      "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=181",
+      "name": "인문관연결동(1동-2동)",
+      "buildingNumber": "250",
+      "lat": 37.46038,
+      "lon": 126.95265,
+      "photoAvailable": false
+    },
+    {
+      "kind": "official-map-photo",
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000001.jpg",
+      "page": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=1",
+      "localPhoto": "../references/buildings/photos/001-1.jpg",
+      "sha256": "a309686c941f30c0232e5ac3ee1bfcf2b38cdbcb4596ef35096acef3f87e7a2e",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "흰 골조와 층별 수평 띠",
+        "청록색 유리로 둘러싼 세로 공간",
+        "큰 유리 면 뒤의 계단과 난간",
+        "두 건물 사이 연결 구조"
+      ],
+      "limits": [
+        "세로 공간의 기능과 엘리베이터 운행 여부는 미확인이다.",
+        "계단 단수, 내부 평면, 문 상태와 정원 쪽 진입로 위치는 확인하지 못했다.",
+        "2동 사진의 반대쪽 유리 연결교를 250동으로 혼동하지 않았다."
+      ]
+    }
+  ],
+  "roadview": {
+    "interiorObserved": false,
+    "evidence": "sources/humanities-passage-roadview-review.json",
+    "scope": "기존 내부 촬영선 확인 기록을 참고했다. 이번 사진 검토를 새 로드뷰 관측으로 집계하지 않는다."
+  },
+  "implementation": {
+    "source": "src/humanities250.ts",
+    "geometry": {
+      "meshes": 2,
+      "colliders": 239,
+      "triangles": 4152,
+      "textures": 0
+    },
+    "details": [
+      "흰 골조, 청록색 유리 면과 창틀",
+      "왕복할 수 있는 되돌이 계단과 층별 발판",
+      "1동 쪽 세 층의 짧은 연결 통로와 벽 개구부",
+      "정원 진입 계단, 난간, 차양과 보행로",
+      "1동 지붕 밖을 막던 사각 충돌체를 윤곽 기반 충돌체로 교체"
+    ],
+    "dimensionsEstimated": true,
+    "internalLayoutEstimated": true,
+    "entrancePositionEstimated": true,
+    "approachStairObserved": false,
+    "rawTerrainChanged": false,
+    "rawRoadsChanged": false,
+    "photoTexturesCopied": false,
+    "wholeBuildingReconstructed": false,
+    "limits": [
+      "외부 진입 계단과 보행로는 사진에서 직접 확인한 시설이 아니라 게임 지형과 연결하기 위한 근사다.",
+      "두 건물의 전체 실내와 뒤쪽 외관은 구현하지 않았다.",
+      "1동 연결 통로 끝은 짧은 막힌 공간으로 처리했다. 실제 실내 평면이 아니다."
+    ]
+  },
+  "garden2026Review": {
+    "reviewedAt": "2026-11-06T10:11:24.588Z",
+    "notice": {
+      "url": "https://english.snu.ac.kr/?post_type=post&p=39549",
+      "title": "인문대 힐링공간(아방궁) 조성 공사 시행에 따른 협조 요청",
+      "published": "2026-02-12",
+      "directBrowserDOMObserved": true,
+      "areas": [
+        "51동 후면 중정",
+        "2동 후면 아방궁",
+        "220동 필로티와 보행 공간"
+      ],
+      "dateLimitation": "본문은 시작일을 2025.2.13.(금), 종료일을 2026.5.9.(토)로 적었다. 시작 연도와 요일이 맞지 않아 원문 표기를 보존했다.",
+      "attachmentsPresent": false
+    },
+    "specification": {
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01251892&bidPbancOrd=000&fileSeq=2&fileType=&prcmBsneSeCd=07",
+      "title": "서울대학교 관악캠퍼스 내 힐링공간(휴게공간) 조성공사 조경시방서",
+      "documentDate": "2025-11",
+      "localFile": "artifacts/humanities250-review/46-healing-landscape-specification.pdf",
+      "sha256": "13ef3833fef0e5037b0eb8e5d0a7515388966991d78a5ecd3a50a522882f0a7b",
+      "pages": 150,
+      "review": "목차와 특기 시방을 읽고 PDF 136쪽을 렌더링해 재료 설명을 대조했다. 등의자, 디자인벤치, 계단연계형평상 시방이 있으나 아방궁 내 위치를 특정할 배치도와 준공 사진은 확보하지 못했다."
+    },
+    "currentCompletionConfirmed": false,
+    "consequence": "45판 정원은 촬영일 미상의 사진을 따른 근사 모델이다. 정비 후 현재 배치와의 일치는 미확인이다. 위치를 확인하지 못한 새 벤치와 평상은 추가하지 않았다."
+  },
+  "validation": {
+    "file": "artifacts/humanities250-access-test/results.json",
+    "groups": [
+      {
+        "name": "250 source scope, batch count and unchanged terrain and unrelated buildings",
+        "status": "PASS"
+      },
+      {
+        "name": "garden entry and all flights work at desktop and mobile speeds in both directions",
+        "status": "PASS"
+      },
+      {
+        "name": "1 building link portals and lower flight remain walkable",
+        "status": "PASS"
+      },
+      {
+        "name": "stair surfaces agree with physics and survive distant rendering, reflection, damage and reset",
+        "status": "PASS"
+      }
+    ],
+    "realPhoneFrameRateMeasured": false
+  }
+}

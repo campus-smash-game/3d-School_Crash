@@ -1,0 +1,85 @@
+{
+  "status": "implemented-and-node-verified",
+  "productionPhysicsSha256": "5a2ee4fbe25030c9a62ecb659f26a9819bd86e8f79e10d64e56a43e3db76af3f",
+  "scope": "브라우저와 실기기를 실행하지 않은 Node CPU 및 Rapier 검사다. GPU 성능이나 휴대폰 FPS를 측정한 결과가 아니다.",
+  "policy": {
+    "loadSurfaceDistanceMetres": 75,
+    "unloadSurfaceDistanceMetres": 110,
+    "focusMovementMetres": 25,
+    "focusIncludesVerticalMovement": true,
+    "spatialCellSizeMetres": 100,
+    "index": "논리 좌표의 고정 AABB가 겹치는 모든 셀에 대상을 등록하고, 질의마다 중복 대상을 제거한다.",
+    "remoteRay": "포탄이나 조준 광선의 선분 AABB로 셀을 고른 뒤, 실제 ray-box 교차를 확인하고 미로드 프록시의 삼각형을 검사한다. 원본 mesh 반환 계약을 유지하며 Target도 함께 반환한다.",
+    "unchangedCollisionCoverage": "지형과 정적 장애물은 계속 유지한다. 차량은 기존 Traffic의 별도 충돌 상태를 따른다.",
+    "debrisCoverage": "플레이어 로딩 범위를 벗어난 활성 파편은 현재 크기와 다음 물리 프레임의 이동 구간에 회전 반경을 더해 필요한 충돌체만 임시로 로드한다. 첫 step과 teleport가 실행하는 물리 step 전에 갱신한다. 파편이 사라지면 다음 step까지 추가 로드를 해제한다."
+  },
+  "fixedCellPaddingFinding": {
+    "previousPaddingMetres": 80,
+    "largestObservedHorizontalReachMetres": 85.29,
+    "largestObservedTarget": "way/231167704 사회과학관 (이희건관) 지붕",
+    "currentGeometryCornerOmissionsBeforeFix": 0,
+    "finding": "현재 배치에서는 80 m 패딩으로 대상이 누락되지 않았다. 다만 같은 크기의 형상을 셀 경계에 놓으면 직접 광선 검사는 0.81 m 앞의 표면을 맞히지만, 기존 셀 질의는 사격과 폭발 대상을 누락했다. 새 AABB 셀 등록은 이 사례를 통과한다."
+  },
+  "verification": {
+    "streamingScript": "scripts/verify-streaming.mjs",
+    "streamingResult": "artifacts/streaming-test/results.json",
+    "streamingChecksPassed": 8,
+    "existingPhysicsChecksPassed": 12,
+    "existingCannonChecksPassed": 10,
+    "coordinateChecksPassed": 9,
+    "engineering302ChecksPassed": 9,
+    "engineerHouseChecksPassed": 6,
+    "samsungResearchChecksPassed": 6,
+    "typecheckPassed": true,
+    "coordinateFixtureStatus": "좌표 검사와 모델 검사는 각 광선의 출발점 부근을 명시적으로 로드한다. 초기화는 최초 spawn의 body 수와 로드 집합을 비교하고, 각 타깃 부근에서 실제 충돌 형상을 따로 확인한다. 현재 physics.ts 해시와 같은 좌표 검사 결과 9개가 통과했다.",
+    "coveredBehavior": [
+      "셀 경계의 긴 형상 사격, 중복 없는 부분 피해와 폭발, 초기화",
+      "큰 형상의 표면 거리와 높은 곳에서 내려올 때의 로딩 갱신",
+      "초당 13 m 이동 중 로딩 경계의 벽 충돌, 언로드 후 재접근",
+      "원점 밖 경사 지형으로 빠른 이동한 뒤 높이와 벽 충돌 유지",
+      "300 m 미로드 대상에 도착한 실제 포탄과 앞쪽 정적 장애물의 차단",
+      "초당 120 m 원거리 파편의 첫 프레임 충돌, 한정된 추가 로드와 해제",
+      "teleport 물리 step의 파편 충돌과 초기화 8회 뒤 body 수 복원",
+      "건물 로딩 범위 밖 차량 충돌체의 별도 유지와 제거"
+    ]
+  },
+  "benchmark": {
+    "initialRadiusAudit": "artifacts/mobile-physics-audit/results.json",
+    "preservedBaselineModule": "artifacts/mobile-physics-audit/modules/physics.mjs",
+    "sameGeometryComparisonScript": "artifacts/mobile-physics-audit/compare.mjs",
+    "initialSameGeometryComparison": "artifacts/mobile-physics-audit/comparison-11712.json",
+    "latestSameGeometryComparison": "artifacts/mobile-physics-audit/comparison.json",
+    "initialTargetCount": 11712,
+    "finalTargetCount": 12322,
+    "terrainDataSha256": "94d64c1957ed0073137edcbea7e5d450692f2db5a10275379b8fe085fd45ef6a",
+    "machine": "Intel Core i5-9400F, Windows x64, Node v24.14.0",
+    "method": "같은 실제 캠퍼스 형상과 DEM에 변경 전 350/390 m 구현과 현재 75/110 m 구현을 각각 연결한다. 두 구현을 번갈아 3회 실행하며, 위치마다 180 step 묶음 9개의 중앙값과 360 ray 묶음 3개의 중앙값을 기록한다. 고정 플레이어와 차량 충돌 상태를 사용한다. 별도로 플레이어에서 130 m 떨어진 실제 가족동의 같은 위치에 같은 난수 시드로 폭발을 일으키고, 파편 64개가 있는 30 step 묶음 6개를 비교했다.",
+    "finalRepresentativeStepResults": [
+      { "location": "정문", "loadedBefore": 976, "loadedAfter": 69, "stepMsBefore": 0.2288, "stepMsAfter": 0.0495 },
+      { "location": "관정도서관", "loadedBefore": 2472, "loadedAfter": 361, "stepMsBefore": 0.5575, "stepMsAfter": 0.1092 },
+      { "location": "941 백학어린이집", "loadedBefore": 4487, "loadedAfter": 966, "stepMsBefore": 1.3114, "stepMsAfter": 0.3272 },
+      { "location": "941-1 느티나무 어린이집", "loadedBefore": 4408, "loadedAfter": 1932, "stepMsBefore": 1.2512, "stepMsAfter": 0.5201 },
+      { "location": "934 가족생활관", "loadedBefore": 4266, "loadedAfter": 1714, "stepMsBefore": 1.3807, "stepMsAfter": 0.4355 },
+      { "location": "302 제2공학관", "loadedBefore": 1374, "loadedAfter": 929, "stepMsBefore": 0.4014, "stepMsAfter": 0.2360 },
+      { "location": "944 삼성전자서울대연구소", "loadedBefore": 4208, "loadedAfter": 564, "stepMsBefore": 1.3359, "stepMsAfter": 0.1599 }
+    ],
+    "remoteFragmentComparison": {
+      "destroyedTargetsEach": 33,
+      "activeFragmentsEach": 64,
+      "peakBodiesBefore": 4508,
+      "peakBodiesAfter": 79,
+      "peakLoadedTargetsBefore": 4443,
+      "peakLoadedTargetsAfter": 14,
+      "stepMedianMsBefore": 3.2264,
+      "stepMedianMsAfter": 3.1812,
+      "interpretation": "활성 body는 줄었지만 이 파편 부하에서 물리 step 시간은 거의 같았다. 모든 폭발 장면이 빨라졌다고 해석하지 않는다."
+    },
+    "limits": [
+      "다른 작업이 함께 실행될 수 있는 개발 컴퓨터에서 측정했으므로 시간에는 부하와 JIT, GC 변동이 포함된다.",
+      "전체 게임 프레임, 렌더링, DOM, 실제 터치 입력과 모바일 기기 성능은 측정하지 않았다.",
+      "파편 비용은 실제 가족동 한 위치의 고정 폭발 사례로 측정했다. 모든 건물, 탄착 위치와 연속 폭발의 비용을 대표하지 않는다.",
+      "원거리 query는 대부분 줄었지만 모든 짧은 query가 빨라진 것은 아니다. 변경 전후 원자료를 함께 보존한다."
+    ],
+    "finalGeometryComparisonPending": false
+  }
+}

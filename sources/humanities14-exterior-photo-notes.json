@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "status": "implemented-partial-photo-reference",
+  "buildingId": "way/167609164",
+  "buildingNumber": "14",
+  "scope": "14동 외관, 짧은 하부 현관과 옆 계단, 6층 테라스의 외부 시설을 보완한다.",
+  "references": [
+    {
+      "url": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000015.jpg",
+      "localPhoto": "../references/buildings/photos/015-14.jpg",
+      "kind": "official-map-photo",
+      "captureDate": null,
+      "directlyViewedBy": "root",
+      "observed": [
+        "노출 콘크리트 상부와 후퇴한 유리 하부",
+        "촘촘한 세로 차양",
+        "끝벽의 가로 창과 검은 발코니 난간",
+        "유리 현관과 회색 금속 차양",
+        "현관 옆 외부 계단과 금속 난간",
+        "암석 화단, 목재 기둥과 밝은 줄 난간"
+      ],
+      "limits": "사진과 지도 외곽의 대응으로 면 방향을 판단했다. 촬영일, 층고, 계단 단수, 출입구 치수와 각 시설의 위치는 미확인이다. 간판 문구를 확인하지 못해 임의의 상호는 추가하지 않았다.",
+      "sha256": "38822ec3e6e95d47b5f40e978823bf42807e018ab23c39fad8f369819cad9035"
+    },
+    {
+      "url": "https://humanities.snu.ac.kr/community/department?bbsidx=3485&md=v",
+      "published": "2025-07-17",
+      "kind": "official-article-and-photos",
+      "directlyViewedBy": "root",
+      "photos": [
+        {
+          "url": "https://humanities.snu.ac.kr/webdata/upimages/02cz8dazd82zaabz4cdzabcz1cezf18z1d6z945ze6.jpg",
+          "localPhoto": "artifacts/humanities-upper-review/54-terrace-1.jpg",
+          "sha256": "2a8ba07f4eea26d38a5c079ba25c794cfb2f0c0f9223ad4295cf95f9ec5a79fe"
+        },
+        {
+          "url": "https://humanities.snu.ac.kr/webdata/upimages/0d6z374z5a7z48az803z6eaz5fcze1dze15zc85z5e.jpg",
+          "localPhoto": "artifacts/humanities-upper-review/54-terrace-2.jpg",
+          "sha256": "a32d6c8411cd19e7d7ebfa5fada741ef70079a5c5e207f967721f38b4e4c7380"
+        }
+      ],
+      "observed": [
+        "6층 테라스와 연구실",
+        "목재 바닥과 테이블, 벤치",
+        "상자형 화분과 작은 나무",
+        "콘크리트 기둥, 사각 벽등과 가로 금속 난간",
+        "사범대 건물이 보이는 전망"
+      ],
+      "limits": "사진 속 사범대 방향을 근거로 남동쪽 짧은 면에 테라스를 배치했다. 이는 추정이며 층 평면도나 현장 측량으로 확인한 위치가 아니다."
+    },
+    {
+      "url": "https://humanities.snu.ac.kr/research/humanities-small-theater",
+      "kind": "official-facility-description",
+      "observed": "2016년 5월 준공한 14동 지하에 인문소극장이 있다는 안내를 확인했다.",
+      "limits": "지하층의 존재를 확인한 자료다. 사진 속 하부 현관의 정확한 층 표기와 소극장의 위치를 확정하는 근거로 쓰지 않는다. 소극장 내부와 복층 높이는 구현하지 않았다."
+    }
+  ],
+  "mapReview": {
+    "coverageCapture": "artifacts/humanities6-review/52-kakao-coverage.png",
+    "directlyViewedBy": "root",
+    "observed": "이전에 확인한 카카오맵 촬영선에는 6동과 14동 사이 현관 주변의 로드뷰가 표시되지 않았다. 이번 외관 보완은 공식 건물 사진과 테라스 사진을 참고했다.",
+    "existingRearStairNotes": "sources/humanities14-stair-photo-notes.json",
+    "newLiveRoadviewVisit": false
+  },
+  "implementation": {
+    "module": "src/humanities14Landmark.ts",
+    "rawMapAndElevationModified": false,
+    "documentedAboveGroundLevels": 6,
+    "physicalLevels": 7,
+    "storeyHeightMeters": 3.3,
+    "heightEstimated": true,
+    "floorArrangementEstimated": true,
+    "basementEntranceAssignmentEstimated": true,
+    "terraceOrientationEstimated": true,
+    "entrance": "6동 동쪽 계단 끝에서 난간을 지나 현관으로 꺾이는 보행로를 만들었다. 현관 문은 이동을 위해 열어 두었고 짧은 출입 공간까지만 들어갈 수 있다.",
+    "stairs": "돌출 상부 아래에 옆 계단과 계단참을 배치했다. 지형과 기존 차량 통로에 맞춘 근사다.",
+    "preservation": "기존 14동 뒤편 도토리길 계단과 6동 북쪽 상단 연결로를 보존한다.",
+    "mobileGeometry": "두 개의 병합 메시를 사용한다. 창틀, 줄눈, 가지와 잎, 벽등은 주 부재에 연결해 독립 물리 객체 수를 줄인다.",
+    "photosUsedAsTextures": false,
+    "wholeInteriorImplemented": false,
+    "terraceInteriorAccessImplemented": false,
+    "geometry": {
+      "meshes": 2,
+      "textures": 0,
+      "triangles": 25670,
+      "colliders": 693
+    }
+  },
+  "remaining": [
+    "후면과 옆면의 근접 사진",
+    "층별 지표면 관계와 하부 현관 층 표기",
+    "6층 테라스의 정확한 방향과 평면",
+    "현관에서 테라스로 올라가는 실내 연결",
+    "건물 전체 실내와 인문소극장",
+    "실제 휴대전화 성능 측정"
+  ],
+  "validation": {
+    "file": "artifacts/humanities14-exterior-test/results.json",
+    "groups": [
+      {
+        "name": "building 14 exterior replaces only its generic shell and preserves existing connections",
+        "status": "PASS"
+      },
+      {
+        "name": "entry and side stair allow return trips at desktop and mobile speeds",
+        "status": "PASS"
+      },
+      {
+        "name": "floor and stair colliders match rendered surfaces",
+        "status": "PASS"
+      },
+      {
+        "name": "concrete, glazing and sun fins retain damage and reset at a distance",
+        "status": "PASS"
+      }
+    ],
+    "unchangedOtherParts": 40420,
+    "floorSamples": 52,
+    "walks": 8,
+    "maximumWalkingPenetration": 0,
+    "rawInputsExact": true,
+    "terrainExact": true,
+    "realPhoneFrameRateMeasured": false
+  }
+}
