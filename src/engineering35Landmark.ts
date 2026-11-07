@@ -1,3 +1,4 @@
+import type { Engineering35AccessLayout } from './engineering35AccessSite';
 import * as THREE from 'three';
 import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
 import type { CampusBuilding } from './fullCampus';
@@ -10,10 +11,11 @@ type Part={proxy:THREE.Mesh;shown:boolean;ranges:Range[]};
 
 // 공식 지도 사진과 2026년 외벽 도색 안내 사진의 형태를 사용한다. 치수와 입면 구간의 지도 대응은 추정이다.
 export function createEngineering35Landmark(scene:THREE.Scene,building:CampusBuilding,profile:BuildingAppearance,heightAt:(x:number,z:number)=>number){
+ const access35=scene.getObjectByName('campus-terrain')?.userData.engineering35AccessCorrection?.layout as Engineering35AccessLayout|undefined;
  const landmark='engineering-35',mapped=building.points.filter((p,i,a)=>i!==a.length-1||p[0]!==a[0][0]||p[1]!==a[0][1]);
  if(mapped.length!==24)throw Error('Engineering 35 requires its original 24 point outline.');
  const origin={x:mapped[18][0],z:mapped[18][1]},axis=new THREE.Vector3(mapped[19][0]-origin.x,0,mapped[19][1]-origin.z).normalize(),across=new THREE.Vector3(-axis.z,0,axis.x),up=new THREE.Vector3(0,1,0);
- const entryX=55,datumSample={x:origin.x+axis.x*entryX-across.x*4,z:origin.z+axis.z*entryX-across.z*4},base=heightAt(datumSample.x,datumSample.z);
+ const entryX=55,datumSample={x:origin.x+axis.x*entryX-across.x*4,z:origin.z+axis.z*entryX-across.z*4},base=access35?access35.terraceFloor-.45:heightAt(datumSample.x,datumSample.z);
  const world=(x:number,y:number,z:number)=>new THREE.Vector3(origin.x,base+y,origin.z).addScaledVector(axis,x).addScaledVector(across,z),ground=(x:number,z:number)=>{const p=world(x,0,z);return heightAt(p.x,p.z)-base;};
  const points=mapped.map(p=>{const d=new THREE.Vector3(p[0]-origin.x,0,p[1]-origin.z);return{x:d.dot(axis),z:d.dot(across)};});
  const minX=Math.min(...points.map(p=>p.x)),maxX=Math.max(...points.map(p=>p.x)),minZ=Math.min(...points.map(p=>p.z)),maxZ=Math.max(...points.map(p=>p.z));
@@ -67,11 +69,11 @@ export function createEngineering35Landmark(scene:THREE.Scene,building:CampusBui
 
  function cladding(f:ReturnType<typeof normalFace>,a:number,b:number,y0:number,y1:number,color:number,name:string,thickness=.24,depth=-.02){if(b-a<.05||y1-y0<.05)return;component('stone',name,()=>{wallBox(concrete,f.at,f.tangent,a,b,y0,y1,depth,thickness,color);if(color===stone)for(let y=Math.ceil(y0/.45)*.45;y<y1-.06;y+=.45)faceQuad(details,f.at(a,y,depth+thickness/2+.007),f.at(b,y,depth+thickness/2+.007),f.at(b,y+.014,depth+thickness/2+.007),f.at(a,y+.014,depth+thickness/2+.007),0x72786f,f.out);if(color===brown)for(let y=Math.ceil(y0/.56)*.56;y<y1-.06;y+=.56)faceQuad(details,f.at(a,y,depth+thickness/2+.007),f.at(b,y,depth+thickness/2+.007),f.at(b,y+.014,depth+thickness/2+.007),f.at(a,y+.014,depth+thickness/2+.007),0x66493f,f.out);},f.tangent);}
 
- const floor=.45,rowHeight=3.25,roofY=16.7,frontLength=points[19].x,split=55;
+ const floor=.45,rowHeight=3.25,visibleRows=access35?4:5,roofY=floor+visibleRows*rowHeight,railingTop=roofY+.8,frontLength=points[19].x,split=55;
  const entry={x:entryX,z:-.18,width:4.4,height:2.85,floor,estimated:true};
  const front=normalFace(points[18],points[19]);
  const balconySamples:{x:number;z:number;floor:number;railTop:number;glassZ:number;slatY:number;gapY:number}[]=[];
- Object.assign(shell.userData,{entry,entries:[entry],floorLevels:Array.from({length:6},(_,i)=>floor+i*rowHeight),facadeZones:{west:{edge:18,louverX:[0,split],whiteFinX:[split,frontLength],estimated:true},east:{notchedEdges:[0,1,2,3,4,5,6,7,8,9,10,11,12],estimated:true}},balconyDepth:1.15,roof:{y:roofY,railingTop:17.5,roofGardenCurrentLayoutUnknown:true}});
+ Object.assign(shell.userData,{entry,entries:[entry],floorLevels:access35?[access35.labFloor-base,...Array.from({length:visibleRows+1},(_,i)=>floor+i*rowHeight)]:Array.from({length:6},(_,i)=>floor+i*rowHeight),facadeZones:{west:{edge:18,louverX:[0,split],whiteFinX:[split,frontLength],estimated:true},east:{notchedEdges:[0,1,2,3,4,5,6,7,8,9,10,11,12],estimated:true}},balconyDepth:1.15,roof:{y:roofY,railingTop,roofGardenCurrentLayoutUnknown:true}});
  function terrainClear(f:ReturnType<typeof normalFace>,a:number,b:number,depth:number){let h=-Infinity;const n=Math.max(2,Math.ceil((b-a)/.2));for(let k=0;k<=n;k++)for(const d of[depth-.07,depth,depth+.07]){const p=f.at(a+(b-a)*k/n,0,d);h=Math.max(h,heightAt(p.x,p.z)-base);}return h;}
  function drawGlass(f:ReturnType<typeof normalFace>,a:number,b:number,y0:number,y1:number,depth:number){if(b-a<.1||y1-y0<.15)return;wallBox(glass,f.at,f.tangent,a+.04,b-.04,y0,y1,depth,.055,glassColor);const strip=(l:number,r:number,bottom:number,top:number)=>faceQuad(details,f.at(l,bottom,depth+.065),f.at(r,bottom,depth+.065),f.at(r,top,depth+.065),f.at(l,top,depth+.065),frame,f.out);for(const u of[a,b])strip(u-.035,u+.035,y0,y1);for(const y of[y0,y1,(y0+y1)/2])strip(a,b,y-.035,y+.035);}
  function framedGlass(f:ReturnType<typeof normalFace>,a:number,b:number,y0:number,y1:number,depth:number,name:string,extra:Record<string,unknown>={}){if(b-a<.1||y1-y0<.15)return;component('glass',name,()=>drawGlass(f,a,b,y0,y1,depth),f.tangent,false,{facade:true,closedFacade:true,outward:f.out.toArray(),...extra});}
@@ -86,8 +88,8 @@ export function createEngineering35Landmark(scene:THREE.Scene,building:CampusBui
   for(let k=0;k+1<cuts.length;k++){
    const a=cuts[k],b=cuts[k+1];if(b-a<.05)continue;const mx=points[edge].x+f.dx*(a+b)/2,foot=terrainClear(f,a,b,0)-.55;
    const door=west&&(a+b)/2>entry.x-entry.width/2&&(a+b)/2<entry.x+entry.width/2;
-   if(stairWall){for(let row=0;row<5;row++){const bottom=row===0?Math.min(foot,-.4):floor+row*rowHeight;panel(f,a,b,bottom,floor+(row+1)*rowHeight,-.025,.28,0xb2b7b2,'east-stair-panel',{edge,row});}continue;}
-   for(let row=0;row<5;row++){
+   if(stairWall){for(let row=0;row<visibleRows;row++){const bottom=row===0?Math.min(foot,-.4):floor+row*rowHeight;panel(f,a,b,bottom,floor+(row+1)*rowHeight,-.025,.28,0xb2b7b2,'east-stair-panel',{edge,row});}continue;}
+   for(let row=0;row<visibleRows;row++){
     if(door&&row===0){panel(f,a,b,floor+entry.height,3.7,-.04,.18,stone,'entry-lintel');continue;}
     const bottom=floor+row*rowHeight,top=bottom+rowHeight,louver=row>0&&(west?mx<split:east&&mx<42),fin=row>0&&(west||east)&&!louver;
     const depth=louver?-1.15:fin&&row<3?-.85:-.15;
@@ -109,7 +111,7 @@ export function createEngineering35Landmark(scene:THREE.Scene,building:CampusBui
  }
  // 현재 옥상 식재 배치는 미확인이다. 사진에 보이는 평지붕과 얇은 난간만 재현한다.
  polygonSlabs(points,roofY,'original-outline-roof',0x8d9892);
- for(let edge=0;edge<points.length;edge++){const f=normalFace(points[edge],points[(edge+1)%points.length]);for(let a=0;a<f.length;a+=4){const b=Math.min(f.length,a+4);component('metal','roof-railing-bar',()=>wallBox(details,f.at,f.tangent,a,b,17.45,17.5,-.10,.055,frame),f.tangent);component('metal','roof-railing-post',()=>wallBox(details,f.at,f.tangent,a,a+.055,roofY,17.5,-.1,.055,frame),f.tangent);}}
+ for(let edge=0;edge<points.length;edge++){const f=normalFace(points[edge],points[(edge+1)%points.length]);for(let a=0;a<f.length;a+=4){const b=Math.min(f.length,a+4);component('metal','roof-railing-bar',()=>wallBox(details,f.at,f.tangent,a,b,railingTop-.05,railingTop,-.10,.055,frame),f.tangent);component('metal','roof-railing-post',()=>wallBox(details,f.at,f.tangent,a,a+.055,roofY,railingTop,-.1,.055,frame),f.tangent);}}
  // 정면 유리 차양과 사선 지지대는 각각 얇은 볼록 충돌 부품으로 만든다.
  component('glass','engineering35-entry-door',()=>box(glass,world(entry.x,floor+entry.height/2,entry.z),new THREE.Vector3(entry.width,entry.height,.065),glassColor),axis,false,{entrance:true,outward:across.toArray()});
  for(const x of[entry.x-entry.width/2,entry.x+entry.width/2])beam(world(x,floor,entry.z+.04),world(x,floor+entry.height,entry.z+.04),.075,.075,'entrance-frame',frame);
@@ -117,10 +119,11 @@ export function createEngineering35Landmark(scene:THREE.Scene,building:CampusBui
  for(let x=canopy.x0;x<canopy.x1;x+=2.3)pane([world(x,canopy.y,canopy.z0),world(Math.min(canopy.x1,x+2.3),canopy.y,canopy.z0),world(Math.min(canopy.x1,x+2.3),canopy.y,canopy.z1),world(x,canopy.y,canopy.z1)],up,'entry-glass-canopy',{canopy:true});
  for(const x of[entry.x-3.6,entry.x+3.6]){beam(world(x,3.46,3.1),world(x,5.15,-.1),.11,.11,'canopy-diagonal-stay',0x8d9b98);beam(world(x,3.4,-.2),world(x,3.4,3.3),.08,.11,'canopy-rail',frame);}
  const accessWidth=3.6,lanes=6,accessZ=5.6,apronZ=1.9,steps=10,tops:number[][]=[];
- for(let lane=0;lane<lanes;lane++){const x0=entry.x-accessWidth/2+lane*accessWidth/lanes,x1=x0+accessWidth/lanes,heights:number[]=[];for(let i=0;i<steps;i++){const z1=accessZ-(accessZ-apronZ)*i/steps,z0=accessZ-(accessZ-apronZ)*(i+1)/steps;let h=-Infinity;for(const x of[x0,(x0+x1)/2,x1])for(const z of[z0,(z0+z1)/2,z1])h=Math.max(h,ground(x,z));heights.push(Math.max(h+.08,THREE.MathUtils.lerp(ground((x0+x1)/2,accessZ)+.08,floor,i/(steps-1))));}heights[steps-1]=floor;for(let i=steps-2;i>=0;i--)heights[i]=Math.max(heights[i],heights[i+1]-.22);for(let i=0;i<steps;i++){const z1=accessZ-(accessZ-apronZ)*i/steps,z0=accessZ-(accessZ-apronZ)*(i+1)/steps;rectangularSlab(x0,x1,z0,z1,heights[i],heights[i],heights[i],heights[i],'entry-access-step',0xb5bcb4,.14);}tops.push(heights);}
+ if(!access35)for(let lane=0;lane<lanes;lane++){const x0=entry.x-accessWidth/2+lane*accessWidth/lanes,x1=x0+accessWidth/lanes,heights:number[]=[];for(let i=0;i<steps;i++){const z1=accessZ-(accessZ-apronZ)*i/steps,z0=accessZ-(accessZ-apronZ)*(i+1)/steps;let h=-Infinity;for(const x of[x0,(x0+x1)/2,x1])for(const z of[z0,(z0+z1)/2,z1])h=Math.max(h,ground(x,z));heights.push(Math.max(h+.08,THREE.MathUtils.lerp(ground((x0+x1)/2,accessZ)+.08,floor,i/(steps-1))));}heights[steps-1]=floor;for(let i=steps-2;i>=0;i--)heights[i]=Math.max(heights[i],heights[i+1]-.22);for(let i=0;i<steps;i++){const z1=accessZ-(accessZ-apronZ)*i/steps,z0=accessZ-(accessZ-apronZ)*(i+1)/steps;rectangularSlab(x0,x1,z0,z1,heights[i],heights[i],heights[i],heights[i],'entry-access-step',0xb5bcb4,.14);}tops.push(heights);}
  for(let x=entry.x-3.3;x<entry.x+3.3;x+=2.2)rectangularSlab(x,Math.min(entry.x+3.3,x+2.2),-6,apronZ,floor,floor,floor,floor,'entry-apron-floor',0xb5bcb4,.16);
  Object.assign(shell.userData,{balconySamples,canopy,access:{route:[{x:entry.x,z:accessZ+1.4},{x:entry.x,z:1},{x:entry.x,z:-5}],width:accessWidth,lanes,steps,tops,estimated:true},limitations:['입면 구역의 경계와 발코니 깊이는 사진 비례 추정이다.','지형과 출입 바닥을 잇는 접근판은 게임용 추정이다.','2026년 외벽 도색 후 색과 옥상 텃밭의 현황은 확인하지 못했다.']});
 
+ if(access35)Object.assign(shell.userData,{levelsEvidence:'OSM 5층 기록과 2층 테라스 공지, 사진의 상부 루버 창 세 줄을 구분한다.',visibleRowsAboveTerrace:4,louverRows:3,terraceOfficialFloor:2,designHeight:railingTop-(access35.labFloor-base),highestModelPoint:railingTop,lowerLab: {floor:access35.labFloor,estimated:true},access:{route:[{x:55,z:2.8},{x:55,z:1},{x:55,z:-5}],northStairRoute:access35.routes.northStairToEntry,estimated:true}});
   for(const[s,name,roughness]of[[concrete,'solid',.86],[details,'frames',.64],[glass,'glazing',.24]]as const){const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(s.positions,3));geometry.setAttribute('color',new THREE.Float32BufferAttribute(s.colors,3));(geometry.getAttribute('position')as THREE.BufferAttribute).setUsage(THREE.DynamicDrawUsage);geometry.computeVertexNormals();geometry.computeBoundingSphere();geometry.computeBoundingBox();s.geometry=geometry;const mesh=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({vertexColors:true,side:THREE.DoubleSide,roughness,metalness:s===glass?.18:.02}));mesh.name='engineering-35-'+name;mesh.receiveShadow=true;shell.add(mesh);s.positions.length=0;s.colors.length=0;}
   function update(_player:THREE.Vector3){const changed=new Set<Surface>();for(const part of parts)if(part.shown!==part.proxy.visible){part.shown=part.proxy.visible;for(const r of part.ranges){if(r.start===r.end)continue;const attr=r.surface.geometry!.getAttribute('position')as THREE.BufferAttribute;if(!changed.has(r.surface))attr.clearUpdateRanges();changed.add(r.surface);if(part.shown)(attr.array as Float32Array).set(r.original,r.start);else for(let i=r.start;i<r.end;i+=3){attr.array[i]=part.proxy.position.x;attr.array[i+1]=part.proxy.position.y;attr.array[i+2]=part.proxy.position.z;}attr.addUpdateRange(r.start,r.end-r.start);}}for(const s of changed)s.geometry!.getAttribute('position').needsUpdate=true;shell.visible=parts.some(p=>p.proxy.visible);}
   return{breakables,update};

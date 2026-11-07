@@ -113,7 +113,7 @@ export function createEngineering3334Access(scene:THREE.Scene,q:Engineering3334L
    for(let s=2;s<q.eastBridge.length;s+=2)box('35-parapet-panel-joint',q.eastBridge,s,s+.018,n-.003,n+.17,q.upperFloor+.12,q.upperFloor+.78,0xa3aaa1,'stone',wall);
  }
  rail(q.wall35,q.terraceStart+2.1,4.4,51.7,4.4,q.terraceFloor,q.terraceFloor,'35-terrace-edge-rail');
- rail(q.wall35,q.terraceStart-1.8,.12,q.terraceStart-1.8,4.4,q.terraceFloor,q.terraceFloor,'35-terrace-south-rail');
+ if(!scene.getObjectByName('campus-terrain')?.userData.engineering35AccessCorrection)rail(q.wall35,q.terraceStart-1.8,.12,q.terraceStart-1.8,4.4,q.terraceFloor,q.terraceFloor,'35-terrace-south-rail');
  const meshes=batches.map(b=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(b.positions,3));g.setAttribute('color',new THREE.Float32BufferAttribute(b.colors,3));g.computeVertexNormals();g.computeBoundingBox();g.computeBoundingSphere();const mesh=new THREE.Mesh(g,new THREE.MeshStandardMaterial({vertexColors:true,roughness:b.glass?.3:.8,side:THREE.DoubleSide}));mesh.name=b.glass?'engineering3334-glass':'engineering3334-surfaces';mesh.castShadow=!b.glass;mesh.receiveShadow=true;shell.add(mesh);return mesh;});
 
 

@@ -34,7 +34,8 @@ registerHooks({
 globalThis.document={createElement(){const canvas={width:0,height:0,textCalls:[]};canvas.getContext=()=>new Proxy({},{get(o,k){if(k==='fillText')return(...args)=>canvas.textCalls.push(args);if(k==='measureText')return s=>({width:String(s).length*20});if(k==='createLinearGradient'||k==='createRadialGradient')return()=>({addColorStop(){}});return o[k]??(()=>{});},set(o,k,v){o[k]=v;return true;}});return canvas;}};
 const sourceModule=n=>import(pathToFileURL(path.join(root,'src',n+'.ts')));
 
-async function buildWorld(options={}){
+// 35동 후속 보완 이전의 연결부를 검사한다. 현재 전체 통행은 verify-engineering35-access.mjs에 포함된다.
+async function buildWorld(options={engineering35Access:false}){
 
  await R.init();
  const names=['terrain','scene','fullCampus','physics','transitFacilities','centralPlazaFacilities','administrationPlazaFacilities','informationCourtApproach','administrationPlazaGround','gyujanggakApproach'];

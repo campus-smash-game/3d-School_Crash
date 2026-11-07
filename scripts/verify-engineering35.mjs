@@ -22,7 +22,8 @@ const { dataToRenderPoint: H } = await import(pathToFileURL(path.join(out, 'coor
 await RAPIER.init();
 const data = JSON.parse(await readFile(path.join(root, 'public/data/campus.json'), 'utf8')), dem = JSON.parse(await readFile(path.join(root, 'public/data/terrain.json'), 'utf8'));
 const building = data.buildings.find(b => b.id === 'way/892896238'), originalData = JSON.stringify({ building, dem });
-const scene = new THREE.Scene(), terrain = createTerrain(scene, dem, data.buildings), profile = getBuildingAppearance(building), model = createEngineering35Landmark(scene, building, profile, terrain.heightAt);
+// 초기 35동 모델의 회귀 검사다. 현재 서쪽 보완은 verify-engineering35-access.mjs에서 검사한다.
+const scene = new THREE.Scene(), terrain = createTerrain(scene, dem, data.buildings, {engineering35Access:false}), profile = getBuildingAppearance(building), model = createEngineering35Landmark(scene, building, profile, terrain.heightAt);
 const shell = scene.children.find(o => o.userData.role === 'building-shell'), info = shell.userData, meshes = shell.children.filter(o => o.isMesh), original = meshes.map(m => m.geometry.attributes.position.array.slice());
 
 const base=info.localOrigin.y,axis=new THREE.Vector3(info.axis.x,0,info.axis.z),across=new THREE.Vector3(-info.axis.z,0,info.axis.x),up=new THREE.Vector3(0,1,0);
