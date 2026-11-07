@@ -1,0 +1,176 @@
+{
+  "accessId": "access/engineering37-36",
+  "buildingIds": [
+    "way/262983332",
+    "way/347806719"
+  ],
+  "checkedAt": "2026-11-07",
+  "status": "integrated-partial",
+  "evidence": [
+    {
+      "id": "stored-connector-202509",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=IRXqldDHsr61kxrmjR7xvw,331,5,55,Float",
+      "captureMonth": "2025-09",
+      "dateBasis": "저장된 거리뷰 화면의 촬영월 표시",
+      "publicationDate": null,
+      "directlyViewedThisPhase": true,
+      "view": "36동 남서쪽 도로에서 북서쪽의 연결교와 37동 남단 현관을 본다.",
+      "value": "현관과 표지, 정면 계단, 붉은 참, 경사로 및 오른쪽 별도 계단을 가장 잘 보여 준다.",
+      "reusedStoredImage": true
+    },
+    {
+      "id": "stored-overview-202509",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=IRXqldDHsr61kxrmjR7xvw,0,10,80,Float",
+      "captureMonth": "2025-09",
+      "publicationDate": null,
+      "directlyViewedThisPhase": true,
+      "value": "37동이 왼쪽, 36동이 오른쪽이라는 배치와 남쪽 도로보다 낮은 현관 앞 주차 공간을 확인한다.",
+      "limit": "오른쪽 접합부와 창줄 일부는 수목에 가린다.",
+      "reusedStoredImage": true
+    },
+    {
+      "id": "official36",
+      "sourceURL": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=45",
+      "imageURL": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000044.jpg",
+      "captureDate": null,
+      "publicationDate": null,
+      "directlyViewedThisPhase": true,
+      "value": "북쪽 광장에서 본 36동 북면과 사진 오른쪽 연결교 일부를 다시 확인했다.",
+      "limit": "문제의 낮은 현관은 반대쪽에 있어 보이지 않는다. 광장 오른쪽 계단을 남쪽 현관 계단의 사진으로 쓰지 않는다.",
+      "reusedStoredImage": true
+    },
+    {
+      "id": "stored-sky85",
+      "sourceURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&urlLevel=1&urlX=489115&urlY=1099070",
+      "captureDate": null,
+      "publicationDate": null,
+      "directlyViewedThisPhase": true,
+      "value": "37동 남단 탑과 동서 연결교, 그 남쪽 낮은 녹색 지붕 부속부의 상대 위치를 보여 준다.",
+      "limit": "지붕 투영과 지상 윤곽은 다르다. 옛 32동이 남은 사진이므로 2026년 공사 상태를 나타내지 않는다.",
+      "reusedStoredImage": true
+    },
+    {
+      "sourceURL": "https://naoe.snu.ac.kr/news/notice?bbsidx=18921&md=v",
+      "title": "35, 37, 39동 샤워실 안내",
+      "publicationDate": "2012-05-07",
+      "captureDate": null,
+      "access": "일반 웹 도구로 본문 직접 확인",
+      "finding": "37동 남측 4층과 5층 시설의 위치를 36동과 37동 사이 계단에 인접한다고 안내한다.",
+      "usableScope": "2012년에 두 건물 사이 계단을 위치 안내의 기준으로 사용했다는 보조 근거다.",
+      "notUsableFor": "사진의 바깥 짧은 계단인지 실내 층간 계단인지 구분하지 않는다. 낮은 현관 층명, 외부 경사로의 종점, 연결교 바닥의 공식 층과 현재 치수를 이 문서로 확정할 수 없다."
+    }
+  ],
+  "observed": [
+    {
+      "id": "entry",
+      "direct": "37동 남단의 큰 흰 벽 아래에 회색 낮은 현관이 있고 연결교 남쪽 벽보다 앞쪽으로 돌출해 보인다. 상부에는 왼쪽을 가리키는 37, 붉은 ENGINEERING, 오른쪽을 가리키는 36 표지가 있다. 아래에는 세로 금속 틀로 나눈 여러 유리문과 유리 패널이 보인다.",
+      "orientationInference": "남쪽 도로의 북서 방향 촬영점과 두 건물 배치를 대조하면 현관 전면은 남쪽 계열을 향한다. 항공 보관본에서 탑 동쪽과 연결교 남쪽에 보이는 낮은 녹색 지붕의 부속부와 대응할 가능성이 높다. 단순한 탑 남벽 문으로 배치하기보다는 남동 모서리 동쪽 부속 현관으로 해석한다.",
+      "limit": "유리 칸 전체가 여닫이 문인지, 어떤 문짝이 실제로 열리는지는 판독하지 않았다. 실내 연결, 공식 층명과 정확한 벽 위치는 미확인이다.",
+      "evidence": [
+        "stored-connector-202509",
+        "stored-overview-202509",
+        "stored-sky85"
+      ]
+    },
+    {
+      "id": "front-stair",
+      "direct": "현관 바로 앞에 넓고 짧은 계단이 있다. 밝은 회색 디딤판과 낮은 옆벽, 일부 금속 손잡이가 보이며 계단 앞은 붉은 계열의 낮은 주차 공간이다. 문 앞 평평한 바닥은 주차 공간보다 높다.",
+      "orientationInference": "남쪽 주차 공간에서 북쪽 문을 향해 오른다.",
+      "limit": "계단의 정확한 단수와 폭, 한 단 높이, 문턱 높이는 실측하지 않았다. 사진 일부가 수목과 지도 화면에 가려져 있다.",
+      "evidence": [
+        "stored-connector-202509"
+      ]
+    },
+    {
+      "id": "red-landing",
+      "direct": "현관 오른쪽에 붉은 바닥의 넓은 참이 이어진다. 남쪽 가장자리는 낮은 수직 턱으로 드러나며 연결교 아래 사람과 기둥이 서 있는 공간까지 이어져 보인다.",
+      "heightInference": "현관 앞 바닥과 붉은 참은 직접 이어질 가능성이 높다. 다만 원근 때문에 두 바닥의 미세한 높이 차나 경사까지 같다고 확정할 수 없다.",
+      "limit": "붉은 재료가 타일인지 도막인지 사진만으로 확정하지 않았다. 물리 바닥 높이를 하나로 합치는 것은 게임 근사로 기록해야 한다.",
+      "evidence": [
+        "stored-connector-202509"
+      ]
+    },
+    {
+      "id": "ramp-and-right-stair",
+      "direct": "붉은 참 오른쪽에는 밝은 회색 경사로와 양쪽 금속 난간이 있다. 그보다 오른쪽에는 폭이 더 넓은 별도 짧은 계단과 회색 상단 바닥이 있다. 경사로와 계단 모두 앞쪽 낮은 주차 공간에서 연결교 아래 방향으로 오른다.",
+      "directionInference": "주요 상승 방향은 남쪽에서 북쪽이다. 사진에서 경사로의 먼 쪽과 뒤편 바닥이 꺾이는 부분은 보이지만 전체 평면 경로를 확정할 정도로 드러나지 않는다.",
+      "limit": "경사로 위쪽이 붉은 현관 참으로 연결되는지, 북쪽 광장으로 이어지는지 또는 36동 서벽 문으로 바로 닿는지 끝까지 확인하지 못했다. 오른쪽 계단의 상단 바닥과 붉은 참이 같은 높이인지도 미확인이다.",
+      "evidence": [
+        "stored-connector-202509",
+        "stored-overview-202509"
+      ]
+    },
+    {
+      "id": "underpass",
+      "direct": "두 줄의 검은 창이 있는 흰 연결교 아래에는 벽으로 막지 않은 열린 공간이 보인다. 안쪽 기둥과 바닥, 사람, 뒤쪽 식재를 볼 수 있다.",
+      "inference": "연결교 아래 접근 공간을 큰 건물 벽이나 전체 높이의 막힌 덩어리로 메우는 구성은 사진과 맞지 않는다.",
+      "limit": "열린 부분이 보인다는 사실과 남쪽에서 북쪽 광장까지 장애물 없이 통과할 수 있다는 사실은 다르다. 전체 통과 경로와 최종 단차는 가림 때문에 확인하지 못했다.",
+      "evidence": [
+        "stored-connector-202509"
+      ]
+    }
+  ],
+  "annexPlacement": {
+    "interpretation": "녹색 지붕 부속부는 거리뷰의 회색 낮은 현관과 대응할 가능성이 높다. 현관을 교량 남벽 바로 아래에 붙이는 것보다 교량 남쪽으로 물러난 부속 현관으로 두는 배치가 사진과 맞는다.",
+    "limit": "부속 현관이 37동 탑 최남단보다 더 남쪽으로 나오는지, 탑 남단과 비슷한 선에서 끝나는지 확정하지 못했다. 서로 다른 높이의 지붕은 항공사진에서 투영 위치가 달라지므로 화면의 지붕 끝을 지상 경계로 사용하지 않는다."
+  },
+  "estimated": [
+    "현관 바닥과 낮은 주차 공간의 높이 차 0.72m",
+    "정면 계단 5단과 오른쪽 계단 4단",
+    "경사로 길이 8.7m와 폭 1.6m",
+    "부속부 평면과 지붕 높이, 창틀 및 유리문 구획",
+    "붉은 참과 현관의 같은 높이, 북쪽 광장 접속 경사",
+    "안내판과 카메라, 가로등의 위치 및 치수"
+  ],
+  "preserved": [
+    "원본 OSM과 DEM",
+    "교내 셔틀 정류장 15곳",
+    "PC 기본 속도 7.8, 모바일 최대 이동속도 10.4, 달리기 13"
+  ],
+  "limits": [
+    "항공사진 촬영일과 현관 공식 층명은 미확인이다.",
+    "가려진 뒤쪽 문과 경사로 종점, 전체 실내는 확인하지 못했다.",
+    "문을 부수고 들어가는 얕은 현관은 게임용 구현이다.",
+    "참고 사진은 게임 에셋으로 배포하지 않는다."
+  ],
+  "implementation": [
+    "src/engineering3736Site.ts",
+    "src/engineering3736Access.ts"
+  ],
+  "validation": {
+    "script": "scripts/verify-engineering3736.mjs",
+    "browser": "이번 보완은 실제 브라우저나 휴대폰에서 확인하지 않았다. 이전 자동 승인 검토가 브라우저 실행을 차단해 물리 검사와 오프라인 기하 렌더를 사용한다.",
+    "checks": 72,
+    "failed": 0,
+    "movementRoutes": 65,
+    "movementRuns": 260,
+    "speeds": [
+      7.8,
+      10.4
+    ],
+    "doors": true,
+    "geometry": {
+      "meshes": 5,
+      "textures": 3,
+      "triangles": 4768,
+      "colliders": 59
+    },
+    "terrain": {
+      "name": "terrain topology and collider height agree",
+      "status": "PASS",
+      "triangles": 201326,
+      "localTriangles": 4042,
+      "interiorOpenEdges": 0,
+      "invalidTriangles": 0,
+      "maxHeightDifference": 1.9952040020143613e-11,
+      "maxPhysicalDifference": 0.000003129426460191098,
+      "physicalSamples": 162,
+      "physicalTolerance": 0.005,
+      "scope": "최종 Float32 정점과 전체 인덱스의 내부 닫힘을 검사한다. 국소 삼각형 중심에서 실제 메시 평면과 높이 함수를 대조하고 약 160개 표본은 실제 Rapier 지형 충돌체와 직접 비교한다. Float32의 길고 좁은 삼각형에서 생기는 계산 오차를 고려해 물리 높이 허용치는 5mm로 정한다."
+    },
+    "controls": 31,
+    "runtimeCoordinates": 19,
+    "build": "passed",
+    "visual": "실제 장면의 오프라인 CPU 정사영 기하 렌더에서 현관, 계단, 경사로와 주변 건물의 배치를 확인했다. WebGL 재질, 실제 브라우저나 휴대폰 검사는 아니다. 마지막 지형 이음선 수정은 수치 검사로 확인했다."
+  }
+}

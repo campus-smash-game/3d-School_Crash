@@ -47,7 +47,7 @@ PC에서 마우스 잠금이 허용되지 않으면 마우스를 누른 채 드�
 - **주변 시설:** 정류장 표지와 쉼터, 신호등, 가로등, 볼라드, 보도블록과 점자블록. 건물별 현관, 차양, 계단, 경사로, 난간과 간판도 보완하고 있습니다.
 - **모바일 대응:** 터치 이동과 시점 조절, 점프와 발사 버튼, 화면 크기 대응, 화질 설정과 파편 수 제한.
 
-건물마다 구현 수준이 다릅니다. 중앙도서관과 관정관, 행정관, 미술관, 학생회관, 공대, 인문대, 사범대, 약대, 자연대와 생활관 등은 개별 자료를 대조해 외관이나 주변 통로를 보완했습니다. 최근에는 35동 서쪽의 높은 실험실 문과 세로 유리창, 콘크리트 상부, 2층 테라스와 난간을 보완했습니다. 북쪽 계단으로 테라스에 올라 기존 유리 현관 앞까지 이동할 수 있고, 연결교 아래 도로와 실험실 앞 접근로도 이어집니다. 공식 사진을 다시 대조해 테라스 위 창줄 수를 바로잡았습니다. 37동과 36동 연결교 아래 현관, 35동 북쪽과 동쪽의 세부 시설은 추가 보완 대상입니다.
+건물마다 구현 수준이 다릅니다. 중앙도서관과 관정관, 행정관, 미술관, 학생회관, 공대, 인문대, 사범대, 약대, 자연대와 생활관 등은 개별 자료를 대조해 외관이나 주변 통로를 보완했습니다. 최근에는 36동과 37동 사이의 낮은 현관을 보완했습니다. 비스듬한 유리 정면과 ENGINEERING 방향 표지, 녹색 지붕, 정면 계단, 오른쪽 경사로와 별도 계단을 추가했습니다. 남쪽 도로에서 현관과 연결교 아래를 지나 북쪽 광장으로 이동할 수 있습니다. 유리문을 부수면 얕은 현관 안쪽에도 들어갈 수 있습니다. 뒤쪽 문과 실내 연결, 경사로 종점의 실제 형태, 35동 북쪽과 동쪽의 세부 시설은 추가 확인 대상입니다.
 
 ## 실제 캠퍼스와 다른 부분
 
@@ -123,7 +123,7 @@ node scripts/verify-runtime-coordinates.mjs
 npm test
 ```
 
-공개 저장소는 현재 소스를 첫 커밋으로 공개했으므로 일부 검사가 참조하는 과거 커밋을 포함하지 않습니다. 새로 복제한 환경에서 `npm test`를 실행하면 해당 이력 비교 검사에서 실패할 수 있습니다. 위의 기본 검사와 `node scripts/verify-engineering3033.mjs`, `node scripts/verify-engineering33.mjs`, `node scripts/verify-engineering3337.mjs`, `node scripts/verify-engineering37.mjs`, `node scripts/verify-engineering36.mjs`, `node scripts/verify-engineering3436.mjs`, `node scripts/verify-engineering3334.mjs`, `node scripts/verify-engineering35-access.mjs`는 과거 커밋 없이 실행할 수 있습니다.
+공개 저장소는 현재 소스를 첫 커밋으로 공개했으므로 일부 검사가 참조하는 과거 커밋을 포함하지 않습니다. 새로 복제한 환경에서 `npm test`를 실행하면 해당 이력 비교 검사에서 실패할 수 있습니다. 위의 기본 검사와 `node scripts/verify-engineering3033.mjs`, `node scripts/verify-engineering33.mjs`, `node scripts/verify-engineering3337.mjs`, `node scripts/verify-engineering37.mjs`, `node scripts/verify-engineering36.mjs`, `node scripts/verify-engineering3436.mjs`, `node scripts/verify-engineering3334.mjs`, `node scripts/verify-engineering35-access.mjs`, `node scripts/verify-engineering3736.mjs`는 과거 커밋 없이 실행할 수 있습니다.
 
 전체 검사에는 실제 캠퍼스 장면을 생성하는 무거운 검사가 여러 개 들어 있어 시간이 오래 걸릴 수 있습니다. 물리와 파괴, 차량 경로, 정류장 이동, 원거리 표시, 지형과 건물별 통로를 다룹니다. 검사 목록과 실행 순서는 [verify-all.mjs](scripts/verify-all.mjs)에서 확인할 수 있습니다.
 
