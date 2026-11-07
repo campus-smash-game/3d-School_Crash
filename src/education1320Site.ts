@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { education13Frames, type Education13Layout } from './education13Site';
 type XZ=[number,number];
 export const EDUCATION1320_ID='way/300587512';
@@ -19,14 +19,22 @@ export function getEducation1320Layout(heightAt:(x:number,z:number)=>number,e13:
 }
 export type Education1320Layout=ReturnType<typeof getEducation1320Layout>;
 export function education1320Opening(q:Education1320Layout){return{buildingId:EDUCATION20_ID,edgeIndex:7,a:q.door20.point(q.s20-1.4),b:q.door20.point(q.s20+1.4),bottom:q.floor-.2,top:q.floor+2.8};}
-export function cutEducation1320Terrain(positions:number[],indices:number[],q:Education1320Layout){
+export function* cutEducation1320TerrainSteps(positions:number[],indices:number[],q:Education1320Layout){
+  let startupWork=0;
  const half=q.width/2+.15,segments=q.profile.map(p=>[q.stair.point(p.s,-half),q.stair.point(p.s,half)]);
  for(const n of[-half,half])segments.push([q.stair.point(3.5,n),q.stair.point(q.stair.length,n)]);
  const doors=[{f:q.door13,s:q.s13,n0:-.6,n1:3.4},{f:q.door20,s:q.s20,n0:-3.4,n1:.6}];
- for(const d of doors){const p=[d.f.point(d.s-1.65,d.n0),d.f.point(d.s+1.65,d.n0),d.f.point(d.s+1.65,d.n1),d.f.point(d.s-1.65,d.n1)];segments.push(...p.map((a,i)=>[a,p[(i+1)%4]]));}
+ for(const d of doors){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';const p=[d.f.point(d.s-1.65,d.n0),d.f.point(d.s+1.65,d.n0),d.f.point(d.s+1.65,d.n1),d.f.point(d.s-1.65,d.n1)];segments.push(...p.map((a,i)=>[a,p[(i+1)%4]]));}
  const weight=(x:number,z:number)=>{const p=q.stair.local([x,z]);return Math.max(0,Math.min(1,(p.s-3.5)/.8,(q.stair.length+.6-p.s)/.6,(half+.8-Math.abs(p.n))/.8));};
  const doorWeight=(x:number,z:number,d:typeof doors[number])=>{const p=d.f.local([x,z]),dist=Math.hypot(Math.max(0,Math.abs(p.s-d.s)-1.65),Math.max(0,d.n0-p.n,p.n-d.n1));return Math.max(0,1-dist/.6);};
  const affects=(x:number,z:number)=>weight(x,z)>0||doors.some(d=>doorWeight(x,z,d)>0);
- const patch=cutTerrainPatch(positions,indices,0,{bounds:EDUCATION1320_BOUNDS,lines:{s:[],n:[]},local:(x,z)=>({s:x,n:z}),boundarySegments:segments,apply:(x,z,y)=>{let result=Math.min(y,y+(q.ground(q.stair.local([x,z]).s)-.22-y)*weight(x,z));for(const d of doors)result=Math.min(result,y+(q.floor-.22-y)*doorWeight(x,z,d));return result;}});
+ const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:EDUCATION1320_BOUNDS,lines:{s:[],n:[]},local:(x,z)=>({s:x,n:z}),boundarySegments:segments,apply:(x,z,y)=>{let result=Math.min(y,y+(q.ground(q.stair.local([x,z]).s)-.22-y)*weight(x,z));for(const d of doors)result=Math.min(result,y+(q.floor-.22-y)*doorWeight(x,z,d));return result;}}));
  return{...patch,affects};
+}
+
+export function cutEducation1320Terrain(...args:Parameters<typeof cutEducation1320TerrainSteps>){
+  const steps=cutEducation1320TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

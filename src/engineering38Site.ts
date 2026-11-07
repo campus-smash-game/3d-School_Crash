@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight } from './physics561Site';
 import type { Engineering30Surface } from './engineering30Site';
 
@@ -64,11 +64,17 @@ export function getEngineering38Layout(heightAt:(x:number,z:number)=>number,foot
 }
 export type Engineering38Layout=ReturnType<typeof getEngineering38Layout>;
 
-export function cutEngineering38Terrain(positions:number[],indices:number[],q:Engineering38Layout){
+export function* cutEngineering38TerrainSteps(positions:number[],indices:number[],q:Engineering38Layout){
   const sample=(x:number,z:number,lowest=false)=>{const p=q.axis.local([x,z]);let h:number|undefined;for(const a of q.surfaces)if(p.s>=a.s0-.001&&p.s<=a.s1+.001&&p.n>=a.n0-.001&&p.n<=a.n1+.001){const y=physics561SurfaceHeight(a,p.s,p.n);h=lowest&&h!==undefined?Math.min(h,y):y;}return h;};
   const edges=new Map<string,{points:number[][];heights:number[]}>();
   q.polygons.forEach((polygon,index)=>polygon.forEach((a,i)=>{const b=polygon[(i+1)%polygon.length],key=[a,b].map(v=>v.map(n=>n.toFixed(5)).join(',')).sort().join('/'),p=q.axis.local([(a[0]+b[0])/2,(a[1]+b[1])/2]),height=physics561SurfaceHeight(q.surfaces[index],p.s,p.n),edge=edges.get(key);if(edge)edge.heights.push(height);else edges.set(key,{points:[a,b],heights:[height]});}));
   const boundarySegments=[...edges.values()].filter(e=>e.heights.length===1||Math.max(...e.heights)-Math.min(...e.heights)>.001).map(e=>e.points);
-  const patch=cutTerrainPatch(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments,apply:(x,z,y)=>{const h=sample(x,z,true);return h===undefined?y:h-.42;}});
+  const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments,apply:(x,z,y)=>{const h=sample(x,z,true);return h===undefined?y:h-.42;}}));
   return{...patch,surfaceAt:(x:number,z:number)=>sample(x,z),affects:(x:number,z:number)=>sample(x,z)!==undefined};
+}
+
+export function cutEngineering38Terrain(...args:Parameters<typeof cutEngineering38TerrainSteps>){
+  const steps=cutEngineering38TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

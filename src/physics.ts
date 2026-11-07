@@ -7,7 +7,7 @@ export type Debris = {body:RAPIER.RigidBody; size:THREE.Vector3; color:THREE.Col
 const WORLD = 0x00010007, PLAYER = 0x00040001, DEBRIS = 0x00020001;
 const LOAD_RADIUS=75, UNLOAD_RADIUS=110, FOCUS_STEP=25, CELL_SIZE=100;
 type VehicleState={id:number;position:{x:number;y:number;z:number};rotation:{x:number;y:number;z:number;w:number};width:number;height:number;length:number};
-type LogicalTarget={position:THREE.Vector3;rotation:THREE.Quaternion;queryMesh:THREE.Mesh};
+type LogicalTarget={position:THREE.Vector3;rotation:THREE.Quaternion;matrix:THREE.Matrix4;geometry:THREE.BufferGeometry;queryMesh?:THREE.Mesh};
 
 export class Simulation {
   world: RAPIER.World;
@@ -39,26 +39,8 @@ export class Simulation {
       if(s.quaternion)d.setRotation(s.quaternion);
       this.world.createCollider(d);
     }
-    const queryGeometries=new Map<THREE.BufferGeometry,THREE.BufferGeometry>();
-    this.targets=specs.map(s=>{
-      const source=Array.isArray(s.mesh.material)?s.mesh.material[0]:s.mesh.material;
-      const color=(source as THREE.MeshStandardMaterial).color?.clone()??new THREE.Color('#a9b1b7');
-      s.mesh.material=source.clone();
-      // 렌더 월드가 반사되기 전에 논리 변환을 캡처한다. 비로드 질의에는 렌더 부모를 쓰지 않는다.
-      s.mesh.updateWorldMatrix(true,false);
-      let geometry=queryGeometries.get(s.mesh.geometry);
-      if(!geometry){geometry=s.mesh.geometry.clone();queryGeometries.set(s.mesh.geometry,geometry);}
-      const queryMesh=new THREE.Mesh(geometry,s.mesh.material);
-      queryMesh.matrixAutoUpdate=false;queryMesh.matrix.copy(s.mesh.matrixWorld);queryMesh.updateMatrixWorld(true);
-      const position=new THREE.Vector3(),rotation=new THREE.Quaternion();
-      s.mesh.matrixWorld.decompose(position,rotation,new THREE.Vector3());
-      const target:Target={...s,size:s.size.clone(),collisionVertices:s.collisionVertices?.slice(),body:null,hp:s.toughness,originalColor:color,flash:0,box:new THREE.Box3().setFromObject(queryMesh)};
-      this.logicalTargets.set(target,{position,rotation,queryMesh});this.queryOwners.set(queryMesh,target);
-      return target;
-    });
-    for(const t of this.targets)for(let x=Math.floor(t.box.min.x/CELL_SIZE);x<=Math.floor(t.box.max.x/CELL_SIZE);x++)for(let z=Math.floor(t.box.min.z/CELL_SIZE);z<=Math.floor(t.box.max.z/CELL_SIZE);z++){
-      const key=`${x},${z}`,list=this.cells.get(key)??[];list.push(t);this.cells.set(key,list);
-    }
+    this.targets=[];
+    for(const _ of this.prepareTargets(specs)){ /* 동기 생성도 같은 과정을 따른다. */ }
     this.player=this.world.createRigidBody(RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(spawn.x,spawn.y-.82,spawn.z));
     this.playerCollider=this.world.createCollider(RAPIER.ColliderDesc.capsule(.5,.35).setCollisionGroups(PLAYER),this.player);
     this.controller=this.world.createCharacterController(.02);
@@ -68,6 +50,29 @@ export class Simulation {
     this.controller.setMaxSlopeClimbAngle(Math.PI/4);
     this.reset();
   }
+  *prepareTargets(specs:BreakableSpec[]){
+    const queryGeometries=new Map<THREE.BufferGeometry,THREE.BufferGeometry>();
+    if(this.targets.length)throw new Error('Targets are already initialized');
+    for(const s of specs){
+      if(this.targets.length%128===0)yield '충돌과 파괴 기능 준비 중';
+      const source=Array.isArray(s.mesh.material)?s.mesh.material[0]:s.mesh.material;
+      const color=(source as THREE.MeshStandardMaterial).color?.clone()??new THREE.Color('#a9b1b7');
+      s.mesh.material=source.clone();
+      // 렌더 월드가 반사되기 전에 논리 변환을 캡처한다. 비로드 질의에는 렌더 부모를 쓰지 않는다.
+      s.mesh.updateWorldMatrix(true,false);
+      let geometry=queryGeometries.get(s.mesh.geometry);
+      if(!geometry){geometry=s.mesh.geometry.clone();queryGeometries.set(s.mesh.geometry,geometry);}
+      if(!geometry.boundingBox)geometry.computeBoundingBox();
+      const position=new THREE.Vector3(),rotation=new THREE.Quaternion();
+      s.mesh.matrixWorld.decompose(position,rotation,new THREE.Vector3());
+      const target:Target={...s,size:s.size.clone(),collisionVertices:s.collisionVertices?.slice(),body:null,hp:s.toughness,originalColor:color,flash:0,box:geometry.boundingBox!.clone().applyMatrix4(s.mesh.matrixWorld)};
+      this.logicalTargets.set(target,{position,rotation,geometry,matrix:s.mesh.matrixWorld.clone()});
+      this.targets.push(target);
+    }
+    for(const t of this.targets)for(let x=Math.floor(t.box.min.x/CELL_SIZE);x<=Math.floor(t.box.max.x/CELL_SIZE);x++)for(let z=Math.floor(t.box.min.z/CELL_SIZE);z<=Math.floor(t.box.max.z/CELL_SIZE);z++){
+      const key=`${x},${z}`,list=this.cells.get(key)??[];list.push(t);this.cells.set(key,list);
+    }
+  }
   private addTarget(t:Target){
     const logical=this.logicalTargets.get(t)!;
     const shape=t.collisionVertices?RAPIER.ColliderDesc.convexHull(t.collisionVertices):RAPIER.ColliderDesc.cuboid(t.size.x/2,t.size.y/2,t.size.z/2);
@@ -75,6 +80,15 @@ export class Simulation {
     t.body=this.world.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(logical.position.x,logical.position.y,logical.position.z).setRotation(logical.rotation));
     this.world.createCollider(shape.setCollisionGroups(WORLD),t.body);
     this.loaded.add(t);
+  }
+  private queryMesh(t:Target){
+    const logical=this.logicalTargets.get(t)!;
+    if(!logical.queryMesh){
+      const mesh=new THREE.Mesh(logical.geometry,t.mesh.material);
+      mesh.matrixAutoUpdate=false;mesh.matrix.copy(logical.matrix);mesh.updateMatrixWorld(true);
+      logical.queryMesh=mesh;this.queryOwners.set(mesh,t);
+    }
+    return logical.queryMesh;
   }
   private candidates(minX:number,maxX:number,minZ:number,maxZ:number){
     const seen=new Set<Target>(),targets:Target[]=[];
@@ -110,7 +124,7 @@ export class Simulation {
   }
   castUnloadedTargets(origin:THREE.Vector3,direction:THREE.Vector3,distance:number){
     const ray=new THREE.Raycaster(origin,direction,0,distance),end=origin.clone().addScaledVector(direction,distance),intersection=new THREE.Vector3();
-    const candidates=this.candidates(Math.min(origin.x,end.x),Math.max(origin.x,end.x),Math.min(origin.z,end.z),Math.max(origin.z,end.z)).filter(t=>!t.body&&(t.box.containsPoint(origin)||ray.ray.intersectBox(t.box,intersection)!==null&&intersection.distanceToSquared(origin)<=distance*distance)).map(t=>this.logicalTargets.get(t)!.queryMesh);
+    const candidates=this.candidates(Math.min(origin.x,end.x),Math.max(origin.x,end.x),Math.min(origin.z,end.z),Math.max(origin.z,end.z)).filter(t=>!t.body&&(t.box.containsPoint(origin)||ray.ray.intersectBox(t.box,intersection)!==null&&intersection.distanceToSquared(origin)<=distance*distance)).map(t=>this.queryMesh(t));
     const hit=ray.intersectObjects(candidates,false)[0];
     if(!hit)return null;
     const target=this.queryOwners.get(hit.object)!;

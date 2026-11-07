@@ -1,6 +1,6 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
 import type { LibrarySoutheastLayout } from './librarySoutheastSite';
-import { cutTerrainPatch } from './terrainPatch';
 /** 도면 비례와 공식 VR의 통로 관계를 반영한다. 좌표와 표고는 실측값이 아니다. */
 export function getLibraryAmenitiesLayout(previous:LibrarySoutheastLayout,heightAt:(x:number,z:number)=>number){
  const courtFloor=previous.down[0].y1;
@@ -16,7 +16,7 @@ export function getLibraryAmenitiesLayout(previous:LibrarySoutheastLayout,height
  return{access,courtFloor,east,roof:{minX:-47.5,maxX:55.5,front:-30.5,back:-21.5,floor:access.terraceFloor},court:{minX:-53.2,maxX:55,front:-21.5,back:-10},bridge:{minX:-12,maxX:-8,front:-21.5,back:-9.5},dimensionsEstimated:true,surveyed:false};
 }
 export type LibraryAmenitiesLayout=ReturnType<typeof getLibraryAmenitiesLayout>;
-export function cutLibraryAmenitiesTerrain(positions:number[],indices:number[],q:LibraryAmenitiesLayout){
+export function* cutLibraryAmenitiesTerrainSteps(positions:number[],indices:number[],q:LibraryAmenitiesLayout){
  const f=q.access.f;
  const zones=[{f,s0:q.court.minX,s1:q.court.maxX,n0:-24.5,n1:-8.7,y:(_s:number)=>q.courtFloor-.26},
   {f:q.east.frame,s0:0,s1:q.east.frame.length,n0:-2.55,n1:2.55,y:(s:number)=>q.east.y0+(q.east.y1-q.east.y0)*Math.max(0,Math.min(1,s/q.east.frame.length))-.26},
@@ -26,6 +26,12 @@ export function cutLibraryAmenitiesTerrain(positions:number[],indices:number[],q
  for(const a of q.access.down)for(const p of a.profile)segments.push([a.frame.point(p.s,-a.width/2-.15),a.frame.point(p.s,a.width/2+.15)]);
  const points=segments.flatMap(p=>p),bounds={minX:Math.min(287,...points.map(p=>p[0]))-.1,maxX:Math.max(380,...points.map(p=>p[0]))+.1,minZ:Math.min(-894,...points.map(p=>p[1]))-.1,maxZ:Math.max(-835,...points.map(p=>p[1]))+.1};
  const weight=(x:number,z:number,a:typeof zones[number])=>{const p=a.f.local([x,z]);return Math.max(0,1-Math.hypot(Math.max(0,a.s0-p.s,p.s-a.s1),Math.max(0,a.n0-p.n,p.n-a.n1))/.6);};
- const patch=cutTerrainPatch(positions,indices,0,{bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{let out=y;for(const a of zones){const w=weight(x,z,a);if(w<=0)continue;const p=a.f.local([x,z]);out=out+(a.y(p.s)-out)*w;}return out;}});
+ const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{let out=y;for(const a of zones){const w=weight(x,z,a);if(w<=0)continue;const p=a.f.local([x,z]);out=out+(a.y(p.s)-out)*w;}return out;}}));
  return{...patch,affects:(x:number,z:number)=>zones.some(a=>weight(x,z,a)>0)};
+}
+
+export function cutLibraryAmenitiesTerrain(...args:Parameters<typeof cutLibraryAmenitiesTerrainSteps>){
+  const steps=cutLibraryAmenitiesTerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

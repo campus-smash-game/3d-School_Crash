@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight, type Physics561Surface } from './physics561Site';
 
 export const SCIENCE28_ID = 'way/167608115';
@@ -72,16 +72,22 @@ export function getScience28Layout(heightAt: (x: number, z: number) => number) {
 }
 export type Science28Layout = ReturnType<typeof getScience28Layout>;
 
-export function cutScience28Terrain(positions: number[], indices: number[], q: Science28Layout) {
+export function* cutScience28TerrainSteps(positions: number[], indices: number[], q: Science28Layout) {
   const areas = q.surfaces.filter(a => !a.elevated);
   const building = { name: 'building-basement', s0: 0, s1: q.width, n0: 0, n1: q.depth, y0: q.basement, y1: q.basement, axis: 's' as const, frame: q.f };
   const all = [...areas, building];
   const weight = (s: number, n: number, a: Physics561Surface) => Math.max(0, 1 - Math.hypot(Math.max(0, a.s0 - s, s - a.s1), Math.max(0, a.n0 - n, n - a.n1)) / .15);
   const segments = all.flatMap(a => { const e = a.frame, p = [e.point(a.s0, a.n0), e.point(a.s1, a.n0), e.point(a.s1, a.n1), e.point(a.s0, a.n1)]; return p.map((b, i) => [b, p[(i + 1) % 4]]); });
-  const patch = cutTerrainPatch(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
+  const patch = (yield* cutTerrainPatchSteps(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
     let result = y;
     for (const a of all) { const p = a.frame.local([x, z]); result = Math.min(result, y + (physics561SurfaceHeight(a, p.s, p.n) - .25 - y) * weight(p.s, p.n, a)); }
     return result;
-  } });
+  } }));
   return { ...patch, affects: (x: number, z: number) => all.some(a => { const p = a.frame.local([x, z]); return weight(p.s, p.n, a) > 0; }) };
+}
+
+export function cutScience28Terrain(...args:Parameters<typeof cutScience28TerrainSteps>){
+  const steps=cutScience28TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

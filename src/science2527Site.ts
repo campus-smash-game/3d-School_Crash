@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight, type Physics561Surface } from './physics561Site';
 
 export const SCIENCE25_ID = 'way/161957772', SCIENCE27_ID = 'way/161950628';
@@ -60,18 +60,24 @@ export function getScience2527Layout(heightAt: (x: number, z: number) => number)
   return { f, floor, floors25, floors27, roof25, roof27, bridge, bridgeFloor, doors, surfaces, routes, bounds };
 }
 export type Science2527Layout = ReturnType<typeof getScience2527Layout>;
-export function cutScience2527Terrain(positions: number[], indices: number[], q: Science2527Layout, buildings: { id: string; points: [number, number][] }[]) {
+export function* cutScience2527TerrainSteps(positions: number[], indices: number[], q: Science2527Layout, buildings: { id: string; points: [number, number][] }[]) {
   const rings = buildings.filter(b => [SCIENCE25_ID, SCIENCE27_ID].includes(b.id)).map(b => b.points);
   const inside = (x: number, z: number, points: [number, number][]) => { let hit = false; for (let i = 0, j = points.length - 1; i < points.length; j = i++) { const a = points[i], b = points[j]; if ((a[1] > z) !== (b[1] > z) && x < (b[0] - a[0]) * (z - a[1]) / (b[1] - a[1]) + a[0]) hit = !hit; } return hit; };
   const areas = q.surfaces.filter(a => !a.elevated);
   const segments = areas.flatMap(a => { const f = a.frame ?? q.f, p = [f.point(a.s0, a.n0), f.point(a.s1, a.n0), f.point(a.s1, a.n1), f.point(a.s0, a.n1)]; return p.map((v, i) => [v, p[(i + 1) % 4]]); });
   for (const ring of rings) for (let i = 1; i < ring.length; i++) segments.push([ring[i - 1], ring[i]]);
   const weight = (s: number, n: number, a: Physics561Surface) => Math.max(0, 1 - Math.hypot(Math.max(0, a.s0 - s, s - a.s1), Math.max(0, a.n0 - n, n - a.n1)) / .2);
-  const patch = cutTerrainPatch(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
+  const patch = (yield* cutTerrainPatchSteps(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
     let result = y;
     for (const a of areas) { const p = (a.frame ?? q.f).local([x, z]); result = Math.min(result, y + (physics561SurfaceHeight(a, p.s, p.n) - .25 - y) * weight(p.s, p.n, a)); }
     if (rings.some(r => inside(x, z, r))) result = Math.min(result, q.floor - .25);
     return result;
-  } });
+  } }));
   return { ...patch, affects: (x: number, z: number) => areas.some(a => { const p = (a.frame ?? q.f).local([x, z]); return weight(p.s, p.n, a) > 0; }) || rings.some(r => inside(x, z, r)) };
+}
+
+export function cutScience2527Terrain(...args:Parameters<typeof cutScience2527TerrainSteps>){
+  const steps=cutScience2527TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

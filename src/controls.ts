@@ -145,6 +145,11 @@ export class Controls {
     window.addEventListener('orientationchange', () => this.clearInput());
   }
 
+  setLoading(message:string):void {
+    if(this.ready)return;
+    byId('loading-status').textContent=message;
+  }
+
   setReady(): void {
     this.ready = true;
     this.ui.dataset.state = 'landing';

@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight, type Physics561Surface } from './physics561Site';
 
 export const ENGINEERING30_DINING_ID = 'way/377154957';
@@ -53,7 +53,7 @@ export function getEngineering30DiningLayout(heightAt: (x: number, z: number) =>
 }
 export type Engineering30DiningLayout = ReturnType<typeof getEngineering30DiningLayout>;
 
-export function cutEngineering30DiningTerrain(positions: number[], indices: number[], q: Engineering30DiningLayout) {
+export function* cutEngineering30DiningTerrainSteps(positions: number[], indices: number[], q: Engineering30DiningLayout) {
   const inside = (x: number, z: number) => { let yes = false; for (let i = 0, j = q.outline.length - 1; i < q.outline.length; j = i++) { const a = q.outline[i], b = q.outline[j]; if ((a[1] > z) !== (b[1] > z) && x < (b[0] - a[0]) * (z - a[1]) / (b[1] - a[1]) + a[0]) yes = !yes; } return yes; };
   const weight = (s: number, n: number, a: Dining30Surface) => Math.max(0, 1 - Math.hypot(Math.max(0, a.s0 - s, s - a.s1), Math.max(0, a.n0 - n, n - a.n1)) / .08);
   const segments = [...q.outline.map((p, i) => [p, q.outline[(i + 1) % q.outline.length]]), ...q.surfaces.flatMap(a => { const p = [a.frame.point(a.s0, a.n0), a.frame.point(a.s1, a.n0), a.frame.point(a.s1, a.n1), a.frame.point(a.s0, a.n1)]; return p.map((b, i) => [b, p[(i + 1) % 4]]); })];
@@ -65,11 +65,17 @@ export function cutEngineering30DiningTerrain(positions: number[], indices: numb
     return u>=-1e-6&&v>=-1e-6&&u+v<=1.000001?u*a[1]+v*b[1]+(1-u-v)*c[1]:undefined;
   };
   for(const p of joinTriangles)for(let i=0;i<3;i++)segments.push([[p[i][0],p[i][2]],[p[(i+1)%3][0],p[(i+1)%3][2]]]);
-  const patch = cutTerrainPatch(positions, indices, 0, { bounds: q.bounds, local: (x, z) => ({ s: x, n: z }), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
+  const patch = (yield* cutTerrainPatchSteps(positions, indices, 0, { bounds: q.bounds, local: (x, z) => ({ s: x, n: z }), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
     let result = inside(x, z) ? Math.min(y, q.floor - .25) : y;
     for(const p of joinTriangles){const h=joinHeight(p,x,z);if(h!==undefined)result=Math.min(result,h-.25);}
     for (const a of q.surfaces) { const p = a.frame.local([x, z]); result = Math.min(result, y + (physics561SurfaceHeight(a, p.s, p.n) - .25 - y) * weight(p.s, p.n, a)); }
     return result;
-  } });
+  } }));
   return { ...patch, affects: (x: number, z: number) => inside(x, z) || joinTriangles.some(p=>joinHeight(p,x,z)!==undefined) || q.surfaces.some(a => { const p = a.frame.local([x, z]); return weight(p.s, p.n, a) > 0; }) };
+}
+
+export function cutEngineering30DiningTerrain(...args:Parameters<typeof cutEngineering30DiningTerrainSteps>){
+  const steps=cutEngineering30DiningTerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

@@ -1,8 +1,9 @@
 import * as THREE from 'three';
 import RAPIER from '@dimforge/rapier3d-compat';
 import {createCampus} from './scene';
-import {createFullCampus, type CampusData} from './fullCampus';
-import {createTerrain, type TerrainData} from './terrain';
+import {createFullCampusSteps, type CampusData} from './fullCampus';
+import {createTerrainSteps, type TerrainData} from './terrain';
+import {runStartupSteps,yieldToBrowser} from './startup';
 import {Controls} from './controls';
 import {Simulation} from './physics';
 import {Traffic} from './traffic';
@@ -26,6 +27,10 @@ async function load<T>(path:string):Promise<T>{
   const response=await fetch(path);if(!response.ok)throw new Error(`${path}: ${response.status}`);return response.json();
 }
 async function boot(){
+  const progress=(message:string)=>controls.setLoading(message);
+  const stage=async<T>(message:string,build:()=>T)=>{progress(message);await yieldToBrowser();return build();};
+  progress('캠퍼스 자료 불러오는 중');
+  await yieldToBrowser();
   const renderer=new THREE.WebGLRenderer({canvas,antialias:!mobile,powerPreference:'high-performance'});
   renderer.setPixelRatio(Math.min(devicePixelRatio,mobile?1.25:1.6));renderer.setSize(innerWidth,innerHeight);
   renderer.shadowMap.enabled=!mobile;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
@@ -38,23 +43,26 @@ async function boot(){
   const camera=new THREE.PerspectiveCamera(innerWidth<innerHeight?78:65,innerWidth/innerHeight,.08,7500);camera.rotation.order='YXZ';scene.add(camera);
   const [data,terrainData,transitPlan,shuttleStops,facilitiesPlan]=await Promise.all([load<CampusData>('data/campus.json'),load<TerrainData>('data/terrain.json'),load<TransitPlan>('data/campus-transit.json'),load<{stops:ShuttleStart[]}>('data/shuttle-stops.json'),load<TransitFacilitiesPlan>('data/transit-facilities.json'),RAPIER.init()]);
   data.roads=[...data.roads,...(transitPlan?.supplementalRoads??[])];
-  const terrain=createTerrain(world,terrainData,data.buildings),gate=createCampus(world,{full:true});
-  const campus=createFullCampus(world,data,terrain.heightAt);
-  const transitFacilities=createTransitFacilities(world,facilitiesPlan,terrain.heightAt);
-  const centralPlaza=createCentralPlazaFacilities(world,terrain.heightAt);
-  const administrationPlaza=createAdministrationPlazaFacilities(world,data,terrain.heightAt);
-  const informationCourt=createInformationCourtApproach(world,terrain.heightAt);
-  const administrationGround=createAdministrationPlazaGround(world,terrain.heightAt);
-  const gyujanggakApproach=createGyujanggakApproach(world,terrain.heightAt);
+  const terrain=await runStartupSteps(createTerrainSteps(world,terrainData,data.buildings),progress);
+  const gate=await stage('정문 준비 중',()=>createCampus(world,{full:true}));
+  const campus=await runStartupSteps(createFullCampusSteps(world,data,terrain.heightAt),progress);
+  const transitFacilities=await stage('버스 정류장 준비 중',()=>createTransitFacilities(world,facilitiesPlan,terrain.heightAt));
+  const centralPlaza=await stage('중앙광장 준비 중',()=>createCentralPlazaFacilities(world,terrain.heightAt));
+  const administrationPlaza=await stage('행정관 주변 준비 중',()=>createAdministrationPlazaFacilities(world,data,terrain.heightAt));
+  const informationCourt=await stage('보행로 준비 중',()=>createInformationCourtApproach(world,terrain.heightAt));
+  const administrationGround=await stage('광장 보도 준비 중',()=>createAdministrationPlazaGround(world,terrain.heightAt));
+  const gyujanggakApproach=await stage('규장각 주변 준비 중',()=>createGyujanggakApproach(world,terrain.heightAt));
   const updateFacilities=(player:THREE.Vector3)=>{transitFacilities.update(player);centralPlaza.update(player);administrationPlaza.update(player);informationCourt.update(player);administrationGround.update(player);gyujanggakApproach.update(player);};
   const bounds={minX:data.bounds.minX-100,maxX:data.bounds.maxX+100,minZ:data.bounds.minZ-100,maxZ:data.bounds.maxZ+100};
   const firstStop=shuttleStops.stops[0];
   if(!firstStop)throw new Error('No campus shuttle starting stops');
   let selectedStart=firstStop;
   const startPoint=new THREE.Vector3(firstStop.x,terrain.heightAt(firstStop.x,firstStop.z)+1.8,firstStop.z);
-  const sim=new Simulation([...gate.breakables,...campus.breakables,...transitFacilities.breakables,...centralPlaza.breakables,...administrationPlaza.breakables,...informationCourt.breakables,...administrationGround.breakables,...gyujanggakApproach.breakables],[...gate.colliders,...campus.colliders],startPoint,bounds,terrain);
+  const sim=await stage('충돌과 파괴 기능 준비 중',()=>new Simulation([],[...gate.colliders,...campus.colliders],startPoint,bounds,terrain));
+  await runStartupSteps(sim.prepareTargets([...gate.breakables,...campus.breakables,...transitFacilities.breakables,...centralPlaza.breakables,...administrationPlaza.breakables,...informationCourt.breakables,...administrationGround.breakables,...gyujanggakApproach.breakables]),progress);
+  sim.reset();
   sim.maxDebris=mobile?64:120;
-  const traffic=new Traffic(world,data.roads,terrain.heightAt,transitPlan),cannon=new Cannon(world,camera,sim,traffic,'render');
+  const traffic=await stage('버스와 자동차 준비 중',()=>new Traffic(world,data.roads,terrain.heightAt,transitPlan)),cannon=new Cannon(world,camera,sim,traffic,'render');
   const minimap=new Minimap(document.querySelector<HTMLCanvasElement>('#minimap')!,data);
   const locationLabels=[...shuttleStops.stops,{id:'gate',name:'정문 광장',x:gate.spawn.x,z:gate.spawn.z},...campus.locations.filter(l=>l.id!=='gate')];
   controls.setShuttleStops(shuttleStops.stops);
@@ -91,7 +99,6 @@ async function boot(){
   addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.fov=innerWidth<innerHeight?78:65;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);pendingJump=false;});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)controls.pause();prev=performance.now();accumulator=0;pendingJump=false;});
   canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();controls.pause();controls.setError('그래픽 연결이 끊겼어요. 새로고침해 주세요.');});
-  controls.setReady();
   function drawMap(){
     camera.getWorldDirection(direction);renderToDataDirection(direction,direction);
     minimap.update(dataEye.x,dataEye.z,Math.atan2(direction.x,direction.z),traffic);let nearest=locationLabels[0],distance=Infinity;
@@ -131,6 +138,11 @@ async function boot(){
     mapTime+=dt;if(mapTime>.2){drawMap();mapTime=0;}
     controls.updateHud(sim.destroyed+vehicleScore,total,fps,targetLabel,cannon.charge);renderer.render(scene,camera);
   };
+  dataEye.copy(gate.spawn).add(new THREE.Vector3(0,.9,0));
+  dataToRenderPoint(dataEye,camera.position);camera.lookAt(dataToRenderPoint(new THREE.Vector3(0,5,0)));
+  campus.update(dataEye);updateFacilities(dataEye);
+  await stage('첫 화면 준비 중',()=>renderer.compileAsync(scene,camera));
+  controls.setReady();prev=performance.now();
   requestAnimationFrame(tick);
 }
 boot().catch(error=>{console.error(error);controls.setError('게임을 불러오지 못했어요. 연결 상태를 확인하고 최신 브라우저에서 새로고침해 주세요.');});

@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight } from './physics561Site';
 import { ENGINEERING33_ID, type Engineering3033Layout } from './engineering3033Site';
 import type { Engineering30Surface } from './engineering30Site';
@@ -57,10 +57,16 @@ export function getEngineering33Layout(heightAt:(x:number,z:number)=>number,foot
 }
 export type Engineering33Layout=ReturnType<typeof getEngineering33Layout>;
 
-export function cutEngineering33Terrain(positions:number[],indices:number[],q:Engineering33Layout){
+export function* cutEngineering33TerrainSteps(positions:number[],indices:number[],q:Engineering33Layout){
   const inside=(poly:XZ[],x:number,z:number)=>{let yes=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const a=poly[i],b=poly[j];if((a[1]>z)!==(b[1]>z)&&x<(b[0]-a[0])*(z-a[1])/(b[1]-a[1])+a[0])yes=!yes;}return yes;};
   const surfaceAt=(x:number,z:number)=>{let h:number|undefined;for(const a of q.surfaces){const p=a.frame.local([x,z]);if(p.s>=a.s0-.001&&p.s<=a.s1+.001&&p.n>=a.n0-.001&&p.n<=a.n1+.001)h=physics561SurfaceHeight(a,p.s,p.n);}return h;};
   const polys=[q.main,q.wing,...q.polygons];
-  const patch=cutTerrainPatch(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:polys.flatMap(p=>p.map((a,i)=>[a,p[(i+1)%p.length]])),apply:(x,z,y)=>{const h=surfaceAt(x,z);if(h!==undefined)return h-.24;if(inside(q.main,x,z))return Math.min(y,q.floor-.24);return y;}});
+  const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:polys.flatMap(p=>p.map((a,i)=>[a,p[(i+1)%p.length]])),apply:(x,z,y)=>{const h=surfaceAt(x,z);if(h!==undefined)return h-.24;if(inside(q.main,x,z))return Math.min(y,q.floor-.24);return y;}}));
   return {...patch,surfaceAt,affects:(x:number,z:number)=>surfaceAt(x,z)!==undefined||inside(q.main,x,z)};
+}
+
+export function cutEngineering33Terrain(...args:Parameters<typeof cutEngineering33TerrainSteps>){
+  const steps=cutEngineering33TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight } from './physics561Site';
 import type { Engineering30Surface } from './engineering30Site';
 import type { Engineering36Layout } from './engineering36Site';
@@ -70,7 +70,7 @@ export function getEngineering3736Layout(heightAt: (x: number, z: number) => num
 }
 export type Engineering3736Layout=ReturnType<typeof getEngineering3736Layout>;
 
-export function cutEngineering3736Terrain(positions:number[],indices:number[],q:Engineering3736Layout){
+export function* cutEngineering3736TerrainSteps(positions:number[],indices:number[],q:Engineering3736Layout){
   const sample=(x:number,z:number,lowest=false)=>{let h:number|undefined;for(const a of q.surfaces){const p=a.frame.local([x,z]);if(p.s>=a.s0-.001&&p.s<=a.s1+.001&&p.n>=a.n0-.001&&p.n<=a.n1+.001){const y=physics561SurfaceHeight(a,p.s,p.n);h=lowest&&h!==undefined?Math.min(h,y):y;}}return h;};
   // 같은 경사면의 내부 이음선은 다시 자르지 않아 짧은 중복 변을 줄인다.
   const edges=new Map<string,{points:number[][];heights:number[]}>();
@@ -80,6 +80,12 @@ export function cutEngineering3736Terrain(positions:number[],indices:number[],q:
     if(edge)edge.heights.push(height);else edges.set(key,{points:[a,b],heights:[height]});
   }));
   const boundarySegments=[...edges.values()].filter(e=>e.heights.length===1||Math.max(...e.heights)-Math.min(...e.heights)>.001).map(e=>e.points);
-  const patch=cutTerrainPatch(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments,apply:(x,z,y)=>{const h=sample(x,z,true);return h===undefined?y:h-.24;}});
+  const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments,apply:(x,z,y)=>{const h=sample(x,z,true);return h===undefined?y:h-.24;}}));
   return {...patch,surfaceAt:(x:number,z:number)=>sample(x,z),affects:(x:number,z:number)=>sample(x,z)!==undefined};
+}
+
+export function cutEngineering3736Terrain(...args:Parameters<typeof cutEngineering3736TerrainSteps>){
+  const steps=cutEngineering3736TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

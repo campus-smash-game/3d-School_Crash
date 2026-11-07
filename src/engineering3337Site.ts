@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight } from './physics561Site';
 import type { Engineering30Surface } from './engineering30Site';
 import type { Engineering33Layout } from './engineering33Site';
@@ -59,7 +59,7 @@ export function getEngineering3337Layout(heightAt: (x: number, z: number) => num
 }
 export type Engineering3337Layout = ReturnType<typeof getEngineering3337Layout>;
 
-export function cutEngineering3337Terrain(positions: number[], indices: number[], q: Engineering3337Layout) {
+export function* cutEngineering3337TerrainSteps(positions: number[], indices: number[], q: Engineering3337Layout) {
   const sample = (x: number, z: number, lowest = false) => {
     let h: number | undefined;
     for (const a of q.surfaces) { const p = a.frame.local([x, z]); if (p.s >= a.s0 - .001 && p.s <= a.s1 + .001 && p.n >= a.n0 - .001 && p.n <= a.n1 + .001) { const y = physics561SurfaceHeight(a, p.s, p.n); h = lowest && h !== undefined ? Math.min(h, y) : y; } }
@@ -69,6 +69,12 @@ export function cutEngineering3337Terrain(positions: number[], indices: number[]
   // 같은 축의 모든 포장 경계에서 자른다. 높은 참과 낮은 덮개 앞 바닥이 만나는
   // 공유 정점은 낮은 면 아래에 두어 옹벽 앞에 지형이 솟지 않게 한다.
   const lines = { s: [...new Set(q.surfaces.flatMap(a => [a.s0, a.s1]))], n: [...new Set(q.surfaces.flatMap(a => [a.n0, a.n1]))] };
-  const patch = cutTerrainPatch(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.passage.local([x, z]), lines, boundarySegments: [], apply: (x, z, y) => { const h = sample(x, z, true); return h === undefined ? y : h - .24; } });
+  const patch = (yield* cutTerrainPatchSteps(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.passage.local([x, z]), lines, boundarySegments: [], apply: (x, z, y) => { const h = sample(x, z, true); return h === undefined ? y : h - .24; } }));
   return { ...patch, surfaceAt, affects: (x: number, z: number) => surfaceAt(x, z) !== undefined };
+}
+
+export function cutEngineering3337Terrain(...args:Parameters<typeof cutEngineering3337TerrainSteps>){
+  const steps=cutEngineering3337TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

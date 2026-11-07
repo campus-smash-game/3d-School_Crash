@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 
 export const PHYSICS561_ID = 'supplemental/snu-56-1';
 export const PHYSICS56_ID = 'way/167595745';
@@ -52,10 +52,16 @@ export function getPhysics561Layout(heightAt:(x:number,z:number)=>number) {
 }
 export type Physics561Layout=ReturnType<typeof getPhysics561Layout>;
 export function physics561SurfaceHeight(a:Physics561Surface,s:number,n:number){if(a.y2!==undefined){const u=Math.max(0,Math.min(1,(s-a.s0)/(a.s1-a.s0))),v=Math.max(0,Math.min(1,(n-a.n0)/(a.n1-a.n0)));return u>=v?a.y0+(a.y1-a.y0)*u+(a.y2-a.y1)*v:a.y0+(a.y2-a.y0)*u;}const t=a.axis==='s'?(s-a.s0)/(a.s1-a.s0):(n-a.n0)/(a.n1-a.n0);return a.y0+(a.y1-a.y0)*Math.max(0,Math.min(1,t));}
-export function cutPhysics561Terrain(positions:number[],indices:number[],q:Physics561Layout){
+export function* cutPhysics561TerrainSteps(positions:number[],indices:number[],q:Physics561Layout){
  const zones:Physics561Surface[]=[...q.surfaces,{name:'basement',s0:-13,s1:12.4,n0:3,n1:21.5,y0:q.floors[0],y1:q.floors[0],axis:'s'},{name:'buried-east',s0:12.4,s1:16.3,n0:3,n1:21.5,y0:q.floor,y1:q.floor,axis:'s'}];
  const weight=(s:number,n:number,a:Physics561Surface)=>Math.max(0,1-Math.hypot(Math.max(0,a.s0-s,s-a.s1),Math.max(0,a.n0-n,n-a.n1))/.3);
  const segments=zones.flatMap(a=>{const p=[q.f.point(a.s0,a.n0),q.f.point(a.s1,a.n0),q.f.point(a.s1,a.n1),q.f.point(a.s0,a.n1)];return p.map((b,i)=>[b,p[(i+1)%4]]);});
- const patch=cutTerrainPatch(positions,indices,0,{bounds:PHYSICS561_BOUNDS,local:(x,z)=>q.f.local([x,z]),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{const p=q.f.local([x,z]);let result=y;for(const a of zones)result=Math.min(result,y+(physics561SurfaceHeight(a,p.s,p.n)-.24-y)*weight(p.s,p.n,a));return result;}});
+ const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:PHYSICS561_BOUNDS,local:(x,z)=>q.f.local([x,z]),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{const p=q.f.local([x,z]);let result=y;for(const a of zones)result=Math.min(result,y+(physics561SurfaceHeight(a,p.s,p.n)-.24-y)*weight(p.s,p.n,a));return result;}}));
  return{...patch,affects:(x:number,z:number)=>{const p=q.f.local([x,z]);return zones.some(a=>weight(p.s,p.n,a)>0);}};
+}
+
+export function cutPhysics561Terrain(...args:Parameters<typeof cutPhysics561TerrainSteps>){
+  const steps=cutPhysics561TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

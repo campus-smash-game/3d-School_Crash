@@ -1,3 +1,38 @@
+import {cutEngineering38TerrainSteps} from './engineering38Site';
+import {cutEngineering39TerrainSteps} from './engineering39Site';
+import {cutEngineering3736TerrainSteps} from './engineering3736Site';
+import {cutEngineering35AccessTerrainSteps} from './engineering35AccessSite';
+import {cutEngineering3334TerrainSteps} from './engineering3334Site';
+import {cutEngineering3436TerrainSteps} from './engineering3436Site';
+import {cutEngineering36TerrainSteps} from './engineering36Site';
+import {cutEngineering37TerrainSteps} from './engineering37Site';
+import {cutEngineering3337TerrainSteps} from './engineering3337Site';
+import {cutEngineering33TerrainSteps} from './engineering33Site';
+import {cutEngineering3033TerrainSteps} from './engineering3033Site';
+import {cutEngineering30TerrainSteps} from './engineering30Site';
+import {cutEngineering30DiningTerrainSteps} from './engineering30DiningSite';
+import {cutScience28TerrainSteps} from './science28Site';
+import {cutScience251TerrainSteps} from './science251Site';
+import {cutScience24TerrainSteps} from './science24Site';
+import {cutScience2527TerrainSteps} from './science2527Site';
+import {cutScience26TerrainSteps} from './science26Site';
+import {cutScience23TerrainSteps} from './science23Site';
+import {cutScience2256TerrainSteps} from './science2256Site';
+import {cutPhysics561TerrainSteps} from './physics561Site';
+import {cutPharmacy143TerrainSteps} from './pharmacy143Site';
+import {cutPharmacy21TerrainSteps} from './pharmacy21Site';
+import {cutLibraryAmenitiesTerrainSteps} from './libraryAmenitiesSite';
+import {cutLibrarySoutheastTerrainSteps} from './librarySoutheastSite';
+import {cutPharmacy2021TerrainSteps} from './pharmacy2021Site';
+import {cutPharmacy20TerrainSteps} from './pharmacy20Site';
+import {cutEducation1320TerrainSteps} from './education1320Site';
+import {cutEducation13TerrainSteps} from './education13Site';
+import {cutEducationParkingTerrainSteps} from './educationParkingTerrain';
+import {cutDining76TerrainSteps} from './dining76Terrain';
+import {cutDining76EastTerrainSteps} from './dining76EastTerrain';
+import {cutEducation101EntryTerrainSteps} from './education101EntryTerrain';
+import {cutEducation12TerrainSteps} from './education12Terrain';
+import {cutHumanitiesGardenTerrainSteps} from './humanitiesGardenTerrain';
 import { getEngineering38Layout, cutEngineering38Terrain, ENGINEERING38_ID } from './engineering38Site';
 import { getEngineering39Layout, cutEngineering39Terrain, ENGINEERING39_ID } from './engineering39Site';
 import { getEngineering3736Layout, cutEngineering3736Terrain } from './engineering3736Site';
@@ -77,7 +112,7 @@ function ringCentre(ring:TerrainPoint[]){
   if(Math.abs(twiceArea)<1e-8)return {area:0,x:ring[0][0],z:ring[0][1]};
   return {area:Math.abs(twiceArea)/2,x:x/(3*twiceArea),z:z/(3*twiceArea)};
 }
-export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:BuildingPad[],options:{livingScienceCourtyard?:boolean;educationParking?:boolean;dining76?:boolean;dining76East?:boolean;education101?:boolean;education12?:boolean;education1112?:boolean;education13?:boolean;education1320?:boolean;pharmacy20?:boolean;pharmacy2021?:boolean;pharmacy21?:boolean;pharmacy143?:boolean;physics561?:boolean;science2256?:boolean;science2256Access?:boolean;science23?:boolean;science26?:boolean;science2527?:boolean;science24?:boolean;science251?:boolean;engineering38?:boolean;engineering39?:boolean;engineering3736?:boolean;engineering35Access?:boolean;engineering3334?:boolean;engineering3436?:boolean;engineering36?:boolean;engineering37?:boolean;engineering3337?:boolean;engineering33?:boolean;engineering3033?:boolean;engineering30?:boolean;engineering30Dining?:boolean;science28?:boolean;librarySoutheast?:boolean;libraryAmenities?:boolean;humanitiesGarden?:boolean}={}){
+export function* createTerrainSteps(scene:THREE.Scene,data:TerrainData,buildings:BuildingPad[],options:{livingScienceCourtyard?:boolean;educationParking?:boolean;dining76?:boolean;dining76East?:boolean;education101?:boolean;education12?:boolean;education1112?:boolean;education13?:boolean;education1320?:boolean;pharmacy20?:boolean;pharmacy2021?:boolean;pharmacy21?:boolean;pharmacy143?:boolean;physics561?:boolean;science2256?:boolean;science2256Access?:boolean;science23?:boolean;science26?:boolean;science2527?:boolean;science24?:boolean;science251?:boolean;engineering38?:boolean;engineering39?:boolean;engineering3736?:boolean;engineering35Access?:boolean;engineering3334?:boolean;engineering3436?:boolean;engineering36?:boolean;engineering37?:boolean;engineering3337?:boolean;engineering33?:boolean;engineering3033?:boolean;engineering30?:boolean;engineering30Dining?:boolean;science28?:boolean;librarySoutheast?:boolean;libraryAmenities?:boolean;humanitiesGarden?:boolean}={}){
   const humanitiesGardenActive=options.humanitiesGarden!==false&&buildings.some(b=>b.id==='way/167983080'&&b.points.some(p=>Math.hypot(p[0]-425.94,p[1]+687.77)<.1))&&buildings.some(b=>b.id==='way/167984624');
   const connection301=buildings.find(b=>b.id==='way/228476658'),connection303=buildings.find(b=>b.id==='supplemental/snu-303');
   const connectionActive=!!connection301&&!!connection303;
@@ -89,6 +124,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   const education101Active=options.education101!==false&&!!buildings.find(b=>b.id===EDUCATION101_ENTRY_SITE.buildingId)?.points.some(p=>Math.hypot(p[0]-EDUCATION101_ENTRY_SITE.activeFootprintAnchor[0],p[1]-EDUCATION101_ENTRY_SITE.activeFootprintAnchor[1])<.1);
   const education12Active=options.education12!==false&&!!buildings.find(b=>b.id===EDUCATION12_SITE.buildingId)?.points.some(p=>Math.hypot(p[0]-EDUCATION12_SITE.activeFootprintAnchor[0],p[1]-EDUCATION12_SITE.activeFootprintAnchor[1])<.1);
   const {bounds,width,height}=data,stepX=(bounds.maxX-bounds.minX)/(width-1),stepZ=(bounds.maxZ-bounds.minZ)/(height-1);
+  yield '지형과 경사로 준비 중';
   const heights=Float32Array.from(data.heights);
   const sampleGrid=(array:ArrayLike<number>,x:number,z:number)=>{
     const u=THREE.MathUtils.clamp((x-bounds.minX)/stepX,0,width-1.001),v=THREE.MathUtils.clamp((z-bounds.minZ)/stepZ,0,height-1.001);
@@ -96,12 +132,15 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     return (array[r*width+c]*(1-a)+array[r*width+c+1]*a)*(1-b)+(array[(r+1)*width+c]*(1-a)+array[(r+1)*width+c+1]*a)*b;
   };
   // 정문 광장은 먼저 조정한다. 건물 패드 뒤에 적용하면 미술관 바닥이 다시 기울어진다.
+  yield '지형과 경사로 준비 중';
   for(let r=0;r<height;r++)for(let c=0;c<width;c++){
+    yield '지형과 경사로 준비 중';
     const x=bounds.minX+c*stepX,z=bounds.minZ+r*stepZ;
     heights[r*width+c]*=THREE.MathUtils.smoothstep(Math.hypot(x/1.25,z),55,120);
   }
   const baseline=heights.slice();
   const padBuildings=buildings.filter(b=>b.terrainPad!==false&&!(connectionActive&&b.id==='way/228476658'));
+  yield '지형과 경사로 준비 중';
   const pads=padBuildings.filter(b=>b.points.length>=3).map(b=>{
     const xs=b.points.map(p=>p[0]),zs=b.points.map(p=>p[1]);
     const minX=Math.min(...xs),maxX=Math.max(...xs),minZ=Math.min(...zs),maxZ=Math.max(...zs);
@@ -118,10 +157,13 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     const plateauWidth=b.id==='way/386890466'?Math.max(stepX,stepZ):0;
     return {id:b.id,minX,maxX,minZ,maxZ,points:b.points,holes,y,blendWidth,plateauWidth,key:JSON.stringify([b.id??'',b.points,holes])};
   }).sort((a,b)=>a.key<b.key?-1:a.key>b.key?1:0);
+  yield '지형과 경사로 준비 중';
   for(let r=0;r<height;r++)for(let c=0;c<width;c++){
+    yield '지형과 경사로 준비 중';
     const x=bounds.minX+c*stepX,z=bounds.minZ+r*stepZ,i=r*width+c;
     let interiorSum=0,interiorCount=0,weightedSum=0,totalWeight=0,maxWeight=0;
     for(const p of pads){
+    yield '지형과 경사로 준비 중';
       const blendWidth=p.blendWidth+p.plateauWidth;
       if(x<p.minX-blendWidth||x>p.maxX+blendWidth||z<p.minZ-blendWidth||z>p.maxZ+blendWidth)continue;
       const within=insideRing(x,z,p.points)&&!p.holes.some(h=>insideRing(x,z,h));
@@ -137,6 +179,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   }
   // 가족동 주변만 근접 가중을 쓰며, 원시 DEM과 각 pad의 기준 높이는 유지한다.
   const familyIds=new Set(['way/439707895','way/439707894','way/439707893','way/439707892','way/409030550']);
+  yield '지형과 경사로 준비 중';
   const evaluatePad=(x:number,z:number)=>{
     let interiorSum=0,interiorCount=0,weightedSum=0,totalWeight=0,maxWeight=0;
     for(const p of pads){
@@ -157,56 +200,74 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   const stride = width - 1, refined = new Set<number>();
   const familyRefined = new Set<number>();
   const family = padBuildings.filter(b => b.id && familyIds.has(b.id));
+  yield '지형과 경사로 준비 중';
   const regions = family.map(b => {
     const xs = b.points.map(p => p[0]), zs = b.points.map(p => p[1]);
     return { id: b.id, minX: Math.min(...xs) - stepX, maxX: Math.max(...xs) + stepX, minZ: Math.min(...zs) - stepZ, maxZ: Math.max(...zs) + stepZ };
   });
   const validCell = (c:number, r:number) => c >= 0 && c < width - 1 && r >= 0 && r < height - 1;
   const isFine = (c:number, r:number) => validCell(c, r) && refined.has(r * stride + c);
+  yield '지형과 경사로 준비 중';
   for (const q of regions) {
+    yield '지형과 경사로 준비 중';
     const c0 = Math.max(0, Math.floor((q.minX - bounds.minX) / stepX)), c1 = Math.min(width - 2, Math.floor((q.maxX - bounds.minX) / stepX));
     const r0 = Math.max(0, Math.floor((q.minZ - bounds.minZ) / stepZ)), r1 = Math.min(height - 2, Math.floor((q.maxZ - bounds.minZ) / stepZ));
-    for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {refined.add(r * stride + c);familyRefined.add(r * stride + c);}
+    for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {
+    yield '지형과 경사로 준비 중';refined.add(r * stride + c);familyRefined.add(r * stride + c);}
   }
   // 보조 건물의 절개는 기존 패드 계산 뒤에 적용한다. 원시 DEM과 보호 도로 높이는 유지한다.
+  yield '지형과 경사로 준비 중';
   const cuts=buildings.filter(b=>b.terrainCut).map(b=>{
     const cut=b.terrainCut!,xs=b.points.map(p=>p[0]),zs=b.points.map(p=>p[1]),margin=cut.apron+cut.blend;
     if(!Number.isFinite(cut.level)||cut.apron<0||cut.blend<=0)throw Error('Invalid terrain cut');
     return {...cut,points:b.points,holes:b.holes??[],minX:Math.min(...xs)-margin,maxX:Math.max(...xs)+margin,minZ:Math.min(...zs)-margin,maxZ:Math.max(...zs)+margin};
   });
+  yield '지형과 경사로 준비 중';
   for(const q of cuts){
+    yield '지형과 경사로 준비 중';
     const c0=Math.max(0,Math.floor((q.minX-bounds.minX)/stepX)-1),c1=Math.min(width-2,Math.floor((q.maxX-bounds.minX)/stepX)+1);
     const r0=Math.max(0,Math.floor((q.minZ-bounds.minZ)/stepZ)-1),r1=Math.min(height-2,Math.floor((q.maxZ-bounds.minZ)/stepZ)+1);
     for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)refined.add(r*stride+c);
   }
   // 실제 로드뷰에서 확인한 연결 구역만 세분한다. 기존 도로 중심선의 종단은 그대로 표본화한다.
   const connectionRefined=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(connectionActive){
     const xs=connection301!.points.map(p=>p[0]),zs=connection301!.points.map(p=>p[1]);
     const q={minX:Math.min(292,...xs)-5,maxX:Math.max(...xs)+5,minZ:ENGINEERING_CONNECTION_SITE.southLimit-5,maxZ:ENGINEERING_CONNECTION_SITE.northLimit+5};
     const c0=Math.max(0,Math.floor((q.minX-bounds.minX)/stepX)-1),c1=Math.min(width-2,Math.floor((q.maxX-bounds.minX)/stepX)+1),r0=Math.max(0,Math.floor((q.minZ-bounds.minZ)/stepZ)-1),r1=Math.min(height-2,Math.floor((q.maxZ-bounds.minZ)/stepZ)+1);
-    for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++){refined.add(r*stride+c);connectionRefined.add(r*stride+c);}
+    for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++){
+    yield '지형과 경사로 준비 중';refined.add(r*stride+c);connectionRefined.add(r*stride+c);}
   }
   // 사진에서 확인한 222동 안마당만 세분한다. 기존 패드와 원시 고도는 보존한다.
   const courtyardRefined=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(courtyardActive){
     const q=livingScienceCourtyardCorrectionBounds();
     const c0=Math.max(0,Math.floor((q.minX-bounds.minX)/stepX)-1),c1=Math.min(width-2,Math.floor((q.maxX-bounds.minX)/stepX)+1),r0=Math.max(0,Math.floor((q.minZ-bounds.minZ)/stepZ)-1),r1=Math.min(height-2,Math.floor((q.maxZ-bounds.minZ)/stepZ)+1);
-    for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++){refined.add(r*stride+c);courtyardRefined.add(r*stride+c);}
+    for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++){
+    yield '지형과 경사로 준비 중';refined.add(r*stride+c);courtyardRefined.add(r*stride+c);}
   }
+  yield '지형과 경사로 준비 중';
   const n = 10, xs = Float32Array.from({ length: (width - 1) * n + 1 }, (_, i) => bounds.minX + i * stepX / n);
+  yield '지형과 경사로 준비 중';
   const zs = Float32Array.from({ length: (height - 1) * n + 1 }, (_, i) => bounds.minZ + i * stepZ / n);
   const positions:number[] = [], indices:number[] = [], indexByGrid = new Map<number,number>(), fineCells = new Map<number,number[][]>();
   const key = (x:number, z:number) => z * xs.length + x;
   const add = (x:number, y:number, z:number) => { const index = positions.length / 3; positions.push(Math.fround(x), Math.fround(y), Math.fround(z)); return index; };
+  yield '지형과 경사로 준비 중';
   for (let r = 0; r < height; r++) for (let c = 0; c < width; c++) {
+    yield '지형과 경사로 준비 중';
     const i = add(xs[c * n], heights[r * width + c] - .03, zs[r * n]); indexByGrid.set(key(c * n, r * n), i);
   }
+  yield '지형과 경사로 준비 중';
   const originalPositions = Float32Array.from(positions);
   const connectionDatum=connectionActive?engineering301303Datum((x,z)=>coarseSurface(x,z)+.03):undefined;
   const courtyardDatumOffset=courtyardActive?coarseSurface(LIVING_SCIENCE_COURTYARD.origin.x,LIVING_SCIENCE_COURTYARD.origin.z)+.03-LIVING_SCIENCE_COURTYARD.baselineEntryHeightAt:0;
   const boundarySegments:number[][]=[];
-  for(const cell of refined){const c=cell%stride,r=Math.floor(cell/stride);
+  yield '지형과 경사로 준비 중';
+  for(const cell of refined){
+    yield '지형과 경사로 준비 중';const c=cell%stride,r=Math.floor(cell/stride);
     for(const[dx,dz]of[[-1,0],[1,0],[0,-1],[0,1]])if(!isFine(c+dx,r+dz)){
       const x0=xs[c*n],x1=xs[(c+1)*n],z0=zs[r*n],z1=zs[(r+1)*n];
       boundarySegments.push(dx?[dx<0?x0:x1,z0,dx<0?x0:x1,z1]:[x0,dz<0?z0:z1,x1,dz<0?z0:z1]);
@@ -312,6 +373,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     const c = interval(xs, x, n), r = interval(zs, z, n), a = r * width + c;
     return quadHeight(a, a + 1, a + width, a + width + 1, x, z, originalPositions);
   }
+  yield '지형과 경사로 준비 중';
   {
     for(let r=1;r<height-1;r++)for(let c=1;c<width-1;c++)if(isFine(c-1,r-1)&&isFine(c,r-1)&&isFine(c-1,r)&&isFine(c,r)){const index=r*width+c;positions[index*3+1]=Math.fround(evaluateSurface(xs[c*n],zs[r*n]));}
   }
@@ -341,79 +403,117 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     const center = add(x, coarseSurface(x, z), z);
     for (let i = 0; i < polygon.length; i++) push(center, polygon[i], polygon[(i + 1) % polygon.length]);
   }
+  yield '지형과 경사로 준비 중';
   for (let r = 0; r < height - 1; r++) for (let c = 0; c < width - 1; c++) {
+    yield '지형과 경사로 준비 중';
     if (isFine(c, r)) {
       const grid = Array.from({ length: n + 1 }, (_, j) => Array.from({ length: n + 1 }, (_, i) => vertex(c * n + i, r * n + j)));
       fineCells.set(r * stride + c, grid);
-      for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) { const a = grid[j][i], b = grid[j][i + 1], d = grid[j + 1][i], e = grid[j + 1][i + 1]; push(a, d, b); push(b, d, e); }
+      for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
+    yield '지형과 경사로 준비 중'; const a = grid[j][i], b = grid[j][i + 1], d = grid[j + 1][i], e = grid[j + 1][i + 1]; push(a, d, b); push(b, d, e); }
     } else {
       const a = [c * n, r * n], b = [(c + 1) * n, r * n], d = [c * n, (r + 1) * n], e = [(c + 1) * n, (r + 1) * n];
       coarseTriangle(c, r, [a, d, b]); coarseTriangle(c, r, [b, d, e]);
     }
   }
+  yield '지형과 경사로 준비 중';
   let parkingPatch:ReturnType<typeof cutEducationParkingTerrain>|undefined;
+  yield '지형과 경사로 준비 중';
   let diningPatch:ReturnType<typeof cutDining76Terrain>|undefined;
+  yield '지형과 경사로 준비 중';
   let diningEastPatch:ReturnType<typeof cutDining76EastTerrain>|undefined;
+  yield '지형과 경사로 준비 중';
   let education101Patch:ReturnType<typeof cutEducation101EntryTerrain>|undefined;
+  yield '지형과 경사로 준비 중';
   let libraryAmenitiesPatch:ReturnType<typeof cutLibraryAmenitiesTerrain>|undefined;
   let libraryAmenitiesLayout:ReturnType<typeof getLibraryAmenitiesLayout>|undefined;
+  yield '지형과 경사로 준비 중';
   let librarySoutheastPatch:ReturnType<typeof cutLibrarySoutheastTerrain>|undefined;
   let librarySoutheastLayout:ReturnType<typeof getLibrarySoutheastLayout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering38Patch:ReturnType<typeof cutEngineering38Terrain>|undefined;
   let engineering38Layout:ReturnType<typeof getEngineering38Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering39Patch:ReturnType<typeof cutEngineering39Terrain>|undefined;
   let engineering39Layout:ReturnType<typeof getEngineering39Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering3736Patch:ReturnType<typeof cutEngineering3736Terrain>|undefined;
   let engineering3736Layout:ReturnType<typeof getEngineering3736Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering35AccessPatch:ReturnType<typeof cutEngineering35AccessTerrain>|undefined;
   let engineering35AccessLayout:ReturnType<typeof getEngineering35AccessLayout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering3334Patch:ReturnType<typeof cutEngineering3334Terrain>|undefined;
   let engineering3334Layout:ReturnType<typeof getEngineering3334Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering3436Patch:ReturnType<typeof cutEngineering3436Terrain>|undefined;
   let engineering3436Layout:ReturnType<typeof getEngineering3436Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering36Patch:ReturnType<typeof cutEngineering36Terrain>|undefined;
   let engineering36Layout:ReturnType<typeof getEngineering36Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering37Patch:ReturnType<typeof cutEngineering37Terrain>|undefined;
   let engineering37Layout:ReturnType<typeof getEngineering37Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering3337Patch:ReturnType<typeof cutEngineering3337Terrain>|undefined;
   let engineering3337Layout:ReturnType<typeof getEngineering3337Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering33Patch:ReturnType<typeof cutEngineering33Terrain>|undefined;
   let engineering33Layout:ReturnType<typeof getEngineering33Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering3033Patch:ReturnType<typeof cutEngineering3033Terrain>|undefined;
   let engineering3033Layout:ReturnType<typeof getEngineering3033Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering30Patch:ReturnType<typeof cutEngineering30Terrain>|undefined;
   let engineering30Layout:ReturnType<typeof getEngineering30Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let engineering30DiningPatch:ReturnType<typeof cutEngineering30DiningTerrain>|undefined;
+  yield '지형과 경사로 준비 중';
   let science28Patch:ReturnType<typeof cutScience28Terrain>|undefined;
   let engineering30DiningLayout:ReturnType<typeof getEngineering30DiningLayout>|undefined;
   let science28Layout:ReturnType<typeof getScience28Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let science251Patch:ReturnType<typeof cutScience251Terrain>|undefined;
   let science251Layout:ReturnType<typeof getScience251Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let science24Patch:ReturnType<typeof cutScience24Terrain>|undefined;
   let science24Layout:ReturnType<typeof getScience24Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let science2527Patch:ReturnType<typeof cutScience2527Terrain>|undefined;
   let science2527Layout:ReturnType<typeof getScience2527Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let science26Patch:ReturnType<typeof cutScience26Terrain>|undefined;
   let science26Layout:ReturnType<typeof getScience26Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let science23Patch:ReturnType<typeof cutScience23Terrain>|undefined;
   let science23Layout:ReturnType<typeof getScience23Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let science2256Patch:ReturnType<typeof cutScience2256Terrain>|undefined;
   let science2256Layout:ReturnType<typeof getScience2256Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let physics561Patch:ReturnType<typeof cutPhysics561Terrain>|undefined;
   let physics561Layout:ReturnType<typeof getPhysics561Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let pharmacy143Patch:ReturnType<typeof cutPharmacy143Terrain>|undefined;
   let pharmacy143Layout:ReturnType<typeof getPharmacy143Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let pharmacy21Patch:ReturnType<typeof cutPharmacy21Terrain>|undefined;
   let pharmacy21Layout:ReturnType<typeof getPharmacy21Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let pharmacy2021Patch:ReturnType<typeof cutPharmacy2021Terrain>|undefined;
   let pharmacy2021Layout:ReturnType<typeof getPharmacy2021Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let pharmacy20Patch:ReturnType<typeof cutPharmacy20Terrain>|undefined;
   let pharmacy20Layout:ReturnType<typeof getPharmacy20Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let education1320Patch:ReturnType<typeof cutEducation1320Terrain>|undefined;
   let education1320Layout:ReturnType<typeof getEducation1320Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let education13Patch:ReturnType<typeof cutEducation13Terrain>|undefined;
   let education13Layout:ReturnType<typeof getEducation13Layout>|undefined;
+  yield '지형과 경사로 준비 중';
   let education12Patch:ReturnType<typeof cutEducation12Terrain>|undefined;
+  yield '지형과 경사로 준비 중';
   let humanitiesGardenPatch:ReturnType<typeof cutHumanitiesGardenTerrain>|undefined;
   function meshHeightAt(x:number, z:number) {
     x = THREE.MathUtils.clamp(x, bounds.minX, bounds.maxX); z = THREE.MathUtils.clamp(z, bounds.minZ, bounds.maxZ);
@@ -461,99 +561,152 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     return quadHeight(grid[j][i], grid[j][i + 1], grid[j + 1][i], grid[j + 1][i + 1], x, z);
   }
   // 기존 삼각형을 경계에서 잘라 낮춘다. 원본 격자와 이웃 보행로의 높이는 보존한다.
-  if(parkingActive){const anchor=educationParkingPoint(EDUCATION_PARKING_SITE.datumStation),offset=meshHeightAt(anchor.x,anchor.z)-EDUCATION_PARKING_SITE.baselineDatumMeshY;parkingPatch=cutEducationParkingTerrain(positions,indices,offset);}
-  if(diningActive){const [x,z]=DINING76_SITE.datumAnchor,offset=meshHeightAt(x,z)-DINING76_SITE.baselineDatumMeshY;diningPatch=cutDining76Terrain(positions,indices,offset);}
-  if(diningEastActive){const [x,z]=DINING76_EAST_SITE.datumAnchor,offset=meshHeightAt(x,z)-DINING76_EAST_SITE.baselineDatumMeshY;diningEastPatch=cutDining76EastTerrain(positions,indices,offset);}
+  yield '지형과 경사로 준비 중';
+  if(parkingActive){const anchor=educationParkingPoint(EDUCATION_PARKING_SITE.datumStation),offset=meshHeightAt(anchor.x,anchor.z)-EDUCATION_PARKING_SITE.baselineDatumMeshY;parkingPatch=(yield* cutEducationParkingTerrainSteps(positions,indices,offset));}
+  yield '지형과 경사로 준비 중';
+  if(diningActive){const [x,z]=DINING76_SITE.datumAnchor,offset=meshHeightAt(x,z)-DINING76_SITE.baselineDatumMeshY;diningPatch=(yield* cutDining76TerrainSteps(positions,indices,offset));}
+  yield '지형과 경사로 준비 중';
+  if(diningEastActive){const [x,z]=DINING76_EAST_SITE.datumAnchor,offset=meshHeightAt(x,z)-DINING76_EAST_SITE.baselineDatumMeshY;diningEastPatch=(yield* cutDining76EastTerrainSteps(positions,indices,offset));}
+  yield '지형과 경사로 준비 중';
   const drivingBeforeEntry=education101Active?{vertices:Float32Array.from(positions),indices:Uint32Array.from(indices)}:undefined;
-  if(education101Active){const [x,z]=EDUCATION101_ENTRY_SITE.datumAnchor,offset=meshHeightAt(x,z)-EDUCATION101_ENTRY_SITE.baselineDatumMeshY;education101Patch=cutEducation101EntryTerrain(positions,indices,offset);}
-  if(education12Active){const [x,z]=EDUCATION12_SITE.datumAnchor,offset=meshHeightAt(x,z)-EDUCATION12_SITE.baselineDatumMeshY;education12Patch=cutEducation12Terrain(positions,indices,offset,options.education1112!==false);}
-  if(humanitiesGardenActive){const [x,z]=HUMANITIES_GARDEN_SITE.origin,floor=meshHeightAt(x,z);humanitiesGardenPatch=cutHumanitiesGardenTerrain(positions,indices,floor);}
-  if(options.education13!==false&&buildings.some(b=>b.id===EDUCATION13_ID)){education13Layout=getEducation13Layout(meshHeightAt);education13Patch=cutEducation13Terrain(positions,indices,education13Layout);}
-  if(education13Layout&&options.education1320!==false){education1320Layout=getEducation1320Layout(meshHeightAt,education13Layout);education1320Patch=cutEducation1320Terrain(positions,indices,education1320Layout);}
-  if(education1320Layout&&options.pharmacy20!==false&&buildings.some(b=>b.id===PHARMACY20_ID)){pharmacy20Layout=getPharmacy20Layout(meshHeightAt,education1320Layout);pharmacy20Patch=cutPharmacy20Terrain(positions,indices,pharmacy20Layout);}
-  if(pharmacy20Layout&&options.pharmacy2021!==false&&buildings.some(b=>b.id===PHARMACY2021_ID)){pharmacy2021Layout=getPharmacy2021Layout(meshHeightAt,pharmacy20Layout);pharmacy2021Patch=cutPharmacy2021Terrain(positions,indices,pharmacy2021Layout);}
-  if(pharmacy2021Layout&&options.librarySoutheast!==false&&buildings.some(b=>b.id===LIBRARY_ACCESS_ID)){librarySoutheastLayout=getLibrarySoutheastLayout(meshHeightAt);if(options.libraryAmenities===false)librarySoutheastPatch=cutLibrarySoutheastTerrain(positions,indices,librarySoutheastLayout);}
-  if(librarySoutheastLayout&&options.libraryAmenities!==false){libraryAmenitiesLayout=getLibraryAmenitiesLayout(librarySoutheastLayout,meshHeightAt);libraryAmenitiesPatch=cutLibraryAmenitiesTerrain(positions,indices,libraryAmenitiesLayout);}
-  if(pharmacy2021Layout&&options.pharmacy21!==false&&buildings.some(b=>b.id===PHARMACY21_ID)){pharmacy21Layout=getPharmacy21Layout(meshHeightAt,pharmacy2021Layout);pharmacy21Patch=cutPharmacy21Terrain(positions,indices,pharmacy21Layout);}
-  if(pharmacy20Layout&&options.pharmacy143!==false&&buildings.some(b=>b.id===PHARMACY143_ID)){pharmacy143Layout=getPharmacy143Layout(meshHeightAt,pharmacy20Layout);pharmacy143Patch=cutPharmacy143Terrain(positions,indices,pharmacy143Layout);}
-  if(pharmacy143Layout&&options.physics561!==false&&buildings.some(b=>b.id===PHYSICS561_ID)){physics561Layout=getPhysics561Layout(meshHeightAt);physics561Patch=cutPhysics561Terrain(positions,indices,physics561Layout);}
-  if(physics561Layout&&options.science2256!==false&&[SCIENCE22_ID,SCIENCE56_ID].every(id=>buildings.some(b=>b.id===id))){science2256Layout=getScience2256Layout(meshHeightAt,physics561Layout,options.science2256Access!==false);science2256Patch=cutScience2256Terrain(positions,indices,science2256Layout,buildings as {id:string;points:[number,number][]}[]);}
-  if(options.science23!==false&&buildings.some(b=>b.id===SCIENCE23_ID)){science23Layout=getScience23Layout(meshHeightAt);science23Patch=cutScience23Terrain(positions,indices,science23Layout);}
-  if(options.science26!==false&&buildings.some(b=>b.id===SCIENCE26_ID)){science26Layout=getScience26Layout(meshHeightAt);science26Patch=cutScience26Terrain(positions,indices,science26Layout);}
-  if(options.science2527!==false&&[SCIENCE25_ID,SCIENCE27_ID].every(id=>buildings.some(b=>b.id===id))){science2527Layout=getScience2527Layout(meshHeightAt);science2527Patch=cutScience2527Terrain(positions,indices,science2527Layout,buildings as {id:string;points:[number,number][]}[]);}
-  if(science2527Layout&&options.science24!==false&&buildings.some(b=>b.id===SCIENCE24_ID)){science24Layout=getScience24Layout(meshHeightAt,science2527Layout);science24Patch=cutScience24Terrain(positions,indices,science24Layout);}
-  if(science24Layout&&options.science251!==false&&buildings.some(b=>b.id===SCIENCE251_ID)){science251Layout=getScience251Layout(meshHeightAt,science24Layout);science251Patch=cutScience251Terrain(positions,indices,science251Layout);}
-  if(options.science28!==false&&buildings.some(b=>b.id===SCIENCE28_ID)){science28Layout=getScience28Layout(meshHeightAt);science28Patch=cutScience28Terrain(positions,indices,science28Layout);}
+  yield '지형과 경사로 준비 중';
+  if(education101Active){const [x,z]=EDUCATION101_ENTRY_SITE.datumAnchor,offset=meshHeightAt(x,z)-EDUCATION101_ENTRY_SITE.baselineDatumMeshY;education101Patch=(yield* cutEducation101EntryTerrainSteps(positions,indices,offset));}
+  yield '지형과 경사로 준비 중';
+  if(education12Active){const [x,z]=EDUCATION12_SITE.datumAnchor,offset=meshHeightAt(x,z)-EDUCATION12_SITE.baselineDatumMeshY;education12Patch=(yield* cutEducation12TerrainSteps(positions,indices,offset,options.education1112!==false));}
+  yield '지형과 경사로 준비 중';
+  if(humanitiesGardenActive){const [x,z]=HUMANITIES_GARDEN_SITE.origin,floor=meshHeightAt(x,z);humanitiesGardenPatch=(yield* cutHumanitiesGardenTerrainSteps(positions,indices,floor));}
+  yield '지형과 경사로 준비 중';
+  if(options.education13!==false&&buildings.some(b=>b.id===EDUCATION13_ID)){education13Layout=getEducation13Layout(meshHeightAt);education13Patch=(yield* cutEducation13TerrainSteps(positions,indices,education13Layout));}
+  yield '지형과 경사로 준비 중';
+  if(education13Layout&&options.education1320!==false){education1320Layout=getEducation1320Layout(meshHeightAt,education13Layout);education1320Patch=(yield* cutEducation1320TerrainSteps(positions,indices,education1320Layout));}
+  yield '지형과 경사로 준비 중';
+  if(education1320Layout&&options.pharmacy20!==false&&buildings.some(b=>b.id===PHARMACY20_ID)){pharmacy20Layout=getPharmacy20Layout(meshHeightAt,education1320Layout);pharmacy20Patch=(yield* cutPharmacy20TerrainSteps(positions,indices,pharmacy20Layout));}
+  yield '지형과 경사로 준비 중';
+  if(pharmacy20Layout&&options.pharmacy2021!==false&&buildings.some(b=>b.id===PHARMACY2021_ID)){pharmacy2021Layout=getPharmacy2021Layout(meshHeightAt,pharmacy20Layout);pharmacy2021Patch=(yield* cutPharmacy2021TerrainSteps(positions,indices,pharmacy2021Layout));}
+  yield '지형과 경사로 준비 중';
+  if(pharmacy2021Layout&&options.librarySoutheast!==false&&buildings.some(b=>b.id===LIBRARY_ACCESS_ID)){librarySoutheastLayout=getLibrarySoutheastLayout(meshHeightAt);if(options.libraryAmenities===false)librarySoutheastPatch=(yield* cutLibrarySoutheastTerrainSteps(positions,indices,librarySoutheastLayout));}
+  yield '지형과 경사로 준비 중';
+  if(librarySoutheastLayout&&options.libraryAmenities!==false){libraryAmenitiesLayout=getLibraryAmenitiesLayout(librarySoutheastLayout,meshHeightAt);libraryAmenitiesPatch=(yield* cutLibraryAmenitiesTerrainSteps(positions,indices,libraryAmenitiesLayout));}
+  yield '지형과 경사로 준비 중';
+  if(pharmacy2021Layout&&options.pharmacy21!==false&&buildings.some(b=>b.id===PHARMACY21_ID)){pharmacy21Layout=getPharmacy21Layout(meshHeightAt,pharmacy2021Layout);pharmacy21Patch=(yield* cutPharmacy21TerrainSteps(positions,indices,pharmacy21Layout));}
+  yield '지형과 경사로 준비 중';
+  if(pharmacy20Layout&&options.pharmacy143!==false&&buildings.some(b=>b.id===PHARMACY143_ID)){pharmacy143Layout=getPharmacy143Layout(meshHeightAt,pharmacy20Layout);pharmacy143Patch=(yield* cutPharmacy143TerrainSteps(positions,indices,pharmacy143Layout));}
+  yield '지형과 경사로 준비 중';
+  if(pharmacy143Layout&&options.physics561!==false&&buildings.some(b=>b.id===PHYSICS561_ID)){physics561Layout=getPhysics561Layout(meshHeightAt);physics561Patch=(yield* cutPhysics561TerrainSteps(positions,indices,physics561Layout));}
+  yield '지형과 경사로 준비 중';
+  if(physics561Layout&&options.science2256!==false&&[SCIENCE22_ID,SCIENCE56_ID].every(id=>buildings.some(b=>b.id===id))){science2256Layout=getScience2256Layout(meshHeightAt,physics561Layout,options.science2256Access!==false);science2256Patch=(yield* cutScience2256TerrainSteps(positions,indices,science2256Layout,buildings as {id:string;points:[number,number][]}[]));}
+  yield '지형과 경사로 준비 중';
+  if(options.science23!==false&&buildings.some(b=>b.id===SCIENCE23_ID)){science23Layout=getScience23Layout(meshHeightAt);science23Patch=(yield* cutScience23TerrainSteps(positions,indices,science23Layout));}
+  yield '지형과 경사로 준비 중';
+  if(options.science26!==false&&buildings.some(b=>b.id===SCIENCE26_ID)){science26Layout=getScience26Layout(meshHeightAt);science26Patch=(yield* cutScience26TerrainSteps(positions,indices,science26Layout));}
+  yield '지형과 경사로 준비 중';
+  if(options.science2527!==false&&[SCIENCE25_ID,SCIENCE27_ID].every(id=>buildings.some(b=>b.id===id))){science2527Layout=getScience2527Layout(meshHeightAt);science2527Patch=(yield* cutScience2527TerrainSteps(positions,indices,science2527Layout,buildings as {id:string;points:[number,number][]}[]));}
+  yield '지형과 경사로 준비 중';
+  if(science2527Layout&&options.science24!==false&&buildings.some(b=>b.id===SCIENCE24_ID)){science24Layout=getScience24Layout(meshHeightAt,science2527Layout);science24Patch=(yield* cutScience24TerrainSteps(positions,indices,science24Layout));}
+  yield '지형과 경사로 준비 중';
+  if(science24Layout&&options.science251!==false&&buildings.some(b=>b.id===SCIENCE251_ID)){science251Layout=getScience251Layout(meshHeightAt,science24Layout);science251Patch=(yield* cutScience251TerrainSteps(positions,indices,science251Layout));}
+  yield '지형과 경사로 준비 중';
+  if(options.science28!==false&&buildings.some(b=>b.id===SCIENCE28_ID)){science28Layout=getScience28Layout(meshHeightAt);science28Patch=(yield* cutScience28TerrainSteps(positions,indices,science28Layout));}
   const dining30Building=buildings.find(b=>b.id===ENGINEERING30_DINING_ID);
+  yield '지형과 경사로 준비 중';
   if(options.engineering30Dining!==false&&dining30Building)engineering30DiningLayout=getEngineering30DiningLayout(meshHeightAt,(dining30Building as {id:string;points:[number,number][]}).points);
   const main30Building=buildings.find(b=>b.id===ENGINEERING30_ID);
+  yield '지형과 경사로 준비 중';
   if(options.engineering30!==false&&main30Building)engineering30Layout=getEngineering30Layout(meshHeightAt,(main30Building as {id:string;points:[number,number][]}).points,engineering30DiningLayout);
+  yield '지형과 경사로 준비 중';
   if(options.engineering3033!==false&&engineering30Layout&&buildings.some(b=>b.id===ENGINEERING33_ID))engineering3033Layout=getEngineering3033Layout(meshHeightAt,engineering30Layout);
-  if(engineering30DiningLayout)engineering30DiningPatch=cutEngineering30DiningTerrain(positions,indices,engineering30DiningLayout);
-  if(engineering30Layout)engineering30Patch=cutEngineering30Terrain(positions,indices,engineering30Layout);
-  if(engineering3033Layout)engineering3033Patch=cutEngineering3033Terrain(positions,indices,engineering3033Layout);
+  yield '지형과 경사로 준비 중';
+  if(engineering30DiningLayout)engineering30DiningPatch=(yield* cutEngineering30DiningTerrainSteps(positions,indices,engineering30DiningLayout));
+  yield '지형과 경사로 준비 중';
+  if(engineering30Layout)engineering30Patch=(yield* cutEngineering30TerrainSteps(positions,indices,engineering30Layout));
+  yield '지형과 경사로 준비 중';
+  if(engineering3033Layout)engineering3033Patch=(yield* cutEngineering3033TerrainSteps(positions,indices,engineering3033Layout));
   const main33Building=buildings.find(b=>b.id===ENGINEERING33_ID);
-  if(options.engineering33!==false&&engineering3033Layout&&main33Building){engineering33Layout=getEngineering33Layout(meshHeightAt,(main33Building as {id:string;points:[number,number][]}).points,engineering3033Layout);engineering33Patch=cutEngineering33Terrain(positions,indices,engineering33Layout);}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering33!==false&&engineering3033Layout&&main33Building){engineering33Layout=getEngineering33Layout(meshHeightAt,(main33Building as {id:string;points:[number,number][]}).points,engineering3033Layout);engineering33Patch=(yield* cutEngineering33TerrainSteps(positions,indices,engineering33Layout));}
   const main37Building=buildings.find(b=>b.id===ENGINEERING37_ID);
-  if(options.engineering3337!==false&&engineering33Layout&&main37Building){engineering3337Layout=getEngineering3337Layout(meshHeightAt,engineering33Layout,(main37Building as {id:string;points:[number,number][]}).points);engineering3337Patch=cutEngineering3337Terrain(positions,indices,engineering3337Layout);}
-  if(options.engineering37!==false&&engineering3337Layout&&main37Building){engineering37Layout=getEngineering37Layout(meshHeightAt,(main37Building as {id:string;points:[number,number][]}).points,engineering3337Layout);engineering37Patch=cutEngineering37Terrain(positions,indices,engineering37Layout);}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering3337!==false&&engineering33Layout&&main37Building){engineering3337Layout=getEngineering3337Layout(meshHeightAt,engineering33Layout,(main37Building as {id:string;points:[number,number][]}).points);engineering3337Patch=(yield* cutEngineering3337TerrainSteps(positions,indices,engineering3337Layout));}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering37!==false&&engineering3337Layout&&main37Building){engineering37Layout=getEngineering37Layout(meshHeightAt,(main37Building as {id:string;points:[number,number][]}).points,engineering3337Layout);engineering37Patch=(yield* cutEngineering37TerrainSteps(positions,indices,engineering37Layout));}
   const main36Building=buildings.find(b=>b.id===ENGINEERING36_ID);
-  if(options.engineering36!==false&&engineering37Layout&&main36Building){engineering36Layout=getEngineering36Layout(meshHeightAt,(main36Building as {id:string;points:[number,number][]}).points,engineering37Layout);engineering36Patch=cutEngineering36Terrain(positions,indices,engineering36Layout);}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering36!==false&&engineering37Layout&&main36Building){engineering36Layout=getEngineering36Layout(meshHeightAt,(main36Building as {id:string;points:[number,number][]}).points,engineering37Layout);engineering36Patch=(yield* cutEngineering36TerrainSteps(positions,indices,engineering36Layout));}
   const main34Building=buildings.find(b=>b.id===ENGINEERING34_ID);
+  yield '지형과 경사로 준비 중';
   if(options.engineering3436!==false&&engineering36Layout&&main34Building){
-    engineering3436Layout=getEngineering3436Layout(meshHeightAt,engineering36Layout,(main34Building as {id:string;points:[number,number][]}).points);engineering3436Patch=cutEngineering3436Terrain(positions,indices,engineering3436Layout);
+    engineering3436Layout=getEngineering3436Layout(meshHeightAt,engineering36Layout,(main34Building as {id:string;points:[number,number][]}).points);engineering3436Patch=(yield* cutEngineering3436TerrainSteps(positions,indices,engineering3436Layout));
     if(engineering37Layout){const old=engineering37Layout.routes.eastFootway;engineering37Layout.routes.eastFootway=[old[0],...engineering3436Layout.routes.lowerPlazaBypass,old[old.length-1]];}
   }
   const main35Building=buildings.find(b=>b.id==='way/892896238'),main431Building=buildings.find(b=>b.id==='way/162045723');
-  if(options.engineering3334!==false&&engineering3436Layout&&engineering33Layout&&main35Building&&main431Building){engineering3334Layout=getEngineering3334Layout(meshHeightAt,engineering3436Layout,engineering33Layout,(main35Building as {points:[number,number][]}).points,(main431Building as {points:[number,number][]}).points);engineering3334Patch=cutEngineering3334Terrain(positions,indices,engineering3334Layout);}
-  if(options.engineering35Access!==false&&engineering3334Layout){engineering35AccessLayout=getEngineering35AccessLayout(meshHeightAt,engineering3334Layout);engineering35AccessPatch=cutEngineering35AccessTerrain(positions,indices,engineering35AccessLayout);}
-  if(options.engineering3736!==false&&engineering36Layout&&engineering37Layout){engineering3736Layout=getEngineering3736Layout(meshHeightAt,engineering36Layout,engineering37Layout);engineering3736Patch=cutEngineering3736Terrain(positions,indices,engineering3736Layout);}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering3334!==false&&engineering3436Layout&&engineering33Layout&&main35Building&&main431Building){engineering3334Layout=getEngineering3334Layout(meshHeightAt,engineering3436Layout,engineering33Layout,(main35Building as {points:[number,number][]}).points,(main431Building as {points:[number,number][]}).points);engineering3334Patch=(yield* cutEngineering3334TerrainSteps(positions,indices,engineering3334Layout));}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering35Access!==false&&engineering3334Layout){engineering35AccessLayout=getEngineering35AccessLayout(meshHeightAt,engineering3334Layout);engineering35AccessPatch=(yield* cutEngineering35AccessTerrainSteps(positions,indices,engineering35AccessLayout));}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering3736!==false&&engineering36Layout&&engineering37Layout){engineering3736Layout=getEngineering3736Layout(meshHeightAt,engineering36Layout,engineering37Layout);engineering3736Patch=(yield* cutEngineering3736TerrainSteps(positions,indices,engineering3736Layout));}
   const main39Building=buildings.find(b=>b.id===ENGINEERING39_ID);
-  if(options.engineering39!==false&&main39Building){engineering39Layout=getEngineering39Layout(meshHeightAt,(main39Building as {id:string;points:[number,number][]}).points);engineering39Patch=cutEngineering39Terrain(positions,indices,engineering39Layout);}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering39!==false&&main39Building){engineering39Layout=getEngineering39Layout(meshHeightAt,(main39Building as {id:string;points:[number,number][]}).points);engineering39Patch=(yield* cutEngineering39TerrainSteps(positions,indices,engineering39Layout));}
   const main38Building=buildings.find(b=>b.id===ENGINEERING38_ID);
-  if(options.engineering38!==false&&main38Building){engineering38Layout=getEngineering38Layout(meshHeightAt,(main38Building as {id:string;points:[number,number][]}).points);engineering38Patch=cutEngineering38Terrain(positions,indices,engineering38Layout);}
+  yield '지형과 경사로 준비 중';
+  if(options.engineering38!==false&&main38Building){engineering38Layout=getEngineering38Layout(meshHeightAt,(main38Building as {id:string;points:[number,number][]}).points);engineering38Patch=(yield* cutEngineering38TerrainSteps(positions,indices,engineering38Layout));}
+  yield '지형과 경사로 준비 중';
   const vertices = Float32Array.from(positions), colors = new Float32Array(vertices.length), indexArray = Uint32Array.from(indices);
+  yield '지형과 경사로 준비 중';
   const low = new THREE.Color('#7c8d69'), high = new THREE.Color('#537660'), color = new THREE.Color();
+  yield '지형과 경사로 준비 중';
   for (let i = 0; i < vertices.length; i += 3) {
+    yield '지형과 경사로 준비 중';
     const x = vertices[i], y = vertices[i + 1] + .03, z = vertices[i + 2], variation = (Math.sin(x * .017) * Math.cos(z * .022) + 1) * .08;
     color.copy(low).lerp(high, THREE.MathUtils.clamp(y / 250 + variation, 0, 1)); colors.set(color.toArray(), i);
   }
-  const geometry = new THREE.BufferGeometry(); geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3)); geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3)); geometry.setIndex(new THREE.BufferAttribute(indexArray, 1)); geometry.computeVertexNormals();
-  const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 1 })); mesh.receiveShadow = true; mesh.name = 'campus-terrain'; scene.add(mesh);
+  yield '지형과 경사로 준비 중';
+  const geometry = new THREE.BufferGeometry(); yield '지형과 경사로 준비 중';
+  geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3)); yield '지형과 경사로 준비 중';
+  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3)); yield '지형과 경사로 준비 중';
+  geometry.setIndex(new THREE.BufferAttribute(indexArray, 1)); yield '지형과 경사로 준비 중';
+  geometry.computeVertexNormals();
+  yield '지형과 경사로 준비 중';
+  const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 1 })); yield '지형과 경사로 준비 중';
+  mesh.receiveShadow = true; yield '지형과 경사로 준비 중';
+  mesh.name = 'campus-terrain'; yield '지형과 경사로 준비 중';
+  scene.add(mesh);
   const originalLogicalHeight=(x:number,z:number)=>{const u=THREE.MathUtils.clamp((x-bounds.minX)/stepX,0,width-1.001),v=THREE.MathUtils.clamp((z-bounds.minZ)/stepZ,0,height-1.001),c=Math.floor(u),r=Math.floor(v),a=u-c,b=v-r,i=r*width+c;return a+b<=1?heights[i]+a*(heights[i+1]-heights[i])+b*(heights[i+width]-heights[i]):heights[i+width+1]+(1-a)*(heights[i+width]-heights[i+width+1])+(1-b)*(heights[i+1]-heights[i+width+1]);};
+  const withinPatch=(patch:{bounds:TerrainDetailRegion}|undefined,x:number,z:number)=>patch&&x>=patch.bounds.minX-32&&x<=patch.bounds.maxX+32&&z>=patch.bounds.minZ-32&&z<=patch.bounds.maxZ+32;
   const heightAt:TerrainHeightSampler = (x:number,z:number) => {
     const cx=THREE.MathUtils.clamp(x,bounds.minX,bounds.maxX),cz=THREE.MathUtils.clamp(z,bounds.minZ,bounds.maxZ),c=interval(xs,cx,n),r=interval(zs,cz,n);
     // 선언 밖에서는 기존 논리 높이 계산을 유지한다. 실제 메시 조회는 meshHeightAt으로 별도 제공한다.
     const gardenLocal=humanitiesGardenLocal(cx,cz),gardenOuter=HUMANITIES_GARDEN_SITE.outer;
     if(humanitiesGardenPatch&&Math.abs(gardenLocal.s)<gardenOuter.s&&Math.abs(gardenLocal.n)<gardenOuter.n){const y=humanitiesGardenPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(engineering38Patch?.affects(cx,cz)){const h=engineering38Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering39Patch?.affects(cx,cz)){const h=engineering39Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering3736Patch?.affects(cx,cz)){const h=engineering3736Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering35AccessPatch?.affects(cx,cz)){const h=engineering35AccessPatch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering3334Patch?.affects(cx,cz)){const h=engineering3334Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering3436Patch?.affects(cx,cz)){const h=engineering3436Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering36Patch?.affects(cx,cz)){const h=engineering36Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering37Patch?.affects(cx,cz)){const h=engineering37Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering3337Patch?.affects(cx,cz)){const h=engineering3337Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering33Patch?.affects(cx,cz)){const h=engineering33Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;const y=engineering33Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(engineering3033Patch?.affects(cx,cz)){const h=engineering3033Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
-    if(engineering30Patch?.affects(cx,cz)){const h=engineering30Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;const y=engineering30Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(engineering30DiningPatch?.affects(cx,cz)){const y=engineering30DiningPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(science28Patch?.affects(cx,cz)){const y=science28Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(science251Patch?.affects(cx,cz)){const y=science251Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(science24Patch?.affects(cx,cz)){const y=science24Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(science2527Patch?.affects(cx,cz)){const y=science2527Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(science26Patch?.affects(cx,cz)){const y=science26Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(science23Patch?.affects(cx,cz)){const y=science23Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(science2256Patch?.affects(cx,cz)){const y=science2256Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(physics561Patch?.affects(cx,cz)){const y=physics561Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(pharmacy143Patch?.affects(cx,cz)){const y=pharmacy143Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(pharmacy21Patch?.affects(cx,cz)){const y=pharmacy21Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(libraryAmenitiesPatch?.affects(cx,cz)){const y=libraryAmenitiesPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(librarySoutheastPatch?.affects(cx,cz)){const y=librarySoutheastPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(pharmacy2021Patch?.affects(cx,cz)){const y=pharmacy2021Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(pharmacy20Patch?.affects(cx,cz)){const y=pharmacy20Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
-    if(education1320Patch?.affects(cx,cz)){const y=education1320Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(engineering38Patch,cx,cz)&&engineering38Patch?.affects(cx,cz)){const h=engineering38Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering39Patch,cx,cz)&&engineering39Patch?.affects(cx,cz)){const h=engineering39Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering3736Patch,cx,cz)&&engineering3736Patch?.affects(cx,cz)){const h=engineering3736Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering35AccessPatch,cx,cz)&&engineering35AccessPatch?.affects(cx,cz)){const h=engineering35AccessPatch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering3334Patch,cx,cz)&&engineering3334Patch?.affects(cx,cz)){const h=engineering3334Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering3436Patch,cx,cz)&&engineering3436Patch?.affects(cx,cz)){const h=engineering3436Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering36Patch,cx,cz)&&engineering36Patch?.affects(cx,cz)){const h=engineering36Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering37Patch,cx,cz)&&engineering37Patch?.affects(cx,cz)){const h=engineering37Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering3337Patch,cx,cz)&&engineering3337Patch?.affects(cx,cz)){const h=engineering3337Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering33Patch,cx,cz)&&engineering33Patch?.affects(cx,cz)){const h=engineering33Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;const y=engineering33Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(engineering3033Patch,cx,cz)&&engineering3033Patch?.affects(cx,cz)){const h=engineering3033Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
+    if(withinPatch(engineering30Patch,cx,cz)&&engineering30Patch?.affects(cx,cz)){const h=engineering30Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;const y=engineering30Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(engineering30DiningPatch,cx,cz)&&engineering30DiningPatch?.affects(cx,cz)){const y=engineering30DiningPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(science28Patch,cx,cz)&&science28Patch?.affects(cx,cz)){const y=science28Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(science251Patch,cx,cz)&&science251Patch?.affects(cx,cz)){const y=science251Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(science24Patch,cx,cz)&&science24Patch?.affects(cx,cz)){const y=science24Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(science2527Patch,cx,cz)&&science2527Patch?.affects(cx,cz)){const y=science2527Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(science26Patch,cx,cz)&&science26Patch?.affects(cx,cz)){const y=science26Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(science23Patch,cx,cz)&&science23Patch?.affects(cx,cz)){const y=science23Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(science2256Patch,cx,cz)&&science2256Patch?.affects(cx,cz)){const y=science2256Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(physics561Patch,cx,cz)&&physics561Patch?.affects(cx,cz)){const y=physics561Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(pharmacy143Patch,cx,cz)&&pharmacy143Patch?.affects(cx,cz)){const y=pharmacy143Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(pharmacy21Patch,cx,cz)&&pharmacy21Patch?.affects(cx,cz)){const y=pharmacy21Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(libraryAmenitiesPatch,cx,cz)&&libraryAmenitiesPatch?.affects(cx,cz)){const y=libraryAmenitiesPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(librarySoutheastPatch,cx,cz)&&librarySoutheastPatch?.affects(cx,cz)){const y=librarySoutheastPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(pharmacy2021Patch,cx,cz)&&pharmacy2021Patch?.affects(cx,cz)){const y=pharmacy2021Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(pharmacy20Patch,cx,cz)&&pharmacy20Patch?.affects(cx,cz)){const y=pharmacy20Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(withinPatch(education1320Patch,cx,cz)&&education1320Patch?.affects(cx,cz)){const y=education1320Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
     const e13=education13Patch?.bounds;if(e13&&education13Patch?.affects(cx,cz)){const y=education13Patch?.heightAt(cx,cz);if(y!==undefined)return y+.03;}
     const q=education12Patch?.bounds,inEducation12=q&&cx>=q.minX&&cx<=q.maxX&&cz>=q.minZ&&cz<=q.maxZ;
     const education12Height=inEducation12?education12Patch?.heightAt(cx,cz):undefined;if(education12Height!==undefined)return education12Height+.03;
@@ -563,29 +716,38 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     const parkingHeight=parkingPatch?.heightAt(cx,cz);if(parkingHeight!==undefined)return parkingHeight+.03;
     return isFine(c,r)?meshHeightBeforeEducation12(cx,cz)+.03:originalLogicalHeight(x,z);
   };
+  yield '지형과 경사로 준비 중';
   heightAt.detailRegions=Array.from(refined,cell=>{const c=cell%stride,r=Math.floor(cell/stride);return {minX:xs[c*n],maxX:xs[(c+1)*n],minZ:zs[r*n],maxZ:zs[(r+1)*n]};});
   // 도로를 보호한 절개 구역 때문에 기존 도로 메시의 대각선을 바꾸지 않는다.
   // 안마당 도로는 아래의 실제 삼각형 절단을 사용한다. 멀리 있는 도로의 세분 연결부는 유지한다.
+  yield '지형과 경사로 준비 중';
   heightAt.roadDetailRegions=Array.from(new Set([...familyRefined,...connectionRefined]),cell=>{const c=cell%stride,r=Math.floor(cell/stride);return {minX:xs[c*n],maxX:xs[(c+1)*n],minZ:zs[r*n],maxZ:zs[(r+1)*n]};});
+  yield '지형과 경사로 준비 중';
   heightAt.sampleStep=2;
+  yield '지형과 경사로 준비 중';
   if(humanitiesGardenPatch)mesh.userData.humanitiesGardenCorrection={id:'humanities-garden',...humanitiesGardenPatch.metadata,bounds:humanitiesGardenPatch.bounds,site:HUMANITIES_GARDEN_SITE};
+  yield '지형과 경사로 준비 중';
   if(connectionActive){
     const correctionCells=new Set(connectionRefined);
-    for(const cut of cuts)if(cut.points===connection303!.points)for(const cell of refined){const c=cell%stride,r=Math.floor(cell/stride);if(xs[c*n]<=cut.maxX+stepX&&xs[(c+1)*n]>=cut.minX-stepX&&zs[r*n]<=cut.maxZ+stepZ&&zs[(r+1)*n]>=cut.minZ-stepZ)correctionCells.add(cell);}
+    for(const cut of cuts)if(cut.points===connection303!.points)for(const cell of refined){
+    yield '지형과 경사로 준비 중';const c=cell%stride,r=Math.floor(cell/stride);if(xs[c*n]<=cut.maxX+stepX&&xs[(c+1)*n]>=cut.minX-stepX&&zs[r*n]<=cut.maxZ+stepZ&&zs[(r+1)*n]>=cut.minZ-stepZ)correctionCells.add(cell);}
     heightAt.connectionCorrectionRegions=Array.from(correctionCells,cell=>{const c=cell%stride,r=Math.floor(cell/stride);return{minX:xs[c*n],maxX:xs[(c+1)*n],minZ:zs[r*n],maxZ:zs[(r+1)*n]};});
     mesh.userData.connectionCorrection={id:'engineering301-303',rawDEMModified:false,removedPad:'way/228476658',regions:heightAt.connectionCorrectionRegions,roadProfile:{south:ENGINEERING_CONNECTION_SITE.roadProfileSouth,anchor:ENGINEERING_CONNECTION_SITE.anchor,north:ENGINEERING_CONNECTION_SITE.roadProfileNorth},dimensionsEstimated:true,interior301:{fullCutNorthOfLocalZ:-83,restoreSouthOfLocalZ:-115},pedestrianCorridors:{ids:['way/481915884/418','way/481915893/423','way/481915895/424','way/481915897/425','way/481917515/426','way/481917516/427','way/481917517/428','way/482207539/432'],plateauRadius:3.8,blendOuterRadius:6.8}};
   }
+  yield '지형과 경사로 준비 중';
   if(courtyardActive){
     heightAt.livingScienceCourtyardCorrectionRegions=Array.from(courtyardRefined,cell=>{const c=cell%stride,r=Math.floor(cell/stride);return{minX:xs[c*n],maxX:xs[(c+1)*n],minZ:zs[r*n],maxZ:zs[(r+1)*n]};});
     mesh.userData.livingScienceCourtyardCorrection={id:'living-science-222-courtyard',rawDEMModified:false,rawFootprintModified:false,regions:heightAt.livingScienceCourtyardCorrectionRegions,bounds:livingScienceCourtyardCorrectionBounds(),site:LIVING_SCIENCE_COURTYARD,datumOffset:courtyardDatumOffset,dimensionsEstimated:true,observedSource:'sources/living-science-courtyard-roadview-review.json'};
   }
   const parkingCells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(parkingPatch){
     const q=parkingPatch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);
     for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)parkingCells.add(r*stride+c);
     mesh.userData.educationParkingCorrection={id:EDUCATION_PARKING_SITE.id,...parkingPatch.metadata,bounds:q,site:EDUCATION_PARKING_SITE,observedSource:'sources/education-parking-roadview-review.json'};
   }
   const diningCells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(diningPatch){
     const q=diningPatch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);
     for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)diningCells.add(r*stride+c);
@@ -593,6 +755,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     mesh.userData.dining76Correction={id:'dining-76-approach',...diningPatch.metadata,bounds:q,site:DINING76_SITE,observedSource:'sources/dining76-roadview-review.json'};
   }
   const diningEastCells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(diningEastPatch){
     const q=diningEastPatch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);
     for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)diningEastCells.add(r*stride+c);
@@ -600,6 +763,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     mesh.userData.dining76EastCorrection={id:'dining-76-east-approach',...diningEastPatch.metadata,bounds:q,site:DINING76_EAST_SITE,observedSource:'sources/dining76-east-roadview-review.json'};
   }
   const education101Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(education101Patch){
     const q=education101Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);
     for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)education101Cells.add(r*stride+c);
@@ -607,75 +771,111 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     mesh.userData.education101Correction={id:'education-101-entry',...education101Patch.metadata,bounds:q,site:EDUCATION101_ENTRY_SITE,observedSource:'sources/humanities-court-roadview-review.json'};
   }
   const education12Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(education12Patch){
     const q=education12Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);
     for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)education12Cells.add(r*stride+c);
     heightAt.education12CorrectionRegions=[q];
     mesh.userData.education12Correction={id:'education-12-courtyard',...education12Patch.metadata,bounds:q,site:EDUCATION12_SITE};
   }
+  yield '지형과 경사로 준비 중';
   if(education1320Patch)mesh.userData.education1320Correction={...education1320Patch.metadata,bounds:education1320Patch.bounds,layout:education1320Layout};
   const education13Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(education13Patch){const q=education13Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)education13Cells.add(r*stride+c);mesh.userData.education13Correction={...education13Patch.metadata,bounds:q,layout:education13Layout};}
   const pharmacy20Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(pharmacy20Patch){const q=pharmacy20Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy20Cells.add(r*stride+c);mesh.userData.pharmacy20Correction={...pharmacy20Patch.metadata,bounds:q,layout:pharmacy20Layout};}
   const pharmacy2021Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(pharmacy2021Patch){const q=pharmacy2021Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy2021Cells.add(r*stride+c);mesh.userData.pharmacy2021Correction={...pharmacy2021Patch.metadata,bounds:q,layout:pharmacy2021Layout};}
   const librarySoutheastCells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(librarySoutheastPatch){const q=librarySoutheastPatch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)librarySoutheastCells.add(r*stride+c);mesh.userData.librarySoutheastCorrection={...librarySoutheastPatch.metadata,bounds:q,layout:librarySoutheastLayout};}
   const libraryAmenitiesCells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(libraryAmenitiesPatch){const q=libraryAmenitiesPatch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)libraryAmenitiesCells.add(r*stride+c);mesh.userData.libraryAmenitiesCorrection={...libraryAmenitiesPatch.metadata,bounds:q,layout:libraryAmenitiesLayout};}
   const existingRoadCells=new Set([...connectionRefined,...courtyardRefined,...parkingCells,...diningCells,...diningEastCells]);
   const pharmacy21Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(pharmacy21Patch){const q=pharmacy21Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy21Cells.add(r*stride+c);mesh.userData.pharmacy21Correction={...pharmacy21Patch.metadata,bounds:q,layout:pharmacy21Layout};}
+  yield '지형과 경사로 준비 중';
   if(engineering30Patch)(heightAt as TerrainHeightSampler & {engineering30CorrectionRegions?:TerrainDetailRegion[]}).engineering30CorrectionRegions=[{minX:139,maxX:204,minZ:-1033,maxZ:-1000}];
   const engineering38Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering38Patch){const q=engineering38Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering38Cells.add(r*stride+c);mesh.userData.engineering38Correction={...engineering38Patch.metadata,bounds:q,layout:engineering38Layout};}
   const engineering39Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering39Patch){const q=engineering39Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering39Cells.add(r*stride+c);mesh.userData.engineering39Correction={...engineering39Patch.metadata,bounds:q,layout:engineering39Layout};}
   const engineering3736Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering3736Patch){const q=engineering3736Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3736Cells.add(r*stride+c);mesh.userData.engineering3736Correction={...engineering3736Patch.metadata,bounds:q,layout:engineering3736Layout};}
   const engineering35AccessCells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering35AccessPatch){const q=engineering35AccessPatch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering35AccessCells.add(r*stride+c);mesh.userData.engineering35AccessCorrection={...engineering35AccessPatch.metadata,bounds:q,layout:engineering35AccessLayout};}
   const engineering3334Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering3334Patch){const q=engineering3334Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3334Cells.add(r*stride+c);mesh.userData.engineering3334Correction={...engineering3334Patch.metadata,bounds:q,layout:engineering3334Layout};}
   const engineering3436Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering3436Patch){const q=engineering3436Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3436Cells.add(r*stride+c);mesh.userData.engineering3436Correction={...engineering3436Patch.metadata,bounds:q,layout:engineering3436Layout};}
   const engineering36Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering36Patch){const q=engineering36Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering36Cells.add(r*stride+c);mesh.userData.engineering36Correction={...engineering36Patch.metadata,bounds:q,layout:engineering36Layout};}
   const engineering37Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering37Patch){const q=engineering37Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering37Cells.add(r*stride+c);mesh.userData.engineering37Correction={...engineering37Patch.metadata,bounds:q,layout:engineering37Layout};}
   const engineering3337Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering3337Patch){const q=engineering3337Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3337Cells.add(r*stride+c);mesh.userData.engineering3337Correction={...engineering3337Patch.metadata,bounds:q,layout:engineering3337Layout};}
   const engineering33Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering33Patch){const q=engineering33Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering33Cells.add(r*stride+c);mesh.userData.engineering33Correction={...engineering33Patch.metadata,bounds:q,layout:engineering33Layout};}
   const engineering3033Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering3033Patch){const q=engineering3033Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3033Cells.add(r*stride+c);mesh.userData.engineering3033Correction={...engineering3033Patch.metadata,bounds:q,layout:engineering3033Layout};}
   const engineering30Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering30Patch){const q=engineering30Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering30Cells.add(r*stride+c);mesh.userData.engineering30Correction={...engineering30Patch.metadata,bounds:q,layout:engineering30Layout};}
   const engineering30DiningCells=new Set<number>();
   const science28Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(engineering30DiningPatch){const q=engineering30DiningPatch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering30DiningCells.add(r*stride+c);mesh.userData.engineering30DiningCorrection={...engineering30DiningPatch.metadata,bounds:q,layout:engineering30DiningLayout};}
+  yield '지형과 경사로 준비 중';
   if(science28Patch){const q=science28Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)science28Cells.add(r*stride+c);mesh.userData.science28Correction={...science28Patch.metadata,bounds:q,layout:science28Layout};}
   const science251Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(science251Patch){const q=science251Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)science251Cells.add(r*stride+c);mesh.userData.science251Correction={...science251Patch.metadata,bounds:q,layout:science251Layout};}
   const science24Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(science24Patch){const q=science24Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)science24Cells.add(r*stride+c);mesh.userData.science24Correction={...science24Patch.metadata,bounds:q,layout:science24Layout};}
   const science2527Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(science2527Patch){const q=science2527Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)science2527Cells.add(r*stride+c);mesh.userData.science2527Correction={...science2527Patch.metadata,bounds:q,layout:science2527Layout};}
   const science26Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(science26Patch){const q=science26Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)science26Cells.add(r*stride+c);mesh.userData.science26Correction={...science26Patch.metadata,bounds:q,layout:science26Layout};}
   const science23Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(science23Patch){const q=science23Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)science23Cells.add(r*stride+c);mesh.userData.science23Correction={...science23Patch.metadata,bounds:q,layout:science23Layout};}
   const science2256Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(science2256Patch){const q=science2256Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)science2256Cells.add(r*stride+c);mesh.userData.science2256Correction={...science2256Patch.metadata,bounds:q,layout:science2256Layout};}
   const physics561Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(physics561Patch){const q=physics561Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)physics561Cells.add(r*stride+c);mesh.userData.physics561Correction={...physics561Patch.metadata,bounds:q,layout:physics561Layout};}
   const pharmacy143Cells=new Set<number>();
+  yield '지형과 경사로 준비 중';
   if(pharmacy143Patch){const q=pharmacy143Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy143Cells.add(r*stride+c);mesh.userData.pharmacy143Correction={...pharmacy143Patch.metadata,bounds:q,layout:pharmacy143Layout};}
   const roadTriangleCells=new Set([...existingRoadCells,...engineering38Cells,...engineering39Cells,...engineering3736Cells,...engineering35AccessCells,...engineering3334Cells,...engineering3436Cells,...engineering36Cells,...engineering37Cells,...engineering3337Cells,...engineering33Cells,...engineering3033Cells,...engineering30Cells,...engineering30DiningCells,...science28Cells,...science251Cells,...science24Cells,...science2527Cells,...science26Cells,...science23Cells,...science2256Cells,...physics561Cells,...pharmacy143Cells,...pharmacy21Cells,...education101Cells,...education12Cells,...education13Cells,...pharmacy20Cells,...pharmacy2021Cells,...librarySoutheastCells,...libraryAmenitiesCells]);
+  const surfaceBuckets=new WeakMap<Float32Array,Map<number,number[]>>();
   function surfaceSampler(sourceVertices:Float32Array,sourceIndices:Uint32Array,cells:Set<number>){
-    const buckets=new Map<number,number[]>();
-    for(let i=0;i<sourceIndices.length;i+=3){const ids=[sourceIndices[i],sourceIndices[i+1],sourceIndices[i+2]],x=ids.reduce((v,k)=>v+sourceVertices[k*3],0)/3,z=ids.reduce((v,k)=>v+sourceVertices[k*3+2],0)/3,c=interval(xs,x,n),r=interval(zs,z,n),cell=r*stride+c;if(!cells.has(cell))continue;const list=buckets.get(cell)??[];list.push(i);buckets.set(cell,list);}
+    let buckets=surfaceBuckets.get(sourceVertices);
+    if(!buckets){
+      buckets=new Map<number,number[]>();
+      for(let i=0;i<sourceIndices.length;i+=3){const a=sourceIndices[i]*3,b=sourceIndices[i+1]*3,d=sourceIndices[i+2]*3,x=(sourceVertices[a]+sourceVertices[b]+sourceVertices[d])/3,z=(sourceVertices[a+2]+sourceVertices[b+2]+sourceVertices[d+2])/3,c=interval(xs,x,n),r=interval(zs,z,n),cell=r*stride+c;const list=buckets.get(cell)??[];list.push(i);buckets.set(cell,list);}
+      surfaceBuckets.set(sourceVertices,buckets);
+    }
     return(q:TerrainDetailRegion)=>{
       const c0=Math.max(0,interval(xs,q.minX,n)),c1=Math.min(width-2,interval(xs,q.maxX,n)),r0=Math.max(0,interval(zs,q.minZ,n)),r1=Math.min(height-2,interval(zs,q.maxZ,n));
       for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)if(!cells.has(r*stride+c))return undefined;
@@ -683,7 +883,9 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     };
   }
   // 새 현관 절개는 차도 밖에 있다. 차도 표시는 이전 분할을 유지하고 보도와 잔디는 새 지형에 맞춘다.
+  yield '지형과 경사로 준비 중';
   if(roadTriangleCells.size)heightAt.roadSurfaceTriangles=surfaceSampler(vertices,indexArray,roadTriangleCells);
+  yield '지형과 경사로 준비 중';
   if(drivingBeforeEntry){
     const preserved=surfaceSampler(drivingBeforeEntry.vertices,drivingBeforeEntry.indices,existingRoadCells);
     const updated30=engineering30Patch?surfaceSampler(vertices,indexArray,engineering30Cells):undefined;
@@ -727,5 +929,12 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
       return b&&q.minX>=b.minX&&q.maxX<=b.maxX&&q.minZ>=b.minZ&&q.maxZ<=b.maxZ?updated?.(q)??preserved(q):preserved(q);
     };
   }
+  yield '지형과 경사로 준비 중';
   return {heightAt,meshHeightAt,vertices,indices:indexArray,bounds,mesh};
+}
+
+export function createTerrain(...args:Parameters<typeof createTerrainSteps>){
+  const steps=createTerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

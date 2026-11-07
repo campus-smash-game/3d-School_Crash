@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight } from './physics561Site';
 import type { Engineering30Surface } from './engineering30Site';
 import type { Engineering3334Layout } from './engineering3334Site';
@@ -56,12 +56,18 @@ export function getEngineering35AccessLayout(heightAt:(x:number,z:number)=>numbe
  return{axis,terraceFloor,labFloor,surfaces,elevated,terrainSurfaces,polygons,gradingPolygon,grade,bounds,routes,roadPoints,roadFloors,roadSegments,roadAt,stair,stairBottom,stairTop,steps,stairEnd,crosswalk,garages:[14,54],q90};
 }
 export type Engineering35AccessLayout=ReturnType<typeof getEngineering35AccessLayout>;
-export function cutEngineering35AccessTerrain(positions:number[],indices:number[],q:Engineering35AccessLayout){
+export function* cutEngineering35AccessTerrainSteps(positions:number[],indices:number[],q:Engineering35AccessLayout){
  const sample=(x:number,z:number,lowest=false)=>{let h:number|undefined;for(const a of q.terrainSurfaces){const p=a.frame.local([x,z]);if(p.s>=a.s0-.001&&p.s<=a.s1+.001&&p.n>=a.n0-.001&&p.n<=a.n1+.001){const y=physics561SurfaceHeight(a,p.s,p.n);h=lowest&&h!==undefined?Math.min(h,y):y;}}return h;};
  const edges=new Map<string,{points:XZ[];heights:number[]}>();
  q.polygons.forEach((p,index)=>p.forEach((a,i)=>{const b=p[(i+1)%p.length],key=[a,b].map(v=>v.map(n=>n.toFixed(5)).join(',')).sort().join('/'),local=q.terrainSurfaces[index].frame.local([(a[0]+b[0])/2,(a[1]+b[1])/2]),h=physics561SurfaceHeight(q.terrainSurfaces[index],local.s,local.n),edge=edges.get(key);if(edge)edge.heights.push(h);else edges.set(key,{points:[a,b],heights:[h]});}));
  const boundaries=[...edges.values()].filter(e=>e.heights.length===1||Math.max(...e.heights)-Math.min(...e.heights)>.001).map(e=>e.points);
  boundaries.push(...q.gradingPolygon.map((a,i)=>[a,q.gradingPolygon[(i+1)%4]]));
- const patch=cutTerrainPatch(positions,indices,0,{bounds:q.bounds,local:(x,z)=>q.axis.local([x,z]),lines:{s:[0,70,91.77],n:[.3,7.4]},boundarySegments:boundaries,apply:(x,z,y)=>{const h=sample(x,z,true);return h===undefined?q.grade(x,z,y):h-.24;}});
+ const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:q.bounds,local:(x,z)=>q.axis.local([x,z]),lines:{s:[0,70,91.77],n:[.3,7.4]},boundarySegments:boundaries,apply:(x,z,y)=>{const h=sample(x,z,true);return h===undefined?q.grade(x,z,y):h-.24;}}));
  return{...patch,surfaceAt:(x:number,z:number)=>sample(x,z),affects:(x:number,z:number)=>sample(x,z)!==undefined};
+}
+
+export function cutEngineering35AccessTerrain(...args:Parameters<typeof cutEngineering35AccessTerrainSteps>){
+  const steps=cutEngineering35AccessTerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 type XZ=[number,number];
 export const EDUCATION13_ID='way/251646340';
 export const EDUCATION13_BOUNDS={minX:403,maxX:541,minZ:-842,maxZ:-750};
@@ -22,12 +22,18 @@ export function getEducation13Layout(heightAt:(x:number,z:number)=>number){
   return{floor,roof:floor+14,entries,stairs};
 }
 export type Education13Layout=ReturnType<typeof getEducation13Layout>;
-export function cutEducation13Terrain(positions:number[],indices:number[],q:Education13Layout){
+export function* cutEducation13TerrainSteps(positions:number[],indices:number[],q:Education13Layout){
   const zones=q.entries.map(e=>({f:humanities23Frame(e.f.point(e.s,-7),e.f.point(e.s,5)),half:1.9,length:12,at:(s:number)=>s<4?e.outer+(e.top-e.outer)*s/4:e.stairs&&s<6.7?e.top+(e.floor-e.top)*(s-4)/2.7:e.floor}));
   zones.push(...q.stairs.map(s=>({f:s.f,half:s.width/2+.12,length:s.f.length,at:(u:number)=>s.lo+(s.hi-s.lo)*u/s.f.length})));
   const segments=zones.flatMap(z=>{const p=[z.f.point(0,-z.half),z.f.point(z.length,-z.half),z.f.point(z.length,z.half),z.f.point(0,z.half)];return [...p.map((a,i)=>[a,p[(i+1)%4]]),...(z.length===12?[4,6.7].map(s=>[z.f.point(s,-z.half),z.f.point(s,z.half)]):[])];});
-  const patch=cutTerrainPatch(positions,indices,0,{bounds:EDUCATION13_BOUNDS,lines:{s:[],n:[]},local:(x,z)=>({s:x,n:z}),boundarySegments:segments,
+  const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:EDUCATION13_BOUNDS,lines:{s:[],n:[]},local:(x,z)=>({s:x,n:z}),boundarySegments:segments,
     apply:(x,z,y)=>{let value=y;for(const a of zones){const p=a.f.local([x,z]),distance=Math.hypot(Math.max(0,-p.s,p.s-a.length),Math.max(0,Math.abs(p.n)-a.half));if(distance>=1)continue;const weight=1-distance,goal=a.at(Math.max(0,Math.min(a.length,p.s)))-.19;value=Math.min(value,y+(goal-y)*weight);}return value;}
-  });
+  }));
   return {...patch,affects:(x:number,z:number)=>zones.some(a=>{const p=a.f.local([x,z]);return Math.hypot(Math.max(0,-p.s,p.s-a.length),Math.max(0,Math.abs(p.n)-a.half))<1;})};
+}
+
+export function cutEducation13Terrain(...args:Parameters<typeof cutEducation13TerrainSteps>){
+  const steps=cutEducation13TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

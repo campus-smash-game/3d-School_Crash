@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight, type Physics561Surface } from './physics561Site';
 import type { Science2527Layout } from './science2527Site';
 export const SCIENCE24_ID = 'way/238937635';
@@ -67,16 +67,22 @@ export function getScience24Layout(heightAt: (x: number, z: number) => number, n
   return { f, floor, floors, roof, doors, surfaces, routes, footprint, bounds, bridge, bridgeStart, bridgeEnd, connection25, neighbor25 };
 }
 export type Science24Layout = ReturnType<typeof getScience24Layout>;
-export function cutScience24Terrain(positions: number[], indices: number[], q: Science24Layout) {
+export function* cutScience24TerrainSteps(positions: number[], indices: number[], q: Science24Layout) {
   const areas = q.surfaces.filter(a => !a.elevated), ring = q.footprint;
   const inside = (x: number, z: number) => { let hit = false; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const a = ring[i], b = ring[j]; if ((a[1] > z) !== (b[1] > z) && x < (b[0] - a[0]) * (z - a[1]) / (b[1] - a[1]) + a[0]) hit = !hit; } return hit; };
   const segments = areas.flatMap(a => { const e = a.frame ?? q.f, p = [e.point(a.s0, a.n0), e.point(a.s1, a.n0), e.point(a.s1, a.n1), e.point(a.s0, a.n1)]; return p.map((b, i) => [b, p[(i + 1) % 4]]); });
   for (let i = 1; i < ring.length; i++) segments.push([ring[i - 1], ring[i]]);
   const weight = (s: number, n: number, a: Physics561Surface) => Math.max(0, 1 - Math.hypot(Math.max(0, a.s0 - s, s - a.s1), Math.max(0, a.n0 - n, n - a.n1)) / .15);
-  const patch = cutTerrainPatch(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
+  const patch = (yield* cutTerrainPatchSteps(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
     let result = y;
     for (const a of areas) { const p = (a.frame ?? q.f).local([x, z]); result = Math.min(result, y + (physics561SurfaceHeight(a, p.s, p.n) - .25 - y) * weight(p.s, p.n, a)); }
     if (inside(x, z)) result = Math.min(result, q.floor - .25); return result;
-  } });
+  } }));
   return { ...patch, affects: (x: number, z: number) => areas.some(a => { const p = (a.frame ?? q.f).local([x, z]); return weight(p.s, p.n, a) > 0; }) || inside(x, z) };
+}
+
+export function cutScience24Terrain(...args:Parameters<typeof cutScience24TerrainSteps>){
+  const steps=cutScience24TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

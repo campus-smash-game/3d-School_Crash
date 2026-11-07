@@ -4,12 +4,14 @@ type Vertex = [number, number, number, number, number];
 type Bounds = { minX: number; maxX: number; minZ: number; maxZ: number };
 
 /** 기존 삼각형을 76동 동측 계단과 상부 길 경계에서 잘라 주변 지면을 보존한다. */
-export function cutDining76EastTerrain(positions: number[], indices: number[], datumOffset: number) {
+export function* cutDining76EastTerrainSteps(positions: number[], indices: number[], datumOffset: number) {
+  let startupWork=0;
   const bounds = dining76EastCorrectionBounds(), lines = dining76EastSplitLines();
   const originalVertexCount = positions.length / 3, originalTriangleCount = indices.length / 3;
   const output: number[] = [], changedTriangles: number[][] = [], vertices = new Map<string, number>();
   // 보정 밖의 기존 정점을 재사용해 이웃 면과 인덱스도 공유한다.
   for(let i=0;i<originalVertexCount;i++){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const x=positions[i*3],y=positions[i*3+1],z=positions[i*3+2];
     if(Math.fround(applyDining76EastCorrection(x,z,y,datumOffset))===y)vertices.set(`${x},${z}`,i);
   }
@@ -42,6 +44,7 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
   // 하단 차도의 폭과 회차 끝을 실제 변으로 만든다. 계단 축만 자르면 보정이 차도 안으로 번질 수 있다.
   const road = DINING76_EAST_SITE.lowerRoadPoints;
   for (let i = 0; i + 1 < road.length; i++) {
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const a = road[i], b = road[i + 1], dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz);
     const along = (p: Vertex) => ((p[0] - a[0]) * dx + (p[2] - a[1]) * dz) / length;
     const across = (p: Vertex) => ((p[0] - a[0]) * -dz + (p[2] - a[1]) * dx) / length;
@@ -51,6 +54,7 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
   // 상부 길은 중간에서 꺾인다. 각 구간의 폭과 끝에서도 삼각형을 나눠 보정 경계를 맞춘다.
   const upperPath = DINING76_EAST_SITE.upperPath;
   for (let i = 0; i + 1 < upperPath.length; i++) {
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const a = upperPath[i], b = upperPath[i + 1], dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz);
     const along = (p: Vertex) => ((p[0] - a[0]) * dx + (p[2] - a[1]) * dz) / length;
     const across = (p: Vertex) => ((p[0] - a[0]) * -dz + (p[2] - a[1]) * dx) / length;
@@ -58,6 +62,7 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
     for (const value of [-2, 0, length, length + 2]) cuts.push({ project: along, value });
   }
   for (let i = 0; i < indices.length; i += 3) {
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const ids = indices.slice(i, i + 3), triangle = ids.map(k => {
       const x = positions[k * 3], y = positions[k * 3 + 1], z = positions[k * 3 + 2], p = dining76EastLocal(x, z);
       return [x, y, z, p.s, p.n] as Vertex;
@@ -70,6 +75,7 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
       return Math.min(...values) < value - 1e-9 && Math.max(...values) > value + 1e-9 ? split(poly, project, value) : [poly];
     });
     for (const polygon of polygons) for (let j = 1; j + 1 < polygon.length; j++) {
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
       const p = [polygon[0], polygon[j], polygon[j + 1]], area = (p[1][0] - p[0][0]) * (p[2][2] - p[0][2]) - (p[2][0] - p[0][0]) * (p[1][2] - p[0][2]);
       if (Math.abs(area) < 1e-9) continue;
       const next = p.map(add), xyz = next.flatMap(k => positions.slice(k * 3, k * 3 + 3));
@@ -83,16 +89,19 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
   const edgeKey=(a:number,b:number)=>a<b?`${a},${b}`:`${b},${a}`;
   const edges=new Map<string,{a:number;b:number;count:number}>();
   for(let i=0;i<output.length;i+=3)for(let j=0;j<3;j++){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const a=output[i+j],b=output[i+(j+1)%3],key=edgeKey(a,b),edge=edges.get(key);
     if(edge)edge.count++;else edges.set(key,{a,b,count:1});
   }
   const boundaryEdges=[...edges.values()].filter(e=>e.count===1),boundaryVertices=[...new Set(boundaryEdges.flatMap(e=>[e.a,e.b]))];
   const splits=new Map<string,number[]>();
   for(const{a,b}of boundaryEdges){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const ax=positions[a*3],ay=positions[a*3+1],az=positions[a*3+2],dx=positions[b*3]-ax,dy=positions[b*3+1]-ay,dz=positions[b*3+2]-az,sq=dx*dx+dz*dz;
     if(Math.max(ax,ax+dx)<bounds.minX-25||Math.min(ax,ax+dx)>bounds.maxX+25||Math.max(az,az+dz)<bounds.minZ-25||Math.min(az,az+dz)>bounds.maxZ+25)continue;
     const found:{id:number;t:number}[]=[];
     for(const id of boundaryVertices){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
       if(id===a||id===b)continue;
       const x=positions[id*3],y=positions[id*3+1],z=positions[id*3+2],t=((x-ax)*dx+(z-az)*dz)/sq;
       if(t<=1e-6||t>=1-1e-6)continue;
@@ -102,8 +111,10 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
   }
   const conformed:number[]=[];let stitchedTriangles=0;
   for(let i=0;i<output.length;i+=3){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const ids=output.slice(i,i+3),polygon:number[]=[];
-    for(let j=0;j<3;j++){const a=ids[j],b=ids[(j+1)%3],extra=splits.get(edgeKey(a,b));polygon.push(a);if(extra)polygon.push(...(a<b?extra:[...extra].reverse()));}
+    for(let j=0;j<3;j++){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';const a=ids[j],b=ids[(j+1)%3],extra=splits.get(edgeKey(a,b));polygon.push(a);if(extra)polygon.push(...(a<b?extra:[...extra].reverse()));}
     if(polygon.length===3){conformed.push(...ids);continue;}
     stitchedTriangles++;
     const center=positions.length/3;
@@ -112,6 +123,7 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
   }
   indices.length = 0; for (const index of conformed) indices.push(index);
   for(let i=0;i<indices.length;i+=3){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const xyz=indices.slice(i,i+3).flatMap(k=>positions.slice(k*3,k*3+3));
     if(Math.max(xyz[0],xyz[3],xyz[6])>=bounds.minX-25&&Math.min(xyz[0],xyz[3],xyz[6])<=bounds.maxX+25&&Math.max(xyz[2],xyz[5],xyz[8])>=bounds.minZ-25&&Math.min(xyz[2],xyz[5],xyz[8])<=bounds.maxZ+25)changedTriangles.push(xyz);
   }
@@ -131,4 +143,10 @@ export function cutDining76EastTerrain(positions: number[], indices: number[], d
     return undefined;
   }
   return { heightAt, bounds: bounds as Bounds, metadata: { originalVertexCount, originalTriangleCount, vertexCount: positions.length / 3, triangleCount: indices.length / 3, touchedTriangles, stitchedTriangles, patchTriangles: changedTriangles.length, datumOffset, protectedRoad: 'way/456540205/323', protectedRoadHalfWidth: DINING76_EAST_SITE.lowerRoadProtectedHalfWidth, rawDEMModified: false, dimensionsEstimated: true } };
+}
+
+export function cutDining76EastTerrain(...args:Parameters<typeof cutDining76EastTerrainSteps>){
+  const steps=cutDining76EastTerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

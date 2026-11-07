@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight } from './physics561Site';
 import type { Engineering30Layout, Engineering30Surface } from './engineering30Site';
 
@@ -59,13 +59,19 @@ export function getEngineering3033Layout(heightAt:(x:number,z:number)=>number, m
 }
 export type Engineering3033Layout=ReturnType<typeof getEngineering3033Layout>;
 
-export function cutEngineering3033Terrain(positions:number[],indices:number[],q:Engineering3033Layout){
+export function* cutEngineering3033TerrainSteps(positions:number[],indices:number[],q:Engineering3033Layout){
   const surfaceAt=(x:number,z:number)=>{
     let value:number|undefined;
     // Float32 지형 정점이 경계에서 반올림돼 기존 높은 땅을 남기지 않도록 허용 오차를 둔다.
     for(const a of q.surfaces){const p=a.frame.local([x,z]);if(p.s>=a.s0-1e-3&&p.s<=a.s1+1e-3&&p.n>=a.n0-1e-3&&p.n<=a.n1+1e-3)value=physics561SurfaceHeight(a,p.s,p.n);}
     return value;
   };
-  const patch=cutTerrainPatch(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:q.polygons.flatMap(p=>p.map((a,i)=>[a,p[(i+1)%p.length]])),apply:(x,z,y)=>{const h=surfaceAt(x,z);return h===undefined?y:h-.24;}});
+  const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:q.polygons.flatMap(p=>p.map((a,i)=>[a,p[(i+1)%p.length]])),apply:(x,z,y)=>{const h=surfaceAt(x,z);return h===undefined?y:h-.24;}}));
   return {...patch,surfaceAt,affects:(x:number,z:number)=>surfaceAt(x,z)!==undefined};
+}
+
+export function cutEngineering3033Terrain(...args:Parameters<typeof cutEngineering3033TerrainSteps>){
+  const steps=cutEngineering3033TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

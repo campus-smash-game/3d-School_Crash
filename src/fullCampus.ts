@@ -109,7 +109,7 @@ export type CampusData = {
 };
 export type CampusLocation = { id: string; name: string; x: number; z: number };
 
-export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt: (x: number, z: number) => number, options: { humanities250?: boolean; humanities23?: boolean; humanities4?: boolean; humanities35?: boolean; humanities8?: boolean; humanities7?: boolean; humanities6?: boolean; humanitiesUpper?: boolean; humanities14Exterior?: boolean; humanities1?: boolean; humanities2?: boolean; humanities35Exterior?: boolean; education10Exterior?: boolean; education13?: boolean; education1320?: boolean; pharmacy20?: boolean; pharmacy2021?: boolean; pharmacy21?: boolean; pharmacy143?: boolean; physics561?: boolean; science2256?: boolean; science2256Access?: boolean; science23?: boolean; science26?: boolean; science2527?: boolean; science24?: boolean; science251?: boolean; engineering38?: boolean; engineering39?: boolean; engineering3736?: boolean; engineering35Access?: boolean; engineering3334?: boolean; engineering3436?: boolean; engineering36?: boolean; engineering37?: boolean; engineering3337?: boolean; engineering33?: boolean; engineering3033?: boolean; engineering30?: boolean; engineering30Dining?: boolean; science28?: boolean; education1112?: boolean; education11Exterior?: boolean } = {}) {
+export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, heightAt: (x: number, z: number) => number, options: { humanities250?: boolean; humanities23?: boolean; humanities4?: boolean; humanities35?: boolean; humanities8?: boolean; humanities7?: boolean; humanities6?: boolean; humanitiesUpper?: boolean; humanities14Exterior?: boolean; humanities1?: boolean; humanities2?: boolean; humanities35Exterior?: boolean; education10Exterior?: boolean; education13?: boolean; education1320?: boolean; pharmacy20?: boolean; pharmacy2021?: boolean; pharmacy21?: boolean; pharmacy143?: boolean; physics561?: boolean; science2256?: boolean; science2256Access?: boolean; science23?: boolean; science26?: boolean; science2527?: boolean; science24?: boolean; science251?: boolean; engineering38?: boolean; engineering39?: boolean; engineering3736?: boolean; engineering35Access?: boolean; engineering3334?: boolean; engineering3436?: boolean; engineering36?: boolean; engineering37?: boolean; engineering3337?: boolean; engineering33?: boolean; engineering3033?: boolean; engineering30?: boolean; engineering30Dining?: boolean; science28?: boolean; education1112?: boolean; education11Exterior?: boolean } = {}) {
   const breakables: BreakableSpec[] = [];
   const colliders: StaticSpec[] = [];
   const locations: CampusLocation[] = [];
@@ -117,22 +117,33 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
   const landmarkViews: { update: (player: THREE.Vector3) => void }[] = [];
   const landmarkLabels: { x: number; z: number; radius: number; label: THREE.Sprite }[] = [];
   const forestViews: { x: number; z: number; group: THREE.Group }[] = [];
+  yield '건물과 도로 준비 중';
   const distantBuildings = createDistantBuildings(scene);
   const renderedBuildings = data.buildings.filter(shouldRenderMappedBuilding);
   const humanities250Active = options.humanities250 !== false && [HUMANITIES250.buildingId, HUMANITIES250.neighborId].every(id => renderedBuildings.some(b => b.id === id));
   const humanities23Active = options.humanities23 !== false && [HUMANITIES23.buildingId, HUMANITIES23.neighborId].every(id => renderedBuildings.some(b => b.id === id)) && data.roads.some(r => r.id === HUMANITIES23.stairRoad);
   const humanities35Active = options.humanities35 !== false && [HUMANITIES35.buildingId, HUMANITIES35.neighborId].every(id => renderedBuildings.some(b => b.id === id)) && data.roads.some(r => r.id === HUMANITIES35.bridgeRoad);
+  yield '건물과 도로 준비 중';
   const mappedAreas = [...data.areas, ...data.buildings.filter(b => b.kind === 'construction' && !data.areas.some(a => a.id === b.id)).map(b => ({ id: b.id, name: b.name, kind: b.kind, sport: '', points: b.points }))];
+  yield '건물과 도로 준비 중';
   const cube = new THREE.BoxGeometry(1, 1, 1);
+  yield '건물과 도로 준비 중';
   const glassPlanes = new THREE.BufferGeometry();
   const glassVertices: number[] = [];
+  yield '건물과 도로 준비 중';
   for (const z of [-.51, .51]) for (const [x, y] of [[-.5, -.5], [.5, -.5], [.5, .5], [-.5, -.5], [.5, .5], [-.5, .5]]) glassVertices.push(x, y, z);
-  glassPlanes.setAttribute('position', new THREE.Float32BufferAttribute(glassVertices, 3)); glassPlanes.computeVertexNormals();
+  yield '건물과 도로 준비 중';
+  glassPlanes.setAttribute('position', new THREE.Float32BufferAttribute(glassVertices, 3)); yield '건물과 도로 준비 중';
+  glassPlanes.computeVertexNormals();
+  yield '건물과 도로 준비 중';
   const façadeMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: .86 });
   const surfaceMaterials = new Map<string, THREE.MeshStandardMaterial>();
   const appearanceMaterials = new Map<string, { glass: THREE.MeshStandardMaterial; roof: THREE.MeshStandardMaterial; frame: THREE.MeshStandardMaterial }>();
+  yield '건물과 도로 준비 중';
   const dummy = new THREE.Object3D();
+  yield '건물과 도로 준비 중';
   const hidden = new THREE.Matrix4().makeScale(0, 0, 0);
+  yield '건물과 도로 준비 중';
   const buildingBoxes = renderedBuildings.map(building => {
     const xs = building.points.map(p => p[0]), zs = building.points.map(p => p[1]);
     return { minX: Math.min(...xs), maxX: Math.max(...xs), minZ: Math.min(...zs), maxZ: Math.max(...zs) };
@@ -144,6 +155,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     glass: THREE.InstancedMesh; distantGlass: THREE.InstancedMesh; trims: THREE.InstancedMesh; pieces: WallRecord[]; roof: THREE.Mesh; roofProxy: THREE.Mesh; rooftop: THREE.Group;
     label?: THREE.Sprite; damaged: boolean;
   };
+  yield '건물과 도로 준비 중';
   const center = (points: CampusPoint[]): CampusPoint => {
     const pts = points.length > 1 && points[0][0] === points.at(-1)![0] && points[0][1] === points.at(-1)![1] ? points.slice(0, -1) : points;
     return [pts.reduce((s, p) => s + p[0], 0) / pts.length, pts.reduce((s, p) => s + p[1], 0) / pts.length];
@@ -219,11 +231,17 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     'way/179742150': '500동 북서쪽 건물', 'way/179742155': '500동 서쪽 가운데 건물',
     'way/179742153': '500동 남서쪽 건물', 'way/329398248': '500동 연결통로', 'way/297047750': '500동 북쪽 건물',
   };
+  yield '건물과 도로 준비 중';
   let education12: ReturnType<typeof createEducation12Landmark> | undefined;
+  yield '건물과 도로 준비 중';
   let cafe111: ReturnType<typeof createPascucci111Landmark> | undefined;
+  yield '건물과 도로 준비 중';
   let humanities6: ReturnType<typeof createHumanities6Landmark> | undefined;
+  yield '건물과 도로 준비 중';
   let humanities7: ReturnType<typeof createHumanities7Landmark> | undefined;
+  yield '건물과 도로 준비 중';
   let humanities8: ReturnType<typeof createHumanities8Landmark> | undefined;
+  yield '건물과 도로 준비 중';
   let humanities4: ReturnType<typeof createHumanities4Landmark> | undefined;
   const engineering38Layout=options.engineering38!==false?scene.getObjectByName('campus-terrain')?.userData.engineering38Correction?.layout:undefined;
   const engineering39Layout=options.engineering39!==false?scene.getObjectByName('campus-terrain')?.userData.engineering39Correction?.layout:undefined;
@@ -251,7 +269,9 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
   const pharmacy2021Layout=options.pharmacy2021!==false?scene.getObjectByName('campus-terrain')?.userData.pharmacy2021Correction?.layout:undefined;
   const pharmacy20Layout=options.pharmacy20!==false?scene.getObjectByName('campus-terrain')?.userData.pharmacy20Correction?.layout:undefined;
   const education1320Layout=options.education1320!==false&&options.education13!==false?scene.getObjectByName('campus-terrain')?.userData.education1320Correction?.layout:undefined;
+  yield '건물과 도로 준비 중';
   for (const building of renderedBuildings) {
+    yield '건물과 도로 준비 중';
     const [x, z] = center(building.points);
     const base = heightAt(x, z);
     const originalProfile = getBuildingAppearance(building);
@@ -345,6 +365,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     if (connectionOpenings.length) { near.userData.connectionOpening = connectionOpenings[0]; near.userData.connectionOpenings = connectionOpenings; }
     const ringList = [building.points, ...(building.holes ?? [])];
     for (const [ringIndex, points] of ringList.entries()) for (let i = 0; i < points.length - 1; i++) {
+    yield '건물과 도로 준비 중';
       const a = points[i], b = points[i + 1];
       const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz);
       if (length < .6) continue;
@@ -362,6 +383,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
           return p.distance < .05 && q.distance < .05 && Math.max(p.along, q.along) > 0 && Math.min(p.along, q.along) < length;
         });
         for (const opening of matches) {
+    yield '건물과 도로 준비 중';
           const p = project(opening.a), q = project(opening.b);
           const range: [number, number] = [Math.max(0, Math.min(p.along, q.along)), Math.min(length, Math.max(p.along, q.along))];
           edgeOpenings.push({ range, opening }); cuts.push(...range);
@@ -369,6 +391,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
         cuts.sort((u, v) => u - v);
       }
       for (let j = 0; j < cuts.length - 1; j++) {
+    yield '건물과 도로 준비 중';
         const width = cuts[j + 1] - cuts[j];
         if (width < .001) continue;
         const alongCenter = (cuts[j] + cuts[j + 1]) / 2;
@@ -380,6 +403,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
         let verticalParts = [[wallBottom, wallTop]];
         for (const { opening } of activeOpenings) verticalParts = verticalParts.flatMap(([bottom, top]) => [[bottom, Math.min(top, opening.bottom)], [Math.max(bottom, opening.top), top]]).filter(([bottom, top]) => top > bottom);
         for (const [bottom, top] of verticalParts) {
+    yield '건물과 도로 준비 중';
           const wallHeight = top - bottom;
           if (wallHeight < .001) continue;
           const proxy = new THREE.Mesh(cube, new THREE.MeshStandardMaterial({ color, roughness: .86 }));
@@ -393,6 +417,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
           const wall: WallRecord = { proxy, matrix: proxy.matrix.clone(), shown: true, normalSign, color: color.getHex(), windows: [], trims: [] };
           const across = Math.max(1, Math.round(width / profile.bayWidth));
           for (let floor = 0; floor < floors; floor++) for (let col = 0; col < across; col++) {
+    yield '건물과 도로 준비 중';
             // 거리뷰에서 확인한 10동 연결교 쪽 끝벽은 창 없는 벽돌 면이다.
             if (building.id === EDUCATION10_LINK.buildingId && ringIndex === 0 && i === EDUCATION10_LINK.edgeIndex) continue;
             // 소식지의 2동 동쪽 끝벽은 출입문과 발코니 외에 일반 창이 없는 벽돌 면이다.
@@ -425,6 +450,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
             }
           }
           if (profile.horizontalBands) for (let floor = 1; floor <= floors; floor++) {
+    yield '건물과 도로 준비 중';
             if (humanities23Active && building.id === HUMANITIES23.buildingId && ringIndex === 0 && [5, 6].includes(i)) continue;
             if (humanities35Active && building.id === HUMANITIES35.buildingId && ringIndex === 0 && i === 1) continue;
             const centerY = base + floor * height / floors - .16, low = Math.max(bottom, centerY - .12), high = Math.min(top, centerY + .12);
@@ -433,6 +459,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
             wall.trims.push({ matrix: dummy.matrix.clone(), index: trimCount++ });
           }
           if (profile.verticalFins) for (let col = 0; col <= across; col++) {
+    yield '건물과 도로 준비 중';
             const along = (col / across - .5) * width;
             const low = Math.max(bottom, base), high = Math.min(top, base + height);
             if (high - low < .001) continue;
@@ -514,9 +541,11 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     }
     buildingViews.push(view);
   }
+  yield '건물과 도로 준비 중';
   distantBuildings.finish();
 
   const humanities7Building = renderedBuildings.find(b => b.id === HUMANITIES7_ID);
+  yield '건물과 도로 준비 중';
   if (humanities7Building && options.humanities7 !== false) {
     humanities7 = createHumanities7Landmark(scene, humanities7Building, heightAt, (humanities8?.shell.userData.humanities8Access.pavementMasks ?? []).map((m: { polygon: CampusPoint[] }) => m.polygon));
     breakables.push(...humanities7.breakables); landmarkViews.push(humanities7);
@@ -524,6 +553,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
   }
 
   const humanities6Building = renderedBuildings.find(b => b.id === HUMANITIES6_ID);
+  yield '건물과 도로 준비 중';
   if (humanities6Building && options.humanities6 !== false) {
     humanities6 = createHumanities6Landmark(scene, humanities6Building, heightAt, (humanities7?.shell.userData.humanities7Access.pavementMasks ?? []).map((m: { polygon: CampusPoint[] }) => m.polygon));
     breakables.push(...humanities6.breakables); landmarkViews.push(humanities6);
@@ -601,7 +631,9 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
       for (const k of [0, 2, 1, 1, 2, 3]) { const p = vertices[k]; destination.push(p[0], heightAt(p[0], p[1]) + offset, p[1]); }
     }
   }
+  yield '건물과 도로 준비 중';
   for (const road of data.roads) {
+    yield '건물과 도로 준비 중';
     if(engineering3334Layout&&['way/1485386285/565','way/179742152/81'].includes(road.id))continue;
     if (science2256Layout && road.id==='way/167606288/25') continue;
     if (physics561Layout && road.id==='way/248013972/100') continue;
@@ -616,6 +648,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
   }
   // 서로 다른 원본 도로의 직각 끝선 사이에 남는 카페 앞 접합 틈을 채운다.
   // 도로 중심선과 통행 폭은 바꾸지 않고 기존 차도와 같은 높이로 표시한다.
+  yield '건물과 도로 준비 중';
   if (education12 && cafe111) {
     const junction = EDUCATION12_SITE.origin;
     const roads = [EDUCATION12_SITE.road19, EDUCATION12_SITE.road333].map(path => data.roads.find(road => road.drivable && road.points.some(p => Math.hypot(p[0]-path[0][0],p[1]-path[0][1])<.001) && road.points.some(p => Math.hypot(p[0]-path[1][0],p[1]-path[1][1])<.001)));
@@ -624,9 +657,12 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
       const bounds={minX:Math.min(...polygon.map(p=>p[0])),maxX:Math.max(...polygon.map(p=>p[0])),minZ:Math.min(...polygon.map(p=>p[1])),maxZ:Math.max(...polygon.map(p=>p[1]))};
       const sampler=(heightAt as TerrainHeightSampler).roadSurfaceTriangles,triangles=sampler?.(bounds)??[polygon.flatMap(p=>[p[0],heightAt(...p)-.03,p[1]])];
       const before=roadPositions.length;
-      for(const triangle of triangles){let clipped:number[][]=[triangle.slice(0,3),triangle.slice(3,6),triangle.slice(6,9)];
-        for(let e=0;e<polygon.length&&clipped.length;e++){const a=polygon[e],b=polygon[(e+1)%polygon.length],distance=(p:number[])=>(b[0]-a[0])*(p[2]-a[1])-(b[1]-a[1])*(p[0]-a[0]),next:number[][]=[];
-          for(let j=0;j<clipped.length;j++){const p=clipped[j],q=clipped[(j+1)%clipped.length],dp=distance(p),dq=distance(q);if(dp>=-1e-8)next.push(p);if((dp>=-1e-8)!==(dq>=-1e-8))next.push(p.map((v,k)=>v+(q[k]-v)*dp/(dp-dq)));}clipped=next;
+      for(const triangle of triangles){
+    yield '건물과 도로 준비 중';let clipped:number[][]=[triangle.slice(0,3),triangle.slice(3,6),triangle.slice(6,9)];
+        for(let e=0;e<polygon.length&&clipped.length;e++){
+    yield '건물과 도로 준비 중';const a=polygon[e],b=polygon[(e+1)%polygon.length],distance=(p:number[])=>(b[0]-a[0])*(p[2]-a[1])-(b[1]-a[1])*(p[0]-a[0]),next:number[][]=[];
+          for(let j=0;j<clipped.length;j++){
+    yield '건물과 도로 준비 중';const p=clipped[j],q=clipped[(j+1)%clipped.length],dp=distance(p),dq=distance(q);if(dp>=-1e-8)next.push(p);if((dp>=-1e-8)!==(dq>=-1e-8))next.push(p.map((v,k)=>v+(q[k]-v)*dp/(dp-dq)));}clipped=next;
         }
         for(let j=1;j+1<clipped.length;j++)for(const p of[clipped[0],clipped[j],clipped[j+1]])roadPositions.push(p[0],p[1]+.17,p[2]);
       }
@@ -634,115 +670,205 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     }
   }
   const humanitiesBuilding = renderedBuildings.find(b => b.id === 'way/167984624');
+  yield '건물과 도로 준비 중';
   const humanitiesPassage = humanitiesBuilding && data.roads.some(road => road.id === 'way/1429747754/540')
     ? createHumanitiesPassage(scene, heightAt, humanitiesBuilding.points) : undefined;
+  yield '건물과 도로 준비 중';
   if (humanitiesPassage) { breakables.push(...humanitiesPassage.breakables); landmarkViews.push(humanitiesPassage); }
+  yield '건물과 도로 준비 중';
   const humanities14 = renderedBuildings.some(b => b.id === HUMANITIES14_STAIR.buildingId) && data.roads.some(r => r.id === HUMANITIES14_STAIR.roadId)
     ? createHumanities14Stair(scene) : undefined;
+  yield '건물과 도로 준비 중';
   if (humanities14) { breakables.push(...humanities14.breakables); landmarkViews.push(humanities14); }
+  yield '건물과 도로 준비 중';
   const humanitiesUpper = options.humanitiesUpper !== false && humanities6 && humanities14 && HUMANITIES_UPPER_ROADS.every(id=>data.roads.some(r=>r.id===id))
     ? createHumanitiesUpperApproach(scene, [...humanities6.shell.userData.humanities6Access.pavementMasks, ...humanities14.shell.userData.humanities14Access.pavementMasks].map((m: { polygon: CampusPoint[] })=>m.polygon)) : undefined;
+  yield '건물과 도로 준비 중';
   if(humanitiesUpper) { breakables.push(...humanitiesUpper.breakables); landmarkViews.push(humanitiesUpper); }
   const humanities14Building=renderedBuildings.find(b=>b.id===HUMANITIES14_ID);
+  yield '건물과 도로 준비 중';
   const humanities14Exterior=humanities14Building && options.humanities14Exterior !== false ? createHumanities14Landmark(scene,humanities14Building,heightAt,[...(humanities6?.shell.userData.humanities6Access.pavementMasks??[]),...(humanities14?.shell.userData.humanities14Access.pavementMasks??[]),...(humanitiesUpper?.shell.userData.humanitiesUpperAccess.pavementMasks??[])].map((m:{polygon:CampusPoint[]})=>m.polygon)) : undefined;
+  yield '건물과 도로 준비 중';
   if(humanities14Exterior){breakables.push(...humanities14Exterior.breakables);landmarkViews.push(humanities14Exterior);}
+  yield '건물과 도로 준비 중';
   const humanitiesGarden = HUMANITIES_GARDEN.buildingIds.every(id => renderedBuildings.some(b => b.id === id))
     ? createHumanitiesGarden(scene) : undefined;
+  yield '건물과 도로 준비 중';
   if (humanitiesGarden) { breakables.push(...humanitiesGarden.breakables); landmarkViews.push(humanitiesGarden); }
+  yield '건물과 도로 준비 중';
   if (humanities250Active) {
     const connection = createHumanities250(scene, heightAt); breakables.push(...connection.breakables); landmarkViews.push(connection);
   }
+  yield '건물과 도로 준비 중';
   const humanities1 = humanitiesBuilding && options.humanities1 !== false ? createHumanities1Landmark(scene,humanitiesBuilding,heightAt,(humanitiesPassage?.shell.userData.humanitiesPassage.pavementMasks??[]).map((m:{polygon:CampusPoint[]})=>m.polygon),humanities250Active) : undefined;
+  yield '건물과 도로 준비 중';
   if(humanities1){breakables.push(...humanities1.breakables);landmarkViews.push(humanities1);}
   const humanities2Building = renderedBuildings.find(b=>b.id===HUMANITIES2_ID);
+  yield '건물과 도로 준비 중';
   const humanities2 = humanities2Building && options.humanities2 !== false ? createHumanities2Landmark(scene,humanities2Building,heightAt,humanities250Active,humanities23Active) : undefined;
+  yield '건물과 도로 준비 중';
   if(humanities2){breakables.push(...humanities2.breakables);landmarkViews.push(humanities2);}
+  yield '건물과 도로 준비 중';
   const humanities23 = humanities23Active ? createHumanities23Connection(scene, heightAt, renderedBuildings.filter(b => [HUMANITIES23.buildingId, HUMANITIES23.neighborId, 'way/167983611'].includes(b.id)).map(b => b.points)) : undefined;
+  yield '건물과 도로 준비 중';
   if (humanities23) { breakables.push(...humanities23.breakables); landmarkViews.push(humanities23); }
-  if(options.humanities35Exterior!==false)for(const building of renderedBuildings.filter(b=>HUMANITIES35_EXTERIOR_IDS.includes(b.id))){const exterior=createHumanities35Exterior(scene,building,heightAt,humanities23Active,humanities35Active);breakables.push(...exterior.breakables);landmarkViews.push(exterior);}
+  yield '건물과 도로 준비 중';
+  if(options.humanities35Exterior!==false)for(const building of renderedBuildings.filter(b=>HUMANITIES35_EXTERIOR_IDS.includes(b.id))){
+    yield '건물과 도로 준비 중';const exterior=createHumanities35Exterior(scene,building,heightAt,humanities23Active,humanities35Active);breakables.push(...exterior.breakables);landmarkViews.push(exterior);}
+  yield '건물과 도로 준비 중';
   const humanities35 = humanities35Active ? createHumanities35Connection(scene, heightAt, renderedBuildings.filter(b => [HUMANITIES35.buildingId, HUMANITIES35.neighborId].includes(b.id)).map(b => b.points), (humanities23?.shell.userData.humanities23.pavementMasks ?? []).map((m: { polygon: CampusPoint[] }) => m.polygon)) : undefined;
+  yield '건물과 도로 준비 중';
   if (humanities35) { breakables.push(...humanities35.breakables); landmarkViews.push(humanities35); }
+  yield '건물과 도로 준비 중';
   const dining76 = renderedBuildings.some(b => b.id === DINING76_SITE.buildingId) && data.roads.some(r => r.id === DINING76_SITE.sourceRoad)
     ? createDining76Approach(scene, heightAt, data) : undefined;
+  yield '건물과 도로 준비 중';
   if (dining76) { breakables.push(...dining76.breakables); landmarkViews.push(dining76); }
+  yield '건물과 도로 준비 중';
   const dining76East = renderedBuildings.some(b => b.id === DINING76_EAST_SITE.buildingId) && data.roads.some(r => r.id === DINING76_EAST_SITE.sourceRoad)
     ? createDining76EastApproach(scene, heightAt) : undefined;
+  yield '건물과 도로 준비 중';
   if (dining76East) {
     breakables.push(...dining76East.breakables); landmarkViews.push(dining76East);
     if (dining76) Object.assign(dining76.shell.userData.dining76Access.scope, { rightStair87Implemented: true, rightStair87Reason: '별도 동측 모듈이 계단과 상부 외부 보행 연결을 구현한다. 치수와 가려진 연결 바닥은 근사다.', rightStair87Module: 'dining76EastApproach', rightStair87AccessShell: dining76East.shell.name });
   }
   const education10Building=renderedBuildings.find(b=>b.id===EDUCATION10_ID);
+  yield '건물과 도로 준비 중';
   const education10=education10Building&&options.education10Exterior!==false?createEducation10Exterior(scene,education10Building,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(education10){breakables.push(...education10.breakables);landmarkViews.push(education10);}
   const education13Building=renderedBuildings.find(b=>b.id===EDUCATION13_ID),education13Layout=scene.getObjectByName('campus-terrain')?.userData.education13Correction?.layout;
+  yield '건물과 도로 준비 중';
   const education13=education13Building&&education13Layout&&options.education13!==false?createEducation13Exterior(scene,education13Building,education13Layout,heightAt,education1320Layout):undefined;
+  yield '건물과 도로 준비 중';
   const education1320Building=renderedBuildings.find(b=>b.id===EDUCATION1320_ID),education1320=education1320Building&&education1320Layout?createEducation1320Connection(scene,education1320Building,education1320Layout):undefined;
+  yield '건물과 도로 준비 중';
   const engineering30Building=renderedBuildings.find(b=>b.id===ENGINEERING30_ID),engineering30=engineering30Building&&engineering30Layout?createEngineering30Exterior(scene,engineering30Building,engineering30Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering30){breakables.push(...engineering30.breakables);landmarkViews.push(engineering30);}
+  yield '건물과 도로 준비 중';
   const engineering38=engineering38Layout?createEngineering38Access(scene,engineering38Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering38){breakables.push(...engineering38.breakables);landmarkViews.push(engineering38);}
+  yield '건물과 도로 준비 중';
   const engineering39=engineering39Layout?createEngineering39Exterior(scene,engineering39Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering39){breakables.push(...engineering39.breakables);landmarkViews.push(engineering39);}
+  yield '건물과 도로 준비 중';
   const engineering3736=engineering3736Layout?createEngineering3736Access(scene,engineering3736Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering3736){breakables.push(...engineering3736.breakables);landmarkViews.push(engineering3736);}
+  yield '건물과 도로 준비 중';
   const engineering35Access=engineering35AccessLayout?createEngineering35Access(scene,engineering35AccessLayout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering35Access){breakables.push(...engineering35Access.breakables);landmarkViews.push(engineering35Access);}
+  yield '건물과 도로 준비 중';
   const engineering3334=engineering3334Layout?createEngineering3334Access(scene,engineering3334Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering3334){breakables.push(...engineering3334.breakables);landmarkViews.push(engineering3334);}
+  yield '건물과 도로 준비 중';
   const engineering3436=engineering3436Layout?createEngineering3436Exterior(scene,engineering3436Layout,engineering3334Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering3436){breakables.push(...engineering3436.breakables);landmarkViews.push(engineering3436);}
+  yield '건물과 도로 준비 중';
   const engineering36=engineering36Layout?createEngineering36Exterior(scene,engineering36Layout,engineering3436Layout?.openings36):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering36){breakables.push(...engineering36.breakables);landmarkViews.push(engineering36);}
+  yield '건물과 도로 준비 중';
   const engineering37=engineering37Layout?createEngineering37Exterior(scene,engineering37Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering37){breakables.push(...engineering37.breakables);landmarkViews.push(engineering37);}
+  yield '건물과 도로 준비 중';
   const engineering3337=engineering3337Layout?createEngineering3337Access(scene,engineering3337Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering3337){breakables.push(...engineering3337.breakables);landmarkViews.push(engineering3337);}
+  yield '건물과 도로 준비 중';
   const engineering33Building=renderedBuildings.find(b=>b.id===ENGINEERING33_ID),engineering33=engineering33Building&&engineering33Layout?createEngineering33Exterior(scene,engineering33Building,engineering33Layout,heightAt,engineering3334Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering33){breakables.push(...engineering33.breakables);landmarkViews.push(engineering33);}
+  yield '건물과 도로 준비 중';
   const engineering3033=engineering3033Layout?createEngineering3033Access(scene,engineering3033Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering3033){breakables.push(...engineering3033.breakables);landmarkViews.push(engineering3033);}
+  yield '건물과 도로 준비 중';
   const engineering30DiningBuilding=renderedBuildings.find(b=>b.id===ENGINEERING30_DINING_ID),engineering30Dining=engineering30DiningBuilding&&engineering30DiningLayout?createEngineering30DiningExterior(scene,engineering30DiningBuilding,engineering30DiningLayout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(engineering30Dining){breakables.push(...engineering30Dining.breakables);landmarkViews.push(engineering30Dining);}
+  yield '건물과 도로 준비 중';
   const science28Building=renderedBuildings.find(b=>b.id===SCIENCE28_ID),science28=science28Building&&science28Layout?createScience28Exterior(scene,science28Building,science28Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(science28){breakables.push(...science28.breakables);landmarkViews.push(science28);}
+  yield '건물과 도로 준비 중';
   const science251Building=renderedBuildings.find(b=>b.id===SCIENCE251_ID),science251=science251Building&&science251Layout?createScience251Exterior(scene,science251Building,science251Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(science251){breakables.push(...science251.breakables);landmarkViews.push(science251);}
+  yield '건물과 도로 준비 중';
   const science24Building=renderedBuildings.find(b=>b.id===SCIENCE24_ID),science24=science24Building&&science24Layout?createScience24Exterior(scene,science24Building,science24Layout,heightAt,science251Layout?.connection24):undefined;
+  yield '건물과 도로 준비 중';
   if(science24){breakables.push(...science24.breakables);landmarkViews.push(science24);}
+  yield '건물과 도로 준비 중';
   const science2527=science2527Layout?createScience2527Exterior(scene,renderedBuildings,science2527Layout,heightAt,science24Layout?.connection25):undefined;
+  yield '건물과 도로 준비 중';
   if(science2527){breakables.push(...science2527.breakables);landmarkViews.push(science2527);}
   const science26Building=renderedBuildings.find(b=>b.id===SCIENCE26_ID);
+  yield '건물과 도로 준비 중';
   const science26=science26Layout&&science26Building?createScience26Exterior(scene,science26Building,science26Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(science26){breakables.push(...science26.breakables);landmarkViews.push(science26);}
   const science23Building=renderedBuildings.find(b=>b.id===SCIENCE23_ID);
+  yield '건물과 도로 준비 중';
   const science23=science23Layout&&science23Building?createScience23Exterior(scene,science23Building,science23Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(science23){breakables.push(...science23.breakables);landmarkViews.push(science23);}
+  yield '건물과 도로 준비 중';
   const science2256=science2256Layout?createScience2256Exterior(scene,renderedBuildings,science2256Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(science2256){breakables.push(...science2256.breakables);landmarkViews.push(science2256);}
+  yield '건물과 도로 준비 중';
   const physics561Building=renderedBuildings.find(b=>b.id===PHYSICS561_ID),physics561=physics561Building&&physics561Layout?createPhysics561Exterior(scene,physics561Building,physics561Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(physics561){breakables.push(...physics561.breakables);landmarkViews.push(physics561);}
+  yield '건물과 도로 준비 중';
   const pharmacy143Building=renderedBuildings.find(b=>b.id===PHARMACY143_ID),pharmacy143=pharmacy143Building&&pharmacy143Layout?createPharmacy143Exterior(scene,pharmacy143Building,pharmacy143Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(pharmacy143){breakables.push(...pharmacy143.breakables);landmarkViews.push(pharmacy143);}
+  yield '건물과 도로 준비 중';
   const pharmacy21Building=renderedBuildings.find(b=>b.id===PHARMACY21_ID),pharmacy21=pharmacy21Building&&pharmacy21Layout?createPharmacy21Exterior(scene,pharmacy21Building,pharmacy21Layout,heightAt):undefined;
+  yield '건물과 도로 준비 중';
   if(pharmacy21){breakables.push(...pharmacy21.breakables);landmarkViews.push(pharmacy21);}
+  yield '건물과 도로 준비 중';
   const pharmacy20Building=renderedBuildings.find(b=>b.id===PHARMACY20_ID),pharmacy20=pharmacy20Building&&pharmacy20Layout?createPharmacy20Exterior(scene,pharmacy20Building,pharmacy20Layout,heightAt,pharmacy2021Layout,pharmacy143Layout):undefined;
+  yield '건물과 도로 준비 중';
   const pharmacy2021Building=renderedBuildings.find(b=>b.id===PHARMACY2021_ID),pharmacy2021=pharmacy2021Building&&pharmacy2021Layout?createPharmacy2021Connection(scene,pharmacy2021Building,pharmacy2021Layout):undefined;
+  yield '건물과 도로 준비 중';
   if(pharmacy2021){breakables.push(...pharmacy2021.breakables);landmarkViews.push(pharmacy2021);}
+  yield '건물과 도로 준비 중';
   if(pharmacy20){breakables.push(...pharmacy20.breakables);landmarkViews.push(pharmacy20);}
+  yield '건물과 도로 준비 중';
   if(education1320){breakables.push(...education1320.breakables);landmarkViews.push(education1320);}
+  yield '건물과 도로 준비 중';
   if(education13){breakables.push(...education13.breakables);landmarkViews.push(education13);}
   const education11Building=renderedBuildings.find(b=>b.id===EDUCATION11_ID);
+  yield '건물과 도로 준비 중';
   const education11=education11Building&&options.education11Exterior!==false?createEducation11Exterior(scene,education11Building,heightAt,options.education1112!==false):undefined;
+  yield '건물과 도로 준비 중';
   if(education11){breakables.push(...education11.breakables);landmarkViews.push(education11);}
+  yield '건물과 도로 준비 중';
   const education1112=education11&&education12&&options.education1112!==false?createEducation1112Connection(scene,getEducation12Layout(heightAt),education11.shell.userData.education11Exterior.floor):undefined;
+  yield '건물과 도로 준비 중';
   if(education1112){breakables.push(...education1112.breakables);landmarkViews.push(education1112);education11!.shell.userData.education11Exterior.connection12Implemented=true;education12!.shell.userData.education12Access.scope.building11ConnectionDoorAdded=true;}
+  yield '건물과 도로 준비 중';
   const education101 = renderedBuildings.some(b => b.id === EDUCATION101_SITE.buildingId) && data.roads.some(r => r.id === EDUCATION101_SITE.sourceRoad)
     ? createEducation101Approach(scene, heightAt) : undefined;
+  yield '건물과 도로 준비 중';
   if (education101) { breakables.push(...education101.breakables); landmarkViews.push(education101); }
   // 새 포장의 실제 외곽 안에서만 기존 보행 표시를 잘라 두 바닥이 겹치지 않게 한다.
   const northAccess = scene.children.find(o => o.userData.buildingId === 'way/297046999' && o.userData.role === 'building-shell')?.userData.northAccess;
+  yield '건물과 도로 준비 중';
   for (const access of [engineering38?.shell.userData.engineering38Access, engineering39?.shell.userData.engineering39Exterior, engineering3736?.shell.userData.engineering3736Access, engineering35Access?.shell.userData.engineering35Access, engineering3334?.shell.userData.engineering3334Access, engineering3436?.shell.userData.engineering3436Exterior, engineering36?.shell.userData.engineering36Exterior, engineering37?.shell.userData.engineering37Exterior, engineering3337?.shell.userData.engineering3337Access, engineering33?.shell.userData.engineering33Exterior, engineering3033?.shell.userData.engineering3033Access, engineering30?.shell.userData.engineering30Exterior, engineering30Dining?.shell.userData.engineering30DiningExterior, science28?.shell.userData.science28Exterior, science251?.shell.userData.science251Exterior, science24?.shell.userData.science24Exterior, science2527?.shell.userData.science2527Exterior, science26?.shell.userData.science26Exterior, science23?.shell.userData.science23Exterior, science2256?.shell.userData.science2256Exterior, physics561?.shell.userData.physics561Exterior, pharmacy143?.shell.userData.pharmacy143Exterior, pharmacy21?.shell.userData.pharmacy21Exterior, scene.getObjectByName('way/329398175:library-landmark')?.userData.southeastSite, pharmacy2021?.shell.userData.pharmacy2021Access, pharmacy20?.shell.userData.pharmacy20Exterior, education1320?.shell.userData.education1320Access, education13?.shell.userData.education13Exterior, education1112?.shell.userData.education1112Access, humanities1?.shell.userData.humanities1Exterior, humanities14Exterior?.shell.userData.humanities14Exterior, humanitiesUpper?.shell.userData.humanitiesUpperAccess, northAccess, humanitiesPassage?.shell.userData.humanitiesPassage, humanities14?.shell.userData.humanities14Access, humanitiesGarden?.shell.userData.humanitiesGarden, humanities23?.shell.userData.humanities23, humanities4?.shell.userData.humanities4Access, humanities8?.shell.userData.humanities8Access, humanities7?.shell.userData.humanities7Access, humanities6?.shell.userData.humanities6Access, humanities35?.shell.userData.humanities35, dining76?.shell.userData.dining76Access, dining76East?.shell.userData.dining76EastAccess, education101?.shell.userData.education101Access, education12?.shell.userData.education12Access, cafe111?.shell.userData.cafeAccess]) {
+    yield '건물과 도로 준비 중';
   for (const destination of access && (access === engineering38?.shell.userData.engineering38Access || access === engineering39?.shell.userData.engineering39Exterior || access === engineering3736?.shell.userData.engineering3736Access || access === engineering35Access?.shell.userData.engineering35Access || access === engineering3334?.shell.userData.engineering3334Access || access === engineering3436?.shell.userData.engineering3436Exterior || access === engineering36?.shell.userData.engineering36Exterior || access === engineering37?.shell.userData.engineering37Exterior || access === engineering3337?.shell.userData.engineering3337Access || access === engineering3033?.shell.userData.engineering3033Access || access === engineering30?.shell.userData.engineering30Exterior || access === humanities14Exterior?.shell.userData.humanities14Exterior || access === dining76?.shell.userData.dining76Access || access === dining76East?.shell.userData.dining76EastAccess || access === humanities23?.shell.userData.humanities23 || access === humanities4?.shell.userData.humanities4Access || access === humanities8?.shell.userData.humanities8Access || access === humanities7?.shell.userData.humanities7Access || access === humanities6?.shell.userData.humanities6Access || access === humanities35?.shell.userData.humanities35) ? [pathPositions, roadPositions] : [pathPositions]) {
+    yield '건물과 도로 준비 중';
   const northMasks = (access?.pavementMasks ?? []) as { component: string; polygon: CampusPoint[] }[];
   if (northMasks.length) {
     const area = (p: number[][], zIndex: number) => p.reduce((sum, a, i) => { const b = p[(i + 1) % p.length]; return sum + a[0] * b[zIndex] - b[0] * a[zIndex]; }, 0);
@@ -762,10 +888,13 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     };
     const kept: number[] = []; let touchedTriangles = 0;
     for (let i = 0; i < destination.length; i += 9) {
-      const original = [destination.slice(i, i + 3), destination.slice(i + 3, i + 6), destination.slice(i + 6, i + 9)], bounds = boundsOf(original, 2);
-      if (!overlaps(bounds, allBounds)) { kept.push(...destination.slice(i, i + 9)); continue; }
+    yield '건물과 도로 준비 중';
+      const bounds={minX:Math.min(destination[i],destination[i+3],destination[i+6]),maxX:Math.max(destination[i],destination[i+3],destination[i+6]),minZ:Math.min(destination[i+2],destination[i+5],destination[i+8]),maxZ:Math.max(destination[i+2],destination[i+5],destination[i+8])};
+      if (!overlaps(bounds, allBounds)) { for(let k=0;k<9;k++)kept.push(destination[i+k]); continue; }
+      const original = [destination.slice(i, i + 3), destination.slice(i + 3, i + 6), destination.slice(i + 6, i + 9)];
       let pieces = [original], touched = false;
       for (const mask of masks.filter(m => overlaps(bounds, m.bounds))) {
+    yield '건물과 도로 준비 중';
         const planes = mask.polygon.map((a, j) => { const b = mask.polygon[(j + 1) % mask.polygon.length]; return (p: number[]) => mask.sign * ((b[0] - a[0]) * (p[2] - a[1]) - (b[1] - a[1]) * (p[0] - a[0])); });
         pieces = pieces.flatMap(piece => {
           const intersection = planes.reduce((p, distance) => halfPlane(p, distance, true), piece);
@@ -789,19 +918,27 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
   }
   }
   }
+  yield '건물과 도로 준비 중';
   humanitiesPassage?.conformPathOverlay(pathPositions);
+  yield '건물과 도로 준비 중';
   humanities14?.conformPathOverlay(pathPositions);
   function mergedSurface(positions: number[], color: number) {
     const geometry = new THREE.BufferGeometry(); geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3)); geometry.computeVertexNormals();
     const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ color, roughness: .94, side: THREE.DoubleSide }));
     mesh.receiveShadow = true; scene.add(mesh); return mesh;
   }
-  mergedSurface(roadPositions, 0x515b5b).name = 'campus-road-surface'; mergedSurface(pathPositions, 0xb5b9a7).name = 'campus-pedestrian-surface'; mergedSurface(linePositions, 0xd3bb65);
+  yield '건물과 도로 준비 중';
+  mergedSurface(roadPositions, 0x515b5b).name = 'campus-road-surface'; yield '건물과 도로 준비 중';
+  mergedSurface(pathPositions, 0xb5b9a7).name = 'campus-pedestrian-surface'; yield '건물과 도로 준비 중';
+  mergedSurface(linePositions, 0xd3bb65);
+  yield '건물과 도로 준비 중';
   if (data.buildings.some(b => b.id === 'way/386890828') && data.buildings.some(b => b.id === 'way/455025059') && data.roads.some(r => r.id === 'way/455018306/208')) {
     const southSite = createLivingScienceSouthSite(scene, heightAt);
     breakables.push(...southSite.breakables); landmarkViews.push(southSite);
   }
+  yield '건물과 도로 준비 중';
   const engineeringConnection=createCampusEngineering301303Connection(scene,heightAt);
+  yield '건물과 도로 준비 중';
   if(engineeringConnection){
     breakables.push(...engineeringConnection.breakables);landmarkViews.push(engineeringConnection);
     const {layout,access}=engineeringConnection.shell.userData;
@@ -814,16 +951,22 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     });
     breakables.push(...facilities.breakables);landmarkViews.push(facilities);
   }
+  yield '건물과 도로 준비 중';
   const northEngineeringConnection = createCampusEngineering303312Connection(scene, heightAt);
+  yield '건물과 도로 준비 중';
   if (northEngineeringConnection) {
     breakables.push(...northEngineeringConnection.breakables); landmarkViews.push(northEngineeringConnection);
   }
+  yield '건물과 도로 준비 중';
   for (const create of [createCampusConstruction, createEngineeringConstruction]) {
+    yield '건물과 도로 준비 중';
     const construction = create(scene, mappedAreas, heightAt);
     breakables.push(...construction.breakables); landmarkViews.push(construction);
   }
   const areaColors: Record<string, number> = { water: 0x5c959a, pitch: 0x5d8965, sports_centre: 0x82977b, track: 0xad7561, parking: 0x7b8380, park: 0x75946b, garden: 0x779571, grass: 0x819b70, forest: 0x647f5d, wood: 0x647f5d, construction: 0x9b917c };
+  yield '건물과 도로 준비 중';
   for (const area of mappedAreas) {
+    yield '건물과 도로 준비 중';
     if (Math.hypot(...center(area.points)) < 65) continue;
     if (area.kind === 'construction' && createConstructionGround(scene, area)) continue;
     const shape = new THREE.Shape(area.points.map(p => new THREE.Vector2(p[0], -p[1])));
@@ -894,6 +1037,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     }
     return inside;
   };
+  yield '건물과 도로 준비 중';
   const buildingBounds = renderedBuildings.map(b => {
     const xs = b.points.map(p => p[0]), zs = b.points.map(p => p[1]);
     return { minX: Math.min(...xs) - 4, maxX: Math.max(...xs) + 4, minZ: Math.min(...zs) - 4, maxZ: Math.max(...zs) + 4 };
@@ -901,10 +1045,13 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
   const reserved = mappedAreas.filter(a => ['pitch', 'water', 'stadium', 'track', 'construction'].includes(a.kind));
   const trees: { x: number; z: number; height: number; color: THREE.Color }[] = [];
   const roadCells = new Set<string>();
+  yield '건물과 도로 준비 중';
   for (const road of data.roads) for (let i = 0; i < road.points.length - 1; i++) {
+    yield '건물과 도로 준비 중';
     const a = road.points[i], b = road.points[i + 1], n = Math.max(1, Math.ceil(Math.hypot(b[0] - a[0], b[1] - a[1]) / 5));
     const radius = Math.ceil((road.width / 2 + 2) / 4);
     for (let j = 0; j <= n; j++) {
+    yield '건물과 도로 준비 중';
       const cx = Math.round((a[0] + (b[0] - a[0]) * j / n) / 4), cz = Math.round((a[1] + (b[1] - a[1]) * j / n) / 4);
       for (let ix = -radius; ix <= radius; ix++) for (let iz = -radius; iz <= radius; iz++) roadCells.add(`${cx + ix},${cz + iz}`);
     }
@@ -912,6 +1059,7 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
   let randomState = 81763;
   const random = () => { randomState = (Math.imul(randomState, 1664525) + 1013904223) >>> 0; return randomState / 4294967296; };
   const occupied = new Set<string>();
+  yield '건물과 도로 준비 중';
   const addTree = (x: number, z: number) => {
     if (trees.length > 3600 || Math.hypot(x, z) < 95 || roadCells.has(`${Math.round(x / 4)},${Math.round(z / 4)}`) || buildingBounds.some(b => x > b.minX && x < b.maxX && z > b.minZ && z < b.maxZ)) return;
     if (reserved.some(a => within([x, z], a.points))) return;
@@ -920,35 +1068,49 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     occupied.add(cell);
     trees.push({ x, z, height: 5.5 + random() * 5.5, color: new THREE.Color([0x4f7359, 0x72804c, 0x839151, 0xa49a58, 0x5d8163][Math.floor(random() * 5)]) });
   };
+  yield '건물과 도로 준비 중';
   for (const area of data.areas.filter(a => ['forest', 'wood', 'park', 'garden'].includes(a.kind))) {
+    yield '건물과 도로 준비 중';
     const xs = area.points.map(p => p[0]), zs = area.points.map(p => p[1]);
     const x0 = Math.min(...xs), x1 = Math.max(...xs), z0 = Math.min(...zs), z1 = Math.max(...zs);
     const count = Math.min(1700, Math.ceil((x1 - x0) * (z1 - z0) / (area.kind === 'forest' ? 90 : 230)));
     for (let i = 0; i < count; i++) {
+    yield '건물과 도로 준비 중';
       const x = x0 + random() * (x1 - x0), z = z0 + random() * (z1 - z0);
       if (within([x, z], area.points)) addTree(x, z);
     }
   }
+  yield '건물과 도로 준비 중';
   for (const road of data.roads.filter(r => r.drivable && r.width >= 6)) for (let i = 0; i < road.points.length - 1; i++) {
+    yield '건물과 도로 준비 중';
     const a = road.points[i], b = road.points[i + 1];
     const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz);
     if (length < 14) continue;
     for (let d = 8; d < length; d += 33) for (const side of [-1, 1]) {
+    yield '건물과 도로 준비 중';
       const x = a[0] + dx * d / length - dz / length * (road.width / 2 + 6) * side;
       const z = a[1] + dz * d / length + dx / length * (road.width / 2 + 6) * side;
       if (data.boundary.some(polygon => within([x, z], polygon))) addTree(x, z);
     }
   }
   const treeBatches = new Map<string, typeof trees>();
+  yield '건물과 도로 준비 중';
   for (const tree of trees) {
+    yield '건물과 도로 준비 중';
     const key = `${Math.floor(tree.x / 450)},${Math.floor(tree.z / 450)}`;
     const list = treeBatches.get(key) ?? []; list.push(tree); treeBatches.set(key, list);
   }
+  yield '건물과 도로 준비 중';
   const trunkGeometry = new THREE.CylinderGeometry(.19, .31, 1, 5);
+  yield '건물과 도로 준비 중';
   const crownGeometry = new THREE.IcosahedronGeometry(1, 0);
+  yield '건물과 도로 준비 중';
   const trunkMaterial = new THREE.MeshStandardMaterial({ color: 0x695a43, roughness: 1 });
+  yield '건물과 도로 준비 중';
   const leafMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 1 });
+  yield '건물과 도로 준비 중';
   for (const list of treeBatches.values()) {
+    yield '건물과 도로 준비 중';
     const group = new THREE.Group(); scene.add(group);
     const trunks = new THREE.InstancedMesh(trunkGeometry, trunkMaterial, list.length);
     const crowns = new THREE.InstancedMesh(crownGeometry, leafMaterial, list.length * 2);
@@ -1014,6 +1176,14 @@ export function createFullCampus(scene: THREE.Scene, data: CampusData, heightAt:
     distantBuildings.flush();
     nearbyLabels.sort((a, b) => a.distance - b.distance).slice(0, 5).forEach(item => { item.label.visible = true; });
   }
+  yield '건물과 도로 준비 중';
   update(new THREE.Vector3(0, 0, 35));
+  yield '건물과 도로 준비 중';
   return { breakables, colliders, bounds: data.bounds, locations, update };
+}
+
+export function createFullCampus(...args:Parameters<typeof createFullCampusSteps>){
+  const steps=createFullCampusSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

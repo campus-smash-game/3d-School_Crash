@@ -3,17 +3,23 @@ export type PatchBounds = { minX: number; maxX: number; minZ: number; maxZ: numb
 type Bounds = PatchBounds;
 export type TerrainPatchPlan = { bounds:Bounds; lines:{s:number[];n:number[]}; local:(x:number,z:number)=>{s:number;n:number}; boundarySegments:number[][][]; apply:(x:number,z:number,y:number,offset:number)=>number };
 /** 기존 삼각형 경계를 공유하며 국소 보정 구역을 절단한다. */
-export function cutTerrainPatch(positions:number[],indices:number[],datumOffset:number,plan:TerrainPatchPlan){
+export function* cutTerrainPatchSteps(positions:number[],indices:number[],datumOffset:number,plan:TerrainPatchPlan){
+  let startupWork=0;
   const {bounds,lines,local,boundarySegments,apply}=plan;
   const originalVertexCount = positions.length / 3, originalTriangleCount = indices.length / 3;
   const output: number[] = [], changedTriangles: number[][] = [], vertices = new Map<string, number>();
   // 보정 밖의 기존 정점을 재사용해 이웃 면과 인덱스도 공유한다.
   for(let i=0;i<originalVertexCount;i++){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const x=positions[i*3],y=positions[i*3+1],z=positions[i*3+2];
-    if(Math.fround(apply(x,z,y,datumOffset))===y)vertices.set(`${x},${z}`,i);
+    if(x<bounds.minX-32||x>bounds.maxX+32||z<bounds.minZ-32||z>bounds.maxZ+32||Math.fround(apply(x,z,y,datumOffset))===y)vertices.set(`${x},${z}`,i);
   }
   let touchedTriangles = 0;
-  const insideBounds = (p: Vertex[]) => Math.max(...p.map(v => v[0])) >= bounds.minX && Math.min(...p.map(v => v[0])) <= bounds.maxX && Math.max(...p.map(v => v[2])) >= bounds.minZ && Math.min(...p.map(v => v[2])) <= bounds.maxZ;
+  const overlaps = (a:number,b:number,c:number,margin=0) =>
+    Math.max(positions[a*3],positions[b*3],positions[c*3])>=bounds.minX-margin &&
+    Math.min(positions[a*3],positions[b*3],positions[c*3])<=bounds.maxX+margin &&
+    Math.max(positions[a*3+2],positions[b*3+2],positions[c*3+2])>=bounds.minZ-margin &&
+    Math.min(positions[a*3+2],positions[b*3+2],positions[c*3+2])<=bounds.maxZ+margin;
   type Projection = (p: Vertex) => number;
   function split(poly: Vertex[], project: Projection, value: number) {
     const halves: Vertex[][] = [[], []];
@@ -39,19 +45,23 @@ export function cutTerrainPatch(positions:number[],indices:number[],datumOffset:
     ...[bounds.minZ,bounds.maxZ].map(value=>({project:(p:Vertex)=>p[2],value})),
     ...lines.s.map(value=>({project:(p:Vertex)=>p[3],value})),...lines.n.map(value=>({project:(p:Vertex)=>p[4],value}))];
   for(const [a,b] of boundarySegments){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
     cuts.push({project:(p:Vertex)=>((p[0]-a[0])*-dz+(p[2]-a[1])*dx)/length,value:0,bounds:{minX:Math.min(a[0],b[0])-.25,maxX:Math.max(a[0],b[0])+.25,minZ:Math.min(a[1],b[1])-.25,maxZ:Math.max(a[1],b[1])+.25}});
   }
   for (let i = 0; i < indices.length; i += 3) {
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
+    const a=indices[i],b=indices[i+1],c=indices[i+2];
+    if(!overlaps(a,b,c)){output.push(a,b,c);continue;}
     const ids = indices.slice(i, i + 3), triangle = ids.map(k => {
       const x = positions[k * 3], y = positions[k * 3 + 1], z = positions[k * 3 + 2], p = local(x, z);
       return [x, y, z, p.s, p.n] as Vertex;
     });
-    if (!insideBounds(triangle)) { output.push(...ids); continue; }
     touchedTriangles++;
     let polygons = [triangle];
     for(const {project,value,bounds:q} of cuts)polygons=polygons.flatMap(poly=>{if(q&&(Math.max(...poly.map(p=>p[0]))<q.minX||Math.min(...poly.map(p=>p[0]))>q.maxX||Math.max(...poly.map(p=>p[2]))<q.minZ||Math.min(...poly.map(p=>p[2]))>q.maxZ))return[poly];const values=poly.map(project);return Math.min(...values)<value-1e-9&&Math.max(...values)>value+1e-9?split(poly,project,value):[poly];});
     for (const polygon of polygons) for (let j = 1; j + 1 < polygon.length; j++) {
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
       const p = [polygon[0], polygon[j], polygon[j + 1]], area = (p[1][0] - p[0][0]) * (p[2][2] - p[0][2]) - (p[2][0] - p[0][0]) * (p[1][2] - p[0][2]);
       if (Math.abs(area) < 1e-9) continue;
       const next = p.map(add), xyz = next.flatMap(k => positions.slice(k * 3, k * 3 + 3));
@@ -65,16 +75,21 @@ export function cutTerrainPatch(positions:number[],indices:number[],datumOffset:
   const edgeKey=(a:number,b:number)=>a<b?`${a},${b}`:`${b},${a}`;
   const edges=new Map<string,{a:number;b:number;count:number}>();
   for(let i=0;i<output.length;i+=3)for(let j=0;j<3;j++){
-    const a=output[i+j],b=output[i+(j+1)%3],key=edgeKey(a,b),edge=edges.get(key);
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
+    const a=output[i+j],b=output[i+(j+1)%3];
+    if(!overlaps(a,b,b,25))continue;
+    const key=edgeKey(a,b),edge=edges.get(key);
     if(edge)edge.count++;else edges.set(key,{a,b,count:1});
   }
   const boundaryEdges=[...edges.values()].filter(e=>e.count===1),boundaryVertices=[...new Set(boundaryEdges.flatMap(e=>[e.a,e.b]))];
   const splits=new Map<string,number[]>();
   for(const{a,b}of boundaryEdges){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const ax=positions[a*3],az=positions[a*3+2],dx=positions[b*3]-ax,dz=positions[b*3+2]-az,sq=dx*dx+dz*dz;
     if(Math.max(ax,ax+dx)<bounds.minX-25||Math.min(ax,ax+dx)>bounds.maxX+25||Math.max(az,az+dz)<bounds.minZ-25||Math.min(az,az+dz)>bounds.maxZ+25)continue;
     const found:{id:number;t:number}[]=[];
     for(const id of boundaryVertices){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
       if(id===a||id===b)continue;
       const x=positions[id*3],z=positions[id*3+2],t=((x-ax)*dx+(z-az)*dz)/sq;
       if(t<=1e-6||t>=1-1e-6)continue;
@@ -87,8 +102,11 @@ export function cutTerrainPatch(positions:number[],indices:number[],datumOffset:
   }
   const conformed:number[]=[];let stitchedTriangles=0;
   for(let i=0;i<output.length;i+=3){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
+    if(!overlaps(output[i],output[i+1],output[i+2],25)){conformed.push(output[i],output[i+1],output[i+2]);continue;}
     const ids=output.slice(i,i+3),polygon:number[]=[];
-    for(let j=0;j<3;j++){const a=ids[j],b=ids[(j+1)%3],extra=splits.get(edgeKey(a,b));polygon.push(a);if(extra)polygon.push(...(a<b?extra:[...extra].reverse()));}
+    for(let j=0;j<3;j++){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';const a=ids[j],b=ids[(j+1)%3],extra=splits.get(edgeKey(a,b));polygon.push(a);if(extra)polygon.push(...(a<b?extra:[...extra].reverse()));}
     if(polygon.length===3){conformed.push(...ids);continue;}
     stitchedTriangles++;
     const center=positions.length/3;
@@ -97,9 +115,16 @@ export function cutTerrainPatch(positions:number[],indices:number[],datumOffset:
   }
   indices.length = 0; for (const index of conformed) indices.push(index);
   for(let i=0;i<indices.length;i+=3){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
+    if(!overlaps(indices[i],indices[i+1],indices[i+2],25))continue;
     const xyz=indices.slice(i,i+3).flatMap(k=>positions.slice(k*3,k*3+3));
     if(Math.max(xyz[0],xyz[3],xyz[6])>=bounds.minX-25&&Math.min(xyz[0],xyz[3],xyz[6])<=bounds.maxX+25&&Math.max(xyz[2],xyz[5],xyz[8])>=bounds.minZ-25&&Math.min(xyz[2],xyz[5],xyz[8])<=bounds.maxZ+25)changedTriangles.push(xyz);
   }
+  return { heightAt:createPatchHeightSampler(changedTriangles), bounds: bounds as Bounds, metadata: { originalVertexCount, originalTriangleCount, vertexCount: positions.length / 3, triangleCount: indices.length / 3, touchedTriangles, stitchedTriangles, patchTriangles: changedTriangles.length, datumOffset, rawDEMModified: false, dimensionsEstimated: true } };
+}
+
+// 조회 함수가 절단 중에 쓴 전체 지형 배열과 정점 캐시를 계속 보관하지 않게 분리한다.
+function createPatchHeightSampler(changedTriangles:number[][]){
   const cellSize = 8, buckets = new Map<string, number[]>();
   changedTriangles.forEach((p, id) => {
     const minX = Math.floor(Math.min(p[0], p[3], p[6]) / cellSize), maxX = Math.floor(Math.max(p[0], p[3], p[6]) / cellSize);
@@ -115,5 +140,11 @@ export function cutTerrainPatch(positions:number[],indices:number[],datumOffset:
     }
     return undefined;
   }
-  return { heightAt, bounds: bounds as Bounds, metadata: { originalVertexCount, originalTriangleCount, vertexCount: positions.length / 3, triangleCount: indices.length / 3, touchedTriangles, stitchedTriangles, patchTriangles: changedTriangles.length, datumOffset, rawDEMModified: false, dimensionsEstimated: true } };
+  return heightAt;
+}
+
+export function cutTerrainPatch(...args:Parameters<typeof cutTerrainPatchSteps>){
+  const steps=cutTerrainPatchSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

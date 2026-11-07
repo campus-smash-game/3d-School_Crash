@@ -11,7 +11,7 @@ import RAPIER from '@dimforge/rapier3d-compat';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'), folder = path.join(root, 'artifacts/runtime-coordinates'), modules = path.join(folder, 'modules');
 await mkdir(modules, { recursive: true });
 const sourceHashes = [];
-for (const name of ['main', 'physics', 'cannon', 'traffic', 'coordinates', 'minimap', 'observedBuildingOverrides']) {
+for (const name of ['main', 'startup', 'physics', 'cannon', 'traffic', 'coordinates', 'minimap', 'observedBuildingOverrides']) {
     const source = await readFile(path.join(root, 'src', name + '.ts'), 'utf8');
     sourceHashes.push({ file: 'src/' + name + '.ts', sha256: createHash('sha256').update(source).digest('hex') });
     let code = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText.replace(/from (['"])(\.\/[\w-]+)\1/g, "from '$2.mjs'");
@@ -19,12 +19,12 @@ for (const name of ['main', 'physics', 'cannon', 'traffic', 'coordinates', 'mini
         code = code.replace(/import ['"]\.\/style\.css['"];?/, '').replace(/from ['"]three['"]/g, "from './three-adapter.mjs'").replace("from './physics.mjs'", "from './physics-adapter.mjs'").replace("from './cannon.mjs'", "from './cannon-adapter.mjs'").replace("from './traffic.mjs'", "from './traffic-adapter.mjs'");
     await writeFile(path.join(modules, name + '.mjs'), code);
 }
-await writeFile(path.join(modules, 'three-adapter.mjs'), `export * from 'three';export class WebGLRenderer{shadowMap={};pixelRatio=1;constructor(){globalThis.audit.renderer=this;}setPixelRatio(n){this.pixelRatio=n}getPixelRatio(){return this.pixelRatio}setSize(){}render(scene,camera){scene.updateMatrixWorld(true);globalThis.audit.scene=scene;globalThis.audit.camera=camera;}}`);
+await writeFile(path.join(modules, 'three-adapter.mjs'), `export * from 'three';export class WebGLRenderer{shadowMap={};pixelRatio=1;constructor(){globalThis.audit.renderer=this;}setPixelRatio(n){this.pixelRatio=n}getPixelRatio(){return this.pixelRatio}setSize(){}compileAsync(){return new Promise(resolve=>{globalThis.audit.finishCompile=()=>{globalThis.audit.compiled=true;resolve();};});}render(scene,camera){scene.updateMatrixWorld(true);globalThis.audit.scene=scene;globalThis.audit.camera=camera;}}`);
 await writeFile(path.join(modules, 'physics-adapter.mjs'), `import{Simulation as Original}from'./physics.mjs';export class Simulation extends Original{constructor(...args){super(...args);globalThis.audit.sim=this;}}`);
 await writeFile(path.join(modules, 'cannon-adapter.mjs'), `import{Cannon as Original}from'./cannon.mjs';export class Cannon extends Original{constructor(...args){super(...args);globalThis.audit.cannon=this;this.setSound(false);}}`);
 await writeFile(path.join(modules, 'traffic-adapter.mjs'), `import{Traffic as Original}from'./traffic.mjs';export class Traffic extends Original{constructor(...args){super(...args);globalThis.audit.traffic=this;}}`);
-await writeFile(path.join(modules, 'controls.mjs'), `export class Controls{active=false;moveX=0;moveZ=0;sprint=false;look={x:0,y:0};attack=false;pulse=false;jump=false;constructor(){globalThis.audit.controls=this;}setShuttleStops(l){this.shuttleStops=l;}setReady(){this.ready=true;}setError(e){this.error=e;}notify(){}updateLocation(n){this.location=n;}updateHud(...args){this.hud=args;this.targetLabel=args[3];}consumeLook(){const l=this.look;this.look={x:0,y:0};return l;}consumeJump(){let v=this.jump;this.jump=false;return v;}consumeAttack(){let v=this.attack;this.attack=false;return v;}consumePulse(){let v=this.pulse;this.pulse=false;return v;}pause(){this.active=false;}}`);
-await writeFile(path.join(modules, 'terrain.mjs'), `import *as THREE from'three';export function createTerrain(scene){
+await writeFile(path.join(modules, 'controls.mjs'), `export class Controls{active=false;moveX=0;moveZ=0;sprint=false;look={x:0,y:0};attack=false;pulse=false;jump=false;constructor(){globalThis.audit.controls=this;}setShuttleStops(l){this.shuttleStops=l;}setLoading(message){this.loading=message;}setReady(){this.ready=true;}setError(e){this.error=e;}notify(){}updateLocation(n){this.location=n;}updateHud(...args){this.hud=args;this.targetLabel=args[3];}consumeLook(){const l=this.look;this.look={x:0,y:0};return l;}consumeJump(){let v=this.jump;this.jump=false;return v;}consumeAttack(){let v=this.attack;this.attack=false;return v;}consumePulse(){let v=this.pulse;this.pulse=false;return v;}pause(){this.active=false;}}`);
+await writeFile(path.join(modules, 'terrain.mjs'), `import *as THREE from'three';export function* createTerrainSteps(scene){
 const base=(x,z)=>10+x*.01+z*.02,h=(x,z)=>base(x,z)+(x>=-315&&x<=-285&&z>=330&&z<=350?16*(1-Math.abs(z-340)/10):0),a=1200;
 const values=[-a,base(-a,-a),-a,a,base(a,-a),-a,-a,base(-a,a),a,a,base(a,a),a];
 for(const z of [330,340,350])for(const x of [-315,-285])values.push(x,h(x,z),z);
@@ -37,7 +37,7 @@ globalThis.audit.wall=target(120,200,6,12,1,'off-origin wall');
 for(const [x,label]of [[-600,'unloaded remote building'],[-450,'static-hidden remote building'],[-300,'terrain-hidden remote building'],[-900,'shield-hidden remote building']])target(x,200,12,30,1,label);
 target(-750,80,12,30,1,'beyond aim range building');target(100,157.7,1,20,16,'traffic-shadow building');
 return {breakables,colliders:[{position:new THREE.Vector3(-450,h(-450,340)+15,340),size:new THREE.Vector3(10,30,2)},{position:new THREE.Vector3(-900,h(-900,201.2)+15,201.2),size:new THREE.Vector3(10,30,.2)}],spawn:new THREE.Vector3(120,h(120,240)+1.7,240)};}`);
-await writeFile(path.join(modules, 'fullCampus.mjs'), `export function createFullCampus(){return{breakables:[],colliders:[],locations:[{id:'north',name:'north fixture',x:220,z:360},{id:'south',name:'south fixture',x:-180,z:-260}],update(p){globalThis.audit.campusCalls.push(p.clone());}};}`);
+await writeFile(path.join(modules, 'fullCampus.mjs'), `export function* createFullCampusSteps(){return{breakables:[],colliders:[],locations:[{id:'north',name:'north fixture',x:220,z:360},{id:'south',name:'south fixture',x:-180,z:-260}],update(p){globalThis.audit.campusCalls.push(p.clone());}};}`);
 // Distinct fixture parts verify main registration without duplicating facility geometry tests.
 for (const [name, factory, z, planArgument] of [['transitFacilities','createTransitFacilities',650,true],['centralPlazaFacilities','createCentralPlazaFacilities',-650,false],['administrationPlazaFacilities','createAdministrationPlazaFacilities',750,true],['informationCourtApproach','createInformationCourtApproach',-750,false],['administrationPlazaGround','createAdministrationPlazaGround',850,false],['gyujanggakApproach','createGyujanggakApproach',-850,false]]) {
     await writeFile(path.join(modules, name + '.mjs'), `import *as THREE from'three';export function ${factory}(scene,${planArgument ? 'plan,' : ''}heightAt){
@@ -65,8 +65,10 @@ const data = { bounds: { minX: -1000, maxX: 1000, minZ: -1000, maxZ: 1000 }, bui
 const facilitiesPlan={facilities:[{id:'synthetic-facility-plan-input'}]};
 globalThis.fetch = async (url) => { audit.fetches.push(url); return { ok: true, json: async () => url.endsWith('campus.json') ? data : url.endsWith('shuttle-stops.json') ? {stops:[{id:'stop-south',name:'south start fixture',x:120,z:240,bearing:Math.PI},{id:'stop-north',name:'north start fixture',x:220,z:360,bearing:0},{id:'stop-west',name:'west shuttle fixture',x:-180,z:-260,bearing:Math.PI}]} : url.endsWith('campus-transit.json') ? undefined : url.endsWith('transit-facilities.json') ? facilitiesPlan : {} }; };
 await import(pathToFileURL(path.join(modules, 'main.mjs')).href);
-for (let i = 0; i < 300 && !audit.frame && !audit.controls?.error; i++)
+for (let i = 0; i < 300 && !audit.frame && !audit.controls?.error; i++) {
+    if(audit.finishCompile&&!audit.compiled){assert.equal(audit.controls.ready,undefined,'Play must stay disabled until shaders are ready');audit.finishCompile();}
     await new Promise(resolve => setTimeout(resolve, 10));
+}
 assert.ok(audit.frame, audit.controls?.error ?? 'main boot did not complete');
 function frames(count = 1) {
     for (let i = 0; i < count; i++) {
@@ -104,7 +106,7 @@ try {
             const target=sim.targets.find(t=>t.mesh===fixture.mesh);assert.ok(target,'facility part omitted from Simulation');
             close(target.box.getCenter(new THREE.Vector3()),fixture.mesh.position);
             close(fixture.mesh.getWorldPosition(new THREE.Vector3()),H(fixture.mesh.position));
-            assert.equal(fixture.updates.length,1);close(fixture.updates.at(-1),H(audit.camera.position));
+            assert.equal(fixture.updates.length,2);close(fixture.updates[0],fixture.updates[1]);close(fixture.updates.at(-1),H(audit.camera.position));
         }
         return{facilityFactories:Object.keys(audit.facilities).length,registeredFixtureParts:Object.keys(audit.facilities).length,planIdentityPreserved:true,updatesInDataCoordinates:true};
     });

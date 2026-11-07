@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight, type Physics561Layout, type Physics561Surface } from './physics561Site';
 import { createScience2256Access, SCIENCE2256_DOORS, type Science2256Surface } from './science2256AccessSite';
 
@@ -48,17 +48,23 @@ export function getScience2256Layout(heightAt:(x:number,z:number)=>number,newBui
  return{f,floors56,floors22,roof56,roof22,bridge,bridgeFloor,surfaces,routes,walk,newBuilding,westEntries,access,bounds,dimensionsEstimated:true};
 }
 export type Science2256Layout=ReturnType<typeof getScience2256Layout>;
-export function cutScience2256Terrain(positions:number[],indices:number[],q:Science2256Layout,buildings:{id:string;points:[number,number][]}[]){
+export function* cutScience2256TerrainSteps(positions:number[],indices:number[],q:Science2256Layout,buildings:{id:string;points:[number,number][]}[]){
  const rings=buildings.filter(b=>[SCIENCE22_ID,SCIENCE56_ID].includes(b.id)).map(b=>({points:b.points,floor:(b.id===SCIENCE22_ID?q.floors22:q.floors56)[0]}));
  const inside=(x:number,z:number,points:[number,number][])=>{let result=false;for(let i=0,j=points.length-1;i<points.length;j=i++){const a=points[i],b=points[j];if((a[1]>z)!==(b[1]>z)&&x<(b[0]-a[0])*(z-a[1])/(b[1]-a[1])+a[0])result=!result;}return result;};
  const segments=q.surfaces.flatMap(a=>{const f=a.frame??q.f,p=[f.point(a.s0,a.n0),f.point(a.s1,a.n0),f.point(a.s1,a.n1),f.point(a.s0,a.n1)];return p.map((b,i)=>[b,p[(i+1)%4]]);});
  for(const ring of rings)for(let i=1;i<ring.points.length;i++)segments.push([ring.points[i-1],ring.points[i]]);
  const weight=(s:number,n:number,a:Physics561Surface)=>Math.max(0,1-Math.hypot(Math.max(0,a.s0-s,s-a.s1),Math.max(0,a.n0-n,n-a.n1))/.25);
- const patch=cutTerrainPatch(positions,indices,0,{bounds:q.bounds,local:(x,z)=>q.f.local([x,z]),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{
+ const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:q.bounds,local:(x,z)=>q.f.local([x,z]),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{
   let result=y;
   for(const a of q.surfaces){const p=(a.frame??q.f).local([x,z]);result=Math.min(result,y+(physics561SurfaceHeight(a,p.s,p.n)-.25-y)*weight(p.s,p.n,a));}
   for(const ring of rings)if(inside(x,z,ring.points))result=Math.min(result,ring.floor-.25);
   return result;
- }});
+ }}));
  return{...patch,affects:(x:number,z:number)=>q.surfaces.some(a=>{const p=(a.frame??q.f).local([x,z]);return weight(p.s,p.n,a)>0;})||rings.some(r=>inside(x,z,r.points))};
+}
+
+export function cutScience2256Terrain(...args:Parameters<typeof cutScience2256TerrainSteps>){
+  const steps=cutScience2256TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

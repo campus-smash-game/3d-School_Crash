@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight, type Physics561Surface } from './physics561Site';
 import { getEngineering3130ConnectionLayout } from './engineering3130Connection';
 import type { Engineering30DiningLayout } from './engineering30DiningSite';
@@ -88,16 +88,22 @@ export function engineering30SurfacePolygons(a:Engineering30Surface,q:Engineerin
   return a.name==='north-court-paving'?engineering30ClipPolygon(p,q.serviceCutout):[p];
 }
 
-export function cutEngineering30Terrain(positions:number[],indices:number[],q:Engineering30Layout){
+export function* cutEngineering30TerrainSteps(positions:number[],indices:number[],q:Engineering30Layout){
   const inside=(p:XZ[],x:number,z:number)=>{let yes=false;for(let i=0,j=p.length-1;i<p.length;j=i++){const a=p[i],b=p[j];if((a[1]>z)!==(b[1]>z)&&x<(b[0]-a[0])*(z-a[1])/(b[1]-a[1])+a[0])yes=!yes;}return yes;};
   const floorPolygon=[q.connector.point(q.connector.start,-2.8),q.connector.point(q.connector.end,-2.8),q.connector.point(q.connector.end,2.8),q.connector.point(q.connector.start,2.8)];
   const polygons=[q.outline,q.tower,floorPolygon];
   const inSurface=(a:Engineering30Surface,x:number,z:number)=>{const p=a.frame.local([x,z]);return p.s>=a.s0-1e-5&&p.s<=a.s1+1e-5&&p.n>=a.n0-1e-5&&p.n<=a.n1+1e-5?p:undefined;};
   const surfaceAt=(x:number,z:number)=>{let result: number|undefined;for(const a of q.surfaces){if(a.name==='north-court-paving'&&inside(q.serviceCutout,x,z))continue;const p=inSurface(a,x,z);if(p)result=physics561SurfaceHeight(a,p.s,p.n);}return result;};
   const segments=[...polygons,q.serviceCutout,...q.surfaces.map(a=>[a.frame.point(a.s0,a.n0),a.frame.point(a.s1,a.n0),a.frame.point(a.s1,a.n1),a.frame.point(a.s0,a.n1)])].flatMap(p=>p.map((a,i)=>[a,p[(i+1)%p.length]]));
-  const patch=cutTerrainPatch(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{
+  const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:q.bounds,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{
     const h=surfaceAt(x,z);if(h!==undefined)return h-.22;
     return polygons.some(p=>inside(p,x,z))?Math.min(y,q.floor-.25):y;
-  }});
+  }}));
   return {...patch,surfaceAt,affects:(x:number,z:number)=>surfaceAt(x,z)!==undefined||polygons.some(p=>inside(p,x,z))};
+}
+
+export function cutEngineering30Terrain(...args:Parameters<typeof cutEngineering30TerrainSteps>){
+  const steps=cutEngineering30TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

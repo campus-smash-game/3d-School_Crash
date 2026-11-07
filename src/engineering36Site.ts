@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight } from './physics561Site';
 import type { Engineering30Surface } from './engineering30Site';
 import type { Engineering37Layout } from './engineering37Site';
@@ -57,13 +57,19 @@ export function getEngineering36Layout(heightAt: (x: number, z: number) => numbe
   return { axis, length, depth, floors, roof, entryFloor, surfaces, elevated, flights, routes, bridge, bounds };
 }
 export type Engineering36Layout = ReturnType<typeof getEngineering36Layout>;
-export function cutEngineering36Terrain(positions: number[], indices: number[], q: Engineering36Layout) {
+export function* cutEngineering36TerrainSteps(positions: number[], indices: number[], q: Engineering36Layout) {
   const sample = (x: number, z: number, lowest = false) => {
     const p = q.axis.local([x, z]); let h: number | undefined;
     for (const a of q.surfaces) if (p.s >= a.s0 - .001 && p.s <= a.s1 + .001 && p.n >= a.n0 - .001 && p.n <= a.n1 + .001) { const y = physics561SurfaceHeight(a, p.s, p.n); h = lowest && h !== undefined ? Math.min(h, y) : y; }
     return h;
   };
   const lines = { s: [...new Set(q.surfaces.flatMap(a => [a.s0, a.s1]))], n: [...new Set(q.surfaces.flatMap(a => [a.n0, a.n1]))] };
-  const patch = cutTerrainPatch(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.axis.local([x, z]), lines, boundarySegments: [], apply: (x, z, y) => { const h = sample(x, z, true); return h !== undefined ? h - .24 : y; } });
+  const patch = (yield* cutTerrainPatchSteps(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.axis.local([x, z]), lines, boundarySegments: [], apply: (x, z, y) => { const h = sample(x, z, true); return h !== undefined ? h - .24 : y; } }));
   return { ...patch, surfaceAt: (x: number, z: number) => sample(x, z), affects: (x: number, z: number) => sample(x, z) !== undefined };
+}
+
+export function cutEngineering36Terrain(...args:Parameters<typeof cutEngineering36TerrainSteps>){
+  const steps=cutEngineering36TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

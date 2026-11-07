@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 import { physics561SurfaceHeight, type Physics561Surface } from './physics561Site';
 
 export const SCIENCE23_ID = 'way/161957771';
@@ -56,15 +56,21 @@ export function getScience23Layout(heightAt: (x: number, z: number) => number) {
 }
 export type Science23Layout = ReturnType<typeof getScience23Layout>;
 
-export function cutScience23Terrain(positions: number[], indices: number[], q: Science23Layout) {
+export function* cutScience23TerrainSteps(positions: number[], indices: number[], q: Science23Layout) {
   const floor: Physics561Surface = { name: 'building-ground', s0: 0, s1: q.width, n0: 0, n1: q.depth, y0: q.floor, y1: q.floor, axis: 's' };
   const areas = [...q.surfaces, floor];
   const weight = (s: number, n: number, a: Physics561Surface) => Math.max(0, 1 - Math.hypot(Math.max(0, a.s0 - s, s - a.s1), Math.max(0, a.n0 - n, n - a.n1)) / .25);
   const segments = areas.flatMap(a => { const p = [q.f.point(a.s0, a.n0), q.f.point(a.s1, a.n0), q.f.point(a.s1, a.n1), q.f.point(a.s0, a.n1)]; return p.map((b, i) => [b, p[(i + 1) % 4]]); });
-  const patch = cutTerrainPatch(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
+  const patch = (yield* cutTerrainPatchSteps(positions, indices, 0, { bounds: q.bounds, local: (x, z) => q.f.local([x, z]), lines: { s: [], n: [] }, boundarySegments: segments, apply: (x, z, y) => {
     const p = q.f.local([x, z]); let result = y;
     for (const a of areas) result = Math.min(result, y + (physics561SurfaceHeight(a, p.s, p.n) - .25 - y) * weight(p.s, p.n, a));
     return result;
-  } });
+  } }));
   return { ...patch, affects: (x: number, z: number) => { const p = q.f.local([x, z]); return areas.some(a => weight(p.s, p.n, a) > 0); } };
+}
+
+export function cutScience23Terrain(...args:Parameters<typeof cutScience23TerrainSteps>){
+  const steps=cutScience23TerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

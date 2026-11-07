@@ -1,5 +1,5 @@
+import {cutTerrainPatchSteps} from './terrainPatch';
 import { humanities23Frame } from './humanities23Site';
-import { cutTerrainPatch } from './terrainPatch';
 type XZ=[number,number];
 export const LIBRARY_ACCESS_ID='way/329398175';
 export const LIBRARY_ACCESS_BOUNDS={minX:287,maxX:380,minZ:-894,maxZ:-835};
@@ -21,12 +21,18 @@ export function getLibrarySoutheastLayout(heightAt:(x:number,z:number)=>number){
  return{f,point,stairX,width,approachStart,lowerStart,lowerEnd,mainStart,mainEnd,terraceFront,firstFloor,landingFloor,terraceFloor,down,approach,mapped,dimensionsEstimated:true};
 }
 export type LibrarySoutheastLayout=ReturnType<typeof getLibrarySoutheastLayout>;
-export function cutLibrarySoutheastTerrain(positions:number[],indices:number[],q:LibrarySoutheastLayout){
+export function* cutLibrarySoutheastTerrainSteps(positions:number[],indices:number[],q:LibrarySoutheastLayout){
  const zones=q.down.map(a=>({f:a.frame,s0:a.start,s1:a.frame.length,n0:-a.width/2-.15,n1:a.width/2+.15,y:(s:number)=>a.height(s)-.26,raise:false}));
  zones.push({f:q.f,s0:q.stairX-3.4,s1:q.stairX+3.4,n0:q.approachStart,n1:q.lowerEnd,y:()=>q.firstFloor-.25,raise:true});
  const segments=zones.flatMap(a=>[0,.6].flatMap(m=>{const p=[a.f.point(a.s0-m,a.n0-m),a.f.point(a.s1+m,a.n0-m),a.f.point(a.s1+m,a.n1+m),a.f.point(a.s0-m,a.n1+m)];return p.map((b,i)=>[b,p[(i+1)%4]]);}));
  for(const a of q.down)for(const p of a.profile)segments.push([a.frame.point(p.s,-a.width/2-.15),a.frame.point(p.s,a.width/2+.15)]);
  const weight=(x:number,z:number,a:typeof zones[number])=>{const p=a.f.local([x,z]);return Math.max(0,1-Math.hypot(Math.max(0,a.s0-p.s,p.s-a.s1),Math.max(0,a.n0-p.n,p.n-a.n1))/.6);};
- const patch=cutTerrainPatch(positions,indices,0,{bounds:LIBRARY_ACCESS_BOUNDS,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{let out=y;for(const a of zones){const w=weight(x,z,a);if(w<=0)continue;const p=a.f.local([x,z]),t=a.y(p.s),candidate=y+(t-y)*w;out=a.raise?Math.max(out,candidate):Math.min(out,candidate);}return out;}});
+ const patch=(yield* cutTerrainPatchSteps(positions,indices,0,{bounds:LIBRARY_ACCESS_BOUNDS,local:(x,z)=>({s:x,n:z}),lines:{s:[],n:[]},boundarySegments:segments,apply:(x,z,y)=>{let out=y;for(const a of zones){const w=weight(x,z,a);if(w<=0)continue;const p=a.f.local([x,z]),t=a.y(p.s),candidate=y+(t-y)*w;out=a.raise?Math.max(out,candidate):Math.min(out,candidate);}return out;}}));
  return{...patch,affects:(x:number,z:number)=>zones.some(a=>weight(x,z,a)>0)};
+}
+
+export function cutLibrarySoutheastTerrain(...args:Parameters<typeof cutLibrarySoutheastTerrainSteps>){
+  const steps=cutLibrarySoutheastTerrainSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }
