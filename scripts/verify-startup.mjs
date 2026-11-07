@@ -36,8 +36,14 @@ async function asyncBuild(name,steps){function* tracked(){while(true){const star
 const terrain=await time('terrain',()=>asyncMode?asyncBuild('terrain',terrainModule.createTerrainSteps(scene,dem,data.buildings)):terrainModule.createTerrain(scene,dem,data.buildings));
 const gate=await time('gate',()=>gateModule.createCampus(scene,{full:true}));
 const campus=await time('campus',()=>asyncMode?asyncBuild('campus',campusModule.createFullCampusSteps(scene,data,terrain.heightAt)):campusModule.createFullCampus(scene,data,terrain.heightAt));
-const facilities=[];
-for(const [i,m]of facilityModules.entries()){const fn=Object.values(m).find(v=>typeof v==='function');await startup.yieldToBrowser();facilities.push(await time(names[i+5],()=>i===0?fn(scene,facilitiesPlan,terrain.heightAt):i===2?fn(scene,data,terrain.heightAt):fn(scene,terrain.heightAt)));}
+const facilities=[],facilityResponsiveness=[];
+for(const [i,m]of facilityModules.entries()){
+ const steps=m.createAdministrationPlazaGroundSteps??m.createGyujanggakApproachSteps;
+ const fn=Object.values(m).find(v=>typeof v==='function');await startup.yieldToBrowser();
+ const before=heartbeats;
+ facilities.push(await time(names[i+5],()=>steps?asyncBuild(names[i+5],steps(scene,terrain.heightAt)):i===0?fn(scene,facilitiesPlan,terrain.heightAt):i===2?fn(scene,data,terrain.heightAt):fn(scene,terrain.heightAt)));
+ if(steps){const processed=heartbeats-before;assert.ok(processed>1,names[i+5]+' must let queued timer/input tasks run while building');facilityResponsiveness.push({name:names[i+5],heartbeats:processed});}
+}
 const spawn=gate.spawn.clone();
 const specs=[...gate.breakables,...campus.breakables,...facilities.flatMap(f=>f.breakables)];
 await startup.yieldToBrowser();
@@ -69,7 +75,7 @@ for(const point of [spawn,new THREE.Vector3(4000,0,4000)]){
  sim.reset();update();const reset=renderState();assert.deepEqual(reset,intact,'Reset must recover every visible surface and instanced transform');
  restored.push({point:point.toArray(),targets:sim.targets.length,exactRestore:true});
 }
-Object.assign(result,{restored,sourceHashes});
+Object.assign(result,{restored,facilityResponsiveness,sourceHashes});
 console.log('PASS every campus target restores the same geometry and visibility nearby and far away');
 fs.mkdirSync(path.join(root,'artifacts/startup-test'),{recursive:true});
 fs.writeFileSync(path.join(root,'artifacts/startup-test/results.json'),JSON.stringify(result,null,2));

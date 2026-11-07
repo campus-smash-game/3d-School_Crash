@@ -8,10 +8,22 @@ export function* cutTerrainPatchSteps(positions:number[],indices:number[],datumO
   const {bounds,lines,local,boundarySegments,apply}=plan;
   const originalVertexCount = positions.length / 3, originalTriangleCount = indices.length / 3;
   const output: number[] = [], changedTriangles: number[][] = [], vertices = new Map<string, number>();
-  // 보정 밖의 기존 정점을 재사용해 이웃 면과 인덱스도 공유한다.
+  // 잘리는 삼각형의 범위만 찾는다. 먼 정점까지 문자열 키로 복사할 필요는 없다.
+  const reuseBounds={minX:Infinity,maxX:-Infinity,minZ:Infinity,maxZ:-Infinity};
+  for(let i=0;i<indices.length;i+=3){
+    if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
+    const a=indices[i]*3,b=indices[i+1]*3,c=indices[i+2]*3;
+    const minX=Math.min(positions[a],positions[b],positions[c]),maxX=Math.max(positions[a],positions[b],positions[c]);
+    const minZ=Math.min(positions[a+2],positions[b+2],positions[c+2]),maxZ=Math.max(positions[a+2],positions[b+2],positions[c+2]);
+    if(maxX<bounds.minX||minX>bounds.maxX||maxZ<bounds.minZ||minZ>bounds.maxZ)continue;
+    reuseBounds.minX=Math.min(reuseBounds.minX,minX);reuseBounds.maxX=Math.max(reuseBounds.maxX,maxX);
+    reuseBounds.minZ=Math.min(reuseBounds.minZ,minZ);reuseBounds.maxZ=Math.max(reuseBounds.maxZ,maxZ);
+  }
+  // 경계 밖의 기존 정점도 포함해 이웃 면과 인덱스를 공유한다.
   for(let i=0;i<originalVertexCount;i++){
     if((++startupWork&255)===0)yield '지형과 경사로 준비 중';
     const x=positions[i*3],y=positions[i*3+1],z=positions[i*3+2];
+    if(x<reuseBounds.minX-.001||x>reuseBounds.maxX+.001||z<reuseBounds.minZ-.001||z>reuseBounds.maxZ+.001)continue;
     if(x<bounds.minX-32||x>bounds.maxX+32||z<bounds.minZ-32||z>bounds.maxZ+32||Math.fround(apply(x,z,y,datumOffset))===y)vertices.set(`${x},${z}`,i);
   }
   let touchedTriangles = 0;

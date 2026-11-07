@@ -9,7 +9,9 @@ type Surface = { positions: number[]; colors: number[]; uv: number[]; geometry?:
 const up = new THREE.Vector3(0, 1, 0);
 
 /** 2026년 8월 로드뷰의 규장각 현관 앞마당과 동쪽 보도. 좌표와 치수는 지도에 맞춘 근사다. */
-export function createGyujanggakApproach(scene: THREE.Scene, heightAt: (x: number, z: number) => number) {
+export function* createGyujanggakApproachSteps(scene: THREE.Scene, heightAt: (x: number, z: number) => number) {
+  let startupWork=0;
+  yield '규장각 주변 준비 중';
   const existing = scene.getObjectByName('facilities/gyujanggak-approach');
   if (existing) throw Error('Gyujanggak approach was already added.');
   const datum = gyujanggakDatum(heightAt), entry = datum.entrance;
@@ -63,6 +65,7 @@ export function createGyujanggakApproach(scene: THREE.Scene, heightAt: (x: numbe
   const terrainPosition = terrain.geometry.getAttribute('position'), terrainIndex = terrain.geometry.index;
   const localTerrain: number[][][] = [];
   for (let i = 0; i < (terrainIndex?.count ?? terrainPosition.count); i += 3) {
+    if((++startupWork&127)===0)yield '규장각 주변 준비 중';
     const triangle = [0, 1, 2].map(j => { const k = terrainIndex ? terrainIndex.getX(i + j) : i + j; return [terrainPosition.getX(k), terrainPosition.getY(k), terrainPosition.getZ(k)]; });
     if (Math.max(...triangle.map(p => p[0])) >= 145 && Math.min(...triangle.map(p => p[0])) <= 217 && Math.max(...triangle.map(p => p[2])) >= -445 && Math.min(...triangle.map(p => p[2])) <= -403) localTerrain.push(triangle);
   }
@@ -79,13 +82,17 @@ export function createGyujanggakApproach(scene: THREE.Scene, heightAt: (x: numbe
   const normalizedSurfaces: { name: string; removedTriangles: number }[] = [];
   // 이 구역의 기존 보행로 표시만 잘라 지형과 포장이 일치하게 한다. 차도와 지형은 보존한다.
   for (const mesh of scene.children.filter((o): o is THREE.Mesh => o instanceof THREE.Mesh && (o.name === 'campus-pedestrian-surface' || o.userData.role === 'mapped-area'))) {
+    if((++startupWork&127)===0)yield '규장각 주변 준비 중';
     const geometry = mesh.geometry, pos = geometry.getAttribute('position'), index = geometry.index;
     const fields = Object.keys(geometry.attributes).filter(k => k !== 'normal').sort((a, b) => a === 'position' ? -1 : b === 'position' ? 1 : a.localeCompare(b)).map(key => ({ key, attribute: geometry.getAttribute(key), values: [] as number[] }));
     let removedTriangles = 0;
     for (let i = 0; i < (index?.count ?? pos.count); i += 3) {
+      if((++startupWork&127)===0)yield '규장각 주변 준비 중';
       const triangle = [0, 1, 2].map(j => { const k = index ? index.getX(i + j) : i + j; return fields.flatMap(f => Array.from({ length: f.attribute.itemSize }, (_, c) => f.attribute.array[k * f.attribute.itemSize + c])); });
       let pieces = [triangle], touched = false;
-      for (const polygon of polygons) { const next: number[][][] = []; for (const piece of pieces) { const inside = clip(piece, polygon); if (inside.length >= 3 && Math.abs(signedArea(inside, 2)) > 1e-8) { touched = true; next.push(...subtract(piece, polygon)); } else next.push(piece); } pieces = next; }
+      for (const polygon of polygons) {
+        if((++startupWork&127)===0)yield '규장각 주변 준비 중'; const next: number[][][] = []; for (const piece of pieces) {
+        if((++startupWork&127)===0)yield '규장각 주변 준비 중'; const inside = clip(piece, polygon); if (inside.length >= 3 && Math.abs(signedArea(inside, 2)) > 1e-8) { touched = true; next.push(...subtract(piece, polygon)); } else next.push(piece); } pieces = next; }
       if (touched) removedTriangles++;
       function append(triangle: number[][], depth = 0) {
         const distances = triangle.map(distanceToPaving), lengths = triangle.map((a, i) => { const b = triangle[(i + 1) % 3]; return Math.hypot(a[0] - b[0], a[2] - b[2]); });
@@ -104,13 +111,17 @@ export function createGyujanggakApproach(scene: THREE.Scene, heightAt: (x: numbe
   }
   const p = terrain.geometry.getAttribute('position'), index = terrain.geometry.index;
   for (let i = 0; i < (index?.count ?? p.count); i += 3) {
+    if((++startupWork&127)===0)yield '규장각 주변 준비 중';
     const triangle = [0, 1, 2].map(j => { const k = index ? index.getX(i + j) : i + j; return [p.getX(k), p.getY(k), p.getZ(k)]; });
     for (let region = 0; region < polygons.length; region++) {
+      if((++startupWork&127)===0)yield '규장각 주변 준비 중';
       const clipped = clip(triangle, polygons[region]);
       let pieces = [clipped]; for (let previous = 0; previous < region; previous++) pieces = pieces.flatMap(poly => subtract(poly, polygons[previous]));
       for (const poly of pieces) for (let j = 1; j + 1 < poly.length; j++) {
+        if((++startupWork&127)===0)yield '규장각 주변 준비 중';
         if (Math.abs(signedArea([poly[0], poly[j], poly[j + 1]], 2)) < 1e-8) continue;
         for (const vertex of [poly[0], poly[j], poly[j + 1]]) {
+          if((++startupWork&127)===0)yield '규장각 주변 준비 중';
           ground.positions.push(vertex[0], vertex[1] + .035, vertex[2]); ground.colors.push(...(region === 0 ? [1, 1, 1] : [.91, .84, .67]));
           const dx = vertex[0] - origin.x, dz = vertex[2] - origin.z; ground.uv.push((dx * axis.x + dz * axis.z) / 3.2, (dx * outward.x + dz * outward.z) / 3.2);
         }
@@ -152,11 +163,13 @@ export function createGyujanggakApproach(scene: THREE.Scene, heightAt: (x: numbe
   const curbRecords: number[][] = [];
   // 도로에 보이는 동쪽 보도 구간만 연결한다. 수목에 가린 계단을 새로 추정해 연결하지 않는다.
   for (let s = 6; s < 30; s += 1.2) {
+    if((++startupWork&127)===0)yield '규장각 주변 준비 중';
     const end = Math.min(30, s + 1.2), corners = [roadAt(s, 2.75), roadAt(end, 2.75), roadAt(end, 3.05), roadAt(s, 3.05)];
     const top = corners.map(p => p.clone().addScaledVector(up, .12)); add('sidewalk-curb', new ConvexGeometry([...top, ...corners.map(p => p.clone().addScaledVector(up, -.08))]), 0xc4c3b4);
     curbRecords.push([s, end, 2.75, 3.05]);
   }
   for (let s = 12; s < 30; s += 1.5) {
+    if((++startupWork&127)===0)yield '규장각 주변 준비 중';
     const end = Math.min(30, s + 1.5), corners = [roadAt(s, 5.5), roadAt(end, 5.5), roadAt(end, 5.9), roadAt(s, 5.9)];
     add('low-stone-boundary', new ConvexGeometry([...corners.map(p => p.clone().addScaledVector(up, .48)), ...corners.map(p => p.clone().addScaledVector(up, -.12))]), 0x939c96);
     beam('railing-top', roadAt(s, 5.7, 1.22), roadAt(end, 5.7, 1.22), .035);
@@ -194,6 +207,8 @@ export function createGyujanggakApproach(scene: THREE.Scene, heightAt: (x: numbe
     }
     for (const surface of changed) surface.geometry!.getAttribute('position').needsUpdate = true;
   }
+  // 렌더 버퍼와 복원용 사본에 옮긴 조립 배열은 비운다.
+  for(const surface of [solid,signs,ground]){surface.positions.length=0;surface.colors.length=0;surface.uv.length=0;}
   return { shell, breakables, update };
 }
 
@@ -215,4 +230,10 @@ function boardAtlas() {
   for (let i = 0; i < 4; i++) { ctx.fillStyle = '#aab9c4'; ctx.fillRect(45, 265 + i * 42, 23, 5); ctx.fillRect(93, 265 + i * 42, 210 - i * 23, 5); }
   for (let column = 0; column < 6; column++) { const x = 525 + column * 81; ctx.fillStyle = '#e5e5dc'; ctx.fillRect(x, 45, 73, 425); ctx.fillStyle = '#435b6c'; ctx.fillRect(x, 10, 73, 27); ctx.fillStyle = '#a5b2b1'; for (let row = 0; row < 3; row++) { ctx.fillRect(x + 8, 70 + row * 128, 55, 12); for (let line = 0; line < 5; line++) ctx.fillRect(x + 8, 98 + row * 128 + line * 13, 40 + line % 3 * 6, 3); } }
   const texture = new THREE.CanvasTexture(canvas); texture.name = 'gyujanggak-observed-name-and-generic-notices'; texture.colorSpace = THREE.SRGBColorSpace; return texture;
+}
+
+export function createGyujanggakApproach(...args:Parameters<typeof createGyujanggakApproachSteps>){
+  const steps=createGyujanggakApproachSteps(...args);let result=steps.next();
+  while(!result.done)result=steps.next();
+  return result.value;
 }

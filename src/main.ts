@@ -11,8 +11,8 @@ import {createTransitFacilities,type TransitFacilitiesPlan} from './transitFacil
 import {createCentralPlazaFacilities} from './centralPlazaFacilities';
 import {createAdministrationPlazaFacilities} from './administrationPlazaFacilities';
 import {createInformationCourtApproach} from './informationCourtApproach';
-import {createAdministrationPlazaGround} from './administrationPlazaGround';
-import {createGyujanggakApproach} from './gyujanggakApproach';
+import {createAdministrationPlazaGroundSteps} from './administrationPlazaGround';
+import {createGyujanggakApproachSteps} from './gyujanggakApproach';
 import type {TransitPlan} from './transitTypes';
 import {Cannon} from './cannon';
 import {Minimap} from './minimap';
@@ -50,8 +50,8 @@ async function boot(){
   const centralPlaza=await stage('중앙광장 준비 중',()=>createCentralPlazaFacilities(world,terrain.heightAt));
   const administrationPlaza=await stage('행정관 주변 준비 중',()=>createAdministrationPlazaFacilities(world,data,terrain.heightAt));
   const informationCourt=await stage('보행로 준비 중',()=>createInformationCourtApproach(world,terrain.heightAt));
-  const administrationGround=await stage('광장 보도 준비 중',()=>createAdministrationPlazaGround(world,terrain.heightAt));
-  const gyujanggakApproach=await stage('규장각 주변 준비 중',()=>createGyujanggakApproach(world,terrain.heightAt));
+  const administrationGround=await runStartupSteps(createAdministrationPlazaGroundSteps(world,terrain.heightAt),progress);
+  const gyujanggakApproach=await runStartupSteps(createGyujanggakApproachSteps(world,terrain.heightAt),progress);
   const updateFacilities=(player:THREE.Vector3)=>{transitFacilities.update(player);centralPlaza.update(player);administrationPlaza.update(player);informationCourt.update(player);administrationGround.update(player);gyujanggakApproach.update(player);};
   const bounds={minX:data.bounds.minX-100,maxX:data.bounds.maxX+100,minZ:data.bounds.minZ-100,maxZ:data.bounds.maxZ+100};
   const firstStop=shuttleStops.stops[0];
