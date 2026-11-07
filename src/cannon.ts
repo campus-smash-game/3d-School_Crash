@@ -29,7 +29,7 @@ class ParticleCloud{
   }
   clear(){this.particles=[];this.mesh.count=0;}
 }
-type Shell={mesh:THREE.Mesh;p:THREE.Vector3;velocity:THREE.Vector3;age:number;strong:boolean;trail:number};
+type Shell={mesh:THREE.Mesh;p:THREE.Vector3;velocity:THREE.Vector3;age:number;trail:number};
 
 export class Cannon{
   readonly tool=new THREE.Group();
@@ -38,7 +38,6 @@ export class Cannon{
   private smoke:ParticleCloud;
   private sparks:ParticleCloud;
   private cooldown=0;
-  private heavyCooldown=0;
   private recoil=0;
   private audio:AudioContext|null=null;
   private audioEnabled=true;
@@ -64,46 +63,45 @@ export class Cannon{
     this.tool.position.set(.32,-.29,-.55);camera.add(this.tool);this.tool.visible=false;
     this.flash=new THREE.PointLight('#ffb74a',0,9,2);this.flash.position.set(.25,-.12,-1);camera.add(this.flash);
   }
-  get charge(){return 1-this.heavyCooldown/4;}
   private cameraDataPosition(){const point=this.camera.getWorldPosition(new THREE.Vector3());return this.cameraSpace==='render'?renderToDataPoint(point,point):point;}
   setSound(enabled:boolean){this.audioEnabled=enabled;if(enabled)this.unlockAudio();}
   unlockAudio(){if(!this.audioEnabled)return;try{this.audio??=new AudioContext();void this.audio.resume();}catch{/* Sound is optional. */}}
-  private boom(strong:boolean,distance=0){
+  private boom(distance=0){
     if(!this.audioEnabled||!this.audio)return;
-    const t=this.audio.currentTime,g=this.audio.createGain(),o=this.audio.createOscillator(),volume=(strong?.16:.1)/Math.max(1,distance/35);
-    o.type='triangle';o.frequency.setValueAtTime(strong?85:120,t);o.frequency.exponentialRampToValueAtTime(24,t+.45);g.gain.setValueAtTime(volume,t);g.gain.exponentialRampToValueAtTime(.001,t+.55);o.connect(g);g.connect(this.audio.destination);o.start();o.stop(t+.56);
+    const t=this.audio.currentTime,g=this.audio.createGain(),o=this.audio.createOscillator(),volume=.16/Math.max(1,distance/35);
+    o.type='triangle';o.frequency.setValueAtTime(85,t);o.frequency.exponentialRampToValueAtTime(24,t+.45);g.gain.setValueAtTime(volume,t);g.gain.exponentialRampToValueAtTime(.001,t+.55);o.connect(g);g.connect(this.audio.destination);o.start();o.stop(t+.56);
     const length=Math.floor(this.audio.sampleRate*.45),b=this.audio.createBuffer(1,length,this.audio.sampleRate),a=b.getChannelData(0);for(let i=0;i<length;i++)a[i]=(Math.random()*2-1)*(1-i/length)**2;
-    const noise=this.audio.createBufferSource(),filter=this.audio.createBiquadFilter(),ng=this.audio.createGain();filter.type='lowpass';filter.frequency.value=strong?1200:1800;ng.gain.value=volume*1.5;noise.buffer=b;noise.connect(filter);filter.connect(ng);ng.connect(this.audio.destination);noise.start();
+    const noise=this.audio.createBufferSource(),filter=this.audio.createBiquadFilter(),ng=this.audio.createGain();filter.type='lowpass';filter.frequency.value=1200;ng.gain.value=volume*1.5;noise.buffer=b;noise.connect(filter);filter.connect(ng);ng.connect(this.audio.destination);noise.start();
   }
-  fire(strong:boolean){
-    if(this.cooldown>0||strong&&this.heavyCooldown>0)return false;
-    this.cooldown=strong?.8:.55;if(strong)this.heavyCooldown=4;
+  fire(){
+    if(this.cooldown>0)return false;
+    this.cooldown=.55;
     this.camera.updateMatrixWorld();const dir=this.camera.getWorldDirection(new THREE.Vector3()),p=this.cameraDataPosition();
     if(this.cameraSpace==='render')renderToDataDirection(dir,dir);
-    const mesh=new THREE.Mesh(this.shellGeometry,this.shellMaterial);mesh.position.copy(p);mesh.scale.setScalar(strong?1.6:1);this.scene.add(mesh);
-    this.shells.push({mesh,p,velocity:dir.multiplyScalar(strong?105:130),age:0,strong,trail:0});
-    this.recoil=1;this.shake=strong?.16:.08;this.flash.intensity=strong?18:10;this.boom(strong);
+    const mesh=new THREE.Mesh(this.shellGeometry,this.shellMaterial);mesh.position.copy(p);mesh.scale.setScalar(1.6);this.scene.add(mesh);
+    this.shells.push({mesh,p,velocity:dir.multiplyScalar(105),age:0,trail:0});
+    this.recoil=1;this.shake=.16;this.flash.intensity=18;this.boom();
     for(let i=0;i<8;i++)this.sparks.emit(p,new THREE.Vector3((Math.random()-.5)*3,(Math.random()-.5)*3,(Math.random()-.5)*3),.05,.15,new THREE.Color('#ffe8a1'));
     return true;
   }
-  private explode(point:THREE.Vector3,strong:boolean,dir:THREE.Vector3){
-    const radius=strong?18:9,count=this.sim.explode(point,radius,strong?12:5,dir),vehicles=this.traffic.explode(point,radius);
+  private explode(point:THREE.Vector3,dir:THREE.Vector3){
+    const radius=18,count=this.sim.explode(point,radius,12,dir),vehicles=this.traffic.explode(point,radius);
     this.onExplosion?.(count,vehicles);
-    const distance=point.distanceTo(this.cameraDataPosition());this.shake=Math.max(this.shake,(strong?.45:.25)/Math.max(1,distance/20));this.boom(strong,distance);
+    const distance=point.distanceTo(this.cameraDataPosition());this.shake=Math.max(this.shake,.45/Math.max(1,distance/20));this.boom(distance);
     const sphere=new THREE.Mesh(this.flashGeometry,new THREE.MeshBasicMaterial({color:'#ffc85c',transparent:true,opacity:.9,depthWrite:false,blending:THREE.AdditiveBlending}));sphere.position.copy(point);this.scene.add(sphere);this.flashes.push({mesh:sphere,age:0,radius});
-    for(let i=0;i<(strong?48:28);i++){
-      const v=new THREE.Vector3(Math.random()-.5,Math.random()*.9,Math.random()-.5).normalize().multiplyScalar((strong?16:10)*(Math.random()*.8+.2));
+    for(let i=0;i<48;i++){
+      const v=new THREE.Vector3(Math.random()-.5,Math.random()*.9,Math.random()-.5).normalize().multiplyScalar(16*(Math.random()*.8+.2));
       this.sparks.emit(point,v,.06+Math.random()*.15,.7+Math.random()*.7,new THREE.Color(Math.random()>.5?'#ffce68':'#ff7930'));
     }
-    for(let i=0;i<(strong?22:13);i++){
-      const v=new THREE.Vector3(Math.random()-.5,Math.random()*.7+.15,Math.random()-.5).multiplyScalar(strong?8:5);
+    for(let i=0;i<22;i++){
+      const v=new THREE.Vector3(Math.random()-.5,Math.random()*.7+.15,Math.random()-.5).multiplyScalar(8);
       this.smoke.emit(point.clone().addScaledVector(v,.12),v,.8+Math.random()*1.5,2+Math.random()*2,new THREE.Color(i%3?'#b6ad95':'#6b7678'));
     }
   }
   update(dt:number,active:boolean){
     this.tool.visible=active;
     if(!active)return;
-    this.cooldown=Math.max(0,this.cooldown-dt);this.heavyCooldown=Math.max(0,this.heavyCooldown-dt);
+    this.cooldown=Math.max(0,this.cooldown-dt);
     this.recoil=Math.max(0,this.recoil-dt*4);this.tool.position.z=-.55+Math.sin(this.recoil*Math.PI)*.16;this.tool.rotation.x=Math.sin(this.recoil*Math.PI)*.12;
     this.flash.intensity*=Math.exp(-dt*25);this.shake=Math.max(0,this.shake-dt);
     for(let i=this.shells.length-1;i>=0;i--){
@@ -116,10 +114,10 @@ export class Cannon{
       const vehicleFirst=trafficHit&&trafficHit.distance<distance;
       if(hit||trafficHit||remoteHit){
         const point=vehicleFirst?trafficHit.point:s.p.clone().addScaledVector(direction,distance);
-        this.explode(point,s.strong,direction);this.scene.remove(s.mesh);this.shells.splice(i,1);continue;
+        this.explode(point,direction);this.scene.remove(s.mesh);this.shells.splice(i,1);continue;
       }
       s.p.add(delta);s.mesh.position.copy(s.p);s.trail+=dt;
-      if(s.trail>.035){s.trail=0;this.sparks.emit(s.p,s.velocity.clone().multiplyScalar(-.03),s.strong?.1:.06,.22,new THREE.Color('#ffd173'));}
+      if(s.trail>.035){s.trail=0;this.sparks.emit(s.p,s.velocity.clone().multiplyScalar(-.03),.1,.22,new THREE.Color('#ffd173'));}
       if(s.age>5||s.p.y< -150){this.scene.remove(s.mesh);this.shells.splice(i,1);}
     }
     for(let i=this.flashes.length-1;i>=0;i--){const f=this.flashes[i];f.age+=dt;f.mesh.scale.setScalar(.5+f.age*f.radius*4);(f.mesh.material as THREE.MeshBasicMaterial).opacity=Math.max(0,.7-f.age*2.5);if(f.age>.3){this.scene.remove(f.mesh);(f.mesh.material as THREE.Material).dispose();this.flashes.splice(i,1);}}
@@ -128,6 +126,6 @@ export class Cannon{
   reset(){
     for(const s of this.shells)this.scene.remove(s.mesh);this.shells.length=0;
     for(const f of this.flashes){this.scene.remove(f.mesh);(f.mesh.material as THREE.Material).dispose();}this.flashes=[];
-    this.smoke.clear();this.sparks.clear();this.cooldown=this.heavyCooldown=this.recoil=this.shake=0;this.flash.intensity=0;
+    this.smoke.clear();this.sparks.clear();this.cooldown=this.recoil=this.shake=0;this.flash.intensity=0;
   }
 }

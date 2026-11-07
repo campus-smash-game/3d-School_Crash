@@ -13,7 +13,6 @@ export class Controls {
   lookY = 0;
   jump = false;
   attack = false;
-  pulse = false;
   sprint = false;
   active = false;
   onStart?: (startLocationId?: string) => void;
@@ -60,10 +59,7 @@ export class Controls {
   private fpsLabel = byId('fps-label');
   private targetLabel = byId('target-label');
   private crosshair = document.querySelector('.crosshair')!;
-  private chargeProgress = byId('charge-progress');
-  private chargeLabel = byId('charge-label');
-  private pulseButton = byId<HTMLButtonElement>('pulse-button');
-  private lastHud = { destroyed: -1, total: -1, fps: -1, target: '', charge: -1 };
+  private lastHud = { destroyed: -1, total: -1, fps: -1, target: '' };
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas;
@@ -140,7 +136,6 @@ export class Controls {
     this.bindJoystick();
     this.bindAction('attack-button', () => { this.attack = true; });
     this.bindAction('jump-button', () => { this.jump = true; }, true);
-    this.bindAction('pulse-button', () => { this.pulse = true; });
     window.addEventListener('resize', () => this.clearInput());
     window.addEventListener('orientationchange', () => this.clearInput());
   }
@@ -285,7 +280,6 @@ export class Controls {
     this.keys.add(event.code);
     if (!event.repeat) {
       if (event.code === 'Space') this.jump = true;
-      if (event.code === 'KeyE') this.pulse = true;
       if (event.code === 'KeyF') this.attack = true;
       if (event.code === 'KeyR') {
         this.clearInput();
@@ -353,7 +347,6 @@ export class Controls {
     }
     if (!this.touch && document.pointerLockElement === this.canvas) {
       if (event.button === 0) this.attack = true;
-      if (event.button === 2) this.pulse = true;
       return;
     }
     if (!this.touch && !this.dragMode) {
@@ -513,7 +506,7 @@ export class Controls {
     this.jumpTouchPending = false;
     this.releaseStick();
     this.moveX = this.moveZ = this.lookX = this.lookY = 0;
-    this.jump = this.attack = this.pulse = this.sprint = false;
+    this.jump = this.attack = this.sprint = false;
     this.lookPointer = null;
     document.querySelectorAll('.pressed').forEach((button) => button.classList.remove('pressed'));
   }
@@ -530,9 +523,8 @@ export class Controls {
     return value;
   }
   consumeAttack(): boolean { const value = this.attack; this.attack = false; return value; }
-  consumePulse(): boolean { const value = this.pulse; this.pulse = false; return value; }
 
-  updateHud(destroyed: number, total: number, fps: number, target: string, charge: number): void {
+  updateHud(destroyed: number, total: number, fps: number, target: string): void {
     if (destroyed !== this.lastHud.destroyed || total !== this.lastHud.total) {
       this.destroyedLabel.textContent = String(destroyed);
       this.totalLabel.textContent = ` / ${total}`;
@@ -549,14 +541,6 @@ export class Controls {
       this.targetLabel.textContent = target;
       this.crosshair.classList.toggle('has-target', Boolean(target));
       this.lastHud.target = target;
-    }
-    const percent = Math.round(Math.max(0, Math.min(1, charge)) * 100);
-    if (percent !== this.lastHud.charge) {
-      this.chargeProgress.style.width = `${percent}%`;
-      this.chargeLabel.textContent = percent >= 100 ? '준비' : `${percent}%`;
-      this.pulseButton.classList.toggle('cooldown', percent < 100);
-      this.pulseButton.setAttribute('aria-label', percent >= 100 ? '강화탄' : `강화탄 충전 ${percent}%`);
-      this.lastHud.charge = percent;
     }
   }
 

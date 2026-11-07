@@ -83,7 +83,7 @@ function check(name, run) {
 try {
   check('a fired shell travels before damaging a distant wall', () => {
     const f = fixture([target(0, 2.5, -65)]);
-    assert.equal(f.cannon.fire(false), true);
+    assert.equal(f.cannon.fire(), true);
     assert.equal(f.sim.destroyed, 0, 'fire must not apply hitscan damage');
     assert.equal(f.cannon.shells.length, 1);
     const initialZ = f.cannon.shells[0].p.z;
@@ -91,7 +91,7 @@ try {
     assert.equal(f.sim.destroyed, 0, 'the shell must not damage the wall before reaching it');
     assert.equal(f.cannon.shells.length, 1);
     assert.ok(f.cannon.shells[0].p.z < initialZ - 20);
-    step(f, 24);
+    step(f, 30);
     assert.equal(f.sim.destroyed, 1);
     assert.equal(f.cannon.shells.length, 0);
     assert.equal(f.traffic.explosions.length, 1);
@@ -102,7 +102,7 @@ try {
   check('static cover intercepts the shell before a distant wall behind it', () => {
     const cover = { position: new THREE.Vector3(0, 3, -12), size: new THREE.Vector3(12, 6, 1) };
     const f = fixture([target(0, 3, -40, 6, 6)], [cover]);
-    f.cannon.fire(false);
+    f.cannon.fire();
     step(f, 40);
     assert.equal(f.traffic.explosions.length, 1);
     assert.ok(Math.abs(f.traffic.explosions[0].point.z + 11.5) < .01, 'first collision must be the cover');
@@ -114,7 +114,7 @@ try {
   check('near cover between the camera and muzzle cannot be skipped', () => {
     const cover = { position: new THREE.Vector3(0, 3, -.7), size: new THREE.Vector3(12, 6, .2) };
     const f = fixture([target(0, 3, -30, 6, 6)], [cover]);
-    f.cannon.fire(false);
+    f.cannon.fire();
     step(f, 30);
     assert.equal(f.sim.destroyed, 0, 'muzzle placement must not put the shell beyond nearby cover');
     assert.equal(f.traffic.explosions.length, 1);
@@ -124,7 +124,7 @@ try {
 
   check('shell trajectory drops under gravity while moving forward', () => {
     const f = fixture([], [], 50);
-    f.cannon.fire(false);
+    f.cannon.fire();
     const initial = f.cannon.shells[0].p.clone();
     step(f, 30);
     assert.equal(f.cannon.shells.length, 1);
@@ -132,41 +132,42 @@ try {
     const fall = initial.y - shell.p.y;
     assert.ok(fall > .3 && fall < .5, `unexpected half-second ballistic drop ${fall}`);
     assert.ok(shell.velocity.y < -1.4);
-    assert.ok(initial.z - shell.p.z > 60);
+    assert.ok(Math.abs(initial.z - shell.p.z - 52.5)<.001);
     return { halfSecondFall: fall, forwardDistance: initial.z - shell.p.z };
   });
 
   check('a visible target beyond the player collision neighborhood can be hit', () => {
     const f = fixture([target(0, 30, -450, 12, 60, 2)], [], 50);
-    f.cannon.fire(false);
-    step(f, 240);
+    f.cannon.fire();
+    step(f, 270);
     assert.equal(f.sim.destroyed, 1, 'a shell must not pass through a target within its five-second flight range');
     assert.equal(f.cannon.shells.length, 0);
     assert.ok(Math.abs(f.traffic.explosions[0].point.z + 449) < .02);
     return { impactZ: f.traffic.explosions[0].point.z };
   });
 
-  check('heavy ammunition requires recharge while ordinary fire stays available', () => {
+  check('the single shot has the former heavy payload and repeats at the basic firing interval', () => {
     const f = fixture([], [], 50);
-    assert.equal(f.cannon.fire(true), true);
-    assert.equal(f.cannon.fire(true), false);
-    assert.equal(f.cannon.fire(false), false, 'global firing interval must apply');
-    assert.equal(f.cannon.charge, 0);
-    step(f, 60);
-    assert.ok(f.cannon.charge > .24 && f.cannon.charge < .26);
-    assert.equal(f.cannon.fire(true), false, 'one second must not fully recharge a heavy shell');
-    assert.equal(f.cannon.fire(false), true, 'heavy recharge must not block an ordinary shell');
-    step(f, 190);
-    assert.equal(f.cannon.charge, 1);
-    assert.equal(f.cannon.fire(true), true);
-    return { rechargeSeconds: 4, ordinaryFireDuringRecharge: true };
+    assert.equal(f.cannon.fire(), true);
+    assert.equal(f.cannon.shells[0].velocity.length(),105);
+    assert.equal(f.cannon.shells[0].mesh.scale.x,1.6);
+    const impact=new THREE.Vector3(0,50,-100),calls=[];
+    f.sim.explode=(...args)=>{calls.push(args);return 0;};
+    f.cannon.explode(impact,new THREE.Vector3(0,0,-1));
+    assert.equal(calls[0][1],18);assert.equal(calls[0][2],12);
+    assert.equal(f.traffic.explosions[0].radius,18);
+    assert.equal(f.cannon.fire(), false);
+    step(f,32);assert.equal(f.cannon.fire(),false);
+    step(f,2);assert.equal(f.cannon.fire(),true,'No separate charge may block the next shot');
+    assert.equal('charge' in f.cannon,false);assert.equal('heavyCooldown' in f.cannon,false);
+    return { radius:18,power:12,speed:105,firingIntervalSeconds:.55,separateCharge:false };
   });
 
   check('a nearer vehicle collision takes precedence over a wall', () => {
     const f = fixture([target(0, 3, -40, 6, 6)], [], 3, -14);
     let vehicles = 0;
     f.cannon.onExplosion = (_count, count) => { vehicles += count; };
-    f.cannon.fire(false);
+    f.cannon.fire();
     step(f, 30);
     assert.equal(vehicles, 1);
     assert.equal(f.sim.destroyed, 0);
@@ -180,7 +181,7 @@ try {
     specs.push(target(60, 3, -32));
     const f = fixture(specs);
     f.sim.maxDebris = 24;
-    f.cannon.fire(true);
+    f.cannon.fire();
     step(f, 30);
     assert.equal(f.sim.destroyed, 11);
     assert.equal(f.sim.targets.at(-1).hp, 3, 'targets outside the blast radius must survive');
@@ -188,7 +189,7 @@ try {
     assert.ok(f.cannon.smoke.particles.length <= 180);
     assert.ok(f.cannon.sparks.particles.length <= 220);
     for (let i = 0; i < 20; i++) {
-      f.cannon.explode(new THREE.Vector3(0, 3, -28), true, new THREE.Vector3(0, 0, -1));
+      f.cannon.explode(new THREE.Vector3(0, 3, -28), new THREE.Vector3(0, 0, -1));
       assert.ok(f.cannon.smoke.particles.length <= 180);
       assert.ok(f.cannon.sparks.particles.length <= 220);
       assert.ok(f.sim.debris.length <= 24);
@@ -198,12 +199,12 @@ try {
 
   check('pause freezes shells, particles, cooldown, recoil, and impact callbacks', () => {
     const f = fixture([], [], 50);
-    f.cannon.fire(true);
+    f.cannon.fire();
     step(f, 10);
     const shell = f.cannon.shells[0];
-    const before = JSON.stringify({ p: shell.p, velocity: shell.velocity, age: shell.age, charge: f.cannon.charge, recoil: f.cannon.recoil, shake: f.cannon.shake, sparks: f.cannon.sparks.particles });
+    const before = JSON.stringify({ p: shell.p, velocity: shell.velocity, age: shell.age, cooldown: f.cannon.cooldown, recoil: f.cannon.recoil, shake: f.cannon.shake, sparks: f.cannon.sparks.particles });
     for (let i = 0; i < 120; i++) f.cannon.update(dt, false);
-    const after = JSON.stringify({ p: shell.p, velocity: shell.velocity, age: shell.age, charge: f.cannon.charge, recoil: f.cannon.recoil, shake: f.cannon.shake, sparks: f.cannon.sparks.particles });
+    const after = JSON.stringify({ p: shell.p, velocity: shell.velocity, age: shell.age, cooldown: f.cannon.cooldown, recoil: f.cannon.recoil, shake: f.cannon.shake, sparks: f.cannon.sparks.particles });
     assert.equal(after, before);
     assert.equal(f.traffic.explosions.length, 0);
     assert.equal(f.cannon.tool.visible, false);
@@ -215,11 +216,11 @@ try {
   check('reset removes active shells and all effects without scene leaks', () => {
     const f = fixture([target(0, 3, -28, 6, 6)]);
     const baseChildren = f.scene.children.length;
-    f.cannon.fire(true);
+    f.cannon.fire();
     step(f, 18);
     assert.ok(f.cannon.flashes.length > 0);
     step(f, 32);
-    assert.equal(f.cannon.fire(false), true);
+    assert.equal(f.cannon.fire(), true);
     assert.ok(f.cannon.shells.length > 0);
     assert.ok(f.cannon.smoke.particles.length > 0);
     f.cannon.reset();
@@ -230,10 +231,10 @@ try {
     assert.equal(f.cannon.smoke.mesh.count, 0);
     assert.equal(f.cannon.sparks.mesh.count, 0);
     assert.equal(f.cannon.flash.intensity, 0);
-    assert.equal(f.cannon.charge, 1);
+    assert.equal(f.cannon.cooldown, 0);
     assert.equal(f.scene.children.length, baseChildren);
     for (let i = 0; i < 8; i++) {
-      assert.equal(f.cannon.fire(false), true);
+      assert.equal(f.cannon.fire(), true);
       f.cannon.reset();
       assert.equal(f.scene.children.length, baseChildren);
     }

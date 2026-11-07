@@ -23,7 +23,7 @@ await writeFile(path.join(modules, 'three-adapter.mjs'), `export * from 'three';
 await writeFile(path.join(modules, 'physics-adapter.mjs'), `import{Simulation as Original}from'./physics.mjs';export class Simulation extends Original{constructor(...args){super(...args);globalThis.audit.sim=this;}}`);
 await writeFile(path.join(modules, 'cannon-adapter.mjs'), `import{Cannon as Original}from'./cannon.mjs';export class Cannon extends Original{constructor(...args){super(...args);globalThis.audit.cannon=this;this.setSound(false);}}`);
 await writeFile(path.join(modules, 'traffic-adapter.mjs'), `import{Traffic as Original}from'./traffic.mjs';export class Traffic extends Original{constructor(...args){super(...args);globalThis.audit.traffic=this;}}`);
-await writeFile(path.join(modules, 'controls.mjs'), `export class Controls{active=false;moveX=0;moveZ=0;sprint=false;look={x:0,y:0};attack=false;pulse=false;jump=false;constructor(){globalThis.audit.controls=this;}setShuttleStops(l){this.shuttleStops=l;}setLoading(message){this.loading=message;}setReady(){this.ready=true;}setError(e){this.error=e;}notify(){}updateLocation(n){this.location=n;}updateHud(...args){this.hud=args;this.targetLabel=args[3];}consumeLook(){const l=this.look;this.look={x:0,y:0};return l;}consumeJump(){let v=this.jump;this.jump=false;return v;}consumeAttack(){let v=this.attack;this.attack=false;return v;}consumePulse(){let v=this.pulse;this.pulse=false;return v;}pause(){this.active=false;}}`);
+await writeFile(path.join(modules, 'controls.mjs'), `export class Controls{active=false;moveX=0;moveZ=0;sprint=false;look={x:0,y:0};attack=false;jump=false;constructor(){globalThis.audit.controls=this;}setShuttleStops(l){this.shuttleStops=l;}setLoading(message){this.loading=message;}setReady(){this.ready=true;}setError(e){this.error=e;}notify(){}updateLocation(n){this.location=n;}updateHud(...args){this.hud=args;this.targetLabel=args[3];}consumeLook(){const l=this.look;this.look={x:0,y:0};return l;}consumeJump(){let v=this.jump;this.jump=false;return v;}consumeAttack(){let v=this.attack;this.attack=false;return v;}pause(){this.active=false;}}`);
 await writeFile(path.join(modules, 'terrain.mjs'), `import *as THREE from'three';export function* createTerrainSteps(scene){
 const base=(x,z)=>10+x*.01+z*.02,h=(x,z)=>base(x,z)+(x>=-315&&x<=-285&&z>=330&&z<=350?16*(1-Math.abs(z-340)/10):0),a=1200;
 const values=[-a,base(-a,-a),-a,a,base(a,-a),-a,-a,base(-a,a),a,a,base(a,a),a];
@@ -367,7 +367,7 @@ try {
                     world.scale.z = mode === 'render' ? -1 : 1;
                     outer.updateMatrixWorld(true);
                     try {
-                        assert.equal(tool.fire(false), true);
+                        assert.equal(tool.fire(), true);
                         const shot = tool.shells[0];
                         maximumShotError = Math.max(maximumShotError, shot.p.distanceTo(originD), shot.velocity.clone().normalize().distanceTo(forwardD));
                         tool.update(1 / 60, true);
@@ -375,8 +375,8 @@ try {
                         close(shot.mesh.getWorldPosition(new THREE.Vector3()), mode === 'render' ? H(shot.p) : shot.p);
                         const impact = originD.clone().addScaledVector(forwardD, 60);
                         tool.shake = 0;
-                        tool.explode(impact, false, forwardD);
-                        assert.ok(Math.abs(tool.shake - .25 / 3) < 1e-10, 'blast distance mixed render and data coordinates');
+                        tool.explode(impact, forwardD);
+                        assert.ok(Math.abs(tool.shake - .45 / 3) < 1e-10, 'blast distance mixed render and data coordinates');
                         outer.updateMatrixWorld(true);
                         maximumEffectError = Math.max(maximumEffectError, tool.flashes[0].mesh.getWorldPosition(new THREE.Vector3()).distanceTo(mode === 'render' ? H(impact) : impact));
                         assert.equal(tool.tool.parent, camera);

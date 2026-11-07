@@ -13,6 +13,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const artifactDirectory = path.join(root, 'artifacts');
 await mkdir(artifactDirectory, { recursive: true });
 const html = await readFile(path.join(root, 'index.html'), 'utf8');
+assert.doesNotMatch(html,/pulse-button|pulse-status|charge-progress|charge-label|강화탄/,'The removed secondary shot must not remain in the UI');
 const source = await readFile(path.join(root, 'src/controls.ts'), 'utf8');
 const {stops:campusStops}=JSON.parse(await readFile(path.join(root,'public/data/shuttle-stops.json'),'utf8'));
 assert.equal(campusStops.length,15);
@@ -159,7 +160,7 @@ function assertIdle(f) {
   assert.equal(f.controls.sprint, false);
   assert.deepEqual(f.controls.consumeLook(), { x: 0, y: 0 });
   assert.equal(f.controls.consumeAttack(), false);
-  assert.equal(f.controls.consumePulse(), false);
+
   assert.equal(f.controls.consumeJump(), false);
   for (const element of f.all) assert.equal(element.captures.size, 0, `capture retained by #${element.id}`);
 }
@@ -325,8 +326,6 @@ try {
     assert.equal(f.get('jump-button').hasPointerCapture(4), false);
     assert.equal(f.canvas.hasPointerCapture(2), true);
     assert.equal(f.get('move-zone').hasPointerCapture(1), true);
-    emit(f.get('pulse-button'), 'pointerdown', { pointerId: 5, pointerType: 'touch' });
-    assert.equal(f.controls.consumePulse(), true);
     emit(f.get('map-button'), 'click');
     assert.equal(f.controls.active, false);
     assertIdle(f);
@@ -503,15 +502,15 @@ try {
     assert.equal(f.controls.sprint, true);
     emit(f.document, 'keydown', { code: 'Space', repeat: false });
     emit(f.document, 'keydown', { code: 'KeyE', repeat: false });
+    assert.equal(f.controls.consumeAttack(),false,'E must not fire the former secondary shot');
     emit(f.document, 'keydown', { code: 'KeyF', repeat: false });
     assert.equal(f.controls.consumeJump(), true);
-    assert.equal(f.controls.consumePulse(), true);
     assert.equal(f.controls.consumeAttack(), true);
     assert.equal(f.controls.consumeJump(), false);
     emit(f.document, 'keydown', { code: 'Space', repeat: true });
     assert.equal(f.controls.consumeJump(), false, 'held keyboard Space must remain a one-shot action');
     emit(f.document, 'keydown', { code: 'KeyE', repeat: true });
-    assert.equal(f.controls.consumePulse(), false);
+
     emit(f.document, 'keydown', { code: 'Escape', repeat: false });
     assert.equal(f.controls.active, false);
     assertIdle(f);
@@ -525,7 +524,7 @@ try {
     emit(f.canvas, 'pointerdown', { pointerId: 1, button: 0, pointerType: 'mouse' });
     assert.equal(f.controls.consumeAttack(), true);
     emit(f.canvas, 'pointerdown', { pointerId: 1, button: 2, pointerType: 'mouse' });
-    assert.equal(f.controls.consumePulse(), true);
+    assert.equal(f.controls.consumeAttack(),false,'Right click must not fire a secondary shot');
     f.document.exitPointerLock();
     assert.equal(f.controls.active, false);
     assertIdle(f);
@@ -578,7 +577,7 @@ try {
   check('a real mouse click returns from touch to desktop without firing then touch can resume', (f) => {
     start(f);assert.equal(f.document.pointerLockElement,null);
     emit(f.canvas,'pointerdown',{pointerId:10,pointerType:'mouse',button:0,clientX:300,clientY:300});
-    assert.equal(f.document.body.classList.contains('touch'),false);assert.equal(f.document.pointerLockElement,f.canvas);assert.equal(f.controls.consumeAttack(),false);assert.equal(f.controls.consumePulse(),false);
+    assert.equal(f.document.body.classList.contains('touch'),false);assert.equal(f.document.pointerLockElement,f.canvas);assert.equal(f.controls.consumeAttack(),false);
     emit(f.document,'mousemove',{movementX:14,movementY:-6});assert.deepEqual(f.controls.consumeLook(),{x:14,y:-6});
     emit(f.canvas,'pointerdown',{pointerId:10,pointerType:'mouse',button:0});assert.equal(f.controls.consumeAttack(),true);
     emit(f.canvas,'pointerdown',{pointerId:11,pointerType:'touch',clientX:300,clientY:300});assert.equal(f.document.body.classList.contains('touch'),true);assert.equal(f.document.pointerLockElement,null);assert.equal(f.controls.active,true);assert.equal(f.controls.consumeAttack(),false);
@@ -590,8 +589,8 @@ try {
   check('mouse compatibility events cannot steal active touch controls or trigger fire', (f) => {
     start(f);threePointers(f);emit(f.get('jump-button'),'pointerdown',{pointerId:4,pointerType:'touch'});f.controls.consumeAttack();f.controls.consumeLook();
     const movement=[f.controls.moveX,f.controls.moveZ];
-    for(const element of[f.canvas,f.get('move-zone'),f.get('pulse-button')])emit(element,'pointerdown',{pointerId:9,pointerType:'mouse',button:0,clientX:300,clientY:300});
-    assert.equal(f.document.body.classList.contains('touch'),true);assert.equal(f.document.pointerLockElement,null);assert.deepEqual([f.controls.moveX,f.controls.moveZ],movement);assert.equal(f.controls.consumeAttack(),false);assert.equal(f.controls.consumePulse(),false);assert.equal(f.controls.consumeJump(),true);assert.equal(f.canvas.hasPointerCapture(2),true);
+    for(const element of[f.canvas,f.get('move-zone'),f.get('attack-button')])emit(element,'pointerdown',{pointerId:9,pointerType:'mouse',button:0,clientX:300,clientY:300});
+    assert.equal(f.document.body.classList.contains('touch'),true);assert.equal(f.document.pointerLockElement,null);assert.deepEqual([f.controls.moveX,f.controls.moveZ],movement);assert.equal(f.controls.consumeAttack(),false);assert.equal(f.controls.consumeJump(),true);assert.equal(f.canvas.hasPointerCapture(2),true);
     emit(f.get('move-zone'),'pointerup',{pointerId:1});emit(f.canvas,'pointerup',{pointerId:2});emit(f.get('attack-button'),'pointerup',{pointerId:3});emit(f.get('jump-button'),'pointerup',{pointerId:4});
     emit(f.canvas,'pointerdown',{pointerId:9,pointerType:'mouse',button:0,sourceCapabilities:{firesTouchEvents:true},clientX:300,clientY:300});
     assert.equal(f.document.body.classList.contains('touch'),true);assert.equal(f.document.pointerLockElement,null);assertIdle(f);
@@ -614,17 +613,15 @@ try {
     emit(f.document,'mousemove',{movementX:100,movementY:100});assert.deepEqual(f.controls.consumeLook(),{x:0,y:0});f.document.pointerLockElement=null;emit(f.document,'pointerlockchange');assert.equal(f.controls.active,true);
   },{coarse:true,pointerLock:true});
 
-  check('HUD target highlighting and recharge reflect supplied state', (f) => {
-    f.controls.updateHud(3, 12, 59.6, 'Building', .25);
+  check('HUD target highlighting and score reflect supplied state without a secondary weapon', (f) => {
+    f.controls.updateHud(3, 12, 59.6, 'Building');
     assert.equal(f.get('destroyed-count').textContent, '3');
     assert.equal(f.get('score-progress').style.width, '25%');
-    assert.equal(f.get('charge-progress').style.width, '25%');
-    assert.equal(f.get('pulse-button').classList.contains('cooldown'), true);
+    assert.equal('consumePulse' in f.controls,false);
     assert.equal(f.document.querySelector('.crosshair').classList.contains('has-target'), true);
-    f.controls.updateHud(3, 12, 60, '', 1);
+    f.controls.updateHud(3, 12, 60, '');
     assert.equal(f.get('target-label').textContent, '');
     assert.equal(f.document.querySelector('.crosshair').classList.contains('has-target'), false);
-    assert.equal(f.get('pulse-button').classList.contains('cooldown'), false);
   });
 
   await writeFile(path.join(artifactDirectory, 'controls-verification.json'), JSON.stringify({

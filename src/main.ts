@@ -109,11 +109,11 @@ async function boot(){
       pendingJump=controls.consumeJump()||pendingJump;accumulator+=dt;
       while(accumulator>=1/60){sim.step(1/60,movement.x,movement.z,pendingJump);pendingJump=false;accumulator-=1/60;}
       syncCamera();
-      if(controls.consumeAttack())cannon.fire(false);if(controls.consumePulse())cannon.fire(true);cannon.update(dt,true);
+      if(controls.consumeAttack())cannon.fire();cannon.update(dt,true);
       if(cannon.shake>0)camera.rotation.z=(Math.random()-.5)*cannon.shake*.08;
       pickTime+=dt;if(pickTime>.1){aim();pickTime=0;}
     }else{
-      accumulator=0;pendingJump=false;controls.consumeLook();controls.consumeJump();controls.consumeAttack();controls.consumePulse();cannon.update(0,false);
+      accumulator=0;pendingJump=false;controls.consumeLook();controls.consumeJump();controls.consumeAttack();cannon.update(0,false);
       if(!started){dataEye.copy(gate.spawn).add(new THREE.Vector3(0,.9,0));dataToRenderPoint(dataEye,camera.position);camera.lookAt(dataToRenderPoint(new THREE.Vector3(0,5,0)));traffic.update(dt,dataEye);}
     }
     const visualChanges=sim.takeVisualChanges();
@@ -122,7 +122,7 @@ async function boot(){
     sim.debris.forEach((d,i)=>{const p=d.body.translation(),q=d.body.rotation();dummy.position.set(p.x,p.y,p.z);dummy.quaternion.set(q.x,q.y,q.z,q.w);dummy.scale.copy(d.size).multiplyScalar(Math.min(1,(12-d.age)/1.5));dummy.updateMatrix();debrisMesh.setMatrixAt(i,dummy.matrix);debrisMesh.setColorAt(i,d.color);});
     debrisMesh.instanceMatrix.needsUpdate=true;if(debrisMesh.instanceColor)debrisMesh.instanceColor.needsUpdate=true;
     mapTime+=dt;if(mapTime>.2){drawMap();mapTime=0;}
-    controls.updateHud(sim.destroyed+vehicleScore,total,fps,targetLabel,cannon.charge);renderer.render(scene,camera);
+    controls.updateHud(sim.destroyed+vehicleScore,total,fps,targetLabel);renderer.render(scene,camera);
   };
   dataEye.copy(gate.spawn).add(new THREE.Vector3(0,.9,0));
   dataToRenderPoint(dataEye,camera.position);camera.lookAt(dataToRenderPoint(new THREE.Vector3(0,5,0)));

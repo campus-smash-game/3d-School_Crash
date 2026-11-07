@@ -62,7 +62,7 @@ try{
       const outer=new THREE.Scene(),world=new THREE.Scene();outer.add(world);const wall=spec(80,15,300,20,30,1);world.add(wall.mesh);
       const statics=blocked?[{position:new THREE.Vector3(80,15,150),size:new THREE.Vector3(20,30,1)}]:[];
       const sim=simulation([wall],new THREE.Vector3(80,1.7,0),statics),target=sim.targets[0],camera=new THREE.PerspectiveCamera(65,1,.1,1500);camera.position.set(80,15,0);camera.lookAt(80,15,-1);outer.add(camera);
-      const traffic={raycast:()=>null,explode:()=>0},cannon=new Cannon(world,camera,sim,traffic,'render');cannon.setSound(false);world.scale.z=-1;outer.updateMatrixWorld(true);assert.equal(target.body,null);assert.ok(cannon.fire(false));cannon.update(dt,true);assert.equal(target.hp,3);let frames=1;
+      const traffic={raycast:()=>null,explode:()=>0},cannon=new Cannon(world,camera,sim,traffic,'render');cannon.setSound(false);world.scale.z=-1;outer.updateMatrixWorld(true);assert.equal(target.body,null);assert.ok(cannon.fire());cannon.update(dt,true);assert.equal(target.hp,3);let frames=1;
       while(cannon.shells.length&&frames<300){cannon.update(dt,true);frames++;}
       assert.equal(cannon.shells.length,0);assert.ok(frames>60);assert.equal(sim.destroyed,blocked?0:1);assert.equal(target.hp>0,blocked);cannon.reset();sim.reset();assert.equal(sim.destroyed,0);assert.equal(sim.debris.length,0);assert.equal(target.body,null);assert.ok(sim.castUnloadedTargets(new THREE.Vector3(80,15,0),new THREE.Vector3(0,0,1),310));
       cases.push({blocked,flightFrames:frames});
