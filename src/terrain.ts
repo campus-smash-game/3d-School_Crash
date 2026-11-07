@@ -1,3 +1,4 @@
+import { getEngineering3334Layout, cutEngineering3334Terrain } from './engineering3334Site';
 import { getEngineering3436Layout, cutEngineering3436Terrain, ENGINEERING34_ID } from './engineering3436Site';
 import { getEngineering36Layout, cutEngineering36Terrain, ENGINEERING36_ID } from './engineering36Site';
 import { getEngineering37Layout, cutEngineering37Terrain } from './engineering37Site';
@@ -72,7 +73,7 @@ function ringCentre(ring:TerrainPoint[]){
   if(Math.abs(twiceArea)<1e-8)return {area:0,x:ring[0][0],z:ring[0][1]};
   return {area:Math.abs(twiceArea)/2,x:x/(3*twiceArea),z:z/(3*twiceArea)};
 }
-export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:BuildingPad[],options:{livingScienceCourtyard?:boolean;educationParking?:boolean;dining76?:boolean;dining76East?:boolean;education101?:boolean;education12?:boolean;education1112?:boolean;education13?:boolean;education1320?:boolean;pharmacy20?:boolean;pharmacy2021?:boolean;pharmacy21?:boolean;pharmacy143?:boolean;physics561?:boolean;science2256?:boolean;science2256Access?:boolean;science23?:boolean;science26?:boolean;science2527?:boolean;science24?:boolean;science251?:boolean;engineering3436?:boolean;engineering36?:boolean;engineering37?:boolean;engineering3337?:boolean;engineering33?:boolean;engineering3033?:boolean;engineering30?:boolean;engineering30Dining?:boolean;science28?:boolean;librarySoutheast?:boolean;libraryAmenities?:boolean;humanitiesGarden?:boolean}={}){
+export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:BuildingPad[],options:{livingScienceCourtyard?:boolean;educationParking?:boolean;dining76?:boolean;dining76East?:boolean;education101?:boolean;education12?:boolean;education1112?:boolean;education13?:boolean;education1320?:boolean;pharmacy20?:boolean;pharmacy2021?:boolean;pharmacy21?:boolean;pharmacy143?:boolean;physics561?:boolean;science2256?:boolean;science2256Access?:boolean;science23?:boolean;science26?:boolean;science2527?:boolean;science24?:boolean;science251?:boolean;engineering3334?:boolean;engineering3436?:boolean;engineering36?:boolean;engineering37?:boolean;engineering3337?:boolean;engineering33?:boolean;engineering3033?:boolean;engineering30?:boolean;engineering30Dining?:boolean;science28?:boolean;librarySoutheast?:boolean;libraryAmenities?:boolean;humanitiesGarden?:boolean}={}){
   const humanitiesGardenActive=options.humanitiesGarden!==false&&buildings.some(b=>b.id==='way/167983080'&&b.points.some(p=>Math.hypot(p[0]-425.94,p[1]+687.77)<.1))&&buildings.some(b=>b.id==='way/167984624');
   const connection301=buildings.find(b=>b.id==='way/228476658'),connection303=buildings.find(b=>b.id==='supplemental/snu-303');
   const connectionActive=!!connection301&&!!connection303;
@@ -354,6 +355,8 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   let libraryAmenitiesLayout:ReturnType<typeof getLibraryAmenitiesLayout>|undefined;
   let librarySoutheastPatch:ReturnType<typeof cutLibrarySoutheastTerrain>|undefined;
   let librarySoutheastLayout:ReturnType<typeof getLibrarySoutheastLayout>|undefined;
+  let engineering3334Patch:ReturnType<typeof cutEngineering3334Terrain>|undefined;
+  let engineering3334Layout:ReturnType<typeof getEngineering3334Layout>|undefined;
   let engineering3436Patch:ReturnType<typeof cutEngineering3436Terrain>|undefined;
   let engineering3436Layout:ReturnType<typeof getEngineering3436Layout>|undefined;
   let engineering36Patch:ReturnType<typeof cutEngineering36Terrain>|undefined;
@@ -402,6 +405,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   let humanitiesGardenPatch:ReturnType<typeof cutHumanitiesGardenTerrain>|undefined;
   function meshHeightAt(x:number, z:number) {
     x = THREE.MathUtils.clamp(x, bounds.minX, bounds.maxX); z = THREE.MathUtils.clamp(z, bounds.minZ, bounds.maxZ);
+    const link3334Height=engineering3334Patch?.heightAt(x,z);if(link3334Height!==undefined)return link3334Height;
     const building3436Height=engineering3436Patch?.heightAt(x,z);if(building3436Height!==undefined)return building3436Height;
     const building36Height=engineering36Patch?.heightAt(x,z);if(building36Height!==undefined)return building36Height;
     const building37Height=engineering37Patch?.heightAt(x,z);if(building37Height!==undefined)return building37Height;
@@ -484,6 +488,8 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     engineering3436Layout=getEngineering3436Layout(meshHeightAt,engineering36Layout,(main34Building as {id:string;points:[number,number][]}).points);engineering3436Patch=cutEngineering3436Terrain(positions,indices,engineering3436Layout);
     if(engineering37Layout){const old=engineering37Layout.routes.eastFootway;engineering37Layout.routes.eastFootway=[old[0],...engineering3436Layout.routes.lowerPlazaBypass,old[old.length-1]];}
   }
+  const main35Building=buildings.find(b=>b.id==='way/892896238'),main431Building=buildings.find(b=>b.id==='way/162045723');
+  if(options.engineering3334!==false&&engineering3436Layout&&engineering33Layout&&main35Building&&main431Building){engineering3334Layout=getEngineering3334Layout(meshHeightAt,engineering3436Layout,engineering33Layout,(main35Building as {points:[number,number][]}).points,(main431Building as {points:[number,number][]}).points);engineering3334Patch=cutEngineering3334Terrain(positions,indices,engineering3334Layout);}
   const vertices = Float32Array.from(positions), colors = new Float32Array(vertices.length), indexArray = Uint32Array.from(indices);
   const low = new THREE.Color('#7c8d69'), high = new THREE.Color('#537660'), color = new THREE.Color();
   for (let i = 0; i < vertices.length; i += 3) {
@@ -498,6 +504,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     // 선언 밖에서는 기존 논리 높이 계산을 유지한다. 실제 메시 조회는 meshHeightAt으로 별도 제공한다.
     const gardenLocal=humanitiesGardenLocal(cx,cz),gardenOuter=HUMANITIES_GARDEN_SITE.outer;
     if(humanitiesGardenPatch&&Math.abs(gardenLocal.s)<gardenOuter.s&&Math.abs(gardenLocal.n)<gardenOuter.n){const y=humanitiesGardenPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(engineering3334Patch?.affects(cx,cz)){const h=engineering3334Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
     if(engineering3436Patch?.affects(cx,cz)){const h=engineering3436Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
     if(engineering36Patch?.affects(cx,cz)){const h=engineering36Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
     if(engineering37Patch?.affects(cx,cz)){const h=engineering37Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
@@ -595,6 +602,8 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   const pharmacy21Cells=new Set<number>();
   if(pharmacy21Patch){const q=pharmacy21Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy21Cells.add(r*stride+c);mesh.userData.pharmacy21Correction={...pharmacy21Patch.metadata,bounds:q,layout:pharmacy21Layout};}
   if(engineering30Patch)(heightAt as TerrainHeightSampler & {engineering30CorrectionRegions?:TerrainDetailRegion[]}).engineering30CorrectionRegions=[{minX:139,maxX:204,minZ:-1033,maxZ:-1000}];
+  const engineering3334Cells=new Set<number>();
+  if(engineering3334Patch){const q=engineering3334Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3334Cells.add(r*stride+c);mesh.userData.engineering3334Correction={...engineering3334Patch.metadata,bounds:q,layout:engineering3334Layout};}
   const engineering3436Cells=new Set<number>();
   if(engineering3436Patch){const q=engineering3436Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3436Cells.add(r*stride+c);mesh.userData.engineering3436Correction={...engineering3436Patch.metadata,bounds:q,layout:engineering3436Layout};}
   const engineering36Cells=new Set<number>();
@@ -629,7 +638,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   if(physics561Patch){const q=physics561Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)physics561Cells.add(r*stride+c);mesh.userData.physics561Correction={...physics561Patch.metadata,bounds:q,layout:physics561Layout};}
   const pharmacy143Cells=new Set<number>();
   if(pharmacy143Patch){const q=pharmacy143Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy143Cells.add(r*stride+c);mesh.userData.pharmacy143Correction={...pharmacy143Patch.metadata,bounds:q,layout:pharmacy143Layout};}
-  const roadTriangleCells=new Set([...existingRoadCells,...engineering3436Cells,...engineering36Cells,...engineering37Cells,...engineering3337Cells,...engineering33Cells,...engineering3033Cells,...engineering30Cells,...engineering30DiningCells,...science28Cells,...science251Cells,...science24Cells,...science2527Cells,...science26Cells,...science23Cells,...science2256Cells,...physics561Cells,...pharmacy143Cells,...pharmacy21Cells,...education101Cells,...education12Cells,...education13Cells,...pharmacy20Cells,...pharmacy2021Cells,...librarySoutheastCells,...libraryAmenitiesCells]);
+  const roadTriangleCells=new Set([...existingRoadCells,...engineering3334Cells,...engineering3436Cells,...engineering36Cells,...engineering37Cells,...engineering3337Cells,...engineering33Cells,...engineering3033Cells,...engineering30Cells,...engineering30DiningCells,...science28Cells,...science251Cells,...science24Cells,...science2527Cells,...science26Cells,...science23Cells,...science2256Cells,...physics561Cells,...pharmacy143Cells,...pharmacy21Cells,...education101Cells,...education12Cells,...education13Cells,...pharmacy20Cells,...pharmacy2021Cells,...librarySoutheastCells,...libraryAmenitiesCells]);
   function surfaceSampler(sourceVertices:Float32Array,sourceIndices:Uint32Array,cells:Set<number>){
     const buckets=new Map<number,number[]>();
     for(let i=0;i<sourceIndices.length;i+=3){const ids=[sourceIndices[i],sourceIndices[i+1],sourceIndices[i+2]],x=ids.reduce((v,k)=>v+sourceVertices[k*3],0)/3,z=ids.reduce((v,k)=>v+sourceVertices[k*3+2],0)/3,c=interval(xs,x,n),r=interval(zs,z,n),cell=r*stride+c;if(!cells.has(cell))continue;const list=buckets.get(cell)??[];list.push(i);buckets.set(cell,list);}

@@ -34,7 +34,7 @@ registerHooks({
 globalThis.document={createElement(){const canvas={width:0,height:0,textCalls:[]};canvas.getContext=()=>new Proxy({},{get(o,k){if(k==='fillText')return(...args)=>canvas.textCalls.push(args);if(k==='measureText')return s=>({width:String(s).length*20});if(k==='createLinearGradient'||k==='createRadialGradient')return()=>({addColorStop(){}});return o[k]??(()=>{});},set(o,k,v){o[k]=v;return true;}});return canvas;}};
 const sourceModule=n=>import(pathToFileURL(path.join(root,'src',n+'.ts')));
 
-async function buildWorld(options={}){
+async function buildWorld(options={engineering3334:false}){
 
  await R.init();
  const names=['terrain','scene','fullCampus','physics','transitFacilities','centralPlazaFacilities','administrationPlazaFacilities','informationCourtApproach','administrationPlazaGround','gyujanggakApproach'];
@@ -134,7 +134,7 @@ try{
  });
  await check('terrain topology and collider height agree',()=>terrainTopology(env));
  await check('terrain outside the new court stays unchanged',async()=>{
-  const {createTerrain}=await sourceModule('terrain'),before=createTerrain(new THREE.Scene(),env.dem,env.data.buildings,{engineering3436:false}),b=q.bounds;let samples=0;
+  const {createTerrain}=await sourceModule('terrain'),before=createTerrain(new THREE.Scene(),env.dem,env.data.buildings,{engineering3436:false,engineering3334:false}),b=q.bounds;let samples=0;
   for(let x=env.data.bounds.minX+5;x<env.data.bounds.maxX;x+=17)for(let z=env.data.bounds.minZ+5;z<env.data.bounds.maxZ;z+=17){
    if(x>b.minX-12&&x<b.maxX+12&&z>b.minZ-12&&z<b.maxZ+12)continue;
    const old=before.meshHeightAt(x,z),now=env.terrain.meshHeightAt(x,z);must(Math.abs(now-old)<.0001,'Unrelated terrain changed',{x,z,old,now});samples++;

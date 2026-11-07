@@ -1,3 +1,4 @@
+import type { Engineering3334Layout } from './engineering3334Site';
 import * as THREE from 'three';
 import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
 import type { BreakableSpec } from './scene';
@@ -7,7 +8,7 @@ import { physics561SurfaceHeight } from './physics561Site';
 import { ENGINEERING33_ID, type Engineering33Layout } from './engineering33Site';
 import { engineering30ClipPolygon } from './engineering30Site';
 type XZ=[number,number];type Frame=ReturnType<typeof humanities23Frame>;type Proxy=THREE.Mesh<THREE.BufferGeometry,THREE.MeshStandardMaterial>;
-export function createEngineering33Exterior(scene:THREE.Scene,building:CampusBuilding,q:Engineering33Layout,heightAt:(x:number,z:number)=>number){
+export function createEngineering33Exterior(scene:THREE.Scene,building:CampusBuilding,q:Engineering33Layout,heightAt:(x:number,z:number)=>number,north?:Engineering3334Layout){
  const shell=new THREE.Group();shell.name='landmark/engineering33-exterior';Object.assign(shell.userData,{role:'building-shell',buildingId:ENGINEERING33_ID,buildingIds:[ENGINEERING33_ID]});scene.add(shell);
  
 
@@ -85,9 +86,14 @@ export function createEngineering33Exterior(scene:THREE.Scene,building:CampusBui
  const numberFace=humanities23Frame(q.main[2],q.main[1]),number=box('building-number-panel',numberFace,.7,2.6,-.82,-.79,q.roof-.08,q.roof+.68,white);
  label('building-number-33','33',numberFace,1.65,-.84,q.roof+.3,1.35,.7,number,'#d5d5cb','#548086');
  const east=q.east,door=q.eastDoor;
- for(const [a,b]of[[0,door-1.6],[door+1.6,east.length]]){
-   const low=Math.min(...[a,b].map(s=>heightAt(...east.point(s,0))))-.25,owner=box('east-dark-brick-wall',east,a,b,-.08,.24,Math.min(low,q.floor),q.roof,0x716252);
-   for(let y=q.floor+.1;y<q.roof;y+=.16)facet('east-brick-mortar',east,a,b,y,y+.012,-.09,0xa0927b,owner);
+ for(const [start,end]of[[0,door-1.6],[door+1.6,east.length]]){
+   const opening=north?.opening33,cuts=[start,end,...(opening?[opening.s0,opening.s1].filter(s=>s>start&&s<end):[])].sort((a,b)=>a-b);
+   for(let i=0;i<cuts.length-1;i++){const a=cuts[i],b=cuts[i+1],low=Math.min(q.floor,...[a,b].map(s=>heightAt(...east.point(s,0))-.25)),hole=opening&&(a+b)/2>opening.s0&&(a+b)/2<opening.s1;
+     for(const[lo,hi]of(hole?[[low,opening!.bottom],[opening!.top,q.roof]]:[[low,q.roof]])){
+       const owner=box('east-dark-brick-wall',east,a,b,-.08,.24,lo,hi,0x716252);
+       for(let y=Math.max(lo,q.floor)+.1;y<hi-.02;y+=.16)facet('east-brick-mortar',east,a,b,y,y+.012,-.09,0xa0927b,owner);
+     }
+   }
  }
  for(const s of[door-1.6,door+1.45])box('east-recess-side',east,s,s+.15,-.08,1.3,q.floor,q.roof,0x716252);
  for(let level=0;level<3;level++)box('east-recess-panel',east,door-1.6,door+1.6,1.1,1.28,q.floor+(level===0?2.7:level*3.5),q.floor+(level+1)*3.5,level===0?white:0x535c57);

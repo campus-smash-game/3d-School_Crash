@@ -1,0 +1,151 @@
+{
+  "checkedAt": "2026-11-07",
+  "scope": "34동 서면 북단의 낮은 현관, 광장 접근 계단, 33동 청록 연결교와 43-1동 및 35동 방향 다층 연결부",
+  "evidence": [
+    {
+      "id": "current-north-court",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=QWfoIEFngzRhNCyJzBdc9A,270,15,80,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "view": "34동 북동쪽에서 서쪽",
+      "observed": "낮은 포장 마당, 사각 기둥과 열린 하부, 다층 연결 구조",
+      "limit": "34동 서면 현관은 이 사진에서 직접 보이지 않는다."
+    },
+    {
+      "id": "current-top-stair",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=QWfoIEFngzRhNCyJzBdc9A,270,23,60,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "view": "동쪽에서 34동 북쪽 계단을 본다.",
+      "observed": "남쪽 34동 쪽 높은 참에서 북쪽 낮은 참으로 내려가는 계단, 금속 난간, 동쪽 콘크리트교와 접속, 그 아래 청록교층",
+      "limit": "1920×1080 직접 캡처다. 계단 너비나 층고를 사진 픽셀로 실측하지 않았다."
+    },
+    {
+      "id": "current431-end",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=QWfoIEFngzRhNCyJzBdc9A,285,5,55,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "view": "동쪽에서 북서쪽",
+      "observed": "흰 연결 골조, 아래 열린 마당, 43-1동 남벽의 유리 구획과 가로창, 작은 지상 참",
+      "limit": "문과 창의 세부 구분 및 개폐 상태는 미확인이다."
+    },
+    {
+      "id": "current431-sign",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=TuAQnIfViczdHxG5ybNrfQ,235,15,65,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "view": "북동쪽에서 남서쪽",
+      "observed": "E43-1 표지, 가까운 도로 횡단교, 34동 북면의 벽돌과 흰 사선 마감",
+      "limit": "나무와 가까운 교량이 상부를 가린다."
+    },
+    {
+      "id": "current35-east-end",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=QWfoIEFngzRhNCyJzBdc9A,75,20,80,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "view": "34동 북동쪽 도로에서 동쪽 35동을 본다.",
+      "observed": "콘크리트교가 35동 서쪽 외부 바닥 높이에 접속한다.",
+      "limit": "접합부 일부는 나무에 가린다."
+    },
+    {
+      "id": "current35-west-end",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=TuAQnIfViczdHxG5ybNrfQ,105,15,65,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "view": "35동 서쪽 도로에서 동남쪽",
+      "observed": "E35 표지, 교량, 높은 외부 바닥과 금속 난간, 그 북쪽의 작은 유리 차양",
+      "limit": "교량 끝에 바로 닫힌 출입문이 있는지는 확인하지 못했다."
+    },
+    {
+      "id": "opening-west-entry",
+      "sourceURL": "https://enrcmc.tistory.com/entry/서울대학교-준공식행사-조선해양공학-고급인재양성관-행사대행-준공식무대-천막-의자-행사기획-연출-의전도우미-레드카펫-에어아치-에어샷-이엔알기획사",
+      "imageURL": "https://blog.kakaocdn.net/dn/qUFbe/btsCKsF2aSS/9IJTWHB4dgVBEbezKkqcS0/img.jpg",
+      "publicationDate": "2023-12-29",
+      "captureDate": null,
+      "eventDate": "2018-11-06",
+      "directlyViewed": true,
+      "view": "서쪽 낮은 마당에서 동쪽으로 34동 현관을 본다.",
+      "observed": "들어간 유리 현관, 위 작은 창줄, 오른쪽 긴 벽돌 서면, 왼쪽 흰 다층 연결부",
+      "limit": "행사 구조물이 입구 일부를 가린다. 현수막 행사일과 EXIF 촬영일을 구분한다."
+    },
+    {
+      "id": "opening-west-plaza-stair",
+      "sourceURL": "https://enrcmc.tistory.com/entry/서울대학교-준공식행사-조선해양공학-고급인재양성관-행사대행-준공식무대-천막-의자-행사기획-연출-의전도우미-레드카펫-에어아치-에어샷-이엔알기획사",
+      "imageURL": "https://blog.kakaocdn.net/dn/dJl2bz/btsCK8UQhfZ/WARJUdUJmn67xKCjbDClIk/img.jpg",
+      "publicationDate": "2023-12-29",
+      "captureDate": null,
+      "eventDate": "2018-11-06",
+      "directlyViewed": true,
+      "view": "높은 광장에서 북동쪽",
+      "observed": "낮은 현관 마당, 광장에서 내려가는 난간 계단, 33동 청록교와 서면 상대 위치",
+      "limit": "계단 전 구간과 정확한 방향각은 가림 때문에 미확인이다."
+    },
+    {
+      "id": "opening-entry-extra",
+      "sourceURL": "https://enrcmc.tistory.com/entry/서울대학교-준공식행사-조선해양공학-고급인재양성관-행사대행-준공식무대-천막-의자-행사기획-연출-의전도우미-레드카펫-에어아치-에어샷-이엔알기획사",
+      "imageURLs": [
+        "https://blog.kakaocdn.net/dna/ciVPHG/btsCJj3BYKW/AAAAAAAAAAAAAAAAAAAAAGEx9VtcCeP8frzIS6vkIwlfrfcr1-9mmQyEHq9mXYh2/img.jpg",
+        "https://blog.kakaocdn.net/dna/dR57ch/btsCK90vcS4/AAAAAAAAAAAAAAAAAAAAAM7bliYaYF-BwcFrz___5_nALUbkCVcMMgFehysF_qih/img.jpg"
+      ],
+      "publicationDate": "2023-12-29",
+      "captureDate": null,
+      "eventDate": "2018-11-06",
+      "directlyViewed": true,
+      "view": "34동 낮은 현관 정면",
+      "observed": "현수막의 행사 날짜 2018.11.06, 낮은 마당과 서면 벽돌, 현관 주변 흰 골조",
+      "limit": "새 CDN 주소는 서명 매개변수가 필요할 수 있다. 안정된 출처는 블로그 본문 URL이다. 사람 때문에 작은 문턱은 보이지 않는다."
+    },
+    {
+      "id": "official33",
+      "sourceURL": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=42",
+      "imageURL": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000042.jpg",
+      "captureDate": null,
+      "directlyViewed": true,
+      "view": "33동 남동쪽에서 북서쪽",
+      "observed": "세 창줄과 청록교의 상대 높이, 사각 기둥과 하부 길",
+      "inference": "청록교 바닥은 가장 위 노출 창줄 바닥 부근에 붙는다.",
+      "limit": "공식 층명이나 현행 사진 날짜는 알 수 없다."
+    },
+    {
+      "id": "old33-green-bridge",
+      "sourceURL": "https://kko.to/7Evab5ODDn",
+      "resolvedURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104875&pan=26.0&tilt=-19.3&zoom=0&urlLevel=3&urlX=489190&urlY=1099102",
+      "captureMonth": "2011-04",
+      "directlyViewed": true,
+      "observed": "33동 동쪽 모서리와 청록교, 열린 아래 길",
+      "limit": "34동 재건축 이전 사진이다. 오른쪽 구형 34동 외관과 현관을 현재 건물로 복원하지 않는다."
+    },
+    {
+      "id": "official35-comparison",
+      "sourceURL": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=44",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observed": "35동의 격자 차양과 창 구성",
+      "limit": "새 거리뷰의 E35 표지와 지도 대응을 보조한다. 이 사진만으로 교량 종점 문을 확정하지 않는다."
+    }
+  ],
+  "implementation": {
+    "entry": "34동 서면 북단의 후퇴한 유리 현관과 흰 상부, 광장에서 내려가는 금속 난간 계단을 반영했다.",
+    "north": "33동 청록교를 35동 콘크리트교보다 아래에 두고 34동 북면 높은 참에서 북쪽으로 내려오는 계단을 연결했다.",
+    "east": "35동 교량 끝은 높은 야외 테라스이며 테라스를 따라 기존 유리 차양 앞까지 이동한다.",
+    "ground": "낮은 현관 마당과 33동 앞길, 북쪽 및 동쪽 접근로를 연결했다. 연결교 아래는 열려 있다."
+  },
+  "estimates": {
+    "datum": "기존 게임 지형과 건물의 바닥을 기준으로 연결했으며 실측 표고가 아니다.",
+    "entryStairs": 20,
+    "northStairs": 20,
+    "bridgeWidth": 3.2,
+    "greenFloor": 53.1013,
+    "upperFloor": 56.5013,
+    "terraceFloor": 56.8231,
+    "doorDetails": "문짝, 문 위치, 얕은 안쪽 바닥은 통행을 위한 근사다.",
+    "court": "마당 폭, 배수 경사와 계단 종점은 사진에 가려져 추정했다."
+  },
+  "limitations": [
+    "낮은 청록교층과 높은 T자 바닥을 직접 잇는 별도 계단은 확인하지 못했다.",
+    "43-1동 문짝과 문턱, 35동 낮은 실험실 외관과 전체 실내는 추가 보완 대상이다.",
+    "사진마다 촬영 시점이 다르며 현재 출입 상태와 일치한다고 단정하지 않는다."
+  ],
+  "rawOsmAndDemPreserved": true,
+  "referencePhotosBundled": false
+}

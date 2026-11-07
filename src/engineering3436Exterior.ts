@@ -1,3 +1,4 @@
+import type { Engineering3334Layout } from './engineering3334Site';
 import * as THREE from 'three';
 import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
 import type { BreakableSpec } from './scene';
@@ -5,7 +6,7 @@ import { humanities23Frame } from './humanities23Site';
 import { physics561SurfaceHeight } from './physics561Site';
 import { ENGINEERING34_ID, ENGINEERING3436_ID, type Engineering3436Layout } from './engineering3436Site';
 type XZ=[number,number];type Frame=ReturnType<typeof humanities23Frame>;type Proxy=THREE.Mesh<THREE.BufferGeometry,THREE.MeshStandardMaterial>;
-export function createEngineering3436Exterior(scene:THREE.Scene,q:Engineering3436Layout){
+export function createEngineering3436Exterior(scene:THREE.Scene,q:Engineering3436Layout,north?:Engineering3334Layout){
  const shell=new THREE.Group();shell.name='landmark/engineering3436-exterior';Object.assign(shell.userData,{role:'building-shell',buildingId:ENGINEERING34_ID,buildingIds:[ENGINEERING34_ID]});scene.add(shell);
  
 
@@ -57,6 +58,10 @@ export function createEngineering3436Exterior(scene:THREE.Scene,q:Engineering343
      const s0=i*width,s1=(i+1)*width;
      for(let k=0;k<q.floors.length;k++){
        const y=q.floors[k],top=q.floors[k+1]??q.roof,upper=k>=3,color=upper?panel:(westSide&&k===2?panel:brick);
+       if(north&&westSide&&k===0&&s0<q.north-north.entry.n0&&s1>q.north-north.entry.n1){
+         const a=q.north-north.entry.n1,b=q.north-north.entry.n0,cuts=[s0,s1,...[a,b].filter(v=>v>s0&&v<s1)].sort((x,y)=>x-y);
+         for(let j=0;j<cuts.length-1;j++){const l=cuts[j],r=cuts[j+1],hole=(l+r)/2>a&&(l+r)/2<b;box('low-entry-cut-wall',wall,l,r,0,.25,hole?y+2.8:y,top,color);}continue;
+       }
        const wallPart=box(upper?'large-square-window-bay':'lower-small-window-bay',wall,s0,s1,0,.25,y,top,color);
        if(upper){
          window(wall,s0+.38,s1-.38,y+.75,top-.5,wallPart);
@@ -73,9 +78,18 @@ export function createEngineering3436Exterior(scene:THREE.Scene,q:Engineering343
  };
  gridWall(face(q.west,q.north,q.west,q.mainStart),true);
  gridWall(face(q.east,q.mainStart,q.east,q.north),false);
- // 북쪽은 나무와 연결교에 가려진 부분을 단순화한다.
- const northFace=face(q.east,q.north,q.west,q.north),northWall=box('north-partly-observed-wall',northFace,0,northFace.length,0,.25,q.floors[0],q.roof,brick);
- facet('north-pale-cladding',northFace,0,northFace.length,q.floors[3],q.roof,-.015,white,northWall);
+ const northFace=face(q.east,q.north,q.west,q.north),holes=(north?.openings34??[]).map(o=>({...o,a:q.east-o.s1,b:q.east-o.s0}));
+ const cuts=[0,northFace.length,...holes.flatMap(o=>[o.a,o.b])].sort((a,b)=>a-b);
+ for(let i=0;i<cuts.length-1;i++){const a=cuts[i],b=cuts[i+1];if(b-a<.001)continue;let spans=[[q.floors[0],q.roof]];
+   for(const o of holes.filter(o=>(a+b)/2>o.a&&(a+b)/2<o.b))spans=spans.flatMap(([lo,hi])=>[[lo,Math.min(hi,o.bottom)],[Math.max(lo,o.top),hi]]).filter(([lo,hi])=>hi>lo);
+   for(const[lo,hi]of spans){
+     const owner=box('north-partly-observed-wall',northFace,a,b,0,.25,lo,hi,brick);
+     const polygon=[[a,lo],[b,lo],[b,hi],[a,hi]],clipped:number[][]=[];
+     const distance=(p:number[])=>p[1]-(q.floors[3]-(north?q.floors[3]-q.floors[2]:0)*p[0]/northFace.length);
+     for(let j=0;j<polygon.length;j++){const start=polygon[j],end=polygon[(j+1)%polygon.length],d0=distance(start),d1=distance(end);if(d0>=0)clipped.push(start);if((d0>=0)!==(d1>=0)){const t=d0/(d0-d1);clipped.push([start[0]+(end[0]-start[0])*t,start[1]+(end[1]-start[1])*t]);}}
+     if(clipped.length>=3)part('north-pale-cladding',clipped.map(([s,y])=>at(northFace,s,y,-.015)),white,'stone',owner,true);
+   }
+ }
  box('main-roof',f,q.west,q.east,q.mainStart,q.north,q.roof-.22,q.roof,0x90998d);
  const guard=(s0:number,n0:number,s1:number,n1:number,y0:number,y1=y0,color=0x929b95,name='railing')=>{
    const owner=beam(name,at(f,s0,y0+1.02,n0),at(f,s1,y1+1.02,n1),.027,color);
