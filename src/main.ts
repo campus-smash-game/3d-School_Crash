@@ -111,7 +111,7 @@ async function boot(){
     if(controls.active){
       started=true;const look=controls.consumeLook();bearing+=look.x*.0024;pitch=THREE.MathUtils.clamp(pitch-look.y*.0024,-1.35,1.35);
       let mx=controls.moveX,mz=controls.moveZ;const norm=Math.max(1,Math.hypot(mx,mz));mx/=norm;mz/=norm;
-      const speed=controls.sprint?13:mobile?8:6;bearingMovement(bearing,mx,mz,movement).multiplyScalar(speed);
+      const speed=controls.sprint?13:mobile?10.4:7.8;bearingMovement(bearing,mx,mz,movement).multiplyScalar(speed);
       traffic.update(dt,dataEye);sim.syncVehicles(traffic.collisionStates());
       pendingJump=controls.consumeJump()||pendingJump;accumulator+=dt;
       while(accumulator>=1/60){sim.step(1/60,movement.x,movement.z,pendingJump);pendingJump=false;accumulator-=1/60;}
