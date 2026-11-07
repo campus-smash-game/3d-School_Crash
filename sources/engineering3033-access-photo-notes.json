@@ -1,0 +1,191 @@
+{
+  "reviewedAt": "2026-11-07",
+  "scope": "30동 서쪽 중정과 30동 및 33동 사이 연결교 하부 통로",
+  "buildingIds": [
+    "way/389628347",
+    "way/347804717"
+  ],
+  "evidence": [
+    {
+      "id": "naver-westcourt",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ev88w2lLIl87yGs1bK6oFw,70,5,80,Float",
+      "captureDate": "2024-02",
+      "dateEvidence": "거리뷰 화면에 2024년 02월(최신)으로 표시됨. 해당 촬영점의 최신 자료라는 뜻이다.",
+      "directlyViewed": true,
+      "view": "30동 서쪽 중정에서 동북동쪽을 본다. 지붕의 30 숫자, 왼쪽 30-31 연결부와 미니맵을 대조했다.",
+      "observations": [
+        "낮은 회색 사각 포장",
+        "남쪽 붉은 상단 마당",
+        "두 바닥 사이 넓은 계단",
+        "상단 마당과 건물 앞 식재대"
+      ]
+    },
+    {
+      "id": "naver-westcourt-south",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ev88w2lLIl87yGs1bK6oFw,141.76,5,80,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "view": "같은 지점에서 남동쪽으로 회전했다.",
+      "observations": [
+        "계단은 낮은 북쪽 바닥에서 남쪽으로 오른다",
+        "계단 서쪽 끝은 낮은 경계석과 식재대에 붙는다",
+        "계단 위에는 붉은 포장과 가로등이 있다"
+      ],
+      "unknown": "상단 마당 남쪽 끝은 식재에 가린다."
+    },
+    {
+      "id": "naver-court-southwest",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=Wbk0_vuCSOy6Yr4AsqF8wQ,70,10,80,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "observations": [
+        "서쪽 낮은 길과 중정 사이에는 경사진 식재 공간이 있다",
+        "30동 서쪽 외벽이 나무 뒤에 보인다",
+        "오른쪽에 별도 계단 일부가 보인다"
+      ],
+      "unknown": "32동 공사 전 사진이다. 현재 식재와 보행 경계를 확정하는 데 쓰지 않는다."
+    },
+    {
+      "id": "naver-southcourt",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ty-xfFK7C2CoQUfhufEDLA,70,10,80,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "view": "33동 북서쪽에서 30동 남서쪽을 본다.",
+      "observations": [
+        "왼쪽 먼 건물은 30동, 오른쪽 가까운 건물은 33동이다",
+        "낮은 길에서 동쪽의 상단 공간으로 오르는 짧은 계단",
+        "계단 옆 붉은 경계벽",
+        "상단 공간과 낮은 잔디를 가르는 회색 옹벽"
+      ]
+    },
+    {
+      "id": "naver-connector-far",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ty-xfFK7C2CoQUfhufEDLA,70.13,10,64.69,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "observations": [
+        "30동 남쪽의 밝은 회색 탑",
+        "30동과 33동 사이의 창 두 줄과 붉은 벽돌 띠"
+      ],
+      "unknown": "하부는 나무와 옹벽에 가린다. 2011년 동쪽 사진의 하부 경사로를 최신 사진으로 검증한 것으로 해석하지 않는다."
+    },
+    {
+      "id": "naver-33-piloti",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ty-xfFK7C2CoQUfhufEDLA,140.55,10,80,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "view": "33동 서쪽 필로티를 북서쪽에서 남동쪽으로 본다.",
+      "observations": [
+        "흰 사각 기둥과 어두운 천장",
+        "낮은 포장 바닥과 주차 공간",
+        "남쪽 반대편 도로까지 열린 시야",
+        "필로티 북쪽에 높은 식재와 옹벽"
+      ]
+    },
+    {
+      "id": "naver-navigation-map",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ty-xfFK7C2CoQUfhufEDLA,140.55,10,80,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "observations": [
+        "촬영점은 33동 서쪽이며 34동은 미니맵 오른쪽 아래에 별도로 표시된다",
+        "30동 서쪽 중정과 33동의 위치 관계를 확인했다"
+      ],
+      "unknown": "미니맵 클릭은 가까운 촬영점으로 이동할 수 있어 이동 순서를 실제 연속 보행 경로로 간주하지 않는다."
+    },
+    {
+      "id": "kakao-underpass-201104",
+      "sourceURL": "https://kko.to/MqH2M4AdVd",
+      "resolvedURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104872&pan=277.8&tilt=0.0&zoom=0&urlLevel=3&urlX=489195&urlY=1099160",
+      "captureDate": "2011-04",
+      "directlyViewed": true,
+      "reusedWithoutModification": true,
+      "view": "30동 남쪽과 33동 북쪽 틈을 동쪽에서 서쪽으로 본다.",
+      "observations": [
+        "연결부 아래 동서로 열린 통과구",
+        "서쪽으로 오르는 금속 난간 경사로",
+        "경사로 북쪽에 붙은 짧은 계단",
+        "붉은 포장과 노란 점자블록",
+        "30동 남쪽 흰 계단탑의 회색 삼각형 무늬",
+        "연결부 동쪽 면의 검은 가로 창 두 줄"
+      ],
+      "unknown": "현재 상태와 통행 제한, 연결층, 치수와 바닥 높이는 미확인이다."
+    },
+    {
+      "id": "official33",
+      "sourceURL": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=42",
+      "imageURL": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000042.jpg",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observations": [
+        "33 번호",
+        "붉은 벽돌 띠와 밝은 기둥",
+        "오른쪽 청록색 둥근 지붕 연결교",
+        "아래 포장 통로"
+      ],
+      "excludedInference": "오른쪽 청록 지붕을 30-33 연결부로 대응하지 않았다. 사진 날짜와 방위, 연결 대상이 이 사진만으로 확정되지 않으며 2011년 30-33 동쪽 사진의 외형과도 다르다."
+    },
+    {
+      "id": "danu33-design",
+      "sourceURL": "https://idanu.com/서울대학교-공과대학-33동-리노베이션-및-증축/",
+      "imageURL": "https://idanu.com/wp-content/uploads/2025/01/서울대공과대학33동리노베이션.jpg",
+      "captureDate": null,
+      "projectYear": 2011,
+      "publicationDate": null,
+      "directlyViewed": true,
+      "kind": "설계자 공개 조감도. 실제 준공 사진이 아니다.",
+      "sourceText": "설계자는 33동 리노베이션과 증축 프로젝트를 2011년, 연면적 4,077.38제곱미터, 지상 4층으로 소개한다. 이 수치를 현재 33동 전체의 지하층 구분이나 모든 부분의 층수로 확장하지 않는다.",
+      "observations": [
+        "긴 기존동과 서쪽 증축부",
+        "서쪽 아래 열린 필로티",
+        "기존동 뒤의 식재 공간",
+        "남쪽 현관 앞 계단과 포장 공간"
+      ],
+      "unknown": "이미지 주소의 2025/01은 업로드 경로일 뿐 촬영일이나 준공일이 아니다. 조감도의 식재, 바닥과 통로를 실제 현황으로 확정하지 않는다."
+    }
+  ],
+  "constructionBoundary": {
+    "sourceURL": "https://sees.snu.ac.kr/community/notice?bbsidx=18389&md=v",
+    "publicationDate": "2025-04-22",
+    "observed": "공식 가설계획은 32동 철거와 1단계 공사 경계, 별도 보행 통로를 표시한다.",
+    "limit": "2024년 사진의 옛 서쪽 길을 현재 공사 구역 안에 복원하지 않는다. 기존 32동 공사 모델의 경계를 유지한다."
+  },
+  "implementation": {
+    "verifiedShapes": [
+      "북쪽의 회색 사각 보도와 남쪽의 높은 붉은 포장 마당",
+      "30동 서쪽 긴 벽과 나란히 남쪽으로 오르는 넓은 계단",
+      "30동과 33동을 남북으로 잇는 창 두 줄의 연결부",
+      "연결부 아래 동서 통로와 서쪽으로 오르는 금속 난간 경사로",
+      "경사로 북쪽의 짧은 계단과 동쪽 접근로의 점자블록"
+    ],
+    "estimatedDimensions": {
+      "lowerCourtHeight": 42.4842,
+      "upperCourtHeight": 44.3642,
+      "wideStairCount": 12,
+      "wideStairRise": 1.88,
+      "wideStairRun": 6,
+      "shortStairCount": 3,
+      "shortStairRise": 0.42,
+      "bridgeClearance": 3.72
+    },
+    "geometry": "포장 무늬와 건물 부품을 고체 및 창 메시 두 개로 합친다. 보도블록마다 충돌체를 만들지 않고 구획별 바닥 충돌체를 공유한다.",
+    "terrain": "원본 OSM과 DEM은 보존한다. 기존 서쪽 현관 경사로를 상단 마당 높이에 맞추고 포장 아래 지형만 보정한다. Float32 경계 오차로 잔디가 남지 않도록 1mm의 경계 허용 오차를 적용한다."
+  },
+  "limits": [
+    "치수, 단수, 절대 표고와 창 개수는 실측값이 아닌 게임 근사다.",
+    "2024년 2월 사진은 중정 바닥과 상부 연결 형태를 확인하는 근거다. 2025년 이후 모든 변경 사항을 확인한 것은 아니다.",
+    "하부 경사로와 계단은 2011년 4월 사진을 참고했다. 현재 존속 및 개방 상태는 확인하지 못했다.",
+    "설계자의 33동 조감도는 실제 준공 사진이 아니므로 현재 바닥과 식재를 확정하는 근거로 쓰지 않았다.",
+    "사진 자체를 게임 텍스처나 공개 저장소의 에셋으로 배포하지 않는다."
+  ],
+  "remaining": [
+    "30동 남쪽 흰 계단탑의 세부 외관",
+    "33동 본체의 상세 외관과 서쪽 필로티",
+    "중정 남서쪽의 별도 계단과 옹벽 및 현재 공사 경계 접속",
+    "연결교 내부 및 건물 전체 실내"
+  ],
+  "searchLimits": {
+    "webSearch": "공식 자료와 웹 사진을 추가 검색했으나 30-33 하부 경사로를 더 최근 시점에 직접 보여 주는 별도 블로그 사진은 찾지 못했다. 단우건축 조감도는 설계 자료로만 채택했다.",
+    "precision": "실측, 원근 보정이나 사진측량을 수행하지 않았다. 사진에 보이지 않는 실내 계단, 문 중심, 통과 높이는 확정하지 않는다."
+  }
+}
