@@ -8,7 +8,7 @@
     "predev": "npm run bake",
     "dev": "vite --host 0.0.0.0",
     "test": "node scripts/verify-all.mjs",
-    "build": "npm run bake && tsc --noEmit && vite build",
+    "build": "npm run bake && tsc --noEmit && vite build && node scripts/build-worker.mjs",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
