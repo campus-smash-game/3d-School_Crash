@@ -4,7 +4,9 @@ import {readFile} from 'node:fs/promises';
 import {createHash,randomUUID} from 'node:crypto';
 import vm from 'node:vm';
 import worker from '../worker/index.mjs';
+import {buildings} from '../worker/buildings.mjs';
 const sql=new DatabaseSync(':memory:');sql.exec(await readFile(new URL('../drizzle/0000_analytics.sql',import.meta.url),'utf8'));
+sql.exec(await readFile(new URL('../drizzle/0001_building_destructions.sql',import.meta.url),'utf8'));
 const DB={
   prepare(query){return{bind(...args){return{run:()=>sql.prepare(query).run(...args),all:async()=>({results:sql.prepare(query).all(...args)})}}}},
   async batch(items){sql.exec('BEGIN');try{const values=items.map(item=>item.run());sql.exec('COMMIT');return values}catch(e){sql.exec('ROLLBACK');throw e}}
@@ -24,5 +26,32 @@ sql.prepare('INSERT INTO analytics_events VALUES (?,?,?,?,?,?)').run(randomUUID(
 assert.equal(await (await worker.fetch(new Request(base+'/index.html'),env)).text(),'asset');
 const preflight=await worker.fetch(new Request(base+'/api/collect',{method:'OPTIONS',headers:{Origin:origin}}),env);assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),origin);
 const client=await readFile(new URL('../public/analytics.js',import.meta.url),'utf8');
-for(const off of [false,true]){const requests=[],values=new Map(off?[['campus-analytics-off','1']]:[]);let observer;const ui={dataset:{state:'loading'}};const context={location:{hostname:'jhlee1020lee.github.io'},navigator:{},document:{visibilityState:'visible',getElementById:()=>ui,addEventListener(){}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},crypto:{randomUUID},matchMedia:()=>({matches:true}),MutationObserver:class{constructor(cb){observer=cb}observe(){}},fetch:(url,request)=>{requests.push(JSON.parse(request.body));return Promise.resolve()},Date};vm.runInNewContext(client,context);ui.dataset.state='playing';observer();ui.dataset.state='paused';observer();ui.dataset.state='playing';observer();assert.deepEqual(requests.map(x=>x.kind),off?[]:['page','start']);}
-console.log('Analytics verified: SQLite writes, deduplication, invalid input/origin/size, authentication, aggregate-only output, retention, assets, CORS, and client initial-start/opt-out behavior. No browser used.');
+
+const [buildingA,buildingB]=Object.keys(buildings);
+const broken={...event,id:randomUUID(),kind:'building',building:buildingA};
+assert.equal((await post(broken)).status,200);await post(broken);
+assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM building_destructions').get().n,1);
+await post({...broken,id:randomUUID()},'https://snu-gate-campus-break.lee1010202001.chatgpt.site');
+await post({...broken,id:randomUUID(),building:buildingB});
+assert.equal((await post({...broken,building:'unknown'})).status,400);
+assert.equal((await post({...broken,building:'__proto__'})).status,400);
+assert.equal((await post({...event,building:buildingA})).status,400);
+assert.equal((await post({...broken,visitor:'00000000-0000-4000-8000-000000000000'})).status,401);
+sql.prepare('INSERT INTO building_destructions VALUES (?,?,?,?,?,?)').run(randomUUID(),'2000-01-01','sites',randomUUID(),buildingA,'desktop');
+await post();assert.equal(sql.prepare("SELECT COUNT(*) AS n FROM building_destructions WHERE day='2000-01-01'").get().n,0);
+const ranking=await (await worker.fetch(new Request(base+'/api/stats',{headers:{Authorization:'Bearer test-password'}}),env)).json();
+assert.equal(ranking.buildings[0].building,buildingA);assert.equal(ranking.buildings[0].destructions,2);assert.equal(ranking.buildings[0].name,buildings[buildingA]);assert.equal(ranking.buildings[1].destructions,1);
+assert.equal(ranking.rows[0].views,1);assert.equal(ranking.rows[0].visitors,1);assert.ok(!JSON.stringify(ranking).includes(event.visitor));
+for(const navigator of [{},{doNotTrack:'1'},{globalPrivacyControl:true}]){
+ const requests=[],values=new Map(),listeners={};let observer;const ui={dataset:{state:'loading'}};
+ const context={location:{hostname:'jhlee1020lee.github.io'},navigator,document:{visibilityState:'visible',getElementById:()=>ui,addEventListener:(name,fn)=>listeners[name]=fn},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},crypto:{randomUUID},matchMedia:()=>({matches:true}),MutationObserver:class{constructor(cb){observer=cb}observe(){}},fetch:(url,request)=>{requests.push(JSON.parse(request.body));return Promise.resolve()},Date};
+ vm.runInNewContext(client,context);ui.dataset.state='playing';observer();
+ listeners['campus:building-destroyed']({detail:{building:buildingA}});
+ ui.dataset.state='paused';observer();listeners['campus:building-destroyed']({detail:{building:buildingA}});
+ ui.dataset.state='playing';observer();
+ assert.deepEqual(requests.map(x=>x.kind),Object.keys(navigator).length?[]:['page','start','building']);
+ if(requests.length)assert.equal(requests[2].building,buildingA);
+}
+assert.ok(!client.includes('campus-analytics-off'));
+assert.ok(!(await readFile(new URL('../public/privacy.html',import.meta.url),'utf8')).includes('id="toggle"'));
+console.log('Analytics verified: migrations preserve visits, building ranking, cross-host totals, deduplication, input validation, authentication, retention, CORS, client events and browser privacy signals. No browser used.');

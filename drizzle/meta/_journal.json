@@ -1,1 +1,1 @@
-{"version":"7","dialect":"sqlite","entries":[{"idx":0,"version":"6","when":1794050000000,"tag":"0000_analytics","breakpoints":true}]}
+{"version":"7","dialect":"sqlite","entries":[{"idx":0,"version":"6","when":1794050000000,"tag":"0000_analytics","breakpoints":true},{"idx":1,"version":"6","when":1794050001000,"tag":"0001_building_destructions","breakpoints":true}]}

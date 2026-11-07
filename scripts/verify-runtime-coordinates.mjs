@@ -69,7 +69,8 @@ const ctx = () => new Proxy({ rotate(n) { audit.mapBearing = n; } }, { get(o, k)
     }, set(o, k, v) { o[k] = v; return true; } });
 const canvas = () => ({ width: 192, height: 192, addEventListener(name, fn) { audit.listeners[name] = fn; }, getContext() { return ctx(); } });
 const game = canvas(), map = canvas();
-globalThis.document = { hidden: false, querySelector(sel) { return sel === '#game' ? game : map; }, createElement() { return canvas(); }, addEventListener(name, fn) { audit.listeners[name] = fn; } };
+audit.destructions=[];
+globalThis.document = { dispatchEvent(event){if(event.type==='campus:building-destroyed')audit.destructions.push(event.detail.building);}, hidden: false, querySelector(sel) { return sel === '#game' ? game : map; }, createElement() { return canvas(); }, addEventListener(name, fn) { audit.listeners[name] = fn; } };
 const mobile = process.argv.includes('--mobile');
 globalThis.matchMedia = () => ({ matches: mobile });
 globalThis.devicePixelRatio = 2;
@@ -78,7 +79,7 @@ globalThis.innerHeight = 720;
 globalThis.addEventListener = (name, fn) => audit.listeners[name] = fn;
 globalThis.requestAnimationFrame = fn => { audit.frame = fn; };
 Object.defineProperty(globalThis, 'performance', { value: { now: () => audit.now }, configurable: true });
-const data = { bounds: { minX: -1000, maxX: 1000, minZ: -1000, maxZ: 1000 }, buildings: [], roads: [{ id: 'r1', points: [[-100, 160], [300, 160]], width: 10, kind: 'service', drivable: true }, { id: 'r2', points: [[300, 160], [300, 600]], width: 10, kind: 'service', drivable: true }] };
+const data = { bounds: { minX: -1000, maxX: 1000, minZ: -1000, maxZ: 1000 }, buildings: [{id:'way/analytics-fixture',points:[[0,0],[1,0],[1,1]]}], roads: [{ id: 'r1', points: [[-100, 160], [300, 160]], width: 10, kind: 'service', drivable: true }, { id: 'r2', points: [[300, 160], [300, 600]], width: 10, kind: 'service', drivable: true }] };
 const facilitiesPlan={facilities:[{id:'synthetic-facility-plan-input'}]};
 globalThis.fetch = async (url) => { audit.fetches.push(url); return { ok: true, json: async () => url.endsWith('campus.json') ? data : url.endsWith('shuttle-stops.json') ? {stops:[{id:'stop-south',name:'south start fixture',x:120,z:240,bearing:Math.PI},{id:'stop-north',name:'north start fixture',x:220,z:360,bearing:0},{id:'stop-west',name:'west shuttle fixture',x:-180,z:-260,bearing:Math.PI}]} : url.endsWith('campus-transit.json') ? undefined : url.endsWith('transit-facilities.json') ? facilitiesPlan : {} }; };
 await import(pathToFileURL(path.join(modules, 'main.mjs')).href);
@@ -480,6 +481,19 @@ try {
         for(let i=0;i<180;i++){audit.now+=50;audit.frame(audit.now);}
         assert.equal(audit.renderer.getPixelRatio(),ratio);assert.equal(audit.renderer.shadowMap.enabled,shadows);
         return{mobile,pixelRatio:ratio,shadows,slowFrames:180};
+    });
+    check('actual physics and main count each building once until campus reset',()=>{
+        c.onReset();audit.destructions.length=0;
+        const [a,b,unknown]=sim.targets;assert.ok(unknown);
+        a.mesh.userData.buildingId=b.mesh.userData.buildingId='way/analytics-fixture';
+        unknown.mesh.userData.buildingId='way/unregistered';
+        const direction=new THREE.Vector3(1,0,0);
+        assert.equal(sim.hit(a,a.toughness/2,direction),false);assert.equal(audit.destructions.length,0);
+        assert.equal(sim.hit(a,a.toughness,direction),true);assert.deepEqual(audit.destructions,['way/analytics-fixture']);
+        assert.equal(sim.hit(a,100,direction),false);sim.hit(b,100,direction);sim.hit(unknown,100,direction);
+        c.onTravel('stop-north');c.onStart();assert.equal(audit.destructions.length,1);
+        c.onReset();sim.hit(a,100,direction);assert.equal(audit.destructions.length,2);
+        c.onReset();return{partialDamageExcluded:true,repeatedPartsExcluded:true,resetCounted:true,unknownExcluded:true};
     });
     console.log('Runtime coordinate checks: ' + results.length + '/' + results.length + ' passed. Node fixtures only; no WebGL or phone validation.');
 }

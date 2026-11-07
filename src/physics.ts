@@ -17,6 +17,7 @@ export class Simulation {
   playerCollider:RAPIER.Collider;
   controller:RAPIER.KinematicCharacterController;
   destroyed=0;
+  onTargetDestroyed?: (target: Target) => void;
   grounded=false;
   velocityY=0;
   maxDebris=100;
@@ -232,6 +233,7 @@ export class Simulation {
       body.setAngvel({x:Math.random()*4-2,y:Math.random()*4-2,z:Math.random()*4-2},true);
       this.debris.push({body,size:s.clone().multiplyScalar(.94),color:t.originalColor.clone(),age:0});
     }
+    try { this.onTargetDestroyed?.(t); } catch { /* 통계 오류가 물리 동작을 막지 않게 한다. */ }
     return true;
   }
 }

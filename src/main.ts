@@ -47,6 +47,13 @@ async function boot(){
   const sim=await stage('충돌과 파괴 기능 준비 중',()=>new Simulation([],[...gate.colliders,...campus.colliders],startPoint,bounds,terrain));
   await runStartupSteps(sim.prepareTargets([...gate.breakables,...campus.breakables,...facilities.flatMap(f=>f.breakables)]),progress);
   sim.reset();
+  const knownBuildings=new Set(data.buildings.map(building=>building.id)),brokenBuildings=new Set<string>();
+  sim.onTargetDestroyed=target=>{
+    const id=target.mesh.userData.buildingId;
+    if(typeof id!=='string'||!knownBuildings.has(id)||brokenBuildings.has(id))return;
+    brokenBuildings.add(id);
+    document.dispatchEvent(new CustomEvent('campus:building-destroyed',{detail:{building:id}}));
+  };
   sim.maxDebris=mobile?64:120;
   const traffic=await stage('버스와 자동차 준비 중',()=>new Traffic(world,data.roads,terrain.heightAt,transitPlan)),cannon=new Cannon(world,camera,sim,traffic,'render');
   const minimap=new Minimap(document.querySelector<HTMLCanvasElement>('#minimap')!,data);
@@ -73,7 +80,7 @@ async function boot(){
     if(id)selectShuttleStop(id);
     cannon.unlockAudio();prev=performance.now();accumulator=0;
   };
-  controls.onReset=()=>{sim.reset();traffic.reset();cannon.reset();vehicleScore=0;bearing=selectedStart.bearing;pitch=.06;pendingJump=false;accumulator=0;syncCamera();traffic.update(0,dataEye);sim.syncVehicles(traffic.collisionStates());campus.update(dataEye);};
+  controls.onReset=()=>{sim.reset();brokenBuildings.clear();traffic.reset();cannon.reset();vehicleScore=0;bearing=selectedStart.bearing;pitch=.06;pendingJump=false;accumulator=0;syncCamera();traffic.update(0,dataEye);sim.syncVehicles(traffic.collisionStates());campus.update(dataEye);};
   controls.onSound=enabled=>cannon.setSound(enabled);
   controls.onQuality=value=>{
     renderer.setPixelRatio(Math.min(devicePixelRatio,value==='low'?1:value==='high'?2:mobile?1.25:1.6));
