@@ -1,5 +1,5 @@
 import {buildings} from './buildings.mjs';
-const ORIGINS = new Set(['https://jhlee1020lee.github.io','https://snu-gate-campus-break.lee1010202001.chatgpt.site']);
+const ORIGINS = new Set(['https://campus-smash-game.github.io','https://snu-gate-campus-break.lee1010202001.chatgpt.site']);
 const uuid = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i;
 const diagnosticVisitor='00000000-0000-4000-8000-000000000000';
 const day = (date = Date.now()) => new Date(date + 9 * 3600000).toISOString().slice(0,10);
@@ -9,9 +9,11 @@ export default {
     const url = new URL(request.url);
     if (!url.pathname.startsWith('/api/')) return env.ASSETS.fetch(request);
     const origin = request.headers.get('Origin');
-    const cors = ORIGINS.has(origin) ? {'Access-Control-Allow-Origin':origin,'Vary':'Origin','Access-Control-Allow-Methods':'POST, GET, OPTIONS','Access-Control-Allow-Headers':'Content-Type, Authorization'} : {};
+    const origins=new Set(ORIGINS);
+    if(env.LEGACY_GAME_ORIGIN)origins.add(env.LEGACY_GAME_ORIGIN);
+    const cors = origins.has(origin) ? {'Access-Control-Allow-Origin':origin,'Vary':'Origin','Access-Control-Allow-Methods':'POST, GET, OPTIONS','Access-Control-Allow-Headers':'Content-Type, Authorization'} : {};
     const reply = (data,status=200,cache='no-store') => new Response(JSON.stringify(data),{status,headers:{...cors,'Vary':'Origin','Content-Type':'application/json','Cache-Control':cache,'X-Content-Type-Options':'nosniff'}});
-    if (request.method==='OPTIONS') return ORIGINS.has(origin) ? new Response(null,{status:204,headers:cors}) : reply({error:'Origin rejected'},403);
+    if (request.method==='OPTIONS') return origins.has(origin) ? new Response(null,{status:204,headers:cors}) : reply({error:'Origin rejected'},403);
     try {
       if(url.pathname==='/api/leaderboard' && request.method==='GET') {
         const result=await env.DB.prepare('SELECT building, COUNT(*) AS destructions FROM building_destructions WHERE day>=? AND visitor<>? GROUP BY building ORDER BY destructions DESC,building LIMIT 5').bind(day(Date.now()-29*86400000),diagnosticVisitor).all();
@@ -23,7 +25,7 @@ export default {
         return reply({retentionDays:30,buildings:leaders},200,'public, max-age=60');
       }
       if (url.pathname==='/api/collect' && request.method==='POST') {
-        if (!ORIGINS.has(origin)) return reply({error:'Origin rejected'},403);
+        if (!origins.has(origin)) return reply({error:'Origin rejected'},403);
         if (!request.headers.get('Content-Type')?.startsWith('application/json')) return reply({error:'JSON required'},415);
         const reader=request.body?.getReader(); if(!reader)return reply({error:'Body required'},400);
         const chunks=[];let size=0;while(true){const {value,done}=await reader.read();if(done)break;size+=value.length;if(size>1024){await reader.cancel();return reply({error:'Too large'},413)}chunks.push(value)}

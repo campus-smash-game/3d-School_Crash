@@ -8,7 +8,7 @@
 
 교내 셔틀 정류장 중 시작할 곳을 골라 익숙한 건물을 찾아가거나, 다른 정류장으로 바로 이동해 둘러볼 수 있습니다. 도로에는 시내버스와 학교 셔틀, 택시와 승용차가 다닙니다. 설치 없이 브라우저에서 실행하며 PC와 모바일 조작을 모두 지원합니다.
 
-**[게임 바로 하기](https://jhlee1020lee.github.io/3d-School_Crash/)** | [기존 배포 주소](https://snu-gate-campus-break.lee1010202001.chatgpt.site/) | [문제 제보](https://github.com/jhlee1020lee/3d-School_Crash/issues)
+**[게임 바로 하기](https://campus-smash-game.github.io/3d-School_Crash/)** | [문제 제보](https://github.com/campus-smash-game/3d-School_Crash/issues)
 
 ![게임에 구현한 공대 30동과 31동 주변](docs/images/engineering-area.png)
 
@@ -26,7 +26,7 @@
 
 ## 접속 통계와 건물 파괴 순위
 
-[관리자 통계 화면](https://snu-gate-campus-break.lee1010202001.chatgpt.site/stats.html)에서 별도 관리자 암호로 확인합니다. 게임 페이지 접속과 실제 탐험 시작을 구분하고 최근 30일의 일별 방문 브라우저 추정치, PC와 모바일 및 배포 주소별 합계를 제공합니다. 이어하기는 같은 페이지에서 새 시작으로 중복 집계하지 않습니다. 건물별 파괴 순위는 벽이나 지붕 등 일부가 처음 파괴되면 건물당 1회를 기록하며, 캠퍼스를 초기화하기 전까지 같은 건물을 중복 집계하지 않습니다. 전체 붕괴 횟수는 아닙니다. 지도에 등록된 건물 번호가 있는 대상만 포함하며, 최근 30일의 두 주소 기록을 합산합니다. 브라우저의 Do Not Track과 Global Privacy Control 신호는 존중합니다. 두 주소와 기기 사이의 동일 인물은 구분하지 못하며 과거 접속을 소급 집계하지 않습니다.
+[관리자 통계 화면](https://campus-smash-game.github.io/3d-School_Crash/stats.html)에서 별도 관리자 암호로 확인합니다. 게임 페이지 접속과 실제 탐험 시작을 구분하고 최근 30일의 일별 방문 브라우저 추정치, PC와 모바일 및 배포 주소별 합계를 제공합니다. 이어하기는 같은 페이지에서 새 시작으로 중복 집계하지 않습니다. 건물별 파괴 순위는 벽이나 지붕 등 일부가 처음 파괴되면 건물당 1회를 기록하며, 캠퍼스를 초기화하기 전까지 같은 건물을 중복 집계하지 않습니다. 전체 붕괴 횟수는 아닙니다. 지도에 등록된 건물 번호가 있는 대상만 포함하며, 최근 30일의 두 주소 기록을 합산합니다. 브라우저의 Do Not Track과 Global Privacy Control 신호는 존중합니다. 두 주소와 기기 사이의 동일 인물은 구분하지 못하며 과거 접속을 소급 집계하지 않습니다.
 
 시작 화면에는 최근 30일 상위 5개 건물의 이름, 순위와 파괴 횟수를 공개합니다. 공개 API는 방문자 번호, 접속 횟수나 기기별 통계를 반환하지 않습니다. 순위는 최대 1분 동안 캐시하고, 시작 화면이나 일시 정지 화면으로 돌아오면 갱신합니다. 새로고침 버튼으로도 갱신할 수 있으며, 순위 조회 실패는 게임 시작을 막지 않습니다.
 
@@ -72,12 +72,12 @@ PC에서 마우스 잠금이 허용되지 않으면 마우스를 누른 채 드�
 
 ## 내 컴퓨터에서 실행하기
 
-게임은 [플레이 링크](https://jhlee1020lee.github.io/3d-School_Crash/)를 열면 바로 실행됩니다. 아래 과정은 소스를 수정하거나 개발 환경을 준비할 때 사용합니다.
+게임은 [플레이 링크](https://campus-smash-game.github.io/3d-School_Crash/)를 열면 바로 실행됩니다. 아래 과정은 소스를 수정하거나 개발 환경을 준비할 때 사용합니다.
 
 개발 환경은 **Node.js 24 LTS**와 npm을 사용합니다. 실행에 별도 API 키나 서버 계정은 필요하지 않습니다. 캠퍼스 데이터는 저장소에 포함되어 있습니다.
 
 ```sh
-git clone https://github.com/jhlee1020lee/3d-School_Crash.git
+git clone https://github.com/campus-smash-game/3d-School_Crash.git
 cd 3d-School_Crash
 npm ci
 npm run dev
@@ -100,7 +100,7 @@ npm run preview
 
 ## GitHub Pages 배포
 
-[배포 워크플로](.github/workflows/pages.yml)가 `main` 브랜치에 변경 사항이 올라올 때마다 의존성을 설치하고 기본 검사를 실행한 뒤 게임을 빌드하고 배포합니다. 진행 상태와 오류는 저장소의 [Actions 탭](https://github.com/jhlee1020lee/3d-School_Crash/actions/workflows/pages.yml)에서 확인할 수 있습니다.
+[배포 워크플로](.github/workflows/pages.yml)가 `main` 브랜치에 변경 사항이 올라올 때마다 의존성을 설치하고 기본 검사를 실행한 뒤 게임을 빌드하고 배포합니다. 진행 상태와 오류는 저장소의 [Actions 탭](https://github.com/campus-smash-game/3d-School_Crash/actions/workflows/pages.yml)에서 확인할 수 있습니다.
 
 다른 계정으로 포크해 배포하려면 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정하고, Actions 탭에서 워크플로를 실행합니다. 게임의 파일 경로는 상대 경로이므로 저장소 이름이 달라도 사용할 수 있습니다. README의 게임 주소와 저장소 링크는 본인 주소로 바꿔 주세요.
 
@@ -158,7 +158,7 @@ npm test
 - **외관과 시설:** [서울대학교 공식 지도](https://map.snu.ac.kr/web/main.action), 공식 시설 안내, 설계 자료, 카카오맵 로드뷰, 네이버 거리뷰와 공개 웹 사진을 참고합니다. 개별 출처와 확인 범위는 [sources](sources/)와 [모델링 기록](docs/modeling-notes.md)에 구분합니다.
 - **모바일 조작 참고:** [Roblox 모바일 입력 안내](https://create.roblox.com/docs/input/mobile)와 [공개 DynamicThumbstick 코드](https://github.com/Roblox/Core-Scripts/blob/master/PlayerScripts/StarterPlayerScripts/ControlScript/MasterControl/DynamicThumbstick.lua).
 
-게임 안의 **지형과 자료** 링크에서도 [출처 안내](https://jhlee1020lee.github.io/3d-School_Crash/credits.html)를 볼 수 있습니다. 참고 사진과 로고, 상표의 권리는 각 권리자에게 있습니다. 참고 사진 자체는 공개 저장소의 게임 에셋으로 배포하지 않습니다.
+게임 안의 **지형과 자료** 링크에서도 [출처 안내](https://campus-smash-game.github.io/3d-School_Crash/credits.html)를 볼 수 있습니다. 참고 사진과 로고, 상표의 권리는 각 권리자에게 있습니다. 참고 사진 자체는 공개 저장소의 게임 에셋으로 배포하지 않습니다.
 
 아직 자체 코드의 사용 허락 범위를 정한 `LICENSE` 파일은 없습니다. 저장소 공개만으로 코드와 자료 전체의 자유로운 재배포를 허락하는 것은 아닙니다. 지도 데이터와 의존 라이브러리에는 각각의 이용 조건이 적용됩니다.
 
@@ -166,4 +166,4 @@ npm test
 
 건물 사이 통로와 계단, 도로 접속부, 가까이서 보이는 현관과 외벽, 정류장 주변 시설을 계속 보완하고 있습니다. 모바일 성능과 충돌 오류도 함께 점검합니다.
 
-막힌 통로나 실제와 다른 외관을 발견했다면 [이슈](https://github.com/jhlee1020lee/3d-School_Crash/issues)에 **건물 번호 또는 정류장 이름, 문제를 재현하는 방법, 사용 기기와 브라우저**를 적어 주세요. 비교할 사진이 있다면 공개 출처 링크와 촬영 시점도 도움이 됩니다. 위치가 드러나는 게임 스크린샷을 함께 남기면 확인하기 쉽습니다.
+막힌 통로나 실제와 다른 외관을 발견했다면 [이슈](https://github.com/campus-smash-game/3d-School_Crash/issues)에 **건물 번호 또는 정류장 이름, 문제를 재현하는 방법, 사용 기기와 브라우저**를 적어 주세요. 비교할 사진이 있다면 공개 출처 링크와 촬영 시점도 도움이 됩니다. 위치가 드러나는 게임 스크린샷을 함께 남기면 확인하기 쉽습니다.

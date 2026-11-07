@@ -1,6 +1,6 @@
 (() => {
   const endpoint='https://snu-gate-campus-break.lee1010202001.chatgpt.site/api/collect';
-  if(!['jhlee1020lee.github.io','snu-gate-campus-break.lee1010202001.chatgpt.site'].includes(location.hostname))return;
+  if(!['campus-smash-game.github.io','snu-gate-campus-break.lee1010202001.chatgpt.site'].includes(location.hostname))return;
   const disabled=()=>navigator.doNotTrack==='1'||navigator.globalPrivacyControl===true;
   let visited=false,started=false;
   function send(kind,building){try{

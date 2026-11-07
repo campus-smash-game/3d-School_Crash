@@ -12,7 +12,7 @@ const DB={
   async batch(items){sql.exec('BEGIN');try{const values=items.map(item=>item.run());sql.exec('COMMIT');return values}catch(e){sql.exec('ROLLBACK');throw e}}
 };
 const env={DB,ANALYTICS_ADMIN_HASH:createHash('sha256').update('test-password').digest('hex'),ASSETS:{fetch:()=>new Response('asset')}};
-const origin='https://jhlee1020lee.github.io',base='https://snu-gate-campus-break.lee1010202001.chatgpt.site';
+const origin='https://campus-smash-game.github.io',base='https://snu-gate-campus-break.lee1010202001.chatgpt.site';
 const event={id:randomUUID(),visitor:randomUUID(),kind:'page',device:'mobile'};
 const post=(body=event,source=origin)=>worker.fetch(new Request(base+'/api/collect',{method:'POST',headers:{Origin:source,'Content-Type':'application/json'},body:JSON.stringify(body)}),env);
 assert.equal((await post()).status,200);await post();assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM analytics_events').get().n,1);
@@ -45,7 +45,7 @@ assert.equal(ranking.buildings[0].building,buildingA);assert.equal(ranking.build
 assert.equal(ranking.rows[0].views,1);assert.equal(ranking.rows[0].visitors,1);assert.ok(!JSON.stringify(ranking).includes(event.visitor));
 for(const navigator of [{},{doNotTrack:'1'},{globalPrivacyControl:true}]){
  const requests=[],values=new Map(),listeners={};let observer;const ui={dataset:{state:'loading'}};
- const context={location:{hostname:'jhlee1020lee.github.io'},navigator,document:{visibilityState:'visible',getElementById:()=>ui,addEventListener:(name,fn)=>listeners[name]=fn},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},crypto:{randomUUID},matchMedia:()=>({matches:true}),MutationObserver:class{constructor(cb){observer=cb}observe(){}},fetch:(url,request)=>{requests.push(JSON.parse(request.body));return Promise.resolve()},Date};
+ const context={location:{hostname:'campus-smash-game.github.io'},navigator,document:{visibilityState:'visible',getElementById:()=>ui,addEventListener:(name,fn)=>listeners[name]=fn},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},crypto:{randomUUID},matchMedia:()=>({matches:true}),MutationObserver:class{constructor(cb){observer=cb}observe(){}},fetch:(url,request)=>{requests.push(JSON.parse(request.body));return Promise.resolve()},Date};
  vm.runInNewContext(client,context);ui.dataset.state='playing';observer();
  listeners['campus:building-destroyed']({detail:{building:buildingA}});
  ui.dataset.state='paused';observer();listeners['campus:building-destroyed']({detail:{building:buildingA}});
@@ -66,5 +66,8 @@ assert.deepEqual(leaders.buildings.slice(1).map(item=>item.rank),[2,2,2,2]);
 for(const item of leaders.buildings)assert.deepEqual(Object.keys(item).sort(),['destructions','name','rank']);
 assert.ok(!JSON.stringify(leaders).includes(event.visitor));assert.equal((await worker.fetch(new Request(base+'/api/stats'),env)).status,401);
 const failed=await worker.fetch(new Request(base+'/api/leaderboard'),{...env,DB:{prepare(){throw Error('offline')}}});assert.equal(failed.status,503);assert.equal(failed.headers.get('Cache-Control'),'no-store');
+const legacy=await worker.fetch(new Request(base+'/api/collect',{method:'OPTIONS',headers:{Origin:'https://old-game.github.io'}}),{...env,LEGACY_GAME_ORIGIN:'https://old-game.github.io'});
+assert.equal(legacy.status,204);assert.equal(legacy.headers.get('Access-Control-Allow-Origin'),'https://old-game.github.io');
+assert.equal((await worker.fetch(new Request(base+'/api/collect',{method:'OPTIONS',headers:{Origin:'https://other-game.github.io'}}),env)).status,403);
 await import('./verify-leaderboard.mjs');
 console.log('Analytics verified: migrations preserve visits, building ranking, cross-host totals, deduplication, input validation, authentication, retention, CORS, client events and browser privacy signals. No browser used.');
