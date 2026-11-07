@@ -117,10 +117,50 @@ export function createEngineering37Exterior(scene:THREE.Scene,q:Engineering37Lay
    for(let s=s0;s<s1;s+=.16)part('fence-mesh-vertical',[at(f,s,y+.08,n),at(f,s+.012,y+.08,n),at(f,s+.012,y+.96,n),at(f,s,y+.96,n)],0x88978b,'metal',owner,true);
    for(let yy=y+.12;yy<y+.96;yy+=.17)part('fence-mesh-horizontal',[at(f,s0,yy,n),at(f,s1,yy,n),at(f,s1,yy+.012,n),at(f,s0,yy+.012,n)],0x88978b,'metal',owner,true);
  };
- fence(18,q.deckEnd,w+3.4,q.deck);
+ fence(6,q.deckEnd,w+3.4,q.deck);
  for(const a of q.surfaces.filter(a=>a.name==='north-deck-approach'))for(const n of[a.n0-.08,a.n1+.08]){
    const owner=beam('north-approach-handrail',at(f,a.s0,a.y0+.95,n),at(f,a.s1,a.y1+.95,n),.035,0x7b8880);
    for(let s=a.s0;s<a.s1;s+=1.7){const y=physics561SurfaceHeight(a,s,n);box('north-approach-rail-post',f,s-.035,s+.035,n-.035,n+.035,y,y+.95,0x7b8880,'metal',owner);}
+ }
+ const curveRoof=q.deck+3.65,curveHalf=1.6;
+ for(let i=0;i+1<q.eastCanopy.length;i++){
+   const a=q.eastCanopy[i],b=q.eastCanopy[i+1],curve=humanities23Frame(f.point(a.s,a.n),f.point(b.s,b.n));
+   const vertices=[0,curve.length].flatMap(s=>[-curveHalf,curveHalf].flatMap(n=>[curveRoof,curveRoof+.24].map(y=>at(curve,s,y,n)))),bounds=new THREE.Box3().setFromPoints(vertices),center=bounds.getCenter(new THREE.Vector3());
+   const geometry=new ConvexGeometry(vertices.map(v=>v.clone().sub(center))),owner=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({color:0x8b8d7e}));owner.position.copy(center);owner.updateMatrixWorld(true);
+   Object.assign(owner.userData,{buildingId:ENGINEERING37_ID,component:'curved-pergola-roof',renderProxy:true,convex:true});breakables.push({mesh:owner,size:bounds.getSize(new THREE.Vector3()),collisionVertices:Float32Array.from(geometry.attributes.position.array),toughness:8,material:'metal',label:'37동 광장 곡선 차양'});
+   for(const n of[-curveHalf,curveHalf]){
+     box('curved-pergola-rim',curve,0,curve.length,n-.035,n+.035,curveRoof-.08,curveRoof+.38,0x7e8d84,'metal',owner);
+     for(let s=0;s<curve.length;s+=.12)box('curved-rim-grid',curve,s,s+.016,n-.045,n+.045,curveRoof-.06,curveRoof+.36,0xa8b2a4,'metal',owner);
+   }
+   for(let s=0;s<curve.length;s+=.22)box('curved-pergola-wood-slat',curve,s,s+.09,-curveHalf,curveHalf,curveRoof,curveRoof+.14,wood,'wood',owner);
+   for(let n=-curveHalf;n<=curveHalf;n+=.4)beam('curved-pergola-cross-grid',at(curve,0,curveRoof+.18,n),at(curve,curve.length,curveRoof+.18,n),.013,0x859389,owner);
+   if(i%4===0)for(const n of[-1.35,1.35]){
+     const point=f.local(curve.point(.12,n));let base=q.deck;
+     for(const surface of q.surfaces)if(point.s>=surface.s0&&point.s<=surface.s1&&point.n>=surface.n0&&point.n<=surface.n1)base=physics561SurfaceHeight(surface,point.s,point.n);
+     beam('curved-pergola-round-column',at(curve,.12,base,n),at(curve,.12,curveRoof,n),.12,0x9a9e91);
+   }
+ }
+ // 남쪽 흰 기단과 원형 격자의 용도는 확인하지 못했다. 물이나 작동 효과를 넣지 않는다.
+ const p=q.plinth,plinthTop=p.points.map((v,i)=>at(f,v[0],p.top[i],v[1]));
+ const plinthOwner=part('south-pale-plinth',[...plinthTop,...p.points.map(v=>at(f,v[0],q.deck-.08,v[1]))],0xc8c9bc);
+ for(let i=0;i<3;i++){const a=plinthTop[i],b=plinthTop[(i+1)%3];beam('plinth-edge-joint',a.clone().add(new THREE.Vector3(0,.007,0)),b.clone().add(new THREE.Vector3(0,.007,0)),.012,0x9b9e90,plinthOwner);}
+ const ringFloor=p.top[0]+(p.top[1]-p.top[0])*(p.ring.s-37)/8;
+ for(let i=0;i<20;i++){
+   const a=i/20*Math.PI*2,b=(i+1)/20*Math.PI*2,ring=humanities23Frame(f.point(p.ring.s+Math.cos(a)*p.ring.radius,p.ring.n+Math.sin(a)*p.ring.radius),f.point(p.ring.s+Math.cos(b)*p.ring.radius,p.ring.n+Math.sin(b)*p.ring.radius));
+   const owner=box('south-plinth-circular-grille',ring,0,ring.length,-.035,.035,ringFloor,ringFloor+p.ring.height,0x65766d,'metal');
+   for(let s=.04;s<ring.length;s+=.08)facet('circular-grille-line',ring,s,s+.012,ringFloor,ringFloor+p.ring.height,-.04,0xa0ad9f,owner);
+ }
+ for(const n of[54.05,57.95]){
+   const y0=q.deck+.72,y1=q.deck,owner=beam('northeast-stair-handrail',at(f,-1,y0+.9,n),at(f,4,y1+.9,n),.035,0x87978b);
+   for(let s=-1;s<=4;s+=1){const y=s<0?y0:q.deck+.72-.18*Math.min(4,Math.floor(s)+1);box('northeast-rail-baluster',f,s-.025,s+.025,n-.025,n+.025,y,y+.9,0x87978b,'metal',owner);}
+ }
+ const end=q.eastCanopy.at(-1)!,screenFrame=humanities23Frame(f.point(end.s,end.n-curveHalf),f.point(end.s,end.n+curveHalf));
+ const screenVertices=[0,screenFrame.length].flatMap(s=>[-.12,.12].flatMap(n=>[q.deck,curveRoof+.38].map(y=>at(screenFrame,s,y,n)))),screenBounds=new THREE.Box3().setFromPoints(screenVertices),screenCenter=screenBounds.getCenter(new THREE.Vector3());
+ const screenGeometry=new ConvexGeometry(screenVertices.map(v=>v.clone().sub(screenCenter))),screenOwner=new THREE.Mesh(screenGeometry,new THREE.MeshStandardMaterial({color:0x7c877d}));screenOwner.position.copy(screenCenter);screenOwner.updateMatrixWorld(true);
+ Object.assign(screenOwner.userData,{buildingId:ENGINEERING37_ID,component:'curved-pergola-lattice-screen',renderProxy:true,convex:true});breakables.push({mesh:screenOwner,size:screenBounds.getSize(new THREE.Vector3()),collisionVertices:Float32Array.from(screenGeometry.attributes.position.array),toughness:8,material:'metal',label:'광장 격자 지지대'});
+ for(const s of[0,screenFrame.length]){
+   const owner=box('curved-pergola-lattice-post',screenFrame,s-.07,s+.07,-.12,.12,q.deck,curveRoof+.38,0x7c877d,'metal',screenOwner);
+   if(s===0){for(let y=q.deck+.25;y<curveRoof;y+=.24)box('lattice-screen-crossbar',screenFrame,0,screenFrame.length,-.055,.055,y,y+.045,0x81755c,'wood',owner);for(let x=.3;x<screenFrame.length;x+=.3)box('lattice-screen-grid',screenFrame,x,x+.018,-.07,.07,q.deck,curveRoof,0xa0aa9d,'metal',owner);}
  }
  for(const t of q.trees){
    const soil=box('deck-tree-bed',f,t.s-.65,t.s+.65,t.n-.65,t.n+.65,q.deck-.02,q.deck+.035,0x665e4d,'wood');
@@ -132,12 +172,12 @@ export function createEngineering37Exterior(scene:THREE.Scene,q:Engineering37Lay
    }
    const crown=new THREE.IcosahedronGeometry(1,0),a=crown.attributes.position;
    for(const[dx,dz,r]of[[0,0,1.8],[.6,.4,1.35],[-.5,-.4,1.3]]){const center=at(f,t.s+dx,q.deck+4.3+r*.4,t.n+dz);part('deck-tree-crown',Array.from({length:a.count},(_,i)=>new THREE.Vector3(a.getX(i)*r,a.getY(i)*r*.75,a.getZ(i)*r).add(center)),0x75834e,'wood',trunk);}crown.dispose();
-   const seat=box('timber-tree-bench',f,t.s-.9,t.s+.9,t.n+.8,t.n+1.2,q.deck+.4,q.deck+.53,wood,'wood');
-   for(const s of[t.s-.7,t.s+.7])box('bench-metal-leg',f,s-.07,s+.07,t.n+.82,t.n+1.18,q.deck,q.deck+.4,0x606c62,'metal',seat);
-   for(let s=t.s-.85;s<t.s+.85;s+=.18)part('bench-slat-joint',[at(f,s,q.deck+.535,t.n+.81),at(f,s+.015,q.deck+.535,t.n+.81),at(f,s+.015,q.deck+.535,t.n+1.19),at(f,s,q.deck+.535,t.n+1.19)],0x514d41,'wood',seat,true);
+   const seat=box('metal-tree-bench',f,t.s-1.1,t.s+1.1,t.n+.8,t.n+1.24,q.deck+.44,q.deck+.51,0xa5aaa0,'metal');
+   for(const s of[t.s-1.02,t.s+1.02])for(let n=t.n+.83;n<t.n+1.23;n+=.075)box('bench-grid-leg',f,s-.025,s+.025,n,n+.022,q.deck,q.deck+.44,0x59675e,'metal',seat);
+   for(let n=t.n+.84;n<t.n+1.22;n+=.08)part('bench-top-joint',[at(f,t.s-1.05,q.deck+.515,n),at(f,t.s+1.05,q.deck+.515,n),at(f,t.s+1.05,q.deck+.515,n+.012),at(f,t.s-1.05,q.deck+.515,n+.012)],0x768277,'metal',seat,true);
    soil.name='tree-bed';
  }
- for(const a of q.surfaces.filter(a=>a.name==='north-timber-seating-tier'))for(const n of[w+8,w+12,w+16,w+20]){
+ for(const a of q.surfaces.filter(a=>a.name==='north-timber-seating-tier'))for(const n of[36,41,46,51]){
    const s=a.s0+.5,y=a.y0,pot=box('north-tier-planter',f,s-.28,s+.28,n-.28,n+.28,y,y+.55,0x92998c);
    const crown=new THREE.IcosahedronGeometry(.45,0),attr=crown.attributes.position,center=at(f,s,y+.85,n);part('tier-planter-shrub',Array.from({length:attr.count},(_,i)=>new THREE.Vector3(attr.getX(i),attr.getY(i)*1.5,attr.getZ(i)).add(center)),0x7b6652,'wood',pot);crown.dispose();
  }
@@ -152,7 +192,11 @@ export function createEngineering37Exterior(scene:THREE.Scene,q:Engineering37Lay
  box('screen-open-door',f,door-.73,door-.65,.55,1.95,screen+.03,screen+2.4,0x756856,'wood');
  for(const a of q.surfaces){
    const poly=[f.point(a.s0,a.n0),f.point(a.s1,a.n0),f.point(a.s1,a.n1),f.point(a.s0,a.n1)],height=(s:number,n:number)=>physics561SurfaceHeight(a,s,n),top=poly.map(v=>{const p=f.local(v);return new THREE.Vector3(v[0],height(p.s,p.n),v[1]);});
-   const timber=a.name==='east-timber-deck'||a.name==='north-timber-seating-tier'||a.name==='north-seating-top',grid=a.name==='east-grid-paving',owner=part(a.name,[...top,...top.map(v=>v.clone().add(new THREE.Vector3(0,-.22,0)))],timber?0x736b56:grid?0xb4b7a9:0x969d90,timber?'wood':'stone');pavementMasks.push({component:a.name,polygon:poly});
+   const timber=a.name==='east-timber-deck'||a.name==='north-timber-seating-tier'||a.name==='north-seating-top',grid=a.name==='east-grid-paving',owner=part(a.name,[...top,...top.map(v=>v.clone().add(new THREE.Vector3(0,-.22,0)))],timber?0x736b56:grid?0xa49c83:0x969d90,timber?'wood':'stone');pavementMasks.push({component:a.name,polygon:poly});
+   if(grid){
+     for(let s=Math.ceil(a.s0/.4)*.4;s<a.s1-.012;s+=.4)part('plaza-paver-joint',[at(f,s,a.y0+.003,a.n0),at(f,s+.012,a.y0+.003,a.n0),at(f,s+.012,a.y0+.003,a.n1),at(f,s,a.y0+.003,a.n1)],0x817e69,'stone',owner,true);
+     for(let n=Math.ceil(a.n0/.8)*.8;n<a.n1-.012;n+=.8)part('plaza-paver-joint',[at(f,a.s0,a.y0+.003,n),at(f,a.s1,a.y0+.003,n),at(f,a.s1,a.y0+.003,n+.012),at(f,a.s0,a.y0+.003,n+.012)],0x817e69,'stone',owner,true);
+   }
    if(timber){for(let s=a.s0;s<a.s1-.01;s+=.18)part('timber-deck-joint',[at(f,s,height(s,a.n0)+.004,a.n0),at(f,s+.012,height(s+.012,a.n0)+.004,a.n0),at(f,s+.012,height(s+.012,a.n1)+.004,a.n1),at(f,s,height(s,a.n1)+.004,a.n1)],0x514e42,'wood',owner,true);}
    else if(grid){for(let s=Math.ceil(a.s0/4)*4;s<a.s1;s+=4)part('plaza-white-grid',[at(f,s,a.y0+.005,a.n0),at(f,Math.min(s+.2,a.s1),a.y0+.005,a.n0),at(f,Math.min(s+.2,a.s1),a.y0+.005,a.n1),at(f,s,a.y0+.005,a.n1)],0xdce0d1,'stone',owner,true);for(let n=w+3.5;n<a.n1;n+=4){if(n<a.n0)continue;part('plaza-white-grid',[at(f,a.s0,a.y0+.005,n),at(f,a.s1,a.y0+.005,n),at(f,a.s1,a.y0+.005,Math.min(n+.2,a.n1)),at(f,a.s0,a.y0+.005,Math.min(n+.2,a.n1))],0xdce0d1,'stone',owner,true);}}
    else if(a.name==='west-paved-walk'||a.name==='west-wall-apron'){
@@ -161,7 +205,7 @@ export function createEngineering37Exterior(scene:THREE.Scene,q:Engineering37Lay
  }
  const meshes=batches.map(b=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(b.positions,3));g.setAttribute('color',new THREE.Float32BufferAttribute(b.colors,3));g.computeVertexNormals();g.computeBoundingBox();g.computeBoundingSphere();const mesh=new THREE.Mesh(g,new THREE.MeshStandardMaterial({vertexColors:true,roughness:b.glass?.3:.8,side:THREE.DoubleSide}));mesh.name=b.glass?'engineering37-glass':'engineering37-surfaces';mesh.castShadow=!b.glass;mesh.receiveShadow=true;shell.add(mesh);return mesh;});
 
- shell.userData.engineering37Exterior={buildingId:ENGINEERING37_ID,rawOsmFootprintPreserved:true,dimensionsEstimated:true,wholeInteriorImplemented:false,visibleWestNorthWindowRows:4,lowFoundationWindowRow:true,bothEndTowers:true,loweredStripDepthEstimated:true,woodScreenUseUnknown:true,routes:q.routes,pavementMasks,bounds:q.bounds,geometry:{meshes:meshes.length+signs.length,textures:signs.length,triangles:batches.reduce((n,b)=>n+b.positions.length/9,0)+signs.length*2,colliders:breakables.length}};
+ shell.userData.engineering37Exterior={buildingId:ENGINEERING37_ID,rawOsmFootprintPreserved:true,dimensionsEstimated:true,wholeInteriorImplemented:false,visibleWestNorthWindowRows:4,lowFoundationWindowRow:true,bothEndTowers:true,loweredStripDepthEstimated:true,woodScreenUseUnknown:true,eastCanopyFloorEstimated:true,plinthUseUnknown:true,roofIsWalkway:false,routes:q.routes,pavementMasks,bounds:q.bounds,geometry:{meshes:meshes.length+signs.length,textures:signs.length,triangles:batches.reduce((n,b)=>n+b.positions.length/9,0)+signs.length*2,colliders:breakables.length}};
  function update(_player:THREE.Vector3){batches.forEach((b,index)=>{const a=meshes[index].geometry.attributes.position as THREE.BufferAttribute,c=meshes[index].geometry.attributes.color as THREE.BufferAttribute;let moved=false,tinted=false;for(const p of b.parts){if(p.shown!==p.proxy.visible){p.shown=p.proxy.visible;moved=true;if(p.shown)(a.array as Float32Array).set(p.original,p.start);else for(let i=p.start;i<p.end;i+=3){a.array[i]=p.proxy.position.x;a.array[i+1]=p.proxy.position.y;a.array[i+2]=p.proxy.position.z;}}if(p.color!==p.proxy.material.color.getHex()){p.color=p.proxy.material.color.getHex();tinted=true;const t=p.proxy.material.color,scale=[t.r/p.base.r,t.g/p.base.g,t.b/p.base.b];for(let i=p.start;i<p.end;i++)c.array[i]=p.colors[i-p.start]*scale[(i-p.start)%3];}}if(moved)a.needsUpdate=true;if(tinted)c.needsUpdate=true;});for(const s of signs)s.mesh.visible=s.owner.visible;shell.visible=batches.some(b=>b.parts.some(p=>p.proxy.visible));}
  return{shell,breakables,update};
 }

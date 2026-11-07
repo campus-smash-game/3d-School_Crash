@@ -102,7 +102,7 @@ try{
   const overlap=(a,b)=>a.some(p=>inside(p,b))||b.some(p=>inside(p,a))||a.some((p,i)=>b.some((r,j)=>{const v=a[(i+1)%a.length],s=b[(j+1)%b.length];return cross(p,v,r)*cross(p,v,s)<-1e-8&&cross(r,s,p)*cross(r,s,v)<-1e-8;}));
   const neighbors=env.data.buildings.filter(b=>b.id!=='way/262983332'&&b.points.some(p=>p[0]>=q.bounds.minX-10&&p[0]<=q.bounds.maxX+10&&p[1]>=q.bounds.minZ-10&&p[1]<=q.bounds.maxZ+10));
   const polygons=q.surfaces.filter(a=>a.n0>q.width).map(a=>({name:a.name,points:[[a.s0,a.n0],[a.s1,a.n0],[a.s1,a.n1],[a.s0,a.n1]].map(p=>q.axis.point(...p))}));
-  for(const target of sim.targets.filter(t=>['deck-tree-bed','deck-tree-trunk','timber-tree-bench'].includes(t.mesh.userData.component))){
+  for(const target of sim.targets.filter(t=>['deck-tree-bed','deck-tree-trunk','metal-tree-bench'].includes(t.mesh.userData.component))){
    const b=new THREE.Box3().setFromObject(target.mesh);polygons.push({name:target.mesh.userData.component,points:[[b.min.x,b.min.z],[b.max.x,b.min.z],[b.max.x,b.max.z],[b.min.x,b.max.z]]});
   }
   for(const a of polygons)for(const b of neighbors)must(!overlap(a.points,b.points),'Plaza intersects an existing neighboring footprint',{component:a.name,buildingId:b.id,points:a.points});
@@ -129,9 +129,10 @@ try{
     if(h>y-.10)failures.push({name:a.name,point:p,expected:y,terrain:h});samples++;
    }
    const candidates=[];let clear=false;
-   // 가구와 기둥이 차지한 점을 피해, 각 포장의 빈 곳에서 표시와 실제 충돌을 대조한다.
-   for(const [u,v]of[[.35,.35],[.65,.65],[.35,.65],[.65,.35],[.5,.2],[.2,.5],[.8,.5]]){
-    const p=a.frame.point(a.s0+(a.s1-a.s0)*u,a.n0+(a.n1-a.n0)*v),y=a.y0+(a.y1-a.y0)*u,from=new THREE.Vector3(p[0],y+.13,p[1]);
+   // 가구와 기둥, 기단이 차지한 점을 피한다. 큰 기단 옆의 좁은 포장까지
+   // 검사할 수 있도록 각 면의 가장자리도 표본에 포함한다.
+   for(const [u,v]of[[.35,.35],[.65,.65],[.35,.65],[.65,.35],[.5,.2],[.2,.5],[.8,.5],[.9,.9],[.1,.9],[.9,.1]]){
+    const p=a.frame.point(a.s0+(a.s1-a.s0)*u,a.n0+(a.n1-a.n0)*v),y=a.y0+(a.y1-a.y0)*(a.axis==='n'?v:u),from=new THREE.Vector3(p[0],y+.13,p[1]);
     sim.setFocus(from,true);sim.world.step();env.world.updateMatrixWorld(true);
     const hit=sim.world.castRay(new R.Ray(from,down),.5,true,R.QueryFilterFlags.EXCLUDE_DYNAMIC,undefined,sim.playerCollider,sim.player);
     const visual=new THREE.Raycaster(from,down,0,.5).intersectObject(shell,true)[0];
@@ -151,9 +152,17 @@ try{
   }
   assert(samples>1000);return{samples};
  });
+ await check('lattice support blocks passage until destroyed and blocks again after reset',()=>{
+  const a=q.axis.point(29,58.5),b=q.axis.point(33.5,58.5),start=new THREE.Vector3(a[0],q.deck+1.8,a[1]),dest=new THREE.Vector3(b[0],q.deck,b[1]);
+  const settle=()=>{sim.teleport(start);for(let i=0;i<100;i++)sim.step(1/60,0,0,false);};
+  settle();const blocked=move.walk([dest],7.8);must(!blocked.reached&&blocked.segments[0].blockers.some(b=>b.component==='curved-pergola-lattice-screen'),'The intact lattice support can be crossed',{blocked});
+  const target=sim.targets.find(t=>t.mesh.userData.component==='curved-pergola-lattice-screen');assert(target);sim.hit(target,100,new THREE.Vector3(0,0,1));
+  const destroyed=move.walk([dest],10.4);must(destroyed.reached,'The destroyed lattice support still blocks passage',{destroyed});sim.reset();settle();const reset=move.walk([dest],7.8);must(!reset.reached,'The restored lattice support has no collision',{reset});
+  return{intactBlocked:true,destroyedPassable:true,resetBlocked:true};
+ });
  await check('damaged facade, column, sign and pavement remain visible at distance and reset exactly',()=>{
   const signature=()=>shell.children.filter(o=>o.isMesh).map(o=>sha(Buffer.from(o.geometry.attributes.position.array.buffer))),before=signature(),far=new THREE.Vector3(2000,30,1500);
-  for(const component of['main-brick-window-bay','projecting-white-fin','main-building-number','east-timber-deck','pergola-white-post','deck-tree-trunk','southwest-timber-screen']){
+  for(const component of['main-brick-window-bay','projecting-white-fin','main-building-number','east-timber-deck','pergola-white-post','deck-tree-trunk','southwest-timber-screen','curved-pergola-roof','curved-pergola-round-column','south-pale-plinth','south-plinth-circular-grille','metal-tree-bench']){
    const t=sim.targets.find(t=>t.mesh.userData.component===component);assert(t);sim.hit(t,100,new THREE.Vector3(0,0,1));env.update(far);assert(!t.mesh.visible);
   }
   assert(shell.visible);assert.notDeepEqual(signature(),before);sim.reset();env.update(far);assert.deepEqual(signature(),before);return{farVisible:true,resetExact:true};
@@ -162,6 +171,7 @@ try{
   for(const a of q.surfaces)assert(a.s1-a.s0>.01&&a.n1-a.n0>.01,'Pavement must have a nonzero area.');
   for(const o of shell.children.filter(o=>o.isMesh))assert(Array.from(o.geometry.attributes.position.array).every(Number.isFinite),'Render geometry must be finite.');
   const meta=shell.userData.engineering37Exterior;assert(meta.dimensionsEstimated&&!meta.wholeInteriorImplemented);assert(meta.bothEndTowers&&meta.lowFoundationWindowRow&&meta.loweredStripDepthEstimated&&meta.woodScreenUseUnknown);
+  assert(meta.eastCanopyFloorEstimated&&meta.plinthUseUnknown&&!meta.roofIsWalkway);
   assert(meta.geometry.meshes<=5&&meta.geometry.triangles<55000&&meta.geometry.colliders<900);return{geometry:meta.geometry,bridgeClearance:meta.bridgeClearance};
  });
 }finally{

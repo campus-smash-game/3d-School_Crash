@@ -1,0 +1,169 @@
+{
+  "scope": "37동 동쪽 광장의 곡선 차양, 남쪽 기단과 계단, 북쪽 좁은 계단 및 포장",
+  "references": [
+    {
+      "id": "official36",
+      "sourceURL": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=45",
+      "imageURL": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000044.jpg",
+      "publicationDate": null,
+      "captureDate": null,
+      "directlyViewed": true,
+      "orientation": "36동 북면을 향해 남쪽으로 본 사진으로 대응한다. 사진 오른쪽이 서쪽이다.",
+      "orientationBasis": "36 표기, 남쪽 건물의 긴 북면, 항공사진의 삼각형 기단과 굽은 차양 배치가 일치한다.",
+      "observed": [
+        "사진 왼쪽 위를 가로지르는 굽은 차양의 하부에는 촘촘한 목재 살이 있고 옆면은 금속 격자 띠로 감쌌다.",
+        "차양은 둥근 기둥과 높은 직사각형 격자 기둥이 받친다. 기둥 사이의 옆 공간은 열려 있다.",
+        "차양 기둥 가까이에 금속 난간이 있다. 난간 아래의 공간과 기둥 발밑 일부는 사진 바깥이나 가림막 뒤에 있다.",
+        "흰색 또는 옅은 석재 기단의 상면은 기울어 있다. 위에는 원형의 어두운 격자 구조가 있다. 그 용도는 판독하지 못했다.",
+        "기단의 서쪽 끝에 여러 단의 계단이 있다. 앞쪽 격자 포장에서 뒤쪽 높은 바닥으로 이어진다.",
+        "사진 전면 포장은 갈색 직사각형 면과 넓은 흰 줄로 구성된다. 나무 광장의 목재 바닥과 구분된다."
+      ],
+      "limits": [
+        "촬영일을 확인하지 못했다. 사진에는 공사 중으로 보이는 가림막과 통제띠가 있어 현재 상태로 단정하지 않는다.",
+        "차양 상부는 보행 구조로 확인되지 않았다. 격자 테두리를 보행용 난간으로 해석하지 않는다.",
+        "차양 하부 보행면과 나무 광장 전체가 같은 높이인지, 난간 안쪽이 선큰인지 확정하지 못했다.",
+        "계단 높이, 단수, 기단 치수와 원형 구조의 용도는 미확인이다."
+      ]
+    },
+    {
+      "id": "public2021-overview",
+      "sourceURL": "https://www.linkedin.com/posts/do-kyun-kim-ceng-mrina-2641b840_department-naval-architecture-activity-6860863787096936448-XHBP",
+      "imageURL": "https://media.licdn.com/dms/image/v2/C4D22AQGFI-FEgVkMQg/feedshare-shrink_800/feedshare-shrink_800/0/1635757393470?e=2147483647&v=beta&t=S8ynJlGvcVyVN70eYGpR06jszgjnpS_H7S7Yp4lWXB0",
+      "publicationDate": "2021-11-01",
+      "publicationDateBasis": "공개 HTML의 SocialMediaPosting datePublished=2021-11-01T09:03:15.515Z",
+      "captureDate": null,
+      "directlyViewed": true,
+      "orientation": "광장 동쪽의 높은 곳에서 서쪽 37동을 향한 전경이다. 사진 오른쪽이 북쪽이다.",
+      "observed": [
+        "앞쪽 아래의 굽은 격자 차양, 뒤편 37동 앞 직선 차양, 중앙 나무 광장이 서로 다른 구조로 보인다.",
+        "나무 광장 북쪽에는 화분을 여러 줄 놓은 계단식 좌석이 있다.",
+        "나무 광장 동쪽과 남쪽에는 흰 줄이 굵게 나뉜 갈색 포장 공간이 이어진다. 이 부분을 잔디로 볼 근거는 없다.",
+        "사진 오른쪽 아래에서 북쪽 좌석 가장자리와 동쪽 차양 사이의 좁은 계단 및 금속 난간 일부가 보인다.",
+        "남쪽 기단과 그 서쪽 계단은 사진 왼쪽에 따로 보인다."
+      ],
+      "inferred": [
+        "오른쪽 아래 계단은 높은 북쪽 좌석 주변에서 남쪽 광장 쪽으로 내려가는 배치로 보인다. 차양이 종점과 일부 단을 가려 전체 연결을 확정할 수 없다.",
+        "차양은 평면에서 굽지만 사진만으로 상면의 미세한 경사까지 수평이라고 확정할 수 없다."
+      ],
+      "limits": [
+        "게시일과 촬영일은 다르다. 2021년 게시 사진을 2026년 현황으로 단정하지 않는다.",
+        "차양 아래 바닥이 가려져 있어 하부 통행 높이를 직접 측정할 수 없다."
+      ]
+    },
+    {
+      "id": "public2021-ground3",
+      "sourceURL": "https://www.linkedin.com/posts/do-kyun-kim-ceng-mrina-2641b840_department-naval-architecture-activity-6860863787096936448-XHBP",
+      "imageURL": "https://media.licdn.com/dms/image/v2/C4D22AQGWSdgZRU3Dag/feedshare-shrink_800/feedshare-shrink_800/0/1635757393461?e=2147483647&v=beta&t=X44vfT72B1TRWXMzEf9oLct32-U8ERiXsDGR8COa1Vo",
+      "publicationDate": "2021-11-01",
+      "captureDate": null,
+      "directlyViewed": true,
+      "orientation": "37동 북단 탑과 33동 쪽을 보는 북서 방향으로 추정한다.",
+      "observed": [
+        "나무 사이 바닥은 갈색 목재 판이 이어진 평평한 광장이다.",
+        "나무 주변 벤치는 얇고 긴 밝은 상판과 어두운 격자 또는 여러 살로 된 다리로 구성된다. 나무 상자형 벤치로 보이지 않는다.",
+        "앞쪽과 오른쪽 가장자리에서 목재 바닥과 흰 줄의 포장 면이 맞닿는다. 사진에 보이는 경계에는 큰 계단이 없다."
+      ],
+      "limits": [
+        "이 사진으로 동쪽 차양의 하부 바닥까지 같은 높이라고 일반화할 수 없다.",
+        "수종과 벤치 정확한 재질, 치수, 나무 수는 확정하지 않았다."
+      ]
+    },
+    {
+      "id": "public2021-ground4",
+      "sourceURL": "https://www.linkedin.com/posts/do-kyun-kim-ceng-mrina-2641b840_department-naval-architecture-activity-6860863787096936448-XHBP",
+      "imageURL": "https://media.licdn.com/dms/image/v2/C4D22AQF6R9w6HPOZsA/feedshare-shrink_800/feedshare-shrink_800/0/1635757393867?e=2147483647&v=beta&t=rd-NNz6Ak4uDWtGzhxDfY09JbZYfL8QVI8-iMuQmpD8",
+      "publicationDate": "2021-11-01",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observed": [
+        "가까운 목재 바닥과 얇은 상판의 긴 벤치, 수직 살이 여러 개 모인 다리가 보인다.",
+        "뒤쪽에는 높은 금속 격자 경계와 직선 차양 일부가 있다.",
+        "이 사진에서 동쪽 곡선 차양 전체는 보이지 않는다."
+      ]
+    },
+    {
+      "id": "kakao-sky",
+      "sourceURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&urlLevel=1&urlX=489115&urlY=1099070",
+      "captureDate": null,
+      "retrievedOn": "2026-11-07",
+      "directlyViewed": true,
+      "orientation": "북쪽이 위인 항공사진",
+      "observed": [
+        "나무 광장 서쪽에는 긴 직선 차양, 동쪽에는 가운데가 동쪽으로 볼록한 좁고 긴 곡선 차양이 있다.",
+        "곡선 차양은 34동 서벽 앞에 놓인다. 북단은 37동 북단 탑보다 북쪽까지, 남단은 34동 남서 모서리 부근까지 이어진다.",
+        "화분 좌석 띠는 나무 광장 북쪽이며 동서로 뻗는다.",
+        "남쪽 흰 기단은 북쪽으로 뾰족한 삼각형에 가깝다. 기단과 36동 북벽 사이에 별도 공간이 보인다.",
+        "곡선 차양 남단과 기단 사이, 기단 서쪽 및 동쪽에 보행 공간이 남는다. 정확한 바닥 높이는 항공사진으로 알 수 없다."
+      ],
+      "limits": [
+        "영상 촬영일을 확인하지 못했고 옛 32동도 남아 있다. 2026년 현황이라고 부르지 않는다.",
+        "건물 지붕의 시차와 나무 가림 때문에 지상 경계를 정밀 측량하는 자료로 사용할 수 없다."
+      ]
+    }
+  ],
+  "placement": {
+    "coordinateFrame": "원점 [190.65,-1150.45], s는 37동 길이를 따라 남쪽, n은 동쪽이다. 기존 모델과 대조하기 위한 로컬 좌표다.",
+    "method": "항공 캡처의 36동 북서 지붕 모서리를 원본 북서 윤곽에 대응하고 화면 축척을 약 8 px/m로 두어 대략 계산했다. 다른 건물의 지붕과 지상 사이 시차는 보정하지 못했다.",
+    "confidence": "배치 후보. 각 위치에 수 m 오차가 있을 수 있고 단일 기준점과 눈으로 읽은 축척을 사용했다. 원본 OSM 자체의 지상 정합 오차도 남는다.",
+    "grove": {
+      "sRangeApprox": [
+        6,
+        30
+      ],
+      "nRangeApprox": [
+        34,
+        52
+      ]
+    },
+    "curvedCanopyCenterlineApprox": [
+      {
+        "s": 0,
+        "n": 58.5
+      },
+      {
+        "s": 16,
+        "n": 62.5
+      },
+      {
+        "s": 31,
+        "n": 58.2
+      }
+    ],
+    "plinthTriangleApprox": [
+      {
+        "s": 37,
+        "n": 52
+      },
+      {
+        "s": 45,
+        "n": 42
+      },
+      {
+        "s": 45,
+        "n": 64
+      }
+    ]
+  },
+  "implemented": [
+    "나무 광장과 북쪽 화분 좌석을 항공사진 비례에 맞춰 북쪽으로 옮겼다. 목재 구역 동쪽과 남쪽에는 갈색 계열 포장과 흰 격자 띠, 보도 줄눈을 추가했다.",
+    "동쪽 곡선 차양에 목재 살, 금속 격자 테두리, 둥근 기둥과 남단 격자 지지대를 추가했다. 지붕을 보행 통로로 표시하지 않는다.",
+    "얇은 밝은 상판과 여러 살이 모인 다리로 벤치를 수정했다. 재료와 치수는 근사다.",
+    "남쪽 흰 삼각형 기단과 원형 격자 구조, 서쪽 여덟 단 계단과 뒤편 높은 보도를 추가했다.",
+    "북쪽 좌석 옆 네 단 계단과 금속 손잡이를 추가했다. 동쪽 보도는 지도상 34동과 36동 사이 보행로에 연결했다."
+  ],
+  "approximations": [
+    "사진에서 보이는 창과 포장, 주변 건물 배치를 참고한 모델이다. 위치는 지붕 시차 때문에 수 m 오차가 있을 수 있다.",
+    "차양 아래 바닥은 통행을 위해 목재 광장과 같은 높이로 맞췄다. 차양 높이 3.65m와 폭 3.2m는 실측값이 아니다.",
+    "남쪽 보도 높이 차 1.2m와 여덟 단, 북쪽 높이 차 0.72m와 네 단은 게임 근사다. 두 계단의 정확한 종점과 단수는 미확인이다.",
+    "기단의 기울기와 원형 격자 치수는 추정이다. 용도를 확인하지 못해 분수나 작동 장치로 표현하지 않았다.",
+    "목재 살 하나마다 물리를 계산하지 않는다. 차양 각 구간의 지붕 충돌은 얇은 판 형태로 근사하고 표시용 살은 합쳐 그린다."
+  ],
+  "remaining": [
+    "2026년 현재 곡선 차양과 주변 시설이 같은 형태인지",
+    "동쪽 차양 아래 바닥과 격자 광장 사이의 높이 차 및 단차 위치",
+    "금속 난간 안쪽 낮은 공간의 형태와 용도",
+    "남쪽 기단 위 원형 격자 구조의 용도와 기단 뒤 통로의 높이",
+    "북쪽 좌석 옆 계단의 정확한 종점, 단수 및 난간 길이"
+  ],
+  "limits": "공식 사진의 촬영일과 항공사진 촬영일은 미확인이다. 2021년 게시 사진을 현재 현황이라고 부르지 않는다. 원본 OSM과 DEM을 보존했고 참고 사진은 게임 에셋에 포함하지 않았다."
+}
