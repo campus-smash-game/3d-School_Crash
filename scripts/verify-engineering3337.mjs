@@ -35,6 +35,7 @@ globalThis.document={createElement(){const canvas={width:0,height:0,textCalls:[]
 const sourceModule=n=>import(pathToFileURL(path.join(root,'src',n+'.ts')));
 
 async function buildWorld(options={}){
+ options={engineering37:false,...options};
 
  await R.init();
  const names=['terrain','scene','fullCampus','physics','transitFacilities','centralPlazaFacilities','administrationPlazaFacilities','informationCourtApproach','administrationPlazaGround','gyujanggakApproach'];
