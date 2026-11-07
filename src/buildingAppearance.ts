@@ -18,6 +18,11 @@ export type BuildingAppearance = {
 
 // 사진에서 확인한 색과 형태를 적용한다. 명시한 높이 외의 치수는 지도 기반 추정치다.
 const profiles: Record<string, Partial<BuildingAppearance>> = {
+  'way/179742154': {
+    height: 22.2, levels: 5, heightEstimated: true, levelsEstimated: false,
+    buildingNumber: '39', confidence: 'reference',
+    sourceUrls: [...(observedAppearances['way/179742154']?.sourceUrls ?? []), 'https://junglim.com/snu-graduate-research-ctr/'],
+  },
   'way/892896238': {
     height: 17.5, levels: 5, heightEstimated: true, levelsEstimated: false,
     landmark: 'engineering-35', buildingNumber: '35', confidence: 'reference',
