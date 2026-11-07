@@ -11,7 +11,7 @@ import RAPIER from '@dimforge/rapier3d-compat';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'), folder = path.join(root, 'artifacts/runtime-coordinates'), modules = path.join(folder, 'modules');
 await mkdir(modules, { recursive: true });
 const sourceHashes = [];
-for (const name of ['main', 'startup', 'physics', 'cannon', 'traffic', 'coordinates', 'minimap', 'observedBuildingOverrides']) {
+for (const name of ['main', 'startup', 'visualUpdates', 'physics', 'cannon', 'traffic', 'coordinates', 'minimap', 'observedBuildingOverrides']) {
     const source = await readFile(path.join(root, 'src', name + '.ts'), 'utf8');
     sourceHashes.push({ file: 'src/' + name + '.ts', sha256: createHash('sha256').update(source).digest('hex') });
     let code = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText.replace(/from (['"])(\.\/[\w-]+)\1/g, "from '$2.mjs'");
@@ -54,8 +54,9 @@ const ctx = () => new Proxy({ rotate(n) { audit.mapBearing = n; } }, { get(o, k)
 const canvas = () => ({ width: 192, height: 192, addEventListener(name, fn) { audit.listeners[name] = fn; }, getContext() { return ctx(); } });
 const game = canvas(), map = canvas();
 globalThis.document = { hidden: false, querySelector(sel) { return sel === '#game' ? game : map; }, createElement() { return canvas(); }, addEventListener(name, fn) { audit.listeners[name] = fn; } };
-globalThis.matchMedia = () => ({ matches: false });
-globalThis.devicePixelRatio = 1;
+const mobile = process.argv.includes('--mobile');
+globalThis.matchMedia = () => ({ matches: mobile });
+globalThis.devicePixelRatio = 2;
 globalThis.innerWidth = 1280;
 globalThis.innerHeight = 720;
 globalThis.addEventListener = (name, fn) => audit.listeners[name] = fn;
@@ -114,7 +115,16 @@ try {
     c.onStart();
     frames(15);
     check('off-origin camera position, initial south bearing and real projectile stay in the correct frames', () => { assert.match(c.targetLabel, /^off-origin wall  /, 'main aim must hit the data-space wall from an off-origin render camera'); const p = sim.player.translation(); close(audit.camera.position, H(new THREE.Vector3(p.x, p.y + .82, p.z))); const forward = audit.camera.getWorldDirection(new THREE.Vector3()); assert.ok(H(forward).z < -.99); c.attack = true; frames(); assert.equal(cannon.shells.length, 1); const shell = cannon.shells[0]; assert.ok(shell.p.z > 230 && shell.velocity.z < 0); close(shell.mesh.getWorldPosition(new THREE.Vector3()), H(shell.p)); const projected = cannon.tool.getWorldPosition(new THREE.Vector3()).project(audit.camera); assert.ok(projected.x > 0); return { initialAimLabel: c.targetLabel, shellData: shell.p.toArray(), shellRender: shell.mesh.getWorldPosition(new THREE.Vector3()).toArray(), weaponNdcX: projected.x }; });
-    check('paused actual main freezes projectile simulation and continues campus range queries in data coordinates', () => { c.active = false; const before = JSON.stringify(cannon.shells.map(s => ({ p: s.p, v: s.velocity, age: s.age }))),facilityUpdates=Object.values(audit.facilities).map(f=>f.updates.length); frames(30); assert.equal(JSON.stringify(cannon.shells.map(s => ({ p: s.p, v: s.velocity, age: s.age }))), before); close(audit.campusCalls.at(-1), H(audit.camera.position)); for(const [i,fixture]of Object.values(audit.facilities).entries()){assert.equal(fixture.updates.length,facilityUpdates[i]+30);close(fixture.updates.at(-1),H(audit.camera.position));} assert.equal(cannon.tool.visible, false); c.active = true; c.onStart(); frames(); for(const [i,fixture]of Object.values(audit.facilities).entries()){assert.equal(fixture.updates.length,facilityUpdates[i]+31);close(fixture.updates.at(-1),H(audit.camera.position));} return { frozenFrames: 30,facilityUpdatesWhilePaused:30,facilityUpdateAfterResume:true }; });
+    check('paused main freezes projectiles and preserves unchanged facility geometry through resume', () => {
+        c.active=false;
+        const before=JSON.stringify(cannon.shells.map(s=>({p:s.p,v:s.velocity,age:s.age}))),counts=Object.values(audit.facilities).map(f=>f.updates.length);
+        frames(30);
+        assert.equal(JSON.stringify(cannon.shells.map(s=>({p:s.p,v:s.velocity,age:s.age}))),before);
+        close(audit.campusCalls.at(-1),H(audit.camera.position));assert.equal(cannon.tool.visible,false);
+        c.active=true;c.onStart();frames();
+        assert.deepEqual(Object.values(audit.facilities).map(f=>f.updates.length),counts,'Unchanged facilities must not be rebuilt during pause or resume');
+        return{frozenFrames:30,unchangedFacilityUpdates:0};
+    });
     check('off-origin impact, flash, particles and physical fragments agree after one world reflection', () => {
         for (let i = 0; i < 60 && sim.destroyed === 0; i++)
             frames();
@@ -137,7 +147,18 @@ try {
             }
         return { destroyed: sim.destroyed, fragments: sim.debris.length };
     });
-    check('fast travel while paused updates data-based campus range and render camera without moving the destination', () => { c.active = false; c.onTravel('stop-west'); frames(15); const p = sim.player.translation(); assert.ok(Math.abs(p.x + 180) < .001 && Math.abs(p.z + 260) < .001); close(audit.camera.position, H(new THREE.Vector3(p.x, p.y + .82, p.z))); close(audit.campusCalls.at(-1), new THREE.Vector3(p.x, p.y + .82, p.z)); for(const fixture of Object.values(audit.facilities))close(fixture.updates.at(-1),H(audit.camera.position)); assert.equal(c.location, 'west shuttle fixture'); close(audit.traffic.lastPlayer, H(audit.camera.position)); assert.equal(cannon.shells.length, 0); return { playerData: [p.x, p.y, p.z], cameraRender: audit.camera.position.toArray(),facilityDestinationUpdated:true }; });
+    check('fast travel while paused updates data-based campus range and render camera without moving the destination', () => { c.active = false; c.onTravel('stop-west'); frames(15); const p = sim.player.translation(); assert.ok(Math.abs(p.x + 180) < .001 && Math.abs(p.z + 260) < .001); close(audit.camera.position, H(new THREE.Vector3(p.x, p.y + .82, p.z))); close(audit.campusCalls.at(-1), new THREE.Vector3(p.x, p.y + .82, p.z)); assert.equal(c.location, 'west shuttle fixture'); close(audit.traffic.lastPlayer, H(audit.camera.position)); assert.equal(cannon.shells.length, 0); return { playerData: [p.x, p.y, p.z], cameraRender: audit.camera.position.toArray() }; });
+    check('main delivers paused damage to its facility owner and reset refreshes every facility',()=>{
+        c.active=false;
+        const entries=Object.values(audit.facilities),counts=entries.map(f=>f.updates.length),target=sim.targets.find(t=>t.mesh===entries[0].mesh);
+        sim.hit(target,target.toughness,new THREE.Vector3(0,0,1));frames();
+        assert.equal(target.mesh.visible,false);
+        for(const [i,f]of entries.entries())assert.equal(f.updates.length,counts[i]+(i===0?1:0));
+        close(entries[0].updates.at(-1),H(audit.camera.position));
+        c.onReset();frames();
+        for(const [i,f]of entries.entries()){assert.ok(f.mesh.visible);assert.equal(f.updates.length,counts[i]+(i===0?2:1));close(f.updates.at(-1),H(audit.camera.position));}
+        return{onlyDamagedOwnerUpdated:true,allOwnersRestored:true};
+    });
     check('right turn and forward plus strafe controls match geographic heading at a nonzero destination', () => {
         c.active = true;
         c.onStart();
@@ -436,9 +457,17 @@ try {
         assert.ok(H(audit.camera.getWorldDirection(new THREE.Vector3())).z<-.99,'reset did not restore stop bearing');
         return{initialStop:'stop-north',travelStop:'stop-south',resetXZ:[p.x,p.z],resumePreservedPosition:true,buildingTravelRejected:true};
     });
+    check('slow frames preserve automatic resolution and shadow settings',()=>{
+        c.active=true;c.onQuality('auto');
+        const ratio=audit.renderer.getPixelRatio(),shadows=audit.renderer.shadowMap.enabled;
+        assert.equal(ratio,mobile?1.25:1.6);assert.equal(shadows,!mobile);
+        for(let i=0;i<180;i++){audit.now+=50;audit.frame(audit.now);}
+        assert.equal(audit.renderer.getPixelRatio(),ratio);assert.equal(audit.renderer.shadowMap.enabled,shadows);
+        return{mobile,pixelRatio:ratio,shadows,slowFrames:180};
+    });
     console.log('Runtime coordinate checks: ' + results.length + '/' + results.length + ' passed. Node fixtures only; no WebGL or phone validation.');
 }
 finally {
     audit.sim?.world.free();
-    await writeFile(path.join(folder, 'results.json'), JSON.stringify({ scope: 'Actual main control flow and actual Cannon, Traffic, Simulation and Minimap, plus standalone data/render camera modes. Includes main HUD queries for unloaded buildings within 300 m, static wall and terrain occlusion, range cutoff and vehicle/building priority. Explicit facility doubles verify data loading, all six factory calls, Simulation registration and per-frame data-space updates during pause, resume, travel and reset; they do not verify actual facility geometry. Synthetic scene/terrain fixtures, controlled vehicle starting states and explicit Controls/DOM/renderer test doubles. No browser, WebGL or phone validation.', sourceHashes, results }, null, 2) + '\n');
+    await writeFile(path.join(folder, 'results.json'), JSON.stringify({ mobile, scope: 'Actual main control flow and actual Cannon, Traffic, Simulation and Minimap, plus standalone data/render camera modes. Includes main HUD queries for unloaded buildings within 300 m, static wall and terrain occlusion, range cutoff and vehicle/building priority. Explicit facility doubles verify data loading, all six factory calls, Simulation registration and change-driven data-space updates during damage and reset, with unchanged facilities retained during pause, resume and travel; they do not verify actual facility geometry. Synthetic scene/terrain fixtures, controlled vehicle starting states and explicit Controls/DOM/renderer test doubles. No browser, WebGL or phone validation.', sourceHashes, results }, null, 2) + '\n');
 }

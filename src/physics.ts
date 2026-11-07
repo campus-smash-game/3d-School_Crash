@@ -27,6 +27,8 @@ export class Simulation {
   private logicalTargets=new Map<Target,LogicalTarget>();
   private queryOwners=new Map<THREE.Object3D,Target>();
   private vehicles=new Map<number,RAPIER.RigidBody>();
+  private visualChanges=new Set<THREE.Mesh>();
+  private refreshAllVisuals=true;
   private terrain?:{vertices:Float32Array;indices:Uint32Array;heightAt:(x:number,z:number)=>number};
   constructor(specs:BreakableSpec[], statics:StaticSpec[], public spawn:THREE.Vector3, public bounds:{minX:number;maxX:number;minZ:number;maxZ:number}, terrain?:{vertices:Float32Array;indices:Uint32Array;heightAt:(x:number,z:number)=>number}) {
     this.terrain=terrain;
@@ -156,7 +158,13 @@ export class Simulation {
       body.setNextKinematicTranslation(s.position);body.setNextKinematicRotation(s.rotation);
     }
   }
+  takeVisualChanges():ReadonlySet<THREE.Mesh>|undefined{
+    const changes=this.visualChanges;this.visualChanges=new Set();
+    if(this.refreshAllVisuals){this.refreshAllVisuals=false;return undefined;}
+    return changes;
+  }
   reset(){
+    this.refreshAllVisuals=true;this.visualChanges.clear();
     for(const body of this.vehicles.values())this.world.removeRigidBody(body);this.vehicles.clear();
     for(const d of this.debris)this.world.removeRigidBody(d.body);
     this.debris=[];
@@ -193,11 +201,13 @@ export class Simulation {
     for(const t of this.loaded)if(t.flash>0){
       t.flash=Math.max(0,t.flash-dt*3);
       (t.mesh.material as THREE.MeshStandardMaterial).color.copy(t.originalColor).lerp(new THREE.Color('#b8e8ff'),t.flash*.65);
+      this.visualChanges.add(t.mesh);
     }
   }
   hit(t:Target,power:number,direction:THREE.Vector3):boolean{
     if(t.hp<=0)return false;
     t.hp-=power;t.flash=1;
+    this.visualChanges.add(t.mesh);
     if(t.hp>0)return false;
     this.removeTarget(t);this.debrisLoaded.delete(t);t.mesh.visible=false;this.destroyed++;
     const divisions=t.size.toArray().map(v=>Math.max(1,Math.min(4,Math.ceil(v/1.15))));

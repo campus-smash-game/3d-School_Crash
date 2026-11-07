@@ -157,12 +157,21 @@ export function* createTerrainSteps(scene:THREE.Scene,data:TerrainData,buildings
     const plateauWidth=b.id==='way/386890466'?Math.max(stepX,stepZ):0;
     return {id:b.id,minX,maxX,minZ,maxZ,points:b.points,holes,y,blendWidth,plateauWidth,key:JSON.stringify([b.id??'',b.points,holes])};
   }).sort((a,b)=>a.key<b.key?-1:a.key>b.key?1:0);
+  // 해당 지점의 높이에 영향을 주는 건물만 기존 순서대로 조회한다.
+  const padCellSize=64,padCells=new Map<string,typeof pads>();
+  for(const p of pads){
+    const margin=p.blendWidth+p.plateauWidth+.4;
+    for(let x=Math.floor((p.minX-margin)/padCellSize);x<=Math.floor((p.maxX+margin)/padCellSize);x++)for(let z=Math.floor((p.minZ-margin)/padCellSize);z<=Math.floor((p.maxZ+margin)/padCellSize);z++){
+      const key=`${x},${z}`,list=padCells.get(key)??[];list.push(p);padCells.set(key,list);
+    }
+  }
+  const nearbyPads=(x:number,z:number)=>padCells.get(`${Math.floor(x/padCellSize)},${Math.floor(z/padCellSize)}`)??[];
   yield '지형과 경사로 준비 중';
   for(let r=0;r<height;r++)for(let c=0;c<width;c++){
     yield '지형과 경사로 준비 중';
     const x=bounds.minX+c*stepX,z=bounds.minZ+r*stepZ,i=r*width+c;
     let interiorSum=0,interiorCount=0,weightedSum=0,totalWeight=0,maxWeight=0;
-    for(const p of pads){
+    for(const p of nearbyPads(x,z)){
     yield '지형과 경사로 준비 중';
       const blendWidth=p.blendWidth+p.plateauWidth;
       if(x<p.minX-blendWidth||x>p.maxX+blendWidth||z<p.minZ-blendWidth||z>p.maxZ+blendWidth)continue;
@@ -182,7 +191,7 @@ export function* createTerrainSteps(scene:THREE.Scene,data:TerrainData,buildings
   yield '지형과 경사로 준비 중';
   const evaluatePad=(x:number,z:number)=>{
     let interiorSum=0,interiorCount=0,weightedSum=0,totalWeight=0,maxWeight=0;
-    for(const p of pads){
+    for(const p of nearbyPads(x,z)){
       const apron=p.id&&familyIds.has(p.id)?.4:0,blendWidth=p.blendWidth+p.plateauWidth+apron;
       if(x<p.minX-blendWidth||x>p.maxX+blendWidth||z<p.minZ-blendWidth||z>p.maxZ+blendWidth)continue;
       const inHole=p.holes.some(h=>insideRing(x,z,h)),within=insideRing(x,z,p.points)&&!inHole;

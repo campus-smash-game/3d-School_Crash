@@ -18,6 +18,7 @@ async function time(name,fn){console.log('START',name);const t=performance.now()
 await time('imports',async()=>{await R.init();});
 const names=['terrain','scene','fullCampus','physics','traffic','transitFacilities','centralPlazaFacilities','administrationPlazaFacilities','informationCourtApproach','administrationPlazaGround','gyujanggakApproach'];
 const [terrainModule,gateModule,campusModule,physicsModule,trafficModule,...facilityModules]=await time('modules',()=>Promise.all(names.map(source)));
+const {createDamageUpdates}=await source('visualUpdates');
 const json=f=>JSON.parse(fs.readFileSync(path.join(root,'public/data',f+'.json')));
 const data=json('campus'),dem=json('terrain'),plan=json('campus-transit'),facilitiesPlan=json('transit-facilities');
 data.roads.push(...plan.supplementalRoads??[]);
@@ -75,8 +76,48 @@ for(const point of [spawn,new THREE.Vector3(4000,0,4000)]){
  sim.reset();update();const reset=renderState();assert.deepEqual(reset,intact,'Reset must recover every visible surface and instanced transform');
  restored.push({point:point.toArray(),targets:sim.targets.length,exactRestore:true});
 }
-Object.assign(result,{restored,facilityResponsiveness,sourceHashes});
+// Compare real incremental updates against a complete refresh of the same scene.
+const facilityUpdates=createDamageUpdates(facilities),incrementalChecks=[];
+function sameAsFullRefresh(name,point,changes=sim.takeVisualChanges()){
+ campus.update(point,changes);facilityUpdates.update(point,changes);
+ const incremental=renderState();
+ campus.update(point);for(const f of facilities)f.update(point);
+ assert.deepEqual(renderState(),incremental,name+' must preserve rendered geometry, colors and visibility');
+ incrementalChecks.push(name);
+}
+sim.reset();sameAsFullRefresh('reset',spawn);
+for(const [x,z]of [[0,35],[310,-750],[210,-1300],[4000,4000],[0,35]]){
+ sameAsFullRefresh('travel '+x+','+z,new THREE.Vector3(x,terrain.heightAt(x,z)+2,z));
+}
+const campusMeshes=new Set(campus.breakables.map(s=>s.mesh));
+const hitTarget=sim.targets.find(t=>campusMeshes.has(t.mesh)&&t.toughness>1);
+assert.ok(hitTarget);
+const impactPoint=hitTarget.box.getCenter(new THREE.Vector3());
+impactPoint.y=terrain.heightAt(impactPoint.x,impactPoint.z)+2;
+sim.teleport(impactPoint);sameAsFullRefresh('approach impact',impactPoint);
+assert.ok(hitTarget.body,'Flash test must use a loaded target');
+sim.hit(hitTarget,hitTarget.toughness*.1,new THREE.Vector3(0,0,1));
+for(let frame=0;frame<24;frame++){
+ sim.step(1/60,0,0,false);
+ sameAsFullRefresh('impact flash '+frame,impactPoint);
+}
+assert.equal(hitTarget.flash,0);assert.equal(hitTarget.mesh.material.color.getHex(),hitTarget.originalColor.getHex());
+sim.hit(hitTarget,hitTarget.toughness,new THREE.Vector3(0,0,1));
+sameAsFullRefresh('destroy loaded target',impactPoint);
+sameAsFullRefresh('damaged building remains visible far away',new THREE.Vector3(4000,0,4000));
+for(const facility of facilities){
+ const target=sim.targets.find(t=>t.mesh===facility.breakables[0]?.mesh);assert.ok(target);
+ sim.hit(target,target.toughness,new THREE.Vector3(0,0,1));
+ sameAsFullRefresh('destroy facility '+target.label,spawn);
+}
+const changed=new Set();
+for(const t of sim.targets){t.mesh.visible=false;changed.add(t.mesh);}
+sameAsFullRefresh('all target owners damaged',spawn,changed);
+sameAsFullRefresh('all damaged owners at distance',new THREE.Vector3(4000,0,4000));
+sim.reset();sameAsFullRefresh('restore all target owners',spawn);
+Object.assign(result,{restored,incrementalChecks,facilityResponsiveness,sourceHashes});
 console.log('PASS every campus target restores the same geometry and visibility nearby and far away');
+console.log('PASS incremental damage, flash, travel and reset match complete scene refreshes');
 fs.mkdirSync(path.join(root,'artifacts/startup-test'),{recursive:true});
 fs.writeFileSync(path.join(root,'artifacts/startup-test/results.json'),JSON.stringify(result,null,2));
 assert.ok(heartbeats>20,'The complete campus must not initialize in one blocking task');

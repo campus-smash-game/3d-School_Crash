@@ -29,6 +29,7 @@ jobs:
         run: |
           node scripts/verify-controls.mjs
           node scripts/verify-runtime-coordinates.mjs
+          node scripts/verify-runtime-coordinates.mjs --mobile
       - name: Build game
         run: npm run build
       - name: Configure Pages

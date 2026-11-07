@@ -55,6 +55,7 @@ import { createHumanitiesUpperApproach, HUMANITIES_UPPER_ROADS } from './humanit
 import { createHumanities6Landmark, HUMANITIES6_ID } from './humanities6Landmark';
 import { createHumanities7Landmark, HUMANITIES7_ID } from './humanities7Landmark';
 import * as THREE from 'three';
+import {createDamageUpdates,type VisualChanges} from './visualUpdates';
 import type {TerrainCut,TerrainHeightSampler} from './terrain';
 import type { BreakableSpec, StaticSpec } from './scene';
 import { getBuildingAppearance, type BuildingAppearance } from './buildingAppearance';
@@ -114,7 +115,7 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
   const colliders: StaticSpec[] = [];
   const locations: CampusLocation[] = [];
   const buildingViews: BuildingView[] = [];
-  const landmarkViews: { update: (player: THREE.Vector3) => void }[] = [];
+  const landmarkViews: { breakables: BreakableSpec[]; update: (player: THREE.Vector3) => void }[] = [];
   const landmarkLabels: { x: number; z: number; radius: number; label: THREE.Sprite }[] = [];
   const forestViews: { x: number; z: number; group: THREE.Group }[] = [];
   yield '건물과 도로 준비 중';
@@ -153,7 +154,7 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
   type BuildingView = {
     x: number; z: number; radius: number; far: THREE.Group; near: THREE.Group; walls: THREE.InstancedMesh;
     glass: THREE.InstancedMesh; distantGlass: THREE.InstancedMesh; trims: THREE.InstancedMesh; pieces: WallRecord[]; roof: THREE.Mesh; roofProxy: THREE.Mesh; rooftop: THREE.Group;
-    label?: THREE.Sprite; damaged: boolean;
+    label?: THREE.Sprite; damaged: boolean; hasRemaining: boolean;
   };
   yield '건물과 도로 준비 중';
   const center = (points: CampusPoint[]): CampusPoint => {
@@ -535,7 +536,7 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
       pieces.forEach((piece, i) => { dummy.position.copy(piece.proxy.position); dummy.position.y = base + height + .26; dummy.quaternion.copy(piece.proxy.quaternion); dummy.scale.set(piece.proxy.scale.x, .6, .45); dummy.updateMatrix(); parapetPieces.setMatrixAt(i, dummy.matrix); });
       rooftop.add(parapetPieces);
     }
-    const view: BuildingView = { x, z, radius, far, near, walls, glass, distantGlass, trims, pieces, roof, roofProxy, rooftop, damaged: false };
+    const view: BuildingView = { x, z, radius, far, near, walls, glass, distantGlass, trims, pieces, roof, roofProxy, rooftop, damaged: false, hasRemaining: true };
     if (showBuildingLabel) {
       const label = makeLabel(displayLabel); label.position.set(x, base + height + 5, z); label.scale.set(31, 5.8, 1); scene.add(label); view.label = label;
     }
@@ -888,7 +889,7 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
     };
     const kept: number[] = []; let touchedTriangles = 0;
     for (let i = 0; i < destination.length; i += 9) {
-    yield '건물과 도로 준비 중';
+      if (i % (9 * 256) === 0) yield '건물과 도로 준비 중';
       const bounds={minX:Math.min(destination[i],destination[i+3],destination[i+6]),maxX:Math.max(destination[i],destination[i+3],destination[i+6]),minZ:Math.min(destination[i+2],destination[i+5],destination[i+8]),maxZ:Math.max(destination[i+2],destination[i+5],destination[i+8])};
       if (!overlaps(bounds, allBounds)) { for(let k=0;k<9;k++)kept.push(destination[i+k]); continue; }
       const original = [destination.slice(i, i + 3), destination.slice(i + 3, i + 6), destination.slice(i + 6, i + 9)];
@@ -1127,8 +1128,13 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
     forestViews.push({ x: list.reduce((s, t) => s + t.x, 0) / list.length, z: list.reduce((s, t) => s + t.z, 0) / list.length, group });
   }
 
-  function update(player: THREE.Vector3) {
-    for (const landmark of landmarkViews) landmark.update(player);
+  const landmarkUpdates=createDamageUpdates(landmarkViews);
+  const dirtyBuildings=new Set(buildingViews),buildingOwners=new Map<THREE.Mesh,BuildingView>();
+  for(const view of buildingViews){buildingOwners.set(view.roofProxy,view);for(const piece of view.pieces)buildingOwners.set(piece.proxy,view);}
+  function update(player: THREE.Vector3,changes?:VisualChanges) {
+    landmarkUpdates.update(player,changes);
+    if(changes===undefined){for(const view of buildingViews)dirtyBuildings.add(view);}
+    else for(const mesh of changes){const view=buildingOwners.get(mesh);if(view)dirtyBuildings.add(view);}
     for (const forest of forestViews) forest.group.visible = Math.hypot(player.x - forest.x, player.z - forest.z) < 1500;
     const nearbyLabels: { label: THREE.Sprite; distance: number }[] = [];
     for (const view of landmarkLabels) {
@@ -1138,9 +1144,13 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
     }
     for (const view of buildingViews) {
       const distance = Math.hypot(player.x - view.x, player.z - view.z) - view.radius;
-      view.damaged = !view.roofProxy.visible || view.pieces.some(p => !p.proxy.visible);
+      const dirty=dirtyBuildings.has(view);
+      if(dirty){
+        view.damaged = !view.roofProxy.visible || view.pieces.some(p => !p.proxy.visible);
+        view.hasRemaining = view.roofProxy.visible || view.pieces.some(p => p.proxy.visible);
+      }
       const detailed = distance < 280;
-      const hasRemaining = view.roofProxy.visible || view.pieces.some(p => p.proxy.visible);
+      const hasRemaining = view.hasRemaining;
       view.near.visible = (detailed || view.damaged) && hasRemaining;
       distantBuildings.setVisible(view.far, !detailed && !view.damaged);
       view.glass.visible = detailed;
@@ -1151,7 +1161,7 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
         view.label.visible = false;
         if (distance < 220 && distance > 35) nearbyLabels.push({ label: view.label, distance });
       }
-      if (!view.near.visible) continue;
+      if (!view.near.visible || !dirty) continue;
       view.roof.visible = view.roofProxy.visible;
       let geometryChanged = false, colorChanged = false;
       view.pieces.forEach((piece, i) => {
@@ -1172,6 +1182,7 @@ export function* createFullCampusSteps(scene: THREE.Scene, data: CampusData, hei
       });
       if (geometryChanged) { view.walls.instanceMatrix.needsUpdate = true; view.glass.instanceMatrix.needsUpdate = true; view.distantGlass.instanceMatrix.needsUpdate = true; view.trims.instanceMatrix.needsUpdate = true; }
       if (colorChanged && view.walls.instanceColor) view.walls.instanceColor.needsUpdate = true;
+      dirtyBuildings.delete(view);
     }
     distantBuildings.flush();
     nearbyLabels.sort((a, b) => a.distance - b.distance).slice(0, 5).forEach(item => { item.label.visible = true; });

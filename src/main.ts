@@ -4,6 +4,7 @@ import {createCampus} from './scene';
 import {createFullCampusSteps, type CampusData} from './fullCampus';
 import {createTerrainSteps, type TerrainData} from './terrain';
 import {runStartupSteps,yieldToBrowser} from './startup';
+import {createDamageUpdates} from './visualUpdates';
 import {Controls} from './controls';
 import {Simulation} from './physics';
 import {Traffic} from './traffic';
@@ -52,7 +53,8 @@ async function boot(){
   const informationCourt=await stage('보행로 준비 중',()=>createInformationCourtApproach(world,terrain.heightAt));
   const administrationGround=await runStartupSteps(createAdministrationPlazaGroundSteps(world,terrain.heightAt),progress);
   const gyujanggakApproach=await runStartupSteps(createGyujanggakApproachSteps(world,terrain.heightAt),progress);
-  const updateFacilities=(player:THREE.Vector3)=>{transitFacilities.update(player);centralPlaza.update(player);administrationPlaza.update(player);informationCourt.update(player);administrationGround.update(player);gyujanggakApproach.update(player);};
+  const facilityUpdates=createDamageUpdates([transitFacilities,centralPlaza,administrationPlaza,informationCourt,administrationGround,gyujanggakApproach]);
+  const updateFacilities=facilityUpdates.update;
   const bounds={minX:data.bounds.minX-100,maxX:data.bounds.maxX+100,minZ:data.bounds.minZ-100,maxZ:data.bounds.maxZ+100};
   const firstStop=shuttleStops.stops[0];
   if(!firstStop)throw new Error('No campus shuttle starting stops');
@@ -72,7 +74,7 @@ async function boot(){
   world.scale.z=-1;
   const dummy=new THREE.Object3D(),direction=new THREE.Vector3(),movement=new THREE.Vector3(),dataEye=gate.spawn.clone();
   let bearing=Math.PI,pitch=.06,accumulator=0,prev=performance.now(),fps=60,frames=0,frameTime=0,mapTime=0;
-  let quality:'auto'|'low'|'high'='auto',adaptiveTime=0,started=false,pendingJump=false,vehicleScore=0,targetLabel='',pickTime=0;
+  let started=false,pendingJump=false,vehicleScore=0,targetLabel='',pickTime=0;
   const total=sim.targets.length+traffic.initialVehicleCount;
   cannon.onExplosion=(count,vehicles)=>{vehicleScore+=vehicles;if(count||vehicles)controls.notify(`${count+vehicles}개 파괴!${vehicles?` 차량 ${vehicles}대 포함`:''}`);};
   function syncCamera(){const p=sim.player.translation();dataEye.set(p.x,p.y+.82,p.z);dataToRenderPoint(dataEye,camera.position);camera.rotation.set(pitch,-bearing,0);camera.updateMatrixWorld();}
@@ -91,10 +93,10 @@ async function boot(){
   controls.onReset=()=>{sim.reset();traffic.reset();cannon.reset();vehicleScore=0;bearing=selectedStart.bearing;pitch=.06;pendingJump=false;accumulator=0;syncCamera();traffic.update(0,dataEye);sim.syncVehicles(traffic.collisionStates());campus.update(dataEye);};
   controls.onSound=enabled=>cannon.setSound(enabled);
   controls.onQuality=value=>{
-    quality=value;renderer.setPixelRatio(Math.min(devicePixelRatio,value==='low'?1:value==='high'?2:mobile?1.25:1.6));
+    renderer.setPixelRatio(Math.min(devicePixelRatio,value==='low'?1:value==='high'?2:mobile?1.25:1.6));
     renderer.shadowMap.enabled=value==='high'||value==='auto'&&!mobile;sim.maxDebris=value==='low'?48:value==='high'?150:mobile?64:120;
     while(sim.debris.length>sim.maxDebris){const d=sim.debris.shift()!;sim.world.removeRigidBody(d.body);}
-    renderer.setSize(innerWidth,innerHeight);adaptiveTime=0;
+    renderer.setSize(innerWidth,innerHeight);
   };
   addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.fov=innerWidth<innerHeight?78:65;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);pendingJump=false;});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)controls.pause();prev=performance.now();accumulator=0;pendingJump=false;});
@@ -125,13 +127,13 @@ async function boot(){
       syncCamera();
       if(controls.consumeAttack())cannon.fire(false);if(controls.consumePulse())cannon.fire(true);cannon.update(dt,true);
       if(cannon.shake>0)camera.rotation.z=(Math.random()-.5)*cannon.shake*.08;
-      if(quality==='auto'&&fps<32){adaptiveTime+=dt;if(adaptiveTime>4&&renderer.getPixelRatio()>1){renderer.setPixelRatio(1);renderer.shadowMap.enabled=false;renderer.setSize(innerWidth,innerHeight);adaptiveTime=0;}}
       pickTime+=dt;if(pickTime>.1){aim();pickTime=0;}
     }else{
       accumulator=0;pendingJump=false;controls.consumeLook();controls.consumeJump();controls.consumeAttack();controls.consumePulse();cannon.update(0,false);
       if(!started){dataEye.copy(gate.spawn).add(new THREE.Vector3(0,.9,0));dataToRenderPoint(dataEye,camera.position);camera.lookAt(dataToRenderPoint(new THREE.Vector3(0,5,0)));traffic.update(dt,dataEye);}
     }
-    campus.update(dataEye);updateFacilities(dataEye);sun.position.copy(dataEye).add(new THREE.Vector3(-35,80,30));sun.target.position.set(dataEye.x,dataEye.y-2,dataEye.z);
+    const visualChanges=sim.takeVisualChanges();
+    campus.update(dataEye,visualChanges);updateFacilities(dataEye,visualChanges);sun.position.copy(dataEye).add(new THREE.Vector3(-35,80,30));sun.target.position.set(dataEye.x,dataEye.y-2,dataEye.z);
     debrisMesh.count=sim.debris.length;
     sim.debris.forEach((d,i)=>{const p=d.body.translation(),q=d.body.rotation();dummy.position.set(p.x,p.y,p.z);dummy.quaternion.set(q.x,q.y,q.z,q.w);dummy.scale.copy(d.size).multiplyScalar(Math.min(1,(12-d.age)/1.5));dummy.updateMatrix();debrisMesh.setMatrixAt(i,dummy.matrix);debrisMesh.setColorAt(i,d.color);});
     debrisMesh.instanceMatrix.needsUpdate=true;if(debrisMesh.instanceColor)debrisMesh.instanceColor.needsUpdate=true;
