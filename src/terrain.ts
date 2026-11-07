@@ -1,3 +1,4 @@
+import { getEngineering33Layout, cutEngineering33Terrain } from './engineering33Site';
 import { getEngineering3033Layout, cutEngineering3033Terrain, ENGINEERING33_ID } from './engineering3033Site';
 import { ENGINEERING30_ID, getEngineering30Layout, cutEngineering30Terrain } from './engineering30Site';
 import { ENGINEERING30_DINING_ID, getEngineering30DiningLayout, cutEngineering30DiningTerrain } from './engineering30DiningSite';
@@ -67,7 +68,7 @@ function ringCentre(ring:TerrainPoint[]){
   if(Math.abs(twiceArea)<1e-8)return {area:0,x:ring[0][0],z:ring[0][1]};
   return {area:Math.abs(twiceArea)/2,x:x/(3*twiceArea),z:z/(3*twiceArea)};
 }
-export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:BuildingPad[],options:{livingScienceCourtyard?:boolean;educationParking?:boolean;dining76?:boolean;dining76East?:boolean;education101?:boolean;education12?:boolean;education1112?:boolean;education13?:boolean;education1320?:boolean;pharmacy20?:boolean;pharmacy2021?:boolean;pharmacy21?:boolean;pharmacy143?:boolean;physics561?:boolean;science2256?:boolean;science2256Access?:boolean;science23?:boolean;science26?:boolean;science2527?:boolean;science24?:boolean;science251?:boolean;engineering3033?:boolean;engineering30?:boolean;engineering30Dining?:boolean;science28?:boolean;librarySoutheast?:boolean;libraryAmenities?:boolean;humanitiesGarden?:boolean}={}){
+export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:BuildingPad[],options:{livingScienceCourtyard?:boolean;educationParking?:boolean;dining76?:boolean;dining76East?:boolean;education101?:boolean;education12?:boolean;education1112?:boolean;education13?:boolean;education1320?:boolean;pharmacy20?:boolean;pharmacy2021?:boolean;pharmacy21?:boolean;pharmacy143?:boolean;physics561?:boolean;science2256?:boolean;science2256Access?:boolean;science23?:boolean;science26?:boolean;science2527?:boolean;science24?:boolean;science251?:boolean;engineering33?:boolean;engineering3033?:boolean;engineering30?:boolean;engineering30Dining?:boolean;science28?:boolean;librarySoutheast?:boolean;libraryAmenities?:boolean;humanitiesGarden?:boolean}={}){
   const humanitiesGardenActive=options.humanitiesGarden!==false&&buildings.some(b=>b.id==='way/167983080'&&b.points.some(p=>Math.hypot(p[0]-425.94,p[1]+687.77)<.1))&&buildings.some(b=>b.id==='way/167984624');
   const connection301=buildings.find(b=>b.id==='way/228476658'),connection303=buildings.find(b=>b.id==='supplemental/snu-303');
   const connectionActive=!!connection301&&!!connection303;
@@ -349,6 +350,8 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   let libraryAmenitiesLayout:ReturnType<typeof getLibraryAmenitiesLayout>|undefined;
   let librarySoutheastPatch:ReturnType<typeof cutLibrarySoutheastTerrain>|undefined;
   let librarySoutheastLayout:ReturnType<typeof getLibrarySoutheastLayout>|undefined;
+  let engineering33Patch:ReturnType<typeof cutEngineering33Terrain>|undefined;
+  let engineering33Layout:ReturnType<typeof getEngineering33Layout>|undefined;
   let engineering3033Patch:ReturnType<typeof cutEngineering3033Terrain>|undefined;
   let engineering3033Layout:ReturnType<typeof getEngineering3033Layout>|undefined;
   let engineering30Patch:ReturnType<typeof cutEngineering30Terrain>|undefined;
@@ -387,6 +390,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   let humanitiesGardenPatch:ReturnType<typeof cutHumanitiesGardenTerrain>|undefined;
   function meshHeightAt(x:number, z:number) {
     x = THREE.MathUtils.clamp(x, bounds.minX, bounds.maxX); z = THREE.MathUtils.clamp(z, bounds.minZ, bounds.maxZ);
+    const main33Height=engineering33Patch?.heightAt(x,z);if(main33Height!==undefined)return main33Height;
     const court3033Height=engineering3033Patch?.heightAt(x,z);if(court3033Height!==undefined)return court3033Height;
     const engineering30Height=engineering30Patch?.heightAt(x,z);if(engineering30Height!==undefined)return engineering30Height;
     const engineering30DiningHeight=engineering30DiningPatch?.heightAt(x,z);if(engineering30DiningHeight!==undefined)return engineering30DiningHeight;
@@ -452,6 +456,8 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   if(engineering30DiningLayout)engineering30DiningPatch=cutEngineering30DiningTerrain(positions,indices,engineering30DiningLayout);
   if(engineering30Layout)engineering30Patch=cutEngineering30Terrain(positions,indices,engineering30Layout);
   if(engineering3033Layout)engineering3033Patch=cutEngineering3033Terrain(positions,indices,engineering3033Layout);
+  const main33Building=buildings.find(b=>b.id===ENGINEERING33_ID);
+  if(options.engineering33!==false&&engineering3033Layout&&main33Building){engineering33Layout=getEngineering33Layout(meshHeightAt,(main33Building as {id:string;points:[number,number][]}).points,engineering3033Layout);engineering33Patch=cutEngineering33Terrain(positions,indices,engineering33Layout);}
   const vertices = Float32Array.from(positions), colors = new Float32Array(vertices.length), indexArray = Uint32Array.from(indices);
   const low = new THREE.Color('#7c8d69'), high = new THREE.Color('#537660'), color = new THREE.Color();
   for (let i = 0; i < vertices.length; i += 3) {
@@ -466,6 +472,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
     // 선언 밖에서는 기존 논리 높이 계산을 유지한다. 실제 메시 조회는 meshHeightAt으로 별도 제공한다.
     const gardenLocal=humanitiesGardenLocal(cx,cz),gardenOuter=HUMANITIES_GARDEN_SITE.outer;
     if(humanitiesGardenPatch&&Math.abs(gardenLocal.s)<gardenOuter.s&&Math.abs(gardenLocal.n)<gardenOuter.n){const y=humanitiesGardenPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
+    if(engineering33Patch?.affects(cx,cz)){const h=engineering33Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;const y=engineering33Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
     if(engineering3033Patch?.affects(cx,cz)){const h=engineering3033Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;}
     if(engineering30Patch?.affects(cx,cz)){const h=engineering30Patch.surfaceAt(cx,cz);if(h!==undefined)return h+.03;const y=engineering30Patch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
     if(engineering30DiningPatch?.affects(cx,cz)){const y=engineering30DiningPatch.heightAt(cx,cz);if(y!==undefined)return y+.03;}
@@ -558,6 +565,8 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   const pharmacy21Cells=new Set<number>();
   if(pharmacy21Patch){const q=pharmacy21Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy21Cells.add(r*stride+c);mesh.userData.pharmacy21Correction={...pharmacy21Patch.metadata,bounds:q,layout:pharmacy21Layout};}
   if(engineering30Patch)(heightAt as TerrainHeightSampler & {engineering30CorrectionRegions?:TerrainDetailRegion[]}).engineering30CorrectionRegions=[{minX:139,maxX:204,minZ:-1033,maxZ:-1000}];
+  const engineering33Cells=new Set<number>();
+  if(engineering33Patch){const q=engineering33Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering33Cells.add(r*stride+c);mesh.userData.engineering33Correction={...engineering33Patch.metadata,bounds:q,layout:engineering33Layout};}
   const engineering3033Cells=new Set<number>();
   if(engineering3033Patch){const q=engineering3033Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)engineering3033Cells.add(r*stride+c);mesh.userData.engineering3033Correction={...engineering3033Patch.metadata,bounds:q,layout:engineering3033Layout};}
   const engineering30Cells=new Set<number>();
@@ -582,7 +591,7 @@ export function createTerrain(scene:THREE.Scene,data:TerrainData,buildings:Build
   if(physics561Patch){const q=physics561Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)physics561Cells.add(r*stride+c);mesh.userData.physics561Correction={...physics561Patch.metadata,bounds:q,layout:physics561Layout};}
   const pharmacy143Cells=new Set<number>();
   if(pharmacy143Patch){const q=pharmacy143Patch.bounds,c0=Math.max(0,interval(xs,q.minX,n)-1),c1=Math.min(width-2,interval(xs,q.maxX,n)+1),r0=Math.max(0,interval(zs,q.minZ,n)-1),r1=Math.min(height-2,interval(zs,q.maxZ,n)+1);for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++)pharmacy143Cells.add(r*stride+c);mesh.userData.pharmacy143Correction={...pharmacy143Patch.metadata,bounds:q,layout:pharmacy143Layout};}
-  const roadTriangleCells=new Set([...existingRoadCells,...engineering3033Cells,...engineering30Cells,...engineering30DiningCells,...science28Cells,...science251Cells,...science24Cells,...science2527Cells,...science26Cells,...science23Cells,...science2256Cells,...physics561Cells,...pharmacy143Cells,...pharmacy21Cells,...education101Cells,...education12Cells,...education13Cells,...pharmacy20Cells,...pharmacy2021Cells,...librarySoutheastCells,...libraryAmenitiesCells]);
+  const roadTriangleCells=new Set([...existingRoadCells,...engineering33Cells,...engineering3033Cells,...engineering30Cells,...engineering30DiningCells,...science28Cells,...science251Cells,...science24Cells,...science2527Cells,...science26Cells,...science23Cells,...science2256Cells,...physics561Cells,...pharmacy143Cells,...pharmacy21Cells,...education101Cells,...education12Cells,...education13Cells,...pharmacy20Cells,...pharmacy2021Cells,...librarySoutheastCells,...libraryAmenitiesCells]);
   function surfaceSampler(sourceVertices:Float32Array,sourceIndices:Uint32Array,cells:Set<number>){
     const buckets=new Map<number,number[]>();
     for(let i=0;i<sourceIndices.length;i+=3){const ids=[sourceIndices[i],sourceIndices[i+1],sourceIndices[i+2]],x=ids.reduce((v,k)=>v+sourceVertices[k*3],0)/3,z=ids.reduce((v,k)=>v+sourceVertices[k*3+2],0)/3,c=interval(xs,x,n),r=interval(zs,z,n),cell=r*stride+c;if(!cells.has(cell))continue;const list=buckets.get(cell)??[];list.push(i);buckets.set(cell,list);}

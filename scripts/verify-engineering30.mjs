@@ -42,6 +42,8 @@ globalThis.document={createElement(){const canvas={width:0,height:0,textCalls:[]
 const sourceModule=n=>import(pathToFileURL(path.join(root,'src',n+'.ts')));
 
 async function buildWorld(options={}){
+ // 후속 구역은 별도 통합 검사에서 확인하고 이 검사는 해당 보완의 범위를 비교한다.
+ options={engineering3033:false,engineering33:false,...options};
 
 
 

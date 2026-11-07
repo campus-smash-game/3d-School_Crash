@@ -1,0 +1,302 @@
+{
+  "reviewedAt": "2026-11-07",
+  "scope": "33동 본체와 서쪽 날개의 외관, 필로티, 서쪽 및 동쪽 현관, 30동 중정 남서쪽 접근 계단",
+  "identity": {
+    "33": {
+      "name": "공학관4",
+      "osmId": "way/347804717",
+      "officialSeq": 42
+    },
+    "34": {
+      "name": "공학관5",
+      "osmId": "way/347806720",
+      "officialSeq": 43
+    },
+    "35": {
+      "name": "공학관6",
+      "osmId": "way/892896238",
+      "officialSeq": 44
+    },
+    "37": {
+      "name": "공학관8",
+      "osmId": "way/262983332",
+      "officialSeq": 46
+    },
+    "checkedFiles": [
+      "sources/building-match-review.json",
+      "public/data/campus.json",
+      "sources/engineering3033-access-photo-notes.json"
+    ],
+    "orientation": "33동은 동서로 긴 건물이고 서쪽에 좁은 날개가 있다. 37동 북단은 33동 남쪽 바로 건너편이다. 34동은 33동 동쪽, 35동은 그보다 더 동쪽에 있다. 서쪽 필로티에서 남동쪽으로 보이는 큰 계단과 흰 탑을 34동이나 33동 독립 현관으로 바로 대응하지 않는다."
+  },
+  "keyFindings": [
+    {
+      "id": "west-wing-south-current",
+      "verified": "네이버 2025년 9월 사진에서 서쪽 날개 남면은 상부 창 두 줄과 붉은 벽돌 띠, 흰 기둥으로 구성된다. 그 아래에는 어두운 유리 창줄이 한 줄 더 있고, 더 낮은 지상에는 서쪽 현관과 동쪽의 열린 필로티가 있다. 남면의 지붕 가장자리와 서쪽 세로 면은 검은 패널로 마감돼 있다.",
+      "entrance": "현관은 서쪽 날개 남면의 서쪽 부분이다. 밝은 금속 문틀의 유리문 위에 32와 33 방향을 함께 안내하는 ENGINEERING 표지가 보인다. 문 앞 노란 점자블록과 포장 바닥이 있다.",
+      "sourceIds": [
+        "naver-southwest-202509"
+      ],
+      "unknown": "문짝 수, 정확한 문 중심 좌표, 실내 높이와 층 명칭은 확정하지 않았다. 어두운 창줄이 남면 외벽보다 얼마나 후퇴했는지 실측하지 않았다."
+    },
+    {
+      "id": "west-wing-north",
+      "verified": "네이버 2024년 2월 사진에서 서쪽 날개 북면은 열린 필로티 위에 창 세 줄이 있다. 세 줄 모두 붉은 벽돌 띠와 흰 기둥 사이에 있으며 상단 벽은 밝은 흰색이다. 남면의 검은 상단 패널을 북면에서도 확인한 것은 아니다.",
+      "approach": "북쪽 낮은 회색 사각 포장 길이 필로티 입구로 이어진다. 동쪽에는 높은 식재대와 그 옆의 짧은 계단이 있고, 필로티 안쪽 바닥은 반대편 남쪽 도로까지 열려 있다.",
+      "sourceIds": [
+        "naver-north-wing-202402",
+        "naver-piloti-inside-202402"
+      ],
+      "unknown": "2025년 이후 북면 변경 여부, 현재 공사에 따른 통행 제한은 확인하지 못했다. 사진 오른쪽 옛 32동은 현행 공사 구역으로 복원하지 않는다."
+    },
+    {
+      "id": "main-body-south",
+      "verified": "네이버 2025년 9월 남서쪽 사진에서 33 번호가 있는 기존 본체는 창 세 줄과 밝은 기둥 및 지붕 가장자리를 유지한다. 남쪽 정면 전체는 37동 방향 연결부에 가린다. 2011년 4월 남동쪽 거리뷰에서는 본체 남쪽 긴 면의 창 세 줄, 낮은 석재 하부와 동쪽 모서리를 직접 볼 수 있다.",
+      "officialPhotoOrientation": "공식 042-33.jpg의 33 번호 모서리, 창 세 줄과 오른쪽 청록 연결교가 2011년 남동쪽 거리뷰와 일치한다. 공식 사진은 본체 남쪽 긴 면을 남동쪽에서 본 구도로 대응한다. 공식 사진의 촬영일은 알 수 없다.",
+      "sourceIds": [
+        "naver-south-main-202509",
+        "kakao-south-main-201104",
+        "official33"
+      ],
+      "unknown": "창 세 줄을 지하층 구분까지 포함한 건축물 총 층수로 일반화하지 않는다. 본체 남쪽 정문과 정확한 출입 층 명칭은 이번에 확인하지 못했다."
+    },
+    {
+      "id": "east-entry-historical",
+      "verified": "2011년 4월 거리뷰에서 E33 안내판이 있는 동쪽 현관을 확인했다. 두 벽돌 벽 사이 깊은 수직 홈에 유리문이 있고, 문 앞의 짧은 직선 계단 양쪽에 흰 난간벽이 있다. 계단 아래에는 노란 점자블록이 이어진다.",
+      "sourceIds": [
+        "kakao-east-entry-201104"
+      ],
+      "unknown": "사진 이후 리모델링된 문과 계단의 현행 상태는 미확인이다. 동쪽 문을 남쪽 문으로 취급하지 않는다. 계단 단수와 높이는 사진 근사만 가능하다."
+    },
+    {
+      "id": "levels",
+      "verified": "직접 본 창줄을 기준으로 기존 본체 남면은 세 줄, 서쪽 날개 북면은 필로티 위 세 줄이다. 2025년 서쪽 날개 남면도 상부 두 줄 아래 어두운 창줄과 지상 현관/필로티가 따로 보인다.",
+      "sourceConflict": "원본 OSM은 levels=5이고 단우건축의 2011년 사업 소개는 지상 4층이다. 사업 범위, 지하층과 지형에 따른 노출 층수를 같은 기준으로 적었는지 확인할 공식 층별 안내나 단면은 확보하지 못했다.",
+      "implementationLimit": "사진에 보이는 벽과 창의 층별 구성을 우선하고 OSM 5층이나 사업 소개 4층을 모든 부분에 일률적으로 적용하지 않는다. 지붕 높이와 층고는 게임 근사이며 실측값이 아니다. 단우 조감도에서 보이는 층수를 실제 준공 상태로 확정하지 않았다."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "naver-southwest-202509",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=osLMizMDYwRVrgxRLogQuA,-48.27,10,80,Float",
+      "captureDate": "2025-09",
+      "dateEvidence": "화면에 2025년 09월(최신)으로 표시됨",
+      "directlyViewed": true,
+      "view": "33동 서쪽 날개 남쪽의 도로에서 북서쪽으로 본다.",
+      "observations": [
+        "남면 검은 상단 띠",
+        "서쪽 유리 증축부와 검은 세로 외장",
+        "흰 기둥과 붉은 벽돌 띠",
+        "상부 두 줄과 하부 어두운 한 줄의 창",
+        "서쪽 지상 현관과 동쪽 열린 필로티",
+        "현관 앞 점자블록"
+      ]
+    },
+    {
+      "id": "naver-south-main-202509",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=osLMizMDYwRVrgxRLogQuA,36.08,10,80,Float",
+      "captureDate": "2025-09",
+      "directlyViewed": true,
+      "view": "같은 도로에서 북동쪽으로 회전해 본체 남서 모서리와 37동 방향 연결부를 본다.",
+      "observations": [
+        "기존 본체 모서리의 33 번호",
+        "기존 본체 남면 창 세 줄",
+        "서쪽 날개와 기존 본체의 마감 차이",
+        "37동 방향 붉은 세로 띠 연결부와 높은 계단 마당",
+        "계단 아래 옹벽과 청록 덮개 구조"
+      ],
+      "limit": "37동 방향 연결부와 계단은 별도 조사 대상이다. 33동 정문이나 34동 계단으로 확정하지 않았다."
+    },
+    {
+      "id": "naver-north-wing-202402",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=Wbk0_vuCSOy6Yr4AsqF8wQ,155,24.87,80,Float",
+      "captureDate": "2024-02",
+      "additionalImage": "research-33-north-wing.png",
+      "additionalURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=Wbk0_vuCSOy6Yr4AsqF8wQ,155,-10,80,Float",
+      "directlyViewed": true,
+      "observations": [
+        "서쪽 날개 북면의 필로티 위 창 세 줄",
+        "밝은 흰 상단 벽",
+        "기둥과 벽돌 띠",
+        "북쪽 낮은 포장 길",
+        "길 동쪽 높은 식재대와 계단",
+        "남쪽 반대편까지 열린 하부"
+      ],
+      "limit": "오른쪽 옛 32동과 인접 주차 공간은 공사 전 모습이다."
+    },
+    {
+      "id": "naver-piloti-inside-202402",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ZyErp-fadJETBWjZB4XI7g,140,10,80,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "observations": [
+        "필로티 안쪽의 어두운 판형 천장과 작은 원형 조명",
+        "흰 사각 기둥",
+        "포장 바닥에서 남쪽 아스팔트 도로로 이어지는 통과 공간",
+        "반대편 37동 방향 계단과 건물",
+        "남쪽 붉은 오르막길"
+      ],
+      "limit": "현재 통행 규칙이나 공사 중 개방 여부를 확인한 것은 아니다."
+    },
+    {
+      "id": "naver-piloti-north-202402",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=ty-xfFK7C2CoQUfhufEDLA,140,10,80,Float",
+      "captureDate": "2024-02",
+      "directlyViewed": true,
+      "observations": [
+        "필로티 북쪽 입구",
+        "차량이 주차된 열린 하부",
+        "북쪽 식재대 아래의 경사진 흙면",
+        "반대편 도로까지 이어지는 시야"
+      ]
+    },
+    {
+      "id": "kakao-east-entry-201104",
+      "sourceURL": "https://kko.to/0fKwzZZtJo",
+      "resolvedURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104873&pan=277.0&tilt=0.0&zoom=0&urlLevel=3&urlX=489197&urlY=1099140",
+      "captureDate": "2011-04",
+      "dateEvidence": "화면 촬영일 표시 기준",
+      "directlyViewed": true,
+      "observations": [
+        "E33 안내판",
+        "동쪽 짧은 면 중앙의 깊은 수직 현관 홈",
+        "유리문",
+        "짧은 계단과 흰 난간벽",
+        "노란 점자블록",
+        "문 위 흰 외장판"
+      ],
+      "limit": "자료 화면에서 최신 상태를 새로 확인하지 못했다."
+    },
+    {
+      "id": "kakao-east-corner-201104",
+      "sourceURL": "https://kko.to/Awcc0eV9By",
+      "resolvedURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104874&pan=277.0&tilt=0.0&zoom=0&urlLevel=3&urlX=489202&urlY=1099120",
+      "captureDate": "2011-04",
+      "directlyViewed": true,
+      "observations": [
+        "동쪽 현관과 남쪽 면이 만나는 모서리",
+        "남쪽 붉은 광장",
+        "서쪽 멀리 37 번호가 있는 건물",
+        "33동 동쪽에서 바깥으로 이어지는 청록 연결교"
+      ]
+    },
+    {
+      "id": "kakao-south-main-201104",
+      "sourceURL": "https://kko.to/jC9Era_mcv",
+      "resolvedURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104875&pan=322.1&tilt=-19.3&zoom=0&urlLevel=3&urlX=489190&urlY=1099102",
+      "captureDate": "2011-04",
+      "directlyViewed": true,
+      "view": "33동 남동쪽 광장에서 북서쪽으로 본다.",
+      "observations": [
+        "33 번호와 남쪽 긴 면",
+        "창 세 줄",
+        "밝은 세로 기둥과 깊은 지붕 처마",
+        "낮은 석재 하부",
+        "오른쪽 동쪽 청록 둥근 지붕 연결교",
+        "연결교 아래 열린 보행 공간"
+      ],
+      "limit": "2011년에는 남면이 짙은 갈색 벽돌로 보인다. 공식 사진과 2025년 사진의 붉은 마감과 구분한다."
+    },
+    {
+      "id": "kakao-east-bridge-end-201104",
+      "sourceURL": "https://kko.to/7Evab5ODDn",
+      "resolvedURL": "https://map.kakao.com/?map_type=TYPE_SKYVIEW&map_hybrid=true&map_attribute=ROADVIEW&panoid=1017104875&pan=26.0&tilt=-19.3&zoom=0&urlLevel=3&urlX=489190&urlY=1099102",
+      "captureDate": "2011-04",
+      "directlyViewed": true,
+      "observations": [
+        "33동 동쪽 모서리에 붙은 연결교",
+        "청록 둥근 지붕과 흰 난간벽",
+        "아래 긴 사각 기둥과 열린 통과구",
+        "동쪽 상대 건물의 흰 연결부와 계단탑"
+      ],
+      "estimatedMatch": "바로 보이는 상대 건물은 OSM상 34동 북단과 서쪽 면에 가까운 위치다. 35동은 더 동쪽에 있어 사진 한 장으로 전체 통로의 종점을 35동이라고 확정하지 않는다.",
+      "unknown": "정확한 건물 간 접속 순서, 연결층, 2026년 상태는 후속 확인이 필요하다. 확대 사진 research-kakao-neighbor-sign.png의 표지 문구는 명확히 읽지 못했다."
+    },
+    {
+      "id": "official33",
+      "sourceURL": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=42",
+      "imageURL": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000042.jpg",
+      "captureDate": null,
+      "directlyViewed": true,
+      "reusedWithoutModification": true,
+      "observations": [
+        "33 번호",
+        "남쪽 긴 면의 세 창줄",
+        "붉은 벽돌 띠와 밝은 기둥",
+        "오른쪽 동쪽 청록 연결교"
+      ],
+      "orientationBasis": "2011년 카카오 남동쪽 촬영점과 모서리, 창 배열 및 연결교의 상대 위치를 대조했다."
+    },
+    {
+      "id": "snu-opening-2012",
+      "sourceURL": "https://snu.ac.kr/about/president/presidents/25/news?bbsidx=114868&md=v",
+      "imageURL": "https://snu.ac.kr/webdata/boards/koactivity25/img_20120927_001.jpg",
+      "publicationDate": "2012-09-27",
+      "eventDate": "2012-09-25",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observations": [
+        "준공식 배너에 2012년 9월 25일 날짜",
+        "인물 뒤 밝은 사각 기둥과 유리 창",
+        "하부 열린 공간 일부"
+      ],
+      "limit": "준공 행사 사진으로 보지만 촬영일 메타데이터는 확인하지 않았다. 좁은 구도여서 전체 외관과 방향, 현관 중심을 확정할 수 없다."
+    },
+    {
+      "id": "fnnews-2019-detail",
+      "sourceURL": "https://www.fnnews.com/news/201905241655559270",
+      "imageURL": "https://image.fnnews.com/resource/media/image/2019/05/24/201905241715257828_l.jpg",
+      "publicationDate": "2019-05-25",
+      "captureDate": null,
+      "directlyViewed": true,
+      "observations": [
+        "기사 캡션은 합성 사진 왼쪽을 서울대 33동 외벽으로 명시한다",
+        "왼쪽 사진에 황갈색 벽돌과 바닥 포장 일부가 보인다"
+      ],
+      "excludedInference": "오른쪽은 약학대학 사진이다. 33동 사진의 방위와 촬영일을 알 수 없고 외관 전체가 보이지 않아 현행 모델 치수나 색을 결정하는 근거로 쓰지 않았다."
+    }
+  ],
+  "constructionAndAccess": {
+    "verifiedPastRoute": "2024년 북쪽 낮은 포장 길에서 서쪽 필로티를 지나 남쪽 도로로 시야와 바닥이 이어진다. 30동 서쪽 중정에서 내려오는 계단은 필로티 북쪽 높은 식재대 옆에 있다.",
+    "currentLimit": "2024년 사진 속 옛 32동과 주차 공간은 2025년 이후 공사 구역에 걸린다. 사진만으로 현재 통행 허용 범위를 확정하지 않았다. 공사 경계 밖의 게임 접근로는 지도와 게임 지형에 맞춰 근사했다.",
+    "notMeasured": [
+      "필로티 유효 높이와 기둥 간격",
+      "현관 문 중심과 바닥 표고",
+      "계단 단수와 경사",
+      "공사 울타리와 보행로의 정확한 간격"
+    ]
+  },
+  "implementation": {
+    "observedFeatures": [
+      "본체의 창 세 줄과 밝은 기둥, 붉은 하단 및 밝은 창 사이 벽돌, 깊은 처마와 열린 옥상 난간",
+      "서쪽 날개의 창 세 줄과 하부 필로티, 남쪽 검은 패널과 후퇴한 낮은 유리띠, 북쪽 흰 상단 벽",
+      "서쪽 현관의 ENGINEERING 방향 표지, 유리문과 문틀, 점자블록",
+      "필로티 사각 기둥, 천장 줄눈과 둥근 조명, 회색 사각 보도블록",
+      "동쪽 E33 현관의 깊은 홈, 계단 양쪽 흰 벽과 점자블록, 안내판",
+      "30동 중정의 남서쪽 계단과 33동 북쪽 낮은 보도 연결"
+    ],
+    "estimated": "층고, 지붕과 바닥 높이, 계단 폭과 단수, 문 중심 및 기둥 간격, 창 수와 현관 실내 바닥은 게임 근사다. 본체 북쪽과 사진에 가린 모서리 일부는 확인된 재료와 원본 윤곽을 이용해 간략히 구성했다.",
+    "rawData": "원본 OSM의 5층 표기와 윤곽, DEM을 보존한다. 렌더링에는 사진에서 직접 확인한 창줄과 필로티 구성을 적용하며 이를 공식 총 층수라고 표시하지 않는다.",
+    "performance": "기본 표면과 창은 두 메시로 합치고 안내 글자 세 개만 별도 메시로 표시한다. 보도 무늬와 천장 줄눈은 바닥 및 천장 충돌체를 공유한다.",
+    "terrain": "필로티와 접근 계단, 현관 주변만 국소 보정한다. 30동의 기존 붉은 마당과 접하는 참은 겹친 포장을 잘라 연결한다."
+  },
+  "limitations": [
+    "동쪽 E33 현관은 2011년 4월 사진을 참고했으며 현재 모습은 확인하지 못했다.",
+    "남쪽 2025년 9월, 북쪽 2024년 2월 사진을 대조했다. 현재 공사에 따른 출입 제한이나 이후 모든 변경은 확인하지 못했다.",
+    "실내는 출입구 주변의 간단한 바닥만 표현하며 강의실과 연구실 전체를 재현하지 않았다.",
+    "사진을 게임 텍스처나 공개 저장소의 에셋으로 배포하지 않는다."
+  ],
+  "remaining": [
+    "33동 남쪽과 37동 북단 사이 연결부, 큰 계단과 흰 옹벽",
+    "33동 동쪽 청록 지붕 연결교의 접속 건물 및 전체 경로",
+    "30동 남쪽 계단탑 세부와 중정 남쪽 옹벽 주변 시설",
+    "사진에 가린 외벽과 현재 공사에 따른 북쪽 보행 경계"
+  ],
+  "followup": [
+    "33동 남쪽 본체 현관 및 37동 방향 높은 계단 마당의 접속 관계",
+    "33동 동쪽 청록 연결교의 34동 북단 접속과 35동 방향 연장 관계",
+    "동쪽 E33 현관의 리모델링 이후 모습",
+    "2025년 이후 공사 중 북쪽 접근로와 필로티의 실제 개방 범위"
+  ],
+  "researchLimits": "공식 웹 사진과 공개 웹 이미지를 보완 검색했다. 해당 외관을 더 자세히 보여 주는 별도 최신 블로그 사진은 확보하지 못했다. 단우 조감도는 이번 현황 판단에 사용하지 않았다. 최신으로 직접 본 사진은 남쪽 2025년 9월, 북쪽 2024년 2월이며 현재 2026년의 모든 변경을 확인한 것은 아니다."
+}
