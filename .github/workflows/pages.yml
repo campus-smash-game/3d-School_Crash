@@ -32,6 +32,8 @@ jobs:
           node scripts/verify-runtime-coordinates.mjs --mobile
       - name: Build game
         run: npm run build
+      - name: Check baked campus fidelity and destruction
+        run: node --max-old-space-size=4096 scripts/verify-campus-snapshot.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v6
       - name: Upload game

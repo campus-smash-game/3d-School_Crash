@@ -79,7 +79,11 @@ npm run build
 npm run preview
 ```
 
-`build`는 TypeScript를 검사한 뒤 `dist/`에 정적 파일을 만듭니다. `preview`는 그 결과를 확인하는 로컬 서버입니다. `index.html` 파일을 더블클릭해 직접 여는 방식은 지원하지 않습니다.
+`dev`와 `build`는 먼저 캠퍼스 형상을 계산해 압축 파일로 저장합니다. 첫 실행이나 모델 변경 후에는 이 과정에 시간이 걸립니다. 입력이 같으면 저장된 결과를 재사용합니다. 게임을 하는 브라우저는 이 파일을 불러오므로 캠퍼스 전체를 처음부터 생성할 필요가 없습니다. 형상 좌표와 재질, 파괴 기능을 유지하며, 사진 출처와 조사 기록은 소스에 남습니다.
+
+개발 서버를 켠 채 건물이나 지형 코드를 수정했다면 다른 터미널에서 `npm run bake`를 실행해 모델 파일을 갱신합니다.
+
+`build`는 TypeScript도 검사한 뒤 `dist/`에 정적 파일을 만듭니다. `preview`는 그 결과를 확인하는 로컬 서버입니다. `index.html` 파일을 더블클릭해 직접 여는 방식은 지원하지 않습니다.
 
 ## GitHub Pages 배포
 
@@ -102,6 +106,7 @@ npm run preview
 | `public/data/` | 게임이 읽는 캠퍼스, 지형, 버스 노선과 정류장 데이터 |
 | `sources/` | 원본 지도, 건물 대응 관계, 사진 관찰과 추정 범위 기록 |
 | `scripts/` | 데이터 변환과 기능별 검사 |
+| `scripts/bake-campus.mjs`, `src/campusRuntime.ts` | 배포 전 캠퍼스 계산과 브라우저 로딩 |
 | `docs/modeling-notes.md` | 건물별 모델링과 검증의 상세 기록 |
 | `.github/workflows/pages.yml` | GitHub Pages 자동 배포 |
 

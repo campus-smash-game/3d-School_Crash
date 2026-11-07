@@ -4,13 +4,16 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "bake": "node --max-old-space-size=6144 scripts/bake-campus.mjs",
+    "predev": "npm run bake",
     "dev": "vite --host 0.0.0.0",
     "test": "node scripts/verify-all.mjs",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run bake && tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "^0.19.3",
+    "meshoptimizer": "1.3.0",
     "three": "^0.180.0"
   },
   "devDependencies": {

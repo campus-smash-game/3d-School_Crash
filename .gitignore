@@ -5,6 +5,8 @@ dist/
 .env*
 artifacts/
 .playwright-cli/
+public/baked/
+src/generated/
 
 # Local verification outputs and hosting identity
 output/

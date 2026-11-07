@@ -45,6 +45,22 @@ const record={scene,heightAt,plan:${planArgument ? 'plan' : 'null'},initialWorld
 const mesh=new THREE.Mesh(new THREE.BoxGeometry(1,2,1),new THREE.MeshStandardMaterial());mesh.position.set(650,heightAt(650,${z})+1,${z});scene.add(mesh);record.mesh=mesh;
 return{shell:mesh,breakables:[{mesh,size:new THREE.Vector3(1,2,1),toughness:3,label:'${name} fixture',material:'stone'}],update(p){record.updates.push(p.clone());}};}`);
 }
+await writeFile(path.join(modules,'campusRuntime.mjs'), `
+import {createTerrainSteps} from './terrain.mjs';
+import {createCampus} from './scene.mjs';
+import {createFullCampusSteps} from './fullCampus.mjs';
+import {createTransitFacilities} from './transitFacilities.mjs';
+import {createCentralPlazaFacilities} from './centralPlazaFacilities.mjs';
+import {createAdministrationPlazaFacilities} from './administrationPlazaFacilities.mjs';
+import {createInformationCourtApproach} from './informationCourtApproach.mjs';
+import {createAdministrationPlazaGroundSteps} from './administrationPlazaGround.mjs';
+import {createGyujanggakApproachSteps} from './gyujanggakApproach.mjs';
+export async function loadCampus(scene){
+ const terrain=createTerrainSteps(scene).next().value,gate=createCampus(scene),campus=createFullCampusSteps().next().value;
+ const plan=await (await fetch('data/transit-facilities.json')).json(),h=terrain.heightAt;
+ const facilities=[createTransitFacilities(scene,plan,h),createCentralPlazaFacilities(scene,h),createAdministrationPlazaFacilities(scene,{},h),createInformationCourtApproach(scene,h),createAdministrationPlazaGroundSteps(scene,h).next().value,createGyujanggakApproachSteps(scene,h).next().value];
+ return {terrain,gate,campus,facilities};
+}`);
 const audit = globalThis.audit = { campusCalls: [], facilities: {}, fetches: [], listeners: {}, now: 0 };
 const ctx = () => new Proxy({ rotate(n) { audit.mapBearing = n; } }, { get(o, k) {
         if (k in o)

@@ -29,6 +29,7 @@ export class Simulation {
   private vehicles=new Map<number,RAPIER.RigidBody>();
   private visualChanges=new Set<THREE.Mesh>();
   private refreshAllVisuals=true;
+  private mutableMaterials=new WeakSet<THREE.Mesh>();
   private terrain?:{vertices:Float32Array;indices:Uint32Array;heightAt:(x:number,z:number)=>number};
   constructor(specs:BreakableSpec[], statics:StaticSpec[], public spawn:THREE.Vector3, public bounds:{minX:number;maxX:number;minZ:number;maxZ:number}, terrain?:{vertices:Float32Array;indices:Uint32Array;heightAt:(x:number,z:number)=>number}) {
     this.terrain=terrain;
@@ -59,11 +60,10 @@ export class Simulation {
       if(this.targets.length%128===0)yield '충돌과 파괴 기능 준비 중';
       const source=Array.isArray(s.mesh.material)?s.mesh.material[0]:s.mesh.material;
       const color=(source as THREE.MeshStandardMaterial).color?.clone()??new THREE.Color('#a9b1b7');
-      s.mesh.material=source.clone();
       // 렌더 월드가 반사되기 전에 논리 변환을 캡처한다. 비로드 질의에는 렌더 부모를 쓰지 않는다.
       s.mesh.updateWorldMatrix(true,false);
       let geometry=queryGeometries.get(s.mesh.geometry);
-      if(!geometry){geometry=s.mesh.geometry.clone();queryGeometries.set(s.mesh.geometry,geometry);}
+      if(!geometry){geometry=s.mesh.userData.campusImmutableGeometry?s.mesh.geometry:s.mesh.geometry.clone();queryGeometries.set(s.mesh.geometry,geometry);}
       if(!geometry.boundingBox)geometry.computeBoundingBox();
       const position=new THREE.Vector3(),rotation=new THREE.Quaternion();
       s.mesh.matrixWorld.decompose(position,rotation,new THREE.Vector3());
@@ -82,6 +82,13 @@ export class Simulation {
     t.body=this.world.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(logical.position.x,logical.position.y,logical.position.z).setRotation(logical.rotation));
     this.world.createCollider(shape.setCollisionGroups(WORLD),t.body);
     this.loaded.add(t);
+  }
+  private targetMaterial(t:Target){
+    if(!this.mutableMaterials.has(t.mesh)){
+      const source=Array.isArray(t.mesh.material)?t.mesh.material[0]:t.mesh.material;
+      t.mesh.material=source.clone();this.mutableMaterials.add(t.mesh);
+    }
+    return t.mesh.material as THREE.MeshStandardMaterial;
   }
   private queryMesh(t:Target){
     const logical=this.logicalTargets.get(t)!;
@@ -171,7 +178,7 @@ export class Simulation {
     for(const t of this.targets){
       if(t.body)this.world.removeRigidBody(t.body);t.body=null;
       t.mesh.visible=true;t.hp=t.toughness;t.flash=0;
-      (t.mesh.material as THREE.MeshStandardMaterial).color.copy(t.originalColor);
+      if(this.mutableMaterials.has(t.mesh))this.targetMaterial(t).color.copy(t.originalColor);
     }
     this.loaded.clear();this.debrisLoaded.clear();
     this.destroyed=0;this.velocityY=0;this.grounded=false;
@@ -200,7 +207,7 @@ export class Simulation {
     }
     for(const t of this.loaded)if(t.flash>0){
       t.flash=Math.max(0,t.flash-dt*3);
-      (t.mesh.material as THREE.MeshStandardMaterial).color.copy(t.originalColor).lerp(new THREE.Color('#b8e8ff'),t.flash*.65);
+      this.targetMaterial(t).color.copy(t.originalColor).lerp(new THREE.Color('#b8e8ff'),t.flash*.65);
       this.visualChanges.add(t.mesh);
     }
   }
