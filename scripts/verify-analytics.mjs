@@ -25,6 +25,7 @@ const result=await worker.fetch(new Request(base+'/api/stats',{headers:{Authoriz
 sql.prepare('INSERT INTO analytics_events VALUES (?,?,?,?,?,?)').run(randomUUID(),'2000-01-01','sites',randomUUID(),'page','desktop');await post();assert.equal(sql.prepare("SELECT COUNT(*) AS n FROM analytics_events WHERE day='2000-01-01'").get().n,0);
 assert.equal(await (await worker.fetch(new Request(base+'/index.html'),env)).text(),'asset');
 const preflight=await worker.fetch(new Request(base+'/api/collect',{method:'OPTIONS',headers:{Origin:origin}}),env);assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),origin);
+const emptyLeaders=await (await worker.fetch(new Request(base+'/api/leaderboard'),env)).json();assert.deepEqual(emptyLeaders.buildings,[]);
 const client=await readFile(new URL('../public/analytics.js',import.meta.url),'utf8');
 
 const [buildingA,buildingB]=Object.keys(buildings);
@@ -54,4 +55,16 @@ for(const navigator of [{},{doNotTrack:'1'},{globalPrivacyControl:true}]){
 }
 assert.ok(!client.includes('campus-analytics-off'));
 assert.ok(!(await readFile(new URL('../public/privacy.html',import.meta.url),'utf8')).includes('id="toggle"'));
+for(const building of Object.keys(buildings).slice(2,8))await post({...broken,id:randomUUID(),building});
+const today=new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+for(let i=0;i<10;i++)sql.prepare('INSERT INTO building_destructions VALUES (?,?,?,?,?,?)').run(randomUUID(),today,'sites','00000000-0000-4000-8000-000000000000',buildingB,'desktop');
+const publicResponse=await worker.fetch(new Request(base+'/api/leaderboard',{headers:{Origin:origin}}),env);
+assert.equal(publicResponse.status,200);assert.equal(publicResponse.headers.get('Access-Control-Allow-Origin'),origin);assert.equal(publicResponse.headers.get('Cache-Control'),'public, max-age=60');
+const leaders=await publicResponse.json();assert.deepEqual(Object.keys(leaders).sort(),['buildings','retentionDays']);assert.equal(leaders.buildings.length,5);
+assert.equal(leaders.buildings[0].destructions,2);assert.equal(leaders.buildings[0].rank,1);
+assert.deepEqual(leaders.buildings.slice(1).map(item=>item.rank),[2,2,2,2]);
+for(const item of leaders.buildings)assert.deepEqual(Object.keys(item).sort(),['destructions','name','rank']);
+assert.ok(!JSON.stringify(leaders).includes(event.visitor));assert.equal((await worker.fetch(new Request(base+'/api/stats'),env)).status,401);
+const failed=await worker.fetch(new Request(base+'/api/leaderboard'),{...env,DB:{prepare(){throw Error('offline')}}});assert.equal(failed.status,503);assert.equal(failed.headers.get('Cache-Control'),'no-store');
+await import('./verify-leaderboard.mjs');
 console.log('Analytics verified: migrations preserve visits, building ranking, cross-host totals, deduplication, input validation, authentication, retention, CORS, client events and browser privacy signals. No browser used.');

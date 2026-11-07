@@ -52,3 +52,24 @@ body.touch .desktop-only{display:none!important}body.touch .touch-only{display:f
 @media(max-width:600px){#welcome{padding-top:max(104px,calc(env(safe-area-inset-top) + 84px));padding-bottom:max(48px,calc(var(--safe-bottom) + 24px))}#welcome .welcome-content{margin-left:24px}#welcome h1{font-size:40px;margin:18px 0 14px}#welcome .intro{font-size:13px;margin-bottom:20px}#welcome .welcome-controls{margin-top:20px;line-height:1.7}}
 @media(max-height:600px){#welcome .scene-caption{display:none}}
 @media(max-height:520px) and (orientation:landscape){#welcome{padding-top:max(84px,calc(env(safe-area-inset-top) + 70px));padding-bottom:max(28px,calc(var(--safe-bottom) + 16px))}#welcome .welcome-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;width:calc(100% - 84px - env(safe-area-inset-left) - env(safe-area-inset-right));max-width:880px;margin-left:max(42px,calc(env(safe-area-inset-left) + 24px))}#welcome .eyebrow{display:none}#welcome h1{grid-column:1;grid-row:1;font-size:36px;margin:0 0 10px}#welcome .intro{grid-column:1;grid-row:2;font-size:12px;margin:0}#welcome .entry-actions{grid-column:2;grid-row:1/3;align-self:center}#welcome .welcome-controls{grid-column:1/-1;margin-top:18px}#welcome .error-message,#welcome .reload-button{grid-column:1/-1}}
+/* 시작 화면의 공개 건물 순위 */
+#welcome{display:grid;grid-template-columns:minmax(0,480px) minmax(260px,360px);gap:clamp(24px,5vw,80px);align-content:center;justify-content:center;padding-left:clamp(24px,7.2vw,120px);padding-right:clamp(24px,7.2vw,120px)}
+#welcome .welcome-content{width:100%;min-width:0;margin:0}
+.building-leaderboard{align-self:center;min-width:0;padding:24px;background:rgba(248,251,252,.95);border:1px solid rgba(255,255,255,.85);border-radius:18px;box-shadow:0 12px 40px #17344c12;pointer-events:auto}
+.leaderboard-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.leaderboard-period{margin:0 0 7px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--blue)}
+.building-leaderboard h2{margin:0;font-size:18px;line-height:1.4;letter-spacing:-.7px;word-break:keep-all}
+#leaderboard-refresh{flex-shrink:0;min-height:44px;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:transparent;color:var(--muted);font-size:11px}
+#leaderboard-refresh:hover:not(:disabled){background:#234ed60a;color:var(--blue)}
+.leaderboard-status{margin:16px 0 8px;color:var(--muted);font-size:11px;line-height:1.7}
+.building-leaderboard table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13px}
+.building-leaderboard th{padding:9px 0;font-size:10px;color:var(--muted);font-weight:500;text-align:left}
+.building-leaderboard td{padding:13px 0;border-top:1px solid var(--line);line-height:1.5;overflow-wrap:anywhere}
+.building-leaderboard th:first-child{width:36px}.building-leaderboard td:first-child{font-weight:750;color:var(--blue);font-variant-numeric:tabular-nums}
+.building-leaderboard th:last-child{width:76px}.building-leaderboard th:last-child,.building-leaderboard td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.building-leaderboard td:nth-child(2){padding-right:10px}
+.leaderboard-note{border-top:1px solid var(--line);margin:12px 0 0;padding-top:14px;font-size:11px;line-height:1.7;color:var(--muted)}
+.leaderboard-note a{color:inherit;text-underline-offset:3px}
+@media(max-height:800px){#welcome{align-content:start}}
+@media(max-width:900px){#welcome{grid-template-columns:minmax(0,1fr);align-content:start;padding-left:24px;padding-right:24px;gap:28px}#welcome .welcome-content{max-width:480px;justify-self:center;margin:0}.building-leaderboard{width:100%;max-width:480px;justify-self:center;padding:20px}.scene-caption{display:none}}
+@media(max-height:520px) and (orientation:landscape){#welcome{grid-template-columns:minmax(0,1fr);align-content:start;padding-left:max(24px,env(safe-area-inset-left));padding-right:max(24px,env(safe-area-inset-right))}#welcome .welcome-content{max-width:880px;justify-self:center;margin:0}.building-leaderboard{width:100%;max-width:480px;justify-self:center}}

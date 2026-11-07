@@ -6,7 +6,8 @@
     <meta name="theme-color" content="#dbe6ef" />
     <meta name="description" content="서울대학교 관악캠퍼스를 탐험하고 대포로 부수는 3D 웹게임. 컴퓨터와 모바일에서 플레이할 수 있습니다." />
     <title>CAMPUS SMASH | 서울대학교 관악캠퍼스</title>
-  <script src="./analytics.js" defer></script></head>
+  <script src="./analytics.js" defer></script>
+  <script src="./leaderboard.js" defer></script></head>
   <body>
     <canvas id="game" aria-label="서울대학교 관악캠퍼스 3D 게임"></canvas>
     <div id="ui" data-state="loading">
@@ -35,7 +36,7 @@
               <button id="travel-button" type="button" disabled><span id="travel-button-label">여기서 시작</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
             </div>
             <button id="start-button" class="start-button" type="button" disabled><span id="start-label">캠퍼스 준비 중</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <p class="project-notice">비공식 개인 창작물입니다. 서울대학교가 개발하거나 후원한 공식 게임이 아닙니다. 파괴 장면은 가상의 게임 표현이며, 실제 시설이나 인물에 대한 위해를 의도하지 않습니다. <a href="./credits.html" target="_blank" rel="noopener noreferrer">자료 출처와 이용 조건</a> / <a href="./privacy.html" target="_blank" rel="noopener noreferrer">접속 집계 안내와 끄기</a></p>
+            <p class="project-notice">비공식 개인 창작물입니다. 서울대학교가 개발하거나 후원한 공식 게임이 아닙니다. 파괴 장면은 가상의 게임 표현이며, 실제 시설이나 인물에 대한 위해를 의도하지 않습니다. <a href="./credits.html" target="_blank" rel="noopener noreferrer">자료 출처와 이용 조건</a> / <a href="./privacy.html" target="_blank" rel="noopener noreferrer">집계 기준</a></p>
             <div class="loading-progress"><progress aria-label="캠퍼스 준비 중"></progress><p id="loading-status" role="status" aria-live="polite">캠퍼스 자료 불러오는 중</p></div>
           </div>
           <div class="welcome-controls desktop-only"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 이동</span><span><kbd>클릭 / F</kbd> 발사</span><span><kbd>M</kbd> 빠른 이동</span></div>
@@ -43,6 +44,18 @@
           <p id="error-message" class="error-message" role="alert"></p>
           <button id="reload-button" class="start-button reload-button" type="button">새로고침<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2 6M4 4v7h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         </div>
+        <aside class="building-leaderboard" aria-labelledby="leaderboard-title">
+          <div class="leaderboard-heading">
+            <div><p class="leaderboard-period">최근 30일 / TOP 5</p><h2 id="leaderboard-title">가장 많이 파괴된 건물</h2></div>
+            <button id="leaderboard-refresh" type="button" aria-label="건물 순위 새로고침">새로고침</button>
+          </div>
+          <p id="leaderboard-status" class="leaderboard-status" role="status">순위를 불러오는 중이에요.</p>
+          <table id="leaderboard-table" hidden aria-label="최근 30일 건물 파괴 순위">
+            <thead><tr><th scope="col">순위</th><th scope="col">건물</th><th scope="col">파괴</th></tr></thead>
+            <tbody id="leaderboard-rows"></tbody>
+          </table>
+          <p class="leaderboard-note">건물 일부가 처음 파괴되면 한 판에 1회 집계해요. <a href="./privacy.html" target="_blank" rel="noopener noreferrer">집계 기준</a></p>
+        </aside>
         <div class="scene-caption"><span class="live-dot"></span> 자유 탐험<span class="caption-divider"></span>지도와 공식 사진을 참고한 근사 모델</div>
       </section>
 

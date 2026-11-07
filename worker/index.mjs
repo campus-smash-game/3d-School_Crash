@@ -10,9 +10,18 @@ export default {
     if (!url.pathname.startsWith('/api/')) return env.ASSETS.fetch(request);
     const origin = request.headers.get('Origin');
     const cors = ORIGINS.has(origin) ? {'Access-Control-Allow-Origin':origin,'Vary':'Origin','Access-Control-Allow-Methods':'POST, GET, OPTIONS','Access-Control-Allow-Headers':'Content-Type, Authorization'} : {};
-    const reply = (data,status=200) => new Response(JSON.stringify(data),{status,headers:{...cors,'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+    const reply = (data,status=200,cache='no-store') => new Response(JSON.stringify(data),{status,headers:{...cors,'Vary':'Origin','Content-Type':'application/json','Cache-Control':cache,'X-Content-Type-Options':'nosniff'}});
     if (request.method==='OPTIONS') return ORIGINS.has(origin) ? new Response(null,{status:204,headers:cors}) : reply({error:'Origin rejected'},403);
     try {
+      if(url.pathname==='/api/leaderboard' && request.method==='GET') {
+        const result=await env.DB.prepare('SELECT building, COUNT(*) AS destructions FROM building_destructions WHERE day>=? AND visitor<>? GROUP BY building ORDER BY destructions DESC,building LIMIT 5').bind(day(Date.now()-29*86400000),diagnosticVisitor).all();
+        let rank=0,lastCount=-1;
+        const leaders=result.results.map((row,index)=>{
+          if(row.destructions!==lastCount){rank=index+1;lastCount=row.destructions;}
+          return {rank,name:buildings[row.building]??row.building,destructions:row.destructions};
+        });
+        return reply({retentionDays:30,buildings:leaders},200,'public, max-age=60');
+      }
       if (url.pathname==='/api/collect' && request.method==='POST') {
         if (!ORIGINS.has(origin)) return reply({error:'Origin rejected'},403);
         if (!request.headers.get('Content-Type')?.startsWith('application/json')) return reply({error:'JSON required'},415);
