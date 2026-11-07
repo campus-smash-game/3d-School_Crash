@@ -1,0 +1,7 @@
+Runtime dependencies distributed in the game bundle:
+three (installed version in package-lock.json): MIT. See three-MIT.txt.
+meshoptimizer 1.3.0: MIT. See meshoptimizer-MIT.txt.
+@dimforge/rapier3d-compat 0.19.3: Apache-2.0. See Apache-2.0.txt.
+Rapier project: https://github.com/dimforge/rapier.js
+The installed Rapier package declares Apache-2.0 but contains no separate LICENSE/NOTICE file. Upstream notice completeness remains a review item.
+These licenses apply to the named libraries, not to university marks, reference photos, plans, or the entire game.
