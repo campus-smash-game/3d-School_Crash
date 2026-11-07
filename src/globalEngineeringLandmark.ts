@@ -10,6 +10,7 @@ type Point = { x: number; z: number };
 
 // 공식 자료는 지상 5층을 확인한다. 높이, 하부 후퇴 폭과 기둥 간격은 외관 사진의 비례로 추정했다.
 export function createGlobalEngineeringLandmark(scene: THREE.Scene, building: CampusBuilding, profile: BuildingAppearance, heightAt: (x: number, z: number) => number) {
+  const access=scene.getObjectByName('campus-terrain')?.userData.engineering38Correction?.layout;
   let points = building.points.filter((p, i, all) => i !== all.length - 1 || p[0] !== all[0][0] || p[1] !== all[0][1]);
   let longest = 0, ux = 1, uz = 0;
   for (let i = 0; i < points.length; i++) {
@@ -25,9 +26,9 @@ export function createGlobalEngineeringLandmark(scene: THREE.Scene, building: Ca
   const xs = points.map(p => p[0] * ux + p[1] * uz), zs = points.map(p => -p[0] * uz + p[1] * ux);
   const length = Math.max(...xs) - Math.min(...xs), depth = Math.max(...zs) - Math.min(...zs);
   const mx = (Math.min(...xs) + Math.max(...xs)) / 2, mz = (Math.min(...zs) + Math.max(...zs)) / 2;
-  const cx = mx * ux - mz * uz, cz = mx * uz + mz * ux, base = heightAt(cx, cz);
+  const cx = mx * ux - mz * uz, cz = mx * uz + mz * ux, base = access?.floor ?? heightAt(cx, cz);
   const outline = points.map(p => ({ x: p[0] * ux + p[1] * uz - mx, z: -p[0] * uz + p[1] * ux - mz }));
-  const top = profile.height ?? 23.5, scale = top / 23.5, soffit = 6.2 * scale, roofY = top - .32, upperFloor = (roofY - soffit) / 4;
+  const top = profile.height ?? 23.5, scale = top / 23.5, soffit = (access ? 9.4 : 6.2) * scale, roofY = top - .32, upperRows = access ? 3 : 4, upperFloor = (roofY - soffit) / upperRows;
   const core = { minX: -length / 2 + 5.2, maxX: length / 2 - 2.4, minZ: -depth / 2 + 2.4, maxZ: depth / 2 - 5.2 };
   const orientation = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), -Math.atan2(uz, ux));
   const world = (x: number, y: number, z: number) => new THREE.Vector3(cx + ux * x - uz * z, base + y, cz + uz * x + ux * z);
@@ -36,7 +37,7 @@ export function createGlobalEngineeringLandmark(scene: THREE.Scene, building: Ca
   Object.assign(shell.userData, {
     buildingId: building.id, role: 'building-shell', landmark: 'global-engineering', appearance: profile,
     dimensions: { length, depth, height: top }, localOrigin: { x: cx, y: base, z: cz }, axis: { x: ux, z: uz },
-    front: { x: -uz, z: ux }, levels: 5, soffit, core, upperFloor, outline, dimensionsEstimated: true, directionEstimated: true,
+    front: { x: -uz, z: ux }, levels: 5, upperRows, lowerStoreys: access ? 2 : 1, soffit, core, upperFloor, outline, dimensionsEstimated: true, directionEstimated: true,
   }); scene.add(shell);
   const distant = new THREE.Group(); distant.name = `${building.id}:global-engineering-distant`; distant.visible = false;
   Object.assign(distant.userData, { buildingId: building.id, role: 'distant-building', landmark: 'global-engineering' }); scene.add(distant);
@@ -96,11 +97,11 @@ export function createGlobalEngineeringLandmark(scene: THREE.Scene, building: Ca
     const a = outline[edge], b = outline[(edge + 1) % outline.length], columns = Math.ceil(Math.hypot(b.x - a.x, b.z - a.z) / 2.6);
     for (let col = 0; col < columns; col++) {
       const p = (t: number) => ({ x: THREE.MathUtils.lerp(a.x, b.x, t), z: THREE.MathUtils.lerp(a.z, b.z, t) });
-      for (let row = 0; row < 4; row++) curtain(p(col / columns), p((col + 1) / columns), soffit + .12 + row * upperFloor, soffit + .12 + (row + 1) * upperFloor, 'upper-curtain', row, col + edge * 13);
+      for (let row = 0; row < upperRows; row++) curtain(p(col / columns), p((col + 1) / columns), soffit + .12 + row * upperFloor, soffit + .12 + (row + 1) * upperFloor, 'upper-curtain', row, col + edge * 13);
     }
   }
   const coreOutline: Point[] = [{ x: core.minX, z: core.minZ }, { x: core.maxX, z: core.minZ }, { x: core.maxX, z: core.maxZ }, { x: core.minX, z: core.maxZ }];
-  for (let edge = 0; edge < coreOutline.length; edge++) {
+  for (let edge = 0; !access && edge < coreOutline.length; edge++) {
     const a = coreOutline[edge], b = coreOutline[(edge + 1) % coreOutline.length], dx = b.x - a.x, dz = b.z - a.z, len = Math.hypot(dx, dz), columns = Math.ceil(len / 3.1), nx = dz / len, nz = -dx / len;
     for (let col = 0; col < columns; col++) {
       const p = (t: number) => ({ x: THREE.MathUtils.lerp(a.x, b.x, t), z: THREE.MathUtils.lerp(a.z, b.z, t) }), p0 = p(col / columns), p1 = p((col + 1) / columns);

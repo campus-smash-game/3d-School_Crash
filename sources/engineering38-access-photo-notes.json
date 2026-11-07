@@ -1,0 +1,268 @@
+{
+  "buildingId": "way/93549089",
+  "buildingNumber": "38",
+  "name": "글로벌공학교육센터",
+  "reviewDate": "2026-11-07",
+  "status": "implemented-and-validated-with-visual-limit",
+  "modules": [
+    "src/engineering38Site.ts",
+    "src/engineering38Access.ts",
+    "src/globalEngineeringLandmark.ts"
+  ],
+  "sources": [
+    {
+      "id": "official-campus-photo",
+      "pageURL": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=47",
+      "imageURL": "https://map.snu.ac.kr/api/upload/default/F_BUILD_0000046.jpg",
+      "date": {
+        "capture": null,
+        "publication": null
+      },
+      "observed": [
+        "38 번호와 파란 유리, 은색 격자, 높은 원기둥, 안쪽으로 물러난 유리 현관을 확인했다.",
+        "사진 왼쪽 배경에 39동 번호와 세로 차양이 보인다.",
+        "가까운 모서리 왼쪽에는 영문 현관 간판과 짧은 계단, 금속 손잡이가 있고 오른쪽 면은 카페 유리벽이다."
+      ],
+      "orientationInference": "북서쪽에서 남동쪽을 본 사진으로 판단한다. 왼쪽 긴 면은 북면이며 동쪽으로 멀어진다. 오른쪽 짧은 면은 서면이며 남쪽으로 멀어진다. 39동의 실제 동쪽 위치, 현관과 카페의 도면 배치를 함께 대조했다.",
+      "limits": "촬영일과 현재 간판 상태, 단수와 현관 중심의 실측 위치는 확인하지 못했다."
+    },
+    {
+      "id": "danu-photos",
+      "pageURL": "https://idanu.com/서울대학교-글로벌공학교육센터/",
+      "images": [
+        {
+          "url": "https://idanu.com/wp-content/uploads/2025/02/IMG_5277.jpg"
+        },
+        {
+          "url": "https://idanu.com/wp-content/uploads/2025/02/IMG_5265.jpg"
+        }
+      ],
+      "date": {
+        "capture": null,
+        "projectYearLabel": 2009,
+        "webMetadataModified": "2025-02-28",
+        "warning": "2009년 표기와 2025/02 업로드 경로를 사진 촬영일로 사용하지 않는다. 두 파일의 촬영일 EXIF는 없었다."
+      },
+      "observed": [
+        "전경은 공식 사진과 같은 북서 모서리, 북면 현관 계단, 서면 카페를 보여 준다.",
+        "선큰 사진에는 곡선 콘크리트/유리 코어, 아래층 유리벽, 각진 포장 띠, 작은 사각 화분, 위층 금속 난간과 높은 원기둥이 있다.",
+        "선큰 계단의 일부가 사진 왼쪽에 보이지만 이 사진만으로 계단의 전체 반환 구조와 방위를 확정할 수 없다."
+      ],
+      "documented": {
+        "aboveGroundFloors": 5,
+        "basementFloors": 2,
+        "grossFloorAreaSqm": 17210.07
+      },
+      "limits": "선큰 사진의 현재 시설 배치와 문 상태는 미확인이다. 정확한 층고는 없다."
+    },
+    {
+      "id": "official-b1-cad",
+      "pageURL": "https://snu38.snu.ac.kr/bbs/board.php?bo_table=download&wr_id=4",
+      "downloadURL": "https://snu38.snu.ac.kr/bbs/download.php?bo_table=download&wr_id=4&no=1",
+      "date": {
+        "drawingTitleBlock": "2010-07",
+        "pdfCreated": "2014-05-16",
+        "postPublished": "2019-01-14",
+        "attachmentRegistered": "2020-10-13"
+      },
+      "observed": [
+        "지하 1층 평면도로 표기되어 있다. X1~X10 축 사이 70,400mm, Y1~Y7 축 사이 48,600mm와 추가 4,200mm가 보인다.",
+        "중앙에는 곡선 승강기 코어와 접한 비정형 포장 공간, 계단, 유리벽과 문이 그려져 있다.",
+        "상단 가장자리에는 긴 차량 램프가 그려져 있다."
+      ],
+      "limits": "북쪽 화살표는 확인하지 못했다. 방위는 건축 잡지 설명과 1층 도면으로 보완했다. 설계도와 현재 준공 상태의 세부 일치 여부는 미확인이다."
+    },
+    {
+      "id": "korean-architects-2015",
+      "url": "https://masilwide.smilecast.co.kr/Image/backissues/V50-549.compressed.pdf",
+      "pages": {
+        "file": [
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "printed": [
+          68,
+          69,
+          70,
+          71,
+          72,
+          73
+        ]
+      },
+      "date": {
+        "publicationYearInPages": 2015,
+        "exactIssueMonth": null,
+        "pdfCreated": "2018-06-18",
+        "photoCapture": null,
+        "designPeriod": "2009-11-23~2010-03-15",
+        "constructionPeriod": "2010-09-10~2012-12-26"
+      },
+      "observed": [
+        "1층과 2층 평면도는 대부분의 저층을 원기둥과 열린 바닥으로 표현한다. 넓은 실내 상부는 3층부터 시작한다.",
+        "1층 도면의 오른쪽 아래는 주출입구, 왼쪽 작은 코어 앞은 부출입구로 표기되어 있다. 주출입구 앞으로 짧은 계단과 포장, 모서리의 곡선 보행 공간이 이어진다.",
+        "중앙 선큰 북서단에 두 계단열과 반환 참이 그려져 있다. 두 계단열의 디딤판 선은 도면 좌우 방향의 계단 진행을 나타낸다.",
+        "서쪽 카페 외부에는 목재 데크, 긴 목재 테이블과 흰 의자, 식재 경사면, 낮은 돌 경계가 보인다.",
+        "열린 필로티 사진에는 회색 줄무늬 포장, 낮은 식재 섬, 짧은 계단과 금속 난간이 보인다.",
+        "단면은 지상 1층의 카페, 그 위 부분 2층, 위쪽의 넓은 세 층과 지하 두 층을 구분한다."
+      ],
+      "orientationEvidence": "인쇄69쪽은 교수연구동을 남측으로 설명한다. 인쇄71쪽 3층과 5층 도면의 교수연구실 띠는 맨 위다. 이 설명과 NW 현관/서면 카페 사진을 대조하면 도면을 지도에 약180도 돌려 대응하는 해석이 타당하다.",
+      "limits": "공사기간과 사진 촬영일은 다르다. 제공 도면에는 전체 높이 치수가 없고, 창과 기둥의 치수는 실측하지 않았다. 외부 가구는 사진 당시 상태다."
+    },
+    {
+      "id": "isams-2019",
+      "pageURL": "https://www.isams.kr/2019/venu.html",
+      "images": [
+        {
+          "url": "https://www.isams.kr/2019/assets/images/20190402-aj-1524-2000x1333.jpg"
+        },
+        {
+          "url": "https://www.isams.kr/2019/assets/images/20190402-aj-1517-1140x760.jpg"
+        }
+      ],
+      "date": {
+        "conference": "2019-10-05~2019-10-06",
+        "capture": null,
+        "filenameDateHint": "2019-04-02",
+        "warning": "파일명의 날짜는 촬영일 추정 단서다. 촬영일 EXIF는 없었다."
+      },
+      "observed": [
+        "영문 간판이 달린 은색 문틀의 유리문 두 쌍, 문 앞 검은 매트, 노란 점자블록과 유도선이 보인다.",
+        "회색 직사각 포장에 넓은 밝은 띠와 좁은 어두운 띠가 반복된다.",
+        "큰 전경의 모서리와 현관, 카페 위치가 공식 사진과 일치한다."
+      ],
+      "limits": "2019년 자료이므로 현재 점포 간판, 장식과 가구를 그대로 유지한다고 단정하지 않는다. 원본 사진은 조사 참고용이며 배포 자산에 포함하지 않는다."
+    },
+    {
+      "id": "official-facilities",
+      "urls": [
+        "https://eng.snu.ac.kr/about/support-facilities/GECE",
+        "https://snu38.snu.ac.kr/sub/content.php?co_id=convenience1",
+        "https://snu38.snu.ac.kr/sub/content.php?co_id=conference2"
+      ],
+      "images": [
+        "official-gece-overall.jpg",
+        "official-1f.jpg",
+        "official-b1.jpg",
+        "b1-plan.png"
+      ],
+      "directImageURLs": [
+        "https://eng.snu.ac.kr/resources/snu/img/sub/depth1/sub_bg09_2.jpg",
+        "https://eng.snu.ac.kr/resources/snu/img/sub/depth1/cont5_4_thum5.jpg",
+        "https://eng.snu.ac.kr/resources/snu/img/sub/depth1/cont5_4_thum7.jpg",
+        "https://snu38.snu.ac.kr/img/content/conference1_floorplan2.png"
+      ],
+      "observed": [
+        "공대 공식 층별 안내는 1층 로비/BBQ, B1 다목적홀과 편의시설, B2 주차장을 구분한다.",
+        "현재 공개 페이지는 락구정을 지하1층으로 안내한다. 현관 사진은 목재 세로 부재와 유리문을 보여 준다."
+      ],
+      "limits": "사진 촬영일은 공개되지 않았다. 실내 시설 사진을 외부 별도 출입구의 위치 근거로 사용하지 않았다."
+    },
+    {
+      "id": "official-brochure",
+      "url": "https://snu38.snu.ac.kr/img/brochure.pdf",
+      "documentDate": "2020-09",
+      "observed": [
+        "5층과 B1의 간략 평면이 수록되어 있다. B1 빈 공간의 위치는 별도 CAD 도면과 일치한다."
+      ],
+      "limits": "일부 글꼴은 로컬 Poppler에서 표시되지 않았으므로 도면 형상만 참고했다. 상세 판단은 CAD PDF와 건축 잡지 원도면을 우선했다."
+    }
+  ],
+  "principalFindings": [
+    "2015년 건축사 잡지의 1층과 2층 평면도는 서쪽 로비/카페와 동쪽 소형 코어를 제외한 저층 대부분을 열린 필로티로 그린다. 기존 모델의 넓은 직사각형 저층 벽은 이 자료와 맞지 않는다.",
+    "넓은 상부는 3층부터 5층까지 세 층이다. 서쪽 로비/카페 위에는 부분 2층이 있다. 공식 전체 규모인 지상 5층과 상부 창층 세 개를 구분한다.",
+    "잡지 설명문의 남측 교수연구동과 3층/5층 도면 맨 위 교수연구실 띠를 대조하면 도면 위는 남쪽, 아래는 북쪽, 오른쪽은 서쪽이다. 북서 모서리의 곡선 보행 공간과 북면 주출입구도 사진 및 지도와 맞는다.",
+    "선큰은 중앙 북쪽에 있으며, 계단은 선큰 북서쪽에 붙는다. 두 계단열은 동서로 나란히 왕복하고 서쪽 참에서 되돌아가는 배치로 읽힌다. 남북 직선 계단으로 해석하지 않는다.",
+    "북면 서쪽의 주출입구 계단과 지도 s 약39.5의 북쪽 중앙 계단은 별도로 다루어야 한다. 사진의 가까운 짧은 계단을 지도 중앙 계단에 바로 대응하지 않는다."
+  ],
+  "orientation": "인쇄69쪽은 교수연구동을 남측으로 설명한다. 인쇄71쪽 3층과 5층 도면의 교수연구실 띠는 맨 위다. 이 설명과 NW 현관/서면 카페 사진을 대조하면 도면을 지도에 약180도 돌려 대응하는 해석이 타당하다.",
+  "corrections": [
+    {
+      "previous": "상부 네 층과 넓은 저층 유리 상자",
+      "current": "상부 3~5층과 서쪽 부분 2층, 대부분 열린 필로티"
+    },
+    {
+      "previous": "후퇴한 저층 벽만 있고 선큰과 출입 계단은 없음",
+      "current": "서쪽 현관과 카페, 동쪽 소형 코어, 중앙 선큰과 왕복 계단, 도로 접근로"
+    }
+  ],
+  "implemented": [
+    "북면 서쪽 현관의 유리문 두 쌍, 은색 문틀과 영문 간판, 점자블록",
+    "북쪽 현관 계단, 지도 중앙 계단과 동쪽 보행 진입로, 도로 옆 보도",
+    "열린 필로티, 줄무늬 포장과 원형 기둥, 서쪽 카페와 부분 2층",
+    "중앙 선큰의 하부 유리벽과 화분, 위층 난간과 곡선 코어",
+    "선큰 북서쪽의 동서 왕복 계단 두 구간과 서쪽 중간참",
+    "카페 쪽 목재 데크와 테이블, 흰 의자 및 사진의 카페 간판"
+  ],
+  "estimated": {
+    "heightMeters": 23.5,
+    "pilotiSoffitAboveEntryMeters": 9.4,
+    "partialSecondFloorMeters": 4.4,
+    "sunkenDepthMeters": 3.6,
+    "sunkenSteps": [
+      12,
+      12
+    ],
+    "entrySteps": 9,
+    "entryRiseMeters": 1.08,
+    "entryFloorRule": "북쪽 현관 앞 도로 표본보다 1.53m 높게 둔다. 짧은 계단과 경사진 진입면을 연결하기 위한 게임 근사다.",
+    "sunkenFlightOrder": "동쪽 상단에서 서쪽 참으로 내려간 뒤 동쪽 하단으로 돌아간다. 도면의 계단 방향은 대조했지만 실제 상하 시작점은 미확인이다.",
+    "geometry": "OSM 외곽과 도면 비례를 대조한 근사이며 정확한 현장 좌표나 치수가 아니다.",
+    "furniture": "사진 당시 가구의 형태를 참고했다. 개수와 배치는 게임 근사이며 현재 운영 상태를 확인하지 않았다."
+  },
+  "preservation": {
+    "rawOsmChanged": false,
+    "rawDemChanged": false,
+    "referencePhotosOrDrawingsDistributed": false,
+    "speedsChanged": false,
+    "wholeInteriorImplemented": false
+  },
+  "remaining": [
+    "현재 거리뷰에 따른 간판과 가구 상태 확인",
+    "남쪽 주차 램프와 동쪽 부출입구의 세부 연결",
+    "상부 두 채광 공간과 지붕 설비",
+    "전체 실내 및 승강기 작동"
+  ],
+  "validation": {
+    "status": "passed-with-visual-limit",
+    "script": "scripts/verify-engineering38.mjs",
+    "browser": false,
+    "phone": false,
+    "limit": "이전 자동 승인 검토가 브라우저 실행을 차단했다. 오프라인 기하 렌더와 물리 검사로 범위를 구분한다.",
+    "checks": 22,
+    "failed": 0,
+    "movementRoutes": 14,
+    "movementRuns": 56,
+    "speeds": [
+      7.8,
+      10.4
+    ],
+    "geometry": {
+      "meshes": 7,
+      "triangles": 53232,
+      "colliders": 689,
+      "textures": 3
+    },
+    "terrain": {
+      "name": "terrain topology and collider height agree",
+      "status": "PASS",
+      "triangles": 205258,
+      "localTriangles": 1084,
+      "interiorOpenEdges": 0,
+      "invalidTriangles": 0,
+      "maxHeightDifference": 1.8808066215569852e-10,
+      "maxPhysicalDifference": 0.0000011592977315899589,
+      "physicalSamples": 181,
+      "physicalTolerance": 0.005,
+      "scope": "최종 Float32 정점과 전체 인덱스의 내부 닫힘을 검사한다. 국소 삼각형 중심에서 실제 메시 평면과 높이 함수를 대조하고 약 160개 표본은 실제 Rapier 지형 충돌체와 직접 비교한다. Float32의 길고 좁은 삼각형에서 생기는 계산 오차를 고려해 물리 높이 허용치는 5mm로 정한다."
+    },
+    "controls": 31,
+    "runtimeCoordinates": 19,
+    "legacyExteriorRegression": 8,
+    "build": "passed",
+    "visual": "실제 장면의 오프라인 CPU 정사영 렌더에서 상부 세 층, 열린 필로티와 서쪽 블록을 확인했다. 상부를 숨긴 검토 뷰로 가운데 낮은 마당, 계단, 난간과 현관을 확인했다. WebGL 재질이나 실제 브라우저 및 휴대폰 검사는 아니다."
+  }
+}

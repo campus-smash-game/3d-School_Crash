@@ -4,7 +4,7 @@
   "name": "글로벌공학교육센터",
   "module": "src/globalEngineeringLandmark.ts",
   "landmark": "global-engineering",
-  "status": "custom-model-applied-partial",
+  "status": "custom-model-superseded-by-access-refinement",
   "sourceReferences": [
     {
       "url": "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=47",
@@ -143,5 +143,9 @@
     },
     "limitation": "CPU 정사영은 텍스처, WebGL 재질과 반사, 그림자를 검증하지 않는다. 건물과 지형의 현재 기하를 확인한 결과다.",
     "browserVerified": false
+  },
+  "followUp": {
+    "record": "sources/engineering38-access-photo-notes.json",
+    "correction": "2026년 11월 7일 건축 도면을 대조해 상부 네 층을 세 층으로 정정하고, 서쪽 부분 2층과 열린 필로티, 선큰을 구현했다. 아래 초기 모델의 수치와 검증 기록은 변경 전 상태를 설명한다."
   }
 }

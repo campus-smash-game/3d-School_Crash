@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import ts from 'typescript';
@@ -8,7 +8,7 @@ import RAPIER from '@dimforge/rapier3d-compat';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const artifacts = path.join(root, 'artifacts/global-engineering-test'); await mkdir(artifacts, { recursive: true });
-for (const name of ['terrain', 'physics', 'observedAppearances', 'buildingAppearance', 'globalEngineeringLandmark', 'engineering301303Site', 'livingScienceCourtyardSite', 'educationParkingSite', 'educationParkingTerrain', 'dining76Site', 'dining76Terrain', 'dining76EastSite', 'dining76EastTerrain', 'education101EntrySite', 'education101EntryTerrain', 'education12Site', 'education12Terrain', 'humanitiesGardenSite', 'humanitiesGardenTerrain']) {
+for (const name of (await readdir(path.join(root, 'src'))).filter(file => file.endsWith('.ts')).map(file => file.slice(0, -3))) {
   const source = await readFile(path.join(root, `src/${name}.ts`), 'utf8');
   const compiled = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText;
   await writeFile(path.join(artifacts, `${name}.mjs`), compiled.replace(/from '(\.\/[\w-]+)'/g, "from '$1.mjs'"));
@@ -46,7 +46,7 @@ function collisionVerifier(sim) {
 const data = JSON.parse(await readFile(path.join(root, 'public/data/campus.json'), 'utf8'));
 const elevation = JSON.parse(await readFile(path.join(root, 'public/data/terrain.json'), 'utf8'));
 const building = data.buildings.find(b => b.id === 'way/93549089'); assert.ok(building, 'reviewed building 38 footprint missing');
-const terrain = createTerrain(new THREE.Scene(), elevation, data.buildings), scene = new THREE.Scene();
+const terrain = createTerrain(new THREE.Scene(), elevation, data.buildings, { engineering38: false }), scene = new THREE.Scene();
 const profile = getBuildingAppearance(building), model = createGlobalEngineeringLandmark(scene, building, profile, terrain.heightAt);
 const shell = scene.children.find(object => object.userData.buildingId === building.id && object.userData.role === 'building-shell'); assert.ok(shell);
 const meshes = shell.children.filter(object => object.isMesh), originals = meshes.map(mesh => mesh.geometry.attributes.position.array.slice()); scene.updateMatrixWorld(true);
