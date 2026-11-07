@@ -137,6 +137,10 @@ function fixture({ coarse = true, pointerLock = false, width = 390, height = 844
 function start(f) {
   if (!f.get('travel-select').children.length) f.controls.setShuttleStops(campusStops);
   f.controls.setReady();
+  if (!f.get('travel-select').value) {
+    f.get('travel-select').value = f.get('travel-select').children.find(option => option.value)?.value ?? '';
+  }
+  emit(f.get('travel-select'), 'change');
   emit(f.get('start-button'), 'click');
   assert.equal(f.controls.active, true);
 }
@@ -188,7 +192,7 @@ try {
     const calls = [];
     f.controls.onStart = (id) => calls.push(id);
     f.controls.setShuttleStops([{id:'shuttle-gate',name:'정문'},{id:'shuttle-301',name:'301동'}]);
-    assert.deepEqual(f.get('travel-select').children.map(option=>option.value),['shuttle-gate','shuttle-301']);
+    assert.deepEqual(f.get('travel-select').children.map(option=>option.value),['','shuttle-gate','shuttle-301']);
     f.get('travel-select').value='shuttle-301';
     start(f);
     assert.deepEqual(calls,['shuttle-301']);
@@ -218,7 +222,7 @@ try {
     const starts=[],travels=[],expected=campusStops.map(stop=>stop.id);
     f.controls.onStart=id=>starts.push(id);f.controls.onTravel=id=>travels.push(id);
     f.controls.setShuttleStops(campusStops);f.controls.setReady();
-    const assertStops=()=>assert.deepEqual(f.get('travel-select').children.map(option=>option.value),expected);
+    const assertStops=()=>assert.deepEqual(f.get('travel-select').children.map(option=>option.value).filter(Boolean),expected);
     assertStops();f.get('travel-select').value=expected[4];emit(f.get('start-button'),'click');
     assert.deepEqual(starts,[expected[4]]);assertStops();
     const pauseEntries=[()=>emit(f.document,'keydown',{code:'Escape',repeat:false}),()=>emit(f.document,'keydown',{code:'KeyM',repeat:false}),()=>emit(f.get('pause-button'),'click'),()=>emit(f.get('map-button'),'click')];
@@ -245,9 +249,49 @@ try {
     emit(f.get('start-button'), 'click');
     assert.equal(f.controls.active, false);
     f.controls.setShuttleStops([{ id: 'gate', name: '정문' }]);
+    assert.equal(f.get('start-button').disabled, true, 'loading stops must not silently select the first location');
+    assert.equal(f.get('start-label').textContent, '시작 위치를 선택하세요');
+    emit(f.get('start-button'), 'click');
+    assert.equal(f.controls.active, false);
+    f.get('travel-select').value = 'gate';
+    emit(f.get('travel-select'), 'change');
     assert.equal(f.get('start-button').disabled, false);
     assert.equal(f.get('travel-button').disabled, false);
     assert.equal(f.get('quality').disabled, false);
+  });
+
+  for (const coarse of [false, true]) check('a stop can be chosen during loading and is retained for first entry '+(coarse?'touch':'desktop'), (f) => {
+    const starts=[];
+    f.controls.onStart=id=>starts.push(id);
+    f.controls.setShuttleStops(campusStops);
+    assert.equal(f.get('travel-select').disabled,false);
+    assert.equal(f.get('travel-select').value,'');
+    assert.equal(f.get('travel-select').children[0].disabled,true);
+    const id=campusStops.at(-1).id;
+    f.get('travel-select').value=id;
+    emit(f.get('travel-select'),'change');
+    assert.equal(f.get('start-button').disabled,true);
+    emit(f.get('start-button'),'click');
+    emit(f.get('travel-button'),'click');
+    assert.deepEqual(starts,[]);
+    f.controls.setReady();
+    assert.equal(f.get('travel-select').value,id);
+    assert.equal(f.get('start-label').textContent,'선택한 위치에서 시작');
+    assert.equal(f.get('start-button').disabled,false);
+    emit(f.get('start-button'),'click');
+    assert.deepEqual(starts,[id]);
+    assert.equal(f.get('travel-select').children.length,campusStops.length);
+  },{coarse,pointerLock:!coarse});
+
+  check('late stop data cannot re-enable selection after a loading error', (f) => {
+    f.controls.setError('Initialization failed');
+    f.controls.setShuttleStops(campusStops);
+    for (const id of ['start-button','travel-select','travel-button']) assert.equal(f.get(id).disabled,true);
+    f.get('travel-select').value=campusStops[0].id;
+    emit(f.get('travel-select'),'change');
+    emit(f.get('start-button'),'click');
+    assert.equal(f.controls.active,false);
+    assert.equal(f.get('ui').dataset.state,'error');
   });
 
   check('three touch pointers independently move, look, and fire', (f) => {
@@ -334,6 +378,8 @@ try {
   check('a touch on a hybrid device activates mobile controls before play', (f) => {
     f.controls.setShuttleStops(campusStops);
     f.controls.setReady();
+    f.get('travel-select').value=campusStops[0].id;
+    emit(f.get('travel-select'),'change');
     emit(f.get('start-button'), 'pointerdown', { pointerId: 1, pointerType: 'touch' });
     emit(f.get('start-button'), 'click');
     assert.equal(f.document.body.classList.contains('touch'), true);

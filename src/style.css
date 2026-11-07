@@ -31,3 +31,23 @@ body.touch .desktop-only{display:none!important}body.touch .touch-only{display:f
 @media(max-height:520px) and (orientation:landscape){.move-zone{top:30%}.joystick{width:96px;height:96px}.touch-actions{right:max(25px,calc(env(safe-area-inset-right) + 16px));bottom:max(23px,calc(var(--safe-bottom) + 13px));width:164px;height:169px}.jump-action{width:80px;height:80px}.jump-action svg{width:36px;height:36px}.attack-action{width:68px;height:68px;bottom:96px}.move-label{bottom:max(32px,calc(var(--safe-bottom) + 18px));left:max(42px,calc(env(safe-area-inset-left) + 18px));font-size:9px}.look-hint{bottom:max(9px,calc(var(--safe-bottom) + 2px));font-size:8px}body.touch .bottom-hud{left:50%;bottom:max(14px,var(--safe-bottom));transform:translateX(-50%);gap:12px}.minimap-panel{width:88px}.map-caption{padding:5px 6px}}
 @media(max-width:359px){.touch-actions{width:148px;right:max(14px,calc(env(safe-area-inset-right) + 10px))}.jump-action{width:76px;height:76px}.attack-action{width:64px;height:64px;bottom:92px}.move-label{font-size:8px;left:20px}}
 .loading-progress{display:none;margin-top:14px;max-width:280px}.loading-progress progress{width:100%;height:5px;accent-color:var(--blue)}.loading-progress p{margin:7px 0 0;font-size:12px;color:var(--muted)}[data-state="loading"] .loading-progress{display:block}
+
+#welcome{align-items:flex-start;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;pointer-events:auto;padding:max(116px,calc(env(safe-area-inset-top) + 88px)) 0 max(64px,calc(var(--safe-bottom) + 32px))}
+#welcome .welcome-content{flex-shrink:0;width:min(480px,calc(100% - 48px));padding:0;margin: auto 0 auto 7.2vw}
+#welcome h1{font-size:clamp(38px,4.5vw,60px);letter-spacing:-2.5px;margin:20px 0 16px}
+#welcome .intro{margin-bottom:24px}
+.entry-actions{width:100%}
+.entry-actions .travel-panel{position:static;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;width:100%;max-width:none;margin:0 0 16px;padding:0;border:0;border-radius:0;background:none}
+.entry-actions .travel-panel>label{grid-column:1/-1;font-size:14px;font-weight:700;color:var(--ink)}
+.entry-actions .travel-panel select{width:100%;max-width:none;min-height:56px;height:56px;padding:0 16px;font-size:16px;font-weight:600;border:2px solid #9eb3d6;border-radius:11px;background:#f8fbff;color:var(--ink);cursor:pointer}
+.entry-actions .travel-panel select:disabled{cursor:wait}
+.entry-actions .travel-panel button{min-height:56px;height:56px;padding:0 18px;font-size:14px}
+.entry-actions .start-button{width:100%;min-width:0;min-height:56px;font-size:15px;padding:16px 20px}
+.entry-actions .start-button:disabled{cursor:default}
+.entry-actions .loading-progress{max-width:none}
+[data-state="loading"] #travel-button,[data-state="landing"] #travel-button{display:none}
+[data-state="loading"] #travel-select,[data-state="landing"] #travel-select{grid-column:1/-1}
+[data-state="error"] .entry-actions{display:none}
+@media(max-width:600px){#welcome{padding-top:max(104px,calc(env(safe-area-inset-top) + 84px));padding-bottom:max(48px,calc(var(--safe-bottom) + 24px))}#welcome .welcome-content{margin-left:24px}#welcome h1{font-size:40px;margin:18px 0 14px}#welcome .intro{font-size:13px;margin-bottom:20px}#welcome .welcome-controls{margin-top:20px;line-height:1.7}}
+@media(max-height:600px){#welcome .scene-caption{display:none}}
+@media(max-height:520px) and (orientation:landscape){#welcome{padding-top:max(84px,calc(env(safe-area-inset-top) + 70px));padding-bottom:max(28px,calc(var(--safe-bottom) + 16px))}#welcome .welcome-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;width:calc(100% - 84px - env(safe-area-inset-left) - env(safe-area-inset-right));max-width:880px;margin-left:max(42px,calc(env(safe-area-inset-left) + 24px))}#welcome .eyebrow{display:none}#welcome h1{grid-column:1;grid-row:1;font-size:36px;margin:0 0 10px}#welcome .intro{grid-column:1;grid-row:2;font-size:12px;margin:0}#welcome .entry-actions{grid-column:2;grid-row:1/3;align-self:center}#welcome .welcome-controls{grid-column:1/-1;margin-top:18px}#welcome .error-message,#welcome .reload-button{grid-column:1/-1}}

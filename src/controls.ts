@@ -71,6 +71,7 @@ export class Controls {
     this.startButton.addEventListener('click', () => this.start());
     byId('reload-button').addEventListener('click', () => window.location.reload());
     byId('map-button').addEventListener('click', () => this.openTravel());
+    byId('travel-select').addEventListener('change', () => this.setSettingsDisabled(!this.ready));
     byId('travel-button').addEventListener('click', () => {
       if (!this.ready || !this.locationsAvailable) return;
       const select = byId<HTMLSelectElement>('travel-select');
@@ -148,8 +149,6 @@ export class Controls {
   setReady(): void {
     this.ready = true;
     this.ui.dataset.state = 'landing';
-    this.startButton.disabled = false;
-    this.startLabel.textContent = '캠퍼스 들어가기';
     this.setSettingsDisabled(false);
   }
 
@@ -159,8 +158,8 @@ export class Controls {
     this.lockRequested = false;
     this.clearInput();
     this.startButton.disabled = true;
-    this.setSettingsDisabled(true);
     this.ui.dataset.state = 'error';
+    this.setSettingsDisabled(true);
     this.title.textContent = '잠시 멈췄어요.';
     this.description.textContent = '게임 화면을 다시 불러와 주세요.';
     byId('error-message').textContent = message;
@@ -168,17 +167,22 @@ export class Controls {
   }
 
   private setSettingsDisabled(disabled: boolean): void {
-    this.startButton.disabled = disabled || (!this.hasStarted && !this.locationsAvailable);
+    const select = byId<HTMLSelectElement>('travel-select');
+    const selected = this.shuttleStops.some(stop => stop.id === select.value);
+    this.startButton.disabled = disabled || (!this.hasStarted && !selected);
+    if (this.ready && !this.hasStarted) {
+      this.startLabel.textContent = selected ? '선택한 위치에서 시작' : '시작 위치를 선택하세요';
+    }
     byId<HTMLSelectElement>('quality').disabled = disabled;
     byId<HTMLButtonElement>('sound-button').disabled = disabled;
     byId<HTMLButtonElement>('reset-button').disabled = disabled;
-    byId<HTMLSelectElement>('travel-select').disabled = disabled || !this.locationsAvailable;
-    byId<HTMLButtonElement>('travel-button').disabled = disabled || !this.locationsAvailable;
+    select.disabled = this.ui.dataset.state === 'error' || !this.locationsAvailable;
+    byId<HTMLButtonElement>('travel-button').disabled = disabled || !selected;
   }
 
   setShuttleStops(stops: { id: string; name: string }[]): void {
     this.shuttleStops = stops;
-    byId('travel-label').textContent = this.hasStarted ? '이동할 정류장' : '시작 정류장';
+    byId('travel-label').textContent = this.hasStarted ? '이동할 정류장' : '시작 위치';
     byId<HTMLSelectElement>('travel-select').setAttribute('aria-label', this.hasStarted ? '이동할 교내 셔틀 정류장' : '시작할 교내 셔틀 정류장');
     byId('travel-button-label').textContent = this.hasStarted ? '이동' : '여기서 시작';
     this.populateLocations(stops);
@@ -188,6 +192,13 @@ export class Controls {
     const select = byId<HTMLSelectElement>('travel-select');
     const previous = select.value;
     select.replaceChildren();
+    if (!this.hasStarted) {
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = locations.length ? '정류장을 선택하세요' : '선택할 정류장이 없습니다';
+      placeholder.disabled = true;
+      select.append(placeholder);
+    }
     for (const location of locations) {
       const option = document.createElement('option');
       option.value = location.id;
@@ -195,6 +206,7 @@ export class Controls {
       select.append(option);
     }
     if (locations.some((location) => location.id === previous)) select.value = previous;
+    else if (!this.hasStarted) select.value = '';
     this.locationsAvailable = locations.length > 0;
     this.setSettingsDisabled(!this.ready);
   }
@@ -215,7 +227,9 @@ export class Controls {
     const startId = !this.hasStarted
       ? byId<HTMLSelectElement>('travel-select').value : undefined;
     if (!this.hasStarted && !this.shuttleStops.some(stop => stop.id === startId)) return;
+    const firstStart = !this.hasStarted;
     this.hasStarted = true;
+    if (firstStart) this.populateLocations(this.shuttleStops);
     this.active = true;
     this.ui.dataset.state = 'playing';
     this.onStart?.(startId);

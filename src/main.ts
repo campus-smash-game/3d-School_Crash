@@ -35,7 +35,7 @@ async function boot(){
   const sun=new THREE.DirectionalLight('#fff0ce',3.1);sun.position.set(-35,70,30);sun.castShadow=true;
   sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-85,right:85,top:85,bottom:-85,near:1,far:250});sun.shadow.camera.updateProjectionMatrix();sun.shadow.normalBias=.08;sun.shadow.bias=-.0002;world.add(sun,sun.target);
   const camera=new THREE.PerspectiveCamera(innerWidth<innerHeight?78:65,innerWidth/innerHeight,.08,7500);camera.rotation.order='YXZ';scene.add(camera);
-  const [data,transitPlan,shuttleStops,{terrain,gate,campus,facilities}]=await Promise.all([load<CampusData>('data/campus.json'),load<TransitPlan>('data/campus-transit.json'),load<{stops:ShuttleStart[]}>('data/shuttle-stops.json'),loadCampus(world,progress),RAPIER.init()]);
+  const [data,transitPlan,shuttleStops,{terrain,gate,campus,facilities}]=await Promise.all([load<CampusData>('data/campus.json'),load<TransitPlan>('data/campus-transit.json'),load<{stops:ShuttleStart[]}>('data/shuttle-stops.json').then(data=>{controls.setShuttleStops(data.stops);return data;}),loadCampus(world,progress),RAPIER.init()]);
   data.roads=[...data.roads,...(transitPlan?.supplementalRoads??[])];
   const facilityUpdates=createDamageUpdates(facilities);
   const updateFacilities=facilityUpdates.update;
@@ -51,7 +51,6 @@ async function boot(){
   const traffic=await stage('버스와 자동차 준비 중',()=>new Traffic(world,data.roads,terrain.heightAt,transitPlan)),cannon=new Cannon(world,camera,sim,traffic,'render');
   const minimap=new Minimap(document.querySelector<HTMLCanvasElement>('#minimap')!,data);
   const locationLabels=[...shuttleStops.stops,{id:'gate',name:'정문 광장',x:gate.spawn.x,z:gate.spawn.z},...campus.locations.filter(l=>l.id!=='gate')];
-  controls.setShuttleStops(shuttleStops.stops);
   const debrisMesh=new THREE.InstancedMesh(new THREE.BoxGeometry(1,1,1),new THREE.MeshStandardMaterial({roughness:.75}),160);
   debrisMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);debrisMesh.frustumCulled=false;debrisMesh.castShadow=!mobile;debrisMesh.count=0;world.add(debrisMesh);
   // 데이터와 물리는 동/위/북 좌표를 유지하고, 표시 계층만 동/위/남으로 바꾼다.
