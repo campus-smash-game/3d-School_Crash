@@ -85,14 +85,15 @@ export function createEngineering39Exterior(scene:THREE.Scene,q:Engineering39Lay
   facade('west-court-south',face(0,b.n0,36,b.n0),q.researchFloor,4);
   facade('east-wing-north',face(e.s1,e.n1,36,e.n1),q.researchFloor,4,i===0);
   facade('east-wing-south',face(36,e.n0,e.s1,e.n0),q.researchFloor,4);
-  const end=face(e.s1,e.n0,e.s1,e.n1),L=end.length;
-  const screen=box('east-vertical-screen-backing',end,.2,L-.2,.08,.18,q.researchFloor,q.roof,0x52625b,'metal');
-  for(let s=.25;s<L-.2;s+=.23)box('east-vertical-louver',end,s,s+.045,-.2,.15,q.researchFloor+.2,q.roof-.2,wood,'wood',screen);
-  for(const s of[0,L])box('east-end-concrete-frame',end,s-.15,s+.15,-.25,.3,q.researchFloor-.3,q.roof+.3,concrete);
-  for(let floor=0;floor<=4;floor++)box('east-screen-crossbar',end,0,L,-.26,.3,q.researchFloor+floor*3.5-.16,q.researchFloor+floor*3.5+.12,concrete,'stone',screen);
-  if(i===0)label('east-building-number','39',end,L*.78,-.29,q.roof-1.5,1.4,1.4,screen,'#52625b','#ffffff');
-  // 서쪽 끝면은 직접 확인한 사진이 부족해 단순 창과 콘크리트로 남긴다.
-  facade('west-estimated-end',face(0,b.n1,0,b.n0),q.researchFloor,4);
+  // 37동 서쪽 촬영점과 북쪽 도로를 대조해 세로 차양을 서쪽 끝면에 대응한다.
+  const end=face(0,b.n1,0,b.n0),L=end.length;
+  const screen=box('west-vertical-screen-backing',end,.2,L-.2,.08,.18,q.researchFloor,q.roof,0x52625b,'metal');
+  for(let s=.25;s<L-.2;s+=.23)box('west-vertical-louver',end,s,s+.045,-.2,.15,q.researchFloor+.2,q.roof-.2,wood,'wood',screen);
+  for(const s of[0,L])box('west-end-concrete-frame',end,s-.15,s+.15,-.25,.3,q.researchFloor-.3,q.roof+.3,concrete);
+  for(let floor=0;floor<=4;floor++)box('west-screen-crossbar',end,0,L,-.26,.3,q.researchFloor+floor*3.5-.16,q.researchFloor+floor*3.5+.12,concrete,'stone',screen);
+  if(i===0)label('west-building-number','39',end,L*.22,-.29,q.roof-1.5,1.4,1.4,screen,'#52625b','#ffffff');
+  // 반대쪽 끝면의 세부 사진은 부족하므로 단순 창으로 남긴다.
+  facade('east-estimated-end',face(e.s1,e.n0,e.s1,e.n1),q.researchFloor,4);
  }
  for(const [s0,s1,n0,n1,rows]of[[36,42,-84,-9.2,4],[10,12.5,-84,-9.2,2]]){
   const bottom=q.roof-rows*3.5;
@@ -104,11 +105,13 @@ export function createEngineering39Exterior(scene:THREE.Scene,q:Engineering39Lay
  for(const s of[4,15,26,44,55])for(const n of[-.1,-8]){
   beam('round-piloti-column',at(f,s,q.lower,n),at(f,s,q.researchFloor-.3,n),.48,concrete);
  }
- // 큰 계단 위쪽 차양은 보행 머리 공간을 확보한다.
- for(const [s0,s1]of[[0,28],[43,58.5]]){const c=box('north-canopy-side',f,s0,s1,-9,1.8,q.lower+4.1,q.lower+4.32,0xa3aaa0);box('north-canopy-soffit',f,s0,s1,-9,1.8,q.lower+4.07,q.lower+4.1,0x65736b,'metal',c);}
- box('north-canopy-front-lip',f,28,43,.8,1.8,q.lower+4.1,q.lower+4.32,0xa3aaa0);
- // 북쪽 상부의 열린 층은 얇은 테두리와 유리 후면으로 구분한다.
- const entry=face(23,-8.6,10,-8.6),entryWidth=entry.length;
+ // 앞 차양은 연속된 면이다. 큰 계단은 이 차양 뒤쪽의 낮은 마당에서 시작한다.
+ const canopy=box('north-continuous-canopy',f,-.3,58.5,-8,1.8,q.lower+4.1,q.lower+4.32,0xa3aaa0);
+ box('north-canopy-soffit',f,-.3,58.5,-8,1.8,q.lower+4.07,q.lower+4.1,0x65736b,'metal',canopy);
+ for(let s=1;s<58;s+=2.4)box('soffit-panel-joint',f,s,s+.016,-8,1.8,q.lower+4.064,q.lower+4.07,0x49594e,'metal',canopy);
+ for(let n=-6.5;n<1.8;n+=2.4)box('soffit-panel-cross-joint',f,-.3,58.5,n,n+.016,q.lower+4.064,q.lower+4.07,0x49594e,'metal',canopy);
+ for(const s of[8,19,32,46,54])for(const n of[-5,.2])box('soffit-recessed-light',f,s-.12,s+.12,n-.12,n+.12,q.lower+4.059,q.lower+4.065,0xe8e6cd,'metal',canopy);
+ const entry=face(46.55,-8.6,33.55,-8.6),entryWidth=entry.length;
  const header=box('entry-sign-header',entry,0,entryWidth,-.12,.15,q.lower+2.65,q.lower+3.25,0xaaa99c);
  label('entry-engineering-sign','39 ENGINEERING',entry,entryWidth/2,-.14,q.lower+2.95,7.7,.48,header,'#aaa99c','#9a583c');
  for(let i=0;i<8;i++){const a=i*entryWidth/8,b=(i+1)*entryWidth/8,door=i===3||i===4,pane=box(door?'entry-glass-door':'entry-fixed-window',entry,a+.035,b-.035,.02,.10,q.lower+.03,q.lower+2.64,glass,'glass');for(const s of[a,b])box('entry-door-frame',entry,s-.025,s+.025,-.03,.12,q.lower,q.lower+2.65,metal,'metal',pane);if(door)box('entry-door-handle',entry,(a+b)/2-.025,(a+b)/2+.025,-.16,-.08,q.lower+.9,q.lower+1.35,0xc5cbc0,'metal',pane);}
@@ -116,7 +119,7 @@ export function createEngineering39Exterior(scene:THREE.Scene,q:Engineering39Lay
  box('entry-back-wall',entry,0,entryWidth,1.4,1.55,q.lower,q.lower+2.65,concrete);
  for(const s of[0,entryWidth])box('entry-side-wall',entry,s-.05,s+.05,0,1.5,q.lower,q.lower+2.65,concrete);
  // 중정의 화단, 벤치와 지주목은 사진의 유형을 참고한 근사 배치다.
- for(const [s,n,y]of[[31.5,-20,q.upper],[31.5,-46,q.second],[28,-79,q.third]]){
+ for(const [s,n,y]of[[15,-18,q.lower],[31.5,-50,q.second],[28,-79,q.third]]){
   const planter=box('court-brick-planter',f,s-1.5,s+1.5,n-1.6,n+1.6,y,y+.48,0x8c6853);
   box('court-planter-soil',f,s-1.35,s+1.35,n-1.45,n+1.45,y+.48,y+.5,0x526447,'stone',planter);
   for(const edge of[-1.5,1.5])box('court-wood-bench',f,s-1.7,s+1.7,n+edge-.18,n+edge+.18,y+.48,y+.59,0x8c7850,'wood',planter);
@@ -126,10 +129,25 @@ export function createEngineering39Exterior(scene:THREE.Scene,q:Engineering39Lay
   const lamp=box('court-bollard-lamp',f,s-2.4,s-2.2,n-.1,n+.1,y,y+.8,0x485a4a,'metal');box('court-lamp-white-lens',f,s-2.41,s-2.19,n-.11,n+.11,y+.6,y+.74,0xe1dec5,'metal',lamp);
  }
  function rail(s0:number,n0:number,s1:number,n1:number,y0:number,y1=y0){const owner=beam('stair-handrail',at(f,s0,y0+1,n0),at(f,s1,y1+1,n1),.03,metal);const count=Math.max(1,Math.ceil(Math.hypot(s1-s0,n1-n0)/1.5));for(let i=0;i<=count;i++){const t=i/count,s=s0+(s1-s0)*t,n=n0+(n1-n0)*t,y=y0+(y1-y0)*t;beam('stair-rail-post',at(f,s,y,n),at(f,s,y+1,n),.025,metal,owner);}beam('stair-rail-middle',at(f,s0,y0+.5,n0),at(f,s1,y1+.5,n1),.02,metal,owner);}
- for(const s of[29.2,41.8])rail(s,-9,s,-1,q.upper,q.lower);
- for(const s of[21.6,24.4])rail(s,-33,s,-24,q.second,q.upper);
+ for(const s of[16.7,29.3])rail(s,-33,s,-24,q.upper,q.lower);
  for(const s of[15.9,18.7])rail(s,-65,s,-55,q.third,q.second);
- rail(57,-7.8,61.5,-7.8,q.lower,q.lower-1.44);
+ rail(-4.5,-7.8,0,-7.8,q.lower-1.44,q.lower);
+ for(const s of[48.1,50.4])rail(s,-16,s,-10,q.lower+1.75,q.lower);
+ for(const s of[51.9,54.2])rail(s,-16,s,-12,q.lower+1.75,q.upper);
+ rail(48.1,-17.9,54.2,-17.9,q.lower+1.75);
+ rail(31.65,-32,31.65,-12,q.upper);
+ rail(31.65,-9.15,54.7,-9.15,q.upper);
+ // 현관 위 콘크리트 난간과 후퇴한 유리면은 사진에서 확인한 형태다.
+ box('entry-gallery-concrete-parapet',f,33.55,46.55,-9.15,-8.95,q.upper,q.upper+.72,concrete);
+ const galleryBack=face(47,-12.3,34,-12.3);
+ facade('entry-upper-recessed-glazing',galleryBack,q.upper,1);
+ for(const s of[33.55,46.55])box('entry-gallery-square-pier',f,s-.12,s+.12,-11.9,-11.6,q.lower,q.researchFloor-.3,concrete);
+ // 큰 계단의 낮은 측벽은 보행 폭 밖에 둔다.
+ for(const s of[16.25,29.55]){
+  const vertices=[at(f,s,q.lower-.1,-24),at(f,s+.2,q.lower-.1,-24),at(f,s,q.lower+.8,-24),at(f,s+.2,q.lower+.8,-24),at(f,s,q.upper+.8,-33),at(f,s+.2,q.upper+.8,-33),at(f,s,q.lower-.1,-33),at(f,s+.2,q.lower-.1,-33)];part('main-stair-concrete-cheek',vertices,concrete);
+ }
+ const bench=box('piloti-timber-bench',f,5,9,-6.9,-6.3,q.lower+.4,q.lower+.5,0x86704f,'wood');
+ for(const s of[5.3,8.7])box('piloti-bench-leg',f,s,s+.08,-6.8,-6.4,q.lower,q.lower+.4,0x46584a,'metal',bench);
  for(const n of[-18.7,-46.3,-74.9]){const a=q.surfaces.filter(a=>a.name.startsWith('east-court-stair')&&Math.abs((a.n0+a.n1)/2-n)<.1),first=a[0],last=a.at(-1)!;rail(first.s0,n+1.2,last.s1,n+1.2,first.y0,last.y0);}
  const notice=box('north-blue-information-board',f,51,53,1.5,1.65,q.lower+.6,q.lower+1.65,0x46647e,'metal');
  for(const s of[51.2,52.8])beam('information-board-post',at(f,s,q.lower,1.6),at(f,s,q.lower+.7,1.6),.04,metal,notice);
@@ -139,7 +157,7 @@ export function createEngineering39Exterior(scene:THREE.Scene,q:Engineering39Lay
 
 
 
- shell.userData.engineering39Exterior={buildingId:ENGINEERING39_ID,dimensionsEstimated:true,wholeInteriorImplemented:false,officialAboveGroundFloors:5,officialBasementFloors:3,upperWindowRows:4,courtyardFurniturePlacementEstimated:true,westSouthFacadesApproximate:true,entryFrame:entry,entryFloor:q.lower,routes:q.routes,pavementMasks,bounds:q.bounds,geometry:{meshes:meshes.length+signs.length,textures:signs.length,triangles:batches.reduce((n,b)=>n+b.positions.length/9,0)+signs.length*2,colliders:breakables.length}};
+ shell.userData.engineering39Exterior={buildingId:ENGINEERING39_ID,dimensionsEstimated:true,wholeInteriorImplemented:false,officialAboveGroundFloors:5,officialBasementFloors:3,upperWindowRows:4,courtyardFurniturePlacementEstimated:true,eastSouthFacadesApproximate:true,northOrientationCorrected:true,mainStairCandidateOsmId:'way/460919050',upperGalleryConnectionEstimated:true,entryFrame:entry,entryFloor:q.lower,routes:q.routes,pavementMasks,bounds:q.bounds,geometry:{meshes:meshes.length+signs.length,textures:signs.length,triangles:batches.reduce((n,b)=>n+b.positions.length/9,0)+signs.length*2,colliders:breakables.length}};
  function update(_player:THREE.Vector3){batches.forEach((b,index)=>{const a=meshes[index].geometry.attributes.position as THREE.BufferAttribute,c=meshes[index].geometry.attributes.color as THREE.BufferAttribute;let moved=false,tinted=false;for(const p of b.parts){if(p.shown!==p.proxy.visible){p.shown=p.proxy.visible;moved=true;if(p.shown)(a.array as Float32Array).set(p.original,p.start);else for(let i=p.start;i<p.end;i+=3){a.array[i]=p.proxy.position.x;a.array[i+1]=p.proxy.position.y;a.array[i+2]=p.proxy.position.z;}}if(p.color!==p.proxy.material.color.getHex()){p.color=p.proxy.material.color.getHex();tinted=true;const t=p.proxy.material.color,scale=[t.r/p.base.r,t.g/p.base.g,t.b/p.base.b];for(let i=p.start;i<p.end;i++)c.array[i]=p.colors[i-p.start]*scale[(i-p.start)%3];}}if(moved)a.needsUpdate=true;if(tinted)c.needsUpdate=true;});for(const s of signs)s.mesh.visible=s.owner.visible;shell.visible=batches.some(b=>b.parts.some(p=>p.proxy.visible));}
  return{shell,breakables,update};
 }

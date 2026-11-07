@@ -153,15 +153,45 @@ try{
  });
  await check('damaged facade, column, sign and pavement remain visible at distance and reset exactly',()=>{
   const signature=()=>shell.children.filter(o=>o.isMesh).map(o=>sha(Buffer.from(o.geometry.attributes.position.array.buffer))),before=signature(),far=new THREE.Vector3(2000,30,1500);
-  for(const component of['entry-sign-header','entry-glass-door','research-wing-slab','east-wide-stair','stair-handrail','court-bollard-lamp','round-piloti-column','north-louver-frame','east-vertical-screen-backing']){
+  for(const component of['entry-sign-header','entry-glass-door','research-wing-slab','west-wide-stair','stair-handrail','court-bollard-lamp','round-piloti-column','north-louver-frame','west-vertical-screen-backing']){
    const t=sim.targets.find(t=>t.mesh.userData.buildingId==='way/179742154'&&t.mesh.userData.component===component);assert(t);sim.hit(t,100,new THREE.Vector3(0,0,1));env.update(far);assert(!t.mesh.visible);
   }
   assert(shell.visible);assert.notDeepEqual(signature(),before);sim.reset();env.update(far);assert.deepEqual(signature(),before);return{farVisible:true,resetExact:true};
  });
+
+ await check('north entrance and western screens agree with the photographed orientation',()=>{
+  const targets=sim.targets.filter(t=>t.mesh.userData.buildingId==='way/179742154'),screens=targets.filter(t=>t.mesh.userData.component==='west-vertical-screen-backing');assert.equal(screens.length,4);
+  for(const t of screens){const p=q.axis.local([t.mesh.position.x,t.mesh.position.z]);must(Math.abs(p.s)<.5,'Vertical screen is not on the western end',{local:p});}
+  assert(!targets.some(t=>t.mesh.userData.component==='east-vertical-screen-backing'));
+  const entry=shell.userData.engineering39Exterior.entryFrame.point(6.5),stairs=q.surfaces.filter(a=>a.name==='north-inner-stair');assert.equal(stairs.length,20);
+  assert(q.axis.local(entry).s>stairs[0].s1);
+  assert(stairs.every(a=>a.n0>=-33.001&&a.n1<=-23.999));
+  assert(!q.surfaces.some(a=>a.name==='first-underpass-stair'||a.name==='east-wide-stair'));
+  return{westernScreens:screens.length,entryEastOfMainStair:true,recessedStairSteps:stairs.length,duplicateStairRemoved:true,osmAlignment:'candidate'};
+ });
+ await check('continuous front canopy covers the piloti and galleries retain two walkable levels',()=>{
+  const samples=[];
+  for(const s of[8,20,28,35,42,50]){
+   const p=q.axis.point(s,-3),from=new THREE.Vector3(p[0],q.lower+.05,p[1]);sim.setFocus(from,true);sim.world.step();
+   const hit=sim.world.castRay(new R.Ray(from,up),5,true,R.QueryFilterFlags.EXCLUDE_DYNAMIC,undefined,sim.playerCollider,sim.player);must(hit&&hit.timeOfImpact>3.9&&hit.timeOfImpact<4.2,'Front canopy has a hole or obstructs the piloti',{s,distance:hit?.timeOfImpact});samples.push({s,clearance:hit.timeOfImpact});
+  }
+  for(const n of[-22,-20,-16,-14]){
+   const p=q.axis.point(34,n),from=new THREE.Vector3(p[0],q.lower+.05,p[1]);sim.setFocus(from,true);sim.world.step();
+   const hit=sim.world.castRay(new R.Ray(from,up),5,true,R.QueryFilterFlags.EXCLUDE_DYNAMIC,undefined,sim.playerCollider,sim.player);must(hit&&hit.timeOfImpact>3.1&&hit.timeOfImpact<3.5,'Upper gallery blocks the lower court',{n,distance:hit?.timeOfImpact});samples.push({n,clearance:hit.timeOfImpact});
+  }
+  return{samples,canopyContinuous:true,lowerCourtOpen:true};
+ });
+ await check('middle east passage has no planter or bench across its walking line',()=>{
+  const samples=[];
+  for(let s=28;s<=35;s+=.5){
+   const p=q.axis.point(s,-46.3),from=new THREE.Vector3(p[0],q.second+1.5,p[1]);sim.setFocus(from,true);sim.world.step();
+   const hit=sim.world.castRay(new R.Ray(from,down),2,true,R.QueryFilterFlags.EXCLUDE_DYNAMIC,undefined,sim.playerCollider,sim.player);must(hit&&Math.abs(hit.timeOfImpact-1.5)<.025,'Furniture crosses the east passage',{s,distance:hit?.timeOfImpact});samples.push({s,distance:hit.timeOfImpact});
+  }return{samples};
+ });
  await check('mobile geometry budget and approximation labels',()=>{
-  const meta=shell.userData.engineering39Exterior;assert(meta.dimensionsEstimated&&!meta.wholeInteriorImplemented);assert(meta.courtyardFurniturePlacementEstimated&&meta.westSouthFacadesApproximate);assert.equal(meta.officialAboveGroundFloors,5);assert.equal(meta.upperWindowRows,4);assert.equal(q.eastWings.length,4);
+  const meta=shell.userData.engineering39Exterior;assert(meta.dimensionsEstimated&&!meta.wholeInteriorImplemented);assert(meta.courtyardFurniturePlacementEstimated&&meta.eastSouthFacadesApproximate);assert.equal(meta.officialAboveGroundFloors,5);assert.equal(meta.upperWindowRows,4);assert.equal(q.eastWings.length,4);
   for(const o of shell.children.filter(o=>o.isMesh))assert(Array.from(o.geometry.attributes.position.array).every(Number.isFinite));
-  assert(meta.geometry.meshes<=6&&meta.geometry.triangles<150000&&meta.geometry.colliders<1600);return{geometry:meta.geometry};
+  assert(meta.geometry.meshes<=6&&meta.geometry.triangles<150000&&meta.geometry.colliders<1800);return{geometry:meta.geometry};
  });
 }finally{
  if(sim){sim.world.removeCharacterController(sim.controller);sim.world.free();}
