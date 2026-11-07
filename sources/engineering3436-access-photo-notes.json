@@ -1,0 +1,138 @@
+{
+  "scope": "34동 외관과 36동 연결교, 동쪽 긴 계단과 필로티 마당, 서쪽 최하단 계단",
+  "identity": {
+    "buildingId": "way/347806720",
+    "buildingNumber": "34",
+    "officialSequence": 43
+  },
+  "officialIdentity": [
+    {
+      "url": "https://engerf.snu.ac.kr/bbs/board.php?bo_table=sub2_2&wr_id=3",
+      "observed": "34동 재건축을 명시하며 2018년 중순 완료를 앞둔 사업으로 소개한다.",
+      "limit": "준공 이전 모금 설명이다. 이 문서만으로 실제 준공일을 확정하지 않는다."
+    },
+    {
+      "url": "https://naoe.snu.ac.kr/about/history",
+      "observed": "학과 연혁에 2018년 조선해양 고급인재양성관 신축을 기록한다.",
+      "limit": "정확한 사용승인일, 공식 총층수와 층고는 이 페이지에 없다."
+    }
+  ],
+  "references": [
+    {
+      "id": "current-connector-east",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=Cczv-4U7-vBOlXwqxQ2H_g,260,0,80,Float",
+      "captureMonth": "2025-09",
+      "publicationDate": null,
+      "directlyViewed": true,
+      "orientation": "동쪽에서 서쪽을 본다. 36동은 왼쪽, 34동은 오른쪽이다.",
+      "visible": "긴 접근 계단, 금속 난간의 낮은 길, 높은 마당, 34동 필로티, 최상단 연결교",
+      "limits": "서쪽 최하단 종점은 보이지 않는다."
+    },
+    {
+      "id": "current34-southeast",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=Cczv-4U7-vBOlXwqxQ2H_g,320,20,80,Float",
+      "captureMonth": "2025-09",
+      "publicationDate": null,
+      "directlyViewed": true,
+      "orientation": "34동 남동쪽 도로에서 북서쪽을 본다.",
+      "visible": "34 표지, 남쪽 회색 돌출부, 한 창줄, 열린 필로티, 흰 기둥, 필로티 동쪽 유리문, 북쪽으로 내려가는 도로"
+    },
+    {
+      "id": "current34-east",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=DvvksENzVw7Qpkg88qRRxw,270,10,80,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "orientation": "34동 동쪽 도로에서 서쪽을 본다.",
+      "visible": "큰 사각 창 두 줄과 벽돌 하부 가로창",
+      "limits": "지붕 일부와 남북 끝이 잘린다."
+    },
+    {
+      "id": "current34-northeast",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=QWfoIEFngzRhNCyJzBdc9A,210,15,80,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "orientation": "북동쪽에서 남서쪽으로 동면을 따라 본다.",
+      "visible": "동면 사각 골조와 벽돌 기단, 낮은 가로창",
+      "limits": "북면 전체를 보여 주는 사진은 아니다."
+    },
+    {
+      "id": "current34-north-partial",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=QWfoIEFngzRhNCyJzBdc9A,270,15,80,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "orientation": "북동쪽에서 서쪽을 본다.",
+      "visible": "34동 북동 모서리와 북쪽 연결 구조, 하부 포장 통로",
+      "limits": "앞의 콘크리트 연결교는 이번 대상인 34동과 36동 사이 연결교가 아니다."
+    },
+    {
+      "id": "current34-north-oblique",
+      "sourceURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=TuAQnIfViczdHxG5ybNrfQ,190,20,80,Float",
+      "alternateURL": "https://map.naver.com/p?c=17.00,0,0,0,adh&p=TuAQnIfViczdHxG5ybNrfQ,220,20,80,Float",
+      "captureMonth": "2025-09",
+      "directlyViewed": true,
+      "orientation": "북동쪽 도로에서 남쪽 또는 남서쪽을 본다.",
+      "visible": "북면 하부 벽돌, 흰 사선 마감, 출입부 일부와 북쪽 낮은 마당",
+      "limits": "상부는 다른 연결교에 가린다. CU 표지가 보이지만 영업 상태를 조사하지 않았다."
+    },
+    {
+      "id": "opening-connection-west",
+      "sourceURL": "https://enrcmc.tistory.com/entry/서울대학교-준공식행사-조선해양공학-고급인재양성관-행사대행-준공식무대-천막-의자-행사기획-연출-의전도우미-레드카펫-에어아치-에어샷-이엔알기획사",
+      "imageURL": "https://blog.kakaocdn.net/dn/bUVzEp/btsCG4ZTLkG/8ej2na3MbxJ8Xu7dMPncDk/img.jpg",
+      "publicationDate": "2023-12-29",
+      "captureDate": null,
+      "eventDateEstimate": "2018-11-06",
+      "directlyViewed": true,
+      "orientation": "광장에서 남동쪽을 본다. 34동은 왼쪽, 36동 북면은 오른쪽이다.",
+      "visible": "다층 연결 바닥, 흰 보와 기둥, 최하단 바깥 사선 계단과 난간",
+      "limits": "퍼걸러, 격자 기둥과 행사 장비가 광장 접속부를 가린다. display 파일은 900×675 원본을 브라우저에서 3배 확대한 화면이며 해상도를 복원한 자료가 아니다."
+    },
+    {
+      "id": "opening34-west",
+      "sourceURL": "https://enrcmc.tistory.com/entry/서울대학교-준공식행사-조선해양공학-고급인재양성관-행사대행-준공식무대-천막-의자-행사기획-연출-의전도우미-레드카펫-에어아치-에어샷-이엔알기획사",
+      "imageURL": "https://blog.kakaocdn.net/dn/bXHtr8/btsCMpPxkVO/KmGbgmr8V85VEKrHtMqYY1/img.jpg",
+      "publicationDate": "2023-12-29",
+      "captureDate": null,
+      "eventDateEstimate": "2018-11-06",
+      "directlyViewed": true,
+      "orientation": "광장에서 동쪽의 34동 서면을 본다.",
+      "visible": "상부 큰 창 두 줄, 회색 작은 창줄, 벽돌 창줄, 지붕 난간과 일부 태양광 패널",
+      "limits": "게시일을 촬영일로 쓰지 않는다. 현재 서면 세부가 모두 같은지는 별도 확인이 필요하다."
+    },
+    {
+      "id": "opening34-northwest-entry",
+      "sourceURL": "https://enrcmc.tistory.com/entry/서울대학교-준공식행사-조선해양공학-고급인재양성관-행사대행-준공식무대-천막-의자-행사기획-연출-의전도우미-레드카펫-에어아치-에어샷-이엔알기획사",
+      "imageURL": "https://blog.kakaocdn.net/dn/qUFbe/btsCKsF2aSS/9IJTWHB4dgVBEbezKkqcS0/img.jpg",
+      "otherImageURL": "https://blog.kakaocdn.net/dn/dJl2bz/btsCK8UQhfZ/WARJUdUJmn67xKCjbDClIk/img.jpg",
+      "publicationDate": "2023-12-29",
+      "captureDate": null,
+      "eventDateEstimate": "2018-11-06",
+      "directlyViewed": true,
+      "orientation": "34동 북서쪽 낮은 출입부를 본다.",
+      "visible": "낮은 유리 현관과 주변 벽돌, 광장과 입구 사이 계단",
+      "limits": "옆 연결부는 33동 방향이다. 남쪽 34동과 36동 연결문으로 옮기지 않는다. 행사 현수막의 날짜 판독은 작아서 불확실하며 공식 2018년 신축 연혁과 함께 참고한다."
+    }
+  ],
+  "dateHandling": "네이버 촬영월은 화면에 표시된 2025년 9월이다. 블로그 게시일은 2023년 12월 29일이나 행사 현수막은 2018년 11월 6일로 읽히며 공식 학과 연혁도 2018년 신축을 기록한다. 사진의 EXIF 촬영일은 확인하지 않았다.",
+  "implemented": [
+    "34동 본관의 큰 사각 창 두 줄과 깊은 밝은 창틀, 서쪽 회색 하단 창줄과 벽돌 하부, 남쪽 회색 돌출부의 긴 창 한 줄을 구분했다.",
+    "남쪽 필로티에 흰 원형 기둥과 열린 유리문, 회색 포장 마당과 동쪽 짧은 계단을 만들었다.",
+    "34동과 36동 사이에 세 높이의 연결 바닥, 흰 보와 기둥, 금속 난간, 상부 유리와 검은 지붕을 추가했다.",
+    "동쪽 도로의 좁은 난간 길과 긴 계단을 위 연결교에 연결하고, 서쪽 광장에는 사진에 보이는 최하단 사선 계단을 반영했다.",
+    "36동 북면과 34동 남면의 연결문은 짧은 현관으로 구현했다. 기존 37동 동쪽 보행로는 계단 남쪽을 돌아 낮은 연결교 아래로 이어진다."
+  ],
+  "approximations": [
+    "원본 OSM 윤곽과 5층 기록, DEM은 보존한다. 외관은 지도 윤곽을 기준으로 단순한 직선 벽으로 근사했으며 창줄을 공식 층수로 해석하지 않는다.",
+    "세 연결 바닥을 36동 큰 창줄 높이에 맞춘 관계와 34동 본관 및 돌출부 지붕을 같은 높이에 맞춘 관계는 추정이다.",
+    "긴 계단 20단, 서쪽 계단 12단, 마당 앞 4단과 높이 차 0.6m, 연결교 폭 3m, 창 및 기둥 간격은 게임 근사다.",
+    "서쪽 사진은 가장 아래의 사선 계단만 뒷받침한다. 광장에 닿는 마지막 참과 보행로 우회 배치는 추정이며 위 두 층 사이 계단은 만들지 않았다.",
+    "상부 연결교 옆면은 사진의 어두운 판과 세로 프레임을 참고해 유리로 표현했으나 실제 전체 구간의 개폐 방식은 미확인이다.",
+    "북면은 연결교와 나무에 가려진 부분을 단순화했다. 남쪽 현관은 게임에서 문짝을 열었으며 실제 실내를 재현하지 않았다."
+  ],
+  "remaining": [
+    "34동 북쪽과 북서쪽 낮은 출입부, 광장에서 내려가는 계단 및 33동 연결부",
+    "34동 북면 전체와 옥상 장비, 본관과 남쪽 돌출부의 정확한 지붕 높이 차",
+    "서쪽 최하단 계단의 실제 종점과 위층 사이의 계단 유무",
+    "각 연결문의 실제 위치와 문짝, 공식 층명과 층고"
+  ],
+  "limits": "2025년 9월 거리뷰와 과거 준공식 사진을 함께 참고했다. 2026년 현재 상태와 같다고 단정하지 않는다. 게시일을 촬영일로 쓰지 않았으며 참고 사진을 게임 에셋으로 배포하지 않는다."
+}

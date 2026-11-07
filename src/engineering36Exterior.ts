@@ -5,7 +5,7 @@ import { humanities23Frame } from './humanities23Site';
 import { physics561SurfaceHeight } from './physics561Site';
 import { ENGINEERING36_ID, type Engineering36Layout } from './engineering36Site';
 type XZ=[number,number];type Frame=ReturnType<typeof humanities23Frame>;type Proxy=THREE.Mesh<THREE.BufferGeometry,THREE.MeshStandardMaterial>;
-export function createEngineering36Exterior(scene:THREE.Scene,q:Engineering36Layout){
+export function createEngineering36Exterior(scene:THREE.Scene,q:Engineering36Layout,openings:{s0:number;s1:number;bottom:number;top:number}[]=[]){
  const shell=new THREE.Group();shell.name='landmark/engineering36-exterior';Object.assign(shell.userData,{role:'building-shell',buildingId:ENGINEERING36_ID,buildingIds:[ENGINEERING36_ID]});scene.add(shell);
  
 
@@ -55,7 +55,17 @@ export function createEngineering36Exterior(scene:THREE.Scene,q:Engineering36Lay
    for(let j=0;j<bays;j++){
      const s0=j*span,s1=(j+1)*span;
      for(let k=0;k<q.floors.length;k++){
-       const y=q.floors[k],top=q.floors[k+1]??q.roof,owner=box(k===0?'low-stone-window-bay':'brick-window-bay',face,s0,s1,0,.22,y,top,k===0?0x929a91:brick);
+       const y=q.floors[k],top=q.floors[k+1]??q.roof;
+       const opening=Math.abs(f.local(face.point(0)).n)<.01?openings.find(o=>Math.abs(o.bottom-y)<.01&&L-o.s1>=s0&&L-o.s0<=s1):undefined;
+       if(opening){
+         const left=L-opening.s1,right=L-opening.s0;
+         for(const [a,b,lo,hi]of[[s0,left,y,top],[right,s1,y,top],[left,right,opening.top,top]])if(b-a>.001&&hi-lo>.001){const piece=box('north-link-door-wall',face,a,b,0,.22,lo,hi,brick);if(b-a>.6&&lo===y)ribbon(face,a+.12,b-.12,y+.9,top-.55,piece);}
+         const header=box('north-link-door-lintel',face,left,right,-.15,.23,opening.top-.12,opening.top,white);
+         for(const side of[left-.08,right])box('north-link-door-jamb',face,side,side+.08,-.15,.23,y,opening.top,white,'stone',header);
+         box('white-floor-band',face,s0,s1,-.26,.22,top-.3,top,white,'stone',header);
+         continue;
+       }
+       const owner=box(k===0?'low-stone-window-bay':'brick-window-bay',face,s0,s1,0,.22,y,top,k===0?0x929a91:brick);
        for(let yy=y+.15;yy<top-.04;yy+=k===0?.36:.18)facet('masonry-joint',face,s0,s1,yy,yy+.012,-.007,k===0?0xb7bdb1:0x9c8c77,owner);
        for(let row=0,yy=y+.15;yy<top-.04;row++,yy+=k===0?.36:.18)for(let ss=s0+(row%2?.28:.56);ss<s1-.02;ss+=.56){if(ss>s0+.22&&ss<s1-.22&&yy>=y+.9&&yy<(k===0?y+2.05:top-.55))continue;facet('masonry-vertical-joint',face,ss,ss+.012,yy,Math.min(yy+(k===0?.36:.18),top-.03),-.008,k===0?0xb7bdb1:0x9c8c77,owner);}
        const low=y+.9,high=k===0?y+2.05:top-.55;ribbon(face,s0+.22,s1-.22,low,high,owner);
@@ -151,7 +161,7 @@ export function createEngineering36Exterior(scene:THREE.Scene,q:Engineering36Lay
 
  const meshes=batches.map(b=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(b.positions,3));g.setAttribute('color',new THREE.Float32BufferAttribute(b.colors,3));g.computeVertexNormals();g.computeBoundingBox();g.computeBoundingSphere();const mesh=new THREE.Mesh(g,new THREE.MeshStandardMaterial({vertexColors:true,roughness:b.glass?.3:.8,side:THREE.DoubleSide}));mesh.name=b.glass?'engineering36-glass':'engineering36-surfaces';mesh.castShadow=!b.glass;mesh.receiveShadow=true;shell.add(mesh);return mesh;});
 
- shell.userData.engineering36Exterior={buildingId:ENGINEERING36_ID,rawOsmFootprintPreserved:true,dimensionsEstimated:true,wholeInteriorImplemented:false,largeWindowRows:3,lowFoundationWindowRow:true,eastEntryAtSecondHighestWindowRow:true,doorLeavesOpenedForGameplay:true,westBridgeUpperTwoWindowRowsEstimated:true,northLinkPending:true,routes:q.routes,pavementMasks,bounds:q.bounds,geometry:{meshes:meshes.length+signs.length,textures:signs.length,triangles:batches.reduce((n,b)=>n+b.positions.length/9,0)+signs.length*2,colliders:breakables.length}};
+ shell.userData.engineering36Exterior={buildingId:ENGINEERING36_ID,rawOsmFootprintPreserved:true,dimensionsEstimated:true,wholeInteriorImplemented:false,largeWindowRows:3,lowFoundationWindowRow:true,eastEntryAtSecondHighestWindowRow:true,doorLeavesOpenedForGameplay:true,westBridgeUpperTwoWindowRowsEstimated:true,northLinkPending:openings.length===0,routes:q.routes,pavementMasks,bounds:q.bounds,geometry:{meshes:meshes.length+signs.length,textures:signs.length,triangles:batches.reduce((n,b)=>n+b.positions.length/9,0)+signs.length*2,colliders:breakables.length}};
  function update(_player:THREE.Vector3){batches.forEach((b,index)=>{const a=meshes[index].geometry.attributes.position as THREE.BufferAttribute,c=meshes[index].geometry.attributes.color as THREE.BufferAttribute;let moved=false,tinted=false;for(const p of b.parts){if(p.shown!==p.proxy.visible){p.shown=p.proxy.visible;moved=true;if(p.shown)(a.array as Float32Array).set(p.original,p.start);else for(let i=p.start;i<p.end;i+=3){a.array[i]=p.proxy.position.x;a.array[i+1]=p.proxy.position.y;a.array[i+2]=p.proxy.position.z;}}if(p.color!==p.proxy.material.color.getHex()){p.color=p.proxy.material.color.getHex();tinted=true;const t=p.proxy.material.color,scale=[t.r/p.base.r,t.g/p.base.g,t.b/p.base.b];for(let i=p.start;i<p.end;i++)c.array[i]=p.colors[i-p.start]*scale[(i-p.start)%3];}}if(moved)a.needsUpdate=true;if(tinted)c.needsUpdate=true;});for(const s of signs)s.mesh.visible=s.owner.visible;shell.visible=batches.some(b=>b.parts.some(p=>p.proxy.visible));}
  return{shell,breakables,update};
 }

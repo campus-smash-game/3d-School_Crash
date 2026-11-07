@@ -92,7 +92,8 @@ const output=path.join(root,'artifacts/engineering36-test/results.json');fs.mkdi
 const results=[];let sim;
 const must=(ok,message,details)=>{if(!ok)throw Object.assign(new Error(message),{details});};
 const check=async(name,fn)=>{try{results.push({name,status:'PASS',...await fn()});console.log('PASS '+name);}catch(e){results.push({name,status:'FAIL',message:e.message,details:e.details});console.log('FAIL '+name+' '+e.message+' '+JSON.stringify(e.details));}};
-const env=await buildWorld(),q=env.terrain.mesh.userData.engineering36Correction.layout,shell=env.world.getObjectByName('landmark/engineering36-exterior');
+// 36동 단독 보정을 비교한다. 34동 연결부가 있는 최종 장면은 verify-engineering3436.mjs에서 검사한다.
+const env=await buildWorld({engineering3436:false}),q=env.terrain.mesh.userData.engineering36Correction.layout,shell=env.world.getObjectByName('landmark/engineering36-exterior');
 try{
  sim=env.makeSimulation(new THREE.Vector3(...q.routes.eastEntrance[0]).add(new THREE.Vector3(0,1.8,0)));
  const move=movementTools(sim);
@@ -156,7 +157,7 @@ try{
   assert(shell.visible);assert.notDeepEqual(signature(),before);sim.reset();env.update(far);assert.deepEqual(signature(),before);return{farVisible:true,resetExact:true};
  });
  await check('mobile geometry budget and approximation labels',()=>{
-  const meta=shell.userData.engineering36Exterior;assert(meta.dimensionsEstimated&&!meta.wholeInteriorImplemented);assert(meta.lowFoundationWindowRow&&meta.eastEntryAtSecondHighestWindowRow&&meta.westBridgeUpperTwoWindowRowsEstimated&&meta.doorLeavesOpenedForGameplay&&meta.northLinkPending);
+  const meta=shell.userData.engineering36Exterior;assert(meta.dimensionsEstimated&&!meta.wholeInteriorImplemented);assert(meta.lowFoundationWindowRow&&meta.eastEntryAtSecondHighestWindowRow&&meta.westBridgeUpperTwoWindowRowsEstimated&&meta.doorLeavesOpenedForGameplay&&(!env.terrain.mesh.userData.engineering3436Correction||!meta.northLinkPending));
   for(const o of shell.children.filter(o=>o.isMesh))assert(Array.from(o.geometry.attributes.position.array).every(Number.isFinite));
   assert(meta.geometry.meshes<=5&&meta.geometry.triangles<40000&&meta.geometry.colliders<650);return{geometry:meta.geometry};
  });
