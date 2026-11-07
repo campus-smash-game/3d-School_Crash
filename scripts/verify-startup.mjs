@@ -9,7 +9,8 @@ import * as THREE from 'three';
 import R from '@dimforge/rapier3d-compat';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const sourceRoot=pathToFileURL(path.join(root,'src')+path.sep).href;
-registerHooks({resolve(s,c,n){if(c.parentURL?.startsWith(sourceRoot)&&s.startsWith('.')&&!path.extname(s))return{url:new URL(s+'.ts',c.parentURL).href,shortCircuit:true};return n(s,c);},load(u,c,n){if(u.startsWith(sourceRoot)&&u.endsWith('.ts')){let file=fileURLToPath(u);return{format:'module',shortCircuit:true,source:ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText};}return n(u,c);}});
+const sourceHashes={};
+registerHooks({resolve(s,c,n){if(c.parentURL?.startsWith(sourceRoot)&&s.startsWith('.')&&!path.extname(s))return{url:new URL(s+'.ts',c.parentURL).href,shortCircuit:true};return n(s,c);},load(u,c,n){if(u.startsWith(sourceRoot)&&u.endsWith('.ts')){let file=fileURLToPath(u);sourceHashes[path.relative(root,file).replaceAll('\\','/')]=createHash('sha256').update(fs.readFileSync(file)).digest('hex');return{format:'module',shortCircuit:true,source:ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText};}return n(u,c);}});
 globalThis.document={createElement(){const canvas={width:0,height:0};canvas.getContext=()=>new Proxy({},{get(o,k){if(k==='measureText')return s=>({width:String(s).length*20});if(k==='createLinearGradient'||k==='createRadialGradient')return()=>({addColorStop(){}});return o[k]??(()=>{});},set(o,k,v){o[k]=v;return true;}});return canvas;}};
 const source=n=>import(pathToFileURL(path.join(root,'src',n+'.ts')));
 const timings=[];
@@ -49,6 +50,27 @@ const hash=a=>createHash('sha256').update(new Uint8Array(a.buffer,a.byteOffset,a
 await startup.yieldToBrowser();
 const result={scope:'Actual campus startup in Node with a Canvas 2D text double. No browser, GPU or phone verification.',timings,meshes,triangles,targets:sim.targets.length,terrainPositions:hash(terrain.vertices),terrainIndices:hash(terrain.indices),geometryHash:digest.digest('hex')};
 clearInterval(heartbeat);if(globalThis.gc)globalThis.gc();Object.assign(result,{retainedHeapMB:Math.round(process.memoryUsage().heapUsed/1e6),longestStep,longSteps,heartbeats,maxHeartbeatGap});
+function renderState(){
+ const digest=createHash('sha256');let objects=0;
+ scene.traverse(o=>{
+  digest.update(o.name+':'+o.visible);objects++;
+  if(!o.isMesh)return;
+  for(const a of Object.values(o.geometry.attributes))digest.update(new Uint8Array(a.array.buffer,a.array.byteOffset,a.array.byteLength));
+  for(const a of [o.instanceMatrix,o.instanceColor])if(a)digest.update(new Uint8Array(a.array.buffer,a.array.byteOffset,a.array.byteLength));
+ });
+ return{hash:digest.digest('hex'),objects};
+}
+const restored=[];
+for(const point of [spawn,new THREE.Vector3(4000,0,4000)]){
+ const update=()=>{campus.update(point);for(const f of facilities)f.update(point);};
+ update();const intact=renderState();
+ for(const target of sim.targets)target.mesh.visible=false;
+ update();const damaged=renderState();assert.notEqual(damaged.hash,intact.hash,'Hiding destruction proxies must change the rendered campus');
+ sim.reset();update();const reset=renderState();assert.deepEqual(reset,intact,'Reset must recover every visible surface and instanced transform');
+ restored.push({point:point.toArray(),targets:sim.targets.length,exactRestore:true});
+}
+Object.assign(result,{restored,sourceHashes});
+console.log('PASS every campus target restores the same geometry and visibility nearby and far away');
 fs.mkdirSync(path.join(root,'artifacts/startup-test'),{recursive:true});
 fs.writeFileSync(path.join(root,'artifacts/startup-test/results.json'),JSON.stringify(result,null,2));
 assert.ok(heartbeats>20,'The complete campus must not initialize in one blocking task');

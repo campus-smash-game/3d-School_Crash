@@ -156,7 +156,9 @@ export function createHumanities250(scene: THREE.Scene, heightAt: (x: number, z:
       if (changed) a.needsUpdate = true; if (recolored) c.needsUpdate = true;
     }); shell.visible = batches.some(b => b.parts.some(p => p.proxy.visible));
   }
-  return { shell, breakables, update };
+  // 렌더 버퍼와 복원용 사본을 만든 뒤 조립용 배열을 비운다.
+ for(const batch of batches){batch.positions.length=0;batch.colors.length=0;}
+ return { shell, breakables, update };
 }
 
 

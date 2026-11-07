@@ -97,5 +97,7 @@ export function createHumanities35Exterior(scene:THREE.Scene,building:CampusBuil
     for (const p of b.parts) { if (p.shown !== p.proxy.visible) { p.shown = p.proxy.visible; moved = true; if (p.shown) (a.array as Float32Array).set(p.original, p.start); else for (let i = p.start; i < p.end; i += 3) { a.array[i] = p.proxy.position.x; a.array[i + 1] = p.proxy.position.y; a.array[i + 2] = p.proxy.position.z; } } if (p.color !== p.proxy.material.color.getHex()) { p.color = p.proxy.material.color.getHex(); tinted = true; const t = p.proxy.material.color, scale = [t.r / p.base.r, t.g / p.base.g, t.b / p.base.b]; for (let i = p.start; i < p.end; i++) c.array[i] = p.colors[i - p.start] * scale[(i - p.start) % 3]; } }
     if (moved) a.needsUpdate = true; if (tinted) c.needsUpdate = true;
   }); shell.visible = batches.some(b => b.parts.some(p => p.proxy.visible)); }
-  return { shell, breakables, update };
+  // 렌더 버퍼와 복원용 사본을 만든 뒤 조립용 배열을 비운다.
+ for(const batch of batches){batch.positions.length=0;batch.colors.length=0;}
+ return { shell, breakables, update };
 }
