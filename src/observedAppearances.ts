@@ -1355,7 +1355,7 @@ export const observedAppearances:Record<string,Partial<BuildingAppearance>>={
     "windowHeightRatio": 0.5,
     "bayWidth": 3.5,
     "horizontalBands": true,
-    "verticalFins": false,
+    "verticalFins": true,
     "confidence": "reference",
     "sourceUrls": [
       "https://map.snu.ac.kr/web/facility_detail.action?convinType=N&inst_seq=45",
