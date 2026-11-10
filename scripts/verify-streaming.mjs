@@ -82,6 +82,50 @@ try{
       sim.teleport(new THREE.Vector3(-100,1.7,0));assert.ok(sim.targets[1].body);assert.ok(shard.body.translation().x<250.7);maximumBodies=Math.max(maximumBodies,sim.world.bodies.len());sim.reset();assert.equal(sim.world.bodies.len(),1);assert.equal(sim.world.colliders.len(),2);assert.equal(sim.debris.length,0);assert.equal(sim.destroyed,0);assert.ok(sim.targets.every(t=>t.hp===t.toughness&&!t.body&&t.mesh.visible));
     }return{resetCycles:8,maximumBodies,finalBodies:sim.world.bodies.len()};
   });
+  check('dense remote fragments query only their swept neighborhood across cell boundaries',()=>{
+    const unrelated=Array.from({length:1200},(_,i)=>spec(270+i%20,2,20+Math.floor(i/20),.3,3,.3));
+    const sim=simulation([spec(255,3,0,1,1,1),spec(256.1,3,0,.4,8,8),...unrelated]);
+    sim.hit(sim.targets[0],10,new THREE.Vector3(1,0,0));const shard=sim.debris[0];
+    shard.body.setLinvel({x:120,y:0,z:0},true);shard.body.setAngvel({x:0,y:0,z:0},true);
+    let boxChecks=0;const intersects=THREE.Box3.prototype.intersectsBox;
+    THREE.Box3.prototype.intersectsBox=function(other){boxChecks++;return intersects.call(this,other);};
+    try{sim.step(dt,0,0,false);}finally{THREE.Box3.prototype.intersectsBox=intersects;}
+    assert.ok(sim.targets[1].body);assert.ok(shard.body.translation().x<255.7);
+    assert.ok(boxChecks<20,`unrelated targets reached the fragment narrow phase: ${boxChecks}`);
+    assert.ok(sim.targets.slice(2).every(t=>!t.body));
+    return{boxChecks,unrelatedTargets:unrelated.length,cellBoundaryCollision:true};
+  });
+  check('sleeping remote fragments retain support without searching and resume when awakened',()=>{
+    const sim=simulation([spec(250,4,0,1,1,1),spec(250,1,0,40,2,40)]);
+    sim.hit(sim.targets[0],10,new THREE.Vector3());const shard=sim.debris[0];
+    shard.body.setLinvel({x:0,y:0,z:0},true);shard.body.setAngvel({x:0,y:0,z:0},true);
+    advance(sim,420);assert.ok(shard.body.isSleeping());assert.ok(sim.targets[1].body);
+    const candidates=sim.candidates;let queries=0;
+    sim.candidates=function(...args){queries++;return candidates.apply(this,args);};
+    advance(sim,30);assert.equal(queries,0);assert.ok(sim.targets[1].body);
+    shard.body.setLinvel({x:2,y:3,z:0},true);advance(sim,2);assert.ok(queries>0);
+    sim.candidates=candidates;
+    sim.hit(sim.targets[1],100,new THREE.Vector3());advance(sim,2);
+    assert.equal(sim.targets[1].body,null,'destroyed cached supports must not reload');
+    sim.reset();assert.equal(sim.world.bodies.len(),1);
+    return{sleepingQueries:0,wakeResumesSearch:true,resetBodies:sim.world.bodies.len()};
+  });
+  check('one explosion allocates only retained fragments and preserves their full initial state',()=>{
+    const make=()=>simulation(Array.from({length:40},(_,i)=>spec(240+i%8*2,3,Math.floor(i/8)*2,2,3,2)));
+    const optimized=make(),reference=make(),point=new THREE.Vector3(248,3,4),direction=new THREE.Vector3(.7,.1,-.5);
+    optimized.maxDebris=reference.maxDebris=64;
+    const seeded=run=>{const old=Math.random;let seed=1234;Math.random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};try{return run();}finally{Math.random=old;}};
+    let allocations=0;const create=optimized.world.createRigidBody;
+    optimized.world.createRigidBody=function(...args){allocations++;return create.apply(this,args);};
+    seeded(()=>optimized.explode(point,18,12,direction));
+    seeded(()=>{for(const t of reference.nearby(point,18))reference.hit(t,12*(1-.45*t.box.distanceToPoint(point)/18),direction);});
+    assert.equal(optimized.destroyed,40);assert.equal(optimized.destroyed,reference.destroyed);assert.equal(allocations,64);
+    const state=sim=>sim.debris.map(d=>({p:d.body.translation(),q:d.body.rotation(),v:d.body.linvel(),w:d.body.angvel(),size:d.size.toArray(),color:d.color.toArray()}));
+    assert.deepEqual(state(optimized),state(reference));
+    optimized.reset();optimized.maxDebris=0;seeded(()=>optimized.explode(point,18,12,direction));
+    assert.equal(optimized.destroyed,40);assert.equal(optimized.debris.length,0);
+    return{destroyed:40,retainedFragments:64,allocatedBodies:allocations,identicalInitialFragmentState:true};
+  });
   check('vehicle colliders keep their independent lifecycle outside the building load radius',()=>{
     const sim=simulation(),state={id:7,position:{x:250,y:0,z:0},rotation:{x:0,y:0,z:0,w:1},width:2,height:3,length:10};sim.syncVehicles([state]);sim.world.step();const hit=sim.world.castRay(new RAPIER.Ray({x:250,y:1,z:20},{x:0,y:0,z:-1}),30,true,undefined,0x00040001,sim.playerCollider);assert.ok(hit&&Math.abs(hit.timeOfImpact-15)<.0001);sim.syncVehicles([]);sim.world.step();assert.equal(sim.world.bodies.len(),1);sim.syncVehicles([state]);sim.reset();assert.equal(sim.world.bodies.len(),1);return{rayDistance:hit.timeOfImpact,resetBodies:sim.world.bodies.len()};
   });

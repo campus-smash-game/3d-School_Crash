@@ -5,7 +5,7 @@ import type { BreakableSpec, StaticSpec } from './scene';
 export type Target = BreakableSpec & {body:RAPIER.RigidBody|null; hp:number; originalColor:THREE.Color; flash:number; box:THREE.Box3};
 export type Debris = {body:RAPIER.RigidBody; size:THREE.Vector3; color:THREE.Color; age:number};
 const WORLD = 0x00010007, PLAYER = 0x00040001, DEBRIS = 0x00020001;
-const LOAD_RADIUS=75, UNLOAD_RADIUS=110, FOCUS_STEP=25, CELL_SIZE=100;
+const LOAD_RADIUS=75, UNLOAD_RADIUS=110, FOCUS_STEP=25, CELL_SIZE=100, DEBRIS_CELL_SIZE=16;
 type VehicleState={id:number;position:{x:number;y:number;z:number};rotation:{x:number;y:number;z:number;w:number};width:number;height:number;length:number};
 type LogicalTarget={position:THREE.Vector3;rotation:THREE.Quaternion;matrix:THREE.Matrix4;geometry:THREE.BufferGeometry;queryMesh?:THREE.Mesh};
 
@@ -23,6 +23,8 @@ export class Simulation {
   maxDebris=100;
   private focus=new THREE.Vector3(Infinity,0,Infinity);
   private cells=new Map<string,Target[]>();
+  private debrisCells=new Map<string,Target[]>();
+  private debrisSupports=new WeakMap<Debris,Target[]>();
   private loaded=new Set<Target>();
   private debrisLoaded=new Set<Target>();
   private logicalTargets=new Map<Target,LogicalTarget>();
@@ -72,8 +74,8 @@ export class Simulation {
       this.logicalTargets.set(target,{position,rotation,geometry,matrix:s.mesh.matrixWorld.clone()});
       this.targets.push(target);
     }
-    for(const t of this.targets)for(let x=Math.floor(t.box.min.x/CELL_SIZE);x<=Math.floor(t.box.max.x/CELL_SIZE);x++)for(let z=Math.floor(t.box.min.z/CELL_SIZE);z<=Math.floor(t.box.max.z/CELL_SIZE);z++){
-      const key=`${x},${z}`,list=this.cells.get(key)??[];list.push(t);this.cells.set(key,list);
+    for(const [cells,size] of [[this.cells,CELL_SIZE],[this.debrisCells,DEBRIS_CELL_SIZE]] as const)for(const t of this.targets)for(let x=Math.floor(t.box.min.x/size);x<=Math.floor(t.box.max.x/size);x++)for(let z=Math.floor(t.box.min.z/size);z<=Math.floor(t.box.max.z/size);z++){
+      const key=`${x},${z}`,list=cells.get(key)??[];list.push(t);cells.set(key,list);
     }
   }
   private addTarget(t:Target){
@@ -100,10 +102,10 @@ export class Simulation {
     }
     return logical.queryMesh;
   }
-  private candidates(minX:number,maxX:number,minZ:number,maxZ:number){
+  private candidates(minX:number,maxX:number,minZ:number,maxZ:number,cells=this.cells,size=CELL_SIZE){
     const seen=new Set<Target>(),targets:Target[]=[];
-    for(let x=Math.floor(minX/CELL_SIZE);x<=Math.floor(maxX/CELL_SIZE);x++)for(let z=Math.floor(minZ/CELL_SIZE);z<=Math.floor(maxZ/CELL_SIZE);z++)for(const t of this.cells.get(`${x},${z}`)??[]){
-      if(t.hp>0&&!seen.has(t)){seen.add(t);targets.push(t);}
+    for(let x=Math.floor(minX/size);x<=Math.floor(maxX/size);x++)for(let z=Math.floor(minZ/size);z<=Math.floor(maxZ/size);z++)for(const t of cells.get(`${x},${z}`)??[]){
+      if(t.hp>0&&t.box.min.x<=maxX&&t.box.max.x>=minX&&t.box.min.z<=maxZ&&t.box.max.z>=minZ&&!seen.has(t)){seen.add(t);targets.push(t);}
     }
     return targets;
   }
@@ -125,11 +127,15 @@ export class Simulation {
     this.player.setTranslation(p,true);this.player.setNextKinematicTranslation(p);this.syncDebrisCollisions(this.world.timestep);this.world.step();
   }
   explode(point:THREE.Vector3,radius:number,power:number,direction:THREE.Vector3){
-    let count=0;
+    let count=0;const broken:Target[]=[];
     for(const t of this.nearby(point,radius)){
       const damage=power*(1-.45*t.box.distanceToPoint(point)/radius);
-      if(this.hit(t,damage,direction))count++;
+      if(this.hit(t,damage,direction,broken))count++;
     }
+    // 같은 폭발 안에서 곧 제거될 파편은 물리 객체로 만들지 않는다.
+    const sizes=broken.map(t=>this.fragmentGrid(t).reduce((a,b)=>a*b,1));
+    let skip=Math.max(0,sizes.reduce((a,b)=>a+b,0)-this.maxDebris);
+    broken.forEach((t,i)=>{const omitted=Math.min(skip,sizes[i]);skip-=omitted;this.spawnDebris(t,direction,sizes[i]-omitted);});
     return count;
   }
   castUnloadedTargets(origin:THREE.Vector3,direction:THREE.Vector3,distance:number){
@@ -144,12 +150,17 @@ export class Simulation {
     if(!this.debris.length&&!this.debrisLoaded.size)return;
     const needed=new Set<Target>(),box=new THREE.Box3(),start=new THREE.Vector3(),end=new THREE.Vector3();
     for(const d of this.debris){
+      const supports=this.debrisSupports.get(d);
+      // 잠든 파편의 지지체는 유지하되, 움직이지 않는 구간은 다시 검색하지 않는다.
+      if(d.body.isSleeping()&&supports){for(const t of supports)if(t.hp>0){needed.add(t);if(!t.body)this.addTarget(t);}continue;}
       const p=d.body.translation(),v=d.body.linvel(),reach=d.size.length()/2+.08;
       start.set(p.x,p.y,p.z);end.set(p.x+v.x*dt,p.y+v.y*dt-9*dt*dt,p.z+v.z*dt);
-      if(Math.max(start.distanceTo(this.focus),end.distanceTo(this.focus))+reach<LOAD_RADIUS)continue;
+      if(Math.max(start.distanceTo(this.focus),end.distanceTo(this.focus))+reach<LOAD_RADIUS){this.debrisSupports.delete(d);continue;}
       // 파편의 회전을 포함한 반경으로 다음 물리 프레임의 이동 구간만 덮는다.
       box.setFromPoints([start,end]).expandByScalar(reach);
-      for(const t of this.candidates(box.min.x,box.max.x,box.min.z,box.max.z))if(t.box.intersectsBox(box)){needed.add(t);if(!t.body)this.addTarget(t);}
+      const covered:Target[]=[];
+      for(const t of this.candidates(box.min.x,box.max.x,box.min.z,box.max.z,this.debrisCells,DEBRIS_CELL_SIZE))if(t.box.intersectsBox(box)){covered.push(t);needed.add(t);if(!t.body)this.addTarget(t);}
+      this.debrisSupports.set(d,covered);
     }
     for(const t of this.debrisLoaded)if(!needed.has(t)&&t.box.distanceToPoint(this.focus)>UNLOAD_RADIUS)this.removeTarget(t);
     this.debrisLoaded=needed;
@@ -176,6 +187,7 @@ export class Simulation {
     for(const body of this.vehicles.values())this.world.removeRigidBody(body);this.vehicles.clear();
     for(const d of this.debris)this.world.removeRigidBody(d.body);
     this.debris=[];
+    this.debrisSupports=new WeakMap();
     for(const t of this.targets){
       if(t.body)this.world.removeRigidBody(t.body);t.body=null;
       t.mesh.visible=true;t.hp=t.toughness;t.flash=0;
@@ -212,28 +224,40 @@ export class Simulation {
       this.visualChanges.add(t.mesh);
     }
   }
-  hit(t:Target,power:number,direction:THREE.Vector3):boolean{
+  hit(t:Target,power:number,direction:THREE.Vector3,deferred?:Target[]):boolean{
     if(t.hp<=0)return false;
     t.hp-=power;t.flash=1;
     this.visualChanges.add(t.mesh);
     if(t.hp>0)return false;
     this.removeTarget(t);this.debrisLoaded.delete(t);t.mesh.visible=false;this.destroyed++;
+    if(deferred)deferred.push(t);else this.spawnDebris(t,direction,this.maxDebris);
+    try { this.onTargetDestroyed?.(t); } catch { /* 통계 오류가 물리 동작을 막지 않게 한다. */ }
+    return true;
+  }
+  private fragmentGrid(t:Target){
     const divisions=t.size.toArray().map(v=>Math.max(1,Math.min(4,Math.ceil(v/1.15))));
     // Keep each impact bounded even for the longest gate beams.
     while(divisions[0]*divisions[1]*divisions[2]>16){const i=divisions.indexOf(Math.max(...divisions));divisions[i]--;}
+    return divisions;
+  }
+  private spawnDebris(t:Target,direction:THREE.Vector3,keep:number){
+    const divisions=this.fragmentGrid(t);
+    let skip=Math.max(0,divisions.reduce((a,b)=>a*b,1)-Math.max(0,keep));
     const s=new THREE.Vector3(t.size.x/divisions[0],t.size.y/divisions[1],t.size.z/divisions[2]);
     const logical=this.logicalTargets.get(t)!;
     for(let x=0;x<divisions[0];x++)for(let y=0;y<divisions[1];y++)for(let z=0;z<divisions[2];z++){
+      // 생략한 파편도 난수 순서는 유지해 남는 파편의 움직임을 바꾸지 않는다.
+      const velocity={x:direction.x*5+(Math.random()-.5)*5,y:3+Math.random()*5,z:direction.z*5+(Math.random()-.5)*5};
+      const angular={x:Math.random()*4-2,y:Math.random()*4-2,z:Math.random()*4-2};
+      if(skip>0){skip--;continue;}
       while(this.debris.length>=this.maxDebris){const old=this.debris.shift()!;this.world.removeRigidBody(old.body);}
       const local=new THREE.Vector3((x+.5)*s.x-t.size.x/2,(y+.5)*s.y-t.size.y/2,(z+.5)*s.z-t.size.z/2);
       const pos=local.applyQuaternion(logical.rotation).add(logical.position);
       const body=this.world.createRigidBody(RAPIER.RigidBodyDesc.dynamic().setTranslation(pos.x,pos.y,pos.z).setRotation(logical.rotation).setLinearDamping(.35).setAngularDamping(.7).setCcdEnabled(true));
       this.world.createCollider(RAPIER.ColliderDesc.cuboid(s.x*.46,s.y*.46,s.z*.46).setCollisionGroups(DEBRIS).setFriction(.7).setRestitution(.15),body);
-      body.setLinvel({x:direction.x*5+(Math.random()-.5)*5,y:3+Math.random()*5,z:direction.z*5+(Math.random()-.5)*5},true);
-      body.setAngvel({x:Math.random()*4-2,y:Math.random()*4-2,z:Math.random()*4-2},true);
+      body.setLinvel(velocity,true);
+      body.setAngvel(angular,true);
       this.debris.push({body,size:s.clone().multiplyScalar(.94),color:t.originalColor.clone(),age:0});
     }
-    try { this.onTargetDestroyed?.(t); } catch { /* 통계 오류가 물리 동작을 막지 않게 한다. */ }
-    return true;
   }
 }

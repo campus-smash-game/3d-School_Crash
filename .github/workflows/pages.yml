@@ -27,6 +27,8 @@ jobs:
         run: npm ci
       - name: Check controls and game integration
         run: |
+          node scripts/verify-physics.mjs
+          node scripts/verify-streaming.mjs
           node scripts/verify-analytics.mjs
           node scripts/verify-controls.mjs
           node scripts/verify-runtime-coordinates.mjs
